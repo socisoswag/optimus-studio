@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimus Studio — Studio Créatif Paris</title>
+  <meta name="description" content="Studio créatif à Paris. Sites web, vidéo, SEO et marketing — assemblés avec la précision d'un objectif de cinéma.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Hanken+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-brand">OPTIMUS STUDIO</div>
+    <div class="loader-track"><div id="loader-bar"></div></div>
+    <div id="loader-percent">0%</div>
+  </div>
+
+  <!-- CINEMATIC HUD — pointer-events:none, whispers "cinema" -->
+  <div id="hud" aria-hidden="true">
+    <span class="hud-corner tl"></span>
+    <span class="hud-corner tr"></span>
+    <span class="hud-corner bl"></span>
+    <span class="hud-corner br"></span>
+    <div class="hud-top-left">
+      <span class="hud-rec">● REC</span>
+      <span id="hud-timecode">00:00:00:00</span>
+    </div>
+    <div class="hud-top-right">
+      <span id="hud-lens">f/1.4 · 50mm</span>
+    </div>
+    <div class="hud-bottom-left">OPTIMUS STUDIO</div>
+  </div>
+
+  <!-- FIXED HEADER -->
+  <header class="site-header">
+    <a class="header-logo" href="#">OPTIMUS</a>
+    <nav>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO — standalone 100vh, solid --bg -->
+  <section class="hero-standalone" id="hero">
+    <div class="hero-content">
+      <span class="hero-label">STUDIO CRÉATIF — PARIS</span>
+      <h1 class="hero-heading">
+        <span class="word">Votre</span>
+        <span class="word">marque,</span>
+        <span class="word">mise</span>
+        <span class="word">au</span>
+        <span class="word">point.</span>
+      </h1>
+      <p class="hero-tagline">Studio créatif à Paris. Sites web, vidéo, SEO et marketing —<br>assemblés avec la précision d'un objectif de cinéma.</p>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-text">SCROLL</span>
+      <span class="scroll-arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- CANVAS — fixed, full viewport, reveals via circle-wipe -->
+  <div id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- DARK OVERLAY — for manifesto beat -->
+  <div id="dark-overlay" aria-hidden="true"></div>
+
+  <!-- MARQUEE — one subtle band, very low opacity -->
+  <div id="marquee-wrap" aria-hidden="true">
+    <div class="marquee-text">OPTIMUS STUDIO · SITES WEB · VIDÉO · SEO · MARKETING · PARIS · OPTIMUS STUDIO · SITES WEB · VIDÉO · SEO · MARKETING · PARIS · OPTIMUS STUDIO · SITES WEB · VIDÉO · SEO · MARKETING · PARIS ·&nbsp;</div>
+  </div>
+
+  <!-- SCROLL CONTAINER — 880vh, drives frame scrub + sections -->
+  <div id="scroll-container">
+
+    <!-- 001 / Web -->
+    <section class="scroll-section align-left"
+             data-enter="8" data-leave="23"
+             data-animation="slide-left" data-lens="f/5.6 · 28mm">
+      <div class="section-inner">
+        <span class="section-label">001 / Web</span>
+        <h2 class="section-heading">Création de<br>site internet</h2>
+        <p class="section-body">Des sites rapides et léchés, pensés pour convertir. Du one-page qui claque au site vitrine complet.</p>
+      </div>
+    </section>
+
+    <!-- 002 / Vidéo -->
+    <section class="scroll-section align-right"
+             data-enter="22" data-leave="37"
+             data-animation="slide-right" data-lens="f/2.8 · 35mm">
+      <div class="section-inner">
+        <span class="section-label">002 / Vidéo</span>
+        <h2 class="section-heading">Montage<br>vidéo</h2>
+        <p class="section-body">Reels, pubs, contenus de marque. Un montage rythmé qui retient l'attention et donne envie.</p>
+      </div>
+    </section>
+
+    <!-- 003 / SEO -->
+    <section class="scroll-section align-left"
+             data-enter="36" data-leave="51"
+             data-animation="fade-up" data-lens="f/8 · 85mm">
+      <div class="section-inner">
+        <span class="section-label">003 / SEO</span>
+        <h2 class="section-heading">Référencement</h2>
+        <p class="section-body">On vous rend visible là où ça compte. Remontez sur Google, captez les bons clients.</p>
+      </div>
+    </section>
+
+    <!-- 004 / Marketing -->
+    <section class="scroll-section align-right"
+             data-enter="50" data-leave="64"
+             data-animation="rotate-in" data-lens="f/11 · 135mm">
+      <div class="section-inner">
+        <span class="section-label">004 / Marketing</span>
+        <h2 class="section-heading">Marketing<br>digital</h2>
+        <p class="section-body">Une stratégie claire, des campagnes qui performent. De l'attention transformée en résultats.</p>
+      </div>
+    </section>
+
+    <!-- MANIFESTO — centered, over dark hold of exploded lens -->
+    <section class="scroll-section section-manifesto"
+             data-enter="63" data-leave="78"
+             data-animation="scale-up" data-lens="f/16 · 200mm">
+      <div class="section-inner">
+        <p class="manifesto-line">La précision d'un objectif,<br>appliquée à votre image.</p>
+      </div>
+    </section>
+
+    <!-- 005 / Contact — data-persist keeps it visible to the end -->
+    <section class="scroll-section align-left" id="contact"
+             data-enter="75" data-leave="100"
+             data-animation="clip-reveal" data-persist="true"
+             data-lens="f/1.4 · 50mm">
+      <div class="section-inner">
+        <span class="section-label">005 / Contact</span>
+        <h2 class="section-heading">Parlons de<br>votre projet.</h2>
+        <p class="section-body">Dites-moi où vous en êtes. Je reviens vers vous très vite.</p>
+        <!-- TODO: Replace contact@optimusstudio.fr with the real email address before going live -->
+        <a href="mailto:contact@optimusstudio.fr" class="cta-button">Démarrer un projet</a>
+      </div>
+    </section>
+
+  </div><!-- /scroll-container -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">OPTIMUS STUDIO</div>
+    <div class="footer-meta">Paris · 2026</div>
+    <div class="footer-services">Sites web — Vidéo — SEO — Marketing</div>
+  </footer>
+
+  <!-- REDUCED-MOTION FALLBACK — shown instead of canvas animation -->
+  <div id="reduced-poster" aria-hidden="true">
+    <img src="frames/frame_0060.webp" alt="Objectif de cinéma — Optimus Studio">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
