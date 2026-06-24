@@ -1,0 +1,16 @@
+# Optimus Studio
+
+> Studio créatif à Paris — sites web, montage vidéo, référencement SEO et marketing digital pour les TPE et PME.
+
+## Services
+
+- **Création de site internet** : Sites rapides et optimisés pour la conversion. One-page, site vitrine ou sur-mesure.
+- **Montage vidéo** : Reels, publicités, contenus de marque pour Instagram, TikTok, YouTube et LinkedIn.
+- **Référencement SEO** : Audit technique, optimisation on-page et stratégie de contenu pour remonter sur Google.
+- **Marketing digital** : Campagnes Google Ads, réseaux sociaux et email marketing orientés résultats.
+
+## Contact
+
+- Email : contact@optimusstudio.fr
+- Localisation : Paris, France
+- Site : https://optimus-studio.netlify.app

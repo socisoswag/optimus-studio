@@ -3,14 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Optimus Studio — Studio Créatif Paris</title>
-  <meta name="description" content="Studio créatif à Paris. Sites web, vidéo, SEO et marketing — assemblés avec la précision d'un objectif de cinéma.">
+
+  <!-- ── CANONICAL ── -->
+  <link rel="canonical" href="https://optimus-studio.netlify.app/">
+
+  <!-- ── TITLE & META DESCRIPTION ── -->
+  <title>Optimus Studio — Studio Créatif Paris | Sites web, Vidéo, SEO</title>
+  <meta name="description" content="Optimus Studio, agence créative à Paris. Création de sites web, montage vidéo, référencement SEO et marketing digital pour les entreprises locales.">
+
+  <!-- ── FAVICON ── -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- ── OPEN GRAPH (partage réseaux sociaux) ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://optimus-studio.netlify.app/">
+  <meta property="og:title"       content="Optimus Studio — Studio Créatif Paris">
+  <meta property="og:description" content="Sites web, vidéo, SEO et marketing digital — assemblés avec la précision d'un objectif de cinéma.">
+  <meta property="og:image"       content="https://optimus-studio.netlify.app/og-image.webp">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"      content="fr_FR">
+  <meta property="og:site_name"   content="Optimus Studio">
+
+  <!-- ── TWITTER / X CARD ── -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Optimus Studio — Studio Créatif Paris">
+  <meta name="twitter:description" content="Sites web, vidéo, SEO et marketing digital — assemblés avec la précision d'un objectif de cinéma.">
+  <meta name="twitter:image"       content="https://optimus-studio.netlify.app/og-image.webp">
+
+  <!-- ── PRECONNECT (performance) ── -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- ── FONTS ── -->
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Hanken+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ── PRELOAD première frame (LCP) ── -->
+  <link rel="preload" as="image" href="frames/frame_0001.webp" fetchpriority="high">
+
+  <!-- ── LLMS.TXT ── -->
+  <link rel="llms" href="/llms.txt">
+
+  <!-- ── STRUCTURED DATA JSON-LD ── -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Optimus Studio",
+      "url": "https://optimus-studio.netlify.app/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Optimus Studio",
+      "description": "Studio créatif à Paris spécialisé en création de sites web, montage vidéo, référencement SEO et marketing digital.",
+      "url": "https://optimus-studio.netlify.app/",
+      "logo": "https://optimus-studio.netlify.app/og-image.webp",
+      "image": "https://optimus-studio.netlify.app/og-image.webp",
+      "telephone": "",
+      "email": "contact@optimusstudio.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Paris"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services créatifs",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Création de site internet" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Montage vidéo" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Référencement SEO" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing digital" } }
+        ]
+      },
+      "sameAs": []
+    }
+  ]
+  </script>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- SKIP LINK accessibilité clavier -->
+  <a href="#scroll-container" class="skip-link">Aller au contenu principal</a>
 
   <!-- LOADER -->
   <div id="loader">
@@ -19,7 +102,7 @@
     <div id="loader-percent">0%</div>
   </div>
 
-  <!-- CINEMATIC HUD — pointer-events:none, whispers "cinema" -->
+  <!-- CINEMATIC HUD — pointer-events:none -->
   <div id="hud" aria-hidden="true">
     <span class="hud-corner tl"></span>
     <span class="hud-corner tr"></span>
@@ -37,14 +120,14 @@
 
   <!-- FIXED HEADER -->
   <header class="site-header">
-    <a class="header-logo" href="#">OPTIMUS</a>
-    <nav>
+    <a class="header-logo" href="/">OPTIMUS</a>
+    <nav aria-label="Navigation principale">
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
   </header>
 
-  <!-- HERO — standalone 100vh, solid --bg -->
-  <section class="hero-standalone" id="hero">
+  <!-- HERO — standalone 100vh -->
+  <section class="hero-standalone" id="hero" aria-label="Optimus Studio — Studio créatif Paris">
     <div class="hero-content">
       <span class="hero-label">STUDIO CRÉATIF — PARIS</span>
       <h1 class="hero-heading">
@@ -62,21 +145,21 @@
     </div>
   </section>
 
-  <!-- CANVAS — fixed, full viewport, reveals via circle-wipe -->
+  <!-- CANVAS -->
   <div id="canvas-wrap">
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas" aria-hidden="true"></canvas>
   </div>
 
-  <!-- DARK OVERLAY — for manifesto beat -->
+  <!-- DARK OVERLAY -->
   <div id="dark-overlay" aria-hidden="true"></div>
 
-  <!-- MARQUEE — one subtle band, very low opacity -->
+  <!-- MARQUEE -->
   <div id="marquee-wrap" aria-hidden="true">
     <div class="marquee-text">OPTIMUS STUDIO · SITES WEB · VIDÉO · SEO · MARKETING · PARIS · OPTIMUS STUDIO · SITES WEB · VIDÉO · SEO · MARKETING · PARIS · OPTIMUS STUDIO · SITES WEB · VIDÉO · SEO · MARKETING · PARIS ·&nbsp;</div>
   </div>
 
-  <!-- SCROLL CONTAINER — 880vh, drives frame scrub + sections -->
-  <div id="scroll-container">
+  <!-- SCROLL CONTAINER -->
+  <main id="scroll-container" tabindex="-1">
 
     <!-- 001 / Web -->
     <section class="scroll-section align-left"
@@ -85,7 +168,7 @@
       <div class="section-inner">
         <span class="section-label">001 / Web</span>
         <h2 class="section-heading">Création de<br>site internet</h2>
-        <p class="section-body">Des sites rapides et léchés, pensés pour convertir. Du one-page qui claque au site vitrine complet.</p>
+        <p class="section-body">Des sites rapides et léchés, pensés pour convertir. Du one-page qui claque au site vitrine complet. Optimisé pour le SEO dès la conception, performant sur mobile et sur desktop.</p>
       </div>
     </section>
 
@@ -96,7 +179,7 @@
       <div class="section-inner">
         <span class="section-label">002 / Vidéo</span>
         <h2 class="section-heading">Montage<br>vidéo</h2>
-        <p class="section-body">Reels, pubs, contenus de marque. Un montage rythmé qui retient l'attention et donne envie.</p>
+        <p class="section-body">Reels, pubs, contenus de marque. Un montage rythmé qui retient l'attention et donne envie. Format vertical ou horizontal, adapté à chaque plateforme : Instagram, TikTok, YouTube.</p>
       </div>
     </section>
 
@@ -107,7 +190,7 @@
       <div class="section-inner">
         <span class="section-label">003 / SEO</span>
         <h2 class="section-heading">Référencement</h2>
-        <p class="section-body">On vous rend visible là où ça compte. Remontez sur Google, captez les bons clients.</p>
+        <p class="section-body">On vous rend visible là où ça compte. Remontez sur Google, captez les bons clients. Audit technique, optimisation on-page et création de contenu — une approche complète et mesurable.</p>
       </div>
     </section>
 
@@ -118,11 +201,11 @@
       <div class="section-inner">
         <span class="section-label">004 / Marketing</span>
         <h2 class="section-heading">Marketing<br>digital</h2>
-        <p class="section-body">Une stratégie claire, des campagnes qui performent. De l'attention transformée en résultats.</p>
+        <p class="section-body">Une stratégie claire, des campagnes qui performent. De l'attention transformée en résultats. Google Ads, réseaux sociaux, email marketing — on mesure et on ajuste en continu.</p>
       </div>
     </section>
 
-    <!-- MANIFESTO — centered, over dark hold of exploded lens -->
+    <!-- MANIFESTO -->
     <section class="scroll-section section-manifesto"
              data-enter="63" data-leave="78"
              data-animation="scale-up" data-lens="f/16 · 200mm">
@@ -131,7 +214,7 @@
       </div>
     </section>
 
-    <!-- 005 / Contact — data-persist keeps it visible to the end -->
+    <!-- 005 / Contact -->
     <section class="scroll-section align-left" id="contact"
              data-enter="75" data-leave="100"
              data-animation="clip-reveal" data-persist="true"
@@ -139,13 +222,13 @@
       <div class="section-inner">
         <span class="section-label">005 / Contact</span>
         <h2 class="section-heading">Parlons de<br>votre projet.</h2>
-        <p class="section-body">Dites-moi où vous en êtes. Je reviens vers vous très vite.</p>
+        <p class="section-body">Dites-moi où vous en êtes. Je reviens vers vous très vite. Premier échange gratuit, sans engagement.</p>
         <!-- TODO: Replace contact@optimusstudio.fr with the real email address before going live -->
         <a href="mailto:contact@optimusstudio.fr" class="cta-button">Démarrer un projet</a>
       </div>
     </section>
 
-  </div><!-- /scroll-container -->
+  </main><!-- /scroll-container -->
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -154,9 +237,9 @@
     <div class="footer-services">Sites web — Vidéo — SEO — Marketing</div>
   </footer>
 
-  <!-- REDUCED-MOTION FALLBACK — shown instead of canvas animation -->
+  <!-- REDUCED-MOTION FALLBACK -->
   <div id="reduced-poster" aria-hidden="true">
-    <img src="frames/frame_0060.webp" alt="Objectif de cinéma — Optimus Studio">
+    <img src="frames/frame_0060.webp" alt="Objectif de cinéma — Optimus Studio" width="1920" height="913">
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
