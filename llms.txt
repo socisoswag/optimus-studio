@@ -13,4 +13,4 @@
 
 - Email : contact@optimusstudio.fr
 - Localisation : Paris, France
-- Site : https://optimus-studio.netlify.app
+- Site : https://optimusstudio.fr
