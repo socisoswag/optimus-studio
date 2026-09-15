@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ALMYR — Parfums rares | Oud, Musc, Ambre</title>
+  <meta name="description" content="ALMYR, maison de parfums rares. Oud, musc, ambre et myrrhe en extrait haute concentration. Paris · Dubaï.">
+  <meta name="theme-color" content="#07070A">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="ALMYR — Parfums rares">
+  <meta property="og:description" content="On vous reconnaît avant de vous voir. Oud, musc, ambre — en extrait haute concentration.">
+  <meta property="og:locale"      content="fr_FR">
+  <meta property="og:site_name"   content="ALMYR">
+
+  <!-- Polices et librairies auto-hébergées : zéro dépendance externe -->
+  <link rel="preload" as="font" type="font/woff2" href="css/fonts/cormorant-garamond-latin-300-normal.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="css/fonts/jost-latin-300-normal.woff2" crossorigin>
+
+  <link rel="preload" as="image" href="frames/frame_0001.webp" fetchpriority="high">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "ALMYR",
+    "description": "Maison de parfums rares — oud, musc, ambre et myrrhe en extrait haute concentration.",
+    "slogan": "On vous reconnaît avant de vous voir."
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ─────────── LOADER ─────────── -->
+  <div id="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <div class="loader-mark">ALMYR</div>
+      <div class="loader-track"><span id="loader-bar"></span></div>
+      <div class="loader-meta">
+        <span>Composition</span>
+        <span id="loader-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────── CANVAS ─────────── -->
+  <div id="canvas-wrap">
+    <canvas id="canvas" aria-hidden="true"></canvas>
+    <div id="grain" aria-hidden="true"></div>
+    <div id="vignette" aria-hidden="true"></div>
+  </div>
+  <div id="dark-overlay" aria-hidden="true"></div>
+
+  <!-- ─────────── HUD ─────────── -->
+  <div id="hud" aria-hidden="true">
+    <span id="hud-chapter">CHAPITRE 01</span>
+    <span class="hud-sep"></span>
+    <span id="hud-label">LA MATIÈRE</span>
+  </div>
+
+  <!-- ─────────── HERO ─────────── -->
+  <header class="hero" id="hero">
+    <div class="hero-poster" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Paris · Dubaï</p>
+      <h1 class="hero-mark">ALMYR</h1>
+      <p class="hero-rule" aria-hidden="true"></p>
+      <p class="hero-tagline">On vous reconnaît<br>avant de vous voir.</p>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Défiler</span>
+      <span class="hero-scroll-line"></span>
+    </div>
+  </header>
+
+  <!-- ─────────── SCROLL SEQUENCE ─────────── -->
+  <main id="scroll-container">
+
+    <section class="scroll-section align-left" data-enter="8" data-leave="22"
+             data-chapter="CHAPITRE 01" data-label="LA MATIÈRE">
+      <p class="section-index">01</p>
+      <p class="section-eyebrow">La matière</p>
+      <h2 class="section-heading">Oud, musc,<br>ambre gris.</h2>
+      <p class="section-body">Des matières que l'on ne fabrique pas. Le bois d'agar met des décennies à se former dans la blessure de l'arbre. La myrrhe se récolte à la lame, goutte à goutte. Nous ne composons qu'avec ce que le temps a déjà travaillé.</p>
+    </section>
+
+    <section class="scroll-section align-right" data-enter="26" data-leave="40"
+             data-chapter="CHAPITRE 02" data-label="LA CONCENTRATION">
+      <p class="section-index">02</p>
+      <p class="section-eyebrow">La concentration</p>
+      <h2 class="section-heading">Un extrait.<br>Pas une eau.</h2>
+      <p class="section-body">Une eau de toilette plafonne autour de 8 % d'essence. Nos concentrations montent jusqu'à 30. C'est toute la raison pour laquelle un seul geste suffit le matin — et pourquoi il est encore là le lendemain.</p>
+    </section>
+
+    <section class="scroll-section align-left" data-enter="44" data-leave="58"
+             data-chapter="CHAPITRE 03" data-label="LE FLACON">
+      <p class="section-index">03</p>
+      <p class="section-eyebrow">Le flacon</p>
+      <h2 class="section-heading">Ciselé,<br>pas moulé.</h2>
+      <p class="section-body">Le bouchon est travaillé comme une pièce d'orfèvrerie : gravure en creux, arêtes reprises à la main, poids réel dans la paume. Un flacon d'ALMYR se referme avec un bruit qu'on reconnaît les yeux fermés.</p>
+    </section>
+
+    <section class="scroll-section section-manifesto" data-enter="62" data-leave="74"
+             data-chapter="MANIFESTE" data-label="ALMYR">
+      <p class="manifesto-line">Un parfum n'est pas</p>
+      <p class="manifesto-line">ce que vous portez.</p>
+      <p class="manifesto-line manifesto-accent">C'est ce qu'on retient de vous.</p>
+    </section>
+
+    <section class="scroll-section align-right" data-enter="78" data-leave="88"
+             data-chapter="CHAPITRE 04" data-label="LE SILLAGE">
+      <p class="section-index">04</p>
+      <p class="section-eyebrow">Le sillage</p>
+      <h2 class="section-heading">Ce qui reste<br>quand vous partez.</h2>
+      <p class="section-body">Le sillage arrive avant vous dans une pièce et y demeure après votre départ. C'est la seule chose qu'un parfum doit réussir. Tout le reste n'est que flaconnage.</p>
+    </section>
+
+    <section class="scroll-section align-center" id="contact" data-enter="92" data-leave="100"
+             data-chapter="ALMYR" data-label="LA MAISON">
+      <p class="section-eyebrow">La maison</p>
+      <h2 class="section-heading heading-lg">ALMYR</h2>
+      <p class="section-body section-body-center">La première collection sera dévoilée prochainement. Pour être prévenu en avant-première, écrivez-nous.</p>
+      <a class="cta-button" href="mailto:contact@almyr.com">Entrer dans la maison</a>
+      <p class="contact-meta">contact@almyr.com · Paris · Dubaï</p>
+    </section>
+
+  </main>
+
+  <!-- ─────────── MARQUEE ─────────── -->
+  <div id="marquee-wrap" aria-hidden="true">
+    <div class="marquee-text">OUD · MUSC · AMBRE GRIS · MYRRHE · SAFRAN · BOIS DE SANTAL · ENCENS · OUD · MUSC · AMBRE GRIS · MYRRHE · SAFRAN · BOIS DE SANTAL · ENCENS ·&nbsp;</div>
+  </div>
+
+  <footer id="footer">
+    <span>ALMYR</span>
+    <span>© 2026 — Tous droits réservés</span>
+  </footer>
+
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
