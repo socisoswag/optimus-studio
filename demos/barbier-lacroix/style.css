@@ -1,0 +1,291 @@
+/* =========================================================
+   Barbier Lacroix - démo Optimus Studio
+   Thème verrouillé : clair. Monochrome froid + un bleu électrique.
+   Angles vifs partout (rayon 0), comme une lame.
+   Délibérément à l'opposé du sombre + doré des sites de barbier.
+   ========================================================= */
+
+:root {
+  --ground:     #EDEFF1;
+  --ground-2:   #E2E6EA;
+  --ink:        #15181B;
+  --ink-dim:    #545C63;
+  --accent:     #2B4FD1;
+  --accent-ink: #F7F9FC;
+  --line:       rgba(21, 24, 27, 0.16);
+
+  --display: 'Archivo', system-ui, sans-serif;
+  --body:    'Karla', system-ui, sans-serif;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --gut: clamp(1.25rem, 5vw, 5rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { color-scheme: light; scroll-behavior: smooth; }
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+[hidden] { display: none !important; }
+a { color: inherit; }
+
+h1, h2, h3, .btn, .nav__brand, .presta__prix, dt {
+  font-family: var(--display);
+}
+
+*:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.skip {
+  position: absolute; top: -100%; left: 1rem; z-index: 100;
+  padding: .6rem 1.2rem; background: var(--accent); color: var(--accent-ink);
+  font-family: var(--display); font-size: .85rem; text-decoration: none;
+}
+.skip:focus { top: 1rem; }
+
+/* ─── Boutons : rayon 0, comme tout le reste ─── */
+.btn {
+  display: inline-block;
+  padding: .8rem 1.5rem;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  transition: transform .16s var(--ease), background .16s var(--ease);
+}
+.btn:hover { background: #1F3FB4; border-color: #1F3FB4; }
+.btn:active { transform: translateY(1px); }
+.btn--sm { padding: .5rem 1rem; font-size: .85rem; }
+.btn--lg { padding: 1rem 2rem; font-size: 1rem; }
+
+.link-arrow {
+  font-family: var(--display);
+  font-size: .95rem; font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2px;
+}
+.link-arrow::after { content: " \2192"; }
+
+.lede { color: var(--ink-dim); font-size: 1.125rem; max-width: 42ch; }
+
+/* ─── Navigation ─── */
+.nav {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 50;
+  height: 70px;
+  background: var(--ground);
+  border-bottom: 2px solid var(--ink);
+}
+.nav__in {
+  height: 100%; max-width: 1400px; margin: 0 auto;
+  padding: 0 var(--gut);
+  display: flex; align-items: center; gap: 2rem;
+}
+.nav__brand {
+  font-size: 1.05rem; font-weight: 800;
+  letter-spacing: -0.01em; text-decoration: none;
+  margin-right: auto; text-transform: uppercase;
+}
+.nav__brand span { color: var(--accent); margin-left: .35em; }
+.nav__links { display: flex; gap: 1.75rem; }
+.nav__links a {
+  font-family: var(--display);
+  font-size: .92rem; font-weight: 500;
+  color: var(--ink-dim); text-decoration: none;
+}
+.nav__links a:hover { color: var(--accent); }
+
+/* ─── Hero pleine largeur ─── */
+.hero { position: relative; }
+.hero__media { aspect-ratio: 16 / 9; max-height: 74vh; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; }
+.hero::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(21,24,27,.90) 0%, rgba(21,24,27,.35) 48%, rgba(21,24,27,.05) 100%);
+  pointer-events: none;
+}
+.hero__copy {
+  position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+  max-width: 1400px; margin: 0 auto;
+  padding: 0 var(--gut) clamp(2rem, 5vw, 4rem);
+  color: var(--ground);
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800; line-height: 1.02; letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.hero .lede { color: #C9D0D6; }
+.hero__cta {
+  display: flex; align-items: center; gap: 1.5rem;
+  flex-wrap: wrap; margin-top: 1.75rem;
+}
+.hero .link-arrow { color: var(--ground); }
+
+/* ─── Tarifs ─── */
+.tarifs {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(3.5rem, 8vw, 7rem) var(--gut);
+}
+.tarifs h2 {
+  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+  font-weight: 800; text-transform: uppercase; letter-spacing: -0.02em;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+/* Nombre de colonnes figé, jamais auto-fit : il y a exactement six
+   prestations, donc 3 x 2 puis 2 x 3 puis 1 x 6. En auto-fit, un écran
+   large produisait quatre colonnes et laissait deux cellules vides que
+   le fond noir venait remplir. */
+.tarifs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--ink);
+  border: 2px solid var(--ink);
+}
+
+@media (max-width: 1100px) {
+  .tarifs__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .tarifs__grid { grid-template-columns: 1fr; }
+}
+.presta {
+  background: var(--ground);
+  padding: clamp(1.5rem, 2.6vw, 2.25rem);
+}
+.presta__prix {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800; color: var(--accent);
+  line-height: 1; margin-bottom: .75rem;
+  font-variant-numeric: tabular-nums;
+}
+.presta h3 {
+  font-size: 1.1rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .02em;
+  margin-bottom: .5rem;
+}
+.presta p { color: var(--ink-dim); font-size: .98rem; }
+.presta--note { background: var(--ground-2); }
+
+/* ─── L'équipe ─── */
+.equipe { background: var(--ink); color: var(--ground); }
+.equipe__in {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(3.5rem, 7vw, 6rem) var(--gut);
+  display: grid; grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(2rem, 5vw, 5rem); align-items: center;
+}
+.equipe h2 {
+  font-size: clamp(1.75rem, 3.6vw, 3rem);
+  font-weight: 800; text-transform: uppercase;
+  line-height: 1.05; letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+.equipe p { color: #AEB6BD; max-width: 52ch; }
+.equipe__media { aspect-ratio: 4 / 5; }
+.equipe__media img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ─── Avis ─── */
+.avis {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) var(--gut);
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+}
+.avis blockquote {
+  font-family: var(--display);
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  font-weight: 500; line-height: 1.4;
+  border-left: 4px solid var(--accent);
+  padding-left: 1.25rem;
+  margin-bottom: .85rem;
+}
+.avis figcaption { color: var(--ink-dim); font-size: .92rem; padding-left: 1.5rem; }
+
+/* ─── Venir ─── */
+.venir { background: var(--ground-2); border-top: 2px solid var(--ink); }
+.venir__in {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) var(--gut);
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+}
+.venir h2 {
+  font-size: 1.05rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .12em;
+  color: var(--accent); margin-bottom: 1.25rem;
+}
+.horaires { display: grid; gap: .6rem; }
+.horaires > div {
+  display: flex; justify-content: space-between; gap: 1.5rem;
+  padding-bottom: .6rem; border-bottom: 1px solid var(--line);
+}
+.horaires dt { font-weight: 700; font-size: .98rem; }
+.horaires dd { color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+.horaires .ferme dd { color: var(--ink-dim); font-style: italic; }
+.adresse { font-size: 1.2rem; font-weight: 500; margin-bottom: .75rem; }
+.venir p { color: var(--ink-dim); }
+.venir .btn { margin-top: 1.5rem; }
+
+/* ─── Footer ─── */
+.foot { background: var(--ink); color: #AEB6BD; }
+.foot__in {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 3.5rem) var(--gut);
+  display: grid; gap: .5rem; font-size: .95rem;
+}
+.foot__brand {
+  font-family: var(--display); font-weight: 800;
+  text-transform: uppercase; color: var(--ground);
+  font-size: 1.05rem;
+}
+.foot__demo {
+  margin-top: 1.25rem; padding-top: 1.25rem;
+  border-top: 1px solid rgba(237, 239, 241, .18);
+  font-size: .85rem;
+}
+.foot__demo a { color: var(--ground); }
+
+/* ─── Révélations ─── */
+.reveal {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .65s var(--ease), transform .65s var(--ease);
+}
+.reveal.is-in { opacity: 1; transform: none; }
+
+/* ─── Mobile ─── */
+@media (max-width: 860px) {
+  .hero__media { aspect-ratio: 4 / 5; max-height: none; }
+  .equipe__in { grid-template-columns: 1fr; }
+  .equipe__media { order: -1; aspect-ratio: 3 / 2; }
+  .avis { grid-template-columns: 1fr; }
+  .venir__in { grid-template-columns: 1fr; }
+  .nav__links { display: none; }
+}
+
+/* ─── Mouvement réduit ─── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

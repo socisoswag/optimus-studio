@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbier Lacroix · Coupe et rasage à Paris 11e</title>
+<meta name="description" content="Barbier Lacroix, salon de coupe et rasage traditionnel à Paris 11e. Sans rendez-vous du mardi au samedi. Coupe 28 €, rasage au coupe-chou 35 €.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Barbier Lacroix · Coupe et rasage à Paris 11e">
+<meta property="og:description" content="Coupe et rasage traditionnel. Sans rendez-vous du mardi au samedi.">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Barbier Lacroix",
+  "priceRange": "€€",
+  "telephone": "+33 1 43 57 22 84",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "62 rue Saint-Maur",
+    "addressLocality": "Paris",
+    "postalCode": "75011",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "19:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="nav">
+  <div class="nav__in">
+    <a class="nav__brand" href="#haut">Barbier<span>Lacroix</span></a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#tarifs">Tarifs</a>
+      <a href="#equipe">L'équipe</a>
+      <a href="#venir">Venir</a>
+    </nav>
+    <a class="btn btn--sm" href="tel:+33143572284">01 43 57 22 84</a>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <!-- Hero pleine largeur, texte en surimpression basse -->
+  <section class="hero" id="haut">
+    <div class="hero__media">
+      <!-- REMPLACER : photo du salon ou d'une coupe, 2400x1400 -->
+      <img src="https://picsum.photos/seed/barbier-lacroix-salon/2400/1400"
+           alt="Le salon Barbier Lacroix, rue Saint-Maur" width="2400" height="1400" fetchpriority="high">
+    </div>
+    <div class="hero__copy">
+      <h1>Coupe nette,<br>rasage au coupe-chou.</h1>
+      <p class="lede">Sans rendez-vous, du mardi au samedi, rue Saint-Maur.</p>
+      <div class="hero__cta">
+        <a class="btn btn--lg" href="tel:+33143572284">Appeler le salon</a>
+        <a class="link-arrow" href="#tarifs">Voir les tarifs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarifs en grille de cartes : jamais un tableau à filets -->
+  <section class="tarifs" id="tarifs">
+    <h2 class="reveal">Prestations</h2>
+
+    <div class="tarifs__grid">
+      <article class="presta reveal">
+        <p class="presta__prix">28 €</p>
+        <h3>Coupe</h3>
+        <p>Ciseaux ou tondeuse, shampoing et coiffage compris. Comptez 30 minutes.</p>
+      </article>
+
+      <article class="presta reveal">
+        <p class="presta__prix">35 €</p>
+        <h3>Rasage traditionnel</h3>
+        <p>Serviette chaude, coupe-chou, baume d'après-rasage. Comptez 40 minutes.</p>
+      </article>
+
+      <article class="presta reveal">
+        <p class="presta__prix">18 €</p>
+        <h3>Taille de barbe</h3>
+        <p>Mise en forme au rasoir et aux ciseaux, contours nets.</p>
+      </article>
+
+      <article class="presta reveal">
+        <p class="presta__prix">42 €</p>
+        <h3>Coupe et barbe</h3>
+        <p>Les deux dans la foulée. Comptez une heure.</p>
+      </article>
+
+      <article class="presta reveal">
+        <p class="presta__prix">20 €</p>
+        <h3>Coupe enfant</h3>
+        <p>Jusqu'à 12 ans. Le samedi matin, venez tôt.</p>
+      </article>
+
+      <article class="presta presta--note reveal">
+        <h3>Paiement</h3>
+        <p>Espèces et carte à partir de 10 €. Pas de réservation en ligne, on prend dans l'ordre d'arrivée.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- L'équipe : bande horizontale, famille de mise en page différente -->
+  <section class="equipe" id="equipe">
+    <div class="equipe__in">
+      <div class="equipe__copy reveal">
+        <h2>Deux fauteuils, deux mains.</h2>
+        <p>
+          Samir Lacroix a ouvert rue Saint-Maur en 2014, après onze ans passés
+          chez un barbier de la Goutte d'Or. Théo l'a rejoint en 2021. Ils
+          travaillent tous les deux au rasoir, ce qui devient rare.
+        </p>
+      </div>
+      <div class="equipe__media reveal">
+        <!-- REMPLACER : photo des barbiers au travail, 1200x1500 -->
+        <img src="https://picsum.photos/seed/barbier-lacroix-equipe/1200/1500"
+             alt="Samir et Théo au travail" width="1200" height="1500" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis -->
+  <section class="avis" aria-label="Avis de clients">
+    <figure class="reveal">
+      <blockquote>Le seul endroit du quartier où on ne me demande pas quatre fois ce que je veux.</blockquote>
+      <figcaption>Yanis Cherif, client du salon</figcaption>
+    </figure>
+    <figure class="reveal">
+      <blockquote>Venez avant 11h le samedi, sinon c'est une heure d'attente. Ça vaut le coup quand même.</blockquote>
+      <figcaption>Paul Ménard, habitué depuis 2018</figcaption>
+    </figure>
+  </section>
+
+  <!-- Venir : horaires et adresse, l'information la plus consultée -->
+  <section class="venir" id="venir">
+    <div class="venir__in">
+      <div class="venir__bloc reveal">
+        <h2>Horaires</h2>
+        <dl class="horaires">
+          <div><dt>Mardi au vendredi</dt><dd>10h00 à 19h30</dd></div>
+          <div><dt>Samedi</dt><dd>9h00 à 18h00</dd></div>
+          <div class="ferme"><dt>Dimanche et lundi</dt><dd>Fermé</dd></div>
+        </dl>
+      </div>
+
+      <div class="venir__bloc reveal">
+        <h2>Adresse</h2>
+        <p class="adresse">
+          62 rue Saint-Maur<br>
+          75011 Paris
+        </p>
+        <p>Métro Rue Saint-Maur, ligne 3. Deux minutes à pied.</p>
+        <a class="btn" href="tel:+33143572284">Appeler le salon</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__in">
+    <p class="foot__brand">Barbier Lacroix</p>
+    <p>62 rue Saint-Maur, 75011 Paris · 01 43 57 22 84</p>
+    <p class="foot__demo">
+      Site de démonstration. Établissement fictif, contenus illustratifs.
+      Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
