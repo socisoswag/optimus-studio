@@ -321,7 +321,37 @@ body {
   padding-right: 8vw;
 }
 
-.section-inner { max-width: 38vw; }
+.section-inner {
+  max-width: 38vw;
+  position: relative;
+}
+
+/* Voile local sous le texte.
+   Le canvas de l'objectif passe derrière les sections 001 et 003, et le
+   corps de texte devenait illisible sur les lentilles claires. Plutôt
+   qu'un bloc opaque qui casserait le rendu cinéma, on pose une ellipse
+   dégradée, plus large que le texte et sans bord visible : ça lit comme
+   un vignettage, pas comme une boîte.
+
+   #scroll-container crée un contexte d'empilement (position:relative +
+   z-index:3), donc un z-index négatif place ce voile sous le texte tout
+   en restant au-dessus du canvas (z-index:1). */
+.section-inner::before {
+  content: "";
+  position: absolute;
+  inset: -16% -24%;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 62% 58% at 50% 50%,
+    rgba(10, 12, 13, 0.90) 0%,
+    rgba(10, 12, 13, 0.74) 46%,
+    rgba(10, 12, 13, 0)    78%
+  );
+}
+
+/* Filet de sécurité là où le voile s'atténue le plus. */
+.section-body { text-shadow: 0 1px 14px rgba(10, 12, 13, 0.75); }
 
 .section-label {
   display: block;
@@ -446,6 +476,10 @@ body {
     max-width: 600px;
   }
 
+  /* Le canvas est masqué dans ce mode : plus rien à voiler. */
+  .section-inner::before { display: none; }
+  .section-body { text-shadow: none; }
+
   .section-manifesto {
     padding: 5rem 8vw;
     text-align: left;
@@ -477,6 +511,9 @@ body {
     background: rgba(10, 12, 13, 0.82);
     padding: 2rem 1.5rem;
   }
+
+  /* Le fond plein suffit ici, le voile ferait double emploi. */
+  .section-inner::before { display: none; }
 
   .section-heading { font-size: clamp(1.9rem, 8vw, 3rem); }
 

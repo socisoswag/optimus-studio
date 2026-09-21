@@ -1,3 +1,9 @@
+# Site statique : rien à compiler, on publie la racine telle quelle.
+# Indispensable pour un déploiement branché sur GitHub, sinon Netlify
+# retombe sur les réglages saisis à la main dans son interface.
+[build]
+  publish = "."
+
 [[headers]]
   for = "/*"
   [headers.values]

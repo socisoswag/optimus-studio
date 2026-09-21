@@ -3,3 +3,6 @@ node_modules/
 skills/
 *.png
 *.jpg
+
+# État local de la CLI Netlify, ne doit pas être versionné
+.netlify/
