@@ -6,3 +6,6 @@ skills/
 
 # État local de la CLI Netlify, ne doit pas être versionné
 .netlify/
+
+# Sortie générée par graphify
+graphify-out/
