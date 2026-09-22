@@ -172,6 +172,9 @@ body {
   text-decoration: none;
 }
 
+/* L'en-tête porte désormais deux liens : sans gap ils se collent. */
+.site-header nav { display: flex; gap: 1.6rem; align-items: center; }
+
 .nav-link {
   font-family: var(--font-mono);
   font-size: 0.7rem;

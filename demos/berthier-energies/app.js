@@ -39,6 +39,30 @@
     return;
   }
 
+  /* Filet de sécurité : GSAP et Lenis viennent d'un CDN. S'ils ne
+     répondent pas, on n'anime rien mais le site reste lisible — plutôt
+     qu'un écran de chargement figé à vie. */
+  function degrader() {
+    if (loader) loader.style.display = 'none';
+    if (wrap) wrap.style.display = 'none';
+    if (hud) hud.style.display = 'none';
+    scroller.style.height = 'auto';
+    scroller.style.padding = '6rem 0';
+    sections.forEach(function (s) {
+      s.style.position = 'static';
+      s.style.transform = 'none';
+      s.style.minHeight = '0';
+      s.querySelectorAll('.sec__no, h2, p, .sec__cta, .manifesto').forEach(function (el) {
+        el.style.opacity = '1';
+      });
+    });
+  }
+
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+    degrader();
+    return;
+  }
+
   var ctx = canvas.getContext('2d');
   var frames = new Array(FRAME_COUNT);
   var loaded = 0;
