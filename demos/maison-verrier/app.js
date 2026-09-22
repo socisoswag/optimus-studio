@@ -7,6 +7,21 @@
 
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ─── En-tête : fond plein dès qu'on quitte le hero ───
+     Observé via IntersectionObserver sur une sentinelle, jamais avec
+     un écouteur scroll. */
+  var nav = document.getElementById('nav');
+  if (nav && 'IntersectionObserver' in window) {
+    var sentinelle = document.createElement('div');
+    sentinelle.setAttribute('aria-hidden', 'true');
+    sentinelle.style.cssText = 'position:absolute;top:80px;height:1px;width:1px;';
+    document.body.prepend(sentinelle);
+
+    new IntersectionObserver(function (e) {
+      nav.classList.toggle('is-stuck', !e[0].isIntersecting);
+    }).observe(sentinelle);
+  }
+
   /* ─── Révélations ─── */
   var targets = document.querySelectorAll('.reveal');
 

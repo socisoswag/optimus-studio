@@ -32,8 +32,8 @@
       slug: 'maison-verrier',
       nom: 'Maison Verrier',
       secteur: 'resto',
-      desc: 'Restaurant. Carte hebdomadaire, horaires et réservation, sur une grille asymétrique.',
-      tags: ['Vitrine', 'Restaurant', 'Réservation'],
+      desc: 'Restaurant. Structure pilotée par la photographie : bandes pleine largeur et sections de texte, thème sombre du début à la fin.',
+      tags: ['Photo pleine largeur', 'Restaurant', 'Réservation'],
       url: '/demos/maison-verrier/'
     },
     {

@@ -3,17 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Maison Verrier · Cuisine de marché au feu de bois</title>
-<meta name="description" content="Maison Verrier, cuisine de marché au feu de bois. Carte courte renouvelée chaque semaine, service midi et soir. Réservation en ligne.">
+<title>Maison Verrier · Cuisine de marché au feu de bois, Lyon 1er</title>
+<meta name="description" content="Maison Verrier, cuisine de marché au feu de bois à Lyon 1er. Carte courte renouvelée chaque semaine, service midi et soir. Réservation en ligne.">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Maison Verrier · Cuisine de marché au feu de bois">
 <meta property="og:description" content="Carte courte renouvelée chaque semaine avec les producteurs du marché. Service midi et soir.">
+<meta property="og:image" content="img/hero.webp">
 <meta property="og:locale" content="fr_FR">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
 <link rel="stylesheet" href="style.css">
 
 <script type="application/ld+json">
@@ -24,6 +26,7 @@
   "servesCuisine": "Française",
   "priceRange": "€€",
   "telephone": "+33 4 78 42 19 07",
+  "image": "img/hero.webp",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "14 rue des Capucins",
@@ -48,69 +51,87 @@
     <nav class="nav__links" aria-label="Navigation principale">
       <a href="#carte">La carte</a>
       <a href="#maison">La maison</a>
-      <a href="#infos">Infos</a>
+      <a href="#venir">Venir</a>
     </nav>
-    <a class="btn btn--sm" href="#reserver">Réserver</a>
+    <a class="btn btn--ghost btn--sm" href="#reserver">Réserver</a>
   </div>
 </header>
 
 <main id="contenu">
 
-  <!-- Hero : split asymétrique, texte à gauche, visuel plein-bleed à droite -->
-  <section class="hero" id="haut">
-    <!-- Pas de .reveal ici : le contenu au-dessus de la ligne de flottaison
-         ne doit jamais dépendre de JavaScript pour être visible. -->
-    <div class="hero__copy">
-      <p class="eyebrow">Lyon 1er, depuis 1978</p>
-      <h1>Une cuisine de marché,<br>au feu de bois.</h1>
-      <p class="lede">
-        Une carte courte, dessinée chaque semaine avec les producteurs du marché
-        Saint-Antoine. Service midi et soir.
-      </p>
-      <div class="hero__cta">
+  <!-- ─── HERO pleine largeur. L'assiette occupe la droite de la photo,
+           le titre se pose donc à gauche, sur le bois sombre. ─── -->
+  <section class="bleed bleed--hero bleed--left" id="haut">
+    <img src="img/hero.webp" alt="Pigeonneau rôti au sarment, navets glacés, sur une table de chêne" width="1920" height="1071" fetchpriority="high">
+    <div class="bleed__in">
+      <p class="eyebrow">Lyon 1er · depuis 1978</p>
+      <h1>Une cuisine<br>de marché</h1>
+      <p class="lede">Au feu de bois, midi et soir, rue des Capucins.</p>
+      <div class="cta">
         <a class="btn" href="#reserver">Réserver une table</a>
-        <a class="link-arrow" href="#carte">Voir la carte</a>
+        <a class="link" href="#carte">Voir la carte</a>
       </div>
-    </div>
-    <div class="hero__media">
-      <!-- REMPLACER : photo de la salle ou d'un plat signature du client, 1400x1800 -->
-      <img src="https://picsum.photos/seed/maison-verrier-salle-feu/1400/1800"
-           alt="La salle de la Maison Verrier en fin de service" width="1400" height="1800">
     </div>
   </section>
 
-  <!-- Bandeau utilitaire : ce que cherche 80% du trafic d'un restaurant -->
-  <section class="strip" id="infos" aria-label="Informations pratiques">
+  <!-- ─── Bandeau utilitaire ─── -->
+  <section class="strip" id="venir" aria-label="Informations pratiques">
     <div class="strip__item">
       <h2>Horaires</h2>
-      <p>Mardi au samedi<br>12h00 à 14h00 et 19h00 à 22h00</p>
+      <p>Mardi au samedi<br>12h00 à 14h00 · 19h00 à 22h00</p>
     </div>
     <div class="strip__item">
       <h2>Adresse</h2>
       <p>14 rue des Capucins<br>69001 Lyon</p>
     </div>
     <div class="strip__item">
-      <h2>Téléphone</h2>
-      <p><a href="tel:+33478421907">04 78 42 19 07</a><br>Service réservations</p>
+      <h2>Réservations</h2>
+      <p><a href="tel:+33478421907">04 78 42 19 07</a><br>Du mardi au samedi</p>
     </div>
   </section>
 
-  <!-- La carte : grille asymétrique, un plat mis en avant + deux en appui -->
+  <!-- ─── Texte seul, aligné à gauche : respiration entre deux photos ─── -->
+  <section class="prose" id="maison">
+    <div class="prose__in reveal">
+      <p class="eyebrow">La maison</p>
+      <h2>Quarante-six couverts,<br>une seule cuisine.</h2>
+      <p>
+        Loïc Verrier a repris la maison de son père en 2011. Il a gardé le
+        fourneau à bois, la salle en L et l'habitude d'aller au marché
+        Saint-Antoine tous les matins. Le reste a changé.
+      </p>
+      <p>
+        La carte tient sur une page et se réécrit le mardi, selon ce que la
+        criée et les maraîchers laissent. Il n'y a pas de menu fixe, pas de
+        plat qui reste toute l'année.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── Bande photo : la salle. Texte centré bas. ─── -->
+  <section class="bleed bleed--band bleed--bottom">
+    <img src="img/salle.webp" alt="La salle de la Maison Verrier en soirée" width="1920" height="1071" loading="lazy">
+    <div class="bleed__in">
+      <h2>Le soir, à la bougie</h2>
+      <p class="lede">La salle se remplit à partir de dix-neuf heures trente. Mieux vaut appeler.</p>
+      <a class="btn" href="#reserver">Réserver</a>
+    </div>
+  </section>
+
+  <!-- ─── La carte : grille asymétrique, un plat mis en avant ─── -->
   <section class="carte" id="carte">
     <div class="carte__head reveal">
-      <h2>La carte de la semaine</h2>
-      <p class="lede">
-        Elle change le mardi, selon ce que la criée et les maraîchers nous laissent.
-      </p>
+      <p class="eyebrow">Cette semaine</p>
+      <h2>La carte</h2>
     </div>
 
     <div class="carte__grid">
       <article class="plat plat--lead reveal">
-        <p class="plat__cat">Le plat de la semaine</p>
-        <h3>Pigeonneau rôti au sarment, navets glacés au miel de châtaignier</h3>
+        <p class="plat__cat">Le plat</p>
+        <h3>Pigeonneau rôti au sarment,<br>navets glacés au miel de châtaignier</h3>
         <p>
-          Cuisson longue sur la braise, servi rosé. Le jus est monté au vinaigre
-          de Banyuls, les navets viennent de Charly.
+          Cuisson longue sur la braise, servi rosé. Le jus est monté au
+          vinaigre de Banyuls, les navets viennent de Charly.
         </p>
         <p class="plat__prix">34 €</p>
       </article>
@@ -128,51 +149,58 @@
       </article>
     </div>
 
-    <div class="carte__foot reveal">
-      <p>Menu déjeuner en semaine, entrée, plat et dessert, 26 €.</p>
-      <a class="link-arrow" href="#reserver">Réserver une table</a>
-    </div>
+    <p class="carte__note reveal">Menu déjeuner en semaine, entrée, plat et dessert, 26 €.</p>
   </section>
 
-  <!-- Pleine largeur : l'ambiance, un seul message -->
-  <section class="maison" id="maison">
-    <div class="maison__media">
-      <!-- REMPLACER : photo d'ambiance du client, 2000x1200 -->
-      <img src="https://picsum.photos/seed/maison-verrier-comptoir-soir/2000/1200"
-           alt="Le comptoir de la Maison Verrier en soirée" width="2000" height="1200" loading="lazy">
-    </div>
-    <div class="maison__copy reveal">
-      <h2>Quarante-six couverts, une seule cuisine ouverte.</h2>
-      <p>
-        Loïc Verrier a repris la maison de son père en 2011. Il a gardé le fourneau
-        à bois, la salle en L et l'habitude d'aller au marché tous les matins.
-        Le reste a changé.
+  <!-- ─── Bande photo : le feu. Texte à droite. ─── -->
+  <section class="bleed bleed--band bleed--right">
+    <img src="img/feu.webp" alt="Le foyer à bois de la cuisine" width="1920" height="1071" loading="lazy">
+    <div class="bleed__in">
+      <h2>Tout passe<br>par la braise</h2>
+      <p class="lede">
+        Le foyer est allumé à dix heures et ne s'éteint qu'à la fermeture.
+        Sarment de vigne et chêne, rien d'autre.
       </p>
     </div>
   </section>
 
-  <!-- Avis : deux voix, courtes -->
+  <!-- ─── Produit : photo et texte côte à côte ─── -->
+  <section class="split">
+    <div class="split__media reveal">
+      <img src="img/detail.webp" alt="Navets nouveaux et laurier sur une ardoise" width="1100" height="900" loading="lazy">
+    </div>
+    <div class="split__copy reveal">
+      <p class="eyebrow">Les producteurs</p>
+      <h2>Ce qui arrive<br>le matin</h2>
+      <p>
+        Les légumes viennent de trois maraîchers de l'ouest lyonnais, la
+        volaille d'un éleveur de la Dombes, le poisson de la criée par le
+        mardi et le vendredi.
+      </p>
+      <p>
+        Quand un produit manque, le plat saute. C'est le seul inconvénient
+        d'une carte courte, et on l'assume.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── Avis ─── -->
   <section class="avis" aria-label="Avis de clients">
     <figure class="reveal">
-      <blockquote>
-        On y va pour le pigeonneau depuis six ans. La carte bouge, la cuisson ne
-        bouge jamais.
-      </blockquote>
+      <blockquote>On y va pour le pigeonneau depuis six ans. La carte bouge, la cuisson ne bouge jamais.</blockquote>
       <figcaption>Marion Delcourt, cliente depuis 2019</figcaption>
     </figure>
     <figure class="reveal">
-      <blockquote>
-        Le meilleur rapport qualité prix du 1er le midi. Réservez, la salle est
-        petite.
-      </blockquote>
+      <blockquote>Le meilleur rapport qualité prix du 1er le midi. Réservez, la salle est petite.</blockquote>
       <figcaption>Sofiane Bakhti, habitué du quartier</figcaption>
     </figure>
   </section>
 
-  <!-- Conversion -->
+  <!-- ─── Réserver ─── -->
   <section class="reserver" id="reserver">
     <div class="reserver__in reveal">
-      <h2>Réserver une table</h2>
+      <p class="eyebrow">Réservation</p>
+      <h2>Une table<br>chez nous</h2>
       <p class="lede">
         Par téléphone pendant le service, ou par le formulaire à toute heure.
         Nous confirmons sous deux heures.
@@ -208,9 +236,7 @@
         </div>
       </form>
 
-      <p class="reserver__tel">
-        Ou appelez le <a href="tel:+33478421907">04 78 42 19 07</a>
-      </p>
+      <p class="reserver__tel">Ou appelez le <a href="tel:+33478421907">04 78 42 19 07</a></p>
     </div>
   </section>
 
@@ -223,7 +249,7 @@
       <p>14 rue des Capucins, 69001 Lyon<br>04 78 42 19 07</p>
     </div>
     <div>
-      <p>Mardi au samedi<br>12h00 à 14h00 et 19h00 à 22h00</p>
+      <p>Mardi au samedi<br>12h00 à 14h00 · 19h00 à 22h00</p>
       <p>Fermé dimanche et lundi</p>
     </div>
     <p class="foot__demo">
