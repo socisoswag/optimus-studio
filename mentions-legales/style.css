@@ -1,0 +1,31 @@
+/* =========================================================
+   Mentions légales — Optimus Studio
+   Complément à /devis/style.css : une page de texte long, rien d'autre.
+   ========================================================= */
+
+.legal {
+  position: relative; z-index: 2;
+  max-width: 62rem;
+  padding: clamp(4rem, 12vh, 9rem) var(--gut) clamp(4rem, 10vh, 7rem);
+}
+.legal h1 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(2.4rem, 6.5vw, 5rem);
+  line-height: .96; letter-spacing: -.02em;
+  margin-bottom: 3rem;
+}
+.legal__bloc { padding-top: 2rem; margin-top: 2rem; border-top: 1px solid var(--line); }
+.legal__bloc:first-of-type { border-top: 0; margin-top: 0; }
+
+.legal__bloc h2 {
+  font-family: var(--font-mono); font-size: .72rem;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 1.1rem;
+}
+.legal__bloc p {
+  color: var(--mute); font-size: .95rem; line-height: 1.8;
+  max-width: 68ch; margin-bottom: 1rem;
+}
+.legal__bloc p:last-child { margin-bottom: 0; }
+.legal__bloc a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.legal__bloc a:hover { color: var(--accent); }

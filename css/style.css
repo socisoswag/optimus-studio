@@ -107,6 +107,11 @@ body {
 
 #hud.visible { opacity: 1; }
 
+/* Le HUD est fixe et passait par-dessus le pied de page : sa mention
+   « OPTIMUS STUDIO » doublait celle du footer. Déclaré après .visible
+   pour l'emporter à spécificité égale. */
+#hud.over-footer { opacity: 0; }
+
 .hud-corner {
   position: absolute;
   width: 14px;
@@ -441,6 +446,8 @@ body {
 .footer-brand  { color: var(--ink); font-weight: 700; }
 .footer-meta   { text-align: center; }
 .footer-services { text-align: right; }
+.footer-services a { color: inherit; text-decoration: none; }
+.footer-services a:hover { color: var(--ink); }
 
 /* ─── REDUCED-MOTION POSTER ─── */
 #reduced-poster {
@@ -457,6 +464,15 @@ body {
   max-width: 80vw;
   max-height: 80vh;
   object-fit: contain;
+}
+
+/* Le poster est un fond fixe : sans ce voile, le texte des sections
+   passe par-dessus les parties claires de l'objectif et devient illisible. */
+#reduced-poster::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 12, 13, 0.84);
 }
 
 /* ─── REDUCED MOTION ─── */
@@ -491,6 +507,56 @@ body {
   .site-footer { position: static; }
 }
 
+/* ─── MODE DÉGRADÉ ───
+   Si GSAP ou Lenis ne se chargent pas (CDN bloqué, réseau coupé, extension
+   qui filtre), app.js pose la classe .degraded sur <html>. Sans ça le loader
+   reste figé et le site paraît cassé chez le prospect.
+   Mêmes règles que le mode mouvement réduit, mais pilotées par une classe :
+   une media query ne peut pas être déclenchée depuis JS, d'où la répétition. */
+html.degraded #reduced-poster  { display: flex; }
+html.degraded #canvas-wrap     { display: none; }
+html.degraded #dark-overlay    { display: none; }
+html.degraded #hud             { display: none; }
+html.degraded #marquee-wrap    { display: none; }
+html.degraded #loader          { display: none; }
+
+html.degraded .scroll-section   { position: static; transform: none; opacity: 1; }
+html.degraded #scroll-container { height: auto; padding: 8rem 0; }
+html.degraded .hero-standalone  { opacity: 1; }
+
+html.degraded .align-left,
+html.degraded .align-right {
+  padding: 5rem 8vw;
+  display: block;
+}
+
+html.degraded .section-inner,
+html.degraded .section-manifesto .section-inner { max-width: 600px; }
+
+html.degraded .section-inner::before { display: none; }
+html.degraded .section-body { text-shadow: none; }
+
+html.degraded .section-manifesto {
+  padding: 5rem 8vw;
+  text-align: left;
+}
+
+html.degraded .site-footer { position: static; }
+
+/* Tout ce que GSAP devait révéler doit être visible d'emblée. */
+html.degraded .hero-label,
+html.degraded .hero-heading .word,
+html.degraded .hero-tagline,
+html.degraded .scroll-indicator,
+html.degraded .section-label,
+html.degraded .section-heading,
+html.degraded .section-body,
+html.degraded .cta-button,
+html.degraded .manifesto-line {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 /* ─── MOBILE ─── */
 @media (max-width: 767px) {
   #scroll-container { height: 560vh; }
@@ -520,6 +586,14 @@ body {
 
   .section-heading { font-size: clamp(1.9rem, 8vw, 3rem); }
 
+  /* Trois liens plus le logo ne tiennent pas en 390 px à la taille
+     d'origine : on resserre au lieu de laisser « Contact » sortir
+     de l'écran. */
+  .site-header { padding: 1.1rem 1.25rem; }
+  .header-logo { letter-spacing: .22em; }
+  .site-header nav { gap: 1rem; }
+  .nav-link { font-size: .62rem; letter-spacing: .1em; }
+
   #hud         { display: none; }
   #marquee-wrap { display: none; }
 
@@ -527,8 +601,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
   }
-  .footer-services { display: none; }
-  .footer-meta     { text-align: right; }
+  .footer-meta     { display: none; }
+  .footer-services { text-align: right; }
 
   .scroll-indicator { left: 6vw; }
 }

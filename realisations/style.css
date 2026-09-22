@@ -309,6 +309,13 @@ a { color: inherit; }
 /* ─── Mobile ─── */
 @media (max-width: 767px) {
   #marks { display: none; }
+  /* Trois liens plus le logo ne tiennent pas en 390 px. Le logo mène
+     déjà à l'accueil : c'est ce lien-là qui saute. */
+  .site-header { padding-inline: 1.25rem; }
+  .site-header nav { gap: 1rem; }
+  .nav-link { font-size: .62rem; letter-spacing: .12em; }
+  .nav-link--home { display: none; }
+
   .grid { grid-template-columns: 1fr; }
   .viewer__bar { padding-inline: 1.25rem; }
   .viewer__tools { width: 100%; justify-content: space-between; }
@@ -325,3 +332,6 @@ a { color: inherit; }
     transition-duration: .01ms !important;
   }
 }
+
+.footer-services a { text-decoration: none; }
+.footer-services a:hover { color: var(--ink); }
