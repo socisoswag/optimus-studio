@@ -69,12 +69,25 @@
 
   /* ─── Vidéos ───
      Ajouter une vidéo = ajouter une ligne ici.
-     id     : l'identifiant YouTube (ce qui suit « v= » ou « youtu.be/ »)
-     type   : sert aux filtres (Clip, Publicité, Vlog, Short…)
-     format : 'short' pour une vidéo verticale, sinon rien
+     yt     : l'identifiant YouTube (ce qui suit « v= » ou « youtu.be/ »)
+     tiktok : le numéro de la vidéo TikTok (la fin du lien) et compte : le @
+     titre  : facultatif. Sans titre, celui de YouTube ou de TikTok est
+              récupéré à l'ouverture de l'onglet Vidéo.
      Exemple :
-     { id: 'dQw4w9WgXcQ', titre: 'Lancement de la collection', type: 'Publicité', client: 'Nom du client', duree: '0:45' }, */
+     { yt: 'dQw4w9WgXcQ', titre: 'Lancement de la collection' },
+     { tiktok: '7687523983314390305', compte: 'paname_in_my_belly' }, */
   var VIDEOS = [
+    { yt: 'hny3jneSdMg' },
+    { yt: 'uHnE6ZkSBh4' },
+    { yt: 'U2ksM3blOFE' },
+    { yt: 'EbnobJxHsoU' },
+    { yt: '5yXDjX9CjoU' },
+    { yt: 'kYt3gplx3Dg' },
+    { tiktok: '7687523983314390305', compte: 'paname_in_my_belly' },
+    { tiktok: '7658950856695483680', compte: 'paname_in_my_belly' },
+    { tiktok: '7683567405494308128', compte: 'the_foodologiste' },
+    { tiktok: '7621598466858323222', compte: 'lemondedugout' },
+    { tiktok: '7658700263158484256', compte: 'sortiesparis' }
   ];
 
   var grid     = document.getElementById('grid-sites');
@@ -131,6 +144,7 @@
       });
       document.querySelectorAll('.panel').forEach(function (panel) {
         panel.hidden = panel.dataset.panel !== tab.dataset.tab;
+        if (tab.dataset.tab === 'video' && !panel.hidden) chargerVideos();
       });
     });
   });
@@ -159,39 +173,70 @@
     });
   });
 
-  /* ─── Vidéos : rendu, filtres, lecteur au clic ─── */
+  /* ─── Vidéos : deux rangées (formats longs, formats verticaux),
+     lecteur chargé au clic seulement ───
+     Les titres et les vignettes TikTok sont demandés à l'ouverture de
+     l'onglet Vidéo, pas au chargement de la page. Si la demande échoue,
+     la carte garde un intitulé générique et une vignette aux couleurs
+     du site : rien ne casse. */
+  var chargerVideos = function () {};
   (function videos() {
     var grille = document.getElementById('grid-videos');
     var vide = document.getElementById('videos-vide');
-    var filtres = document.getElementById('filtres-video');
     var note = document.getElementById('note-video');
     if (!grille || !VIDEOS.length) return;
     vide.hidden = true; note.hidden = false;
 
     function echap(t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    /* Une légende TikTok, c'est souvent trois lignes de hashtags :
+       on garde la phrase, on coupe proprement. */
+    function propre(t) {
+      t = String(t || '').split('#')[0].replace(/\s+/g, ' ').trim();
+      if (t.length > 72) t = t.slice(0, 70).replace(/\s+\S*$/, '') + '…';
+      return t;
+    }
 
+    function bloc(titre, n, classe) {
+      var b = document.createElement('div');
+      b.className = 'videos-bloc';
+      b.innerHTML = '<h2 class="videos-bloc__titre">' + titre + ' <span>' + n + '</span></h2>' +
+        '<div class="videos ' + classe + '"></div>';
+      grille.appendChild(b);
+      return b.querySelector('.videos');
+    }
+    var longs = VIDEOS.filter(function (v) { return v.yt; });
+    var courts = VIDEOS.filter(function (v) { return v.tiktok; });
+    var gLongs = longs.length ? bloc('Formats longs', longs.length, '') : null;
+    var gCourts = courts.length ? bloc('Reels &amp; TikTok', courts.length, 'videos--courts') : null;
+
+    var aCharger = [];
     VIDEOS.forEach(function (v) {
+      var tiktok = !!v.tiktok;
       var el = document.createElement('article');
-      el.className = 'video' + (v.format === 'short' ? ' video--short' : '');
-      el.dataset.type = v.type || '';
+      el.className = 'video' + (tiktok ? ' video--short' : '');
+      var titre = v.titre || (tiktok ? 'Montage vertical' : 'Montage vidéo');
       el.innerHTML =
         '<div class="video__ecran">' +
-          '<button class="video__lancer" type="button" aria-label="Lire la vidéo : ' + echap(v.titre) + '">' +
-            '<img src="https://i.ytimg.com/vi/' + encodeURIComponent(v.id) + '/hqdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">' +
+          '<button class="video__lancer" type="button" aria-label="Lire la vidéo : ' + echap(titre) + '">' +
+            (tiktok
+              ? '<span class="video__fond" aria-hidden="true"><span>@' + echap(v.compte) + '</span></span><img alt="" hidden>'
+              : '<img src="https://i.ytimg.com/vi/' + encodeURIComponent(v.yt) + '/hqdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">') +
             '<span class="video__play" aria-hidden="true"></span>' +
-            (v.duree ? '<span class="video__duree">' + echap(v.duree) + '</span>' : '') +
           '</button>' +
         '</div>' +
         '<div class="video__corps">' +
-          (v.type ? '<p class="video__type">' + echap(v.type) + '</p>' : '') +
-          '<h3 class="video__titre">' + echap(v.titre) + '</h3>' +
-          (v.client ? '<p class="video__client">' + echap(v.client) + '</p>' : '') +
+          '<p class="video__type">' + (tiktok ? 'TikTok' : 'YouTube') + '</p>' +
+          '<h3 class="video__titre">' + echap(titre) + '</h3>' +
+          (tiktok ? '<p class="video__client">@' + echap(v.compte) + '</p>' : '') +
         '</div>';
-      el.querySelector('.video__lancer').addEventListener('click', function () {
+      var bouton = el.querySelector('.video__lancer');
+      bouton.addEventListener('click', function () {
         var f = document.createElement('iframe');
-        f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(v.id) + '?autoplay=1&rel=0&modestbranding=1';
-        f.title = v.titre;
-        f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        f.src = tiktok
+          ? 'https://www.tiktok.com/player/v1/' + encodeURIComponent(v.tiktok) + '?autoplay=1&rel=0&description=1&music_info=0'
+          : 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(v.yt) + '?autoplay=1&rel=0&modestbranding=1';
+        f.title = el.querySelector('.video__titre').textContent;
+        f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
         f.allowFullscreen = true;
         f.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
         var ecran = el.querySelector('.video__ecran');
@@ -199,31 +244,42 @@
         ecran.appendChild(f);
         f.focus();
       });
-      grille.appendChild(el);
+      (tiktok ? gCourts : gLongs).appendChild(el);
+      if (!v.titre || tiktok) aCharger.push({ v: v, el: el });
     });
 
-    /* Filtres par type, seulement s'il y a au moins deux types. */
-    var types = VIDEOS.map(function (v) { return v.type; }).filter(function (t, i, a) { return t && a.indexOf(t) === i; });
-    if (types.length < 2) return;
-    filtres.hidden = false;
-    ['Toutes'].concat(types).forEach(function (t, i) {
-      var b = document.createElement('button');
-      b.className = 'chip' + (i === 0 ? ' is-on' : '');
-      b.type = 'button';
-      b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
-      var n = i === 0 ? VIDEOS.length : VIDEOS.filter(function (v) { return v.type === t; }).length;
-      b.innerHTML = echap(t) + '<span class="chip__n">' + n + '</span>';
-      b.addEventListener('click', function () {
-        Array.prototype.forEach.call(filtres.children, function (c) {
-          c.classList.toggle('is-on', c === b);
-          c.setAttribute('aria-pressed', c === b ? 'true' : 'false');
-        });
-        Array.prototype.forEach.call(grille.children, function (c) {
-          c.hidden = i !== 0 && c.dataset.type !== t;
-        });
+    function lire(url) {
+      return fetch(url).then(function (r) { if (!r.ok) throw r; return r.json(); });
+    }
+    var fait = false;
+    chargerVideos = function () {
+      if (fait || !window.fetch) return;
+      fait = true;
+      aCharger.forEach(function (o) {
+        var v = o.v, el = o.el;
+        var page = v.tiktok
+          ? 'https://www.tiktok.com/@' + v.compte + '/video/' + v.tiktok
+          : 'https://www.youtube.com/watch?v=' + v.yt;
+        var direct = v.tiktok
+          ? 'https://www.tiktok.com/oembed?url=' + encodeURIComponent(page)
+          : 'https://www.youtube.com/oembed?format=json&url=' + encodeURIComponent(page);
+        lire(direct).catch(function () {
+          return lire('https://noembed.com/embed?url=' + encodeURIComponent(page));
+        }).then(function (d) {
+          if (!d || d.error) return;
+          var t = propre(d.title);
+          if (t && !v.titre) {
+            el.querySelector('.video__titre').textContent = t;
+            el.querySelector('.video__lancer').setAttribute('aria-label', 'Lire la vidéo : ' + t);
+          }
+          var img = el.querySelector('.video__lancer img');
+          if (v.tiktok && d.thumbnail_url && img) {
+            img.onload = function () { img.hidden = false; };
+            img.src = d.thumbnail_url;
+          }
+        }).catch(function () {});
       });
-      filtres.appendChild(b);
-    });
+    };
   })();
 
   /* ─── Aperçu live ─── */
