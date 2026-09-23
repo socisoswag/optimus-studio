@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Garage Ferrand · Mécanique toutes marques à Rennes</title>
+<meta name="description" content="Garage indépendant à Rennes depuis 1998. Révision constructeur, freins, pneus, distribution, diagnostic. Estimation de l'entretien en ligne, devis gratuit, pièces rendues sur demande.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Garage Ferrand · Mécanique toutes marques à Rennes">
+<meta property="og:description" content="Estimez l'entretien de votre voiture en trente secondes. Devis gratuit, garantie 12 mois.">
+<meta property="og:image" content="img/atelier.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/atelier.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Garage Ferrand",
+  "telephone": "+33 2 99 30 58 14",
+  "image": "img/atelier.webp",
+  "priceRange": "€€",
+  "foundingDate": "1998",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "42 rue de Lorient",
+    "addressLocality": "Rennes",
+    "postalCode": "35000",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "12:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "14:00", "closes": "18:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "12:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- En-tête en mode « différence » : il s'inverse tout seul
+     selon ce qui passe dessous, toujours lisible. -->
+<header class="top">
+  <a class="top__brand" href="#haut"><span class="top__logo" aria-hidden="true">F</span>Garage Ferrand</a>
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#atelier">Atelier</a>
+    <a href="#devis">Devis</a>
+    <a href="#garanties">Garanties</a>
+    <a href="#rdv">Rendez-vous</a>
+  </nav>
+  <a class="top__tel" href="tel:+33299305814">02 99 30 58 14</a>
+</header>
+
+<!-- Repères de section, à droite : le numéro passe en orange
+     quand on entre dans la section correspondante. -->
+<nav class="rail" aria-label="Sections de la page">
+  <a href="#atelier" data-rail="atelier"><span class="n">01</span><span class="t">Atelier</span></a>
+  <a href="#devis" data-rail="devis"><span class="n">02</span><span class="t">Devis</span></a>
+  <a href="#garanties" data-rail="garanties"><span class="n">03</span><span class="t">Garanties</span></a>
+  <a href="#rdv" data-rail="rdv"><span class="n">04</span><span class="t">Rendez-vous</span></a>
+</nav>
+
+<main id="contenu">
+
+  <!-- ─── Hero ─── -->
+  <section class="hero" id="haut">
+    <img class="hero__img" src="img/atelier.webp" alt="Atelier de garage moderne la nuit, une compacte grise sur un pont élévateur à deux colonnes éclairé de LED orange, roues démontées" width="1920" height="1071" fetchpriority="high">
+    <div class="hero__in">
+      <p class="statut" id="statut" role="status"><span class="statut__point"></span><span id="statut-txt">Atelier ouvert</span></p>
+      <h1>
+        <span class="l">Votre voiture</span>
+        <span class="l l--orange">entre de bonnes</span>
+        <span class="l">mains.</span>
+      </h1>
+      <p class="lede">Garage indépendant à Rennes depuis 1998. Toutes marques, révision constructeur, et on vous montre la pièce usée avant de la changer.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#devis">Estimer mon entretien <span class="btn__ico" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="tel:+33299305814">02 99 30 58 14</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Atelier : la liste change la photo ─── -->
+  <section class="atelier" id="atelier" aria-labelledby="atelier-titre">
+    <div class="atelier__liste">
+      <p class="label"><span class="label__no">01</span> L'atelier</p>
+      <h2 id="atelier-titre">Tout ce qui s'use,<br>on le remplace.</h2>
+      <ul class="services" id="services">
+        <li>
+          <button type="button" class="service is-on" aria-pressed="true" data-img="img/atelier.webp" data-alt="Voiture sur pont élévateur, roues démontées" data-txt="Vidange, filtres, niveaux, contrôle des 40 points du carnet. Le carnet constructeur est tamponné : votre garantie reste valable, la loi européenne le prévoit.">
+            <span class="service__no">A</span><span class="service__nom">Révision &amp; vidange</span><span class="service__prix">dès 169 €</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="service" aria-pressed="false" data-img="img/freins.webp" data-alt="Mesure de l'épaisseur d'un disque de frein au pied à coulisse" data-txt="On mesure l'épaisseur des disques au pied à coulisse, pas à l'œil. Si les plaquettes suffisent, on ne vous vend pas les disques.">
+            <span class="service__no">B</span><span class="service__nom">Freinage</span><span class="service__prix">dès 139 €</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="service" aria-pressed="false" data-img="img/pneus.webp" data-alt="Montage d'un pneu neuf sur une jante noire, sous une lampe d'atelier" data-txt="Montage, équilibrage, géométrie, stockage de vos pneus hiver. Toutes marques, et une gamme économique honnête quand elle suffit.">
+            <span class="service__no">C</span><span class="service__nom">Pneus &amp; géométrie</span><span class="service__prix">dès 22 € / pneu</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="service" aria-pressed="false" data-img="img/accueil.webp" data-alt="Remise des clés au comptoir d'accueil du garage" data-txt="Voyant allumé, bruit bizarre : diagnostic électronique et essai routier. Le devis est gratuit, vous décidez après, sans pression.">
+            <span class="service__no">D</span><span class="service__nom">Diagnostic &amp; voyants</span><span class="service__prix">49 €, déduit si réparation</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <figure class="atelier__media">
+      <div class="atelier__photo" id="atelier-photo">
+        <img class="is-on" src="img/atelier.webp" alt="Voiture sur pont élévateur, roues démontées" width="1920" height="1071" loading="lazy">
+      </div>
+      <figcaption class="atelier__txt" id="atelier-txt" aria-live="polite">Vidange, filtres, niveaux, contrôle des 40 points du carnet. Le carnet constructeur est tamponné : votre garantie reste valable, la loi européenne le prévoit.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ─── Devis d'entretien : l'outil signature ─── -->
+  <section class="devis" id="devis" aria-labelledby="devis-titre">
+    <div class="devis__head">
+      <p class="label"><span class="label__no">02</span> Devis en ligne</p>
+      <h2 id="devis-titre">Combien va coûter<br>votre prochain entretien ?</h2>
+      <p class="devis__intro">Trois réglages, et on vous dit ce que votre voiture demande à ce kilométrage. Prix indicatifs, pièces et main-d'œuvre, TVA comprise.</p>
+    </div>
+
+    <div class="devis__corps">
+      <form class="reglages" id="reglages" onsubmit="return false">
+        <fieldset>
+          <legend>Gabarit</legend>
+          <div class="puces">
+            <label><input type="radio" name="gabarit" value="0" checked><span>Citadine</span></label>
+            <label><input type="radio" name="gabarit" value="1"><span>Compacte</span></label>
+            <label><input type="radio" name="gabarit" value="2"><span>SUV / familiale</span></label>
+            <label><input type="radio" name="gabarit" value="3"><span>Utilitaire</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Motorisation</legend>
+          <div class="puces">
+            <label><input type="radio" name="moteur" value="essence" checked><span>Essence</span></label>
+            <label><input type="radio" name="moteur" value="diesel"><span>Diesel</span></label>
+            <label><input type="radio" name="moteur" value="hybride"><span>Hybride</span></label>
+            <label><input type="radio" name="moteur" value="electrique"><span>Électrique</span></label>
+          </div>
+        </fieldset>
+        <div class="km">
+          <label for="km">Kilométrage</label>
+          <output id="km-val" for="km">60 000 km</output>
+          <input type="range" id="km" min="10000" max="250000" step="5000" value="60000">
+          <div class="km__bornes" aria-hidden="true"><span>10 000</span><span>250 000</span></div>
+        </div>
+        <fieldset>
+          <legend>En plus</legend>
+          <div class="puces">
+            <label><input type="checkbox" name="clim"><span>Recharge clim</span></label>
+            <label><input type="checkbox" name="geo"><span>Géométrie</span></label>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="ticket" aria-live="polite">
+        <p class="ticket__tete">Estimation · <span id="ticket-titre">Citadine essence, 60 000 km</span></p>
+        <ul class="ticket__lignes" id="ticket-lignes"></ul>
+        <p class="ticket__total"><span>Total estimé</span><strong id="ticket-total">0 €</strong></p>
+        <p class="ticket__note">Estimation indicative. Le devis ferme se fait voiture sur le pont, gratuitement.</p>
+        <a class="btn btn--block" href="#rdv" id="ticket-cta">Prendre rendez-vous avec cette estimation <span class="btn__ico" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Garanties et chiffres ─── -->
+  <section class="garanties" id="garanties" aria-labelledby="garanties-titre">
+    <div class="garanties__photo">
+      <img src="img/accueil.webp" alt="Un mécanicien rend les clés à une cliente au comptoir, une tablette montre la liste des travaux" width="1920" height="1047" loading="lazy">
+    </div>
+    <div class="garanties__in">
+      <p class="label"><span class="label__no">03</span> Garanties</p>
+      <h2 id="garanties-titre">Ce qu'on vous<br>promet par écrit.</h2>
+      <dl class="compteurs">
+        <div><dt><span class="js-compte" data-cible="27">0</span> ans</dt><dd>d'atelier rue de Lorient</dd></div>
+        <div><dt><span class="js-compte" data-cible="12">0</span> mois</dt><dd>de garantie pièces et main-d'œuvre</dd></div>
+        <div><dt><span class="js-compte" data-cible="3100">0</span></dt><dd>voitures entretenues l'an dernier</dd></div>
+        <div><dt><span class="js-compte" data-cible="0">0</span> €</dt><dd>pour le devis, même si vous refusez</dd></div>
+      </dl>
+      <ul class="promesses">
+        <li>Les pièces changées vous sont rendues, si vous le voulez.</li>
+        <li>Aucun travail supplémentaire sans votre accord, par SMS ou par téléphone.</li>
+        <li>Véhicule de courtoisie sur réservation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─── Rendez-vous ─── -->
+  <section class="rdv" id="rdv" aria-labelledby="rdv-titre">
+    <div class="rdv__copy">
+      <p class="label"><span class="label__no">04</span> Rendez-vous</p>
+      <h2 id="rdv-titre">Déposez-la le matin,<br>récupérez-la le soir.</h2>
+      <p>La plupart des entretiens se font dans la journée. On vous appelle avant toute intervention imprévue.</p>
+      <a class="rdv__tel" href="tel:+33299305814">02 99 30 58 14</a>
+    </div>
+
+    <form class="form" id="form-rdv" novalidate>
+      <div class="field">
+        <input id="nom" name="nom" type="text" autocomplete="name" placeholder=" " required>
+        <label for="nom">Nom</label>
+        <p class="err" data-err-for="nom" hidden>Merci d'indiquer votre nom.</p>
+      </div>
+      <div class="field">
+        <input id="tel" name="tel" type="tel" autocomplete="tel" placeholder=" " required>
+        <label for="tel">Téléphone</label>
+        <p class="err" data-err-for="tel" hidden>Un numéro à dix chiffres, pour confirmer le créneau.</p>
+      </div>
+      <div class="field">
+        <input id="immat" name="immat" type="text" placeholder=" " autocapitalize="characters">
+        <label for="immat">Immatriculation (facultatif)</label>
+      </div>
+      <div class="field">
+        <input id="date" name="date" type="date" placeholder=" " required>
+        <label for="date">Jour de dépôt souhaité</label>
+        <p class="err" data-err-for="date" hidden>Choisissez un jour.</p>
+      </div>
+      <div class="field field--full">
+        <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
+        <label for="message">Ce qu'il faut faire</label>
+      </div>
+      <div class="field--full">
+        <button class="btn btn--block" type="submit" id="submit">Demander le rendez-vous <span class="btn__ico" aria-hidden="true">→</span></button>
+        <p class="form__status" id="status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div>
+    <p class="foot__brand">Garage Ferrand</p>
+    <p>42 rue de Lorient, 35000 Rennes · 02 99 30 58 14</p>
+  </div>
+  <dl class="horaires">
+    <div><dt>Lundi au vendredi</dt><dd>8h – 12h · 14h – 18h30</dd></div>
+    <div><dt>Samedi</dt><dd>9h – 12h</dd></div>
+  </dl>
+  <p class="foot__demo">
+    Site de démonstration. Entreprise fictive, contenus illustratifs.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
