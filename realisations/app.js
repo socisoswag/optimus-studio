@@ -187,6 +187,18 @@
     if (!grille || !VIDEOS.length) return;
     vide.hidden = true; note.hidden = false;
 
+    var INTEGRE = /(^|\.)optimusstudio\.fr$|\.netlify\.app$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
+    /* Si la page bloque quand même le lecteur (politique de sécurité),
+       la vignette laisse place à un lien vers la plateforme. */
+    document.addEventListener('securitypolicyviolation', function (e) {
+      if (!/youtube|tiktok/.test(e.blockedURI || '')) return;
+      Array.prototype.forEach.call(grille.querySelectorAll('.video__ecran iframe'), function (f) {
+        var carte = f.closest('.video');
+        f.parentNode.innerHTML = '<a class="video__secours" href="' + carte.querySelector('.video__lien').href +
+          '" target="_blank" rel="noopener">Lire la vidéo sur ' + (carte.classList.contains('video--short') ? 'TikTok' : 'YouTube') + ' ↗</a>';
+      });
+    });
+
     function echap(t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
     function bloc(titre, n, classe) {
@@ -226,7 +238,12 @@
             '" target="_blank" rel="noopener">Voir sur ' + (tiktok ? 'TikTok' : 'YouTube') + ' ↗</a>' +
         '</div>';
       var bouton = el.querySelector('.video__lancer');
+      var lien = el.querySelector('.video__lien').href;
       bouton.addEventListener('click', function () {
+        /* Ailleurs que sur le vrai site (un aperçu, une copie), les
+           lecteurs intégrés sont souvent bloqués : on ouvre directement
+           la vidéo sur YouTube ou TikTok. */
+        if (!INTEGRE) { window.open(lien, '_blank', 'noopener'); return; }
         var f = document.createElement('iframe');
         f.src = tiktok
           ? 'https://www.tiktok.com/player/v1/' + encodeURIComponent(v.tiktok) + '?autoplay=1&rel=0&description=1&music_info=0'

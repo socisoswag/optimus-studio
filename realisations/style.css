@@ -397,4 +397,6 @@ a { color: inherit; }
 .video__client { font-size: .9rem; color: var(--mute); }
 .video__lien { justify-self: start; margin-top: .2rem; font-family: var(--font-mono); font-size: .68rem; letter-spacing: .08em; color: var(--mute); text-decoration: none; border-bottom: 1px solid var(--line); }
 .video__lien:hover { color: var(--accent); border-color: var(--accent); }
+.video__secours { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-mono); font-size: .8rem; color: var(--ink); background: #000; text-decoration: none; }
+.video__secours:hover { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { .video__lancer img, .video__play { transition: none; } }
