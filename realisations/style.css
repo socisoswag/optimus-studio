@@ -358,16 +358,17 @@ a { color: inherit; }
   .videos--courts .video__corps { padding: .8rem .8rem 1rem; }
   .videos--courts .video__titre { font-size: 1rem; }
 }
-.videos--courts .video__client, .video__fond span { overflow-wrap: anywhere; }
-/* Vignette TikTok en attendant l'image (ou si TikTok la refuse). */
-.video__fond {
-  position: absolute; inset: 0; display: flex; align-items: flex-end; padding: .9rem;
-  background:
-    radial-gradient(80% 60% at 30% 20%, rgba(255, 138, 61, .35), transparent 70%),
-    radial-gradient(70% 50% at 80% 90%, rgba(87, 214, 255, .25), transparent 70%),
-    #121619;
-  font-family: var(--font-mono); font-size: .7rem; letter-spacing: .08em; color: var(--mute);
+.videos--courts .video__client { overflow-wrap: anywhere; }
+/* Le nombre de likes, posé sur la vignette verticale. */
+.video__likes {
+  position: absolute; top: .6rem; left: .6rem; padding: .2rem .5rem;
+  background: rgba(0, 0, 0, .65); font-family: var(--font-mono); font-size: .72rem; color: #fff;
 }
+/* La vidéo à la une : toute la largeur, texte à côté. */
+.video--une { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); }
+.video--une .video__corps { align-content: center; padding: clamp(1.4rem, 3vw, 2.6rem); gap: .6rem; }
+.video--une .video__titre { font-size: clamp(1.5rem, 2.6vw, 2.3rem); }
+@media (max-width: 760px) { .video--une { grid-template-columns: 1fr; } }
 .video__lancer img[hidden] { display: none; }
 .video--short .video__lancer img { position: absolute; inset: 0; }
 .video__ecran { position: relative; aspect-ratio: 16 / 9; background: #000; overflow: hidden; }

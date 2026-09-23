@@ -71,22 +71,26 @@
      Ajouter une vidéo = ajouter une ligne ici.
      yt     : l'identifiant YouTube (ce qui suit « v= » ou « youtu.be/ »)
      tiktok : le numéro de la vidéo TikTok (la fin du lien) et compte : le @
-     titre  : le client pour qui la vidéo a été montée
+     titre, chaine : le titre et la chaîne pour qui la vidéo a été montée
+     likes  : facultatif, affiché sur la vignette
+     Vignette : videos/yt-<id>.webp ou videos/tt-<numéro>.webp
+     La première vidéo YouTube est mise à la une, en grand.
      Exemple :
      { yt: 'dQw4w9WgXcQ', titre: 'Lancement de la collection' },
      { tiktok: '7687523983314390305', compte: 'paname_in_my_belly', titre: 'Paname in my belly' }, */
   var VIDEOS = [
-    { yt: 'hny3jneSdMg' },
-    { yt: 'uHnE6ZkSBh4' },
-    { yt: 'U2ksM3blOFE' },
-    { yt: 'EbnobJxHsoU' },
-    { yt: '5yXDjX9CjoU' },
-    { yt: 'kYt3gplx3Dg' },
-    { tiktok: '7687523983314390305', compte: 'paname_in_my_belly', titre: 'Paname in my belly' },
-    { tiktok: '7658950856695483680', compte: 'paname_in_my_belly', titre: 'Paname in my belly' },
-    { tiktok: '7683567405494308128', compte: 'the_foodologiste', titre: 'The Foodologiste' },
-    { tiktok: '7621598466858323222', compte: 'lemondedugout', titre: 'Le Monde du Goût' },
-    { tiktok: '7658700263158484256', compte: 'sortiesparis', titre: 'Sortir à Paris' }
+    { yt: 'U2ksM3blOFE', titre: 'Tommy McMillen : la rockstar invaincue qui débarque à l’UFC', chaine: 'Art et Violence' },
+    { yt: 'hny3jneSdMg', titre: 'Le Dealer du DarkWeb qui a Disparu avec 300 Millions €', chaine: 'Vzion' },
+    { yt: 'uHnE6ZkSBh4', titre: 'Les Hackers qui en Savaient Trop', chaine: 'Vzion' },
+    { yt: 'EbnobJxHsoU', titre: 'Le génie derrière le meilleur PSG de l’histoire', chaine: 'FMchronik' },
+    { yt: '5yXDjX9CjoU', titre: 'Pourquoi la BBC était scientifiquement IMBATTABLE', chaine: 'FMchronik' },
+    { yt: 'kYt3gplx3Dg', titre: 'À Quel Point Le REAL MADRID de ZIDANE Était-Il BON ?', chaine: 'Elite Foot' },
+    { yt: 'gueRo7C4HlA', titre: 'Le jour où Fatalis est devenu Iron Man', chaine: 'Le Lore' },
+    { tiktok: '7621598466858323222', compte: 'lemondedugout', titre: 'Notre autre gamme de sandwichs va vous régaler', chaine: 'Le Monde du Goût', likes: '70,3 k' },
+    { tiktok: '7683567405494308128', compte: 'the_foodologiste', titre: 'Les panuozzo les plus chargés d’Île-de-France à 8,90 €', chaine: 'Foodologiste', likes: '9,5 k' },
+    { tiktok: '7658700263158484256', compte: 'sortiesparis', titre: 'Le nouveau resto immersif fusion Japon-Corée', chaine: 'Sorties Paris', likes: '6 k' },
+    { tiktok: '7658950856695483680', compte: 'paname_in_my_belly', titre: 'Je comprends enfin pourquoi les Libanais adorent ce sandwich', chaine: 'Paname in my belly', likes: '4,5 k' },
+    { tiktok: '7687523983314390305', compte: 'paname_in_my_belly', titre: 'Le nouveau temple des dim sum et bao à Paris', chaine: 'Paname in my belly', likes: '3,3 k' }
   ];
 
   var grid     = document.getElementById('grid-sites');
@@ -200,21 +204,22 @@
 
     VIDEOS.forEach(function (v) {
       var tiktok = !!v.tiktok;
+      var une = !tiktok && v === longs[0];
       var el = document.createElement('article');
-      el.className = 'video' + (tiktok ? ' video--short' : '');
+      el.className = 'video' + (tiktok ? ' video--short' : '') + (une ? ' video--une' : '');
       var titre = v.titre || (tiktok ? '@' + v.compte : 'Montage vidéo');
       el.innerHTML =
         '<div class="video__ecran">' +
           '<button class="video__lancer" type="button" aria-label="Lire la vidéo : ' + echap(titre) + '">' +
-            (tiktok
-              ? '<span class="video__fond" aria-hidden="true"><span>@' + echap(v.compte) + '</span></span>'
-              : '<img src="https://i.ytimg.com/vi/' + encodeURIComponent(v.yt) + '/hqdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">') +
+            '<img src="videos/' + (tiktok ? 'tt-' + v.tiktok : 'yt-' + v.yt) + '.webp" alt="" width="' + (tiktok ? 360 : 640) + '" height="' + (tiktok ? 640 : 360) + '" loading="lazy" decoding="async">' +
+            (v.likes ? '<span class="video__likes">♥ ' + echap(v.likes) + '</span>' : '') +
             '<span class="video__play" aria-hidden="true"></span>' +
           '</button>' +
         '</div>' +
         '<div class="video__corps">' +
-          '<p class="video__type">' + (tiktok ? 'TikTok' : 'YouTube') + '</p>' +
+          '<p class="video__type">' + (une ? 'À la une · ' : '') + (tiktok ? 'TikTok' : 'YouTube') + '</p>' +
           '<h3 class="video__titre">' + echap(titre) + '</h3>' +
+          (v.chaine ? '<p class="video__client">' + echap(v.chaine) + '</p>' : '') +
           '<a class="video__lien" href="' + (tiktok
             ? 'https://www.tiktok.com/@' + encodeURIComponent(v.compte) + '/video/' + encodeURIComponent(v.tiktok)
             : 'https://www.youtube.com/watch?v=' + encodeURIComponent(v.yt)) +
