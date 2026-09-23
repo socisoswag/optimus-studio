@@ -64,6 +64,16 @@
     return p;
   });
 
+  /* ─── Vidéos ───
+     Ajouter une vidéo = ajouter une ligne ici.
+     id     : l'identifiant YouTube (ce qui suit « v= » ou « youtu.be/ »)
+     type   : sert aux filtres (Clip, Publicité, Vlog, Short…)
+     format : 'short' pour une vidéo verticale, sinon rien
+     Exemple :
+     { id: 'dQw4w9WgXcQ', titre: 'Lancement de la collection', type: 'Publicité', client: 'Nom du client', duree: '0:45' }, */
+  var VIDEOS = [
+  ];
+
   var grid     = document.getElementById('grid-sites');
   var tabs     = Array.prototype.slice.call(document.querySelectorAll('.tab'));
   var chips    = Array.prototype.slice.call(document.querySelectorAll('.chip'));
@@ -145,6 +155,73 @@
       });
     });
   });
+
+  /* ─── Vidéos : rendu, filtres, lecteur au clic ─── */
+  (function videos() {
+    var grille = document.getElementById('grid-videos');
+    var vide = document.getElementById('videos-vide');
+    var filtres = document.getElementById('filtres-video');
+    var note = document.getElementById('note-video');
+    if (!grille || !VIDEOS.length) return;
+    vide.hidden = true; note.hidden = false;
+
+    function echap(t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+    VIDEOS.forEach(function (v) {
+      var el = document.createElement('article');
+      el.className = 'video' + (v.format === 'short' ? ' video--short' : '');
+      el.dataset.type = v.type || '';
+      el.innerHTML =
+        '<div class="video__ecran">' +
+          '<button class="video__lancer" type="button" aria-label="Lire la vidéo : ' + echap(v.titre) + '">' +
+            '<img src="https://i.ytimg.com/vi/' + encodeURIComponent(v.id) + '/hqdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">' +
+            '<span class="video__play" aria-hidden="true"></span>' +
+            (v.duree ? '<span class="video__duree">' + echap(v.duree) + '</span>' : '') +
+          '</button>' +
+        '</div>' +
+        '<div class="video__corps">' +
+          (v.type ? '<p class="video__type">' + echap(v.type) + '</p>' : '') +
+          '<h3 class="video__titre">' + echap(v.titre) + '</h3>' +
+          (v.client ? '<p class="video__client">' + echap(v.client) + '</p>' : '') +
+        '</div>';
+      el.querySelector('.video__lancer').addEventListener('click', function () {
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(v.id) + '?autoplay=1&rel=0&modestbranding=1';
+        f.title = v.titre;
+        f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        f.allowFullscreen = true;
+        f.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+        var ecran = el.querySelector('.video__ecran');
+        ecran.innerHTML = '';
+        ecran.appendChild(f);
+        f.focus();
+      });
+      grille.appendChild(el);
+    });
+
+    /* Filtres par type, seulement s'il y a au moins deux types. */
+    var types = VIDEOS.map(function (v) { return v.type; }).filter(function (t, i, a) { return t && a.indexOf(t) === i; });
+    if (types.length < 2) return;
+    filtres.hidden = false;
+    ['Toutes'].concat(types).forEach(function (t, i) {
+      var b = document.createElement('button');
+      b.className = 'chip' + (i === 0 ? ' is-on' : '');
+      b.type = 'button';
+      b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+      var n = i === 0 ? VIDEOS.length : VIDEOS.filter(function (v) { return v.type === t; }).length;
+      b.innerHTML = echap(t) + '<span class="chip__n">' + n + '</span>';
+      b.addEventListener('click', function () {
+        Array.prototype.forEach.call(filtres.children, function (c) {
+          c.classList.toggle('is-on', c === b);
+          c.setAttribute('aria-pressed', c === b ? 'true' : 'false');
+        });
+        Array.prototype.forEach.call(grille.children, function (c) {
+          c.hidden = i !== 0 && c.dataset.type !== t;
+        });
+      });
+      filtres.appendChild(b);
+    });
+  })();
 
   /* ─── Aperçu live ─── */
   function format(mobile) {

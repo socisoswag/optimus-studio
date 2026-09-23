@@ -101,8 +101,16 @@
   </section>
 
   <!-- ═══ VIDÉO ═══ -->
+  <!-- Les vidéos sont listées dans app.js (tableau VIDEOS). Rien n'est
+       chargé depuis YouTube tant qu'on n'a pas cliqué sur une vignette. -->
   <section class="panel" id="panel-video" data-panel="video" hidden>
-    <div class="empty">
+    <div class="filters" id="filtres-video" role="group" aria-label="Filtrer par type de vidéo" hidden></div>
+    <div class="videos" id="grid-videos"></div>
+    <p class="note" id="note-video" hidden>
+      La vidéo se charge depuis YouTube quand vous cliquez sur la vignette.
+    </p>
+
+    <div class="empty" id="videos-vide">
       <span class="empty__no">002 / Vidéo</span>
       <h2>Montage vidéo</h2>
       <p>
@@ -110,7 +118,7 @@
         directe depuis YouTube. Elle est vide tant que les autorisations des
         chaînes concernées ne sont pas obtenues.
       </p>
-      <a class="cta-button" href="/#contact">Parler d'un montage</a>
+      <a class="cta-button" href="/devis/">Parler d'un montage</a>
     </div>
   </section>
 
