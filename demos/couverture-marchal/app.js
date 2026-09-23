@@ -124,3 +124,56 @@
     }, 700);
   });
 })();
+
+/* ─── La pluie sur les ardoises ───
+   Canvas léger : des traînées obliques qui tombent, et de petits
+   éclats là où elles touchent l'ardoise. Ne tourne que visible. */
+(function () {
+  'use strict';
+  var canvas = document.getElementById('pluie');
+  if (!canvas || !canvas.getContext || window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  var ctx = canvas.getContext('2d');
+  var W = 0, H = 0, gouttes = [], eclats = [], running = false;
+  function taille() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = canvas.clientWidth; H = canvas.clientHeight;
+    canvas.width = W * dpr; canvas.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function goutte(partout) {
+    return { x: Math.random() * (W + 120) - 60, y: partout ? Math.random() * H : -20 - Math.random() * 60,
+             v: 9 + Math.random() * 7, l: 14 + Math.random() * 18, a: .18 + Math.random() * .3,
+             sol: H * (.55 + Math.random() * .45) };
+  }
+  taille();
+  var n = W < 600 ? 60 : 120;
+  for (var i = 0; i < n; i++) gouttes.push(goutte(true));
+  function frame() {
+    ctx.clearRect(0, 0, W, H);
+    ctx.lineCap = 'round';
+    gouttes.forEach(function (g, i) {
+      g.y += g.v; g.x -= g.v * .18;
+      ctx.strokeStyle = 'rgba(233, 214, 180,' + g.a + ')';
+      ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(g.x, g.y); ctx.lineTo(g.x + g.l * .18, g.y - g.l); ctx.stroke();
+      if (g.y >= g.sol) {
+        eclats.push({ x: g.x, y: g.sol, r: 1, a: .5 });
+        gouttes[i] = goutte(false);
+      }
+    });
+    eclats = eclats.filter(function (e) {
+      e.r += .7; e.a -= .04;
+      if (e.a <= 0) return false;
+      ctx.strokeStyle = 'rgba(233, 214, 180,' + e.a + ')';
+      ctx.beginPath(); ctx.ellipse(e.x, e.y, e.r * 1.8, e.r * .6, 0, 0, 6.283); ctx.stroke();
+      return true;
+    });
+    if (running) requestAnimationFrame(frame);
+  }
+  new IntersectionObserver(function (e) {
+    var v = e[0].isIntersecting;
+    if (v && !running) { running = true; requestAnimationFrame(frame); }
+    if (!v) running = false;
+  }).observe(canvas);
+  if (window.ResizeObserver) new ResizeObserver(taille).observe(canvas);
+})();

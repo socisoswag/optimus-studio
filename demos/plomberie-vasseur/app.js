@@ -27,6 +27,36 @@
 
   initDiagnostic();
   initFormulaire();
+  initCompteur();
+
+  /* ─── Compteur de fuite ───
+     1 goutte par seconde ≈ 0,05 ml. Il apparaît une fois le titre
+     lu (hors du hero) et disparaît au formulaire, pour ne rien cacher. */
+  function initCompteur() {
+    var el = document.getElementById('compteur');
+    if (!el) return;
+    var nG = document.getElementById('c-gouttes');
+    var nV = document.getElementById('c-volume');
+    var debut = Date.now();
+    function maj() {
+      var g = Math.floor((Date.now() - debut) / 1000);
+      var ml = g * 0.05;
+      nG.textContent = g.toLocaleString('fr-FR');
+      nV.textContent = ml < 10 ? ml.toFixed(1).replace('.', ',') + ' ml'
+        : ml < 1000 ? (ml / 10).toFixed(1).replace('.', ',') + ' cl'
+        : (ml / 1000).toFixed(2).replace('.', ',') + ' l';
+    }
+    maj();
+    setInterval(function () { if (!document.hidden) maj(); }, 1000);
+
+    if (!('IntersectionObserver' in window)) { el.classList.add('is-visible'); return; }
+    var dansHero = true, dansDevis = false;
+    function afficher() { el.classList.toggle('is-visible', !dansHero && !dansDevis); }
+    new IntersectionObserver(function (e) { dansHero = e[0].isIntersecting; afficher(); }, { threshold: 0.35 })
+      .observe(document.querySelector('.hero'));
+    var devis = document.getElementById('devis');
+    if (devis) new IntersectionObserver(function (e) { dansDevis = e[0].isIntersecting; afficher(); }).observe(devis);
+  }
 
   /* ─── Diagnostic ─── */
   function initDiagnostic() {

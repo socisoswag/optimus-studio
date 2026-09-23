@@ -85,7 +85,10 @@ h2 span, h1 span { color: var(--red); }
   display: flex; align-items: center; gap: 2.4rem;
   padding: .9rem var(--gut);
   background: linear-gradient(to bottom, rgba(5,5,5,.9), rgba(5,5,5,0));
+  transition: background .3s;
 }
+/* Fond plein hors du hero : la bande rouge passe dessous sans se mêler au menu. */
+.top.is-stuck { background: rgba(5, 5, 5, .96); box-shadow: 0 1px 0 rgba(255, 255, 255, .08); }
 .top__brand {
   margin-right: auto;
   font-family: var(--display); font-weight: 900; font-size: 1.9rem;
@@ -142,6 +145,11 @@ h2 span, h1 span { color: var(--red); }
 }
 .defile span::after { content: ""; width: .5rem; height: .5rem; background: var(--bg); }
 @keyframes defile { to { transform: translateX(-50%); } }
+/* Piloté par app.js : la bande accélère avec la vitesse du scroll,
+   s'incline, et change de sens quand on remonte. Sans JS, l'animation
+   CSS ci-dessus prend le relais. */
+.defile.is-js .defile__piste { animation: none; will-change: transform; }
+.defile.is-js { transform: skewY(var(--skew, 0deg)); transition: transform .2s; }
 
 /* ─── Méthode ─── */
 .methode { display: grid; grid-template-columns: 1fr 1fr; min-height: 90vh; }

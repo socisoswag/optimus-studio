@@ -357,7 +357,20 @@ select:focus, .field input:focus { outline: none; border-color: var(--rose); }
 }
 
 /* ─── Mouvement réduit ─── */
+/* ─── Les arches s'ouvrent ───
+   Au fil du scroll, la photo passe d'une fente en arche, étroite et
+   haute, à son cadre entier : comme une porte de cabine qui s'ouvre.
+   --p (0 → 1) est écrit par app.js. */
+.porte { --p: 0; overflow: hidden;
+  clip-path: inset(calc((1 - var(--p)) * 12%) calc((1 - var(--p)) * 34%) 0 calc((1 - var(--p)) * 34%)
+    round calc(4px + (1 - var(--p)) * 480px) calc(4px + (1 - var(--p)) * 480px) 4px 4px);
+}
+.porte img { transform: scale(calc(1.18 - var(--p) * .18)); transform-origin: 50% 60%; }
+.boutique__media.porte::before { display: none; }
+
 @media (prefers-reduced-motion: reduce) {
+  .porte { clip-path: none; }
+  .porte img { transform: none; }
   html { scroll-behavior: auto; }
   .hero__arche img, .hero__mot { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }

@@ -422,3 +422,58 @@ h3 { font-size: 1.22rem; letter-spacing: -.02em; line-height: 1.15; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* ─── Coup de raclette ───
+   Section haute, scène collante. La couche « sale » (photo voilée,
+   jaunie, avec traces) est découpée depuis la gauche au rythme du
+   scroll ; la lame en caoutchouc suit la découpe. */
+.raclette { position: relative; height: 240vh; }
+.raclette__scene {
+  position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden;
+  display: grid; place-items: center; padding: 5rem var(--gut) 2rem;
+}
+.raclette__vitre {
+  position: relative; width: 100%; height: 100%; max-height: 44rem;
+  border-radius: 22px; overflow: hidden; --x: 0%;
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.raclette__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.raclette__sale { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--x)); }
+.raclette__sale .raclette__img { filter: blur(2.5px) sepia(.55) saturate(.6) brightness(.72) contrast(.8); transform: scale(1.02); }
+/* Traces de doigts, coulures et voile gris sur le verre. */
+.raclette__crasse {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 14% 22% at 18% 30%, rgba(210, 200, 170, .22), transparent 70%),
+    radial-gradient(ellipse 10% 16% at 42% 64%, rgba(210, 200, 170, .18), transparent 70%),
+    radial-gradient(ellipse 18% 12% at 70% 26%, rgba(210, 200, 170, .2), transparent 70%),
+    radial-gradient(ellipse 12% 20% at 86% 70%, rgba(210, 200, 170, .16), transparent 70%),
+    repeating-linear-gradient(94deg, rgba(255,255,255,.035) 0 2px, transparent 2px 38px),
+    linear-gradient(to bottom, rgba(140, 130, 105, .28), rgba(90, 85, 70, .38));
+  mix-blend-mode: screen;
+}
+.raclette__lame {
+  position: absolute; top: -2%; bottom: -2%; left: var(--x);
+  width: 14px; margin-left: -7px;
+  background: linear-gradient(90deg, #0E1413, #26302E 40%, #0E1413);
+  border-radius: 6px;
+  box-shadow: -18px 0 30px rgba(189, 235, 223, .25), 0 0 0 1px rgba(189, 235, 223, .35);
+  opacity: 0; transition: opacity .3s;
+}
+.raclette.is-active .raclette__lame { opacity: 1; }
+.raclette__txt {
+  position: absolute; left: calc(var(--gut) * 2); bottom: calc(2rem + var(--gut));
+  max-width: 26rem; padding: 1.6rem 1.8rem; border-radius: 18px;
+  background: rgba(10, 13, 13, .72); border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+}
+.raclette__pct { margin-top: .9rem; font-family: var(--mono); font-size: .8rem; color: var(--menthe); font-variant-numeric: tabular-nums; }
+@media (max-width: 767px) {
+  .raclette__scene { padding: 4.5rem var(--gut) 1rem; }
+  .raclette__txt { left: calc(var(--gut) * 1.6); right: calc(var(--gut) * 1.6); bottom: calc(1rem + var(--gut)); padding: 1.1rem 1.2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .raclette { height: auto; }
+  .raclette__scene { position: relative; height: 80vh; }
+  .raclette__sale, .raclette__lame { display: none; }
+}

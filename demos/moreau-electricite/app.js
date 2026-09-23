@@ -41,6 +41,7 @@
   var rCirc   = document.getElementById('r-circ');
   var rEtat   = document.getElementById('r-etat');
   var msgs    = Array.prototype.slice.call(document.querySelectorAll('.msg'));
+  var torche  = document.getElementById('torche');
   if (!section || !imgOn) return;
 
   var CIRCUITS  = 38;
@@ -55,6 +56,7 @@
   function appliquer(p) {
     var allume = entre(p, ALLUMAGE[0], ALLUMAGE[1]);
     imgOn.style.opacity = allume.toFixed(3);
+    if (torche) torche.style.opacity = (1 - entre(p, 0.2, ALLUMAGE[0])).toFixed(3);
     if (glow) glow.style.opacity = allume.toFixed(3);
 
     rVolt.textContent = Math.round(230 * allume);
@@ -106,6 +108,40 @@
   }).observe(section);
 
   media.addEventListener('animationend', function () { media.classList.remove('is-flicker'); });
+
+  /* ─── Lampe torche ───
+     Le disque suit le pointeur avec un amorti ; au repos, il balaie
+     doucement le tableau pour montrer qu'il y a quelque chose à voir. */
+  if (torche) {
+    var cx = 0, cy = 0, tx = 0, ty = 0, suit = false, init = false, tourne = false;
+    function viser(x, y) {
+      var r = media.getBoundingClientRect();
+      tx = x - r.left; ty = y - r.top; suit = true;
+    }
+    media.addEventListener('pointermove', function (e) { viser(e.clientX, e.clientY); });
+    media.addEventListener('pointerleave', function () { suit = false; });
+    media.addEventListener('touchmove', function (e) { if (e.touches[0]) viser(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true });
+    media.addEventListener('touchend', function () { suit = false; });
+    function lampe(t) {
+      var r = media.getBoundingClientRect();
+      if (!init) { cx = tx = r.width * .55; cy = ty = r.height * .45; init = true; }
+      if (!suit) {
+        var k = t * 0.0009;
+        tx = r.width * (.55 + Math.cos(k) * .16);
+        ty = r.height * (.45 + Math.sin(k * 1.4) * .18);
+      }
+      var e = suit ? 0.18 : 0.04;
+      cx += (tx - cx) * e; cy += (ty - cy) * e;
+      torche.style.setProperty('--mx', cx.toFixed(1) + 'px');
+      torche.style.setProperty('--my', cy.toFixed(1) + 'px');
+      if (tourne) requestAnimationFrame(lampe);
+    }
+    new IntersectionObserver(function (entries) {
+      var v = entries[0].isIntersecting;
+      if (v && !tourne) { tourne = true; requestAnimationFrame(lampe); }
+      if (!v) tourne = false;
+    }).observe(media);
+  }
 
   /* ─── Formulaire ─── */
   function initFormulaire() {

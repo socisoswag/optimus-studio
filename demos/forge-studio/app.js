@@ -251,3 +251,45 @@
     }, 700);
   });
 })();
+
+/* ─── La bande qui s'emballe ───
+   Vitesse de base, plus la vitesse du scroll : plus on descend vite,
+   plus la bande file et s'incline. En remontant, elle repart en sens
+   inverse. Tourne seulement quand elle est visible. */
+(function () {
+  'use strict';
+  var bande = document.querySelector('.defile');
+  var piste = bande && bande.querySelector('.defile__piste');
+  if (!piste || window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  bande.classList.add('is-js');
+  var x = 0, sens = 1, vitesse = 0, dernierY = window.scrollY, running = false, t0 = null;
+  function tick(t) {
+    var dt = t0 === null ? 16 : Math.min(50, t - t0); t0 = t;
+    var y = window.scrollY, dy = y - dernierY; dernierY = y;
+    if (dy > 0.5) sens = 1; else if (dy < -0.5) sens = -1;
+    vitesse += (Math.min(60, Math.abs(dy)) - vitesse) * 0.12;
+    var moitie = piste.scrollWidth / 2;
+    x -= sens * (0.06 + vitesse * 0.045) * dt;
+    if (x <= -moitie) x += moitie;
+    if (x > 0) x -= moitie;
+    piste.style.transform = 'translate3d(' + x.toFixed(1) + 'px,0,0)';
+    bande.style.setProperty('--skew', (Math.max(-3, Math.min(3, dy * 0.08))).toFixed(2) + 'deg');
+    if (running) requestAnimationFrame(tick);
+  }
+  new IntersectionObserver(function (e) {
+    var v = e[0].isIntersecting;
+    if (v && !running) { running = true; t0 = null; dernierY = window.scrollY; requestAnimationFrame(tick); }
+    if (!v) running = false;
+  }).observe(bande);
+})();
+
+/* ─── En-tête : fond plein dès qu'on quitte le haut de la page ─── */
+(function () {
+  var top = document.querySelector('.top');
+  if (!top || !('IntersectionObserver' in window)) return;
+  var s = document.createElement('div');
+  s.setAttribute('aria-hidden', 'true');
+  s.style.cssText = 'position:absolute;top:120px;height:1px;width:1px;';
+  document.body.prepend(s);
+  new IntersectionObserver(function (e) { top.classList.toggle('is-stuck', !e[0].isIntersecting); }).observe(s);
+})();

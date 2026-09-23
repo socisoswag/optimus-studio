@@ -99,6 +99,7 @@
   function draw(i, force) {
     if (i === current && !force) return;
     var img = frames[i];
+    for (var d = 1; !img && d < FRAME_COUNT; d++) img = frames[i - d] || frames[i + d];
     if (!img) return;
     current = i;
 

@@ -132,6 +132,27 @@
     </div>
   </section>
 
+  <!-- ─── Coup de raclette ───
+       La vitre est sale ; en faisant défiler, une raclette la nettoie
+       de gauche à droite. Même photo dessous, « salie » en CSS dessus. -->
+  <section class="raclette" id="raclette" aria-labelledby="raclette-titre">
+    <div class="raclette__scene">
+      <div class="raclette__vitre">
+        <img class="raclette__img" src="img/couloir.webp" alt="Couloir de bureaux vu à travers une paroi vitrée, propre après le passage de l'équipe" width="1920" height="1072" loading="lazy">
+        <div class="raclette__sale" id="raclette-sale" aria-hidden="true">
+          <img class="raclette__img" src="img/couloir.webp" alt="" width="1920" height="1072" loading="lazy">
+          <span class="raclette__crasse"></span>
+        </div>
+        <span class="raclette__lame" id="raclette-lame" aria-hidden="true"></span>
+      </div>
+      <div class="raclette__txt">
+        <p class="label">Vitrerie</p>
+        <h2 id="raclette-titre">Un passage, <br>zéro trace.</h2>
+        <p class="raclette__pct"><span id="raclette-pct">0</span>&nbsp;% de la vitre nettoyée</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ─── Estimation : l'interaction signature ─── -->
   <section class="estim" id="estimation" aria-labelledby="estim-titre">
     <div class="estim__copy">

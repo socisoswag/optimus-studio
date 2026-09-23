@@ -81,6 +81,13 @@
     </dl>
   </section>
 
+  <!-- Compteur de fuite : depuis l'arrivée sur la page, ce qu'aurait
+       perdu un robinet qui goutte une fois par seconde (0,05 ml). -->
+  <a class="compteur" id="compteur" href="#diagnostic" aria-label="Compteur de fuite : voir le diagnostic">
+    <span class="compteur__goutte" aria-hidden="true"></span>
+    <span class="compteur__txt"><span class="compteur__intro">Depuis votre arrivée, un robinet qui goutte a perdu </span><strong><span id="c-gouttes">0</span> gouttes</strong> · <strong id="c-volume">0 ml</strong><span class="compteur__court"> perdus</span></span>
+  </a>
+
   <!-- ─── Caractéristiques : lues comme une plaque signalétique ─── -->
   <section class="specs" aria-label="Garanties">
     <dl>

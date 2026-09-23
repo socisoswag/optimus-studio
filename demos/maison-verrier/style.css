@@ -343,7 +343,37 @@ input[aria-invalid="true"] { border-color: #E2705F; }
 }
 
 /* ─── Mouvement réduit ─── */
+/* ─── Le menu du soir, à l'horizontale ───
+   Grands panneaux photo qui glissent de droite à gauche pendant qu'on
+   descend : on traverse la soirée, de l'accueil au dessert. */
+.soiree { position: relative; height: 380vh; border-top: 1px solid var(--line); }
+.soiree__sticky {
+  position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden;
+  display: grid; grid-template-rows: auto 1fr auto; gap: 1.8rem; padding: 6rem 0 2.2rem;
+}
+.soiree__head { padding: 0 var(--gut); }
+.soiree__head h2 { font-family: var(--display); font-weight: 600; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.02; letter-spacing: -.02em; }
+.soiree__piste { list-style: none; display: flex; gap: 1.4rem; padding: 0 var(--gut); width: max-content; will-change: transform; }
+.temps {
+  position: relative; flex: none; width: min(34rem, 80vw); overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-end; padding: 2rem;
+  border: 1px solid var(--line); border-radius: 4px;
+  background: linear-gradient(to top, rgba(13, 11, 9, .94) 20%, rgba(13, 11, 9, .15) 75%), var(--img) center / cover no-repeat;
+}
+.temps--fin { background: var(--bg-2); justify-content: center; }
+.temps__heure { font-family: var(--display); font-weight: 600; font-size: clamp(3rem, 6vw, 5rem); line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.temps__nom { font-family: var(--display); font-size: .85rem; letter-spacing: .16em; text-transform: uppercase; margin-top: .8rem; }
+.temps__plat { font-size: 1.2rem; font-style: italic; line-height: 1.4; margin-top: .5rem; max-width: 26rem; }
+.temps .btn { margin-top: 1.6rem; align-self: flex-start; }
+.soiree__horloge { margin: 0 var(--gut); height: 2px; background: var(--line); }
+.soiree__horloge b { display: block; width: 0; height: 100%; background: var(--accent); }
+
 @media (prefers-reduced-motion: reduce) {
+  .soiree { height: auto; }
+  .soiree__sticky { position: relative; height: auto; }
+  .soiree__piste { flex-wrap: wrap; width: auto; }
+  .temps { min-height: 22rem; }
+  .soiree__horloge { display: none; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }

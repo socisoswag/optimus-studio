@@ -152,6 +152,45 @@
     <p class="carte__note reveal">Menu déjeuner en semaine, entrée, plat et dessert, 26 €.</p>
   </section>
 
+  <!-- ─── Le menu du soir : il défile à l'horizontale, heure par heure ─── -->
+  <section class="soiree" id="soiree" aria-labelledby="soiree-titre">
+    <div class="soiree__sticky">
+      <div class="soiree__head">
+        <p class="eyebrow">Menu du soir · 58 €</p>
+        <h2 id="soiree-titre">Une soirée,<br>cinq temps.</h2>
+      </div>
+      <ol class="soiree__piste" id="soiree-piste">
+        <li class="temps" style="--img:url(img/salle.webp)">
+          <p class="temps__heure">19 h 30</p>
+          <p class="temps__nom">L'accueil</p>
+          <p class="temps__plat">Gougères au comté, un verre de crémant du Jura.</p>
+        </li>
+        <li class="temps" style="--img:url(img/detail.webp)">
+          <p class="temps__heure">20 h 00</p>
+          <p class="temps__nom">Entrée</p>
+          <p class="temps__plat">Tarte fine d'oignons doux, anchois de Collioure.</p>
+        </li>
+        <li class="temps" style="--img:url(img/feu.webp)">
+          <p class="temps__heure">20 h 45</p>
+          <p class="temps__nom">Le plat</p>
+          <p class="temps__plat">Pigeonneau rôti au sarment, navets glacés au miel de châtaignier.</p>
+        </li>
+        <li class="temps" style="--img:url(img/hero.webp)">
+          <p class="temps__heure">21 h 30</p>
+          <p class="temps__nom">Fromages</p>
+          <p class="temps__plat">Trois affinages de la fromagerie de la Croix-Rousse.</p>
+        </li>
+        <li class="temps temps--fin">
+          <p class="temps__heure">22 h 00</p>
+          <p class="temps__nom">Dessert</p>
+          <p class="temps__plat">Poire pochée au vin de Savoie, glace au laurier. Mignardises avec le café.</p>
+          <a class="btn" href="#reserver">Réserver ce soir</a>
+        </li>
+      </ol>
+      <div class="soiree__horloge" aria-hidden="true"><b id="soiree-jauge"></b></div>
+    </div>
+  </section>
+
   <!-- ─── Bande photo : le feu. Texte à droite. ─── -->
   <section class="bleed bleed--band bleed--right">
     <img src="img/feu.webp" alt="Le foyer à bois de la cuisine" width="1920" height="1071" loading="lazy">

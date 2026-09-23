@@ -53,20 +53,33 @@
     return 'frames/frame_' + String(i + 1).padStart(4, '0') + '.webp';
   }
 
-  /* On charge dans l'ordre du scroll : les premières images d'abord. */
-  function charger(i) {
-    if (i >= FRAME_COUNT) return;
-    var img = new Image();
-    img.decoding = 'async';
-    img.onload = function () {
-      frames[i] = img;
-      if (i === 0) { dirty = true; tick(); }
-      charger(i + 1);
-    };
-    img.onerror = function () { charger(i + 1); };
-    img.src = url(i);
+  /* Chargement en trois temps, quatre images à la fois : les 30
+     premières, puis une sur huit jusqu'au bout (toute la course est
+     déjà jouable), puis les trous. */
+  var ordre = [], vu = {};
+  function pousser(i) { if (i < FRAME_COUNT && !vu[i]) { vu[i] = 1; ordre.push(i); } }
+  for (var a = 0; a < 30; a++) pousser(a);
+  for (var b = 0; b < FRAME_COUNT; b += 8) pousser(b);
+  pousser(FRAME_COUNT - 1);
+  for (var c = 0; c < FRAME_COUNT; c++) pousser(c);
+  var k = 0, enVol = 0;
+  function charger() {
+    while (enVol < 4 && k < ordre.length) {
+      (function (i) {
+        enVol++;
+        var img = new Image();
+        img.decoding = 'async';
+        img.onload = function () {
+          frames[i] = img; enVol--;
+          if (i === 0) { dirty = true; tick(); }
+          charger();
+        };
+        img.onerror = function () { enVol--; charger(); };
+        img.src = url(i);
+      })(ordre[k++]);
+    }
   }
-  charger(0);
+  charger();
 
   function dimensionner() {
     var dpr = Math.min(window.devicePixelRatio || 1, 2);

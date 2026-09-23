@@ -213,6 +213,9 @@ h2 { font-size: clamp(2.2rem, 4.8vw, 4rem); }
 .entretien { display: grid; grid-template-columns: 1fr 1fr; }
 .entretien__media { position: relative; min-height: 34rem; }
 .entretien__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* La pluie tombe sur les ardoises : fines traînées dorées qui
+   éclatent en gouttelettes en bas du cadre. */
+.pluie { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 .entretien__copy { align-self: center; padding: 6rem var(--gut); }
 .entretien__copy > p:not(.label) { color: var(--mute); margin-top: 1.2rem; max-width: 34rem; }
 .entretien__prix { color: var(--gold) !important; font-weight: 700; }
@@ -301,4 +304,5 @@ h2 { font-size: clamp(2.2rem, 4.8vw, 4rem); }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn { transition: none; }
+  .pluie { display: none; }
 }

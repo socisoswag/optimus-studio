@@ -106,3 +106,27 @@
     }, 700);
   });
 })();
+
+/* ─── Le menu du soir, à l'horizontale ─── */
+(function () {
+  'use strict';
+  var section = document.getElementById('soiree');
+  var piste = document.getElementById('soiree-piste');
+  var jauge = document.getElementById('soiree-jauge');
+  if (!section || !piste || window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  var running = false;
+  function tick() {
+    var r = section.getBoundingClientRect();
+    var c = r.height - window.innerHeight;
+    var p = c > 0 ? Math.min(1, Math.max(0, -r.top / c)) : 0;
+    var course = Math.max(0, piste.scrollWidth - document.documentElement.clientWidth);
+    piste.style.transform = 'translate3d(' + (-course * p).toFixed(1) + 'px,0,0)';
+    jauge.style.width = (p * 100).toFixed(1) + '%';
+    if (running) requestAnimationFrame(tick);
+  }
+  new IntersectionObserver(function (e) {
+    var v = e[0].isIntersecting;
+    if (v && !running) { running = true; requestAnimationFrame(tick); }
+    if (!v) running = false;
+  }).observe(section);
+})();

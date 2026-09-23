@@ -354,3 +354,33 @@
     }, 800);
   });
 })();
+
+/* ─── Les arches s'ouvrent au scroll ───
+   Une seule boucle pour toutes les photos .porte, active seulement
+   quand l'une d'elles est à l'écran. */
+(function () {
+  'use strict';
+  var portes = Array.prototype.slice.call(document.querySelectorAll('.porte'));
+  if (!portes.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+    portes.forEach(function (el) { el.style.setProperty('--p', 1); });
+    return;
+  }
+  var visibles = 0, running = false;
+  function tick() {
+    var vh = window.innerHeight;
+    portes.forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      var p = Math.min(1, Math.max(0, (vh - r.top) / (vh * 0.75)));
+      p = 1 - Math.pow(1 - p, 3);
+      el.style.setProperty('--p', p.toFixed(3));
+    });
+    if (running) requestAnimationFrame(tick);
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { visibles += e.isIntersecting ? 1 : -1; });
+    visibles = Math.max(0, visibles);
+    if (visibles && !running) { running = true; requestAnimationFrame(tick); }
+    if (!visibles) running = false;
+  });
+  portes.forEach(function (el) { io.observe(el); });
+})();

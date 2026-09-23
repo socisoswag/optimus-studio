@@ -149,3 +149,33 @@
     }, 700);
   });
 })();
+
+/* ─── Coup de raclette ───
+   Boucle requestAnimationFrame active seulement quand la section est
+   à l'écran ; la vitre est propre entre 15 % et 85 % de la course. */
+(function () {
+  'use strict';
+  var section = document.getElementById('raclette');
+  if (!section || window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  var vitre = section.querySelector('.raclette__vitre');
+  var pct = document.getElementById('raclette-pct');
+  var running = false, dernier = -1;
+  function tick() {
+    var r = section.getBoundingClientRect();
+    var c = r.height - window.innerHeight;
+    var p = c > 0 ? Math.min(1, Math.max(0, -r.top / c)) : 0;
+    var x = Math.min(1, Math.max(0, (p - 0.15) / 0.7));
+    if (Math.abs(x - dernier) > 0.0005) {
+      vitre.style.setProperty('--x', (x * 100).toFixed(2) + '%');
+      pct.textContent = Math.round(x * 100);
+      section.classList.toggle('is-active', x > 0 && x < 1);
+      dernier = x;
+    }
+    if (running) requestAnimationFrame(tick);
+  }
+  new IntersectionObserver(function (e) {
+    var v = e[0].isIntersecting;
+    if (v && !running) { running = true; requestAnimationFrame(tick); }
+    if (!v) running = false;
+  }).observe(section);
+})();

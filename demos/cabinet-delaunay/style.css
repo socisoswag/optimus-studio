@@ -270,3 +270,28 @@ h1 em, h2 em { color: var(--mute); }
   .reveal { opacity: 1; transform: none; transition: none; }
   .fiche.is-change { animation: none; }
 }
+
+/* ─── Principe : le texte s'éclaire mot à mot ───
+   Chaque mot passe du gris au papier à mesure qu'on descend, comme
+   une lecture qu'on accompagne du doigt. */
+.principe { position: relative; height: 230vh; border-top: 1px solid var(--line); }
+.principe__sticky {
+  position: sticky; top: 0; height: 100vh; height: 100svh;
+  display: grid; place-content: center; padding: 6rem var(--gut);
+}
+.principe__txt {
+  max-width: 58rem;
+  font-family: var(--serif); font-size: clamp(1.7rem, 3.6vw, 3.1rem); line-height: 1.28; letter-spacing: -.01em;
+  color: var(--ink);
+}
+.principe__txt em { font-style: italic; color: var(--vert-c); }
+.principe__txt .mot { color: rgba(236, 230, 218, .16); transition: color .35s; }
+.principe__txt em .mot { color: rgba(147, 196, 169, .2); }
+.principe__txt .mot.is-lu { color: var(--ink); }
+.principe__txt em .mot.is-lu { color: var(--vert-c); }
+.principe__lecteur { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.principe__signe { margin-top: 2.2rem; font-family: var(--sans); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mute); }
+@media (prefers-reduced-motion: reduce) {
+  .principe { height: auto; }
+  .principe__sticky { position: relative; height: auto; min-height: 70vh; }
+}

@@ -196,3 +196,52 @@
     }, 700);
   });
 })();
+
+/* ─── Principe : mot à mot ───
+   On découpe le paragraphe en mots (le texte reste lisible tel quel
+   par les lecteurs d'écran), puis on allume les mots au rythme du scroll. */
+(function () {
+  'use strict';
+  var section = document.getElementById('principe');
+  var txt = document.getElementById('principe-txt');
+  if (!section || !txt || window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  var copie = document.createElement('p');
+  copie.className = 'principe__lecteur';
+  copie.textContent = txt.textContent.replace(/\s+/g, ' ').trim();
+  txt.parentNode.insertBefore(copie, txt);
+  txt.setAttribute('aria-hidden', 'true');
+  function decouper(noeud) {
+    Array.prototype.slice.call(noeud.childNodes).forEach(function (n) {
+      if (n.nodeType === 3) {
+        var frag = document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(function (m) {
+          if (!m) return;
+          if (/^\s+$/.test(m)) { frag.appendChild(document.createTextNode(m)); return; }
+          var span = document.createElement('span');
+          span.className = 'mot'; span.textContent = m;
+          frag.appendChild(span);
+        });
+        noeud.replaceChild(frag, n);
+      } else if (n.nodeType === 1) decouper(n);
+    });
+  }
+  decouper(txt);
+  var mots = Array.prototype.slice.call(txt.querySelectorAll('.mot'));
+  var running = false, dernier = -1;
+  function tick() {
+    var r = section.getBoundingClientRect();
+    var c = r.height - window.innerHeight;
+    var p = c > 0 ? Math.min(1, Math.max(0, -r.top / c)) : 1;
+    var n = Math.round(Math.min(1, p / 0.85) * mots.length);
+    if (n !== dernier) {
+      mots.forEach(function (m, i) { m.classList.toggle('is-lu', i < n); });
+      dernier = n;
+    }
+    if (running) requestAnimationFrame(tick);
+  }
+  new IntersectionObserver(function (e) {
+    var v = e[0].isIntersecting;
+    if (v && !running) { running = true; requestAnimationFrame(tick); }
+    if (!v) running = false;
+  }).observe(section);
+})();

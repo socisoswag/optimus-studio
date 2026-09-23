@@ -152,6 +152,26 @@ body.is-on .releve__etat, body.is-on .releve dd { color: var(--volt); }
   background: radial-gradient(ellipse 45% 50% at 58% 48%, rgba(191, 215, 255, .16), rgba(82, 229, 143, .05) 60%, transparent 75%);
   mix-blend-mode: screen;
 }
+/* ─── Lampe torche ───
+   Un disque feutré suit le pointeur et montre le tableau allumé à
+   travers le noir. Elle s'efface quand le courant revient. */
+.torche { position: absolute; inset: 0; --mx: 55%; --my: 45%; --r: 190px; touch-action: pan-y; }
+.torche__img { filter: brightness(1.35) contrast(1.05); }
+.torche__img {
+  -webkit-mask-image: radial-gradient(circle var(--r) at var(--mx) var(--my), #000 0%, rgba(0,0,0,.8) 45%, rgba(0,0,0,.25) 72%, transparent 100%);
+          mask-image: radial-gradient(circle var(--r) at var(--mx) var(--my), #000 0%, rgba(0,0,0,.8) 45%, rgba(0,0,0,.25) 72%, transparent 100%);
+}
+.torche__halo {
+  position: absolute; left: var(--mx); top: var(--my);
+  width: calc(var(--r) * 1.7); height: calc(var(--r) * 1.7);
+  transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 244, 214, .22), transparent 62%);
+  mix-blend-mode: screen;
+}
+.msg__torche { font-family: var(--mono); font-size: .74rem !important; letter-spacing: .12em; text-transform: uppercase; color: var(--volt) !important; }
+.msg__torche::before { content: "◉ "; }
+@media (hover: none) { .msg__torche { display: none; } }
+
 /* Le petit vacillement du courant qui revient. */
 .volt__media.is-flicker { animation: vacille .7s steps(1, end); }
 @keyframes vacille {
@@ -307,4 +327,5 @@ body.is-on .releve__etat, body.is-on .releve dd { color: var(--volt); }
   .msg { transition: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .card { transition: none; }
+  .torche { display: none; }
 }
