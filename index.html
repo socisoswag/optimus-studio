@@ -14,6 +14,8 @@
 
   <!-- ── FAVICON ── -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- ── OPEN GRAPH (partage réseaux sociaux) ── -->
   <meta property="og:type"        content="website">
@@ -41,7 +43,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Hanken+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- ── PRELOAD première frame (LCP) ── -->
-  <link rel="preload" as="image" href="frames/frame_0001.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="frames/frame_0001.webp" fetchpriority="high" media="(min-aspect-ratio: 701/1000)">
+  <link rel="preload" as="image" href="frames-m/frame_0001.webp" fetchpriority="high" media="(max-aspect-ratio: 7/10)">
 
   <!-- ── LLMS.TXT ── -->
   <link rel="llms" href="/llms.txt">
@@ -247,7 +250,7 @@
 
   <!-- REDUCED-MOTION FALLBACK -->
   <div id="reduced-poster" aria-hidden="true">
-    <img src="frames/frame_0060.webp" alt="Objectif de cinéma — Optimus Studio" width="1920" height="913">
+    <img src="frames/frame_0060.webp" alt="Objectif de cinéma — Optimus Studio" width="1920" height="913" loading="lazy" decoding="async">
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>

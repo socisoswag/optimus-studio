@@ -107,6 +107,52 @@
 }
 .compris__liste strong { color: var(--ink); font-weight: 600; }
 
+/* ─── Preuves ─── */
+.preuves {
+  padding: clamp(3rem, 8vh, 6rem) var(--gut);
+  border-top: 1px solid var(--line);
+}
+.preuves h2 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(1.9rem, 4.4vw, 3.4rem);
+  line-height: 1; letter-spacing: -.02em;
+  margin-bottom: 2.2rem;
+}
+.preuves__chiffres {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.6rem clamp(2rem, 5vw, 4rem); max-width: 62rem;
+}
+.preuves__chiffres div { padding-top: 1.1rem; border-top: 1px solid var(--line); }
+.preuves__chiffres dt {
+  font-family: var(--font-mono); font-size: .7rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--dim);
+}
+.preuves__chiffres div { display: flex; flex-direction: column-reverse; gap: .4rem; }
+.preuves__chiffres dd {
+  font-family: var(--font-display); font-weight: 800; line-height: 1;
+  font-size: clamp(2.2rem, 5vw, 3.6rem); color: var(--accent);
+}
+.preuves__chaines {
+  max-width: 62rem; margin-top: 2.2rem;
+  font-size: .95rem; line-height: 1.8; color: var(--mute);
+}
+.preuves__chaines span {
+  font-family: var(--font-mono); font-size: .7rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--dim); margin-right: .6rem;
+}
+.preuves__lien {
+  display: inline-block; margin-top: 1.6rem;
+  font-family: var(--font-mono); font-size: .8rem; letter-spacing: .06em;
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid var(--accent); padding-bottom: .2rem;
+  transition: color .25s var(--ease);
+}
+.preuves__lien:hover { color: var(--accent); }
+@media (max-width: 560px) {
+  .preuves__chiffres { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .preuves__chiffres dt { font-size: .6rem; letter-spacing: .08em; }
+}
+
 /* ─── Devis ─── */
 .devis {
   padding: clamp(3rem, 8vh, 6rem) var(--gut);
