@@ -73,6 +73,8 @@
      tiktok : le numéro de la vidéo TikTok (la fin du lien) et compte : le @
      titre, chaine : le titre et la chaîne pour qui la vidéo a été montée
      likes  : facultatif, affiché sur la vignette
+     mp4    : true si le TikTok est hébergé (videos/tt-<numéro>.mp4)
+     apercu : true si l'extrait de 8 s existe (videos/yt-<id>.mp4)
      Vignette : videos/yt-<id>.webp ou videos/tt-<numéro>.webp
      La première vidéo YouTube est mise à la une, en grand.
      Exemple :
@@ -175,11 +177,15 @@
     });
   });
 
-  /* ─── Vidéos : deux rangées (formats longs, formats verticaux),
-     lecteur chargé au clic seulement ───
-     Chaque carte garde aussi un lien direct vers YouTube ou TikTok :
-     si le lecteur intégré est bloqué (navigateur, extension), la vidéo
-     reste visible en un clic. */
+  /* ─── Vidéos ───
+     Formats longs : une vidéo à la une, puis une grille. Au survol, un
+     extrait muet de 8 secondes (videos/yt-<id>.mp4) remplace la vignette ;
+     au clic, le lecteur YouTube s'intègre sur le vrai site, ailleurs la
+     vidéo s'ouvre sur YouTube.
+     Reels & TikTok : un carrousel qu'on fait glisser. Les TikTok sont
+     hébergés sur le site (videos/tt-<numéro>.mp4) : ils se lisent partout,
+     muets au survol ou quand ils passent au centre sur téléphone, avec le
+     son au clic. */
   (function videos() {
     var grille = document.getElementById('grid-videos');
     var vide = document.getElementById('videos-vide');
@@ -188,78 +194,206 @@
     vide.hidden = true; note.hidden = false;
 
     var INTEGRE = /(^|\.)optimusstudio\.fr$|\.netlify\.app$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-    /* Si la page bloque quand même le lecteur (politique de sécurité),
-       la vignette laisse place à un lien vers la plateforme. */
+    var souris = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    var reduit = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* Si la page bloque quand même le lecteur YouTube, la carte affiche un lien. */
     document.addEventListener('securitypolicyviolation', function (e) {
       if (!/youtube|tiktok/.test(e.blockedURI || '')) return;
       Array.prototype.forEach.call(grille.querySelectorAll('.video__ecran iframe'), function (f) {
         var carte = f.closest('.video');
         f.parentNode.innerHTML = '<a class="video__secours" href="' + carte.querySelector('.video__lien').href +
-          '" target="_blank" rel="noopener">Lire la vidéo sur ' + (carte.classList.contains('video--short') ? 'TikTok' : 'YouTube') + ' ↗</a>';
+          '" target="_blank" rel="noopener">Lire la vidéo sur YouTube ↗</a>';
       });
     });
 
     function echap(t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
-
-    function bloc(titre, n, classe) {
-      var b = document.createElement('div');
-      b.className = 'videos-bloc';
-      b.innerHTML = '<h2 class="videos-bloc__titre">' + titre + ' <span>' + n + '</span></h2>' +
-        '<div class="videos ' + classe + '"></div>';
-      grille.appendChild(b);
-      return b.querySelector('.videos');
+    function lienDe(v) {
+      return v.tiktok
+        ? 'https://www.tiktok.com/@' + encodeURIComponent(v.compte) + '/video/' + encodeURIComponent(v.tiktok)
+        : 'https://www.youtube.com/watch?v=' + encodeURIComponent(v.yt);
     }
+    function corps(v, une) {
+      return '<div class="video__corps">' +
+        '<p class="video__type">' + (une ? 'À la une · ' : '') + (v.tiktok ? 'TikTok' : 'YouTube') + '</p>' +
+        '<h3 class="video__titre">' + echap(v.titre) + '</h3>' +
+        (v.chaine ? '<p class="video__client">' + echap(v.chaine) + '</p>' : '') +
+        '<a class="video__lien" href="' + lienDe(v) + '" target="_blank" rel="noopener">Voir sur ' + (v.tiktok ? 'TikTok' : 'YouTube') + ' ↗</a>' +
+      '</div>';
+    }
+    function tete(titre, n, nav) {
+      var h = document.createElement('div');
+      h.className = 'videos-bloc__tete';
+      h.innerHTML = '<h2 class="videos-bloc__titre">' + titre + ' <span>' + n + '</span></h2>' +
+        (nav ? '<div class="carrousel__nav"><button type="button" class="carrousel__fleche" data-sens="-1" aria-label="Vidéos précédentes">←</button>' +
+               '<button type="button" class="carrousel__fleche" data-sens="1" aria-label="Vidéos suivantes">→</button></div>' : '');
+      return h;
+    }
+
     var longs = VIDEOS.filter(function (v) { return v.yt; });
     var courts = VIDEOS.filter(function (v) { return v.tiktok; });
-    var gLongs = longs.length ? bloc('Formats longs', longs.length, '') : null;
-    var gCourts = courts.length ? bloc('Reels &amp; TikTok', courts.length, 'videos--courts') : null;
 
-    VIDEOS.forEach(function (v) {
-      var tiktok = !!v.tiktok;
-      var une = !tiktok && v === longs[0];
-      var el = document.createElement('article');
-      el.className = 'video' + (tiktok ? ' video--short' : '') + (une ? ' video--une' : '');
-      var titre = v.titre || (tiktok ? '@' + v.compte : 'Montage vidéo');
-      el.innerHTML =
-        '<div class="video__ecran">' +
-          '<button class="video__lancer" type="button" aria-label="Lire la vidéo : ' + echap(titre) + '">' +
-            '<img src="videos/' + (tiktok ? 'tt-' + v.tiktok : 'yt-' + v.yt) + '.webp" alt="" width="' + (tiktok ? 360 : 640) + '" height="' + (tiktok ? 640 : 360) + '" loading="lazy" decoding="async">' +
-            (v.likes ? '<span class="video__likes">♥ ' + echap(v.likes) + '</span>' : '') +
-            '<span class="video__play" aria-hidden="true"></span>' +
-          '</button>' +
-        '</div>' +
-        '<div class="video__corps">' +
-          '<p class="video__type">' + (une ? 'À la une · ' : '') + (tiktok ? 'TikTok' : 'YouTube') + '</p>' +
-          '<h3 class="video__titre">' + echap(titre) + '</h3>' +
-          (v.chaine ? '<p class="video__client">' + echap(v.chaine) + '</p>' : '') +
-          '<a class="video__lien" href="' + (tiktok
-            ? 'https://www.tiktok.com/@' + encodeURIComponent(v.compte) + '/video/' + encodeURIComponent(v.tiktok)
-            : 'https://www.youtube.com/watch?v=' + encodeURIComponent(v.yt)) +
-            '" target="_blank" rel="noopener">Voir sur ' + (tiktok ? 'TikTok' : 'YouTube') + ' ↗</a>' +
-        '</div>';
-      var bouton = el.querySelector('.video__lancer');
-      var lien = el.querySelector('.video__lien').href;
-      bouton.addEventListener('click', function () {
-        /* Ailleurs que sur le vrai site (un aperçu, une copie), les
-           lecteurs intégrés sont souvent bloqués : on ouvre directement
-           la vidéo sur YouTube ou TikTok. */
-        if (!INTEGRE) { window.open(lien, '_blank', 'noopener'); return; }
-        var f = document.createElement('iframe');
-        f.src = tiktok
-          ? 'https://www.tiktok.com/player/v1/' + encodeURIComponent(v.tiktok) + '?autoplay=1&rel=0&description=1&music_info=0'
-          : 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(v.yt) + '?autoplay=1&rel=0&modestbranding=1';
-        f.title = el.querySelector('.video__titre').textContent;
-        f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
-        f.allowFullscreen = true;
-        f.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
-        var ecran = el.querySelector('.video__ecran');
-        ecran.innerHTML = '';
-        ecran.appendChild(f);
-        f.focus();
+    /* ── Formats longs ── */
+    if (longs.length) {
+      var bl = document.createElement('div');
+      bl.className = 'videos-bloc';
+      bl.appendChild(tete('Formats longs', longs.length));
+      var gl = document.createElement('div');
+      gl.className = 'videos';
+      bl.appendChild(gl);
+      grille.appendChild(bl);
+
+      longs.forEach(function (v, i) {
+        var une = i === 0;
+        var el = document.createElement('article');
+        el.className = 'video' + (une ? ' video--une' : '');
+        el.innerHTML =
+          '<div class="video__ecran">' +
+            '<button class="video__lancer" type="button" aria-label="Lire la vidéo : ' + echap(v.titre) + '">' +
+              '<img src="videos/yt-' + v.yt + '.webp" alt="" width="640" height="360" loading="lazy" decoding="async">' +
+              (v.apercu ? '<video class="video__apercu" src="videos/yt-' + v.yt + '.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>' : '') +
+              '<span class="video__play" aria-hidden="true"></span>' +
+            '</button>' +
+          '</div>' + corps(v, une);
+        gl.appendChild(el);
+
+        var apercu = el.querySelector('.video__apercu');
+        function jouer() { if (apercu && !reduit) { apercu.play().then(function () { el.classList.add('is-apercu'); }, function () {}); } }
+        function stop() { if (apercu) { apercu.pause(); el.classList.remove('is-apercu'); } }
+        if (apercu && souris) {
+          el.querySelector('.video__ecran').addEventListener('mouseenter', jouer);
+          el.querySelector('.video__ecran').addEventListener('mouseleave', stop);
+        }
+        /* La vidéo à la une joue son extrait dès qu'elle est à l'écran. */
+        if (apercu && une && 'IntersectionObserver' in window) {
+          new IntersectionObserver(function (e) { if (e[0].isIntersecting) jouer(); else stop(); }, { threshold: 0.5 }).observe(el);
+        }
+
+        el.querySelector('.video__lancer').addEventListener('click', function () {
+          if (!INTEGRE) { window.open(lienDe(v), '_blank', 'noopener'); return; }
+          var f = document.createElement('iframe');
+          f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(v.yt) + '?autoplay=1&rel=0&modestbranding=1';
+          f.title = v.titre;
+          f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+          f.allowFullscreen = true;
+          f.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+          var ecran = el.querySelector('.video__ecran');
+          ecran.innerHTML = '';
+          ecran.appendChild(f);
+          f.focus();
+        });
       });
-      (tiktok ? gCourts : gLongs).appendChild(el);
-    });
+    }
 
+    /* ── Reels & TikTok : le carrousel ── */
+    if (courts.length) {
+      var bc = document.createElement('div');
+      bc.className = 'videos-bloc';
+      bc.appendChild(tete('Reels &amp; TikTok', courts.length, true));
+      var piste = document.createElement('div');
+      piste.className = 'carrousel';
+      piste.tabIndex = 0;
+      piste.setAttribute('role', 'region');
+      piste.setAttribute('aria-label', 'Reels et TikTok : faites glisser pour voir la suite');
+      bc.appendChild(piste);
+      grille.appendChild(bc);
+
+      var clips = [];
+      courts.forEach(function (v) {
+        var el = document.createElement('article');
+        el.className = 'video video--short';
+        el.innerHTML =
+          '<div class="video__ecran">' +
+            (v.mp4
+              ? '<video class="video__clip" src="videos/tt-' + v.tiktok + '.mp4" poster="videos/tt-' + v.tiktok + '.webp" muted loop playsinline preload="none"></video>' +
+                '<button class="video__son" type="button" aria-label="Activer le son : ' + echap(v.titre) + '" aria-pressed="false"></button>'
+              : '<button class="video__lancer" type="button" aria-label="Voir la vidéo sur TikTok : ' + echap(v.titre) + '">' +
+                  '<img src="videos/tt-' + v.tiktok + '.webp" alt="" width="360" height="640" loading="lazy" decoding="async">' +
+                  '<span class="video__play" aria-hidden="true"></span>' +
+                '</button>') +
+            (v.likes ? '<span class="video__likes">♥ ' + echap(v.likes) + '</span>' : '') +
+          '</div>' + corps(v, false);
+        piste.appendChild(el);
+
+        if (!v.mp4) {
+          el.querySelector('.video__lancer').addEventListener('click', function () { window.open(lienDe(v), '_blank', 'noopener'); });
+          return;
+        }
+        var clip = el.querySelector('.video__clip');
+        var son = el.querySelector('.video__son');
+        clips.push(clip);
+        function lecture() { clip.play().then(function () { el.classList.add('is-lecture'); }, function () {}); }
+        function pause() { if (!clip.muted) return; clip.pause(); el.classList.remove('is-lecture'); }
+        clip.addEventListener('pause', function () { el.classList.remove('is-lecture'); });
+        if (souris && !reduit) {
+          el.querySelector('.video__ecran').addEventListener('mouseenter', lecture);
+          el.querySelector('.video__ecran').addEventListener('mouseleave', pause);
+        }
+        /* Clic : le son. Un seul TikTok parle à la fois. */
+        son.addEventListener('click', function () {
+          if (piste.dataset.glisse === '1') return;
+          if (clip.muted || clip.paused) {
+            clips.forEach(function (c) { if (c !== clip) { c.muted = true; c.pause(); c.closest('.video').classList.remove('is-son'); } });
+            clip.muted = false;
+            if (clip.paused) clip.currentTime = 0;
+            lecture();
+            el.classList.add('is-son');
+            son.setAttribute('aria-pressed', 'true');
+          } else {
+            clip.muted = true;
+            el.classList.remove('is-son');
+            son.setAttribute('aria-pressed', 'false');
+          }
+        });
+      });
+
+      /* Sur téléphone, le TikTok qui passe au centre se lance, muet. */
+      if (!souris && !reduit && 'IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            var c = e.target, carte = c.closest('.video');
+            if (e.intersectionRatio >= 0.8) c.play().then(function () { carte.classList.add('is-lecture'); }, function () {});
+            else if (c.muted) { c.pause(); carte.classList.remove('is-lecture'); }
+          });
+        }, { root: piste, threshold: [0, 0.8] });
+        clips.forEach(function (c) { io.observe(c); });
+      }
+
+      /* Flèches : on avance d'environ deux cartes. */
+      Array.prototype.forEach.call(bc.querySelectorAll('.carrousel__fleche'), function (b) {
+        b.addEventListener('click', function () {
+          var pas = piste.firstElementChild.getBoundingClientRect().width * 2;
+          piste.scrollBy({ left: pas * +b.dataset.sens, behavior: reduit ? 'auto' : 'smooth' });
+        });
+      });
+      function flechesAJour() {
+        var fl = bc.querySelectorAll('.carrousel__fleche');
+        fl[0].disabled = piste.scrollLeft < 4;
+        fl[1].disabled = piste.scrollLeft + piste.clientWidth > piste.scrollWidth - 4;
+      }
+      piste.addEventListener('scroll', function () { requestAnimationFrame(flechesAJour); }, { passive: true });
+      flechesAJour();
+
+      /* À la souris, on attrape le carrousel et on le fait glisser. */
+      if (souris) {
+        var x0 = 0, s0 = 0, tenu = false;
+        piste.addEventListener('pointerdown', function (e) {
+          if (e.pointerType !== 'mouse' || e.button !== 0) return;
+          tenu = true; x0 = e.clientX; s0 = piste.scrollLeft; piste.dataset.glisse = '0';
+        });
+        window.addEventListener('pointermove', function (e) {
+          if (!tenu) return;
+          var dx = e.clientX - x0;
+          if (Math.abs(dx) > 6 && piste.dataset.glisse !== '1') { piste.dataset.glisse = '1'; piste.classList.add('is-glisse'); }
+          if (piste.dataset.glisse === '1') piste.scrollLeft = s0 - dx;
+        });
+        window.addEventListener('pointerup', function () {
+          if (!tenu) return;
+          tenu = false; piste.classList.remove('is-glisse');
+          setTimeout(function () { piste.dataset.glisse = '0'; }, 0);
+        });
+      }
+    }
   })();
 
   /* ─── Aperçu live ─── */

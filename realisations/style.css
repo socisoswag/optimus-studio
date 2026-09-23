@@ -344,24 +344,68 @@ a { color: inherit; }
    de requête vers YouTube avant que le visiteur le demande. */
 .videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: 1.4rem; }
 .video { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--panel); }
-.videos-bloc + .videos-bloc { margin-top: 3rem; }
+.videos-bloc + .videos-bloc { margin-top: 3.5rem; }
+.videos-bloc__tete { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.2rem; }
 .videos-bloc__titre {
-  display: flex; align-items: baseline; gap: .6rem; margin-bottom: 1.2rem;
+  display: flex; align-items: baseline; gap: .6rem;
   font-family: var(--font-mono); font-size: .72rem; font-weight: 400; letter-spacing: .18em; text-transform: uppercase; color: var(--mute);
 }
 .videos-bloc__titre span { color: var(--accent); }
-/* Les formats verticaux : cinq par rangée sur grand écran. */
-.videos--courts { grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr)); gap: 1rem; }
-@media (min-width: 1200px) { .videos--courts { grid-template-columns: repeat(5, 1fr); } }
-@media (max-width: 560px) {
-  .videos--courts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
-  .videos--courts .video__corps { padding: .8rem .8rem 1rem; }
-  .videos--courts .video__titre { font-size: 1rem; }
+
+/* ─── Le carrousel des formats verticaux ───
+   Défilement natif (doigt, pavé tactile), aimanté carte par carte ;
+   à la souris on peut l'attraper, et deux flèches font avancer. */
+.carrousel {
+  display: flex; gap: 1rem; overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; scroll-padding-inline: 0;
+  padding-bottom: .8rem; scrollbar-width: thin; scrollbar-color: var(--dim) transparent;
+  cursor: grab;
 }
-.videos--courts .video__client { overflow-wrap: anywhere; }
+.carrousel.is-glisse { cursor: grabbing; scroll-snap-type: none; user-select: none; }
+.carrousel.is-glisse .video { pointer-events: none; }
+.carrousel::-webkit-scrollbar { height: 4px; }
+.carrousel::-webkit-scrollbar-thumb { background: var(--dim); }
+.carrousel > .video { flex: 0 0 clamp(13rem, 19vw, 16.5rem); scroll-snap-align: start; }
+@media (max-width: 560px) { .carrousel > .video { flex-basis: 72vw; } .carrousel { gap: .7rem; } }
+.carrousel__nav { display: flex; gap: .4rem; }
+.carrousel__fleche {
+  width: 2.6rem; height: 2.6rem; border: 1px solid var(--line); background: transparent; color: var(--ink);
+  font-size: 1rem; cursor: pointer; transition: border-color .25s, color .25s, opacity .25s;
+}
+.carrousel__fleche:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.carrousel__fleche:disabled { opacity: .3; cursor: default; }
+@media (hover: none) { .carrousel__nav { display: none; } }
+
+/* TikTok hébergés : la vidéo elle-même sert de vignette. */
+.video__clip { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
+.video__son { position: absolute; inset: 0; width: 100%; background: none; border: 0; cursor: pointer; }
+.video__son::after {
+  content: ""; position: absolute; right: .6rem; bottom: .6rem; width: 2.2rem; height: 2.2rem; border-radius: 50%;
+  background: rgba(0, 0, 0, .6) no-repeat center / 1.1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3E%3Cpath d='M11 5 6 9H3v6h3l5 4z'/%3E%3Cpath d='m22 9-6 6M16 9l6 6'/%3E%3C/svg%3E");
+}
+.video.is-son .video__son::after {
+  background-color: var(--accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A0C0D' stroke-width='2'%3E%3Cpath d='M11 5 6 9H3v6h3l5 4z'/%3E%3Cpath d='M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13'/%3E%3C/svg%3E");
+}
+.video__son::before {
+  content: ""; position: absolute; left: 50%; top: 50%; width: 3.6rem; height: 3.6rem; transform: translate(-50%, -50%);
+  border-radius: 50%; border: 1px solid rgba(255, 255, 255, .5);
+  background: rgba(0, 0, 0, .45) no-repeat 56% center / 1.2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M6 4l14 8-14 8z'/%3E%3C/svg%3E");
+  transition: opacity .3s;
+}
+.video.is-lecture .video__son::before { opacity: 0; }
+.video__son:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+/* L'extrait muet des formats longs, au survol. */
+.video__apercu { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .4s; pointer-events: none; }
+.video.is-apercu .video__apercu { opacity: 1; }
+.video.is-apercu .video__play { opacity: 0; }
+
 /* Le nombre de likes, posé sur la vignette verticale. */
 .video__likes {
-  position: absolute; top: .6rem; left: .6rem; padding: .2rem .5rem;
+  position: absolute; z-index: 2; pointer-events: none; top: .6rem; left: .6rem; padding: .2rem .5rem;
   background: rgba(0, 0, 0, .65); font-family: var(--font-mono); font-size: .72rem; color: #fff;
 }
 /* La vidéo à la une : toute la largeur, texte à côté. */
