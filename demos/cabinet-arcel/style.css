@@ -117,8 +117,9 @@ h1 span, h2 span { color: var(--sable); font-weight: 500; }
     linear-gradient(90deg, rgba(10,23,24,.9) 0%, rgba(10,23,24,.6) 35%, rgba(10,23,24,0) 62%),
     linear-gradient(to top, rgba(10,23,24,.7), rgba(10,23,24,0) 35%);
 }
-.hero__in { position: relative; z-index: 2; max-width: 38rem; }
-.hero h1 { font-size: clamp(2.8rem, 6vw, 5.4rem); }
+.hero__in { position: relative; z-index: 2; max-width: 48rem; }
+.hero h1 { font-size: clamp(2.6rem, 5.4vw, 5rem); }
+@media (min-width: 768px) { .hero h1 { white-space: nowrap; } }
 .lede { margin-top: 1.5rem; max-width: 32rem; color: #DCE3DF; font-size: 1.12rem; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2.2rem; }
 
@@ -223,7 +224,7 @@ h1 span, h2 span { color: var(--sable); font-weight: 500; }
 .equipe { padding: 8rem var(--gut); background: var(--bg-2); border-top: 1px solid var(--line); }
 .equipe__grille { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
 .praticien { border-radius: 24px; overflow: hidden; background: var(--bg); border: 1px solid var(--line); }
-.praticien img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.praticien img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .praticien figcaption { padding: 1.6rem 1.8rem 2rem; }
 .praticien__nom { font-family: var(--display); font-weight: 600; font-size: 1.6rem; letter-spacing: -.02em; }
 .praticien__titre { color: var(--sable); font-weight: 600; margin-bottom: .8rem; }
