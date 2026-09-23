@@ -35,8 +35,12 @@ let loadedCount = 0;
 let currentFrame = 0;
 let bgColor = '#0A0C0D';
 
+/* Écran en portrait : on ne voit que le centre de l'image, donc on charge
+   la version recadrée (800 px de large au lieu de 1920, même rendu). */
+const FRAME_DIR = window.innerWidth / window.innerHeight <= 0.7 ? 'frames-m/' : 'frames/';
+
 function frameUrl(i) {
-  return 'frames/frame_' + String(i + 1).padStart(4, '0') + '.webp';
+  return FRAME_DIR + 'frame_' + String(i + 1).padStart(4, '0') + '.webp';
 }
 
 function loadFrame(i) {
