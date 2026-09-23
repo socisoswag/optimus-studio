@@ -239,7 +239,7 @@
       { nom: 'Diavola', prix: 14, desc: 'Salami piquant de Calabre, olives noires, huile au piment.', img: 'img/diavola-rond.webp', tags: ['Rossa', 'Piquante'], c: '#5A1A0C' },
       { nom: 'Bufala', prix: 14, desc: 'Tomate, mozzarella di bufala posée à la sortie du four, basilic.', img: null, tags: ['Rossa'], c: '#7A1E12', c2: '#E8D9BF' },
       { nom: 'Quattro formaggi', prix: 15, desc: 'Fior di latte, gorgonzola, provola fumée, parmesan.', img: null, tags: ['Bianca'], c: '#6A5222', c2: '#F0D98C' },
-      { nom: 'Mortadella & pistacchio', prix: 16, desc: 'Mortadelle posée à froid, burrata, éclats et crème de pistache.', img: null, tags: ['Bianca'], c: '#4E5A26', c2: '#E7B7B0' }
+      { nom: 'Crudo, burrata & pistacchio', prix: 16, desc: 'Jambon cru posé à froid, burrata, pistache, olives, roquette, balsamique.', img: null, tags: ['Bianca'], c: '#4E5A26', c2: '#E7B7B0' }
     ],
     cocktails: [
       { nom: 'Spritz', prix: 9, desc: 'Apérol, prosecco, eau gazeuse, tranche d’orange.', img: null, tags: [], c: '#8A3312', c2: '#F29A45' },
@@ -249,8 +249,8 @@
     ],
     dolci: [
       { nom: 'Tiramisù', prix: 7, desc: 'Mascarpone, biscuits imbibés de café serré, cacao amer.', img: null, tags: [], c: '#3E2414', c2: '#C8A27A' },
-      { nom: 'Pizza Nutella', prix: 9, desc: 'À partager : pâte gonflée au four, Nutella, noisettes torréfiées.', img: null, tags: ['À partager'], c: '#3A1F12', c2: '#9C6A3E' },
-      { nom: 'Cannoli siciliens', prix: 7, desc: 'Trois cannoli, ricotta sucrée, pistache, écorce d’orange confite.', img: null, tags: [], c: '#5B4A1E', c2: '#EBD7A6' }
+      { nom: 'Pizza Nutella', prix: 9, desc: 'À partager : pâte gonflée au four, Nutella, noisettes torréfiées.', img: 'img/nutella-rond.webp', tags: ['À partager'], c: '#3A1F12', c2: '#9C6A3E' },
+      { nom: 'Cannoli siciliens', prix: 7, desc: 'Trois cannoli, ricotta sucrée, pistache, écorce d’orange confite.', img: 'img/cannoli-rond.webp', tags: [], c: '#5B4A1E', c2: '#EBD7A6' }
     ]
   };
 
