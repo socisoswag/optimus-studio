@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Delorme Serrurerie · Ouverture de porte 24 h/24, Paris 11e</title>
+<meta name="description" content="Serrurier à Paris 11e. Ouverture de porte sans casse 24 h/24, changement de cylindre, serrure 3 points A2P. Prix annoncé au téléphone, il ne change pas sur place.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Delorme Serrurerie · Votre serrure, pièce par pièce">
+<meta property="og:description" content="Ouverture sans casse 24 h/24. Le prix est donné au téléphone et ne change pas sur place.">
+<meta property="og:image" content="img/cle.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="frames/frame_0001.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Locksmith",
+  "name": "Delorme Serrurerie",
+  "telephone": "+33 1 84 60 27 15",
+  "image": "img/cle.webp",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "38 rue Oberkampf",
+    "addressLocality": "Paris",
+    "postalCode": "75011",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Paris 3e", "Paris 4e", "Paris 10e", "Paris 11e", "Paris 12e", "Paris 20e"],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <a class="top__brand" href="#haut">Delorme<span>Serrurerie</span></a>
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#tarifs">Tarifs</a>
+    <a href="#engagements">Engagements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="top__tel" href="tel:+33184602715">
+    <span class="top__dot" aria-hidden="true"></span>
+    01 84 60 27 15
+  </a>
+</header>
+
+<main id="contenu">
+
+  <!-- ─── Le cylindre ───
+       Section haute : la scène reste collée à l'écran pendant que le
+       visiteur scrolle, et le cylindre se démonte image par image.
+       Un seul message à la fois, centré sous le tapis de cuir. -->
+  <section class="cyl" id="haut" aria-label="Présentation">
+    <div class="cyl__stage">
+      <img class="cyl__poster" src="frames/frame_0001.webp" alt="Cylindre de serrure européen en laiton, posé sur un tapis de cuir noir" width="1440" height="800" fetchpriority="high">
+      <canvas class="cyl__canvas" id="cyl-canvas" aria-hidden="true"></canvas>
+
+      <div class="cyl__msgs">
+        <div class="msg is-on" data-from="0" data-to="0.2">
+          <p class="msg__eyebrow">Serrurier · Paris 11e</p>
+          <h1>Votre serrure,<br>pièce par pièce.</h1>
+          <p class="msg__hint" aria-hidden="true">Faites défiler</p>
+        </div>
+        <div class="msg" data-from="0.24" data-to="0.46">
+          <p class="msg__big">Un barillet.<br>Sept goupilles.<br>Sept ressorts.</p>
+        </div>
+        <div class="msg" data-from="0.5" data-to="0.72">
+          <p class="msg__big">Chaque pièce a une raison<br>de céder. On sait laquelle.</p>
+        </div>
+        <div class="msg" data-from="0.76" data-to="1.01">
+          <p class="msg__big">Ouverture sans casse,<br>24 h sur 24.</p>
+          <a class="btn" href="tel:+33184602715">Appeler le 01 84 60 27 15</a>
+        </div>
+      </div>
+
+      <div class="cyl__rail" aria-hidden="true">
+        <span class="cyl__count" id="cyl-count">01</span>
+        <span class="cyl__track"><span class="cyl__fill" id="cyl-fill"></span></span>
+        <span class="cyl__count">04</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Urgence : un écran, un message ─── -->
+  <section class="screen screen--photo" aria-labelledby="urgence-titre">
+    <img class="screen__bg" src="img/cle.webp" alt="Une clé tourne dans le cylindre d'une porte blindée, sur un palier d'immeuble parisien" width="1920" height="1048" loading="lazy">
+    <div class="screen__in reveal">
+      <p class="label">Porte claquée, clé perdue, serrure bloquée</p>
+      <h2 id="urgence-titre">On est chez vous<br>en trente minutes.</h2>
+      <ul class="facts">
+        <li><strong>24 h/24</strong>7 jours sur 7</li>
+        <li><strong>Sans casse</strong>dans 9 cas sur 10</li>
+        <li><strong>30 min</strong>dans les 3e, 4e, 10e, 11e, 12e et 20e</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─── Tarifs : alignés comme sur un devis ─── -->
+  <section class="screen" id="tarifs" aria-labelledby="tarifs-titre">
+    <div class="screen__in reveal">
+      <p class="label">Tarifs TTC, déplacement compris</p>
+      <h2 id="tarifs-titre">Le prix, avant<br>de sonner chez vous.</h2>
+      <dl class="prix">
+        <div><dt>Ouverture de porte claquée</dt><dd>dès 89 €</dd></div>
+        <div><dt>Ouverture de porte fermée à clé</dt><dd>dès 139 €</dd></div>
+        <div><dt>Changement de cylindre européen</dt><dd>dès 120 €</dd></div>
+        <div><dt>Serrure 3 points certifiée A2P</dt><dd>dès 490 €</dd></div>
+        <div><dt>Blindage de porte</dt><dd>sur devis</dd></div>
+      </dl>
+      <p class="note">Majoration de nuit (20 h – 7 h), dimanche et jours fériés : + 40 €. Annoncée au téléphone.</p>
+    </div>
+  </section>
+
+  <!-- ─── La pose ─── -->
+  <section class="split" aria-labelledby="pose-titre">
+    <div class="split__media">
+      <img src="img/pose.webp" alt="Mains gantées posant un cylindre sur une serrure trois points" width="1920" height="1048" loading="lazy">
+    </div>
+    <div class="split__copy reveal">
+      <p class="label">Serrure 3 points A2P</p>
+      <h2 id="pose-titre">Posée<br>dans la journée.</h2>
+      <p>
+        La certification A2P classe une serrure selon le temps qu'elle
+        résiste à une effraction : une étoile pour cinq minutes, trois pour
+        quinze. C'est ce que demandent la plupart des assureurs.
+      </p>
+      <p>
+        On prend les mesures, on vous montre deux ou trois modèles, et la
+        pose se fait le jour même. Les anciennes clés ne servent plus à rien
+        dès qu'on repart.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── Engagements ─── -->
+  <section class="screen" id="engagements" aria-labelledby="engagements-titre">
+    <div class="screen__in reveal">
+      <p class="label">Ce qu'on vous doit</p>
+      <h2 id="engagements-titre">Le prix est donné au téléphone.<br>Il ne change pas sur place.</h2>
+      <ol class="engage">
+        <li>
+          <span class="engage__no">01</span>
+          <h3>Un devis signé avant de toucher la porte</h3>
+          <p>Si le montant diffère de celui annoncé, vous refusez et on repart sans frais.</p>
+        </li>
+        <li>
+          <span class="engage__no">02</span>
+          <h3>Une facture détaillée</h3>
+          <p>Pièces, main-d'œuvre et déplacement sur des lignes séparées. Utile pour votre assurance.</p>
+        </li>
+        <li>
+          <span class="engage__no">03</span>
+          <h3>Paiement par carte</h3>
+          <p>Jamais d'espèces exigées, jamais de chèque « pour la garantie ».</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─── -->
+  <section class="contact" id="contact" aria-labelledby="contact-titre">
+    <div class="contact__in reveal">
+      <p class="label">Urgence ou rendez-vous</p>
+      <h2 id="contact-titre">Appelez, on décroche.</h2>
+      <a class="contact__tel" href="tel:+33184602715">01 84 60 27 15</a>
+      <p class="contact__sub">Pour un changement de serrure ou un blindage, laissez vos coordonnées : on vous rappelle dans l'heure avec un prix.</p>
+
+      <form class="form" id="form-rappel" novalidate>
+        <div class="field">
+          <label for="nom">Nom</label>
+          <input id="nom" name="nom" type="text" autocomplete="name" required>
+          <p class="err" data-err-for="nom" hidden>Merci d'indiquer votre nom.</p>
+        </div>
+        <div class="field">
+          <label for="tel">Téléphone</label>
+          <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+          <p class="err" data-err-for="tel" hidden>Un numéro à dix chiffres est nécessaire pour vous rappeler.</p>
+        </div>
+        <div class="field field--full">
+          <label for="besoin">Votre besoin</label>
+          <select id="besoin" name="besoin">
+            <option>Changement de cylindre</option>
+            <option>Serrure 3 points A2P</option>
+            <option>Blindage de porte</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="field field--full">
+          <button class="btn btn--block" type="submit" id="submit">Être rappelé</button>
+          <p class="form__status" id="status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <p class="zone">Interventions dans les 3e, 4e, 10e, 11e, 12e et 20e arrondissements.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__brand">Delorme Serrurerie</p>
+  <p>38 rue Oberkampf, 75011 Paris · 01 84 60 27 15 · 24 h/24</p>
+  <p class="foot__demo">
+    Site de démonstration. Entreprise fictive, contenus illustratifs.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
