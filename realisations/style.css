@@ -405,7 +405,7 @@ a { color: inherit; }
 
 /* Le nombre de likes, posé sur la vignette verticale. */
 .video__likes {
-  position: absolute; z-index: 2; pointer-events: none; top: .6rem; left: .6rem; padding: .2rem .5rem;
+  position: absolute; z-index: 2; pointer-events: none; bottom: .6rem; left: .6rem; padding: .2rem .5rem;
   background: rgba(0, 0, 0, .65); font-family: var(--font-mono); font-size: .72rem; color: #fff;
 }
 /* La vidéo à la une : toute la largeur, texte à côté. */

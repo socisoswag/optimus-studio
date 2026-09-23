@@ -72,7 +72,8 @@
      yt     : l'identifiant YouTube (ce qui suit « v= » ou « youtu.be/ »)
      tiktok : le numéro de la vidéo TikTok (la fin du lien) et compte : le @
      titre, chaine : le titre et la chaîne pour qui la vidéo a été montée
-     likes  : facultatif, affiché sur la vignette
+     likes  : facultatif, affiché sur la vignette (TikTok)
+     vues   : facultatif, affiché sur la vignette (YouTube), à partir de 100 k
      mp4    : true si le TikTok est hébergé (videos/tt-<numéro>.mp4)
      apercu : true si l'extrait de 8 s existe (videos/yt-<id>.mp4)
      Vignette : videos/yt-<id>.webp ou videos/tt-<numéro>.webp
@@ -81,13 +82,19 @@
      { yt: 'dQw4w9WgXcQ', titre: 'Lancement de la collection' },
      { tiktok: '7687523983314390305', compte: 'paname_in_my_belly', titre: 'Paname in my belly' }, */
   var VIDEOS = [
+    { yt: 'gM9F3izKATM', titre: 'L’histoire du pilote MAUDIT de Ferrari', chaine: 'DRYV', vues: '186 k' },
+    { yt: 'xJzXGaQgzy0', titre: 'L’épisode qui a TRAUMATISÉ 5 Millions de personnes - THE WALKING DEAD', chaine: 'TheOutsiderStories', vues: '149 k' },
+    { yt: 'kYt3gplx3Dg', titre: 'À Quel Point Le REAL MADRID de ZIDANE Était-Il BON ?', chaine: 'Elite Foot', vues: '654 k' },
     { yt: 'U2ksM3blOFE', titre: 'Tommy McMillen : la rockstar invaincue qui débarque à l’UFC', chaine: 'Art et Violence' },
-    { yt: 'hny3jneSdMg', titre: 'Le Dealer du DarkWeb qui a Disparu avec 300 Millions €', chaine: 'Vzion' },
-    { yt: 'uHnE6ZkSBh4', titre: 'Les Hackers qui en Savaient Trop', chaine: 'Vzion' },
-    { yt: 'EbnobJxHsoU', titre: 'Le génie derrière le meilleur PSG de l’histoire', chaine: 'FMchronik' },
-    { yt: '5yXDjX9CjoU', titre: 'Pourquoi la BBC était scientifiquement IMBATTABLE', chaine: 'FMchronik' },
-    { yt: 'kYt3gplx3Dg', titre: 'À Quel Point Le REAL MADRID de ZIDANE Était-Il BON ?', chaine: 'Elite Foot' },
-    { yt: 'gueRo7C4HlA', titre: 'Le jour où Fatalis est devenu Iron Man', chaine: 'Le Lore' },
+    { yt: 'gueRo7C4HlA', titre: 'Le jour où Fatalis est devenu Iron Man', chaine: 'Le Lore', vues: '182 k' },
+    { yt: 'DtIzz6s7mvU', titre: 'Du prodige au scandale : la vraie histoire de Salvador Dalí', chaine: 'klemo', vues: '258 k' },
+    { yt: 'EbnobJxHsoU', titre: 'Le génie derrière le meilleur PSG de l’histoire', chaine: 'FMchronik', vues: '296 k' },
+    { yt: '5yXDjX9CjoU', titre: 'Pourquoi la BBC était scientifiquement IMBATTABLE', chaine: 'FMchronik', vues: '204 k' },
+    { yt: 'uHnE6ZkSBh4', titre: 'Les Hackers qui en Savaient Trop', chaine: 'Vzion', vues: '665 k' },
+    { yt: '8T3lJ9z-8gA', titre: 'J’ai filmé le quotidien des humoristes parisiens', chaine: 'klemo' },
+    { yt: 'hny3jneSdMg', titre: 'Le Dealer du DarkWeb qui a Disparu avec 300 Millions €', chaine: 'Vzion', vues: '274 k' },
+    { yt: 'kNb02pRGVjA', titre: 'Les hommes qui ont rétréci le monde', chaine: 'ARVA' },
+    { yt: 'rn6Raqw2b-M', titre: 'L’État qui n’a jamais existé', chaine: 'ARVA' },
     { tiktok: '7621598466858323222', compte: 'lemondedugout', titre: 'Notre autre gamme de sandwichs va vous régaler', chaine: 'Le Monde du Goût', likes: '70,3 k' },
     { tiktok: '7683567405494308128', compte: 'the_foodologiste', titre: 'Les panuozzo les plus chargés d’Île-de-France à 8,90 €', chaine: 'Foodologiste', likes: '9,5 k' },
     { tiktok: '7658700263158484256', compte: 'sortiesparis', titre: 'Le nouveau resto immersif fusion Japon-Corée', chaine: 'Sorties Paris', likes: '6 k' },
@@ -251,6 +258,7 @@
           '<div class="video__ecran">' +
             '<button class="video__lancer" type="button" aria-label="Lire la vidéo : ' + echap(v.titre) + '">' +
               '<img src="videos/yt-' + v.yt + '.webp" alt="" width="640" height="360" loading="lazy" decoding="async">' +
+              (v.vues ? '<span class="video__likes">▶ ' + echap(v.vues) + ' vues</span>' : '') +
               (v.apercu ? '<video class="video__apercu" src="videos/yt-' + v.yt + '.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>' : '') +
               '<span class="video__play" aria-hidden="true"></span>' +
             '</button>' +
