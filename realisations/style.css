@@ -437,7 +437,7 @@ a { color: inherit; }
 .carrousel__fleche:disabled { opacity: .3; cursor: default; }
 @media (hover: none) { .carrousel__nav { display: none; } }
 
-/* L'extrait muet (YouTube à la une, TikTok), au survol ou au centre. */
+/* L’extrait muet (YouTube, TikTok), au survol ou au centre de l’écran. */
 .video__apercu { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .4s; pointer-events: none; }
 .video.is-apercu .video__apercu { opacity: 1; }
 .video.is-apercu .video__play { opacity: 0; }

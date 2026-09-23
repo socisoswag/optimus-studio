@@ -81,19 +81,19 @@
      { yt: 'dQw4w9WgXcQ', titre: 'Lancement de la collection' },
      { tiktok: '7687523983314390305', compte: 'paname_in_my_belly', titre: 'Paname in my belly' }, */
   var VIDEOS = [
-    { yt: 'gM9F3izKATM', titre: 'L’histoire du pilote MAUDIT de Ferrari', chaine: 'DRYV', vues: '186 k' },
-    { yt: 'xJzXGaQgzy0', titre: 'L’épisode qui a TRAUMATISÉ 5 Millions de personnes - THE WALKING DEAD', chaine: 'TheOutsiderStories', vues: '149 k' },
-    { yt: 'kYt3gplx3Dg', titre: 'À Quel Point Le REAL MADRID de ZIDANE Était-Il BON ?', chaine: 'Elite Foot', vues: '654 k' },
-    { yt: 'U2ksM3blOFE', titre: 'Tommy McMillen : la rockstar invaincue qui débarque à l’UFC', chaine: 'Art et Violence' },
-    { yt: 'gueRo7C4HlA', titre: 'Le jour où Fatalis est devenu Iron Man', chaine: 'Le Lore', vues: '182 k' },
-    { yt: 'DtIzz6s7mvU', titre: 'Du prodige au scandale : la vraie histoire de Salvador Dalí', chaine: 'klemo', vues: '258 k' },
-    { yt: 'EbnobJxHsoU', titre: 'Le génie derrière le meilleur PSG de l’histoire', chaine: 'FMchronik', vues: '296 k' },
-    { yt: '5yXDjX9CjoU', titre: 'Pourquoi la BBC était scientifiquement IMBATTABLE', chaine: 'FMchronik', vues: '204 k' },
-    { yt: 'uHnE6ZkSBh4', titre: 'Les Hackers qui en Savaient Trop', chaine: 'Vzion', vues: '665 k' },
-    { yt: '8T3lJ9z-8gA', titre: 'J’ai filmé le quotidien des humoristes parisiens', chaine: 'klemo' },
-    { yt: 'hny3jneSdMg', titre: 'Le Dealer du DarkWeb qui a Disparu avec 300 Millions €', chaine: 'Vzion', vues: '274 k' },
-    { yt: 'kNb02pRGVjA', titre: 'Les hommes qui ont rétréci le monde', chaine: 'ARVA' },
-    { yt: 'rn6Raqw2b-M', titre: 'L’État qui n’a jamais existé', chaine: 'ARVA' },
+    { yt: 'gM9F3izKATM', titre: 'L’histoire du pilote MAUDIT de Ferrari', chaine: 'DRYV', vues: '186 k', apercu: true },
+    { yt: 'xJzXGaQgzy0', titre: 'L’épisode qui a TRAUMATISÉ 5 Millions de personnes - THE WALKING DEAD', chaine: 'TheOutsiderStories', vues: '149 k', apercu: true },
+    { yt: 'kYt3gplx3Dg', titre: 'À Quel Point Le REAL MADRID de ZIDANE Était-Il BON ?', chaine: 'Elite Foot', vues: '654 k', apercu: true },
+    { yt: 'U2ksM3blOFE', titre: 'Tommy McMillen : la rockstar invaincue qui débarque à l’UFC', chaine: 'Art et Violence', apercu: true },
+    { yt: 'gueRo7C4HlA', titre: 'Le jour où Fatalis est devenu Iron Man', chaine: 'Le Lore', vues: '182 k', apercu: true },
+    { yt: 'DtIzz6s7mvU', titre: 'Du prodige au scandale : la vraie histoire de Salvador Dalí', chaine: 'klemo', vues: '258 k', apercu: true },
+    { yt: 'EbnobJxHsoU', titre: 'Le génie derrière le meilleur PSG de l’histoire', chaine: 'FMchronik', vues: '296 k', apercu: true },
+    { yt: '5yXDjX9CjoU', titre: 'Pourquoi la BBC était scientifiquement IMBATTABLE', chaine: 'FMchronik', vues: '204 k', apercu: true },
+    { yt: 'uHnE6ZkSBh4', titre: 'Les Hackers qui en Savaient Trop', chaine: 'Vzion', vues: '665 k', apercu: true },
+    { yt: '8T3lJ9z-8gA', titre: 'J’ai filmé le quotidien des humoristes parisiens', chaine: 'klemo', apercu: true },
+    { yt: 'hny3jneSdMg', titre: 'Le Dealer du DarkWeb qui a Disparu avec 300 Millions €', chaine: 'Vzion', vues: '274 k', apercu: true },
+    { yt: 'kNb02pRGVjA', titre: 'Les hommes qui ont rétréci le monde', chaine: 'ARVA', apercu: true },
+    { yt: 'rn6Raqw2b-M', titre: 'L’État qui n’a jamais existé', chaine: 'ARVA', apercu: true },
     { tiktok: '7621598466858323222', mp4: true, compte: 'lemondedugout', titre: 'Notre autre gamme de sandwichs va vous régaler', chaine: 'Le Monde du Goût', vues: '1,7 M' },
     { tiktok: '7658700263158484256', mp4: true, compte: 'sortiesparis', titre: 'Le nouveau resto immersif fusion Japon-Corée', chaine: 'Sorties Paris', vues: '193 k' },
     { tiktok: '7610182661763566870', mp4: true, compte: 'localfoodparis', titre: 'Little Havana, un restaurant cubain immersif à Paris', chaine: 'Local Food Paris', vues: '172 k' },
@@ -305,9 +305,14 @@
           el.querySelector('.video__ecran').addEventListener('mouseenter', jouer);
           el.querySelector('.video__ecran').addEventListener('mouseleave', stop);
         }
-        /* La vidéo à la une joue son extrait dès qu'elle est à l'écran. */
-        if (apercu && une && 'IntersectionObserver' in window) {
-          new IntersectionObserver(function (e) { if (e[0].isIntersecting) jouer(); else stop(); }, { threshold: 0.5 }).observe(el);
+        /* À la souris, la vidéo à la une joue son extrait dès qu'elle est à l'écran.
+           Au doigt, c'est la vidéo qui passe au milieu de l'écran qui joue. */
+        if (apercu && 'IntersectionObserver' in window) {
+          if (souris && une) {
+            new IntersectionObserver(function (e) { if (e[0].isIntersecting) jouer(); else stop(); }, { threshold: 0.5 }).observe(el);
+          } else if (!souris) {
+            new IntersectionObserver(function (e) { if (e[0].isIntersecting) jouer(); else stop(); }, { rootMargin: '-38% 0px -38% 0px' }).observe(el.querySelector('.video__ecran'));
+          }
         }
 
         el.querySelector('.video__lancer').addEventListener('click', function () {
