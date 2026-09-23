@@ -71,11 +71,10 @@
      Ajouter une vidéo = ajouter une ligne ici.
      yt     : l'identifiant YouTube (ce qui suit « v= » ou « youtu.be/ »)
      tiktok : le numéro de la vidéo TikTok (la fin du lien) et compte : le @
-     titre  : facultatif. Sans titre, celui de YouTube ou de TikTok est
-              récupéré à l'ouverture de l'onglet Vidéo.
+     titre  : le client pour qui la vidéo a été montée
      Exemple :
      { yt: 'dQw4w9WgXcQ', titre: 'Lancement de la collection' },
-     { tiktok: '7687523983314390305', compte: 'paname_in_my_belly' }, */
+     { tiktok: '7687523983314390305', compte: 'paname_in_my_belly', titre: 'Paname in my belly' }, */
   var VIDEOS = [
     { yt: 'hny3jneSdMg' },
     { yt: 'uHnE6ZkSBh4' },
@@ -83,11 +82,11 @@
     { yt: 'EbnobJxHsoU' },
     { yt: '5yXDjX9CjoU' },
     { yt: 'kYt3gplx3Dg' },
-    { tiktok: '7687523983314390305', compte: 'paname_in_my_belly' },
-    { tiktok: '7658950856695483680', compte: 'paname_in_my_belly' },
-    { tiktok: '7683567405494308128', compte: 'the_foodologiste' },
-    { tiktok: '7621598466858323222', compte: 'lemondedugout' },
-    { tiktok: '7658700263158484256', compte: 'sortiesparis' }
+    { tiktok: '7687523983314390305', compte: 'paname_in_my_belly', titre: 'Paname in my belly' },
+    { tiktok: '7658950856695483680', compte: 'paname_in_my_belly', titre: 'Paname in my belly' },
+    { tiktok: '7683567405494308128', compte: 'the_foodologiste', titre: 'The Foodologiste' },
+    { tiktok: '7621598466858323222', compte: 'lemondedugout', titre: 'Le Monde du Goût' },
+    { tiktok: '7658700263158484256', compte: 'sortiesparis', titre: 'Sortir à Paris' }
   ];
 
   var grid     = document.getElementById('grid-sites');
@@ -144,7 +143,6 @@
       });
       document.querySelectorAll('.panel').forEach(function (panel) {
         panel.hidden = panel.dataset.panel !== tab.dataset.tab;
-        if (tab.dataset.tab === 'video' && !panel.hidden) chargerVideos();
       });
     });
   });
@@ -175,11 +173,9 @@
 
   /* ─── Vidéos : deux rangées (formats longs, formats verticaux),
      lecteur chargé au clic seulement ───
-     Les titres et les vignettes TikTok sont demandés à l'ouverture de
-     l'onglet Vidéo, pas au chargement de la page. Si la demande échoue,
-     la carte garde un intitulé générique et une vignette aux couleurs
-     du site : rien ne casse. */
-  var chargerVideos = function () {};
+     Chaque carte garde aussi un lien direct vers YouTube ou TikTok :
+     si le lecteur intégré est bloqué (navigateur, extension), la vidéo
+     reste visible en un clic. */
   (function videos() {
     var grille = document.getElementById('grid-videos');
     var vide = document.getElementById('videos-vide');
@@ -188,13 +184,6 @@
     vide.hidden = true; note.hidden = false;
 
     function echap(t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
-    /* Une légende TikTok, c'est souvent trois lignes de hashtags :
-       on garde la phrase, on coupe proprement. */
-    function propre(t) {
-      t = String(t || '').split('#')[0].replace(/\s+/g, ' ').trim();
-      if (t.length > 72) t = t.slice(0, 70).replace(/\s+\S*$/, '') + '…';
-      return t;
-    }
 
     function bloc(titre, n, classe) {
       var b = document.createElement('div');
@@ -209,17 +198,16 @@
     var gLongs = longs.length ? bloc('Formats longs', longs.length, '') : null;
     var gCourts = courts.length ? bloc('Reels &amp; TikTok', courts.length, 'videos--courts') : null;
 
-    var aCharger = [];
     VIDEOS.forEach(function (v) {
       var tiktok = !!v.tiktok;
       var el = document.createElement('article');
       el.className = 'video' + (tiktok ? ' video--short' : '');
-      var titre = v.titre || (tiktok ? 'Montage vertical' : 'Montage vidéo');
+      var titre = v.titre || (tiktok ? '@' + v.compte : 'Montage vidéo');
       el.innerHTML =
         '<div class="video__ecran">' +
           '<button class="video__lancer" type="button" aria-label="Lire la vidéo : ' + echap(titre) + '">' +
             (tiktok
-              ? '<span class="video__fond" aria-hidden="true"><span>@' + echap(v.compte) + '</span></span><img alt="" hidden>'
+              ? '<span class="video__fond" aria-hidden="true"><span>@' + echap(v.compte) + '</span></span>'
               : '<img src="https://i.ytimg.com/vi/' + encodeURIComponent(v.yt) + '/hqdefault.jpg" alt="" loading="lazy" decoding="async" onerror="this.style.visibility=\'hidden\'">') +
             '<span class="video__play" aria-hidden="true"></span>' +
           '</button>' +
@@ -227,7 +215,10 @@
         '<div class="video__corps">' +
           '<p class="video__type">' + (tiktok ? 'TikTok' : 'YouTube') + '</p>' +
           '<h3 class="video__titre">' + echap(titre) + '</h3>' +
-          (tiktok ? '<p class="video__client">@' + echap(v.compte) + '</p>' : '') +
+          '<a class="video__lien" href="' + (tiktok
+            ? 'https://www.tiktok.com/@' + encodeURIComponent(v.compte) + '/video/' + encodeURIComponent(v.tiktok)
+            : 'https://www.youtube.com/watch?v=' + encodeURIComponent(v.yt)) +
+            '" target="_blank" rel="noopener">Voir sur ' + (tiktok ? 'TikTok' : 'YouTube') + ' ↗</a>' +
         '</div>';
       var bouton = el.querySelector('.video__lancer');
       bouton.addEventListener('click', function () {
@@ -245,41 +236,8 @@
         f.focus();
       });
       (tiktok ? gCourts : gLongs).appendChild(el);
-      if (!v.titre || tiktok) aCharger.push({ v: v, el: el });
     });
 
-    function lire(url) {
-      return fetch(url).then(function (r) { if (!r.ok) throw r; return r.json(); });
-    }
-    var fait = false;
-    chargerVideos = function () {
-      if (fait || !window.fetch) return;
-      fait = true;
-      aCharger.forEach(function (o) {
-        var v = o.v, el = o.el;
-        var page = v.tiktok
-          ? 'https://www.tiktok.com/@' + v.compte + '/video/' + v.tiktok
-          : 'https://www.youtube.com/watch?v=' + v.yt;
-        var direct = v.tiktok
-          ? 'https://www.tiktok.com/oembed?url=' + encodeURIComponent(page)
-          : 'https://www.youtube.com/oembed?format=json&url=' + encodeURIComponent(page);
-        lire(direct).catch(function () {
-          return lire('https://noembed.com/embed?url=' + encodeURIComponent(page));
-        }).then(function (d) {
-          if (!d || d.error) return;
-          var t = propre(d.title);
-          if (t && !v.titre) {
-            el.querySelector('.video__titre').textContent = t;
-            el.querySelector('.video__lancer').setAttribute('aria-label', 'Lire la vidéo : ' + t);
-          }
-          var img = el.querySelector('.video__lancer img');
-          if (v.tiktok && d.thumbnail_url && img) {
-            img.onload = function () { img.hidden = false; };
-            img.src = d.thumbnail_url;
-          }
-        }).catch(function () {});
-      });
-    };
   })();
 
   /* ─── Aperçu live ─── */
