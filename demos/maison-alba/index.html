@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maison Alba · Agence immobilière à Annecy, biens autour du lac</title>
+<meta name="description" content="Agence immobilière à Annecy. Appartements et maisons autour du lac, visites immersives depuis chez vous, estimation en ligne et avis de valeur offert sous 48 heures.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maison Alba · Agence immobilière à Annecy">
+<meta property="og:description" content="Visitez nos biens comme si vous y étiez, puis venez voir le bon.">
+<meta property="og:image" content="img/salon.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="visite/entree.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Maison Alba",
+  "telephone": "+33 4 50 45 18 62",
+  "email": "contact@maisonalba-annecy.fr",
+  "image": "img/salon.webp",
+  "priceRange": "€€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3 rue Royale",
+    "addressLocality": "Annecy",
+    "postalCode": "74000",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Annecy", "Annecy-le-Vieux", "Veyrier-du-Lac", "Menthon-Saint-Bernard", "Talloires", "Sévrier"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- Le lac, dessiné une fois et réutilisé par les deux cartes. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="eau" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3F8F93"/>
+      <stop offset="1" stop-color="#2A6374"/>
+    </linearGradient>
+  </defs>
+  <symbol id="lac" viewBox="0 0 300 500">
+    <g transform="translate(15 45) scale(.9)">
+      <path d="M150 38C170 36 185 48 190 70C196 100 205 130 204 170C203 210 196 250 186 290C180 312 170 322 166 340C176 360 188 390 184 420C180 450 166 468 150 470C136 468 128 450 130 425C132 400 142 370 150 345C142 330 130 318 124 296C114 256 108 210 112 170C114 128 118 90 124 64C130 46 140 39 150 38Z" fill="url(#eau)" stroke="#9FD3CC" stroke-opacity=".45" stroke-width="1.5"/>
+      <path d="M150 38C152 20 148 8 142 -4" fill="none" stroke="#9FD3CC" stroke-opacity=".35" stroke-width="2"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="top">
+  <a class="top__brand" href="#visite"><span class="top__mono" aria-hidden="true">A</span>Maison Alba</a>
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#visite">La visite</a>
+    <a href="#biens">Nos biens</a>
+    <a href="#estimer">Estimer</a>
+    <a href="#agence">L'agence</a>
+  </nav>
+  <a class="top__tel" href="tel:+33450451862">04 50 45 18 62</a>
+  <a class="btn btn--petit" href="#contact">Prendre rendez-vous</a>
+</header>
+
+<main id="contenu">
+
+  <!-- ─── La visite : on entre dans l'appartement en faisant défiler ───
+       176 images tirées de trois vidéos, rangées dans 11 planches.
+       Chaque planche contient une image sur onze : dès la première
+       chargée, toute la visite est jouable, les suivantes affinent. -->
+  <section class="visite" id="visite" aria-label="Visite immersive d'un T4 vue lac">
+    <div class="visite__scene">
+      <div class="visite__cam">
+        <img class="visite__poster" src="visite/entree.webp" alt="L'entrée de l'appartement : parquet en chevrons, porte bleu nuit, console en noyer, et au fond le salon ouvert sur le lac" width="1600" height="874" fetchpriority="high">
+        <canvas class="visite__canvas" id="visite-canvas" aria-hidden="true"></canvas>
+      </div>
+      <div class="visite__eclat" id="visite-eclat" aria-hidden="true"></div>
+      <div class="visite__voile" aria-hidden="true"></div>
+
+      <p class="visite__piece" aria-hidden="true"><span id="piece-no">01</span> / 04 · <span id="piece-nom">L'entrée</span></p>
+
+      <div class="visite__msgs">
+        <div class="etape etape--hero is-on" data-from="0" data-to="0.07">
+          <p class="etape__lieu"><span class="point" aria-hidden="true"></span>Exclusivité · Annecy, rive est</p>
+          <h1>Entrez,<br><em>vous êtes chez vous.</em></h1>
+          <p class="etape__texte">Ce T4 face au lac se visite d'ici. Faites défiler pour avancer de pièce en pièce, <span class="js-regard">bougez la souris</span> pour regarder autour de vous.</p>
+          <div class="etape__ctas">
+            <button class="btn" type="button" data-aller="1">Commencer la visite <span class="btn__ico" aria-hidden="true">↓</span></button>
+            <a class="lien" href="#biens">Voir tous nos biens</a>
+          </div>
+        </div>
+        <div class="etape" data-from="0.29" data-to="0.41">
+          <p class="etape__no">02 · Le salon</p>
+          <p class="etape__grand">48 m² face au lac.</p>
+          <p class="etape__texte">Cheminée en pierre, poutres en chêne massif et six mètres de baies vitrées plein ouest.</p>
+        </div>
+        <div class="etape" data-from="0.61" data-to="0.71">
+          <p class="etape__no">03 · La cuisine</p>
+          <p class="etape__grand">Le marbre, le laiton, la lumière.</p>
+          <p class="etape__texte">Îlot en marbre de Carrare, façades bleu nuit, électroménager intégré. Elle s'ouvre sur le séjour et sur la terrasse.</p>
+        </div>
+        <div class="etape etape--fin" data-from="0.92" data-to="1.01">
+          <p class="etape__no">04 · La terrasse</p>
+          <p class="etape__grand">60 m² pour le coucher du soleil.</p>
+          <div class="fiche-bien">
+            <p class="fiche-bien__ref">T4 · 142 m² · 3 chambres · DPE B · réf. ALB-142</p>
+            <p class="fiche-bien__prix">1 290 000 €<small>honoraires inclus, charge vendeur</small></p>
+            <a class="btn" href="#contact" data-objet="visiter" data-message="Je souhaite visiter sur place le T4 vue lac d'Albigny (réf. ALB-142).">Organiser la visite sur place <span class="btn__ico" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="visite__fiches" aria-label="Le bien en bref">
+        <div class="verre"><span>Adresse</span><strong>Annecy · Albigny</strong></div>
+        <div class="verre"><span>Prix</span><strong>1 290 000 €</strong></div>
+        <div class="verre"><span>Surface</span><strong>142 m² · 4 pièces</strong></div>
+      </aside>
+
+      <p class="visite__hint" aria-hidden="true"><span class="souris"></span>Faites défiler pour entrer</p>
+
+      <nav class="visite__plan" aria-label="Pièces de la visite">
+        <button type="button" class="is-on" data-aller="0"><b>01</b> Entrée</button>
+        <button type="button" data-aller="1"><b>02</b> Salon</button>
+        <button type="button" data-aller="2"><b>03</b> Cuisine</button>
+        <button type="button" data-aller="3"><b>04</b> Terrasse</button>
+        <span class="visite__jauge"><i id="visite-jauge"></i></span>
+      </nav>
+    </div>
+
+    <!-- Sans animation : les pièces en photos. -->
+    <div class="visite__galerie">
+      <figure><img src="img/salon.webp" alt="Le salon : cheminée, canapé en lin, fauteuil bleu nuit et baies vitrées sur le lac" width="1408" height="768" loading="lazy"><figcaption>Le salon · 48 m²</figcaption></figure>
+      <figure><img src="img/cuisine.webp" alt="La cuisine bleu nuit, îlot en marbre blanc et suspensions en laiton" width="1408" height="768" loading="lazy"><figcaption>La cuisine · 18 m²</figcaption></figure>
+      <figure><img src="img/terrasse.webp" alt="La terrasse en bois au coucher du soleil, oliviers en pots et lac en contrebas" width="1408" height="768" loading="lazy"><figcaption>La terrasse · 60 m²</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ─── Les biens ─── -->
+  <section class="biens" id="biens" aria-labelledby="biens-titre">
+    <div class="tete">
+      <div>
+        <p class="label">Nos biens</p>
+        <h2 id="biens-titre">À vendre<br><em>autour du lac.</em></h2>
+      </div>
+      <div class="filtres" role="group" aria-label="Filtrer les biens">
+        <button type="button" class="is-on" aria-pressed="true" data-filtre="tous">Tous <span>6</span></button>
+        <button type="button" aria-pressed="false" data-filtre="appartement">Appartements <span>3</span></button>
+        <button type="button" aria-pressed="false" data-filtre="maison">Maisons <span>3</span></button>
+      </div>
+    </div>
+
+    <div class="grille" id="grille">
+      <article class="bien reveal" data-type="maison">
+        <img src="img/talloires.webp" alt="Maison contemporaine en bois et verre au bord du lac, deux transats sur un ponton face aux montagnes" width="928" height="1152" loading="lazy">
+        <span class="bien__badge">Exclusivité</span>
+        <div class="bien__infos">
+          <p class="bien__lieu">Talloires</p>
+          <h3>Maison d'architecte, pieds dans l'herbe</h3>
+          <p class="bien__prix">2 450 000 €</p>
+          <div class="bien__plus">
+            <p>7 pièces · 210 m² · terrain 1 800 m² · DPE B</p>
+            <a href="#contact" data-objet="visiter" data-message="Je souhaite visiter la maison d'architecte de Talloires (2 450 000 €).">Demander la visite <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="bien reveal" data-type="appartement">
+        <img src="img/vieille-ville.webp" alt="Façades roses et ocre à balcons fleuris le long du canal du Thiou, à la tombée de la nuit" width="928" height="1152" loading="lazy">
+        <span class="bien__badge">Coup de cœur</span>
+        <div class="bien__infos">
+          <p class="bien__lieu">Annecy · Vieille ville</p>
+          <h3>Appartement sur le Thiou</h3>
+          <p class="bien__prix">545 000 €</p>
+          <div class="bien__plus">
+            <p>3 pièces · 78 m² · balcon sur le canal · DPE D</p>
+            <a href="#contact" data-objet="visiter" data-message="Je souhaite visiter l'appartement sur le Thiou, vieille ville (545 000 €).">Demander la visite <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="bien reveal" data-type="appartement">
+        <img src="img/loft.webp" alt="Grand loft en briques avec verrière cintrée, fauteuil en cuir et sol en béton ciré" width="928" height="1152" loading="lazy">
+        <span class="bien__badge">Nouveau</span>
+        <div class="bien__infos">
+          <p class="bien__lieu">Cran-Gevrier</p>
+          <h3>Loft dans une ancienne manufacture</h3>
+          <p class="bien__prix">790 000 €</p>
+          <div class="bien__plus">
+            <p>4 pièces · 165 m² · mezzanine · DPE C</p>
+            <a href="#contact" data-objet="visiter" data-message="Je souhaite visiter le loft de Cran-Gevrier (790 000 €).">Demander la visite <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="bien reveal" data-type="appartement">
+        <img src="img/face-lac.webp" alt="Séjour lumineux, canapé en lin et grande baie vitrée ouverte sur le lac et les sommets enneigés" width="1376" height="768" loading="lazy">
+        <div class="bien__infos">
+          <p class="bien__lieu">Annecy-le-Vieux</p>
+          <h3>T3 face au lac</h3>
+          <p class="bien__prix">895 000 €</p>
+          <div class="bien__plus">
+            <p>3 pièces · 86 m² · parking · DPE B</p>
+            <a href="#contact" data-objet="visiter" data-message="Je souhaite visiter le T3 face au lac à Annecy-le-Vieux (895 000 €).">Demander la visite <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="bien reveal" data-type="maison">
+        <img src="img/menthon.webp" alt="Cuisine bleu nuit, îlot en marbre et mur en pierres apparentes, lumière du soir" width="1376" height="768" loading="lazy">
+        <span class="bien__badge bien__badge--offre">Sous offre</span>
+        <div class="bien__infos">
+          <p class="bien__lieu">Menthon-Saint-Bernard</p>
+          <h3>Maison de village en pierre</h3>
+          <p class="bien__prix">1 080 000 €</p>
+          <div class="bien__plus">
+            <p>5 pièces · 150 m² · cave voûtée · DPE C</p>
+            <a href="#contact" data-objet="acheter" data-message="La maison de village de Menthon est sous offre : je souhaite être prévenu si elle se libère, ou recevoir des biens similaires.">Être prévenu <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="bien reveal" data-type="maison">
+        <img src="img/veyrier.webp" alt="Maison en pierre au crépuscule, fenêtres allumées, olivier et lavandes, le lac et les montagnes derrière" width="951" height="768" loading="lazy">
+        <span class="bien__badge">Exclusivité</span>
+        <div class="bien__infos">
+          <p class="bien__lieu">Veyrier-du-Lac</p>
+          <h3>Maison en pierre, vue sur le lac</h3>
+          <p class="bien__prix">1 690 000 €</p>
+          <div class="bien__plus">
+            <p>6 pièces · 185 m² · jardin 900 m² · DPE B</p>
+            <a href="#contact" data-objet="visiter" data-message="Je souhaite visiter la maison en pierre de Veyrier-du-Lac (1 690 000 €).">Demander la visite <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ─── Estimer : la carte des quartiers pilote le calcul ─── -->
+  <section class="estimer" id="estimer" aria-labelledby="estimer-titre">
+    <div class="tete">
+      <div>
+        <p class="label">Estimer</p>
+        <h2 id="estimer-titre">Combien vaut<br><em>votre bien ?</em></h2>
+      </div>
+      <p class="tete__texte">Choisissez votre secteur sur la carte, décrivez le bien : vous obtenez une fourchette tout de suite. Un conseiller la confirme en visite, gratuitement.</p>
+    </div>
+
+    <div class="estimer__corps">
+      <div class="carte">
+        <div class="carte__plan">
+          <svg class="carte__lac" viewBox="0 0 300 500" aria-hidden="true"><use href="#lac"/></svg>
+          <p class="carte__nom" aria-hidden="true">Lac d'Annecy</p>
+          <p class="carte__nord" aria-hidden="true">N</p>
+          <div class="carte__points" role="group" aria-label="Secteurs">
+            <button type="button" class="pt pt--g" style="left:25%;top:21%" data-q="cran-gevrier">Cran-Gevrier</button>
+            <button type="button" class="pt pt--g is-on" style="left:45%;top:11.5%" data-q="vieille-ville" aria-pressed="true">Vieille ville</button>
+            <button type="button" class="pt" style="left:63%;top:6%" data-q="annecy-le-vieux">Annecy-le-Vieux</button>
+            <button type="button" class="pt" style="left:65.5%;top:17%" data-q="albigny">Albigny</button>
+            <button type="button" class="pt pt--g" style="left:32%;top:40%" data-q="sevrier">Sévrier</button>
+            <button type="button" class="pt" style="left:71.3%;top:32%" data-q="veyrier">Veyrier-du-Lac</button>
+            <button type="button" class="pt" style="left:72.7%;top:47.2%" data-q="menthon">Menthon</button>
+            <button type="button" class="pt" style="left:69.3%;top:60%" data-q="talloires">Talloires</button>
+          </div>
+        </div>
+        <div class="carte__fiche" aria-live="polite">
+          <p class="carte__secteur" id="q-nom">Vieille ville</p>
+          <p class="carte__m2"><strong id="q-m2">7 200 €</strong> / m² en moyenne</p>
+          <p class="carte__evo" id="q-evo">+2,1 % sur un an</p>
+          <p class="carte__ligne" id="q-ligne">Canaux, ruelles piétonnes, marché du mardi.</p>
+        </div>
+      </div>
+
+      <form class="simu" id="simu" aria-label="Estimation en ligne">
+        <fieldset class="choix">
+          <legend>Type de bien</legend>
+          <label><input type="radio" name="type" value="appartement" checked><span>Appartement</span></label>
+          <label><input type="radio" name="type" value="maison"><span>Maison</span></label>
+        </fieldset>
+
+        <div class="simu__ligne">
+          <label for="quartier">Secteur</label>
+          <select id="quartier" name="quartier">
+            <option value="vieille-ville">Annecy · Vieille ville</option>
+            <option value="albigny">Annecy · Albigny</option>
+            <option value="annecy-le-vieux">Annecy-le-Vieux</option>
+            <option value="cran-gevrier">Cran-Gevrier</option>
+            <option value="sevrier">Sévrier</option>
+            <option value="veyrier">Veyrier-du-Lac</option>
+            <option value="menthon">Menthon-Saint-Bernard</option>
+            <option value="talloires">Talloires</option>
+          </select>
+        </div>
+
+        <div class="simu__ligne">
+          <label for="surface">Surface habitable <output id="surface-val" for="surface">85 m²</output></label>
+          <input type="range" id="surface" name="surface" min="20" max="300" step="1" value="85">
+        </div>
+
+        <fieldset class="choix">
+          <legend>État</legend>
+          <label><input type="radio" name="etat" value="-0.1"><span>À rafraîchir</span></label>
+          <label><input type="radio" name="etat" value="0" checked><span>Bon état</span></label>
+          <label><input type="radio" name="etat" value="0.08"><span>Refait à neuf</span></label>
+        </fieldset>
+
+        <fieldset class="atouts">
+          <legend>Atouts</legend>
+          <label><input type="checkbox" name="atout" value="0.14"><span>Vue sur le lac</span></label>
+          <label><input type="checkbox" name="atout" value="0.06"><span>Terrasse ou jardin</span></label>
+          <label><input type="checkbox" name="atout" value="0.04"><span>Parking ou garage</span></label>
+        </fieldset>
+
+        <div class="resultat" aria-live="polite">
+          <p class="resultat__titre">Votre bien vaut entre</p>
+          <p class="resultat__fourchette"><span id="est-bas">0 €</span> <i>et</i> <span id="est-haut">0 €</span></p>
+          <p class="resultat__m2" id="est-m2"></p>
+          <a class="btn btn--plein" href="#contact" id="est-cta">Recevoir un avis de valeur signé <span class="btn__ico" aria-hidden="true">→</span></a>
+          <p class="resultat__note">Fourchette indicative, calculée sur les prix moyens du secteur. L'avis de valeur, lui, est établi après visite, sous 48 heures et sans engagement.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ─── L'agence ─── -->
+  <section class="agence" id="agence" aria-labelledby="agence-titre">
+    <div class="agence__media">
+      <img id="agence-img" src="img/cles.webp" alt="Une conseillère en costume bleu nuit tend des clés au porte-clés en cuir" width="928" height="1152" loading="lazy">
+    </div>
+    <div class="agence__copy">
+      <p class="label">L'agence</p>
+      <h2 id="agence-titre">De la première visite<br><em>à la remise des clés.</em></h2>
+      <p>Maison Alba vend des biens autour du lac depuis 2009. Quatre conseillers, une seule adresse rue Royale, et une règle : un acheteur ne se déplace que pour un bien qu'il a déjà visité en ligne.</p>
+      <dl class="chiffres">
+        <div><dt><span class="js-compte" data-cible="17">17</span> ans</dt><dd>à Annecy</dd></div>
+        <div><dt><span class="js-compte" data-cible="640">640</span></dt><dd>biens vendus</dd></div>
+        <div><dt><span class="js-compte" data-cible="38">38</span> j</dt><dd>délai moyen de vente</dd></div>
+        <div><dt>4,9<small>/5</small></dt><dd>sur 212 avis Google</dd></div>
+      </dl>
+    </div>
+
+    <ol class="etapes">
+      <li class="reveal"><span>01</span><h3>Estimation offerte</h3><p>Visite, étude des ventes du secteur et avis de valeur écrit sous 48 heures.</p></li>
+      <li class="reveal"><span>02</span><h3>Photos et visite immersive</h3><p>Photographe, vidéo et visite pièce par pièce en ligne, comme en haut de cette page.</p></li>
+      <li class="reveal"><span>03</span><h3>Visites qualifiées</h3><p>Seuls les acheteurs au financement vérifié viennent chez vous. Moins de visites, plus d'offres.</p></li>
+      <li class="reveal"><span>04</span><h3>Jusqu'au notaire</h3><p>Diagnostics, compromis, suivi du prêt : on vous accompagne jusqu'à la signature.</p></li>
+    </ol>
+  </section>
+
+  <!-- ─── Avis ─── -->
+  <section class="avis" aria-labelledby="avis-titre">
+    <p class="label">Ils nous ont confié leur bien</p>
+    <h2 id="avis-titre" class="avis__titre">Des ventes <em>sans détour.</em></h2>
+    <div class="avis__grille">
+      <figure class="reveal">
+        <p class="etoiles" aria-label="5 étoiles sur 5">★★★★★</p>
+        <blockquote><p>Vendu en vingt-trois jours, au prix. La visite en ligne a fait venir des acheteurs de Lyon et de Genève qui avaient déjà tout vu avant de se déplacer.</p></blockquote>
+        <figcaption><strong>Claire et Mathieu R.</strong> Vendeurs à Veyrier-du-Lac</figcaption>
+      </figure>
+      <figure class="reveal">
+        <p class="etoiles" aria-label="5 étoiles sur 5">★★★★★</p>
+        <blockquote><p>J'habite Genève. J'ai fait ma sélection le soir, depuis le canapé, et je ne me suis déplacé que pour deux biens. Le bon, c'était le deuxième.</p></blockquote>
+        <figcaption><strong>Julien P.</strong> Acquéreur à Annecy-le-Vieux</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─── -->
+  <section class="contact" id="contact" aria-labelledby="contact-titre">
+    <div class="contact__infos">
+      <p class="label">Contact</p>
+      <h2 id="contact-titre">Passez<br><em>rue Royale.</em></h2>
+      <ul class="coord">
+        <li><span>Adresse</span>3 rue Royale, 74000 Annecy</li>
+        <li><span>Téléphone</span><a href="tel:+33450451862">04 50 45 18 62</a></li>
+        <li><span>E-mail</span><a href="mailto:contact@maisonalba-annecy.fr">contact@maisonalba-annecy.fr</a></li>
+        <li><span>Horaires</span>Lundi au vendredi 9h – 19h · samedi 10h – 17h</li>
+      </ul>
+      <div class="mini-carte" aria-hidden="true">
+        <span class="mini-carte__plan"><svg viewBox="0 0 300 500"><use href="#lac"/></svg><span class="mini-carte__pin"></span></span>
+        <p>L'agence est à deux minutes du Pâquier, à pied.</p>
+      </div>
+    </div>
+
+    <form class="form verre" id="form-contact" novalidate>
+      <div class="field">
+        <input id="nom" name="nom" type="text" autocomplete="name" placeholder=" " required>
+        <label for="nom">Nom et prénom</label>
+        <p class="err" data-err-for="nom" hidden>Merci d'indiquer votre nom.</p>
+      </div>
+      <div class="field">
+        <input id="tel" name="tel" type="tel" autocomplete="tel" placeholder=" " required>
+        <label for="tel">Téléphone</label>
+        <p class="err" data-err-for="tel" hidden>Un numéro à dix chiffres, pour vous rappeler.</p>
+      </div>
+      <div class="field field--full">
+        <input id="email" name="email" type="email" autocomplete="email" placeholder=" ">
+        <label for="email">E-mail</label>
+      </div>
+      <div class="field field--full">
+        <select id="objet" name="objet">
+          <option value="visiter">Visiter un bien</option>
+          <option value="estimer">Vendre ou faire estimer</option>
+          <option value="acheter">Acheter autour du lac</option>
+          <option value="autre">Autre demande</option>
+        </select>
+        <label for="objet">Votre projet</label>
+      </div>
+      <div class="field field--full">
+        <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
+        <label for="message">Votre message</label>
+      </div>
+      <div class="field--full">
+        <button class="btn btn--plein btn--bloc" type="submit" id="submit">Envoyer ma demande <span class="btn__ico" aria-hidden="true">→</span></button>
+        <p class="form__status" id="status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__marque">
+    <p class="foot__brand"><span class="top__mono" aria-hidden="true">A</span>Maison Alba</p>
+    <p>Agence immobilière à Annecy depuis 2009.</p>
+  </div>
+  <nav aria-label="Pied de page">
+    <p class="foot__titre">Le site</p>
+    <a href="#visite">La visite</a>
+    <a href="#biens">Nos biens</a>
+    <a href="#estimer">Estimer mon bien</a>
+    <a href="#agence">L'agence</a>
+  </nav>
+  <div>
+    <p class="foot__titre">Nous trouver</p>
+    <p>3 rue Royale, 74000 Annecy<br><a href="tel:+33450451862">04 50 45 18 62</a></p>
+  </div>
+  <div>
+    <p class="foot__titre">Informations</p>
+    <p>Honoraires : 4 à 5 % TTC du prix de vente, à la charge du vendeur.</p>
+  </div>
+  <p class="foot__demo">
+    Site de démonstration. Entreprise fictive, biens, prix et avis illustratifs.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

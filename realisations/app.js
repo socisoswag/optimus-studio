@@ -58,7 +58,10 @@
       tags: ['Devis en ligne', 'Garage', 'Rendez-vous'], url: '/demos/garage-ferrand/' },
     { slug: 'auto-ecole-lumiere', nom: 'Auto-école Lumière', secteur: 'services',
       desc: 'Auto-école. La voiture traverse Paris au scroll, le parcours du permis défile, le prix se calcule en direct.',
-      tags: ['Vidéo au scroll', 'Auto-école', 'Simulateur'], url: '/demos/auto-ecole-lumiere/' }
+      tags: ['Vidéo au scroll', 'Auto-école', 'Simulateur'], url: '/demos/auto-ecole-lumiere/' },
+    { slug: 'maison-alba', nom: 'Maison Alba', secteur: 'services',
+      desc: 'Agence immobilière. On visite l’appartement au scroll, pièce par pièce, le regard suit la souris. Carte des secteurs et estimation en direct.',
+      tags: ['Visite immersive', 'Immobilier', 'Estimation'], url: '/demos/maison-alba/' }
   ].map(function (p, i) {
     p.no = String(i + 1).padStart(3, '0');
     return p;
