@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brace · Pizzeria napolitaine au feu de bois à Toulouse</title>
+<meta name="description" content="Pizzeria napolitaine à Toulouse. Pâte maturée 48 heures, four à bois à 485 °C, cuisson en 90 secondes. Sur place ou à emporter, réservation en ligne.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brace · Pizzeria napolitaine à Toulouse">
+<meta property="og:description" content="Pâte maturée 48 heures, four à bois, 90 secondes de cuisson.">
+<meta property="og:image" content="img/four.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/four.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Brace",
+  "servesCuisine": ["Pizza", "Italienne"],
+  "telephone": "+33 5 61 22 47 90",
+  "image": "img/four.webp",
+  "priceRange": "€€",
+  "acceptsReservations": "True",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "21 rue des Filatiers",
+    "addressLocality": "Toulouse",
+    "postalCode": "31000",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "12:00", "closes": "14:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "19:00", "closes": "22:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "19:00", "closes": "22:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <a class="top__brand" href="#haut">Brace<span>pizzeria napolitaine</span></a>
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#pizzas">Les pizzas</a>
+    <a href="#carte">La carte</a>
+    <a href="#reserver">Réserver</a>
+  </nav>
+  <a class="top__tel" href="tel:+33561224790">05 61 22 47 90</a>
+</header>
+
+<main id="contenu">
+
+  <!-- ─── Hero : le four, des braises qui montent ─── -->
+  <section class="hero" id="haut">
+    <img class="hero__img" src="img/four.webp" alt="Four à bois napolitain en mosaïque noire, feu allumé, un pizzaiolo enfourne une margherita" width="1880" height="1004" fetchpriority="high">
+    <canvas class="hero__braises" id="braises" aria-hidden="true"></canvas>
+
+    <div class="hero__in">
+      <p class="statut" id="statut" role="status"><span class="statut__point"></span><span id="statut-txt">Four allumé</span></p>
+      <h1>Quatre-vingt-dix secondes<br><em>à 485 degrés.</em></h1>
+      <p class="lede">Une pâte qui a maturé 48 heures, un four à bois, et rien d'autre. Sur place ou à emporter, rue des Filatiers.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#pizzas">Choisir sa pizza <span class="btn__ico" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="#reserver">Réserver une table</a>
+      </div>
+    </div>
+
+    <aside class="moment" aria-label="Pizza du moment">
+      <p class="moment__tag">Pizza du moment</p>
+      <p class="moment__nom">Salsiccia &amp; friarielli</p>
+      <p class="moment__desc">Saucisse au fenouil, brocoli-rave, fior di latte, piment.</p>
+      <p class="moment__prix">15 €</p>
+    </aside>
+  </section>
+
+  <!-- ─── Les trois mondes : l'interaction signature ─── -->
+  <section class="mondes" id="pizzas" aria-label="Nos trois pizzas signatures">
+    <div class="mondes__sticky">
+      <div class="mondes__fond" aria-hidden="true"></div>
+
+      <p class="mondes__compteur" aria-hidden="true"><span id="monde-no">01</span> / 03</p>
+
+      <article class="monde is-on" data-monde="0" data-couleur="rouge">
+        <p class="monde__geant" aria-hidden="true">Margherita</p>
+        <div class="monde__pizza">
+          <img src="img/margherita-rond.webp" alt="Margherita vue du dessus : sauce tomate, fior di latte, basilic frais" width="900" height="900" loading="lazy">
+        </div>
+        <div class="monde__txt">
+          <p class="label">Rossa · la classique</p>
+          <h2>Margherita</h2>
+          <p>Tomate San Marzano, fior di latte d'Agerola, basilic, huile d'olive. Celle qui dit tout de la pâte.</p>
+          <p class="monde__prix">11 €</p>
+          <button class="btn btn--small js-ajout" type="button" data-nom="Margherita" data-prix="11">Ajouter à la commande <span class="btn__ico" aria-hidden="true">+</span></button>
+        </div>
+      </article>
+
+      <article class="monde" data-monde="1" data-couleur="creme">
+        <p class="monde__geant" aria-hidden="true">Patate</p>
+        <div class="monde__pizza">
+          <img src="img/patate-rond.webp" alt="Pizza blanche vue du dessus : pommes de terre, mozzarella, romarin, huile d'olive" width="900" height="900" loading="lazy">
+        </div>
+        <div class="monde__txt">
+          <p class="label">Bianca · sans tomate</p>
+          <h2>Patate &amp; rosmarino</h2>
+          <p>Base crème de mozzarella, pommes de terre fondantes, romarin frais, filet d'huile d'olive, sel de Guérande.</p>
+          <p class="monde__prix">14 €</p>
+          <button class="btn btn--small js-ajout" type="button" data-nom="Patate &amp; rosmarino" data-prix="14">Ajouter à la commande <span class="btn__ico" aria-hidden="true">+</span></button>
+        </div>
+      </article>
+
+      <article class="monde" data-monde="2" data-couleur="braise">
+        <p class="monde__geant" aria-hidden="true">Diavola</p>
+        <div class="monde__pizza">
+          <img src="img/diavola-rond.webp" alt="Diavola vue du dessus : salami piquant, olives noires, huile pimentée" width="900" height="900" loading="lazy">
+        </div>
+        <div class="monde__txt">
+          <p class="label">Rossa · qui pique</p>
+          <h2>Diavola</h2>
+          <p>Tomate, fior di latte, salami piquant de Calabre qui se recourbe au four, olives noires, huile au piment.</p>
+          <p class="monde__prix">14 €</p>
+          <button class="btn btn--small js-ajout" type="button" data-nom="Diavola" data-prix="14">Ajouter à la commande <span class="btn__ico" aria-hidden="true">+</span></button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ─── Chiffres ─── -->
+  <section class="chiffres" aria-label="La méthode">
+    <div><strong>48 h</strong><span>de maturation de la pâte</span></div>
+    <div><strong>485 °C</strong><span>sur la sole du four</span></div>
+    <div><strong>90 s</strong><span>de cuisson, pas une de plus</span></div>
+  </section>
+
+  <!-- ─── La carte, avec points de conduite ─── -->
+  <section class="carte" id="carte" aria-labelledby="carte-titre">
+    <div class="carte__head">
+      <p class="label">La carte</p>
+      <h2 id="carte-titre">Tout ce qui sort du four.<br><em>Et du bar.</em></h2>
+    </div>
+
+    <!-- La carte est générée depuis app.js (tableau CARTE) : une seule
+         source pour les photos, les prix et les filtres. Sans JS, la
+         liste de secours ci-dessous reste lisible. -->
+    <div class="onglets" role="tablist" aria-label="Catégories de la carte">
+      <button role="tab" id="t-pizze" aria-controls="p-carte" aria-selected="true" data-cat="pizze"><span class="onglet__ico" aria-hidden="true">◐</span>Pizze</button>
+      <button role="tab" id="t-cocktails" aria-controls="p-carte" aria-selected="false" tabindex="-1" data-cat="cocktails"><span class="onglet__ico" aria-hidden="true">◇</span>Cocktails</button>
+      <button role="tab" id="t-dolci" aria-controls="p-carte" aria-selected="false" tabindex="-1" data-cat="dolci"><span class="onglet__ico" aria-hidden="true">○</span>Dolci</button>
+    </div>
+
+    <div class="carte__panneau" id="p-carte" role="tabpanel" aria-labelledby="t-pizze" aria-live="polite">
+      <ul class="plats" id="plats">
+        <li><strong>Margherita</strong> · 11 € · Tomate, fior di latte, basilic.</li>
+        <li><strong>Patate &amp; rosmarino</strong> · 14 € · Mozzarella, pommes de terre, romarin.</li>
+        <li><strong>Diavola</strong> · 14 € · Salami piquant, olives noires, huile pimentée.</li>
+      </ul>
+    </div>
+    <p class="carte__note">Pâte sans lactose. Base sans gluten possible, préparée à part mais dans la même cuisine.</p>
+  </section>
+
+  <!-- ─── Le pizzaiolo ─── -->
+  <section class="pizzaiolo" aria-labelledby="pizzaiolo-titre">
+    <div class="pizzaiolo__in reveal">
+      <p class="label">Le pizzaiolo</p>
+      <h2 id="pizzaiolo-titre">On ne pétrit pas<br>pour aller vite.</h2>
+      <p>J'ai appris à Naples, dans une pizzeria où personne ne parlait de recette : on parlait de temps. Farine de type 00, levain, 48 heures au frais. Le jour où la pâte n'est pas prête, on ouvre plus tard. Ça m'est arrivé deux fois en six ans.</p>
+      <p class="signature">Salvatore Ianni</p>
+    </div>
+  </section>
+
+  <!-- ─── Commander ou réserver ─── -->
+  <section class="reserver" id="reserver" aria-labelledby="reserver-titre">
+    <div class="emporter">
+      <p class="label">À emporter</p>
+      <h2 id="reserver-titre">Commandez,<br>on enfourne.</h2>
+      <div class="panier" id="panier" aria-live="polite">
+        <p class="panier__vide" id="panier-vide">Votre commande est vide. Ajoutez une pizza depuis la section « Les pizzas ».</p>
+        <ul class="panier__liste" id="panier-liste"></ul>
+        <p class="panier__total" id="panier-total" hidden></p>
+      </div>
+      <a class="btn btn--block" href="tel:+33561224790">Appeler pour commander · 05 61 22 47 90</a>
+      <p class="emporter__note">Prête en 15 minutes. Paiement sur place.</p>
+    </div>
+
+    <form class="form" id="form-resa" novalidate>
+      <p class="label">Sur place</p>
+      <h3 class="form__titre">Réserver une table</h3>
+      <div class="field">
+        <input id="nom" name="nom" type="text" autocomplete="name" placeholder=" " required>
+        <label for="nom">Nom</label>
+        <p class="err" data-err-for="nom" hidden>Merci d'indiquer votre nom.</p>
+      </div>
+      <div class="field">
+        <input id="tel" name="tel" type="tel" autocomplete="tel" placeholder=" " required>
+        <label for="tel">Téléphone</label>
+        <p class="err" data-err-for="tel" hidden>Un numéro à dix chiffres, pour confirmer la table.</p>
+      </div>
+      <div class="field field--demi">
+        <input id="date" name="date" type="date" placeholder=" " required>
+        <label for="date">Date</label>
+        <p class="err" data-err-for="date" hidden>Choisissez une date.</p>
+      </div>
+      <div class="field field--demi">
+        <select id="heure" name="heure">
+          <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option>
+          <option>19:00</option><option selected>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option>
+        </select>
+        <label for="heure">Heure</label>
+      </div>
+      <div class="field">
+        <select id="couverts" name="couverts">
+          <option>1 personne</option><option selected>2 personnes</option><option>3 personnes</option><option>4 personnes</option><option>5 personnes</option><option>6 personnes</option><option>Plus de 6, on s'appelle</option>
+        </select>
+        <label for="couverts">Couverts</label>
+      </div>
+      <button class="btn btn--block" type="submit" id="submit">Réserver <span class="btn__ico" aria-hidden="true">→</span></button>
+      <p class="form__status" id="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div>
+    <p class="foot__brand">Brace</p>
+    <p>21 rue des Filatiers, 31000 Toulouse · 05 61 22 47 90</p>
+  </div>
+  <dl class="horaires">
+    <div><dt>Mardi au samedi</dt><dd>12h – 14h30 · 19h – 22h30</dd></div>
+    <div><dt>Dimanche</dt><dd>19h – 22h</dd></div>
+    <div><dt>Lundi</dt><dd>Fermé, le four se repose</dd></div>
+  </dl>
+  <p class="foot__demo">
+    Site de démonstration. Entreprise fictive, contenus illustratifs.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
