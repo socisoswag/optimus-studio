@@ -8,44 +8,46 @@
   'use strict';
 
   /* Ajouter un projet = ajouter une entrée ici. Rien d'autre à toucher. */
+  /* Rangés par secteur, dans l'ordre des filtres. Le numéro suit l'ordre
+     d'affichage ; il est recalculé plus bas, inutile de le tenir à jour. */
   var PROJETS = [
-    {
-      no: '001',
-      slug: 'berthier-energies',
-      nom: 'Berthier Énergies',
-      secteur: 'btp',
-      desc: 'Chauffagiste. Séquence de 121 images pilotée au scroll, télémétrie thermique, rénovation énergétique.',
-      tags: ['Scroll canvas', 'Chauffagiste', 'JSON-LD'],
-      url: '/demos/berthier-energies/'
-    },
-    {
-      no: '002',
-      slug: 'plomberie-vasseur',
-      nom: 'Plomberie Vasseur',
-      secteur: 'btp',
-      desc: 'Plombier chauffagiste. Le téléphone est la conversion : aucune animation, tout lisible à l’arrêt.',
-      tags: ['Vitrine', 'Artisan', 'Formulaire'],
-      url: '/demos/plomberie-vasseur/'
-    },
-    {
-      no: '003',
-      slug: 'maison-verrier',
-      nom: 'Maison Verrier',
-      secteur: 'resto',
+    { slug: 'berthier-energies', nom: 'Berthier Énergies', secteur: 'btp',
+      desc: 'Chauffagiste. Le radiateur se démonte au scroll : séquence de 121 images, télémétrie thermique.',
+      tags: ['Scroll canvas', 'Chauffagiste', 'JSON-LD'], url: '/demos/berthier-energies/' },
+    { slug: 'serrurier', nom: 'Delorme Serrurerie', secteur: 'btp',
+      desc: 'Serrurier. Le cylindre se démonte pièce par pièce au scroll, un message par écran.',
+      tags: ['Scroll canvas', 'Urgence 24 h/24', 'Rappel'], url: '/demos/serrurier/' },
+    { slug: 'moreau-electricite', nom: 'Moreau Électricité', secteur: 'btp',
+      desc: 'Électricien. Le tableau passe de hors tension à sous tension au fil du scroll, relevé en direct.',
+      tags: ['Scroll', 'Électricien', 'Devis'], url: '/demos/moreau-electricite/' },
+    { slug: 'plomberie-vasseur', nom: 'Plomberie Vasseur', secteur: 'btp',
+      desc: 'Plombier. Fiche technique sombre et diagnostic de fuite en trois questions.',
+      tags: ['Diagnostic', 'Plombier', 'Tarifs'], url: '/demos/plomberie-vasseur/' },
+    { slug: 'couverture-marchal', nom: 'Couverture Marchal', secteur: 'btp',
+      desc: 'Couvreur. Le même toit avant et après travaux, à comparer au curseur.',
+      tags: ['Avant / après', 'Couvreur', 'Visite'], url: '/demos/couverture-marchal/' },
+    { slug: 'maison-verrier', nom: 'Maison Verrier', secteur: 'resto',
       desc: 'Restaurant. Structure pilotée par la photographie : bandes pleine largeur et sections de texte, thème sombre du début à la fin.',
-      tags: ['Photo pleine largeur', 'Restaurant', 'Réservation'],
-      url: '/demos/maison-verrier/'
-    },
-    {
-      no: '004',
-      slug: 'barbier-lacroix',
-      nom: 'Barbier Lacroix',
-      secteur: 'beaute',
+      tags: ['Photo pleine largeur', 'Restaurant', 'Réservation'], url: '/demos/maison-verrier/' },
+    { slug: 'maison-solene', nom: 'Maison Solène', secteur: 'beaute',
+      desc: 'Institut de beauté. Carte des soins qui se déplie, réservation en quatre étapes.',
+      tags: ['Réservation', 'Institut', 'Carte des soins'], url: '/demos/maison-solene/' },
+    { slug: 'barbier-lacroix', nom: 'Barbier Lacroix', secteur: 'beaute',
       desc: 'Barbier. Monochrome froid et angles vifs, à l’opposé du sombre et doré du secteur.',
-      tags: ['Vitrine', 'Barbier', 'Tarifs'],
-      url: '/demos/barbier-lacroix/'
-    }
-  ];
+      tags: ['Vitrine', 'Barbier', 'Tarifs'], url: '/demos/barbier-lacroix/' },
+    { slug: 'forge-studio', nom: 'Forge Studio', secteur: 'sport',
+      desc: 'Salle de sport. Planning des cours filtrable, fiche de chaque cours, séance d’essai.',
+      tags: ['Planning', 'Salle de sport', 'Tarifs'], url: '/demos/forge-studio/' },
+    { slug: 'belval-proprete', nom: 'Belval Propreté', secteur: 'services',
+      desc: 'Nettoyage de bureaux. Estimation mensuelle en direct selon la surface et la fréquence.',
+      tags: ['Simulateur', 'B2B', 'Devis'], url: '/demos/belval-proprete/' },
+    { slug: 'cabinet-delaunay', nom: 'Cabinet Delaunay', secteur: 'services',
+      desc: 'Avocate. Le délai légal à connaître selon votre situation, texte de loi à l’appui.',
+      tags: ['Guide juridique', 'Avocat', 'Rendez-vous'], url: '/demos/cabinet-delaunay/' }
+  ].map(function (p, i) {
+    p.no = String(i + 1).padStart(3, '0');
+    return p;
+  });
 
   var grid     = document.getElementById('grid-sites');
   var tabs     = Array.prototype.slice.call(document.querySelectorAll('.tab'));
@@ -106,9 +108,22 @@
   });
 
   /* ─── Filtres par secteur ─── */
+  /* Le nombre de projets s'affiche sur chaque filtre, calculé depuis PROJETS. */
+  chips.forEach(function (chip) {
+    var s = chip.dataset.secteur;
+    var n = s === 'all' ? PROJETS.length : PROJETS.filter(function (p) { return p.secteur === s; }).length;
+    var badge = document.createElement('span');
+    badge.className = 'chip__n';
+    badge.textContent = n;
+    chip.appendChild(badge);
+  });
+
   chips.forEach(function (chip) {
     chip.addEventListener('click', function () {
-      chips.forEach(function (c) { c.classList.toggle('is-on', c === chip); });
+      chips.forEach(function (c) {
+        c.classList.toggle('is-on', c === chip);
+        c.setAttribute('aria-pressed', c === chip ? 'true' : 'false');
+      });
       var s = chip.dataset.secteur;
       Array.prototype.forEach.call(grid.children, function (card) {
         card.hidden = s !== 'all' && card.dataset.secteur !== s;

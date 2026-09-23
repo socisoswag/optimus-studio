@@ -129,6 +129,8 @@ a { color: inherit; }
 }
 .chip:hover { color: var(--ink); border-color: var(--dim); }
 .chip.is-on { color: var(--accent); border-color: var(--accent); }
+.chip__n { margin-left: .6rem; color: var(--dim); }
+.chip.is-on .chip__n { color: var(--accent); opacity: .7; }
 
 /* ─── Grille de projets ─── */
 .grid {
