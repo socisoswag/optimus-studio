@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cabinet Delaunay · Avocate à Lyon en droit de la famille, du travail et immobilier</title>
+<meta name="description" content="Maître Claire Delaunay, avocate au barreau de Lyon. Droit de la famille, droit du travail, droit immobilier. Consultation au cabinet ou en visio, convention d'honoraires dès le premier rendez-vous.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cabinet Delaunay · Avocate au barreau de Lyon">
+<meta property="og:description" content="Famille, travail, immobilier. Les délais qui comptent dans votre situation, et un rendez-vous pour en parler.">
+<meta property="og:image" content="img/bureau.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/bureau.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  "name": "Cabinet Delaunay",
+  "founder": { "@type": "Person", "name": "Claire Delaunay", "jobTitle": "Avocate au barreau de Lyon" },
+  "telephone": "+33 4 78 24 61 39",
+  "image": "img/bureau.webp",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "48 cours Franklin-Roosevelt",
+    "addressLocality": "Lyon",
+    "postalCode": "69006",
+    "addressCountry": "FR"
+  },
+  "knowsAbout": ["Droit de la famille", "Droit du travail", "Droit immobilier"]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <a class="top__brand" href="#haut">Delaunay<span>Avocate · Lyon</span></a>
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#situation">Votre situation</a>
+    <a href="#domaines">Domaines</a>
+    <a href="#honoraires">Honoraires</a>
+  </nav>
+  <a class="top__rdv" href="#rendez-vous">Prendre rendez-vous</a>
+</header>
+
+<main id="contenu">
+
+  <!-- ─── Hero : texte à gauche, le bureau à droite ─── -->
+  <section class="hero" id="haut">
+    <div class="hero__copy">
+      <p class="label">Maître Claire Delaunay · Barreau de Lyon depuis 2009</p>
+      <h1>Le droit, expliqué<br><em>avant d'être plaidé.</em></h1>
+      <p class="lede">Droit de la famille, du travail et de l'immobilier. Vous repartez du premier rendez-vous en sachant où vous en êtes, ce que vous risquez et ce que cela coûtera.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#situation">Décrire ma situation</a>
+        <a class="lien" href="tel:+33478246139">04 78 24 61 39</a>
+      </div>
+    </div>
+    <figure class="hero__media">
+      <img src="img/bureau.webp" alt="Bureau d'avocat dans un immeuble ancien : bureau en bois sombre, lampe de banquier verte, codes reliés rouges, fenêtre sur balcon" width="1920" height="1048" fetchpriority="high">
+    </figure>
+  </section>
+
+  <!-- ─── Votre situation : l'interaction signature ─── -->
+  <section class="situation" id="situation" aria-labelledby="situation-titre">
+    <div class="sec-head">
+      <p class="sec-no" aria-hidden="true">§ 1</p>
+      <div>
+        <p class="label">Votre situation</p>
+        <h2 id="situation-titre">Le délai qui compte,<br><em>avant tout le reste.</em></h2>
+        <p class="sec-head__lede">En droit, beaucoup de dossiers se perdent sur une date. Choisissez votre situation : voici le délai à connaître, la première étape et ce qu'il faut apporter.</p>
+      </div>
+    </div>
+
+    <div class="guide">
+      <div class="guide__choix">
+        <div class="domaines-tabs" role="tablist" aria-label="Domaine">
+          <button role="tab" id="tab-famille" aria-controls="sit-famille" aria-selected="true">Famille</button>
+          <button role="tab" id="tab-travail" aria-controls="sit-travail" aria-selected="false" tabindex="-1">Travail</button>
+          <button role="tab" id="tab-immo" aria-controls="sit-immo" aria-selected="false" tabindex="-1">Immobilier</button>
+        </div>
+        <!-- Rempli par app.js depuis la liste SITUATIONS. -->
+        <div class="situations" id="sit-famille" role="tabpanel" aria-labelledby="tab-famille"></div>
+        <div class="situations" id="sit-travail" role="tabpanel" aria-labelledby="tab-travail" hidden></div>
+        <div class="situations" id="sit-immo" role="tabpanel" aria-labelledby="tab-immo" hidden></div>
+      </div>
+
+      <article class="fiche" id="fiche" aria-live="polite">
+        <p class="fiche__titre" id="fiche-titre"></p>
+        <div class="fiche__delai">
+          <p class="fiche__chiffre" id="fiche-chiffre"></p>
+          <p class="fiche__delai-txt" id="fiche-delai"></p>
+        </div>
+        <dl class="fiche__corps">
+          <div><dt>Première étape</dt><dd id="fiche-etape"></dd></div>
+          <div><dt>À apporter au rendez-vous</dt><dd><ul id="fiche-pieces"></ul></dd></div>
+        </dl>
+        <p class="fiche__ref" id="fiche-ref"></p>
+        <a class="btn" href="#rendez-vous" id="fiche-cta">En parler en rendez-vous</a>
+      </article>
+    </div>
+
+    <p class="avertissement">Repères généraux, qui ne remplacent pas une consultation : chaque dossier a ses exceptions, et un délai peut être interrompu ou suspendu.</p>
+  </section>
+
+  <!-- ─── Le cabinet ─── -->
+  <section class="cabinet" aria-labelledby="cabinet-titre">
+    <figure class="cabinet__media">
+      <img src="img/robe.webp" alt="Une robe d'avocat noire au rabat blanc, suspendue près d'une fenêtre" width="1920" height="1048" loading="lazy">
+    </figure>
+    <div class="cabinet__copy reveal">
+      <p class="sec-no" aria-hidden="true">§ 2</p>
+      <p class="label">Le cabinet</p>
+      <h2 id="cabinet-titre">Une avocate,<br><em>votre dossier, en entier.</em></h2>
+      <!-- La déontologie interdit à un avocat toute publicité comparative ou
+           dénigrante (RIN, art. 10) : on décrit sa pratique, jamais celle des autres. -->
+      <p>Je reçois, je rédige, je plaide : vous avez le même interlocuteur du premier rendez-vous à l'audience, et je réponds moi-même à vos messages, sous quarante-huit heures ouvrées.</p>
+      <p>Avant d'aller au tribunal, je cherche toujours l'accord : il est plus rapide, moins cher, et il laisse moins de traces entre les personnes.</p>
+    </div>
+  </section>
+
+  <!-- ─── Domaines ─── -->
+  <section class="domaines" id="domaines" aria-labelledby="domaines-titre">
+    <div class="sec-head">
+      <p class="sec-no" aria-hidden="true">§ 3</p>
+      <div>
+        <p class="label">Domaines d'intervention</p>
+        <!-- « Spécialiste » est un titre réglementé (certificat du CNB) :
+             on parle de domaines d'intervention. -->
+        <h2 id="domaines-titre">Trois domaines,<br><em>et pas davantage.</em></h2>
+      </div>
+    </div>
+    <div class="trois">
+      <article>
+        <h3>Famille</h3>
+        <ul>
+          <li>Divorce amiable ou contentieux</li>
+          <li>Résidence des enfants, droit de visite</li>
+          <li>Pension alimentaire, prestation compensatoire</li>
+          <li>Séparation de couples non mariés</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Travail</h3>
+        <ul>
+          <li>Contestation de licenciement</li>
+          <li>Rupture conventionnelle</li>
+          <li>Salaires et heures supplémentaires impayés</li>
+          <li>Conseil aux employeurs de moins de 50 salariés</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Immobilier</h3>
+        <ul>
+          <li>Loyers impayés, expulsion</li>
+          <li>Dépôt de garantie, charges locatives</li>
+          <li>Vices cachés après une vente</li>
+          <li>Litiges de copropriété</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ─── Honoraires ─── -->
+  <section class="honoraires" id="honoraires" aria-labelledby="honoraires-titre">
+    <div class="honoraires__media">
+      <img class="h-img h-img--1" src="img/signature.webp" alt="Signature d'un document au stylo plume sur un bureau en bois" width="1920" height="1048" loading="lazy">
+      <img class="h-img h-img--2" src="img/dossiers.webp" alt="Pile de dossiers noués d'un ruban rouge, un stylo plume à côté" width="1920" height="1048" loading="lazy">
+    </div>
+    <div class="honoraires__copy">
+      <p class="sec-no" aria-hidden="true">§ 4</p>
+      <p class="label">Honoraires</p>
+      <h2 id="honoraires-titre">Le prix,<br><em>écrit avant de commencer.</em></h2>
+      <dl class="tarifs">
+        <div><dt>Consultation, 45 minutes</dt><dd>150 € HT<small>180 € TTC, au cabinet ou en visio</small></dd></div>
+        <div><dt>Au temps passé</dt><dd>200 € HT / heure<small>relevé détaillé joint à chaque facture</small></dd></div>
+        <div><dt>Au forfait</dt><dd>sur devis<small>divorce amiable, rupture conventionnelle</small></dd></div>
+      </dl>
+      <ul class="notes">
+        <li>Convention d'honoraires signée avant tout travail, comme la loi l'exige.</li>
+        <li>Aide juridictionnelle acceptée, selon vos ressources.</li>
+        <li>Votre assurance protection juridique peut prendre en charge tout ou partie des frais : pensez à la consulter.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─── Rendez-vous ─── -->
+  <section class="rdv" id="rendez-vous" aria-labelledby="rdv-titre">
+    <div class="rdv__copy">
+      <p class="sec-no" aria-hidden="true">§ 5</p>
+      <p class="label">Rendez-vous</p>
+      <h2 id="rdv-titre">Écrivez-moi<br><em>en quelques lignes.</em></h2>
+      <p>Je vous réponds sous quarante-huit heures ouvrées avec une date de rendez-vous. Ce que vous écrivez ici est couvert par le secret professionnel.</p>
+      <address>
+        48 cours Franklin-Roosevelt, 69006 Lyon<br>
+        Métro A, Foch<br>
+        <a href="tel:+33478246139">04 78 24 61 39</a>
+      </address>
+    </div>
+
+    <form class="form" id="form-rdv" novalidate>
+      <div class="field">
+        <label for="nom">Nom et prénom</label>
+        <input id="nom" name="nom" type="text" autocomplete="name" required>
+        <p class="err" data-err-for="nom" hidden>Merci d'indiquer votre nom.</p>
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <p class="err" data-err-for="email" hidden>Merci d'indiquer un e-mail valide.</p>
+      </div>
+      <div class="field">
+        <label for="tel">Téléphone</label>
+        <input id="tel" name="tel" type="tel" autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="domaine">Domaine</label>
+        <select id="domaine" name="domaine">
+          <option>Famille</option>
+          <option>Travail</option>
+          <option>Immobilier</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <fieldset class="field field--full modes">
+        <legend>Rendez-vous</legend>
+        <label><input type="radio" name="mode" value="cabinet" checked><span>Au cabinet</span></label>
+        <label><input type="radio" name="mode" value="visio"><span>En visio</span></label>
+        <label><input type="radio" name="mode" value="telephone"><span>Par téléphone</span></label>
+      </fieldset>
+      <div class="field field--full">
+        <label for="message">Votre situation</label>
+        <textarea id="message" name="message" rows="5" placeholder="Les faits principaux, les dates, ce que vous attendez."></textarea>
+      </div>
+      <div class="field field--full">
+        <button class="btn btn--block" type="submit" id="submit">Envoyer ma demande</button>
+        <p class="form__status" id="status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__brand">Cabinet Delaunay</p>
+  <p>Maître Claire Delaunay, avocate au barreau de Lyon · 48 cours Franklin-Roosevelt, 69006 Lyon · 04 78 24 61 39</p>
+  <p class="foot__demo">
+    Site de démonstration. Cabinet fictif, contenus illustratifs : les repères juridiques sont généraux et ne valent pas consultation.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
