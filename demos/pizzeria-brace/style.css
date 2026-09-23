@@ -214,7 +214,7 @@ h1 em, h2 em { font-style: italic; font-weight: 500; color: var(--creme); }
   pointer-events: none; user-select: none;
   transition: opacity 1.2s var(--ease), transform 1.2s var(--ease);
 }
-.monde.is-on .monde__geant { opacity: .07; transform: translate(-50%, -50%) scale(1); }
+.monde.is-on .monde__geant { opacity: .09; transform: translate(-50%, -50%) scale(1); }
 
 .monde__pizza {
   position: relative; z-index: 1; justify-self: center;
@@ -256,7 +256,7 @@ h1 em, h2 em { font-style: italic; font-weight: 500; color: var(--creme); }
    survol, les cocktails en arche, les desserts en assiette. Le prix
    est une pastille, le nom se lit en grand. */
 .carte { padding: 8rem var(--gut); max-width: 80rem; margin: 0 auto; }
-.carte__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; margin-bottom: 2.4rem; }
+.carte__head { margin-bottom: 2.4rem; }
 .onglets { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2.4rem; }
 .onglets [role="tab"] {
   display: inline-flex; align-items: center; gap: .6rem;
@@ -469,7 +469,6 @@ h1 em, h2 em { font-style: italic; font-weight: 500; color: var(--creme); }
   .chiffres div + div { border-left: none; border-top: 1px solid var(--line); }
 
   .carte, .pizzaiolo, .reserver { padding-block: 5rem; }
-  .carte__head { flex-direction: column; align-items: flex-start; }
   .plats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
   .plat { border-radius: 18px; }
   .plat__corps { padding: 0 .85rem .9rem; }
@@ -498,6 +497,6 @@ h1 em, h2 em { font-style: italic; font-weight: 500; color: var(--creme); }
   .monde[data-couleur="rouge"]  { background: radial-gradient(circle at 30% 55%, #9B2616, #140908 78%); }
   .monde[data-couleur="creme"]  { background: radial-gradient(circle at 30% 55%, #C9A36A, #1B130A 78%); }
   .monde[data-couleur="braise"] { background: radial-gradient(circle at 30% 55%, #7A3510, #0B0706 80%); }
-  .monde__geant, .monde.is-on .monde__geant { opacity: .07; transform: translate(-50%, -50%); transition: none; }
+  .monde__geant, .monde.is-on .monde__geant { opacity: .09; transform: translate(-50%, -50%); transition: none; }
   .monde__pizza, .monde__txt { opacity: 1; transform: none; transition: none; }
 }
