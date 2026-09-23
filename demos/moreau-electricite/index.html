@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moreau Électricité · Électricien à Nantes, mise aux normes et dépannage</title>
+<meta name="description" content="Électricien à Nantes. Mise aux normes NF C 15-100, remplacement de tableau, dépannage, éclairage et borne de recharge. Devis écrit sous 48 heures.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Moreau Électricité · Électricien à Nantes">
+<meta property="og:description" content="Tableau, mise aux normes, dépannage et éclairage. Attestation de conformité remise en fin de chantier.">
+<meta property="og:image" content="img/tableau-on.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/tableau-off.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Moreau Électricité",
+  "telephone": "+33 2 40 48 31 76",
+  "image": "img/tableau-on.webp",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12 rue de la Verrerie",
+    "addressLocality": "Nantes",
+    "postalCode": "44000",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Nantes", "Rezé", "Saint-Herblain", "Orvault", "Saint-Sébastien-sur-Loire", "Carquefou"],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "07:30",
+    "closes": "18:30"
+  }
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <a class="top__brand" href="#haut"><span class="top__bolt" aria-hidden="true"></span>Moreau Électricité</a>
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#services">Services</a>
+    <a href="#methode">Méthode</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="top__tel" href="tel:+33240483176">02 40 48 31 76</a>
+</header>
+
+<main id="contenu">
+
+  <!-- ─── Le tableau ───
+       Section haute : la scène reste à l'écran pendant le scroll et le
+       tableau passe de « hors tension » à « sous tension ». Deux photos
+       identiques au pixel près (éteinte, allumée) superposées. -->
+  <section class="volt" id="haut" aria-label="Présentation">
+    <div class="volt__stage">
+
+      <div class="volt__copy">
+        <p class="label">Électricien · Nantes</p>
+        <div class="volt__msgs">
+          <div class="msg is-on" data-from="0" data-to="0.34">
+            <h1>Le courant<br>est coupé.</h1>
+            <p>Tableau hors tension. C'est par là qu'on commence, toujours.</p>
+            <p class="msg__torche">Promenez la lampe sur le tableau.</p>
+          </div>
+          <div class="msg" data-from="0.34" data-to="0.68">
+            <p class="msg__big">Circuit<br>par circuit.</p>
+            <p>Chaque disjoncteur testé, chaque ligne repérée, chaque différentiel déclenché à la main.</p>
+          </div>
+          <div class="msg" data-from="0.68" data-to="1.01">
+            <p class="msg__big">Le courant<br>revient.</p>
+            <p>Aux normes NF C 15-100, attestation de conformité remise en fin de chantier.</p>
+            <a class="btn" href="#contact">Demander un devis</a>
+          </div>
+        </div>
+
+        <dl class="releve" aria-label="Relevé du tableau">
+          <div><dt>Tension</dt><dd><span id="r-volt">0</span> V</dd></div>
+          <div><dt>Circuits</dt><dd><span id="r-circ">0</span>/38</dd></div>
+          <div><dt>État</dt><dd id="r-etat" class="releve__etat">Hors tension</dd></div>
+        </dl>
+      </div>
+
+      <div class="volt__media">
+        <img class="volt__img" src="img/tableau-off.webp" alt="Tableau électrique résidentiel ouvert, hors tension" width="1920" height="1071" fetchpriority="high">
+        <img class="volt__img volt__img--on" id="volt-on" src="img/tableau-on.webp" alt="" width="1920" height="1071">
+        <!-- Lampe torche : tant que le courant est coupé, la souris (ou le
+             doigt) éclaire le tableau et révèle ses voyants. -->
+        <div class="torche" id="torche" aria-hidden="true">
+          <img class="volt__img torche__img" src="img/tableau-on.webp" alt="" width="1920" height="1071">
+          <span class="torche__halo"></span>
+        </div>
+        <div class="volt__glow" id="volt-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Services ─── -->
+  <section class="services" id="services" aria-labelledby="services-titre">
+    <div class="head">
+      <p class="label">Services</p>
+      <h2 id="services-titre">Du disjoncteur<br>à la borne de recharge.</h2>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <p class="card__no">01</p>
+        <h3>Mise aux normes</h3>
+        <p>Installation contrôlée point par point selon la NF C 15-100. Terre, différentiels, sections de câbles, liaisons équipotentielles.</p>
+        <p class="card__prix">Sur devis, visite offerte</p>
+      </article>
+      <article class="card">
+        <p class="card__no">02</p>
+        <h3>Remplacement de tableau</h3>
+        <p>Ancien tableau à fusibles ou saturé : nouveau tableau repéré, circuits équilibrés, schéma unifilaire laissé dans la porte.</p>
+        <p class="card__prix">dès 1 200 € TTC</p>
+      </article>
+      <article class="card">
+        <p class="card__no">03</p>
+        <h3>Dépannage</h3>
+        <p>Disjoncteur qui saute, prise qui chauffe, panne partielle. Recherche de la cause, pas seulement du symptôme.</p>
+        <p class="card__prix">dès 89 € TTC</p>
+      </article>
+      <article class="card">
+        <p class="card__no">04</p>
+        <h3>Éclairage</h3>
+        <p>Spots encastrés, rubans LED, suspensions. Plan d'éclairage pensé pièce par pièce, variateurs compris.</p>
+        <p class="card__prix">Sur devis</p>
+      </article>
+      <article class="card">
+        <p class="card__no">05</p>
+        <h3>Borne de recharge</h3>
+        <p>Borne 7 kW en maison ou en parking, ligne dédiée depuis le tableau, installateur qualifié IRVE.</p>
+        <p class="card__prix">dès 1 290 € TTC posée</p>
+      </article>
+      <article class="card">
+        <p class="card__no">06</p>
+        <h3>Rénovation complète</h3>
+        <p>Maison ou appartement à refaire : saignées, gaines, appareillage. Coordination avec votre plaquiste et votre peintre.</p>
+        <p class="card__prix">Sur devis</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ─── Méthode : on mesure avant de toucher ─── -->
+  <section class="mesure" id="methode" aria-labelledby="mesure-titre">
+    <div class="mesure__media">
+      <img src="img/mesure.webp" alt="Un électricien mesure 230 volts au multimètre sur une boîte de dérivation" width="1920" height="1048" loading="lazy">
+    </div>
+    <div class="mesure__copy reveal">
+      <p class="label">Méthode</p>
+      <h2 id="mesure-titre">On mesure<br>avant de toucher.</h2>
+      <ol class="etapes">
+        <li><span>01</span><div><h3>Visite</h3><p>Le tableau, les pièces, vos usages. Trente minutes, gratuites.</p></div></li>
+        <li><span>02</span><div><h3>Devis écrit sous 48 h</h3><p>Poste par poste, fournitures détaillées, aucun forfait flou.</p></div></li>
+        <li><span>03</span><div><h3>Chantier</h3><p>Courant coupé le moins longtemps possible, pièces protégées, nettoyage chaque soir.</p></div></li>
+        <li><span>04</span><div><h3>Attestation</h3><p>Schéma du tableau, attestation de conformité, garantie décennale.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ─── Éclairage : la photo en pleine largeur ─── -->
+  <section class="lumiere" aria-labelledby="lumiere-titre">
+    <img src="img/cuisine.webp" alt="Cuisine contemporaine de nuit, éclairée par des spots encastrés, des rubans LED et une suspension" width="1920" height="1048" loading="lazy">
+    <div class="lumiere__in reveal">
+      <p class="label">Éclairage</p>
+      <h2 id="lumiere-titre">La lumière se dessine avant de se poser.</h2>
+      <p>Spots, rubans LED sous les meubles, suspension au-dessus de l'îlot : un plan d'éclairage par pièce, validé avec vous avant la première saignée.</p>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─── -->
+  <section class="contact" id="contact" aria-labelledby="contact-titre">
+    <div class="contact__copy">
+      <p class="label">Contact</p>
+      <h2 id="contact-titre">Parlez-nous<br>de votre installation.</h2>
+      <p>Nantes et la première couronne : Rezé, Saint-Herblain, Orvault, Saint-Sébastien-sur-Loire, Carquefou.</p>
+      <a class="contact__tel" href="tel:+33240483176">02 40 48 31 76</a>
+      <p class="contact__horaires">Lundi au vendredi, 7 h 30 – 18 h 30</p>
+    </div>
+
+    <form class="form" id="form-devis" novalidate>
+      <div class="field">
+        <label for="nom">Nom</label>
+        <input id="nom" name="nom" type="text" autocomplete="name" required>
+        <p class="err" data-err-for="nom" hidden>Merci d'indiquer votre nom.</p>
+      </div>
+      <div class="field">
+        <label for="tel">Téléphone</label>
+        <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+        <p class="err" data-err-for="tel" hidden>Un numéro à dix chiffres est nécessaire pour vous rappeler.</p>
+      </div>
+      <div class="field">
+        <label for="logement">Logement</label>
+        <select id="logement" name="logement">
+          <option>Appartement</option>
+          <option>Maison</option>
+          <option>Local professionnel</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="besoin">Besoin</label>
+        <select id="besoin" name="besoin">
+          <option>Mise aux normes</option>
+          <option>Tableau électrique</option>
+          <option>Dépannage</option>
+          <option>Éclairage</option>
+          <option>Borne de recharge</option>
+          <option>Rénovation complète</option>
+        </select>
+      </div>
+      <div class="field field--full">
+        <label for="message">Votre projet en quelques mots</label>
+        <textarea id="message" name="message" rows="4" placeholder="Année du logement, surface, ce qui ne va pas."></textarea>
+      </div>
+      <div class="field field--full">
+        <button class="btn btn--block" type="submit" id="submit">Demander une visite</button>
+        <p class="form__status" id="status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__brand">Moreau Électricité</p>
+  <p>12 rue de la Verrerie, 44000 Nantes · 02 40 48 31 76 · Garantie décennale</p>
+  <p class="foot__demo">
+    Site de démonstration. Entreprise fictive, contenus illustratifs.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

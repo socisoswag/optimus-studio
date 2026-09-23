@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbier Lacroix · Coupe et rasage à Paris 9e</title>
+<meta name="description" content="Barbier Lacroix, salon de coupe et rasage traditionnel à Paris 9e. Sans rendez-vous du mardi au samedi. Coupe 28 €, rasage au coupe-chou 35 €.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Barbier Lacroix · Coupe et rasage à Paris 9e">
+<meta property="og:description" content="Coupe et rasage traditionnel. Sans rendez-vous du mardi au samedi.">
+<meta property="og:image" content="img/salon.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/salon.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Barbier Lacroix",
+  "priceRange": "€€",
+  "telephone": "+33 1 48 78 22 84",
+  "image": "img/salon.webp",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "47 rue des Martyrs",
+    "addressLocality": "Paris",
+    "postalCode": "75009",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "19:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="nav">
+  <div class="nav__in">
+    <a class="nav__brand" href="#haut">Barbier<span>Lacroix</span></a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#tarifs">Tarifs</a>
+      <a href="#equipe">L'équipe</a>
+      <a href="#venir">Venir</a>
+    </nav>
+    <a class="btn btn--sm" href="tel:+33148782284">01 48 78 22 84</a>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <!-- Hero pleine largeur, texte en surimpression basse -->
+  <section class="hero" id="haut">
+    <div class="hero__media">
+      <img src="img/salon.webp"
+           alt="Les deux fauteuils du salon Barbier Lacroix, faïence blanche et parquet"
+           width="1920" height="1072" fetchpriority="high">
+    </div>
+    <div class="hero__copy">
+      <h1>Coupe nette,<br>rasage au coupe-chou.</h1>
+      <p class="lede">Sans rendez-vous, du mardi au samedi, rue des Martyrs.</p>
+      <div class="hero__cta">
+        <a class="btn btn--lg" href="tel:+33148782284">Appeler le salon</a>
+        <a class="link-arrow" href="#tarifs">Voir les tarifs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarifs en grille de cartes : jamais un tableau à filets -->
+  <section class="tarifs" id="tarifs">
+    <h2 class="reveal">Prestations</h2>
+
+    <div class="tarifs__grid">
+      <article class="presta" style="--i:0" data-no="01">
+        <p class="presta__prix">28 €</p>
+        <h3>Coupe</h3>
+        <p>Ciseaux ou tondeuse, shampoing et coiffage compris. Comptez 30 minutes.</p>
+      </article>
+
+      <article class="presta" style="--i:1" data-no="02">
+        <p class="presta__prix">35 €</p>
+        <h3>Rasage traditionnel</h3>
+        <p>Serviette chaude, coupe-chou, baume d'après-rasage. Comptez 40 minutes.</p>
+      </article>
+
+      <article class="presta" style="--i:2" data-no="03">
+        <p class="presta__prix">18 €</p>
+        <h3>Taille de barbe</h3>
+        <p>Mise en forme au rasoir et aux ciseaux, contours nets.</p>
+      </article>
+
+      <article class="presta" style="--i:3" data-no="04">
+        <p class="presta__prix">42 €</p>
+        <h3>Coupe et barbe</h3>
+        <p>Les deux dans la foulée. Comptez une heure.</p>
+      </article>
+
+      <article class="presta" style="--i:4" data-no="05">
+        <p class="presta__prix">20 €</p>
+        <h3>Coupe enfant</h3>
+        <p>Jusqu'à 12 ans. Le samedi matin, venez tôt.</p>
+      </article>
+
+      <article class="presta presta--note" style="--i:5">
+        <h3>Paiement</h3>
+        <p>Espèces et carte à partir de 10 €. Pas de réservation en ligne, on prend dans l'ordre d'arrivée.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- L'équipe : bande horizontale, famille de mise en page différente -->
+  <section class="equipe" id="equipe">
+    <div class="equipe__in">
+      <div class="equipe__copy reveal">
+        <h2>Deux fauteuils, deux mains.</h2>
+        <p>
+          Samir Lacroix a ouvert rue des Martyrs en 2014, après onze ans passés
+          chez un barbier de la Goutte d'Or. Théo l'a rejoint en 2021. Ils
+          travaillent tous les deux au rasoir, ce qui devient rare.
+        </p>
+      </div>
+      <div class="equipe__media reveal">
+        <img src="img/outils.webp"
+             alt="Coupe-chou, ciseaux, peigne et blaireau posés sur le marbre"
+             width="1200" height="1490" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis -->
+  <section class="avis" aria-label="Avis de clients">
+    <figure class="reveal">
+      <blockquote>Le seul endroit du quartier où on ne me demande pas quatre fois ce que je veux.</blockquote>
+      <figcaption>Yanis Cherif, client du salon</figcaption>
+    </figure>
+    <figure class="reveal">
+      <blockquote>Venez avant 11h le samedi, sinon c'est une heure d'attente. Ça vaut le coup quand même.</blockquote>
+      <figcaption>Paul Ménard, habitué depuis 2018</figcaption>
+    </figure>
+  </section>
+
+  <!-- Venir : horaires et adresse, l'information la plus consultée -->
+  <section class="venir" id="venir">
+    <div class="venir__in">
+      <div class="venir__bloc reveal">
+        <h2>Horaires</h2>
+        <dl class="horaires">
+          <div><dt>Mardi au vendredi</dt><dd>10h00 à 19h30</dd></div>
+          <div><dt>Samedi</dt><dd>9h00 à 18h00</dd></div>
+          <div class="ferme"><dt>Dimanche et lundi</dt><dd>Fermé</dd></div>
+        </dl>
+      </div>
+
+      <div class="venir__bloc reveal">
+        <h2>Adresse</h2>
+        <p class="adresse">
+          47 rue des Martyrs<br>
+          75009 Paris
+        </p>
+        <p>Métro Saint-Georges, ligne 12. Trois minutes à pied.</p>
+        <a class="btn" href="tel:+33148782284">Appeler le salon</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__in">
+    <p class="foot__brand">Barbier Lacroix</p>
+    <p>47 rue des Martyrs, 75009 Paris · 01 48 78 22 84</p>
+    <p class="foot__demo">
+      Site de démonstration. Établissement fictif, contenus illustratifs.
+      Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0C0D">
 
   <!-- ── CANONICAL ── -->
   <link rel="canonical" href="https://optimusstudio.fr/">
@@ -51,39 +52,45 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": "https://optimusstudio.fr/#site",
       "name": "Optimus Studio",
+      "inLanguage": "fr-FR",
+      "publisher": { "@id": "https://optimusstudio.fr/#studio" },
       "url": "https://optimusstudio.fr/"
     },
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
+      "@id": "https://optimusstudio.fr/#studio",
       "name": "Optimus Studio",
-      "description": "Studio créatif à Paris spécialisé en création de sites web, montage vidéo, référencement SEO et marketing digital.",
+      "description": "Studio créatif à Paris spécialisé en création de sites web, montage vidéo, référencement SEO et marketing digital pour les TPE, artisans et commerces de proximité.",
       "url": "https://optimusstudio.fr/",
       "logo": "https://optimusstudio.fr/og-image.webp",
       "image": "https://optimusstudio.fr/og-image.webp",
-      "telephone": "",
       "email": "contact@optimusstudio.fr",
+      "telephone": "+33652967509",
+      "priceRange": "€€",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Paris",
+        "addressRegion": "Île-de-France",
         "addressCountry": "FR"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Paris"
-      },
+      "areaServed": [
+        { "@type": "City", "name": "Paris" },
+        { "@type": "Country", "name": "France" }
+      ],
+      "knowsAbout": ["Création de site internet", "Montage vidéo", "Référencement naturel", "SEO local", "Marketing digital", "Reels et TikTok"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Services créatifs",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Création de site internet" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Montage vidéo" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Référencement SEO" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing digital" } }
+          { "@type": "Offer", "price": "690", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Site vitrine", "description": "Trois à cinq pages, mobile d'abord, livré en 10 jours." } },
+          { "@type": "Offer", "price": "1490", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Site animé sur-mesure", "description": "Animation au scroll et direction artistique dédiée." } },
+          { "@type": "Offer", "price": "90", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Montage vidéo", "description": "Reels, TikTok et YouTube, sous-titres et étalonnage." } },
+          { "@type": "Offer", "price": "290", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "SEO local", "description": "Fiche Google, contenus et suivi des positions, par mois." } }
         ]
-      },
-      "sameAs": []
+      }
     }
   ]
   </script>
@@ -122,6 +129,8 @@
   <header class="site-header">
     <a class="header-logo" href="/">OPTIMUS</a>
     <nav aria-label="Navigation principale">
+      <a href="/realisations/" class="nav-link">Réalisations</a>
+      <a href="/devis/" class="nav-link">Tarifs</a>
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
   </header>
@@ -222,9 +231,8 @@
       <div class="section-inner">
         <span class="section-label">005 / Contact</span>
         <h2 class="section-heading">Parlons de<br>votre projet.</h2>
-        <p class="section-body">Dites-moi où vous en êtes. Je reviens vers vous très vite. Premier échange gratuit, sans engagement.</p>
-        <!-- TODO: Replace contact@optimusstudio.fr with the real email address before going live -->
-        <a href="mailto:contact@optimusstudio.fr" class="cta-button">Démarrer un projet</a>
+        <p class="section-body">Dites-moi où vous en êtes. Les tarifs sont affichés, le devis est gratuit et la réponse arrive sous 24 h.</p>
+        <a href="/devis/" class="cta-button">Demander un devis</a>
       </div>
     </section>
 
@@ -234,7 +242,7 @@
   <footer class="site-footer">
     <div class="footer-brand">OPTIMUS STUDIO</div>
     <div class="footer-meta">Paris · 2026</div>
-    <div class="footer-services">Sites web — Vidéo — SEO — Marketing</div>
+    <div class="footer-services"><a href="/mentions-legales/">Mentions légales</a></div>
   </footer>
 
   <!-- REDUCED-MOTION FALLBACK -->

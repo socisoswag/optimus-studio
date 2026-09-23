@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plomberie Vasseur · Plombier chauffagiste à Montreuil</title>
+<meta name="description" content="Plombier chauffagiste à Montreuil. Recherche de fuite sans casse, débouchage, chaudière, salle de bains. Intervention sous 24 h, le jour même en urgence. Devis écrit gratuit.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plomberie Vasseur · Plombier chauffagiste à Montreuil">
+<meta property="og:description" content="Fuite en cours ? Diagnostic en trois questions, et un plombier sous 24 h dans l'est parisien.">
+<meta property="og:image" content="img/goutte.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/goutte.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Plomberie Vasseur",
+  "telephone": "+33 7 82 41 66 30",
+  "image": "img/goutte.webp",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9 rue de Rosny",
+    "addressLocality": "Montreuil",
+    "postalCode": "93100",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Montreuil", "Bagnolet", "Vincennes", "Fontenay-sous-Bois", "Rosny-sous-Bois", "Saint-Mandé", "Paris 11e", "Paris 12e", "Paris 20e"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- Trame de fond : les colonnes d'une fiche technique, visibles en filigrane. -->
+<div class="trame" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+<header class="top">
+  <a class="top__brand" href="#haut"><span class="top__ref">PV</span>Plomberie Vasseur</a>
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#diagnostic">Diagnostic</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#zone">Zone</a>
+    <a href="#devis">Devis</a>
+  </nav>
+  <a class="top__tel" href="tel:+33782416630">07 82 41 66 30</a>
+</header>
+
+<main id="contenu">
+
+  <!-- ─── Hero : le robinet occupe la gauche de la photo, le texte la droite ─── -->
+  <section class="hero" id="haut">
+    <img class="hero__img" src="img/goutte.webp" alt="Une goutte d'eau tombe d'un robinet noir mat dans une salle de bains en pierre sombre" width="1920" height="1048" fetchpriority="high">
+    <div class="hero__in">
+      <p class="ref">FT-01 · Plombier chauffagiste · Montreuil 93100</p>
+      <!-- 1 goutte ≈ 0,05 ml : 86 400 gouttes par jour, soit environ 1 580 litres par an. -->
+      <h1>Une goutte<br>par seconde,<br><em>1 500 litres par an.</em></h1>
+      <p class="lede">Fuites, débouchage, chaudière, salle de bains. Sous 24 heures dans l'est parisien, le jour même en urgence.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#diagnostic">Fuite en cours ? Diagnostic en 3 questions</a>
+        <a class="btn btn--ghost" href="tel:+33782416630">07 82 41 66 30</a>
+      </div>
+    </div>
+    <dl class="hero__data">
+      <div><dt>Délai</dt><dd>&lt; 24 h</dd></div>
+      <div><dt>Urgence</dt><dd>jour même</dd></div>
+      <div><dt>Devis</dt><dd>écrit, gratuit</dd></div>
+    </dl>
+  </section>
+
+  <!-- Compteur de fuite : depuis l'arrivée sur la page, ce qu'aurait
+       perdu un robinet qui goutte une fois par seconde (0,05 ml). -->
+  <a class="compteur" id="compteur" href="#diagnostic" aria-label="Compteur de fuite : voir le diagnostic">
+    <span class="compteur__goutte" aria-hidden="true"></span>
+    <span class="compteur__txt"><span class="compteur__intro">Depuis votre arrivée, un robinet qui goutte a perdu </span><strong><span id="c-gouttes">0</span> gouttes</strong> · <strong id="c-volume">0 ml</strong><span class="compteur__court"> perdus</span></span>
+  </a>
+
+  <!-- ─── Caractéristiques : lues comme une plaque signalétique ─── -->
+  <section class="specs" aria-label="Garanties">
+    <dl>
+      <div><dt>Métier</dt><dd>17 ans</dd></div>
+      <div><dt>Décennale</dt><dd>AXA, à jour</dd></div>
+      <div><dt>Recherche de fuite</dt><dd>sans casse</dd></div>
+      <div><dt>Déplacement</dt><dd>offert à Montreuil</dd></div>
+    </dl>
+  </section>
+
+  <!-- ─── Diagnostic : l'interaction signature du site ─── -->
+  <section class="diag" id="diagnostic" aria-labelledby="diag-titre">
+    <div class="sec-head">
+      <p class="ref">FT-02 · Diagnostic fuite</p>
+      <h2 id="diag-titre">Trois questions,<br>et vous savez quoi faire.</h2>
+      <p class="sec-head__lede">Avant d'appeler, ou pendant que vous attendez : les bons gestes selon ce que vous voyez.</p>
+    </div>
+
+    <div class="diag__box">
+      <ol class="diag__steps" aria-hidden="true">
+        <li class="is-on">01</li><li>02</li><li>03</li><li>→</li>
+      </ol>
+
+      <form class="diag__form" id="diag" novalidate>
+        <fieldset class="q is-on" data-q="lieu">
+          <legend>Où est l'eau&nbsp;?</legend>
+          <div class="q__opts">
+            <button type="button" data-v="evier">Sous un évier ou un lavabo</button>
+            <button type="button" data-v="wc">Autour des WC</button>
+            <button type="button" data-v="plafond">Au plafond ou sur un mur</button>
+            <button type="button" data-v="chauffage">Chaudière ou chauffe-eau</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="q" data-q="debit">
+          <legend>En ce moment, l'eau…</legend>
+          <div class="q__opts">
+            <button type="button" data-v="coule">Coule en continu</button>
+            <button type="button" data-v="goutte">Goutte à goutte</button>
+            <button type="button" data-v="tache">Ne coule pas, c'est une tache</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="q" data-q="vanne">
+          <legend>Vous savez où est le robinet d'arrêt général&nbsp;?</legend>
+          <div class="q__opts">
+            <button type="button" data-v="oui">Oui</button>
+            <button type="button" data-v="non">Non</button>
+          </div>
+        </fieldset>
+
+        <div class="q q--res" data-q="resultat" role="status" aria-live="polite">
+          <p class="res__niveau" id="res-niveau"></p>
+          <h3 class="res__titre" id="res-titre"></h3>
+          <ol class="res__gestes" id="res-gestes"></ol>
+          <p class="res__prix" id="res-prix"></p>
+          <div class="res__cta">
+            <a class="btn" href="tel:+33782416630">Appeler le 07 82 41 66 30</a>
+            <button class="btn btn--ghost" type="button" id="diag-reset">Recommencer</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ─── Tarifs : un tableau, comme sur une fiche technique ─── -->
+  <section class="tarifs" id="tarifs" aria-labelledby="tarifs-titre">
+    <div class="sec-head">
+      <p class="ref">FT-03 · Prestations</p>
+      <h2 id="tarifs-titre">Les prix, écrits<br>avant de commencer.</h2>
+    </div>
+    <div class="table" role="table" aria-label="Tarifs des prestations">
+      <div class="table__row table__row--head" role="row">
+        <span role="columnheader">Réf.</span>
+        <span role="columnheader">Intervention</span>
+        <span role="columnheader">Délai</span>
+        <span role="columnheader">Tarif TTC</span>
+      </div>
+      <div class="table__row" role="row"><span role="cell">P-01</span><span role="cell">Recherche de fuite sans casse<small>Caméra thermique, gaz traceur</small></span><span role="cell">24 h</span><span role="cell">dès 90 €</span></div>
+      <div class="table__row" role="row"><span role="cell">P-02</span><span role="cell">Débouchage évier, WC, colonne<small>Furet ou hydrocurage selon le cas</small></span><span role="cell">jour même</span><span role="cell">dès 110 €</span></div>
+      <div class="table__row" role="row"><span role="cell">P-03</span><span role="cell">Entretien annuel chaudière gaz<small>Attestation remise sur place</small></span><span role="cell">7 jours</span><span role="cell">129 €</span></div>
+      <div class="table__row" role="row"><span role="cell">P-04</span><span role="cell">Mitigeur, vanne d'arrêt<small>Fourniture comprise</small></span><span role="cell">24 h</span><span role="cell">dès 85 €</span></div>
+      <div class="table__row" role="row"><span role="cell">P-05</span><span role="cell">Remplacement chauffe-eau<small>Électrique ou thermodynamique, reprise de l'ancien</small></span><span role="cell">48 h</span><span role="cell">dès 690 €</span></div>
+      <div class="table__row" role="row"><span role="cell">P-06</span><span role="cell">Salle de bains complète<small>Dépose, plomberie, douche à l'italienne</small></span><span role="cell">3 semaines</span><span role="cell">sur devis</span></div>
+    </div>
+  </section>
+
+  <!-- ─── Recherche de fuite : photo et texte côte à côte ─── -->
+  <section class="split" aria-labelledby="fuite-titre">
+    <figure class="split__media">
+      <img src="img/intervention.webp" alt="Mains gantées serrant un raccord sous un évier à la lumière d'une lampe frontale" width="1920" height="1048" loading="lazy">
+      <figcaption>Fig. 1 · Resserrage d'un raccord sous évier</figcaption>
+    </figure>
+    <div class="split__copy reveal">
+      <p class="ref">FT-04 · Méthode</p>
+      <h2 id="fuite-titre">On localise<br>avant de démonter.</h2>
+      <p>
+        Une fuite encastrée se cherche à la caméra thermique et au gaz
+        traceur. On ouvre à l'endroit exact, sur quelques centimètres,
+        au lieu de casser un mur pour trouver le tuyau.
+      </p>
+      <p>
+        Le rapport de recherche de fuite est remis le jour même. C'est
+        lui que demande votre assurance pour un dégât des eaux.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── Chaudière : la pression, en grand ─── -->
+  <section class="pression" aria-labelledby="pression-titre">
+    <img class="pression__img" src="img/manometre.webp" alt="Manomètre de chaudière gradué de 0 à 4 bar, aiguille proche de 2 bar" width="1920" height="1048" loading="lazy">
+    <div class="pression__in reveal">
+      <p class="ref">FT-05 · Chaudière</p>
+      <h2 id="pression-titre">Entre 1 et 2 bar,<br>tout va bien.</h2>
+      <p>
+        En dessous de 1 bar à froid, le circuit manque d'eau et la
+        chaudière se met en sécurité. Au-dessus de 3 bar, la soupape
+        s'ouvre. Dans les deux cas, un appel suffit souvent à régler
+        le problème sans déplacement.
+      </p>
+      <dl class="jauge">
+        <div><dt>&lt; 1 bar</dt><dd>à remettre en pression</dd></div>
+        <div class="jauge__ok"><dt>1 – 2 bar</dt><dd>normal à froid</dd></div>
+        <div><dt>&gt; 3 bar</dt><dd>à purger, appelez</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ─── Salle de bains : le résultat, en pleine largeur ─── -->
+  <section class="sdb" aria-labelledby="sdb-titre">
+    <img src="img/douche.webp" alt="Douche à l'italienne en ardoise noire, pomme de douche noire mate et niche éclairée" width="1920" height="1048" loading="lazy">
+    <div class="sdb__in reveal">
+      <p class="ref">FT-06 · Rénovation</p>
+      <h2 id="sdb-titre">Salle de bains :<br>trois semaines,<br>un seul interlocuteur.</h2>
+    </div>
+  </section>
+
+  <!-- ─── Zone ─── -->
+  <section class="zone" id="zone" aria-labelledby="zone-titre">
+    <div class="sec-head">
+      <p class="ref">FT-07 · Zone d'intervention</p>
+      <h2 id="zone-titre">Basé à Montreuil,<br>rue de Rosny.</h2>
+    </div>
+    <ul class="communes">
+      <li><span>Montreuil</span><small>15 min</small></li>
+      <li><span>Bagnolet</span><small>15 min</small></li>
+      <li><span>Vincennes</span><small>20 min</small></li>
+      <li><span>Fontenay-sous-Bois</span><small>20 min</small></li>
+      <li><span>Rosny-sous-Bois</span><small>20 min</small></li>
+      <li><span>Saint-Mandé</span><small>25 min</small></li>
+      <li><span>Paris 20e</span><small>25 min</small></li>
+      <li><span>Paris 11e</span><small>30 min</small></li>
+      <li><span>Paris 12e</span><small>30 min</small></li>
+    </ul>
+  </section>
+
+  <!-- ─── Devis ─── -->
+  <section class="devis" id="devis" aria-labelledby="devis-titre">
+    <div class="devis__copy">
+      <p class="ref">FT-08 · Devis</p>
+      <h2 id="devis-titre">Décrivez,<br>je rappelle.</h2>
+      <p>Réponse dans les heures ouvrées. Pour une fuite active, le téléphone reste plus rapide.</p>
+      <a class="devis__tel" href="tel:+33782416630">07 82 41 66 30</a>
+      <p class="devis__horaires">Lundi au vendredi 8 h – 19 h · Samedi 9 h – 13 h</p>
+    </div>
+
+    <form class="form" id="form-devis" novalidate>
+      <div class="field">
+        <label for="nom">Nom</label>
+        <input id="nom" name="nom" type="text" autocomplete="name" required>
+        <p class="err" data-err-for="nom" hidden>Merci d'indiquer votre nom.</p>
+      </div>
+      <div class="field">
+        <label for="tel">Téléphone</label>
+        <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+        <p class="err" data-err-for="tel" hidden>Un numéro à dix chiffres est nécessaire pour vous rappeler.</p>
+      </div>
+      <div class="field">
+        <label for="ville">Ville</label>
+        <input id="ville" name="ville" type="text" autocomplete="address-level2" required>
+        <p class="err" data-err-for="ville" hidden>Indiquez votre ville.</p>
+      </div>
+      <div class="field">
+        <label for="objet">Intervention</label>
+        <select id="objet" name="objet">
+          <option>Fuite</option>
+          <option>Débouchage</option>
+          <option>Chaudière</option>
+          <option>Chauffe-eau</option>
+          <option>Salle de bains</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="field field--full">
+        <label for="message">Détails</label>
+        <textarea id="message" name="message" rows="4" placeholder="Depuis quand, où dans le logement, ce que vous avez déjà tenté."></textarea>
+      </div>
+      <div class="field field--full">
+        <button class="btn btn--block" type="submit" id="submit">Envoyer la demande</button>
+        <p class="form__status" id="status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div>
+    <p class="foot__brand">Plomberie Vasseur</p>
+    <p>9 rue de Rosny, 93100 Montreuil · 07 82 41 66 30</p>
+  </div>
+  <p>Assurance décennale AXA · SIRET fictif</p>
+  <p class="foot__demo">
+    Site de démonstration. Entreprise fictive, contenus illustratifs.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

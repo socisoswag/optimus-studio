@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Auto-école Lumière · Permis B à Paris 10e</title>
+<meta name="description" content="Auto-école à Paris 10e, boulevard de Magenta. Code en ligne et en salle, permis B boîte manuelle ou automatique, conduite accompagnée. Simulez le prix de votre permis, financement CPF possible.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Auto-école Lumière · Permis B à Paris 10e">
+<meta property="og:description" content="Du code au permis, un parcours clair et un prix annoncé dès le départ.">
+<meta property="og:image" content="img/boulevard.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="frames/frame_0001.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DrivingSchool",
+  "name": "Auto-école Lumière",
+  "telephone": "+33 1 42 05 38 67",
+  "image": "img/boulevard.webp",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "63 boulevard de Magenta",
+    "addressLocality": "Paris",
+    "postalCode": "75010",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "19:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <a class="top__brand" href="#haut"><span class="top__plaque" aria-hidden="true">L</span>Auto-école Lumière</a>
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#parcours">Le parcours</a>
+    <a href="#prix">Prix du permis</a>
+    <a href="#inscription">Inscription</a>
+  </nav>
+  <a class="top__tel" href="tel:+33142053867">01 42 05 38 67</a>
+</header>
+
+<main id="contenu">
+
+  <!-- ─── La route : la voiture avance quand on fait défiler ───
+       121 images tirées d'une vidéo, dessinées dans un canvas.
+       La première est affichée d'emblée ; le canvas prend le relais
+       dès qu'il a dessiné. -->
+  <section class="route" id="haut" aria-label="Présentation">
+    <div class="route__scene">
+      <img class="route__poster" src="frames/frame_0001.webp" alt="Une voiture d'auto-école roule au crépuscule sur un boulevard parisien mouillé" width="1280" height="697" fetchpriority="high">
+      <canvas class="route__canvas" id="route-canvas" aria-hidden="true"></canvas>
+
+      <div class="route__msgs">
+        <div class="etape is-on" data-from="0" data-to="0.22">
+          <p class="etape__lieu">Auto-école · Paris 10e</p>
+          <h1>Le permis,<br><span>sans détour.</span></h1>
+          <p class="etape__texte">Du code à l'examen, un parcours clair et un prix annoncé dès le premier jour.</p>
+          <p class="etape__hint" aria-hidden="true">Faites défiler pour prendre la route</p>
+        </div>
+        <div class="etape" data-from="0.26" data-to="0.5">
+          <p class="etape__no">01 · Le code</p>
+          <p class="etape__grand">Révisez où vous voulez.</p>
+          <p class="etape__texte">Application, salle le soir, séries corrigées avec un moniteur. En moyenne, l'examen tombe quatre à six semaines après l'inscription.</p>
+        </div>
+        <div class="etape" data-from="0.54" data-to="0.76">
+          <p class="etape__no">02 · La conduite</p>
+          <p class="etape__grand">Vingt heures minimum.</p>
+          <p class="etape__texte">Treize en boîte automatique. Des leçons d'une ou deux heures, en ville, sur le périphérique, de nuit.</p>
+        </div>
+        <div class="etape" data-from="0.8" data-to="1.01">
+          <p class="etape__no">03 · Le permis</p>
+          <p class="etape__grand">Prêt le jour&nbsp;J.</p>
+          <p class="etape__texte">Examen blanc sur le vrai parcours, et votre moniteur vous accompagne jusqu'au centre d'examen.</p>
+          <a class="btn" href="#prix">Calculer le prix de mon permis <span class="btn__ico" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="route__hud" aria-hidden="true">
+        <p class="route__lieu"><span class="route__point"></span>Boulevard de Magenta, Paris</p>
+        <div class="route__compteur">
+          <span data-i="1">01</span><span data-i="2">02</span><span data-i="3">03</span>
+          <i class="route__jauge"><b id="route-jauge"></b></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Chiffres ─── -->
+  <section class="chiffres" aria-label="En chiffres">
+    <div><strong><span class="js-compte" data-cible="4">0</span> sem.</strong><span>en moyenne jusqu'à l'examen du code</span></div>
+    <div><strong><span class="js-compte" data-cible="12">0</span></strong><span>moniteurs diplômés d'État</span></div>
+    <div><strong><span class="js-compte" data-cible="7">0</span> j / 7</strong><span>réservation des leçons dans l'application</span></div>
+  </section>
+
+  <!-- ─── Le parcours : défile à l'horizontale ─── -->
+  <section class="parcours" id="parcours" aria-labelledby="parcours-titre">
+    <div class="parcours__sticky">
+      <div class="parcours__head">
+        <p class="label">Le parcours</p>
+        <h2 id="parcours-titre">Cinq étapes.<br><span>Pas une surprise.</span></h2>
+      </div>
+      <ol class="piste" id="piste">
+        <li class="borne">
+          <span class="borne__no">01</span>
+          <h3>Inscription</h3>
+          <p>Pièce d'identité, justificatif de domicile, photo numérique. On crée votre dossier ANTS avec vous, sur place.</p>
+          <p class="borne__meta"><span>1 rendez-vous</span><span>180 €</span></p>
+        </li>
+        <li class="borne">
+          <span class="borne__no">02</span>
+          <h3>Le code</h3>
+          <p>Accès illimité à l'application et aux séances en salle. Vous passez l'examen quand vos séries dépassent 35 bonnes réponses sur 40.</p>
+          <p class="borne__meta"><span>4 à 6 semaines</span><span>190 € + 30 € d'examen</span></p>
+        </li>
+        <li class="borne">
+          <span class="borne__no">03</span>
+          <h3>Les leçons</h3>
+          <p>Un moniteur référent, qui vous suit du premier démarrage à l'examen. Vous réservez vos créneaux dans l'application.</p>
+          <p class="borne__meta"><span>20 h minimum</span><span>58 € l'heure</span></p>
+        </li>
+        <li class="borne">
+          <span class="borne__no">04</span>
+          <h3>L'examen</h3>
+          <p>Examen blanc sur le parcours réel, puis accompagnement au centre d'examen avec la voiture de l'école.</p>
+          <p class="borne__meta"><span>32 minutes</span><span>60 €</span></p>
+        </li>
+        <li class="borne borne--fin">
+          <span class="borne__no">05</span>
+          <h3>Le permis</h3>
+          <p>Résultat en ligne sous 48 heures. Le certificat provisoire vous permet de conduire tout de suite.</p>
+          <p class="borne__meta"><span>Période probatoire</span><span>3 ans</span></p>
+        </li>
+      </ol>
+      <div class="parcours__barre" aria-hidden="true"><b id="piste-jauge"></b></div>
+    </div>
+  </section>
+
+  <!-- ─── Simulateur de prix ─── -->
+  <section class="prix" id="prix" aria-labelledby="prix-titre">
+    <div class="prix__head">
+      <p class="label">Prix du permis</p>
+      <h2 id="prix-titre">Combien va coûter<br><span>votre permis ?</span></h2>
+      <p>Réglez selon votre situation. Le prix affiché est celui du devis que vous signerez, sans frais cachés.</p>
+    </div>
+
+    <div class="prix__corps">
+      <form class="simu" id="simu" onsubmit="return false">
+        <fieldset>
+          <legend>Boîte de vitesses</legend>
+          <div class="puces">
+            <label><input type="radio" name="boite" value="manuelle" checked><span>Manuelle</span></label>
+            <label><input type="radio" name="boite" value="auto"><span>Automatique</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Le code</legend>
+          <div class="puces">
+            <label><input type="radio" name="code" value="avec" checked><span>À passer</span></label>
+            <label><input type="radio" name="code" value="deja"><span>Déjà obtenu</span></label>
+          </div>
+        </fieldset>
+        <div class="heures">
+          <label for="heures">Heures de conduite</label>
+          <output id="heures-val" for="heures">25 h</output>
+          <input type="range" id="heures" min="20" max="45" step="1" value="25">
+          <p class="heures__aide" id="heures-aide">La moyenne nationale tourne autour de 30 heures. On fait le point avec vous après l'évaluation de départ.</p>
+        </div>
+        <fieldset>
+          <legend>Financement</legend>
+          <div class="puces">
+            <label><input type="checkbox" name="cpf"><span>Compte formation (CPF)</span></label>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="ticket" aria-live="polite">
+        <p class="ticket__tete">Votre permis · <span id="ticket-titre">boîte manuelle</span></p>
+        <ul class="ticket__lignes" id="ticket-lignes"></ul>
+        <p class="ticket__total"><span>Total</span><strong id="ticket-total">0 €</strong></p>
+        <p class="ticket__mois" id="ticket-mois"></p>
+        <p class="ticket__note">Tarifs de démonstration. Le permis à 1 € par jour est proposé avec nos banques partenaires, sous réserve d'acceptation du dossier.</p>
+        <a class="btn btn--block" href="#inscription" id="ticket-cta">M'inscrire avec ce devis <span class="btn__ico" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── En voiture ─── -->
+  <section class="duo" aria-labelledby="duo-titre">
+    <div class="duo__media">
+      <img src="img/lecon.webp" alt="Une élève au volant, le moniteur assis à côté lui montre la route au crépuscule" width="1920" height="1047" loading="lazy">
+    </div>
+    <div class="duo__copy">
+      <p class="label">En voiture</p>
+      <h2 id="duo-titre">Un moniteur,<br><span>du début à la fin.</span></h2>
+      <p>Vous ne changez pas de moniteur toutes les semaines. Celui qui vous accueille au premier cours est celui qui vous présente à l'examen.</p>
+      <figure class="duo__vignette">
+        <img src="img/pedale.webp" alt="La pédale de frein supplémentaire côté passager, pied du moniteur posé à côté" width="1920" height="1047" loading="lazy">
+        <figcaption>Double commande dans chaque voiture : le moniteur peut freiner à tout moment.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─── Inscription ─── -->
+  <section class="inscription" id="inscription" aria-labelledby="inscription-titre">
+    <img class="inscription__fond" src="img/cles.webp" alt="" width="1920" height="1047" loading="lazy">
+    <div class="inscription__copy">
+      <p class="label">Inscription</p>
+      <h2 id="inscription-titre">Les clés,<br><span>c'est pour bientôt.</span></h2>
+      <p>Laissez vos coordonnées : on vous rappelle pour fixer l'évaluation de départ, gratuite et sans engagement.</p>
+      <a class="inscription__tel" href="tel:+33142053867">01 42 05 38 67</a>
+    </div>
+
+    <form class="form" id="form-inscription" novalidate>
+      <div class="field">
+        <input id="nom" name="nom" type="text" autocomplete="name" placeholder=" " required>
+        <label for="nom">Nom et prénom</label>
+        <p class="err" data-err-for="nom" hidden>Merci d'indiquer votre nom.</p>
+      </div>
+      <div class="field">
+        <input id="tel" name="tel" type="tel" autocomplete="tel" placeholder=" " required>
+        <label for="tel">Téléphone</label>
+        <p class="err" data-err-for="tel" hidden>Un numéro à dix chiffres, pour vous rappeler.</p>
+      </div>
+      <div class="field">
+        <input id="age" name="age" type="number" min="15" max="99" inputmode="numeric" placeholder=" ">
+        <label for="age">Âge</label>
+      </div>
+      <div class="field">
+        <select id="formule" name="formule">
+          <option>Permis B · boîte manuelle</option>
+          <option>Permis B · boîte automatique</option>
+          <option>Conduite accompagnée (dès 15 ans)</option>
+          <option>Code seul</option>
+        </select>
+        <label for="formule">Formule</label>
+      </div>
+      <div class="field field--full">
+        <textarea id="message" name="message" rows="3" placeholder=" "></textarea>
+        <label for="message">Une question, une contrainte d'horaires ?</label>
+      </div>
+      <div class="field--full">
+        <button class="btn btn--block" type="submit" id="submit">Être rappelé <span class="btn__ico" aria-hidden="true">→</span></button>
+        <p class="form__status" id="status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div>
+    <p class="foot__brand">Auto-école Lumière</p>
+    <p>63 boulevard de Magenta, 75010 Paris · 01 42 05 38 67 · Métro Gare de l'Est</p>
+    <p>Établissement agréé par la préfecture de Paris.</p>
+  </div>
+  <dl class="horaires">
+    <div><dt>Lundi au vendredi</dt><dd>10h – 19h30</dd></div>
+    <div><dt>Samedi</dt><dd>10h – 17h</dd></div>
+  </dl>
+  <p class="foot__demo">
+    Site de démonstration. Entreprise fictive, contenus et tarifs illustratifs.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* =========================================================
+   Barbier Lacroix - démo Optimus Studio
+   Monochrome froid, noir acier + un bleu électrique.
+   Angles vifs partout (rayon 0), comme une lame.
+   Délibérément à l'opposé du sombre + doré des sites de barbier.
+   Signature : les prestations s'empilent comme des cartes au scroll.
+   ========================================================= */
+
+:root {
+  --ground:     #0D0F11;
+  --ground-2:   #15181B;
+  --ink:        #E9ECEF;
+  --ink-dim:    #9AA3AB;
+  --accent:     #4F72FF;
+  --accent-ink: #F7F9FC;
+  --line:       rgba(233, 236, 239, 0.14);
+  --rule:       #2A2F35;
+
+  --display: 'Archivo', system-ui, sans-serif;
+  --body:    'Karla', system-ui, sans-serif;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --gut: clamp(1.25rem, 5vw, 5rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { color-scheme: dark; scroll-behavior: smooth; }
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+[hidden] { display: none !important; }
+a { color: inherit; }
+
+h1, h2, h3, .btn, .nav__brand, .presta__prix, dt {
+  font-family: var(--display);
+}
+
+*:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.skip {
+  position: absolute; top: -100%; left: 1rem; z-index: 100;
+  padding: .6rem 1.2rem; background: var(--accent); color: var(--accent-ink);
+  font-family: var(--display); font-size: .85rem; text-decoration: none;
+}
+.skip:focus { top: 1rem; }
+
+/* ─── Boutons : rayon 0, comme tout le reste ─── */
+.btn {
+  display: inline-block;
+  padding: .8rem 1.5rem;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  transition: transform .16s var(--ease), background .16s var(--ease);
+}
+.btn:hover { background: #6A88FF; border-color: #6A88FF; }
+.btn:active { transform: translateY(1px); }
+.btn--sm { padding: .5rem 1rem; font-size: .85rem; }
+.btn--lg { padding: 1rem 2rem; font-size: 1rem; }
+
+.link-arrow {
+  font-family: var(--display);
+  font-size: .95rem; font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2px;
+}
+.link-arrow::after { content: " \2192"; }
+
+.lede { color: var(--ink-dim); font-size: 1.125rem; max-width: 42ch; }
+
+/* ─── Navigation ─── */
+.nav {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 50;
+  height: 70px;
+  background: var(--ground);
+  border-bottom: 2px solid var(--rule);
+}
+.nav__in {
+  height: 100%; max-width: 1400px; margin: 0 auto;
+  padding: 0 var(--gut);
+  display: flex; align-items: center; gap: 2rem;
+}
+.nav__brand {
+  font-size: 1.05rem; font-weight: 800;
+  letter-spacing: -0.01em; text-decoration: none;
+  margin-right: auto; text-transform: uppercase;
+}
+.nav__brand span { color: var(--accent); margin-left: .35em; }
+.nav__links { display: flex; gap: 1.75rem; }
+.nav__links a {
+  font-family: var(--display);
+  font-size: .92rem; font-weight: 500;
+  color: var(--ink-dim); text-decoration: none;
+}
+.nav__links a:hover { color: var(--accent); }
+
+/* ─── Hero pleine largeur ─── */
+.hero { position: relative; }
+.hero__media { width: 100%; height: min(74vh, 56.25vw); }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; }
+.hero::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to top,
+    rgba(21,24,27,.94) 0%, rgba(21,24,27,.86) 34%,
+    rgba(21,24,27,.62) 52%, rgba(21,24,27,.20) 78%,
+    rgba(21,24,27,.04) 100%);
+  pointer-events: none;
+}
+.hero__copy {
+  position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+  max-width: 1400px; margin: 0 auto;
+  padding: 0 var(--gut) clamp(2rem, 5vw, 4rem);
+  color: #F2F4F6;
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800; line-height: 1.02; letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  /* La photo du salon est claire (faïence blanche) : l'ombre garantit
+     la lisibilité du titre même là où le dégradé s'allège. */
+  text-shadow: 0 2px 22px rgba(21,24,27,.55);
+}
+.hero .lede { color: #C9D0D6; }
+.hero__cta {
+  display: flex; align-items: center; gap: 1.5rem;
+  flex-wrap: wrap; margin-top: 1.75rem;
+}
+.hero .link-arrow { color: #F2F4F6; }
+
+/* ─── Tarifs ─── */
+.tarifs {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(3.5rem, 8vw, 7rem) var(--gut);
+}
+.tarifs h2 {
+  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+  font-weight: 800; text-transform: uppercase; letter-spacing: -0.02em;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+/* Les prestations s'empilent : chaque carte colle un peu plus bas que
+   la précédente, et la suivante vient la recouvrir au scroll, comme
+   des cartes de visite posées sur le comptoir. Tout en CSS (sticky). */
+.tarifs__grid { display: grid; gap: 1.2rem; }
+.presta {
+  position: sticky; top: calc(86px + var(--i, 0) * 16px);
+  display: grid; grid-template-columns: 11rem 1fr; align-items: center; gap: 0 2.5rem;
+  min-height: 15rem;
+  background: var(--ground-2);
+  border: 2px solid var(--rule);
+  padding: clamp(1.5rem, 3vw, 2.6rem) clamp(1.5rem, 4vw, 3.4rem);
+  box-shadow: 0 -24px 50px rgba(0, 0, 0, .45);
+}
+.presta::after {
+  content: attr(data-no); position: absolute; right: clamp(1.2rem, 3vw, 2.6rem); top: 1rem;
+  font-family: var(--display); font-weight: 800; font-size: .8rem; letter-spacing: .14em; color: var(--ink-dim);
+}
+.presta .presta__prix {
+  grid-row: span 2;
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-weight: 800; color: var(--accent);
+  line-height: 1; margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.presta h3 {
+  font-size: clamp(1.3rem, 2.6vw, 2.2rem); font-weight: 800;
+  text-transform: uppercase; letter-spacing: -.01em;
+  margin-bottom: .4rem; align-self: end;
+}
+.presta p { color: var(--ink-dim); font-size: 1rem; max-width: 46ch; align-self: start; }
+.presta--note { background: var(--ground); display: block; min-height: 0; }
+.presta--note h3 { font-size: 1.1rem; }
+@media (max-width: 620px) {
+  .presta { grid-template-columns: 1fr; min-height: 13rem; top: calc(80px + var(--i, 0) * 10px); }
+  .presta__prix { grid-row: auto; margin-bottom: .6rem; }
+}
+
+/* ─── L'équipe ─── */
+.equipe { background: var(--ground-2); color: var(--ink); border-block: 2px solid var(--rule); }
+.equipe__in {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(3.5rem, 7vw, 6rem) var(--gut);
+  display: grid; grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(2rem, 5vw, 5rem); align-items: center;
+}
+.equipe h2 {
+  font-size: clamp(1.75rem, 3.6vw, 3rem);
+  font-weight: 800; text-transform: uppercase;
+  line-height: 1.05; letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+.equipe p { color: #AEB6BD; max-width: 52ch; }
+.equipe__media { aspect-ratio: 4 / 5; }
+.equipe__media img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ─── Avis ─── */
+.avis {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) var(--gut);
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+}
+.avis blockquote {
+  font-family: var(--display);
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  font-weight: 500; line-height: 1.4;
+  border-left: 4px solid var(--accent);
+  padding-left: 1.25rem;
+  margin-bottom: .85rem;
+}
+.avis figcaption { color: var(--ink-dim); font-size: .92rem; padding-left: 1.5rem; }
+
+/* ─── Venir ─── */
+.venir { background: var(--ground-2); border-top: 2px solid var(--rule); }
+.venir__in {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) var(--gut);
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+}
+.venir h2 {
+  font-size: 1.05rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .12em;
+  color: var(--accent); margin-bottom: 1.25rem;
+}
+.horaires { display: grid; gap: .6rem; }
+.horaires > div {
+  display: flex; justify-content: space-between; gap: 1.5rem;
+  padding-bottom: .6rem; border-bottom: 1px solid var(--line);
+}
+.horaires dt { font-weight: 700; font-size: .98rem; }
+.horaires dd { color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+.horaires .ferme dd { color: var(--ink-dim); font-style: italic; }
+.adresse { font-size: 1.2rem; font-weight: 500; margin-bottom: .75rem; }
+.venir p { color: var(--ink-dim); }
+.venir .btn { margin-top: 1.5rem; }
+
+/* ─── Footer ─── */
+.foot { background: #08090A; color: #AEB6BD; }
+.foot__in {
+  max-width: 1400px; margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 3.5rem) var(--gut);
+  display: grid; gap: .5rem; font-size: .95rem;
+}
+.foot__brand {
+  font-family: var(--display); font-weight: 800;
+  text-transform: uppercase; color: var(--ink);
+  font-size: 1.05rem;
+}
+.foot__demo {
+  margin-top: 1.25rem; padding-top: 1.25rem;
+  border-top: 1px solid rgba(237, 239, 241, .18);
+  font-size: .85rem;
+}
+.foot__demo a { color: var(--ink); }
+
+/* ─── Révélations ─── */
+.reveal {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .65s var(--ease), transform .65s var(--ease);
+}
+.reveal.is-in { opacity: 1; transform: none; }
+
+/* ─── Mobile ─── */
+@media (max-width: 860px) {
+  .hero__media { height: 125vw; }
+  .equipe__in { grid-template-columns: 1fr; }
+  .equipe__media { order: -1; aspect-ratio: 3 / 2; }
+  .avis { grid-template-columns: 1fr; }
+  .venir__in { grid-template-columns: 1fr; }
+  .nav__links { display: none; }
+}
+
+/* ─── Mouvement réduit ─── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .presta { position: relative; top: 0; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

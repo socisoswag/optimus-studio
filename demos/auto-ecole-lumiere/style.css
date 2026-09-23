@@ -1,0 +1,381 @@
+/* =========================================================
+   Auto-école Lumière - démo Optimus Studio
+   Noir asphalte mouillé et jaune de marquage, comme la vidéo
+   d'ouverture. Archivo en largeur étendue pour les titres, façon
+   panneau routier ; Onest pour le texte courant.
+   Signatures : la voiture avance au scroll (canvas) avec un
+   compteur 01 · 02 · 03, puis le parcours du permis qui défile
+   à l'horizontale, et le simulateur de prix.
+   ========================================================= */
+
+:root {
+  --bg:    #0B0C0E;
+  --bg-2:  #131519;
+  --bg-3:  #1A1D22;
+  --ink:   #F2F2EE;
+  --mute:  #A8ABB1;
+  --dim:   #6C7078;
+  --jaune: #F4C430;
+  --line:  rgba(242, 242, 238, .11);
+
+  --display: 'Archivo', system-ui, sans-serif;
+  --sans:    'Onest', system-ui, sans-serif;
+
+  --gut: clamp(1.25rem, 5vw, 5rem);
+  --ease: cubic-bezier(.16, 1, .3, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { color-scheme: dark; scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+[hidden] { display: none !important; }
+*:focus-visible { outline: 2px solid var(--jaune); outline-offset: 3px; }
+
+.skip {
+  position: absolute; top: -100%; left: 1rem; z-index: 100;
+  padding: .6rem 1rem; background: var(--jaune); color: var(--bg);
+  font-size: .8rem; text-decoration: none;
+}
+.skip:focus { top: 1rem; }
+
+.label {
+  display: inline-flex; align-items: center; gap: .7rem;
+  font-size: .78rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--jaune); margin-bottom: 1.1rem;
+}
+/* Le petit trait jaune : un pointillé de marquage au sol. */
+.label::before { content: ""; width: 1.6rem; height: 3px; background: repeating-linear-gradient(90deg, var(--jaune) 0 .5rem, transparent .5rem .8rem); }
+
+h1, h2, h3 {
+  font-family: var(--display); font-weight: 800; font-stretch: 118%;
+  text-transform: uppercase; letter-spacing: -.01em; line-height: .96;
+}
+h2 { font-size: clamp(2rem, 4.4vw, 3.8rem); }
+h1 span, h2 span { color: var(--jaune); }
+
+/* ─── Boutons ─── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .9rem;
+  font-family: var(--display); font-stretch: 110%; font-size: .95rem; font-weight: 700;
+  letter-spacing: .04em; text-transform: uppercase;
+  color: var(--bg); background: var(--jaune);
+  border: 1px solid var(--jaune); border-radius: 6px;
+  padding: .55rem .6rem .55rem 1.3rem; min-height: 3.1rem;
+  text-decoration: none; cursor: pointer;
+  transition: background .25s, transform .25s var(--ease);
+}
+.btn:hover { background: #FFD650; transform: translateY(-1px); }
+.btn__ico {
+  display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 4px;
+  border: 1px solid rgba(11, 12, 14, .35);
+  transition: background .25s, color .25s;
+}
+.btn:hover .btn__ico { background: var(--bg); color: var(--jaune); }
+.btn--block { width: 100%; }
+.btn[disabled] { opacity: .5; cursor: default; }
+
+/* ─── En-tête ─── */
+.top {
+  position: fixed; inset: 0 0 auto; z-index: 30;
+  display: flex; align-items: center; gap: 2.2rem;
+  padding: 1rem var(--gut);
+  background: linear-gradient(to bottom, rgba(11,12,14,.85), rgba(11,12,14,0));
+  transition: background .3s;
+}
+.top.is-stuck { background: rgba(11, 12, 14, .95); box-shadow: 0 1px 0 var(--line); }
+.top__brand {
+  display: inline-flex; align-items: center; gap: .7rem;
+  margin-right: auto; text-decoration: none; white-space: nowrap;
+  font-family: var(--display); font-stretch: 112%; font-weight: 800; font-size: 1.05rem; text-transform: uppercase;
+}
+/* Le « L » des jeunes conducteurs, en version maison. */
+.top__plaque {
+  display: grid; place-items: center; width: 1.9rem; height: 1.9rem;
+  background: var(--jaune); color: var(--bg); border-radius: 4px; font-size: 1.1rem;
+}
+.top__nav { display: flex; gap: 1.8rem; }
+.top__nav a { font-size: .95rem; font-weight: 500; text-decoration: none; opacity: .82; transition: opacity .2s; }
+.top__nav a:hover { opacity: 1; }
+.top__tel {
+  font-weight: 600; font-size: .95rem; text-decoration: none; white-space: nowrap;
+  padding: .5rem .95rem; border-radius: 6px;
+  background: rgba(11, 12, 14, .5); border: 1px solid rgba(242, 242, 238, .3);
+}
+
+/* ─── La route ─── */
+.route { position: relative; height: 480vh; }
+.route__scene { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; background: #000; }
+.route__poster, .route__canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.route__poster { object-fit: cover; object-position: 50% 55%; }
+.route__canvas { opacity: 0; transition: opacity .3s; }
+.route.is-live .route__canvas { opacity: 1; }
+.route.is-live .route__poster { visibility: hidden; }
+.route__scene::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(11,12,14,.82) 0%, rgba(11,12,14,.35) 38%, rgba(11,12,14,0) 60%),
+    linear-gradient(to top, rgba(11,12,14,.75), rgba(11,12,14,0) 32%);
+}
+
+.route__msgs {
+  position: absolute; inset: 0; z-index: 2;
+  display: grid; align-items: center;
+  padding: 6rem var(--gut) 8rem;
+}
+.etape {
+  grid-area: 1 / 1; max-width: 46rem;
+  opacity: 0; transform: translateY(18px);
+  transition: opacity .55s var(--ease), transform .55s var(--ease);
+  pointer-events: none;
+}
+.etape.is-on { opacity: 1; transform: none; pointer-events: auto; }
+.etape h1 { font-size: clamp(2.6rem, 6vw, 5.6rem); }
+@media (min-width: 768px) { .etape h1 { white-space: nowrap; } }
+.etape__lieu, .etape__no {
+  font-size: .8rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--jaune); margin-bottom: 1rem;
+}
+.etape__grand {
+  font-family: var(--display); font-weight: 800; font-stretch: 118%; text-transform: uppercase;
+  font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: .96;
+}
+.etape__texte { margin-top: 1.2rem; color: #DADCD8; max-width: 30rem; }
+.etape__hint { margin-top: 1.8rem; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+.etape__hint::after { content: " ↓"; color: var(--jaune); }
+.etape .btn { margin-top: 1.8rem; }
+
+.route__hud {
+  position: absolute; z-index: 3; left: var(--gut); right: var(--gut); bottom: 2.4rem;
+  display: flex; justify-content: space-between; align-items: center; gap: 2rem;
+  font-size: .76rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+}
+.route__lieu { display: flex; align-items: center; gap: .6rem; color: var(--ink); }
+.route__point { width: .5rem; height: .5rem; border-radius: 50%; background: var(--jaune); box-shadow: 0 0 0 4px rgba(244, 196, 48, .2); }
+.route__compteur { display: flex; align-items: center; gap: 1rem; color: rgba(242, 242, 238, .45); font-variant-numeric: tabular-nums; }
+.route__compteur span { transition: color .3s; }
+.route__compteur span.is-on { color: var(--jaune); }
+.route__jauge { width: 9rem; height: 2px; background: rgba(242, 242, 238, .2); display: block; }
+.route__jauge b { display: block; height: 100%; width: 0; background: var(--jaune); }
+
+/* ─── Chiffres ─── */
+.chiffres { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--line); }
+.chiffres div { padding: 3rem var(--gut); display: grid; gap: .4rem; }
+.chiffres div + div { border-left: 1px solid var(--line); }
+.chiffres strong { font-family: var(--display); font-stretch: 118%; font-weight: 800; font-size: clamp(2.3rem, 4vw, 3.4rem); line-height: 1; color: var(--jaune); font-variant-numeric: tabular-nums; }
+.chiffres span { color: var(--mute); }
+
+/* ─── Le parcours à l'horizontale ─── */
+.parcours { position: relative; height: 320vh; }
+.parcours__sticky {
+  position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden;
+  display: grid; grid-template-rows: auto 1fr auto; gap: 2.2rem;
+  padding: 6.5rem 0 2.8rem;
+  background:
+    linear-gradient(to bottom, var(--bg), transparent 30%),
+    repeating-linear-gradient(90deg, transparent 0 7.5rem, rgba(244, 196, 48, .05) 7.5rem 7.6rem),
+    var(--bg-2);
+}
+.parcours__head { padding: 0 var(--gut); }
+.piste {
+  list-style: none; display: flex; gap: 1.4rem; align-items: stretch;
+  padding: 0 var(--gut); width: max-content;
+  will-change: transform;
+}
+.borne {
+  position: relative; flex: none;
+  width: min(26rem, 78vw); padding: 2rem 2rem 1.8rem;
+  display: flex; flex-direction: column;
+  background: var(--bg); border: 1px solid var(--line); border-radius: 14px;
+}
+/* La ligne de route qui relie les étapes. */
+.borne::after {
+  content: ""; position: absolute; top: 3.1rem; left: 100%; width: 1.4rem; height: 3px;
+  background: repeating-linear-gradient(90deg, var(--jaune) 0 .4rem, transparent .4rem .7rem);
+}
+.borne--fin::after { display: none; }
+.borne__no { font-family: var(--display); font-stretch: 125%; font-weight: 900; font-size: 3.4rem; line-height: 1; color: var(--jaune); }
+.borne h3 { font-size: 1.6rem; margin: 1.1rem 0 .7rem; }
+.borne p { color: var(--mute); }
+.borne__meta {
+  margin-top: auto; padding-top: 1.3rem;
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  font-weight: 600; font-size: .92rem; color: var(--ink) !important;
+  border-top: 1px dashed var(--line);
+}
+.borne__meta span:last-child { color: var(--jaune); }
+.borne--fin { background: var(--jaune); color: var(--bg); border-color: var(--jaune); }
+.borne--fin .borne__no { color: var(--bg); }
+.borne--fin p { color: rgba(11, 12, 14, .78); }
+.borne--fin .borne__meta { color: var(--bg) !important; border-color: rgba(11, 12, 14, .25); }
+.borne--fin .borne__meta span:last-child { color: var(--bg); }
+.parcours__barre { margin: 0 var(--gut); height: 2px; background: var(--line); }
+.parcours__barre b { display: block; height: 100%; width: 0; background: var(--jaune); }
+
+/* ─── Simulateur ─── */
+.prix { padding: 8rem var(--gut); border-top: 1px solid var(--line); }
+.prix__head > p:not(.label) { color: var(--mute); margin-top: 1.2rem; max-width: 38rem; }
+.prix__corps { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 4vw, 4rem); margin-top: 3rem; align-items: start; }
+.simu { display: grid; gap: 1.8rem; }
+.simu fieldset { border: none; }
+.simu legend, .heures label { font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); margin-bottom: .75rem; }
+.puces { display: flex; flex-wrap: wrap; gap: .5rem; }
+.puces label { position: relative; cursor: pointer; }
+.puces input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.puces span { display: inline-block; padding: .65rem 1.1rem; font-weight: 500; border: 1px solid var(--line); border-radius: 6px; background: var(--bg-2); transition: all .2s; }
+.puces label:hover span { border-color: rgba(242, 242, 238, .3); }
+.puces input:checked + span { background: var(--jaune); border-color: var(--jaune); color: var(--bg); font-weight: 600; }
+.puces input:focus-visible + span { outline: 2px solid var(--jaune); outline-offset: 2px; }
+.heures { display: grid; grid-template-columns: 1fr auto; align-items: baseline; }
+.heures output { font-family: var(--display); font-stretch: 118%; font-weight: 800; font-size: 1.7rem; }
+.heures input { grid-column: 1 / -1; width: 100%; margin-top: .6rem; accent-color: var(--jaune); height: 1.6rem; }
+.heures__aide { grid-column: 1 / -1; font-size: .9rem; color: var(--dim); margin-top: .5rem; }
+
+.ticket {
+  position: sticky; top: 6rem;
+  padding: 1.8rem; border-radius: 14px;
+  background: var(--bg-2); border: 1px solid var(--line);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .35);
+}
+.ticket__tete { font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); padding-bottom: 1rem; border-bottom: 1px dashed var(--line); }
+.ticket__tete span { color: var(--mute); }
+.ticket__lignes { list-style: none; }
+.ticket__lignes li { display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 0; border-bottom: 1px dashed var(--line); }
+.ticket__lignes li span:last-child { font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ticket__lignes li.is-moins span:last-child { color: #7FD69B; }
+.ticket__total { display: flex; justify-content: space-between; align-items: baseline; padding: 1.2rem 0 .3rem; }
+.ticket__total span { font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+.ticket__total strong { font-family: var(--display); font-stretch: 118%; font-weight: 800; font-size: clamp(2.4rem, 4vw, 3.2rem); color: var(--jaune); font-variant-numeric: tabular-nums; }
+.ticket__mois { color: var(--ink); font-weight: 500; }
+.ticket__note { font-size: .85rem; color: var(--dim); margin: .8rem 0 1.3rem; }
+
+/* ─── En voiture ─── */
+.duo { display: grid; grid-template-columns: 1.1fr .9fr; border-top: 1px solid var(--line); }
+.duo__media { position: relative; min-height: 36rem; }
+.duo__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.duo__copy { padding: 7rem var(--gut); align-self: center; }
+.duo__copy > p:not(.label) { color: var(--mute); margin-top: 1.2rem; max-width: 30rem; }
+.duo__vignette { margin-top: 2.4rem; display: grid; grid-template-columns: 9rem 1fr; gap: 1.1rem; align-items: center; }
+.duo__vignette img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 10px; }
+.duo__vignette figcaption { font-size: .92rem; color: var(--mute); }
+
+/* ─── Inscription ─── */
+.inscription {
+  position: relative; overflow: hidden;
+  display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2.5rem, 6vw, 6rem);
+  padding: 8rem var(--gut);
+}
+.inscription__fond { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; opacity: .35; }
+.inscription::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,12,14,.55), rgba(11,12,14,.92) 55%); }
+.inscription > *:not(img) { position: relative; z-index: 1; }
+.inscription__copy > p:not(.label) { color: #D6D8D4; margin-top: 1.2rem; max-width: 30rem; }
+.inscription__tel { display: inline-block; margin-top: 2rem; font-family: var(--display); font-stretch: 118%; font-weight: 800; font-size: clamp(2rem, 3.8vw, 3rem); color: var(--jaune); text-decoration: none; }
+
+.form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-content: start; }
+.field { position: relative; }
+.field--full { grid-column: 1 / -1; }
+.field input, .field select, .field textarea {
+  width: 100%; font-family: var(--sans); font-size: 1rem; color: var(--ink);
+  background: rgba(11, 12, 14, .85); border: 1px solid var(--line); border-radius: 8px;
+  padding: 1.45rem 1rem .55rem; transition: border-color .2s; resize: vertical;
+  -webkit-appearance: none; appearance: none;
+}
+.field select { background-image: linear-gradient(45deg, transparent 50%, var(--mute) 50%), linear-gradient(135deg, var(--mute) 50%, transparent 50%); background-position: calc(100% - 1.2rem) 55%, calc(100% - .85rem) 55%; background-size: .35rem .35rem; background-repeat: no-repeat; }
+.field label {
+  position: absolute; left: 1rem; top: 1.05rem;
+  color: var(--mute); pointer-events: none; transform-origin: left top;
+  transition: transform .25s var(--ease), color .25s;
+}
+.field input:focus + label, .field input:not(:placeholder-shown) + label,
+.field textarea:focus + label, .field textarea:not(:placeholder-shown) + label,
+.field select + label { transform: translateY(-.62rem) scale(.74); color: var(--jaune); }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--jaune); outline: none; }
+.field [aria-invalid="true"] { border-color: #F07F6A; }
+.err { font-size: .84rem; color: #F5A392; margin-top: .4rem; }
+.form__status { margin-top: .9rem; font-weight: 500; color: var(--jaune); }
+
+/* ─── Pied de page ─── */
+.foot { padding: 3rem var(--gut); border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 3rem; font-size: .9rem; color: var(--dim); }
+.foot__brand { font-family: var(--display); font-stretch: 112%; font-weight: 800; font-size: 1.15rem; text-transform: uppercase; color: var(--ink); }
+.horaires div { display: flex; justify-content: space-between; gap: 1rem; padding: .3rem 0; border-bottom: 1px solid var(--line); }
+.horaires dd { color: var(--ink); }
+.foot__demo { grid-column: 1 / -1; }
+.foot__demo a { color: var(--mute); }
+
+/* ─── Tablette ─── */
+@media (max-width: 1024px) {
+  .prix__corps { grid-template-columns: 1fr; }
+  .ticket { position: relative; top: 0; }
+  .duo { grid-template-columns: 1fr; }
+  .duo__media { min-height: 0; aspect-ratio: 16 / 9; }
+  .inscription { grid-template-columns: 1fr; }
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 767px) {
+  .top { gap: 1rem; }
+  .top__nav { display: none; }
+  .top__brand { font-size: .9rem; }
+  .top__tel { font-size: .82rem; padding: .45rem .75rem; }
+
+  .route { height: 420vh; }
+  .route__poster { object-position: 58% 50%; }
+  .route__scene::after { background: linear-gradient(to top, rgba(11,12,14,.95) 30%, rgba(11,12,14,.35) 62%, rgba(11,12,14,.1)); }
+  .route__msgs { align-items: end; padding-bottom: 6.5rem; }
+  .etape__texte { font-size: .98rem; }
+  .route__hud { bottom: 1.6rem; font-size: .66rem; letter-spacing: .08em; }
+  .route__lieu { display: none; }
+  .route__hud { justify-content: flex-end; }
+  .route__jauge { width: 6rem; }
+
+  .chiffres { grid-template-columns: 1fr; }
+  .chiffres div { padding: 1.8rem var(--gut); }
+  .chiffres div + div { border-left: none; border-top: 1px solid var(--line); }
+
+  .parcours__sticky { padding-top: 5.5rem; gap: 1.6rem; }
+  .borne { padding: 1.5rem; }
+  .borne__no { font-size: 2.6rem; }
+  .borne h3 { font-size: 1.35rem; }
+  .borne p { font-size: .95rem; }
+
+  .prix, .inscription { padding-block: 5rem; }
+  .duo__copy { padding-block: 4rem 5rem; }
+  .form { grid-template-columns: 1fr; }
+  .foot { grid-template-columns: 1fr; }
+}
+
+/* Écrans très bas : le parcours ne tient pas en hauteur, on repasse en liste. */
+@media (max-height: 560px) {
+  .parcours { height: auto; }
+  .parcours__sticky { position: relative; height: auto; }
+  .piste { flex-direction: column; width: auto; transform: none !important; }
+  .borne { width: auto; }
+  .borne::after, .parcours__barre { display: none; }
+}
+
+/* ─── Mouvement réduit ─── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .route { height: auto; }
+  .route__scene { position: relative; height: 100vh; }
+  .route__canvas, .route__hud, .etape__hint { display: none; }
+  .etape { display: none; transition: none; }
+  .etape:first-child { display: block; opacity: 1; transform: none; }
+  .parcours { height: auto; }
+  .parcours__sticky { position: relative; height: auto; }
+  .piste { flex-wrap: wrap; width: auto; }
+  .borne::after, .parcours__barre { display: none; }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0C0D">
+
+  <link rel="canonical" href="https://optimusstudio.fr/realisations/">
+
+  <title>Réalisations — Optimus Studio | Sites web, vidéo, SEO</title>
+  <meta name="description" content="Les réalisations d'Optimus Studio : 17 sites internet pour artisans, restaurants et commerces, 23 vidéos montées pour YouTube et TikTok, 5,7 millions de vues cumulées. Chaque projet se consulte en direct.">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://optimusstudio.fr/realisations/">
+  <meta property="og:title"       content="Réalisations — Optimus Studio">
+  <meta property="og:description" content="17 sites internet et 23 vidéos montées, 5,7 millions de vues. Chaque projet consultable en direct.">
+  <meta property="og:image"       content="https://optimusstudio.fr/og-image.webp">
+  <meta property="og:locale"      content="fr_FR">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Hanken+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Réalisations — Optimus Studio",
+    "url": "https://optimusstudio.fr/realisations/",
+    "description": "Sites internet sectoriels, montage vidéo YouTube et TikTok, référencement.",
+    "inLanguage": "fr-FR",
+    "isPartOf": { "@type": "WebSite", "@id": "https://optimusstudio.fr/#site", "name": "Optimus Studio", "url": "https://optimusstudio.fr/" },
+    "publisher": { "@id": "https://optimusstudio.fr/#studio" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://optimusstudio.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Réalisations", "item": "https://optimusstudio.fr/realisations/" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+<a href="#contenu" class="skip-link">Aller au contenu principal</a>
+
+<!-- REPÈRES D'ANGLE — repris de la page d'accueil -->
+<div id="marks" aria-hidden="true">
+  <span class="mark tl"></span><span class="mark tr"></span>
+  <span class="mark bl"></span><span class="mark br"></span>
+</div>
+
+<header class="site-header">
+  <a class="header-logo" href="/">OPTIMUS</a>
+  <nav aria-label="Navigation principale">
+    <a href="/" class="nav-link nav-link--home">Accueil</a>
+    <a href="/devis/" class="nav-link">Tarifs</a>
+    <a href="/devis/" class="nav-link nav-link--cta">Devis</a>
+  </nav>
+</header>
+
+<main id="contenu">
+
+  <!-- INTRO -->
+  <section class="intro">
+    <span class="label">Réalisations</span>
+    <h1>Ce qu'on a<br>déjà fabriqué.</h1>
+    <p class="intro__lede">
+      Chaque projet s'ouvre ici même, en direct. Vous scrollez dedans comme
+      un visiteur le ferait, sur écran ou sur mobile.
+    </p>
+    <!-- Les trois chiffres sont recalculés par app.js depuis PROJETS et VIDEOS. -->
+    <dl class="chiffres">
+      <div><dt id="n-sites">17</dt><dd>sites conçus, un par métier</dd></div>
+      <div><dt id="n-videos">23</dt><dd>vidéos montées, YouTube et TikTok</dd></div>
+      <div><dt><span id="n-vues">5,7</span>&nbsp;M</dt><dd>de vues cumulées sur ces vidéos</dd></div>
+    </dl>
+  </section>
+
+  <!-- RUBRIQUES -->
+  <nav class="tabs" aria-label="Rubriques">
+    <button class="tab is-on" data-tab="sites"  aria-selected="true">Sites internet</button>
+    <button class="tab"       data-tab="video"  aria-selected="false">Vidéo</button>
+    <button class="tab"       data-tab="seo"    aria-selected="false">SEO</button>
+  </nav>
+
+  <!-- ═══ SITES ═══ -->
+  <section class="panel is-on" id="panel-sites" data-panel="sites">
+
+    <div class="filters" role="group" aria-label="Filtrer par secteur">
+      <button class="chip is-on" data-secteur="all" aria-pressed="true">Tous</button>
+      <button class="chip" data-secteur="btp" aria-pressed="false">BTP &amp; artisans</button>
+      <button class="chip" data-secteur="resto" aria-pressed="false">Restauration</button>
+      <button class="chip" data-secteur="beaute" aria-pressed="false">Beauté &amp; bien-être</button>
+      <button class="chip" data-secteur="sport" aria-pressed="false">Sport &amp; santé</button>
+      <button class="chip" data-secteur="services" aria-pressed="false">Services</button>
+    </div>
+
+    <div class="grid" id="grid-sites"></div>
+
+    <p class="note">
+      Ces sites sont des démonstrations sectorielles. Les entreprises et les
+      contenus sont fictifs, la technique et le design sont réels.
+    </p>
+  </section>
+
+  <!-- ═══ VIDÉO ═══ -->
+  <!-- Les vidéos sont listées dans app.js (tableau VIDEOS). Aucun lecteur
+       YouTube ou TikTok n'est chargé tant qu'on n'a pas cliqué sur une vignette. -->
+  <section class="panel" id="panel-video" data-panel="video" hidden>
+    <div class="filters" id="filtres-video" role="group" aria-label="Filtrer par type de vidéo" hidden></div>
+    <div id="grid-videos"></div>
+    <p class="note" id="note-video" hidden>
+      Le lecteur YouTube ou TikTok se charge quand vous cliquez sur la vignette.
+    </p>
+
+    <div class="empty" id="videos-vide">
+      <span class="empty__no">002 / Vidéo</span>
+      <h2>Montage vidéo</h2>
+      <p>
+        Cette rubrique accueillera les vidéos montées, intégrées en lecture
+        directe depuis YouTube. Elle est vide tant que les autorisations des
+        chaînes concernées ne sont pas obtenues.
+      </p>
+      <a class="cta-button" href="/devis/">Parler d'un montage</a>
+    </div>
+  </section>
+
+  <!-- ═══ SEO ═══ -->
+  <section class="panel" id="panel-seo" data-panel="seo" hidden>
+    <div class="seo">
+      <div class="seo__intro">
+        <span class="empty__no">003 / SEO</span>
+        <h2>Être trouvé avant<br>le concurrent d'à côté.</h2>
+        <p>
+          Chaque site de cette page est construit pour Google dès la première
+          ligne de code. Les résultats chiffrés (positions gagnées, appels,
+          demandes de devis) seront publiés ici au fil des campagnes clientes :
+          le référencement se mesure sur plusieurs mois, on préfère des
+          chiffres vrais à des promesses.
+        </p>
+        <a class="cta-button" href="/devis/">Demander un audit gratuit</a>
+      </div>
+
+      <ol class="seo__liste">
+        <li><span>01</span><h3>Fiche Google soignée</h3><p>Catégories, horaires, photos, questions-réponses : c'est elle qui fait sonner le téléphone.</p></li>
+        <li><span>02</span><h3>Données structurées</h3><p>Chaque site décrit l'entreprise à Google en JSON-LD : adresse, horaires, tarifs, avis.</p></li>
+        <li><span>03</span><h3>Rapide sur téléphone</h3><p>Pages légères, images en WebP, aucun plugin inutile : les Core Web Vitals au vert.</p></li>
+        <li><span>04</span><h3>Des pages qui répondent</h3><p>Un contenu écrit pour les questions que vos clients tapent vraiment, ville par ville.</p></li>
+        <li><span>05</span><h3>Prêt pour les IA</h3><p>Textes clairs et fichier llms.txt : votre entreprise citée par ChatGPT, Perplexity et les réponses IA de Google.</p></li>
+        <li><span>06</span><h3>Un suivi mensuel</h3><p>Positions, appels, demandes : un rapport d'une page, lisible en deux minutes.</p></li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<!-- APERÇU LIVE -->
+<div class="viewer" id="viewer" hidden>
+  <div class="viewer__bar">
+    <div class="viewer__id">
+      <span class="viewer__no" id="v-no"></span>
+      <span class="viewer__name" id="v-name"></span>
+    </div>
+    <div class="viewer__tools">
+      <div class="seg" role="group" aria-label="Format d'aperçu">
+        <button class="seg__btn is-on" id="v-desktop">Bureau</button>
+        <button class="seg__btn" id="v-mobile">Mobile</button>
+      </div>
+      <a class="viewer__open" id="v-open" href="#" target="_blank" rel="noopener">Ouvrir</a>
+      <button class="viewer__close" id="v-close" aria-label="Fermer l'aperçu">Fermer</button>
+    </div>
+  </div>
+  <div class="viewer__stage" id="v-stage">
+    <iframe id="v-frame" title="Aperçu du site" loading="lazy"
+            referrerpolicy="no-referrer"></iframe>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-brand">OPTIMUS STUDIO</div>
+  <div class="footer-meta">Paris · 2026</div>
+  <div class="footer-services"><a href="/mentions-legales/">Mentions légales</a></div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

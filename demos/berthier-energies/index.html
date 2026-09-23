@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Berthier Énergies · Chauffagiste et rénovation énergétique</title>
+<meta name="description" content="Berthier Énergies : chaudière gaz, pompe à chaleur, plomberie et rénovation énergétique. Étude thermique, pose et entretien. Dépannage sous 24 h.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Berthier Énergies · Chauffagiste et rénovation énergétique">
+<meta property="og:description" content="Chaudière, pompe à chaleur, rénovation énergétique. Une équipe qui ne sous-traite pas.">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="preload" as="image" href="frames/frame_0001.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Berthier Énergies",
+  "description": "Chauffagiste, plombier et rénovation énergétique.",
+  "telephone": "+33 3 80 54 71 22",
+  "email": "contact@berthier-energies.fr",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "24 rue de Longvic",
+    "addressLocality": "Dijon",
+    "postalCode": "21000",
+    "addressCountry": "FR"
+  },
+  "areaServed": { "@type": "City", "name": "Dijon" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Prestations",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Installation de chaudière" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pompe à chaleur air-eau" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Plomberie" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rénovation énergétique" } }
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<a href="#scroll" class="skip">Aller au contenu</a>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader__brand">BERTHIER ÉNERGIES</div>
+  <div class="loader__track"><div id="loader-bar"></div></div>
+  <div id="loader-pct">0%</div>
+</div>
+
+<!-- TÉLÉMÉTRIE THERMIQUE — le tableau de bord du métier, pas un HUD caméra -->
+<div id="hud" aria-hidden="true">
+  <div class="hud__gauge"><span id="hud-fill"></span></div>
+  <div class="hud__left">
+    <span class="hud__dot"></span>
+    <span id="hud-temp">18.0 °C</span>
+  </div>
+  <div class="hud__right">
+    <span id="hud-pressure">1.2 bar</span>
+    <span class="hud__sep">·</span>
+    <span id="hud-power">0 kW</span>
+  </div>
+  <div class="hud__foot">BERTHIER ÉNERGIES — DIJON</div>
+</div>
+
+<!-- EN-TÊTE -->
+<header class="head">
+  <a class="head__logo" href="#top">BERTHIER<span>ÉNERGIES</span></a>
+  <nav aria-label="Navigation principale">
+    <a class="head__tel" href="tel:+33380547122">03 80 54 71 22</a>
+    <a class="head__cta" href="#devis">Devis</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__in">
+    <p class="eyebrow">Chauffage · Plomberie · Rénovation énergétique</p>
+    <h1>Votre chauffage,<br>repris de zéro.</h1>
+    <p class="hero__lede">
+      Chaudière, pompe à chaleur, réseau complet. Étude thermique, pose et
+      entretien par une équipe qui ne sous-traite pas.
+    </p>
+    <div class="hero__cta">
+      <a class="btn" href="#devis">Demander une étude</a>
+      <a class="arrow" href="tel:+33380547122">03 80 54 71 22</a>
+    </div>
+  </div>
+  <p class="hero__hint" aria-hidden="true">Faites défiler</p>
+</section>
+
+<!-- CANVAS -->
+<div id="canvas-wrap"><canvas id="canvas" aria-hidden="true"></canvas></div>
+<div id="veil" aria-hidden="true"></div>
+
+<!-- SECTIONS PILOTÉES AU SCROLL -->
+<main id="scroll" tabindex="-1">
+
+  <section class="sec sec--left" data-enter="7"  data-leave="24" data-anim="rise"  data-temp="24" data-kw="12">
+    <div class="sec__in">
+      <span class="sec__no">001 — Chauffage</span>
+      <h2>Chaudière et<br>pompe à chaleur</h2>
+      <p>
+        Gaz à condensation ou air-eau, selon ce que votre logement supporte
+        vraiment. Le dimensionnement est calculé sur le volume et l'isolation,
+        jamais estimé au doigt mouillé. Une machine surdimensionnée coûte plus
+        cher à l'achat et consomme davantage.
+      </p>
+    </div>
+  </section>
+
+  <section class="sec sec--right" data-enter="23" data-leave="40" data-anim="slide" data-temp="38" data-kw="24">
+    <div class="sec__in">
+      <span class="sec__no">002 — Plomberie</span>
+      <h2>Réseaux et<br>salles de bains</h2>
+      <p>
+        Alimentation complète en cuivre ou multicouche, évacuations aux pentes
+        réglementaires, salles de bains livrées carrelées. Recherche de fuite
+        par caméra thermique : on localise avant d'ouvrir un mur.
+      </p>
+    </div>
+  </section>
+
+  <section class="sec sec--left" data-enter="39" data-leave="56" data-anim="rise" data-temp="49" data-kw="31">
+    <div class="sec__in">
+      <span class="sec__no">003 — Rénovation</span>
+      <h2>Rénovation<br>énergétique</h2>
+      <p>
+        MaPrimeRénov', certificats d'économie d'énergie, TVA réduite. On monte
+        le dossier, on chiffre le reste à charge avant signature, et rien ne
+        démarre tant que les accords ne sont pas écrits.
+      </p>
+    </div>
+  </section>
+
+  <section class="sec sec--right" data-enter="55" data-leave="70" data-anim="slide" data-temp="57" data-kw="36">
+    <div class="sec__in">
+      <span class="sec__no">004 — Dépannage</span>
+      <h2>Panne et<br>urgence</h2>
+      <p>
+        Chauffage à l'arrêt ou fuite active : intervention sous 24 heures, et
+        sept jours sur sept de novembre à mars. Le tarif de déplacement est
+        annoncé au téléphone, jamais découvert sur la facture.
+      </p>
+    </div>
+  </section>
+
+  <section class="sec sec--mid" data-enter="69" data-leave="82" data-anim="zoom" data-temp="62" data-kw="38">
+    <div class="sec__in">
+      <p class="manifesto">Une installation se juge<br>dix ans après.</p>
+    </div>
+  </section>
+
+  <section class="sec sec--left" id="devis" data-enter="80" data-leave="100" data-anim="rise" data-persist="true" data-temp="62" data-kw="38">
+    <div class="sec__in">
+      <span class="sec__no">005 — Contact</span>
+      <h2>Parlons de<br>votre installation.</h2>
+      <p>
+        Décrivez votre logement et ce qui ne va pas. On passe voir, on mesure,
+        et vous repartez avec un chiffrage écrit. La visite d'étude est gratuite
+        sur Dijon et sa couronne.
+      </p>
+      <div class="sec__cta">
+        <a class="btn" href="tel:+33380547122">Appeler le 03 80 54 71 22</a>
+        <a class="arrow" href="mailto:contact@berthier-energies.fr">contact@berthier-energies.fr</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- RÉASSURANCE -->
+<section class="proof" aria-label="Garanties">
+  <ul>
+    <li><strong>RGE</strong><span>Qualibat, à jour</span></li>
+    <li><strong>Décennale</strong><span>MAAF, attestation fournie</span></li>
+    <li><strong>Sous 24 h</strong><span>hors urgence</span></li>
+    <li><strong>Devis écrit</strong><span>avant tout démarrage</span></li>
+  </ul>
+</section>
+
+<footer class="foot">
+  <div class="foot__in">
+    <div>
+      <p class="foot__brand">BERTHIER ÉNERGIES</p>
+      <p>24 rue de Longvic, 21000 Dijon<br>03 80 54 71 22</p>
+    </div>
+    <div>
+      <p>Dijon, Chenôve, Talant, Quetigny,<br>Fontaine-lès-Dijon, Marsannay</p>
+      <p>Lundi au vendredi 7h30 à 18h30<br>Astreinte hivernale 7 j/7</p>
+    </div>
+    <p class="foot__demo">
+      Site de démonstration. Entreprise fictive, contenus illustratifs.
+      Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+    </p>
+  </div>
+</footer>
+
+<!-- REPLI SANS ANIMATION -->
+<div id="poster" aria-hidden="true">
+  <img src="frames/frame_0121.webp" alt="Radiateur en fonte, vue éclatée" width="1600" height="890">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

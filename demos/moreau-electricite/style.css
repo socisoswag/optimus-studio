@@ -1,0 +1,331 @@
+/* =========================================================
+   Moreau Électricité - démo Optimus Studio
+   Bleu-noir, blanc froid, et un seul vert : celui des voyants.
+   Le vert n'apparaît qu'une fois le courant revenu (relevé, voyants,
+   boutons) : c'est le fil de la page. Geist et Geist Mono.
+   ========================================================= */
+
+:root {
+  --bg:    #05070B;
+  --bg-2:  #0A0F16;
+  --ink:   #E6EDF7;
+  --mute:  #8A97AA;
+  --dim:   #56627A;
+  --volt:  #52E58F;
+  --cold:  #BFD7FF;
+  --line:  rgba(230, 237, 247, .09);
+
+  --sans: 'Geist', system-ui, sans-serif;
+  --mono: 'Geist Mono', ui-monospace, monospace;
+
+  --gut: clamp(1.25rem, 5vw, 5rem);
+  --ease: cubic-bezier(.16, 1, .3, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { color-scheme: dark; scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+[hidden] { display: none !important; }
+*:focus-visible { outline: 2px solid var(--volt); outline-offset: 3px; }
+
+.skip {
+  position: absolute; top: -100%; left: 1rem; z-index: 100;
+  padding: .6rem 1rem; background: var(--volt); color: var(--bg);
+  font-family: var(--mono); font-size: .72rem; text-decoration: none;
+}
+.skip:focus { top: 1rem; }
+
+.label {
+  font-family: var(--mono); font-size: .7rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--cold); margin-bottom: 1.2rem;
+}
+
+h1, h2, .msg__big {
+  font-weight: 600; letter-spacing: -.035em; line-height: 1;
+}
+h2 { font-size: clamp(2.1rem, 4.4vw, 3.6rem); }
+
+/* ─── Boutons ─── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--mono); font-size: .78rem; font-weight: 500;
+  color: var(--bg); background: var(--volt);
+  border: 0; border-radius: 999px;
+  padding: .9rem 1.5rem; text-decoration: none; cursor: pointer;
+  transition: background .2s, box-shadow .2s;
+}
+.btn:hover { background: #74EDA6; box-shadow: 0 0 0 6px rgba(82, 229, 143, .14); }
+.btn--block { width: 100%; }
+.btn[disabled] { opacity: .5; cursor: default; }
+
+/* ─── En-tête ─── */
+.top {
+  position: fixed; inset: 0 0 auto; z-index: 30;
+  display: flex; align-items: center; gap: 2.2rem;
+  padding: 1rem var(--gut);
+  background: linear-gradient(to bottom, rgba(5,7,11,.92), rgba(5,7,11,0));
+}
+.top__brand {
+  display: inline-flex; align-items: center; gap: .6rem;
+  margin-right: auto;
+  font-weight: 600; font-size: 1.02rem; letter-spacing: -.02em; text-decoration: none;
+}
+.top__bolt {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--dim);
+  transition: background .3s, box-shadow .3s;
+}
+/* Le voyant de la marque s'allume avec le tableau. */
+body.is-on .top__bolt { background: var(--volt); box-shadow: 0 0 10px var(--volt); }
+.top__nav { display: flex; gap: 1.8rem; }
+.top__nav a { font-size: .9rem; color: var(--mute); text-decoration: none; transition: color .2s; }
+.top__nav a:hover { color: var(--ink); }
+.top__tel {
+  font-family: var(--mono); font-size: .8rem;
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: .5rem .95rem; text-decoration: none;
+  transition: border-color .2s, color .2s;
+}
+.top__tel:hover { border-color: var(--volt); color: var(--volt); }
+
+/* ─── Le tableau ─── */
+.volt { position: relative; height: 320vh; }
+.volt__stage {
+  position: sticky; top: 0;
+  height: 100vh; height: 100svh;
+  display: grid; grid-template-columns: minmax(22rem, 38%) 1fr;
+  overflow: hidden;
+}
+.volt__copy {
+  display: flex; flex-direction: column;
+  padding: 7rem var(--gut) 2.5rem;
+  border-right: 1px solid var(--line);
+  background: var(--bg);
+}
+.volt__msgs { position: relative; flex: 1; display: grid; align-items: center; }
+.msg {
+  grid-area: 1 / 1;
+  opacity: 0; transform: translateY(12px);
+  transition: opacity .5s var(--ease), transform .5s var(--ease);
+  pointer-events: none;
+}
+.msg.is-on { opacity: 1; transform: none; pointer-events: auto; }
+.msg h1, .msg__big { font-size: clamp(2.6rem, 4.6vw, 4.4rem); }
+.msg p:not(.msg__big) { color: var(--mute); margin-top: 1.2rem; max-width: 26rem; }
+.msg .btn { margin-top: 1.6rem; }
+
+.releve {
+  display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 0 2.4rem;
+  padding-top: 1.2rem; border-top: 1px solid var(--line);
+}
+.releve dt { font-family: var(--mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); }
+.releve dd { font-family: var(--mono); font-size: 1.05rem; margin-top: .3rem; font-variant-numeric: tabular-nums; }
+.releve__etat { color: var(--mute); }
+body.is-on .releve__etat, body.is-on .releve dd { color: var(--volt); }
+
+.volt__media { position: relative; background: #000; }
+.volt__img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 58% 50%;
+}
+/* Les deux photos ne diffèrent que par les voyants : on assombrit la
+   version éteinte pour que l'allumage se lise aussi à la luminosité. */
+.volt__img:not(.volt__img--on) { filter: brightness(.62) saturate(.8); }
+.volt__img--on { opacity: 0; }
+/* Lueur froide qui monte avec le courant (opacité pilotée par app.js). */
+.volt__glow {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0;
+  background: radial-gradient(ellipse 45% 50% at 58% 48%, rgba(191, 215, 255, .16), rgba(82, 229, 143, .05) 60%, transparent 75%);
+  mix-blend-mode: screen;
+}
+/* ─── Lampe torche ───
+   Un disque feutré suit le pointeur et montre le tableau allumé à
+   travers le noir. Elle s'efface quand le courant revient. */
+.torche { position: absolute; inset: 0; --mx: 55%; --my: 45%; --r: 190px; touch-action: pan-y; }
+.torche__img { filter: brightness(1.35) contrast(1.05); }
+.torche__img {
+  -webkit-mask-image: radial-gradient(circle var(--r) at var(--mx) var(--my), #000 0%, rgba(0,0,0,.8) 45%, rgba(0,0,0,.25) 72%, transparent 100%);
+          mask-image: radial-gradient(circle var(--r) at var(--mx) var(--my), #000 0%, rgba(0,0,0,.8) 45%, rgba(0,0,0,.25) 72%, transparent 100%);
+}
+.torche__halo {
+  position: absolute; left: var(--mx); top: var(--my);
+  width: calc(var(--r) * 1.7); height: calc(var(--r) * 1.7);
+  transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 244, 214, .22), transparent 62%);
+  mix-blend-mode: screen;
+}
+.msg__torche { font-family: var(--mono); font-size: .74rem !important; letter-spacing: .12em; text-transform: uppercase; color: var(--volt) !important; }
+.msg__torche::before { content: "◉ "; }
+@media (hover: none) { .msg__torche { display: none; } }
+
+/* Le petit vacillement du courant qui revient. */
+.volt__media.is-flicker { animation: vacille .7s steps(1, end); }
+@keyframes vacille {
+  0%   { filter: brightness(1.7); }
+  12%  { filter: brightness(.55); }
+  24%  { filter: brightness(1.45); }
+  38%  { filter: brightness(.8); }
+  52%  { filter: brightness(1.15); }
+  66%  { filter: none; }
+}
+
+/* ─── Services ─── */
+.services { padding: 8rem var(--gut); border-top: 1px solid var(--line); }
+.head { max-width: 44rem; margin-bottom: 3.2rem; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.card {
+  display: flex; flex-direction: column;
+  padding: 1.8rem 1.6rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line); border-radius: 14px;
+  transition: border-color .3s, transform .3s var(--ease);
+}
+.card:hover { border-color: rgba(82, 229, 143, .45); transform: translateY(-3px); }
+.card__no { font-family: var(--mono); font-size: .72rem; color: var(--volt); }
+.card h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -.02em; margin: 1.2rem 0 .7rem; }
+.card p:not(.card__no):not(.card__prix) { color: var(--mute); font-size: .95rem; }
+.card__prix {
+  margin-top: auto; padding-top: 1.4rem;
+  font-family: var(--mono); font-size: .8rem; color: var(--cold);
+}
+
+/* ─── Méthode ─── */
+.mesure {
+  display: grid; grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--line);
+}
+.mesure__media { position: relative; min-height: 38rem; }
+.mesure__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% 50%; }
+.mesure__copy { align-self: center; padding: 6rem var(--gut); }
+.etapes { list-style: none; margin-top: 2.4rem; display: grid; gap: 1.5rem; }
+.etapes li { display: grid; grid-template-columns: 3rem 1fr; }
+.etapes span { font-family: var(--mono); font-size: .74rem; color: var(--volt); padding-top: .2rem; }
+.etapes h3 { font-size: 1.1rem; font-weight: 600; }
+.etapes p { color: var(--mute); font-size: .95rem; margin-top: .2rem; }
+
+/* ─── Éclairage ─── */
+/* La cuisine est éclairée partout : pas de zone sombre où poser un
+   titre sans cacher une source de lumière. Le texte vit donc dans un
+   panneau vitré en bas à gauche, et la photo reste intacte ailleurs. */
+.lumiere {
+  position: relative; min-height: 96vh; overflow: hidden;
+  display: flex; align-items: flex-end;
+  padding: 0 var(--gut) 4rem;
+}
+.lumiere img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.lumiere__in {
+  position: relative; z-index: 2; max-width: 30rem;
+  padding: 2.2rem 2.4rem;
+  background: rgba(5, 7, 11, .72);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--line); border-radius: 14px;
+}
+.lumiere h2 { font-size: clamp(2rem, 3.6vw, 3rem); }
+.lumiere__in > p:not(.label) { color: var(--mute); margin-top: 1rem; }
+
+/* ─── Contact ─── */
+.contact {
+  display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2.5rem, 6vw, 6rem);
+  padding: 8rem var(--gut);
+  border-top: 1px solid var(--line);
+  background: var(--bg-2);
+}
+.contact__copy > p:not(.label) { color: var(--mute); margin-top: 1rem; max-width: 28rem; }
+.contact__tel {
+  display: block; margin-top: 2rem;
+  font-weight: 600; font-size: clamp(2.2rem, 4.2vw, 3.4rem); letter-spacing: -.03em;
+  line-height: 1; text-decoration: none; color: var(--ink);
+}
+.contact__tel:hover { color: var(--volt); }
+.contact__horaires { font-family: var(--mono); font-size: .72rem; color: var(--dim) !important; }
+
+.form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; align-content: start; }
+.field { display: flex; flex-direction: column; }
+.field--full { grid-column: 1 / -1; }
+.field label { font-size: .82rem; color: var(--mute); margin-bottom: .45rem; }
+.field input, .field select, .field textarea {
+  font-family: var(--sans); font-size: 1rem; color: var(--ink);
+  background: var(--bg); border: 1px solid var(--line); border-radius: 10px;
+  padding: .85rem 1rem; transition: border-color .2s;
+}
+.field textarea { resize: vertical; }
+.field input::placeholder, .field textarea::placeholder { color: var(--dim); }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--volt); outline: none; }
+.field [aria-invalid="true"] { border-color: #FF7A6B; }
+.err { font-size: .82rem; color: #FF9C90; margin-top: .4rem; }
+.form__status { margin-top: .9rem; font-family: var(--mono); font-size: .78rem; color: var(--volt); }
+
+/* ─── Pied de page ─── */
+.foot {
+  padding: 2.6rem var(--gut);
+  border-top: 1px solid var(--line);
+  display: grid; gap: .4rem;
+  font-family: var(--mono); font-size: .68rem; color: var(--dim);
+}
+.foot__brand { font-family: var(--sans); font-weight: 600; font-size: 1rem; color: var(--ink); }
+.foot__demo a { color: var(--mute); }
+
+/* ─── Révélations ─── */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.reveal.is-in { opacity: 1; transform: none; }
+
+/* ─── Tablette ─── */
+@media (max-width: 1024px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .contact { grid-template-columns: 1fr; }
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 767px) {
+  .top { gap: 1rem; }
+  .top__nav { display: none; }
+  .top__brand, .top__tel { white-space: nowrap; }
+  .top__tel { font-size: .72rem; padding: .45rem .75rem; }
+
+  /* La photo en haut, le texte dessous, dans la même scène collante. */
+  .volt__stage { grid-template-columns: 1fr; grid-template-rows: 44% 1fr; }
+  .volt__media { grid-row: 1; }
+  .volt__copy { grid-row: 2; padding: 1.4rem var(--gut) 1.4rem; border-right: 0; border-top: 1px solid var(--line); }
+  .volt__copy .label { display: none; }
+  .msg h1, .msg__big { font-size: clamp(2rem, 9vw, 2.6rem); }
+  .msg p:not(.msg__big) { margin-top: .8rem; font-size: .95rem; }
+  .msg .btn { margin-top: 1rem; }
+  .releve { gap: 0 1.4rem; padding-top: .9rem; }
+  .releve dd { font-size: .92rem; }
+  .volt__img { object-position: 50% 50%; }
+
+  .services, .contact { padding-block: 5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .mesure { grid-template-columns: 1fr; }
+  .mesure__media { min-height: 0; aspect-ratio: 4 / 3; }
+  .mesure__copy { padding: 3.5rem var(--gut) 4.5rem; }
+  .lumiere { min-height: 80vh; padding-bottom: 1.5rem; }
+  .lumiere img { object-position: 45% 50%; }
+  .lumiere__in { padding: 1.6rem 1.4rem; }
+  .form { grid-template-columns: 1fr; }
+}
+
+/* ─── Mouvement réduit : tableau allumé, pas de scène collante ─── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .volt { height: auto; }
+  .volt__stage { position: relative; }
+  .msg { transition: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .card { transition: none; }
+  .torche { display: none; }
+}

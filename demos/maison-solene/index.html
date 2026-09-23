@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maison Solène · Institut de soins et massages à Bordeaux</title>
+<meta name="description" content="Institut de soins à Bordeaux, quartier des Chartrons. Soins du visage, massages, rituels. Réservation en ligne, créneaux du mardi au samedi.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maison Solène · Institut de soins à Bordeaux">
+<meta property="og:description" content="Soins du visage, massages et rituels, rue Notre-Dame. Réservez votre créneau en ligne.">
+<meta property="og:image" content="img/table.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/table.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Maison Solène",
+  "telephone": "+33 5 56 44 18 62",
+  "image": "img/table.webp",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "14 rue Notre-Dame",
+    "addressLocality": "Bordeaux",
+    "postalCode": "33000",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Friday","Saturday"], "opens": "10:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:00", "closes": "20:30" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#soins">Les soins</a>
+    <a href="#maison">La maison</a>
+  </nav>
+  <a class="top__brand" href="#haut">Maison <em>Solène</em></a>
+  <a class="top__rdv" href="#rendez-vous">Prendre rendez-vous</a>
+</header>
+
+<main id="contenu">
+
+  <!-- ─── Hero : le titre encadre l'arche ─── -->
+  <section class="hero" id="haut">
+    <p class="hero__mot hero__mot--g" aria-hidden="true">Prendre</p>
+    <figure class="arche hero__arche">
+      <img src="img/table.webp" alt="Table de massage dressée, oreiller de lin et branche d'eucalyptus, bol de pierre avec une fleur de lotus, lumière de bougie" width="1920" height="1072" fetchpriority="high">
+    </figure>
+    <p class="hero__mot hero__mot--d" aria-hidden="true">le temps.</p>
+
+    <div class="hero__pied">
+      <h1><span class="sr-only">Prendre le temps. </span>Institut de soins et massages, rue Notre-Dame à Bordeaux.</h1>
+      <a class="btn" href="#rendez-vous">Réserver un soin</a>
+    </div>
+  </section>
+
+  <!-- ─── Intention ─── -->
+  <section class="intention" id="maison" aria-label="La maison">
+    <p class="reveal">Quatre cabines, une seule règle&nbsp;: <em>on ne vous presse jamais.</em> Chaque soin commence par dix minutes de conversation, et se termine quand votre peau, pas l'horloge, le décide.</p>
+  </section>
+
+  <!-- ─── La carte des soins ─── -->
+  <section class="carte" id="soins" aria-labelledby="carte-titre">
+    <div class="carte__head">
+      <p class="label">La carte</p>
+      <h2 id="carte-titre">Les <em>soins</em></h2>
+    </div>
+
+    <div class="onglets" role="tablist" aria-label="Catégories de soins">
+      <button class="onglet is-on" role="tab" aria-selected="true" aria-controls="cat-visage" id="tab-visage">Visage</button>
+      <button class="onglet" role="tab" aria-selected="false" aria-controls="cat-corps" id="tab-corps" tabindex="-1">Corps</button>
+      <button class="onglet" role="tab" aria-selected="false" aria-controls="cat-rituels" id="tab-rituels" tabindex="-1">Rituels</button>
+    </div>
+
+    <div class="carte__corps">
+      <!-- Les soins sont décrits une seule fois, dans app.js (SOINS) :
+           la carte et le formulaire de rendez-vous lisent la même liste. -->
+      <div class="soins" id="cat-visage" role="tabpanel" aria-labelledby="tab-visage"></div>
+      <div class="soins" id="cat-corps" role="tabpanel" aria-labelledby="tab-corps" hidden></div>
+      <div class="soins" id="cat-rituels" role="tabpanel" aria-labelledby="tab-rituels" hidden></div>
+
+      <figure class="arche carte__arche">
+        <img src="img/visage.webp" alt="Soin du visage : une esthéticienne applique un masque à l'argile verte" width="1920" height="1048" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─── Le geste ─── -->
+  <section class="geste" aria-labelledby="geste-titre">
+    <figure class="geste__media porte">
+      <img src="img/creme.webp" alt="Une noix de crème et des cristaux de sel rose sur une pierre sombre, une feuille verte" width="1920" height="1072" loading="lazy">
+    </figure>
+    <div class="geste__copy reveal">
+      <p class="label">Les textures</p>
+      <h2 id="geste-titre">Du sel rose,<br><em>une crème, deux mains.</em></h2>
+      <p>Nos gommages mêlent sel rose et huile d'amande douce ; nos crèmes sont formulées par un laboratoire girondin, sans parfum de synthèse. Tout ce qui touche votre peau en cabine se retrouve à la boutique.</p>
+    </div>
+  </section>
+
+  <!-- ─── Rendez-vous : l'interaction signature ─── -->
+  <section class="rdv" id="rendez-vous" aria-labelledby="rdv-titre">
+    <div class="rdv__head">
+      <p class="label">Réservation</p>
+      <h2 id="rdv-titre">Votre <em>moment</em></h2>
+      <p>Choisissez le soin, le jour, l'heure. Nous confirmons par SMS dans l'heure.</p>
+    </div>
+
+    <form class="rdv__form" id="form-rdv" novalidate>
+      <div class="etape">
+        <p class="etape__no">I</p>
+        <div class="etape__corps">
+          <label class="etape__titre" for="rdv-soin">Le soin</label>
+          <select id="rdv-soin" name="soin"></select>
+        </div>
+      </div>
+
+      <div class="etape">
+        <p class="etape__no">II</p>
+        <div class="etape__corps">
+          <p class="etape__titre" id="lbl-jour">Le jour</p>
+          <div class="jours" id="jours" role="radiogroup" aria-labelledby="lbl-jour"></div>
+        </div>
+      </div>
+
+      <div class="etape">
+        <p class="etape__no">III</p>
+        <div class="etape__corps">
+          <p class="etape__titre" id="lbl-heure">L'heure</p>
+          <div class="heures" id="heures" role="radiogroup" aria-labelledby="lbl-heure"></div>
+        </div>
+      </div>
+
+      <div class="etape">
+        <p class="etape__no">IV</p>
+        <div class="etape__corps etape__corps--champs">
+          <div class="field">
+            <label for="nom">Prénom et nom</label>
+            <input id="nom" name="nom" type="text" autocomplete="name" required>
+            <p class="err" data-err-for="nom" hidden>Merci d'indiquer votre nom.</p>
+          </div>
+          <div class="field">
+            <label for="tel">Téléphone mobile</label>
+            <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+            <p class="err" data-err-for="tel" hidden>Un numéro à dix chiffres est nécessaire pour la confirmation par SMS.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="recap">
+        <p class="label">Votre réservation</p>
+        <p class="recap__soin" id="recap-soin">—</p>
+        <p class="recap__quand" id="recap-quand" aria-live="polite">Choisissez un jour et une heure.</p>
+        <p class="recap__prix" id="recap-prix"></p>
+        <button class="btn btn--plein" type="submit" id="submit">Confirmer la réservation</button>
+        <p class="form__status" id="status" role="status"></p>
+        <p class="recap__note">Annulation gratuite jusqu'à 24 heures avant.</p>
+      </aside>
+    </form>
+  </section>
+
+  <!-- ─── La boutique ─── -->
+  <section class="boutique" aria-labelledby="boutique-titre">
+    <div class="boutique__copy reveal">
+      <p class="label">La boutique</p>
+      <h2 id="boutique-titre">À reprendre<br><em>chez vous.</em></h2>
+      <p>Les huiles, les crèmes et les sels utilisés en cabine. Et la carte cadeau, valable un an, pour offrir un soin plutôt qu'un objet.</p>
+      <a class="lien" href="#rendez-vous">Offrir un soin</a>
+    </div>
+    <figure class="boutique__media porte">
+      <img src="img/boutique.webp" alt="Étagères en noyer éclairées, flacons de verre ambré alignés" width="1920" height="1048" loading="lazy">
+    </figure>
+  </section>
+
+  <!-- ─── Infos pratiques ─── -->
+  <section class="infos" aria-label="Informations pratiques">
+    <div>
+      <p class="label">Adresse</p>
+      <p>14 rue Notre-Dame<br>33000 Bordeaux, Chartrons</p>
+      <p class="infos__petit">Tram B, arrêt Chartrons</p>
+    </div>
+    <div>
+      <p class="label">Horaires</p>
+      <p>Mardi, mercredi, vendredi, samedi<br>10 h – 19 h</p>
+      <p class="infos__petit">Jeudi jusqu'à 20 h 30</p>
+    </div>
+    <div>
+      <p class="label">Téléphone</p>
+      <p><a href="tel:+33556441862">05 56 44 18 62</a></p>
+      <p class="infos__petit">Pendant les heures d'ouverture</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__brand">Maison <em>Solène</em></p>
+  <p class="foot__demo">
+    Site de démonstration. Établissement fictif, contenus illustratifs.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

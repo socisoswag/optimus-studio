@@ -1,16 +1,30 @@
 # Optimus Studio
 
-> Studio créatif à Paris — sites web, montage vidéo, référencement SEO et marketing digital pour les TPE et PME.
+> Studio créatif à Paris — sites web, montage vidéo, référencement SEO et marketing digital pour les TPE, les artisans et les commerces de proximité.
 
-## Services
+## Services et tarifs de départ
 
-- **Création de site internet** : Sites rapides et optimisés pour la conversion. One-page, site vitrine ou sur-mesure.
-- **Montage vidéo** : Reels, publicités, contenus de marque pour Instagram, TikTok, YouTube et LinkedIn.
-- **Référencement SEO** : Audit technique, optimisation on-page et stratégie de contenu pour remonter sur Google.
-- **Marketing digital** : Campagnes Google Ads, réseaux sociaux et email marketing orientés résultats.
+- **Site vitrine** — à partir de 690 €, livré en 10 jours. Trois à cinq pages, mobile d'abord, formulaire de contact, fiche Google configurée, domaine et hébergement offerts la première année.
+- **Site animé sur-mesure** — à partir de 1 490 €, 3 à 4 semaines. Animation au scroll, direction artistique dédiée, images produites.
+- **Montage vidéo** — à partir de 90 € la vidéo. Reels, TikTok, YouTube. Sous-titres, sound design, étalonnage, deux retours compris.
+- **SEO local** — 290 € par mois, sans engagement. Fiche Google, un contenu par mois, suivi des positions.
+- **Maintenance** — 39 € par mois, optionnel. Hébergement, sauvegardes, modifications de contenu sous 48 h.
+
+## Pages
+
+- Accueil : https://optimusstudio.fr/
+- Réalisations : https://optimusstudio.fr/realisations/
+- Tarifs et devis : https://optimusstudio.fr/devis/
+- Mentions légales : https://optimusstudio.fr/mentions-legales/
+
+## Réalisations
+
+- 17 sites de démonstration, un par métier : chauffagiste, serrurier, électricien, plombier, couvreur, paysagiste, garage, restaurant, pizzeria, institut de beauté, barbier, salle de sport, ostéopathe, nettoyage, avocate, auto-école, agence immobilière. Effets au scroll, simulateurs de prix, prise de rendez-vous, données structurées.
+- 23 vidéos montées : 13 formats longs YouTube (documentaires sport, histoire, culture) et 10 formats courts TikTok pour des restaurants et des créateurs food parisiens.
+- 5,7 millions de vues cumulées sur ces vidéos.
+- Toutes les réalisations : https://optimusstudio.fr/realisations/
 
 ## Contact
 
-- Email : contact@optimusstudio.fr
-- Localisation : Paris, France
-- Site : https://optimusstudio.fr
+- Devis gratuit, réponse sous 24 h : https://optimusstudio.fr/devis/
+- Localisation : Paris, France. Projets réalisés à distance partout en France.

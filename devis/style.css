@@ -1,0 +1,227 @@
+/* =========================================================
+   Tarifs et devis — Optimus Studio
+   Charge d'abord /css/pages.css (socle commun).
+   Page de conversion : aucune animation pilotée au scroll,
+   rien qui puisse retarder la lecture d'un prix.
+   ========================================================= */
+
+/* ─── Grille de tarifs ───
+   L'offre principale occupe deux colonnes sur grand écran : un prix
+   d'appel se regarde avant les autres, pas en même temps qu'eux. */
+.offres {
+  padding: clamp(2rem, 5vh, 3.5rem) var(--gut) clamp(3rem, 8vh, 5rem);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+}
+
+/* Le filet entre les cartes est un outline, pas un fond de grille :
+   un fond derrière un conteneur qui a du padding déborde en aplat gris. */
+.offre {
+  background: var(--bg);
+  outline: 1px solid var(--line);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  display: flex; flex-direction: column;
+}
+.offre--lead {
+  grid-column: span 2;
+  background: var(--panel);
+}
+
+.offre__cat {
+  font-family: var(--font-mono); font-size: .65rem;
+  letter-spacing: .22em; text-transform: uppercase;
+  color: var(--dim); margin-bottom: 1.1rem;
+}
+.offre--lead .offre__cat { color: var(--accent); }
+
+.offre h2 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  line-height: 1.05; letter-spacing: -.02em;
+  margin-bottom: .9rem;
+}
+
+.offre__prix {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1; letter-spacing: -.03em;
+  color: var(--ink);
+}
+.offre__prix span { font-size: .45em; color: var(--mute); margin-left: .1em; }
+
+.offre__unite {
+  font-family: var(--font-mono); font-size: .68rem;
+  letter-spacing: .1em; color: var(--dim);
+  margin-top: .55rem; margin-bottom: 1.6rem;
+}
+
+.offre__liste { list-style: none; margin-bottom: 2rem; }
+.offre__liste li {
+  position: relative;
+  padding-left: 1.4rem;
+  font-size: .92rem; line-height: 1.6;
+  color: var(--mute);
+  margin-bottom: .65rem;
+}
+.offre__liste li::before {
+  content: ""; position: absolute;
+  left: 0; top: .62em;
+  width: 7px; height: 1px;
+  background: var(--accent);
+}
+
+.offre__cta {
+  margin-top: auto; align-self: flex-start;
+  font-family: var(--font-mono); font-size: .7rem;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--ink); text-decoration: none;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--accent);
+  transition: color .2s var(--ease);
+}
+.offre__cta:hover { color: var(--accent); }
+
+/* ─── Toujours compris ─── */
+.compris {
+  padding: clamp(3rem, 8vh, 6rem) var(--gut);
+  border-top: 1px solid var(--line);
+}
+.compris h2,
+.devis h2,
+.faq h2 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(1.9rem, 4.4vw, 3.4rem);
+  line-height: 1; letter-spacing: -.02em;
+  margin-bottom: 2.2rem;
+}
+.compris__liste {
+  list-style: none;
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem clamp(2rem, 5vw, 4rem);
+  max-width: 62rem;
+}
+.compris__liste li {
+  font-size: .95rem; line-height: 1.7; color: var(--mute);
+  padding-top: 1.1rem; border-top: 1px solid var(--line);
+}
+.compris__liste strong { color: var(--ink); font-weight: 600; }
+
+/* ─── Devis ─── */
+.devis {
+  padding: clamp(3rem, 8vh, 6rem) var(--gut);
+  border-top: 1px solid var(--line);
+  background: var(--panel);
+  display: grid; grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  align-items: start;
+}
+.devis__lede { color: var(--mute); max-width: 38ch; font-size: .98rem; }
+.devis__direct {
+  margin-top: 2.2rem; padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono); font-size: .7rem;
+  letter-spacing: .14em; color: var(--dim); line-height: 2.4;
+}
+.devis__tel {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: 1.5rem; letter-spacing: .02em;
+  color: var(--accent); text-decoration: none;
+}
+
+/* ─── Formulaire ─── */
+.form {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1.25rem clamp(1rem, 2vw, 1.75rem);
+}
+.field { display: flex; flex-direction: column; }
+.field--full { grid-column: 1 / -1; }
+
+.field label {
+  font-family: var(--font-mono); font-size: .65rem;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--dim); margin-bottom: .55rem;
+}
+.field .opt { text-transform: none; letter-spacing: .06em; }
+
+.field input,
+.field select,
+.field textarea {
+  font-family: var(--font-body); font-size: .98rem;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  padding: .85rem 1rem;
+  transition: border-color .2s var(--ease);
+}
+.field textarea { resize: vertical; min-height: 7rem; }
+.field input::placeholder,
+.field textarea::placeholder { color: var(--dim); }
+.field input:focus,
+.field select:focus,
+.field textarea:focus { border-color: var(--accent); outline: none; }
+.field [aria-invalid="true"] { border-color: #FF5C5C; }
+
+.err { font-size: .82rem; color: #FF8C8C; margin-top: .45rem; }
+
+.btn {
+  font-family: var(--font-mono); font-size: .75rem;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--bg); background: var(--accent);
+  border: 0; border-radius: 0;
+  padding: 1.05rem 2.2rem;
+  cursor: pointer;
+  justify-self: start;
+  transition: opacity .2s var(--ease);
+}
+.btn:hover { opacity: .88; }
+.btn[disabled] { opacity: .5; cursor: default; }
+
+.form__status { margin-top: 1rem; font-size: .92rem; color: var(--cool); }
+.form__legal { margin-top: 1rem; font-size: .8rem; line-height: 1.6; color: var(--dim); max-width: 46ch; }
+
+/* ─── FAQ ─── */
+.faq {
+  padding: clamp(3rem, 8vh, 6rem) var(--gut) clamp(4rem, 10vh, 7rem);
+  border-top: 1px solid var(--line);
+}
+.faq__liste { max-width: 62rem; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  list-style: none; cursor: pointer;
+  padding: 1.25rem 2.5rem 1.25rem 0;
+  position: relative;
+  font-size: 1.02rem; font-weight: 600;
+  transition: color .2s var(--ease);
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary:hover { color: var(--accent); }
+.faq summary::after {
+  content: "+"; position: absolute; right: .4rem; top: 1.05rem;
+  font-family: var(--font-mono); color: var(--accent); font-size: 1.15rem;
+}
+.faq details[open] summary::after { content: "–"; }
+.faq details p {
+  padding: 0 3rem 1.5rem 0;
+  color: var(--mute); font-size: .95rem; line-height: 1.75;
+  max-width: 62ch;
+}
+
+/* ─── Tablette ─── */
+@media (max-width: 1024px) {
+  .offres { grid-template-columns: repeat(2, 1fr); }
+  .offre--lead { grid-column: span 2; }
+  .devis { grid-template-columns: 1fr; }
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 767px) {
+  .offres { grid-template-columns: 1fr; }
+  .offre--lead { grid-column: span 1; }
+  .compris__liste { grid-template-columns: 1fr; }
+  .form { grid-template-columns: 1fr; }
+  .field--full { grid-column: 1; }
+  .btn { width: 100%; text-align: center; }
+}
+

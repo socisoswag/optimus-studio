@@ -1,0 +1,502 @@
+/* =========================================================
+   Brace - démo Optimus Studio
+   Pizzeria napolitaine. Charbon, rouge tomate, vert basilic,
+   crème de mozzarella. Fraunces (sérif charnue, un peu joueuse)
+   pour les titres, Work Sans pour le texte courant.
+   Interaction signature : trois « mondes », un par pizza. En
+   scrollant, le fond change de couleur, le nom géant passe en
+   filigrane et la pizza tourne sur elle-même.
+   ========================================================= */
+
+:root {
+  --bg:     #120D0B;
+  --bg-2:   #1B1411;
+  --ink:    #F6EDDD;
+  --mute:   #BFAF99;
+  --dim:    #85766A;
+  --tomate: #E2462C;
+  --basilic:#6E9A4E;
+  --creme:  #F1DFBF;
+  --line:   rgba(246, 237, 221, .12);
+
+  --serif: 'Fraunces', Georgia, serif;
+  --sans:  'Work Sans', system-ui, sans-serif;
+
+  --gut: clamp(1.25rem, 5vw, 5rem);
+  --ease: cubic-bezier(.16, 1, .3, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { color-scheme: dark; scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+[hidden] { display: none !important; }
+*:focus-visible { outline: 2px solid var(--tomate); outline-offset: 3px; }
+
+.skip {
+  position: absolute; top: -100%; left: 1rem; z-index: 100;
+  padding: .6rem 1rem; background: var(--tomate); color: #fff;
+  font-size: .8rem; text-decoration: none;
+}
+.skip:focus { top: 1rem; }
+
+.label {
+  font-size: .78rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--tomate); margin-bottom: 1rem;
+}
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 700; letter-spacing: -.02em; line-height: 1; }
+h2 { font-size: clamp(2.3rem, 5vw, 4.2rem); }
+h1 em, h2 em { font-style: italic; font-weight: 500; color: var(--creme); }
+
+/* ─── Boutons : une pastille ronde qui se remplit au survol ─── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .8rem;
+  font-family: var(--sans); font-size: .98rem; font-weight: 600;
+  color: #fff; background: var(--tomate);
+  border: 1px solid var(--tomate); border-radius: 999px;
+  padding: .55rem .6rem .55rem 1.4rem; min-height: 3rem;
+  text-decoration: none; cursor: pointer;
+  transition: background .25s, transform .25s var(--ease);
+}
+.btn:hover { background: #F05A3F; transform: translateY(-1px); }
+.btn__ico {
+  display: grid; place-items: center;
+  width: 2rem; height: 2rem; border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .45);
+  font-weight: 600; line-height: 1;
+  transition: background .25s, color .25s, border-color .25s;
+}
+.btn:hover .btn__ico { background: #fff; color: var(--tomate); border-color: #fff; }
+.btn--ghost { background: rgba(18, 13, 11, .45); border-color: rgba(246, 237, 221, .35); padding: .55rem 1.4rem; }
+.btn--ghost:hover { background: rgba(18, 13, 11, .75); }
+.btn--small { font-size: .92rem; min-height: 2.7rem; }
+.btn--block { width: 100%; }
+.btn[disabled] { opacity: .5; cursor: default; }
+.btn.is-ajoute { background: var(--basilic); border-color: var(--basilic); }
+
+/* ─── En-tête ─── */
+.top {
+  position: fixed; inset: 0 0 auto; z-index: 30;
+  display: flex; align-items: center; gap: 2.2rem;
+  padding: 1rem var(--gut);
+  background: linear-gradient(to bottom, rgba(18,13,11,.85), rgba(18,13,11,0));
+  transition: background .3s;
+}
+.top.is-stuck { background: rgba(18, 13, 11, .94); box-shadow: 0 1px 0 var(--line); }
+.top__brand {
+  margin-right: auto; text-decoration: none;
+  font-family: var(--serif); font-weight: 900; font-size: 1.55rem; letter-spacing: -.03em;
+}
+.top__brand span { margin-left: .7rem; font-family: var(--sans); font-weight: 500; font-size: .78rem; letter-spacing: .04em; color: var(--mute); }
+.top__nav { display: flex; gap: 1.8rem; }
+.top__nav a { font-size: .95rem; font-weight: 500; text-decoration: none; opacity: .82; transition: opacity .2s; }
+.top__nav a:hover { opacity: 1; }
+.top__tel {
+  font-weight: 600; font-size: .95rem; text-decoration: none; white-space: nowrap;
+  padding: .5rem .95rem; border-radius: 999px;
+  background: rgba(18, 13, 11, .55); border: 1px solid rgba(246, 237, 221, .3);
+}
+
+/* ─── Hero ─── */
+.hero {
+  position: relative;
+  min-height: 100vh; min-height: 100svh;
+  display: flex; align-items: flex-end;
+  padding: 7rem var(--gut) clamp(3rem, 9vh, 6rem);
+  overflow: hidden;
+}
+.hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background:
+    linear-gradient(to top, rgba(18,13,11,.95) 5%, rgba(18,13,11,.55) 35%, rgba(18,13,11,0) 60%),
+    linear-gradient(to right, rgba(18,13,11,.7), rgba(18,13,11,0) 55%);
+}
+.hero__braises { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; pointer-events: none; }
+.hero__in { position: relative; z-index: 3; max-width: 44rem; }
+.hero h1 { font-size: clamp(2.7rem, 6vw, 5.4rem); font-weight: 900; }
+.lede { margin-top: 1.4rem; max-width: 33rem; color: #E6D9C5; }
+.hero__cta { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+
+.statut {
+  display: inline-flex; align-items: center; gap: .6rem;
+  margin-bottom: 1.4rem; padding: .4rem .9rem .4rem .7rem;
+  font-size: .85rem; font-weight: 500;
+  border-radius: 999px; background: rgba(18, 13, 11, .6);
+  border: 1px solid var(--line);
+}
+.statut__point {
+  position: relative; width: .6rem; height: .6rem; border-radius: 50%;
+  background: #F2994A;
+}
+.statut__point::after {
+  content: ""; position: absolute; inset: 0; border-radius: 50%;
+  background: inherit; animation: pulse 2s ease-out infinite;
+}
+.statut.is-ferme .statut__point { background: var(--dim); }
+.statut.is-ferme .statut__point::after { animation: none; }
+@keyframes pulse { from { transform: scale(1); opacity: .8; } to { transform: scale(2.8); opacity: 0; } }
+
+/* La pizza du moment flotte, en bas à droite du hero. */
+.moment {
+  position: absolute; z-index: 3;
+  right: var(--gut); bottom: clamp(3rem, 9vh, 6rem);
+  width: 17.5rem; padding: 1.3rem 1.4rem;
+  border-radius: 18px;
+  background: rgba(27, 20, 17, .55);
+  border: 1px solid rgba(246, 237, 221, .18);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  animation: flotte 6s ease-in-out infinite;
+}
+.moment__tag { font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--basilic); }
+.moment__nom { font-family: var(--serif); font-weight: 700; font-size: 1.45rem; line-height: 1.1; margin-top: .45rem; }
+.moment__desc { font-size: .9rem; color: var(--mute); margin-top: .45rem; line-height: 1.45; }
+.moment__prix { font-family: var(--serif); font-weight: 700; font-size: 1.3rem; color: var(--creme); margin-top: .7rem; }
+@keyframes flotte { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+/* ─── Les trois mondes ─── */
+.mondes { position: relative; height: 330vh; }
+.mondes__sticky {
+  position: sticky; top: 0;
+  height: 100vh; height: 100svh;
+  overflow: hidden;
+  --x: 30%;
+}
+/* Trois fonds superposés : on fait varier leur opacité, pas la couleur,
+   pour que le passage d'un monde à l'autre reste fluide. */
+.mondes__fond, .mondes__fond::before, .mondes__fond::after {
+  position: absolute; inset: 0;
+  transition: opacity .8s var(--ease);
+}
+.mondes__fond { background: radial-gradient(circle at var(--x) 55%, #9B2616 0%, #45100A 38%, #140908 78%); }
+.mondes__fond::before { content: ""; opacity: 0; background: radial-gradient(circle at var(--x) 55%, #C9A36A 0%, #6A4C22 36%, #1B130A 78%); }
+.mondes__fond::after  { content: ""; opacity: 0; background: radial-gradient(circle at var(--x) 55%, #7A3510 0%, #2A1209 40%, #0B0706 80%); }
+.mondes[data-actif="1"] .mondes__fond::before { opacity: 1; }
+.mondes[data-actif="2"] .mondes__fond::after  { opacity: 1; }
+
+.mondes__compteur {
+  position: absolute; z-index: 4; top: 6rem; right: var(--gut);
+  font-family: var(--serif); font-size: 1rem; color: rgba(246, 237, 221, .6);
+  font-variant-numeric: tabular-nums;
+}
+.mondes__compteur span { color: var(--ink); font-weight: 700; }
+
+.monde {
+  position: absolute; inset: 0; z-index: 2;
+  display: grid; grid-template-columns: 1.1fr .9fr; align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: 5rem var(--gut) 3rem;
+  opacity: 0; visibility: hidden;
+  transition: opacity .6s var(--ease), visibility 0s .6s;
+}
+.monde.is-on { opacity: 1; visibility: visible; transition: opacity .6s var(--ease), visibility 0s; }
+
+.monde__geant {
+  position: absolute; left: 50%; top: 50%; z-index: 0;
+  transform: translate(-50%, -50%) scale(.94);
+  font-family: var(--serif); font-style: italic; font-weight: 900;
+  font-size: clamp(6rem, 19vw, 22rem); line-height: 1; letter-spacing: -.05em;
+  white-space: nowrap; color: #fff; opacity: 0;
+  pointer-events: none; user-select: none;
+  transition: opacity 1.2s var(--ease), transform 1.2s var(--ease);
+}
+.monde.is-on .monde__geant { opacity: .09; transform: translate(-50%, -50%) scale(1); }
+
+.monde__pizza {
+  position: relative; z-index: 1; justify-self: center;
+  width: min(66vh, 42vw); aspect-ratio: 1;
+  transform: translateX(-4rem) scale(.86); opacity: 0;
+  transition: transform 1s var(--ease), opacity .8s var(--ease);
+}
+.monde.is-on .monde__pizza { transform: none; opacity: 1; }
+.monde__pizza img {
+  width: 100%; height: 100%;
+  filter: drop-shadow(0 30px 45px rgba(0, 0, 0, .55));
+  transform: rotate(var(--rot, 0deg));
+  will-change: transform;
+}
+
+.monde__txt {
+  position: relative; z-index: 1; max-width: 29rem;
+  transform: translateX(2.5rem); opacity: 0;
+  transition: transform 1s .15s var(--ease), opacity .8s .15s var(--ease);
+}
+.monde.is-on .monde__txt { transform: none; opacity: 1; }
+.monde__txt .label { color: var(--creme); }
+.monde__txt h2 { font-size: clamp(2.6rem, 5vw, 4.6rem); font-weight: 900; }
+.monde__txt > p:not(.label):not(.monde__prix) { margin-top: 1.1rem; color: rgba(246, 237, 221, .85); }
+.monde__prix { font-family: var(--serif); font-weight: 700; font-size: 2rem; margin: 1.2rem 0 1.4rem; }
+
+/* ─── Chiffres ─── */
+.chiffres {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.chiffres div { padding: 3rem var(--gut); display: grid; gap: .4rem; }
+.chiffres div + div { border-left: 1px solid var(--line); }
+.chiffres strong { font-family: var(--serif); font-weight: 900; font-size: clamp(2.4rem, 4.5vw, 3.8rem); line-height: 1; color: var(--tomate); }
+.chiffres span { color: var(--mute); }
+
+/* ─── Carte visuelle ───
+   Chaque catégorie a sa forme : les pizzas en disque qui tourne au
+   survol, les cocktails en arche, les desserts en assiette. Le prix
+   est une pastille, le nom se lit en grand. */
+.carte { padding: 8rem var(--gut); max-width: 80rem; margin: 0 auto; }
+.carte__head { margin-bottom: 2.4rem; }
+.onglets { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2.4rem; }
+.onglets [role="tab"] {
+  display: inline-flex; align-items: center; gap: .6rem;
+  font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--mute);
+  background: none; border: 1px solid var(--line); border-radius: 999px;
+  padding: .65rem 1.4rem .65rem 1rem; cursor: pointer; transition: all .25s var(--ease);
+}
+.onglet__ico { font-family: var(--sans); font-size: 1rem; opacity: .7; }
+.onglets [role="tab"]:hover { color: var(--ink); border-color: rgba(246, 237, 221, .35); }
+.onglets [aria-selected="true"] { color: #fff; background: var(--tomate); border-color: var(--tomate); }
+
+.plats {
+  list-style: none;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+  gap: 1.2rem;
+}
+.plat {
+  position: relative; display: flex; flex-direction: column;
+  border-radius: 24px; overflow: hidden;
+  background: linear-gradient(to bottom, var(--bg-2), #140E0C);
+  border: 1px solid var(--line);
+  transition: transform .4s var(--ease), border-color .4s, box-shadow .4s;
+  animation: entre .6s var(--ease) backwards;
+  animation-delay: calc(var(--i, 0) * 60ms);
+}
+.plat:hover { transform: translateY(-6px); border-color: rgba(246, 237, 221, .28); box-shadow: 0 24px 50px rgba(0, 0, 0, .45); }
+@keyframes entre { from { opacity: 0; transform: translateY(26px); } }
+
+.plat__visuel {
+  position: relative; aspect-ratio: 1; overflow: hidden;
+  display: grid; place-items: center;
+  background: radial-gradient(circle at 50% 45%, var(--c, #5A2015), transparent 68%);
+}
+.plat__visuel img { width: 86%; height: 86%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.plat--pizze .plat__visuel img { border-radius: 50%; filter: drop-shadow(0 18px 26px rgba(0, 0, 0, .55)); }
+.plat--pizze:hover .plat__visuel img { transform: rotate(40deg) scale(1.04); }
+.plat--cocktails .plat__visuel { aspect-ratio: 4 / 5; }
+.plat--cocktails .plat__visuel img { width: 72%; height: 86%; border-radius: 999px 999px 18px 18px; }
+.plat--cocktails:hover .plat__visuel img { transform: scale(1.05); }
+.plat--dolci .plat__visuel img { border-radius: 50%; }
+.plat--dolci:hover .plat__visuel img { transform: scale(1.06) rotate(-6deg); }
+
+/* Visuel de remplacement tant que la photo n'est pas arrivée :
+   un disque dans la couleur du plat et son initiale en italique. */
+.plat__disque {
+  width: 76%; aspect-ratio: 1; border-radius: 50%;
+  display: grid; place-items: center;
+  background:
+    radial-gradient(circle at 35% 30%, rgba(255, 255, 255, .22), transparent 45%),
+    radial-gradient(circle, var(--c2, #C9A36A), var(--c, #5A2015) 72%);
+  box-shadow: inset 0 0 0 10px rgba(255, 255, 255, .06), 0 18px 30px rgba(0, 0, 0, .45);
+  font-family: var(--serif); font-style: italic; font-weight: 900;
+  font-size: 5.5rem; color: rgba(255, 255, 255, .85);
+  transition: transform 1.2s var(--ease);
+}
+.plat--cocktails .plat__disque { width: 60%; aspect-ratio: 3 / 4.4; border-radius: 999px 999px 18px 18px; }
+.plat:hover .plat__disque { transform: rotate(-8deg) scale(1.04); }
+
+.plat__prix {
+  position: absolute; top: .9rem; right: .9rem; z-index: 2;
+  font-family: var(--serif); font-weight: 700; font-size: 1.15rem;
+  padding: .3rem .8rem; border-radius: 999px;
+  background: rgba(18, 13, 11, .72); border: 1px solid rgba(246, 237, 221, .2);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.plat__tags { position: absolute; top: .9rem; left: .9rem; z-index: 2; display: flex; gap: .3rem; flex-wrap: wrap; }
+.plat__tags span {
+  font-size: .68rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  padding: .25rem .55rem; border-radius: 999px; background: var(--basilic); color: #fff;
+}
+.plat__tags span.is-pique { background: var(--tomate); }
+.plat__tags span.is-sans { background: #3E6E8A; }
+
+.plat__corps { padding: 0 1.3rem 1.3rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
+.plat__nom { font-family: var(--serif); font-weight: 900; font-size: 1.55rem; line-height: 1.05; letter-spacing: -.02em; }
+.plat__desc { color: var(--mute); font-size: .92rem; line-height: 1.45; }
+.plat__ajout {
+  align-self: flex-start; margin-top: auto; transform: translateY(.3rem);
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--sans); font-size: .85rem; font-weight: 600; color: var(--ink);
+  background: none; border: 1px solid var(--line); border-radius: 999px;
+  padding: .4rem .85rem; cursor: pointer; transition: all .2s;
+}
+.plat__ajout:hover { border-color: var(--tomate); color: #fff; background: var(--tomate); }
+.plat__ajout.is-ajoute { background: var(--basilic); border-color: var(--basilic); color: #fff; }
+.carte__note { margin-top: 2rem; font-size: .9rem; color: var(--dim); }
+
+/* ─── Pizzaiolo ─── */
+.pizzaiolo {
+  padding: 8rem var(--gut);
+  background:
+    radial-gradient(ellipse 60% 70% at 85% 50%, rgba(226, 70, 44, .16), transparent 70%),
+    var(--bg-2);
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.pizzaiolo__in { max-width: 44rem; }
+.pizzaiolo__in > p:not(.label):not(.signature) { margin-top: 1.4rem; font-size: 1.15rem; color: #E0D2BE; line-height: 1.7; }
+.signature {
+  margin-top: 2rem; font-family: var(--serif); font-style: italic; font-weight: 500;
+  font-size: 2.2rem; color: var(--mute); transform: rotate(-3deg); transform-origin: left;
+}
+
+/* ─── Réserver ─── */
+.reserver {
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 6vw, 6rem);
+  padding: 8rem var(--gut);
+}
+.emporter h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); margin-bottom: 1.8rem; }
+.panier {
+  border: 1px solid var(--line); border-radius: 16px;
+  padding: 1.3rem 1.4rem; margin-bottom: 1.2rem; background: var(--bg-2);
+}
+.panier__vide { color: var(--mute); font-size: .95rem; }
+.panier__liste { list-style: none; }
+.panier__liste li { display: flex; justify-content: space-between; gap: 1rem; padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.panier__liste button {
+  margin-left: .6rem; background: none; border: none; color: var(--dim);
+  font: inherit; cursor: pointer; text-decoration: underline; font-size: .85rem;
+}
+.panier__total { display: flex; justify-content: space-between; padding-top: .8rem; font-family: var(--serif); font-weight: 700; font-size: 1.3rem; }
+.emporter__note { font-size: .9rem; color: var(--dim); margin-top: .8rem; }
+
+.form {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-content: start;
+  padding: 2rem; border-radius: 20px;
+  background: var(--bg-2); border: 1px solid var(--line);
+}
+.form .label, .form__titre, .form .btn, .form__status { grid-column: 1 / -1; }
+.form .label { margin-bottom: -.4rem; }
+.form__titre { font-size: 2rem; margin-bottom: .4rem; }
+
+/* Étiquettes flottantes : dans le champ au repos, elles remontent
+   et prennent la couleur de la maison quand on écrit. */
+.field { position: relative; grid-column: 1 / -1; }
+.field--demi { grid-column: span 1; }
+.field input, .field select {
+  width: 100%; font-family: var(--sans); font-size: 1rem; color: var(--ink);
+  background: var(--bg); border: 1px solid var(--line); border-radius: 10px;
+  padding: 1.45rem 1rem .55rem; transition: border-color .2s;
+  -webkit-appearance: none; appearance: none;
+}
+.field select { background-image: linear-gradient(45deg, transparent 50%, var(--mute) 50%), linear-gradient(135deg, var(--mute) 50%, transparent 50%); background-position: calc(100% - 1.2rem) 55%, calc(100% - .85rem) 55%; background-size: .35rem .35rem; background-repeat: no-repeat; }
+.field label {
+  position: absolute; left: 1rem; top: 1.05rem;
+  font-size: 1rem; color: var(--mute); pointer-events: none;
+  transform-origin: left top;
+  transition: transform .25s var(--ease), color .25s;
+}
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label,
+.field select + label,
+.field input[type="date"] + label { transform: translateY(-.62rem) scale(.74); color: var(--tomate); }
+.field input:focus, .field select:focus { border-color: var(--tomate); outline: none; }
+.field [aria-invalid="true"] { border-color: #F07F6A; }
+.err { font-size: .84rem; color: #F5A392; margin-top: .4rem; }
+.form__status { font-weight: 500; color: var(--creme); }
+
+/* ─── Pied de page ─── */
+.foot {
+  padding: 3rem var(--gut);
+  border-top: 1px solid var(--line);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 3rem;
+  font-size: .9rem; color: var(--dim);
+}
+.foot__brand { font-family: var(--serif); font-weight: 900; font-size: 1.5rem; color: var(--ink); }
+.horaires div { display: flex; justify-content: space-between; gap: 1rem; padding: .3rem 0; border-bottom: 1px solid var(--line); }
+.horaires dt { color: var(--mute); }
+.horaires dd { color: var(--ink); text-align: right; }
+.foot__demo { grid-column: 1 / -1; }
+.foot__demo a { color: var(--mute); }
+
+/* ─── Révélations ─── */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.reveal.is-in { opacity: 1; transform: none; }
+
+/* ─── Tablette ─── */
+@media (max-width: 1024px) {
+  .moment { display: none; }
+  .reserver { grid-template-columns: 1fr; }
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 767px) {
+  .top { gap: 1rem; }
+  .top__nav, .top__brand span { display: none; }
+  .top__tel { font-size: .82rem; padding: .45rem .8rem; }
+
+  .hero__img { object-position: 42% 50%; }
+  .hero::before { background: linear-gradient(to top, rgba(18,13,11,.96) 30%, rgba(18,13,11,.45) 62%, rgba(18,13,11,0)); }
+
+  .mondes { height: 300vh; }
+  .mondes__sticky { --x: 50%; }
+  .mondes__fond { background: radial-gradient(circle at 50% 30%, #9B2616 0%, #45100A 38%, #140908 78%); }
+  .mondes__fond::before { background: radial-gradient(circle at 50% 30%, #C9A36A 0%, #6A4C22 36%, #1B130A 78%); }
+  .mondes__fond::after  { background: radial-gradient(circle at 50% 30%, #7A3510 0%, #2A1209 40%, #0B0706 80%); }
+  .mondes__compteur { top: 4.8rem; }
+  .monde {
+    grid-template-columns: 1fr; grid-template-rows: auto auto; align-content: center;
+    gap: 1.2rem; padding: 5rem var(--gut) 2rem;
+  }
+  .monde__geant { top: 30%; font-size: 30vw; }
+  .monde__pizza { width: min(72vw, 40vh); transform: translateY(-2rem) scale(.86); }
+  .monde__txt { transform: translateY(1.5rem); }
+  .monde__txt h2 { font-size: 2.4rem; }
+  .monde__txt > p:not(.label):not(.monde__prix) { margin-top: .6rem; font-size: .95rem; }
+  .monde__prix { font-size: 1.6rem; margin: .7rem 0 1rem; }
+
+  .chiffres { grid-template-columns: 1fr; }
+  .chiffres div { padding: 1.8rem var(--gut); }
+  .chiffres div + div { border-left: none; border-top: 1px solid var(--line); }
+
+  .carte, .pizzaiolo, .reserver { padding-block: 5rem; }
+  .plats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+  .plat { border-radius: 18px; }
+  .plat__corps { padding: 0 .85rem .9rem; }
+  .plat__nom { font-size: 1.15rem; }
+  .plat__desc { font-size: .82rem; }
+  .plat__prix { font-size: .95rem; top: .55rem; right: .55rem; padding: .2rem .6rem; }
+  .plat__tags { display: none; }
+  .plat__disque { font-size: 3.4rem; }
+  .onglets [role="tab"] { font-size: 1.05rem; padding: .55rem 1.1rem .55rem .85rem; }
+
+  .form { grid-template-columns: 1fr; padding: 1.4rem; }
+  .field--demi { grid-column: 1 / -1; }
+  .foot { grid-template-columns: 1fr; }
+}
+
+/* ─── Mouvement réduit : les trois mondes deviennent trois blocs ─── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .moment, .statut__point::after, .plat { animation: none; }
+  .plat, .plat__visuel img, .plat__disque { transition: none; }
+  .mondes { height: auto; }
+  .mondes__sticky { position: relative; height: auto; }
+  .mondes__fond, .mondes__compteur { display: none; }
+  .monde, .monde.is-on { position: relative; opacity: 1; visibility: visible; min-height: 90vh; transition: none; }
+  .monde[data-couleur="rouge"]  { background: radial-gradient(circle at 30% 55%, #9B2616, #140908 78%); }
+  .monde[data-couleur="creme"]  { background: radial-gradient(circle at 30% 55%, #C9A36A, #1B130A 78%); }
+  .monde[data-couleur="braise"] { background: radial-gradient(circle at 30% 55%, #7A3510, #0B0706 80%); }
+  .monde__geant, .monde.is-on .monde__geant { opacity: .09; transform: translate(-50%, -50%); transition: none; }
+  .monde__pizza, .monde__txt { opacity: 1; transform: none; transition: none; }
+}

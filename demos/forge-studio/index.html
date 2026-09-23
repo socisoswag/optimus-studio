@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Forge Studio · Salle de sport et coaching à Marseille 6e</title>
+<meta name="description" content="Salle de sport et coaching à Marseille, cours Julien. Cours de force, conditionnement et mobilité en petits groupes, coaching privé. Séance d'essai offerte.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Forge Studio · Salle de sport et coaching à Marseille">
+<meta property="og:description" content="Force, conditionnement, mobilité. Douze personnes maximum par cours, séance d'essai offerte.">
+<meta property="og:image" content="img/rope.webp">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/rope.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "Forge Studio",
+  "telephone": "+33 4 91 48 26 73",
+  "image": "img/rope.webp",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "18 cours Julien",
+    "addressLocality": "Marseille",
+    "postalCode": "13006",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <a class="top__brand" href="#haut">Forge<span>studio</span></a>
+  <nav class="top__nav" aria-label="Navigation principale">
+    <a href="#planning">Planning</a>
+    <a href="#coaching">Coaching</a>
+    <a href="#tarifs">Tarifs</a>
+  </nav>
+  <a class="top__cta" href="#essai">Séance d'essai</a>
+</header>
+
+<main id="contenu">
+
+  <!-- ─── Hero : l'athlète à gauche, le titre en bas à droite ─── -->
+  <section class="hero" id="haut">
+    <img class="hero__img" src="img/rope.webp" alt="Un athlète fait onduler des cordes lourdes, éclairé en rouge sur fond noir" width="1920" height="1048" fetchpriority="high">
+    <div class="hero__in">
+      <p class="label">Salle de sport et coaching · Marseille 6e</p>
+      <h1>Plus fort<br>chaque<br><span>semaine.</span></h1>
+      <p class="lede">Force, conditionnement, mobilité. Douze personnes maximum par cours, un coach qui connaît vos charges.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#essai">Séance d'essai offerte</a>
+        <a class="btn btn--ghost" href="#planning">Voir le planning</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="defile" aria-hidden="true">
+    <div class="defile__piste">
+      <span>Force</span><span>Conditionnement</span><span>Mobilité</span><span>Coaching privé</span>
+      <span>Force</span><span>Conditionnement</span><span>Mobilité</span><span>Coaching privé</span>
+    </div>
+  </div>
+
+  <!-- ─── La méthode ─── -->
+  <section class="methode" aria-labelledby="methode-titre">
+    <figure class="methode__media">
+      <img src="img/magnesie.webp" alt="Des mains couvertes de magnésie saisissent une barre, un nuage de poudre dans le faisceau de lumière" width="1920" height="1048" loading="lazy">
+    </figure>
+    <div class="methode__copy">
+      <p class="label">La méthode</p>
+      <h2 id="methode-titre">On note tout.<br>Même les kilos.</h2>
+      <ol class="principes">
+        <li><span>01</span><div><h3>Mesurer</h3><p>Bilan de départ : charges, cardio, mobilité. On sait d'où vous partez.</p></div></li>
+        <li><span>02</span><div><h3>Progresser</h3><p>Des cycles de douze semaines, les charges notées séance après séance.</p></div></li>
+        <li><span>03</span><div><h3>Récupérer</h3><p>De la mobilité chaque semaine : c'est ce qui fait durer tout le reste.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ─── Planning : l'interaction signature ─── -->
+  <section class="planning" id="planning" aria-labelledby="planning-titre">
+    <div class="planning__head">
+      <div>
+        <p class="label">Planning de la semaine</p>
+        <h2 id="planning-titre">Vingt-trois cours.<br><span>Choisissez le vôtre.</span></h2>
+      </div>
+      <div class="filtres" role="group" aria-label="Filtrer par discipline">
+        <button class="filtre is-on" type="button" data-type="tous" aria-pressed="true">Tous</button>
+        <button class="filtre filtre--force" type="button" data-type="force" aria-pressed="false">Force</button>
+        <button class="filtre filtre--cond" type="button" data-type="cond" aria-pressed="false">Conditionnement</button>
+        <button class="filtre filtre--mob" type="button" data-type="mob" aria-pressed="false">Mobilité</button>
+      </div>
+    </div>
+
+    <div class="jours-tabs" role="tablist" aria-label="Jour affiché"></div>
+
+    <div class="planning__corps">
+      <div class="grille" id="grille"></div>
+
+      <aside class="detail" id="detail" aria-live="polite">
+        <p class="detail__vide">Choisissez un cours pour voir le détail.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ─── Coaching privé ─── -->
+  <section class="prive" id="coaching" aria-labelledby="prive-titre">
+    <img src="img/coaching.webp" alt="Une coach pare un client pendant un squat à la barre, dans un rack" width="1920" height="1048" loading="lazy">
+    <div class="prive__in reveal">
+      <p class="label">Coaching privé</p>
+      <h2 id="prive-titre">Une heure.<br>Un coach.<br>Personne d'autre.</h2>
+      <p>Pour reprendre après une blessure, préparer un concours ou apprendre les mouvements sans public. Programme écrit, charges suivies, bilan toutes les quatre semaines.</p>
+      <p class="prive__prix">dès 55 € la séance</p>
+    </div>
+  </section>
+
+  <!-- ─── Tarifs ─── -->
+  <section class="tarifs" id="tarifs" aria-labelledby="tarifs-titre">
+    <div class="tarifs__head">
+      <div>
+        <p class="label">Tarifs</p>
+        <h2 id="tarifs-titre">Pas de frais<br>d'inscription.</h2>
+      </div>
+      <div class="bascule" role="group" aria-label="Durée d'engagement">
+        <button type="button" class="is-on" data-eng="libre" aria-pressed="true">Sans engagement</button>
+        <button type="button" data-eng="annuel" aria-pressed="false">12 mois <span>−20 %</span></button>
+      </div>
+    </div>
+
+    <div class="formules">
+      <article class="formule">
+        <h3>Carnet</h3>
+        <p class="formule__prix"><span data-libre="150" data-annuel="150">150</span> €</p>
+        <p class="formule__unite">10 cours, valables 3 mois</p>
+        <ul>
+          <li>Tous les cours du planning</li>
+          <li>Bilan de départ offert</li>
+          <li>Idéal pour tester</li>
+        </ul>
+      </article>
+      <article class="formule formule--star">
+        <p class="formule__tag">Le plus choisi</p>
+        <h3>Illimité</h3>
+        <p class="formule__prix"><span data-libre="69" data-annuel="55">69</span> €</p>
+        <p class="formule__unite">par mois</p>
+        <ul>
+          <li>Tous les cours, sans limite</li>
+          <li>Accès libre à la salle de 6 h à 22 h</li>
+          <li>Bilan toutes les douze semaines</li>
+        </ul>
+      </article>
+      <article class="formule">
+        <h3>Coaching</h3>
+        <p class="formule__prix"><span data-libre="220" data-annuel="176">220</span> €</p>
+        <p class="formule__unite">par mois, 4 séances privées</p>
+        <ul>
+          <li>Programme écrit pour vous</li>
+          <li>Illimité inclus</li>
+          <li>Suivi nutrition simple</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ─── La salle ─── -->
+  <section class="salle" aria-label="La salle">
+    <img src="img/salle.webp" alt="La salle vide le soir : racks noirs alignés, sol en caoutchouc, un néon rouge le long du mur" width="1920" height="1072" loading="lazy">
+    <dl class="salle__chiffres">
+      <div><dt>Surface</dt><dd>400 m²</dd></div>
+      <div><dt>Racks</dt><dd>6</dd></div>
+      <div><dt>Ouvert</dt><dd>6 h – 22 h</dd></div>
+      <div><dt>Par cours</dt><dd>12 max.</dd></div>
+    </dl>
+  </section>
+
+  <!-- ─── Séance d'essai ─── -->
+  <section class="essai" id="essai" aria-labelledby="essai-titre">
+    <div class="essai__copy">
+      <p class="label">Séance d'essai</p>
+      <h2 id="essai-titre">La première<br><span>est offerte.</span></h2>
+      <p>Venez vingt minutes avant : on fait le bilan, on vous montre les mouvements, puis vous faites le cours avec le groupe.</p>
+      <a class="essai__tel" href="tel:+33491482673">04 91 48 26 73</a>
+    </div>
+
+    <form class="form" id="form-essai" novalidate>
+      <div class="field">
+        <label for="prenom">Prénom</label>
+        <input id="prenom" name="prenom" type="text" autocomplete="given-name" required>
+        <p class="err" data-err-for="prenom" hidden>Merci d'indiquer votre prénom.</p>
+      </div>
+      <div class="field">
+        <label for="tel">Téléphone</label>
+        <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+        <p class="err" data-err-for="tel" hidden>Un numéro à dix chiffres est nécessaire pour confirmer.</p>
+      </div>
+      <div class="field">
+        <label for="objectif">Objectif</label>
+        <select id="objectif" name="objectif">
+          <option>Me remettre en forme</option>
+          <option>Prendre de la force</option>
+          <option>Perdre du poids</option>
+          <option>Préparation physique</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="creneau">Cours souhaité</label>
+        <select id="creneau" name="creneau"></select>
+      </div>
+      <div class="field field--full">
+        <button class="btn btn--block" type="submit" id="submit">Réserver ma séance d'essai</button>
+        <p class="form__status" id="status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__brand">Forge<span>studio</span></p>
+  <p>18 cours Julien, 13006 Marseille · 04 91 48 26 73</p>
+  <p class="foot__demo">
+    Site de démonstration. Établissement fictif, contenus illustratifs.
+    Réalisation <a href="https://optimusstudio.fr">Optimus Studio</a>.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

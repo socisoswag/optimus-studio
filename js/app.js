@@ -323,6 +323,17 @@ function animateHeroEntrance() {
     .to('.scroll-indicator', { opacity: 1, duration: 0.6 }, '-=0.2');
 }
 
+/* ─── HUD — effacé au-dessus du pied de page ───
+   Observé sur le footer lui-même, jamais avec un écouteur scroll. */
+function initHudFooter() {
+  const footer = document.querySelector('.site-footer');
+  if (!footer || !('IntersectionObserver' in window)) return;
+
+  new IntersectionObserver(entries => {
+    hud.classList.toggle('over-footer', entries[0].isIntersecting);
+  }).observe(footer);
+}
+
 /* ─── SCROLL ANIMATIONS — initialised after all frames loaded ─── */
 function initScrollAnimations() {
   gsap.registerPlugin(ScrollTrigger);
@@ -332,14 +343,33 @@ function initScrollAnimations() {
   initDarkOverlay(0.61, 0.80);
   initMarquee();
   initHudLens();
+  initHudFooter();
   startTimecode();
 
   document.querySelectorAll('.scroll-section').forEach(setupSectionAnimation);
 }
 
+/* ─── MODE DÉGRADÉ ───
+   GSAP et Lenis viennent d'un CDN. S'ils manquent, tout le pilotage du
+   scroll tombe : le loader reste figé à son pourcentage et le visiteur
+   ne voit qu'un écran noir. On bascule alors sur une mise en page
+   statique, lisible, sans canvas. */
+function degrader() {
+  document.documentElement.classList.add('degraded');
+  if (loader) loader.style.display = 'none';
+}
+
+function librairiesPretes() {
+  return typeof gsap !== 'undefined' &&
+         typeof ScrollTrigger !== 'undefined' &&
+         typeof Lenis !== 'undefined';
+}
+
 /* ─── BOOT ─── */
 window.addEventListener('DOMContentLoaded', () => {
   if (reducedMotion) return;
+
+  if (!librairiesPretes()) { degrader(); return; }
 
   gsap.registerPlugin(ScrollTrigger);
 
