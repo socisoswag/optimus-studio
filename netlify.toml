@@ -12,3 +12,21 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Content-Security-Policy = "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src 'self' https://www.youtube-nocookie.com https://www.tiktok.com; frame-ancestors 'self'"
+
+# Les démos sont des entreprises fictives : visibles pour les prospects,
+# jamais indexées (la balise meta dit la même chose, ceci couvre aussi
+# les images et les planches).
+[[headers]]
+  for = "/demos/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, follow"
+
+# Images et vidéos : une semaine en cache, rechargées en tâche de fond.
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"

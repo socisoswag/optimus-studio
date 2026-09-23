@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0C0D">
 
   <!-- ── CANONICAL ── -->
   <link rel="canonical" href="https://optimusstudio.fr/">
@@ -51,39 +52,44 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": "https://optimusstudio.fr/#site",
       "name": "Optimus Studio",
+      "inLanguage": "fr-FR",
+      "publisher": { "@id": "https://optimusstudio.fr/#studio" },
       "url": "https://optimusstudio.fr/"
     },
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
+      "@id": "https://optimusstudio.fr/#studio",
       "name": "Optimus Studio",
-      "description": "Studio créatif à Paris spécialisé en création de sites web, montage vidéo, référencement SEO et marketing digital.",
+      "description": "Studio créatif à Paris spécialisé en création de sites web, montage vidéo, référencement SEO et marketing digital pour les TPE, artisans et commerces de proximité.",
       "url": "https://optimusstudio.fr/",
       "logo": "https://optimusstudio.fr/og-image.webp",
       "image": "https://optimusstudio.fr/og-image.webp",
-      "telephone": "",
       "email": "contact@optimusstudio.fr",
+      "priceRange": "€€",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Paris",
+        "addressRegion": "Île-de-France",
         "addressCountry": "FR"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Paris"
-      },
+      "areaServed": [
+        { "@type": "City", "name": "Paris" },
+        { "@type": "Country", "name": "France" }
+      ],
+      "knowsAbout": ["Création de site internet", "Montage vidéo", "Référencement naturel", "SEO local", "Marketing digital", "Reels et TikTok"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Services créatifs",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Création de site internet" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Montage vidéo" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Référencement SEO" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing digital" } }
+          { "@type": "Offer", "price": "690", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Site vitrine", "description": "Trois à cinq pages, mobile d'abord, livré en 10 jours." } },
+          { "@type": "Offer", "price": "1490", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Site animé sur-mesure", "description": "Animation au scroll et direction artistique dédiée." } },
+          { "@type": "Offer", "price": "90", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Montage vidéo", "description": "Reels, TikTok et YouTube, sous-titres et étalonnage." } },
+          { "@type": "Offer", "price": "290", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "SEO local", "description": "Fiche Google, contenus et suivi des positions, par mois." } }
         ]
-      },
-      "sameAs": []
+      }
     }
   ]
   </script>

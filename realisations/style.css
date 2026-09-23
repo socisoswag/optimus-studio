@@ -99,6 +99,27 @@ a { color: inherit; }
   line-height: 1.75; color: var(--mute); max-width: 52ch;
 }
 
+/* ─── Les chiffres ─── */
+.chiffres {
+  display: flex; flex-wrap: wrap; gap: 1rem clamp(2rem, 5vw, 4.5rem);
+  margin-top: clamp(2rem, 5vh, 3rem); padding-top: 1.6rem;
+  border-top: 1px solid var(--line); max-width: 62rem;
+}
+.chiffres dt {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1; letter-spacing: -.02em;
+}
+.chiffres div:last-child dt { color: var(--accent); }
+@media (max-width: 560px) {
+  .chiffres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .chiffres dt { font-size: 1.7rem; }
+  .chiffres dd { font-size: .56rem; letter-spacing: .1em; }
+}
+.chiffres dd {
+  margin-top: .5rem; font-family: var(--font-mono); font-size: .66rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--dim); max-width: 22ch; line-height: 1.6;
+}
+
 /* ─── Rubriques ─── */
 .tabs {
   display: flex; gap: .5rem; flex-wrap: wrap;
@@ -199,6 +220,46 @@ a { color: inherit; }
   letter-spacing: .1em; color: var(--dim);
   border: 1px solid var(--line); padding: .25rem .55rem;
 }
+
+/* La carte « le prochain, c'est le vôtre » */
+.card--cta { text-decoration: none; background: var(--panel); overflow: hidden; }
+.card--cta::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(120% 80% at 100% 0%, rgba(255, 138, 61, .22), transparent 60%);
+  transition: opacity .4s var(--ease); opacity: .7;
+}
+.card--cta:hover::before { opacity: 1; }
+.card__cta {
+  position: relative; display: flex; flex-direction: column; justify-content: flex-end;
+  gap: .9rem; height: 100%; min-height: 22rem; padding: 2rem 1.8rem;
+}
+.card__cta-titre {
+  display: block; font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(1.9rem, 2.8vw, 2.6rem); line-height: 1; letter-spacing: -.02em;
+}
+.card__cta-bouton {
+  align-self: flex-start; margin-top: .6rem;
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--bg); background: var(--accent); padding: .75rem 1.3rem;
+  transition: transform .3s var(--ease);
+}
+.card--cta:hover .card__cta-bouton { transform: translateX(4px); }
+
+/* ─── Onglet SEO ─── */
+.seo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.seo__intro h2 {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(1.8rem, 3.4vw, 2.9rem); line-height: 1.05; margin-bottom: 1.2rem;
+}
+.seo__intro p { font-size: .95rem; line-height: 1.8; color: var(--mute); max-width: 48ch; }
+.seo__liste { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.seo__liste li { background: var(--bg); padding: 1.5rem 1.4rem 1.6rem; transition: background .25s var(--ease); }
+.seo__liste li:hover { background: var(--panel); }
+.seo__liste span { font-family: var(--font-mono); font-size: .64rem; letter-spacing: .2em; color: var(--accent); }
+.seo__liste h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; margin: .6rem 0 .5rem; }
+.seo__liste p { font-size: .88rem; line-height: 1.6; color: var(--mute); }
+@media (max-width: 900px) { .seo { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .seo__liste { grid-template-columns: 1fr; } }
 
 .note {
   margin-top: 2rem; font-family: var(--font-mono);
@@ -376,29 +437,7 @@ a { color: inherit; }
 .carrousel__fleche:disabled { opacity: .3; cursor: default; }
 @media (hover: none) { .carrousel__nav { display: none; } }
 
-/* TikTok hébergés : la vidéo elle-même sert de vignette. */
-.video__clip { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
-.video__son { position: absolute; inset: 0; width: 100%; background: none; border: 0; cursor: pointer; }
-.video__son::after {
-  content: ""; position: absolute; right: .6rem; bottom: .6rem; width: 2.2rem; height: 2.2rem; border-radius: 50%;
-  background: rgba(0, 0, 0, .6) no-repeat center / 1.1rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3E%3Cpath d='M11 5 6 9H3v6h3l5 4z'/%3E%3Cpath d='m22 9-6 6M16 9l6 6'/%3E%3C/svg%3E");
-}
-.video.is-son .video__son::after {
-  background-color: var(--accent);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A0C0D' stroke-width='2'%3E%3Cpath d='M11 5 6 9H3v6h3l5 4z'/%3E%3Cpath d='M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13'/%3E%3C/svg%3E");
-}
-.video__son::before {
-  content: ""; position: absolute; left: 50%; top: 50%; width: 3.6rem; height: 3.6rem; transform: translate(-50%, -50%);
-  border-radius: 50%; border: 1px solid rgba(255, 255, 255, .5);
-  background: rgba(0, 0, 0, .45) no-repeat 56% center / 1.2rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M6 4l14 8-14 8z'/%3E%3C/svg%3E");
-  transition: opacity .3s;
-}
-.video.is-lecture .video__son::before { opacity: 0; }
-.video__son:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
-
-/* L'extrait muet des formats longs, au survol. */
+/* L'extrait muet (YouTube à la une, TikTok), au survol ou au centre. */
 .video__apercu { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .4s; pointer-events: none; }
 .video.is-apercu .video__apercu { opacity: 1; }
 .video.is-apercu .video__play { opacity: 0; }

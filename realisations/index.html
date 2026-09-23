@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0C0D">
 
   <link rel="canonical" href="https://optimusstudio.fr/realisations/">
 
   <title>Réalisations — Optimus Studio | Sites web, vidéo, SEO</title>
-  <meta name="description" content="Les réalisations d'Optimus Studio : sites internet pour le BTP, la restauration et les commerces, montage vidéo et référencement. Aperçu live de chaque projet.">
+  <meta name="description" content="Les réalisations d'Optimus Studio : 17 sites internet pour artisans, restaurants et commerces, 23 vidéos montées pour YouTube et TikTok, 5,7 millions de vues cumulées. Chaque projet se consulte en direct.">
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://optimusstudio.fr/realisations/">
   <meta property="og:title"       content="Réalisations — Optimus Studio">
-  <meta property="og:description" content="Sites internet, montage vidéo et référencement. Chaque projet consultable en direct.">
+  <meta property="og:description" content="17 sites internet et 23 vidéos montées, 5,7 millions de vues. Chaque projet consultable en direct.">
   <meta property="og:image"       content="https://optimusstudio.fr/og-image.webp">
   <meta property="og:locale"      content="fr_FR">
   <meta name="twitter:card"       content="summary_large_image">
@@ -31,7 +32,10 @@
     "@type": "CollectionPage",
     "name": "Réalisations — Optimus Studio",
     "url": "https://optimusstudio.fr/realisations/",
-    "isPartOf": { "@type": "WebSite", "name": "Optimus Studio", "url": "https://optimusstudio.fr/" },
+    "description": "Sites internet sectoriels, montage vidéo YouTube et TikTok, référencement.",
+    "inLanguage": "fr-FR",
+    "isPartOf": { "@type": "WebSite", "@id": "https://optimusstudio.fr/#site", "name": "Optimus Studio", "url": "https://optimusstudio.fr/" },
+    "publisher": { "@id": "https://optimusstudio.fr/#studio" },
     "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [
@@ -71,6 +75,12 @@
       Chaque projet s'ouvre ici même, en direct. Vous scrollez dedans comme
       un visiteur le ferait, sur écran ou sur mobile.
     </p>
+    <!-- Les trois chiffres sont recalculés par app.js depuis PROJETS et VIDEOS. -->
+    <dl class="chiffres">
+      <div><dt id="n-sites">17</dt><dd>sites conçus, un par métier</dd></div>
+      <div><dt id="n-videos">23</dt><dd>vidéos montées, YouTube et TikTok</dd></div>
+      <div><dt><span id="n-vues">5,7</span>&nbsp;M</dt><dd>de vues cumulées sur ces vidéos</dd></div>
+    </dl>
   </section>
 
   <!-- RUBRIQUES -->
@@ -124,15 +134,28 @@
 
   <!-- ═══ SEO ═══ -->
   <section class="panel" id="panel-seo" data-panel="seo" hidden>
-    <div class="empty">
-      <span class="empty__no">003 / SEO</span>
-      <h2>Référencement</h2>
-      <p>
-        Les résultats de référencement se mesurent sur plusieurs mois. Cette
-        rubrique publiera des cas chiffrés — positions gagnées, trafic, appels
-        générés — une fois les campagnes assez avancées pour être honnêtes.
-      </p>
-      <a class="cta-button" href="/#contact">Demander un audit</a>
+    <div class="seo">
+      <div class="seo__intro">
+        <span class="empty__no">003 / SEO</span>
+        <h2>Être trouvé avant<br>le concurrent d'à côté.</h2>
+        <p>
+          Chaque site de cette page est construit pour Google dès la première
+          ligne de code. Les résultats chiffrés (positions gagnées, appels,
+          demandes de devis) seront publiés ici au fil des campagnes clientes :
+          le référencement se mesure sur plusieurs mois, on préfère des
+          chiffres vrais à des promesses.
+        </p>
+        <a class="cta-button" href="/devis/">Demander un audit gratuit</a>
+      </div>
+
+      <ol class="seo__liste">
+        <li><span>01</span><h3>Fiche Google soignée</h3><p>Catégories, horaires, photos, questions-réponses : c'est elle qui fait sonner le téléphone.</p></li>
+        <li><span>02</span><h3>Données structurées</h3><p>Chaque site décrit l'entreprise à Google en JSON-LD : adresse, horaires, tarifs, avis.</p></li>
+        <li><span>03</span><h3>Rapide sur téléphone</h3><p>Pages légères, images en WebP, aucun plugin inutile : les Core Web Vitals au vert.</p></li>
+        <li><span>04</span><h3>Des pages qui répondent</h3><p>Un contenu écrit pour les questions que vos clients tapent vraiment, ville par ville.</p></li>
+        <li><span>05</span><h3>Prêt pour les IA</h3><p>Textes clairs et fichier llms.txt : votre entreprise citée par ChatGPT, Perplexity et les réponses IA de Google.</p></li>
+        <li><span>06</span><h3>Un suivi mensuel</h3><p>Positions, appels, demandes : un rapport d'une page, lisible en deux minutes.</p></li>
+      </ol>
     </div>
   </section>
 

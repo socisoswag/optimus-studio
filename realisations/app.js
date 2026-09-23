@@ -72,9 +72,8 @@
      yt     : l'identifiant YouTube (ce qui suit « v= » ou « youtu.be/ »)
      tiktok : le numéro de la vidéo TikTok (la fin du lien) et compte : le @
      titre, chaine : le titre et la chaîne pour qui la vidéo a été montée
-     likes  : facultatif, affiché sur la vignette (TikTok)
-     vues   : facultatif, affiché sur la vignette (YouTube), à partir de 100 k
-     mp4    : true si le TikTok est hébergé (videos/tt-<numéro>.mp4)
+     vues   : facultatif, affiché sur la vignette
+     mp4    : true si l'extrait muet existe (videos/tt-<numéro>.mp4)
      apercu : true si l'extrait de 8 s existe (videos/yt-<id>.mp4)
      Vignette : videos/yt-<id>.webp ou videos/tt-<numéro>.webp
      La première vidéo YouTube est mise à la une, en grand.
@@ -95,11 +94,16 @@
     { yt: 'hny3jneSdMg', titre: 'Le Dealer du DarkWeb qui a Disparu avec 300 Millions €', chaine: 'Vzion', vues: '274 k' },
     { yt: 'kNb02pRGVjA', titre: 'Les hommes qui ont rétréci le monde', chaine: 'ARVA' },
     { yt: 'rn6Raqw2b-M', titre: 'L’État qui n’a jamais existé', chaine: 'ARVA' },
-    { tiktok: '7621598466858323222', compte: 'lemondedugout', titre: 'Notre autre gamme de sandwichs va vous régaler', chaine: 'Le Monde du Goût', likes: '70,3 k' },
-    { tiktok: '7683567405494308128', compte: 'the_foodologiste', titre: 'Les panuozzo les plus chargés d’Île-de-France à 8,90 €', chaine: 'Foodologiste', likes: '9,5 k' },
-    { tiktok: '7658700263158484256', compte: 'sortiesparis', titre: 'Le nouveau resto immersif fusion Japon-Corée', chaine: 'Sorties Paris', likes: '6 k' },
-    { tiktok: '7658950856695483680', compte: 'paname_in_my_belly', titre: 'Je comprends enfin pourquoi les Libanais adorent ce sandwich', chaine: 'Paname in my belly', likes: '4,5 k' },
-    { tiktok: '7687523983314390305', compte: 'paname_in_my_belly', titre: 'Le nouveau temple des dim sum et bao à Paris', chaine: 'Paname in my belly', likes: '3,3 k' }
+    { tiktok: '7621598466858323222', mp4: true, compte: 'lemondedugout', titre: 'Notre autre gamme de sandwichs va vous régaler', chaine: 'Le Monde du Goût', vues: '1,7 M' },
+    { tiktok: '7658700263158484256', mp4: true, compte: 'sortiesparis', titre: 'Le nouveau resto immersif fusion Japon-Corée', chaine: 'Sorties Paris', vues: '193 k' },
+    { tiktok: '7610182661763566870', mp4: true, compte: 'localfoodparis', titre: 'Little Havana, un restaurant cubain immersif à Paris', chaine: 'Local Food Paris', vues: '172 k' },
+    { tiktok: '7683145313061801249', mp4: true, compte: 'bestfood93400', titre: 'La box à 5 € qui fait la queue à Saint-Ouen', chaine: 'Best Food 93400', vues: '152 k' },
+    { tiktok: '7644868706975223062', mp4: true, compte: 'thesmokedmeat', titre: 'Le « Mama Lova », un burger en édition limitée', chaine: 'The Smoked Meat', vues: '136 k' },
+    { tiktok: '7640580305128148256', mp4: true, compte: 'kunafamily', titre: 'Naan cheesy crunchy : la nouvelle édition limitée', chaine: 'KunaFamily', vues: '132 k' },
+    { tiktok: '7683567405494308128', mp4: true, compte: 'the_foodologiste', titre: 'Les panuozzo les plus chargés d’Île-de-France à 8,90 €', chaine: 'Foodologiste', vues: '126 k' },
+    { tiktok: '7658950856695483680', mp4: true, compte: 'paname_in_my_belly', titre: 'Je comprends enfin pourquoi les Libanais adorent ce sandwich', chaine: 'Paname in my belly', vues: '110 k' },
+    { tiktok: '7687523983314390305', mp4: true, compte: 'paname_in_my_belly', titre: 'Le nouveau temple des dim sum et bao à Paris', chaine: 'Paname in my belly', vues: '69 k' },
+    { tiktok: '7686905831299878146', mp4: true, compte: 'isma_labrigade', titre: 'Streetalia, le spécialiste du panuozzo italien', chaine: 'ISMA', vues: '38 k' }
   ];
 
   var grid     = document.getElementById('grid-sites');
@@ -146,6 +150,35 @@
 
   PROJETS.forEach(function (p) { grid.appendChild(carte(p)); });
 
+  /* La dernière case de la grille : le prochain projet. Elle reste
+     visible quel que soit le filtre. */
+  var prochain = document.createElement('a');
+  prochain.className = 'card card--cta';
+  prochain.href = '/devis/';
+  prochain.dataset.toujours = '1';
+  prochain.innerHTML =
+    '<span class="card__cta">' +
+      '<span class="card__no">' + String(PROJETS.length + 1).padStart(3, '0') + ' / Votre site</span>' +
+      '<span class="card__cta-titre">Le prochain,<br>c’est le vôtre.</span>' +
+      '<span class="card__desc">Un site de ce niveau pour votre activité, livré en 10 jours. Prix affiché, devis gratuit.</span>' +
+      '<span class="card__cta-bouton">Demander un devis →</span>' +
+    '</span>';
+  grid.appendChild(prochain);
+
+  /* Les chiffres du haut de page, recalculés depuis les listes. */
+  (function chiffres() {
+    var nS = document.getElementById('n-sites'), nV = document.getElementById('n-videos'), nVues = document.getElementById('n-vues');
+    if (nS) nS.textContent = PROJETS.length;
+    if (nV) nV.textContent = VIDEOS.length;
+    if (nVues) {
+      var total = VIDEOS.reduce(function (t, v) {
+        var m = String(v.vues || '').replace(',', '.').match(/([\d.]+)\s*([kM])/);
+        return t + (m ? parseFloat(m[1]) * (m[2] === 'M' ? 1e6 : 1e3) : 0);
+      }, 0);
+      nVues.textContent = (total / 1e6).toFixed(1).replace('.', ',');
+    }
+  })();
+
   /* ─── Rubriques ─── */
   tabs.forEach(function (tab) {
     tab.addEventListener('click', function () {
@@ -179,7 +212,7 @@
       });
       var s = chip.dataset.secteur;
       Array.prototype.forEach.call(grid.children, function (card) {
-        card.hidden = s !== 'all' && card.dataset.secteur !== s;
+        card.hidden = !card.dataset.toujours && s !== 'all' && card.dataset.secteur !== s;
       });
     });
   });
@@ -306,62 +339,56 @@
       bc.appendChild(piste);
       grille.appendChild(bc);
 
+      /* Chaque carte : la vignette, et par-dessus un extrait muet de six
+         secondes qui tourne en boucle (au survol sur ordinateur, quand la
+         carte passe au centre sur téléphone). Le clic ouvre la vraie vidéo,
+         avec le son : lecteur TikTok intégré sur le site, TikTok ailleurs. */
       var clips = [];
       courts.forEach(function (v) {
         var el = document.createElement('article');
         el.className = 'video video--short';
         el.innerHTML =
           '<div class="video__ecran">' +
-            (v.mp4
-              ? '<video class="video__clip" src="videos/tt-' + v.tiktok + '.mp4" poster="videos/tt-' + v.tiktok + '.webp" muted loop playsinline preload="none"></video>' +
-                '<button class="video__son" type="button" aria-label="Activer le son : ' + echap(v.titre) + '" aria-pressed="false"></button>'
-              : '<button class="video__lancer" type="button" aria-label="Voir la vidéo sur TikTok : ' + echap(v.titre) + '">' +
-                  '<img src="videos/tt-' + v.tiktok + '.webp" alt="" width="360" height="640" loading="lazy" decoding="async">' +
-                  '<span class="video__play" aria-hidden="true"></span>' +
-                '</button>') +
-            (v.likes ? '<span class="video__likes">♥ ' + echap(v.likes) + '</span>' : '') +
+            '<button class="video__lancer" type="button" aria-label="Lire la vidéo : ' + echap(v.titre) + '">' +
+              '<img src="videos/tt-' + v.tiktok + '.webp" alt="" width="360" height="640" loading="lazy" decoding="async">' +
+              (v.mp4 ? '<video class="video__apercu" src="videos/tt-' + v.tiktok + '.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>' : '') +
+              '<span class="video__play" aria-hidden="true"></span>' +
+            '</button>' +
+            (v.vues ? '<span class="video__likes">▶ ' + echap(v.vues) + ' vues</span>' : v.likes ? '<span class="video__likes">♥ ' + echap(v.likes) + '</span>' : '') +
           '</div>' + corps(v, false);
         piste.appendChild(el);
 
-        if (!v.mp4) {
-          el.querySelector('.video__lancer').addEventListener('click', function () { window.open(lienDe(v), '_blank', 'noopener'); });
-          return;
-        }
-        var clip = el.querySelector('.video__clip');
-        var son = el.querySelector('.video__son');
-        clips.push(clip);
-        function lecture() { clip.play().then(function () { el.classList.add('is-lecture'); }, function () {}); }
-        function pause() { if (!clip.muted) return; clip.pause(); el.classList.remove('is-lecture'); }
-        clip.addEventListener('pause', function () { el.classList.remove('is-lecture'); });
-        if (souris && !reduit) {
-          el.querySelector('.video__ecran').addEventListener('mouseenter', lecture);
-          el.querySelector('.video__ecran').addEventListener('mouseleave', pause);
-        }
-        /* Clic : le son. Un seul TikTok parle à la fois. */
-        son.addEventListener('click', function () {
-          if (piste.dataset.glisse === '1') return;
-          if (clip.muted || clip.paused) {
-            clips.forEach(function (c) { if (c !== clip) { c.muted = true; c.pause(); c.closest('.video').classList.remove('is-son'); } });
-            clip.muted = false;
-            if (clip.paused) clip.currentTime = 0;
-            lecture();
-            el.classList.add('is-son');
-            son.setAttribute('aria-pressed', 'true');
-          } else {
-            clip.muted = true;
-            el.classList.remove('is-son');
-            son.setAttribute('aria-pressed', 'false');
+        var clip = el.querySelector('.video__apercu');
+        if (clip) {
+          clips.push(clip);
+          clip._jouer = function () { if (!reduit) clip.play().then(function () { el.classList.add('is-apercu'); }, function () {}); };
+          clip._stop = function () { clip.pause(); el.classList.remove('is-apercu'); };
+          if (souris) {
+            el.querySelector('.video__ecran').addEventListener('mouseenter', clip._jouer);
+            el.querySelector('.video__ecran').addEventListener('mouseleave', clip._stop);
           }
+        }
+
+        el.querySelector('.video__lancer').addEventListener('click', function () {
+          if (piste.dataset.glisse === '1') return;
+          if (!INTEGRE) { window.open(lienDe(v), '_blank', 'noopener'); return; }
+          var f = document.createElement('iframe');
+          f.src = 'https://www.tiktok.com/player/v1/' + encodeURIComponent(v.tiktok) + '?autoplay=1&rel=0&description=0&music_info=0';
+          f.title = v.titre;
+          f.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+          f.allowFullscreen = true;
+          var ecran = el.querySelector('.video__ecran');
+          ecran.innerHTML = '';
+          ecran.appendChild(f);
+          f.focus();
         });
       });
 
-      /* Sur téléphone, le TikTok qui passe au centre se lance, muet. */
+      /* Sur téléphone, l'extrait de la carte bien centrée se lance. */
       if (!souris && !reduit && 'IntersectionObserver' in window) {
         var io = new IntersectionObserver(function (entries) {
           entries.forEach(function (e) {
-            var c = e.target, carte = c.closest('.video');
-            if (e.intersectionRatio >= 0.8) c.play().then(function () { carte.classList.add('is-lecture'); }, function () {});
-            else if (c.muted) { c.pause(); carte.classList.remove('is-lecture'); }
+            if (e.intersectionRatio >= 0.8) e.target._jouer(); else e.target._stop();
           });
         }, { root: piste, threshold: [0, 0.8] });
         clips.forEach(function (c) { io.observe(c); });

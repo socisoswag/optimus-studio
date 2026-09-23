@@ -17,6 +17,13 @@
 - Tarifs et devis : https://optimusstudio.fr/devis/
 - Mentions légales : https://optimusstudio.fr/mentions-legales/
 
+## Réalisations
+
+- 17 sites de démonstration, un par métier : chauffagiste, serrurier, électricien, plombier, couvreur, paysagiste, garage, restaurant, pizzeria, institut de beauté, barbier, salle de sport, ostéopathe, nettoyage, avocate, auto-école, agence immobilière. Effets au scroll, simulateurs de prix, prise de rendez-vous, données structurées.
+- 23 vidéos montées : 13 formats longs YouTube (documentaires sport, histoire, culture) et 10 formats courts TikTok pour des restaurants et des créateurs food parisiens.
+- 5,7 millions de vues cumulées sur ces vidéos.
+- Toutes les réalisations : https://optimusstudio.fr/realisations/
+
 ## Contact
 
 - Devis gratuit, réponse sous 24 h : https://optimusstudio.fr/devis/
