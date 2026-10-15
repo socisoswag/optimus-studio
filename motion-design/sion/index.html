@@ -93,12 +93,25 @@
   .portrait .frame { position: absolute; inset: 0; border: 1px solid rgba(233,220,192,.35); box-shadow: inset 0 0 140px rgba(0,0,0,.75); background: linear-gradient(180deg, rgba(9,8,7,0) 70%, rgba(9,8,7,.75) 100%); }
   .portrait .cap { position: absolute; left: 18px; bottom: 16px; font-family: var(--mono); font-size: 14px; letter-spacing: .24em; color: var(--stone); text-transform: uppercase; }
 
+  /* personnage détouré */
+  .cutout { position: absolute; bottom: 0; width: 900px; height: 1010px; transform-origin: 50% 100%; }
+  .L .cutout { right: 30px; }
+  .R .cutout { left: 30px; }
+  .cutout .cimg, .cutout .cdots { position: absolute; inset: 0; }
+  .cutout .cimg { background-size: contain; background-repeat: no-repeat; background-position: 50% 100%;
+    -webkit-mask-image: linear-gradient(to top, transparent 0, #000 16%); mask-image: linear-gradient(to top, transparent 0, #000 16%); }
+  .cutout .cdots { background-image: radial-gradient(rgba(0,0,0,.6) 1px, transparent 1.7px); background-size: 5px 5px;
+    -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+    -webkit-mask-position: 50% 100%; mask-position: 50% 100%; mix-blend-mode: multiply; opacity: .45; }
+
   /* paire */
   .pair .side { position: absolute; top: 300px; width: 760px; }
   .pairbg { position: absolute; top: 0; bottom: 0; width: 56%; overflow: hidden; opacity: 0; }
   .pairbg.a { left: 0; -webkit-mask-image: linear-gradient(90deg, #000 25%, transparent 100%); mask-image: linear-gradient(90deg, #000 25%, transparent 100%); }
   .pairbg.b { right: 0; -webkit-mask-image: linear-gradient(270deg, #000 25%, transparent 100%); mask-image: linear-gradient(270deg, #000 25%, transparent 100%); }
   .pairbg .ph { position: absolute; inset: 0; background-size: cover; background-position: 50% 25%; filter: grayscale(1) contrast(1.25) brightness(.55) sepia(.35); }
+  .pairbg.cutp { -webkit-mask-image: linear-gradient(to top, transparent 0, #000 18%); mask-image: linear-gradient(to top, transparent 0, #000 18%); width: 48%; }
+  .pairbg.cutp .ph { background-size: contain; background-repeat: no-repeat; background-position: 50% 100%; filter: grayscale(1) contrast(1.2) brightness(.6) sepia(.3) drop-shadow(0 0 1.5px rgba(255,196,128,.8)) drop-shadow(0 0 26px rgba(255,91,31,.45)); }
   .pair .side.a { left: 120px; }
   .pair .side.b { right: 120px; text-align: right; }
   .pair .name { font-size: 150px; margin-top: 0; }

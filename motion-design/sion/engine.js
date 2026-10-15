@@ -1076,12 +1076,15 @@
       let html = '';
       if (s.type === 'figure') {
         html = `<div class="scrim"></div><div class="ghost">${yearStr(s.year)}</div>
-          ${s.photo ? `<div class="portrait"><div class="ph" style="background-image:url('${esc(s.photo)}')"></div><div class="dots"></div><div class="tint"></div><div class="frame"></div><div class="cap">Archives · ${esc(s.name.join(' '))}</div></div>` : ''}
+          ${!s.photo ? '' : /\.png$/i.test(s.photo)
+            // personnage détouré (PNG transparent) : posé sur la carte, liseré de braise, trame sur la silhouette
+            ? `<div class="cutout"><div class="cimg" style="background-image:url('${esc(s.photo)}')"></div><div class="cdots" style="-webkit-mask-image:url('${esc(s.photo)}');mask-image:url('${esc(s.photo)}')"></div></div>`
+            : `<div class="portrait"><div class="ph" style="background-image:url('${esc(s.photo)}')"></div><div class="dots"></div><div class="tint"></div><div class="frame"></div><div class="cap">Archives · ${esc(s.name.join(' '))}</div></div>`}
           <div class="block">${eyebrowHTML()}${nameHTML(s.name)}${nativeHTML(s.native, s.lang)}<div class="rule"></div>
           <p class="text">${words(s.text)}</p><div class="meta"><span>${esc(s.life)}</span><i class="dot"></i><span>${esc(s.place)}</span></div></div>`;
       } else if (s.type === 'pair') {
         const side = (p, c) => `<div class="side ${c}">${nameHTML(p.name)}${nativeHTML(p.native, p.lang)}<div class="meta"><span>${esc(p.life)}</span></div></div>`;
-        const bgp = (p, c) => (p.photo ? `<div class="pairbg ${c}"><div class="ph" style="background-image:url('${esc(p.photo)}')"></div></div>` : '');
+        const bgp = (p, c) => (p.photo ? `<div class="pairbg ${c} ${/\.png$/i.test(p.photo) ? 'cutp' : ''}"><div class="ph" style="background-image:url('${esc(p.photo)}')"></div></div>` : '');
         html = `${bgp(s.people[0], 'a')}${bgp(s.people[1], 'b')}<div class="scrim"></div><div class="ghost">${yearStr(s.year)}</div>
           <div class="top">${eyebrowHTML()}</div>${side(s.people[0], 'a')}<div class="amp">&amp;</div>${side(s.people[1], 'b')}
           <div class="bottom"><p class="text">${words(s.text)}</p></div>`;
@@ -1228,6 +1231,16 @@
     const mp = tw(u, I + 0.95, I + 1.5, E.outCubic);
     css(R, R.metas[0], 'opacity', String(f3(mp)));
     css(R, R.metas[0], 'transform', `translate3d(0,${f3((1 - mp) * 14)}px,0)`);
+    const cut = R.q('.cutout');
+    if (cut) {
+      const cp = tw(u, I - 0.35, I + 1.1, E.outQuart);
+      const drift = inv(I, D, u);
+      css(R, cut, 'opacity', String(f3(clamp(cp * 1.5) * (1 - ex))));
+      css(R, cut, 'transform', `translate3d(${f3(dir * (40 * (1 - cp) - 18 * drift))}px,${f3(60 * (1 - cp))}px,0) scale(${f3(1.02 + 0.05 * drift + 0.35 * ex)})`);
+      css(R, cut, 'filter', blur((1 - cp) * 14 + ex * 14));
+      const glow = u > I ? 0.5 + 0.5 * Math.exp(-(u - I) / 0.5) : 0.5;
+      css(R, cut.firstElementChild, 'filter', `grayscale(1) contrast(1.22) brightness(.84) sepia(.3) drop-shadow(0 0 1.6px rgba(255,196,128,${f3(0.95 * glow)})) drop-shadow(0 0 ${f3(18 + 22 * glow)}px rgba(255,91,31,${f3(0.55 * glow)}))`);
+    }
     const ph = R.q('.portrait');
     if (ph) {
       const pp = tw(u, I - 0.2, I + 0.9, E.outExpo);

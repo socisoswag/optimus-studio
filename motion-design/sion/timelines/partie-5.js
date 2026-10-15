@@ -13,7 +13,7 @@
   Object.assign(p, {
     numeral: "V", label: "Partie V", titleLines: ["La dérive", "d’un projet"],
     firstChapter: 24,
-    chapters: ["Netanyahou, Lieberman, et la haine institutionnalisée", "Gaza, un champ d’expérimentation militaire", "Le Talmud : quand les textes nourrissent les extrêmes", "La guerre numérique : désinformation, faux profils et chaos en ligne (Mossad)", "Le racisme en Israël : mizrahim, éthiopiens et palestiniens"],
+    chapters: ["Netanyahou, Lieberman, et la haine institutionnalisée", "Gaza, un champ d’expérimentation militaire", "Le sionisme religieux : quand la foi devient programme politique", "La guerre numérique : campagnes d’influence, faux profils et désinformation", "Le racisme en Israël : mizrahim, éthiopiens et palestiniens"],
     chapAt: [2.2, 5.6, 10.4, 11.0, 11.6],
   });
 

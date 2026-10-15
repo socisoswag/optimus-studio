@@ -13,7 +13,7 @@
   Object.assign(p, {
     numeral: "VII", label: "Partie VII", titleLines: ["Une histoire", "universelle ?"],
     firstChapter: 32,
-    chapters: ["La Shoah utilisée comme bouclier politique", "Les résolutions de l’ONU ignorées : 194, 242, 338", "L’effacement culturel : villages détruits, noms effacés", "Le destin manifeste : colonialisme, apartheid, dépossession", "La fracture en Israël : extrémisme religieux vs démocratie"],
+    chapters: ["La mémoire de la Shoah : entre deuil et usage politique", "Les résolutions de l’ONU ignorées : 194, 242, 338", "L’effacement culturel : villages détruits, noms effacés", "Le destin manifeste : colonialisme, apartheid, dépossession", "La fracture en Israël : extrémisme religieux vs démocratie"],
     chapAt: [2.2, 2.8, 6.6, 8.6, 9.2],
   });
 

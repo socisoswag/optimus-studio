@@ -14,7 +14,7 @@
   Object.assign(p, {
     numeral: "VI", label: "Partie VI", titleLines: ["Voix et", "contre-voix"],
     firstChapter: 29,
-    chapters: ["Les juifs antisionistes : Neturei Karta, Jewish Voice for Peace", "Les religieux contre le sionisme : foi ou nationalisme ?", "BHL, Finkielkraut et les intellectuels faussaires"],
+    chapters: ["Les juifs antisionistes : Neturei Karta, Jewish Voice for Peace", "Les religieux contre le sionisme : foi ou nationalisme ?", "Les intellectuels français : BHL, Finkielkraut et le débat public"],
     chapAt: [2.2, 7.0, 11.6],
   });
 
