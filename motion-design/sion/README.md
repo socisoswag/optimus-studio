@@ -5,7 +5,7 @@ un seul moteur, une timeline par pièce.
 
 | Pièce | Timeline | Durée | Fichiers |
 |---|---|---|---|
-| Générique d'ouverture | `timelines/generique.js` | 40 s | `output/generique.mp4`, `output/generique.wav` |
+| Générique d'ouverture | `timelines/generique.js` | 35 s | `output/generique.mp4`, `output/generique.wav` |
 | Ouverture de la partie I | `timelines/partie-1.js` | 15 s | `output/partie-1.mp4`, `output/partie-1.wav` |
 | Chronologie des figures (1897 – 1995) | `timelines/chronologie.js` | 1 min 20 | `output/chronologie.mp4`, `output/chronologie.wav` |
 
@@ -35,9 +35,6 @@ aberration chromatique.
 2. **La terre** — Jérusalem, 1917. Vol jusqu'en Palestine, la terre s'embrase.
 3. **Le choc** — 1948, Indépendance · Nakba. Artillerie proche, la terre brûle.
 4. Noir et silence, puis **SION** en latin, hébreu (ציון) et arabe (صهيون), « L'idée, la terre, le choc ».
-5. **Un film de** + ton nom.
-
-Ton nom se règle en haut de `timelines/generique.js` : `const REALISATEUR = ['Prénom', 'Nom'];`
 
 ## Les ouvertures de partie
 
