@@ -62,7 +62,7 @@
       if (s.type === 'event') add(s.impact, 1.3, 'event');
       if (s.type === 'intro') add(1.05, 0.75);
       if (s.type === 'outro') [0, 0.55, 1.1].forEach((d, j) => add(s.impact - 0.2 + d, 0.6 + j * 0.25));
-      if (s.type === 'beat' || s.type === 'part') add(s.impact, s.k || 1);
+      if (s.type === 'beat' || s.type === 'part') add(s.impact, s.k || 1, s.hitKind || 'hit');
       if (s.type === 'title') add(s.impact, s.k || 1.3, 'title');
       if (s.type === 'credit') add(s.impact, s.k || 0.45, 'soft');
       (s.extraHits || []).forEach(([d, k]) => add(s.impact + d, k));

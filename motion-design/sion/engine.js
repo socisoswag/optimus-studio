@@ -125,11 +125,22 @@
     if (s.type === 'figure' && s.photo) an = [Math.sign(an[0]) * 170, 70];
     return { x: MX(c.lon), y: MY(c.lat), w: c.w, pitch: c.pitch * D2R, bearing: c.bearing * D2R, ax: an[0], ay: an[1] };
   }
-  SEG.forEach((s) => { if (s.cam) s.cam0 = baseCam(s); if (s.camEnd) s.cam1 = baseCam(s, s.camEnd); });
+  SEG.forEach((s) => {
+    if (s.cam) s.cam0 = baseCam(s);
+    if (s.camEnd) s.cam1 = baseCam(s, s.camEnd);
+    // coupes franches : la caméra saute d'un cadre à l'autre sur les impacts
+    if (s.cuts) s.cutsC = s.cuts.map((c) => ({ at: c.at, cam: baseCam(s, { ...s.cam, ...c }) }));
+  });
 
   function holdCam(s, h) {
-    const b = s.cam0;
+    let b = s.cam0;
     const dir = s.i % 2 ? -1 : 1;
+    if (s.cutsC) {
+      let base = b, h0 = 0;
+      for (const c of s.cutsC) if (h >= c.at) { base = c.cam; h0 = c.at; }
+      const hh = h - h0, punch = 0.09 * bump(hh, 0.1);
+      return { x: base.x, y: base.y, w: base.w * Math.exp(-0.08 * hh) * (1 - punch), pitch: base.pitch + 0.012 * hh, bearing: base.bearing + dir * 0.03 * hh, ax: base.ax, ay: base.ay };
+    }
     const punch = s.type === 'outro' || s.type === 'intro' ? 0 : 0.075 * bump(h - (s.hitAt || 0), 0.13);
     if (s.cam1) {
       // trajet programmé (de cam à camEnd pendant la séquence)
@@ -877,7 +888,8 @@
     return m;
   }
   function drawMap(t, cam) {
-    const n = Math.round(clamp(Math.ceil(motionPx(cam, camAt(t + SHUTTER)) / 4), 1, 12));
+    const mpx = motionPx(cam, camAt(t + SHUTTER));
+    const n = mpx > 260 ? 1 : Math.round(clamp(Math.ceil(mpx / 4), 1, 12));
     if (n <= 1) { const pin = drawMapInto(mp, t, cam); return pin; }
     mp.globalCompositeOperation = 'source-over'; mp.globalAlpha = 1;
     mp.clearRect(0, 0, W, H);
@@ -1063,7 +1075,7 @@
       } else if (s.type === 'event') {
         html = `<div class="scrim"></div><div class="wrap" style="justify-content:flex-start;padding-top:170px">${eyebrowHTML()}<div class="big l1">${chars(s.title)}</div><div class="bar"></div><p class="text">${words(s.text)}</p></div>`;
       } else if (s.type === 'beat') {
-        html = `<div class="scrim"></div>${s.year ? `<div class="ghost">${yearStr(s.year)}</div>` : ''}<div class="wrap">${eyebrowHTML()}<div class="big l1">${chars(s.word.toUpperCase())}</div></div>`;
+        html = `<div class="scrim"></div>${s.year ? `<div class="ghost">${yearStr(s.year)}</div>` : ''}<div class="wrap">${s.kicker ? eyebrowHTML() : ''}<div class="big l1">${chars(s.word.toUpperCase())}</div>${s.sub ? `<p class="text">${words(s.sub)}</p>` : ''}</div>`;
       } else if (s.type === 'title') {
         html = `<div class="scrim"></div><div class="wrap"><div class="big sion">${chars(s.title.toUpperCase())}</div>
           <div class="scripts">${(s.scripts || []).map((sc, k) => `${k ? '<i class="bar"></i>' : ''}<span class="native" lang="${sc.lang}" dir="rtl">${esc(sc.text)}</span>`).join('')}</div>
@@ -1110,10 +1122,10 @@
   }
   const f3 = (v) => (Math.abs(v) < 1e-4 ? 0 : +v.toFixed(3));
 
-  function typewriter(R, el, text, u, t0, cps) {
+  function typewriter(R, el, text, u, t0, cps, cursor = true) {
     text = fr(text);
     const n = Math.floor(clamp((u - t0) * cps, 0, text.length));
-    const showCur = u >= t0 - 0.2 && (n < text.length || Math.floor(u * 3.2) % 2 === 0) && u < t0 + text.length / cps + 1.0;
+    const showCur = cursor && u >= t0 - 0.2 && (n < text.length || Math.floor(u * 3.2) % 2 === 0) && u < t0 + text.length / cps + 1.0;
     const key = n + (showCur ? 'c' : '');
     if (R.cache.get(el) === key) return;
     R.cache.set(el, key);
@@ -1306,13 +1318,38 @@
     const R = s.R; R.u = u;
     const I = s.fly + (s.hitAt || 0), D = s.dur;
     const wrapEl = R.q('.wrap');
-    typewriter(R, R.tws[0], s.kicker, u, I - 0.55, 28);
-    css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, I - 0.7, I - 0.1))})`);
-    letters(R, R.lines[0], I - 0.1, 0.05, 0.65);
-    const amp = s.rgb || 10;
-    const a = u > I ? amp * Math.exp(-(u - I) / 0.13) : 0;
-    css(R, R.lines[0].ln, 'textShadow', a < 0.4 ? 'none' : `${f3(-a)}px 0 rgba(255,40,30,.6), ${f3(a)}px 0 rgba(40,170,255,.5)`);
-    const hit = u > I ? 0.06 * Math.exp(-(u - I) / 0.18) : 0;
+    if (s.kicker) {
+      typewriter(R, R.tws[0], s.kicker, u, I - 0.55, 28);
+      css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, I - 0.7, I - 0.1))})`);
+    }
+    const line = R.lines[0];
+    const mode = s.reveal || 'slam';
+    let hit = 0, a = 0;
+    if (mode === 'focus') {
+      // l'idée apparaît comme une mise au point : flou, lettres écartées, puis net
+      const p = tw(u, I - 0.4, I + 1.9, E.outQuart);
+      line.ch.forEach((c) => css(R, c, 'transform', 'none'));
+      css(R, line.ln, 'letterSpacing', `${f3((1 - p) * 0.42)}em`);
+      css(R, line.ln, 'filter', blur((1 - p) * 30));
+      css(R, line.ln, 'opacity', String(f3(clamp(p * 1.3))));
+    } else if (mode === 'staccato') {
+      // une lettre par impact, sans transition : coupe franche
+      line.ch.forEach((c, j) => {
+        const tj = I + (s.letterHits[j] || 0);
+        const on = u >= tj;
+        css(R, c, 'opacity', on ? '1' : '0');
+        css(R, c, 'transform', on ? `scale(${f3(1 + 0.22 * Math.exp(-(u - tj) / 0.07))})` : 'none');
+      });
+      const last = I + Math.max(...s.letterHits);
+      for (const d of s.letterHits) { const dt = u - (I + d); if (dt >= 0) a = Math.max(a, (s.rgb || 14) * Math.exp(-dt / 0.09)); }
+      hit = u > last ? 0.07 * Math.exp(-(u - last) / 0.2) : 0;
+    } else {
+      letters(R, line, I - 0.1, 0.05, 0.65);
+      a = u > I ? (s.rgb || 10) * Math.exp(-(u - I) / 0.13) : 0;
+      hit = u > I ? 0.06 * Math.exp(-(u - I) / 0.18) : 0;
+    }
+    css(R, line.ln, 'textShadow', a < 0.4 ? 'none' : `${f3(-a)}px 0 rgba(255,40,30,.6), ${f3(a)}px 0 rgba(40,170,255,.5)`);
+    if (s.sub) wordsIn(R, R.texts[0], I + (s.subAt || 1.2), 0.06, 0.7);
     const ex = E.inExpo(inv(D - 0.4, D + 0.45, u));
     css(R, wrapEl, 'transform', `scale(${f3(1 + 0.07 * inv(I, D, u) + hit + 2.4 * ex)})`);
     css(R, wrapEl, 'opacity', String(f3(1 - ex)));
@@ -1377,7 +1414,7 @@
     css(R, R.ghost, 'opacity', String(f3(gp * (1 - ex))));
     css(R, R.ghost, 'transform', `translate3d(${f3(lerp(60, -40, inv(I, D, u)))}px,0,0) scale(${f3(lerp(1.4, 1, gp) * (1 + 0.4 * ex))})`);
     css(R, R.ghost, 'filter', blur((1 - gp) * 16 + ex * 12));
-    typewriter(R, R.tws[0], s.label, u, I - 0.5, 26);
+    typewriter(R, R.tws[0], s.label, u, I - 0.5, 26, false);
     css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, I - 0.6, I))})`);
     letters(R, R.lines[0], I - 0.1, 0.045, 0.65);
     rgbSplit(R, R.names[0], u, I);

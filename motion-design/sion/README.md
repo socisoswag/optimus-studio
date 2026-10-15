@@ -31,9 +31,12 @@ aberration chromatique.
 
 ## Le générique
 
-1. **L'idée** — Vienne, 1896. La caméra descend sur l'Europe.
-2. **La terre** — Jérusalem, 1917. Vol jusqu'en Palestine, la terre s'embrase.
-3. **Le choc** — 1948, Indépendance · Nakba. Artillerie proche, la terre brûle.
+Trois mots, trois rythmes différents :
+
+1. **L'idée** — Vienne, 1896. La caméra descend sur l'Europe, le mot apparaît comme une mise au point.
+2. **La terre** — Jérusalem, 1917. Vol jusqu'en Palestine, le mot tombe, la terre s'embrase.
+3. **Le choc** — 1948. Rafale : une lettre par impact, coupes franches de caméra, puis « 1948 :
+   indépendance pour les Israéliens, Nakba pour les Palestiniens ».
 4. Noir et silence, puis **SION** en latin, hébreu (ציון) et arabe (صهيون), « L'idée, la terre, le choc ».
 
 ## Les ouvertures de partie
@@ -53,7 +56,8 @@ node render.mjs --timeline generique --stills 3,15,28 --out stills   # images de
 ```
 
 Chaque image est une fonction du temps (`window.renderFrame(t)`), rendue dans Chromium puis encodée
-avec ffmpeg. `index.html?tl=generique` affiche une pièce dans un navigateur (via `npx serve .`).
+avec ffmpeg. L'encodage ajoute une finition « pellicule » : halo chaud autour des hautes lumières
+(halation), courbe argentique et léger flottement de l'image. `index.html?tl=generique` affiche une pièce dans un navigateur (via `npx serve .`).
 
 Fichiers : `core.js` (minutage commun image/son), `engine.js` (moteur), `index.html` (styles),
 `timelines/` (contenu), `tools/sound.py` (bande-son), `tools/prep_map.py` (carte).

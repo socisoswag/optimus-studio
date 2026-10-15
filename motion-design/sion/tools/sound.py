@@ -335,8 +335,12 @@ mix_l, mix_r = hp(mix_l, 22), hp(mix_r, 22)
 peak = max(np.abs(mix_l).max(), np.abs(mix_r).max())
 mix_l, mix_r = mix_l / peak * 1.25, mix_r / peak * 1.25
 mix_l, mix_r = np.tanh(mix_l) / np.tanh(1.25), np.tanh(mix_r) / np.tanh(1.25)
-g = 10 ** (-1.0 / 20) / max(np.abs(mix_l).max(), np.abs(mix_r).max())
+# niveau homogène entre les pièces : RMS visé -18 dBFS, crêtes adoucies sous -1 dBFS
+rms0 = np.sqrt(np.mean((mix_l ** 2 + mix_r ** 2) / 2))
+g = 10 ** (-18.0 / 20) / rms0
 mix_l, mix_r = mix_l * g, mix_r * g
+ceil = 10 ** (-1.0 / 20)
+mix_l, mix_r = ceil * np.tanh(mix_l / ceil), ceil * np.tanh(mix_r / ceil)
 
 pcm = np.clip(np.stack([mix_l, mix_r], 1) * (2 ** 23 - 1), -(2 ** 23), 2 ** 23 - 1).astype("<i4")
 raw = pcm.reshape(-1).view(np.uint8).reshape(-1, 4)[:, :3].tobytes()
