@@ -1,0 +1,7 @@
+# Les photos d’archive doivent être versionnées malgré la règle globale *.jpg / *.png
+!portraits/*.jpg
+!portraits/*.jpeg
+!portraits/*.png
+stills/
+cues.json
+video.mp4
