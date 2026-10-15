@@ -92,6 +92,33 @@
   STOPS.forEach((s, k) => { s.stop = k; });
   // repères numérotés (ouvertures de partie)
   const MARKERS = TL.markers.map((m) => ({ ...m, X: MX(m.lon), Y: MY(m.lat) }));
+  // flux humains : particules qui vont d'un ou plusieurs lieux vers une destination
+  const FLOWS = (TL.flows || []).map((f, fi) => {
+    const r = mulberry32(4801 + fi * 131);
+    const froms = Array.isArray(f.from[0]) ? f.from : [f.from];
+    const n = f.n || 90, [tr0, tr1] = f.travel || [2.0, 3.4];
+    const bez = (lon0, lat0, lon1, lat1, b) => {
+      const X0 = MX(lon0), Y0 = MY(lat0), X1 = MX(lon1), Y1 = MY(lat1);
+      const dx = X1 - X0, dy = Y1 - Y0;
+      return { X0, Y0, X1, Y1, CX: (X0 + X1) / 2 - dy * b, CY: (Y0 + Y1) / 2 + dx * b };
+    };
+    const P = [];
+    for (let i = 0; i < n; i++) {
+      const o = froms[Math.floor(r() * froms.length)];
+      const a1 = r() * 6.283, r1 = Math.sqrt(r()) * (f.spread || 0.1), a2 = r() * 6.283, r2 = Math.sqrt(r()) * (f.spreadTo || 0.14);
+      const b = (f.bend !== undefined ? f.bend : 0.18) * (0.7 + 0.6 * r());
+      P.push({
+        ...bez(o[0] + Math.cos(a1) * r1, o[1] + Math.sin(a1) * r1 * 0.85, f.to[0] + Math.cos(a2) * r2, f.to[1] + Math.sin(a2) * r2 * 0.85, b),
+        t0: f.t + Math.pow(r(), f.burst || 1.25) * (f.dur || 3), tt: tr0 + r() * (tr1 - tr0), sz: 0.6 + r() * 0.8,
+      });
+    }
+    // trajet guide : du centre des départs à la destination
+    const c = froms.reduce((a, o) => [a[0] + o[0] / froms.length, a[1] + o[1] / froms.length], [0, 0]);
+    return { ...f, P, guide: bez(c[0], c[1], f.to[0], f.to[1], f.bend !== undefined ? f.bend : 0.18), O: froms.map((o) => [MX(o[0]), MY(o[1])]), TX: MX(f.to[0]), TY: MY(f.to[1]) };
+  });
+  const bezAt = (b, q) => { const m = 1 - q; return [m * m * b.X0 + 2 * m * q * b.CX + q * q * b.X1, m * m * b.Y0 + 2 * m * q * b.CY + q * q * b.Y1]; };
+  const flowA = (f, t) => tw(t, f.t - 0.2, f.t + 0.4) * (1 - tw(t, f.tEnd - 0.7, f.tEnd));
+
   let figCount = 0;
   SEG.forEach((s) => { if (s.type === 'figure' || s.type === 'pair') s.num = ++figCount; });
   const FIGS = figCount;
@@ -537,18 +564,39 @@
     }
   }
 
+  // Trames fines limitées à une zone (Levant) : elles se fondent dans la trame plus large
+  // par un liseré progressif, pour qu'aucun rectangle ne se voie à l'écran.
+  const ZONES = {
+    0.05: { b: [MX(33.6), MY(29.2), MX(36.9), MY(33.8)], feather: 0.45 * D2R },
+    0.025: { b: [MX(34.1), MY(30.9), MX(35.9), MY(33.2)], feather: 0.3 * D2R },
+  };
+  const zoneF = (z, X, Y) => {
+    const b = z.b, d = Math.min(X - b[0], b[2] - X, Y - b[1], b[3] - Y);
+    if (d <= 0) return 0;
+    const u = d / z.feather;
+    return u >= 1 ? 1 : u * u * (3 - 2 * u);
+  };
+  function gridWeight(step, sp) {
+    // une seule trame domine à chaque zoom : la trame régionale s'efface tôt, les trames fines arrivent tard
+    const fine = step <= 0.1, regional = step > 0.1 && step < 0.5;
+    // Levant (0,05°) : apparaît au même zoom que la trame 0,08° ; Levant fin (0,025°) : seulement de très près
+    const spIn = step === 0.05 ? sp * 1.6 : step === 0.025 ? sp * 0.45 : sp;
+    return (fine ? inv(5.5, 9.6, spIn) : inv(2.6, 6, sp)) * (1 - (regional ? inv(18, 30, sp) : inv(30, 52, sp)));
+  }
   function drawDots(g, sources, t, mot) {
     const pxPerDeg = D2R * Ps;
     const heat = [];
     const NS = sources.length;
+    const wLev = gridWeight(0.05, 0.05 * pxPerDeg), wLev2 = gridWeight(0.025, 0.025 * pxPerDeg);
     for (const grid of G.dots) {
       const sp = grid.step * pxPerDeg;
-      // une seule trame domine à chaque zoom : la trame régionale s'efface tôt, les trames fines arrivent tard
-      const fine = grid.step <= 0.1, regional = grid.step > 0.1 && grid.step < 0.5;
-      const a = (fine ? inv(5.5, 9.6, sp) : inv(2.6, 6, sp)) * (1 - (regional ? inv(18, 30, sp) : inv(30, 52, sp))) * mot;
+      const a = gridWeight(grid.step, sp) * mot;
       if (a < 0.02) continue;
       const r0 = clamp(sp * 0.085, 0.55, 2.4);
       const A = grid.a;
+      // fondu spatial avec les zones fines
+      const isLocal = grid.step === 0.08, isLev = grid.step === 0.05, isLev2 = grid.step === 0.025;
+      const blend = (isLocal && wLev > 0.01) || isLev || isLev2;
       g.fillStyle = rgba(COL.map, 0.5 * a);
       g.beginPath();
       for (let i = 0; i < A.length; i += 2) {
@@ -556,7 +604,13 @@
         if (X < VIEW.x0 || X > VIEW.x1 || Y < VIEW.y0 || Y > VIEW.y1) continue;
         const p = proj(X, Y);
         if (p.k < KMIN || p.x < -10 || p.x > W + 10 || p.y < -10 || p.y > H + 10) continue;
-        const r = r0 * p.k;
+        let r = r0 * p.k;
+        if (blend) {
+          if (isLocal) r *= 1 - wLev * zoneF(ZONES[0.05], X, Y);
+          else if (isLev) r *= zoneF(ZONES[0.05], X, Y) * (1 - wLev2 * zoneF(ZONES[0.025], X, Y));
+          else r *= zoneF(ZONES[0.025], X, Y);
+          if (r < 0.25) continue;
+        }
         if (!NS) { g.rect(p.x - r, p.y - r, r * 2, r * 2); continue; }
         {
           let h = 0, gone = false;
@@ -770,7 +824,7 @@
     for (const m of MARKERS) {
       const h = t - m.t;
       if (h < -0.05) continue;
-      const a = tw(h, -0.05, 0.25, E.outCubic) * (1 - tw(t, TL.total - TL.fadeOut - 0.4, TL.total - 0.2));
+      const a = tw(h, -0.05, 0.25, E.outCubic) * (1 - tw(t, TL.total - TL.fadeOut - 0.4, TL.total - 0.2)) * (m.endT !== undefined ? 1 - tw(t, m.endT - 0.8, m.endT) : 1);
       if (a <= 0.01) continue;
       const P = proj(m.X, m.Y);
       const { x, y, k } = P;
@@ -810,21 +864,88 @@
       g.font = '500 15px "DM Mono"';
       g.letterSpacing = '1.5px';
       g.textBaseline = 'middle';
-      const num = m.num, nw = 34;
+      const num = m.num, nw = num ? 34 : 0;
       const bx = dx > 0 ? lx : lx - nw;
-      g.fillStyle = rgba(COL.ember, 0.95);
-      g.fillRect(bx, ly - 12, nw, 24);
-      g.fillStyle = '#120f0c';
-      g.textAlign = 'center';
-      g.fillText(num, bx + nw / 2 + 1, ly + 1);
+      if (num) {
+        g.fillStyle = rgba(COL.ember, 0.95);
+        g.fillRect(bx, ly - 12, nw, 24);
+        g.fillStyle = '#120f0c';
+        g.textAlign = 'center';
+        g.fillText(num, bx + nw / 2 + 1, ly + 1);
+      }
       g.font = '400 14px "DM Mono"';
       g.letterSpacing = '2.5px';
       g.fillStyle = rgba(COL.stone, 0.92);
       g.textAlign = dx > 0 ? 'left' : 'right';
-      g.fillText(m.label.toUpperCase(), dx > 0 ? bx + nw + 10 : bx - 10, ly + 1);
+      g.fillText(m.label.toUpperCase(), dx > 0 ? bx + nw + (num ? 10 : 4) : bx - (num ? 10 : 4), ly + 1);
       g.globalAlpha = 1;
       g.restore();
     }
+  }
+
+  function drawFlows(g, t) {
+    g.save();
+    g.lineCap = 'round';
+    for (const f of FLOWS) {
+      const A = flowA(f, t);
+      if (A <= 0.01) continue;
+      // trajet guide en pointillés, tracé progressivement, avec une pointe de flèche
+      const gp = tw(t, f.t, f.t + 1.4, E.outCubic);
+      if (gp > 0.005) {
+        g.beginPath();
+        const N = 40;
+        for (let j = 0; j <= N; j++) {
+          const [X, Y] = bezAt(f.guide, (j / N) * gp);
+          const P = proj(X, Y);
+          if (j === 0) g.moveTo(P.x, P.y); else g.lineTo(P.x, P.y);
+        }
+        g.setLineDash([3, 9]);
+        g.lineDashOffset = -t * 26;
+        g.strokeStyle = rgba(COL.stone, 0.4 * A);
+        g.lineWidth = 1.5;
+        g.stroke();
+        g.setLineDash([]);
+        const [Xa, Ya] = bezAt(f.guide, gp), [Xb, Yb] = bezAt(f.guide, Math.max(0, gp - 0.04));
+        const pa = { ...proj(Xa, Ya) }, pb = proj(Xb, Yb);
+        const an = Math.atan2(pa.y - pb.y, pa.x - pb.x), L = 13 * pa.k;
+        g.strokeStyle = rgba(COL.stone, 0.75 * A);
+        g.lineWidth = 1.8;
+        g.beginPath();
+        g.moveTo(pa.x - Math.cos(an - 0.5) * L, pa.y - Math.sin(an - 0.5) * L); g.lineTo(pa.x, pa.y);
+        g.lineTo(pa.x - Math.cos(an + 0.5) * L, pa.y - Math.sin(an + 0.5) * L);
+        g.stroke();
+      }
+      // traînées
+      g.globalCompositeOperation = 'lighter';
+      g.strokeStyle = rgba(f.cold ? COL.stone : COL.ember, 0.42 * A);
+      g.lineWidth = 1.5;
+      g.beginPath();
+      const heads = [];
+      for (const p of f.P) {
+        const u = (t - p.t0) / p.tt;
+        if (u <= 0 || u >= 1) continue;
+        const [X, Y] = bezAt(p, E.inOutSine(u));
+        const [X2, Y2] = bezAt(p, E.inOutSine(Math.max(0, u - 0.1)));
+        const a = proj(X, Y), x = a.x, y = a.y, k = a.k;
+        const b = proj(X2, Y2);
+        g.moveTo(b.x, b.y); g.lineTo(x, y);
+        heads.push(x, y, k * p.sz, Math.min(1, u * 6) * Math.min(1, (1 - u) * 5 + 0.35));
+      }
+      g.stroke();
+      for (let i = 0; i < heads.length; i += 4) sprite(g, f.cold ? SPR.stone : SPR.spark, heads[i], heads[i + 1], 15 * heads[i + 2] + 4, A * heads[i + 3]);
+      // arrivés : ils restent, petits points chauds tassés à destination
+      g.fillStyle = rgba(f.cold ? COL.stone : COL.hot, 0.6 * A);
+      g.beginPath();
+      for (const p of f.P) {
+        if (t < p.t0 + p.tt) continue;
+        const P = proj(p.X1, p.Y1), r = 1.5 * P.k;
+        g.rect(P.x - r, P.y - r, r * 2, r * 2);
+      }
+      g.fill();
+      g.globalCompositeOperation = 'source-over';
+      g.globalAlpha = 1;
+    }
+    g.restore();
   }
 
   // mot : 1 au repos, baisse quand la caméra file (les détails fins deviennent un voile)
@@ -869,7 +990,20 @@
       mk.clearRect(0, 0, W, H);
       drawMarkers(mk, t, sources);
     }
+    for (const f of FLOWS) {
+      const A = flowA(f, t);
+      if (A <= 0.01) continue;
+      if (f.originHeat) {
+        const em = tw(t, f.t - 0.3, f.t + 0.5) * (1 - tw(t, f.t + (f.dur || 3) + 0.5, f.t + (f.dur || 3) + 2.5));
+        for (const [X, Y] of f.O) { const P = proj(X, Y); if (em > 0.01) sources.push({ gx: P.gx, gy: P.gy, amt: 0.75 * em * A * f.originHeat, R: f.originR || 260, waves: [], flicker: true }); }
+      }
+      let arrived = 0;
+      for (const p of f.P) if (t >= p.t0 + p.tt) arrived++;
+      const fa = arrived / f.P.length;
+      if (fa > 0.01) { const P = proj(f.TX, f.TY); sources.push({ gx: P.gx, gy: P.gy, amt: (f.heat || 0.85) * Math.sqrt(fa) * A, R: (f.R || 520) * (0.6 + 0.4 * fa), waves: [] }); }
+    }
     drawDots(g, sources, t, mot);
+    if (FLOWS.length) drawFlows(g, t);
     const busy = [];
     if (pin && pin.showPin) busy.push(pin.s);
     for (const m of MARKERS) if (t >= m.t - 0.05) busy.push(m);
@@ -1058,7 +1192,18 @@
   const chars = (str) => [...str].map((c) => `<span class="ch">${c === ' ' ? '&nbsp;' : esc(c)}</span>`).join('');
   // typographie française : espaces insécables avant : ; ! ? » et après «
   const fr = (str) => str.replace(/« /g, '«\u00a0').replace(/ »/g, '\u00a0»').replace(/ ([:;!?])/g, '\u00a0$1');
-  const words = (str) => fr(str).split(' ').map((w, i, a) => `<span class="w">${esc(w)}${i < a.length - 1 ? ' ' : ''}</span>`).join('');
+  // [[ ... ]] : passage surligné (soulignement de braise qui s'allume)
+  const words = (str) => {
+    let on = false;
+    return fr(str).split(' ').map((w, i, a) => {
+      const open = w.includes('[['), close = w.includes(']]');
+      const hl = on || open;
+      if (open) on = true;
+      if (close) on = false;
+      const clean = w.replace(/\[\[|\]\]/g, '');
+      return `<span class="w${hl ? ' hl' : ''}">${esc(clean)}${i < a.length - 1 ? ' ' : ''}</span>`;
+    }).join('');
+  };
   const nameHTML = (n) => `<div class="name"><div class="ln l1">${chars(n[0])}</div><div class="ln l2">${chars(n[1])}</div></div>`;
   const nativeHTML = (txt, lang) => `<div class="nativeWrap"><div class="native" lang="${lang}" dir="rtl">${esc(txt)}</div></div>`;
   const eyebrowHTML = () => `<div class="eyebrow"><i class="tick"></i><span class="tw"></span></div>`;
@@ -1072,7 +1217,7 @@
   function buildSegments() {
     for (const s of SEG) {
       const el = document.createElement('div');
-      el.className = `seg ${s.type} ${s.layout || ''} ${['intro', 'event', 'outro', 'beat', 'title', 'credit'].includes(s.type) ? 'center' : ''} ${s.type === 'chapter' ? 'c-' + s.layout : ''}`;
+      el.className = `seg ${s.type} ${s.layout || ''} ${['intro', 'event', 'outro', 'beat', 'title', 'credit', 'quote'].includes(s.type) ? 'center' : ''} ${s.type === 'chapter' ? 'c-' + s.layout : ''} ${s.pos ? 'pos-' + s.pos : ''}`;
       let html = '';
       if (s.type === 'figure') {
         html = `<div class="scrim"></div><div class="ghost">${yearStr(s.year)}</div>
@@ -1089,7 +1234,7 @@
           <div class="top">${eyebrowHTML()}</div>${side(s.people[0], 'a')}<div class="amp">&amp;</div>${side(s.people[1], 'b')}
           <div class="bottom"><p class="text">${words(s.text)}</p></div>`;
       } else if (s.type === 'split') {
-        const half = (h, c) => `<div class="half ${c}"><div class="kicker"><span class="tw"></span></div><div class="word">${chars(h.word)}</div>${nativeHTML(h.native, h.lang)}<p class="text">${words(h.text)}</p></div>`;
+        const half = (h, c) => `<div class="half ${c}"><div class="kicker"><span class="tw"></span></div><div class="word">${chars(h.word)}</div>${h.native ? nativeHTML(h.native, h.lang) : ''}<p class="text">${words(h.text)}</p></div>`;
         html = `<div class="scrimL"></div><div class="seam"></div>${half(s.left, 'a')}${half(s.right, 'b')}<div class="footer">${eyebrowHTML()}</div>`;
       } else if (s.type === 'intro') {
         // même graisse pour les deux mots : aucun ne domine l'autre
@@ -1119,6 +1264,25 @@
           ${s.sub ? `<p class="text csub">${words(s.sub)}</p>` : ''}</div>`;
       } else if (s.type === 'outro') {
         html = `<div class="scrim"></div><div class="wrap">${eyebrowHTML()}${s.lines.map((l, i) => `<div class="big ${i === 1 ? 'thin' : ''} o${i}">${chars(l)}</div>`).join('')}</div>`;
+      } else if (s.type === 'doc') {
+        // document cité : titre, vote ou auteurs, extrait mot pour mot, passages surlignés
+        const quote = s.quote ? (Array.isArray(s.quote) ? s.quote : [s.quote]) : [];
+        html = `<div class="scrim"></div>${s.ghost ? `<div class="ghost">${esc(s.ghost)}</div>` : ''}
+          <div class="block">${eyebrowHTML()}<div class="name"><div class="ln l1">${chars(s.title[0])}</div><div class="ln l2">${chars(s.title[1])}</div></div>
+          ${s.meta ? `<div class="meta"><i class="dot"></i><span>${esc(fr(s.meta))}</span></div>` : ''}<div class="rule"></div>
+          ${quote.length ? `<div class="dq"><i class="qm">“</i>${quote.map((q) => `<p class="text">${words(q)}</p>`).join('')}</div>` : ''}
+          ${s.rows ? `<div class="drows">${s.rows.map(([l, x]) => `<div class="drow"><span class="dl">${esc(l)}</span><span class="dt">${esc(fr(x))}</span></div>`).join('')}</div>` : ''}
+          ${s.ref ? `<div class="dref">${esc(fr(s.ref))}</div>` : ''}
+          ${s.note ? `<p class="text dnote">${words(s.note)}</p>` : ''}</div>`;
+      } else if (s.type === 'stat') {
+        // chiffre-choc : le compteur monte pendant que les flux traversent la carte
+        html = `<div class="scrim"></div>${s.ghost ? `<div class="ghost">${esc(s.ghost)}</div>` : ''}
+          <div class="block">${eyebrowHTML()}<div class="name"><div class="ln l1">${chars(s.pre || '')}</div><div class="ln l2 stn"></div></div>
+          <div class="stlab">${esc(fr(s.label))}</div>${s.layout === 'B' ? '' : '<div class="rule"></div>'}
+          ${s.text ? `<p class="text">${words(s.text)}</p>` : ''}${s.source ? `<div class="meta"><i class="dot"></i><span>${esc(fr(s.source))}</span></div>` : ''}</div>`;
+      } else if (s.type === 'quote') {
+        html = `<div class="scrim"></div><div class="wrap"><i class="qm">“</i><p class="text qt">${words(s.text)}</p>
+          <div class="eyebrow qa"><i class="tick"></i><span class="tw"></span><i class="tick"></i></div></div>`;
       }
       el.innerHTML = html;
       typeLayer.appendChild(el);
@@ -1133,6 +1297,15 @@
           fs *= 0.94; ct.style.fontSize = `${Math.floor(fs)}px`;
         }
         s.titleW = ct.offsetWidth;
+        el.style.display = '';
+      }
+      if (s.type === 'doc' || s.type === 'stat') {
+        // le titre tient dans le bloc
+        el.style.display = 'block';
+        const nm = el.querySelector('.name'), maxW = s.titleMax || 980;
+        if (s.type === 'stat') nm.querySelector('.stn').innerHTML = fmtNum(s.value);
+        const widest = Math.max(...[...nm.querySelectorAll('.ln')].map((l) => l.scrollWidth));
+        if (widest > maxW) nm.style.fontSize = `${Math.floor(parseFloat(getComputedStyle(nm).fontSize) * maxW / widest)}px`;
         el.style.display = '';
       }
       if (s.type === 'part') {
@@ -1311,9 +1484,13 @@
       letters(R, R.lines[k], d0, 0.03, 0.6);
       rgbSplit(R, R.lines[k].ln, u, d0 + 0.12);
       const np = tw(u, d0 + 0.35, d0 + 1.1, E.outCubic);
-      css(R, R.natives[k], 'clipPath', `inset(-30% 0 -30% ${f3((1 - np) * 100)}%)`);
-      css(R, R.natives[k], 'opacity', String(f3(clamp(np * 3))));
+      const nat = hf.querySelector('.native');
+      if (nat) {
+        css(R, nat, 'clipPath', `inset(-30% 0 -30% ${f3((1 - np) * 100)}%)`);
+        css(R, nat, 'opacity', String(f3(clamp(np * 3))));
+      }
       wordsIn(R, R.texts[k], d0 + 0.55, 0.03, 0.55);
+      highlight(R, R.texts[k], d0 + (s.hlAt || 1.6));
       const drift = inv(I, D, u);
       const sp = tw(u, d0 - 0.2, d0 + 0.5, E.outExpo);
       css(R, hf, 'transform', `translate3d(${f3(dir * ((1 - sp) * 90 + 10 * drift + 140 * ex))}px,0,0) scale(${f3(1 + 0.025 * drift + 0.4 * ex)})`);
@@ -1535,6 +1712,148 @@
     css(R, R.scrim, 'opacity', String(f3(tw(u, 0, 0.6) * (1 - ex))));
   }
 
+  // passages surlignés : un soulignement de braise court sous les mots, l'un après l'autre
+  function highlight(R, list, t0) {
+    if (!list) return;
+    let j = 0;
+    for (const w of list) {
+      if (!w.classList.contains('hl')) continue;
+      const p = tw(R.u, t0 + j * 0.07, t0 + j * 0.07 + 0.35, E.outCubic);
+      css(R, w, 'backgroundSize', `${f3(p * 100)}% .09em`);
+      css(R, w, 'color', p <= 0 ? '' : `rgba(${Math.round(lerp(233, 255, p))},${Math.round(lerp(220, 196, p))},${Math.round(lerp(192, 140, p))},1)`);
+      j++;
+    }
+  }
+  // 700000 -> « 700 000 » (espace fine entre les milliers)
+  function fmtNum(v) {
+    return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, '<i class="gs"></i>');
+  }
+
+  function upDoc(s, u) {
+    const R = s.R; R.u = u;
+    const I = s.fly + (s.hitAt || 0), D = s.dur, dir = s.layout === 'R' ? -1 : 1;
+    const ex = E.inCubic(inv(D - 0.08, D + 0.45, u));
+    css(R, R.scrim, 'opacity', String(f3(tw(u, I - 0.7, I + 0.2, E.outCubic) * (1 - ex))));
+    if (R.ghost) {
+      const gp = tw(u, I - 0.4, I + 0.75, E.outExpo);
+      css(R, R.ghost, 'opacity', String(f3(gp * (1 - ex))));
+      css(R, R.ghost, 'transform', `translate3d(${f3(dir * lerp(80, -60, inv(I - 0.4, D + 0.45, u)))}px,0,0) scale(${f3(lerp(1.4, 1, gp) * (1 + 0.35 * ex))})`);
+      css(R, R.ghost, 'filter', blur((1 - gp) * 16 + ex * 10));
+    }
+    const block = R.q('.block');
+    const hit = u > I ? 0.04 * Math.exp(-(u - I) / 0.16) : 0;
+    css(R, block, 'transform', `translate3d(${f3(-dir * 120 * ex - dir * 10 * inv(I, D, u))}px,${f3(-20 * ex)}px,0) scale(${f3(1 + 0.022 * inv(I, D, u) + hit + 0.5 * ex)})`);
+    css(R, block, 'opacity', String(f3(1 - ex)));
+    css(R, block, 'filter', blur(ex * 16));
+    css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, I - 0.3, I + 0.3))})`);
+    typewriter(R, R.tws[0], s.eyebrow, u, I - 0.15, 44);
+    letters(R, R.lines[0], I - 0.12, 0.022, 0.55);
+    letters(R, R.lines[1], I - 0.04, 0.03, 0.6);
+    rgbSplit(R, R.names[0], u, I);
+    if (R.metas[0]) {
+      const mp = tw(u, I + 0.45, I + 1.0, E.outCubic);
+      css(R, R.metas[0], 'opacity', String(f3(mp)));
+      css(R, R.metas[0], 'transform', `translate3d(0,${f3((1 - mp) * 14)}px,0)`);
+    }
+    css(R, R.rules[0], 'transform', `scaleX(${f3(tw(u, I + 0.3, I + 1.0))})`);
+    // extrait : les paragraphes s'écrivent l'un après l'autre, au rythme de lecture
+    const nq = R.qa('.dq .text').length, step = s.wordStep || 0.05;
+    let t0 = I + (s.quoteAt || 1.1);
+    const qm = R.q('.qm');
+    if (qm) {
+      const qp = tw(u, t0 - 0.25, t0 + 0.35, E.outBack);
+      css(R, qm, 'opacity', String(f3(clamp(qp))));
+      css(R, qm, 'transform', `scale(${f3(lerp(0.4, 1, qp))})`);
+    }
+    for (let k = 0; k < nq; k++) {
+      wordsIn(R, R.texts[k], t0, step, 0.5);
+      t0 += R.texts[k].length * step;
+      // chaque passage surligné s'allume une fois son paragraphe écrit (ou à hlAt)
+      const hl = s.hlAt !== undefined ? I + (Array.isArray(s.hlAt) ? s.hlAt[k] : s.hlAt + k * 0.45) : t0 + 0.35;
+      highlight(R, R.texts[k], hl);
+      t0 += 0.35;
+    }
+    (R.qa('.drow')).forEach((row, k) => {
+      const at = I + (s.rowAt ? s.rowAt[k] : 1.2 + k * 0.6);
+      const p = tw(u, at - 0.05, at + 0.45, E.outCubic);
+      css(R, row, 'opacity', String(f3(p)));
+      css(R, row, 'transform', p >= 1 ? 'none' : `translate3d(${f3((1 - p) * -30 * dir)}px,0,0)`);
+      const lab = row.firstElementChild;
+      const h = tw(u, at, at + 0.15) * (1 - tw(u, at + 1.0, at + 2.0));
+      css(R, lab, 'boxShadow', h > 0.01 ? `0 0 ${f3(24 * h)}px rgba(255,91,31,${f3(0.9 * h)})` : 'none');
+    });
+    const ref = R.q('.dref');
+    if (ref) {
+      const rp = tw(u, (s.refAt !== undefined ? I + s.refAt : t0), (s.refAt !== undefined ? I + s.refAt : t0) + 0.6, E.outCubic);
+      css(R, ref, 'opacity', String(f3(rp)));
+    }
+    if (s.note) wordsIn(R, R.texts[nq], I + (s.noteAt || 3.5), 0.04, 0.55);
+  }
+
+  function upStat(s, u) {
+    const R = s.R; R.u = u;
+    const I = s.fly + (s.hitAt || 0), D = s.dur, dir = s.layout === 'R' ? -1 : 1;
+    const ex = E.inCubic(inv(D - 0.08, D + 0.45, u));
+    css(R, R.scrim, 'opacity', String(f3(tw(u, I - 0.7, I + 0.2, E.outCubic) * (1 - ex))));
+    if (R.ghost) {
+      const gp = tw(u, I - 0.4, I + 0.75, E.outExpo);
+      css(R, R.ghost, 'opacity', String(f3(gp * (1 - ex))));
+      css(R, R.ghost, 'transform', `translate3d(${f3(dir * lerp(80, -60, inv(I - 0.4, D + 0.45, u)))}px,0,0) scale(${f3(lerp(1.4, 1, gp) * (1 + 0.35 * ex))})`);
+      css(R, R.ghost, 'filter', blur((1 - gp) * 16 + ex * 10));
+    }
+    const block = R.q('.block');
+    const hit = u > I ? 0.045 * Math.exp(-(u - I) / 0.16) : 0;
+    css(R, block, 'transform', `translate3d(${f3(-dir * 110 * ex)}px,0,0) scale(${f3(1 + 0.025 * inv(I, D, u) + hit + 0.5 * ex)})`);
+    css(R, block, 'opacity', String(f3(1 - ex)));
+    css(R, block, 'filter', blur(ex * 16));
+    css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, I - 0.4, I + 0.2))})`);
+    typewriter(R, R.tws[0], s.kicker, u, I - 0.3, 40);
+    letters(R, R.lines[0], I - 0.1, 0.03, 0.55);
+    // compteur : il monte vite puis ralentit, et se fige sur le chiffre exact
+    const c0 = I + (s.countAt || 0), cd = s.countDur || 2.6;
+    const cp = E.outQuart(inv(c0, c0 + cd, u));
+    const stn = R.lines[1].ln;
+    const key = Math.round(s.value * cp / (cp < 1 ? 137 : 1));
+    if (R.numKey !== key) { R.numKey = key; stn.innerHTML = fmtNum(cp >= 1 ? s.value : key * 137); }
+    const sp = tw(u, c0 - 0.15, c0 + 0.35, E.outExpo);
+    css(R, stn, 'transform', `translate3d(0,${f3((1 - sp) * 60)}%,0)`);
+    css(R, stn, 'opacity', String(f3(sp)));
+    const land = u > c0 + cd ? Math.exp(-(u - c0 - cd) / 0.25) : 0;
+    css(R, stn, 'textShadow', land > 0.02 ? `0 0 ${f3(40 * land)}px rgba(255,120,50,${f3(0.8 * land)})` : 'none');
+    css(R, stn, 'color', cp < 1 ? 'var(--hot)' : land > 0.02 ? `rgba(${Math.round(lerp(233, 255, land))},${Math.round(lerp(220, 174, land))},${Math.round(lerp(192, 90, land))},1)` : '');
+    const lab = R.q('.stlab');
+    const lp = tw(u, I + 0.35, I + 0.95, E.outCubic);
+    css(R, lab, 'opacity', String(f3(lp)));
+    css(R, lab, 'clipPath', `inset(-20% ${f3((1 - lp) * 100)}% -20% 0)`);
+    if (R.rules[0]) css(R, R.rules[0], 'transform', `scaleX(${f3(tw(u, I + 0.6, I + 1.3))})`);
+    if (s.text) { wordsIn(R, R.texts[0], I + (s.textAt || 1.4), 0.045, 0.55); highlight(R, R.texts[0], I + (s.hlAt || 4.0)); }
+    if (R.metas[0]) {
+      const mp = tw(u, I + (s.sourceAt || 3.0), I + (s.sourceAt || 3.0) + 0.6, E.outCubic);
+      css(R, R.metas[0], 'opacity', String(f3(mp)));
+    }
+  }
+
+  function upQuote(s, u) {
+    const R = s.R; R.u = u;
+    const I = s.fly + (s.hitAt || 0), D = s.dur;
+    const wrapEl = R.q('.wrap');
+    const qp = tw(u, I - 0.2, I + 0.5, E.outBack);
+    const qm = R.q('.qm');
+    css(R, qm, 'opacity', String(f3(clamp(qp))));
+    css(R, qm, 'transform', `scale(${f3(lerp(0.5, 1, qp))})`);
+    wordsIn(R, R.texts[0], I + 0.3, s.wordStep || 0.09, 0.8);
+    const n = R.texts[0].length * (s.wordStep || 0.09);
+    highlight(R, R.texts[0], I + 0.6 + n);
+    const at = I + 1.0 + n;
+    typewriter(R, R.tws[0], s.author, u, at, 34, false);
+    R.qa('.qa .tick').forEach((tk) => css(R, tk, 'transform', `scaleX(${f3(tw(u, at - 0.2, at + 0.4))})`));
+    const ex = E.inCubic(inv(D - 0.4, D + 0.4, u));
+    css(R, wrapEl, 'transform', `scale(${f3(1 + 0.035 * inv(I, D, u) + 0.3 * ex)})`);
+    css(R, wrapEl, 'opacity', String(f3(1 - ex)));
+    css(R, wrapEl, 'filter', blur(ex * 16));
+    css(R, R.scrim, 'opacity', String(f3(tw(u, I - 0.6, I + 0.2) * (1 - ex))));
+  }
+
   function updateType(t) {
     for (const s of SEG) {
       const u = t - s.start;
@@ -1549,6 +1868,9 @@
       else if (s.type === 'credit') upCredit(s, u);
       else if (s.type === 'part') upPart(s, u);
       else if (s.type === 'chapter') upChapter(s, u);
+      else if (s.type === 'doc') upDoc(s, u);
+      else if (s.type === 'stat') upStat(s, u);
+      else if (s.type === 'quote') upQuote(s, u);
       else if (s.type === 'camera') { /* plan de caméra sans texte */ }
       else upCenter(s, u);
     }

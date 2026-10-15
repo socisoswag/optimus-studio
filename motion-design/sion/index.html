@@ -204,6 +204,56 @@
   .c-R .csub { margin-left: auto; }
   .c-C .csub { margin-left: auto; margin-right: auto; }
 
+  /* passages surlignés [[ … ]] */
+  .text .w.hl { background-image: linear-gradient(90deg, var(--ember), var(--hot)); background-repeat: no-repeat; background-position: 0 96%; background-size: 0% .09em; }
+
+  /* document cité (résolutions, lettres, accords) */
+  .doc .ghost { top: 60px; }
+  .doc .block { top: 132px; width: 1000px; }
+  .doc .name { font-size: 150px; margin-top: 22px; }
+  .doc .meta { margin-top: 22px; font-size: 17px; }
+  .R.doc .meta { justify-content: flex-end; }
+  .doc .rule { margin-top: 24px; }
+  .doc .dq { position: relative; margin-top: 30px; }
+  .doc .dq .qm { position: absolute; left: -86px; top: -38px; font-family: var(--serif); font-style: italic; font-weight: 300; font-variation-settings: 'opsz' 72; font-size: 170px; line-height: 1; color: var(--ember); text-shadow: 0 0 34px rgba(255,91,31,.55); }
+  .doc .dq .text { margin-top: 0; max-width: 980px; font-size: 39px; line-height: 1.27; }
+  .doc .dq .text + .text { margin-top: 18px; }
+  .R.doc .dq .text { margin-left: auto; text-align: left; }
+  .doc .dref { margin-top: 22px; font-family: var(--mono); font-size: 16px; letter-spacing: .22em; text-transform: uppercase; color: var(--ash); }
+  .doc .dnote { margin-top: 20px; font-size: 31px; color: rgba(233,220,192,.78); max-width: 940px; }
+  .doc .drows { margin-top: 30px; display: flex; flex-direction: column; gap: 16px; }
+  .doc .drow { display: flex; gap: 22px; align-items: baseline; }
+  .R.doc .drow { flex-direction: row-reverse; }
+  .doc .dl { flex: none; min-width: 210px; padding: 5px 12px 4px; font-family: var(--mono); font-weight: 500; font-size: 17px; letter-spacing: .2em; text-transform: uppercase; color: #120f0c; background: var(--ember); text-align: center; }
+  .doc .dt { font-family: var(--serif); font-variation-settings: 'opsz' 24; font-size: 31px; line-height: 1.25; color: rgba(233,220,192,.94); }
+
+  /* chiffre-choc */
+  .stat .ghost { top: 60px; }
+  .stat .block { top: 200px; width: 1000px; }
+  .stat .name { font-size: 250px; margin-top: 18px; }
+  .stat .name .ln.l1 { font-size: .4em; line-height: 1; padding-bottom: 0; }
+  .stat .name .stn { display: block; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .stat .gs { display: inline-block; width: .14em; }
+  .stat .stlab { margin-top: 10px; font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 380; font-size: 66px; line-height: .98; text-transform: uppercase; color: var(--stone); max-width: 980px; }
+  .R.stat .stlab { margin-left: auto; }
+  .stat .text { font-size: 36px; }
+  .stat.B .scrim { background: linear-gradient(0deg, rgba(9,8,7,.9) 0%, rgba(9,8,7,.62) 32%, rgba(9,8,7,0) 58%); }
+  .stat.B .block { top: auto; bottom: 96px; left: 132px; width: 1656px; }
+  .stat.B .name { display: flex; align-items: baseline; gap: 30px; font-size: 176px; margin-top: 8px; }
+  .stat.B .name .ln.l1 { font-size: .42em; }
+  .stat.B .stlab { font-size: 52px; max-width: none; }
+  .stat.B .text { max-width: 1500px; margin-top: 16px; font-size: 34px; }
+  .stat.B .meta { margin-top: 18px; }
+
+  /* citation */
+  .quote .scrim { background: radial-gradient(ellipse 80% 64% at 50% 60%, rgba(9,8,7,.8) 0%, rgba(9,8,7,.45) 60%, rgba(9,8,7,0) 100%); }
+  .quote .wrap { padding: 0 220px; }
+  .quote .qm { display: block; height: 130px; font-family: var(--serif); font-style: italic; font-weight: 300; font-variation-settings: 'opsz' 72; font-size: 230px; line-height: 1; color: var(--ember); text-shadow: 0 0 40px rgba(255,91,31,.6); }
+  .quote .text.qt { max-width: 1420px; margin-top: 10px; font-size: 70px; line-height: 1.14; font-variation-settings: 'opsz' 72; text-wrap: balance; }
+  .quote .eyebrow.qa { margin: 40px 0 0; }
+  .quote.pos-low .wrap { justify-content: flex-end; padding-bottom: 150px; }
+  .quote.pos-low .scrim { background: linear-gradient(0deg, rgba(9,8,7,.92) 0%, rgba(9,8,7,.7) 40%, rgba(9,8,7,0) 72%); }
+
   /* HUD */
   .hud-tl, .hud-tr { position: absolute; top: 58px; font-family: var(--mono); font-size: 15px; letter-spacing: .3em; text-transform: uppercase; line-height: 1.7; }
   .hud-tl { left: 132px; color: rgba(233,220,192,.78); }

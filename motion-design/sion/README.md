@@ -16,6 +16,9 @@ un seul moteur, une timeline par pièce.
 | Ouverture de la conclusion | `timelines/conclusion.js` | 14 s | `output/conclusion.mp4` |
 | Titres des 39 chapitres | `timelines/chapitres.js` | 39 × 4,6 s | `output/chapitres/chapitre-01.mp4` … `-39.mp4` |
 | Chronologie des figures (1897 – 1995) | `timelines/chronologie.js` | 1 min 20 | `output/chronologie.mp4` |
+| Trois promesses, 1915 – 1917 (chapitre 7) | `timelines/trois-promesses.js` | 55 s | `output/trois-promesses.mp4` |
+| Exodes, 1947 – années 1970 (chapitres 13 et 17) | `timelines/flux-humains.js` | 45 s | `output/flux-humains.mp4` |
+| Les résolutions 194, 242, 338 (chapitre 33) | `timelines/resolutions.js` | 1 min | `output/resolutions.mp4` |
 
 Chaque pièce a aussi sa bande-son seule en `.wav` à côté du `.mp4`.
 
@@ -63,6 +66,37 @@ Un carton de 4,6 s par chapitre. Le titre est coupé au deux-points : le début 
 italique. Trois mises en page (gauche, centre, droite) et trois apparitions (impact, balayage avec
 barre de braise, mise au point) alternent ; chaque carton s'ouvre sur un lieu de la carte, et le
 chapitre 34 éteint les points de la carte un à un. Fabrication : `tools/build_chapitres.sh`.
+
+## Les séquences documentaires
+
+Trois séquences s'appuient sur des textes et des chiffres sourcés (les sources sont en tête de
+chaque fichier de `timelines/`). Les citations sont mot pour mot ; `[…]` marque une coupe.
+
+1. **Trois promesses** (chapitre 7) — la lettre McMahon à Hussein (Le Caire, 1915), les accords
+   Sykes-Picot (1916, et les zones qui s'allument sur la carte), la déclaration Balfour (Londres,
+   1917), puis la phrase d'Arthur Koestler sur la Palestine, avec les trois engagements posés sur
+   la même terre.
+2. **Exodes** (chapitres 13 et 17) — environ 700 000 Palestiniens expulsés ou en fuite en
+   1947 – 1949, puis environ 850 000 juifs qui quittent les pays arabes de 1948 aux années 1970.
+   Des flux de particules partent des villes, un compteur monte, les lieux d'arrivée s'allument.
+   Les deux départs se suivent sans être mis en équivalence.
+3. **Les résolutions de l'ONU** (chapitre 33) — 194, 242 et 338 : date, organe, vote, extrait.
+   Pour la 242, l'écart entre le texte français (« des territoires ») et le texte anglais
+   (« from territories »).
+
+### Écrans réutilisables
+
+Ces trois séquences ajoutent au moteur des écrans que l'on peut reprendre dans n'importe quelle
+timeline :
+
+| Type | Usage | Champs principaux |
+|---|---|---|
+| `doc` | document cité (lettre, accord, résolution) | `eyebrow`, `title` (2 lignes), `meta`, `quote` (texte ou liste de paragraphes), `rows`, `ref`, `note` |
+| `stat` | chiffre-choc avec compteur | `kicker`, `pre`, `value`, `label`, `text`, `source`, `layout` `'L'` ou `'B'` (bas d'écran) |
+| `quote` | citation plein écran | `text`, `author`, `pos: 'low'` pour la poser en bas, sur la carte |
+
+Dans un texte, `[[ … ]]` souligne un passage d'un trait de braise. Les flux de particules se
+déclarent dans `flows` (départs, arrivée, nombre de particules, moment) ; voir `flux-humains.js`.
 
 ## Fabriquer une pièce
 

@@ -47,6 +47,7 @@
       else if (s.fly === undefined) s.fly = s.type === 'outro' ? 2.4 : 1.25;
       // la cible de caméra hérite du lieu de la fiche
       if (s.cam && s.lon !== undefined && s.cam.lon === undefined) { s.cam.lon = s.lon; s.cam.lat = s.lat; }
+      if (s.camEnd && s.camEnd.lon === undefined && s.cam) { s.camEnd.lon = s.cam.lon; s.camEnd.lat = s.cam.lat; }
       s.impact = s.start + s.fly + (s.hitAt || 0);
       t = s.end;
     });
@@ -66,10 +67,19 @@
       if (s.type === 'title') add(s.impact, s.k || 1.3, 'title');
       if (s.type === 'credit') add(s.impact, s.k || 0.45, 'soft');
       if (s.type === 'chapter') add(s.impact, s.reveal === 'focus' ? 0.5 : 0.9, s.reveal === 'focus' ? 'soft' : 'hit');
+      if (s.type === 'doc') add(s.impact, s.k || 0.85, s.hitKind || 'hit');
+      if (s.type === 'quote') add(s.impact, s.k || 0.45, 'soft');
+      if (s.type === 'stat') {
+        add(s.impact, s.k || 0.9, s.hitKind || 'hit');
+        // le compteur tourne : déclics de plus en plus espacés, puis impact à l'arrivée
+        const c0 = s.impact + (s.countAt || 0), cd = s.countDur || 2.6;
+        for (let j = 1; j <= 14; j++) add(c0 + cd * (1 - Math.pow(1 - j / 15, 0.6)), 0.3, 'tick', false);
+        add(c0 + cd, 0.55, 'soft', false);
+      }
       (s.extraHits || []).forEach(([d, k]) => add(s.impact + d, k));
     });
     // repères numérotés sur la carte (ouvertures de partie)
-    const markers = (def.markers || []).map((m) => ({ ...m, t: byId[m.seg].start + m.at, hideT: m.hideAt !== undefined ? byId[m.seg].start + m.hideAt : undefined }));
+    const markers = (def.markers || []).map((m) => ({ ...m, t: byId[m.seg].start + m.at, hideT: m.hideAt !== undefined ? byId[m.seg].start + m.hideAt : undefined, endT: m.endAt !== undefined ? byId[m.seg].start + m.endAt : undefined }));
     markers.forEach((m) => impacts.push({ t: m.t, k: 0.3, kind: 'tick', seg: segments.indexOf(byId[m.seg]), visual: false }));
     impacts.sort((a, b) => a.t - b.t);
 
@@ -103,12 +113,18 @@
       ft += (0.9 + rnd() * 2.6) / (segAt(ft).flashRate || 1);
     }
 
+    // Flux humains (particules sur la carte) : temps absolus
+    const flows = (def.flows || []).map((f) => {
+      const s = byId[f.seg];
+      return { ...f, t: s.start + f.at, tEnd: f.endAt !== undefined ? s.start + f.endAt : s.end + 0.35 };
+    });
+
     // Silences (coupure sonore avant un impact)
     const silences = segments.filter((s) => s.silenceBefore).map((s) => ({ t0: s.impact - s.silenceBefore, t1: s.impact }));
 
     return {
       name: def.name || 'piece',
-      segments, total, impacts, flights, flashes, markers, silences,
+      segments, total, impacts, flights, flashes, markers, silences, flows,
       events: def.events || [],
       cities: def.cities || CITIES,
       hud: Object.assign({}, HUD_DEFAULT, def.hud || {}),

@@ -240,6 +240,27 @@ for fl in cues["flights"]:
     g = 0.5 if fl["big"] else 0.36
     add((s * gl + 0.5 * sub, s * gr + 0.5 * sub), fl["t0"], g)
 
+# ------------------------------------------------------------------ flux humains : rumeur de foule, pas, poussière
+for fl in cues.get("flows", []):
+    dur = fl["dur"]
+    n = int((dur + 1.0) * SR)
+    tt = np.arange(n) / SR
+    env = np.sin(np.pi * np.clip(tt / (dur + 1.0), 0, 1)) ** 1.6
+    body = bp(noise(n), 140, 700)
+    body /= np.abs(body).max() + 1e-9
+    body *= 0.75 + 0.25 * np.sin(2 * np.pi * 0.7 * tt + 1.3)
+    steps = np.zeros(n)
+    for p in rng.integers(0, n - 4000, int(dur * 70)):
+        ln = int(SR * (0.01 + 0.02 * rng.random()))
+        steps[p:p + ln] += (0.3 + rng.random()) * noise(ln) * np.exp(-np.arange(ln) / (ln / 5))
+    steps = bp(steps, 300, 2600)
+    steps /= np.abs(steps).max() + 1e-9
+    x = (0.8 * body + 0.35 * steps) * env
+    pan = np.clip((fl["to"][0] - fl["from"][0]) / 12.0, -0.7, 0.7)
+    l, r = verb(x, IR_FAR, wet=0.5)
+    gl, gr = pan_gains(pan)
+    add((l * gl, r * gr), fl["t0"], 0.16)
+
 # ------------------------------------------------------------------ impacts
 def hit(k=1.0, metal=True):
     n = int(2.2 * SR)

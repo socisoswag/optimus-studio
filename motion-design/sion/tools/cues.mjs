@@ -14,6 +14,7 @@ console.log(JSON.stringify({
   flights: TL.flights,
   flashes: TL.flashes,
   silences: TL.silences,
+  flows: TL.flows.map((f) => ({ t0: f.t, dur: (f.dur || 3) + (f.travel ? f.travel[1] : 3.4), to: f.to, from: Array.isArray(f.from[0]) ? f.from[0] : f.from })),
   event: ev ? { t: ev.impact, end: ev.end } : null,
   sound: TL.sound,
 }, null, 1));

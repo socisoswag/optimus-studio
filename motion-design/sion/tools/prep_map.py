@@ -18,7 +18,7 @@ OUT = Path(__file__).resolve().parent.parent / "data" / "map.js"
 
 # Zones où l'on zoome fort : données 1:10 M. Ailleurs : 1:50 M.
 HI_ZONES = [
-    box(-12, 20, 52, 66),   # Europe, Méditerranée, Proche-Orient
+    box(-12, 10, 56, 66),   # Europe, Méditerranée, Afrique du Nord, Proche-Orient, Yémen
     box(-80, 36, -72, 42),  # Maryland / Washington (Camp David)
 ]
 HI = unary_union(HI_ZONES)
@@ -131,14 +131,11 @@ def dot_grid(land, x0, y0, x1, y1, step, exclude=None, seen=None):
 
 
 dots_world = dot_grid(land50, -180, -56, 180, 80, 1.0)
-dots_region = dot_grid(land10, -12, 20, 52, 66, 0.25)
+dots_region = dot_grid(land10, -12, 10, 56, 66, 0.25)
 dots_levant = dot_grid(land10, 33.6, 29.2, 36.9, 33.8, 0.05)
 dots_levant2 = dot_grid(land10, 34.1, 30.9, 35.9, 33.2, 0.025)
-# trames fines autour des autres étapes (Bâle, Londres, Paris, Le Caire, Koweït, Oslo)
-seen = set()
-dots_local = []
-for lon, lat in [(7.59, 47.56), (-0.13, 51.51), (2.35, 48.86), (31.24, 30.04), (47.98, 29.37), (10.75, 59.91)]:
-    dots_local += dot_grid(land10, lon - 7, lat - 5, lon + 7, lat + 5, 0.08, exclude=LEVANT, seen=seen)
+# trame fine continue sur toute la zone de travail (pas de rectangle visible en vue moyenne)
+dots_local = dot_grid(land10, -12, 10, 56, 62, 0.08)
 dots_md = dot_grid(land10, -80, 36, -72, 42, 0.1)
 
 data = {
