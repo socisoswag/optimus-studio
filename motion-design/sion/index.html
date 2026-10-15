@@ -133,6 +133,37 @@
   .event .big { font-size: 210px; }
   .outro .big { font-size: 190px; }
 
+  /* générique : mots-chocs */
+  .beat .wrap { justify-content: flex-start; padding-top: 214px; }
+  .beat .big { font-size: 300px; }
+  .beat .ghost, .title .ghost { left: 50%; transform: translateX(-50%); top: 60px; }
+
+  /* titre du film */
+  .title .big.sion { font-size: 430px; letter-spacing: .09em; padding-left: .14em; }
+  .title .scripts { display: flex; align-items: center; justify-content: center; gap: 46px; margin-top: 4px; }
+  .title .scripts .native { margin: 0; color: rgba(233,220,192,.9); }
+  .title .scripts .native[lang="he"] { font-size: 76px; }
+  .title .scripts .native[lang="ar"] { font-size: 62px; }
+  .title .scripts .bar { display: block; width: 300px; margin: 0; transform-origin: 50% 50%; }
+  .title .text { margin-top: 34px; font-size: 54px; }
+
+  /* crédit */
+  .credit .by { font-size: 42px; color: rgba(233,220,192,.78); margin-bottom: 6px; }
+  .credit .big { font-size: 176px; letter-spacing: .015em; }
+  .credit .big .f .ch { font-variation-settings: 'wdth' 62, 'wght' 260; }
+  .credit .role { margin-top: 30px; justify-content: center; }
+
+  /* ouverture de partie */
+  .part .ghost { left: 30px; top: -170px; font-family: var(--serif); font-style: normal; font-variation-settings: 'opsz' 72, 'wght' 300; font-size: 1200px; letter-spacing: -.02em; -webkit-text-stroke: 2px rgba(233,220,192,.13); }
+  .part .block { top: 150px; width: 980px; }
+  .part .name { font-size: 236px; margin-top: 20px; }
+  .part .psub { margin-top: 14px; font-family: var(--serif); font-style: italic; font-variation-settings: 'opsz' 60; font-size: 54px; line-height: 1.1; color: var(--stone); }
+  .part .psub .w { display: inline-block; white-space: pre; }
+  .part .rule { margin-top: 30px; }
+  .part .chap { list-style: none; margin-top: 30px; }
+  .part .chap li { display: flex; gap: 22px; align-items: baseline; font-family: var(--serif); font-variation-settings: 'opsz' 24; font-size: 29px; line-height: 1.52; white-space: nowrap; will-change: transform, opacity; }
+  .part .chap .n { flex: none; width: 40px; font-family: var(--mono); font-size: 17px; letter-spacing: .18em; color: var(--ember); }
+
   /* HUD */
   .hud-tl, .hud-tr { position: absolute; top: 58px; font-family: var(--mono); font-size: 15px; letter-spacing: .3em; text-transform: uppercase; line-height: 1.7; }
   .hud-tl { left: 132px; color: rgba(233,220,192,.78); }
@@ -166,7 +197,14 @@
   <div id="fade" class="layer"></div>
 
   <script src="data/map.js"></script>
-  <script src="timeline.js"></script>
+  <script src="core.js"></script>
+  <script>
+    // pièce à rendre : index.html?tl=generique (par défaut : la chronologie)
+    (function () {
+      var tl = (new URLSearchParams(location.search).get('tl') || 'chronologie').replace(/[^a-z0-9-]/gi, '');
+      document.write('<script src="timelines/' + tl + '.js"><\/script>');
+    })();
+  </script>
   <script src="engine.js"></script>
 </body>
 </html>

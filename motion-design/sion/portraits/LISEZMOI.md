@@ -1,6 +1,6 @@
 # Photos d'archive
 
-Dépose ici une photo par figure, puis renseigne son chemin dans `timeline.js` (champ `photo`).
+Dépose ici une photo par figure, puis renseigne son chemin dans `timelines/chronologie.js` (champ `photo`).
 Noms conseillés, dans l'ordre de la chronologie :
 
 | Fichier | Figure |

@@ -108,18 +108,32 @@ def verb(x, ir, wet=0.35, dry=1.0):
 
 
 # ------------------------------------------------------------------ enveloppe générale
+SND = cues.get("sound") or {}
+EV = cues.get("event")
+silences = cues.get("silences") or []
 master = np.ones(N)
-master *= np.clip(t / 2.2, 0, 1) ** 1.5
-fade0 = cues["outro"]["end"] - 1.6
+master *= np.clip(t / float(SND.get("fadeIn", 2.2)), 0, 1) ** 1.5
+fade0 = TOTAL - 1.6
 master *= np.clip((TOTAL + 0.3 - t) / (TOTAL + 0.3 - fade0), 0, 1)
-sil0, sil1 = cues["silence"]["t0"], cues["silence"]["t1"]
 
-# atténuation du « lit » sonore : silence avant 1995, puis remontée lente
+# atténuation du « lit » sonore : coupure avant chaque silence, puis retour
 bed = np.ones(N)
-bed *= 1 - np.clip((t - (sil0 - 0.12)) / 0.12, 0, 1)
-ev_t, ev_end = cues["event"]["t"], cues["event"]["end"]
-rise = np.clip((t - ev_t) / (ev_end + 1.5 - ev_t), 0, 1)
-bed = np.where(t >= sil1, 0.25 + 0.75 * rise ** 1.6, bed)
+for si in silences:
+    s0, s1 = si["t0"], si["t1"]
+    cut = 1 - np.clip((t - (s0 - 0.12)) / 0.12, 0, 1)
+    if EV and abs(EV["t"] - s1) < 1e-3:
+        rise = np.clip((t - s1) / (EV["end"] + 1.5 - s1), 0, 1)
+        back = 0.25 + 0.75 * rise ** 1.6
+    else:
+        back = 0.4 + 0.6 * np.clip((t - s1) / 1.0, 0, 1) ** 1.2
+    bed *= np.where(t < s1, cut, back)
+
+
+def in_silence(x, before=0.1, after=0.2):
+    if any(si["t0"] - before < x < si["t1"] + after for si in silences):
+        return True
+    return bool(EV) and EV["t"] <= x < EV["end"] + after
+
 
 # respiration sous les impacts (effet de compression)
 duck = np.ones(N)
@@ -141,8 +155,8 @@ CHORDS = {
     "A": [55.0, 82.41, 110.0, 138.59],
     "Dm9": [73.42, 110.0, 164.81, 174.61],
 }
-# progression calée sur les grandes périodes du récit
-prog = [(0.0, "Dm"), (36.0, "Bb"), (50.0, "Gm"), (63.5, "A"), (cues["outro"]["t"] - 2.0, "Dm9")]
+# progression calée sur les grandes périodes du récit (fournie par la timeline)
+prog = [tuple(c) for c in (SND.get("chords") or [[0.0, "Dm"]])]
 pad = np.zeros(N)
 for k, (t0, name) in enumerate(prog):
     t1 = prog[k + 1][0] if k + 1 < len(prog) else TOTAL + 0.5
@@ -179,11 +193,11 @@ crl = crack * bed * 0.09
 add((crl, np.roll(crl, int(0.021 * SR))), 0, 1.0)
 
 # ------------------------------------------------------------------ tic-tac (le temps qui passe)
-tick_start, tick_end = 2.0, cues["outro"]["t"] + 1.2
+tick_start, tick_end = SND.get("ticks") or (0.0, -1.0)
 tk = 0
 tt = tick_start
 while tt < tick_end:
-    if not (sil0 - 0.1 < tt < ev_end + 0.2):
+    if not in_silence(tt):
         n = int(0.03 * SR)
         hi = tk % 2 == 0
         s = bp(noise(n), 2400 if hi else 1300, 6500 if hi else 3200) * env_exp(n, 0.0035 if hi else 0.006, 0.0005)
@@ -250,9 +264,32 @@ def riser(dur=0.9):
     return x / (np.abs(x).max() + 1e-9)
 
 
+def click():
+    n = int(0.05 * SR)
+    tt = np.arange(n) / SR
+    x = bp(noise(n), 1500, 6500) * env_exp(n, 0.004, 0.0003)
+    x = x / (np.abs(x).max() + 1e-9) + 0.5 * np.sin(2 * np.pi * 1180 * tt) * env_exp(n, 0.02, 0.001)
+    return x
+
+
 for im in cues["impacts"]:
     k = im["k"]
-    if im["kind"] == "event":
+    kind = im["kind"]
+    if kind == "event":
+        continue
+    if kind == "tick":
+        l, r = verb(click(), IR_HALL, wet=0.25)
+        add((l, r), im["t"], 0.16)
+        continue
+    if kind == "soft":
+        l, r = verb(lp(hit(1.0, metal=False), 900), IR_FAR, wet=0.5)
+        add((l, r), im["t"], 0.35 * k / 0.45)
+        continue
+    if kind == "title":
+        l, r = verb(hit(1.0), IR_FAR, wet=0.62)
+        add((l, r), im["t"], 0.5)
+        rs = riser(1.5)
+        add(rs, im["t"] - 0.6 - len(rs) / SR, 0.05)
         continue
     l, r = verb(hit(1.0), IR_HALL, wet=0.32)
     add((l, r), im["t"], 0.55 * min(k, 1.2))
@@ -270,15 +307,11 @@ for f in cues["flashes"]:
     gl, gr = pan_gains(pan)
     delay = 0.16 + 0.35 * (1 - f["size"])
     t0 = f["t"] + delay
-    if sil0 - 0.2 < t0 < ev_end + 0.5:
+    if in_silence(t0, before=0.2, after=0.5):
         continue
     add((l * gl * 1.4, r * gr * 1.4), t0, 0.16 * f["power"])
 
-# ------------------------------------------------------------------ 1995 : impact, cœur, acouphène
-l, r = verb(hit(1.0), IR_FAR, wet=0.7)
-add((l, r), ev_t, 0.42)
-
-
+# ------------------------------------------------------------------ séquence « événement » (1995) : impact, cœur, acouphène
 def heartbeat():
     n = int(0.35 * SR)
     tt = np.arange(n) / SR
@@ -286,11 +319,15 @@ def heartbeat():
     return lp(s, 140)
 
 
-for d in (0.95, 1.27, 2.15, 2.47, 3.35, 3.67):
-    add(heartbeat(), ev_t + d, 0.55 if int(d * 100) % 2 else 0.4)
-n = int(3.4 * SR)
-tin = np.sin(2 * np.pi * 7150 * np.arange(n) / SR) * np.clip(np.arange(n) / SR / 0.08, 0, 1) * np.exp(-np.arange(n) / SR / 1.1)
-add(tin, ev_t + 0.02, 0.022)
+if EV:
+    ev_t = EV["t"]
+    l, r = verb(hit(1.0), IR_FAR, wet=0.7)
+    add((l, r), ev_t, 0.42)
+    for d in (0.95, 1.27, 2.15, 2.47, 3.35, 3.67):
+        add(heartbeat(), ev_t + d, 0.55 if int(d * 100) % 2 else 0.4)
+    n = int(3.4 * SR)
+    tin = np.sin(2 * np.pi * 7150 * np.arange(n) / SR) * np.clip(np.arange(n) / SR / 0.08, 0, 1) * np.exp(-np.arange(n) / SR / 1.1)
+    add(tin, ev_t + 0.02, 0.022)
 
 # ------------------------------------------------------------------ mixage final
 mix_l, mix_r = L * master, R * master

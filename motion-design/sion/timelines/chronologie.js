@@ -1,4 +1,5 @@
 /*
+ * Pièce « Chronologie des figures » (1897 – 1995).
  * Contenu et minutage du motion design.
  * Tout le texte affiché à l'écran est ici : modifiez-le puis relancez le rendu.
  *
@@ -175,7 +176,7 @@
       cam: { w: 0.15, pitch: 40, bearing: 6 },
     },
     {
-      id: 'rabin-1995', type: 'event', dur: 4.2,
+      id: 'rabin-1995', type: 'event', dur: 4.2, quiet: true, slow: true, silenceBefore: 0.55, blackBefore: 0.5,
       year: 1995, place: 'Tel-Aviv', lon: 34.78, lat: 32.08,
       kicker: 'Tel-Aviv',
       title: '4 novembre 1995',
@@ -215,71 +216,14 @@
     [1995, 'Assassinat de Rabin'],
   ];
 
-  // Villes de contexte (affichées selon le niveau de zoom).
-  const cities = [
-    ['Jérusalem', 35.22, 31.78, 3], ['Tel-Aviv', 34.78, 32.08, 3], ['Jaffa', 34.75, 32.05, 1],
-    ['Haïfa', 34.99, 32.79, 2], ['Gaza', 34.46, 31.50, 2], ['Naplouse', 35.26, 32.22, 1],
-    ['Jéricho', 35.44, 31.86, 1], ['Hébron', 35.10, 31.53, 1], ['Ramallah', 35.20, 31.90, 1],
-    ['Beersheba', 34.79, 31.25, 1], ['Jénine', 35.30, 32.46, 1], ['Nazareth', 35.30, 32.70, 1],
-    ['Tibériade', 35.53, 32.79, 1], ['Acre', 35.08, 32.92, 1], ['Eilat', 34.95, 29.56, 1],
-    ['Beyrouth', 35.50, 33.89, 2], ['Damas', 36.29, 33.51, 2], ['Amman', 35.93, 31.95, 2],
-    ['Le Caire', 31.24, 30.04, 3], ['Alexandrie', 29.92, 31.20, 2], ['Port-Saïd', 32.30, 31.26, 1],
-    ['Suez', 32.55, 29.97, 1], ['Bagdad', 44.37, 33.31, 2], ['Koweït', 47.98, 29.37, 2],
-    ['Riyad', 46.72, 24.69, 2], ['Nicosie', 33.38, 35.17, 1], ['Istanbul', 28.98, 41.01, 2],
-    ['Ankara', 32.86, 39.93, 1], ['Athènes', 23.73, 37.98, 2], ['Rome', 12.50, 41.90, 2],
-    ['Vienne', 16.37, 48.21, 3], ['Bâle', 7.59, 47.56, 2], ['Paris', 2.35, 48.86, 3],
-    ['Londres', -0.13, 51.51, 3], ['Berlin', 13.40, 52.52, 2], ['Varsovie', 21.01, 52.23, 2],
-    ['Odessa', 30.73, 46.48, 2], ['Moscou', 37.62, 55.75, 2], ['Oslo', 10.75, 59.91, 2],
-    ['Genève', 6.14, 46.20, 1], ['Zurich', 8.54, 47.37, 1], ['Bruxelles', 4.35, 50.85, 1],
-    ['Washington', -77.04, 38.91, 3], ['Baltimore', -76.61, 39.29, 1], ['Camp David', -77.465, 39.648, 1],
-    ['New York', -74.0, 40.71, 2], ['Philadelphie', -75.16, 39.95, 1], ['Tunis', 10.18, 36.80, 2],
-    ['Le Golan', 35.75, 33.0, 1], ['Sinaï', 33.8, 29.5, 2],
-  ];
-
-  // ---------- Minutage dérivé (partagé avec le rendu et la bande-son) ----------
-  let t = 0;
-  let prevCam = null;
-  for (const s of segments) {
-    s.start = t;
-    s.end = t + s.dur;
-    if (s.type !== 'intro') s.fly = s.fly || (s.type === 'outro' ? 2.4 : 1.25);
-    else s.fly = 0;
-    // la cible de caméra hérite du lieu de la fiche
-    if (s.cam && s.lon !== undefined && s.cam.lon === undefined) {
-      s.cam.lon = s.lon; s.cam.lat = s.lat;
-    }
-    s.impact = s.start + s.fly;
-    t = s.end;
-    prevCam = s.cam;
-  }
-  const total = t;
-
-  // Éclairs lointains (artillerie) : aléatoires mais figés.
-  function mulberry32(a) {
-    return function () {
-      a |= 0; a = (a + 0x6d2b79f5) | 0;
-      let r = Math.imul(a ^ (a >>> 15), 1 | a);
-      r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r;
-      return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
-    };
-  }
-  const rnd = mulberry32(1948);
-  const flashes = [];
-  let ft = 0.8;
-  while (ft < total - 1.0) {
-    const quiet = segments.find((s) => s.id === 'rabin-1995');
-    const inQuiet = ft > quiet.start - 0.2 && ft < quiet.end + 0.3;
-    if (!inQuiet) {
-      flashes.push({
-        t: ft,
-        x: 0.08 + rnd() * 0.84,
-        y: 0.70 + rnd() * 0.32,
-        size: 0.18 + rnd() * 0.35,
-        power: 0.35 + rnd() * 0.65,
-      });
-    }
-    ft += 0.9 + rnd() * 2.6;
-  }
-
-  root.TL = { segments, events, cities, total, flashes, fps: 25, width: 1920, height: 1080 };
+  root.TL = root.buildTL({
+    name: 'chronologie',
+    segments,
+    events,
+    hud: { label: ['Israël · Palestine', 'Chronologie des figures'], index: true, coords: true, ruler: true, odo: true, from: 4.6 },
+    sound: {
+      ticks: [2.0, 76.6],
+      chords: [[0.0, 'Dm'], [36.0, 'Bb'], [50.0, 'Gm'], [63.5, 'A'], [73.4, 'Dm9']],
+    },
+  });
 })(typeof window !== 'undefined' ? window : globalThis);

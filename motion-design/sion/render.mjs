@@ -1,8 +1,9 @@
-// Rendu image par image du motion design.
+// Rendu image par image d'une pièce du kit SION.
 //
-//   node render.mjs --stills 3,8.5,20 --out /tmp/stills     images de contrôle (PNG)
-//   node render.mjs --out output/chronologie.mp4            vidéo complète
+//   node render.mjs --timeline generique --stills 3,8.5,20 --out stills   images de contrôle (PNG)
+//   node render.mjs --timeline generique --out video.mp4                  vidéo complète
 //
+// --timeline : nom d'un fichier de timelines/ (par défaut : chronologie)
 // Options vidéo : --workers 4  --shutter 2 (sous-images par image, flou de bougé)
 //                 --from 0 --to 12 (secondes)  --crf 12
 import http from 'node:http';
@@ -42,7 +43,7 @@ async function openPage(browser, port) {
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
   page.on('pageerror', (e) => console.error('[page]', e.message));
   page.on('console', (m) => { if (m.type() === 'error') console.error('[console]', m.text()); });
-  await page.goto(`http://127.0.0.1:${port}/index.html`);
+  await page.goto(`http://127.0.0.1:${port}/index.html?tl=${encodeURIComponent(TLNAME)}`);
   await page.waitForFunction(() => window.READY === true, null, { timeout: 120000 });
   page.cdp = await page.context().newCDPSession(page);
   return page;
@@ -59,6 +60,7 @@ const srv = await serve();
 const port = srv.address().port;
 const browser = await chromium.launch({ args: ['--disable-gpu', '--force-color-profile=srgb', '--font-render-hinting=none'] });
 const FPS = 25;
+const TLNAME = String(args.timeline || 'chronologie');
 
 try {
   if (args.stills) {
@@ -82,7 +84,7 @@ try {
     const workers = parseInt(args.workers || Math.max(1, Math.min(4, os.cpus().length)), 10);
     const shutter = parseInt(args.shutter || 1, 10); // sous-images (obturateur 180°)
     const crf = String(args.crf || 12);
-    const out = path.resolve(args.out || path.join(ROOT, 'output', 'chronologie.mp4'));
+    const out = path.resolve(args.out || path.join(ROOT, 'output', `${TLNAME}.mp4`));
     const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'chrono-'));
     const per = Math.ceil((n1 - n0) / workers);
     const started = Date.now();

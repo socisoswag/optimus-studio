@@ -1,0 +1,119 @@
+/*
+ * Socle commun à toutes les pièces du kit SION : villes de contexte et calcul
+ * du minutage (débuts, impacts, éclairs, vols de caméra). Utilisé à l'identique
+ * par le rendu image (navigateur) et par la bande-son (Node).
+ */
+(function (root) {
+  // Villes de contexte (affichées selon le niveau de zoom) : [nom, lon, lat, rang]
+  const CITIES = [
+    ['Jérusalem', 35.22, 31.78, 3], ['Tel-Aviv', 34.78, 32.08, 2], ['Jaffa', 34.75, 32.05, 1],
+    ['Haïfa', 34.99, 32.79, 2], ['Gaza', 34.46, 31.50, 2], ['Naplouse', 35.26, 32.22, 1],
+    ['Jéricho', 35.44, 31.86, 1], ['Hébron', 35.10, 31.53, 1], ['Ramallah', 35.20, 31.90, 1],
+    ['Beersheba', 34.79, 31.25, 1], ['Jénine', 35.30, 32.46, 1], ['Nazareth', 35.30, 32.70, 1],
+    ['Tibériade', 35.53, 32.79, 1], ['Acre', 35.08, 32.92, 1], ['Eilat', 34.95, 29.56, 1],
+    ['Beyrouth', 35.50, 33.89, 2], ['Damas', 36.29, 33.51, 2], ['Amman', 35.93, 31.95, 2],
+    ['Le Caire', 31.24, 30.04, 3], ['Alexandrie', 29.92, 31.20, 2], ['Port-Saïd', 32.30, 31.26, 1],
+    ['Suez', 32.55, 29.97, 1], ['Bagdad', 44.37, 33.31, 2], ['Koweït', 47.98, 29.37, 2],
+    ['Riyad', 46.72, 24.69, 2], ['Nicosie', 33.38, 35.17, 1], ['Istanbul', 28.98, 41.01, 2],
+    ['Ankara', 32.86, 39.93, 1], ['Athènes', 23.73, 37.98, 2], ['Rome', 12.50, 41.90, 2],
+    ['Vienne', 16.37, 48.21, 3], ['Bâle', 7.59, 47.56, 2], ['Paris', 2.35, 48.86, 3],
+    ['Londres', -0.13, 51.51, 3], ['Berlin', 13.40, 52.52, 2], ['Varsovie', 21.01, 52.23, 2],
+    ['Odessa', 30.73, 46.48, 2], ['Moscou', 37.62, 55.75, 2], ['Oslo', 10.75, 59.91, 2],
+    ['Genève', 6.14, 46.20, 1], ['Zurich', 8.54, 47.37, 1], ['Bruxelles', 4.35, 50.85, 1],
+    ['Washington', -77.04, 38.91, 3], ['Baltimore', -76.61, 39.29, 1], ['Camp David', -77.465, 39.648, 1],
+    ['New York', -74.0, 40.71, 2], ['Philadelphie', -75.16, 39.95, 1], ['Tunis', 10.18, 36.80, 2],
+    ['Le Golan', 35.75, 33.0, 1], ['Sinaï', 33.8, 29.5, 2], ['Kichinev', 28.86, 47.01, 1],
+    ['Rishon LeZion', 34.80, 31.96, 1],
+  ];
+
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = (a + 0x6d2b79f5) | 0;
+      let r = Math.imul(a ^ (a >>> 15), 1 | a);
+      r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r;
+      return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  const HUD_DEFAULT = { label: null, index: false, coords: true, ruler: false, odo: false, from: 0.6 };
+
+  root.buildTL = function (def) {
+    const segments = def.segments;
+    let t = 0;
+    segments.forEach((s, i) => {
+      s.start = t;
+      s.end = t + s.dur;
+      if (i === 0) s.fly = 0;
+      else if (s.fly === undefined) s.fly = s.type === 'outro' ? 2.4 : 1.25;
+      // la cible de caméra hérite du lieu de la fiche
+      if (s.cam && s.lon !== undefined && s.cam.lon === undefined) { s.cam.lon = s.lon; s.cam.lat = s.lat; }
+      s.impact = s.start + s.fly + (s.hitAt || 0);
+      t = s.end;
+    });
+    const total = t;
+    const byId = Object.fromEntries(segments.filter((s) => s.id).map((s) => [s.id, s]));
+
+    // Impacts (flash, secousse, son) : mêmes instants pour l'image et le son.
+    const impacts = [];
+    segments.forEach((s, i) => {
+      const add = (tt, k, kind = 'hit', visual = true) => impacts.push({ t: tt, k, kind, seg: i, visual });
+      if (s.type === 'figure' || s.type === 'pair') add(s.impact, 1);
+      if (s.type === 'split') { add(s.impact + 0.05, 0.85); add(s.impact + 0.5, 0.6); }
+      if (s.type === 'event') add(s.impact, 1.3, 'event');
+      if (s.type === 'intro') add(1.05, 0.75);
+      if (s.type === 'outro') [0, 0.55, 1.1].forEach((d, j) => add(s.impact - 0.2 + d, 0.6 + j * 0.25));
+      if (s.type === 'beat' || s.type === 'part') add(s.impact, s.k || 1);
+      if (s.type === 'title') add(s.impact, s.k || 1.3, 'title');
+      if (s.type === 'credit') add(s.impact, s.k || 0.45, 'soft');
+      (s.extraHits || []).forEach(([d, k]) => add(s.impact + d, k));
+    });
+    // repères numérotés sur la carte (ouvertures de partie)
+    const markers = (def.markers || []).map((m) => ({ ...m, t: byId[m.seg].start + m.at }));
+    markers.forEach((m) => impacts.push({ t: m.t, k: 0.3, kind: 'tick', seg: segments.indexOf(byId[m.seg]), visual: false }));
+    impacts.sort((a, b) => a.t - b.t);
+
+    // Vols de caméra (souffles dans la bande-son)
+    const flights = [];
+    segments.forEach((s, i) => {
+      if (i === 0 || s.fly <= 0 || s.noWhoosh) return;
+      const prev = segments[i - 1];
+      const lon = (x) => (x.lon !== undefined ? x.lon : x.cam ? x.cam.lon : 0);
+      flights.push({ t0: s.start, dur: s.fly, dir: Math.sign(lon(s) - lon(prev)) || 1, big: s.fly > 1.5 });
+    });
+
+    // Éclairs lointains (artillerie) : aléatoires mais figés.
+    const rnd = mulberry32(def.seed || 1948);
+    const flashes = [];
+    const segAt = (x) => segments.find((s) => x >= s.start && x < s.end) || segments[segments.length - 1];
+    let ft = def.flashStart !== undefined ? def.flashStart : 0.8;
+    while (ft < total - 1.0) {
+      const inQuiet = segments.some((s) => s.quiet && ft > s.start - 0.2 && ft < s.end + 0.3);
+      if (!inQuiet) {
+        const near = segAt(ft).flashNear || 0;
+        flashes.push({
+          t: ft,
+          x: 0.08 + rnd() * 0.84,
+          y: 0.70 - near * 0.35 + rnd() * (0.32 + near * 0.3),
+          size: 0.18 + rnd() * 0.35,
+          power: 0.35 + rnd() * 0.65,
+        });
+      }
+      ft += (0.9 + rnd() * 2.6) / (segAt(ft).flashRate || 1);
+    }
+
+    // Silences (coupure sonore avant un impact)
+    const silences = segments.filter((s) => s.silenceBefore).map((s) => ({ t0: s.impact - s.silenceBefore, t1: s.impact }));
+
+    return {
+      name: def.name || 'piece',
+      segments, total, impacts, flights, flashes, markers, silences,
+      events: def.events || [],
+      cities: def.cities || CITIES,
+      hud: Object.assign({}, HUD_DEFAULT, def.hud || {}),
+      sound: def.sound || {},
+      fadeIn: def.fadeIn !== undefined ? def.fadeIn : 1.0,
+      fadeOut: def.fadeOut !== undefined ? def.fadeOut : 1.25,
+      fps: 25, width: 1920, height: 1080,
+    };
+  };
+})(typeof window !== 'undefined' ? window : globalThis);
