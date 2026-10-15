@@ -23,7 +23,7 @@ for i in $(seq 0 $((N - 1))); do
   NUM=$(printf "%02d" $((i + 1)))
   START=$(python3 -c "print($i * $CARD)")
   ffmpeg -y -loglevel error -ss "$START" -t "$CARD" -i "$TMP/video.mp4" -ss "$START" -t "$CARD" -i "$TMP/son.wav" \
-    -map 0:v -map 1:a -vf "$FINISH" -c:v libx264 -preset slow -crf 16 -tune grain -pix_fmt yuv420p \
+    -map 0:v -map 1:a -vf "$FINISH" -c:v libx264 -preset slow -b:v 10M -maxrate 14M -bufsize 20M -tune grain -pix_fmt yuv420p \
     -af "afade=t=in:d=0.08,afade=t=out:st=$(python3 -c "print($CARD - 0.35)"):d=0.35" -c:a aac -b:a 320k \
     -movflags +faststart "output/chapitres/chapitre-$NUM.mp4"
   echo "chapitre-$NUM"
@@ -31,7 +31,7 @@ done
 
 # bobine complète (pour visionner d'une traite)
 ffmpeg -y -loglevel error -i "$TMP/video.mp4" -i "$TMP/son.wav" -map 0:v -map 1:a -vf "$FINISH" -c:v libx264 -preset slow \
-  -b:v 6000k -maxrate 8000k -bufsize 12M -tune grain -pix_fmt yuv420p -c:a aac -b:a 256k -shortest -movflags +faststart \
+  -b:v 3500k -maxrate 5000k -bufsize 8M -tune grain -pix_fmt yuv420p -c:a aac -b:a 256k -shortest -movflags +faststart \
   "output/chapitres.mp4"
 ls -la output/chapitres | tail -3
 ls -la output/chapitres.mp4

@@ -660,6 +660,7 @@
   }
 
   function drawRoute(g, t) {
+    if (!TL.route) return; // pièces faites de cartons indépendants : pas d'itinéraire
     // étapes atteintes + vol en cours
     const pts = [];
     let partial = null;

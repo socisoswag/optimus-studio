@@ -120,6 +120,7 @@
   root.TL = root.buildTL({
     name: 'chapitres',
     seed: 39,
+    route: false,
     segments,
     markers,
     hud: { label: null, index: false, coords: true, ruler: false, odo: false, from: 0.0 },

@@ -129,6 +129,7 @@
       cities: def.cities || CITIES,
       hud: Object.assign({}, HUD_DEFAULT, def.hud || {}),
       sound: def.sound || {},
+      route: def.route !== false,
       fadeIn: def.fadeIn !== undefined ? def.fadeIn : 1.0,
       fadeOut: def.fadeOut !== undefined ? def.fadeOut : 1.25,
       fps: 25, width: 1920, height: 1080,
