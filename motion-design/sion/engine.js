@@ -144,7 +144,9 @@
     const punch = s.type === 'outro' || s.type === 'intro' ? 0 : 0.075 * bump(h - (s.hitAt || 0), 0.13);
     if (s.cam1) {
       // trajet programmé (de cam à camEnd pendant la séquence)
-      const p = E.inOutSine(clamp(h / Math.max(0.01, s.dur - s.fly)));
+      const p = s.camEase === 'arrive'
+        ? 0.85 * E.outQuart(clamp(h / 1.6)) + 0.15 * clamp(h / Math.max(0.01, s.dur - s.fly))
+        : E.inOutSine(clamp(h / Math.max(0.01, s.dur - s.fly)));
       const e = s.cam1;
       return { x: lerp(b.x, e.x, p), y: lerp(b.y, e.y, p), w: b.w * Math.pow(e.w / b.w, p) * (1 - punch), pitch: lerp(b.pitch, e.pitch, p), bearing: lerp(b.bearing, e.bearing, p), ax: lerp(b.ax, e.ax, p), ay: lerp(b.ay, e.ay, p) };
     }
@@ -541,7 +543,9 @@
     const NS = sources.length;
     for (const grid of G.dots) {
       const sp = grid.step * pxPerDeg;
-      const a = inv(2.6, 6, sp) * (1 - inv(30, 52, sp)) * mot;
+      // une seule trame domine à chaque zoom : la trame régionale s'efface tôt, les trames fines arrivent tard
+      const fine = grid.step <= 0.1, regional = grid.step > 0.1 && grid.step < 0.5;
+      const a = (fine ? inv(5.5, 9.6, sp) : inv(2.6, 6, sp)) * (1 - (regional ? inv(18, 30, sp) : inv(30, 52, sp))) * mot;
       if (a < 0.02) continue;
       const r0 = clamp(sp * 0.085, 0.55, 2.4);
       const A = grid.a;
@@ -553,15 +557,27 @@
         const p = proj(X, Y);
         if (p.k < KMIN || p.x < -10 || p.x > W + 10 || p.y < -10 || p.y > H + 10) continue;
         const r = r0 * p.k;
-        g.rect(p.x - r, p.y - r, r * 2, r * 2);
-        if (NS) {
-          let h = 0;
+        if (!NS) { g.rect(p.x - r, p.y - r, r * 2, r * 2); continue; }
+        {
+          let h = 0, gone = false;
           for (let q = 0; q < NS; q++) {
             const src = sources[q];
+            if (src.erase) {
+              // chaque point brûle un instant en braise, puis s'éteint pour de bon
+              const d = Math.hypot(p.gx - src.gx, p.gy - src.gy);
+              if (d < src.R) {
+                const v = hash(i * 1.618 + A.length), thr = src.erase * (1 - (d / src.R) ** 3);
+                if (v < thr) gone = true;
+                else if (v < thr + 0.07 && src.erase > 0.01) h += 1.1 * (1 - (v - thr) / 0.07);
+              }
+              continue;
+            }
             const d = Math.hypot(p.gx - src.gx, p.gy - src.gy);
             if (d < src.R) h += src.amt * (1 - d / src.R) ** 2 * (src.flicker ? 0.35 + 0.65 * hash(i * 0.731 + Math.floor(t * 12) * 13.37) : 1);
             for (const wv of src.waves) h += wv.a * Math.exp(-(((d - wv.r) / wv.w) ** 2));
           }
+          if (gone) continue;
+          g.rect(p.x - r, p.y - r, r * 2, r * 2);
           if (h > 0.035) heat.push(p.x, p.y, r, Math.min(1.2, h) * a);
         }
       }
@@ -758,14 +774,16 @@
       if (a <= 0.01) continue;
       const P = proj(m.X, m.Y);
       const { x, y, k } = P;
-      if (m.area) {
+      if (m.erase) {
+        sources.push({ gx: P.gx, gy: P.gy, R: m.R || 900, erase: 0.92 * tw(h, 0, m.eraseDur || 3.0, E.inOutSine), waves: [] });
+      } else if (m.area) {
         const amt = 0.85 * tw(h, 0, 1.2, E.outCubic) * a;
         const waves = h >= 0 && h < 2.4 ? [{ r: h * 1400, w: 70, a: 1.0 * Math.exp(-h / 0.8) }] : [];
         sources.push({ gx: P.gx, gy: P.gy, amt, R: m.R || 900, waves });
       }
       g.save();
       g.globalCompositeOperation = 'lighter';
-      if (!m.area) {
+      if (!m.area && !m.erase) {
         sprite(g, SPR.ember, x, y, 220 * k, 0.5 * a, 220 * k * Pcp);
         sprite(g, SPR.spark, x, y, 30, a);
         const ph = clamp(h / 1.1);
@@ -782,8 +800,9 @@
       g.globalCompositeOperation = 'source-over';
       // étiquette : numéro dans un cartouche + lieu
       const [dx, dy] = m.dir || [1, -1];
+      if (!m.label) { g.restore(); continue; }
       const off = m.off || 26, lx = x + dx * off, ly = y + dy * off;
-      const la = a * tw(h, 0.1, 0.5, E.outCubic);
+      const la = a * tw(h, 0.1, 0.5, E.outCubic) * (m.hideT !== undefined ? 1 - tw(t, m.hideT, m.hideT + 0.5) : 1);
       g.globalAlpha = la;
       g.strokeStyle = rgba(COL.stone, 0.6);
       g.lineWidth = 1;
@@ -1053,7 +1072,7 @@
   function buildSegments() {
     for (const s of SEG) {
       const el = document.createElement('div');
-      el.className = `seg ${s.type} ${s.layout || ''} ${['intro', 'event', 'outro', 'beat', 'title', 'credit'].includes(s.type) ? 'center' : ''}`;
+      el.className = `seg ${s.type} ${s.layout || ''} ${['intro', 'event', 'outro', 'beat', 'title', 'credit'].includes(s.type) ? 'center' : ''} ${s.type === 'chapter' ? 'c-' + s.layout : ''}`;
       let html = '';
       if (s.type === 'figure') {
         html = `<div class="scrim"></div><div class="ghost">${yearStr(s.year)}</div>
@@ -1087,14 +1106,39 @@
       } else if (s.type === 'part') {
         const n0 = s.firstChapter || 1;
         html = `<div class="scrim"></div><div class="ghost">${esc(s.numeral)}</div>
-          <div class="block">${eyebrowHTML()}<div class="name"><div class="ln l2">${chars(s.title.toUpperCase())}</div></div>
-          <p class="psub">${words(s.sub)}</p><div class="rule"></div>
+          <div class="block">${eyebrowHTML()}<div class="name">${(s.titleLines || [s.title]).map((l, k, a) => `<div class="ln ${a.length > 1 && k === 0 ? 'l1' : 'l2'}">${chars(l.toUpperCase())}</div>`).join('')}</div>
+          ${s.sub ? `<p class="psub">${words(s.sub)}</p>` : ''}<div class="rule"></div>
           <ol class="chap">${s.chapters.map((c, k) => `<li><span class="n">${String(n0 + k).padStart(2, '0')}</span><span class="t">${esc(fr(c))}</span></li>`).join('')}</ol></div>`;
+      } else if (s.type === 'chapter') {
+        const titleWords = (str) => str.split(' ').map((w) => `<span class="wd">${chars(w)}</span>`).join(' ');
+        html = `<div class="scrim"></div><div class="ghost">${esc(s.num)}</div>
+          <div class="block">${eyebrowHTML()}<div class="ctrow"><div class="ctwrap"><div class="ctitle">${titleWords(fr(s.title).toUpperCase())}</div><i class="wipebar"></i></div></div>
+          ${s.sub ? `<p class="text csub">${words(s.sub)}</p>` : ''}</div>`;
       } else if (s.type === 'outro') {
         html = `<div class="scrim"></div><div class="wrap">${eyebrowHTML()}${s.lines.map((l, i) => `<div class="big ${i === 1 ? 'thin' : ''} o${i}">${chars(l)}</div>`).join('')}</div>`;
       }
       el.innerHTML = html;
       typeLayer.appendChild(el);
+      if (s.type === 'chapter') {
+        el.style.display = 'block';
+        const ct = el.querySelector('.ctitle'), maxW = s.layout === 'C' ? 1500 : 1080;
+        let fs = parseFloat(getComputedStyle(ct).fontSize);
+        for (let k = 0; k < 30; k++) {
+          const lh = parseFloat(getComputedStyle(ct).lineHeight) || fs * 0.9;
+          const widest = Math.max(...[...ct.querySelectorAll('.wd')].map((w) => w.scrollWidth));
+          if (ct.scrollHeight <= lh * 2.25 && widest <= maxW) break;
+          fs *= 0.94; ct.style.fontSize = `${Math.floor(fs)}px`;
+        }
+        s.titleW = ct.offsetWidth;
+        el.style.display = '';
+      }
+      if (s.type === 'part') {
+        el.style.display = 'block';
+        const nm = el.querySelector('.name'), maxW = s.titleMax || 960;
+        const widest = Math.max(...[...nm.querySelectorAll('.ln')].map((l) => l.scrollWidth));
+        if (widest > maxW) nm.style.fontSize = `${Math.floor(parseFloat(getComputedStyle(nm).fontSize) * maxW / widest)}px`;
+        el.style.display = '';
+      }
       const R = refs(el);
       s.R = R;
       R.scrim = R.q('.scrim') || R.q('.scrimL');
@@ -1416,9 +1460,9 @@
     css(R, R.ghost, 'filter', blur((1 - gp) * 16 + ex * 12));
     typewriter(R, R.tws[0], s.label, u, I - 0.5, 26, false);
     css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, I - 0.6, I))})`);
-    letters(R, R.lines[0], I - 0.1, 0.045, 0.65);
+    R.qa('.name .ln').forEach((_, k) => letters(R, R.lines[k], I - 0.1 + k * 0.09, 0.045, 0.65));
     rgbSplit(R, R.names[0], u, I);
-    wordsIn(R, R.texts[0], I + 0.4, 0.07, 0.6);
+    if (R.texts[0]) wordsIn(R, R.texts[0], I + 0.4, 0.07, 0.6);
     css(R, R.rules[0], 'transform', `scaleX(${f3(tw(u, I + 0.3, I + 1.0))})`);
     R.items.forEach((li, k) => {
       const t0 = s.chapAt[k];
@@ -1434,6 +1478,50 @@
     css(R, block, 'filter', blur(ex * 18));
   }
 
+  // carton de chapitre : trois façons d'apparaître (impact, balayage, mise au point)
+  function upChapter(s, u) {
+    const R = s.R; R.u = u;
+    const I = s.hitAt || 0.8, D = s.dur;
+    const block = R.q('.block'), ct = R.q('.ctitle'), bar = R.q('.wipebar');
+    typewriter(R, R.tws[0], s.kicker, u, 0.3, 46, false);
+    css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, 0.2, 0.7))})`);
+    const ex = E.inExpo(inv(D - 0.55, D - 0.02, u));
+    const chs = [...ct.querySelectorAll('.ch')];
+    let a = 0;
+    if (s.reveal === 'wipe') {
+      const p = tw(u, I - 0.15, I + 0.75, E.inOutCubic);
+      chs.forEach((c) => css(R, c, 'transform', 'none'));
+      css(R, ct, 'clipPath', p >= 1 ? 'none' : `inset(-20% ${f3((1 - p) * 100)}% -20% 0)`);
+      const vis = p > 0 && p < 1;
+      css(R, bar, 'opacity', vis ? '1' : '0');
+      css(R, bar, 'transform', `translate3d(${f3(p * (s.titleW || 1000))}px,0,0)`);
+      a = u > I + 0.75 ? 7 * Math.exp(-(u - I - 0.75) / 0.12) : 0;
+    } else if (s.reveal === 'focus') {
+      const p = tw(u, I - 0.35, I + 1.2, E.outQuart);
+      chs.forEach((c) => css(R, c, 'transform', 'none'));
+      css(R, ct, 'filter', blur((1 - p) * 26));
+      css(R, ct, 'opacity', String(f3(clamp(p * 1.4))));
+      css(R, ct, 'transform', `scale(${f3(1 + 0.08 * (1 - p))})`);
+    } else {
+      chs.forEach((c, j) => {
+        const p = tw(u, I - 0.1 + j * 0.018, I + 0.45 + j * 0.018, E.outExpo);
+        css(R, c, 'transform', p >= 1 ? 'none' : `translate3d(0,${f3((1 - p) * 145)}%,0) rotate(${f3((1 - p) * 5)}deg)`);
+      });
+      a = u > I ? 11 * Math.exp(-(u - I) / 0.12) : 0;
+    }
+    css(R, ct, 'textShadow', a < 0.4 ? 'none' : `${f3(-a)}px 0 rgba(255,40,30,.6), ${f3(a)}px 0 rgba(40,170,255,.5)`);
+    if (R.texts[0]) wordsIn(R, R.texts[0], I + 0.6, 0.05, 0.6);
+    const gp = tw(u, I - 0.4, I + 0.9, E.outExpo);
+    css(R, R.ghost, 'opacity', String(f3(gp * (1 - ex))));
+    css(R, R.ghost, 'transform', `translate3d(${f3((s.layout === 'R' ? 1 : -1) * 40 * inv(0, D, u))}px,0,0) scale(${f3(lerp(1.35, 1, gp) * (1 + 0.4 * ex))})`);
+    css(R, R.ghost, 'filter', blur((1 - gp) * 16 + ex * 12));
+    const hit = u > I && s.reveal !== 'focus' ? 0.04 * Math.exp(-(u - I) / 0.16) : 0;
+    css(R, block, 'transform', `scale(${f3(1 + 0.04 * inv(0, D, u) + hit + 0.6 * ex)})`);
+    css(R, block, 'opacity', String(f3(1 - ex)));
+    css(R, block, 'filter', blur(ex * 18));
+    css(R, R.scrim, 'opacity', String(f3(tw(u, 0, 0.6) * (1 - ex))));
+  }
+
   function updateType(t) {
     for (const s of SEG) {
       const u = t - s.start;
@@ -1447,6 +1535,7 @@
       else if (s.type === 'title') upTitle(s, u);
       else if (s.type === 'credit') upCredit(s, u);
       else if (s.type === 'part') upPart(s, u);
+      else if (s.type === 'chapter') upChapter(s, u);
       else if (s.type === 'camera') { /* plan de caméra sans texte */ }
       else upCenter(s, u);
     }
@@ -1525,6 +1614,10 @@
     flickEl.style.opacity = String(f3(0.03 + 0.05 * rnd()));
     let fade = TL.fadeIn > 0 ? 1 - tw(t, 0.0, TL.fadeIn, E.outCubic) : 0;
     if (TL.fadeOut > 0) fade = Math.max(fade, tw(t, OUTRO.end - TL.fadeOut - 0.15, OUTRO.end - 0.15, E.inOutCubic));
+    if (s.edgeFade) {
+      const u0 = t - s.start;
+      fade = Math.max(fade, 1 - tw(u0, 0, 0.3, E.outCubic), tw(u0, s.dur - 0.32, s.dur - 0.02, E.inCubic));
+    }
     // coupures au noir juste avant un impact (blackBefore)
     for (const sg of SEG) {
       if (!sg.blackBefore) continue;

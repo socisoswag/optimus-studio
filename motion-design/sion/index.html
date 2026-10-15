@@ -162,8 +162,34 @@
   .part .psub .w { display: inline-block; white-space: pre; }
   .part .rule { margin-top: 30px; }
   .part .chap { list-style: none; margin-top: 30px; }
-  .part .chap li { display: flex; gap: 22px; align-items: baseline; font-family: var(--serif); font-variation-settings: 'opsz' 24; font-size: 29px; line-height: 1.52; white-space: nowrap; will-change: transform, opacity; }
+  .part .chap li { display: flex; gap: 22px; align-items: baseline; font-family: var(--serif); font-variation-settings: 'opsz' 24; font-size: 29px; line-height: 1.3; padding-block: 5px; will-change: transform, opacity; }
+  .part .chap .t { max-width: 860px; text-wrap: pretty; }
   .part .chap .n { flex: none; width: 40px; font-family: var(--mono); font-size: 17px; letter-spacing: .18em; color: var(--ember); }
+
+  /* cartons de chapitre */
+  .chapter .scrim { background: radial-gradient(ellipse 80% 70% at var(--sx, 30%) 55%, rgba(9,8,7,.78) 0%, rgba(9,8,7,.42) 55%, rgba(9,8,7,0) 100%); }
+  .c-R .scrim { --sx: 70%; }
+  .c-C .scrim { --sx: 50%; }
+  .chapter .ghost { top: 120px; font-size: 760px; }
+  .c-L .ghost { left: 60px; }
+  .c-R .ghost { right: 60px; }
+  .c-C .ghost { left: 50%; transform: translateX(-50%); }
+  .chapter .block { position: absolute; top: 330px; width: 1160px; transform-origin: 0 50%; }
+  .c-L .block { left: 132px; }
+  .c-R .block { right: 132px; text-align: right; transform-origin: 100% 50%; }
+  .c-R .eyebrow { justify-content: flex-end; }
+  .c-R .eyebrow .tick { order: 2; transform-origin: 100% 50%; }
+  .c-C .block { left: 50%; margin-left: -800px; width: 1600px; text-align: center; transform-origin: 50% 50%; top: 250px; }
+  .c-C .eyebrow { justify-content: center; }
+  .ctrow { margin-top: 24px; }
+  .ctwrap { position: relative; display: inline-block; max-width: 100%; }
+  .ctitle { position: relative; font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 860; font-size: 160px; line-height: .92; text-transform: uppercase; color: var(--stone); text-wrap: balance; }
+  .ctitle .wd { display: inline-block; white-space: nowrap; overflow: hidden; padding: .16em .03em .02em; margin: -.16em -.03em -.02em; vertical-align: top; }
+  .ctitle .ch { display: inline-block; }
+  .ctwrap .wipebar { position: absolute; left: 0; top: -4%; width: 3px; height: 108%; background: var(--hot); box-shadow: 0 0 22px 4px rgba(255,91,31,.85); opacity: 0; }
+  .chapter .csub { margin-top: 24px; font-size: 46px; max-width: 1100px; }
+  .c-R .csub { margin-left: auto; }
+  .c-C .csub { margin-left: auto; margin-right: auto; }
 
   /* HUD */
   .hud-tl, .hud-tr { position: absolute; top: 58px; font-family: var(--mono); font-size: 15px; letter-spacing: .3em; text-transform: uppercase; line-height: 1.7; }

@@ -65,16 +65,18 @@
       if (s.type === 'beat' || s.type === 'part') add(s.impact, s.k || 1, s.hitKind || 'hit');
       if (s.type === 'title') add(s.impact, s.k || 1.3, 'title');
       if (s.type === 'credit') add(s.impact, s.k || 0.45, 'soft');
+      if (s.type === 'chapter') add(s.impact, s.reveal === 'focus' ? 0.5 : 0.9, s.reveal === 'focus' ? 'soft' : 'hit');
       (s.extraHits || []).forEach(([d, k]) => add(s.impact + d, k));
     });
     // repères numérotés sur la carte (ouvertures de partie)
-    const markers = (def.markers || []).map((m) => ({ ...m, t: byId[m.seg].start + m.at }));
+    const markers = (def.markers || []).map((m) => ({ ...m, t: byId[m.seg].start + m.at, hideT: m.hideAt !== undefined ? byId[m.seg].start + m.hideAt : undefined }));
     markers.forEach((m) => impacts.push({ t: m.t, k: 0.3, kind: 'tick', seg: segments.indexOf(byId[m.seg]), visual: false }));
     impacts.sort((a, b) => a.t - b.t);
 
     // Vols de caméra (souffles dans la bande-son)
     const flights = [];
     segments.forEach((s, i) => {
+      if (s.type === 'chapter') { flights.push({ t0: s.start, dur: 1.1, dir: i % 2 ? -1 : 1, big: false }); return; }
       if (i === 0 || s.fly <= 0 || s.noWhoosh) return;
       const prev = segments[i - 1];
       const lon = (x) => (x.lon !== undefined ? x.lon : x.cam ? x.cam.lon : 0);
