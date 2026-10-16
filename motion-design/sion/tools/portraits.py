@@ -27,6 +27,8 @@ import onnxruntime as ort
 
 SRC, DST = sys.argv[1], sys.argv[2]
 MODELS = os.environ.get("MODELS", ".")
+# recadrages serrés (fractions de la hauteur gardées) pour les photos prises de trop loin
+CROP = {"abd-al-qadir": (0.0, 0.64), "finkielkraut": (0.0, 0.72)}
 TARGET_H = 1500  # hauteur visée après agrandissement (px) ; affiché à ~900 px dans les vidéos
 MAX_UP = 3.2     # jamais plus de ×3,2 : au-delà, l'image devient lisse et « fabriquée »
 
@@ -155,8 +157,8 @@ def enhance(gray):
     h0 = gray.shape[0]
     old = h0 < 1300
     g = despeckle(gray)
-    if old and sig > 2.5:
-        g = cv2.fastNlMeansDenoising(g, None, h=float(np.clip(sig * 0.7, 2, 4.5)), templateWindowSize=7, searchWindowSize=15)
+    if (old and sig > 2.5) or sig > 7:  # vieux tirage, ou photo récente très granuleuse
+        g = cv2.fastNlMeansDenoising(g, None, h=float(np.clip(sig * 0.7, 2, 5.5)), templateWindowSize=7, searchWindowSize=15)
     g, scale = upscale(g) if old else (g, 1.0)
     g = cv2.createCLAHE(clipLimit=1.15, tileGridSize=(4, 4)).apply(g)
     blur = cv2.GaussianBlur(g, (0, 0), 1.0)
@@ -176,6 +178,9 @@ for f in files:
     if bgr is None:
         print("illisible :", f)
         continue
+    if name in CROP:
+        t0, t1 = CROP[name]; hb = bgr.shape[0]
+        bgr = bgr[int(t0 * hb):int(t1 * hb)]
     rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
     gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
     m = person_mask(rgb)
@@ -185,6 +190,12 @@ for f in files:
     # contour resserré d'un pixel, puis adouci : plus de liseré du fond d'origine
     a = cv2.erode(a, np.ones((3, 3), np.uint8))
     a = cv2.GaussianBlur(a, (0, 0), 0.9)
+    # ne garder que la personne principale (la plus grande tache), pas un voisin à l'arrière-plan
+    nlab, lab, st, _ = cv2.connectedComponentsWithStats((a > 0.35).astype(np.uint8))
+    if nlab > 2:
+        main = 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))
+        keep = cv2.dilate((lab == main).astype(np.uint8), np.ones((25, 25), np.uint8)).astype(np.float32)
+        a = a * cv2.GaussianBlur(keep, (0, 0), 6)
     gd = decontaminate(g, a)  # bord nettoyé pour le détourage ; la version avec fond reste intacte
     # cadrage serré sur la personne (marge de 4 %), le bas du buste reste au bord
     ys, xs = np.where(a > 0.5)
