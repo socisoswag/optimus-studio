@@ -165,7 +165,16 @@
     const deb = Array.from({ length: 7 }, () => [X + (r() - 0.5) * 2.4 * hw, Y + (r() - 0.5) * 2.4 * hd, 0.4 + r() * 0.8]);
     return { ...b, X, Y, C, hU: b.h * u, wU: b.w * u, deb, tilt: (r() - 0.5) * 0.5 };
   });
-  const HAS_WAR = UNITS.length || ARROWS.length || STRIKES.length || WZONES.length || PLANS.length || BLOCKS.length;
+  const FLARES = (TL.flares || []).map((f) => ({ ...f, X: MX(f.lon), Y: MY(f.lat) }));
+  // lumières d'une ville la nuit : points tirés dans un polygone, qui s'éteignent à `off`
+  const LIGHTS = (TL.lights || []).map((l, i) => {
+    const r = mulberry32(977 + i * 13), P = l.poly, pts = [];
+    const lo0 = Math.min(...P.map((p) => p[0])), lo1 = Math.max(...P.map((p) => p[0])), la0 = Math.min(...P.map((p) => p[1])), la1 = Math.max(...P.map((p) => p[1]));
+    const inP = (x, y) => { let c = false; for (let a = 0, b = P.length - 1; a < P.length; b = a++) if ((P[a][1] > y) !== (P[b][1] > y) && x < ((P[b][0] - P[a][0]) * (y - P[a][1])) / (P[b][1] - P[a][1]) + P[a][0]) c = !c; return c; };
+    while (pts.length < (l.n || 600)) { const x = lo0 + r() * (lo1 - lo0), y = la0 + r() * (la1 - la0); if (inP(x, y)) pts.push([MX(x), MY(y), r(), r()]); }
+    return { ...l, pts };
+  });
+  const HAS_WAR = UNITS.length || ARROWS.length || STRIKES.length || WZONES.length || PLANS.length || BLOCKS.length || FLARES.length || LIGHTS.length;
 
   const bezAt = (b, q) => { const m = 1 - q; return [m * m * b.X0 + 2 * m * q * b.CX + q * q * b.X1, m * m * b.Y0 + 2 * m * q * b.CY + q * q * b.Y1]; };
   const flowA = (f, t) => tw(t, f.t - 0.2, f.t + 0.4) * (1 - tw(t, f.tEnd - 0.7, f.tEnd));
@@ -1176,6 +1185,49 @@
     g.restore();
   }
 
+  function drawLights(g, t) {
+    g.save();
+    g.globalCompositeOperation = 'lighter';
+    for (const l of LIGHTS) {
+      const A = tw(t, l.t - 0.1, l.t + 1.2) * (1 - tw(t, l.tEnd - 0.6, l.tEnd));
+      if (A <= 0.01) continue;
+      for (const [X, Y, a, b] of l.pts) {
+        // extinction en cascade sur ~1,5 s, quelques lumières résistent (groupes électrogènes)
+        const off = l.offT !== undefined ? (b < (l.keep || 0.06) ? 0 : 1 - tw(t, l.offT + a * 1.5, l.offT + a * 1.5 + 0.15)) : 1;
+        const fl = b < (l.keep || 0.06) && l.offT !== undefined && t > l.offT ? 0.6 + 0.4 * noise1(t * 6 + a * 50) : 1;
+        const v = A * (0.35 + 0.65 * b) * (off || (b < (l.keep || 0.06) ? fl : 0));
+        if (v <= 0.02) continue;
+        const P = proj(X, Y);
+        if (P.k < KMIN + 0.05) continue;
+        sprite(g, a < 0.75 ? SPR.spark : SPR.stone, P.x, P.y, (a < 0.75 ? 9 : 22) * P.k + 2, 0.7 * v);
+      }
+    }
+    g.restore();
+  }
+
+  // fusées éclairantes : un point incandescent descend lentement sous son parachute et éclaire le sol
+  function drawFlares(g, t) {
+    g.save();
+    g.globalCompositeOperation = 'lighter';
+    for (const f of FLARES) {
+      const d = t - f.t, D = f.dur || 5;
+      if (d < 0 || d > D + 0.4) continue;
+      const P = proj(f.X, f.Y), k = P.k;
+      const life = tw(d, 0, 0.3) * (1 - tw(d, D - 0.8, D + 0.3));
+      const fl = 0.82 + 0.18 * noise1(t * 13 + f.X * 1e5);
+      const alt = (f.alt || 300) * (1 - 0.75 * d / D) * k;
+      const sway = Math.sin(d * 1.1 + f.X * 1e4) * 14 * k;
+      const x = P.x + sway, y = P.y - alt;
+      sprite(g, SPR.stone, P.x + sway * 0.4, P.y, 700 * k, 0.085 * life * fl, 700 * k * Pcp);
+      sprite(g, SPR.white, P.x + sway * 0.4, P.y, 260 * k, 0.05 * life * fl, 260 * k * Pcp);
+      g.strokeStyle = rgba(COL.stone, 0.18 * life); g.lineWidth = 1.2;
+      g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x - sway * 0.6, y - 50 * k, x - sway * 0.2, y - 110 * k); g.stroke();
+      sprite(g, SPR.hot, x, y, 110 * k, 0.55 * life * fl);
+      sprite(g, SPR.white, x, y, 34 * k + 8, life * fl);
+    }
+    g.restore();
+  }
+
   function drawArrows(g, t, Z = 1) {
     for (const a of ARROWS) {
       const A = Z * tw(t, a.t - 0.1, a.t + 0.3) * (1 - tw(t, a.tEnd - 0.6, a.tEnd));
@@ -1467,9 +1519,9 @@
     drawDots(g, sources, t, mot);
     // échelle régionale (territoires, offensives) ou échelle de la rue (plans, maisons)
     const ZR = inv(0.0025, 0.007, cam.w), ZS = inv(0.008, 0.003, cam.w);
-    if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); drawBlocks(g, t, ZS); }
+    if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t); drawBlocks(g, t, ZS); }
     if (FLOWS.length) drawFlows(g, t);
-    if (HAS_WAR) { drawUnits(g, t); drawStrikes(g, t); }
+    if (HAS_WAR) { drawUnits(g, t); drawStrikes(g, t); if (FLARES.length) drawFlares(g, t); }
     const busy = [];
     if (pin && pin.showPin) busy.push(pin.s);
     for (const m of MARKERS) if (t >= m.t - 0.05) busy.push(m);

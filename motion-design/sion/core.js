@@ -37,6 +37,7 @@
     arafat: ['Yasser Arafat', '1929 — 2004'], netanyahou: ['Benyamin Netanyahou', 'né en 1949'],
     lieberman: ['Avigdor Lieberman', 'né en 1958'], bhl: ['Bernard-Henri Lévy', 'né en 1948'],
     finkielkraut: ['Alain Finkielkraut', 'né en 1949'], rabin: ['Yitzhak Rabin', '1922 — 1995'],
+    sharon: ['Ariel Sharon', '1928 — 2014'],
   };
   root.CITIES = CITIES;
   root.face = (key, opts = {}) => ({ photo: `portraits/${key}.png`, name: (PEOPLE[key] || [key])[0], dates: (PEOPLE[key] || [])[1] || '', ...opts });
@@ -147,6 +148,10 @@
     strikes.forEach((st) => impacts.push({ t: st.t, k: Math.min(1.2, st.power || 1), kind: 'boom', seg: segments.indexOf(segAt(st.t)), visual: false }));
     // plans au sol (remparts, esplanades) et maisons en relief qui s'effondrent à `fall`
     const plans = abs(def.plans);
+    // fusées éclairantes : départ du coup (sourd, lointain)
+    const flares = abs(def.flares);
+    const lights = abs(def.lights).map((l) => ({ ...l, offT: l.off !== undefined ? byId[l.seg].start + l.off : undefined, tEnd: l.until !== undefined ? byId[l.seg].start + l.until : total + 1 }));
+    flares.forEach((f) => impacts.push({ t: f.t - 0.15, k: 0.2, kind: 'soft', seg: segments.indexOf(segAt(f.t)), visual: false }));
     const blocks = abs(def.blocks).map((b) => ({ ...b, tf: byId[b.seg].start + b.fall }));
     blocks.forEach((b, i) => { if (b.fall !== undefined && i % 3 === 0) impacts.push({ t: b.tf, k: 0.5 + 0.5 * ((i * 7) % 5) / 4, kind: 'crumble', seg: segments.indexOf(segAt(b.tf)), visual: false }); });
     impacts.sort((a, b) => a.t - b.t);
@@ -156,7 +161,7 @@
 
     return {
       name: def.name || 'piece',
-      segments, total, impacts, flights, flashes, markers, silences, flows, units, arrows, zones, clock, strikes, plans, blocks,
+      segments, total, impacts, flights, flashes, markers, silences, flows, units, arrows, zones, clock, strikes, plans, blocks, flares, lights,
       events: def.events || [],
       cities: def.cities || CITIES,
       hud: Object.assign({}, HUD_DEFAULT, def.hud || {}),

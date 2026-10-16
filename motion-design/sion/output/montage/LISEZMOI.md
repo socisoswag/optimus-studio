@@ -26,7 +26,7 @@ Un dossier par partie, un sous-dossier par chapitre. Dans chaque dossier, pose l
 ## 3-Partie-III-La-catastrophe-fondatrice
 - 00 ouverture de la partie
 - Chapitre 12 · 1947 : le plan de partage de l’ONU : titre
-- Chapitre 13 · 1948 : la création d’Israël et la Nakba : titre, sequence exode palestinien 1948, chronologie 1948 deux regards, chronologie abd al qadir
+- Chapitre 13 · 1948 : la création d’Israël et la Nakba : titre, sequence 1948 la nakba, sequence exode palestinien 1948, chronologie 1948 deux regards, chronologie abd al qadir
 - Chapitre 14 · Les milices juives : Haganah, Irgoun, Lehi : titre
 - Chapitre 15 · Le massacre de Deir Yassin : titre
 - Chapitre 16 · Ben Gourion : bâtir un État, effacer un peuple : titre, chronologie ben gourion
