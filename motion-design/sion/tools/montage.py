@@ -37,7 +37,7 @@ EXTRAS = {
     7: [("trois-promesses", None, "sequence-trois-promesses"), ("chronologie", "weizmann", "chronologie-weizmann")],
     8: [("chronologie", "amin-husseini", "chronologie-amin-al-husseini"), ("chronologie", "qassam", "chronologie-al-qassam")],
     11: [("chronologie", "jabotinsky", "chronologie-jabotinsky")],
-    13: [("flux-humains", (0.0, 20.7), "sequence-exode-palestinien-1948"), ("chronologie", "split-1948", "chronologie-1948-deux-regards"),
+    13: [("nakba-1948", None, "sequence-1948-la-nakba"), ("flux-humains", (0.0, 20.7), "sequence-exode-palestinien-1948"), ("chronologie", "split-1948", "chronologie-1948-deux-regards"),
          ("chronologie", "abd-al-qadir", "chronologie-abd-al-qadir")],
     16: [("chronologie", "ben-gourion", "chronologie-ben-gourion")],
     17: [("flux-humains", (20.7, None), "sequence-juifs-des-pays-arabes")],
