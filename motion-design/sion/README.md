@@ -20,10 +20,12 @@ un seul moteur, une timeline par pièce.
 | Exodes, 1947 – années 1970 (chapitres 13 et 17) | `timelines/flux-humains.js` | 45 s | `output/flux-humains.mp4` |
 | Les résolutions 194, 242, 338 (chapitre 33) | `timelines/resolutions.js` | 1 min | `output/resolutions.mp4` |
 
-Chaque pièce a aussi sa bande-son seule en `.wav` à côté du `.mp4`.
+Le son ne contient que des bruitages, sans musique : les pièces s'intègrent au montage sous la
+musique du film. Chaque pièce a aussi ses bruitages seuls en `.wav` à côté du `.mp4`.
 
-Vidéos en 1920 × 1080, 25 i/s, H.264 9 Mbit/s avec le son. Les `.wav` (48 kHz, 24 bits) sont les
-bandes-son seules, pour les remixer sous la voix off.
+Vidéos en 1920 × 1080, 25 i/s, H.264 9 Mbit/s (cartons de chapitre : 10 Mbit/s). Les `.wav`
+(48 kHz, 24 bits) se remixent sous la voix off. Pour retrouver le lit musical (drone et accords) :
+`MUSIC=1 tools/resound.sh`, qui refait le son sans toucher à l'image.
 
 ## Direction artistique
 

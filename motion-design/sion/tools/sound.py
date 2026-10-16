@@ -3,12 +3,15 @@
     node tools/cues.mjs > cues.json
     python3 tools/sound.py cues.json output/bande-son.wav
 
-Drone grave en accords lents, vent et crépitements de feu, tic-tac discret,
-souffles pendant les vols de caméra, impacts sur chaque nom, artillerie
-lointaine synchronisée sur les éclairs, silence puis battement de cœur en 1995.
+Bruitages seuls par défaut (les pièces sont intégrées au montage, sous la musique
+du film) : vent et crépitements de feu, tic-tac discret, souffles pendant les vols
+de caméra, impacts sur chaque titre, artillerie lointaine synchronisée sur les
+éclairs, rumeur des flux, silence puis battement de cœur en 1995.
+MUSIC=1 ajoute le lit musical (drone grave et accords lents).
 Uniquement numpy (aucun sample externe, donc aucun droit à gérer).
 """
 import json
+import os
 import sys
 import wave
 
@@ -187,7 +190,9 @@ for p, a in zip(pos, amp):
 crack = bp(crack, 900, 5200)
 crack /= np.abs(crack).max() + 1e-9
 
-bedmix = (0.55 * drone + 0.30 * pad + 0.42 * wind) * bed * duck
+# musique (drone + accords) seulement sur demande : par défaut, bruitages seuls
+MUSIC = os.environ.get("MUSIC", "0") == "1"
+bedmix = ((0.55 * drone + 0.30 * pad) * MUSIC + 0.42 * wind) * bed * duck
 add(bedmix, 0, 0.62, 0.0)
 crl = crack * bed * 0.09
 add((crl, np.roll(crl, int(0.021 * SR))), 0, 1.0)
@@ -356,11 +361,13 @@ mix_l, mix_r = hp(mix_l, 22), hp(mix_r, 22)
 peak = max(np.abs(mix_l).max(), np.abs(mix_r).max())
 mix_l, mix_r = mix_l / peak * 1.25, mix_r / peak * 1.25
 mix_l, mix_r = np.tanh(mix_l) / np.tanh(1.25), np.tanh(mix_r) / np.tanh(1.25)
-# niveau homogène entre les pièces : RMS visé -18 dBFS, crêtes adoucies sous -1 dBFS
-rms0 = np.sqrt(np.mean((mix_l ** 2 + mix_r ** 2) / 2))
-g = 10 ** (-18.0 / 20) / rms0
-mix_l, mix_r = mix_l * g, mix_r * g
+# niveau homogène entre les pièces : RMS visé -18 dBFS avec musique, -21 dBFS en bruitages
+# seuls (sans écraser les impacts : gain plafonné), crêtes adoucies sous -1 dBFS
 ceil = 10 ** (-1.0 / 20)
+rms0 = np.sqrt(np.mean((mix_l ** 2 + mix_r ** 2) / 2))
+g = 10 ** ((-18.0 if MUSIC else -21.0) / 20) / rms0
+g = min(g, 1.6 * ceil / max(np.abs(mix_l).max(), np.abs(mix_r).max()))
+mix_l, mix_r = mix_l * g, mix_r * g
 mix_l, mix_r = ceil * np.tanh(mix_l / ceil), ceil * np.tanh(mix_r / ceil)
 
 pcm = np.clip(np.stack([mix_l, mix_r], 1) * (2 ** 23 - 1), -(2 ** 23), 2 ** 23 - 1).astype("<i4")
