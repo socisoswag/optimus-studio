@@ -35,7 +35,7 @@ Un dossier par partie, un sous-dossier par chapitre. Dans chaque dossier, pose l
 
 ## 4-Partie-IV-Resistances-et-oppressions
 - 00 ouverture de la partie
-- Chapitre 19 · Cisjordanie, Gaza, Jérusalem : terres volées, peuples divisés : titre, chronologie nasser, chronologie camp david
+- Chapitre 19 · Cisjordanie, Gaza, Jérusalem : terres volées, peuples divisés : titre, sequence six jours la naksa, chronologie nasser, chronologie camp david
 - Chapitre 20 · Les camps palestiniens et la vie dans l’exil : titre
 - Chapitre 21 · Yasser Arafat : l’icône d’un peuple sans drapeau : titre, chronologie arafat
 - Chapitre 22 · Les intifadas : pierres contre tanks : titre, chronologie yassine

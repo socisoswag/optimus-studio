@@ -1,7 +1,9 @@
 """Range toutes les pièces dans output/montage/ : un dossier par partie du film, et dedans un
 sous-dossier par chapitre (son titre, puis les séquences et les fiches de la chronologie qui
 l'illustrent). Les extraits (fiches de la chronologie, deux moitiés des exodes) sont découpés et
-réencodés à 10 Mbit/s ; les autres fichiers sont copiés tels quels.
+réencodés à 10 Mbit/s ; les autres fichiers sont copiés tels quels. Un fichier déjà présent et plus
+récent que sa source n'est pas refait (le dépôt ne grossit pas pour rien) ; les fichiers qui ne
+font plus partie du montage sont supprimés.
 
     python3 tools/montage.py          (à relancer après chaque nouveau rendu)
 """
@@ -70,7 +72,20 @@ def duration(path):
     return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path]))
 
 
+def fresh(src, dst):
+    return os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src)
+
+
+def copy(src, dst):
+    if not (fresh(src, dst) and os.path.getsize(dst) == os.path.getsize(src)):
+        shutil.copyfile(src, dst)
+    KEEP.add(dst)
+
+
 def cut(src, a, b, dst):
+    KEEP.add(dst)
+    if fresh(src, dst):
+        return
     d = (b if b is not None else duration(src)) - a
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-i", src, "-t", f"{d:.3f}",
                     "-c:v", "libx264", "-preset", "slow", "-b:v", "10M", "-maxrate", "14M", "-bufsize", "20M", "-tune", "grain",
@@ -78,36 +93,37 @@ def cut(src, a, b, dst):
                     "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", dst], check=True)
 
 
+KEEP = set()
+
+
 def main():
     seg = chrono_cuts()
     titles = chapter_titles()
-    if os.path.isdir(DST):
-        shutil.rmtree(DST)
-    os.makedirs(DST)
+    os.makedirs(DST, exist_ok=True)
     lines = ["# Montage : les pièces rangées par partie et par chapitre\n\n",
              "Un dossier par partie, un sous-dossier par chapitre. Dans chaque dossier, pose les fichiers dans l'ordre de leur numéro.\n"]
     d0 = os.path.join(DST, "0-Generique-et-prologue")
-    os.makedirs(d0)
-    shutil.copyfile(os.path.join(OUT, "generique.mp4"), os.path.join(d0, "01-generique.mp4"))
+    os.makedirs(d0, exist_ok=True)
+    copy(os.path.join(OUT, "generique.mp4"), os.path.join(d0, "01-generique.mp4"))
     a, b = seg["intro"]
     cut(os.path.join(OUT, "chronologie.mp4"), a, b, os.path.join(d0, "02-chronologie-ouverture-facultatif.mp4"))
-    shutil.copyfile(os.path.join(OUT, "chronologie.mp4"), os.path.join(d0, "03-chronologie-complete-facultatif.mp4"))
+    copy(os.path.join(OUT, "chronologie.mp4"), os.path.join(d0, "03-chronologie-complete-facultatif.mp4"))
     lines += ["\n## 0-Generique-et-prologue\n", "- 01 générique\n", "- 02 et 03 : la chronologie en prologue (facultatif)\n"]
     for folder, opener, chapters in PARTS:
         d = os.path.join(DST, folder)
-        os.makedirs(d)
-        shutil.copyfile(os.path.join(OUT, f"{opener}.mp4"), os.path.join(d, f"00-ouverture-{opener}.mp4"))
+        os.makedirs(d, exist_ok=True)
+        copy(os.path.join(OUT, f"{opener}.mp4"), os.path.join(d, f"00-ouverture-{opener}.mp4"))
         lines += [f"\n## {folder}\n", "- 00 ouverture de la partie\n"]
         for ch in chapters:
             cd = os.path.join(d, f"Chapitre-{ch:02d}-{slug(titles.get(ch, ''))}")
-            os.makedirs(cd)
-            shutil.copyfile(os.path.join(OUT, "chapitres", f"chapitre-{ch:02d}.mp4"), os.path.join(cd, "01-titre.mp4"))
+            os.makedirs(cd, exist_ok=True)
+            copy(os.path.join(OUT, "chapitres", f"chapitre-{ch:02d}.mp4"), os.path.join(cd, "01-titre.mp4"))
             items = ["titre"]
             for k, (src, span, name) in enumerate(EXTRAS.get(ch, []), start=2):
                 path = os.path.join(cd, f"{k:02d}-{name}.mp4")
                 full = os.path.join(OUT, f"{src}.mp4")
                 if span is None:
-                    shutil.copyfile(full, path)
+                    copy(full, path)
                 elif isinstance(span, str):
                     cut(full, *seg[span], path)
                 else:
@@ -116,6 +132,13 @@ def main():
             lines.append(f"- Chapitre {ch} · {titles.get(ch, '')} : {', '.join(items)}\n")
         print(folder, "ok")
     open(os.path.join(DST, "LISEZMOI.md"), "w", encoding="utf-8").write("".join(lines))
+    KEEP.add(os.path.join(DST, "LISEZMOI.md"))
+    for dp, dn, fn in os.walk(DST, topdown=False):
+        for f in fn:
+            if os.path.join(dp, f) not in KEEP:
+                os.remove(os.path.join(dp, f))
+        if dp != DST and not os.listdir(dp):
+            os.rmdir(dp)
 
 
 if __name__ == "__main__":

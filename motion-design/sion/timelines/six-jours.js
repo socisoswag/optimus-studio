@@ -71,7 +71,7 @@
       camEnd: { lon: 35.76, lat: 33.08, w: 0.043, pitch: 50, bearing: -2 },
     },
     {
-      id: 'fin', type: 'outro', dur: 8.0, fly: 2.4,
+      id: 'fin', type: 'outro', dur: 10.0, fly: 2.4, hitAt: 2.4,
       eyebrow: '10 juin 1967 · cessez-le-feu',
       lines: ['Six jours de guerre.', 'Une occupation', 'qui dure encore.'],
       cam: { lon: 34.2, lat: 30.9, w: 0.2, pitch: 30, bearing: 0 },
@@ -187,11 +187,11 @@
   });
   units.push({ seg: 'golan', at: 0.4, dur: 2.6, kind: 'plane', n: 2, path: [[35.3, 33.0], [35.9, 33.15], [36.4, 33.3]], alt: 50, size: 26 });
   zones.push({ seg: 'golan', at: 1.2, dur: 5.0, name: 'golan', from: [35.6, 33.05] });
-  markers.push({ seg: 'golan', at: 6.0, label: 'Quneitra · 10 juin', lon: 35.82, lat: 33.12, dir: [1, -1] });
+  markers.push({ seg: 'golan', at: 6.0, label: 'Quneitra · 10 juin', lon: 35.82, lat: 33.12, dir: [1, -1], endAt: 9.2 });
 
   // ---- fin : les territoires occupés
   [['Sinaï · rendu à l’Égypte en 1982', 33.6, 29.6, [-1, 1]], ['Gaza', 34.42, 31.45, [-1, -1]], ['Cisjordanie · Jérusalem-Est', 35.25, 31.95, [1, -1]], ['Golan', 35.78, 33.0, [1, -1]]]
-    .forEach(([label, lon, lat, dir], i) => markers.push({ seg: 'fin', at: 2.6 + 0.3 * i, label, lon, lat, dir, off: 34 }));
+    .forEach(([label, lon, lat, dir], i) => markers.push({ seg: 'fin', at: 1.4 + 0.35 * i, label, lon, lat, dir, off: 34, hideAt: 3.9 }));
 
   const clock = [
     { seg: 'frappe', at: 0.2, text: '5 juin 1967 · 7 h 45' },

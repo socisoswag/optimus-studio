@@ -15,7 +15,7 @@ console.log(JSON.stringify({
   flashes: TL.flashes,
   silences: TL.silences,
   jets: TL.units.filter((u) => u.kind === 'plane').map((u) => ({ t0: u.t, dur: u.dur, n: u.n || 1, pan: Math.sign(u.path[u.path.length - 1][0] - u.path[0][0]) })),
-  rumbles: TL.units.filter((u) => u.kind === 'tank' || u.kind === 'dozer').map((u) => ({ t0: u.t, dur: u.dur, n: u.n || 1 })),
+  rumbles: TL.units.filter((u) => u.kind === 'tank' || u.kind === 'dozer' || u.kind === 'truck').map((u) => ({ t0: u.t, dur: u.dur, n: u.n || 1 })),
   flows: TL.flows.map((f) => ({ t0: f.t, dur: (f.dur || 3) + (f.travel ? f.travel[1] : 3.4), to: f.to, from: Array.isArray(f.from[0]) ? f.from[0] : f.from })),
   event: ev ? { t: ev.impact, end: ev.end } : null,
   sound: TL.sound,

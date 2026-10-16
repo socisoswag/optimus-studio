@@ -905,6 +905,19 @@
       const { x, y, k } = P;
       if (m.erase) {
         sources.push({ gx: P.gx, gy: P.gy, R: m.R || 900, erase: 0.92 * tw(h, 0, m.eraseDur || 3.0, E.inOutSine), waves: [] });
+        if (m.ghost) {
+          // village : un petit carré de pierre s'embrase, s'éteint et ne laisse que son empreinte
+          const sz = 10 * k, q = tw(h, 0.25, 0.8, E.inCubic);
+          g.save();
+          g.globalAlpha = a;
+          if (q < 1) { g.fillStyle = rgba(COL.stone, 0.9 * (1 - q)); g.fillRect(x - sz / 2, y - (sz / 2) * Pcp, sz, sz * Pcp); }
+          g.globalCompositeOperation = 'lighter';
+          if (h > 0.2 && h < 1.4) sprite(g, SPR.hot, x, y, 60 * k, 0.8 * Math.exp(-(h - 0.25) / 0.3) * a);
+          g.globalCompositeOperation = 'source-over';
+          g.setLineDash([2, 2]); g.strokeStyle = rgba(COL.ember, 0.85 * tw(h, 0.6, 1.2) * a); g.lineWidth = 1;
+          g.strokeRect(x - sz / 2, y - (sz / 2) * Pcp, sz, sz * Pcp); g.setLineDash([]);
+          g.restore();
+        }
       } else if (m.area) {
         const amt = 0.85 * tw(h, 0, 1.2, E.outCubic) * a;
         const waves = h >= 0 && h < 2.4 ? [{ r: h * 1400, w: 70, a: 1.0 * Math.exp(-h / 0.8) }] : [];
@@ -993,7 +1006,13 @@
     g.fillStyle = METAL.body; rrect(g, -0.32, -0.2, 0.5, 0.4, 0.05); g.fill();
     g.fillStyle = METAL.light; g.fillRect(0.4, -0.42, 0.1, 0.84);
   }
-  const ICON = { tank: iconTank, plane: iconPlane, ship: iconShip, dozer: iconDozer };
+  function iconTruck(g) {
+    // automitrailleuse / camion blindé (1948)
+    g.fillStyle = METAL.dark; rrect(g, -0.5, -0.27, 1.0, 0.54, 0.06); g.fill();
+    g.fillStyle = METAL.body; rrect(g, -0.45, -0.21, 0.58, 0.42, 0.04); g.fill();
+    g.fillStyle = METAL.light; rrect(g, 0.17, -0.2, 0.3, 0.4, 0.05); g.fill();
+  }
+  const ICON = { tank: iconTank, plane: iconPlane, ship: iconShip, dozer: iconDozer, truck: iconTruck };
 
   function drawZones(g, t, Z = 1) {
     for (const z of WZONES) {
@@ -1015,8 +1034,9 @@
         g.beginPath(); g.arc(ox, oy, Math.max(0.1, R * p), 0, 7); g.clip();
       }
       g.globalCompositeOperation = 'lighter';
-      g.fillStyle = rgba(COL.ember, 0.11 * A); g.fillRect(bx0 - 2, by0 - 2, bx1 - bx0 + 4, by1 - by0 + 4);
-      g.strokeStyle = rgba(COL.ember, 0.5 * A); g.lineWidth = 1.3;
+      const zc = z.tone === 'stone' ? COL.stone : COL.ember, zk = z.tone === 'stone' ? 0.45 : 1;
+      g.fillStyle = rgba(zc, 0.11 * A * zk); g.fillRect(bx0 - 2, by0 - 2, bx1 - bx0 + 4, by1 - by0 + 4);
+      g.strokeStyle = rgba(zc, 0.5 * A * zk); g.lineWidth = 1.3;
       g.beginPath();
       const sp = 9, off = (t * 6) % sp;
       for (let x = bx0 - (by1 - by0) - sp + off; x < bx1 + sp; x += sp) { g.moveTo(x, by1); g.lineTo(x + (by1 - by0), by0); }
@@ -1024,8 +1044,10 @@
       g.restore();
       g.save();
       g.globalCompositeOperation = 'lighter';
-      g.strokeStyle = rgba(COL.hot, 0.85 * A * p); g.lineWidth = 1.7; g.stroke(outline);
-      g.strokeStyle = rgba(COL.ember, 0.25 * A * p); g.lineWidth = 6; g.stroke(outline);
+      if (z.outline !== false) {
+        g.strokeStyle = rgba(z.tone === 'stone' ? COL.stone : COL.hot, (z.tone === 'stone' ? 0.6 : 0.85) * A * p); g.lineWidth = 1.7; g.stroke(outline);
+        g.strokeStyle = rgba(z.tone === 'stone' ? COL.stone : COL.ember, 0.25 * A * p * zk); g.lineWidth = 6; g.stroke(outline);
+      }
       g.restore();
     }
   }
@@ -1184,11 +1206,12 @@
       g.lineTo(last.x + last.dy * hw, last.y - last.dx * hw);
       for (let i = right.length - 1; i >= 0; i--) g.lineTo(right[i][0], right[i][1]);
       g.closePath();
+      const st = a.tone === 'stone', c1 = st ? COL.stone : COL.ember, c2 = st ? COL.stone : COL.hot, ak = st ? 0.7 : 1;
       const grd = g.createLinearGradient(left[0][0], left[0][1], tx, ty);
-      grd.addColorStop(0, rgba(COL.ember, 0.05 * A)); grd.addColorStop(0.6, rgba(COL.ember, 0.4 * A)); grd.addColorStop(1, rgba(COL.hot, 0.65 * A));
+      grd.addColorStop(0, rgba(c1, 0.05 * A * ak)); grd.addColorStop(0.6, rgba(c1, 0.4 * A * ak)); grd.addColorStop(1, rgba(c2, 0.65 * A * ak));
       g.fillStyle = grd; g.fill();
-      g.strokeStyle = rgba(COL.hot, 0.7 * A); g.lineWidth = 1.4; g.stroke();
-      sprite(g, SPR.hot, tx, ty, 120, 0.6 * A);
+      g.strokeStyle = rgba(c2, 0.7 * A * ak); g.lineWidth = 1.4; g.stroke();
+      sprite(g, st ? SPR.stone : SPR.hot, tx, ty, 120, 0.6 * A * ak);
       g.restore();
       if (a.label && p > 0.35) {
         const [LX, LY] = along(a.pa, L * 0.5);
@@ -1240,7 +1263,7 @@
         else { rrect(g, -0.52, -0.36, 1.04, 0.72, 0.08); g.fill(); }
         // poussière (chars, bulldozers) ou sillage (navires)
         g.setTransform(1, 0, 0, 1, 0, 0);
-        if (moving && (u.kind === 'tank' || u.kind === 'dozer')) {
+        if (moving && (u.kind === 'tank' || u.kind === 'dozer' || u.kind === 'truck')) {
           g.globalCompositeOperation = 'lighter';
           for (let j = 1; j <= 4; j++) { const [bx, by] = apply(Aff, -0.6 - j * 0.45, Math.sin(t * 9 + j + k) * 0.12); sprite(g, SPR.stone, bx, by, (14 + j * 9) * Aff.k, 0.09 * A * (1 - j / 5)); }
           g.globalCompositeOperation = 'source-over';
@@ -1723,7 +1746,7 @@
           <div class="stlab">${esc(fr(s.label))}</div>${s.layout === 'B' ? '' : '<div class="rule"></div>'}
           ${s.text ? `<p class="text">${words(s.text)}</p>` : ''}${s.source ? `<div class="meta"><i class="dot"></i><span>${esc(fr(s.source))}</span></div>` : ''}</div>`;
       } else if (s.type === 'cap') {
-        html = `<div class="scrim"></div><div class="block">${eyebrowHTML()}<div class="captitle ln">${chars(s.title.toUpperCase())}</div>${s.text ? `<p class="text">${words(s.text)}</p>` : ''}</div>`;
+        html = `<div class="scrim"></div><div class="block">${eyebrowHTML()}<div class="captitle ln">${chars(s.title.toUpperCase())}</div>${s.text ? `<p class="text"${s.textW ? ` style="max-width:${s.textW}px"` : ''}>${words(s.text)}</p>` : ''}</div>`;
       } else if (s.type === 'quote') {
         html = `<div class="scrim"></div><div class="wrap"><i class="qm">“</i><p class="text qt">${words(s.text)}</p>
           <div class="eyebrow qa"><i class="tick"></i><span class="tw"></span><i class="tick"></i></div></div>`;
@@ -1993,16 +2016,17 @@
       css(R, R.scrim, 'opacity', String(f3(tw(u, I - 0.4, I + 0.3) * (1 - ex))));
       return;
     }
-    // fin
-    typewriter(R, R.tws[0], s.eyebrow, u, I - 0.6, 26);
-    css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, I - 0.7, I - 0.1))})`);
+    // fin (hitAt : laisse la carte parler avant le texte)
+    const F = I + (s.hitAt || 0);
+    typewriter(R, R.tws[0], s.eyebrow, u, F - 0.6, 26);
+    css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, F - 0.7, F - 0.1))})`);
     R.lines.forEach((ln, k) => {
-      const d0 = I - 0.25 + k * 0.55;
+      const d0 = F - 0.25 + k * 0.55;
       letters(R, ln, d0, 0.03, 0.6, k % 2 ? -145 : 145);
       rgbSplit(R, ln.ln, u, d0 + 0.1);
     });
-    css(R, wrapEl, 'transform', `scale(${f3(1.0 + 0.05 * inv(I, D, u))})`);
-    css(R, R.scrim, 'opacity', String(f3(tw(u, I - 1.0, I))));
+    css(R, wrapEl, 'transform', `scale(${f3(1.0 + 0.05 * inv(F, D, u))})`);
+    css(R, R.scrim, 'opacity', String(f3(tw(u, F - 1.0, F))));
   }
 
   // mot-choc du générique (L'IDÉE, LA TERRE, LE CHOC)
