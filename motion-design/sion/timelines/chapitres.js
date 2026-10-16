@@ -80,6 +80,9 @@
     [39, 'C', 'Pour une paix juste : aimer la terre, pas la détruire', 'jerusalem', '', ''],
   ];
 
+  // Chapitres consacrés à une ou deux personnes : leur visage, à l'opposé du titre
+  const FACES = { 3: ['dreyfus'], 4: ['herzl'], 7: ['balfour'], 9: ['arlozoroff'], 16: ['ben-gourion'], 18: ['meir'], 21: ['arafat'], 24: ['netanyahou', 'lieberman'], 31: ['bhl', 'finkielkraut'] };
+
   const DUR = 4.6;
   const LAYOUTS = ['L', 'C', 'R'];
   const REVEALS = ['slam', 'wipe', 'focus'];
@@ -92,7 +95,8 @@
     const k = full.indexOf(' : ');
     const title = k > 0 ? full.slice(0, k) : full;
     const sub = k > 0 ? cap(full.slice(k + 3)) : '';
-    const layout = LAYOUTS[i % 3];
+    let layout = LAYOUTS[i % 3];
+    if (FACES[n] && layout === 'C') layout = i % 2 ? 'R' : 'L'; // un visage demande un côté libre
     const P = PLACES[place];
     const bearing = (i % 2 ? -1 : 1) * (4 + (i * 5) % 11);
     const s = {
@@ -106,6 +110,11 @@
       pin: fx === 'pin', place: label || undefined, pinLabel: fx === 'pin',
       flashRate: part === 'C' ? 0.35 : 1,
     };
+    if (FACES[n]) {
+      const side = layout === 'L' ? 'R' : 'L', two = FACES[n].length > 1;
+      const xs = side === 'R' ? (two ? [1340, 1660] : [1520]) : (two ? [580, 260] : [400]);
+      s.faces = FACES[n].map((k, j) => root.face(k, { side, x: xs[j], h: two ? 800 - 30 * j : 900, at: 0.45 + 0.35 * j, until: DUR, tag: false }));
+    }
     if (fx === 'heat') s.heat = { R: 1300, amt: 0.9 };
     if (fx === 'flicker') s.heat = { R: 1500, amt: 1.1, flicker: true };
     if (fx === 'erase') markers.push({ seg: s.id, at: 0.9, num, label: '', lon: P.lon, lat: P.lat, erase: true, R: 1500, eraseDur: 3.2 });

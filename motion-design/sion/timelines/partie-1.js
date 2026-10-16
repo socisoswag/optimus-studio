@@ -45,6 +45,12 @@
     { seg: 'p1', at: 11.4, num: '06', label: 'Palestine ottomane', lon: 35.0, lat: 31.9, dir: [-1, 1], off: 64, area: true, R: 1100 },
   ];
 
+  // visages : apparaissent avec la ligne de leur chapitre, reliés à leur repère sur la carte
+  segments[0].faces = [
+      root.face('dreyfus', { tagPos: 'above', x: 1290, h: 640, at: 6.2, until: 10.5, link: { lon: 2.35, lat: 48.86 } }),
+      root.face('herzl', { tagPos: 'above', x: 1660, h: 700, at: 6.8, until: 10.5, link: { lon: 16.37, lat: 48.21 } }),
+  ];
+
   root.TL = root.buildTL({
     name: 'partie-1',
     seed: 1897,

@@ -23,6 +23,7 @@
     },
     {
       id: 'h1915', type: 'doc', dur: 12.5, fly: 1.8, layout: 'L', anchor: [540, 60],
+      faces: [root.face('mcmahon', { tagPos: 'above', x: 1330, h: 640, at: 2.4, arrowTo: 1, label: 'lettre du 24 octobre 1915', link: { lon: 31.24, lat: 30.04 } }), root.face('hussein-ben-ali', { tagPos: 'above', x: 1700, h: 680, at: 3.0, link: { lon: 39.83, lat: 21.42 } })],
       ghost: '1915', eyebrow: 'Le Caire · 24 octobre 1915', title: ['Correspondance', 'Hussein – McMahon'],
       meta: 'Henry McMahon, Le Caire → Hussein, chérif de La Mecque',
       quote: 'La Grande-Bretagne est disposée à [[reconnaître et soutenir l’indépendance des Arabes]] dans toutes les régions comprises dans les limites demandées par le chérif de La Mecque.',
@@ -34,6 +35,7 @@
     },
     {
       id: 'sp1916', type: 'doc', dur: 12.5, fly: 1.6, layout: 'L', anchor: [500, 40],
+      faces: [root.face('sykes', { tagPos: 'above', x: 1330, h: 640, at: 2.0, arrowTo: 1, label: 'accord secret' }), root.face('picot', { tagPos: 'above', x: 1700, h: 680, at: 2.5 })],
       ghost: '1916', eyebrow: 'Londres · 16 mai 1916 · secret', title: ['Accords', 'Sykes – Picot'],
       meta: 'Mark Sykes (Royaume-Uni) · François Georges-Picot (France)',
       rows: [
@@ -48,6 +50,7 @@
     },
     {
       id: 'b1917', type: 'doc', dur: 13.0, fly: 2.0, layout: 'L', anchor: [440, 40],
+      faces: [root.face('balfour', { tagPos: 'above', x: 1330, h: 640, at: 2.4, arrowTo: 1, label: '2 novembre 1917', link: { lon: -0.13, lat: 51.51 } }), root.face('rothschild', { tagPos: 'above', x: 1700, h: 680, at: 3.0 })],
       ghost: '1917', eyebrow: 'Londres · 2 novembre 1917', title: ['Déclaration', 'Balfour'],
       meta: 'Arthur Balfour, ministre des Affaires étrangères → Lord Rothschild',
       quote: [
@@ -61,6 +64,7 @@
     },
     {
       id: 'koestler', type: 'quote', pos: 'low', dur: 10.5, fly: 2.3, hitAt: 1.4, anchor: [0, -190],
+      faces: [root.face('koestler', { x: 1560, h: 760, at: 1.3 })],
       text: 'Une nation promettait solennellement à une deuxième [[le pays d’une troisième.]]',
       author: 'Arthur Koestler · Promise and Fulfilment, 1949',
       cam: { lon: 35.1, lat: 32.0, w: 0.1, pitch: 44, bearing: -6 },

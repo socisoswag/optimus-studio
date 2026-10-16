@@ -23,6 +23,12 @@
     {"seg": "p5", "at": 5.6, "num": "25", "label": "Gaza", "lon": 34.45, "lat": 31.45, "dir": [-1, 1], "off": 64, "area": true, "R": 800},
   ];
 
+  // visages : apparaissent avec la ligne de leur chapitre, reliés à leur repère sur la carte
+  segments[0].faces = [
+      root.face('netanyahou', { tagPos: 'above', x: 1330, h: 680, at: 2.2, until: 5.4, link: { lon: 35.205, lat: 31.777 } }),
+      root.face('lieberman', { tagPos: 'above', x: 1690, h: 700, at: 2.6, until: 5.4 }),
+  ];
+
   root.TL = root.buildTL({
     name: "partie-5",
     seed: 2000,

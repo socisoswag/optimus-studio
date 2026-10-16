@@ -25,6 +25,11 @@
     {"seg": "p4", "at": 9.7, "num": "22", "label": "Jabalia, 1987", "lon": 34.48, "lat": 31.53, "dir": [-1, -1]},
   ];
 
+  // visages : apparaissent avec la ligne de leur chapitre, reliés à leur repère sur la carte
+  segments[0].faces = [
+      root.face('arafat', { x: 1560, h: 740, at: 6.2, until: 9.6 }),
+  ];
+
   root.TL = root.buildTL({
     name: "partie-4",
     seed: 1987,

@@ -119,6 +119,29 @@
   const bezAt = (b, q) => { const m = 1 - q; return [m * m * b.X0 + 2 * m * q * b.CX + q * q * b.X1, m * m * b.Y0 + 2 * m * q * b.CY + q * q * b.Y1]; };
   const flowA = (f, t) => tw(t, f.t - 0.2, f.t + 0.4) * (1 - tw(t, f.tEnd - 0.7, f.tEnd));
 
+  // Visages : personnages détourés (PNG transparent) incrustés sur n'importe quel écran.
+  // Fiches et paires de la chronologie : automatique dès qu'elles ont une photo .png.
+  const FACE_POS = { R: [1500, 940], L: [420, 940], C: [960, 860], pairA: [330, 880], pairB: [1590, 880] };
+  SEG.forEach((s) => {
+    const list = [];
+    const png = (ph) => ph && /\.png$/i.test(ph);
+    if (s.type === 'figure' && png(s.photo)) list.push({ photo: s.photo, name: s.name.join(' '), dates: s.life, side: s.layout === 'R' ? 'L' : 'R', at: s.fly - 0.35, link: { lon: s.lon, lat: s.lat }, tag: false });
+    if (s.type === 'pair') s.people.forEach((pp, k) => { if (png(pp.photo)) list.push({ photo: pp.photo, name: pp.name.join(' '), dates: pp.life, side: k ? 'pairB' : 'pairA', at: s.fly - 0.3 + 0.2 * k, dim: 0.8, tag: false }); });
+    (s.faces || []).forEach((f) => list.push({ ...f }));
+    s.faceList = list.map((f) => {
+      const [x0, h0] = FACE_POS[f.side || 'R'];
+      const h = f.h || h0, x = f.x !== undefined ? f.x : x0;
+      return {
+        ...f, x, h, w: Math.round(h * (f.ratio || 0.86)), dir: x > W / 2 ? 1 : -1,
+        at: f.at !== undefined ? f.at : (s.fly || 0) + 0.2,
+        until: f.until !== undefined ? f.until : (s.span || s.dur),
+        dim: f.dim || 1, tag: f.tag !== false, ok: false,
+        link: f.link ? { X: MX(f.link.lon), Y: MY(f.link.lat) } : null,
+      };
+    });
+  });
+
+  const HAS_FACES = SEG.some((s) => s.faceList.length);
   let figCount = 0;
   SEG.forEach((s) => { if (s.type === 'figure' || s.type === 'pair') s.num = ++figCount; });
   const FIGS = figCount;
@@ -1012,6 +1035,7 @@
     drawRoute(g, t);
     if (pin && pin.showPin) drawPin(g, pin, t);
     if (MARKERS.length) { g.globalCompositeOperation = 'source-over'; g.globalAlpha = 1; g.drawImage(mk.canvas, 0, 0); }
+    if (HAS_FACES) drawFaceLinks(g, t);
 
     // brume de profondeur (le haut de la carte se perd dans la fumée)
     const fog = clamp(Psp / Math.sin(50 * D2R));
@@ -1218,19 +1242,17 @@
   function buildSegments() {
     for (const s of SEG) {
       const el = document.createElement('div');
-      el.className = `seg ${s.type} ${s.layout || ''} ${['intro', 'event', 'outro', 'beat', 'title', 'credit', 'quote'].includes(s.type) ? 'center' : ''} ${s.type === 'chapter' ? 'c-' + s.layout : ''} ${s.pos ? 'pos-' + s.pos : ''}`;
+      el.className = `seg ${s.type} ${s.layout || ''} ${['intro', 'event', 'outro', 'beat', 'title', 'credit', 'quote'].includes(s.type) ? 'center' : ''} ${s.type === 'chapter' ? 'c-' + s.layout : ''} ${s.pos ? 'pos-' + s.pos : ''} ${s.faces && s.faces.length ? 'has-face' : ''}`;
       let html = '';
       if (s.type === 'figure') {
         html = `<div class="scrim"></div><div class="ghost">${yearStr(s.year)}</div>
-          ${!s.photo ? '' : /\.png$/i.test(s.photo)
-            // personnage détouré (PNG transparent) : posé sur la carte, liseré de braise, trame sur la silhouette
-            ? `<div class="cutout"><div class="cimg" style="background-image:url('${esc(s.photo)}')"></div><div class="cdots" style="-webkit-mask-image:url('${esc(s.photo)}');mask-image:url('${esc(s.photo)}')"></div></div>`
+          ${!s.photo || /\.png$/i.test(s.photo) ? '' /* détouré : voir les visages */
             : `<div class="portrait"><div class="ph" style="background-image:url('${esc(s.photo)}')"></div><div class="dots"></div><div class="tint"></div><div class="frame"></div><div class="cap">Archives · ${esc(s.name.join(' '))}</div></div>`}
           <div class="block">${eyebrowHTML()}${nameHTML(s.name)}${nativeHTML(s.native, s.lang)}<div class="rule"></div>
           <p class="text">${words(s.text)}</p><div class="meta"><span>${esc(s.life)}</span><i class="dot"></i><span>${esc(s.place)}</span></div></div>`;
       } else if (s.type === 'pair') {
         const side = (p, c) => `<div class="side ${c}">${nameHTML(p.name)}${nativeHTML(p.native, p.lang)}<div class="meta"><span>${esc(p.life)}</span></div></div>`;
-        const bgp = (p, c) => (p.photo ? `<div class="pairbg ${c} ${/\.png$/i.test(p.photo) ? 'cutp' : ''}"><div class="ph" style="background-image:url('${esc(p.photo)}')"></div></div>` : '');
+        const bgp = (p, c) => (p.photo && !/\.png$/i.test(p.photo) ? `<div class="pairbg ${c}"><div class="ph" style="background-image:url('${esc(p.photo)}')"></div></div>` : '');
         html = `${bgp(s.people[0], 'a')}${bgp(s.people[1], 'b')}<div class="scrim"></div><div class="ghost">${yearStr(s.year)}</div>
           <div class="top">${eyebrowHTML()}</div>${side(s.people[0], 'a')}<div class="amp">&amp;</div>${side(s.people[1], 'b')}
           <div class="bottom"><p class="text">${words(s.text)}</p></div>`;
@@ -1286,6 +1308,20 @@
           <div class="eyebrow qa"><i class="tick"></i><span class="tw"></span><i class="tick"></i></div></div>`;
       }
       el.innerHTML = html;
+      if (s.faceList.length) {
+        const box = document.createElement('div');
+        box.className = 'faces';
+        box.innerHTML = s.faceList.map((f) => {
+          const u = `url('${esc(f.photo)}')`, m = `-webkit-mask-image:${u};mask-image:${u}`;
+          return `<div class="fwrap" style="transform-origin:${f.x}px 1080px">
+            <div class="face" style="left:${f.x - f.w / 2}px;width:${f.w}px;height:${f.h}px">
+              <div class="fimg" style="background-image:${u}"></div><div class="fdots" style="${m}"></div><div class="fscan" style="${m}"></div></div>
+            <div class="freti"><i></i><i></i><i></i><i></i></div>
+            ${f.tag ? `<div class="ftag ${f.tagPos === 'above' ? 'ta' : f.dir > 0 ? 'tl' : 'tr'}"><i class="ftick"></i><b></b><span>${esc(f.dates || '')}</span></div>` : ''}</div>`;
+        }).join('');
+        const scrim = el.querySelector('.scrim, .scrimL');
+        if (scrim) scrim.after(box); else el.prepend(box);
+      }
       typeLayer.appendChild(el);
       if (s.type === 'chapter') {
         el.style.display = 'block';
@@ -1855,6 +1891,115 @@
     css(R, R.scrim, 'opacity', String(f3(tw(u, I - 0.6, I + 0.2) * (1 - ex))));
   }
 
+  // Visages : entrée en mise au point et en profondeur, liseré de braise à l'impact, faisceau qui
+  // balaie le visage, réticule qui se verrouille, nom qui s'inscrit, lente dérive.
+  function upFaces(s, u) {
+    const R = s.R;
+    if (!R.faces) R.faces = [...R.el.querySelectorAll('.fwrap')];
+    s.faceList.forEach((f, k) => {
+      const el = R.faces[k];
+      if (!el || !f.ok) return;
+      const p = tw(u, f.at, f.at + 1.15, E.outQuart);
+      const ex = E.inCubic(inv(f.until - 0.15, f.until + 0.4, u));
+      const vis = u >= f.at - 0.05 && u <= f.until + 0.45;
+      css(R, el, 'display', vis ? 'block' : 'none');
+      if (!vis) return;
+      const drift = inv(f.at, f.until, u), d = f.dir;
+      css(R, el, 'opacity', String(f3(clamp(p * 1.6) * (1 - ex))));
+      css(R, el, 'transform', `perspective(1400px) translate3d(${f3(d * (70 * (1 - p) - 18 * drift) - d * 90 * ex)}px,${f3(80 * (1 - p))}px,0) rotateY(${f3(-d * (16 * (1 - p) + 3 * drift))}deg) scale(${f3(1.08 - 0.08 * p + 0.05 * drift + 0.3 * ex)})`);
+      css(R, el, 'filter', blur((1 - p) * 16 + ex * 14));
+      const hit = u > f.at + 0.35 ? Math.exp(-(u - f.at - 0.35) / 0.55) : 0;
+      const glow = 0.45 + 0.55 * hit;
+      css(R, el.querySelector('.fimg'), 'filter', `grayscale(1) contrast(1.24) brightness(${f3(0.86 * f.dim + 0.18 * hit)}) sepia(.32) drop-shadow(0 0 1.6px rgba(255,196,128,${f3(0.95 * glow)})) drop-shadow(0 0 ${f3(16 + 26 * glow)}px rgba(255,91,31,${f3(0.55 * glow)}))`);
+      // faisceau lumineux qui descend sur le visage
+      const sc = inv(f.at + 0.45, f.at + 1.35, u);
+      const scan = el.querySelector('.fscan');
+      css(R, scan, 'opacity', String(f3(sc > 0 && sc < 1 ? Math.sin(PI * sc) : 0)));
+      css(R, scan, 'backgroundPosition', `0 ${f3(-30 + 160 * E.inOutSine(sc))}%`);
+      // réticule
+      const q = tw(u, f.at + 0.55, f.at + 1.05, E.outExpo);
+      const reti = el.querySelector('.freti');
+      css(R, reti, 'opacity', String(f3(q * (u < f.at + 2.6 ? 1 : 0.55))));
+      css(R, reti, 'transform', `scale(${f3((1.75 - 0.75 * q) * (1 + 0.012 * Math.sin(u * 3.1)))}) rotate(${f3((1 - q) * 14)}deg)`);
+      const tag = el.querySelector('.ftag');
+      if (tag) {
+        typewriter(R, tag.querySelector('b'), f.name.toUpperCase(), u, f.at + 0.8, 32, false);
+        const tp = tw(u, f.at + 1.05, f.at + 1.6, E.outCubic);
+        css(R, tag.querySelector('span'), 'opacity', String(f3(tp)));
+        css(R, tag.querySelector('.ftick'), 'transform', `scaleX(${f3(tw(u, f.at + 0.7, f.at + 1.2))})`);
+      }
+    });
+  }
+
+  // lien de braise du visage vers son lieu sur la carte (dessiné sous le visage, dans la carte)
+  function drawFaceLinks(g, t) {
+    for (const s of SEG) {
+      if (!s.faceList.length) continue;
+      const u = t - s.start;
+      for (const f of s.faceList) {
+        if (!f.ok || !f.link || u < f.at + 0.5 || u > f.until + 0.4) continue;
+        const lp = tw(u, f.at + 0.6, f.at + 1.5, E.inOutCubic), out = 1 - tw(u, f.until - 0.3, f.until + 0.2);
+        if (lp <= 0.01 || out <= 0.01) continue;
+        const P = proj(f.link.X, f.link.Y), x0 = f.hx, y0 = f.hy + f.hr * 0.6, x1 = P.x, y1 = P.y;
+        const cx = (x0 + x1) / 2, cy = Math.min(y0, y1) - 120;
+        const pt = (q) => [(1 - q) * (1 - q) * x0 + 2 * (1 - q) * q * cx + q * q * x1, (1 - q) * (1 - q) * y0 + 2 * (1 - q) * q * cy + q * q * y1];
+        g.save();
+        g.lineCap = 'round';
+        g.beginPath();
+        for (let j = 0; j <= 40; j++) { const [x, y] = pt((j / 40) * lp); if (!j) g.moveTo(x, y); else g.lineTo(x, y); }
+        g.globalCompositeOperation = 'lighter';
+        g.strokeStyle = rgba(COL.ember, 0.22 * out); g.lineWidth = 7; g.stroke();
+        g.setLineDash([2, 8]); g.lineDashOffset = -t * 40;
+        g.strokeStyle = rgba(COL.hot, 0.9 * out); g.lineWidth = 2; g.stroke();
+        g.setLineDash([]);
+        const [hx, hy] = pt(lp);
+        sprite(g, SPR.hot, hx, hy, 120, 0.8 * out);
+        sprite(g, SPR.spark, hx, hy, 30, out);
+        g.restore();
+      }
+    }
+  }
+
+  // flèche lumineuse d'un visage vers un autre (expéditeur → destinataire, duo)
+  function drawFaceArrows(t) {
+    const g = hud;
+    for (const s of SEG) {
+      if (!s.faceList.length) continue;
+      const u = t - s.start;
+      s.faceList.forEach((f) => {
+        if (f.arrowTo === undefined) return;
+        const o = s.faceList[f.arrowTo];
+        if (!f.ok || !o || !o.ok) return;
+        const t0 = Math.max(f.at, o.at) + 0.9;
+        const lp = tw(u, t0, t0 + 0.8, E.inOutCubic), out = 1 - tw(u, Math.min(f.until, o.until) - 0.3, Math.min(f.until, o.until) + 0.1);
+        if (lp <= 0.01 || out <= 0.01) return;
+        const x0 = f.hx + Math.sign(o.hx - f.hx) * f.hr * 1.15, y0 = f.hy - f.hr * 0.2;
+        const x1 = o.hx - Math.sign(o.hx - f.hx) * o.hr * 1.15, y1 = o.hy - o.hr * 0.2;
+        const cx = (x0 + x1) / 2, cy = Math.min(y0, y1) - 140;
+        const pt = (q) => [(1 - q) * (1 - q) * x0 + 2 * (1 - q) * q * cx + q * q * x1, (1 - q) * (1 - q) * y0 + 2 * (1 - q) * q * cy + q * q * y1];
+        g.save();
+        g.globalAlpha = out; g.lineCap = 'round'; g.lineJoin = 'round';
+        g.beginPath();
+        for (let j = 0; j <= 40; j++) { const [x, y] = pt((j / 40) * lp); if (!j) g.moveTo(x, y); else g.lineTo(x, y); }
+        g.globalCompositeOperation = 'lighter';
+        g.strokeStyle = rgba(COL.ember, 0.3); g.lineWidth = 9; g.stroke();
+        g.strokeStyle = rgba(COL.hot, 0.95); g.lineWidth = 2.4; g.stroke();
+        const [ax, ay] = pt(lp), [bx, by] = pt(Math.max(0, lp - 0.04));
+        const an = Math.atan2(ay - by, ax - bx);
+        g.beginPath(); g.moveTo(ax - Math.cos(an - 0.45) * 18, ay - Math.sin(an - 0.45) * 18); g.lineTo(ax, ay); g.lineTo(ax - Math.cos(an + 0.45) * 18, ay - Math.sin(an + 0.45) * 18); g.stroke();
+        sprite(g, SPR.spark, ax, ay, 34, 1);
+        if (f.label && lp > 0.6) {
+          const [mx, my] = pt(0.5);
+          g.globalCompositeOperation = 'source-over';
+          g.globalAlpha = out * tw(lp, 0.6, 1);
+          g.font = '500 15px "DM Mono"'; g.letterSpacing = '2.5px'; g.textAlign = 'center'; g.textBaseline = 'bottom';
+          g.fillStyle = rgba(COL.hot, 1); g.fillText(f.label.toUpperCase(), mx, my - 10);
+        }
+        g.restore();
+      });
+    }
+  }
+
   function updateType(t) {
     for (const s of SEG) {
       const u = t - s.start;
@@ -1874,6 +2019,7 @@
       else if (s.type === 'quote') upQuote(s, u);
       else if (s.type === 'camera') { /* plan de caméra sans texte */ }
       else upCenter(s, u);
+      if (s.faceList.length) upFaces(s, u);
     }
   }
 
@@ -1928,6 +2074,7 @@
     const hudOut = 1 - tw(t, OUTRO.end - 2.2, OUTRO.end - 1.0, E.inCubic);
     const hudA = tw(t, HUD.from, HUD.from + 1.2, E.outCubic) * hudOut;
     drawHud(t, yr, hudA);
+    if (HAS_FACES) drawFaceArrows(t);
     if (HUD.odo) setOdo(yr);
     $('hudTl').style.opacity = String(f3(tw(t, 0.6, 1.6, E.outCubic) * hudOut));
     hudDom.style.opacity = '1';
@@ -1976,11 +2123,51 @@
     if (rnd() < 0.08) { gr.fillStyle = 'rgba(255,255,255,.55)'; gr.fillRect(rnd() * W, 0, 1.2, H); }
   }
 
+  // Charge chaque photo détourée, repère la tête dans le canal alpha et y place réticule et nom.
+  // Une photo absente est simplement ignorée (le reste de la pièce se rend normalement).
+  async function loadFaces() {
+    const jobs = [];
+    for (const s of SEG) s.faceList.forEach((f, k) => jobs.push(new Promise((done) => {
+      const img = new Image();
+      img.onload = () => {
+        const sc = Math.min(f.w / img.naturalWidth, f.h / img.naturalHeight);
+        const dw = img.naturalWidth * sc, dh = img.naturalHeight * sc, left = f.x - dw / 2, top = H - dh;
+        const cw = Math.max(1, Math.round(dw / 4)), ch = Math.max(1, Math.round(dh / 4));
+        const c = canvas(cw, ch), g = c.getContext('2d');
+        g.drawImage(img, 0, 0, cw, ch);
+        const A = g.getImageData(0, 0, cw, ch).data, opaque = (x, y) => A[(y * cw + x) * 4 + 3] > 128;
+        let y0 = 0;
+        while (y0 < ch - 1 && ![...Array(cw).keys()].some((x) => opaque(x, y0))) y0++;
+        const pH = ch - y0, yMid = Math.min(ch - 1, Math.round(y0 + 0.17 * pH));
+        let x0 = cw, x1 = 0;
+        for (let x = 0; x < cw; x++) if (opaque(x, yMid)) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); }
+        if (x1 <= x0) { x0 = 0; x1 = cw - 1; }
+        f.hx = left + ((x0 + x1) / 2) * 4; f.hy = top + yMid * 4;
+        f.hr = Math.max((x1 - x0) * 4 * 0.62, pH * 4 * 0.13);
+        const el = s.R.el.querySelectorAll('.fwrap')[k];
+        const reti = el.querySelector('.freti'), r = f.hr * 1.25;
+        Object.assign(reti.style, { left: `${f.hx - r}px`, top: `${f.hy - r * 1.05}px`, width: `${2 * r}px`, height: `${2.2 * r}px` });
+        const tag = el.querySelector('.ftag');
+        if (tag) {
+          if (f.tagPos === 'above') Object.assign(tag.style, { left: `${f.hx - 320}px`, width: '640px', top: `${f.hy - r * 1.05 - 92}px` });
+          else if (f.dir > 0) Object.assign(tag.style, { right: `${W - (f.hx - r - 26)}px`, top: `${f.hy - 30}px` });
+          else Object.assign(tag.style, { left: `${f.hx + r + 26}px`, top: `${f.hy - 30}px` });
+        }
+        f.ok = true;
+        done();
+      };
+      img.onerror = () => { const el = s.R.el.querySelectorAll('.fwrap')[k]; if (el) el.style.display = 'none'; done(); };
+      img.src = f.photo;
+    })));
+    await Promise.all(jobs);
+  }
+
   async function init() {
     await document.fonts.ready;
     const probes = ['760 34px "Archivo"', '400 13px "DM Mono"', '500 13px "DM Mono"', 'italic 400 38px "Newsreader"', '400 30px "Newsreader"', '600 50px "Noto Sans Hebrew"', '600 44px "Noto Kufi Arabic"'];
     await Promise.all(probes.map((p) => document.fonts.load(p, 'AÉأאz')));
     buildSegments();
+    await loadFaces();
     // en-têtes du HUD propres à la pièce
     const H0 = TL.hud;
     $('hudTl').innerHTML = H0.label ? `<b>${esc(H0.label[0])}</b><br><span>${esc(H0.label[1] || '')}</span>` : '';

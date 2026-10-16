@@ -36,7 +36,7 @@
       name: ['Theodor', 'Herzl'], native: 'תאודור הרצל', lang: 'he',
       life: '1860 — 1904',
       text: "Publie L’État des Juifs (1896), puis réunit à Bâle le premier Congrès sioniste.",
-      photo: null,
+      photo: 'portraits/herzl.png',
       cam: { w: 0.16, pitch: 42, bearing: -8 },
     },
     {
@@ -46,7 +46,7 @@
       name: ['Chaïm', 'Weizmann'], native: 'חיים ויצמן', lang: 'he',
       life: '1874 — 1952',
       text: "Artisan de la déclaration Balfour : Londres soutient un « foyer national juif » en Palestine.",
-      photo: null,
+      photo: 'portraits/weizmann.png',
       cam: { w: 0.16, pitch: 38, bearing: 7 },
     },
     {
@@ -56,7 +56,7 @@
       name: ['Hadj Amin', 'al-Husseini'], native: 'أمين الحسيني', lang: 'ar',
       life: 'v. 1897 — 1974',
       text: "Nommé par les Britanniques, il prend la tête du mouvement national arabe palestinien sous le Mandat.",
-      photo: null,
+      photo: 'portraits/amin-husseini.png',
       cam: { w: 0.05, pitch: 46, bearing: -10 },
     },
     {
@@ -66,7 +66,7 @@
       name: ['Ze’ev', 'Jabotinsky'], native: 'זאב ז׳בוטינסקי', lang: 'he',
       life: '1880 — 1940',
       text: "Fonde à Paris l’Union sioniste révisionniste. Théoricien du « mur de fer » (1923).",
-      photo: null,
+      photo: 'portraits/jabotinsky.png',
       cam: { w: 0.14, pitch: 40, bearing: 10 },
     },
     {
@@ -76,7 +76,7 @@
       name: ['Izz al-Din', 'al-Qassam'], native: 'عز الدين القسام', lang: 'ar',
       life: '1882 — 1935',
       text: "Prend les armes contre le Mandat britannique. Sa mort précède la grande révolte arabe de 1936.",
-      photo: null,
+      photo: 'portraits/qassam.png',
       cam: { w: 0.045, pitch: 46, bearing: 12 },
     },
     {
@@ -86,7 +86,7 @@
       name: ['Abd al-Qadir', 'al-Husseini'], native: 'عبد القادر الحسيني', lang: 'ar',
       life: '1907 — 1948',
       text: "Chef de l’Armée de la guerre sainte. Tué le 8 avril 1948 à al-Qastal, sur la route de Jérusalem.",
-      photo: null,
+      photo: 'portraits/abd-al-qadir.png',
       cam: { w: 0.032, pitch: 50, bearing: -14 },
     },
     {
@@ -96,7 +96,7 @@
       name: ['David', 'Ben Gourion'], native: 'דוד בן-גוריון', lang: 'he',
       life: '1886 — 1973',
       text: "Proclame l’indépendance de l’État d’Israël à Tel-Aviv, le 14 mai 1948.",
-      photo: null,
+      photo: 'portraits/ben-gourion.png',
       cam: { w: 0.04, pitch: 44, bearing: 8 },
     },
     {
@@ -120,7 +120,7 @@
       name: ['Gamal', 'Abdel Nasser'], native: 'جمال عبد الناصر', lang: 'ar',
       life: '1918 — 1970',
       text: "Nationalise le canal de Suez (1956). Défait lors de la guerre des Six Jours (1967).",
-      photo: null,
+      photo: 'portraits/nasser.png',
       cam: { w: 0.12, pitch: 42, bearing: -6 },
     },
     {
@@ -130,7 +130,7 @@
       name: ['Yasser', 'Arafat'], native: 'ياسر عرفات', lang: 'ar',
       life: '1929 — 2004',
       text: "Cofonde le Fatah au Koweït. Préside l’Organisation de libération de la Palestine de 1969 à sa mort.",
-      photo: null,
+      photo: 'portraits/arafat.png',
       cam: { w: 0.14, pitch: 40, bearing: 10 },
     },
     {
@@ -140,7 +140,7 @@
       name: ['Golda', 'Meir'], native: 'גולדה מאיר', lang: 'he',
       life: '1898 — 1978',
       text: "Dirige le pays pendant la guerre du Kippour, lancée par l’Égypte et la Syrie en octobre 1973.",
-      photo: null,
+      photo: 'portraits/meir.png',
       cam: { w: 0.05, pitch: 48, bearing: 16 },
     },
     {
@@ -148,8 +148,8 @@
       year: 1978, place: 'Camp David', lon: -77.465, lat: 39.648,
       eyebrow: 'Accords de Camp David',
       people: [
-        { name: ['Menahem', 'Begin'], native: 'מנחם בגין', lang: 'he', life: '1913 — 1992', photo: null },
-        { name: ['Anouar', 'el-Sadate'], native: 'أنور السادات', lang: 'ar', life: '1918 — 1981', photo: null },
+        { name: ['Menahem', 'Begin'], native: 'מנחם בגין', lang: 'he', life: '1913 — 1992', photo: 'portraits/begin.png' },
+        { name: ['Anouar', 'el-Sadate'], native: 'أنور السادات', lang: 'ar', life: '1918 — 1981', photo: 'portraits/sadate.png' },
       ],
       text: "Israël et l’Égypte posent les bases du premier traité de paix israélo-arabe (1979). Prix Nobel de la paix.",
       cam: { w: 0.09, pitch: 40, bearing: -8 },
@@ -161,7 +161,7 @@
       name: ['Cheikh Ahmed', 'Yassine'], native: 'أحمد ياسين', lang: 'ar',
       life: '1936 — 2004',
       text: "Fonde le Hamas à Gaza en décembre 1987, au début de la première Intifada.",
-      photo: null,
+      photo: 'portraits/yassine.png',
       cam: { w: 0.04, pitch: 48, bearing: -12 },
     },
     {
@@ -169,14 +169,15 @@
       year: 1993, place: 'Oslo', lon: 10.75, lat: 59.91,
       eyebrow: 'Accords d’Oslo',
       people: [
-        { name: ['Yitzhak', 'Rabin'], native: 'יצחק רבין', lang: 'he', life: '1922 — 1995', photo: null },
-        { name: ['Yasser', 'Arafat'], native: 'ياسر عرفات', lang: 'ar', life: '1929 — 2004', photo: null },
+        { name: ['Yitzhak', 'Rabin'], native: 'יצחק רבין', lang: 'he', life: '1922 — 1995', photo: 'portraits/rabin.png' },
+        { name: ['Yasser', 'Arafat'], native: 'ياسر عرفات', lang: 'ar', life: '1929 — 2004', photo: 'portraits/arafat.png' },
       ],
       text: "Négociés en secret à Oslo, signés à Washington le 13 septembre 1993 : Israël et l’OLP se reconnaissent.",
       cam: { w: 0.15, pitch: 40, bearing: 6 },
     },
     {
       id: 'rabin-1995', type: 'event', dur: 4.2, quiet: true, slow: true, silenceBefore: 0.55, blackBefore: 0.5,
+      faces: [root.face('rabin', { side: 'C', x: 960, h: 900, dim: 0.55, tag: false, at: 1.0 })],
       year: 1995, place: 'Tel-Aviv', lon: 34.78, lat: 32.08,
       kicker: 'Tel-Aviv',
       title: '4 novembre 1995',

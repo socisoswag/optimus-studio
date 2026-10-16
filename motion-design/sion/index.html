@@ -254,6 +254,33 @@
   .quote.pos-low .wrap { justify-content: flex-end; padding-bottom: 150px; }
   .quote.pos-low .scrim { background: linear-gradient(0deg, rgba(9,8,7,.92) 0%, rgba(9,8,7,.7) 40%, rgba(9,8,7,0) 72%); }
 
+  /* visages : personnage détouré, réticule, nom */
+  .faces { position: absolute; inset: 0; pointer-events: none; }
+  .fwrap { position: absolute; inset: 0; display: none; will-change: transform, opacity; }
+  .face { position: absolute; bottom: 0; }
+  .face .fimg, .face .fdots, .face .fscan { position: absolute; inset: 0; }
+  .face .fimg { background-size: contain; background-repeat: no-repeat; background-position: 50% 100%;
+    -webkit-mask-image: linear-gradient(to top, transparent 0, #000 14%); mask-image: linear-gradient(to top, transparent 0, #000 14%); }
+  .face .fdots, .face .fscan { -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: 50% 100%; mask-position: 50% 100%; }
+  .face .fdots { background-image: radial-gradient(rgba(0,0,0,.6) 1px, transparent 1.7px); background-size: 5px 5px; mix-blend-mode: multiply; opacity: .42; }
+  .face .fscan { background-image: linear-gradient(180deg, rgba(255,174,90,0) 0%, rgba(255,174,90,0) 38%, rgba(255,214,160,.75) 48%, rgba(255,120,50,.35) 52%, rgba(255,174,90,0) 62%, rgba(255,174,90,0) 100%); background-size: 100% 260%; background-repeat: no-repeat; mix-blend-mode: screen; opacity: 0; }
+  .freti { position: absolute; transform-origin: 50% 50%; opacity: 0; }
+  .freti i { position: absolute; width: 26px; height: 26px; border: 0 solid var(--hot); box-shadow: 0 0 12px rgba(255,91,31,.6); }
+  .freti i:nth-child(1) { left: 0; top: 0; border-left-width: 2px; border-top-width: 2px; }
+  .freti i:nth-child(2) { right: 0; top: 0; border-right-width: 2px; border-top-width: 2px; }
+  .freti i:nth-child(3) { left: 0; bottom: 0; border-left-width: 2px; border-bottom-width: 2px; }
+  .freti i:nth-child(4) { right: 0; bottom: 0; border-right-width: 2px; border-bottom-width: 2px; }
+  .ftag { position: absolute; display: flex; flex-direction: column; gap: 6px; white-space: nowrap; }
+  .ftag.tl { align-items: flex-end; text-align: right; }
+  .ftag.ta { align-items: center; text-align: center; }
+  .ftag.ta .ftick { transform-origin: 50% 50%; }
+  .ftag .ftick { display: block; width: 46px; height: 2px; background: var(--ember); transform-origin: 100% 50%; transform: scaleX(0); }
+  .ftag.tr .ftick { transform-origin: 0 50%; }
+  .ftag b { font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 760; font-size: 40px; line-height: 1; letter-spacing: .01em; color: var(--stone); text-shadow: 0 2px 18px rgba(0,0,0,.85); }
+  .ftag b .cur { display: inline-block; width: .5em; height: .9em; background: var(--ember); vertical-align: -.08em; margin-left: .08em; }
+  .ftag span { font-family: var(--mono); font-size: 16px; letter-spacing: .22em; color: var(--hot); opacity: 0; text-shadow: 0 2px 12px rgba(0,0,0,.9); }
+  .quote.has-face .wrap { padding: 0 600px 0 170px; }
+
   /* HUD */
   .hud-tl, .hud-tr { position: absolute; top: 58px; font-family: var(--mono); font-size: 15px; letter-spacing: .3em; text-transform: uppercase; line-height: 1.7; }
   .hud-tl { left: 132px; color: rgba(233,220,192,.78); }

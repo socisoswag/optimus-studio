@@ -1,24 +1,38 @@
-# Photos d'archive
+# Photos des personnages
 
-Dépose ici une photo par figure, puis renseigne son chemin dans `timelines/chronologie.js` (champ `photo`).
-Noms conseillés, dans l'ordre de la chronologie :
+Une photo d'archive par personne dans `portraits/src/`, nommée par sa clé (`herzl.jpg`…), puis :
 
-| Fichier | Figure |
-|---|---|
-| `herzl.jpg` | Theodor Herzl |
-| `weizmann.jpg` | Chaïm Weizmann |
-| `amin-husseini.jpg` | Hadj Amin al-Husseini |
-| `jabotinsky.jpg` | Ze'ev Jabotinsky |
-| `qassam.jpg` | Izz al-Din al-Qassam |
-| `abd-al-qadir.jpg` | Abd al-Qadir al-Husseini |
-| `ben-gourion.jpg` | David Ben Gourion |
-| `nasser.jpg` | Gamal Abdel Nasser |
-| `arafat.jpg` | Yasser Arafat |
-| `meir.jpg` | Golda Meir |
-| `begin.jpg`, `sadate.jpg` | Camp David |
-| `yassine.jpg` | Cheikh Ahmed Yassine |
-| `rabin.jpg` | Yitzhak Rabin |
+```bash
+MODELS=/dossier/des/modeles python3 tools/portraits.py portraits/src portraits
+```
 
-Format : portrait vertical, buste, au moins 800 × 1000 px. Le traitement (noir et blanc, trame,
-teinte braise, zoom lent) est automatique. Vérifie les droits de chaque image (domaine public,
-licence libre ou achat auprès d'une agence).
+Le script restaure la photo (débruitage, taches et rayures, super-résolution fidèle, contraste,
+netteté), détoure la personne et écrit `portraits/<clé>.png`. Les timelines y pointent déjà : une
+photo présente apparaît au rendu suivant, une photo absente est simplement ignorée.
+
+| Clé | Personne | Vidéos |
+|---|---|---|
+| `herzl` | Theodor Herzl | chronologie, ouverture I, chapitre 4 |
+| `weizmann` | Chaïm Weizmann | chronologie |
+| `amin-husseini` | Hadj Amin al-Husseini | chronologie |
+| `jabotinsky` | Ze'ev Jabotinsky | chronologie |
+| `qassam` | Izz al-Din al-Qassam | chronologie |
+| `abd-al-qadir` | Abd al-Qadir al-Husseini | chronologie |
+| `ben-gourion` | David Ben Gourion | chronologie, ouverture III, chapitre 16 |
+| `nasser` | Gamal Abdel Nasser | chronologie |
+| `arafat` | Yasser Arafat | chronologie, ouverture IV, chapitre 21 |
+| `meir` | Golda Meir | chronologie, ouverture III, chapitre 18 |
+| `begin`, `sadate` | Menahem Begin, Anouar el-Sadate | chronologie (Camp David) |
+| `yassine` | Cheikh Ahmed Yassine | chronologie |
+| `rabin` | Yitzhak Rabin | chronologie (Oslo, 4 novembre 1995) |
+| `mcmahon`, `hussein-ben-ali` | Henry McMahon, Hussein ben Ali | trois promesses (1915) |
+| `sykes`, `picot` | Mark Sykes, François Georges-Picot | trois promesses (1916) |
+| `balfour`, `rothschild` | Arthur Balfour, Walter Rothschild | trois promesses (1917), ouverture II, chapitre 7 |
+| `koestler` | Arthur Koestler | trois promesses (citation) |
+| `dreyfus` | Alfred Dreyfus | ouverture I, chapitre 3 |
+| `arlozoroff` | Haïm Arlozoroff | ouverture II, chapitre 9 |
+| `netanyahou`, `lieberman` | Benyamin Netanyahou, Avigdor Lieberman | ouverture V, chapitre 24 |
+| `bhl`, `finkielkraut` | Bernard-Henri Lévy, Alain Finkielkraut | ouverture VI, chapitre 31 |
+
+Format conseillé : la plus grande version disponible, buste ou portrait. Vérifie les droits de
+chaque image (domaine public ou licence libre) et garde la source pour le générique de fin.

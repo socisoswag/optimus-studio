@@ -25,6 +25,12 @@
     {"seg": "p6", "at": 11.6, "num": "31", "label": "Paris", "lon": 2.35, "lat": 48.86, "dir": [1, -1]},
   ];
 
+  // visages : apparaissent avec la ligne de leur chapitre, reliés à leur repère sur la carte
+  segments[0].faces = [
+      root.face('bhl', { tagPos: 'above', x: 1330, h: 680, at: 11.6, until: 14.4, link: { lon: 2.35, lat: 48.86 } }),
+      root.face('finkielkraut', { tagPos: 'above', x: 1690, h: 700, at: 12.0, until: 14.4 }),
+  ];
+
   root.TL = root.buildTL({
     name: "partie-6",
     seed: 1938,

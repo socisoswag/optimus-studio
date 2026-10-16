@@ -28,6 +28,12 @@
     {"seg": "p3", "at": 12.6, "num": "18", "label": "Jérusalem", "lon": 35.22, "lat": 31.78, "dir": [1, 1]},
   ];
 
+  // visages : apparaissent avec la ligne de leur chapitre, reliés à leur repère sur la carte
+  segments[0].faces = [
+      root.face('ben-gourion', { x: 1560, h: 720, at: 7.8, until: 11.8, link: { lon: 34.78, lat: 32.08 } }),
+      root.face('meir', { x: 1560, h: 720, at: 12.6, until: 15.8, link: { lon: 35.22, lat: 31.78 } }),
+  ];
+
   root.TL = root.buildTL({
     name: "partie-3",
     seed: 1947,
