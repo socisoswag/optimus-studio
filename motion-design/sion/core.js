@@ -152,7 +152,7 @@
     const flares = abs(def.flares);
     const lights = abs(def.lights).map((l) => ({ ...l, offT: l.off !== undefined ? byId[l.seg].start + l.off : undefined, tEnd: l.until !== undefined ? byId[l.seg].start + l.until : total + 1 }));
     flares.forEach((f) => impacts.push({ t: f.t - 0.15, k: 0.2, kind: 'soft', seg: segments.indexOf(segAt(f.t)), visual: false }));
-    const blocks = abs(def.blocks).map((b) => ({ ...b, tf: byId[b.seg].start + b.fall }));
+    const blocks = abs(def.blocks).map((b) => ({ ...b, tf: b.fall !== undefined ? byId[b.seg].start + b.fall : undefined }));
     blocks.forEach((b, i) => { if (b.fall !== undefined && i % 3 === 0) impacts.push({ t: b.tf, k: 0.5 + 0.5 * ((i * 7) % 5) / 4, kind: 'crumble', seg: segments.indexOf(segAt(b.tf)), visual: false }); });
     impacts.sort((a, b) => a.t - b.t);
 

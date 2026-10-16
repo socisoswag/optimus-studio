@@ -1064,7 +1064,7 @@
   // plans : tracé progressif (rempart, esplanade, mur mis en évidence, carroyage métrique)
   function drawPlans(g, t, Z) {
     for (const p of PLANS) {
-      const A = Z * tw(t, p.t - 0.1, p.t + 0.4) * (1 - tw(t, p.tEnd - 0.6, p.tEnd));
+      const A = (p.any ? 1 : Z) * tw(t, p.t - 0.1, p.t + 0.4) * (1 - tw(t, p.tEnd - 0.6, p.tEnd));
       if (A <= 0.01) continue;
       const q = tw(t, p.t, p.t + (p.dur || 1.6), E.inOutCubic);
       g.save();
@@ -1085,7 +1085,13 @@
       if (p.fill && q > 0.98) { g.fillStyle = rgba(p.style === 'sacred' ? COL.ember : COL.stone, p.fill * A * tw(t, p.t + (p.dur || 1.6) - 0.1, p.t + (p.dur || 1.6) + 0.8)); g.fill(path); }
       g.setLineDash([len * q, len + 10]);
       g.lineJoin = 'round';
-      if (p.style === 'focus') {
+      if (p.style === 'dash') {
+        g.setLineDash([]);
+        const cut = new Path2D(); let acc = 0;
+        pts.forEach(([x, y], i) => { if (!i) { cut.moveTo(x, y); return; } const [px, py] = pts[i - 1], L = Math.hypot(x - px, y - py); if (acc + L <= len * q) cut.lineTo(x, y); else if (acc < len * q) { const f = (len * q - acc) / L; cut.lineTo(px + (x - px) * f, py + (y - py) * f); } acc += L; });
+        g.setLineDash([10, 8]); g.lineDashOffset = -t * 20;
+        g.strokeStyle = rgba(COL.ember, 0.75 * A); g.lineWidth = 1.6; g.stroke(cut);
+      } else if (p.style === 'focus') {
         g.globalCompositeOperation = 'lighter';
         g.strokeStyle = rgba(COL.ember, 0.35 * A); g.lineWidth = 12; g.stroke(path);
         g.strokeStyle = rgba(COL.hot, 0.95 * A); g.lineWidth = 3.2; g.stroke(path);
@@ -1185,11 +1191,11 @@
     g.restore();
   }
 
-  function drawLights(g, t) {
+  function drawLights(g, t, Z = 1) {
     g.save();
     g.globalCompositeOperation = 'lighter';
     for (const l of LIGHTS) {
-      const A = tw(t, l.t - 0.1, l.t + 1.2) * (1 - tw(t, l.tEnd - 0.6, l.tEnd));
+      const A = Z * tw(t, l.t - 0.1, l.t + 1.2) * (1 - tw(t, l.tEnd - 0.6, l.tEnd));
       if (A <= 0.01) continue;
       for (const [X, Y, a, b] of l.pts) {
         // extinction en cascade sur ~1,5 s, quelques lumières résistent (groupes électrogènes)
@@ -1199,7 +1205,7 @@
         if (v <= 0.02) continue;
         const P = proj(X, Y);
         if (P.k < KMIN + 0.05) continue;
-        sprite(g, a < 0.75 ? SPR.spark : SPR.stone, P.x, P.y, (a < 0.75 ? 9 : 22) * P.k + 2, 0.7 * v);
+        sprite(g, a < 0.88 ? SPR.spark : SPR.stone, P.x, P.y, (a < 0.88 ? 8 : 16) * P.k + 2, 0.78 * v);
       }
     }
     g.restore();
@@ -1519,7 +1525,7 @@
     drawDots(g, sources, t, mot);
     // échelle régionale (territoires, offensives) ou échelle de la rue (plans, maisons)
     const ZR = inv(0.0025, 0.007, cam.w), ZS = inv(0.008, 0.003, cam.w);
-    if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t); drawBlocks(g, t, ZS); }
+    if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t, Math.pow(clamp(0.011 / cam.w), 0.9)); drawBlocks(g, t, ZS); }
     if (FLOWS.length) drawFlows(g, t);
     if (HAS_WAR) { drawUnits(g, t); drawStrikes(g, t); if (FLARES.length) drawFlares(g, t); }
     const busy = [];
