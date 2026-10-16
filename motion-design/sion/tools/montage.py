@@ -40,7 +40,7 @@ EXTRAS = {
     16: [("chronologie", "ben-gourion", "chronologie-ben-gourion")],
     17: [("flux-humains", (20.7, None), "sequence-juifs-des-pays-arabes")],
     18: [("chronologie", "meir", "chronologie-golda-meir")],
-    19: [("chronologie", "nasser", "chronologie-nasser"), ("chronologie", "camp-david", "chronologie-camp-david")],
+    19: [("six-jours", None, "sequence-six-jours-la-naksa"), ("chronologie", "nasser", "chronologie-nasser"), ("chronologie", "camp-david", "chronologie-camp-david")],
     21: [("chronologie", "arafat", "chronologie-arafat")],
     22: [("chronologie", "yassine", "chronologie-yassine")],
     23: [("chronologie", "oslo", "chronologie-oslo")],

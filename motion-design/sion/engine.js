@@ -116,6 +116,57 @@
     const c = froms.reduce((a, o) => [a[0] + o[0] / froms.length, a[1] + o[1] / froms.length], [0, 0]);
     return { ...f, P, guide: bez(c[0], c[1], f.to[0], f.to[1], f.bend !== undefined ? f.bend : 0.18), O: froms.map((o) => [MX(o[0]), MY(o[1])]), TX: MX(f.to[0]), TY: MY(f.to[1]) };
   });
+  // ------------------------------------------------------------ guerre : unités, flèches, frappes, territoires
+  const smoothPath = (pts) => {
+    // lissage de Chaikin (deux passes) pour des trajectoires sans angles
+    let P = pts;
+    for (let it = 0; it < 2; it++) {
+      if (P.length < 3) break;
+      const Q = [P[0]];
+      for (let i = 0; i < P.length - 1; i++) {
+        const [a, b] = [P[i], P[i + 1]];
+        Q.push([0.75 * a[0] + 0.25 * b[0], 0.75 * a[1] + 0.25 * b[1]], [0.25 * a[0] + 0.75 * b[0], 0.25 * a[1] + 0.75 * b[1]]);
+      }
+      Q.push(P[P.length - 1]);
+      P = Q;
+    }
+    return P;
+  };
+  const mkPath = (lonlat) => {
+    const P = smoothPath(lonlat.map(([lo, la]) => [MX(lo), MY(la)]));
+    const L = [0];
+    for (let i = 1; i < P.length; i++) L.push(L[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
+    return { P, L, len: L[L.length - 1] };
+  };
+  const along = (pa, d) => {
+    const { P, L } = pa;
+    d = clamp(d, 0, pa.len);
+    let i = 1;
+    while (i < L.length - 1 && L[i] < d) i++;
+    const q = clamp((d - L[i - 1]) / ((L[i] - L[i - 1]) || 1e-9));
+    return [lerp(P[i - 1][0], P[i][0], q), lerp(P[i - 1][1], P[i][1], q), P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]];
+  };
+  const segEnd = (id) => { const sg = SEG.find((x) => x.id === id); return sg ? sg.end : TL.total; };
+  const UNITS = (TL.units || []).map((u) => ({ ...u, pa: mkPath(u.path), n: u.n || 1, tEnd: u.until !== undefined ? u.t - u.at + u.until : segEnd(u.seg) + 0.3, fires: (u.fire || []).map((f) => ({ t: u.t - u.at + f.at, X: MX(f.to[0]), Y: MY(f.to[1]) })) }));
+  const ARROWS = (TL.arrows || []).map((a) => ({ ...a, pa: mkPath(a.path), tEnd: a.until !== undefined ? a.t - a.at + a.until : segEnd(a.seg) + 0.4 }));
+  const STRIKES = (TL.strikes || []).map((st) => ({ ...st, X: MX(st.lon), Y: MY(st.lat), pow: st.power || 1, burn: st.burn || 4 }));
+  const TER = window.TERRITOIRES || {};
+  const WZONES = (TL.zones || []).map((z) => ({
+    ...z, rings: (Array.isArray(z.name) ? z.name : [z.name]).flatMap((nm) => (TER[nm] || []).map((r) => r.map(([lo, la]) => [MX(lo), MY(la)]))),
+    O: z.from ? [MX(z.from[0]), MY(z.from[1])] : null, tEnd: z.until !== undefined ? z.t - z.at + z.until : TL.total + 1,
+  }));
+  // plans au sol (remparts, esplanades, mur) et maisons en relief : mètres → unités Mercator
+  const M2U = (lat) => 1 / (6371000 * Math.cos(lat * D2R));
+  const PLANS = (TL.plans || []).map((p) => ({ ...p, P: (p.path || []).map(([lo, la]) => [MX(lo), MY(la)]), L: p.label ? [MX(p.labelAt[0]), MY(p.labelAt[1])] : null, tEnd: p.until !== undefined ? p.t - p.at + p.until : TL.total + 1 }));
+  const BLOCKS = (TL.blocks || []).map((b, i) => {
+    const u = M2U(b.lat), X = MX(b.lon), Y = MY(b.lat), c = Math.cos(b.rot || 0), sn = Math.sin(b.rot || 0);
+    const hw = (b.w / 2) * u, hd = (b.d / 2) * u, r = mulberry32(i * 31 + 7);
+    const C = [[-hw, -hd], [hw, -hd], [hw, hd], [-hw, hd]].map(([x, y]) => [X + x * c - y * sn, Y + x * sn + y * c]);
+    const deb = Array.from({ length: 7 }, () => [X + (r() - 0.5) * 2.4 * hw, Y + (r() - 0.5) * 2.4 * hd, 0.4 + r() * 0.8]);
+    return { ...b, X, Y, C, hU: b.h * u, wU: b.w * u, deb, tilt: (r() - 0.5) * 0.5 };
+  });
+  const HAS_WAR = UNITS.length || ARROWS.length || STRIKES.length || WZONES.length || PLANS.length || BLOCKS.length;
+
   const bezAt = (b, q) => { const m = 1 - q; return [m * m * b.X0 + 2 * m * q * b.CX + q * q * b.X1, m * m * b.Y0 + 2 * m * q * b.CY + q * q * b.Y1]; };
   const flowA = (f, t) => tw(t, f.t - 0.2, f.t + 0.4) * (1 - tw(t, f.tEnd - 0.7, f.tEnd));
 
@@ -907,6 +958,369 @@
     }
   }
 
+  // repère local posé au sol : x = vers l'avant (sens de la marche), y = vers la gauche ; 1 = sizePx
+  function groundAffine(X, Y, hx, hy, sizePx) {
+    const n = Math.hypot(hx, hy) || 1, fx = hx / n, fy = hy / n, eps = 2e-4;
+    const p0 = proj(X, Y), x0 = p0.x, y0 = p0.y, k = p0.k;
+    const p1 = proj(X + fx * eps, Y + fy * eps), x1 = p1.x, y1 = p1.y;
+    const p2 = proj(X - fy * eps, Y + fx * eps), x2 = p2.x, y2 = p2.y;
+    const S = sizePx / Ps / eps;
+    return { a: (x1 - x0) * S, b: (y1 - y0) * S, c: (x2 - x0) * S, d: (y2 - y0) * S, e: x0, f: y0, k };
+  }
+  const apply = (A, lx, ly) => [A.a * lx + A.c * ly + A.e, A.b * lx + A.d * ly + A.f];
+  function rrect(g, x, y, w, h, r) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
+  const METAL = { dark: 'rgba(38,34,29,.95)', body: 'rgba(132,123,108,.98)', light: 'rgba(196,184,160,.98)' };
+  function iconTank(g, tur) {
+    g.fillStyle = METAL.dark; rrect(g, -0.5, -0.33, 1.0, 0.66, 0.07); g.fill();
+    g.fillStyle = METAL.body; rrect(g, -0.42, -0.22, 0.86, 0.44, 0.06); g.fill();
+    g.save(); g.translate(-0.06, 0); g.rotate(tur);
+    g.fillStyle = METAL.light; g.fillRect(0.1, -0.035, 0.66, 0.07);
+    g.beginPath(); g.ellipse(0, 0, 0.21, 0.17, 0, 0, 7); g.fill();
+    g.restore();
+  }
+  function iconPlane(g) {
+    g.fillStyle = METAL.light;
+    g.beginPath(); g.moveTo(0.58, 0); g.lineTo(0.12, 0.07); g.lineTo(-0.32, 0.46); g.lineTo(-0.4, 0.46); g.lineTo(-0.3, 0.08);
+    g.lineTo(-0.48, 0.06); g.lineTo(-0.5, 0); g.lineTo(-0.48, -0.06); g.lineTo(-0.3, -0.08); g.lineTo(-0.4, -0.46); g.lineTo(-0.32, -0.46); g.lineTo(0.12, -0.07); g.closePath(); g.fill();
+  }
+  function iconShip(g) {
+    g.fillStyle = METAL.body;
+    g.beginPath(); g.moveTo(0.55, 0); g.lineTo(0.3, 0.13); g.lineTo(-0.5, 0.13); g.lineTo(-0.5, -0.13); g.lineTo(0.3, -0.13); g.closePath(); g.fill();
+    g.fillStyle = METAL.light; g.fillRect(-0.25, -0.07, 0.32, 0.14);
+  }
+  function iconDozer(g) {
+    g.fillStyle = METAL.dark; rrect(g, -0.45, -0.3, 0.8, 0.6, 0.06); g.fill();
+    g.fillStyle = METAL.body; rrect(g, -0.32, -0.2, 0.5, 0.4, 0.05); g.fill();
+    g.fillStyle = METAL.light; g.fillRect(0.4, -0.42, 0.1, 0.84);
+  }
+  const ICON = { tank: iconTank, plane: iconPlane, ship: iconShip, dozer: iconDozer };
+
+  function drawZones(g, t, Z = 1) {
+    for (const z of WZONES) {
+      const A = Z * tw(t, z.t - 0.1, z.t + 0.4) * (1 - tw(t, z.tEnd - 0.6, z.tEnd));
+      if (A <= 0.01 || !z.rings.length) continue;
+      const p = tw(t, z.t, z.t + (z.dur || 2), E.inOutCubic);
+      g.save();
+      g.beginPath();
+      let bx0 = 1e9, by0 = 1e9, bx1 = -1e9, by1 = -1e9;
+      for (const r of z.rings) r.forEach(([X, Y], i) => { const P = proj(X, Y); if (!i) g.moveTo(P.x, P.y); else g.lineTo(P.x, P.y); bx0 = Math.min(bx0, P.x); by0 = Math.min(by0, P.y); bx1 = Math.max(bx1, P.x); by1 = Math.max(by1, P.y); });
+      g.closePath();
+      const outline = new Path2D();
+      for (const r of z.rings) r.forEach(([X, Y], i) => { const P = proj(X, Y); if (!i) outline.moveTo(P.x, P.y); else outline.lineTo(P.x, P.y); });
+      g.clip('evenodd');
+      if (p < 1) {
+        const O = z.O ? proj(z.O[0], z.O[1]) : { x: (bx0 + bx1) / 2, y: (by0 + by1) / 2 };
+        const ox = O.x, oy = O.y;
+        const R = Math.max(Math.hypot(bx0 - ox, by0 - oy), Math.hypot(bx1 - ox, by0 - oy), Math.hypot(bx0 - ox, by1 - oy), Math.hypot(bx1 - ox, by1 - oy));
+        g.beginPath(); g.arc(ox, oy, Math.max(0.1, R * p), 0, 7); g.clip();
+      }
+      g.globalCompositeOperation = 'lighter';
+      g.fillStyle = rgba(COL.ember, 0.11 * A); g.fillRect(bx0 - 2, by0 - 2, bx1 - bx0 + 4, by1 - by0 + 4);
+      g.strokeStyle = rgba(COL.ember, 0.5 * A); g.lineWidth = 1.3;
+      g.beginPath();
+      const sp = 9, off = (t * 6) % sp;
+      for (let x = bx0 - (by1 - by0) - sp + off; x < bx1 + sp; x += sp) { g.moveTo(x, by1); g.lineTo(x + (by1 - by0), by0); }
+      g.stroke();
+      g.restore();
+      g.save();
+      g.globalCompositeOperation = 'lighter';
+      g.strokeStyle = rgba(COL.hot, 0.85 * A * p); g.lineWidth = 1.7; g.stroke(outline);
+      g.strokeStyle = rgba(COL.ember, 0.25 * A * p); g.lineWidth = 6; g.stroke(outline);
+      g.restore();
+    }
+  }
+
+  // plans : tracé progressif (rempart, esplanade, mur mis en évidence, carroyage métrique)
+  function drawPlans(g, t, Z) {
+    for (const p of PLANS) {
+      const A = Z * tw(t, p.t - 0.1, p.t + 0.4) * (1 - tw(t, p.tEnd - 0.6, p.tEnd));
+      if (A <= 0.01) continue;
+      const q = tw(t, p.t, p.t + (p.dur || 1.6), E.inOutCubic);
+      g.save();
+      if (p.style === 'grid') {
+        const [lo0, la0, lo1, la1] = p.bbox, u = M2U((la0 + la1) / 2) * p.step;
+        const X0 = MX(lo0), X1 = MX(lo1), Y0 = MY(la0), Y1 = MY(la1);
+        g.strokeStyle = rgba(COL.stone, 0.07 * A * q); g.lineWidth = 1; g.beginPath();
+        for (let X = X0; X <= X1; X += u) { const a = proj(X, Y0), b = proj(X, Y1); g.moveTo(a.x, a.y); g.lineTo(b.x, b.y); }
+        for (let Y = Y0; Y <= Y1; Y += u) { const a = proj(X0, Y), b = proj(X1, Y); g.moveTo(a.x, a.y); g.lineTo(b.x, b.y); }
+        g.stroke(); g.restore(); continue;
+      }
+      const pts = p.P.map(([X, Y]) => { const P = proj(X, Y); return [P.x, P.y]; });
+      if (p.closed) pts.push(pts[0]);
+      let len = 0;
+      for (let i = 1; i < pts.length; i++) len += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
+      const path = new Path2D();
+      pts.forEach(([x, y], i) => (i ? path.lineTo(x, y) : path.moveTo(x, y)));
+      if (p.fill && q > 0.98) { g.fillStyle = rgba(p.style === 'sacred' ? COL.ember : COL.stone, p.fill * A * tw(t, p.t + (p.dur || 1.6) - 0.1, p.t + (p.dur || 1.6) + 0.8)); g.fill(path); }
+      g.setLineDash([len * q, len + 10]);
+      g.lineJoin = 'round';
+      if (p.style === 'focus') {
+        g.globalCompositeOperation = 'lighter';
+        g.strokeStyle = rgba(COL.ember, 0.35 * A); g.lineWidth = 12; g.stroke(path);
+        g.strokeStyle = rgba(COL.hot, 0.95 * A); g.lineWidth = 3.2; g.stroke(path);
+      } else if (p.style === 'sacred') {
+        g.strokeStyle = rgba(COL.ember, 0.7 * A); g.lineWidth = 1.6; g.stroke(path);
+      } else {
+        g.strokeStyle = rgba(COL.stone, 0.16 * A); g.lineWidth = 7; g.stroke(path);
+        g.strokeStyle = rgba(COL.stone, 0.75 * A); g.lineWidth = 1.8; g.stroke(path);
+      }
+      g.setLineDash([]);
+      if (p.L && p.label) {
+        const P = proj(p.L[0], p.L[1]), la = A * tw(t, p.t + (p.labelAt2 || 0.6), p.t + (p.labelAt2 || 0.6) + 0.5, E.outCubic);
+        g.globalCompositeOperation = 'source-over';
+        g.globalAlpha = la;
+        g.font = `${p.big ? 500 : 400} ${p.big ? 15 : 13}px "DM Mono"`; g.letterSpacing = p.big ? '3px' : '2.5px';
+        g.textAlign = 'center'; g.textBaseline = 'middle';
+        g.lineWidth = 4; g.strokeStyle = 'rgba(10,9,8,.8)'; g.strokeText(p.label.toUpperCase(), P.x, P.y);
+        g.fillStyle = p.style === 'focus' ? rgba(COL.hot, 1) : rgba(COL.stone, p.style === 'sacred' ? 0.95 : 0.85);
+        g.fillText(p.label.toUpperCase(), P.x, P.y);
+      }
+      g.restore();
+    }
+  }
+
+  // maisons : prismes en relief (pierre) ; à `tf` elles s'écroulent : poussière, gravats, empreinte
+  const roofCol = [126, 116, 100], wallLit = [86, 78, 66], wallDark = [36, 32, 28];
+  function drawBlocks(g, t, Z) {
+    if (!BLOCKS.length || Z <= 0.01) return;
+    const L = [];
+    for (const b of BLOCKS) {
+      const A = Z * tw(t, b.t, b.t + 0.5) * (1 - tw(t, TL.total - TL.fadeOut - 0.4, TL.total - 0.2));
+      if (A <= 0.01) continue;
+      const P0 = proj(b.X, b.Y);
+      L.push({ b, A, y: P0.y, x: P0.x, k: P0.k, base: b.C.map(([X, Y]) => { const P = proj(X, Y); return [P.x, P.y]; }) });
+    }
+    L.sort((p, q) => p.y - q.y);
+    g.save();
+    for (const { b, A, base, x, y, k } of L) {
+      const d = b.tf !== undefined ? t - b.tf : -1;
+      const grow = E.outCubic(tw(t, b.t, b.t + 0.7));
+      const fall = d > 0 ? E.inCubic(clamp(d / 0.5)) : 0;
+      const sz = b.wU * Ps * k;
+      const hp = b.hU * Ps * k * Psp * grow * (1 - fall);
+      const sh = d > 0 && d < 0.5 ? Math.sin(d * 70) * 1.2 * (1 - d / 0.5) : 0;
+      const roof = base.map(([bx, by]) => [bx + sh + b.tilt * (1 - fall) * 0, by - hp]);
+      g.globalAlpha = A;
+      // empreinte au sol (ombre, puis gravats)
+      g.beginPath(); base.forEach(([bx, by], i) => (i ? g.lineTo(bx + 3, by + 3) : g.moveTo(bx + 3, by + 3))); g.closePath();
+      g.fillStyle = 'rgba(0,0,0,.45)'; g.fill();
+      if (fall < 1) {
+        // murs : de l'arrière vers l'avant, éclairés selon leur orientation
+        const faces = [0, 1, 2, 3].map((i) => { const j = (i + 1) % 4; return { i, j, my: (base[i][1] + base[j][1]) / 2 }; }).sort((p, q) => p.my - q.my);
+        for (const { i, j } of faces) {
+          const ex = base[j][0] - base[i][0], ey = base[j][1] - base[i][1];
+          const lit = clamp(0.5 + 0.5 * Math.cos(Math.atan2(ey, ex) - 0.6));
+          g.fillStyle = `rgb(${wallDark.map((c, n) => Math.round(lerp(c, wallLit[n], lit))).join(',')})`;
+          g.beginPath(); g.moveTo(base[i][0], base[i][1]); g.lineTo(base[j][0], base[j][1]); g.lineTo(roof[j][0], roof[j][1]); g.lineTo(roof[i][0], roof[i][1]); g.closePath(); g.fill();
+        }
+        g.beginPath(); roof.forEach(([rx, ry], i) => (i ? g.lineTo(rx, ry) : g.moveTo(rx, ry))); g.closePath();
+        g.fillStyle = `rgb(${roofCol.join(',')})`; g.fill();
+        g.strokeStyle = rgba(COL.stone, 0.55); g.lineWidth = 0.8; g.stroke();
+        // fenêtre allumée (nuit)
+        if (b.lit && d < 0) {
+          g.globalCompositeOperation = 'lighter';
+          sprite(g, SPR.hot, (roof[0][0] + roof[2][0]) / 2, (roof[0][1] + roof[2][1]) / 2 + hp * 0.45, sz * 1.1, 0.35 * A * (0.8 + 0.2 * noise1(t * 3 + b.X * 1e4)));
+          g.globalCompositeOperation = 'source-over';
+        }
+      }
+      if (d > 0) {
+        // gravats
+        const rb = tw(d, 0.15, 0.6);
+        g.fillStyle = `rgba(70,63,54,${0.95 * rb})`;
+        for (const [DX, DY, s2] of b.deb) { const P = proj(DX, DY); const r = s2 * sz * 0.22; g.fillRect(P.x - r, P.y - r * Pcp, r * 2, r * 2 * Pcp); }
+        // empreinte : la maison disparue, en pointillés de braise
+        const ga = tw(d, 0.9, 2.0) * A;
+        if (ga > 0.01) {
+          g.globalCompositeOperation = 'lighter';
+          g.setLineDash([3, 3]); g.strokeStyle = rgba(COL.ember, 0.75 * ga); g.lineWidth = 1.1;
+          g.beginPath(); base.forEach(([bx, by], i) => (i ? g.lineTo(bx, by) : g.moveTo(bx, by))); g.closePath(); g.stroke();
+          g.setLineDash([]);
+          g.globalCompositeOperation = 'source-over';
+        }
+        // éclat et poussière qui monte
+        g.globalCompositeOperation = 'lighter';
+        if (d < 0.5) sprite(g, SPR.hot, x, y, sz * 4, 0.45 * Math.exp(-d / 0.12));
+        g.globalCompositeOperation = 'source-over';
+        for (let j = 0; j < 4; j++) {
+          const age = d - j * 0.12;
+          if (age <= 0 || age > 4) continue;
+          const s3 = sz * (1.4 + age * 1.6), rise = age * sz * 0.9;
+          g.globalAlpha = 0.34 * A * Math.exp(-age / 1.3);
+          g.drawImage(SMOKE[(j + Math.floor(b.X * 1e5)) & 3], x - s3 / 2 + age * sz * 0.4, y - rise - s3 / 2, s3, s3);
+        }
+      }
+      g.globalAlpha = 1;
+    }
+    g.restore();
+  }
+
+  function drawArrows(g, t, Z = 1) {
+    for (const a of ARROWS) {
+      const A = Z * tw(t, a.t - 0.1, a.t + 0.3) * (1 - tw(t, a.tEnd - 0.6, a.tEnd));
+      if (A <= 0.01) continue;
+      const p = E.inOutSine(clamp((t - a.t) / (a.dur || 2)));
+      if (p <= 0.01) continue;
+      const N = 40, L = a.pa.len * p, w0 = (a.w || 14);
+      const left = [], right = [];
+      let last = null;
+      for (let j = 0; j <= N; j++) {
+        const [X, Y, hx, hy] = along(a.pa, (j / N) * L * 0.94);
+        const P = proj(X, Y), x = P.x, y = P.y, k = P.k;
+        const Q = proj(X + hx * 1e-3, Y + hy * 1e-3);
+        let dx = Q.x - x, dy = Q.y - y; const n = Math.hypot(dx, dy) || 1; dx /= n; dy /= n;
+        const w = w0 * k * (0.45 + 0.55 * (j / N));
+        left.push([x - dy * w, y + dx * w]); right.push([x + dy * w, y - dx * w]);
+        last = { x, y, dx, dy, w };
+      }
+      const [TX, TY] = along(a.pa, L);
+      const T = proj(TX, TY), tx = T.x, ty = T.y;
+      const hw = last.w * 2.1;
+      g.save();
+      g.globalCompositeOperation = 'lighter';
+      g.beginPath();
+      left.forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y)));
+      g.lineTo(last.x - last.dy * hw, last.y + last.dx * hw);
+      g.lineTo(tx, ty);
+      g.lineTo(last.x + last.dy * hw, last.y - last.dx * hw);
+      for (let i = right.length - 1; i >= 0; i--) g.lineTo(right[i][0], right[i][1]);
+      g.closePath();
+      const grd = g.createLinearGradient(left[0][0], left[0][1], tx, ty);
+      grd.addColorStop(0, rgba(COL.ember, 0.05 * A)); grd.addColorStop(0.6, rgba(COL.ember, 0.4 * A)); grd.addColorStop(1, rgba(COL.hot, 0.65 * A));
+      g.fillStyle = grd; g.fill();
+      g.strokeStyle = rgba(COL.hot, 0.7 * A); g.lineWidth = 1.4; g.stroke();
+      sprite(g, SPR.hot, tx, ty, 120, 0.6 * A);
+      g.restore();
+      if (a.label && p > 0.35) {
+        const [LX, LY] = along(a.pa, L * 0.5);
+        const P = proj(LX, LY), lx = P.x, ly = P.y;
+        g.save();
+        g.globalAlpha = A * tw(p, 0.35, 0.6);
+        g.font = '500 14px "DM Mono"'; g.letterSpacing = '2.5px'; g.textAlign = 'center'; g.textBaseline = 'middle';
+        g.lineWidth = 4; g.strokeStyle = 'rgba(10,9,8,.85)'; g.strokeText(a.label.toUpperCase(), lx, ly - 22);
+        g.fillStyle = rgba(COL.stone, 1); g.fillText(a.label.toUpperCase(), lx, ly - 22);
+        g.restore();
+      }
+    }
+  }
+
+  function drawUnits(g, t) {
+    for (const u of UNITS) {
+      const A = tw(t, u.t - 0.2, u.t + 0.3) * (1 - tw(t, u.tEnd - 0.5, u.tEnd));
+      if (A <= 0.01) continue;
+      const lin = u.kind === 'plane' || u.kind === 'ship';
+      const p = lin ? clamp((t - u.t) / u.dur) : E.inOutSine(clamp((t - u.t) / u.dur));
+      const size = u.size || (u.kind === 'plane' ? 30 : u.kind === 'ship' ? 34 : 22);
+      const space = (u.spacing || 1.7) * size / Ps;
+      for (let k = 0; k < u.n; k++) {
+        const row = Math.floor(k / 3), col = (k % 3) - 1;
+        const d = p * u.pa.len - row * space * (u.kind === 'plane' ? 1.4 : 1) - Math.abs(col) * space * 0.5;
+        if (d < -space * 0.5 && p < 1) continue;
+        let [X, Y, hx, hy] = along(u.pa, d);
+        const nn = Math.hypot(hx, hy) || 1;
+        X += (-hy / nn) * col * space * 0.75; Y += (hx / nn) * col * space * 0.75;
+        const Aff = groundAffine(X, Y, hx, hy, size);
+        if (Aff.k < KMIN + 0.05) continue;
+        const moving = p > 0 && p < 1;
+        // tir : tourelle vers la cible, éclair à la bouche, traçante
+        let tur = 0.06 * Math.sin(t * 1.3 + k), fireA = 0, tgt = null;
+        for (const f of u.fires) {
+          const dt = t - (f.t + k * 0.12);
+          if (dt > -0.6 && dt < 0.5) {
+            const fx = f.X - X, fy = f.Y - Y, h = Math.atan2(hy, hx);
+            tur = Math.atan2(fy, fx) - h;
+            if (dt >= 0) { fireA = Math.exp(-dt / 0.08); tgt = proj(f.X, f.Y); tgt = { x: tgt.x, y: tgt.y, dt }; }
+          }
+        }
+        g.save();
+        // ombre au sol
+        g.setTransform(Aff.a, Aff.b, Aff.c, Aff.d, Aff.e + 3, Aff.f + 4);
+        g.globalAlpha = 0.45 * A;
+        g.fillStyle = '#000';
+        if (u.kind === 'plane') { g.setTransform(Aff.a * 0.9, Aff.b * 0.9, Aff.c * 0.9, Aff.d * 0.9, Aff.e, Aff.f); g.globalAlpha = 0.3 * A; iconPlane(g); }
+        else { rrect(g, -0.52, -0.36, 1.04, 0.72, 0.08); g.fill(); }
+        // poussière (chars, bulldozers) ou sillage (navires)
+        g.setTransform(1, 0, 0, 1, 0, 0);
+        if (moving && (u.kind === 'tank' || u.kind === 'dozer')) {
+          g.globalCompositeOperation = 'lighter';
+          for (let j = 1; j <= 4; j++) { const [bx, by] = apply(Aff, -0.6 - j * 0.45, Math.sin(t * 9 + j + k) * 0.12); sprite(g, SPR.stone, bx, by, (14 + j * 9) * Aff.k, 0.09 * A * (1 - j / 5)); }
+          g.globalCompositeOperation = 'source-over';
+        }
+        if (u.kind === 'ship' && moving) {
+          g.strokeStyle = rgba(COL.stone, 0.35 * A); g.lineWidth = 1.2; g.beginPath();
+          const [sx, sy] = apply(Aff, 0.5, 0), [l1x, l1y] = apply(Aff, -2.6, 0.9), [l2x, l2y] = apply(Aff, -2.6, -0.9);
+          g.moveTo(l1x, l1y); g.lineTo(sx, sy); g.lineTo(l2x, l2y); g.stroke();
+        }
+        // l'engin
+        const lift = u.kind === 'plane' ? (u.alt || 70) * Aff.k : 0;
+        g.globalAlpha = A;
+        if (u.kind === 'plane') {
+          // traînées
+          g.strokeStyle = rgba(COL.stone, 0.22 * A); g.lineWidth = 1.2; g.beginPath();
+          for (const s2 of [-0.42, 0.42]) { const [a1, b1] = apply(Aff, -0.4, s2), [a2, b2] = apply(Aff, -7, s2); g.moveTo(a1, b1 - lift); g.lineTo(a2, b2 - lift); }
+          g.stroke();
+        }
+        g.setTransform(Aff.a, Aff.b, Aff.c, Aff.d, Aff.e, Aff.f - lift);
+        (ICON[u.kind] || iconTank)(g, tur);
+        g.setTransform(1, 0, 0, 1, 0, 0);
+        if (fireA > 0.02 && tgt) {
+          g.globalCompositeOperation = 'lighter';
+          const ca = Math.cos(tur), sa = Math.sin(tur);
+          const [mx, my] = apply(Aff, -0.06 + 0.8 * ca, 0.8 * sa);
+          sprite(g, SPR.white, mx, my, 70 * Aff.k, fireA);
+          sprite(g, SPR.hot, mx, my, 160 * Aff.k, 0.8 * fireA);
+          if (tgt.dt < 0.22) {
+            const q = tgt.dt / 0.22, x1 = lerp(mx, tgt.x, q), y1 = lerp(my, tgt.y, q), x0 = lerp(mx, tgt.x, Math.max(0, q - 0.35)), y0 = lerp(my, tgt.y, Math.max(0, q - 0.35));
+            g.strokeStyle = rgba(COL.hot, 0.95); g.lineWidth = 2.2; g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke();
+          }
+        }
+        g.restore();
+      }
+    }
+  }
+
+  // frappes : éclair, onde de choc au sol, feu, colonne de fumée qui monte
+  function strikeSources(t, sources) {
+    for (const st of STRIKES) {
+      const d = t - st.t;
+      if (d < 0 || d > st.burn + 1) continue;
+      const P = proj(st.X, st.Y);
+      sources.push({ gx: P.gx, gy: P.gy, amt: (0.9 * Math.exp(-d / 1.2) + 0.35 * (1 - d / (st.burn + 1))) * st.pow, R: 110 * st.pow, waves: [] });
+    }
+  }
+  function drawStrikes(g, t) {
+    for (const st of STRIKES) {
+      const d = t - st.t;
+      if (d < -0.05 || d > st.burn + 3) continue;
+      const P = proj(st.X, st.Y), x = P.x, y = P.y, k = P.k, pw = st.pow;
+      if (k < KMIN + 0.05) continue;
+      g.save();
+      if (st.smoke !== false && d > 0) {
+        g.globalCompositeOperation = 'source-over';
+        for (let j = 0; j < 7; j++) {
+          const age = d - j * 0.28;
+          if (age <= 0) continue;
+          const fade = Math.exp(-age / 3) * (1 - clamp((d - st.burn) / 3));
+          const sz = (26 + age * 20) * k * pw, rise = age * 30 * k * pw;
+          g.globalAlpha = 0.32 * fade;
+          g.drawImage(SMOKE[j % 4], x + Math.sin(j * 1.7) * 8 * k + age * 7 * k - sz / 2, y - rise - sz / 2, sz, sz);
+        }
+      }
+      g.globalCompositeOperation = 'lighter';
+      if (d >= 0 && d < st.burn) sprite(g, SPR.ember, x, y, 90 * k * pw, (0.5 + 0.2 * noise1(t * 9 + st.X * 100)) * (1 - d / st.burn), 60 * k * pw);
+      if (d >= -0.05 && d < 0.4) {
+        const e = d < 0 ? 0.4 : 1 - d / 0.4;
+        sprite(g, SPR.white, x, y, 140 * k * pw, e);
+        sprite(g, SPR.hot, x, y, 360 * k * pw, 0.8 * e, 240 * k * pw);
+      }
+      if (d >= 0 && d < 0.9) {
+        const r = (8 + d * 200) * k * pw;
+        g.strokeStyle = rgba(COL.hot, (1 - d / 0.9) * 0.9); g.lineWidth = 2;
+        g.beginPath(); g.ellipse(x, y, r, r * Pcp, 0, 0, 7); g.stroke();
+      }
+      g.restore();
+    }
+  }
+
   function drawFlows(g, t) {
     g.save();
     g.lineCap = 'round';
@@ -1026,8 +1440,13 @@
       const fa = arrived / f.P.length;
       if (fa > 0.01) { const P = proj(f.TX, f.TY); sources.push({ gx: P.gx, gy: P.gy, amt: (f.heat || 0.85) * Math.sqrt(fa) * A, R: (f.R || 520) * (0.6 + 0.4 * fa), waves: [] }); }
     }
+    if (HAS_WAR) strikeSources(t, sources);
     drawDots(g, sources, t, mot);
+    // échelle régionale (territoires, offensives) ou échelle de la rue (plans, maisons)
+    const ZR = inv(0.0025, 0.007, cam.w), ZS = inv(0.008, 0.003, cam.w);
+    if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); drawBlocks(g, t, ZS); }
     if (FLOWS.length) drawFlows(g, t);
+    if (HAS_WAR) { drawUnits(g, t); drawStrikes(g, t); }
     const busy = [];
     if (pin && pin.showPin) busy.push(pin.s);
     for (const m of MARKERS) if (t >= m.t - 0.05) busy.push(m);
@@ -1303,6 +1722,8 @@
           <div class="block">${eyebrowHTML()}<div class="name"><div class="ln l1">${chars(s.pre || '')}</div><div class="ln l2 stn"></div></div>
           <div class="stlab">${esc(fr(s.label))}</div>${s.layout === 'B' ? '' : '<div class="rule"></div>'}
           ${s.text ? `<p class="text">${words(s.text)}</p>` : ''}${s.source ? `<div class="meta"><i class="dot"></i><span>${esc(fr(s.source))}</span></div>` : ''}</div>`;
+      } else if (s.type === 'cap') {
+        html = `<div class="scrim"></div><div class="block">${eyebrowHTML()}<div class="captitle ln">${chars(s.title.toUpperCase())}</div>${s.text ? `<p class="text">${words(s.text)}</p>` : ''}</div>`;
       } else if (s.type === 'quote') {
         html = `<div class="scrim"></div><div class="wrap"><i class="qm">“</i><p class="text qt">${words(s.text)}</p>
           <div class="eyebrow qa"><i class="tick"></i><span class="tw"></span><i class="tick"></i></div></div>`;
@@ -1870,6 +2291,22 @@
     }
   }
 
+  function upCap(s, u) {
+    const R = s.R; R.u = u;
+    const I = s.fly + (s.capAt || 0.3), D = s.dur;
+    const block = R.q('.block');
+    const ex = E.inCubic(inv(D - 0.25, D + 0.3, u));
+    css(R, R.scrim, 'opacity', String(f3(tw(u, I - 0.5, I + 0.3) * (1 - ex))));
+    css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, I - 0.2, I + 0.4))})`);
+    typewriter(R, R.tws[0], s.kicker, u, I - 0.1, 40);
+    letters(R, R.lines[0], I + 0.05, 0.025, 0.55);
+    rgbSplit(R, R.lines[0].ln, u, I + 0.15);
+    if (R.texts[0]) { wordsIn(R, R.texts[0], I + 0.6, 0.045, 0.55); highlight(R, R.texts[0], I + 0.6 + R.texts[0].length * 0.045 + 0.3); }
+    css(R, block, 'opacity', String(f3(1 - ex)));
+    css(R, block, 'transform', `translate3d(${f3(-60 * ex)}px,0,0)`);
+    css(R, block, 'filter', blur(ex * 12));
+  }
+
   function upQuote(s, u) {
     const R = s.R; R.u = u;
     const I = s.fly + (s.hitAt || 0), D = s.dur;
@@ -2017,6 +2454,7 @@
       else if (s.type === 'doc') upDoc(s, u);
       else if (s.type === 'stat') upStat(s, u);
       else if (s.type === 'quote') upQuote(s, u);
+      else if (s.type === 'cap') upCap(s, u);
       else if (s.type === 'camera') { /* plan de caméra sans texte */ }
       else upCenter(s, u);
       if (s.faceList.length) upFaces(s, u);
@@ -2042,6 +2480,8 @@
   const world = $('world'), typeEl = $('type'), hudDom = $('hudDom'), hudCv = $('hud');
   const flashEl = $('flash'), fadeEl = $('fade'), flickEl = $('flicker');
   const hudIdx = $('hudIdx'), hudCoord = $('hudCoord');
+  const clockEl = $('clock');
+  const CLOCK = (TL.clock || []).map((c) => ({ ...c, until: c.until !== undefined ? c.t - c.at + c.until : undefined }));
   const OUTRO = SEG[SEG.length - 1];
 
   function renderFrame(t, frame) {
@@ -2085,6 +2525,15 @@
       for (const sg of SEG) if (sg.num && t >= sg.impact - 0.2) num = sg.num;
       const idxTxt = num && s.type !== 'outro' && s.type !== 'event' ? `<em>${String(num).padStart(2, '0')}</em> / ${FIGS}` : '&nbsp;';
       if (hudIdx.innerHTML !== idxTxt) hudIdx.innerHTML = idxTxt;
+    }
+    if (CLOCK.length) {
+      let cur = null;
+      for (const c of CLOCK) if (t >= c.t) cur = c;
+      const txt = cur && t < (cur.until !== undefined ? cur.until : TL.total) ? cur.text : '';
+      if (clockEl.textContent !== txt) clockEl.textContent = txt;
+      const ch = cur ? Math.exp(-(t - cur.t) / 0.25) : 0;
+      clockEl.style.opacity = String(f3(txt ? 0.85 + 0.15 * ch : 0));
+      clockEl.style.textShadow = ch > 0.02 ? `0 0 ${f3(30 * ch)}px rgba(255,120,50,${f3(0.9 * ch)})` : '0 0 14px rgba(255,91,31,.45)';
     }
     if (HUD.coords) hudCoord.textContent = `${dms(LAT(cam.y), 'N', 'S')}  ${dms(cam.x / D2R, 'E', 'O')}`;
 

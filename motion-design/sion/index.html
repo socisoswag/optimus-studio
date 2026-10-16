@@ -281,6 +281,14 @@
   .ftag span { font-family: var(--mono); font-size: 16px; letter-spacing: .22em; color: var(--hot); opacity: 0; text-shadow: 0 2px 12px rgba(0,0,0,.9); }
   .quote.has-face .wrap { padding: 0 600px 0 170px; }
 
+  /* légende de bas d'écran (cartes de guerre) */
+  .cap .scrim { background: linear-gradient(0deg, rgba(9,8,7,.88) 0%, rgba(9,8,7,.55) 26%, rgba(9,8,7,0) 48%); }
+  .cap .block { top: auto; bottom: 110px; left: 132px; width: 1300px; }
+  .cap .captitle { margin-top: 14px; font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 860; font-size: 96px; line-height: .9; text-transform: uppercase; color: var(--stone); overflow: hidden; padding-top: .14em; margin-top: calc(14px - .14em); white-space: nowrap; }
+  .cap .captitle .ch { display: inline-block; }
+  .cap .text { margin-top: 14px; font-size: 34px; max-width: 1200px; }
+  #clock { position: absolute; left: 0; right: 0; top: 112px; text-align: center; font-family: var(--mono); font-weight: 500; font-size: 30px; letter-spacing: .32em; color: var(--hot); text-transform: uppercase; opacity: 0; }
+
   /* HUD */
   .hud-tl, .hud-tr { position: absolute; top: 58px; font-family: var(--mono); font-size: 15px; letter-spacing: .3em; text-transform: uppercase; line-height: 1.7; }
   .hud-tl { left: 132px; color: rgba(233,220,192,.78); }
@@ -306,6 +314,7 @@
     <div class="hud-tl" id="hudTl"><b>Israël · Palestine</b><br><span>Chronologie des figures</span></div>
     <div class="hud-tr" id="hudTr"><div class="idx" id="hudIdx"></div><div id="hudCoord"></div></div>
     <div id="odo"></div>
+    <div id="clock"></div>
   </div>
   <div id="flash" class="layer"></div>
   <canvas id="grain" width="1920" height="1080"></canvas>
@@ -314,6 +323,7 @@
   <div id="fade" class="layer"></div>
 
   <script src="data/map.js"></script>
+  <script src="data/territoires.js"></script>
   <script src="core.js"></script>
   <script>
     // pièce à rendre : index.html?tl=generique (par défaut : la chronologie)

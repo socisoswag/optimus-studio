@@ -266,6 +266,38 @@ for fl in cues.get("flows", []):
     gl, gr = pan_gains(pan)
     add((l * gl, r * gr), fl["t0"], 0.16)
 
+# ------------------------------------------------------------------ guerre : avions (passage), chars (grondement, chenilles)
+for j in cues.get("jets", []):
+    dur = min(j["dur"], 6.0) + 1.0
+    n = int(dur * SR)
+    tt = np.arange(n) / SR
+    p = np.clip(tt / dur, 0, 1)
+    env = np.exp(-((p - 0.45) / 0.22) ** 2)  # passage : monte, culmine, s'éloigne
+    roar = lp(noise(n), 900) * 0.8 + bp(noise(n), 1500, 5000) * env * 0.5
+    roar *= env
+    roar /= np.abs(roar).max() + 1e-9
+    pan = np.clip(j.get("pan", 1) * (-0.8 + 1.6 * p), -0.9, 0.9)
+    gl, gr = pan_gains(pan)
+    l, r = verb(roar, IR_FAR, wet=0.35, dry=0.0)
+    l[:n] += roar * gl
+    r[:n] += roar * gr
+    add((l, r), j["t0"], 0.22 * min(1.6, 0.8 + 0.2 * j.get("n", 1)))
+for rb in cues.get("rumbles", []):
+    dur = rb["dur"] + 0.8
+    n = int(dur * SR)
+    tt = np.arange(n) / SR
+    env = np.clip(tt / 0.6, 0, 1) * np.clip((dur - tt) / 0.8, 0, 1)
+    eng = lp(noise(n), 120) * (0.8 + 0.2 * np.sin(2 * np.pi * 23 * tt))
+    eng /= np.abs(eng).max() + 1e-9
+    clank = np.zeros(n)
+    step = int(SR / 7.5)
+    for i0 in range(0, n - 800, step):
+        clank[i0:i0 + 600] += noise(600) * np.exp(-np.arange(600) / 90)
+    clank = bp(clank, 600, 3000)
+    clank /= np.abs(clank).max() + 1e-9
+    x = (0.9 * eng + 0.18 * clank) * env
+    add(x, rb["t0"], 0.12 * min(1.5, 0.7 + 0.15 * rb.get("n", 1)), 0.0)
+
 # ------------------------------------------------------------------ impacts
 def hit(k=1.0, metal=True):
     n = int(2.2 * SR)
@@ -306,6 +338,26 @@ for im in cues["impacts"]:
     if kind == "tick":
         l, r = verb(click(), IR_HALL, wet=0.25)
         add((l, r), im["t"], 0.16)
+        continue
+    if kind == "boom":
+        # explosion au sol : coup sourd sans résonance métallique, débris
+        x = hit(1.0, metal=False)
+        deb = bp(noise(int(1.2 * SR)), 1200, 6000) * env_exp(int(1.2 * SR), 0.25, 0.002)
+        x[: len(deb)] += 0.25 * deb / (np.abs(deb).max() + 1e-9)
+        l, r = verb(x, IR_FAR, wet=0.55)
+        add((l, r), im["t"], 0.42 * min(k, 1.2))
+        continue
+    if kind == "crumble":
+        # maison qui s'effondre : craquement, chute sourde, gravats qui roulent
+        n = int(1.6 * SR)
+        x = 0.7 * lp(hit(1.0, metal=False), 500)[:n]
+        grains = (rng.random(n) < 0.006) * rng.standard_normal(n)
+        rub = bp(grains + 0.15 * noise(n), 350, 4200) * env_exp(n, 0.45, 0.02)
+        x += 0.5 * rub / (np.abs(rub).max() + 1e-9)
+        crk = hp(noise(n), 1800) * env_exp(n, 0.03, 0.001)
+        x += 0.18 * crk / (np.abs(crk).max() + 1e-9)
+        l, r = verb(x, IR_FAR, wet=0.45)
+        add((l, r), im["t"], 0.3 * k)
         continue
     if kind == "soft":
         l, r = verb(lp(hit(1.0, metal=False), 900), IR_FAR, wet=0.5)

@@ -38,6 +38,7 @@
     lieberman: ['Avigdor Lieberman', 'né en 1958'], bhl: ['Bernard-Henri Lévy', 'né en 1948'],
     finkielkraut: ['Alain Finkielkraut', 'né en 1949'], rabin: ['Yitzhak Rabin', '1922 — 1995'],
   };
+  root.CITIES = CITIES;
   root.face = (key, opts = {}) => ({ photo: `portraits/${key}.png`, name: (PEOPLE[key] || [key])[0], dates: (PEOPLE[key] || [])[1] || '', ...opts });
 
   function mulberry32(a) {
@@ -133,12 +134,29 @@
       return { ...f, t: s.start + f.at, tEnd: f.endAt !== undefined ? s.start + f.endAt : s.end + 0.35 };
     });
 
+    // Guerre : unités (chars, avions, navires, bulldozers), flèches d'offensive, frappes,
+    // territoires qui se hachurent, horloge. Temps relatifs à leur séquence → absolus.
+    const abs = (list) => (list || []).map((x) => ({ ...x, t: byId[x.seg].start + x.at }));
+    const units = abs(def.units);
+    const arrows = abs(def.arrows);
+    const zones = abs(def.zones);
+    const clock = abs(def.clock).sort((a, b) => a.t - b.t);
+    const strikes = abs(def.strikes);
+    // les chars qui tirent : chaque tir provoque un impact sur la cible
+    units.forEach((u) => (u.fire || []).forEach((f) => strikes.push({ t: byId[u.seg].start + f.at + 0.22, lon: f.to[0], lat: f.to[1], power: f.power || 0.7, smoke: f.smoke !== false, fromFire: true })));
+    strikes.forEach((st) => impacts.push({ t: st.t, k: Math.min(1.2, st.power || 1), kind: 'boom', seg: segments.indexOf(segAt(st.t)), visual: false }));
+    // plans au sol (remparts, esplanades) et maisons en relief qui s'effondrent à `fall`
+    const plans = abs(def.plans);
+    const blocks = abs(def.blocks).map((b) => ({ ...b, tf: byId[b.seg].start + b.fall }));
+    blocks.forEach((b, i) => { if (b.fall !== undefined && i % 3 === 0) impacts.push({ t: b.tf, k: 0.5 + 0.5 * ((i * 7) % 5) / 4, kind: 'crumble', seg: segments.indexOf(segAt(b.tf)), visual: false }); });
+    impacts.sort((a, b) => a.t - b.t);
+
     // Silences (coupure sonore avant un impact)
     const silences = segments.filter((s) => s.silenceBefore).map((s) => ({ t0: s.impact - s.silenceBefore, t1: s.impact }));
 
     return {
       name: def.name || 'piece',
-      segments, total, impacts, flights, flashes, markers, silences, flows,
+      segments, total, impacts, flights, flashes, markers, silences, flows, units, arrows, zones, clock, strikes, plans, blocks,
       events: def.events || [],
       cities: def.cities || CITIES,
       hud: Object.assign({}, HUD_DEFAULT, def.hud || {}),

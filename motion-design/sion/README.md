@@ -19,6 +19,7 @@ un seul moteur, une timeline par pièce.
 | Trois promesses, 1915 – 1917 (chapitre 7) | `timelines/trois-promesses.js` | 55 s | `output/trois-promesses.mp4` |
 | Exodes, 1947 – années 1970 (chapitres 13 et 17) | `timelines/flux-humains.js` | 45 s | `output/flux-humains.mp4` |
 | Les résolutions 194, 242, 338 (chapitre 33) | `timelines/resolutions.js` | 1 min | `output/resolutions.mp4` |
+| Six jours, la Naksa, juin 1967 (chapitre 19) | `timelines/six-jours.js` | 1 min 18 | `output/six-jours.mp4` |
 
 Le son ne contient que des bruitages, sans musique : les pièces s'intègrent au montage sous la
 musique du film. Chaque pièce a aussi ses bruitages seuls en `.wav` à côté du `.mp4`.
@@ -99,6 +100,26 @@ timeline :
 
 Dans un texte, `[[ … ]]` souligne un passage d'un trait de braise. Les flux de particules se
 déclarent dans `flows` (départs, arrivée, nombre de particules, moment) ; voir `flux-humains.js`.
+
+### Cartes de guerre
+
+`six-jours.js` sert de modèle. Tout se déclare en coordonnées (lon, lat) et en temps relatif à une
+séquence (`seg`, `at`) :
+
+| Liste | Effet | Champs principaux |
+|---|---|---|
+| `units` | chars, avions, navires, bulldozers en formation, avec poussière, ombre, traînées | `kind` (`tank`, `plane`, `ship`, `dozer`), `n`, `path`, `dur`, `size`, `fire: [{ at, to }]` (tir et impact) |
+| `arrows` | flèches d'offensive effilées qui avancent | `path`, `dur`, `w`, `label` |
+| `strikes` | frappe : éclair, onde de choc, feu, fumée qui monte | `lon`, `lat`, `power`, `burn` |
+| `zones` | territoire qui se hachure depuis un point (`data/territoires.js`) | `name` (`cisjordanie`, `gaza`, `jerusalem-est`, `golan`, `sinai`), `from`, `dur` |
+| `plans` | tracé au sol à l'échelle d'un quartier (rempart, esplanade, mur) | `path`, `closed`, `style` (`wall`, `sacred`, `focus`, `grid`), `label`, `labelAt` |
+| `blocks` | maisons en relief qui s'effondrent (poussière, gravats, empreinte) | `lon`, `lat`, `w`, `d`, `h` (mètres), `rot`, `fall` |
+| `clock` | date et heure en haut de l'écran | `text` |
+
+Le type d'écran `cap` pose une légende en bas à gauche (`kicker`, `title`, `text`) au-dessus de la
+carte. Territoires et flèches s'effacent d'eux-mêmes quand la caméra descend à l'échelle de la rue ;
+plans et maisons n'apparaissent qu'à cette échelle. Le son suit : avions, moteurs et chenilles,
+explosions, effondrements.
 
 ## Fabriquer une pièce
 
