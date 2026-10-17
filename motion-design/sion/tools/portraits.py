@@ -2,6 +2,7 @@
 contraste, netteté, puis détourage fin (cheveux compris).
 
     MODELS=/dossier/des/modeles python3 tools/portraits.py portraits/src portraits
+    python3 tools/portraits.py --bords portraits      (fondu des bords et taille sur des PNG déjà faits)
 
 Entrée : une photo par personnage dans portraits/src/ (jpg, png, tif, webp), nommée par sa
 clé (herzl.jpg, arafat.jpg… voir portraits/LISEZMOI.md).
@@ -29,7 +30,7 @@ SRC, DST = sys.argv[1], sys.argv[2]
 MODELS = os.environ.get("MODELS", ".")
 # recadrages serrés (fractions de la hauteur gardées) pour les photos prises de trop loin
 # (haut, bas) ou (gauche, haut, droite, bas)
-CROP = {"abd-al-qadir": (0.0, 0.64), "finkielkraut": (0.18, 0.0, 0.86, 0.62)}
+CROP = {"abd-al-qadir": (0.0, 0.64), "finkielkraut": (0.18, 0.0, 0.86, 0.62), "sharon": (0.0, 0.1, 0.9, 0.6)}
 # débruitage plafonné pour les tirages très compressés (sinon la peau fait des plaques)
 DENOISE_MAX = {"mcmahon": 2.5}
 # zones à exclure du détourage (polygones en fractions de l'image) : voisins collés au sujet
@@ -46,6 +47,7 @@ ERASE = {
 }
 TARGET_H = 1500  # hauteur visée après agrandissement (px) ; affiché à ~900 px dans les vidéos
 MAX_UP = 3.2     # jamais plus de ×3,2 : au-delà, l'image devient lisse et « fabriquée »
+SORTIE_H = 1400  # hauteur maximale du PNG livré (affiché à 940 px au plus, ×1,38 en sortie)
 
 def model(name):
     path = os.path.join(MODELS, name)
@@ -53,11 +55,11 @@ def model(name):
 
 
 SEG = []
-for name, size in (("isnet-general-use.onnx", 1024), ("u2net_human_seg.onnx", 320)):
+for name, size in [] if SRC == "--bords" else (("isnet-general-use.onnx", 1024), ("u2net_human_seg.onnx", 320)):
     if model(name):
         s = ort.InferenceSession(model(name), providers=["CPUExecutionProvider"])
         SEG.append((s, s.get_inputs()[0].name, size))
-if not SEG:
+if not SEG and SRC != "--bords":
     sys.exit("aucun modèle de détourage trouvé dans MODELS")
 
 
@@ -75,9 +77,22 @@ def seg_mask(rgb, sess, inp, size):
 
 
 def person_mask(rgb):
-    """Moyenne des modèles disponibles (IS-Net pour les bords, U²-Net pour la silhouette)."""
+    """Moyenne des modèles disponibles (IS-Net pour les bords, U²-Net pour la silhouette).
+    Sous la tête, l'intérieur sûr de la silhouette « humaine » reste opaque : sans cela, un costume
+    sombre sur fond sombre ressort à moitié transparent (la carte se verrait à travers). La tête et
+    les cheveux gardent leur détourage fin."""
     ms = [seg_mask(rgb, *s) for s in SEG]
-    return np.clip(sum(ms) / len(ms), 0, 1)
+    m = np.clip(sum(ms) / len(ms), 0, 1)
+    if len(ms) > 1:
+        n = max(3, int(0.022 * max(m.shape)) | 1)
+        core = cv2.erode((ms[-1] > 0.8).astype(np.uint8), np.ones((n, n), np.uint8)).astype(np.float32)
+        rows = np.where((m > 0.5).any(axis=1))[0]
+        if len(rows):
+            y0 = rows[0]; ph = m.shape[0] - y0
+            yy = np.arange(m.shape[0], dtype=np.float32)[:, None]
+            core *= np.clip((yy - (y0 + 0.3 * ph)) / (0.12 * ph), 0, 1)  # à partir du cou, en fondu
+        m = np.maximum(m, cv2.GaussianBlur(core, (0, 0), n / 3))
+    return m
 
 
 def refine_alpha(gray, m):
@@ -183,6 +198,22 @@ def upscale(g):
     return g2, need
 
 
+def fondu_bords(a, frac=0.11):
+    """Là où le cadre de la photo d'origine coupe la personne (épaule, bras, haut des cheveux),
+    le détourage fait un bord droit : on l'efface en douceur à partir de la coupure.
+    Le bas du buste a son propre fondu. Sans effet sur une image déjà traitée."""
+    h, w = a.shape
+    cut = np.zeros((h, w), np.uint8)
+    cut[:, :2] = a[:, :2] > 0.5
+    cut[:, -2:] = a[:, -2:] > 0.5
+    cut[:2, :] = a[:2, :] > 0.5
+    if not cut.any():
+        return a
+    d = cv2.distanceTransform(1 - cut, cv2.DIST_L2, 5)
+    k = np.clip(d / (frac * w), 0, 1)
+    return a * (k * k * (3 - 2 * k))
+
+
 def enhance(gray, name=""):
     """Ne pas abîmer : une photo récente et nette n'est ni débruitée ni agrandie ;
     un vieux tirage petit et granuleux reçoit la restauration complète."""
@@ -204,6 +235,21 @@ def enhance(gray, name=""):
 
 
 os.makedirs(DST, exist_ok=True)
+if SRC == "--bords":  # retouche des PNG déjà produits : fondu des bords coupés par le cadre, taille
+    from PIL import Image
+    for f in sorted(glob.glob(os.path.join(DST, "*.png"))):
+        im0 = Image.open(f).convert("LA")
+        im = np.asarray(im0).copy()
+        a0 = im[..., 1].astype(np.float32) / 255
+        a = fondu_bords(a0)
+        if np.abs(a - a0).max() > 0.02 or im0.height > SORTIE_H:
+            im[..., 1] = (a * 255 + 0.5).astype(np.uint8)
+            out = Image.fromarray(im, "LA")
+            if out.height > SORTIE_H:
+                out = out.resize((round(out.width * SORTIE_H / out.height), SORTIE_H), Image.LANCZOS)
+            out.save(f, optimize=True)
+            print("retouché :", os.path.basename(f), f"{out.width}×{out.height}")
+    sys.exit(0)
 files = sorted(f for f in glob.glob(os.path.join(SRC, "*")) if f.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp")))
 FORCE = os.environ.get("FORCE") == "1"
 for f in files:
@@ -249,8 +295,11 @@ for f in files:
     # le buste s'efface vers le bas au lieu d'être coupé net
     hh = a.shape[0]; ramp = np.ones(hh, np.float32); n0 = int(hh * 0.16)
     ramp[hh - n0:] = np.linspace(1, 0, n0) ** 1.6
-    a = a * ramp[:, None]
-    rgba = np.dstack([gd, gd, gd, (a * 255).astype(np.uint8)])
-    cv2.imwrite(os.path.join(DST, f"{name}.png"), cv2.cvtColor(rgba, cv2.COLOR_RGBA2BGRA))
+    a = fondu_bords(a * ramp[:, None])
+    la = np.dstack([gd, (a * 255).astype(np.uint8)])
+    if la.shape[0] > SORTIE_H:
+        la = cv2.resize(la, (round(la.shape[1] * SORTIE_H / la.shape[0]), SORTIE_H), interpolation=cv2.INTER_LANCZOS4)
+    from PIL import Image
+    Image.fromarray(la, "LA").save(os.path.join(DST, f"{name}.png"), optimize=True)
     cv2.imwrite(os.path.join(DST, f"{name}.jpg"), g, [cv2.IMWRITE_JPEG_QUALITY, 92])
     print(f"{name}: {g.shape[1]}×{g.shape[0]} px, ×{scale:.1f}, grain {sig:.1f}, détouré")
