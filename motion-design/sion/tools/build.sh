@@ -21,7 +21,8 @@ DUR=$(node -e "require('./core.js'); require('./timelines/$NAME.js'); console.lo
 # Finition « pellicule » : halo chaud autour des hautes lumières (halation),
 # courbe argentique (noirs à peine levés, hautes lumières adoucies) et léger
 # flottement de l'image dans le couloir (gate weave).
-FINISH="format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=sigma=26,colorchannelmixer=rr=1:gg=0.48:bb=0.22[h];[a][h]blend=all_mode=screen:all_opacity=0.38,curves=all='0/0.02 0.18/0.155 0.5/0.49 0.82/0.86 1/0.965',crop=w=1904:h=1071:x='8+1.1*sin(n*0.37)+0.6*sin(n*1.13)':y='4.5+0.9*sin(n*0.29+1)+0.5*sin(n*0.97)',scale=1920:1080:flags=lanczos"
+HAL=$(node -e "global.window={}; require('./data/palette.js'); const h=window.PALETTE.halation; console.log('rr='+h[0]+':gg='+h[1]+':bb='+h[2])")
+FINISH="format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=sigma=26,colorchannelmixer=$HAL[h];[a][h]blend=all_mode=screen:all_opacity=0.38,curves=all='0/0.02 0.18/0.155 0.5/0.49 0.82/0.86 1/0.965',crop=w=1904:h=1071:x='8+1.1*sin(n*0.37)+0.6*sin(n*1.13)':y='4.5+0.9*sin(n*0.29+1)+0.5*sin(n*0.97)',scale=1920:1080:flags=lanczos"
 
 encode() { # $1 = débit vidéo, $2 = fichier de sortie, $3 = filtre vidéo
   ffmpeg -y -loglevel error -i "$TMP/video.mp4" -vf "$3" -c:v libx264 -preset slow -b:v "$1" -maxrate "$1" -bufsize "$1" \

@@ -11,10 +11,19 @@
   const SEG = TL.segments;
   const PI = Math.PI, D2R = PI / 180;
 
+  const PAL = window.PALETTE || {};
   const COL = {
-    stone: [233, 220, 192], ash: [154, 143, 126], ember: [255, 91, 31],
-    hot: [255, 174, 90], map: [127, 152, 154], smoke: [42, 38, 32],
+    stone: [233, 220, 192], ash: [154, 143, 126], ember: PAL.ember || [255, 91, 31],
+    hot: PAL.hot || [255, 174, 90], map: [127, 152, 154], smoke: [42, 38, 32],
   };
+  COL.life = PAL.life || COL.ember;
+  COL.lifeHot = PAL.lifeHot || PAL.life || COL.hot;
+  const EMB = COL.ember.join(','), HOTM = COL.ember.map((c, k) => Math.round(c * 0.6 + COL.hot[k] * 0.4)).join(',');
+  if (typeof document !== 'undefined') {
+    const RS = document.documentElement.style;
+    RS.setProperty('--ember', `rgb(${EMB})`); RS.setProperty('--hot', `rgb(${COL.hot.join(',')})`);
+    RS.setProperty('--ember-rgb', EMB); RS.setProperty('--hot-rgb', COL.hot.join(','));
+  }
   const rgba = (c, a) => `rgba(${c[0]},${c[1]},${c[2]},${a < 0 ? 0 : a > 1 ? 1 : +a.toFixed(4)})`;
 
   // ------------------------------------------------------------ outils
@@ -414,10 +423,23 @@
   SPR.spark = (() => {
     const s = 64, c = canvas(s, s), g = c.getContext('2d');
     const gr = g.createRadialGradient(s / 2, s / 2, 0, s / 2, s / 2, s / 2);
+    const mix = (c1, c2, q) => c1.map((v, k) => Math.round(v * (1 - q) + c2[k] * q)).join(',');
     gr.addColorStop(0, 'rgba(255,244,220,1)');
-    gr.addColorStop(0.18, 'rgba(255,190,110,.95)');
-    gr.addColorStop(0.42, 'rgba(255,100,35,.35)');
-    gr.addColorStop(1, 'rgba(255,80,20,0)');
+    gr.addColorStop(0.18, `rgba(${mix(COL.hot, [255, 244, 220], 0.25)},.95)`);
+    gr.addColorStop(0.42, `rgba(${mix(COL.ember, COL.hot, 0.1)},.35)`);
+    gr.addColorStop(1, `rgba(${COL.ember.join(',')},0)`);
+    g.fillStyle = gr; g.fillRect(0, 0, s, s);
+    return c;
+  })();
+  // braise « vie » (villages, villes, réfugiés) : même dessin, couleur de la vie
+  SPR.life = !PAL.life ? SPR.spark : (() => {
+    const s = 64, c = canvas(s, s), g = c.getContext('2d');
+    const gr = g.createRadialGradient(s / 2, s / 2, 0, s / 2, s / 2, s / 2);
+    const mix = (c1, c2, q) => c1.map((v, k) => Math.round(v * (1 - q) + c2[k] * q)).join(',');
+    gr.addColorStop(0, `rgba(${mix(COL.lifeHot, [255, 250, 235], 0.6)},1)`);
+    gr.addColorStop(0.18, `rgba(${COL.lifeHot.join(',')},.95)`);
+    gr.addColorStop(0.42, `rgba(${COL.life.join(',')},.35)`);
+    gr.addColorStop(1, `rgba(${COL.life.join(',')},0)`);
     g.fillStyle = gr; g.fillRect(0, 0, s, s);
     return c;
   })();
@@ -919,7 +941,7 @@
           const sz = 10 * k, q = tw(h, 0.25, 0.8, E.inCubic);
           g.save();
           g.globalAlpha = a;
-          if (q < 1) { g.fillStyle = rgba(COL.stone, 0.9 * (1 - q)); g.fillRect(x - sz / 2, y - (sz / 2) * Pcp, sz, sz * Pcp); }
+          if (q < 1) { g.fillStyle = rgba(PAL.life ? COL.lifeHot : COL.stone, 0.9 * (1 - q)); g.fillRect(x - sz / 2, y - (sz / 2) * Pcp, sz, sz * Pcp); }
           g.globalCompositeOperation = 'lighter';
           if (h > 0.2 && h < 1.4) sprite(g, SPR.hot, x, y, 60 * k, 0.8 * Math.exp(-(h - 0.25) / 0.3) * a);
           g.globalCompositeOperation = 'source-over';
@@ -1205,7 +1227,7 @@
         if (v <= 0.02) continue;
         const P = proj(X, Y);
         if (P.k < KMIN + 0.05) continue;
-        sprite(g, a < 0.88 ? SPR.spark : SPR.stone, P.x, P.y, (a < 0.88 ? 8 : 16) * P.k + 2, 0.78 * v);
+        sprite(g, a < 0.88 ? SPR.life : SPR.stone, P.x, P.y, (a < 0.88 ? 8 : 16) * P.k + 2, 0.78 * v);
       }
     }
     g.restore();
@@ -1436,7 +1458,7 @@
       }
       // traînées
       g.globalCompositeOperation = 'lighter';
-      g.strokeStyle = rgba(f.cold ? COL.stone : COL.ember, 0.42 * A);
+      g.strokeStyle = rgba(f.cold ? COL.stone : COL.life, 0.42 * A);
       g.lineWidth = 1.5;
       g.beginPath();
       const heads = [];
@@ -1451,9 +1473,9 @@
         heads.push(x, y, k * p.sz, Math.min(1, u * 6) * Math.min(1, (1 - u) * 5 + 0.35));
       }
       g.stroke();
-      for (let i = 0; i < heads.length; i += 4) sprite(g, f.cold ? SPR.stone : SPR.spark, heads[i], heads[i + 1], 15 * heads[i + 2] + 4, A * heads[i + 3]);
+      for (let i = 0; i < heads.length; i += 4) sprite(g, f.cold ? SPR.stone : SPR.life, heads[i], heads[i + 1], 15 * heads[i + 2] + 4, A * heads[i + 3]);
       // arrivés : ils restent, petits points chauds tassés à destination
-      g.fillStyle = rgba(f.cold ? COL.stone : COL.hot, 0.6 * A);
+      g.fillStyle = rgba(f.cold ? COL.stone : COL.lifeHot, 0.6 * A);
       g.beginPath();
       for (const p of f.P) {
         if (t < p.t0 + p.tt) continue;
@@ -1951,7 +1973,7 @@
       css(R, cut, 'transform', `translate3d(${f3(dir * (40 * (1 - cp) - 18 * drift))}px,${f3(60 * (1 - cp))}px,0) scale(${f3(1.02 + 0.05 * drift + 0.35 * ex)})`);
       css(R, cut, 'filter', blur((1 - cp) * 14 + ex * 14));
       const glow = u > I ? 0.5 + 0.5 * Math.exp(-(u - I) / 0.5) : 0.5;
-      css(R, cut.firstElementChild, 'filter', `grayscale(1) contrast(1.22) brightness(.84) sepia(.3) drop-shadow(0 0 1.6px rgba(255,196,128,${f3(0.95 * glow)})) drop-shadow(0 0 ${f3(18 + 22 * glow)}px rgba(255,91,31,${f3(0.55 * glow)}))`);
+      css(R, cut.firstElementChild, 'filter', `grayscale(1) contrast(1.22) brightness(.84) sepia(.3) drop-shadow(0 0 1.6px rgba(255,196,128,${f3(0.95 * glow)})) drop-shadow(0 0 ${f3(18 + 22 * glow)}px rgba(${EMB},${f3(0.55 * glow)}))`);
     }
     const ph = R.q('.portrait');
     if (ph) {
@@ -2320,7 +2342,7 @@
       css(R, row, 'transform', p >= 1 ? 'none' : `translate3d(${f3((1 - p) * -30 * dir)}px,0,0)`);
       const lab = row.firstElementChild;
       const h = tw(u, at, at + 0.15) * (1 - tw(u, at + 1.0, at + 2.0));
-      css(R, lab, 'boxShadow', h > 0.01 ? `0 0 ${f3(24 * h)}px rgba(255,91,31,${f3(0.9 * h)})` : 'none');
+      css(R, lab, 'boxShadow', h > 0.01 ? `0 0 ${f3(24 * h)}px rgba(${EMB},${f3(0.9 * h)})` : 'none');
     });
     const ref = R.q('.dref');
     if (ref) {
@@ -2359,7 +2381,7 @@
     css(R, stn, 'transform', `translate3d(0,${f3((1 - sp) * 60)}%,0)`);
     css(R, stn, 'opacity', String(f3(sp)));
     const land = u > c0 + cd ? Math.exp(-(u - c0 - cd) / 0.25) : 0;
-    css(R, stn, 'textShadow', land > 0.02 ? `0 0 ${f3(40 * land)}px rgba(255,120,50,${f3(0.8 * land)})` : 'none');
+    css(R, stn, 'textShadow', land > 0.02 ? `0 0 ${f3(40 * land)}px rgba(${HOTM},${f3(0.8 * land)})` : 'none');
     css(R, stn, 'color', cp < 1 ? 'var(--hot)' : land > 0.02 ? `rgba(${Math.round(lerp(233, 255, land))},${Math.round(lerp(220, 174, land))},${Math.round(lerp(192, 90, land))},1)` : '');
     const lab = R.q('.stlab');
     const lp = tw(u, I + 0.35, I + 0.95, E.outCubic);
@@ -2429,7 +2451,7 @@
       css(R, el, 'filter', blur((1 - p) * 16 + ex * 14));
       const hit = u > f.at + 0.35 ? Math.exp(-(u - f.at - 0.35) / 0.55) : 0;
       const glow = 0.45 + 0.55 * hit;
-      css(R, el.querySelector('.fimg'), 'filter', `grayscale(1) contrast(1.24) brightness(${f3(0.86 * f.dim + 0.18 * hit)}) sepia(.32) drop-shadow(0 0 1.6px rgba(255,196,128,${f3(0.95 * glow)})) drop-shadow(0 0 ${f3(16 + 26 * glow)}px rgba(255,91,31,${f3(0.55 * glow)}))`);
+      css(R, el.querySelector('.fimg'), 'filter', `grayscale(1) contrast(1.24) brightness(${f3(0.86 * f.dim + 0.18 * hit)}) sepia(.32) drop-shadow(0 0 1.6px rgba(255,196,128,${f3(0.95 * glow)})) drop-shadow(0 0 ${f3(16 + 26 * glow)}px rgba(${EMB},${f3(0.55 * glow)}))`);
       // faisceau lumineux qui descend sur le visage
       const sc = inv(f.at + 0.45, f.at + 1.35, u);
       const scan = el.querySelector('.fscan');
@@ -2615,7 +2637,7 @@
       if (clockEl.textContent !== txt) clockEl.textContent = txt;
       const ch = cur ? Math.exp(-(t - cur.t) / 0.25) : 0;
       clockEl.style.opacity = String(f3(txt ? 0.85 + 0.15 * ch : 0));
-      clockEl.style.textShadow = ch > 0.02 ? `0 0 ${f3(30 * ch)}px rgba(255,120,50,${f3(0.9 * ch)})` : '0 0 14px rgba(255,91,31,.45)';
+      clockEl.style.textShadow = ch > 0.02 ? `0 0 ${f3(30 * ch)}px rgba(${HOTM},${f3(0.9 * ch)})` : `0 0 14px rgba(${EMB},.45)`;
     }
     if (HUD.coords) hudCoord.textContent = `${dms(LAT(cam.y), 'N', 'S')}  ${dms(cam.x / D2R, 'E', 'O')}`;
 
