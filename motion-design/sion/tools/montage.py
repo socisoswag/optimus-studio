@@ -38,6 +38,7 @@ PARTS = [
 # Après le titre d'un chapitre : les séquences et les fiches de la chronologie qui l'illustrent.
 # ("fichier source", début, fin, "nom") ; début/fin à None = fichier entier.
 EXTRAS = {
+    5: [("aliyas", "plans", "sequence-les-aliyas")],
     4: [("chronologie", "herzl", "chronologie-herzl"), ("citation-herzl", None, "citation-herzl-1895")],
     7: [("trois-promesses", "plans", "sequence-trois-promesses"), ("chronologie", "weizmann", "chronologie-weizmann")],
     8: [("chronologie", "amin-husseini", "chronologie-amin-al-husseini"), ("chronologie", "qassam", "chronologie-al-qassam")],
@@ -49,8 +50,8 @@ EXTRAS = {
     17: [("flux-humains", (20.7, None), "sequence-juifs-des-pays-arabes")],
     18: [("chronologie", "meir", "chronologie-golda-meir"), ("citation-meir", None, "citation-golda-meir-1969")],
     19: [("frontieres", "plans", "sequence-frontieres-qui-bougent"), ("suez-1956", "plans", "sequence-suez-1956"), ("chronologie", "nasser", "chronologie-nasser"), ("six-jours", "plans", "sequence-six-jours-la-naksa"),
-         ("chronologie", "camp-david", "chronologie-camp-david"), ("chiffre-zone-c", None, "chiffre-cle-zone-c")],
-    20: [("chiffre-refugies", None, "chiffre-cle-refugies-et-camps"), ("liban-1982", "plans", "sequence-liban-1982")],
+         ("chronologie", "camp-david", "chronologie-camp-david"), ("jerusalem", "plans", "sequence-jerusalem"), ("chiffre-zone-c", None, "chiffre-cle-zone-c")],
+    20: [("camps", "plans", "sequence-les-camps"), ("chiffre-refugies", None, "chiffre-cle-refugies-et-camps"), ("liban-1982", "plans", "sequence-liban-1982")],
     21: [("chronologie", "arafat", "chronologie-arafat"), ("octobre-1973", "plans", "sequence-octobre-1973")],
     22: [("chronologie", "yassine", "chronologie-yassine")],
     23: [("chronologie", "oslo", "chronologie-oslo"), ("oslo-mur", "plans", "sequence-oslo-et-le-mur"), ("chiffre-colons", None, "chiffre-cle-colons")],
