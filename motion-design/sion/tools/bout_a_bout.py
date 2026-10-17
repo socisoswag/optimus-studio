@@ -16,6 +16,7 @@ import tempfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "output")
 MONTAGE = os.path.join(OUT, "montage")
+DEST = os.environ.get("BOUT_DIR") or OUT  # BOUT_DIR : fabriquer ailleurs, puis recopier
 PART = 175.0      # secondes par partie au plus
 RATE = 4000       # kbit/s vidéo : 175 s ≈ 92 Mo avec le son
 
@@ -51,12 +52,12 @@ def main():
         cur.append(f); acc += d
     if cur:
         parts.append(cur)
-    for old in glob.glob(os.path.join(OUT, "SION-bout-a-bout-1080p-partie-*.mp4")):
+    for old in glob.glob(os.path.join(DEST, "SION-bout-a-bout-1080p-partie-*.mp4")):
         os.remove(old)
     for i, files in enumerate(parts, start=1):
         with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as lst:
             lst.write("".join(f"file '{f}'\n" for f in files))
-        dst = os.path.join(OUT, f"SION-bout-a-bout-1080p-partie-{i}.mp4")
+        dst = os.path.join(DEST, f"SION-bout-a-bout-1080p-partie-{i}.mp4")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst.name, "-fps_mode", "cfr", "-r", "25",
                         "-c:v", "libx264", "-preset", "slow", "-b:v", f"{RATE}k", "-maxrate", f"{RATE * 1.4:.0f}k", "-bufsize", f"{RATE * 2}k",
                         "-tune", "grain", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", dst], check=True)
