@@ -38,7 +38,7 @@
     },
     {
       id: 'mur', type: 'cap', dur: 13.0, fly: 1.2, anchor: [330, -60], textW: 860,
-      kicker: '2002 — aujourd’hui', title: 'Le mur',
+      kicker: 'Depuis 2002', title: 'Le mur',
       text: 'En 2018, 464 km sont construits sur 714 prévus, en grande partie à l’intérieur de la Cisjordanie. En 2004, [[la Cour internationale de justice le déclare contraire au droit international.]]',
       cam: { ...CAM, w: 0.045, bearing: 2 }, camEnd: { ...CAM, lon: 34.9, w: 0.042, pitch: 46, bearing: 6 },
     },
@@ -72,7 +72,7 @@
 
   const clock = [
     { seg: 'oslo', at: 0.2, text: '28 septembre 1995' },
-    { seg: 'mur', at: 0.2, text: '2002 — 2018' },
+    { seg: 'mur', at: 0.2, text: 'De 2002 à 2018' },
     { seg: 'fin', at: 0.2, text: '' },
   ];
 

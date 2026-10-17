@@ -27,14 +27,14 @@
     },
     {
       id: 'nord', type: 'cap', dur: 12.5, fly: 1.8, anchor: [330, -60], textW: 860,
-      kicker: 'Janvier — février 2025 · nord de la Cisjordanie', title: 'Des camps vidés',
+      kicker: 'Janvier et février 2025 · nord de la Cisjordanie', title: 'Des camps vidés',
       text: 'L’armée israélienne chasse environ 40 000 réfugiés des camps de Jénine, Tulkarem, Nur Shams et El Far’a : [[le plus grand déplacement en Cisjordanie depuis 1967.]]',
       cam: { lon: 35.06, lat: 32.33, w: 0.027, pitch: 44, bearing: -6 },
       camEnd: { lon: 35.08, lat: 32.34, w: 0.024, pitch: 48, bearing: 2 },
     },
     {
       id: 'fin', type: 'outro', dur: 8.5, fly: 1.6, hitAt: 1.0,
-      eyebrow: '1948 — aujourd’hui',
+      eyebrow: 'De 1948 à aujourd’hui',
       lines: ['Réfugiés', 'depuis', 'quatre générations.'],
       cam: { lon: 35.6, lat: 32.6, w: 0.12, pitch: 36, bearing: 0 },
       camEnd: { lon: 35.6, lat: 32.6, w: 0.125, pitch: 34, bearing: 4 },

@@ -15,14 +15,14 @@
   const segments = [
     {
       id: 'exodes', type: 'beat', dur: 6.2, hitAt: 1.0, reveal: 'slam', rgb: 12,
-      kicker: 'Proche-Orient · 1947 — années 1970', word: 'Exodes',
+      kicker: 'Proche-Orient · de 1947 aux années 1970', word: 'Exodes',
       sub: 'Partir. Fuir. Être chassé.', subAt: 1.4,
       cam: { lon: 22.0, lat: 33.0, w: 0.95, pitch: 26, bearing: 4 },
       camEnd: { lon: 28.0, lat: 32.5, w: 0.7, pitch: 32, bearing: -3 },
     },
     {
       id: 'nakba', type: 'stat', dur: 14.5, fly: 1.8, layout: 'L', anchor: [470, 40],
-      ghost: '1948', kicker: '1947 — 1949 · Palestine', pre: 'Environ', value: 700000,
+      ghost: '1948', kicker: 'De 1947 à 1949 · Palestine', pre: 'Environ', value: 700000,
       label: 'Palestiniens expulsés ou en fuite',
       text: 'Ils deviennent réfugiés au Liban, en Syrie, en Transjordanie, en Cisjordanie et à Gaza. En arabe, on l’appelle la [[Nakba]] : « la catastrophe ».',
       textAt: 1.7, hlAt: 6.2, source: 'Estimation de l’ONU en 1950 : 711 000 réfugiés', sourceAt: 5.0,
@@ -32,7 +32,7 @@
     },
     {
       id: 'pays-arabes', type: 'stat', dur: 17.0, fly: 2.2, layout: 'B', anchor: [0, -150],
-      kicker: '1948 — années 1970 · Du Maroc à l’Irak', pre: 'Environ', value: 850000,
+      kicker: 'De 1948 aux années 1970 · du Maroc à l’Irak', pre: 'Environ', value: 850000,
       label: 'Juifs quittent les pays arabes',
       text: 'La plupart s’installent en Israël. D’Algérie, en 1962, la grande majorité part pour la France.',
       textAt: 2.2, source: 'Ordre de grandeur le plus cité par les historiens', sourceAt: 5.5,
@@ -42,7 +42,7 @@
     },
     {
       id: 'fin', type: 'outro', dur: 6.8,
-      eyebrow: '1948 — années 1970',
+      eyebrow: 'De 1948 aux années 1970',
       lines: ['Deux exils.', 'Deux mémoires.', 'Une même terre.'],
       cam: { lon: 35.2, lat: 31.9, w: 0.32, pitch: 30, bearing: 0 },
     },
@@ -75,8 +75,8 @@
     { seg: 'nakba', at: 5.1, label: 'Cisjordanie', lon: 35.22, lat: 31.92, dir: [1, 1], off: 40, endAt: 14.8 },
     { seg: 'nakba', at: 5.3, label: 'Transjordanie', lon: 35.88, lat: 32.28, dir: [1, -1], endAt: 14.8 },
     { seg: 'pays-arabes', at: 5.8, label: 'France · 1962', lon: 4.2, lat: 44.6, dir: [1, -1], endAt: 17.5 },
-    { seg: 'pays-arabes', at: 7.0, label: 'Irak · « Ezra et Néhémie » · 1951 – 1952', lon: 44.37, lat: 33.31, dir: [1, -1], endAt: 17.5 },
-    { seg: 'pays-arabes', at: 7.8, label: 'Yémen · « Tapis volant » · 1949 – 1950', lon: 44.21, lat: 15.35, dir: [1, -1], endAt: 17.5 },
+    { seg: 'pays-arabes', at: 7.0, label: 'Irak · « Ezra et Néhémie » · 1951 et 1952', lon: 44.37, lat: 33.31, dir: [1, -1], endAt: 17.5 },
+    { seg: 'pays-arabes', at: 7.8, label: 'Yémen · « Tapis volant » · 1949 et 1950', lon: 44.21, lat: 15.35, dir: [1, -1], endAt: 17.5 },
     { seg: 'pays-arabes', at: 10.5, label: 'Israël', lon: 34.85, lat: 32.0, dir: [-1, -1], endAt: 17.5 },
   ];
 

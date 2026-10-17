@@ -16,26 +16,26 @@
   const segments = [
     {
       id: 'aliyas', type: 'beat', dur: 6.5, hitAt: 1.0, reveal: 'focus', rgb: 10,
-      kicker: '1882 — 1939', word: 'Aliyas',
+      kicker: 'De 1882 à 1939', word: 'Aliyas',
       sub: 'Les « montées » : les vagues d’immigration juive en Palestine, portées par le mouvement sioniste.', subAt: 1.4,
       cam: { lon: 28.5, lat: 39.5, w: 0.9, pitch: 26, bearing: -6 },
       camEnd: { lon: 28.5, lat: 39.0, w: 0.84, pitch: 28, bearing: -2 },
     },
     {
       id: 'premieres', type: 'cap', dur: 10.5, fly: 1.2, anchor: [330, -60], textW: 860,
-      kicker: '1882 — 1914 · Russie, Roumanie', title: 'Les premières colonies',
+      kicker: 'De 1882 à 1914 · Russie, Roumanie', title: 'Les premières colonies',
       text: 'Fuyant les pogroms, 55 000 à 75 000 personnes arrivent en deux vagues. Elles fondent des colonies agricoles [[sur des terres achetées à de grands propriétaires.]]',
       cam: { lon: 28.5, lat: 39.0, w: 0.84, pitch: 28, bearing: -2 }, camEnd: { lon: 29.0, lat: 38.5, w: 0.8, pitch: 30, bearing: 2 },
     },
     {
       id: 'mandat', type: 'cap', dur: 10.5, fly: 1.0, anchor: [330, -60], textW: 860,
-      kicker: '1919 — 1929 · Pologne, Russie', title: 'Sous le mandat britannique',
+      kicker: 'De 1919 à 1929 · Pologne, Russie', title: 'Sous le mandat britannique',
       text: 'Après la déclaration Balfour, environ 120 000 arrivées en dix ans. Les terres achetées sont vidées de leurs paysans : [[les métayers palestiniens qui les cultivaient doivent partir.]]',
       cam: { lon: 29.0, lat: 38.5, w: 0.8, pitch: 30, bearing: 2 }, camEnd: { lon: 27.0, lat: 39.5, w: 0.86, pitch: 28, bearing: -2 },
     },
     {
       id: 'trente', type: 'cap', dur: 10.5, fly: 1.0, anchor: [330, -60], textW: 860,
-      kicker: '1929 — 1939 · Pologne, Allemagne, Autriche', title: 'Fuir le nazisme',
+      kicker: 'De 1929 à 1939 · Pologne, Allemagne, Autriche', title: 'Fuir le nazisme',
       text: 'Environ 250 000 arrivées, dont beaucoup fuient l’Allemagne nazie. [[En 1936, la grande révolte arabe éclate]] contre le mandat et l’immigration.',
       cam: { lon: 27.0, lat: 39.5, w: 0.86, pitch: 28, bearing: -2 }, camEnd: { lon: 28.0, lat: 38.5, w: 0.8, pitch: 30, bearing: 2 },
     },
@@ -48,7 +48,7 @@
     },
     {
       id: 'fin', type: 'outro', dur: 8.0, fly: 1.4, hitAt: 1.0,
-      eyebrow: '1882 — 1948',
+      eyebrow: 'De 1882 à 1948',
       lines: ['1882 : une minorité.', '1948 : un État.'],
       cam: { lon: 33.8, lat: 31.8, w: 0.13, pitch: 34, bearing: 0 }, camEnd: { lon: 33.8, lat: 31.8, w: 0.135, pitch: 32, bearing: 3 },
     },
@@ -71,8 +71,8 @@
     { seg: 'trente', at: 2.4, label: 'Vienne', lon: 16.37, lat: 48.21, dir: [-1, 1], endAt: 10.8 },
   ];
   const clock = [
-    { seg: 'premieres', at: 0.2, text: '1882 — 1914' }, { seg: 'mandat', at: 0.2, text: '1919 — 1929' },
-    { seg: 'trente', at: 0.2, text: '1929 — 1939' }, { seg: 'population', at: 0.2, text: '1945' }, { seg: 'fin', at: 0.2, text: '' },
+    { seg: 'premieres', at: 0.2, text: 'De 1882 à 1914' }, { seg: 'mandat', at: 0.2, text: 'De 1919 à 1929' },
+    { seg: 'trente', at: 0.2, text: 'De 1929 à 1939' }, { seg: 'population', at: 0.2, text: '1945' }, { seg: 'fin', at: 0.2, text: '' },
   ];
 
   root.TL = root.buildTL({

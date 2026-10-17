@@ -31,7 +31,7 @@
         ['Golda Meir', 'The Sunday Times, 15 juin 1969'],
         ['Mahmoud Darwich', '« Sur cette terre »'],
         ['Arthur Koestler', 'Promise and Fulfilment, 1949'],
-        ['Henry McMahon · Sykes et Picot · Arthur Balfour', 'lettres et accords, 1915 — 1917'],
+        ['Henry McMahon · Sykes et Picot · Arthur Balfour', 'lettres et accords de 1915 à 1917'],
       ],
     },
     {

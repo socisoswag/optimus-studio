@@ -39,7 +39,7 @@
     },
     {
       id: 'peur', type: 'cap', dur: 11.0, fly: 2.2, anchor: [320, -60], textW: 900,
-      kicker: 'Avril — mai 1948', title: 'La peur',
+      kicker: 'Avril et mai 1948', title: 'La peur',
       text: 'Des survivants sont exhibés dans Jérusalem. Le récit du massacre se répand dans toute la Palestine et [[accélère l’exode]].',
       cam: { lon: 35.05, lat: 32.1, w: 0.05, pitch: 40, bearing: -6 },
       camEnd: { lon: 35.05, lat: 32.1, w: 0.044, pitch: 44, bearing: 2 },

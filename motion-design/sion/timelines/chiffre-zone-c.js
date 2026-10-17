@@ -10,7 +10,7 @@
   const segments = [
     {
       id: 'zone-c', type: 'stat', dur: 12.5, fly: 1.2, layout: 'L', anchor: [470, 30],
-      ghost: '1995', kicker: 'Accords d’Oslo II · 1995 — aujourd’hui', pre: 'Environ', value: 60, unit: '%', label: 'de la Cisjordanie en zone C',
+      ghost: '1995', kicker: 'Accords d’Oslo II · depuis 1995', pre: 'Environ', value: 60, unit: '%', label: 'de la Cisjordanie en zone C',
       text: 'L’armée israélienne y garde tout le contrôle, jusqu’aux permis de construire. [[Moins de 1 % de la zone]] est planifié pour les Palestiniens.',
       textAt: 1.6, hlAt: 5.6, source: 'OCHA (ONU)', sourceAt: 4.8, countAt: 0.3, countDur: 2.6,
       cam: { lon: 34.86, lat: 31.95, w: 0.052, pitch: 40, bearing: -6 },

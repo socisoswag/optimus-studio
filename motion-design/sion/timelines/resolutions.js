@@ -25,7 +25,7 @@
       meta: '35 pour · 15 contre · 8 abstentions',
       quote: 'Décide qu’il y a lieu de permettre aux réfugiés qui le désirent, de [[rentrer dans leurs foyers]] le plus tôt possible et de vivre en paix avec leurs voisins […]',
       ref: 'Résolution 194 (III) · paragraphe 11',
-      note: 'Environ 700 000 Palestiniens ont fui ou ont été expulsés pendant la guerre de 1947–1949.', noteAt: 6.6,
+      note: 'Environ 700 000 Palestiniens ont fui ou ont été expulsés pendant la guerre, de 1947 à 1949.', noteAt: 6.6,
       lon: 34.95, lat: 31.75, heat: { R: 1300, amt: 0.95 },
       cam: { lon: 34.95, lat: 31.8, w: 0.17, pitch: 40, bearing: -6 },
       camEnd: { lon: 34.95, lat: 31.8, w: 0.1, pitch: 48, bearing: 4 },

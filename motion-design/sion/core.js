@@ -28,16 +28,16 @@
 
   // Personnes montrées à l'écran : photo détourée portraits/<clé>.png (voir portraits/LISEZMOI.md)
   const PEOPLE = {
-    dreyfus: ['Alfred Dreyfus', '1859 — 1935'], herzl: ['Theodor Herzl', '1860 — 1904'],
-    balfour: ['Arthur Balfour', '1848 — 1930'], rothschild: ['Walter Rothschild', '1868 — 1937'],
-    mcmahon: ['Henry McMahon', '1862 — 1949'], 'hussein-ben-ali': ['Hussein ben Ali', 'v. 1854 — 1931'],
-    sykes: ['Mark Sykes', '1879 — 1919'], picot: ['François Georges-Picot', '1870 — 1951'],
-    koestler: ['Arthur Koestler', '1905 — 1983'], arlozoroff: ['Haïm Arlozoroff', '1899 — 1933'],
-    'ben-gourion': ['David Ben Gourion', '1886 — 1973'], meir: ['Golda Meir', '1898 — 1978'],
-    arafat: ['Yasser Arafat', '1929 — 2004'], netanyahou: ['Benyamin Netanyahou', 'né en 1949'],
+    dreyfus: ['Alfred Dreyfus', '1859-1935'], herzl: ['Theodor Herzl', '1860-1904'],
+    balfour: ['Arthur Balfour', '1848-1930'], rothschild: ['Walter Rothschild', '1868-1937'],
+    mcmahon: ['Henry McMahon', '1862-1949'], 'hussein-ben-ali': ['Hussein ben Ali', 'v. 1854-1931'],
+    sykes: ['Mark Sykes', '1879-1919'], picot: ['François Georges-Picot', '1870-1951'],
+    koestler: ['Arthur Koestler', '1905-1983'], arlozoroff: ['Haïm Arlozoroff', '1899-1933'],
+    'ben-gourion': ['David Ben Gourion', '1886-1973'], meir: ['Golda Meir', '1898-1978'],
+    arafat: ['Yasser Arafat', '1929-2004'], netanyahou: ['Benyamin Netanyahou', 'né en 1949'],
     lieberman: ['Avigdor Lieberman', 'né en 1958'], bhl: ['Bernard-Henri Lévy', 'né en 1948'],
-    finkielkraut: ['Alain Finkielkraut', 'né en 1949'], rabin: ['Yitzhak Rabin', '1922 — 1995'],
-    sharon: ['Ariel Sharon', '1928 — 2014'], darwich: ['Mahmoud Darwich', '1941 — 2008'],
+    finkielkraut: ['Alain Finkielkraut', 'né en 1949'], rabin: ['Yitzhak Rabin', '1922-1995'],
+    sharon: ['Ariel Sharon', '1928-2014'], darwich: ['Mahmoud Darwich', '1941-2008'],
   };
   root.CITIES = CITIES;
   root.face = (key, opts = {}) => ({ photo: `portraits/${key}.png`, name: (PEOPLE[key] || [key])[0], dates: (PEOPLE[key] || [])[1] || '', ...opts });

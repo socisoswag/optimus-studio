@@ -10,7 +10,7 @@
   ];
   const p = segments[0];
   Object.assign(p, {
-    numeral: "", label: "Chapitres 37 — 39", titleLines: ["Conclusion"],
+    numeral: "", label: "Chapitres 37 à 39", titleLines: ["Conclusion"],
     firstChapter: 37,
     chapters: ["Le droit des peuples : libre arbitre contre dogme", "La souffrance palestinienne : entre mémoire, poésie et lumière", "Pour une paix juste : aimer la terre, pas la détruire"],
     chapAt: [3.0, 3.8, 4.6],

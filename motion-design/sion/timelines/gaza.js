@@ -37,7 +37,7 @@
     },
     {
       id: 'offensives', type: 'cap', dur: 13.0, fly: 1.2, anchor: [300, -40], textW: 900,
-      kicker: '2008 — 2021', title: 'Les offensives',
+      kicker: 'De 2008 à 2021', title: 'Les offensives',
       text: 'Plomb durci, 2008-2009 : environ 1 400 morts. Bordure protectrice, 2014 : 2 251 morts, dont 551 enfants. Mai 2021 : plus de 250 morts. En Israël : 13, 73 et 13 morts.',
       cam: { lon: 34.38, lat: 31.4, w: 0.015, pitch: 46, bearing: -44 },
       camEnd: { lon: 34.39, lat: 31.41, w: 0.014, pitch: 50, bearing: -40 },
@@ -51,14 +51,14 @@
     },
     {
       id: 'siege', type: 'cap', dur: 11.0, fly: 1.3, anchor: [300, -40], textW: 900,
-      kicker: '9 — 13 octobre 2023', title: 'Siège complet',
+      kicker: 'Du 9 au 13 octobre 2023', title: 'Siège complet',
       text: 'Israël coupe l’électricité, la nourriture et le carburant. Puis ordonne à 1,1 million d’habitants du nord de partir au sud. [[Le sud est bombardé lui aussi.]]',
       cam: { lon: 34.38, lat: 31.4, w: 0.0165, pitch: 44, bearing: -46 },
       camEnd: { lon: 34.37, lat: 31.39, w: 0.0152, pitch: 48, bearing: -42 },
     },
     {
       id: 'morts', type: 'stat', dur: 12.0, fly: 1.4, layout: 'L', anchor: [480, 20],
-      ghost: '2023', kicker: '7 octobre 2023 — octobre 2026', pre: 'Plus de', value: 74000, label: 'Palestiniens tués à Gaza',
+      ghost: '2023', kicker: 'Du 7 octobre 2023 à octobre 2026', pre: 'Plus de', value: 74000, label: 'Palestiniens tués à Gaza',
       text: 'Selon le ministère de la Santé de Gaza. [[Un décompte sans doute inférieur à la réalité]], selon une étude publiée dans The Lancet.',
       textAt: 1.6, hlAt: 6.0, source: 'Ministère de la Santé de Gaza, octobre 2026 · The Lancet, 2025', sourceAt: 5.0,
       countAt: 0.3, countDur: 5.0,
@@ -67,14 +67,14 @@
     },
     {
       id: 'ruines', type: 'cap', dur: 11.5, fly: 2.0, anchor: [330, -90], textW: 900,
-      kicker: '2023 — 2025 · Gaza-ville', title: 'Un champ de ruines',
+      kicker: 'De 2023 à 2025 · Gaza-ville', title: 'Un champ de ruines',
       text: '[[Environ 90 % des habitants]] ont été déplacés, souvent plusieurs fois. La plupart des logements sont endommagés ou détruits. En août 2025, la famine est déclarée.',
       cam: { lon: 34.4555, lat: 31.5195, w: 0.0004, pitch: 52, bearing: -40 },
       camEnd: { lon: 34.4555, lat: 31.5195, w: 0.00033, pitch: 56, bearing: -30 },
     },
     {
       id: 'justice', type: 'cap', dur: 11.0, fly: 1.3, anchor: [330, -90], textW: 900,
-      kicker: '2024 — 2025 · justice internationale', title: 'Devant les juges',
+      kicker: '2024 et 2025 · justice internationale', title: 'Devant les juges',
       text: 'La Cour internationale de justice ordonne d’empêcher un génocide. La CPI émet des mandats d’arrêt contre Benyamin Netanyahou, Yoav Gallant et un chef du Hamas. Une commission d’enquête de l’ONU conclut à un génocide.',
       faces: [root.face('netanyahou', { side: 'R', at: 0.9 })],
       cam: { lon: 34.4555, lat: 31.5195, w: 0.00062, pitch: 50, bearing: -24 },
@@ -116,7 +116,7 @@
     .forEach(([label, lon, lat, dir], i) => markers.push({ seg: 'blocus', at: 3.2 + 0.5 * i, label, lon, lat, dir, off: 40 }));
 
   // ---- les offensives : trois vagues de frappes
-  [[0.6, 26, 'Décembre 2008 — janvier 2009'], [4.4, 40, 'Juillet — août 2014'], [8.9, 22, 'Mai 2021']].forEach(([at, n]) => {
+  [[0.6, 26, 'De décembre 2008 à janvier 2009'], [4.4, 40, 'Juillet et août 2014'], [8.9, 22, 'Mai 2021']].forEach(([at, n]) => {
     for (let j = 0; j < n; j++) { const [lon, lat] = inGaza(); strikes.push({ seg: 'offensives', at: at + rnd() * 3.2, lon, lat, power: 0.5 + rnd() * 0.5, burn: 3.5 }); }
   });
   units.push({ seg: 'offensives', at: 4.6, dur: 2.0, kind: 'plane', n: 3, path: [[34.6, 31.35], [34.4, 31.47], [34.2, 31.6]], alt: 50, size: 24 });
@@ -156,8 +156,8 @@
     { seg: 'octobre', at: 0.2, text: '7 octobre 2023' },
     { seg: 'siege', at: 0.2, text: '9 octobre 2023' }, { seg: 'siege', at: 3.0, text: '13 octobre 2023' },
     { seg: 'morts', at: 0.2, text: 'Octobre 2026' },
-    { seg: 'ruines', at: 0.2, text: '2023 — 2025' },
-    { seg: 'justice', at: 0.2, text: '2024 — 2025' },
+    { seg: 'ruines', at: 0.2, text: 'De 2023 à 2025' },
+    { seg: 'justice', at: 0.2, text: '2024 et 2025' },
     { seg: 'fin', at: 0.2, text: '' },
   ];
 

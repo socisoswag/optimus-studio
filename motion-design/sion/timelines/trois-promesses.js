@@ -16,7 +16,7 @@
   const segments = [
     {
       id: 'promesses', type: 'beat', dur: 6.0, hitAt: 1.0, reveal: 'slam',
-      kicker: 'Première Guerre mondiale · 1915 — 1917', word: 'Promesses',
+      kicker: 'Première Guerre mondiale · de 1915 à 1917', word: 'Promesses',
       sub: 'Trois engagements britanniques, en deux ans.', subAt: 1.3,
       cam: { lon: 27.0, lat: 38.0, w: 0.95, pitch: 28, bearing: -4 },
       camEnd: { lon: 30.0, lat: 35.0, w: 0.75, pitch: 34, bearing: 3 },
@@ -24,7 +24,7 @@
     {
       id: 'h1915', type: 'doc', dur: 12.5, fly: 1.8, layout: 'L', anchor: [540, 60],
       faces: [root.face('mcmahon', { tagPos: 'above', x: 1330, h: 640, at: 2.4, arrowTo: 1, label: 'lettre', link: { lon: 31.24, lat: 30.04 } }), root.face('hussein-ben-ali', { tagPos: 'above', x: 1700, h: 680, at: 3.0, link: { lon: 39.83, lat: 21.42 } })],
-      ghost: '1915', eyebrow: 'Le Caire · 24 octobre 1915', title: ['Correspondance', 'Hussein – McMahon'],
+      ghost: '1915', eyebrow: 'Le Caire · 24 octobre 1915', title: ['Correspondance', 'Hussein-McMahon'],
       meta: 'Henry McMahon, Le Caire → Hussein, chérif de La Mecque',
       quote: 'La Grande-Bretagne est disposée à [[reconnaître et soutenir l’indépendance des Arabes]] dans toutes les régions comprises dans les limites demandées par le chérif de La Mecque.',
       ref: 'Lettre du 24 octobre 1915 · traduit de l’anglais',
@@ -36,7 +36,7 @@
     {
       id: 'sp1916', type: 'doc', dur: 12.5, fly: 1.6, layout: 'L', anchor: [500, 40],
       faces: [root.face('sykes', { tagPos: 'above', x: 1330, h: 640, at: 2.0, arrowTo: 1, label: 'accord secret' }), root.face('picot', { tagPos: 'above', x: 1700, h: 680, at: 2.5 })],
-      ghost: '1916', eyebrow: 'Londres · 16 mai 1916 · secret', title: ['Accords', 'Sykes – Picot'],
+      ghost: '1916', eyebrow: 'Londres · 16 mai 1916 · secret', title: ['Accords', 'Sykes-Picot'],
       meta: 'Mark Sykes (Royaume-Uni) · François Georges-Picot (France)',
       rows: [
         ['France', 'Liban, côte syrienne, Cilicie ; influence sur Damas, Alep et Mossoul'],
@@ -92,7 +92,7 @@
     seed: 1915,
     segments,
     markers,
-    hud: { label: ['Sion', 'Chapitre 7 · Trois promesses, 1915 — 1917'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
+    hud: { label: ['Sion', 'Chapitre 7 · Trois promesses, de 1915 à 1917'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,
     fadeOut: 1.4,
     sound: {

@@ -32,7 +32,7 @@
     },
     {
       id: 'annexion', type: 'cap', dur: 12.0, fly: 1.8, anchor: [330, -60], textW: 860,
-      kicker: 'Juin 1967 — août 1980', title: 'L’annexion',
+      kicker: 'De juin 1967 à août 1980', title: 'L’annexion',
       text: 'Israël occupe Jérusalem-Est et l’annexe avec 28 villages alentour. Le Conseil de sécurité de l’ONU juge ces mesures [[« nulles et non avenues ».]]',
       cam: { lon: 35.19, lat: 31.795, w: 0.0135, pitch: 42, bearing: -6 },
       camEnd: { lon: 35.195, lat: 31.795, w: 0.0122, pitch: 46, bearing: 0 },

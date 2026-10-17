@@ -19,21 +19,21 @@
   const segments = [
     {
       id: 'suez', type: 'beat', dur: 6.0, hitAt: 1.0, reveal: 'slam', rgb: 14,
-      kicker: '29 octobre — 7 novembre 1956', word: 'Suez',
+      kicker: 'Du 29 octobre au 7 novembre 1956', word: 'Suez',
       sub: 'Israël, la France et le Royaume-Uni attaquent l’Égypte de Nasser.', subAt: 1.4,
       cam: { lon: 32.9, lat: 30.6, w: 0.12, pitch: 30, bearing: -4 },
       camEnd: { lon: 32.9, lat: 30.6, w: 0.1, pitch: 34, bearing: 2 },
     },
     {
       id: 'canal', type: 'cap', dur: 9.5, fly: 1.5, anchor: [300, -60], textW: 900,
-      kicker: '26 juillet — 24 octobre 1956', title: 'Le canal nationalisé',
+      kicker: 'Du 26 juillet au 24 octobre 1956', title: 'Le canal nationalisé',
       text: 'Nasser nationalise la Compagnie du canal de Suez. À Sèvres, Israël, la France et le Royaume-Uni préparent la guerre en secret.',
       cam: { lon: 32.55, lat: 30.55, w: 0.03, pitch: 44, bearing: -14 },
       camEnd: { lon: 32.55, lat: 30.6, w: 0.027, pitch: 48, bearing: -8 },
     },
     {
       id: 'kadesh', type: 'cap', dur: 12.0, fly: 1.5, anchor: [300, -60], textW: 900,
-      kicker: '29 octobre — 5 novembre 1956 · opération Kadesh', title: 'Le Sinaï envahi',
+      kicker: 'Du 29 octobre au 5 novembre 1956 · opération Kadesh', title: 'Le Sinaï envahi',
       text: 'Des parachutistes israéliens sautent sur le col de Mitla. Les blindés traversent le Sinaï jusqu’au canal ; la bande de Gaza est occupée.',
       cam: { lon: 33.4, lat: 30.3, w: 0.07, pitch: 40, bearing: -4 },
       camEnd: { lon: 33.3, lat: 30.2, w: 0.064, pitch: 44, bearing: 2 },
@@ -47,7 +47,7 @@
     },
     {
       id: 'mousquetaire', type: 'cap', dur: 11.0, fly: 1.8, anchor: [300, -60], textW: 900,
-      kicker: '31 octobre — 6 novembre 1956 · opération Mousquetaire', title: 'Paris et Londres bombardent',
+      kicker: 'Du 31 octobre au 6 novembre 1956 · opération Mousquetaire', title: 'Paris et Londres bombardent',
       text: 'Les aviations française et britannique détruisent l’aviation égyptienne au sol. Le 6 novembre, leurs troupes débarquent à Port-Saïd.',
       cam: { lon: 32.0, lat: 30.8, w: 0.04, pitch: 42, bearing: -10 },
       camEnd: { lon: 32.15, lat: 30.95, w: 0.034, pitch: 46, bearing: -4 },

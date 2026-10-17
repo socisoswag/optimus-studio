@@ -19,7 +19,7 @@
   const segments = [
     {
       id: 'octobre', type: 'beat', dur: 6.0, hitAt: 1.0, reveal: 'slam', rgb: 14,
-      kicker: '6 — 25 octobre 1973 · Kippour, Ramadan', word: 'Octobre',
+      kicker: 'Du 6 au 25 octobre 1973 · Kippour, Ramadan', word: 'Octobre',
       sub: 'L’Égypte et la Syrie attaquent pour reprendre le Sinaï et le Golan, occupés depuis 1967.', subAt: 1.4,
       cam: { lon: 34.2, lat: 31.4, w: 0.13, pitch: 30, bearing: -4 },
       camEnd: { lon: 34.2, lat: 31.4, w: 0.11, pitch: 34, bearing: 2 },
@@ -33,14 +33,14 @@
     },
     {
       id: 'golan', type: 'cap', dur: 9.0, fly: 1.6, anchor: [300, -60], textW: 900,
-      kicker: '6 — 22 octobre 1973', title: 'Le Golan',
+      kicker: 'Du 6 au 22 octobre 1973', title: 'Le Golan',
       text: 'Les Syriens percent, puis sont repoussés. L’armée israélienne avance jusqu’à une quarantaine de kilomètres de Damas.',
       cam: { lon: 35.85, lat: 33.1, w: 0.03, pitch: 46, bearing: 6 },
       camEnd: { lon: 35.9, lat: 33.15, w: 0.028, pitch: 50, bearing: 10 },
     },
     {
       id: 'contre', type: 'cap', dur: 11.0, fly: 1.6, anchor: [300, -60], textW: 900,
-      kicker: '15 — 24 octobre 1973', title: 'La contre-offensive',
+      kicker: 'Du 15 au 24 octobre 1973', title: 'La contre-offensive',
       text: 'Israël franchit le canal à son tour et encercle la IIIe armée égyptienne. Washington et Moscou ravitaillent chacun leur camp par avion.',
       cam: { lon: 32.5, lat: 30.3, w: 0.03, pitch: 46, bearing: -14 },
       camEnd: { lon: 32.45, lat: 30.25, w: 0.028, pitch: 50, bearing: -8 },
@@ -54,7 +54,7 @@
     },
     {
       id: 'rabat', type: 'cap', dur: 10.0, fly: 1.8, anchor: [300, -60], textW: 900,
-      kicker: 'Rabat · 26 — 29 octobre 1974', title: 'Un peuple reconnu',
+      kicker: 'Rabat · du 26 au 29 octobre 1974', title: 'Un peuple reconnu',
       text: 'Les États arabes reconnaissent l’OLP comme seul représentant légitime du peuple palestinien. Le 13 novembre, Arafat parle à la tribune de l’ONU.',
       faces: [root.face('arafat', { side: 'R', at: 0.9 })],
       cam: { lon: 35.0, lat: 31.8, w: 0.06, pitch: 38, bearing: -4 },

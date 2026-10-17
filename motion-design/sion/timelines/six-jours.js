@@ -20,7 +20,7 @@
   const segments = [
     {
       id: 'naksa', type: 'beat', dur: 6.0, hitAt: 1.0, reveal: 'slam', rgb: 14,
-      kicker: '5 — 10 juin 1967 · La guerre des Six Jours', word: 'Naksa',
+      kicker: 'Du 5 au 10 juin 1967 · la guerre des Six Jours', word: 'Naksa',
       sub: '« Le revers » : c’est ainsi que les Palestiniens nomment juin 1967.', subAt: 1.4,
       cam: { lon: 33.6, lat: 31.2, w: 0.3, pitch: 30, bearing: -4 },
       camEnd: { lon: 33.2, lat: 31.0, w: 0.22, pitch: 34, bearing: 2 },
@@ -34,14 +34,14 @@
     },
     {
       id: 'sinai', type: 'cap', dur: 11.0, fly: 1.3, anchor: [0, -110],
-      kicker: '5 — 8 juin 1967', title: 'Sinaï et Gaza',
+      kicker: 'Du 5 au 8 juin 1967', title: 'Sinaï et Gaza',
       text: 'Les blindés israéliens atteignent le canal de Suez. Gaza passe sous occupation.',
       cam: { lon: 33.45, lat: 30.75, w: 0.13, pitch: 40, bearing: 4 },
       camEnd: { lon: 33.25, lat: 30.65, w: 0.115, pitch: 44, bearing: -3 },
     },
     {
       id: 'cisjordanie', type: 'cap', dur: 13.0, fly: 1.5, anchor: [120, -70],
-      kicker: '5 — 7 juin 1967', title: 'Cisjordanie et Jérusalem-Est',
+      kicker: 'Du 5 au 7 juin 1967', title: 'Cisjordanie et Jérusalem-Est',
       text: 'Jérusalem-Est est prise le 7 juin. Près de Latroun, [[Imwas, Yalu et Beit Nuba]] sont vidés puis rasés : environ 10 000 habitants chassés.',
       cam: { lon: 35.2, lat: 31.92, w: 0.064, pitch: 42, bearing: -6 },
       camEnd: { lon: 35.18, lat: 31.88, w: 0.055, pitch: 47, bearing: 4 },
@@ -65,7 +65,7 @@
     },
     {
       id: 'golan', type: 'cap', dur: 9.0, fly: 1.4, anchor: [120, -80],
-      kicker: '9 — 10 juin 1967', title: 'Plateau du Golan',
+      kicker: '9 et 10 juin 1967', title: 'Plateau du Golan',
       text: 'Quneitra tombe le 10 juin. Plus de 100 000 habitants fuient ou sont chassés.',
       cam: { lon: 35.74, lat: 33.05, w: 0.05, pitch: 46, bearing: 8 },
       camEnd: { lon: 35.76, lat: 33.08, w: 0.043, pitch: 50, bearing: -2 },
