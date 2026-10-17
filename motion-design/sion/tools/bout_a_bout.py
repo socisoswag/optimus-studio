@@ -2,8 +2,8 @@
 
 Lit output/montage/ (fabriqué par tools/montage.py) dans l'ordre des dossiers et des numéros : le
 générique, puis pour chaque partie son ouverture, et pour chaque chapitre son titre, ses séquences
-(complètes) et ses fiches ; enfin le générique de fin. Les pièces facultatives, les plans découpés
-et les cartons transparents sont laissés de côté. Le tout est réencodé en 1080p et coupé en parties
+(complètes) et ses fiches ; enfin le générique de fin. Les pièces facultatives, les versions sans
+texte, les plans découpés et les cartons transparents sont laissés de côté. Le tout est réencodé en 1080p et coupé en parties
 de moins de 95 Mo (limite de GitHub : 100 Mo par fichier), sans couper une pièce en deux.
 
     python3 tools/bout_a_bout.py
@@ -30,7 +30,7 @@ def pieces(d):
     out = []
     for name in sorted(os.listdir(d)):
         p = os.path.join(d, name)
-        if name == "cartons" or "facultatif" in name:
+        if name == "cartons" or "facultatif" in name or "sans-texte" in name:
             continue
         if os.path.isdir(p):
             full = os.path.join(p, "00-sequence-complete.mp4")
