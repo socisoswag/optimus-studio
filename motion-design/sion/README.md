@@ -51,6 +51,15 @@ chapitre, et chaque séquence découpée **plan par plan** (séquence complète,
 Pour tout voir d'une traite dans l'ordre du film : `output/SION-bout-a-bout-1080p-partie-1.mp4` … `-11.mp4`
 (environ 25 min en 11 morceaux de moins de 3 min, refaits avec `python3 tools/bout_a_bout.py`).
 
+Pour démarrer le montage dans Premiere Pro ou DaVinci Resolve : `python3 tools/timeline_xml.py
+output/montage SION-timeline.xml SION-montage` écrit une séquence 1080p 25 i/s (XML Final Cut Pro 7)
+avec toutes les pièces dans l'ordre du film et un marqueur par partie et par chapitre. Le dernier
+argument est le dossier racine des médias, à relier à l'ouverture.
+
+Le teaser sans voix (environ 45 s) : `tools/build.sh teaser-cartons && tools/teaser.sh` monte les
+cartons de `timelines/teaser-cartons.js` avec des plans tirés des pièces finies, dans
+`output/SION-teaser-1080p.mp4`. La liste des plans (pièce, début, durée) est en tête du script.
+
 Le son ne contient que des bruitages, sans musique : les pièces s'intègrent au montage sous la
 musique du film. Chaque pièce a aussi ses bruitages seuls en `.wav` à côté du `.mp4`.
 
