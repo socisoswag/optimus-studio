@@ -11,8 +11,8 @@
  *   - 7 octobre 2023 : l'attaque menée par le Hamas tue environ 1 200 personnes en Israël ; 251 otages ;
  *   - 9 octobre : « siège complet » (électricité, nourriture, carburant) ; 13 octobre : ordre
  *     d'évacuation de 1,1 million d'habitants du nord vers le sud de l'oued Gaza ;
- *   - ministère de la Santé de Gaza : plus de 74 000 morts (octobre 2026) ; une étude de The Lancet
- *     Global Health juge ce décompte inférieur à la réalité ;
+ *   - ministère de la Santé de Gaza : 74 237 morts début octobre 2026 ; une étude publiée dans The Lancet
+ *     (Jamaluddine et al., 2025, morts par traumatisme jusqu'au 30 juin 2024) juge ce décompte inférieur à la réalité ;
  *   - environ 90 % des habitants déplacés (ONU) ; la plupart des logements endommagés ou détruits
  *     (UNOSAT) ; famine déclarée par l'IPC en août 2025 ;
  *   - CIJ, 26 janvier 2024 : mesures conservatoires ; CPI, 21 novembre 2024 : mandats d'arrêt contre
@@ -60,7 +60,7 @@
       id: 'morts', type: 'stat', dur: 12.0, fly: 1.4, layout: 'L', anchor: [480, 20],
       ghost: '2023', kicker: '7 octobre 2023 — octobre 2026', pre: 'Plus de', value: 74000, label: 'Palestiniens tués à Gaza',
       text: 'Selon le ministère de la Santé de Gaza. [[Un décompte sans doute inférieur à la réalité]], selon une étude publiée dans The Lancet.',
-      textAt: 1.6, hlAt: 6.0, source: 'Ministère de la Santé de Gaza, octobre 2026 · The Lancet Global Health', sourceAt: 5.0,
+      textAt: 1.6, hlAt: 6.0, source: 'Ministère de la Santé de Gaza, octobre 2026 · The Lancet, 2025', sourceAt: 5.0,
       countAt: 0.3, countDur: 5.0,
       cam: { lon: 34.38, lat: 31.4, w: 0.0175, pitch: 42, bearing: -44 },
       camEnd: { lon: 34.38, lat: 31.4, w: 0.016, pitch: 46, bearing: -40 },

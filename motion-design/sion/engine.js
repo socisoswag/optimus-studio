@@ -1828,8 +1828,10 @@
       } else if (s.type === 'cap') {
         html = `<div class="scrim"></div><div class="block">${eyebrowHTML()}<div class="captitle ln">${chars(s.title.toUpperCase())}</div>${s.text ? `<p class="text"${s.textW ? ` style="max-width:${s.textW}px"` : ''}>${words(s.text)}</p>` : ''}</div>`;
       } else if (s.type === 'quote') {
+        // native : le texte dans sa langue d'origine sous la traduction ; context : une ligne sous l'auteur
         html = `<div class="scrim"></div><div class="wrap"><i class="qm">“</i><p class="text qt">${words(s.text)}</p>
-          <div class="eyebrow qa"><i class="tick"></i><span class="tw"></span><i class="tick"></i></div></div>`;
+          ${s.native ? `<p class="qn" dir="rtl" lang="${s.lang || 'ar'}">${esc(s.native)}</p>` : ''}
+          <div class="eyebrow qa"><i class="tick"></i><span class="tw"></span><i class="tick"></i></div>${s.context ? `<p class="qc">${esc(fr(s.context))}</p>` : ''}</div>`;
       }
       el.innerHTML = html;
       if (s.faceList.length) {
@@ -1864,7 +1866,7 @@
         // le titre tient dans le bloc
         el.style.display = 'block';
         const nm = el.querySelector('.name'), maxW = s.titleMax || 980;
-        if (s.type === 'stat') nm.querySelector('.stn').innerHTML = fmtNum(s.value);
+        if (s.type === 'stat') nm.querySelector('.stn').innerHTML = fmtNum(s.value) + (s.unit ? `<i class="gs"></i>${esc(s.unit)}` : '');
         const widest = Math.max(...[...nm.querySelectorAll('.ln')].map((l) => l.scrollWidth));
         if (widest > maxW) nm.style.fontSize = `${Math.floor(parseFloat(getComputedStyle(nm).fontSize) * maxW / widest)}px`;
         el.style.display = '';
@@ -2376,7 +2378,7 @@
     const cp = E.outQuart(inv(c0, c0 + cd, u));
     const stn = R.lines[1].ln;
     const key = Math.round(s.value * cp / (cp < 1 ? 137 : 1));
-    if (R.numKey !== key) { R.numKey = key; stn.innerHTML = fmtNum(cp >= 1 ? s.value : key * 137); }
+    if (R.numKey !== key) { R.numKey = key; stn.innerHTML = fmtNum(cp >= 1 ? s.value : key * 137) + (s.unit ? `<i class="gs"></i>${esc(s.unit)}` : ''); }
     const sp = tw(u, c0 - 0.15, c0 + 0.35, E.outExpo);
     css(R, stn, 'transform', `translate3d(0,${f3((1 - sp) * 60)}%,0)`);
     css(R, stn, 'opacity', String(f3(sp)));
@@ -2397,7 +2399,7 @@
 
   function upCap(s, u) {
     const R = s.R; R.u = u;
-    const I = s.fly + (s.capAt || 0.3), D = s.dur;
+    const I = s.fly + (s.capAt || 0.3), D = s.out !== undefined ? s.out : s.dur;
     const block = R.q('.block');
     const ex = E.inCubic(inv(D - 0.25, D + 0.3, u));
     css(R, R.scrim, 'opacity', String(f3(tw(u, I - 0.5, I + 0.3) * (1 - ex))));
@@ -2425,6 +2427,9 @@
     const at = I + 1.0 + n;
     typewriter(R, R.tws[0], s.author, u, at, 34, false);
     R.qa('.qa .tick').forEach((tk) => css(R, tk, 'transform', `scaleX(${f3(tw(u, at - 0.2, at + 0.4))})`));
+    const qn = R.q('.qn'), qc = R.q('.qc');
+    if (qn) { const np = tw(u, I + 0.5 + n, I + 1.3 + n, E.outCubic); css(R, qn, 'opacity', String(f3(np))); css(R, qn, 'clipPath', `inset(-30% 0 -30% ${f3((1 - np) * 100)}%)`); }
+    if (qc) { const cp = tw(u, at + 0.9, at + 1.6, E.outCubic); css(R, qc, 'opacity', String(f3(cp))); css(R, qc, 'transform', `translate3d(0,${f3((1 - cp) * 14)}px,0)`); }
     const ex = E.inCubic(inv(D - 0.4, D + 0.4, u));
     css(R, wrapEl, 'transform', `scale(${f3(1 + 0.035 * inv(I, D, u) + 0.3 * ex)})`);
     css(R, wrapEl, 'opacity', String(f3(1 - ex)));

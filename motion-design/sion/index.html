@@ -292,6 +292,8 @@
   .ftag b .cur { display: inline-block; width: .5em; height: .9em; background: var(--ember); vertical-align: -.08em; margin-left: .08em; }
   .ftag span { font-family: var(--mono); font-size: 16px; letter-spacing: .22em; color: var(--hot); opacity: 0; text-shadow: 0 2px 12px rgba(0,0,0,.9); }
   .quote.has-face .wrap { padding: 0 600px 0 170px; }
+  .quote .qn { margin: 22px 0 0; font-family: 'Noto Kufi Arabic', sans-serif; font-weight: 600; font-size: 44px; line-height: 1.5; color: var(--ash); opacity: 0; }
+  .quote .qc { margin: 16px 0 0; max-width: 1100px; font-family: var(--serif); font-size: 27px; line-height: 1.4; color: var(--ash); opacity: 0; }
 
   /* légende de bas d'écran (cartes de guerre) */
   .cap .scrim { background: linear-gradient(0deg, rgba(9,8,7,.88) 0%, rgba(9,8,7,.55) 26%, rgba(9,8,7,0) 48%); }
@@ -299,6 +301,19 @@
   .cap .captitle { margin-top: 14px; font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 860; font-size: 96px; line-height: .9; text-transform: uppercase; color: var(--stone); overflow: hidden; padding-top: .14em; margin-top: calc(14px - .14em); white-space: nowrap; }
   .cap .captitle .ch { display: inline-block; }
   .cap .text { margin-top: 14px; font-size: 34px; max-width: 1200px; }
+  /* cartons à poser sur des images (fond transparent, ?alpha=1) : plus petits, ombre portée pour la lisibilité */
+  .cap.small .block { bottom: 92px; left: 112px; }
+  .cap.small .captitle { font-size: 74px; }
+  .cap.small .text { font-size: 30px; max-width: 980px; }
+  .cap.source .block { bottom: 70px; left: auto; right: 112px; width: auto; text-align: right; }
+  .cap.source .captitle { font-size: 0; height: 0; margin: 0; padding: 0; }
+  .cap.source .eyebrow { justify-content: flex-end; font-size: 17px; }
+  html.alpha, html.alpha body { background: transparent !important; }
+  html.alpha #world, html.alpha #hud, html.alpha #hudDom, html.alpha #flash, html.alpha #grain, html.alpha #vignette, html.alpha #flicker, html.alpha #fade { display: none !important; }
+  html.alpha .cap .scrim { background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.28) 18%, rgba(0,0,0,0) 36%); }
+  html.alpha .cap.source .scrim { background: none; }
+  html.alpha .cap .captitle, html.alpha .cap .text, html.alpha .cap .eyebrow { text-shadow: 0 2px 16px rgba(0,0,0,.55), 0 0 2px rgba(0,0,0,.4); }
+  html.alpha .cap .eyebrow { color: var(--stone); }
   #clock { position: absolute; left: 0; right: 0; top: 112px; text-align: center; font-family: var(--mono); font-weight: 500; font-size: 30px; letter-spacing: .32em; color: var(--hot); text-transform: uppercase; opacity: 0; }
 
   /* HUD */
@@ -315,6 +330,7 @@
 </style>
 </head>
 <body>
+  <script>if (/[?&]alpha=1/.test(location.search)) document.documentElement.classList.add('alpha');</script>
   <div id="world">
     <canvas id="bg" width="1920" height="1080"></canvas>
     <canvas id="map" width="1920" height="1080"></canvas>

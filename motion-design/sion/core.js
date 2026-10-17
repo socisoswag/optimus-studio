@@ -37,7 +37,7 @@
     arafat: ['Yasser Arafat', '1929 — 2004'], netanyahou: ['Benyamin Netanyahou', 'né en 1949'],
     lieberman: ['Avigdor Lieberman', 'né en 1958'], bhl: ['Bernard-Henri Lévy', 'né en 1948'],
     finkielkraut: ['Alain Finkielkraut', 'né en 1949'], rabin: ['Yitzhak Rabin', '1922 — 1995'],
-    sharon: ['Ariel Sharon', '1928 — 2014'],
+    sharon: ['Ariel Sharon', '1928 — 2014'], darwich: ['Mahmoud Darwich', '1941 — 2008'],
   };
   root.CITIES = CITIES;
   root.face = (key, opts = {}) => ({ photo: `portraits/${key}.png`, name: (PEOPLE[key] || [key])[0], dates: (PEOPLE[key] || [])[1] || '', ...opts });

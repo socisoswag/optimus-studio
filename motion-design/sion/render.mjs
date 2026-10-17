@@ -4,6 +4,7 @@
 //   node render.mjs --timeline generique --out video.mp4                  vidéo complète
 //
 // --timeline : nom d'un fichier de timelines/ (par défaut : chronologie)
+// --alpha : fond transparent (cartons à poser sur des images) ; vidéo en MOV, codec PNG avec couche alpha
 // Options vidéo : --workers 4  --shutter 2 (sous-images par image, flou de bougé)
 //                 --from 0 --to 12 (secondes)  --crf 12
 import http from 'node:http';
@@ -43,9 +44,11 @@ async function openPage(browser, port) {
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
   page.on('pageerror', (e) => console.error('[page]', e.message));
   page.on('console', (m) => { if (m.type() === 'error') console.error('[console]', m.text()); });
-  await page.goto(`http://127.0.0.1:${port}/index.html?tl=${encodeURIComponent(TLNAME)}`);
+  await page.goto(`http://127.0.0.1:${port}/index.html?tl=${encodeURIComponent(TLNAME)}${ALPHA ? '&alpha=1' : ''}`);
   await page.waitForFunction(() => window.READY === true, null, { timeout: 120000 });
   page.cdp = await page.context().newCDPSession(page);
+  // fond transparent : la capture garde la couche alpha
+  if (ALPHA) await page.cdp.send('Emulation.setDefaultBackgroundColorOverride', { color: { r: 0, g: 0, b: 0, a: 0 } });
   return page;
 }
 
@@ -61,6 +64,7 @@ const port = srv.address().port;
 const browser = await chromium.launch({ args: ['--disable-checker-imaging', '--disable-gpu', '--force-color-profile=srgb', '--font-render-hinting=none'] });
 const FPS = 25;
 const TLNAME = String(args.timeline || 'chronologie');
+const ALPHA = !!args.alpha; // --alpha : fond transparent, vidéo MOV (codec PNG, couche alpha)
 
 try {
   if (args.stills) {
@@ -84,7 +88,7 @@ try {
     const workers = parseInt(args.workers || Math.max(1, Math.min(4, os.cpus().length)), 10);
     const shutter = parseInt(args.shutter || 1, 10); // sous-images (obturateur 180°)
     const crf = String(args.crf || 12);
-    const out = path.resolve(args.out || path.join(ROOT, 'output', `${TLNAME}.mp4`));
+    const out = path.resolve(args.out || path.join(ROOT, 'output', `${TLNAME}.${ALPHA ? 'mov' : 'mp4'}`));
     const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'chrono-'));
     const per = Math.ceil((n1 - n0) / workers);
     const started = Date.now();
@@ -93,12 +97,12 @@ try {
       const a = n0 + w * per, b = Math.min(n1, a + per);
       if (a >= b) return null;
       const page = await openPage(browser, port);
-      const file = path.join(tmp, `part_${String(w).padStart(2, '0')}.mkv`);
+      const file = path.join(tmp, `part_${String(w).padStart(2, '0')}.${ALPHA ? 'mov' : 'mkv'}`);
       const vf = shutter > 1
         ? `tmix=frames=${shutter},select='eq(mod(n\\,${shutter})\\,${shutter - 1})',setpts=N/${FPS}/TB`
         : 'null';
       const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-c:v', 'png', '-framerate', String(FPS * shutter), '-i', '-',
-        '-vf', vf, '-r', String(FPS), '-c:v', 'libx264', '-preset', 'medium', '-crf', crf, '-tune', 'grain', '-pix_fmt', 'yuv420p', file], { stdio: ['pipe', 'inherit', 'inherit'] });
+        '-vf', vf, '-r', String(FPS), ...(ALPHA ? ['-c:v', 'png', '-pix_fmt', 'rgba'] : ['-c:v', 'libx264', '-preset', 'medium', '-crf', crf, '-tune', 'grain', '-pix_fmt', 'yuv420p']), file], { stdio: ['pipe', 'inherit', 'inherit'] });
       const closed = new Promise((r) => ff.on('close', r));
       for (let f = a; f < b; f++) {
         for (let k = 0; k < shutter; k++) {
@@ -124,7 +128,7 @@ try {
     const audio = args.audio ? ['-i', path.resolve(args.audio)] : [];
     const map = args.audio ? ['-map', '0:v', '-map', '1:a', '-c:a', 'aac', '-b:a', '320k', '-shortest'] : [];
     await new Promise((res, rej) => {
-      const p = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, ...audio, '-c:v', 'copy', ...map, '-movflags', '+faststart', out], { stdio: 'inherit' });
+      const p = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, ...audio, '-c:v', 'copy', ...map, ...(ALPHA ? [] : ['-movflags', '+faststart']), out], { stdio: 'inherit' });
       p.on('close', (c) => (c === 0 ? res() : rej(new Error('ffmpeg concat ' + c))));
     });
     fs.rmSync(tmp, { recursive: true, force: true });

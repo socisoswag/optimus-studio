@@ -30,7 +30,7 @@ SRC, DST = sys.argv[1], sys.argv[2]
 MODELS = os.environ.get("MODELS", ".")
 # recadrages serrés (fractions de la hauteur gardées) pour les photos prises de trop loin
 # (haut, bas) ou (gauche, haut, droite, bas)
-CROP = {"abd-al-qadir": (0.0, 0.64), "mcmahon": (0.1, 0.0, 0.9, 0.56), "finkielkraut": (0.18, 0.0, 0.86, 0.62), "sharon": (0.0, 0.1, 0.9, 0.6)}
+CROP = {"abd-al-qadir": (0.0, 0.64), "mcmahon": (0.1, 0.0, 0.9, 0.56), "finkielkraut": (0.18, 0.0, 0.86, 0.62), "sharon": (0.0, 0.1, 0.9, 0.6), "darwich": (0.545, 0.2, 0.93, 0.7)}
 # débruitage plafonné pour les tirages très compressés (sinon la peau fait des plaques)
 DENOISE_MAX = {"mcmahon": 3.5}
 # zones à exclure du détourage (polygones en fractions de l'image) : voisins collés au sujet
