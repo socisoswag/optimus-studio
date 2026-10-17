@@ -48,11 +48,11 @@ chapitre, et chaque séquence découpée **plan par plan** (séquence complète,
 `PLANS.md` avec la durée, la place dans la séquence et le texte de chaque plan). Il se refait avec
 `python3 tools/montage.py`.
 
-Pour tout voir d'une traite dans l'ordre du film : `output/SION-bout-a-bout-1080p-partie-1.mp4` … `-11.mp4`
-(environ 25 min en 11 morceaux de moins de 3 min, refaits avec `python3 tools/bout_a_bout.py`).
+Pour tout voir d'une traite dans l'ordre du film : `output/SION-bout-a-bout-1080p-partie-1.mp4` … `-14.mp4`
+(environ 33 min en 14 morceaux de moins de 3 min, refaits avec `python3 tools/bout_a_bout.py`).
 
-Pour démarrer le montage dans Premiere Pro ou DaVinci Resolve : `python3 tools/timeline_xml.py
-output/montage SION-timeline.xml SION-montage` écrit une séquence 1080p 25 i/s (XML Final Cut Pro 7)
+Pour démarrer le montage dans Premiere Pro ou DaVinci Resolve : `output/montage/SION-timeline.xml`, refait avec
+`python3 tools/timeline_xml.py output/montage output/montage/SION-timeline.xml SION-montage`, est une séquence 1080p 25 i/s (XML Final Cut Pro 7)
 avec toutes les pièces dans l'ordre du film et un marqueur par partie et par chapitre. Le dernier
 argument est le dossier racine des médias, à relier à l'ouverture.
 
