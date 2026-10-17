@@ -80,7 +80,7 @@ def refine_alpha(gray, m):
     except ImportError:
         return np.clip((m - 0.3) / 0.4, 0, 1)
     h, w = gray.shape
-    k = 900 / max(h, w)
+    k = 760 / max(h, w)  # matting à ~760 px : assez fin pour les cheveux, sans saturer la mémoire
     small = cv2.resize(gray, None, fx=k, fy=k, interpolation=cv2.INTER_AREA) if k < 1 else gray
     ms = cv2.resize(m, (small.shape[1], small.shape[0]), interpolation=cv2.INTER_AREA)
     fg = cv2.erode((ms > 0.85).astype(np.uint8), np.ones((9, 9), np.uint8))
@@ -88,6 +88,10 @@ def refine_alpha(gray, m):
     tri = np.full(ms.shape, 0.5)
     tri[fg > 0] = 1.0
     tri[bg > 0] = 0.0
+    if (tri == 0.5).mean() > 0.3:  # bord très incertain (costume sombre sur fond sombre) : calcul allégé
+        k2 = 0.7
+        small = cv2.resize(small, None, fx=k2, fy=k2, interpolation=cv2.INTER_AREA)
+        tri = cv2.resize(tri, (small.shape[1], small.shape[0]), interpolation=cv2.INTER_NEAREST)
     img = cv2.cvtColor(small, cv2.COLOR_GRAY2RGB).astype(np.float64) / 255.0
     a = estimate_alpha_cf(img, tri)
     return np.clip(cv2.resize(a.astype(np.float32), (w, h), interpolation=cv2.INTER_CUBIC), 0, 1)
@@ -100,7 +104,7 @@ def decontaminate(gray, a):
     except ImportError:
         return gray
     h, w = gray.shape
-    k = 1100 / max(h, w)
+    k = 900 / max(h, w)
     small = cv2.resize(gray, None, fx=k, fy=k, interpolation=cv2.INTER_AREA) if k < 1 else gray
     sa = cv2.resize(a, (small.shape[1], small.shape[0]), interpolation=cv2.INTER_AREA)
     fg = estimate_foreground_ml(cv2.cvtColor(small, cv2.COLOR_GRAY2RGB).astype(np.float64) / 255.0, sa.astype(np.float64))
@@ -180,8 +184,11 @@ def enhance(gray):
 
 os.makedirs(DST, exist_ok=True)
 files = sorted(f for f in glob.glob(os.path.join(SRC, "*")) if f.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp")))
+FORCE = os.environ.get("FORCE") == "1"
 for f in files:
     name = os.path.splitext(os.path.basename(f))[0]
+    if not FORCE and os.path.exists(os.path.join(DST, f"{name}.png")):
+        continue  # déjà fait (FORCE=1 pour tout refaire)
     bgr = cv2.imread(f, cv2.IMREAD_COLOR)
     if bgr is None:
         print("illisible :", f)
