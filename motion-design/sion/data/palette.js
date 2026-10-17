@@ -7,9 +7,9 @@
  *   halation  teinte du halo autour des hautes lumières (finition pellicule, tools/build.sh)
  */
 window.PALETTE = {
-  ember: [255, 91, 31],
-  hot: [255, 174, 90],
-  life: null,
-  lifeHot: null,
-  halation: [1, 0.48, 0.22],
+  ember: [232, 52, 30],     // vermillon : force, violence, occupation, bilans
+  hot: [255, 116, 78],      // vermillon vif : sur-titres, chiffres, cœur des lueurs
+  life: [170, 182, 110],    // olive pâle : villages, villes, réfugiés (la vie palestinienne)
+  lifeHot: [212, 216, 152], // olive clair
+  halation: [1, 0.34, 0.2], // halo chaud tirant vers le rouge
 };

@@ -58,14 +58,14 @@
     { seg: 'nakba', at: 2.9, dur: 3.0, n: 60, from: [[35.50, 32.50], [35.40, 32.60]], to: [35.88, 32.28], travel: [1.6, 2.4], bend: 0.2, originHeat: 1, R: 240 },
     { seg: 'nakba', at: 3.1, dur: 3.0, n: 60, from: [[35.18, 31.78], [35.15, 31.80]], to: [35.45, 31.86], travel: [1.6, 2.4], bend: -0.2, originHeat: 1, spreadTo: 0.08, R: 220 },
     // 1948 – années 1970
-    { seg: 'pays-arabes', at: 2.5, dur: 6.0, n: 170, from: [[-7.59, 33.57], [-5.0, 34.03], [-8.0, 31.63]], to: ISRAEL, travel: [5.0, 6.8], bend: 0.1, spread: 0.6, spreadTo: 0.25, R: 130 },
-    { seg: 'pays-arabes', at: 3.0, dur: 4.0, n: 110, from: [[3.06, 36.75], [-0.63, 35.70], [6.61, 36.36]], to: [4.2, 44.6], travel: [2.4, 3.4], bend: 0.12, spread: 0.4, spreadTo: 1.2, R: 220 },
-    { seg: 'pays-arabes', at: 3.6, dur: 5.0, n: 70, from: [[10.18, 36.80], [10.86, 33.80]], to: ISRAEL, travel: [4.2, 5.6], bend: 0.1, spread: 0.3, spreadTo: 0.25, R: 130 },
-    { seg: 'pays-arabes', at: 4.3, dur: 4.0, n: 50, from: [[13.19, 32.89], [20.07, 32.12]], to: ISRAEL, travel: [3.6, 4.6], bend: 0.1, spread: 0.3, spreadTo: 0.25, R: 130 },
-    { seg: 'pays-arabes', at: 5.4, dur: 4.0, n: 60, from: [[31.24, 30.04], [29.92, 31.20]], to: ISRAEL, travel: [1.8, 2.8], bend: 0.18, spread: 0.3, spreadTo: 0.25, R: 130 },
-    { seg: 'pays-arabes', at: 6.4, dur: 4.0, n: 130, from: [[44.37, 33.31], [47.8, 30.5]], to: ISRAEL, travel: [2.4, 3.4], bend: -0.22, spread: 0.4, spreadTo: 0.25, R: 130 },
-    { seg: 'pays-arabes', at: 7.2, dur: 4.0, n: 55, from: [[44.21, 15.35], [45.03, 12.79]], to: ISRAEL, travel: [3.0, 4.0], bend: 0.22, spread: 0.4, spreadTo: 0.25, R: 130 },
-    { seg: 'pays-arabes', at: 7.8, dur: 3.0, n: 30, from: [[36.29, 33.51], [37.16, 36.20], [35.50, 33.89]], to: ISRAEL, travel: [1.4, 2.2], bend: 0.2, spread: 0.2, spreadTo: 0.2, R: 130 },
+    { seg: 'pays-arabes', cold: true, heat: 0.35, at: 2.5, dur: 6.0, n: 170, from: [[-7.59, 33.57], [-5.0, 34.03], [-8.0, 31.63]], to: ISRAEL, travel: [5.0, 6.8], bend: 0.1, spread: 0.6, spreadTo: 0.25, R: 130 },
+    { seg: 'pays-arabes', cold: true, heat: 0.35, at: 3.0, dur: 4.0, n: 110, from: [[3.06, 36.75], [-0.63, 35.70], [6.61, 36.36]], to: [4.2, 44.6], travel: [2.4, 3.4], bend: 0.12, spread: 0.4, spreadTo: 1.2, R: 220 },
+    { seg: 'pays-arabes', cold: true, heat: 0.35, at: 3.6, dur: 5.0, n: 70, from: [[10.18, 36.80], [10.86, 33.80]], to: ISRAEL, travel: [4.2, 5.6], bend: 0.1, spread: 0.3, spreadTo: 0.25, R: 130 },
+    { seg: 'pays-arabes', cold: true, heat: 0.35, at: 4.3, dur: 4.0, n: 50, from: [[13.19, 32.89], [20.07, 32.12]], to: ISRAEL, travel: [3.6, 4.6], bend: 0.1, spread: 0.3, spreadTo: 0.25, R: 130 },
+    { seg: 'pays-arabes', cold: true, heat: 0.35, at: 5.4, dur: 4.0, n: 60, from: [[31.24, 30.04], [29.92, 31.20]], to: ISRAEL, travel: [1.8, 2.8], bend: 0.18, spread: 0.3, spreadTo: 0.25, R: 130 },
+    { seg: 'pays-arabes', cold: true, heat: 0.35, at: 6.4, dur: 4.0, n: 130, from: [[44.37, 33.31], [47.8, 30.5]], to: ISRAEL, travel: [2.4, 3.4], bend: -0.22, spread: 0.4, spreadTo: 0.25, R: 130 },
+    { seg: 'pays-arabes', cold: true, heat: 0.35, at: 7.2, dur: 4.0, n: 55, from: [[44.21, 15.35], [45.03, 12.79]], to: ISRAEL, travel: [3.0, 4.0], bend: 0.22, spread: 0.4, spreadTo: 0.25, R: 130 },
+    { seg: 'pays-arabes', cold: true, heat: 0.35, at: 7.8, dur: 3.0, n: 30, from: [[36.29, 33.51], [37.16, 36.20], [35.50, 33.89]], to: ISRAEL, travel: [1.4, 2.2], bend: 0.2, spread: 0.2, spreadTo: 0.2, R: 130 },
   ];
 
   const markers = [
