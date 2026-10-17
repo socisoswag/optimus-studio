@@ -190,12 +190,12 @@
 
   // Visages : personnages détourés (PNG transparent) incrustés sur n'importe quel écran.
   // Fiches et paires de la chronologie : automatique dès qu'elles ont une photo .png.
-  const FACE_POS = { R: [1500, 940], L: [420, 940], C: [960, 860], pairA: [330, 880], pairB: [1590, 880] };
+  const FACE_POS = { R: [1500, 940], L: [420, 940], C: [960, 860], pairA: [735, 800], pairB: [1185, 800] };
   SEG.forEach((s) => {
     const list = [];
     const png = (ph) => ph && /\.png$/i.test(ph);
     if (s.type === 'figure' && png(s.photo)) list.push({ photo: s.photo, name: s.name.join(' '), dates: s.life, side: s.layout === 'R' ? 'L' : 'R', at: s.fly - 0.35, link: { lon: s.lon, lat: s.lat }, tag: false });
-    if (s.type === 'pair') s.people.forEach((pp, k) => { if (png(pp.photo)) list.push({ photo: pp.photo, name: pp.name.join(' '), dates: pp.life, side: k ? 'pairB' : 'pairA', at: s.fly - 0.3 + 0.2 * k, dim: 0.8, tag: false }); });
+    if (s.type === 'pair') s.people.forEach((pp, k) => { if (png(pp.photo)) list.push({ photo: pp.photo, name: pp.name.join(' '), dates: pp.life, side: k ? 'pairB' : 'pairA', at: s.fly - 0.3 + 0.2 * k, dim: 0.8, tag: false, norm: 250, headTop: 300 }); });
     (s.faces || []).forEach((f) => list.push({ ...f }));
     s.faceList = list.map((f) => {
       const [x0, h0] = FACE_POS[f.side || 'R'];
@@ -1764,7 +1764,7 @@
   function buildSegments() {
     for (const s of SEG) {
       const el = document.createElement('div');
-      el.className = `seg ${s.type} ${s.layout || ''} ${['intro', 'event', 'outro', 'beat', 'title', 'credit', 'quote'].includes(s.type) ? 'center' : ''} ${s.type === 'chapter' ? 'c-' + s.layout : ''} ${s.pos ? 'pos-' + s.pos : ''} ${s.faces && s.faces.length ? 'has-face' : ''}`;
+      el.className = `seg ${s.type} ${s.layout || ''} ${['intro', 'event', 'outro', 'beat', 'title', 'credit', 'quote'].includes(s.type) ? 'center' : ''} ${s.type === 'chapter' ? 'c-' + s.layout : ''} ${s.pos ? 'pos-' + s.pos : ''} ${s.faces && s.faces.length ? 'has-face' : ''} ${s.type === 'pair' && s.faceList.length ? 'pf' : ''}`;
       let html = '';
       if (s.type === 'figure') {
         html = `<div class="scrim"></div><div class="ghost">${yearStr(s.year)}</div>
@@ -2678,36 +2678,58 @@
 
   // Charge chaque photo détourée, repère la tête dans le canal alpha et y place réticule et nom.
   // Une photo absente est simplement ignorée (le reste de la pièce se rend normalement).
+  const FACE_IMGS = []; // références gardées : le navigateur ne relâche pas l'image, le CSS la retrouve entière
   async function loadFaces() {
     const jobs = [];
     for (const s of SEG) s.faceList.forEach((f, k) => jobs.push(new Promise((done) => {
       const img = new Image();
+      FACE_IMGS.push(img);
       img.onload = () => {
-        const sc = Math.min(f.w / img.naturalWidth, f.h / img.naturalHeight);
-        const dw = img.naturalWidth * sc, dh = img.naturalHeight * sc, left = f.x - dw / 2, top = H - dh;
-        const cw = Math.max(1, Math.round(dw / 4)), ch = Math.max(1, Math.round(dh / 4));
-        const c = canvas(cw, ch), g = c.getContext('2d');
-        g.drawImage(img, 0, 0, cw, ch);
-        const A = g.getImageData(0, 0, cw, ch).data, opaque = (x, y) => A[(y * cw + x) * 4 + 3] > 128;
-        let y0 = 0;
-        while (y0 < ch - 1 && ![...Array(cw).keys()].some((x) => opaque(x, y0))) y0++;
-        const pH = ch - y0, yMid = Math.min(ch - 1, Math.round(y0 + 0.17 * pH));
-        let x0 = cw, x1 = 0;
-        for (let x = 0; x < cw; x++) if (opaque(x, yMid)) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); }
-        if (x1 <= x0) { x0 = 0; x1 = cw - 1; }
+        const el = s.R.el.querySelectorAll('.fwrap')[k];
+        const geo = () => {
+          const sc = Math.min(f.w / img.naturalWidth, f.h / img.naturalHeight);
+          const dw = img.naturalWidth * sc, dh = img.naturalHeight * sc, left = f.x - dw / 2, top = H - dh - (f.lift || 0);
+          const cw = Math.max(1, Math.round(dw / 4)), ch = Math.max(1, Math.round(dh / 4));
+          const c = canvas(cw, ch), g = c.getContext('2d');
+          g.drawImage(img, 0, 0, cw, ch);
+          const A = g.getImageData(0, 0, cw, ch).data, opaque = (x, y) => A[(y * cw + x) * 4 + 3] > 128;
+          let y0 = 0;
+          while (y0 < ch - 1 && ![...Array(cw).keys()].some((x) => opaque(x, y0))) y0++;
+          const pH = ch - y0, yMid = Math.min(ch - 1, Math.round(y0 + 0.17 * pH));
+          let x0 = cw, x1 = 0;
+          for (let x = 0; x < cw; x++) if (opaque(x, yMid)) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); }
+          const found = x1 > x0;
+          if (!found) { x0 = 0; x1 = cw - 1; }
+          return { dh, left, top, x0, x1, y0, pH, yMid, found };
+        };
+        let G = geo();
+        // paire : têtes de même largeur (norm, en px) et alignées en haut (headTop), quel que soit
+        // le cadrage de la photo d'origine ; le bas du buste est déjà fondu dans le PNG
+        if (f.norm && G.found) {
+          const kk = clamp(f.norm / ((G.x1 - G.x0) * 4), 0.6, 1.4);
+          f.w = Math.round(f.w * kk); f.h = Math.round(f.h * kk);
+          G = geo();
+          if (f.headTop !== undefined) { f.lift = Math.round(clamp(G.top + G.y0 * 4 - f.headTop, -260, 360)); G = geo(); }
+          Object.assign(el.querySelector('.face').style, { left: `${f.x - f.w / 2}px`, width: `${f.w}px`, height: `${f.h}px`, bottom: `${f.lift || 0}px` });
+        }
+        const { left, top, x0, x1, pH, yMid } = G;
         f.hx = left + ((x0 + x1) / 2) * 4; f.hy = top + yMid * 4;
         f.hr = Math.max((x1 - x0) * 4 * 0.62, pH * 4 * 0.13);
-        const el = s.R.el.querySelectorAll('.fwrap')[k];
         const reti = el.querySelector('.freti'), r = f.hr * 1.25;
         Object.assign(reti.style, { left: `${f.hx - r}px`, top: `${f.hy - r * 1.05}px`, width: `${2 * r}px`, height: `${2.2 * r}px` });
         const tag = el.querySelector('.ftag');
         if (tag) {
-          if (f.tagPos === 'above') Object.assign(tag.style, { left: `${f.hx - 320}px`, width: '640px', top: `${f.hy - r * 1.05 - 92}px` });
-          else if (f.dir > 0) Object.assign(tag.style, { right: `${W - (f.hx - r - 26)}px`, top: `${f.hy - 30}px` });
-          else Object.assign(tag.style, { left: `${f.hx + r + 26}px`, top: `${f.hy - 30}px` });
+          // au-dessus de la tête, sauf si elle est si haute que le nom toucherait le bandeau du haut :
+          // il passe alors à côté de la tête
+          const above = f.hy - r * 1.05 - 92, side = f.tagPos === 'above' && above < 118;
+          if (side) tag.classList.replace('ta', f.dir > 0 ? 'tl' : 'tr');
+          const ty = side ? Math.max(118, f.hy - r * 1.05) : f.hy - 30;
+          if (f.tagPos === 'above' && !side) Object.assign(tag.style, { left: `${f.hx - 320}px`, width: '640px', top: `${above}px` });
+          else if (f.dir > 0) Object.assign(tag.style, { right: `${W - (f.hx - r - 26)}px`, top: `${ty}px` });
+          else Object.assign(tag.style, { left: `${f.hx + r + 26}px`, top: `${ty}px` });
         }
         f.ok = true;
-        done();
+        img.decode().catch(() => {}).then(done);
       };
       img.onerror = () => { const el = s.R.el.querySelectorAll('.fwrap')[k]; if (el) el.style.display = 'none'; done(); };
       img.src = f.photo;

@@ -81,7 +81,7 @@
   ];
 
   // Chapitres consacrés à une ou deux personnes : leur visage, à l'opposé du titre
-  const FACES = { 3: ['dreyfus'], 4: ['herzl'], 7: ['balfour'], 9: ['arlozoroff'], 16: ['ben-gourion'], 18: ['meir'], 21: ['arafat'], 24: ['netanyahou', 'lieberman'], 31: ['bhl', 'finkielkraut'] };
+  const FACES = { 3: ['dreyfus'], 4: ['herzl'], 7: ['balfour'], 9: ['arlozoroff'], 16: ['ben-gourion'], 18: ['meir'], 21: ['arafat'], 24: ['netanyahou', 'lieberman'], 31: ['finkielkraut', 'bhl'] };
 
   const DUR = 4.6;
   const LAYOUTS = ['L', 'C', 'R'];
@@ -112,8 +112,9 @@
     };
     if (FACES[n]) {
       const side = layout === 'L' ? 'R' : 'L', two = FACES[n].length > 1;
-      const xs = side === 'R' ? (two ? [1340, 1660] : [1520]) : (two ? [580, 260] : [400]);
-      s.faces = FACES[n].map((k, j) => root.face(k, { side, x: xs[j], h: two ? 800 - 30 * j : 900, at: 0.45 + 0.35 * j, until: DUR, tag: false }));
+      // à deux, visages plus petits et repoussés vers le bord : les titres longs restent dégagés
+      const xs = side === 'R' ? (two ? [1575, 1815] : [1520]) : (two ? [450, 170] : [400]);
+      s.faces = FACES[n].map((k, j) => root.face(k, { side, x: xs[j], h: two ? 740 - 30 * j : 900, at: 0.45 + 0.35 * j, until: DUR, tag: false }));
     }
     if (fx === 'heat') s.heat = { R: 1300, amt: 0.9 };
     if (fx === 'flicker') s.heat = { R: 1500, amt: 1.1, flicker: true };

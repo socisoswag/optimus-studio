@@ -118,6 +118,16 @@
   .pair .side.b { right: 120px; text-align: right; }
   .pair .name { font-size: 150px; margin-top: 0; }
   .pair .side.b .meta { justify-content: flex-end; }
+  /* paire avec visages détourés : les deux visages au centre, de part et d'autre de l'esperluette,
+     les noms resserrés sur les bords extérieurs pour ne jamais passer sur un visage */
+  .pair.pf .side { width: 500px; }
+  .pair.pf .side.a { left: 96px; }
+  .pair.pf .side.b { right: 96px; }
+  .pair.pf .name { font-size: 112px; }
+  .pair.pf .native { font-size: 42px; }
+  .pair.pf .amp { top: 330px; font-size: 200px; }
+  .pair.pf .bottom { top: 800px; left: 470px; right: 470px; }
+  .pair.pf .bottom .text { font-size: 32px; text-shadow: 0 2px 14px rgba(9,8,7,.95), 0 0 30px rgba(9,8,7,.8); }
   .pair .amp { position: absolute; left: 50%; top: 300px; transform: translateX(-50%); font-family: var(--serif); font-style: italic; font-weight: 300; font-variation-settings: 'opsz' 72; font-size: 230px; line-height: 1; color: var(--ember); text-shadow: 0 0 40px rgba(var(--ember-rgb),.55); }
   .pair .top { position: absolute; top: 150px; left: 0; right: 0; text-align: center; }
   .pair .top .eyebrow, .split .footer .eyebrow, .center .eyebrow { justify-content: center; }

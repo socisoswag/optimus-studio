@@ -28,8 +28,8 @@
 
   // visages : apparaissent avec la ligne de leur chapitre, reliés à leur repère sur la carte
   segments[0].faces = [
-      root.face('balfour', { x: 1560, h: 720, at: 2.2, until: 5.4, link: { lon: -0.13, lat: 51.51 } }),
-      root.face('arlozoroff', { x: 1560, h: 720, at: 6.1, until: 10.4, link: { lon: 13.4, lat: 52.52 } }),
+      root.face('balfour', { tagPos: 'above', x: 1560, h: 720, at: 2.2, until: 5.4, link: { lon: -0.13, lat: 51.51 } }),
+      root.face('arlozoroff', { tagPos: 'above', x: 1560, h: 720, at: 6.1, until: 10.4, link: { lon: 13.4, lat: 52.52 } }),
   ];
 
   root.TL = root.buildTL({

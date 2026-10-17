@@ -32,7 +32,7 @@ function serve() {
     const srv = http.createServer((req, res) => {
       const p = path.join(ROOT, decodeURIComponent(new URL(req.url, 'http://x').pathname));
       if (!p.startsWith(ROOT) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { res.writeHead(404); res.end(); return; }
-      res.writeHead(200, { 'Content-Type': MIME[path.extname(p).toLowerCase()] || 'application/octet-stream' });
+      res.writeHead(200, { 'Content-Type': MIME[path.extname(p).toLowerCase()] || 'application/octet-stream', 'Cache-Control': 'max-age=86400' });
       fs.createReadStream(p).pipe(res);
     });
     srv.listen(0, '127.0.0.1', () => resolve(srv));
@@ -58,7 +58,7 @@ async function frameAt(page, t, frame) {
 
 const srv = await serve();
 const port = srv.address().port;
-const browser = await chromium.launch({ args: ['--disable-gpu', '--force-color-profile=srgb', '--font-render-hinting=none'] });
+const browser = await chromium.launch({ args: ['--disable-checker-imaging', '--disable-gpu', '--force-color-profile=srgb', '--font-render-hinting=none'] });
 const FPS = 25;
 const TLNAME = String(args.timeline || 'chronologie');
 
