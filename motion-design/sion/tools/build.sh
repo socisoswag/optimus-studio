@@ -17,9 +17,12 @@ cd "$ROOT"
 mkdir -p output
 
 node render.mjs --timeline "$NAME" --workers "${WORKERS:-4}" --crf 14 $RFLAGS --out "$TMP/video.mp4"
+# tout se fabrique dans $TMP ; les fichiers finis ne rejoignent output/ qu'à la fin (jamais à moitié écrits)
+WAV="output/$NAME.wav"
 if [ "$OUTNAME" = "$NAME" ] || [ ! -f "output/$NAME.wav" ]; then
   node tools/cues.mjs "$NAME" > "$TMP/cues.json"
-  python3 tools/sound.py "$TMP/cues.json" "output/$NAME.wav"
+  python3 tools/sound.py "$TMP/cues.json" "$TMP/son.wav"
+  WAV="$TMP/son.wav"
 fi
 DUR=$(node -e "require('./core.js'); require('./timelines/$NAME.js'); console.log(globalThis.TL.total)")
 
@@ -32,18 +35,20 @@ FINISH="format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=s
 encode() { # $1 = débit vidéo, $2 = fichier de sortie, $3 = filtre vidéo
   ffmpeg -y -loglevel error -i "$TMP/video.mp4" -vf "$3" -c:v libx264 -preset slow -b:v "$1" -maxrate "$1" -bufsize "$1" \
     -tune grain -pix_fmt yuv420p -pass 1 -passlogfile "$TMP/x264" -an -f mp4 /dev/null
-  ffmpeg -y -loglevel error -i "$TMP/video.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -vf "$3" -c:v libx264 -preset slow \
+  ffmpeg -y -loglevel error -i "$TMP/video.mp4" -i "$WAV" -map 0:v -map 1:a -vf "$3" -c:v libx264 -preset slow \
     -b:v "$1" -maxrate "$1" -bufsize "$1" -tune grain -pix_fmt yuv420p -pass 2 -passlogfile "$TMP/x264" \
     -c:a aac -b:a 320k -t "$DUR" -movflags +faststart "$2"
 }
 
 # débit : 9 Mbit/s, abaissé pour les pièces longues afin de rester sous 95 Mo (GitHub refuse plus de 100 Mo)
 AUTO=$(python3 -c "print(min(9000, int(95 * 8000 / $DUR - 330)))")
-encode "${BITRATE:-${AUTO}k}" "output/$OUTNAME.mp4" "$FINISH"
+encode "${BITRATE:-${AUTO}k}" "$TMP/final.mp4" "$FINISH"
 
 if [ -n "${PREVIEW_DIR:-}" ]; then
   # aperçu partageable : 29 Mo maximum, en 1080p si possible
   KBPS=$(python3 -c "print(int(29 * 8192 / $DUR - 340))")
   encode "${KBPS}k" "$PREVIEW_DIR/apercu_$NAME.mp4" "$FINISH"
 fi
+[ "$WAV" = "$TMP/son.wav" ] && mv "$TMP/son.wav" "output/$NAME.wav"
+mv "$TMP/final.mp4" "output/$OUTNAME.mp4"
 ls -la "output/$OUTNAME.mp4" "output/$NAME.wav"
