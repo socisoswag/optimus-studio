@@ -62,7 +62,7 @@
     {
       id: 'fin', type: 'outro', dur: 6.8,
       eyebrow: '1948 · 1967 · 1973',
-      lines: ['Trois guerres.', 'Trois textes.', 'Une même terre.'],
+      lines: ['Votées par l’ONU,', 'jamais appliquées', 'en entier.'],
       cam: { lon: 35.3, lat: 31.6, w: 0.5, pitch: 28, bearing: 0 },
     },
   ];

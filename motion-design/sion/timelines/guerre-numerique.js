@@ -58,7 +58,7 @@
     {
       id: 'fin', type: 'outro', dur: D.fin,
       eyebrow: 'De 2023 à 2024',
-      lines: ['Faux profils.', 'Vrai budget.', 'Argent public.'],
+      lines: ['Des comptes inventés,', 'payés par un ministère', 'qui dément.'],
       cam: { lon: 35.0, lat: 31.9, w: 0.3, pitch: 28, bearing: 0 },
     },
   ];

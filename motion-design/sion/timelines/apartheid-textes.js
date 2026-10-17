@@ -22,7 +22,7 @@
     {
       id: 'mot', type: 'beat', dur: 6.2, hitAt: 0.9, rgb: 16,
       kicker: 'De 2021 à 2024 · Jérusalem · New York · Londres · La Haye', word: 'Apartheid',
-      sub: 'Quatre textes. Ce qu’ils disent, mot pour mot.', subAt: 1.8,
+      sub: 'Une ONG israélienne, deux ONG internationales, la Cour de l’ONU.', subAt: 1.8,
       cam: { lon: 35.1, lat: 31.8, w: 0.3, pitch: 36, bearing: -8 },
       camEnd: { lon: 35.15, lat: 31.8, w: 0.22, pitch: 42, bearing: 4 },
     },
@@ -74,7 +74,7 @@
     {
       id: 'fin', type: 'outro', dur: 6.8,
       eyebrow: '2021 · 2022 · 2024',
-      lines: ['Quatre textes.', 'Trois ans.', 'Une même terre.'],
+      lines: ['Jérusalem.', 'New York, Londres.', 'La Haye.'],
       cam: { lon: 35.2, lat: 31.8, w: 0.36, pitch: 28, bearing: 0 },
     },
   ];

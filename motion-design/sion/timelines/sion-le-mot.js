@@ -56,7 +56,7 @@
     {
       id: 'fin', type: 'outro', dur: 7.0, fly: 1.6, hitAt: 1.0,
       eyebrow: 'De la Bible à 1890',
-      lines: ['Une colline.', 'Une prière.', 'Un projet.'],
+      lines: ['D’une colline', 'de Jérusalem', 'à un projet politique.'],
       cam: { lon: 24.0, lat: 40.5, w: 0.7, pitch: 26, bearing: 0 },
     },
   ];

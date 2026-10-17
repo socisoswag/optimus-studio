@@ -65,7 +65,7 @@
     {
       id: 'fin', type: 'outro', dur: 7.0, fly: 1.4, hitAt: 1.0,
       eyebrow: 'De 1881 à 1914',
-      lines: ['Fuir l’Europe.', 'Pour l’Amérique.', 'Pas encore Sion.'],
+      lines: ['Ils fuient l’Europe,', 'presque tous', 'vers l’Amérique.'],
       cam: { lon: 10.0, lat: 47.0, w: 1.0, pitch: 26, bearing: 0 },
     },
   ];

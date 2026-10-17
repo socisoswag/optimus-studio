@@ -24,7 +24,7 @@
       type: 'intro', dur: 6.0,
       eyebrow: 'Chronologie · de 1897 à 1995',
       title: ['Israël', 'Palestine'],
-      sub: 'Les figures qui ont façonné un siècle',
+      sub: 'Les acteurs d’un siècle, en treize portraits',
       year: 1897,
       cam: { lon: 31.5, lat: 35.0, w: 0.95, pitch: 34, bearing: -4 },
       camEnd: { lon: 33.5, lat: 33.6, w: 0.62, pitch: 40, bearing: 4 },

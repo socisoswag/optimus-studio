@@ -15,7 +15,8 @@
  *   - Lubya, vidée en juillet 1948 : la forêt d'Afrique du Sud du Fonds national juif est plantée sur ses
  *     ruines ; Imwas, Yalu et Beit Nuba, rasées en juin 1967 : le Canada Park, aménagé dans les années
  *     1970 par le Fonds national juif avec des dons canadiens ;
- *   - Lifta, à l'entrée de Jérusalem : vidée en 1948, ses maisons sont restées debout, inhabitées.
+ *   - Lifta, à l'entrée de Jérusalem : vidée en 1948, ses maisons sont restées debout, inhabitées ;
+ *   - 418 villages dépeuplés en 1948 (Walid Khalidi, All That Remains, 1992), comme dans nakba-1948.js.
  */
 (function (root) {
   const segments = [
@@ -72,7 +73,7 @@
     {
       id: 'fin', type: 'outro', dur: 6.8, fly: 1.4, hitAt: 1.0,
       eyebrow: 'Depuis 1948',
-      lines: ['Des villages.', 'Des noms.', 'Une mémoire.'],
+      lines: ['418 villages vidés,', 'plus de 9 000 noms', 'remplacés.'],
       cam: { lon: 35.05, lat: 31.9, w: 0.08, pitch: 30, bearing: 0 },
     },
   ];
