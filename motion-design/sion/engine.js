@@ -127,6 +127,20 @@
     const c = froms.reduce((a, o) => [a[0] + o[0] / froms.length, a[1] + o[1] / froms.length], [0, 0]);
     return { ...f, P, guide: bez(c[0], c[1], f.to[0], f.to[1], f.bend !== undefined ? f.bend : 0.18), O: froms.map((o) => [MX(o[0]), MY(o[1])]), TX: MX(f.to[0]), TY: MY(f.to[1]) };
   });
+  // réseaux de faux comptes (guerre numérique) : des profils s'allument autour d'une cible, chacun relié
+  // au compte déjà en place le plus proche ; des messages circulent le long des liens ; à `off`, les
+  // comptes sont supprimés un à un (éclair, puis une croix grise à leur place)
+  const NETS = (TL.nets || []).map((nt, ni) => {
+    const r = mulberry32(6100 + ni * 97), n = nt.n || 120, sp = nt.spread || 1.5, N = [];
+    for (let i = 0; i < n; i++) {
+      const a = r() * 6.283, d = (0.12 + 0.88 * Math.pow(r(), 0.75)) * sp;
+      const X = MX(nt.hub[0] + Math.cos(a) * d * (nt.ax || 1.3)), Y = MY(nt.hub[1] + Math.sin(a) * d * 0.75);
+      let par = -1, best = Math.hypot(X - MX(nt.hub[0]), Y - MY(nt.hub[1])) * 1.6;
+      for (let j = 0; j < i; j++) { const dd = Math.hypot(X - N[j].X, Y - N[j].Y); if (dd < best) { best = dd; par = j; } }
+      N.push({ X, Y, par, t0: nt.t + Math.pow(i / n, 0.85) * (nt.grow || 4) + r() * 0.15, off: nt.offT !== undefined ? nt.offT + Math.pow(r(), 0.8) * (nt.offDur || 3) : 1e9, ph: r(), sz: 0.85 + 0.3 * r() });
+    }
+    return { ...nt, N, HX: MX(nt.hub[0]), HY: MY(nt.hub[1]) };
+  });
   // ------------------------------------------------------------ guerre : unités, flèches, frappes, territoires
   const smoothPath = (pts) => {
     // lissage de Chaikin (deux passes) pour des trajectoires sans angles
@@ -1494,6 +1508,63 @@
     g.restore();
   }
 
+  function drawNets(g, t) {
+    for (const nt of NETS) {
+      const A = tw(t, nt.t - 0.2, nt.t + 0.6) * (1 - tw(t, nt.tEnd - 0.8, nt.tEnd));
+      if (A <= 0.01) continue;
+      g.save();
+      g.lineCap = 'round';
+      // proj() renvoie toujours le même objet : on copie chaque position
+      const H = { ...proj(nt.HX, nt.HY) }, P = nt.N.map((n) => ({ ...proj(n.X, n.Y) }));
+      const at = (i) => (i < 0 ? H : P[i]);
+      // cible : anneaux qui pulsent
+      for (let j = 0; j < 3; j++) {
+        const q = (t * 0.55 + j / 3) % 1, rr = (26 + q * 110) * H.k;
+        g.strokeStyle = rgba(COL.ember, 0.55 * (1 - q) * A); g.lineWidth = 1.6;
+        g.beginPath(); g.arc(H.x, H.y, rr, 0, 6.283); g.stroke();
+      }
+      sprite(g, SPR.ember, H.x, H.y, 60 * H.k, 0.5 * A);
+      // liens, puis messages qui remontent vers la cible
+      g.lineWidth = 1.4;
+      nt.N.forEach((n, i) => {
+        if (t < n.t0) return;
+        const p = P[i], q = at(n.par), grow = tw(t, n.t0, n.t0 + 0.35, E.outCubic);
+        const live = t < n.off ? 1 : 1 - tw(t, n.off, n.off + 0.5);
+        if (live <= 0.01) return;
+        g.strokeStyle = rgba(COL.ember, 0.42 * A * live);
+        g.beginPath(); g.moveTo(q.x, q.y); g.lineTo(q.x + (p.x - q.x) * grow, q.y + (p.y - q.y) * grow); g.stroke();
+        if (grow >= 1 && t < n.off) {
+          const m = (t * 0.7 + n.ph) % 1;
+          sprite(g, SPR.hot, p.x + (q.x - p.x) * m, p.y + (q.y - p.y) * m, 14 * p.k + 3, 0.7 * A * Math.sin(Math.PI * m));
+        }
+      });
+      // profils : rond sombre cerclé de braise, silhouette au centre ; supprimés : éclair puis croix
+      nt.N.forEach((n, i) => {
+        if (t < n.t0) return;
+        const p = P[i], s = (nt.size || 12) * n.sz * p.k + 2;
+        if (t < n.off) {
+          const ap = E.outBack(clamp((t - n.t0) / 0.3)), R = s * ap;
+          if (R <= 0.3) return;
+          g.fillStyle = 'rgba(13,12,10,.9)'; g.strokeStyle = rgba(COL.ember, 0.95 * A); g.lineWidth = 1.4;
+          g.beginPath(); g.arc(p.x, p.y, R, 0, 6.283); g.fill(); g.stroke();
+          g.fillStyle = rgba(COL.hot, 0.9 * A);
+          g.beginPath(); g.arc(p.x, p.y - R * 0.22, R * 0.3, 0, 6.283); g.fill();
+          g.beginPath(); g.arc(p.x, p.y + R * 0.62, R * 0.52, Math.PI, 2 * Math.PI); g.fill();
+        } else {
+          const d = t - n.off;
+          if (d < 0.5) sprite(g, SPR.white, p.x, p.y, 46 * p.k + 6, (1 - d / 0.5) * A);
+          const ga = 0.35 * A * tw(d, 0.08, 0.4) * (1 - tw(t, nt.tEnd - 0.8, nt.tEnd));
+          if (ga > 0.01) {
+            g.strokeStyle = rgba(COL.ash, ga); g.lineWidth = 1.3;
+            const c = s * 0.6;
+            g.beginPath(); g.moveTo(p.x - c, p.y - c); g.lineTo(p.x + c, p.y + c); g.moveTo(p.x + c, p.y - c); g.lineTo(p.x - c, p.y + c); g.stroke();
+          }
+        }
+      });
+      g.restore();
+    }
+  }
+
   // mot : 1 au repos, baisse quand la caméra file (les détails fins deviennent un voile)
   // ------------------------------------------------------------ carte du partage (1947)
   // Relief éclairé comme une maquette, découpé en morceaux (data/partage.js) ; une lame trace les
@@ -1975,6 +2046,7 @@
     if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t, Math.pow(clamp(0.011 / cam.w), 0.9)); drawBlocks(g, t, ZS); }
     if (PART) { drawVote(g, t); drawPartage(g, t, cam); CITY_DIM = 1 - 0.7 * landAlpha(t); }
     if (FLOWS.length) drawFlows(g, t);
+    if (NETS.length) drawNets(g, t);
     if (HAS_WAR) { drawUnits(g, t); drawStrikes(g, t); if (FLARES.length) drawFlares(g, t); }
     const busy = [];
     if (pin && pin.showPin) busy.push(pin.s);
@@ -2832,8 +2904,9 @@
     const c0 = I + (s.countAt || 0), cd = s.countDur || 2.6;
     const cp = E.outQuart(inv(c0, c0 + cd, u));
     const stn = R.lines[1].ln;
-    const key = Math.round(s.value * cp / (cp < 1 ? 137 : 1));
-    if (R.numKey !== key) { R.numKey = key; stn.innerHTML = fmtNum(cp >= 1 ? s.value : key * 137) + (s.unit ? `<i class="gs"></i>${esc(s.unit)}` : ''); }
+    // le compteur avance par pas de `step` (137 par défaut) et ne dépasse jamais la valeur finale
+    const st = s.step || 137, key = Math.round(s.value * cp / (cp < 1 ? st : 1));
+    if (R.numKey !== key) { R.numKey = key; stn.innerHTML = fmtNum(cp >= 1 ? s.value : Math.min(s.value, key * st)) + (s.unit ? `<i class="gs"></i>${esc(s.unit)}` : ''); }
     const sp = tw(u, c0 - 0.15, c0 + 0.35, E.outExpo);
     css(R, stn, 'transform', `translate3d(0,${f3((1 - sp) * 60)}%,0)`);
     css(R, stn, 'opacity', String(f3(sp)));
