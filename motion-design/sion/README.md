@@ -34,6 +34,12 @@ un seul moteur, une timeline par pièce.
 | Les aliyas, 1882 – 1939 (chapitre 5) | `timelines/aliyas.js` | 57 s | `output/aliyas.mp4` |
 | Citations : Herzl (4), Ben Gourion (16), Golda Meir (18), Mahmoud Darwich (38) | `timelines/citation-*.js` | 12 à 13 s | `output/citation-*.mp4` |
 | Chiffres-clés : zone C (19), réfugiés (20), colons (23), Gaza (25) | `timelines/chiffre-*.js` | 13 s | `output/chiffre-*.mp4` |
+| Sion, le mot (chapitre 1) | `timelines/sion-le-mot.js` | 1 min 01 | `output/sion-le-mot.mp4` |
+| L'Europe en feu, de 1881 à 1914 (chapitre 2) | `timelines/europe-1881-1914.js` | 1 min 10 | `output/europe-1881-1914.mp4` |
+| Les figures d'aujourd'hui : Netanyahou, Lieberman (24), Smotrich et Ben Gvir (26) | `timelines/figures-aujourdhui.js` | 20 s | `output/figures-aujourdhui.mp4` |
+| La guerre numérique (chapitre 27) | `timelines/guerre-numerique.js` | 1 min | `output/guerre-numerique.mp4` |
+| Les noms effacés (chapitre 34) | `timelines/noms-effaces.js` | 1 min 17 | `output/noms-effaces.mp4` |
+| Apartheid, ce que disent les textes (chapitre 35) | `timelines/apartheid-textes.js` | 1 min 02 | `output/apartheid-textes.mp4` |
 | Générique de fin (sans nom de l'équipe) | `timelines/generique-fin.js` | 1 min 02 | `output/generique-fin.mp4` |
 | 26 cartons transparents : lieux et dates, mentions de source | `timelines/cartons.js` | 5,5 s chacun | `output/cartons/*.mov` |
 
@@ -132,6 +138,10 @@ timeline :
 `faces: [root.face('herzl', { side, x, h, at, until, tag, tagPos })]` ; dans une paire, les têtes
 sont mises à la même taille et à la même hauteur.
 
+Dans une paire (`pair`), chaque personne peut avoir sa propre phrase sous son nom (`text`) et sa taille
+de tête (`norm`) ; la phrase du bas est alors celle qui leur est commune. Un chiffre-clé (`stat`) avance
+par pas de `step` (137 par défaut) et ne dépasse jamais sa valeur finale.
+
 Dans un texte, `[[ … ]]` souligne un passage d'un trait de braise. Les flux de particules se
 déclarent dans `flows` (départs, arrivée, nombre de particules, moment) ; voir `flux-humains.js`.
 
@@ -155,6 +165,13 @@ colonne plus étroite) au-dessus de la carte. Un repère `erase: true, ghost: tr
 qui s'éteint en laissant son empreinte. Territoires et flèches s'effacent d'eux-mêmes quand la caméra descend à l'échelle de la rue ;
 plans et maisons n'apparaissent qu'à cette échelle. Le son suit : avions, moteurs et chenilles,
 explosions, effondrements.
+
+### Réseaux et noms effacés
+
+| Liste | Effet | Champs principaux |
+|---|---|---|
+| `nets` | réseau de faux comptes : des profils s'allument autour d'une cible, reliés au plus proche, des messages circulent, puis les comptes sont supprimés un à un (`guerre-numerique.js`) | `hub`, `n`, `spread`, `grow`, `off`, `offDur`, `until` |
+| `renames` | nom remplacé : l'ancien nom s'écrit en olive, un trait de braise le barre, le nouveau s'écrit au-dessus (`noms-effaces.js`) | `from`, `to`, `lon`, `lat`, `dir`, `strike`, `gap`, `until` |
 
 ### La carte du partage (chapitre 12)
 
