@@ -1065,7 +1065,8 @@
         g.beginPath(); g.arc(ox, oy, Math.max(0.1, R * p), 0, 7); g.clip();
       }
       g.globalCompositeOperation = 'lighter';
-      const zc = z.tone === 'stone' ? COL.stone : COL.ember, zk = z.tone === 'stone' ? 0.45 : 1;
+      // tone : vermillon (par défaut), 'stone' (l'autre camp), 'life' (terres palestiniennes, en olive)
+      const zc = z.tone === 'stone' ? COL.stone : z.tone === 'life' ? COL.life : COL.ember, zk = z.tone === 'stone' ? 0.45 : z.tone === 'life' ? 0.8 : 1;
       g.fillStyle = rgba(zc, 0.11 * A * zk); g.fillRect(bx0 - 2, by0 - 2, bx1 - bx0 + 4, by1 - by0 + 4);
       g.strokeStyle = rgba(zc, 0.5 * A * zk); g.lineWidth = 1.3;
       g.beginPath();
@@ -1076,8 +1077,8 @@
       g.save();
       g.globalCompositeOperation = 'lighter';
       if (z.outline !== false) {
-        g.strokeStyle = rgba(z.tone === 'stone' ? COL.stone : COL.hot, (z.tone === 'stone' ? 0.6 : 0.85) * A * p); g.lineWidth = 1.7; g.stroke(outline);
-        g.strokeStyle = rgba(z.tone === 'stone' ? COL.stone : COL.ember, 0.25 * A * p * zk); g.lineWidth = 6; g.stroke(outline);
+        g.strokeStyle = rgba(z.tone === 'stone' ? COL.stone : z.tone === 'life' ? COL.lifeHot : COL.hot, (z.tone === 'stone' ? 0.6 : 0.85) * A * p); g.lineWidth = 1.7; g.stroke(outline);
+        g.strokeStyle = rgba(zc, 0.25 * A * p * zk); g.lineWidth = 6; g.stroke(outline);
       }
       g.restore();
     }

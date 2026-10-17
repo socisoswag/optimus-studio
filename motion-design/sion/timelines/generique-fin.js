@@ -68,7 +68,10 @@
           ["Ze’ev Jabotinsky", "Government Press Office (Israël) · domaine public"],
       ],
     },
-    { h: 'Cartographie', lines: [['Natural Earth', 'domaine public']] },
+    {
+      h: 'Cartographie',
+      lines: [['Natural Earth', 'domaine public'], ['OCHA · HDX', 'zones des accords d’Oslo, tracé du mur, janvier 2018'], ['Autorité palestinienne', 'ministère du Plan']],
+    },
     {
       h: 'Polices de caractères',
       lines: [['Archivo · Newsreader · DM Mono', 'SIL Open Font License'], ['Noto Sans Hebrew · Noto Kufi Arabic', 'SIL Open Font License']],
