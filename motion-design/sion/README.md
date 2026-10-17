@@ -41,6 +41,9 @@ chapitre, et chaque séquence découpée **plan par plan** (séquence complète,
 `PLANS.md` avec la durée, la place dans la séquence et le texte de chaque plan). Il se refait avec
 `python3 tools/montage.py`.
 
+Pour tout voir d'une traite dans l'ordre du film : `output/SION-bout-a-bout-1080p-partie-1.mp4` … `-11.mp4`
+(environ 25 min en 11 morceaux de moins de 3 min, refaits avec `python3 tools/bout_a_bout.py`).
+
 Le son ne contient que des bruitages, sans musique : les pièces s'intègrent au montage sous la
 musique du film. Chaque pièce a aussi ses bruitages seuls en `.wav` à côté du `.mp4`.
 
