@@ -4,7 +4,7 @@
 #   tools/build.sh generique            → output/generique.mp4 + output/generique.wav
 #   PREVIEW_DIR=/tmp tools/build.sh generique   → ajoute un aperçu < 29 Mo dans /tmp
 #
-# Variables : WORKERS (4 par défaut), BITRATE (9000k par défaut), NOTEXT=1 (version sans texte).
+# Variables : WORKERS (4 par défaut), BITRATE (9000k, moins pour tenir sous 95 Mo), NOTEXT=1 (version sans texte).
 set -euo pipefail
 NAME="${1:?nom de la timeline, ex. generique}"
 # NOTEXT=1 : version sans texte (output/<nom>-sans-texte.mp4), même bande-son que la version normale
@@ -37,7 +37,9 @@ encode() { # $1 = débit vidéo, $2 = fichier de sortie, $3 = filtre vidéo
     -c:a aac -b:a 320k -t "$DUR" -movflags +faststart "$2"
 }
 
-encode "${BITRATE:-9000k}" "output/$OUTNAME.mp4" "$FINISH"
+# débit : 9 Mbit/s, abaissé pour les pièces longues afin de rester sous 95 Mo (GitHub refuse plus de 100 Mo)
+AUTO=$(python3 -c "print(min(9000, int(95 * 8000 / $DUR - 330)))")
+encode "${BITRATE:-${AUTO}k}" "output/$OUTNAME.mp4" "$FINISH"
 
 if [ -n "${PREVIEW_DIR:-}" ]; then
   # aperçu partageable : 29 Mo maximum, en 1080p si possible
