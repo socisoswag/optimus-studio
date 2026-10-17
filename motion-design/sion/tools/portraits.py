@@ -28,9 +28,16 @@ import onnxruntime as ort
 SRC, DST = sys.argv[1], sys.argv[2]
 MODELS = os.environ.get("MODELS", ".")
 # recadrages serrés (fractions de la hauteur gardées) pour les photos prises de trop loin
-CROP = {"abd-al-qadir": (0.0, 0.64), "finkielkraut": (0.0, 0.72)}
+# (haut, bas) ou (gauche, haut, droite, bas)
+CROP = {"abd-al-qadir": (0.0, 0.64), "finkielkraut": (0.18, 0.0, 0.86, 0.62)}
+# débruitage plafonné pour les tirages très compressés (sinon la peau fait des plaques)
+DENOISE_MAX = {"mcmahon": 2.5}
 # zones à exclure du détourage (polygones en fractions de l'image) : voisins collés au sujet
 ERASE = {
+    "koestler": [
+        [(0.64, 0.0), (1.0, 0.0), (1.0, 0.62), (0.86, 0.6), (0.8, 0.42), (0.77, 0.3), (0.74, 0.2), (0.70, 0.12), (0.66, 0.06)],
+        [(0.0, 0.0), (0.24, 0.0), (0.2, 0.3), (0.12, 0.45), (0.05, 0.55), (0.0, 0.56)],
+    ],
     "begin": [
         [(0.27, 0.0), (0.71, 0.0), (0.71, 0.062), (0.27, 0.062)],
         [(0.70, 0.0), (1.0, 0.0), (1.0, 0.57), (0.76, 0.45), (0.735, 0.30)],
@@ -74,6 +81,18 @@ def person_mask(rgb):
 
 
 def refine_alpha(gray, m):
+    """Affine le contour par filtre guidé (rapide, léger en mémoire) ; MATTING=cf pour le matting
+    « closed-form », plus fin mais qui peut saturer la mémoire sur certaines photos."""
+    if os.environ.get("MATTING") == "cf":
+        return refine_alpha_cf(gray, m)
+    from cv2.ximgproc import guidedFilter
+    g = gray.astype(np.float32) / 255.0
+    a = guidedFilter(g, m.astype(np.float32), 18, 2e-3)   # silhouette
+    a = guidedFilter(g, np.clip(a, 0, 1), 5, 2e-4)        # cheveux, bords fins
+    return np.clip((a - 0.18) / 0.64, 0, 1)
+
+
+def refine_alpha_cf(gray, m):
     """Affine le contour (cheveux) par matting sur une bande d'incertitude autour du masque."""
     try:
         from pymatting import estimate_alpha_cf
@@ -88,10 +107,10 @@ def refine_alpha(gray, m):
     tri = np.full(ms.shape, 0.5)
     tri[fg > 0] = 1.0
     tri[bg > 0] = 0.0
-    if (tri == 0.5).mean() > 0.3:  # bord très incertain (costume sombre sur fond sombre) : calcul allégé
-        k2 = 0.7
-        small = cv2.resize(small, None, fx=k2, fy=k2, interpolation=cv2.INTER_AREA)
-        tri = cv2.resize(tri, (small.shape[1], small.shape[0]), interpolation=cv2.INTER_NEAREST)
+    if (tri == 0.5).mean() > 0.2:
+        # bord trop incertain (costume sombre sur fond sombre) : le matting s'emballe en mémoire ;
+        # on garde le masque des réseaux, adouci
+        return np.clip((cv2.GaussianBlur(m, (0, 0), 1.2) - 0.35) / 0.3, 0, 1)
     img = cv2.cvtColor(small, cv2.COLOR_GRAY2RGB).astype(np.float64) / 255.0
     a = estimate_alpha_cf(img, tri)
     return np.clip(cv2.resize(a.astype(np.float32), (w, h), interpolation=cv2.INTER_CUBIC), 0, 1)
@@ -147,7 +166,9 @@ def upscale(g):
     need = min(TARGET_H / h, MAX_UP)
     if need <= 1.05:
         return g, 1.0
-    f = 4 if need > 2.6 and model("EDSR_x4.pb") else 2 if model("EDSR_x2.pb") else 0
+    # EDSR seulement pour un vrai agrandissement : en dessous de ×1,6, Lanczos suffit (et EDSR sur
+    # une grande image coûte des minutes et des gigaoctets)
+    f = 0 if need < 1.6 else 4 if need > 2.6 and model("EDSR_x4.pb") else 2 if model("EDSR_x2.pb") else 0
     if f:
         sr = cv2.dnn_superres.DnnSuperResImpl_create()
         sr.readModel(model(f"EDSR_x{f}.pb"))
@@ -162,7 +183,7 @@ def upscale(g):
     return g2, need
 
 
-def enhance(gray):
+def enhance(gray, name=""):
     """Ne pas abîmer : une photo récente et nette n'est ni débruitée ni agrandie ;
     un vieux tirage petit et granuleux reçoit la restauration complète."""
     sig = noise_sigma(gray)
@@ -170,7 +191,7 @@ def enhance(gray):
     old = h0 < 1300
     g = despeckle(gray)
     if (old and sig > 2.5) or sig > 7:  # vieux tirage, ou photo récente très granuleuse
-        g = cv2.fastNlMeansDenoising(g, None, h=float(np.clip(sig * 0.7, 2, 5.5)), templateWindowSize=7, searchWindowSize=15)
+        g = cv2.fastNlMeansDenoising(g, None, h=float(np.clip(sig * 0.7, 2, DENOISE_MAX.get(name, 5.5))), templateWindowSize=7, searchWindowSize=15)
     g, scale = upscale(g) if old else (g, 1.0)
     g = cv2.createCLAHE(clipLimit=1.15, tileGridSize=(4, 4)).apply(g)
     blur = cv2.GaussianBlur(g, (0, 0), 1.0)
@@ -194,8 +215,9 @@ for f in files:
         print("illisible :", f)
         continue
     if name in CROP:
-        t0, t1 = CROP[name]; hb = bgr.shape[0]
-        bgr = bgr[int(t0 * hb):int(t1 * hb)]
+        c = CROP[name]; hb, wb = bgr.shape[:2]
+        x0, y0, x1, y1 = (0.0, c[0], 1.0, c[1]) if len(c) == 2 else c
+        bgr = bgr[int(y0 * hb):int(y1 * hb), int(x0 * wb):int(x1 * wb)]
     rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
     gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
     m = person_mask(rgb)
@@ -204,7 +226,7 @@ for f in files:
         z = np.zeros_like(m, np.uint8)
         cv2.fillPoly(z, [np.array([[int(x * wb), int(y * hb)] for x, y in poly], np.int32)], 1)
         m = m * (1 - cv2.GaussianBlur(z.astype(np.float32), (0, 0), 3))
-    g, scale, sig = enhance(gray)
+    g, scale, sig = enhance(gray, name)
     m = cv2.resize(m, (g.shape[1], g.shape[0]), interpolation=cv2.INTER_CUBIC)
     a = refine_alpha(g, m)
     # contour resserré d'un pixel, puis adouci : plus de liseré du fond d'origine
