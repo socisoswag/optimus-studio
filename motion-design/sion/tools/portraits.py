@@ -29,6 +29,14 @@ SRC, DST = sys.argv[1], sys.argv[2]
 MODELS = os.environ.get("MODELS", ".")
 # recadrages serrés (fractions de la hauteur gardées) pour les photos prises de trop loin
 CROP = {"abd-al-qadir": (0.0, 0.64), "finkielkraut": (0.0, 0.72)}
+# zones à exclure du détourage (polygones en fractions de l'image) : voisins collés au sujet
+ERASE = {
+    "begin": [
+        [(0.27, 0.0), (0.71, 0.0), (0.71, 0.062), (0.27, 0.062)],
+        [(0.70, 0.0), (1.0, 0.0), (1.0, 0.57), (0.76, 0.45), (0.735, 0.30)],
+        [(0.0, 0.0), (0.28, 0.0), (0.265, 0.3), (0.2, 0.45), (0.12, 0.56), (0.1, 1.0), (0.0, 1.0)],
+    ],
+}
 TARGET_H = 1500  # hauteur visée après agrandissement (px) ; affiché à ~900 px dans les vidéos
 MAX_UP = 3.2     # jamais plus de ×3,2 : au-delà, l'image devient lisse et « fabriquée »
 
@@ -184,6 +192,11 @@ for f in files:
     rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
     gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
     m = person_mask(rgb)
+    for poly in ERASE.get(name, []):
+        hb, wb = m.shape
+        z = np.zeros_like(m, np.uint8)
+        cv2.fillPoly(z, [np.array([[int(x * wb), int(y * hb)] for x, y in poly], np.int32)], 1)
+        m = m * (1 - cv2.GaussianBlur(z.astype(np.float32), (0, 0), 3))
     g, scale, sig = enhance(gray)
     m = cv2.resize(m, (g.shape[1], g.shape[0]), interpolation=cv2.INTER_CUBIC)
     a = refine_alpha(g, m)
