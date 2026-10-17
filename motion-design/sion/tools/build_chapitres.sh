@@ -16,6 +16,8 @@ python3 tools/sound.py "$TMP/cues.json" "$TMP/son.wav"
 
 # même finition « pellicule » que tools/build.sh
 FINISH="$(grep '^FINISH=' tools/build.sh | sed 's/^FINISH="//; s/"$//')"
+HAL=$(node -e "global.window={}; require('./data/palette.js'); const h=window.PALETTE.halation; console.log('rr='+h[0]+':gg='+h[1]+':bb='+h[2])")
+FINISH="${FINISH//\$HAL/$HAL}"  # halo aux couleurs de data/palette.js
 CARD=$(node -e "require('./core.js'); require('./timelines/chapitres.js'); console.log(globalThis.TL.cardDur)")
 N=$(node -e "require('./core.js'); require('./timelines/chapitres.js'); console.log(globalThis.TL.segments.length)")
 
