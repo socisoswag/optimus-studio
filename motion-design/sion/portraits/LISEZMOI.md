@@ -68,7 +68,7 @@ citer l'auteur ; une photo du domaine public peut être citée par courtoisie.
 | `jabotinsky` | domaine public | Government Press Office (Israël) | PORTRAIT OF VLADIMIR JABOTINSKY TAKEN BY BRITT IN PARIS. פורטרט, זאב ז'בוטינסקי.D850-062 (cropped).jpg |
 | `koestler` | CC BY-SA 3.0 | Eric Koch / Anefo | Arthur Koestler (1969).jpg |
 | `lieberman` | domaine public | Département de la Défense des États-Unis | Avigdor Lieberman 2017.jpg |
-| `mcmahon` | domaine public | auteur inconnu | Henry McMahon cropped.JPG |
+| `mcmahon` | domaine public | auteur inconnu | Henry McMahon.jpeg |
 | `meir` | CC BY-SA 4.0 | Willem van de Poll | Golda Meir (1964) cropped.jpg |
 | `nasser` | CC BY-SA 3.0 | Stevan Kragujević | Stevan Kragujevic, Gamal Abdel Naser u Beogradu, 1962.jpg |
 | `netanyahou` | CC BY-SA 3.0 | Avi Ohayon | Benjamin Netanyahu, February 2023.jpg |

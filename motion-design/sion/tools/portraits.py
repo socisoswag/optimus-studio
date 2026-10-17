@@ -30,9 +30,9 @@ SRC, DST = sys.argv[1], sys.argv[2]
 MODELS = os.environ.get("MODELS", ".")
 # recadrages serrés (fractions de la hauteur gardées) pour les photos prises de trop loin
 # (haut, bas) ou (gauche, haut, droite, bas)
-CROP = {"abd-al-qadir": (0.0, 0.64), "finkielkraut": (0.18, 0.0, 0.86, 0.62), "sharon": (0.0, 0.1, 0.9, 0.6)}
+CROP = {"abd-al-qadir": (0.0, 0.64), "mcmahon": (0.1, 0.0, 0.9, 0.56), "finkielkraut": (0.18, 0.0, 0.86, 0.62), "sharon": (0.0, 0.1, 0.9, 0.6)}
 # débruitage plafonné pour les tirages très compressés (sinon la peau fait des plaques)
-DENOISE_MAX = {"mcmahon": 2.5}
+DENOISE_MAX = {"mcmahon": 3.5}
 # zones à exclure du détourage (polygones en fractions de l'image) : voisins collés au sujet
 ERASE = {
     "koestler": [
@@ -45,6 +45,8 @@ ERASE = {
         [(0.0, 0.0), (0.28, 0.0), (0.265, 0.3), (0.2, 0.45), (0.12, 0.56), (0.1, 1.0), (0.0, 1.0)],
     ],
 }
+# zones à garder opaques (polygones en fractions de l'image) : médailles, reflets pris pour du fond
+FILL = {"mcmahon": [[(0.58, 0.55), (0.76, 0.55), (0.8, 0.86), (0.6, 0.86)]]}
 TARGET_H = 1500  # hauteur visée après agrandissement (px) ; affiché à ~900 px dans les vidéos
 MAX_UP = 3.2     # jamais plus de ×3,2 : au-delà, l'image devient lisse et « fabriquée »
 SORTIE_H = 1400  # hauteur maximale du PNG livré (affiché à 940 px au plus, ×1,38 en sortie)
@@ -272,6 +274,11 @@ for f in files:
         z = np.zeros_like(m, np.uint8)
         cv2.fillPoly(z, [np.array([[int(x * wb), int(y * hb)] for x, y in poly], np.int32)], 1)
         m = m * (1 - cv2.GaussianBlur(z.astype(np.float32), (0, 0), 3))
+    for poly in FILL.get(name, []):
+        hb, wb = m.shape
+        z = np.zeros_like(m, np.uint8)
+        cv2.fillPoly(z, [np.array([[int(x * wb), int(y * hb)] for x, y in poly], np.int32)], 1)
+        m = np.maximum(m, cv2.GaussianBlur(z.astype(np.float32), (0, 0), 3))
     g, scale, sig = enhance(gray, name)
     m = cv2.resize(m, (g.shape[1], g.shape[0]), interpolation=cv2.INTER_CUBIC)
     a = refine_alpha(g, m)
@@ -284,6 +291,16 @@ for f in files:
         main = 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))
         keep = cv2.dilate((lab == main).astype(np.uint8), np.ones((25, 25), np.uint8)).astype(np.float32)
         a = a * cv2.GaussianBlur(keep, (0, 0), 6)
+    # petits trous à l'intérieur de la silhouette (médaille, reflet) : comblés ; un vrai jour entre
+    # le bras et le corps est plus grand et reste transparent
+    solid = (a > 0.92).astype(np.uint8)
+    nh, hl, hs, _ = cv2.connectedComponentsWithStats(1 - solid, connectivity=4)
+    hh, ww = a.shape
+    for i in range(1, nh):
+        x, y, w_, h_, area = hs[i]
+        if x > 0 and y > 0 and x + w_ < ww and y + h_ < hh and area < 0.01 * solid.sum():
+            hole = cv2.dilate((hl == i).astype(np.uint8), np.ones((5, 5), np.uint8)).astype(np.float32)
+            a = np.maximum(a, cv2.GaussianBlur(hole, (0, 0), 1.2))
     gd = decontaminate(g, a)  # bord nettoyé pour le détourage ; la version avec fond reste intacte
     # cadrage serré sur la personne (marge de 4 %), le bas du buste reste au bord
     ys, xs = np.where(a > 0.5)

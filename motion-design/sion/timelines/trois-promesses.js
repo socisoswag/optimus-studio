@@ -23,7 +23,7 @@
     },
     {
       id: 'h1915', type: 'doc', dur: 12.5, fly: 1.8, layout: 'L', anchor: [540, 60],
-      faces: [root.face('mcmahon', { tagPos: 'above', x: 1330, h: 640, at: 2.4, arrowTo: 1, label: 'lettre du 24 octobre 1915', link: { lon: 31.24, lat: 30.04 } }), root.face('hussein-ben-ali', { tagPos: 'above', x: 1700, h: 680, at: 3.0, link: { lon: 39.83, lat: 21.42 } })],
+      faces: [root.face('mcmahon', { tagPos: 'above', x: 1330, h: 640, at: 2.4, arrowTo: 1, label: 'lettre', link: { lon: 31.24, lat: 30.04 } }), root.face('hussein-ben-ali', { tagPos: 'above', x: 1700, h: 680, at: 3.0, link: { lon: 39.83, lat: 21.42 } })],
       ghost: '1915', eyebrow: 'Le Caire · 24 octobre 1915', title: ['Correspondance', 'Hussein – McMahon'],
       meta: 'Henry McMahon, Le Caire → Hussein, chérif de La Mecque',
       quote: 'La Grande-Bretagne est disposée à [[reconnaître et soutenir l’indépendance des Arabes]] dans toutes les régions comprises dans les limites demandées par le chérif de La Mecque.',
@@ -50,7 +50,7 @@
     },
     {
       id: 'b1917', type: 'doc', dur: 13.0, fly: 2.0, layout: 'L', anchor: [440, 40],
-      faces: [root.face('balfour', { tagPos: 'above', x: 1330, h: 640, at: 2.4, arrowTo: 1, label: '2 novembre 1917', link: { lon: -0.13, lat: 51.51 } }), root.face('rothschild', { tagPos: 'above', x: 1700, h: 680, at: 3.0 })],
+      faces: [root.face('balfour', { tagPos: 'above', x: 1330, h: 640, at: 2.4, arrowTo: 1, label: 'lettre', link: { lon: -0.13, lat: 51.51 } }), root.face('rothschild', { tagPos: 'above', x: 1700, h: 680, at: 3.0 })],
       ghost: '1917', eyebrow: 'Londres · 2 novembre 1917', title: ['Déclaration', 'Balfour'],
       meta: 'Arthur Balfour, ministre des Affaires étrangères → Lord Rothschild',
       quote: [
