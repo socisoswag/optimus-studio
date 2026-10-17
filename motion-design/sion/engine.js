@@ -2947,8 +2947,8 @@
     const c0 = I + (s.countAt || 0), cd = s.countDur || 2.6;
     const cp = E.outQuart(inv(c0, c0 + cd, u));
     const stn = R.lines[1].ln;
-    // le compteur avance par pas de `step` (137 par défaut) et ne dépasse jamais la valeur finale
-    const st = s.step || 137, key = Math.round(s.value * cp / (cp < 1 ? st : 1));
+    // le compteur avance par pas de `step` (de 1 en 1 sous 1 000, sinon 137) et ne dépasse jamais la valeur finale
+    const st = s.step || (s.value < 1000 ? 1 : 137), key = Math.round(s.value * cp / (cp < 1 ? st : 1));
     if (R.numKey !== key) { R.numKey = key; stn.innerHTML = fmtNum(cp >= 1 ? s.value : Math.min(s.value, key * st)) + (s.unit ? `<i class="gs"></i>${esc(s.unit)}` : ''); }
     const sp = tw(u, c0 - 0.15, c0 + 0.35, E.outExpo);
     css(R, stn, 'transform', `translate3d(0,${f3((1 - sp) * 60)}%,0)`);
