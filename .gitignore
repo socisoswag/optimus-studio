@@ -9,3 +9,6 @@ skills/
 
 # Sortie générée par graphify
 graphify-out/
+
+# cache Python
+__pycache__/
