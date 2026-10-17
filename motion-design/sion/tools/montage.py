@@ -38,24 +38,26 @@ PARTS = [
 # Après le titre d'un chapitre : les séquences et les fiches de la chronologie qui l'illustrent.
 # ("fichier source", début, fin, "nom") ; début/fin à None = fichier entier.
 EXTRAS = {
-    4: [("chronologie", "herzl", "chronologie-herzl")],
+    4: [("chronologie", "herzl", "chronologie-herzl"), ("citation-herzl", None, "citation-herzl-1895")],
     7: [("trois-promesses", "plans", "sequence-trois-promesses"), ("chronologie", "weizmann", "chronologie-weizmann")],
     8: [("chronologie", "amin-husseini", "chronologie-amin-al-husseini"), ("chronologie", "qassam", "chronologie-al-qassam")],
     11: [("chronologie", "jabotinsky", "chronologie-jabotinsky")],
     15: [("deir-yassin", "plans", "sequence-deir-yassin")],
     13: [("nakba-1948", "plans", "sequence-1948-la-nakba"), ("flux-humains", (0.0, 20.7), "sequence-exode-palestinien-1948"), ("chronologie", "split-1948", "chronologie-1948-deux-regards"),
          ("chronologie", "abd-al-qadir", "chronologie-abd-al-qadir")],
-    16: [("chronologie", "ben-gourion", "chronologie-ben-gourion")],
+    16: [("chronologie", "ben-gourion", "chronologie-ben-gourion"), ("citation-ben-gourion", None, "citation-ben-gourion-1938")],
     17: [("flux-humains", (20.7, None), "sequence-juifs-des-pays-arabes")],
-    18: [("chronologie", "meir", "chronologie-golda-meir")],
-    19: [("suez-1956", "plans", "sequence-suez-1956"), ("six-jours", "plans", "sequence-six-jours-la-naksa"), ("chronologie", "nasser", "chronologie-nasser"), ("chronologie", "camp-david", "chronologie-camp-david")],
-    20: [("liban-1982", "plans", "sequence-liban-1982")],
+    18: [("chronologie", "meir", "chronologie-golda-meir"), ("citation-meir", None, "citation-golda-meir-1969")],
+    19: [("suez-1956", "plans", "sequence-suez-1956"), ("chronologie", "nasser", "chronologie-nasser"), ("six-jours", "plans", "sequence-six-jours-la-naksa"),
+         ("chronologie", "camp-david", "chronologie-camp-david"), ("chiffre-zone-c", None, "chiffre-cle-zone-c")],
+    20: [("chiffre-refugies", None, "chiffre-cle-refugies-et-camps"), ("liban-1982", "plans", "sequence-liban-1982")],
     21: [("chronologie", "arafat", "chronologie-arafat"), ("octobre-1973", "plans", "sequence-octobre-1973")],
     22: [("chronologie", "yassine", "chronologie-yassine")],
-    23: [("chronologie", "oslo", "chronologie-oslo")],
-    25: [("gaza", "plans", "sequence-gaza")],
+    23: [("chronologie", "oslo", "chronologie-oslo"), ("chiffre-colons", None, "chiffre-cle-colons")],
+    25: [("gaza", "plans", "sequence-gaza"), ("chiffre-gaza", None, "chiffre-cle-femmes-et-enfants")],
     33: [("resolutions", "plans", "sequence-resolutions-onu")],
     36: [("chronologie", "rabin-1995", "chronologie-assassinat-de-rabin")],
+    38: [("citation-darwich", None, "citation-mahmoud-darwich")],
     39: [("chronologie", "outro", "chronologie-fin-un-siecle")],
 }
 
@@ -210,13 +212,19 @@ def main():
                 items.append(f"cartons lieu/date transparents : {', '.join(cart)}")
             lines.append(f"- Chapitre {ch} · {titles.get(ch, '')} : {', '.join(items)}\n")
         print(folder, "ok")
+    fin = os.path.join(OUT, "generique-fin.mp4")
+    if os.path.exists(fin):
+        d9 = os.path.join(DST, "9-Generique-de-fin")
+        os.makedirs(d9, exist_ok=True)
+        copy(fin, os.path.join(d9, "01-generique-de-fin.mp4"))
+        lines += ["\n## 9-Generique-de-fin\n", "- 01 générique de fin (crédits des photos, des sources, des cartes et des polices)\n"]
     srcs = sorted(f for f in glob.glob(os.path.join(OUT, "cartons", "*-source-*.mov")))
     if srcs:
-        d9 = os.path.join(DST, "9-Cartons-sources")
+        d9 = os.path.join(DST, "Cartons-sources-transparents")
         os.makedirs(d9, exist_ok=True)
         for f in srcs:
             copy(f, os.path.join(d9, os.path.basename(f)))
-        lines += ["\n## 9-Cartons-sources\n", "- mentions de source transparentes (ONU, UNRWA, OCHA, B'Tselem…), à poser sur n'importe quelle image\n"]
+        lines += ["\n## Cartons-sources-transparents\n", "- mentions de source transparentes (ONU, UNRWA, OCHA, B'Tselem…), à poser sur n'importe quelle image\n"]
     lines += ["\n## Cartons transparents\n",
               "Les fichiers `cartons/*.mov` ont un fond transparent (codec PNG avec couche alpha) : pose-les sur une piste "
               "au-dessus des images d'archive. Premiere, DaVinci Resolve et Final Cut les lisent directement.\n"]

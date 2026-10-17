@@ -1792,6 +1792,11 @@
         html = `<div class="scrim"></div><div class="wrap"><div class="big sion">${chars(s.title.toUpperCase())}</div>
           <div class="scripts">${(s.scripts || []).map((sc, k) => `${k ? '<i class="bar"></i>' : ''}<span class="native" lang="${sc.lang}" dir="rtl">${esc(sc.text)}</span>`).join('')}</div>
           <p class="text">${words(s.sub)}</p></div>`;
+      } else if (s.type === 'roll') {
+        // générique déroulant : rubriques et lignes qui montent sur la carte ; une ligne [texte, précision]
+        // affiche la précision en plus discret ; big : grand titre de fin
+        const line = (l) => (Array.isArray(l) ? `<p class="rl">${esc(fr(l[0]))}<span>${esc(fr(l[1]))}</span></p>` : `<p class="rl">${esc(fr(l))}</p>`);
+        html = `<div class="scrim"></div><div class="rollbox"><div class="rin">${(s.sections || []).map((sec) => `<div class="rs${sec.big ? ' rbig' : ''}">${sec.h ? `<div class="rh">${esc(sec.h)}</div>` : ''}${sec.big ? `<div class="rt">${esc(sec.big)}</div>` : ''}${(sec.lines || []).map(line).join('')}</div>`).join('')}</div></div>`;
       } else if (s.type === 'credit') {
         html = `<div class="scrim"></div><div class="wrap"><p class="text by">${words(s.by)}</p>
           <div class="big cred"><span class="f">${chars(s.name[0].toUpperCase())}</span><span class="ch">&nbsp;</span><span class="l">${chars(s.name[1].toUpperCase())}</span></div>
@@ -2201,6 +2206,19 @@
     css(R, R.scrim, 'opacity', String(f3(tw(u, -0.2, 0.4))));
   }
 
+  // générique déroulant : vitesse constante, du bas de l'écran jusqu'à ce que la dernière rubrique
+  // s'arrête au centre (hold : temps passé immobile à la fin)
+  function upRoll(s, u) {
+    const R = s.R; R.u = u;
+    const I = s.fly + (s.hitAt || 0), D = s.dur;
+    const rin = R.q('.rin');
+    if (!R.rollH) R.rollH = rin.offsetHeight;
+    const last = rin.lastElementChild, lastH = last ? last.offsetHeight : 0;
+    const y = lerp(H, H / 2 - R.rollH + lastH / 2, inv(I, D - (s.hold || 0), u));
+    css(R, rin, 'transform', `translate3d(0,${f3(y)}px,0)`);
+    css(R, R.scrim, 'opacity', String(f3(tw(u, -0.2, 0.8))));
+  }
+
   // ouverture de partie : titre + sommaire synchronisé avec les repères de la carte
   function upPart(s, u) {
     const R = s.R; R.u = u;
@@ -2558,6 +2576,7 @@
       else if (s.type === 'beat') upBeat(s, u);
       else if (s.type === 'title') upTitle(s, u);
       else if (s.type === 'credit') upCredit(s, u);
+      else if (s.type === 'roll') upRoll(s, u);
       else if (s.type === 'part') upPart(s, u);
       else if (s.type === 'chapter') upChapter(s, u);
       else if (s.type === 'doc') upDoc(s, u);
