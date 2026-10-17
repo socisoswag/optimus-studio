@@ -41,6 +41,7 @@ PARTS = [
 # ("fichier source", début, fin, "nom") ; début/fin à None = fichier entier.
 EXTRAS = {
     1: [("sion-le-mot", "plans", "sequence-sion-le-mot")],
+    2: [("europe-1881-1914", "plans", "sequence-l-europe-en-feu")],
     5: [("aliyas", "plans", "sequence-les-aliyas")],
     4: [("chronologie", "herzl", "chronologie-herzl"), ("citation-herzl", None, "citation-herzl-1895")],
     7: [("trois-promesses", "plans", "sequence-trois-promesses"), ("chronologie", "weizmann", "chronologie-weizmann")],
