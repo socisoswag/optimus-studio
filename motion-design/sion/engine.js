@@ -820,6 +820,7 @@
     g.restore();
   }
 
+  let CITY_DIM = 1; // carte du partage : les villes du fond s'effacent quand la maquette est éclairée
   function drawCities(g, cam, active) {
     g.save();
     g.font = '400 13px "DM Mono"';
@@ -833,7 +834,7 @@
       if (c.X < VIEW.x0 || c.X > VIEW.x1 || c.Y < VIEW.y0 || c.Y > VIEW.y1) continue;
       const p = proj(c.X, c.Y);
       if (p.k < KMIN + 0.05 || p.x < -100 || p.x > W + 20 || p.y < -20 || p.y > H + 20) continue;
-      const fa = a * clamp((p.k - KMIN) * 2.2);
+      const fa = a * clamp((p.k - KMIN) * 2.2) * CITY_DIM;
       g.fillStyle = rgba(COL.stone, 0.75 * fa);
       g.fillRect(p.x - 2, p.y - 2, 4, 4);
       g.fillStyle = rgba(COL.ash, 0.95 * fa);
@@ -1830,10 +1831,12 @@
     for (const m of PART.marks) {
       const a = tw(t, m.t, m.t + 0.5, E.outCubic) * (1 - tw(t, m.tEnd - 0.4, m.tEnd));
       if (a <= 0.01) continue;
-      const P = proj(m.X, m.Y), R = lerp(70, 34, E.outExpo(clamp((t - m.t) / 0.9))), pu = 0.5 + 0.5 * Math.sin((t - m.t) * 4.2);
-      g.strokeStyle = rgba(COL.hot, (0.55 + 0.3 * pu) * a); g.lineWidth = 1.4;
+      const P = proj(m.X, m.Y), R = lerp(90, 46, E.outExpo(clamp((t - m.t) / 0.9))), pu = 0.5 + 0.5 * Math.sin((t - m.t) * 4.2);
+      g.strokeStyle = rgba(COL.ember, 0.25 * a); g.lineWidth = 7;
       g.beginPath(); g.arc(P.x, P.y, R, 0, 7); g.stroke();
-      g.strokeStyle = rgba(COL.stone, 0.85 * a); g.lineWidth = 1.2;
+      g.strokeStyle = rgba(COL.hot, (0.65 + 0.3 * pu) * a); g.lineWidth = 2.2;
+      g.beginPath(); g.arc(P.x, P.y, R, 0, 7); g.stroke();
+      g.strokeStyle = rgba(COL.stone, 0.9 * a); g.lineWidth = 1.8;
       g.beginPath();
       for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) { g.moveTo(P.x + dx * (R + 8), P.y + dy * (R + 8)); g.lineTo(P.x + dx * (R + 26), P.y + dy * (R + 26)); }
       g.stroke();
@@ -1897,7 +1900,7 @@
         const e = tw(t, p.t, p.t + 0.35, E.outCubic), fl = t > p.t ? Math.exp(-(t - p.t) / 0.25) : 0;
         if (e <= 0.01) continue;
         path(p.P);
-        const fa = G0.g === 'abstention' ? 0.09 : G0.g === 'absent' ? 0.0 : 0.26;
+        const fa = G0.g === 'abstention' ? 0.09 : G0.g === 'absent' ? 0.0 : G0.g === 'pour' ? 0.4 : 0.26;
         g.fillStyle = rgba(c, (fa + 0.25 * fl) * e * A); g.fill();
         if (G0.g === 'abstention') {
           g.save(); g.clip(); g.strokeStyle = rgba(c, 0.32 * e * A); g.lineWidth = 1;
@@ -1970,7 +1973,7 @@
     // échelle régionale (territoires, offensives) ou échelle de la rue (plans, maisons)
     const ZR = inv(0.0025, 0.007, cam.w), ZS = inv(0.008, 0.003, cam.w);
     if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t, Math.pow(clamp(0.011 / cam.w), 0.9)); drawBlocks(g, t, ZS); }
-    if (PART) { drawVote(g, t); drawPartage(g, t, cam); }
+    if (PART) { drawVote(g, t); drawPartage(g, t, cam); CITY_DIM = 1 - 0.7 * landAlpha(t); }
     if (FLOWS.length) drawFlows(g, t);
     if (HAS_WAR) { drawUnits(g, t); drawStrikes(g, t); if (FLARES.length) drawFlares(g, t); }
     const busy = [];

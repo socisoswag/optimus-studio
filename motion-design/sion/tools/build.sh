@@ -4,18 +4,23 @@
 #   tools/build.sh generique            → output/generique.mp4 + output/generique.wav
 #   PREVIEW_DIR=/tmp tools/build.sh generique   → ajoute un aperçu < 29 Mo dans /tmp
 #
-# Variables : WORKERS (4 par défaut), BITRATE (9000k par défaut).
+# Variables : WORKERS (4 par défaut), BITRATE (9000k par défaut), NOTEXT=1 (version sans texte).
 set -euo pipefail
 NAME="${1:?nom de la timeline, ex. generique}"
+# NOTEXT=1 : version sans texte (output/<nom>-sans-texte.mp4), même bande-son que la version normale
+OUTNAME="$NAME"; RFLAGS=""
+if [ "${NOTEXT:-0}" = "1" ]; then OUTNAME="$NAME-sans-texte"; RFLAGS="--notext"; fi
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 cd "$ROOT"
 mkdir -p output
 
-node render.mjs --timeline "$NAME" --workers "${WORKERS:-4}" --crf 14 --out "$TMP/video.mp4"
-node tools/cues.mjs "$NAME" > "$TMP/cues.json"
-python3 tools/sound.py "$TMP/cues.json" "output/$NAME.wav"
+node render.mjs --timeline "$NAME" --workers "${WORKERS:-4}" --crf 14 $RFLAGS --out "$TMP/video.mp4"
+if [ "$OUTNAME" = "$NAME" ] || [ ! -f "output/$NAME.wav" ]; then
+  node tools/cues.mjs "$NAME" > "$TMP/cues.json"
+  python3 tools/sound.py "$TMP/cues.json" "output/$NAME.wav"
+fi
 DUR=$(node -e "require('./core.js'); require('./timelines/$NAME.js'); console.log(globalThis.TL.total)")
 
 # Finition « pellicule » : halo chaud autour des hautes lumières (halation),
@@ -32,11 +37,11 @@ encode() { # $1 = débit vidéo, $2 = fichier de sortie, $3 = filtre vidéo
     -c:a aac -b:a 320k -t "$DUR" -movflags +faststart "$2"
 }
 
-encode "${BITRATE:-9000k}" "output/$NAME.mp4" "$FINISH"
+encode "${BITRATE:-9000k}" "output/$OUTNAME.mp4" "$FINISH"
 
 if [ -n "${PREVIEW_DIR:-}" ]; then
   # aperçu partageable : 29 Mo maximum, en 1080p si possible
   KBPS=$(python3 -c "print(int(29 * 8192 / $DUR - 340))")
   encode "${KBPS}k" "$PREVIEW_DIR/apercu_$NAME.mp4" "$FINISH"
 fi
-ls -la "output/$NAME.mp4" "output/$NAME.wav"
+ls -la "output/$OUTNAME.mp4" "output/$NAME.wav"
