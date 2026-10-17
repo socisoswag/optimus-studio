@@ -21,6 +21,25 @@ un seul moteur, une timeline par pièce.
 | Les résolutions 194, 242, 338 (chapitre 33) | `timelines/resolutions.js` | 1 min | `output/resolutions.mp4` |
 | 1948, la Nakba (chapitre 13) | `timelines/nakba-1948.js` | 1 min 33 | `output/nakba-1948.mp4` |
 | Six jours, la Naksa, juin 1967 (chapitre 19) | `timelines/six-jours.js` | 1 min 20 | `output/six-jours.mp4` |
+| Suez, 1956 (chapitre 19) | `timelines/suez-1956.js` | 1 min 10 | `output/suez-1956.mp4` |
+| Deir Yassin, 9 avril 1948 (chapitre 15) | `timelines/deir-yassin.js` | 50 s | `output/deir-yassin.mp4` |
+| Liban, 1982 (chapitre 20) | `timelines/liban-1982.js` | 1 min 23 | `output/liban-1982.mp4` |
+| Octobre 1973 (chapitre 21) | `timelines/octobre-1973.js` | 1 min 07 | `output/octobre-1973.mp4` |
+| Gaza, 2007 – 2025 (chapitre 25) | `timelines/gaza.js` | 1 min 34 | `output/gaza.mp4` |
+| Les frontières qui bougent, 1947 – aujourd'hui (chapitre 19) | `timelines/frontieres.js` | 51 s | `output/frontieres.mp4` |
+| Jérusalem (chapitre 19) | `timelines/jerusalem.js` | 1 min 01 | `output/jerusalem.mp4` |
+| Les camps (chapitre 20) | `timelines/camps.js` | 40 s | `output/camps.mp4` |
+| Oslo et le mur (chapitre 23) | `timelines/oslo-mur.js` | 49 s | `output/oslo-mur.mp4` |
+| Les aliyas, 1882 – 1939 (chapitre 5) | `timelines/aliyas.js` | 57 s | `output/aliyas.mp4` |
+| Citations : Herzl (4), Ben Gourion (16), Golda Meir (18), Mahmoud Darwich (38) | `timelines/citation-*.js` | 12 à 13 s | `output/citation-*.mp4` |
+| Chiffres-clés : zone C (19), réfugiés (20), colons (23), Gaza (25) | `timelines/chiffre-*.js` | 13 s | `output/chiffre-*.mp4` |
+| Générique de fin (sans nom de l'équipe) | `timelines/generique-fin.js` | 1 min 02 | `output/generique-fin.mp4` |
+| 26 cartons transparents : lieux et dates, mentions de source | `timelines/cartons.js` | 5,5 s chacun | `output/cartons/*.mov` |
+
+Le dossier `output/montage/` range tout pour le montage : un dossier par partie, un sous-dossier par
+chapitre, et chaque séquence découpée **plan par plan** (séquence complète, un fichier par plan et
+`PLANS.md` avec la durée, la place dans la séquence et le texte de chaque plan). Il se refait avec
+`python3 tools/montage.py`.
 
 Le son ne contient que des bruitages, sans musique : les pièces s'intègrent au montage sous la
 musique du film. Chaque pièce a aussi ses bruitages seuls en `.wav` à côté du `.mp4`.
@@ -35,12 +54,16 @@ Vidéos en 1920 × 1080, 25 i/s, H.264 9 Mbit/s (cartons de chapitre : 10 Mbit/s
 |---|---|
 | Fond | `#0d0c0a` nuit de cendre, fumée en mouvement, lueurs d'incendie, éclairs d'artillerie, projecteurs |
 | Texte | `#e9dcc0` pierre de Jérusalem |
-| Accent | `#ff5b1f` braise |
+| Accent | vermillon `rgb(232,52,30)` : force, feu, occupation, bilans |
+| Vie | olive pâle `rgb(170,182,110)` : villages, villes la nuit, réfugiés, terres palestiniennes |
 | Carte | `#7f989a` encre d'état-major, sans frontières politiques |
 | Titres | Archivo très condensée (fin + noir) |
 | Phrases | Newsreader (italique pour les phrases, romain pour les sommaires) |
 | Repères | DM Mono |
 | Écritures d'origine | Noto Sans Hebrew, Noto Kufi Arabic |
+
+Toutes les couleurs d'accent se règlent dans `data/palette.js` (le halo de la finition pellicule
+aussi). La couleur code les lieux et les populations, jamais les individus.
 
 Signature : une caméra qui survole une carte d'état-major dans la fumée, zoome fort sur chaque lieu
 (avec flou de bougé), allume les terres en braise, et des titres qui tombent avec flash, secousse et
@@ -97,7 +120,12 @@ timeline :
 |---|---|---|
 | `doc` | document cité (lettre, accord, résolution) | `eyebrow`, `title` (2 lignes), `meta`, `quote` (texte ou liste de paragraphes), `rows`, `ref`, `note` |
 | `stat` | chiffre-choc avec compteur | `kicker`, `pre`, `value`, `label`, `text`, `source`, `layout` `'L'` ou `'B'` (bas d'écran) |
-| `quote` | citation plein écran | `text`, `author`, `pos: 'low'` pour la poser en bas, sur la carte |
+| `quote` | citation plein écran | `text`, `author`, `pos: 'low'` pour la poser en bas, sur la carte, `native` (texte dans sa langue d'origine), `context` (une ligne sous l'auteur) |
+| `roll` | générique déroulant | `sections` : `{ h, lines }`, une ligne `[texte, précision]` ; `{ big, lines }` pour le titre final ; `hold` |
+
+`stat` accepte aussi `unit` (« % » après le compteur). Un visage s'ajoute à n'importe quel écran avec
+`faces: [root.face('herzl', { side, x, h, at, until, tag, tagPos })]` ; dans une paire, les têtes
+sont mises à la même taille et à la même hauteur.
 
 Dans un texte, `[[ … ]]` souligne un passage d'un trait de braise. Les flux de particules se
 déclarent dans `flows` (départs, arrivée, nombre de particules, moment) ; voir `flux-humains.js`.
@@ -112,7 +140,7 @@ séquence (`seg`, `at`) :
 | `units` | chars, automitrailleuses, avions, navires, bulldozers en formation, avec poussière, ombre, traînées | `kind` (`tank`, `truck`, `plane`, `ship`, `dozer`), `n`, `path`, `dur`, `size`, `fire: [{ at, to }]` (tir et impact) |
 | `arrows` | flèches d'offensive effilées qui avancent | `path`, `dur`, `w`, `label`, `tone: 'stone'` (l'autre camp) |
 | `strikes` | frappe : éclair, onde de choc, feu, fumée qui monte | `lon`, `lat`, `power`, `burn` |
-| `zones` | territoire qui se hachure depuis un point (`data/territoires.js`, `tools/prep_territoires.py`) | `name` (`cisjordanie`, `gaza`, `jerusalem-est`, `golan`, `sinai`, `israel-1949`, `palestine-mandataire`), `from`, `dur`, `tone: 'stone'` |
+| `zones` | territoire qui se hachure depuis un point (`data/territoires.js`, `data/ocha.js`) | `name` (`cisjordanie`, `gaza`, `jerusalem-est`, `golan`, `sinai`, `israel-1949`, `palestine-mandataire`, `oslo-ab`, `oslo-c`, `oslo-reserve`, `jerusalem-est-annexee`, `hebron-h2`), `from`, `dur`, `until`, `tone: 'stone'` ou `'life'` |
 | `plans` | tracé au sol à l'échelle d'un quartier (rempart, esplanade, mur) | `path`, `closed`, `style` (`wall`, `sacred`, `focus`, `grid`), `label`, `labelAt` |
 | `blocks` | maisons en relief qui s'effondrent (poussière, gravats, empreinte) | `lon`, `lat`, `w`, `d`, `h` (mètres), `rot`, `fall` |
 | `clock` | date et heure en haut de l'écran | `text` |
@@ -141,12 +169,21 @@ Fichiers : `core.js` (minutage commun image/son), `engine.js` (moteur), `index.h
 
 ## Photos d'archive
 
-Les fiches de la chronologie acceptent une photo (`photo: 'portraits/herzl.jpg'`), voir
-`portraits/LISEZMOI.md`. Vérifie les droits de chaque image.
+Les visages des personnages sont des photos d'archive restaurées et détourées (`portraits/*.png`,
+`tools/portraits.py`), avec auteur et licence de chacune dans `portraits/LISEZMOI.md`.
+
+## Cartons à poser sur les images
+
+`tools/build_cartons.sh` fabrique les cartons lieu et date et les mentions de source sur fond
+transparent (`render.mjs --alpha`) : un MOV par carton dans `output/cartons/`, codec PNG avec couche
+alpha, que Premiere, DaVinci Resolve et Final Cut lisent directement.
 
 ## Crédits
 
-- Cartographie : [Natural Earth](https://www.naturalearthdata.com/), domaine public.
+- Cartographie : [Natural Earth](https://www.naturalearthdata.com/), domaine public ; zones des accords
+  d'Oslo (Autorité palestinienne, ministère du Plan) et tracé du mur de janvier 2018 (CC BY), publiés
+  par l'OCHA sur [HDX](https://data.humdata.org/) (`tools/prep_ocha.py`).
+- Photos des personnages : Wikimedia Commons, auteurs et licences dans `portraits/LISEZMOI.md`.
 - Polices sous licence SIL Open Font License : Archivo (Omnibus-Type), Newsreader (Production Type),
   DM Mono (Colophon), Noto Sans Hebrew et Noto Kufi Arabic (Google).
 - Bandes-son entièrement synthétisées (`tools/sound.py`), sans échantillon externe.
