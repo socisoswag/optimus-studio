@@ -40,6 +40,7 @@ PARTS = [
 # Après le titre d'un chapitre : les séquences et les fiches de la chronologie qui l'illustrent.
 # ("fichier source", début, fin, "nom") ; début/fin à None = fichier entier.
 EXTRAS = {
+    1: [("sion-le-mot", "plans", "sequence-sion-le-mot")],
     5: [("aliyas", "plans", "sequence-les-aliyas")],
     4: [("chronologie", "herzl", "chronologie-herzl"), ("citation-herzl", None, "citation-herzl-1895")],
     7: [("trois-promesses", "plans", "sequence-trois-promesses"), ("chronologie", "weizmann", "chronologie-weizmann")],
