@@ -154,6 +154,8 @@
     flares.forEach((f) => impacts.push({ t: f.t - 0.15, k: 0.2, kind: 'soft', seg: segments.indexOf(segAt(f.t)), visual: false }));
     const blocks = abs(def.blocks).map((b) => ({ ...b, tf: b.fall !== undefined ? byId[b.seg].start + b.fall : undefined }));
     // réseaux de faux comptes : apparition à `at`, suppression à partir de `off`, effacement à `until`
+    // noms remplacés sur la carte : l'ancien nom s'écrit, est barré, le nouveau s'écrit par-dessus
+    const renames = abs(def.renames).map((r) => ({ ...r, tEnd: r.until !== undefined ? byId[r.seg].start + r.until : total + 1 }));
     const nets = abs(def.nets).map((n) => ({ ...n, offT: n.off !== undefined ? byId[n.seg].start + n.off : undefined, tEnd: n.until !== undefined ? byId[n.seg].start + n.until : total + 1 }));
     blocks.forEach((b, i) => { if (b.fall !== undefined && i % 3 === 0) impacts.push({ t: b.tf, k: 0.5 + 0.5 * ((i * 7) % 5) / 4, kind: 'crumble', seg: segments.indexOf(segAt(b.tf)), visual: false }); });
     impacts.sort((a, b) => a.t - b.t);
@@ -163,7 +165,7 @@
 
     return {
       name: def.name || 'piece',
-      segments, total, impacts, flights, flashes, markers, silences, flows, units, arrows, zones, clock, strikes, plans, blocks, flares, lights, nets,
+      segments, total, impacts, flights, flashes, markers, silences, flows, units, arrows, zones, clock, strikes, plans, blocks, flares, lights, nets, renames,
       events: def.events || [],
       cities: def.cities || CITIES,
       hud: Object.assign({}, HUD_DEFAULT, def.hud || {}),

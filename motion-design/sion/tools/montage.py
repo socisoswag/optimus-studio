@@ -65,6 +65,7 @@ EXTRAS = {
     26: [("figures-aujourdhui", "smotrich-ben-gvir", "chronologie-smotrich-et-ben-gvir")],
     27: [("guerre-numerique", "plans", "sequence-la-guerre-numerique")],
     33: [("resolutions", "plans", "sequence-resolutions-onu")],
+    34: [("noms-effaces", "plans", "sequence-les-noms-effaces")],
     35: [("apartheid-textes", "plans", "sequence-apartheid-ce-que-disent-les-textes")],
     36: [("chronologie", "rabin-1995", "chronologie-assassinat-de-rabin")],
     38: [("citation-darwich", None, "citation-mahmoud-darwich")],

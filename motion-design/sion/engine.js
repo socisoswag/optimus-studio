@@ -141,6 +141,9 @@
     }
     return { ...nt, N, HX: MX(nt.hub[0]), HY: MY(nt.hub[1]) };
   });
+  // noms remplacés (effacement) : l'ancien nom s'écrit en olive, un trait de braise le barre, le nouveau
+  // nom s'écrit au-dessus en pierre ; `strike` et `gap` règlent le rythme (secondes)
+  const RENAMES = (TL.renames || []).map((r) => ({ ...r, X: MX(r.lon), Y: MY(r.lat) }));
   // ------------------------------------------------------------ guerre : unités, flèches, frappes, territoires
   const smoothPath = (pts) => {
     // lissage de Chaikin (deux passes) pour des trajectoires sans angles
@@ -1508,6 +1511,45 @@
     g.restore();
   }
 
+  function drawRenames(g, t) {
+    g.save();
+    g.textBaseline = 'middle';
+    for (const r of RENAMES) {
+      const A = tw(t, r.t - 0.1, r.t + 0.3) * (1 - tw(t, r.tEnd - 0.6, r.tEnd));
+      if (A <= 0.01) continue;
+      const p = { ...proj(r.X, r.Y) };
+      if (p.k < KMIN + 0.05) continue;
+      const dir = r.dir || 1, ts = r.t + (r.strike || 1.3), tn = ts + (r.gap || 0.45);
+      const old = r.from.toUpperCase(), neu = r.to.toUpperCase();
+      // le lieu
+      const dead = tw(t, ts, ts + 0.35);
+      g.fillStyle = rgba(dead > 0.5 ? COL.stone : COL.life, 0.9 * A);
+      g.fillRect(p.x - 3, p.y - 3, 6, 6);
+      if (dead < 0.5) sprite(g, SPR.stone, p.x, p.y, 22, 0.25 * A);
+      // l'ancien nom, tapé lettre à lettre, puis barré
+      g.font = '500 20px "DM Mono"'; g.letterSpacing = '3px';
+      g.textAlign = dir > 0 ? 'left' : 'right';
+      const x0 = p.x + dir * 14, n = Math.floor(old.length * clamp((t - r.t) / 0.45));
+      const shown = old.slice(0, n), w = g.measureText(old).width;
+      g.fillStyle = rgba(COL.life, (1 - 0.35 * dead) * A);
+      g.fillText(shown, x0, p.y + 1);
+      if (t > ts) {
+        const q = E.outCubic(clamp((t - ts) / 0.35)), xa = dir > 0 ? x0 - 4 : x0 + 4, xb = dir > 0 ? x0 + (w + 4) * q : x0 - (w + 4) * q;
+        g.strokeStyle = rgba(COL.ember, 0.95 * A); g.lineWidth = 2.4;
+        g.beginPath(); g.moveTo(xa, p.y + 1); g.lineTo(xb, p.y + 1); g.stroke();
+        if (q < 1) sprite(g, SPR.hot, xb, p.y + 1, 26, 0.8 * A);
+      }
+      // le nouveau nom, au-dessus
+      if (t > tn) {
+        g.font = '600 23px "DM Mono"'; g.letterSpacing = '3.5px';
+        const m = Math.floor(neu.length * clamp((t - tn) / 0.45));
+        g.fillStyle = rgba(COL.stone, 0.95 * A);
+        g.fillText(neu.slice(0, m), x0, p.y - 30);
+      }
+    }
+    g.restore();
+  }
+
   function drawNets(g, t) {
     for (const nt of NETS) {
       const A = tw(t, nt.t - 0.2, nt.t + 0.6) * (1 - tw(t, nt.tEnd - 0.8, nt.tEnd));
@@ -2047,6 +2089,7 @@
     if (PART) { drawVote(g, t); drawPartage(g, t, cam); CITY_DIM = 1 - 0.7 * landAlpha(t); }
     if (FLOWS.length) drawFlows(g, t);
     if (NETS.length) drawNets(g, t);
+    if (RENAMES.length) drawRenames(g, t);
     if (HAS_WAR) { drawUnits(g, t); drawStrikes(g, t); if (FLARES.length) drawFlares(g, t); }
     const busy = [];
     if (pin && pin.showPin) busy.push(pin.s);
