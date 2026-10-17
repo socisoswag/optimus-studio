@@ -10,6 +10,7 @@ sa source n'est pas refait (le dépôt ne grossit pas pour rien) ; les fichiers 
 partie du montage sont supprimés. Une pièce pas encore rendue est simplement sautée.
 
     python3 tools/montage.py          (à relancer après chaque nouveau rendu)
+    MONTAGE_DIR=/tmp/montage python3 tools/montage.py   (dans un dossier de travail)
 """
 import glob
 import json
@@ -22,7 +23,8 @@ import unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "output")
-DST = os.path.join(OUT, "montage")
+# MONTAGE_DIR : fabriquer ailleurs (dossier de travail), puis recopier une fois tout terminé
+DST = os.environ.get("MONTAGE_DIR") or os.path.join(OUT, "montage")
 
 PARTS = [
     ("1-Partie-I-L-idee", "partie-1", range(1, 7)),
