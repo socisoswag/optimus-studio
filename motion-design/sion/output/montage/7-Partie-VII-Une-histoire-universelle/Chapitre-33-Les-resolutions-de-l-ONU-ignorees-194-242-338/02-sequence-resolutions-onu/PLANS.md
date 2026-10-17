@@ -9,4 +9,4 @@
 | 3 | `03-resolution-242.mp4` | 13.0 s | 0:18.90 → 0:31.90 | Conseil de sécurité · 22 novembre 1967 · Résolution 242 · Retrait des forces armées israéliennes des territoires occupés lors du récent conflit ; […] respect et reconnaissance de la souveraineté […] de chaque État de la région et de leur droit de vivre en paix à l’intérieur de frontières sûres et reconnues […] |
 | 4 | `04-mot.mp4` | 8.6 s | 0:31.90 → 0:40.50 |  |
 | 5 | `05-resolution-338.mp4` | 12.0 s | 0:40.50 → 0:52.50 | Conseil de sécurité · 22 octobre 1973 · Résolution 338 · Demande aux parties en cause de commencer immédiatement après le cessez-le-feu l’application de la résolution 242 (1967) du Conseil de sécurité dans toutes ses parties ; |
-| 6 | `06-1948-1967-1973.mp4` | 6.8 s | 0:52.50 → 0:59.32 | 1948 · 1967 · 1973 · Trois guerres. Trois textes. Une même terre. |
+| 6 | `06-1948-1967-1973.mp4` | 6.8 s | 0:52.50 → 0:59.32 | 1948 · 1967 · 1973 · Votées par l’ONU, jamais appliquées en entier. |
