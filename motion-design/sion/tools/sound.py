@@ -192,9 +192,11 @@ crack /= np.abs(crack).max() + 1e-9
 
 # musique (drone + accords) seulement sur demande : par défaut, bruitages seuls
 MUSIC = os.environ.get("MUSIC", "0") == "1"
-bedmix = ((0.55 * drone + 0.30 * pad) * MUSIC + 0.42 * wind) * bed * duck
+# bedFrom : le vent et le feu n'arrivent qu'à partir de cet instant (ex. une salle de l'ONU avant la guerre)
+bed_in = np.clip((t - float(SND.get("bedFrom", 0.0))) / 2.0, 0, 1) ** 1.5 if SND.get("bedFrom") else 1.0
+bedmix = ((0.55 * drone + 0.30 * pad) * MUSIC + 0.42 * wind * bed_in) * bed * duck
 add(bedmix, 0, 0.62, 0.0)
-crl = crack * bed * 0.09
+crl = crack * bed * bed_in * 0.09
 add((crl, np.roll(crl, int(0.021 * SR))), 0, 1.0)
 
 # ------------------------------------------------------------------ tic-tac (le temps qui passe)
@@ -406,6 +408,155 @@ if EV:
     n = int(3.4 * SR)
     tin = np.sin(2 * np.pi * 7150 * np.arange(n) / SR) * np.clip(np.arange(n) / SR / 0.08, 0, 1) * np.exp(-np.arange(n) / SR / 1.1)
     add(tin, ev_t + 0.02, 0.022)
+
+# ------------------------------------------------------------------ bruitages calés image par image (TL.sound.foley)
+# machine à écrire, sonnette du chariot, marteau de séance, scalpel sur papier, dalles qui se
+# déplacent, radio, coups de feu lointains, scintillement des villages qui s'allument
+def key_click(v=0):
+    n = int(0.09 * SR)
+    tt = np.arange(n) / SR
+    tr = bp(noise(n), 1800, 8000) * env_exp(n, 0.0028 + 0.0006 * (v % 3), 0.0002)
+    body = bp(noise(n), 180, 900) * env_exp(n, 0.012, 0.0008)
+    ring = np.sin(2 * np.pi * (2300 + 140 * v) * tt) * env_exp(n, 0.014, 0.0005)
+    x = tr / (np.abs(tr).max() + 1e-9) + 0.55 * body / (np.abs(body).max() + 1e-9) + 0.12 * ring
+    return x
+
+
+def bell():
+    n = int(1.6 * SR)
+    tt = np.arange(n) / SR
+    x = (np.sin(2 * np.pi * 2380 * tt) + 0.5 * np.sin(2 * np.pi * 3610 * tt) + 0.25 * np.sin(2 * np.pi * 5230 * tt)) * env_exp(n, 0.55, 0.001)
+    rat = np.zeros(n)
+    for k in range(9):
+        i0 = int((0.22 + 0.028 * k) * SR)
+        m = int(0.02 * SR)
+        rat[i0:i0 + m] += bp(noise(m), 900, 5000) * np.exp(-np.arange(m) / (m / 6))
+    thunk = lp(noise(n), 400) * env_exp(n, 0.04, 0.002)
+    thunk = np.roll(thunk, int(0.5 * SR))
+    return 0.35 * x + 0.5 * rat / (np.abs(rat).max() + 1e-9) + 0.5 * thunk / (np.abs(thunk).max() + 1e-9)
+
+
+def knock():
+    n = int(0.8 * SR)
+    tt = np.arange(n) / SR
+    th = lp(noise(n), 700) * env_exp(n, 0.025, 0.0005)
+    res = np.sin(2 * np.pi * 182 * tt) * env_exp(n, 0.09, 0.001) + 0.6 * np.sin(2 * np.pi * 437 * tt) * env_exp(n, 0.05, 0.001)
+    return th / (np.abs(th).max() + 1e-9) + 0.5 * res
+
+
+def scalpel(dur):
+    n = int((dur + 0.15) * SR)
+    tt = np.arange(n) / SR
+    env = np.sin(np.pi * np.clip(tt / (dur + 0.15), 0, 1)) ** 0.6
+    grains = (rng.random(n) < 140 / SR) * rng.standard_normal(n)
+    grains = conv(grains, np.exp(-np.arange(int(0.004 * SR)) / (0.0008 * SR)))[:n]
+    hiss = bp(noise(n), 1600, 7500)
+    hiss /= np.abs(hiss).max() + 1e-9
+    gr = bp(grains, 900, 6000)
+    gr /= np.abs(gr).max() + 1e-9
+    scrape = bp(noise(n), 280, 1100) * (0.6 + 0.4 * np.sin(2 * np.pi * 9 * tt))
+    scrape /= np.abs(scrape).max() + 1e-9
+    return (0.55 * hiss + 0.6 * gr + 0.25 * scrape) * env
+
+
+def slab():
+    n = int(2.0 * SR)
+    tt = np.arange(n) / SR
+    x = 0.9 * hit(1.0, metal=False)[:n]
+    grind = bp(noise(n), 70, 650) * (0.55 + 0.45 * np.abs(np.sin(2 * np.pi * 13 * tt + 3 * np.sin(2 * np.pi * 2.1 * tt))))
+    grind *= np.clip(tt / 0.05, 0, 1) * np.exp(-tt / 0.5)
+    x += 0.7 * grind / (np.abs(grind).max() + 1e-9)
+    dust = bp(noise(n), 2000, 7000) * np.exp(-tt / 0.35) * (rng.random(n) < 0.02)
+    x += 0.12 * dust / (np.abs(dust).max() + 1e-9)
+    return x
+
+
+def radio(dur):
+    n = int(dur * SR)
+    tt = np.arange(n) / SR
+    syl = np.zeros(n)
+    k = 0
+    while k < n:
+        ln = int(SR * (0.12 + 0.18 * rng.random()))
+        gap = int(SR * (0.02 + (0.35 if rng.random() < 0.12 else 0.06) * rng.random()))
+        m = min(ln, n - k)
+        syl[k:k + m] = np.sin(np.pi * np.arange(m) / max(m, 1)) ** 1.5 * (0.5 + 0.5 * rng.random())
+        k += ln + gap
+    voice = np.zeros(n)
+    for f0, bw in ((520, 300), (1250, 500), (2400, 700)):
+        voice += bp(noise(n), f0 - bw / 2, f0 + bw / 2)
+    voice = voice / (np.abs(voice).max() + 1e-9) * syl
+    crackle = (rng.random(n) < 30 / SR) * rng.standard_normal(n)
+    crackle = bp(conv(crackle, np.exp(-np.arange(200) / 30.0))[:n], 800, 6000)
+    hiss = bp(noise(n), 1500, 4500) * 0.18
+    hum = 0.08 * np.sin(2 * np.pi * 100 * tt)
+    x = bp(voice + 0.25 * crackle / (np.abs(crackle).max() + 1e-9) + hiss, 280, 3400) + hum
+    env = np.clip(tt / 1.2, 0, 1) * np.clip((dur - tt) / 1.6, 0, 1)
+    return x * env
+
+
+def shot():
+    n = int(1.8 * SR)
+    tt = np.arange(n) / SR
+    crack = hp(noise(n), 1500) * env_exp(n, 0.007, 0.0002)
+    boom = lp(noise(n), 380) * env_exp(n, 0.13, 0.002)
+    return crack / (np.abs(crack).max() + 1e-9) + 0.8 * boom / (np.abs(boom).max() + 1e-9)
+
+
+def shimmer(dur):
+    n = int((dur + 0.6) * SR)
+    x = np.zeros(n)
+    count = int(dur * 55)
+    for _ in range(count):
+        q = rng.random() ** 0.8
+        i0 = int(q * dur * SR)
+        m = int(0.025 * SR)
+        f = 2600 + 3800 * rng.random()
+        seg = np.sin(2 * np.pi * f * np.arange(m) / SR) * np.exp(-np.arange(m) / (0.004 * SR))
+        x[i0:i0 + m] += seg * (0.4 + 0.6 * rng.random())
+    return x
+
+
+KNOCK = knock()
+for fo in (SND.get("foley") or []):
+    k, t0, g = fo["kind"], fo["t"], fo.get("gain", 1.0)
+    if k == "key":
+        l, r = verb(key_click(fo.get("v", 0)), IR_HALL, wet=0.12)
+        add((l, r), t0, 0.16 * g, 0.0)
+    elif k == "bell":
+        l, r = verb(bell(), IR_HALL, wet=0.2)
+        add((l, r), t0, 0.12 * g)
+    elif k == "tick":
+        l, r = verb(click(), IR_HALL, wet=0.25)
+        add((l, r), t0, 0.12 * g)
+    elif k == "gavel":
+        for d, a in ((0.0, 1.0), (0.34, 0.8)):
+            l, r = verb(KNOCK, IR_HALL, wet=0.45)
+            add((l, r), t0 + d, 0.42 * a * g)
+    elif k == "room":
+        n = int(fo["dur"] * SR)
+        tt = np.arange(n) / SR
+        x = bp(noise(n), 150, 800) * (0.7 + 0.3 * np.sin(2 * np.pi * 0.23 * tt))
+        x = x / (np.abs(x).max() + 1e-9) * np.clip(tt / 1.5, 0, 1) * np.clip((fo["dur"] - tt) / 1.5, 0, 1)
+        l, r = verb(x, IR_HALL, wet=0.6, dry=0.4)
+        add((l, r), t0, 0.05 * g)
+    elif k == "shimmer":
+        l, r = verb(shimmer(fo["dur"]), IR_FAR, wet=0.5)
+        add((l, r), t0, 0.05 * g)
+    elif k == "cut":
+        x = scalpel(fo["dur"])
+        l, r = verb(x, IR_HALL, wet=0.18)
+        add((l, r), t0, 0.15 * g, 0.0)
+    elif k == "slab":
+        l, r = verb(slab(), IR_FAR, wet=0.5)
+        add((l, r), t0, 0.5 * g)
+    elif k == "radio":
+        x = radio(fo["dur"])
+        l, r = verb(x, IR_HALL, wet=0.15)
+        add((l, r), t0, 0.07 * g, -0.3)
+    elif k == "shot":
+        l, r = verb(shot(), IR_FAR, wet=0.85, dry=0.35)
+        add((l, r), t0, 0.2 * g, 0.4)
 
 # ------------------------------------------------------------------ mixage final
 mix_l, mix_r = L * master, R * master

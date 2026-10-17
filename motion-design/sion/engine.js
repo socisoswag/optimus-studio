@@ -17,6 +17,8 @@
     hot: PAL.hot || [255, 174, 90], map: [127, 152, 154], smoke: [42, 38, 32],
   };
   COL.life = PAL.life || COL.ember;
+  COL.cold = PAL.cold || [124, 156, 188];      // encre froide (État juif prévu en 1947, puis Israël)
+  COL.coldHot = PAL.coldHot || [190, 212, 234];
   COL.lifeHot = PAL.lifeHot || PAL.life || COL.hot;
   const EMB = COL.ember.join(','), HOTM = COL.ember.map((c, k) => Math.round(c * 0.6 + COL.hot[k] * 0.4)).join(',');
   if (typeof document !== 'undefined') {
@@ -1065,8 +1067,9 @@
         g.beginPath(); g.arc(ox, oy, Math.max(0.1, R * p), 0, 7); g.clip();
       }
       g.globalCompositeOperation = 'lighter';
-      // tone : vermillon (par défaut), 'stone' (l'autre camp), 'life' (terres palestiniennes, en olive)
-      const zc = z.tone === 'stone' ? COL.stone : z.tone === 'life' ? COL.life : COL.ember, zk = z.tone === 'stone' ? 0.45 : z.tone === 'life' ? 0.8 : 1;
+      // tone : vermillon (par défaut), 'stone' (l'autre camp), 'life' (terres palestiniennes, en olive),
+      // 'cold' (encre froide : territoire attribué à l'État juif en 1947, puis Israël)
+      const zc = z.tone === 'stone' ? COL.stone : z.tone === 'life' ? COL.life : z.tone === 'cold' ? COL.cold : COL.ember, zk = z.tone === 'stone' ? 0.45 : z.tone === 'life' ? 0.8 : z.tone === 'cold' ? 0.9 : 1;
       g.fillStyle = rgba(zc, 0.11 * A * zk); g.fillRect(bx0 - 2, by0 - 2, bx1 - bx0 + 4, by1 - by0 + 4);
       g.strokeStyle = rgba(zc, 0.5 * A * zk); g.lineWidth = 1.3;
       g.beginPath();
@@ -1077,7 +1080,7 @@
       g.save();
       g.globalCompositeOperation = 'lighter';
       if (z.outline !== false) {
-        g.strokeStyle = rgba(z.tone === 'stone' ? COL.stone : z.tone === 'life' ? COL.lifeHot : COL.hot, (z.tone === 'stone' ? 0.6 : 0.85) * A * p); g.lineWidth = 1.7; g.stroke(outline);
+        g.strokeStyle = rgba(z.tone === 'stone' ? COL.stone : z.tone === 'life' ? COL.lifeHot : z.tone === 'cold' ? COL.coldHot : COL.hot, (z.tone === 'stone' ? 0.6 : 0.85) * A * p); g.lineWidth = 1.7; g.stroke(outline);
         g.strokeStyle = rgba(zc, 0.25 * A * p * zk); g.lineWidth = 6; g.stroke(outline);
       }
       g.restore();
@@ -1491,6 +1494,424 @@
   }
 
   // mot : 1 au repos, baisse quand la caméra file (les détails fins deviennent un voile)
+  // ------------------------------------------------------------ carte du partage (1947)
+  // Relief éclairé comme une maquette, découpé en morceaux (data/partage.js) ; une lame trace les
+  // frontières, chaque morceau prend la couleur de son État, puis les morceaux se décollent.
+  // Tous les temps viennent de la timeline (TL.partage), pour que le son et l'image restent calés.
+  const PTD = TL.partage && window.PARTAGE ? window.PARTAGE : null;
+  const PART = PTD ? (() => {
+    const C = TL.partage;
+    const at = (o) => (o ? SEG.find((x) => x.id === o.seg).start + (o.at || 0) : 1e9);
+    const stateOf = (k) => (k.startsWith('arabe') || k === 'jaffa' ? 'arabe' : k.startsWith('juif') ? 'juif' : 'jer');
+    const inRings = (rings, X, Y) => {
+      let c = false;
+      for (const P of rings) for (let a = 0, b = P.length - 1; a < P.length; b = a++) if ((P[a][1] > Y) !== (P[b][1] > Y) && X < ((P[b][0] - P[a][0]) * (Y - P[a][1])) / (P[b][1] - P[a][1]) + P[a][0]) c = !c;
+      return c;
+    };
+    const pieces = Object.entries(PTD.sections).map(([k, polys]) => {
+      const rings = polys.flatMap((p) => p.map((r) => r.map(([lo, la]) => [MX(lo), MY(la)])));
+      let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9, sx = 0, sy = 0, n = 0;
+      for (const [X, Y] of polys[0][0].map(([lo, la]) => [MX(lo), MY(la)])) { sx += X; sy += Y; n++; }
+      for (const r of rings) for (const [X, Y] of r) { x0 = Math.min(x0, X); y0 = Math.min(y0, Y); x1 = Math.max(x1, X); y1 = Math.max(y1, Y); }
+      const tint = (C.tint || {})[k];
+      return { k, state: stateOf(k), rings, b: [x0, y0, x1, y1], cX: sx / n, cY: sy / n, tintT: tint ? at(tint) : 1e9, tintDur: (tint && tint.dur) || 0.9 };
+    });
+    const pieceAt = (X, Y) => pieces.findIndex((p) => X >= p.b[0] && X <= p.b[2] && Y >= p.b[1] && Y <= p.b[3] && inRings(p.rings, X, Y));
+    const lines = PTD.lines.map((l, i) => {
+      const sch = (C.blade || [])[i];
+      const P = (sch && sch.rev ? [...l].reverse() : l).map(([lo, la]) => [MX(lo), MY(la)]), L = [0];
+      for (let j = 1; j < P.length; j++) L.push(L[j - 1] + Math.hypot(P[j][0] - P[j - 1][0], P[j][1] - P[j - 1][1]));
+      return { P, L, len: L[L.length - 1], t0: sch ? at(sch) : 1e9, t1: sch ? at(sch) + sch.dur : 1e9 };
+    });
+    const r = mulberry32(1947);
+    const locs = [];
+    const addLoc = (list, kind, o) => list.forEach(([lo, la]) => {
+      const X = MX(lo), Y = MY(la);
+      // balayage du nord au sud, avec un peu de désordre
+      const q = clamp((33.35 - la) / 3.9 + (r() - 0.5) * 0.18);
+      locs.push({ X, Y, kind, p: pieceAt(X, Y), t: at(o) + q * (o ? o.dur || 3 : 0), a: 0.75 + 0.5 * r(), ph: r() * 6.28 });
+    });
+    addLoc(PTD.localites.arabe, 'arabe', C.dotsArabe);
+    addLoc(PTD.localites.juif, 'juif', C.dotsJuif);
+    // villes : un halo par communauté, proportionnel à la population
+    const towns = [];
+    for (const [n, lo, la, ar, ju] of PTD.villes) {
+      const X = MX(lo), Y = MY(la), p = pieceAt(X, Y);
+      const q = clamp((33.35 - la) / 3.9);
+      if (ar) towns.push({ X: X - (ju ? 0.00018 : 0), Y, kind: 'arabe', pop: ar, p, t: at(C.dotsArabe) + q * ((C.dotsArabe && C.dotsArabe.dur) || 3) });
+      if (ju) towns.push({ X: X + (ar ? 0.00018 : 0), Y, kind: 'juif', pop: ju, p, t: at(C.dotsJuif) + q * ((C.dotsJuif && C.dotsJuif.dur) || 3) });
+    }
+    // mentions tapées à la machine, posées sur la carte
+    const labels = (C.labels || []).map((l) => { const X = MX(l.lon), Y = MY(l.lat); return { ...l, X, Y, p: l.free ? -1 : pieceAt(X, Y), t: at(l), tEnd: l.until ? at({ seg: l.seg, at: l.until }) : 1e9 }; });
+    // vote : chaque groupe s'allume polygone par polygone, mêlé aux autres groupes
+    const vote = C.vote ? (() => {
+      const t0 = at(C.vote), d = C.vote.dur || 5;
+      // instants calés sur les déclics de la bande-son (TL.partage.vote.ticks, relatifs au début du vote)
+      const ticks = (C.vote.ticks || []).map((x) => t0 + x);
+      const snap = (x) => (ticks.length ? ticks.reduce((a, b) => (Math.abs(b - x) < Math.abs(a - x) ? b : a)) : x);
+      const groups = ['pour', 'contre', 'abstention', 'absent'].map((g) => ({ g, polys: (PTD.vote[g] || []).map((ring) => ({ P: ring.map(([lo, la]) => [MX(lo), MY(la)]), t: snap(t0 + Math.pow(r(), 0.85) * d) })) }));
+      const others = (PTD.vote.autres || []).map((ring) => ring.map(([lo, la]) => [MX(lo), MY(la)]));
+      return { t0, d, groups, others, tEnd: at({ seg: C.vote.seg, at: C.vote.until || 99 }) };
+    })() : null;
+    const marks = (C.marks || []).map((m) => ({ ...m, X: MX(m.lon), Y: MY(m.lat), t: at(m), tEnd: at({ seg: m.seg, at: m.until }) }));
+    return { C, at, pieces, lines, locs, towns, labels, vote, marks, T: (k) => at(C[k]) };
+  })() : null;
+
+  // ---- textures de relief : niveaux de gris (ombrage calculé hors ligne), en coordonnées Mercator
+  const RLF = {};
+  async function loadRelief() {
+    if (!PTD) return;
+    await Promise.all(Object.entries(PTD.relief).map(([k, m]) => new Promise((done) => {
+      const img = new Image();
+      img.onload = () => {
+        const c = canvas(img.naturalWidth, img.naturalHeight), g = c.getContext('2d');
+        g.drawImage(img, 0, 0);
+        const d = g.getImageData(0, 0, c.width, c.height).data, a = new Uint8Array(c.width * c.height);
+        for (let i = 0; i < a.length; i++) a[i] = d[i * 4];
+        const [X0, Y0, X1, Y1] = m.bbox;
+        RLF[k] = { a, w: c.width, h: c.height, X0, Y0, X1, Y1, su: c.width / (X1 - X0), sv: c.height / (Y1 - Y0) };
+        done();
+      };
+      img.onerror = () => done();
+      img.src = m.src;
+    })));
+  }
+  const RC = PTD ? canvas(W, H) : null, rcx = RC ? RC.getContext('2d') : null;
+  const RID = rcx ? rcx.createImageData(W, H) : null;
+  const TCV = {};
+  function tintCanvas(key) { if (!TCV[key]) TCV[key] = canvas(W, H).getContext('2d'); return TCV[key]; }
+  // rendu point par point : chaque pixel de l'écran retrouve son point du sol (projection inverse)
+  function renderRelief(cam, box) {
+    const base = RLF.base;
+    if (!base) return false;
+    // détail : texture fine de la zone filmée en gros plan
+    let det = null, dw = 0;
+    if (cam.w < 0.04) for (const k of ['nord', 'sud', 'jaffa', 'jer']) {
+      const T = RLF[k];
+      if (!T) continue;
+      const m = Math.min(cam.x - T.X0, T.X1 - cam.x, cam.y - T.Y0, T.Y1 - cam.y);
+      if (m > 0) { det = T; dw = inv(0.034, 0.018, cam.w); break; }
+    }
+    const d = RID.data;
+    const [x0, y0, x1, y1] = box;
+    for (let sy = y0; sy < y1; sy++) {
+      const v = sy - Poy, den = Pcp * FOCAL + v * Psp;
+      let i = (sy * W + x0) * 4;
+      if (den <= 1e-6) { for (let sx = x0; sx < x1; sx++, i += 4) d[i + 3] = 0; continue; }
+      const ry = (v * FOCAL) / den, k = FOCAL / (FOCAL - ry * Psp);
+      const rx0 = (x0 - Pox) / k, drx = 1 / k;
+      let X = Pcx + (Pcb * rx0 + Psb * ry) / Ps, Y = Pcy - (-Psb * rx0 + Pcb * ry) / Ps;
+      const dX = (Pcb * drx) / Ps, dY = (Psb * drx) / Ps;
+      for (let sx = x0; sx < x1; sx++, i += 4, X += dX, Y += dY) {
+        let u = (X - base.X0) * base.su - 0.5, w = (base.Y1 - Y) * base.sv - 0.5;
+        if (u < 0 || w < 0 || u >= base.w - 1 || w >= base.h - 1) { d[i + 3] = 0; continue; }
+        let iu = u | 0, iw = w | 0, fu = u - iu, fw = w - iw, o = iw * base.w + iu, A = base.a;
+        let val = (A[o] * (1 - fu) + A[o + 1] * fu) * (1 - fw) + (A[o + base.w] * (1 - fu) + A[o + base.w + 1] * fu) * fw;
+        if (det) {
+          u = (X - det.X0) * det.su - 0.5; w = (det.Y1 - Y) * det.sv - 0.5;
+          if (u >= 0 && w >= 0 && u < det.w - 1 && w < det.h - 1) {
+            iu = u | 0; iw = w | 0; fu = u - iu; fw = w - iw; o = iw * det.w + iu; A = det.a;
+            // fondu vers le bord de la texture fine
+            const e = Math.min(u, w, det.w - 1 - u, det.h - 1 - w), f = dw * (e > 40 ? 1 : e / 40);
+            const dv = (A[o] * (1 - fu) + A[o + 1] * fu) * (1 - fw) + (A[o + det.w] * (1 - fu) + A[o + det.w + 1] * fu) * fw;
+            val += (dv - val) * f;
+          }
+        }
+        d[i] = d[i + 1] = d[i + 2] = val; d[i + 3] = 255;
+      }
+    }
+    rcx.clearRect(0, 0, W, H);
+    rcx.putImageData(RID, 0, 0, x0, y0, x1 - x0, y1 - y0);
+    return true;
+  }
+  const PSTATE = {
+    neutre: () => COL.stone.map((c) => c * 0.66),
+    arabe: () => COL.life,
+    juif: () => COL.cold,
+    jer: () => COL.stone,
+  };
+  function piecePath(g, p) {
+    g.beginPath();
+    for (const r of p.rings) { r.forEach(([X, Y], i) => { const P = proj(X, Y); if (!i) g.moveTo(P.x, P.y); else g.lineTo(P.x, P.y); }); g.closePath(); }
+  }
+  // décalage à l'écran d'un morceau quand la terre se fend : il s'écarte du centre et se soulève
+  function pieceOffsets(t) {
+    const C = PART.C;
+    const s = C.split ? tw(t, PART.T('split'), PART.T('split') + (C.split.dur || 1.2), E.outBack) : 0;
+    const back = C.settle ? tw(t, PART.T('settle'), PART.T('settle') + (C.settle.dur || 2), E.inOutCubic) : 0;
+    const k = s * (1 - back * (1 - (C.settle && C.settle.keep !== undefined ? C.settle.keep : 0.25)));
+    const O = proj(MX(C.center[0]), MY(C.center[1])), ox = O.x, oy = O.y;
+    const sep = (C.split && C.split.sep) || 16, lift = (C.split && C.split.lift) || 12;
+    return PART.pieces.map((p) => {
+      const P = proj(p.cX, p.cY);
+      let dx = P.x - ox, dy = P.y - oy; const n = Math.hypot(dx, dy) || 1; dx /= n; dy /= n;
+      const pk = (C.split && C.split.k && C.split.k[p.k]) || 1;
+      return [dx * sep * k * pk, dy * sep * k * pk - lift * k * pk, lift * k * pk];
+    });
+  }
+  function landAlpha(t) {
+    const C = PART.C;
+    return tw(t, PART.T('land'), PART.T('land') + ((C.land && C.land.dur) || 2.5), E.inOutCubic) * (1 - (C.drain ? tw(t, PART.T('drain'), PART.T('drain') + (C.drain.dur || 3), E.inOutCubic) : 0));
+  }
+  function drawPartage(g, t, cam) {
+    if (!PART) return;
+    const A = landAlpha(t);
+    const OFF = pieceOffsets(t);
+    if (A > 0.004) {
+      // emprise écran des morceaux (plus la marge du décalage)
+      let x0 = W, y0 = H, x1 = 0, y1 = 0;
+      for (const p of PART.pieces) for (const [X, Y] of [[p.b[0], p.b[1]], [p.b[2], p.b[1]], [p.b[0], p.b[3]], [p.b[2], p.b[3]], [p.cX, p.b[1]], [p.cX, p.b[3]], [p.b[0], p.cY], [p.b[2], p.cY]]) {
+        const P = proj(X, Y); x0 = Math.min(x0, P.x); y0 = Math.min(y0, P.y); x1 = Math.max(x1, P.x); y1 = Math.max(y1, P.y);
+      }
+      const m = 40;
+      const box = [Math.max(0, Math.floor(x0 - m)), Math.max(0, Math.floor(y0 - m)), Math.min(W, Math.ceil(x1 + m)), Math.min(H, Math.ceil(y1 + m))];
+      if (box[2] > box[0] && box[3] > box[1] && renderRelief(cam, box)) {
+        const [bx, by, bw, bh] = [box[0], box[1], box[2] - box[0], box[3] - box[1]];
+        // une couche teintée par couleur utilisée
+        const used = new Set(['neutre']);
+        for (const p of PART.pieces) if (t > p.tintT) used.add(p.state);
+        const shade = PART.C.shade || 1.0;
+        for (const key of used) {
+          const tc = tintCanvas(key), col = PSTATE[key]();
+          tc.globalCompositeOperation = 'copy'; tc.globalAlpha = 1;
+          tc.drawImage(RC, bx, by, bw, bh, bx, by, bw, bh);
+          tc.globalCompositeOperation = 'multiply';
+          tc.fillStyle = `rgb(${Math.round(col[0] * shade)},${Math.round(col[1] * shade)},${Math.round(col[2] * shade)})`;
+          tc.fillRect(bx, by, bw, bh);
+        }
+        g.save();
+        g.globalCompositeOperation = 'lighter';
+        // les morceaux les plus soulevés passent devant
+        const order = PART.pieces.map((p, i) => i).sort((a, b) => OFF[a][2] - OFF[b][2]);
+        for (const i of order) {
+          const p = PART.pieces[i], [ox, oy, lf] = OFF[i];
+          const tp = tw(t, p.tintT, p.tintT + p.tintDur, E.inOutCubic);
+          // épaisseur de la tranche (le morceau est soulevé)
+          if (lf > 0.6) {
+            const n = Math.min(8, Math.ceil(lf / 2));
+            const ec = tp > 0.5 ? PSTATE[p.state]() : PSTATE.neutre();
+            for (let j = 0; j < n; j++) {
+              const q = j / n;
+              g.save(); g.translate(ox * q, oy * q + lf * (1 - q) * 0); piecePath(g, p);
+              g.fillStyle = rgba(ec, 0.035 * A); g.fill('evenodd'); g.restore();
+            }
+          }
+          g.save();
+          g.translate(ox, oy);
+          piecePath(g, p);
+          g.clip('evenodd');
+          g.globalAlpha = A * (1 - tp);
+          if (g.globalAlpha > 0.003) g.drawImage(TCV.neutre.canvas, bx, by, bw, bh, bx, by, bw, bh);
+          g.globalAlpha = A * tp;
+          if (tp > 0.003) g.drawImage(TCV[p.state].canvas, bx, by, bw, bh, bx, by, bw, bh);
+          // Jérusalem : hachures de pierre (régime international)
+          if (p.state === 'jer' && tp > 0.01) {
+            g.globalAlpha = 1;
+            g.strokeStyle = rgba(COL.stone, 0.32 * A * tp); g.lineWidth = 1.2;
+            g.beginPath();
+            const sp = 7, off = (t * 5) % sp;
+            for (let x = bx - bh - sp + off; x < bx + bw + sp; x += sp) { g.moveTo(x, by + bh); g.lineTo(x + bh, by); }
+            g.stroke();
+          }
+          g.restore();
+          // contour du morceau
+          g.save(); g.translate(ox, oy); piecePath(g, p);
+          const oc = tp > 0.5 ? (p.state === 'arabe' ? COL.lifeHot : p.state === 'juif' ? COL.coldHot : COL.stone) : COL.stone;
+          g.strokeStyle = rgba(oc, (0.16 + 0.34 * clamp(lf / 6)) * A); g.lineWidth = 1.1; g.stroke();
+          g.restore();
+        }
+        g.restore();
+      }
+    }
+    drawBlade(g, t, OFF, A);
+    drawLocs(g, t, OFF);
+    drawPLabels(g, t, OFF);
+  }
+
+  // lame : le trait avance, incandescent à la pointe, puis refroidit en pierre
+  function partialPath(g, l, dist) {
+    g.beginPath();
+    let last = null;
+    for (let j = 0; j < l.P.length; j++) {
+      if (l.L[j] > dist) {
+        const a = l.P[j - 1], b = l.P[j], q = (dist - l.L[j - 1]) / ((l.L[j] - l.L[j - 1]) || 1e-12);
+        const P = proj(lerp(a[0], b[0], q), lerp(a[1], b[1], q)); g.lineTo(P.x, P.y); last = [P.x, P.y]; break;
+      }
+      const P = proj(l.P[j][0], l.P[j][1]);
+      if (!j) g.moveTo(P.x, P.y); else g.lineTo(P.x, P.y);
+      last = [P.x, P.y];
+    }
+    return last;
+  }
+  function drawBlade(g, t, OFF, A) {
+    const C = PART.C;
+    // une fois la terre fendue, le trait se résorbe : la frontière devient la fente entre les morceaux
+    const split = C.split ? tw(t, PART.T('split') - 0.1, PART.T('split') + 0.6) : 0;
+    const scar = C.settle ? tw(t, PART.T('settle') + 0.6, PART.T('settle') + 2.2) : 0;
+    const drain = C.drain ? tw(t, PART.T('drain'), PART.T('drain') + (C.drain.dur || 3)) : 0;
+    g.save();
+    g.globalCompositeOperation = 'lighter';
+    g.lineJoin = 'round'; g.lineCap = 'round';
+    for (const l of PART.lines) {
+      if (t < l.t0) continue;
+      const p = E.inOutSine(clamp((t - l.t0) / (l.t1 - l.t0))), dist = p * l.len;
+      const cool = clamp((t - l.t1) / 0.8);
+      const lineA = (1 - split * (1 - 0.55 * scar)) * (1 - 0.6 * drain);
+      if (lineA > 0.01) {
+        partialPath(g, l, dist);
+        g.strokeStyle = rgba(COL.ember, 0.20 * lineA * (1 - cool * 0.6)); g.lineWidth = 7; g.stroke();
+        g.strokeStyle = rgba(cool < 1 ? COL.hot : COL.stone, (0.85 - 0.25 * cool) * lineA); g.lineWidth = 1.6; g.stroke();
+      }
+      // pointe de la lame
+      if (p < 1) {
+        const tip = partialPath(g, l, dist);
+        if (tip) {
+          const fl = 0.85 + 0.15 * noise1(t * 40 + l.len * 1e4);
+          sprite(g, SPR.hot, tip[0], tip[1], 90, 0.55 * fl);
+          sprite(g, SPR.spark, tip[0], tip[1], 26, 1);
+          sprite(g, SPR.white, tip[0], tip[1], 12, 0.9);
+        }
+      }
+    }
+    g.restore();
+  }
+
+  // localités : olive pour les localités arabes, encre froide pour les localités juives
+  SPR.cold = (() => {
+    const s = 64, c = canvas(s, s), g = c.getContext('2d');
+    const gr = g.createRadialGradient(s / 2, s / 2, 0, s / 2, s / 2, s / 2);
+    gr.addColorStop(0, 'rgba(236,244,252,1)');
+    gr.addColorStop(0.18, `rgba(${COL.coldHot.join(',')},.95)`);
+    gr.addColorStop(0.42, `rgba(${COL.cold.join(',')},.35)`);
+    gr.addColorStop(1, `rgba(${COL.cold.join(',')},0)`);
+    g.fillStyle = gr; g.fillRect(0, 0, s, s);
+    return c;
+  })();
+  SPR.lifeGlow = glowSprite(COL.life, 128);
+  SPR.coldGlow = glowSprite(COL.cold, 128);
+  function drawLocs(g, t, OFF) {
+    const C = PART.C;
+    const out = C.dotsOut ? tw(t, PART.T('dotsOut'), PART.T('dotsOut') + (C.dotsOut.dur || 2.5), E.inOutCubic) : 0;
+    const A = 1 - out;
+    if (A <= 0.01) return;
+    // Arabes dans l'État juif prévu : ils battent un instant
+    const pulse = C.pulse ? tw(t, PART.T('pulse'), PART.T('pulse') + 0.6) * (1 - tw(t, PART.T('pulse') + (C.pulse.dur || 4), PART.T('pulse') + (C.pulse.dur || 4) + 1.2)) : 0;
+    g.save();
+    g.globalCompositeOperation = 'lighter';
+    for (const c of PART.towns) {
+      const e = tw(t, c.t - 0.1, c.t + 0.9, E.outCubic);
+      if (e <= 0.01) continue;
+      const o = c.p >= 0 ? OFF[c.p] : [0, 0];
+      const P = proj(c.X, c.Y);
+      const sz = (14 + Math.sqrt(c.pop) * 0.2) * clamp(P.k, 0.5, 1.4) * clamp(0.075 / (W / Ps) * 1, 0.7, 2.2);
+      sprite(g, c.kind === 'arabe' ? SPR.lifeGlow : SPR.coldGlow, P.x + o[0], P.y + o[1], sz, 0.3 * e * A);
+    }
+    for (const d of PART.locs) {
+      if (t < d.t - 0.05) continue;
+      const age = t - d.t, e = clamp(age / 0.25), flash = age < 0.6 ? Math.exp(-age / 0.18) : 0;
+      const o = d.p >= 0 ? OFF[d.p] : [0, 0];
+      const P = proj(d.X, d.Y);
+      if (P.x < -20 || P.x > W + 20 || P.y < -20 || P.y > H + 20) continue;
+      const inJ = d.kind === 'arabe' && d.p >= 0 && PART.pieces[d.p].state === 'juif';
+      const pu = inJ ? pulse * (0.75 + 0.25 * Math.sin(t * 5 + d.ph)) : 0;
+      const k = clamp(P.k, 0.55, 1.5);
+      const sz = (7.5 + 4 * flash + 5 * pu) * k * d.a;
+      const alpha = (0.62 + 0.38 * flash + 0.35 * pu) * e * A * (pulse && !inJ ? 1 - 0.45 * pulse : 1);
+      sprite(g, d.kind === 'arabe' ? SPR.life : SPR.cold, P.x + o[0], P.y + o[1], sz, alpha);
+      if (pu > 0.05) sprite(g, SPR.lifeGlow, P.x + o[0], P.y + o[1], 26 * k, 0.22 * pu * A);
+    }
+    g.restore();
+  }
+
+  // mentions à la machine à écrire, comme sur le document de l'ONU
+  function drawPLabels(g, t, OFF) {
+    g.save();
+    g.globalCompositeOperation = 'lighter';
+    for (const m of PART.marks) {
+      const a = tw(t, m.t, m.t + 0.5, E.outCubic) * (1 - tw(t, m.tEnd - 0.4, m.tEnd));
+      if (a <= 0.01) continue;
+      const P = proj(m.X, m.Y), R = lerp(70, 34, E.outExpo(clamp((t - m.t) / 0.9))), pu = 0.5 + 0.5 * Math.sin((t - m.t) * 4.2);
+      g.strokeStyle = rgba(COL.hot, (0.55 + 0.3 * pu) * a); g.lineWidth = 1.4;
+      g.beginPath(); g.arc(P.x, P.y, R, 0, 7); g.stroke();
+      g.strokeStyle = rgba(COL.stone, 0.85 * a); g.lineWidth = 1.2;
+      g.beginPath();
+      for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) { g.moveTo(P.x + dx * (R + 8), P.y + dy * (R + 8)); g.lineTo(P.x + dx * (R + 26), P.y + dy * (R + 26)); }
+      g.stroke();
+      sprite(g, SPR.hot, P.x, P.y, 46, 0.45 * a);
+      sprite(g, SPR.white, P.x, P.y, 8, 0.9 * a);
+    }
+    g.restore();
+    g.save();
+    g.globalCompositeOperation = 'lighter';
+    g.textBaseline = 'middle';
+    for (const l of PART.labels) {
+      if (t < l.t) continue;
+      const out = tw(t, l.tEnd - 0.4, l.tEnd);
+      if (out >= 1) continue;
+      const n = Math.min(l.text.length, Math.floor((t - l.t) * (l.cps || 16)));
+      if (n <= 0) continue;
+      const o = l.p >= 0 ? OFF[l.p] : [0, 0];
+      const P = proj(l.X, l.Y);
+      const size = l.size || 22;
+      g.font = `700 ${size}px "Courier Prime"`;
+      g.letterSpacing = `${Math.round(size * 0.18)}px`;
+      const col = l.tone === 'life' ? COL.lifeHot : l.tone === 'cold' ? COL.coldHot : COL.stone;
+      const str = l.text.slice(0, n), full = g.measureText(l.text).width;
+      let x = P.x + o[0] - (l.align === 'left' ? 0 : full / 2), y = P.y + o[1];
+      // encrage inégal des caractères, comme une frappe réelle
+      for (let j = 0; j < str.length; j++) {
+        const ch = str[j], ink = 0.72 + 0.28 * hash(j * 13.1 + l.text.length);
+        const fresh = j === n - 1 && n < l.text.length ? 1 : 0;
+        g.fillStyle = rgba(fresh ? COL.hot : col, (l.alpha || 0.9) * ink * (1 - out));
+        g.fillText(ch, x, y + (hash(j * 7.7) - 0.5) * 1.2);
+        x += g.measureText(ch).width + size * 0.18;
+      }
+    }
+    g.restore();
+  }
+
+  // vote du 29 novembre 1947 : la carte du monde s'allume, pays par pays
+  function voteCounts(t) {
+    const out = { pour: 0, contre: 0, abstention: 0, absent: 0 };
+    if (!PART || !PART.vote) return out;
+    const n = { pour: 33, contre: 13, abstention: 10, absent: 1 };
+    for (const G0 of PART.vote.groups) {
+      const done = G0.polys.filter((p) => t >= p.t).length;
+      out[G0.g] = Math.round(n[G0.g] * (G0.polys.length ? done / G0.polys.length : 0));
+    }
+    return out;
+  }
+  function drawVote(g, t) {
+    if (!PART || !PART.vote) return;
+    const V = PART.vote, A = tw(t, V.t0 - 1.0, V.t0) * (1 - tw(t, V.tEnd - 1.2, V.tEnd));
+    if (A <= 0.01) return;
+    g.save();
+    g.globalCompositeOperation = 'lighter';
+    g.lineJoin = 'round';
+    const tone = { pour: COL.cold, contre: COL.life, abstention: COL.stone, absent: COL.stone };
+    const path = (P) => { g.beginPath(); P.forEach(([X, Y], i) => { const Q = proj(X, Y); if (!i) g.moveTo(Q.x, Q.y); else g.lineTo(Q.x, Q.y); }); g.closePath(); };
+    for (const P of V.others) { path(P); g.fillStyle = rgba(COL.ash, 0.035 * A); g.fill(); }
+    for (const G0 of V.groups) {
+      const c = tone[G0.g];
+      for (const p of G0.polys) {
+        const e = tw(t, p.t, p.t + 0.35, E.outCubic), fl = t > p.t ? Math.exp(-(t - p.t) / 0.25) : 0;
+        if (e <= 0.01) continue;
+        path(p.P);
+        const fa = G0.g === 'abstention' ? 0.09 : G0.g === 'absent' ? 0.0 : 0.26;
+        g.fillStyle = rgba(c, (fa + 0.25 * fl) * e * A); g.fill();
+        if (G0.g === 'abstention') {
+          g.save(); g.clip(); g.strokeStyle = rgba(c, 0.32 * e * A); g.lineWidth = 1;
+          g.beginPath(); for (let x = -H; x < W; x += 7) { g.moveTo(x, H); g.lineTo(x + H, 0); } g.stroke(); g.restore();
+          path(p.P);
+        }
+        if (G0.g === 'absent') g.setLineDash([4, 4]);
+        g.strokeStyle = rgba(c, (0.55 + 0.4 * fl) * e * A); g.lineWidth = 1.1; g.stroke();
+        g.setLineDash([]);
+      }
+    }
+    g.restore();
+  }
+
   function drawMapInto(g, t, cam, mot = 1) {
     g.globalCompositeOperation = 'source-over'; g.globalAlpha = 1;
     g.clearRect(0, 0, W, H);
@@ -1549,6 +1970,7 @@
     // échelle régionale (territoires, offensives) ou échelle de la rue (plans, maisons)
     const ZR = inv(0.0025, 0.007, cam.w), ZS = inv(0.008, 0.003, cam.w);
     if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t, Math.pow(clamp(0.011 / cam.w), 0.9)); drawBlocks(g, t, ZS); }
+    if (PART) { drawVote(g, t); drawPartage(g, t, cam); }
     if (FLOWS.length) drawFlows(g, t);
     if (HAS_WAR) { drawUnits(g, t); drawStrikes(g, t); if (FLARES.length) drawFlares(g, t); }
     const busy = [];
@@ -1830,9 +2252,17 @@
         html = `<div class="scrim"></div>${s.ghost ? `<div class="ghost">${esc(s.ghost)}</div>` : ''}
           <div class="block">${eyebrowHTML()}<div class="name"><div class="ln l1">${chars(s.pre || '')}</div><div class="ln l2 stn"></div></div>
           <div class="stlab">${esc(fr(s.label))}</div>${s.layout === 'B' ? '' : '<div class="rule"></div>'}
-          ${s.text ? `<p class="text">${words(s.text)}</p>` : ''}${s.source ? `<div class="meta"><i class="dot"></i><span>${esc(fr(s.source))}</span></div>` : ''}</div>`;
+          ${s.text ? `<p class="text">${words(s.text)}</p>` : ''}
+          ${s.grid ? `<div class="sgrid"><div class="cells">${Array.from({ length: 100 }, () => '<i></i>').join('')}</div><div class="gl">${s.grid.lines.map(([b, l], k) => `<div class="${k ? 'given' : 'own'}"><b>${esc(fr(b))}</b>${esc(fr(l))}</div>`).join('')}</div></div>` : ''}
+          ${s.source ? `<div class="meta"><i class="dot"></i><span>${esc(fr(s.source))}</span></div>` : ''}</div>`;
       } else if (s.type === 'cap') {
-        html = `<div class="scrim"></div><div class="block">${eyebrowHTML()}<div class="captitle ln">${chars(s.title.toUpperCase())}</div>${s.text ? `<p class="text"${s.textW ? ` style="max-width:${s.textW}px"` : ''}>${words(s.text)}</p>` : ''}</div>`;
+        const leg = s.legend ? `<div class="legend">${s.legend.map(([c, l]) => `<span><i class="${c}"></i>${esc(fr(l))}</span>`).join('')}</div>` : '';
+        html = `<div class="scrim"></div><div class="block">${eyebrowHTML()}<div class="captitle ln">${chars(s.title.toUpperCase())}</div>${s.text ? `<p class="text"${s.textW ? ` style="max-width:${s.textW}px"` : ''}>${words(s.text)}</p>` : ''}${leg}</div>`;
+      } else if (s.type === 'ballot') {
+        // vote de l'Assemblée générale : en-tête tapé à la machine, décompte des voix sous la carte du monde
+        const col = (c, l) => `<div class="tc ${c}"><div class="top"><i class="sw"></i><span>${esc(l)}</span></div><b class="num">0</b></div>`;
+        html = `<div class="scrim"></div><div class="block">${eyebrowHTML()}<div class="bdoc"><div class="b1 typ"></div><div class="b2 typ"></div></div></div>
+          <div class="tally">${col('pour', 'Pour')}${col('contre', 'Contre')}${col('abst', 'Abstentions')}${col('abs', 'Absent')}</div><div class="bres"><span class="typ"></span></div>`;
       } else if (s.type === 'quote') {
         // native : le texte dans sa langue d'origine sous la traduction ; context : une ligne sous l'auteur
         html = `<div class="scrim"></div><div class="wrap"><i class="qm">“</i><p class="text qt">${words(s.text)}</p>
@@ -2410,10 +2840,50 @@
     css(R, lab, 'clipPath', `inset(-20% ${f3((1 - lp) * 100)}% -20% 0)`);
     if (R.rules[0]) css(R, R.rules[0], 'transform', `scaleX(${f3(tw(u, I + 0.6, I + 1.3))})`);
     if (s.text) { wordsIn(R, R.texts[0], I + (s.textAt || 1.4), 0.045, 0.55); highlight(R, R.texts[0], I + (s.hlAt || 4.0)); }
+    if (s.grid) {
+      // une case = 1 % : d'abord les terres possédées, puis le territoire attribué
+      const G0 = s.grid, cells = R.cells || (R.cells = R.qa('.sgrid .cells i'));
+      const g0 = I + (G0.at || 2.0), g1 = g0 + (G0.gap || 1.6);
+      css(R, R.q('.sgrid'), 'opacity', String(f3(tw(u, g0 - 0.5, g0))));
+      R.ck = R.ck || [];
+      cells.forEach((c, j) => {
+        const cls = j < G0.own && u >= g0 + j * 0.08 ? 'own' : j < G0.given && u >= g1 + (j - G0.own) * 0.03 ? 'given' : '';
+        if (R.ck[j] !== cls) { R.ck[j] = cls; c.className = cls; }
+      });
+      const gl = R.qa('.sgrid .gl > div');
+      css(R, gl[0], 'opacity', String(f3(tw(u, g0 + 0.3, g0 + 0.9))));
+      css(R, gl[1], 'opacity', String(f3(tw(u, g1 + 0.6, g1 + 1.2))));
+    }
     if (R.metas[0]) {
       const mp = tw(u, I + (s.sourceAt || 3.0), I + (s.sourceAt || 3.0) + 0.6, E.outCubic);
       css(R, R.metas[0], 'opacity', String(f3(mp)));
     }
+  }
+
+  function upBallot(s, u) {
+    const R = s.R; R.u = u;
+    const I = s.fly + (s.hitAt || 0), D = s.dur;
+    const ex = E.inCubic(inv(D - 0.5, D + 0.2, u));
+    css(R, R.scrim, 'opacity', String(f3(tw(u, I - 0.6, I + 0.4) * (1 - ex))));
+    css(R, R.q('.tick'), 'transform', `scaleX(${f3(tw(u, I - 0.2, I + 0.4))})`);
+    typewriter(R, R.tws[0], s.kicker, u, I, 40);
+    const ty = R.qa('.typ');
+    typewriter(R, ty[0], s.title, u, I + (s.titleAt || 0.8), s.cps || 11);
+    typewriter(R, ty[1], s.sub, u, I + (s.subAt || 2.6), 30);
+    typewriter(R, ty[2], s.result, u, I + (s.resultAt || 8), 22);
+    const block = R.q('.block'), tally = R.q('.tally');
+    css(R, block, 'opacity', String(f3(1 - ex)));
+    css(R, block, 'filter', blur(ex * 12));
+    const tp = tw(u, I + (s.tallyAt || 3) - 0.4, I + (s.tallyAt || 3) + 0.3, E.outCubic);
+    css(R, tally, 'opacity', String(f3(tp * (1 - ex))));
+    css(R, tally, 'transform', `translate3d(0,${f3((1 - tp) * 30)}px,0)`);
+    css(R, R.q('.bres'), 'opacity', String(f3(1 - ex)));
+    const n = voteCounts(s.start + u), nums = R.qa('.num');
+    R.nk = R.nk || [];
+    ['pour', 'contre', 'abstention', 'absent'].forEach((k, j) => {
+      const key = String(n[k]);
+      if (R.nk[j] !== key) { R.nk[j] = key; nums[j].textContent = key; }
+    });
   }
 
   function upCap(s, u) {
@@ -2427,6 +2897,8 @@
     letters(R, R.lines[0], I + 0.05, 0.025, 0.55);
     rgbSplit(R, R.lines[0].ln, u, I + 0.15);
     if (R.texts[0]) { wordsIn(R, R.texts[0], I + 0.6, 0.045, 0.55); highlight(R, R.texts[0], I + 0.6 + R.texts[0].length * 0.045 + 0.3); }
+    const lg = R.q('.legend');
+    if (lg) css(R, lg, 'opacity', String(f3(tw(u, I + (s.legendAt || 2.0), I + (s.legendAt || 2.0) + 0.6, E.outCubic))));
     css(R, block, 'opacity', String(f3(1 - ex)));
     css(R, block, 'transform', `translate3d(${f3(-60 * ex)}px,0,0)`);
     css(R, block, 'filter', blur(ex * 12));
@@ -2584,6 +3056,7 @@
       else if (s.type === 'stat') upStat(s, u);
       else if (s.type === 'quote') upQuote(s, u);
       else if (s.type === 'cap') upCap(s, u);
+      else if (s.type === 'ballot') upBallot(s, u);
       else if (s.type === 'camera') { /* plan de caméra sans texte */ }
       else upCenter(s, u);
       if (s.faceList.length) upFaces(s, u);
@@ -2764,10 +3237,11 @@
 
   async function init() {
     await document.fonts.ready;
-    const probes = ['760 34px "Archivo"', '400 13px "DM Mono"', '500 13px "DM Mono"', 'italic 400 38px "Newsreader"', '400 30px "Newsreader"', '600 50px "Noto Sans Hebrew"', '600 44px "Noto Kufi Arabic"'];
+    const probes = ['760 34px "Archivo"', '400 13px "DM Mono"', '500 13px "DM Mono"', 'italic 400 38px "Newsreader"', '400 30px "Newsreader"', '600 50px "Noto Sans Hebrew"', '600 44px "Noto Kufi Arabic"', '700 30px "Courier Prime"', '400 30px "Courier Prime"'];
     await Promise.all(probes.map((p) => document.fonts.load(p, 'AÉأאz')));
     buildSegments();
     await loadFaces();
+    await loadRelief();
     // en-têtes du HUD propres à la pièce
     const H0 = TL.hud;
     $('hudTl').innerHTML = H0.label ? `<b>${esc(H0.label[0])}</b><br><span>${esc(H0.label[1] || '')}</span>` : '';

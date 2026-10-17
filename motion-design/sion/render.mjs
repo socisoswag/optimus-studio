@@ -5,6 +5,7 @@
 //
 // --timeline : nom d'un fichier de timelines/ (par défaut : chronologie)
 // --alpha : fond transparent (cartons à poser sur des images) ; vidéo en MOV, codec PNG avec couche alpha
+// --notext : version sans texte (légendes, titres et chiffres masqués), par exemple sous une voix off
 // Options vidéo : --workers 4  --shutter 2 (sous-images par image, flou de bougé)
 //                 --from 0 --to 12 (secondes)  --crf 12
 import http from 'node:http';
@@ -44,7 +45,7 @@ async function openPage(browser, port) {
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
   page.on('pageerror', (e) => console.error('[page]', e.message));
   page.on('console', (m) => { if (m.type() === 'error') console.error('[console]', m.text()); });
-  await page.goto(`http://127.0.0.1:${port}/index.html?tl=${encodeURIComponent(TLNAME)}${ALPHA ? '&alpha=1' : ''}`);
+  await page.goto(`http://127.0.0.1:${port}/index.html?tl=${encodeURIComponent(TLNAME)}${ALPHA ? '&alpha=1' : ''}${NOTEXT ? '&notext=1' : ''}`);
   await page.waitForFunction(() => window.READY === true, null, { timeout: 120000 });
   page.cdp = await page.context().newCDPSession(page);
   // fond transparent : la capture garde la couche alpha
@@ -65,6 +66,7 @@ const browser = await chromium.launch({ args: ['--disable-checker-imaging', '--d
 const FPS = 25;
 const TLNAME = String(args.timeline || 'chronologie');
 const ALPHA = !!args.alpha; // --alpha : fond transparent, vidéo MOV (codec PNG, couche alpha)
+const NOTEXT = !!args.notext; // --notext : sans légendes ni chiffres (pour poser une voix off), les mentions sur la carte restent
 
 try {
   if (args.stills) {

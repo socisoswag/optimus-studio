@@ -26,6 +26,7 @@ un seul moteur, une timeline par pièce.
 | Liban, 1982 (chapitre 20) | `timelines/liban-1982.js` | 1 min 23 | `output/liban-1982.mp4` |
 | Octobre 1973 (chapitre 21) | `timelines/octobre-1973.js` | 1 min 07 | `output/octobre-1973.mp4` |
 | Gaza, 2007 – 2025 (chapitre 25) | `timelines/gaza.js` | 1 min 34 | `output/gaza.mp4` |
+| Le découpage : plan de partage de l'ONU, 1947 (chapitre 12) | `timelines/partage-1947.js` | 1 min 38 | `output/partage-1947.mp4`, `output/partage-1947-sans-texte.mp4` |
 | Les frontières qui bougent, 1947 – aujourd'hui (chapitre 19) | `timelines/frontieres.js` | 51 s | `output/frontieres.mp4` |
 | Jérusalem (chapitre 19) | `timelines/jerusalem.js` | 1 min 01 | `output/jerusalem.mp4` |
 | Les camps (chapitre 20) | `timelines/camps.js` | 40 s | `output/camps.mp4` |
@@ -59,6 +60,7 @@ Vidéos en 1920 × 1080, 25 i/s, H.264 9 Mbit/s (cartons de chapitre : 10 Mbit/s
 | Texte | `#e9dcc0` pierre de Jérusalem |
 | Accent | vermillon `rgb(232,52,30)` : force, feu, occupation, bilans |
 | Vie | olive pâle `rgb(170,182,110)` : villages, villes la nuit, réfugiés, terres palestiniennes |
+| Encre froide | gris-bleu `rgb(124,156,188)` : territoire attribué à l'État juif en 1947, puis Israël (cartes du partage et des frontières) |
 | Carte | `#7f989a` encre d'état-major, sans frontières politiques |
 | Titres | Archivo très condensée (fin + noir) |
 | Phrases | Newsreader (italique pour les phrases, romain pour les sommaires) |
@@ -143,7 +145,7 @@ séquence (`seg`, `at`) :
 | `units` | chars, automitrailleuses, avions, navires, bulldozers en formation, avec poussière, ombre, traînées | `kind` (`tank`, `truck`, `plane`, `ship`, `dozer`), `n`, `path`, `dur`, `size`, `fire: [{ at, to }]` (tir et impact) |
 | `arrows` | flèches d'offensive effilées qui avancent | `path`, `dur`, `w`, `label`, `tone: 'stone'` (l'autre camp) |
 | `strikes` | frappe : éclair, onde de choc, feu, fumée qui monte | `lon`, `lat`, `power`, `burn` |
-| `zones` | territoire qui se hachure depuis un point (`data/territoires.js`, `data/ocha.js`) | `name` (`cisjordanie`, `gaza`, `jerusalem-est`, `golan`, `sinai`, `israel-1949`, `palestine-mandataire`, `oslo-ab`, `oslo-c`, `oslo-reserve`, `jerusalem-est-annexee`, `hebron-h2`), `from`, `dur`, `until`, `tone: 'stone'` ou `'life'` |
+| `zones` | territoire qui se hachure depuis un point (`data/territoires.js`, `data/ocha.js`) | `name` (`cisjordanie`, `gaza`, `jerusalem-est`, `golan`, `sinai`, `israel-1949`, `palestine-mandataire`, `oslo-ab`, `oslo-c`, `oslo-reserve`, `jerusalem-est-annexee`, `hebron-h2`), `from`, `dur`, `until`, `tone: 'stone'`, `'life'` ou `'cold'` |
 | `plans` | tracé au sol à l'échelle d'un quartier (rempart, esplanade, mur) | `path`, `closed`, `style` (`wall`, `sacred`, `focus`, `grid`), `label`, `labelAt` |
 | `blocks` | maisons en relief qui s'effondrent (poussière, gravats, empreinte) | `lon`, `lat`, `w`, `d`, `h` (mètres), `rot`, `fall` |
 | `clock` | date et heure en haut de l'écran | `text` |
@@ -153,6 +155,25 @@ colonne plus étroite) au-dessus de la carte. Un repère `erase: true, ghost: tr
 qui s'éteint en laissant son empreinte. Territoires et flèches s'effacent d'eux-mêmes quand la caméra descend à l'échelle de la rue ;
 plans et maisons n'apparaissent qu'à cette échelle. Le son suit : avions, moteurs et chenilles,
 explosions, effondrements.
+
+### La carte du partage (chapitre 12)
+
+`partage-1947.js` met en scène le plan de partage de l'ONU (résolution 181, 29 novembre 1947) sur une
+maquette en relief : le vote pays par pays sur la carte du monde, la Palestine éclairée avec ses
+localités (olive : arabes, encre froide : juives), une lame qui trace les frontières, les morceaux qui
+prennent la couleur de leur État puis se décollent, les deux points où les territoires ne se touchent
+que par un coin (près d'Afula et d'Isdud), l'enclave de Jaffa, puis 56 % du territoire face aux 7 % de
+terres possédées. Aucun drapeau : les couleurs suivent le code du film. La dernière image est le
+cadre d'ouverture de `nakba-1948` : on enchaîne sans coupe visible, en prenant la Nakba à 0,9 s.
+
+Les données (`data/partage.js`, `data/relief/*.png`) se refont avec `python3 tools/prep_partage.py
+<dossier>` : calage de la carte ONU n° 103.1(b) sur son quadrillage, découpage en partition planaire,
+localités Wikidata, vote, ombrage du relief SRTM. Le minutage se déclare dans `TL.partage` (`land`,
+`dotsArabe`, `dotsJuif`, `blade`, `tint`, `split`, `settle`, `labels`, `marks`, `pulse`, `drain`,
+`vote`), avec les écrans `ballot` (décompte des voix), `cap` + `legend` et `stat` + `grid` (une case
+pour 1 %). Les bruitages (machine à écrire, marteau de séance, scalpel, dalles, radio, coups de feu)
+sont listés dans `TL.sound.foley`. La version sans texte (`node render.mjs --notext`) garde les
+mentions tapées sur la carte et retire légendes, titres et chiffres, pour une voix off.
 
 ## Fabriquer une pièce
 

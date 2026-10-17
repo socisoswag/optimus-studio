@@ -5,3 +5,5 @@
 stills/
 cues.json
 video.mp4
+# Textures de relief de la carte du partage (data/relief), générées par tools/prep_partage.py
+!data/relief/*.png

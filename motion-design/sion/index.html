@@ -13,6 +13,8 @@
   @font-face { font-family: 'DM Mono'; src: url('fonts/DMMono-Medium.ttf') format('truetype'); font-weight: 500; }
   @font-face { font-family: 'Noto Sans Hebrew'; src: url('fonts/NotoSansHebrew[wdth,wght].ttf') format('truetype'); font-weight: 100 900; font-stretch: 62.5% 100%; }
   @font-face { font-family: 'Noto Kufi Arabic'; src: url('fonts/NotoKufiArabic[wght].ttf') format('truetype'); font-weight: 100 900; }
+  @font-face { font-family: 'Courier Prime'; src: url('fonts/CourierPrime-Regular.ttf') format('truetype'); font-weight: 400; }
+  @font-face { font-family: 'Courier Prime'; src: url('fonts/CourierPrime-Bold.ttf') format('truetype'); font-weight: 700; }
 
   :root {
     --ink: #0d0c0a;        /* nuit de cendre */
@@ -27,6 +29,9 @@
     --display: 'Archivo', sans-serif;
     --serif: 'Newsreader', serif;
     --mono: 'DM Mono', monospace;
+    --type: 'Courier Prime', 'Courier New', monospace;  /* frappe à la machine (documents de l'ONU) */
+    --cold: #7c9cbc;       /* encre froide : territoire attribué à l'État juif */
+    --life: #aab66e;       /* olive : terres et localités palestiniennes */
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--ink); }
@@ -327,6 +332,39 @@
   html.alpha .cap .eyebrow { color: var(--stone); }
   #clock { position: absolute; left: 0; right: 0; top: 112px; text-align: center; font-family: var(--mono); font-weight: 500; font-size: 30px; letter-spacing: .32em; color: var(--hot); text-transform: uppercase; opacity: 0; }
 
+
+  /* ---------- carte du partage : vote, légende, grille cadastrale ---------- */
+  html.notext #type { display: none; }
+  .ballot .scrim { background: linear-gradient(180deg, rgba(9,8,7,.82) 0%, rgba(9,8,7,.35) 30%, rgba(9,8,7,0) 52%, rgba(9,8,7,.35) 74%, rgba(9,8,7,.86) 100%); }
+  .ballot .block { top: 150px; left: 132px; width: 1400px; }
+  .ballot .bdoc { margin-top: 26px; font-family: var(--type); color: var(--stone); }
+  .ballot .bdoc .b1 { font-weight: 700; font-size: 92px; line-height: 1; letter-spacing: .04em; white-space: nowrap; height: 1em; }
+  .ballot .bdoc .b2 { margin-top: 18px; font-size: 30px; letter-spacing: .06em; color: rgba(233,220,192,.82); height: 1.2em; white-space: nowrap; }
+  .ballot .bdoc .cur, .ballot .bres .cur { display: inline-block; width: .55em; height: .9em; background: var(--ember); vertical-align: -.1em; margin-left: .05em; }
+  .ballot .tally { position: absolute; left: 132px; right: 132px; bottom: 96px; display: flex; gap: 64px; align-items: flex-end; }
+  .ballot .tc { display: flex; flex-direction: column; gap: 6px; min-width: 260px; }
+  .ballot .tc .top { display: flex; align-items: center; gap: 14px; font-family: var(--mono); font-size: 18px; letter-spacing: .24em; text-transform: uppercase; color: var(--ash); }
+  .ballot .tc .sw { width: 22px; height: 22px; border: 1.5px solid currentColor; flex: none; }
+  .ballot .tc.pour { color: var(--cold); } .ballot .tc.contre { color: var(--life); } .ballot .tc.abst { color: var(--stone); } .ballot .tc.abs { color: var(--ash); }
+  .ballot .tc.pour .sw { background: rgba(124,156,188,.45); } .ballot .tc.contre .sw { background: rgba(170,182,110,.45); }
+  .ballot .tc.abst .sw { background: repeating-linear-gradient(135deg, rgba(233,220,192,.6) 0 2px, transparent 2px 6px); }
+  .ballot .tc.abs .sw { border-style: dashed; }
+  .ballot .tc .num { font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 820; font-size: 150px; line-height: .86; color: var(--stone); font-variant-numeric: tabular-nums; }
+  .ballot .bres { position: absolute; right: 132px; bottom: 112px; font-family: var(--type); font-weight: 700; font-size: 34px; letter-spacing: .05em; color: var(--stone); white-space: nowrap; text-align: right; }
+  .legend { margin-top: 18px; display: flex; gap: 34px; font-family: var(--mono); font-size: 17px; letter-spacing: .2em; text-transform: uppercase; color: var(--ash); }
+  .legend span { display: flex; align-items: center; gap: 12px; }
+  .legend i { width: 12px; height: 12px; border-radius: 50%; }
+  .legend i.life { background: var(--life); box-shadow: 0 0 12px var(--life); }
+  .legend i.cold { background: var(--cold); box-shadow: 0 0 12px var(--cold); }
+  .sgrid { margin-top: 26px; display: flex; gap: 34px; align-items: center; }
+  .sgrid .cells { display: grid; grid-template-columns: repeat(10, 22px); gap: 5px; flex: none; }
+  .sgrid .cells i { width: 22px; height: 22px; border: 1px solid rgba(233,220,192,.22); }
+  .sgrid .cells i.given { border: 1.5px solid var(--cold); background: rgba(124,156,188,.34); }
+  .sgrid .cells i.own { border-color: #bcd2e8; background: var(--cold); box-shadow: 0 0 10px rgba(124,156,188,.7); }
+  .sgrid .gl { display: flex; flex-direction: column; gap: 18px; font-family: var(--mono); font-size: 18px; letter-spacing: .14em; text-transform: uppercase; color: var(--ash); line-height: 1.5; }
+  .sgrid .gl b { font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 760; font-size: 54px; letter-spacing: 0; color: var(--stone); display: block; line-height: 1; }
+  .sgrid .gl .own b { color: #bcd2e8; }
+
   /* HUD */
   .hud-tl, .hud-tr { position: absolute; top: 58px; font-family: var(--mono); font-size: 15px; letter-spacing: .3em; text-transform: uppercase; line-height: 1.7; }
   .hud-tl { left: 132px; color: rgba(233,220,192,.78); }
@@ -341,7 +379,8 @@
 </style>
 </head>
 <body>
-  <script>if (/[?&]alpha=1/.test(location.search)) document.documentElement.classList.add('alpha');</script>
+  <script>if (/[?&]alpha=1/.test(location.search)) document.documentElement.classList.add('alpha');
+    if (/[?&]notext=1/.test(location.search)) document.documentElement.classList.add('notext');</script>
   <div id="world">
     <canvas id="bg" width="1920" height="1080"></canvas>
     <canvas id="map" width="1920" height="1080"></canvas>
@@ -364,6 +403,7 @@
   <script src="data/map.js"></script>
   <script src="data/territoires.js"></script>
   <script src="data/ocha.js"></script>
+  <script src="data/partage.js"></script>
   <script src="data/palette.js"></script>
   <script src="core.js"></script>
   <script>

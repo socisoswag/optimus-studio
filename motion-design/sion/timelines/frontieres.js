@@ -48,11 +48,11 @@
   const zones = [
     // 1947 : toute la terre, en olive
     { seg: 'terre', at: 1.0, dur: 3.0, name: 'palestine-mandataire', from: [35.0, 31.8], tone: 'life', until: 11.4 },
-    // 1949 : Israël (pierre) ; ce qui reste aux Palestiniens (olive)
-    { seg: '1949', at: 0.6, dur: 2.6, name: 'israel-1949', from: [34.8, 32.1], tone: 'stone', until: 10.6 },
+    // 1949 : Israël (encre froide, comme l'État juif du plan de partage) ; ce qui reste aux Palestiniens (olive)
+    { seg: '1949', at: 0.6, dur: 2.6, name: 'israel-1949', from: [34.8, 32.1], tone: 'cold', until: 10.6 },
     { seg: '1949', at: 1.4, dur: 1.6, name: ['cisjordanie', 'gaza'], from: [35.25, 31.9], tone: 'life', until: 10.6 },
     // 1967 : tout sous contrôle israélien, l'occupation en vermillon
-    { seg: '1967', at: 0.3, dur: 1.0, name: 'israel-1949', from: [34.8, 32.1], tone: 'stone', until: 21.0 },
+    { seg: '1967', at: 0.3, dur: 1.0, name: 'israel-1949', from: [34.8, 32.1], tone: 'cold', until: 21.0 },
     { seg: '1967', at: 0.8, dur: 2.0, name: ['cisjordanie', 'gaza', 'jerusalem-est'], from: [35.25, 31.9], until: 9.6 },
     // aujourd'hui : il reste des îlots
     { seg: 'auj', at: 0.8, dur: 2.4, name: ['oslo-ab', 'gaza'], from: [35.2, 31.9], tone: 'life', until: 19.5 },
