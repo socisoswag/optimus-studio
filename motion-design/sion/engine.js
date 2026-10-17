@@ -197,7 +197,7 @@
     const list = [];
     const png = (ph) => ph && /\.png$/i.test(ph);
     if (s.type === 'figure' && png(s.photo)) list.push({ photo: s.photo, name: s.name.join(' '), dates: s.life, side: s.layout === 'R' ? 'L' : 'R', at: s.fly - 0.35, link: { lon: s.lon, lat: s.lat }, tag: false });
-    if (s.type === 'pair') s.people.forEach((pp, k) => { if (png(pp.photo)) list.push({ photo: pp.photo, name: pp.name.join(' '), dates: pp.life, side: k ? 'pairB' : 'pairA', at: s.fly - 0.3 + 0.2 * k, dim: 0.8, tag: false, norm: 250, headTop: 300 }); });
+    if (s.type === 'pair') s.people.forEach((pp, k) => { if (png(pp.photo)) list.push({ photo: pp.photo, name: pp.name.join(' '), dates: pp.life, side: k ? 'pairB' : 'pairA', at: s.fly - 0.3 + 0.2 * k, dim: 0.8, tag: false, norm: pp.norm || 250, headTop: pp.headTop || 300 }); });
     (s.faces || []).forEach((f) => list.push({ ...f }));
     s.faceList = list.map((f) => {
       const [x0, h0] = FACE_POS[f.side || 'R'];
@@ -2199,11 +2199,12 @@
           <div class="block">${eyebrowHTML()}${nameHTML(s.name)}${nativeHTML(s.native, s.lang)}<div class="rule"></div>
           <p class="text">${words(s.text)}</p><div class="meta"><span>${esc(s.life)}</span><i class="dot"></i><span>${esc(s.place)}</span></div></div>`;
       } else if (s.type === 'pair') {
-        const side = (p, c) => `<div class="side ${c}">${nameHTML(p.name)}${nativeHTML(p.native, p.lang)}<div class="meta"><span>${esc(p.life)}</span></div></div>`;
+        // p.text : une phrase propre à chaque personne, sous son nom (sinon tout passe par la phrase commune du bas)
+        const side = (p, c) => `<div class="side ${c}">${nameHTML(p.name)}${nativeHTML(p.native, p.lang)}<div class="meta"><span>${esc(p.life)}</span></div>${p.text ? `<p class="ptx">${words(p.text)}</p>` : ''}</div>`;
         const bgp = (p, c) => (p.photo && !/\.png$/i.test(p.photo) ? `<div class="pairbg ${c}"><div class="ph" style="background-image:url('${esc(p.photo)}')"></div></div>` : '');
         html = `${bgp(s.people[0], 'a')}${bgp(s.people[1], 'b')}<div class="scrim"></div><div class="ghost">${yearStr(s.year)}</div>
           <div class="top">${eyebrowHTML()}</div>${side(s.people[0], 'a')}<div class="amp">&amp;</div>${side(s.people[1], 'b')}
-          <div class="bottom"><p class="text">${words(s.text)}</p></div>`;
+          <div class="bottom"><p class="text">${s.text ? words(s.text) : ''}</p></div>`;
       } else if (s.type === 'split') {
         const half = (h, c) => `<div class="half ${c}"><div class="kicker"><span class="tw"></span></div><div class="word">${chars(h.word)}</div>${h.native ? nativeHTML(h.native, h.lang) : ''}<p class="text">${words(h.text)}</p></div>`;
         html = `<div class="scrimL"></div><div class="seam"></div>${half(s.left, 'a')}${half(s.right, 'b')}<div class="footer">${eyebrowHTML()}</div>`;
@@ -2449,6 +2450,8 @@
       css(R, R.natives[k], 'opacity', String(f3(clamp(np * 3))));
       const mp = tw(u, d0 + 0.9, d0 + 1.4, E.outCubic);
       css(R, R.metas[k], 'opacity', String(f3(mp)));
+      const ptx = sd.querySelector('.ptx');
+      if (ptx) wordsIn(R, (R.ptx = R.ptx || {})[k] || (R.ptx[k] = [...ptx.querySelectorAll('.w')]), d0 + 1.1, 0.03, 0.55);
       const drift = inv(I, D, u);
       css(R, sd, 'transform', `translate3d(${f3(dir * (8 * drift + 160 * ex))}px,0,0) scale(${f3(1 + 0.03 * drift + 0.5 * ex)})`);
       css(R, sd, 'opacity', String(f3(1 - ex)));

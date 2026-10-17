@@ -58,7 +58,9 @@ EXTRAS = {
     21: [("chronologie", "arafat", "chronologie-arafat"), ("octobre-1973", "plans", "sequence-octobre-1973")],
     22: [("chronologie", "yassine", "chronologie-yassine")],
     23: [("chronologie", "oslo", "chronologie-oslo"), ("oslo-mur", "plans", "sequence-oslo-et-le-mur"), ("chiffre-colons", None, "chiffre-cle-colons")],
+    24: [("figures-aujourdhui", "netanyahou", "chronologie-netanyahou"), ("figures-aujourdhui", "lieberman", "chronologie-lieberman")],
     25: [("gaza", "plans", "sequence-gaza"), ("chiffre-gaza", None, "chiffre-cle-femmes-et-enfants")],
+    26: [("figures-aujourdhui", "smotrich-ben-gvir", "chronologie-smotrich-et-ben-gvir")],
     33: [("resolutions", "plans", "sequence-resolutions-onu")],
     36: [("chronologie", "rabin-1995", "chronologie-assassinat-de-rabin")],
     38: [("citation-darwich", None, "citation-mahmoud-darwich")],
@@ -115,9 +117,15 @@ def plans(name, folder):
     return len(segs)
 
 
-def chrono_cuts():
-    js = "require('./core.js'); require('./timelines/chronologie.js'); console.log(JSON.stringify(Object.fromEntries(globalThis.TL.segments.map(s => [s.id || s.type, [s.start, s.end]]))))"
-    return json.loads(subprocess.check_output(["node", "-e", js], cwd=ROOT))
+CUTS = {}
+
+
+def chrono_cuts(name="chronologie"):
+    """Début et fin de chaque fiche d'une timeline (par son id), pour en extraire une seule."""
+    if name not in CUTS:
+        js = f"require('./core.js'); require('./timelines/{name}.js'); console.log(JSON.stringify(Object.fromEntries(globalThis.TL.segments.map(s => [s.id || s.type, [s.start, s.end]]))))"
+        CUTS[name] = json.loads(subprocess.check_output(["node", "-e", js], cwd=ROOT))
+    return CUTS[name]
 
 
 def chapter_titles():
@@ -204,7 +212,7 @@ def main():
                 if span is None:
                     copy(full, path)
                 elif isinstance(span, str):
-                    cut(full, *seg[span], path)
+                    cut(full, *chrono_cuts(src)[span], path)
                 else:
                     cut(full, span[0], span[1], path)
                 items.append(name.replace("-", " "))

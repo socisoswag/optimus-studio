@@ -36,6 +36,7 @@ python3 tools/portraits.py --bords portraits
 | `begin` | Menahem Begin | Deir Yassin (chef de l'Irgoun), chronologie |
 | `arafat` | Yasser Arafat | Octobre 1973 (Rabat, ONU 1974) |
 | `sharon` | Ariel Sharon | Liban 1982 (commission Kahan) |
+| `smotrich` | CC BY-SA 3.0 | Avi Ohayon | Bezalel Smotrich.jpg |
 | `netanyahou` | Benyamin Netanyahou | Gaza (mandat d'arrêt de la CPI) |
 | `mcmahon`, `hussein-ben-ali` | Henry McMahon, Hussein ben Ali | trois promesses (1915) |
 | `sykes`, `picot` | Mark Sykes, François Georges-Picot | trois promesses (1916) |
@@ -45,6 +46,8 @@ python3 tools/portraits.py --bords portraits
 | `arlozoroff` | Haïm Arlozoroff | ouverture II, chapitre 9 |
 | `netanyahou`, `lieberman` | Benyamin Netanyahou, Avigdor Lieberman | ouverture V, chapitre 24 |
 | `bhl`, `finkielkraut` | Bernard-Henri Lévy, Alain Finkielkraut | ouverture VI, chapitre 31 |
+| `netanyahou`, `lieberman` | Benyamin Netanyahou, Avigdor Lieberman | figures d'aujourd'hui, chapitre 24 |
+| `smotrich`, `ben-gvir` | Bezalel Smotrich, Itamar Ben Gvir | figures d'aujourd'hui, chapitre 26 |
 
 ## Sources et licences (pour le générique de fin)
 
@@ -60,6 +63,7 @@ citer l'auteur ; une photo du domaine public peut être citée par courtoisie.
 | `balfour` | domaine public | Bain News Service | A.J. Balfour LCCN2014682753 (cropped).jpg |
 | `begin` | domaine public | US Air Force | Menachem Begin 1978 (3x4 cropped).jpg |
 | `ben-gourion` | domaine public | Fritz Cohen | David Ben-Gurion (D597-087).jpg |
+| `ben-gvir` | CC BY-SA 3.0 | Alon Nuriel | Itamar Ben Gvir 3.jpg |
 | `bhl` | CC BY-SA 3.0 | Itzike | Bernard-Henri Lévy-tau-1.jpg |
 | `dreyfus` | domaine public | Aron Gerschel | Alfred Dreyfus (1859-1935) - photo originale.jpg |
 | `finkielkraut` | CC BY-SA 2.0 | Jérémy Barande | Alain Finkielkraut.jpg |
