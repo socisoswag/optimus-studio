@@ -8,8 +8,8 @@ Un dossier par partie, un sous-dossier par chapitre. Dans chaque dossier, pose l
 
 ## 1-Partie-I-L-idee
 - 00 ouverture de la partie
-- Chapitre 1 · Sion : un mot, un mythe, un monde : titre
-- Chapitre 2 · L’Europe en feu : entre antisémitisme et émancipation : titre
+- Chapitre 1 · Sion : un mot, un mythe, un monde : titre, sequence sion le mot (6 plans, dossier 02)
+- Chapitre 2 · L’Europe en feu : entre antisémitisme et émancipation : titre, sequence l europe en feu (7 plans, dossier 02)
 - Chapitre 3 · L’affaire Dreyfus : fracture française et choc identitaire : titre
 - Chapitre 4 · Theodor Herzl : le prophète du retour : titre, chronologie herzl, citation herzl 1895, cartons lieu/date transparents : vienne-1896, bale-1897
 - Chapitre 5 · Les premiers colons juifs en Palestine : titre, sequence les aliyas (6 plans, dossier 02)
@@ -25,7 +25,7 @@ Un dossier par partie, un sous-dossier par chapitre. Dans chaque dossier, pose l
 
 ## 3-Partie-III-La-catastrophe-fondatrice
 - 00 ouverture de la partie
-- Chapitre 12 · 1947 : le plan de partage de l’ONU : titre, cartons lieu/date transparents : new-york-1947
+- Chapitre 12 · 1947 : le plan de partage de l’ONU : titre, sequence le decoupage (11 plans, dossier 02), sequence le decoupage sans texte, cartons lieu/date transparents : new-york-1947
 - Chapitre 13 · 1948 : la création d’Israël et la Nakba : titre, sequence 1948 la nakba (9 plans, dossier 02), sequence exode palestinien 1948, chronologie 1948 deux regards, chronologie abd al qadir, cartons lieu/date transparents : tel-aviv-1948, lydda-1948
 - Chapitre 14 · Les milices juives : Haganah, Irgoun, Lehi : titre
 - Chapitre 15 · Le massacre de Deir Yassin : titre, sequence deir yassin (5 plans, dossier 02), cartons lieu/date transparents : deir-yassin-1948
@@ -43,10 +43,10 @@ Un dossier par partie, un sous-dossier par chapitre. Dans chaque dossier, pose l
 
 ## 5-Partie-V-La-derive-d-un-projet
 - 00 ouverture de la partie
-- Chapitre 24 · Netanyahou, Lieberman, et la haine institutionnalisée : titre
+- Chapitre 24 · Netanyahou, Lieberman, et la haine institutionnalisée : titre, chronologie netanyahou, chronologie lieberman
 - Chapitre 25 · Gaza, un champ d’expérimentation militaire : titre, sequence gaza (9 plans, dossier 02), chiffre cle femmes et enfants, cartons lieu/date transparents : gaza-2007, gaza-2023
-- Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique : titre
-- Chapitre 27 · La guerre numérique : campagnes d’influence, faux profils et désinformation : titre
+- Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique : titre, chronologie smotrich et ben gvir
+- Chapitre 27 · La guerre numérique : campagnes d’influence, faux profils et désinformation : titre, sequence la guerre numerique (6 plans, dossier 02)
 - Chapitre 28 · Le racisme en Israël : mizrahim, éthiopiens et palestiniens : titre
 
 ## 6-Partie-VI-Voix-et-contre-voix
@@ -59,8 +59,8 @@ Un dossier par partie, un sous-dossier par chapitre. Dans chaque dossier, pose l
 - 00 ouverture de la partie
 - Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique : titre
 - Chapitre 33 · Les résolutions de l’ONU ignorées : 194, 242, 338 : titre, sequence resolutions onu (6 plans, dossier 02)
-- Chapitre 34 · L’effacement culturel : villages détruits, noms effacés : titre
-- Chapitre 35 · Le destin manifeste : colonialisme, apartheid, dépossession : titre
+- Chapitre 34 · L’effacement culturel : villages détruits, noms effacés : titre, sequence les noms effaces (8 plans, dossier 02)
+- Chapitre 35 · Le destin manifeste : colonialisme, apartheid, dépossession : titre, sequence apartheid ce que disent les textes (6 plans, dossier 02)
 - Chapitre 36 · La fracture en Israël : extrémisme religieux vs démocratie : titre, chronologie assassinat de rabin, cartons lieu/date transparents : tel-aviv-1995
 
 ## 8-Conclusion
