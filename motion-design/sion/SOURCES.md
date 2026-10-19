@@ -157,6 +157,13 @@ Utilisées pour les reconstitutions (images de départ des photos animées) :
   | Le port de Jaffa | matpc 04992 | Google Veo (Gemini) | octobre 2026 |
   | Le marché aux moutons, porte de Damas | matpc 21600 | Google Veo (Gemini) | octobre 2026 |
   | La savonnerie de Naplouse | matpc 20377 | Google Veo (Gemini) | octobre 2026 |
+  | La place du marché, Jaffa | matpc 12518 | Google Veo (Gemini) | octobre 2026 |
+  | Les troupes britanniques entrent par la porte de Jaffa (1917) | matpc 02225 | Google Veo (Gemini) | octobre 2026 |
+  | La procession de Nebi Musa quitte Jérusalem | matpc 01218 | Google Veo (Gemini) | octobre 2026 |
+  | Les bannières de Nebi Musa arrivent à al-Aqsa (1918) | matpc 05603 | Google Veo (Gemini) | octobre 2026 |
+
+  À surveiller : l'IA invente parfois des inscriptions (faux arabe sur les bannières de Nebi Musa en fin de clip) ;
+  ces passages sont coupés au montage, aucune inscription inventée n'est montrée.
 - **Scène du vote de l'ONU (29 novembre 1947)**, générée par IA sans photo de départ.
   Mention à l'écran : « Scène reconstituée par IA ».
 - **Archives en relief** : profondeur estimée par le modèle Depth Anything V2 (Apache 2.0). C'est un relief

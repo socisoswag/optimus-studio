@@ -372,22 +372,14 @@
   ],
   "impact": [
    {
-    "id": 177242,
-    "auteur": "deleted_user_3277771",
-    "titre": "Cinematic Impact",
-    "duree": 7.9,
-    "licence": "CC0",
-    "page": "https://freesound.org/people/deleted_user_3277771/sounds/177242/",
-    "ogg": "https://cdn.freesound.org/previews/177/177242_3277771-hq.ogg"
-   },
-   {
     "id": 559529,
     "auteur": "Rizzard",
     "titre": "Cinematic Boom",
     "duree": 6.2,
     "licence": "CC0",
     "page": "https://freesound.org/people/Rizzard/sounds/559529/",
-    "ogg": "https://cdn.freesound.org/previews/559/559529_10825267-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/559/559529_10825267-hq.ogg",
+    "coup": 0.0
    },
    {
     "id": 816376,
@@ -396,25 +388,8 @@
     "duree": 6.9,
     "licence": "CC0",
     "page": "https://freesound.org/people/harrisonlace/sounds/816376/",
-    "ogg": "https://cdn.freesound.org/previews/816/816376_9839964-hq.ogg"
-   },
-   {
-    "id": 264059,
-    "auteur": "Paul368",
-    "titre": "Epic Hit Big.wav",
-    "duree": 7.5,
-    "licence": "CC0",
-    "page": "https://freesound.org/people/Paul368/sounds/264059/",
-    "ogg": "https://cdn.freesound.org/previews/264/264059_2971294-hq.ogg"
-   },
-   {
-    "id": 725203,
-    "auteur": "zombieallen",
-    "titre": "Bass Hit",
-    "duree": 6.4,
-    "licence": "CC0",
-    "page": "https://freesound.org/people/zombieallen/sounds/725203/",
-    "ogg": "https://cdn.freesound.org/previews/725/725203_985232-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/816/816376_9839964-hq.ogg",
+    "coup": 0.0
    },
    {
     "id": 430977,
@@ -423,7 +398,8 @@
     "duree": 5.4,
     "licence": "CC0",
     "page": "https://freesound.org/people/AudioPapkin/sounds/430977/",
-    "ogg": "https://cdn.freesound.org/previews/430/430977_8698658-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/430/430977_8698658-hq.ogg",
+    "coup": 0.0
    }
   ],
   "impact_objet": [
@@ -434,7 +410,9 @@
     "duree": 3.0,
     "licence": "CC0",
     "page": "https://freesound.org/people/kyles/sounds/406197/",
-    "ogg": "https://cdn.freesound.org/previews/406/406197_612689-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/406/406197_612689-hq.ogg",
+    "debut": 0.29,
+    "coup": 0.04
    },
    {
     "id": 372877,
@@ -443,7 +421,9 @@
     "duree": 1.7,
     "licence": "CC0",
     "page": "https://freesound.org/people/Hakren/sounds/372877/",
-    "ogg": "https://cdn.freesound.org/previews/372/372877_6944346-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/372/372877_6944346-hq.ogg",
+    "debut": 0.04,
+    "coup": 0.02
    },
    {
     "id": 218890,
@@ -452,7 +432,10 @@
     "duree": 6.4,
     "licence": "CC0",
     "page": "https://freesound.org/people/qubodup/sounds/218890/",
-    "ogg": "https://cdn.freesound.org/previews/218/218890_71257-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/218/218890_71257-hq.ogg",
+    "debut": 1.96,
+    "fin": 4.6,
+    "coup": 0.02
    },
    {
     "id": 263620,
@@ -461,7 +444,10 @@
     "duree": 2.8,
     "licence": "CC0",
     "page": "https://freesound.org/people/zaneclampett/sounds/263620/",
-    "ogg": "https://cdn.freesound.org/previews/263/263620_2492210-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/263/263620_2492210-hq.ogg",
+    "debut": 0.36,
+    "fin": 1.1,
+    "coup": 0.02
    }
   ],
   "impact_sourd": [
@@ -472,28 +458,11 @@
     "duree": 3.2,
     "licence": "CC0",
     "page": "https://freesound.org/people/UnderlinedDesigns/sounds/191697/",
-    "ogg": "https://cdn.freesound.org/previews/191/191697_2213158-hq.ogg"
-   },
-   {
-    "id": 430978,
-    "auteur": "AudioPapkin",
-    "titre": "Low impact.wav",
-    "duree": 5.2,
-    "licence": "CC0",
-    "page": "https://freesound.org/people/AudioPapkin/sounds/430978/",
-    "ogg": "https://cdn.freesound.org/previews/430/430978_8698658-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/191/191697_2213158-hq.ogg",
+    "coup": 0.0
    }
   ],
   "timbale": [
-   {
-    "id": 369394,
-    "auteur": "Terry93D",
-    "titre": "Timpani C2",
-    "duree": 4.0,
-    "licence": "CC0",
-    "page": "https://freesound.org/people/Terry93D/sounds/369394/",
-    "ogg": "https://cdn.freesound.org/previews/369/369394_5622625-hq.ogg"
-   },
    {
     "id": 687924,
     "auteur": "Johnnie_Holiday",
@@ -501,7 +470,8 @@
     "duree": 1.5,
     "licence": "CC0",
     "page": "https://freesound.org/people/Johnnie_Holiday/sounds/687924/",
-    "ogg": "https://cdn.freesound.org/previews/687/687924_4819210-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/687/687924_4819210-hq.ogg",
+    "coup": 0.0
    },
    {
     "id": 687926,
@@ -510,7 +480,8 @@
     "duree": 1.5,
     "licence": "CC0",
     "page": "https://freesound.org/people/Johnnie_Holiday/sounds/687926/",
-    "ogg": "https://cdn.freesound.org/previews/687/687926_4819210-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/687/687926_4819210-hq.ogg",
+    "coup": 0.0
    }
   ],
   "tampon": [

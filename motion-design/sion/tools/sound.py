@@ -8,7 +8,8 @@ du film) : vent et crépitements de feu, tic-tac discret, souffles pendant les v
 de caméra, impacts sur chaque titre, artillerie lointaine synchronisée sur les
 éclairs, rumeur des flux, silence puis battement de cœur en 1995.
 MUSIC=1 ajoute le lit musical (drone grave et accords lents).
-Uniquement numpy (aucun sample externe, donc aucun droit à gérer).
+Bruitages réels (prises de terrain CC0 de la banque, tools/bruitages.py, ici BR) dès que la banque est téléchargée
+(python3 tools/banque_sons.py prendre) ; sinon, ou avec SYNTH=1, les anciens sons de synthèse.
 """
 import json
 import os
@@ -17,7 +18,17 @@ import wave
 
 import numpy as np
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import bruitages as BR  # noqa: E402
+
 SR = 48000
+REEL = os.environ.get("SYNTH", "0") != "1"
+
+
+def reel(*roles):
+    return REEL and BR.ok(*roles)
+
+
 cues = json.load(open(sys.argv[1]))
 OUT = sys.argv[2]
 TOTAL = cues["total"]
@@ -117,7 +128,7 @@ silences = cues.get("silences") or []
 master = np.ones(N)
 master *= np.clip(t / float(SND.get("fadeIn", 2.2)), 0, 1) ** 1.5
 fade0 = TOTAL - 1.6
-master *= np.clip((TOTAL + 0.3 - t) / (TOTAL + 0.3 - fade0), 0, 1)
+master *= np.clip((TOTAL - 0.02 - t) / (TOTAL - 0.02 - fade0), 0, 1)  # silence sur la dernière image : pas de clic à la coupe
 
 # atténuation du « lit » sonore : coupure avant chaque silence, puis retour
 bed = np.ones(N)
@@ -194,15 +205,35 @@ crack /= np.abs(crack).max() + 1e-9
 MUSIC = os.environ.get("MUSIC", "0") == "1"
 # bedFrom : le vent et le feu n'arrivent qu'à partir de cet instant (ex. une salle de l'ONU avant la guerre)
 bed_in = np.clip((t - float(SND.get("bedFrom", 0.0))) / 2.0, 0, 1) ** 1.5 if SND.get("bedFrom") else 1.0
-bedmix = ((0.55 * drone + 0.30 * pad) * MUSIC + 0.42 * wind * bed_in) * bed * duck
-add(bedmix, 0, 0.62, 0.0)
-crl = crack * bed * bed_in * 0.09
-add((crl, np.roll(crl, int(0.021 * SR))), 0, 1.0)
+if reel("vent_doux", "feu"):
+    # vrai vent léger (sans le souffle sur le micro) et vraies braises au loin, crêtes arrondies
+    vl_, vr_ = BR.fond("vent_doux", N / SR, rng, -25)
+    vl_, vr_ = BR.passe_haut(vl_, 90, 3), BR.passe_haut(vr_, 90, 3)
+    fl_, fr_ = BR.adoucit(BR.fond("feu", N / SR, rng, -30), 3.5)
+    fl_, fr_ = BR.passe_bas(fl_, 6000), BR.passe_bas(fr_, 6000)
+    env_ = bed * bed_in * duck
+    mus_ = (0.55 * drone + 0.30 * pad) * MUSIC
+    add(((vl_ + mus_) * env_, (vr_ + mus_) * env_), 0, 0.62)
+    add((fl_ * bed * bed_in, fr_ * bed * bed_in), 0, 0.5)
+else:
+    bedmix = ((0.55 * drone + 0.30 * pad) * MUSIC + 0.42 * wind * bed_in) * bed * duck
+    add(bedmix, 0, 0.62, 0.0)
+    crl = crack * bed * bed_in * 0.09
+    add((crl, np.roll(crl, int(0.021 * SR))), 0, 1.0)
 
 # ------------------------------------------------------------------ tic-tac (le temps qui passe)
 tick_start, tick_end = SND.get("ticks") or (0.0, -1.0)
 tk = 0
 tt = tick_start
+if tick_end > tick_start and reel("tic"):  # vrai réveil mécanique, coupé avec le reste pendant les silences
+    i0_ = int(tick_start * SR)
+    n_ = int((tick_end - tick_start) * SR)
+    tl_, tr_ = BR.fond("tic", n_ / SR, rng, -30)
+    e_ = bed[i0_:i0_ + n_][:len(tl_)]
+    k_ = min(len(e_) // 2, int(0.3 * SR))
+    e_ = e_ * np.concatenate((np.linspace(0, 1, k_), np.ones(len(e_) - 2 * k_), np.linspace(1, 0, k_)))
+    add((tl_[:len(e_)] * e_, tr_[:len(e_)] * e_), tick_start, 1.0)
+    tt = tick_end
 while tt < tick_end:
     if not in_silence(tt):
         n = int(0.03 * SR)
@@ -237,6 +268,10 @@ def whoosh(dur, big=False):
 for fl in cues["flights"]:
     if fl["dur"] <= 0:
         continue
+    if reel("souffle"):  # vrai souffle, le plus fort au milieu du mouvement de caméra
+        s_, pk_ = BR.souffle(rng, fl["dur"] + 0.5, gros=fl["big"], sens=fl["dir"])
+        add(s_, fl["t0"] + fl["dur"] / 2 - pk_ / SR, 0.5 if fl["big"] else 0.36)
+        continue
     s = whoosh(fl["dur"], fl["big"])
     n = len(s)
     p = np.clip(np.arange(n) / SR / fl["dur"], 0, 1)
@@ -253,6 +288,11 @@ for fl in cues.get("flows", []):
     n = int((dur + 1.0) * SR)
     tt = np.arange(n) / SR
     env = np.sin(np.pi * np.clip(tt / (dur + 1.0), 0, 1)) ** 1.6
+    if reel("pas"):  # vraie foule qui marche sur le gravier, au loin, dans le sens du flux
+        pl_, pr_ = BR.fond("pas", n / SR, rng, -20)
+        gl_, gr_ = pan_gains(np.clip((fl["to"][0] - fl["from"][0]) / 12.0, -0.7, 0.7))
+        add(BR.reverb((pl_ * env * gl_ * 1.4, pr_ * env * gr_ * 1.4), "ir_grand", wet=0.3, couleur=4000), fl["t0"], 0.4)
+        continue
     body = bp(noise(n), 140, 700)
     body /= np.abs(body).max() + 1e-9
     body *= 0.75 + 0.25 * np.sin(2 * np.pi * 0.7 * tt + 1.3)
@@ -271,6 +311,13 @@ for fl in cues.get("flows", []):
 # ------------------------------------------------------------------ guerre : avions (passage), chars (grondement, chenilles)
 for j in cues.get("jets", []):
     dur = min(j["dur"], 6.0) + 1.0
+    if reel("avion"):  # vrai passage d'avion de chasse, au sommet à 45 % de la durée
+        (al_, ar_), pk_ = BR.passage("avion", rng, dur)
+        if j.get("pan", 1) < 0:
+            al_, ar_ = ar_, al_
+        add(BR.reverb((al_, ar_), "ir_grand", wet=0.2, couleur=3000), j["t0"] + 0.45 * dur - pk_ / SR,
+            0.3 * min(1.6, 0.8 + 0.2 * j.get("n", 1)))
+        continue
     n = int(dur * SR)
     tt = np.arange(n) / SR
     p = np.clip(tt / dur, 0, 1)
@@ -289,6 +336,10 @@ for rb in cues.get("rumbles", []):
     n = int(dur * SR)
     tt = np.arange(n) / SR
     env = np.clip(tt / 0.6, 0, 1) * np.clip((dur - tt) / 0.8, 0, 1)
+    if reel("char"):  # vrai char : moteur et chenilles
+        cl_, cr_ = BR.fond("char", n / SR, rng, -18)
+        add((cl_ * env, cr_ * env), rb["t0"], 0.3 * min(1.5, 0.7 + 0.15 * rb.get("n", 1)))
+        continue
     eng = lp(noise(n), 120) * (0.8 + 0.2 * np.sin(2 * np.pi * 23 * tt))
     eng /= np.abs(eng).max() + 1e-9
     clank = np.zeros(n)
@@ -301,6 +352,24 @@ for rb in cues.get("rumbles", []):
     add(x, rb["t0"], 0.12 * min(1.5, 0.7 + 0.15 * rb.get("n", 1)), 0.0)
 
 # ------------------------------------------------------------------ impacts
+# creux avant chaque gros coup (comme au mixage cinéma) : tout ce qui joue déjà baisse sur les 120 ms qui précèdent,
+# puis revient en 300 ms ; le coup, ajouté ensuite, tombe sur du silence relatif et claque
+if REEL:
+    _hits = sorted(u["t"] for u in cues["impacts"] if u["kind"] in ("hit", "title", "boom") and u["k"] >= 0.5)
+    _dip = np.ones(N)
+    for u in cues["impacts"]:
+        if u["kind"] not in ("hit", "title", "boom") or u["k"] < 0.5:
+            continue
+        if any(0 < u["t"] - v < 0.6 for v in _hits):  # coup en rafale : seul le premier a son creux
+            continue
+        d_ = 1 - 0.6 * min(1.0, u["k"])
+        i0_, i1_, i2_ = (max(0, min(N, int(x * SR))) for x in (u["t"] - 0.12, u["t"], u["t"] + 0.3))
+        _dip[i0_:i1_] = np.minimum(_dip[i0_:i1_], np.linspace(1, d_, i1_ - i0_))
+        _dip[i1_:i2_] = np.minimum(_dip[i1_:i2_], np.linspace(d_, 1, i2_ - i1_))
+    L *= _dip
+    R *= _dip
+
+
 def hit(k=1.0, metal=True):
     n = int(2.2 * SR)
     tt = np.arange(n) / SR
@@ -336,6 +405,33 @@ for im in cues["impacts"]:
     k = im["k"]
     kind = im["kind"]
     if kind == "event":
+        continue
+    if reel("impact", "impact_objet", "montee", "tic", "explosion", "ecroulement"):
+        t_ = im["t"]
+        HITS = [u["t"] for u in cues["impacts"] if u["kind"] not in ("tick", "event")]
+        if kind == "tick":  # vrai tic de réveil
+            add(BR.reverb(BR.coup("tic", rng, 0.08), "ir_salle", wet=0.2), t_ - 0.003, 0.14)
+        elif kind == "boom":  # vraie explosion au loin
+            s_ = BR.coup("explosion", rng, 3.0, 10)
+            add(BR.reverb(s_, "ir_grand", wet=0.45, couleur=3500), t_ - 0.003, 0.42 * min(k, 1.2))
+        elif kind == "crumble":
+            s_, a_ = BR.prise("ecroulement", rng)
+            add(BR.reverb(s_, "ir_grand", wet=0.4, couleur=5000), t_ - a_ / SR, 0.3 * k)
+        elif kind == "soft":
+            (sl_, sr_), a_ = BR.impact(rng, 0.6 * k, lourd=False)
+            add(BR.reverb((BR.passe_bas(sl_, 2500), BR.passe_bas(sr_, 2500)), "ir_grand", wet=0.5), t_ - a_ / SR, 0.35 * k / 0.45)
+        elif kind == "title":
+            m_ = BR.montee(rng, 1.44)
+            add(BR.reverb(m_, "ir_grand", wet=0.4, couleur=9000), t_ - 0.06 - len(m_[0]) / SR, 0.12)
+            s_, a_ = BR.impact(rng, 1.3)
+            add(BR.reverb(s_, "ir_grand", wet=0.6), t_ - a_ / SR, 0.5)
+        else:  # coup sur un titre, une date, un chiffre : montée courte puis impact en couches réelles
+            serre = any(0 < abs(u - t_) < 0.6 for u in HITS)  # coups en rafale : courts et nets, sans montée
+            if not serre:  # montée discrète qui s'arrête 80 ms avant : l'attaque du coup reste nette
+                m_ = BR.montee(rng, 0.72)
+                add(BR.reverb(m_, "ir_grand", wet=0.3, couleur=9000), t_ - 0.08 - len(m_[0]) / SR, 0.06 * k)
+            s_, a_ = BR.impact(rng, k, court=serre)
+            add(BR.reverb(s_, "ir_salle", wet=0.2 if serre else 0.32), t_ - a_ / SR, 0.55 * min(k, 1.2))
         continue
     if kind == "tick":
         l, r = verb(click(), IR_HALL, wet=0.25)
@@ -378,6 +474,14 @@ for im in cues["impacts"]:
 
 # ------------------------------------------------------------------ artillerie lointaine (son en retard sur l'éclair)
 for f in cues["flashes"]:
+    if reel("explosion"):  # vraies détonations lointaines, une différente à chaque éclair
+        t0 = f["t"] + 0.16 + 0.35 * (1 - f["size"])
+        if in_silence(t0, before=0.2, after=0.5):
+            continue
+        bl_, br_ = BR.coup("explosion", rng, 2.5, 10)
+        gl, gr = pan_gains((f["x"] - 0.5) * 1.4)
+        add(BR.reverb((bl_ * gl * 1.4, br_ * gr * 1.4), "ir_grand", wet=0.5, couleur=3000), t0 - 0.003, 0.22 * f["power"])
+        continue
     n = int(1.6 * SR)
     b = lp(noise(n), 110) * env_exp(n, 0.45, 0.012)
     b /= np.abs(b).max() + 1e-9
@@ -401,10 +505,16 @@ def heartbeat():
 
 if EV:
     ev_t = EV["t"]
-    l, r = verb(hit(1.0), IR_FAR, wet=0.7)
-    add((l, r), ev_t, 0.42)
-    for d in (0.95, 1.27, 2.15, 2.47, 3.35, 3.67):
-        add(heartbeat(), ev_t + d, 0.55 if int(d * 100) % 2 else 0.4)
+    if reel("impact", "impact_objet", "coeur"):  # impact réel, puis vrais battements de cœur
+        s_, a_ = BR.impact(rng, 1.2)
+        add(BR.reverb(s_, "ir_grand", wet=0.7), ev_t - a_ / SR, 0.42)
+        for d in (0.95, 1.27, 2.15, 2.47, 3.35, 3.67):
+            add(BR.coup("coeur", rng, 0.3, 10), ev_t + d - 0.003, 0.5 if int(d * 100) % 2 else 0.36)
+    else:
+        l, r = verb(hit(1.0), IR_FAR, wet=0.7)
+        add((l, r), ev_t, 0.42)
+        for d in (0.95, 1.27, 2.15, 2.47, 3.35, 3.67):
+            add(heartbeat(), ev_t + d, 0.55 if int(d * 100) % 2 else 0.4)
     n = int(3.4 * SR)
     tin = np.sin(2 * np.pi * 7150 * np.arange(n) / SR) * np.clip(np.arange(n) / SR / 0.08, 0, 1) * np.exp(-np.arange(n) / SR / 1.1)
     add(tin, ev_t + 0.02, 0.022)
@@ -518,8 +628,56 @@ def shimmer(dur):
 
 
 KNOCK = knock()
+FOLEY_REEL = reel("machine", "machine_cloche", "tic", "marteau", "salle", "feu", "papier_coupe", "pierre", "radio", "tir")
 for fo in (SND.get("foley") or []):
     k, t0, g = fo["kind"], fo["t"], fo.get("gain", 1.0)
+    if FOLEY_REEL:
+        if k == "key":  # vraies frappes de machine à écrire
+            add(BR.reverb(BR.coup("machine", rng, 0.09), "ir_salle", wet=0.1), t0 - 0.003, 0.16 * g)
+        elif k == "bell":  # vraie sonnette et retour du chariot
+            s_, a_ = BR.prise("machine_cloche", rng)
+            add(BR.reverb(s_, "ir_salle", wet=0.15), t0 - a_ / SR, 0.14 * g)
+        elif k == "tick":
+            add(BR.reverb(BR.coup("tic", rng, 0.08), "ir_salle", wet=0.2), t0 - 0.003, 0.12 * g)
+        elif k == "gavel":  # vrai marteau de séance, deux coups
+            for d, a in ((0.0, 1.0), (0.34, 0.8)):
+                add(BR.reverb(BR.coup("marteau", rng, 0.5, 10), "ir_salle", wet=0.45), t0 + d - 0.003, 0.42 * a * g)
+        elif k == "room":  # vraie grande salle : rumeur, toux, chaises
+            n = int(fo["dur"] * SR)
+            tt = np.arange(n) / SR
+            e_ = np.clip(tt / 1.5, 0, 1) * np.clip((fo["dur"] - tt) / 1.5, 0, 1)
+            rl_, rr_ = BR.moins_aigu(BR.fond("salle", fo["dur"], rng, -24))
+            add((rl_[:n] * e_, rr_[:n] * e_), t0, 0.25 * g)
+        elif k == "shimmer":  # les villages s'allument : braises qui crépitent, très doux
+            n = int((fo["dur"] + 0.6) * SR)
+            tt = np.arange(n) / SR
+            e_ = np.clip(tt / 0.8, 0, 1) * np.clip((fo["dur"] + 0.6 - tt) / 0.8, 0, 1)
+            sl_, sr_ = BR.adoucit(BR.fond("feu", n / SR, rng, -26), 3.5)
+            add(BR.reverb((BR.passe_haut(sl_, 1500) * e_, BR.passe_haut(sr_, 1500) * e_), "ir_grand", wet=0.4), t0, 0.3 * g)
+        elif k == "cut":  # vraie lame dans le papier
+            n = int((fo["dur"] + 0.15) * SR)
+            tt = np.arange(n) / SR
+            e_ = np.sin(np.pi * np.clip(tt / (fo["dur"] + 0.15), 0, 1)) ** 0.6
+            cl_, cr_ = BR.fond("papier_coupe", n / SR, rng, -16)
+            add(BR.reverb((cl_ * e_, cr_ * e_), "ir_salle", wet=0.15), t0, 0.4 * g)
+        elif k == "slab":  # vraie pierre qu'on traîne, posée lourdement
+            s_, a_ = BR.prise("pierre", rng)
+            add(BR.reverb(s_, "ir_grand", wet=0.4), t0, 0.4 * g)
+            i_, ai_ = BR.impact(rng, 0.8, lourd=False)
+            add(BR.reverb(i_, "ir_grand", wet=0.5), t0 + len(s_[0]) / SR * 0.8 - ai_ / SR, 0.3 * g)
+        elif k == "radio":  # vraie radio, filtrée comme un vieux poste
+            n = int(fo["dur"] * SR)
+            tt = np.arange(n) / SR
+            e_ = np.clip(tt / 0.3, 0, 1) * np.clip((fo["dur"] - tt) / 0.3, 0, 1)
+            ql_, qr_ = BR.fond("radio", fo["dur"], rng, -20)
+            ql_, qr_ = BR.passe_bas(BR.passe_haut(ql_, 300), 3200), BR.passe_bas(BR.passe_haut(qr_, 300), 3200)
+            gl_, gr_ = pan_gains(-0.3)
+            add(BR.reverb((ql_[:n] * e_ * gl_, qr_[:n] * e_ * gr_), "ir_salle", wet=0.15), t0, 0.35 * g)
+        elif k == "shot":  # vrai coup de feu lointain
+            s_, a_ = BR.prise("tir", rng)
+            gl_, gr_ = pan_gains(0.4)
+            add(BR.reverb((s_[0] * gl_, s_[1] * gr_), "ir_grand", wet=0.6, couleur=4000), t0 - a_ / SR, 0.3 * g)
+        continue
     if k == "key":
         l, r = verb(key_click(fo.get("v", 0)), IR_HALL, wet=0.12)
         add((l, r), t0, 0.16 * g, 0.0)
@@ -569,9 +727,15 @@ mix_l, mix_r = np.tanh(mix_l) / np.tanh(1.25), np.tanh(mix_r) / np.tanh(1.25)
 ceil = 10 ** (-1.0 / 20)
 rms0 = np.sqrt(np.mean((mix_l ** 2 + mix_r ** 2) / 2))
 g = 10 ** ((-18.0 if MUSIC else -21.0) / 20) / rms0
-g = min(g, 1.6 * ceil / max(np.abs(mix_l).max(), np.abs(mix_r).max()))
+g = min(g, 4.0 * ceil / max(np.abs(mix_l).max(), np.abs(mix_r).max()))
 mix_l, mix_r = mix_l * g, mix_r * g
+mix_l, mix_r = BR.limite(mix_l, mix_r, ceil)  # quelques coups très secs passent au limiteur, pas tout le mixage
 mix_l, mix_r = ceil * np.tanh(mix_l / ceil), ceil * np.tanh(mix_r / ceil)
+# crête vraie (entre les échantillons, ce que voit l'encodeur) sous -1 dBTP
+from scipy.signal import resample_poly  # noqa: E402
+tp = max(np.abs(resample_poly(mix_l, 4, 1)).max(), np.abs(resample_poly(mix_r, 4, 1)).max())
+if tp > ceil:
+    mix_l, mix_r = mix_l * ceil / tp, mix_r * ceil / tp
 
 pcm = np.clip(np.stack([mix_l, mix_r], 1) * (2 ** 23 - 1), -(2 ** 23), 2 ** 23 - 1).astype("<i4")
 raw = pcm.reshape(-1).view(np.uint8).reshape(-1, 4)[:, :3].tobytes()

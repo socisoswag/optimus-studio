@@ -202,7 +202,11 @@ ons = []
 for p in sorted(set(pk.tolist()) | set(pj.tolist())):
     pre = tot[max(0, p - 12):max(1, p - 1)].mean()
     post = tot[p:p + 6].max()
-    if post - pre > 6 and not (ons and t_fr[p] - ons[-1][0] < 0.08):
+    if post - pre > 3:
+        if ons and t_fr[p] - ons[-1][0] < 0.08:  # deux attaques collées : on garde la plus nette
+            if post - pre > ons[-1][1]:
+                ons[-1] = (t_fr[p], post - pre, p)
+            continue
         ons.append((t_fr[p], post - pre, p))
 
 # ------------------------------------------------------------------ synchro avec la timeline
@@ -238,7 +242,9 @@ if opt.get("timeline"):
         if t >= dur - 0.05:
             continue
         if k == "impact":
-            near = [(o, j) for o, j, _ in ons if -0.05 <= o - t <= 0.06]
+            # un coup qui suit un autre de moins de 0,6 s ressort de 3 dB au moins ; un coup isolé, de 6 dB
+            rafale = any(0 < t - u < 0.6 for u, kk in exp_ev if kk == "impact")
+            near = [(o, j) for o, j, _ in ons if -0.05 <= o - t <= 0.11 and j > (3 if rafale else 6)]
             if not near:
                 flag("défaut", t, f"impact programmé à {ts(t)} : aucune attaque audible au bon moment")
             else:
@@ -251,11 +257,12 @@ if opt.get("timeline"):
             if b <= a or c1 <= c0 or rms50[a:b].max() - np.median(rms50[c0:c1]) < 5:
                 flag("vérifier", t, f"coupe en filé à {ts(t)} : pas de souffle qui monte (moins de 5 dB)")
         else:
-            near = [o for o, j, _ in ons if -0.06 <= o - t <= 0.12]
+            near = [o for o, j, _ in ons if -0.06 <= o - t <= 0.12 and j > 6]
             if not near:
                 flag("vérifier", t, f"flash à {ts(t)} sans son marqué")
-    for t, off in late:
-        flag("défaut", t, f"impact à {ts(t)} décalé de {off * 1000:+.0f} ms (au-delà de 40 ms, ça se voit)")
+    for t, off in late:  # UIT-R BT.1359 : un son en avance se remarque dès 45 ms, en retard à partir de 125 ms
+        if off < -0.04 or off > 0.09:
+            flag("défaut", t, f"impact à {ts(t)} {'en avance' if off < 0 else 'en retard'} de {abs(off) * 1000:.0f} ms sur l'image (ça se voit)")
     info.append(f"synchro : {len(exp_ev)} repères de la timeline contrôlés")
 
 # ------------------------------------------------------------------ par seconde : souffle trop blanc, aigus agressifs ou figés

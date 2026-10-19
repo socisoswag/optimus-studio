@@ -8,6 +8,9 @@ Les variations (prise tirée au hasard, jamais deux fois la même d'affilée, vi
 deux fois exactement le même son. Si la banque n'est pas téléchargée, ok() répond False et les scripts gardent leurs
 sons de synthèse.
 """
+import os
+import sys
+
 import numpy as np
 from scipy.signal import fftconvolve
 
@@ -47,11 +50,18 @@ def _crete1(x):
 
 
 def attaque(x):
-    """Premier instant où le son atteint 30 % de sa crête (enveloppe à la milliseconde)."""
+    """Instant du vrai coup : le front le plus raide (montée sur 3 ms) dans les 80 ms qui précèdent la crête.
+    Une amorce avant le coup (souffle, petit choc) ne décale donc plus le calage sur l'image."""
     m = np.abs(_st(x)).max(1)
     n = len(m) // 48
-    e = m[:n * 48].reshape(n, 48).max(1)
-    return int(np.argmax(e >= 0.3 * e.max()) * 48)
+    e = 20 * np.log10(m[:n * 48].reshape(n, 48).max(1) + 1e-9)
+    P = int(e.argmax())
+    e = np.maximum(e, e[P] - 40)  # le silence et le souffle de fond ne comptent pas comme un front
+    a = max(3, P - 80)
+    if P <= a:
+        return P * 48
+    rise = e[a:P + 1] - e[a - 3:P - 2]
+    return int((a + int(rise.argmax()) - 3) * 48)
 
 
 def sommet(x):
@@ -142,19 +152,23 @@ def coups(role, longueur=0.15, seuil=12.0):
         nb = len(m) // h
         e = 10 * np.log10(m[:nb * h].reshape(nb, h).mean(1) + 1e-12)
         top = e.max()
-        last = -10 ** 9
         L = int(longueur * SR)
+        ons = []
         for j in range(10, nb - 2):
-            if e[j] > top - 38 and e[j] - e[j - 10:j - 1].min() > seuil and j * h - last > 0.6 * L:
-                a = max(0, j * h - 144)
-                seg = x[a:a + L + 144].copy()
-                if len(seg) < L // 2:
-                    continue
-                seg[:144] *= np.linspace(0, 1, 144)[:, None]
-                k = int(0.3 * len(seg))
-                seg[-k:] *= np.linspace(1, 0, k)[:, None] ** 2
-                out.append(_crete1(seg))
-                last = j * h
+            if e[j] > top - 38 and e[j] - e[j - 10:j - 1].min() > seuil and (not ons or j * h - ons[-1] > 0.6 * L):
+                ons.append(j * h)
+        allj = [j * h for j in range(10, nb - 2) if e[j] > top - 38 and e[j] - e[j - 10:j - 1].min() > seuil]  # toutes les attaques
+        for o in ons:
+            nxt = [q for q in allj if q > o + 2400]  # coup suivant dans la prise : le morceau s'arrête avant
+            Lk = min(L, (nxt[0] - o - 480) if nxt else L)
+            if Lk < int(0.08 * SR):
+                continue
+            a = max(0, o - 144)
+            seg = x[a:a + Lk + 144].copy()
+            seg[:144] *= np.linspace(0, 1, 144)[:, None]
+            k = int(0.3 * len(seg))
+            seg[-k:] *= np.linspace(1, 0, k)[:, None] ** 2
+            out.append(_crete1(seg))
     _coups[key] = out
     return out
 
@@ -177,28 +191,49 @@ def coup(role, rng, longueur=0.15, seuil=12.0, vitesse=None):
 
 
 # ------------------------------------------------------------------ impacts, souffles, montées
-def impact(rng, k=1.0, lourd=True):
+def impact(rng, k=1.0, lourd=True, court=False):
     """Coup de cinéma fait de vraies prises superposées, calées sur la même attaque : un impact grave (corps et traîne),
     un vrai coup d'objet (porte métallique, fer contre bois) pour le claquement dans le médium, qui reste audible sur un
-    téléphone, et une timbale pour l'assise. Rend (l, r), attaque."""
-    a = _st(B.prise("impact", rng, vitesse=_vitesse(rng)))
-    b = passe_haut(_st(B.prise("impact_objet", rng, vitesse=_vitesse(rng))), 180)
-    lay = [(a, 1.0), (b, 0.42 + 0.18 * min(k, 1.5))]
-    if lourd and ok("timbale"):
-        lay.append((_st(B.prise("timbale", rng, vitesse=_vitesse(rng, 0.03))), 0.38))
-    A = max(attaque(x) for x, _ in lay)
-    n = max(A - attaque(x) + len(x) for x, _ in lay)
+    téléphone, et un gros tom pour l'assise. court=True (coups qui se suivent à moins d'une demi-seconde) : sans
+    l'impact grave et sa longue traîne, pour que chaque coup reste net. Rend (l, r), attaque."""
+    def couche(role, ampl, gain, hp=None):
+        v = _vitesse(rng, ampl)
+        x = _st(B.prise(role, rng, vitesse=v))
+        s = B.prises(role)[B._derniere[role]]
+        # instant du coup relevé à l'oreille dans le catalogue (« coup », en secondes) ; sinon, repéré dans le son
+        att = int(s["coup"] * SR / v) if "coup" in s else attaque(x)
+        return (passe_haut(x, hp) if hp else x), gain, att
+
+    b = couche("impact_objet", 0.06, 1.0 if court else 0.42 + 0.18 * min(k, 1.5), hp=180)
+    if court:
+        lay = [b]
+        if ok("timbale"):
+            lay.append(couche("timbale", 0.03, 0.6))
+    else:
+        lay = [couche("impact", 0.06, 1.0), b]
+        if lourd and ok("timbale"):
+            lay.append(couche("timbale", 0.03, 0.38))
+    A = max(att for _, _, att in lay)
+    if os.environ.get("SONS_TRACE"):
+        print(f"impact k={k} court={court} : prises {dict(B._derniere)} coups {[att // 48 for _, _, att in lay]} ms",
+              file=sys.stderr)
+    n = max(A - att + len(x) for x, _, att in lay)
     out = np.zeros((n, 2))
-    for x, g in lay:
-        o = A - attaque(x)
+    for x, g, att in lay:
+        o = A - att
         out[o:o + len(x)] += g * x
+    if court:  # traîne raccourcie (150 ms) : le coup suivant arrive sur du propre
+        tt = np.arange(len(out)) / SR
+        out *= np.where(tt < A / SR, 1.0, np.exp(-np.maximum(0, tt - A / SR - 0.03) / 0.15))[:, None]
     out = _crete1(out)
     return (out[:, 0], out[:, 1]), A
 
 
 def impact_sourd(rng):
-    x = _st(B.prise("impact_sourd", rng, vitesse=_vitesse(rng)))
-    return (x[:, 0], x[:, 1]), attaque(x)
+    v = _vitesse(rng)
+    x = _st(B.prise("impact_sourd", rng, vitesse=v))
+    s = B.prises("impact_sourd")[B._derniere["impact_sourd"]]
+    return (x[:, 0], x[:, 1]), (int(s["coup"] * SR / v) if "coup" in s else attaque(x))
 
 
 def souffle(rng, dur=None, gros=False, sens=1.0):
@@ -241,6 +276,41 @@ def montee(rng, dur):
     x[-48:] *= np.linspace(1, 0, 48)[:, None]
     x = _crete1(x)
     return x[:, 0], x[:, 1]
+
+
+def passage(role, rng, dur, au=0.45):
+    """Le moment le plus fort d'une prise (un avion qui passe, une rafale) avec dur secondes autour : le sommet tombe
+    à la fraction au de la durée. Fondus de 20 % aux deux bouts. Rend (l, r), sommet."""
+    ps = B.prises(role)
+    x = B.charge(ps[int(rng.integers(len(ps)))])
+    pk, n = sommet(x), int(dur * SR)
+    a = int(np.clip(pk - au * n, 0, max(0, len(x) - n)))
+    seg = x[a:a + n].copy()
+    k = max(1, int(0.2 * len(seg)))
+    seg[:k] *= np.linspace(0, 1, k)[:, None]
+    seg[-k:] *= np.linspace(1, 0, k)[:, None]
+    seg = _crete1(seg)
+    return (seg[:, 0], seg[:, 1]), pk - a
+
+
+def limite(l, r, plafond):
+    """Limiteur à anticipation (comme en studio) : le gain baisse 2 ms avant une crête qui dépasserait le plafond et
+    remonte en 80 ms. Une pièce calme peut ainsi atteindre son niveau sans qu'un seul coup très sec (marteau, coup de
+    feu) n'oblige à baisser tout le reste."""
+    from scipy.ndimage import minimum_filter1d
+    B_ = 48
+    pk = np.maximum(np.abs(l), np.abs(r))
+    nb = -(-len(pk) // B_)
+    pkb = np.pad(pk, (0, nb * B_ - len(pk))).reshape(nb, B_).max(1)
+    need = minimum_filter1d(np.minimum(1.0, plafond / np.maximum(pkb, 1e-12)), 5)
+    a = np.exp(-1 / 80)
+    g = np.empty(nb)
+    cur = 1.0
+    for i in range(nb):
+        cur = need[i] if need[i] < cur else need[i] - (need[i] - cur) * a
+        g[i] = cur
+    gs = np.interp(np.arange(len(pk)), np.arange(nb) * B_ + B_ / 2, g)
+    return l * gs, r * gs
 
 
 def prise(role, rng, vitesse=None, **kw):

@@ -466,6 +466,24 @@ for r0, r1 in SND.get("risers", []):  # montée : bruit qui s'éclaircit et enfl
     rise = norm(out[:n]) * (tt / (r1 - r0)) ** 2.5
     tone = np.sin(2 * np.pi * np.cumsum(55 * 2 ** (2 * tt / (r1 - r0))) / SR) * (tt / (r1 - r0)) ** 3 * 0.4
     add(verb(rise + tone, wet=0.4, dry=1.0), r0, 0.26)
+# creux avant chaque gros coup (comme au mixage cinéma) : tout ce qui joue déjà baisse sur les 120 ms qui précèdent,
+# puis revient en 300 ms ; l'impact, ajouté ensuite, tombe sur du silence relatif et claque
+if REEL:
+    _coups = [(t_, k_) for t_, k_ in SND.get("impacts", [])]
+    if (I.get("title") or {}).get("at") is not None and reel("impact", "impact_objet", "montee"):
+        _th = I["title"]["at"]
+        for c_ in (I.get("fx") or {}).get("cuts", []):
+            if c_.get("type") == "flash" and abs(c_["t"] - _th) < 0.3:
+                _th = c_["t"]
+        _coups.append((_th, 1.0))
+    _dip = np.ones(N)
+    for t_, k_ in _coups:
+        d_ = 1 - 0.6 * min(1.0, k_)
+        i0_, i1_, i2_ = (max(0, min(N, int(x_ * SR))) for x_ in (t_ - 0.12, t_, t_ + 0.3))
+        _dip[i0_:i1_] = np.minimum(_dip[i0_:i1_], np.linspace(1, d_, i1_ - i0_))
+        _dip[i1_:i2_] = np.minimum(_dip[i1_:i2_], np.linspace(d_, 1, i2_ - i1_))
+    L *= _dip
+    R *= _dip
 for ti, k in SND.get("impacts", []):  # impact : chute dans le grave, craquement, longue traîne
     if reel("impact", "impact_objet"):  # vraies prises superposées, attaque pile sur l'image
         s_, a_ = BR.impact(rng, k)
@@ -517,14 +535,15 @@ elif ti is not None:
 
 # ------------------------------------------------------------------ mixage final
 fade_in = float(I.get("fadeIn", 2.4))
-master = np.clip(t / fade_in, 0, 1) ** 1.5 * np.clip((TOTAL + 0.2 - t) / 2.2, 0, 1)
+master = np.clip(t / fade_in, 0, 1) ** 1.5 * np.clip((TOTAL - 0.02 - t) / 2.2, 0, 1)  # silence sur la dernière image
 ml, mr = hp(L * master, 22), hp(R * master, 22)
 peak = max(np.abs(ml).max(), np.abs(mr).max())
 ml, mr = np.tanh(ml / peak * 1.2) / np.tanh(1.2), np.tanh(mr / peak * 1.2) / np.tanh(1.2)
 ceil = 10 ** (-1.0 / 20)
 rms0 = np.sqrt(np.mean((ml ** 2 + mr ** 2) / 2))
-g = min(10 ** (-21.0 / 20) / rms0, 1.6 * ceil / max(np.abs(ml).max(), np.abs(mr).max()))
-ml, mr = ceil * np.tanh(ml * g / ceil), ceil * np.tanh(mr * g / ceil)
+g = min(10 ** (-21.0 / 20) / rms0, 4.0 * ceil / max(np.abs(ml).max(), np.abs(mr).max()))
+ml, mr = BR.limite(ml * g, mr * g, ceil)  # quelques coups très secs passent au limiteur, pas tout le mixage
+ml, mr = ceil * np.tanh(ml / ceil), ceil * np.tanh(mr / ceil)
 # crête vraie (entre les échantillons, ce que voit l'encodeur) sous -1 dBTP
 from scipy.signal import resample_poly  # noqa: E402
 tp = max(np.abs(resample_poly(ml, 4, 1)).max(), np.abs(resample_poly(mr, 4, 1)).max())
