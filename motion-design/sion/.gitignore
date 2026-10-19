@@ -7,5 +7,9 @@ cues.json
 video.mp4
 # Textures de relief de la carte du partage (data/relief), générées par tools/prep_partage.py
 !data/relief/*.png
-# Données de l’intro aérienne (data/drone), refaites par tools/prep_drone.py
+# Données de l’intro aérienne (data/drone, data/drone-gaza…), refaites par tools/prep_drone.py
 data/drone/
+data/drone-*/
+# Photos d’archive en relief (photo3d.html), préparées par tools/prep_archives.py : versionnées
+!data/archives/*.jpg
+!data/archives/*.png

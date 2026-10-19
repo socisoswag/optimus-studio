@@ -1,6 +1,8 @@
-"""Prépare data/drone/ pour l'intro aérienne (timelines de drone.html).
+"""Prépare les données des survols en 3D (timelines de drone.html), zone par zone.
 
-    python3 tools/prep_drone.py <dossier_cache>
+    python3 tools/prep_drone.py <dossier_cache>            zone « terre » → data/drone/ (intro aérienne)
+    python3 tools/prep_drone.py <dossier_cache> gaza       zone « gaza »  → data/drone-gaza/ (2023 et 2025)
+    LIGHT_ONLY=lune python3 tools/prep_drone.py <cache>     seulement la lumière de ces plans (relief déjà fait)
 
 Sources (téléchargées dans le dossier cache, une seule fois) :
   terrarium/   altitudes « terrarium » z12, environ 33 m (SRTM, NASA ; bathymétrie GEBCO), via AWS
@@ -8,14 +10,14 @@ Sources (téléchargées dans le dossier cache, une seule fois) :
                le même jour par le même satellite, via AWS (Element 84) ; données Copernicus libres, usage
                commercial permis avec la mention « Contains modified Copernicus Sentinel data 2025 »
 
-Sorties dans data/drone/ (non versionnées, refaites par ce script) :
+Sorties dans data/drone*/ (non versionnées, refaites par ce script) :
   meta.json            emprise, tailles, niveau de la mer Morte, emprises des textures fines
   height.bin           altitudes en int16 (quart de mètre), grille métrique locale
-  albedo.jpg           couleur du sol, 8192 px de large
+  albedo*.jpg          couleur du sol (une par date pour Gaza)
   detail-<nom>.jpg     couleur fine (environ 8 m) des zones survolées de près
   light-<plan>.png     R ombre portée du soleil (douce), G lumière du ciel, B eau
 
-La grille est un plan local en mètres (x vers l'est, y vers le nord) centré sur 35° E, 31,75° N.
+La grille est un plan local en mètres (x vers l'est, y vers le nord) centré sur l'origine de la zone.
 """
 import json
 import math
@@ -36,22 +38,32 @@ from scipy.ndimage import map_coordinates
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = sys.argv[1]
-OUT = os.path.join(ROOT, "data", "drone")
 UA = "SionDocResearch/1.0"
-LON0, LAT0 = 35.0, 31.75
-REG = (34.30, 31.20, 35.75, 32.30)  # ouest, sud, est, nord
+T25 = ["36/R/XV/2025/5/S2A_36RXV_20250511_0_L2A", "36/R/YV/2025/5/S2A_36RYV_20250511_1_L2A",
+       "36/S/XA/2025/5/S2A_36SXA_20250511_0_L2A", "36/S/YA/2025/5/S2A_36SYA_20250511_1_L2A"]
+# emprises : (ouest, sud, est, nord) ; soleil de chaque plan : azimut (depuis le nord, sens horaire), hauteur
+ZONES = {
+    "terre": dict(out="drone", origin=(35.0, 31.75), reg=(34.30, 31.20, 35.75, 32.30), hw=4096, aw=8192, z=12,
+                  albedos={"albedo": T25}, deadsea=True,
+                  details={"cote": (34.66, 31.94, 34.98, 32.16), "collines": (34.96, 31.62, 35.26, 31.86),
+                           "desert": (35.22, 31.36, 35.56, 31.62)},
+                  suns={"cote": (101, 3.2), "collines": (128, 11), "desert": (114, 17), "titre": (118, 14), "lune": (252, 22), "crepuscule": (262, 5)},
+                  credit="Images : Copernicus Sentinel-2 (ESA), 11 mai 2025, via AWS (Element 84). Contains modified Copernicus Sentinel data 2025"),
+    # Gaza : deux images de la même saison, même heure de passage, sans nuages (17 septembre 2023, 11 septembre 2025)
+    "gaza": dict(out="drone-gaza", origin=(34.39, 31.42), reg=(34.17, 31.18, 34.62, 31.635), hw=2048, aw=5400, z=13,
+                 albedos={"albedo-2023": ["36/R/XV/2023/9/S2A_36RXV_20230917_0_L2A"],
+                          "albedo-2025": ["36/R/XV/2025/9/S2B_36RXV_20250911_0_L2A"]},
+                 deadsea=False, details={}, suns={"gaza": (228, 36)},
+                 credit="Images : Copernicus Sentinel-2 (ESA), 17 septembre 2023 et 11 septembre 2025. Contains modified Copernicus Sentinel data 2023, 2025"),
+}
+Z = ZONES[sys.argv[2] if len(sys.argv) > 2 else "terre"]
+OUT = os.path.join(ROOT, "data", Z["out"])
+LON0, LAT0 = Z["origin"]
+REG = Z["reg"]
 KX = 111320 * math.cos(math.radians(LAT0))  # mètres par degré de longitude
 KY = 110950  # mètres par degré de latitude
-HW = 4096  # largeur de la grille d'altitudes
-AW = 8192  # largeur de la texture de couleur
-# gros plans : emprise (ouest, sud, est, nord)
-DETAILS = {
-    "cote": (34.66, 31.94, 34.98, 32.16),
-    "collines": (34.96, 31.62, 35.26, 31.86),
-    "desert": (35.22, 31.36, 35.56, 31.62),
-}
-# soleil de chaque plan : azimut (degrés depuis le nord, sens horaire), hauteur (degrés)
-SUNS = {"cote": (101, 3.2), "collines": (128, 11), "desert": (114, 17), "titre": (118, 14)}
+HW, AW = Z["hw"], Z["aw"]  # largeurs de la grille d'altitudes et de la texture de couleur
+DETAILS, SUNS = Z["details"], Z["suns"]
 
 
 def fetch(url, path):
@@ -131,40 +143,45 @@ def dec_rgb(p):
 
 
 TCI = "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/{}/TCI.tif"
-SCENES = ["36/R/XV/2025/5/S2A_36RXV_20250511_0_L2A", "36/R/YV/2025/5/S2A_36RYV_20250511_1_L2A",
-          "36/S/XA/2025/5/S2A_36SXA_20250511_0_L2A", "36/S/YA/2025/5/S2A_36SYA_20250511_1_L2A"]
 # la grille locale est un plan équidistant ; en y elle compte KY m par degré, la projection eqc a·π/180
 GRID_CRS = CRS.from_proj4(f"+proj=eqc +lat_ts={LAT0} +lat_0={LAT0} +lon_0={LON0} +a=6378137 +b=6378137 +units=m +no_defs")
 YF = 6378137 * math.pi / 180 / KY
 DEM = "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
 
 os.makedirs(OUT, exist_ok=True)
+ONLY = [x for x in os.environ.get("LIGHT_ONLY", "").split(",") if x]
 print("altitudes…", flush=True)
-dem, dpx = mosaic(12, REG, DEM, os.path.join(CACHE, "terrarium"), dec_dem)
+dem, dpx = mosaic(Z["z"], REG, DEM, os.path.join(CACHE, "terrarium"), dec_dem)
 lon, lat, HH, ext, hstep = grid(REG, HW)
 H = resample(dem, dpx, lon, lat, order=3).astype(np.float32)
 # mer Méditerranée aplanie à 0 m (la bathymétrie ne sert pas), mer Morte : niveau le plus fréquent sous -380 m
 west = lon < 35.2
 sea = west & (H <= 0.5)
 H[sea] = 0.0
-low = H[(H < -380) & (lon > 35.3)]
-hist, edges = np.histogram(low, bins=np.arange(-440, -380, 0.5))
-lake = float(edges[hist.argmax()] + 0.25)
-print(f"  grille {HW}×{HH}, pas {hstep:.1f} m, mer Morte {lake:.1f} m", flush=True)
-gy, gx = np.gradient(H, hstep)
-flat = np.hypot(gx, gy) < 0.01
-dead = (lon > 35.3) & (lat < 31.85) & (lat > 31.0) & (H < lake + 1.5) & flat
-dead = cv2.morphologyEx(dead.astype(np.uint8), cv2.MORPH_OPEN, np.ones((5, 5), np.uint8)).astype(bool)
-H[dead] = lake
+lake = None
+if Z["deadsea"]:
+    low = H[(H < -380) & (lon > 35.3)]
+    hist, edges = np.histogram(low, bins=np.arange(-440, -380, 0.5))
+    lake = float(edges[hist.argmax()] + 0.25)
+    gy, gx = np.gradient(H, hstep)
+    flat = np.hypot(gx, gy) < 0.01
+    dead = (lon > 35.3) & (lat < 31.85) & (lat > 31.0) & (H < lake + 1.5) & flat
+    dead = cv2.morphologyEx(dead.astype(np.uint8), cv2.MORPH_OPEN, np.ones((5, 5), np.uint8)).astype(bool)
+    H[dead] = lake
+print(f"  grille {HW}×{HH}, pas {hstep:.1f} m, mer Morte {lake}", flush=True)
 np.round(H * 4).astype("<i2").tofile(os.path.join(OUT, "height.bin"))
 
-print("couleur…", flush=True)
+if ONLY:  # relief et eau déjà préparés : on ne refait que la lumière des plans demandés
+    meta = json.load(open(os.path.join(OUT, "meta.json")))
+    H = np.fromfile(os.path.join(OUT, "height.bin"), "<i2").reshape(HH, HW).astype(np.float32) * 0.25
+    water = np.asarray(Image.open(os.path.join(OUT, f"light-{next(iter(SUNS))}.png")))[..., 2] > 127
+    SUNS = {k: v for k, v in SUNS.items() if k in ONLY}
+print("couleur…" if not ONLY else "lumière seule…", flush=True)
 os.makedirs(os.path.join(CACHE, "tci"), exist_ok=True)
-scenes = [fetch(TCI.format(s), os.path.join(CACHE, "tci", os.path.basename(s) + ".tif")) for s in SCENES]
 
 
-def to_grid(bbox, w, resampling):
-    """Les quatre scènes reprojetées sur la grille locale (bbox, w pixels de large)."""
+def to_grid(bbox, w, resampling, scenes):
+    """Des scènes Sentinel-2 reprojetées sur la grille locale (bbox, w pixels de large)."""
     _, _, h, ext, step = grid(bbox, w)
     tr = from_origin(ext[0], ext[3] * YF, step, step * YF)
     out = np.zeros((3, h, w), np.uint8)
@@ -178,26 +195,33 @@ def to_grid(bbox, w, resampling):
     return out.transpose(1, 2, 0), h, ext
 
 
-A, AH, aext = to_grid(REG, AW, Resampling.average)
-Image.fromarray(A).save(os.path.join(OUT, "albedo.jpg"), quality=93)
-# eau de la mer Morte d'après l'image de 2025 : le rivage a reculé depuis le relief de 2000 (environ 25 m
-# plus bas) ; dans la cuvette, l'eau est sombre et bleutée, le fond découvert est clair
-a2 = A[: 2 * HH, : 2 * HW].reshape(HH, 2, HW, 2, 3).mean((1, 3))
-lum = a2 @ np.array([0.299, 0.587, 0.114])
-basin = (lon > 35.3) & (lat < 31.85) & (lat > 31.0) & (H < lake + 30)
-# eau sombre, ou eau peu profonde turquoise (rouge nettement sous le vert et le bleu)
-dead_img = basin & ((lum < 92) & (a2[..., 2] >= a2[..., 0]) | (a2[..., 0] < np.minimum(a2[..., 1], a2[..., 2]) - 6) & (lum < 170))
-dead_img = cv2.morphologyEx(dead_img.astype(np.uint8), cv2.MORPH_OPEN, np.ones((3, 3), np.uint8)).astype(bool)
-water = sea | dead_img
-del A, a2
+if not ONLY:
+    for name, ids in Z["albedos"].items():
+        scenes = [fetch(TCI.format(s), os.path.join(CACHE, "tci", os.path.basename(s) + ".tif")) for s in ids]
+        A, AH, aext = to_grid(REG, AW, Resampling.average if AW / ((REG[2] - REG[0]) * KX) < 0.1 else Resampling.cubic, scenes)
+        Image.fromarray(A).save(os.path.join(OUT, f"{name}.jpg"), quality=93)
+        print(f"  {name} {AW}×{AH}", flush=True)
+    water = sea
+    if Z["deadsea"]:
+        # eau de la mer Morte d'après l'image de 2025 : le rivage a reculé depuis le relief de 2000 (environ 25 m
+    # plus bas) ; dans la cuvette, l'eau est sombre et bleutée, le fond découvert est clair
+        a2 = A[: 2 * HH, : 2 * HW].reshape(HH, 2, HW, 2, 3).mean((1, 3))
+        lum = a2 @ np.array([0.299, 0.587, 0.114])
+        basin = (lon > 35.3) & (lat < 31.85) & (lat > 31.0) & (H < lake + 30)
+        # eau sombre, ou eau peu profonde turquoise (rouge nettement sous le vert et le bleu)
+        dead_img = basin & ((lum < 92) & (a2[..., 2] >= a2[..., 0]) | (a2[..., 0] < np.minimum(a2[..., 1], a2[..., 2]) - 6) & (lum < 170))
+        dead_img = cv2.morphologyEx(dead_img.astype(np.uint8), cv2.MORPH_OPEN, np.ones((3, 3), np.uint8)).astype(bool)
+        water = sea | dead_img
+        del a2
+    del A
 
-details = {}
-for name, bb in DETAILS.items():
-    w = int(round((bb[2] - bb[0]) * KX / 8.0))
-    D, dh, dext = to_grid(bb, w, Resampling.cubic)
-    Image.fromarray(D).save(os.path.join(OUT, f"detail-{name}.jpg"), quality=93)
-    details[name] = {"ext": dext, "w": w, "h": dh}
-    print(f"  {name} {w}×{dh}", flush=True)
+    details = {}
+    for name, bb in DETAILS.items():
+        w = int(round((bb[2] - bb[0]) * KX / 8.0))
+        D, dh, dext = to_grid(bb, w, Resampling.cubic, [os.path.join(CACHE, "tci", os.path.basename(s) + ".tif") for s in list(Z["albedos"].values())[0]])
+        Image.fromarray(D).save(os.path.join(OUT, f"detail-{name}.jpg"), quality=93)
+        details[name] = {"ext": dext, "w": w, "h": dh}
+        print(f"  {name} {w}×{dh}", flush=True)
 
 
 def shift(a, dx, dy):
@@ -249,11 +273,17 @@ for shot, (az, el) in SUNS.items():
     Image.fromarray((rgb * 255).round().astype(np.uint8)).save(os.path.join(OUT, f"light-{shot}.png"))
     print(f"  {shot}", flush=True)
 
+if ONLY:
+    meta["suns"].update(SUNS)
+    json.dump(meta, open(os.path.join(OUT, "meta.json"), "w"), indent=1)
+    print("OK", OUT)
+    sys.exit(0)
 json.dump({
     "origin": [LON0, LAT0], "kx": KX, "ky": KY,
     "height": {"w": HW, "h": HH, "ext": ext, "step": hstep, "scale": 0.25},
     "albedo": {"w": AW, "h": AH, "ext": aext},
     "details": details, "suns": SUNS, "lake": lake,
-    "credits": ["Relief : SRTM (NASA), tuiles terrarium via AWS", "Images : Copernicus Sentinel-2 (ESA), 11 mai 2025, via AWS (Element 84). Contains modified Copernicus Sentinel data 2025"],
+    "albedos": list(Z["albedos"]),
+    "credits": ["Relief : SRTM (NASA), tuiles terrarium via AWS", Z["credit"]],
 }, open(os.path.join(OUT, "meta.json"), "w"), indent=1)
 print("OK", OUT)

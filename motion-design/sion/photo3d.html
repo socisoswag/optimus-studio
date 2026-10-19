@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>SION · archives en relief</title>
+<style>
+  @font-face { font-family: 'Archivo'; src: url('fonts/Archivo[wdth,wght].ttf') format('truetype'); font-weight: 100 900; font-stretch: 62% 125%; }
+  @font-face { font-family: 'Newsreader'; src: url('fonts/Newsreader-Italic[opsz,wght].ttf') format('truetype'); font-style: italic; font-weight: 200 800; }
+  @font-face { font-family: 'DM Mono'; src: url('fonts/DMMono-Regular.ttf') format('truetype'); font-weight: 400; }
+  :root { --stone: #e9dcc0; --ember: #ff5b1f; --hot: #ffae5a; --ember-rgb: 255,91,31; --display: 'Archivo', sans-serif; --serif: 'Newsreader', serif; --mono: 'DM Mono', monospace; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: #000; color: var(--stone); -webkit-font-smoothing: antialiased; }
+  canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+  .layer { position: absolute; inset: 0; pointer-events: none; }
+  .lab { position: absolute; left: 112px; bottom: 112px; opacity: 0; }
+  .lab::before { content: ''; position: absolute; left: -140px; right: -260px; top: -100px; bottom: -90px; background: radial-gradient(ellipse 60% 60% at 30% 60%, rgba(8,7,6,.55) 0%, rgba(8,7,6,0) 100%); z-index: -1; }
+  .lab .eyebrow { display: flex; align-items: center; gap: 18px; font-family: var(--mono); font-size: 19px; letter-spacing: .24em; text-transform: uppercase; color: var(--hot); height: 28px; white-space: nowrap; }
+  .lab .tick { display: block; width: 56px; height: 2px; background: var(--ember); transform-origin: 0 50%; flex: none; }
+  .lab .place { margin-top: 16px; font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 780; font-size: 76px; line-height: .9; text-transform: uppercase; white-space: nowrap; text-shadow: 0 2px 30px rgba(0,0,0,.5); }
+  .lab .sub { margin-top: 14px; font-family: var(--serif); font-style: italic; font-variation-settings: 'opsz' 36; font-size: 32px; color: rgba(233,220,192,.94); white-space: nowrap; text-shadow: 0 1px 18px rgba(0,0,0,.6); }
+  .lab .w, #open .w { display: inline-block; white-space: pre; }
+  #credit { position: absolute; right: 112px; bottom: 100px; font-family: var(--mono); font-size: 15px; letter-spacing: .2em; text-transform: uppercase; color: rgba(233,220,192,.7); text-shadow: 0 1px 10px rgba(0,0,0,.8); opacity: 0; }
+  #open { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; }
+  #open .eyebrow { display: flex; align-items: center; gap: 18px; font-family: var(--mono); font-size: 19px; letter-spacing: .3em; text-transform: uppercase; color: var(--hot); margin-bottom: 26px; }
+  #open .tick { display: block; width: 56px; height: 2px; background: var(--ember); }
+  #open .ln { font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 760; font-size: 120px; line-height: 1; text-transform: uppercase; }
+  .notext .lab, .notext #open, .notext #credit { display: none; }
+</style>
+</head>
+<body>
+<canvas id="gl" width="1920" height="1080"></canvas>
+<div class="layer" id="labels"></div>
+<div class="layer" id="open"></div>
+<div id="credit"></div>
+<script type="module" src="photo3d.js"></script>
+</body>
+</html>

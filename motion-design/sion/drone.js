@@ -3,7 +3,8 @@
 //   drone.html?tl=intro-aerienne            une timeline de timelines/ qui définit window.INTRO
 //   node render.mjs --page drone.html --timeline intro-aerienne --stills 4,20 --out stills
 //
-// Repère : x vers l'est, y vers le nord, z altitude (mètres), centré sur l'origine de data/drone/meta.json.
+// Repère : x vers l'est, y vers le nord, z altitude (mètres), centré sur l'origine de data/<zone>/meta.json
+// (zone : INTRO.data, « drone » par défaut ; voir tools/prep_drone.py).
 // La caméra reste à l'origine du rendu : le terrain est dessiné relativement à elle (précision).
 import * as THREE from './vendor/three.module.min.js';
 
@@ -12,7 +13,8 @@ const TLN = (Q.get('tl') || 'intro-aerienne').replace(/[^a-z0-9-]/gi, '');
 if (Q.get('notext')) document.body.classList.add('notext');
 await import(`./timelines/${TLN}.js`);
 const I = window.INTRO;
-const META = await (await fetch('data/drone/meta.json')).json();
+const DIR = `data/${I.data || 'drone'}`;
+const META = await (await fetch(`${DIR}/meta.json`)).json();
 const W = 1920, H = 1080, R_EARTH = 6371000;
 
 // ------------------------------------------------------------------ conversions
@@ -25,7 +27,7 @@ const smooth = (a, b, x) => { const k = clamp((x - a) / (b - a)); return k * k *
 
 // ------------------------------------------------------------------ données
 const HM = META.height;
-const hRaw = new Int16Array(await (await fetch('data/drone/height.bin')).arrayBuffer());
+const hRaw = new Int16Array(await (await fetch(`${DIR}/height.bin`)).arrayBuffer());
 const hF = new Float32Array(hRaw.length);
 for (let i = 0; i < hRaw.length; i++) hF[i] = hRaw[i] * HM.scale;
 function heightAt(x, y) { // bilinéaire, pour la caméra et le soleil derrière les crêtes
@@ -59,7 +61,11 @@ async function image(url, mip = true) {
   t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping; t.needsUpdate = true;
   return t;
 }
-const aTex = await image('data/drone/albedo.jpg');
+const aTex = await image(`${DIR}/${I.albedo || 'albedo'}.jpg`);
+// deuxième date (balayage avant/après), même emprise
+const bTex = I.albedoB ? await image(`${DIR}/${I.albedoB}.jpg`) : aTex;
+// tracé du mur (tools/prep_mur.py), même grille que la couleur du sol
+const wTex = I.shots.some((s) => s.wall) ? await image(`${DIR}/mur.png`, false) : aTex;
 // ouverture spatiale : la Terre entière (jour, nuit, nuages), le Levant à 500 m, Sentinel-2 à 60 m
 const SPACE = I.shots.some((s) => s.type === 'space');
 const G = {};
@@ -71,8 +77,8 @@ if (SPACE) {
 }
 const dTex = {}, lTex = {};
 for (const s of I.shots) {
-  if (s.detail && !dTex[s.detail]) dTex[s.detail] = await image(`data/drone/detail-${s.detail}.jpg`);
-  if (!lTex[s.light]) lTex[s.light] = await image(`data/drone/light-${s.light}.png`, false);
+  if (s.detail && !dTex[s.detail]) dTex[s.detail] = await image(`${DIR}/detail-${s.detail}.jpg`);
+  if (!lTex[s.light]) lTex[s.light] = await image(`${DIR}/light-${s.light}.png`, false);
 }
 
 // ------------------------------------------------------------------ shaders
@@ -133,7 +139,11 @@ void main() {
   vFD = 1.0 + gl_Position.w;
 }`,
   fragmentShader: COMMON + /* glsl */`
-uniform float logFC, detailK, waveK, dbg, albK, satK;
+uniform float logFC, detailK, waveK, dbg, albK, satK, specK;
+uniform sampler2D bTex, wTex;
+uniform float wallOn, wallProg, wallK, wallPlan;
+uniform vec2 wipeO, wipeD;
+uniform float wipeOn, wipeT, wipeW, wipeGlow;
 in vec3 vW; in float vFD;
 out vec4 outColor;
 vec3 normalAt(vec2 p) {
@@ -151,6 +161,11 @@ void main() {
   float dist = length(ray);
   vec3 V = -ray / dist;
   vec3 alb = texture(aTex, uvOf(aExt, p)).rgb;
+  float wsd = 1e9;
+  if (wipeOn > 0.5) { // derrière le front : la seconde date
+    wsd = dot(p - wipeO, wipeD) - wipeT;
+    alb = mix(alb, texture(bTex, uvOf(aExt, p)).rgb, smoothstep(wipeW, -wipeW, wsd));
+  }
   if (dOn > 0.5) {
     vec2 du = uvOf(dExt, p);
     float m = smoothstep(0.0, 0.04, du.x) * smoothstep(1.0, 0.96, du.x) * smoothstep(0.0, 0.04, du.y) * smoothstep(1.0, 0.96, du.y);
@@ -179,7 +194,7 @@ void main() {
     // le reflet du halo autour du soleil reste discret : le scintillement fait le reste
     vec3 refl = fog(skyColor(Rf, 0.22), Rf * 60000.0, 60000.0, 0.0);
     float mu = max(dot(Rf, sunDir), 0.0);
-    vec3 spec = sunCol * (pow(mu, 2400.0) * 80.0 + pow(mu, 160.0) * 0.08) * L.r;
+    vec3 spec = sunCol * (pow(mu, 2400.0) * 80.0 + pow(mu, 160.0) * 0.08) * L.r * specK;
     vec3 body = alb * (sunCol * max(sunDir.z, 0.0) * 0.5 + skyCol * 0.8);
     col = mix(body, refl, fres) + spec;
   } else {
@@ -197,6 +212,16 @@ void main() {
   vec4 he = hExt;
   float edge = smoothstep(he.x, he.x + 9000.0, p.x) * smoothstep(he.z, he.z - 9000.0, p.x) * smoothstep(he.y, he.y + 9000.0, p.y) * smoothstep(he.w, he.w - 9000.0, p.y);
   col = mix(hazeCol * 0.9, col, edge);
+  // le mur : un trait de braise posé sur le relief, qui court du nord au sud
+  if (wallOn > 0.5) {
+    vec3 wv = texture(wTex, uvOf(aExt, p)).rgb;
+    float rev = 1.0 - smoothstep(wallProg - 0.006, wallProg, wv.b);
+    float front = exp(-abs(wv.b - wallProg) / 0.004) * step(0.001, wv.r);
+    float near2 = 0.55 + 0.45 * smoothstep(30000.0, 2000.0, dist);
+    col += vec3(1.0, 0.33, 0.10) * wallK * near2 * (wv.r * rev * 2.4 + front * wv.r * 6.0 + wv.g * rev * wallPlan * 0.8);
+  }
+  // le front de braise ne court que sur la terre
+  if (wipeOn > 0.5 && L.b < 0.5) col += vec3(1.0, 0.36, 0.12) * wipeGlow * (exp(-abs(wsd) / (wipeW * 1.2)) * 1.4 + exp(-abs(wsd) / (wipeW * 4.0)) * 0.12);
   if (dbg < 0.5) col = fog(col, ray, dist, 1.0);
   if (dbg > 0.5 && dbg < 1.5) col = alb;
   if (dbg > 1.5 && dbg < 2.5) col = L;
@@ -215,8 +240,19 @@ out vec2 vNdc;
 void main() { vNdc = position.xy; gl_Position = vec4(position.xy, 0.0, 1.0); }`,
   fragmentShader: COMMON + /* glsl */`
 uniform mat4 invPV;
+uniform float starK;
 in vec2 vNdc;
 out vec4 outColor;
+float h3(vec3 p) { p = fract(p * 0.3183099 + 0.1); p *= 17.0; return fract(p.x * p.y * p.z * (p.x + p.y + p.z)); }
+vec3 starsAt(vec3 d) {
+  vec3 p = d * 520.0, c = floor(p), f = fract(p) - 0.5;
+  float h = h3(c);
+  if (h < 0.9965) return vec3(0.0);
+  vec3 o = vec3(h3(c + 1.7), h3(c + 3.1), h3(c + 5.3)) - 0.5;
+  float b = (h - 0.9965) / 0.0035;
+  float tw = 0.75 + 0.25 * sin(time * (2.0 + 5.0 * h3(c + 7.7)) + 40.0 * h);
+  return mix(vec3(1.0, 0.86, 0.72), vec3(0.78, 0.86, 1.0), h3(c + 9.2)) * b * b * tw * smoothstep(0.16, 0.0, length(f - o * 0.6));
+}
 void main() {
   vec4 q = invPV * vec4(vNdc, 1.0, 1.0);
   vec3 d3 = normalize(q.xyz / q.w);
@@ -232,6 +268,7 @@ void main() {
     vec3 cc = mix(horCol * 1.05, glowCol * 1.4, pow(mu, 3.0)) + sunCol * 0.25 * pow(mu, 18.0);
     c = mix(c, cc, cov * 0.85);
   }
+  if (starK > 0.0 && rd.z > 0.0) c += starsAt(rd) * starK * smoothstep(0.0, 0.25, rd.z);
   c = fog(c, rd * 120000.0, 120000.0, 0.0);
   outColor = vec4(c, 1.0);
 }`,
@@ -250,10 +287,66 @@ for (const m of [terrainMat, skyMat]) {
 }
 Object.assign(terrainMat.uniforms, {
   gridC: { value: new THREE.Vector2() }, gridR: { value: 120000 }, logFC: { value: 0 }, detailK: { value: 1 }, waveK: { value: 1 },
-  albK: { value: 0.5 }, satK: { value: 1.15 },
+  albK: { value: 0.5 }, satK: { value: 1.15 }, specK: { value: 1 },
+  bTex: { value: bTex }, wTex: { value: wTex }, wallOn: { value: 0 }, wallProg: { value: 0 }, wallK: { value: 1 }, wallPlan: { value: 1 },
+  wipeO: { value: new THREE.Vector2() }, wipeD: { value: new THREE.Vector2(1, 0) },
+  wipeOn: { value: 0 }, wipeT: { value: 0 }, wipeW: { value: 120 }, wipeGlow: { value: 1 },
   dbg: { value: parseFloat(Q.get('dbg') || '0') }, // vues de contrôle : 1 couleur, 2 lumière, 3 normales, 4 sans brume
 });
 skyMat.uniforms.invPV = { value: new THREE.Matrix4() };
+skyMat.uniforms.starK = { value: 0 };
+
+// ------------------------------------------------------------------ lumières posées sur le relief (villages)
+const VILL = I.shots.some((s) => s.lights) ? (await import('./data/villages-depeuples.js'), window.VILLAGES) : [];
+const lightsMat = new THREE.ShaderMaterial({
+  glslVersion: THREE.GLSL3,
+  transparent: true, depthWrite: false, depthTest: true, blending: THREE.AdditiveBlending,
+  uniforms: { camPos: { value: new THREE.Vector3() }, time: { value: 0 }, logFC: { value: 0 }, size: { value: 1 }, gain: { value: 1 }, col: { value: new THREE.Vector3(1.0, 0.55, 0.24) } },
+  vertexShader: /* glsl */`
+uniform vec3 camPos; uniform float time, size;
+in float t0; in float seed;
+out float vA; out float vFD;
+void main() {
+  vec3 rel = position - camPos;
+  rel.z -= dot(rel.xy, rel.xy) / (2.0 * ${R_EARTH}.0 * 1.15);
+  gl_Position = projectionMatrix * viewMatrix * vec4(rel.x, rel.z, -rel.y, 1.0);
+  float d = length(rel);
+  gl_PointSize = clamp(size * 14000.0 / d, 5.0, 64.0);
+  float fl = 0.82 + 0.12 * sin(time * (5.0 + 4.0 * seed) + seed * 40.0) + 0.06 * sin(time * 13.0 + seed * 91.0);
+  vA = smoothstep(t0, t0 + 0.9, time) * fl * (1.0 + 2.5 * exp(-max(time - t0, 0.0) * 2.2) * step(t0, time));
+  vFD = 1.0 + gl_Position.w;
+}`,
+  fragmentShader: /* glsl */`
+uniform float logFC, gain; uniform vec3 col;
+in float vA; in float vFD;
+out vec4 o;
+void main() {
+  float r = length(gl_PointCoord - 0.5) * 2.0;
+  float core = exp(-r * r * 18.0) * 6.0, halo = exp(-r * r * 3.0) * 0.6;
+  o = vec4(col * (core + halo) * vA * gain, 1.0);
+  gl_FragDepth = log2(vFD) * logFC * 0.5;
+}`,
+});
+const lightsGeo = new THREE.BufferGeometry();
+const lightsPts = new THREE.Points(lightsGeo, lightsMat); lightsPts.frustumCulled = false;
+function setLights(s) { // positions et instants d'allumage, d'ouest en est le long du plan
+  if (lightsGeo.userData.shot === s.id) return;
+  lightsGeo.userData.shot = s.id;
+  const L = s.lights, P = [], T = [], R = [];
+  const [x0, y0, x1, y1] = HM.ext;
+  for (const v of VILL) {
+    const [x, y] = toXY(v[0], v[1]);
+    if (x < x0 + 500 || x > x1 - 500 || y < y0 + 500 || y > y1 - 500) continue;
+    P.push(x, y, heightAt(x, y) + 18);
+    const k = (v[0] - L.lon0) / (L.lon1 - L.lon0);
+    const h = Math.sin(v[0] * 1e4 + v[1] * 7e3) * 0.5 + 0.5;
+    T.push(L.at[0] + clamp(k) * (L.at[1] - L.at[0]) + (h - 0.5) * 1.2);
+    R.push(h);
+  }
+  lightsGeo.setAttribute('position', new THREE.Float32BufferAttribute(P, 3));
+  lightsGeo.setAttribute('t0', new THREE.Float32BufferAttribute(T, 1));
+  lightsGeo.setAttribute('seed', new THREE.Float32BufferAttribute(R, 1));
+}
 
 // ------------------------------------------------------------------ globe : la Terre vue de l'espace
 // Repère géocentrique (mètres, axe z vers le pôle Nord). Atmosphère à diffusion simple (Rayleigh et brume),
@@ -645,7 +738,27 @@ if (I.title) {
     + `<div class="scripts"><span class="native" lang="he">${T.scripts[0]}</span><span class="bar"></span><span class="native" lang="ar">${T.scripts[1]}</span></div>`
     + `<div class="text">${words(T.sub)}</div>`;
 }
+const outroEl = document.getElementById('outro');
+if (I.outro && outroEl) {
+  outroEl.innerHTML = (I.outro.eyebrow ? `<div class="eyebrow"><span class="tick"></span><span>${I.outro.eyebrow}</span><span class="tick r"></span></div>` : '')
+    + I.outro.lines.map((l) => `<div class="ln">${words(l)}</div>`).join('');
+}
+function updateOutro(t) {
+  if (!I.outro || !outroEl) return;
+  const O = I.outro;
+  const vis = smooth(O.at, O.at + 0.4, t) * (1 - smooth(O.out, O.out + 1.0, t));
+  outroEl.style.opacity = vis.toFixed(3);
+  if (vis <= 0) return;
+  outroEl.querySelectorAll('.ln .w').forEach((w, k) => {
+    const k0 = O.at + 0.3 + k * 0.16, e = smooth(k0, k0 + 0.9, t);
+    w.style.opacity = e.toFixed(3);
+    w.style.filter = `blur(${((1 - e) * 10).toFixed(2)}px)`;
+    w.style.transform = `translateY(${((1 - e) * 20).toFixed(1)}px)`;
+  });
+  outroEl.querySelectorAll('.tick').forEach((k) => { k.style.transform = `scaleX(${smooth(O.at, O.at + 0.8, t).toFixed(3)})`; });
+}
 function updateText(t) {
+  updateOutro(t);
   for (const s of shots) {
     if (!s.labelEl) continue;
     const L = s.label, el = s.labelEl;
@@ -775,6 +888,18 @@ function renderSpace(t, s, tl) {
 function gauge(s, tl) {
   const g = s.gauge;
   if (!HUD) return;
+  if (s.stamp) { // date de l'image affichée, qui change avec le balayage
+    const st = s.stamp;
+    const hv = smooth(st.at, st.at + 0.6, tl) * (1 - smooth(st.out, st.out + 0.6, tl));
+    HUD.style.opacity = hv.toFixed(3);
+    let cur = st.items[0];
+    for (const it of st.items) if (tl >= it[0]) cur = it;
+    const n = Math.floor(clamp((tl - cur[0]) / 0.7) * cur[1].length);
+    HUD.querySelector('.k').textContent = st.k;
+    HUD.querySelector('.v').textContent = cur[1].slice(0, Math.max(n, 1));
+    HUD.querySelector('.pos').textContent = st.sub || '';
+    return;
+  }
   const hv = g ? smooth(g.at - 0.5, g.at + 0.2, tl) * (1 - smooth(g.out, g.out + 0.6, tl)) : 0;
   HUD.style.opacity = hv.toFixed(3);
   if (hv <= 0) return;
@@ -842,12 +967,37 @@ function renderFrame(t) {
   terrainMat.uniforms.waveK.value = E.waves ?? 1;
   terrainMat.uniforms.detailK.value = E.detail ?? 1;
   terrainMat.uniforms.albK.value = E.albedo ?? 0.5;
+  const WP = s.wipe, TU = terrainMat.uniforms;
+  TU.wallOn.value = s.wall ? 1 : 0;
+  if (s.wall) {
+    TU.wallProg.value = keyAt(s.wall.prog, tl);
+    TU.wallK.value = (s.wall.k ?? 1) * smooth(s.wall.at ?? 0, (s.wall.at ?? 0) + 1.2, tl);
+    TU.wallPlan.value = s.wall.planned ?? 1;
+  }
+  TU.wipeOn.value = WP ? 1 : 0;
+  if (WP) {
+    const [ox, oy] = toXY(WP.lon, WP.lat);
+    TU.wipeO.value.set(ox, oy);
+    TU.wipeD.value.set(Math.sin(rad(WP.dir)), Math.cos(rad(WP.dir)));
+    TU.wipeT.value = lerp(WP.d0, WP.d1, smooth(WP.t0, WP.t1, tl));
+    TU.wipeW.value = WP.w ?? 120;
+    TU.wipeGlow.value = (WP.glow ?? 1) * smooth(WP.t0 - 0.3, WP.t0 + 0.4, tl) * (1 - smooth(WP.t1 - 0.6, WP.t1 + 0.4, tl));
+  }
   terrainMat.uniforms.satK.value = E.sat ?? 1.15;
+  terrainMat.uniforms.specK.value = E.spec ?? 1;
   skyMat.uniforms.invPV.value.copy(camera.projectionMatrixInverse).premultiply(camera.matrixWorld);
 
+  skyMat.uniforms.starK.value = E.stars ?? 0;
   renderer.setRenderTarget(rtHDR);
   renderer.clear();
   renderer.render(sceneSky, camera);
+  if (s.lights) {
+    setLights(s);
+    if (!lightsPts.parent) scene.add(lightsPts);
+    const LU = lightsMat.uniforms;
+    LU.camPos.value.set(c.x, c.y, c.z); LU.time.value = tl; LU.logFC.value = terrainMat.uniforms.logFC.value;
+    LU.size.value = s.lights.size ?? 1; LU.gain.value = s.lights.gain ?? 1;
+  } else if (lightsPts.parent) scene.remove(lightsPts);
   renderer.render(scene, camera);
   const sv = new THREE.Vector3(sd[0], sd[2], -sd[1]).multiplyScalar(1e5).project(camera);
   const inView = sv.z < 1 && Math.abs(sv.x) < 1.3 && Math.abs(sv.y) < 1.3;

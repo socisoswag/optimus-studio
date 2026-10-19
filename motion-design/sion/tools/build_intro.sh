@@ -4,6 +4,8 @@
 #   python3 tools/prep_drone.py <cache>   (une fois : relief, images satellite, lumière → data/drone/)
 #   tools/build_intro.sh                  → output/intro-aerienne.mp4 + output/intro-aerienne.wav
 #   NOTEXT=1 tools/build_intro.sh         → output/intro-aerienne-sans-texte.mp4 (sans lieux ni titre)
+#   tools/build_intro.sh archives-vivantes → photos d'archives en relief (INTRO.page = photo3d.html,
+#                                           après tools/prep_archives.py)
 #
 # Variables : WORKERS (4 par défaut), SHUTTER (1 ; 2 pour un flou de bougé), BITRATE.
 set -euo pipefail
@@ -15,10 +17,14 @@ TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 cd "$ROOT"
 mkdir -p output
-[ -f data/drone/meta.json ] || { echo "data/drone/ manque : lancer d'abord tools/prep_drone.py" >&2; exit 1; }
-
-node render.mjs --page drone.html --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf 12 $RFLAGS --out "$TMP/video.mp4"
 node -e "require('./timelines/$NAME.js'); console.log(JSON.stringify(globalThis.INTRO))" > "$TMP/intro.json"
+# page de rendu : survol 3D (drone.html) par défaut, ou celle que demande la timeline (photo3d.html pour les archives)
+PAGE=$(python3 -c "import json; print(json.load(open('$TMP/intro.json')).get('page', 'drone.html'))")
+if [ "$PAGE" = "drone.html" ]; then
+  [ -f data/drone/meta.json ] || { echo "data/drone/ manque : lancer d'abord tools/prep_drone.py" >&2; exit 1; }
+fi
+
+node render.mjs --page "$PAGE" --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf 12 $RFLAGS --out "$TMP/video.mp4"
 WAV="output/$NAME.wav"
 if [ "$OUTNAME" = "$NAME" ] || [ ! -f "$WAV" ]; then
   python3 tools/sound_intro.py "$TMP/intro.json" "$TMP/son.wav"
@@ -39,4 +45,15 @@ ffmpeg -nostdin -y -loglevel error -i "$TMP/video.mp4" -i "$WAV" -map 0:v -map 1
   -c:a aac -b:a 320k -t "$DUR" -movflags +faststart "$TMP/final.mp4"
 [ "$WAV" = "$TMP/son.wav" ] && mv "$TMP/son.wav" "output/$NAME.wav"
 mv "$TMP/final.mp4" "output/$OUTNAME.mp4"
+# plans à monter séparément (INTRO.plans) : un fichier par plan, coupé à l'image près
+if python3 -c "import json,sys; sys.exit(0 if json.load(open('$TMP/intro.json')).get('plans') else 1)"; then
+  mkdir -p "output/$OUTNAME"
+  python3 -c "import json; [print(i + 1, s['id'], s['t0'], s['t1']) for i, s in enumerate(json.load(open('$TMP/intro.json'))['shots'])]" |
+  while read -r k id t0 t1; do
+    D=$(python3 -c "print(round($t1 - $t0, 3))")
+    ffmpeg -nostdin -y -loglevel error -ss "$t0" -i "output/$OUTNAME.mp4" -t "$D" -c:v libx264 -preset slow -b:v "$B" -maxrate "$B" -bufsize "$B" \
+      -tune grain -pix_fmt yuv420p -c:a aac -b:a 320k -movflags +faststart "output/$OUTNAME/$k-$id.mp4"
+  done
+  ls -la "output/$OUTNAME"
+fi
 ls -la "output/$OUTNAME.mp4" "output/$NAME.wav"

@@ -121,7 +121,77 @@ if ti0 is not None and SND.get("titleSilence"):
     s0 = ti0 - SND["titleSilence"]
     bed_in = bed_in * np.where(t < s0, 1.0, np.clip((t - ti0 - 1.2) / 3.0, 0, 1) * 0.7)
     bed_in = bed_in * np.clip(1 - (t - s0 + 0.15) / 0.15, 0, 1) + bed_in * (t >= ti0)
-add((wl * bed_in, wr * bed_in), 0, 0.95)
+if SND.get("wind", True):
+    add((wl * bed_in, wr * bed_in), 0, 0.95 * (0.45 if SND.get("night") else 1.0))
+
+# ------------------------------------------------------------------ archives : projecteur et ambiances de chaque photo
+if SND.get("projector"):
+    # cliquetis de l'obturateur (24 par seconde, irrégulier), ronronnement du moteur, souffle du ventilateur
+    x = np.zeros(N)
+    tc, per = 0.0, 1 / 24
+    while tc < TOTAL:
+        i0 = int(tc * SR)
+        ln = int(0.006 * SR)
+        if i0 + ln < N:
+            x[i0:i0 + ln] += (0.7 + 0.3 * rng.random()) * noise(ln) * np.exp(-np.arange(ln) / (ln / 5))
+        tc += per * (1 + 0.04 * rng.standard_normal())
+    clat = norm(bp(x, 900, 5200)) * (0.85 + 0.15 * smooth_noise(N, 0.6))
+    hum = 0.5 * np.sin(2 * np.pi * 50 * t) + 0.25 * np.sin(2 * np.pi * 100 * t + 0.4) + 0.12 * np.sin(2 * np.pi * 24 * t)
+    fan = norm(bp(noise(N), 180, 900))
+    add(verb(0.55 * clat + 0.10 * hum + 0.22 * fan, wet=0.25, dry=1.0), 0, 0.10, -0.25)
+
+
+def murmur(n, voices, rate):
+    """Foule : voix lointaines, chacune un bruit coloré de formants qui parle par syllabes, puis se tait."""
+    out_l, out_r = np.zeros(n), np.zeros(n)
+    tt = np.arange(n) / SR
+    for _ in range(voices):
+        f1 = 260 + 500 * rng.random()
+        v = bp(noise(n), f1, f1 * (2.6 + 1.6 * rng.random()), 2)
+        syl = (0.5 + 0.5 * np.sin(2 * np.pi * (rate * (0.7 + 0.6 * rng.random())) * tt + 6.3 * rng.random())) ** 2
+        talk = smooth_noise(n, 0.35 + 0.3 * rng.random()) > 0.42  # phrases et silences
+        e = lp(syl * talk, 30, 1)
+        gl, gr = pan_gains(-0.9 + 1.8 * rng.random())
+        out_l += v * e * gl
+        out_r += v * e * gr
+    return norm(out_l), norm(out_r)
+
+
+for a0, a1, kind, gain in SND.get("amb", []):
+    n = int((a1 - a0 + 1.0) * SR)
+    tt = np.arange(n) / SR
+    env = np.clip(tt / 1.0, 0, 1) * np.clip((a1 - a0 + 1.0 - tt) / 1.2, 0, 1)
+    if kind == "vent":  # brise dans les arbres
+        g = 0.5 + 0.5 * lp(noise(n), 0.4, 1) / 1.0
+        g = np.clip((g - g.min()) / (g.max() - g.min() + 1e-9), 0, 1)
+        leaves = [norm(bp(noise(n), 1800, 7000)) * (0.3 + 0.7 * g) for _ in range(2)]
+        body = [norm(lp(noise(n), 300)) * (0.4 + 0.6 * g) for _ in range(2)]
+        sig = (0.6 * leaves[0] + 0.5 * body[0], 0.6 * leaves[1] + 0.5 * body[1])
+        k = 0.16
+    elif kind == "mer":  # ressac contre le quai, clapotis
+        sw = 0.35 + 0.65 * (0.5 + 0.5 * np.sin(2 * np.pi * tt / 4.2 + 0.7)) ** 3
+        wash = norm(lp(noise(n), 900)) * sw
+        lap = np.zeros(n)
+        for p0 in rng.integers(0, n - 6000, int((a1 - a0) * 3)):
+            ln = int(SR * (0.05 + 0.1 * rng.random()))
+            lap[p0:p0 + ln] += noise(ln) * np.sin(np.pi * np.arange(ln) / ln) ** 2
+        lap = norm(bp(lap, 300, 2500))
+        sig = (wash + 0.35 * lap, np.roll(wash, 1200) + 0.35 * np.roll(lap, 500))
+        k = 0.15
+    elif kind == "foule":  # marché, rassemblement
+        sig = murmur(n, 26, 4.2)
+        k = 0.10
+    else:  # atelier : salle de pierre, quelques coups sourds au loin
+        room = norm(lp(noise(n), 220))
+        x = np.zeros(n)
+        for p0 in rng.integers(0, n - 20000, int((a1 - a0) * 0.6)):
+            ln = int(0.25 * SR)
+            x[p0:p0 + ln] += np.sin(2 * np.pi * (90 + 60 * rng.random()) * np.arange(ln) / SR) * env_exp(ln, 0.05, 0.002)
+        sig = (0.5 * room + norm(x) * 0.6, 0.5 * np.roll(room, 900) + norm(x) * 0.5)
+        k = 0.12
+    l, r = sig
+    add(verb(l * env, wet=0.35, dry=1.0)[0], a0 - 0.5, k * gain, -0.3)
+    add(verb(r * env, wet=0.35, dry=1.0)[1], a0 - 0.5, k * gain, 0.3)
 
 # espace : grondement très grave, presque un souffle de la planète
 if sp:
@@ -163,6 +233,42 @@ if en:
     roar = norm(out[:n]) * p ** 2.2 * np.clip((en[1] - en[0] + 1.5 - tt) / 1.2, 0, 1)
     add((roar, np.roll(roar, 700)), en[0], 0.8)
 
+# ------------------------------------------------------------------ nuit : grillons au loin, lumières qui s'allument
+if SND.get("night"):
+    for k in range(7):
+        f0 = 4100 + 700 * rng.random()
+        rate = 0.55 + 0.5 * rng.random()
+        pan = -0.9 + 1.8 * rng.random()
+        n = N
+        x = np.zeros(n)
+        tc = rng.random() * rate
+        while tc < TOTAL:
+            for j in range(3):  # trois impulsions par cri
+                i0 = int((tc + j * 0.034) * SR)
+                ln = int(0.022 * SR)
+                if i0 + ln < n:
+                    tt = np.arange(ln) / SR
+                    x[i0:i0 + ln] += np.sin(2 * np.pi * f0 * tt) * np.sin(np.pi * tt / 0.022) ** 2
+            tc += rate * (0.9 + 0.2 * rng.random())
+        add(verb(x, wet=0.6, dry=0.5), 0, 0.012 * (0.6 + 0.8 * rng.random()), pan)
+cr = SND.get("crackle")
+if cr:
+    n = int((cr[1] - cr[0] + 2) * SR)
+    x = np.zeros(n)
+    for p0 in rng.integers(0, n - 4000, int((cr[1] - cr[0]) * 9)):
+        ln = int(SR * (0.003 + 0.01 * rng.random()))
+        x[p0:p0 + ln] += (0.3 + rng.random()) * noise(ln) * np.exp(-np.arange(ln) / (ln / 4))
+    x = norm(bp(x, 700, 4500))
+    tt = np.arange(n) / SR
+    env = np.clip(tt / 2, 0, 1) * np.clip((cr[1] - cr[0] + 2 - tt) / 2, 0, 1)
+    add(verb(x * env, wet=0.5, dry=0.7), cr[0], 0.05)
+for th in SND.get("hits", []):
+    n = int(5 * SR)
+    tt = np.arange(n) / SR
+    f = 30 + 30 * np.exp(-tt / 0.15)
+    x = np.sin(2 * np.pi * np.cumsum(f) / SR) * env_exp(n, 1.2, 0.004) + 0.5 * norm(lp(noise(n), 140)) * env_exp(n, 0.2, 0.002)
+    add(verb(x, wet=0.65, dry=1.0), th, 0.16)
+
 # ------------------------------------------------------------------ ressac lointain (plan de la mer)
 s0, s1 = SND.get("surf", [0, 0])
 if s1 > s0:
@@ -197,6 +303,13 @@ for d0, half in I.get("dips", []):
     gl, gr = pan_gains(-0.6 + 1.2 * p)
     sub = norm(lp(noise(n), 70)) * np.sin(np.pi * p) ** 3
     add((s * gl + 0.45 * sub, s * gr + 0.45 * sub), d0 - dur / 2, 0.42)
+
+# ------------------------------------------------------------------ souffle long qui suit un balayage de l'image
+for s0, dur in SND.get("sweeps", []):
+    sw = whoosh(dur)
+    n = len(sw)
+    gl, gr = pan_gains(0.7 - 1.4 * np.arange(n) / n)
+    add((sw * gl, sw * gr), s0, 0.34)
 
 # ------------------------------------------------------------------ la falaise s'ouvre : grondement grave qui monte puis s'étale
 rv = SND.get("reveal")
