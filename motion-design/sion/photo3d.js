@@ -257,7 +257,7 @@ function updateText(t) {
   if (I.credit) creditEl.style.opacity = (0.9 * smooth(I.credit.at, I.credit.at + 1, t) * (1 - smooth(I.credit.out, I.credit.out + 1, t))).toFixed(3);
   for (const P of photos) {
     if (!P.el) continue;
-    const el = P.el, a0 = P.t0 + (P.at ?? 0.9), a1 = P.t1 - (P.out ?? 1.6);
+    const el = P.el, a0 = P.t0 + (P.at ?? 0.6), a1 = P.t1 - (P.out ?? 1.4);
     const vis = smooth(a0, a0 + 0.5, t) * (1 - smooth(a1, a1 + 0.7, t));
     el.style.opacity = vis.toFixed(3);
     if (vis <= 0) continue;
@@ -265,7 +265,7 @@ function updateText(t) {
     const ey = P.eyebrow || '', n = Math.floor(clamp((t - a0 - 0.2) / 0.9) * ey.length);
     el.querySelector('.ey').textContent = ey.slice(0, n);
     el.querySelectorAll('.place .w, .sub .w').forEach((w, k) => {
-      const k0 = a0 + 0.45 + k * 0.08 + (w.closest('.sub') ? 0.35 : 0);
+      const k0 = a0 + 0.4 + k * 0.05 + (w.closest('.sub') ? 0.25 : 0);
       const e = smooth(k0, k0 + 0.55, t);
       w.style.opacity = e.toFixed(3);
       w.style.transform = `translateY(${((1 - e) * 18).toFixed(2)}px)`;

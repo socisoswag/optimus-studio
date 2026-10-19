@@ -1,5 +1,5 @@
 /*
- * « Les archives qui prennent vie » (photo3d.html), 45 s : sept photos de la Palestine d'avant 1948, mises en relief,
+ * « Les archives qui prennent vie » (photo3d.html), 48,5 s : sept photos de la Palestine d'avant 1948, mises en relief,
  * la caméra glisse dans chacune, la mise au point se déplace, fondus enchaînés.
  *
  * Photos : G. Eric and Edith Matson Photograph Collection (Matson Photo Service, American Colony),
@@ -18,18 +18,18 @@
  * premier plan ; z > 0 avance), focus (profondeur nette, 0 loin, 1 près). far : distance du fond.
  */
 (function (root) {
-  const step = 5.6, len = 6.6, first = 3.2;
+  const step = 6.2, len = 7.2, first = 3.2, end = 48.5;
   const at = (k) => first + k * step;
   root.INTRO = {
     name: 'archives-vivantes',
     page: 'photo3d.html',
-    total: 45,
+    total: end,
     fov: 50,
     xfade: 1.0,
     fadeIn: 1.4,
     fadeOut: 1.8,
     open: { at: 0.4, out: 3.0, eyebrow: 'De 1898 à 1946', lines: ['La Palestine', 'avant 1948'] },
-    credit: { at: 3.9, out: 42.6, text: 'Photos · Matson Photo Service · Bibliothèque du Congrès' },
+    credit: { at: 3.9, out: end - 2.4, text: 'Photos · Matson Photo Service · Bibliothèque du Congrès' },
     photos: [
       { id: '06520', t0: at(0), t1: at(0) + len, far: 5,
         eyebrow: 'Entre 1898 et 1914', place: 'Jaffa', sub: 'La ville vue depuis les orangeraies',
@@ -50,14 +50,14 @@
         eyebrow: 'Entre 1934 et 1939', place: 'Ramallah', sub: 'L’atelier de l’Union des femmes arabes',
         from: { cx: 0.40, cy: 0.47, w: 0.82, x: -0.03, focus: 0.55 }, to: { cx: 0.58, cy: 0.52, w: 0.80, x: 0.04, z: 0.05, focus: 0.55 } },
       // dernier plan : la caméra recule pendant que le cadre se resserre, la foule grandit derrière les policiers
-      { id: '15788', t0: at(6), t1: 45, far: 4,
+      { id: '15788', t0: at(6), t1: end, far: 4,
         eyebrow: 'Octobre 1933', place: 'Jaffa', sub: 'La foule des manifestants face à la police britannique',
         from: { cx: 0.55, cy: 0.55, w: 0.94, focus: 0.62 }, to: { cx: 0.54, cy: 0.50, w: 0.78, z: -0.12, focus: 0.5 } },
     ],
     sound: {
       wind: false, projector: true,
       amb: [[at(0), at(0) + len, 'vent', 1], [at(1), at(1) + len, 'mer', 1], [at(2), at(3) + len, 'foule', 0.7],
-        [at(4), at(5) + len, 'atelier', 1], [at(6), 45, 'foule', 1.0]],
+        [at(4), at(5) + len, 'atelier', 1], [at(6), end, 'foule', 1.0]],
       hits: [at(6) + 0.2],
     },
   };
