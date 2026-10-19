@@ -39,13 +39,27 @@
   #title .bar { width: 300px; height: 3px; background: linear-gradient(90deg, rgba(var(--ember-rgb),0), var(--ember) 25%, var(--hot) 50%, var(--ember) 75%, rgba(var(--ember-rgb),0)); box-shadow: 0 0 24px rgba(var(--ember-rgb),.75); transform-origin: 50% 50%; }
   #title .text { margin-top: 34px; font-family: var(--serif); font-style: italic; font-variation-settings: 'opsz' 36; font-size: 54px; color: rgba(233,220,192,.94); text-shadow: 0 2px 24px rgba(0,0,0,.5); }
   #title .text .w { display: inline-block; white-space: pre; }
-  .notext .lab, .notext #title { display: none; }
+  /* altimètre de la descente depuis l'espace */
+  #hud { opacity: 0; }
+  #hud .box { position: absolute; right: 112px; top: 96px; text-align: right; font-family: var(--mono); text-transform: uppercase; text-shadow: 0 1px 14px rgba(0,0,0,.6); }
+  #hud .k { display: flex; justify-content: flex-end; align-items: center; gap: 14px; font-size: 17px; letter-spacing: .28em; color: var(--hot); }
+  #hud .k::after { content: ''; width: 44px; height: 2px; background: var(--ember); box-shadow: 0 0 12px rgba(var(--ember-rgb),.6); }
+  #hud .v { margin-top: 10px; font-size: 54px; letter-spacing: .04em; color: var(--stone); font-variant-numeric: tabular-nums; }
+  #hud .pos { margin-top: 8px; font-size: 17px; letter-spacing: .2em; color: rgba(233,220,192,.8); }
+  /* repères accrochés au relief */
+  .pin { position: absolute; left: 0; top: 0; opacity: 0; }
+  .pin .dot { position: absolute; left: -5px; top: -5px; width: 10px; height: 10px; border-radius: 50%; background: var(--hot); box-shadow: 0 0 0 4px rgba(var(--ember-rgb),.25), 0 0 16px rgba(var(--ember-rgb),.9); }
+  .pin .ln { position: absolute; left: -1px; bottom: 0; width: 2px; height: 0; background: linear-gradient(0deg, var(--ember), rgba(var(--ember-rgb),0)); }
+  .pin .nm { position: absolute; left: 0; bottom: 72px; transform: translateX(-50%); font-family: var(--mono); font-size: 19px; letter-spacing: .3em; text-transform: uppercase; color: var(--stone); white-space: nowrap; text-shadow: 0 1px 12px rgba(0,0,0,.7); }
+  .notext .lab, .notext #title, .notext #hud, .notext #pins { display: none; }
 </style>
 </head>
 <body>
 <canvas id="gl" width="1920" height="1080"></canvas>
 <div class="layer" id="labels"></div>
+<div class="layer" id="pins"></div>
 <div class="layer" id="title"></div>
+<div class="layer" id="hud"><div class="box"><div class="k">Altitude</div><div class="v"></div><div class="pos"></div></div></div>
 <script type="module" src="drone.js"></script>
 </body>
 </html>

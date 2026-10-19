@@ -112,7 +112,56 @@ air = [norm(hp(noise(N), 4200)) for _ in range(2)]
 whistle = [norm(bp(noise(N), 900, 1100, 4)) for _ in range(2)]
 wl = gust * (0.75 * low[0] + 0.30 * mid[0] * gust + 0.05 * air[0] + 0.05 * whistle[0] * gust ** 3)
 wr = gust * (0.75 * low[1] + 0.30 * mid[1] * gust + 0.05 * air[1] + 0.05 * whistle[1] * gust ** 3)
-add((wl, wr), 0, 0.95)
+# pas de vent dans l'espace : il arrive avec l'atmosphère
+sp = SND.get("space")
+bed_in = np.clip((t - (sp[1] - 1.0)) / 4.0, 0, 1) ** 1.5 if sp else 1.0
+# silence complet juste avant le titre, puis le vent revient doucement
+ti0 = (I.get("title") or {}).get("at")
+if ti0 is not None and SND.get("titleSilence"):
+    s0 = ti0 - SND["titleSilence"]
+    bed_in = bed_in * np.where(t < s0, 1.0, np.clip((t - ti0 - 1.2) / 3.0, 0, 1) * 0.7)
+    bed_in = bed_in * np.clip(1 - (t - s0 + 0.15) / 0.15, 0, 1) + bed_in * (t >= ti0)
+add((wl * bed_in, wr * bed_in), 0, 0.95)
+
+# espace : grondement très grave, presque un souffle de la planète
+if sp:
+    n = int((sp[1] - sp[0] + 3) * SR)
+    tt = np.arange(n) / SR
+    env = np.clip((tt - 1.2) / 3.0, 0, 1) * np.clip((sp[1] - sp[0] + 3 - tt) / 4.0, 0, 1)
+    rum = norm(lp(noise(n), 55)) * (0.8 + 0.2 * np.sin(2 * np.pi * 0.11 * tt))
+    tone = np.sin(2 * np.pi * 41.2 * tt + 0.6 * np.sin(2 * np.pi * 0.07 * tt))
+    add(verb((0.7 * rum + 0.35 * tone) * env, wet=0.4, dry=1.0), sp[0], 0.075)
+
+# lever du soleil derrière la Terre : scintillement qui monte, puis un coup très doux
+sr = SND.get("sunrise")
+if sr is not None:
+    n = int(5.0 * SR)
+    tt = np.arange(n) / SR
+    sh = norm(bp(noise(n), 2500, 9000)) * np.clip(tt / 2.2, 0, 1) ** 2.5 * np.exp(-np.maximum(tt - 2.2, 0) / 0.9)
+    add(verb(sh, wet=0.7, dry=0.6), sr - 2.2, 0.10)
+    m = int(4.0 * SR)
+    tm = np.arange(m) / SR
+    boom = np.sin(2 * np.pi * np.cumsum(32 + 20 * np.exp(-tm / 0.2)) / SR) * env_exp(m, 1.0, 0.01)
+    add(verb(boom, wet=0.6, dry=1.0), sr, 0.2)
+
+# rentrée dans l'atmosphère : un souffle qui s'épaissit et s'éclaircit jusqu'aux nuages
+en = SND.get("entry")
+if en:
+    n = int((en[1] - en[0] + 1.5) * SR)
+    tt = np.arange(n) / SR
+    p = np.clip(tt / (en[1] - en[0]), 0, 1)
+    x = noise(n)
+    hop, win = 512, 2048
+    w = np.hanning(win)
+    out = np.zeros(n + win)
+    fr = np.fft.rfftfreq(win, 1 / SR)
+    for i in range(0, n - win, hop):
+        pi = min(1.0, i / SR / (en[1] - en[0]))
+        fc = 120 + 2600 * pi ** 2
+        mask = 1 / np.sqrt(1 + (fr / fc) ** 4)
+        out[i:i + win] += np.fft.irfft(np.fft.rfft(x[i:i + win] * w) * mask, win)
+    roar = norm(out[:n]) * p ** 2.2 * np.clip((en[1] - en[0] + 1.5 - tt) / 1.2, 0, 1)
+    add((roar, np.roll(roar, 700)), en[0], 0.8)
 
 # ------------------------------------------------------------------ ressac lointain (plan de la mer)
 s0, s1 = SND.get("surf", [0, 0])
