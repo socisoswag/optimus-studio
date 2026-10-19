@@ -33,10 +33,10 @@
         { lon: 35.130, lat: 31.840, alt: 2600, hdg: 35, pitch: -8 }, { lon: 35.142, lat: 31.853, alt: 2620, hdg: 36, pitch: -8 }),
       // le soleil se lève sur la mer Morte, derrière les monts de Moab
       P('mer-morte', 27, 'cote', [101, 3.2], dawn,
-        { lon: 35.385, lat: 31.560, alt: 850, hdg: 100, pitch: -5 }, { lon: 35.398, lat: 31.558, alt: 820, hdg: 101, pitch: -4.5 }, { detail: 'desert' }),
+        { lon: 35.385, lat: 31.560, alt: 1350, hdg: 100, pitch: -5 }, { lon: 35.398, lat: 31.558, alt: 1320, hdg: 101, pitch: -4.5 }, { detail: 'desert' }),
       // les monts de Judée, plan large
       P('judee', 36, 'collines', [128, 11], morning,
-        { lon: 35.060, lat: 31.735, alt: 2300, hdg: 82, pitch: -11 }, { lon: 35.078, lat: 31.739, alt: 2350, hdg: 84, pitch: -11 }, { detail: 'collines' }),
+        { lon: 35.060, lat: 31.735, alt: 2750, hdg: 82, pitch: -11 }, { lon: 35.078, lat: 31.739, alt: 2800, hdg: 84, pitch: -11 }, { detail: 'collines' }),
     ],
     plans: true,
     sound: { },

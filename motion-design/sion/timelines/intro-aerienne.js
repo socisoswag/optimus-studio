@@ -80,9 +80,9 @@
           { name: 'Bethléem', lon: 35.2024, lat: 31.7054, at: 5.6, out: 12.4, h: 60 },
         ],
         keys: [
-          { t: -0.6, lon: 35.040, lat: 31.7580, alt: 2700, hdg: 79, pitch: -11, roll: -1.2 },
-          { t: 7, lon: 35.058, lat: 31.7620, alt: 2680, hdg: 80.5, pitch: -10.3, roll: -0.6 },
-          { t: 14.6, lon: 35.076, lat: 31.766, alt: 2700, hdg: 82, pitch: -9.6, roll: 0 },
+          { t: -0.6, lon: 35.040, lat: 31.7580, alt: 2700, hdg: 88, pitch: -11, roll: -1.2 },
+          { t: 7, lon: 35.058, lat: 31.7620, alt: 2680, hdg: 89.5, pitch: -10.3, roll: -0.6 },
+          { t: 14.6, lon: 35.076, lat: 31.766, alt: 2700, hdg: 91, pitch: -9.6, roll: 0 },
         ],
       },
       {

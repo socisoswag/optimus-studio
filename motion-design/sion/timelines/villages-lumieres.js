@@ -23,19 +23,22 @@
     shots: [
       {
         id: 'nuit', t0: 0, t1: 45, light: 'lune', detail: 'collines', sun: [252, 22], env: night, wobble: 0.5,
-        label: { at: 3.0, out: 9.5, eyebrow: '1947 · 1949', place: 'Les villages vidés', sub: 'Chaque lumière, un village palestinien dépeuplé' },
-        lights: { lon0: 35.26, lon1: 34.45, at: [1.6, 29.0], size: 11.0, gain: 3.2 },
+        label: { at: 12.5, out: 9.5, eyebrow: '1947 · 1949', place: 'Les villages vidés', sub: 'Chaque lumière, un village palestinien dépeuplé' },
+        lights: { lon0: 35.21, lon1: 34.45, at: [1.6, 29.0], size: 11.0, gain: 3.2 },
+        // chaque nom apparaît quand sa lumière s'allume, tant qu'il est bien dans l'image (calculé avec la trajectoire)
         pins: [
-          { name: 'Lifta', lon: 35.1967, lat: 31.7944, at: 2.6, out: 11.0, h: 30 },
-          { name: 'Deir Yassin', lon: 35.1781, lat: 31.7858, at: 3.6, out: 12.0, h: 30 },
-          { name: 'al-Dawayima', lon: 34.9119, lat: 31.5361, at: 17.0, out: 30.0, h: 30 },
-          { name: 'Bayt Jibrin', lon: 34.8983, lat: 31.6053, at: 16.0, out: 30.0, h: 30 },
-          { name: 'Isdud', lon: 34.6617, lat: 31.7536, at: 22.0, out: 34.0, h: 30 },
+          { name: 'Deir Yassin', lon: 35.1781, lat: 31.7858, at: 3.0, out: 5.8, h: 30 },
+          { name: 'al-Qastal', lon: 35.1442, lat: 31.7969, at: 4.3, out: 8.6, h: 30 },
+          { name: 'Saris', lon: 35.0737, lat: 31.7981, at: 6.9, out: 14.4, h: 30 },
+          { name: 'Sar’a', lon: 34.9866, lat: 31.7781, at: 10.1, out: 19.4, h: 30 },
+          { name: 'Khulda', lon: 34.9039, lat: 31.8194, at: 13.0, out: 25.0, h: 30 },
+          { name: 'Yibna', lon: 34.7463, lat: 31.8660, at: 18.7, out: 29.0, h: 30 },
+          { name: 'Isdud', lon: 34.6617, lat: 31.7536, at: 21.8, out: 34.0, h: 30 },
         ],
         keys: [
-          { t: -0.5, lon: 35.245, lat: 31.800, alt: 2500, hdg: 263, pitch: -14 },
-          { t: 10, lon: 35.165, lat: 31.806, alt: 2700, hdg: 265, pitch: -15 },
-          { t: 22, lon: 35.035, lat: 31.810, alt: 3600, hdg: 262, pitch: -18 },
+          { t: -0.5, lon: 35.245, lat: 31.800, alt: 3000, hdg: 263, pitch: -14 },
+          { t: 10, lon: 35.188, lat: 31.805, alt: 3200, hdg: 265, pitch: -15 },
+          { t: 22, lon: 35.060, lat: 31.810, alt: 3900, hdg: 262, pitch: -18 },
           { t: 34, lon: 34.930, lat: 31.800, alt: 8600, hdg: 258, pitch: -31 },
           { t: 45.5, lon: 34.880, lat: 31.792, alt: 11800, hdg: 256, pitch: -34 },
         ],
