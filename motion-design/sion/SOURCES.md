@@ -146,7 +146,17 @@ Utilisées pour les reconstitutions (images de départ des photos animées) :
 ## 4. Images animées et reconstitutions
 
 - **Photos d'archive animées par IA** (Google Veo via Gemini, Kling), à partir des photos de la section 2.2.
-  Mention à l'écran : « Photo d'archive animée par IA ».
+  Mention à l'écran : « Photo d'archive animée par IA » (seulement si le clip anime vraiment la photo).
+- **Reconstitutions par IA d'après une photo d'archive** : quand l'IA réinvente la scène au lieu d'animer la
+  photo, la vraie photo est montrée d'abord (« Photo d'archive »), puis un fondu mène à la scène générée
+  (« Reconstitution par IA, d'après une photo d'archive »). Clips reçus :
+
+  | Plan | Photo de départ | Outil | Date |
+  |---|---|---|---|
+  | Les orangeraies de Jaffa | matpc 06520 | Google Veo (Gemini) | octobre 2026 |
+  | Le port de Jaffa | matpc 04992 | Google Veo (Gemini) | octobre 2026 |
+  | Le marché aux moutons, porte de Damas | matpc 21600 | Google Veo (Gemini) | octobre 2026 |
+  | La savonnerie de Naplouse | matpc 20377 | Google Veo (Gemini) | octobre 2026 |
 - **Scène du vote de l'ONU (29 novembre 1947)**, générée par IA sans photo de départ.
   Mention à l'écran : « Scène reconstituée par IA ».
 - **Archives en relief** : profondeur estimée par le modèle Depth Anything V2 (Apache 2.0). C'est un relief
