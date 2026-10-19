@@ -44,6 +44,14 @@
     inOutSine: (t) => -(Math.cos(PI * t) - 1) / 2,
     outBack: (t) => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2); },
   };
+  // ressort amorti, en secondes depuis le départ : durée perçue vd, rebond b (0 = aucun dépassement)
+  const spring = (t, vd = 0.5, b = 0.25) => {
+    if (t <= 0) return 0;
+    const w = (2 * PI) / vd, z = Math.max(0.05, 1 - b);
+    if (z >= 1) return 1 - Math.exp(-w * t) * (1 + w * t);
+    const wd = w * Math.sqrt(1 - z * z);
+    return 1 - Math.exp(-z * w * t) * (Math.cos(wd * t) + ((z * w) / wd) * Math.sin(wd * t));
+  };
   const tw = (t, t0, t1, e = E.outExpo) => e(inv(t0, t1, t));
   const bump = (h, peak) => (h <= 0 ? 0 : (h / peak) * Math.exp(1 - h / peak));
   function hash(n) { const s = Math.sin(n * 127.1 + 311.7) * 43758.5453; return s - Math.floor(s); }
@@ -2951,9 +2959,14 @@
     const st = s.step || (s.value < 1000 ? 1 : 137), key = Math.round(s.value * cp / (cp < 1 ? st : 1));
     if (R.numKey !== key) { R.numKey = key; stn.innerHTML = fmtNum(cp >= 1 ? s.value : Math.min(s.value, key * st)) + (s.unit ? `<i class="gs"></i>${esc(s.unit)}` : ''); }
     const sp = tw(u, c0 - 0.15, c0 + 0.35, E.outExpo);
-    css(R, stn, 'transform', `translate3d(0,${f3((1 - sp) * 60)}%,0)`);
-    css(R, stn, 'opacity', String(f3(sp)));
     const land = u > c0 + cd ? Math.exp(-(u - c0 - cd) / 0.25) : 0;
+    if (TL.cine) {
+      // le chiffre monte avec du poids (ressort, à peine de dépassement) et s'écrase quand il se fige
+      const rise = spring(u - c0 + 0.15, 0.55, 0.3), thud = u > c0 + cd ? 0.07 * (1 - spring(u - c0 - cd, 0.42, 0.45)) : 0;
+      css(R, stn, 'transformOrigin', dir > 0 ? '0% 70%' : '100% 70%');
+      css(R, stn, 'transform', `translate3d(0,${f3((1 - rise) * 60)}%,0) scale(${f3(1 + thud)})`);
+    } else css(R, stn, 'transform', `translate3d(0,${f3((1 - sp) * 60)}%,0)`);
+    css(R, stn, 'opacity', String(f3(sp)));
     css(R, stn, 'textShadow', land > 0.02 ? `0 0 ${f3(40 * land)}px rgba(${HOTM},${f3(0.8 * land)})` : 'none');
     css(R, stn, 'color', cp < 1 ? 'var(--hot)' : land > 0.02 ? `rgba(${Math.round(lerp(233, 255, land))},${Math.round(lerp(220, 174, land))},${Math.round(lerp(192, 90, land))},1)` : '');
     const lab = R.q('.stlab');
@@ -3203,6 +3216,44 @@
   // ------------------------------------------------------------ image
   const world = $('world'), typeEl = $('type'), hudDom = $('hudDom'), hudCv = $('hud');
   const flashEl = $('flash'), fadeEl = $('fade'), flickEl = $('flicker');
+  // fuites de lumière (pellicule voilée) : avec TL.cine, aux grands mouvements de caméra (une toutes les 9 s au plus),
+  // ou là où la timeline les place (TL.leaks : [{ t, dur, k }]) ; TL.leaks === false les coupe
+  const lk = $('leak').getContext('2d');
+  const LEAKS = (() => {
+    if (TL.leaks === false || (!TL.cine && !Array.isArray(TL.leaks))) return [];
+    if (Array.isArray(TL.leaks)) return TL.leaks.map((l, i) => ({ dur: 1.4, k: 0.24, ...l, seed: 101 + i }));
+    const out = [];
+    SEG.forEach((s, i) => {
+      if (i === 0 || s.fly < 1.0 || s.type === 'outro') return;
+      const t0 = s.start + 0.35 * s.fly;
+      if (out.length && t0 - out[out.length - 1].t < 9) return;
+      out.push({ t: t0, dur: 1.3, k: 0.2, seed: 101 + i });
+    });
+    return out;
+  })();
+  function drawLeaks(t) {
+    lk.clearRect(0, 0, W, H);
+    for (const L of LEAKS) {
+      const p = (t - L.t) / L.dur;
+      if (p <= 0 || p >= 1) continue;
+      const r = mulberry32(L.seed), env = Math.pow(Math.sin(Math.PI * p), 1.6) * L.k, side = r() < 0.5 ? -1 : 1;
+      lk.globalCompositeOperation = 'lighter';
+      for (let j = 0; j < 4; j++) {
+        // taches chaudes qui glissent de travers sur l'image, comme la lumière qui entre dans le magasin de pellicule
+        const hue = [[255, 168, 72], [255, 96, 40], [255, 214, 150], [235, 70, 30]][j];
+        const y = H * (0.15 + 0.7 * r()), size = W * (0.35 + 0.5 * r()), speed = 0.6 + 0.8 * r();
+        const x = W * (0.5 + side * (-0.9 + 1.8 * E.inOutSine(clamp(p * speed + 0.15 * r()))));
+        const wob = 0.12 * Math.sin(t * (2 + r() * 3) + j);
+        const g = lk.createRadialGradient(x, y, 0, x, y, size * (1 + wob));
+        g.addColorStop(0, `rgba(${hue[0]},${hue[1]},${hue[2]},${f3(env * (0.9 - 0.15 * j))})`);
+        g.addColorStop(0.45, `rgba(${hue[0]},${hue[1]},${hue[2]},${f3(env * 0.35)})`);
+        g.addColorStop(1, `rgba(${hue[0]},${hue[1]},${hue[2]},0)`);
+        lk.fillStyle = g;
+        lk.fillRect(0, 0, W, H);
+      }
+      lk.globalCompositeOperation = 'source-over';
+    }
+  }
   const hudIdx = $('hudIdx'), hudCoord = $('hudCoord');
   const clockEl = $('clock');
   const CLOCK = (TL.clock || []).map((c) => ({ ...c, until: c.until !== undefined ? c.t - c.at + c.until : undefined }));
@@ -3228,7 +3279,8 @@
     const shx = 9 * sh * noise1(t * 38), shy = 7 * sh * noise1(t * 41 + 13);
     const shake = `translate3d(${f3(shx)}px,${f3(shy)}px,0)`;
     world.style.transform = shake;
-    typeEl.style.transform = shake;
+    const dk = TL.cine ? 1 : 0, dfx = 12 * dk * Math.sin(t * 0.11 + 0.7), dfy = 7 * dk * Math.sin(t * 0.083 + 2.1);  // les textes flottent à peine devant la carte
+    typeEl.style.transform = `translate3d(${f3(shx + dfx)}px,${f3(shy + dfy)}px,0)`;
 
     updateType(t);
 
@@ -3281,6 +3333,7 @@
       fade = Math.max(fade, tw(t, cut - b, cut - b + 0.28, E.inCubic) * (1 - tw(t, cut - 0.02, cut + 0.35, E.outCubic)));
     }
     fadeEl.style.opacity = String(f3(fade));
+    drawLeaks(t);
 
     // grain
     gr.globalCompositeOperation = 'source-over';

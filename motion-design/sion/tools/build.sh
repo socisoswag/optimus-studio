@@ -16,7 +16,8 @@ trap 'rm -rf "$TMP"' EXIT
 cd "$ROOT"
 mkdir -p output
 
-node render.mjs --timeline "$NAME" --workers "${WORKERS:-4}" --crf 14 $RFLAGS --out "$TMP/video.mp4"
+# SHUTTER=2 : flou de bougé réel (deux sous-images par image, obturateur à 180°), rendu deux fois plus long
+node render.mjs --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf 14 $RFLAGS --out "$TMP/video.mp4"
 # tout se fabrique dans $TMP ; les fichiers finis ne rejoignent output/ qu'à la fin (jamais à moitié écrits)
 WAV="output/$NAME.wav"
 if [ "$OUTNAME" = "$NAME" ] || [ ! -f "output/$NAME.wav" ]; then

@@ -595,13 +595,50 @@
   ],
   "coeur": [
    {
+    "id": 21409,
+    "auteur": "greyseraphim",
+    "titre": "heart beat.mp3",
+    "duree": 41.4,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/greyseraphim/sounds/21409/",
+    "ogg": "https://cdn.freesound.org/previews/21/21409_106798-hq.ogg"
+   },
+   {
+    "id": 619037,
+    "auteur": "mrrap4food",
+    "titre": "Heart Beat.mp3",
+    "duree": 51.6,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/mrrap4food/sounds/619037/",
+    "ogg": "https://cdn.freesound.org/previews/619/619037_781461-hq.ogg"
+   },
+   {
+    "id": 455440,
+    "auteur": "under_the_hood",
+    "titre": "Real heartbeat sound fastest",
+    "duree": 176.9,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/under_the_hood/sounds/455440/",
+    "ogg": "https://cdn.freesound.org/previews/455/455440_9416057-hq.ogg"
+   },
+   {
+    "id": 798674,
+    "auteur": "RICHERlandTV",
+    "titre": "Human Heartbeat",
+    "duree": 79.6,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/RICHERlandTV/sounds/798674/",
+    "ogg": "https://cdn.freesound.org/previews/798/798674_3450800-hq.ogg"
+   },
+   {
     "id": 369017,
     "auteur": "patobottos",
     "titre": "Heartbeats 61.wav",
     "duree": 125.8,
     "licence": "CC0",
     "page": "https://freesound.org/people/patobottos/sounds/369017/",
-    "ogg": "https://cdn.freesound.org/previews/369/369017_881494-hq.ogg"
+    "ogg": "https://cdn.freesound.org/previews/369/369017_6687661-hq.ogg",
+    "secours": true
    }
   ],
   "avion": [

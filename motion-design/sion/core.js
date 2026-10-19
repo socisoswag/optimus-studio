@@ -170,6 +170,8 @@
       cities: def.cities || CITIES,
       hud: Object.assign({}, HUD_DEFAULT, def.hud || {}),
       sound: def.sound || {},
+      leaks: def.leaks,
+      cine: def.cine,
       route: def.route !== false,
       fadeIn: def.fadeIn !== undefined ? def.fadeIn : 1.0,
       fadeOut: def.fadeOut !== undefined ? def.fadeOut : 1.25,
