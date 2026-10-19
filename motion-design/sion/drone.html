@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>SION · survol</title>
+<style>
+  @font-face { font-family: 'Archivo'; src: url('fonts/Archivo[wdth,wght].ttf') format('truetype'); font-weight: 100 900; font-stretch: 62% 125%; }
+  @font-face { font-family: 'Newsreader'; src: url('fonts/Newsreader-Italic[opsz,wght].ttf') format('truetype'); font-style: italic; font-weight: 200 800; }
+  @font-face { font-family: 'DM Mono'; src: url('fonts/DMMono-Regular.ttf') format('truetype'); font-weight: 400; }
+  @font-face { font-family: 'Noto Sans Hebrew'; src: url('fonts/NotoSansHebrew[wdth,wght].ttf') format('truetype'); font-weight: 100 900; font-stretch: 62.5% 100%; }
+  @font-face { font-family: 'Noto Kufi Arabic'; src: url('fonts/NotoKufiArabic[wght].ttf') format('truetype'); font-weight: 100 900; }
+  :root {
+    --stone: #e9dcc0; --ember: #ff5b1f; --hot: #ffae5a; --ember-rgb: 255,91,31;
+    --display: 'Archivo', sans-serif; --serif: 'Newsreader', serif; --mono: 'DM Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: #000; color: var(--stone); -webkit-font-smoothing: antialiased; }
+  canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+  .layer { position: absolute; inset: 0; pointer-events: none; }
+
+  /* lieu survolé, en bas à gauche */
+  .lab { position: absolute; left: 112px; bottom: 112px; opacity: 0; }
+  .lab .eyebrow { display: flex; align-items: center; gap: 18px; font-family: var(--mono); font-size: 19px; letter-spacing: .24em; text-transform: uppercase; color: var(--hot); height: 28px; white-space: nowrap; text-shadow: 0 1px 12px rgba(0,0,0,.5); }
+  .lab .tick { display: block; width: 56px; height: 2px; background: var(--ember); transform-origin: 0 50%; flex: none; box-shadow: 0 0 12px rgba(var(--ember-rgb),.6); }
+  .lab .place { margin-top: 16px; font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 780; font-size: 76px; line-height: .9; text-transform: uppercase; letter-spacing: .005em; white-space: nowrap; text-shadow: 0 2px 30px rgba(0,0,0,.45); }
+  .lab .sub { margin-top: 14px; font-family: var(--serif); font-style: italic; font-variation-settings: 'opsz' 36; font-size: 32px; color: rgba(233,220,192,.94); white-space: nowrap; text-shadow: 0 1px 18px rgba(0,0,0,.55); }
+  .lab .w { display: inline-block; white-space: pre; }
+
+  /* titre du film, comme dans le générique */
+  #title { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; }
+  #title::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 58% 52% at 50% 52%, rgba(14,11,8,.46) 0%, rgba(14,11,8,.22) 55%, rgba(14,11,8,0) 100%); z-index: -1; }
+  .lab::before { content: ''; position: absolute; left: -140px; right: -220px; top: -90px; bottom: -80px; background: radial-gradient(ellipse 60% 60% at 30% 60%, rgba(14,11,8,.34) 0%, rgba(14,11,8,0) 100%); z-index: -1; }
+  #title .big { font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 860; font-size: 430px; line-height: .86; letter-spacing: .09em; padding-left: .14em; text-transform: uppercase; white-space: nowrap; text-shadow: 0 6px 60px rgba(0,0,0,.35); }
+  #title .big .ch { display: inline-block; }
+  #title .scripts { display: flex; align-items: center; justify-content: center; gap: 46px; margin-top: 4px; }
+  #title .native { color: rgba(233,220,192,.92); line-height: 1.35; white-space: nowrap; text-shadow: 0 2px 24px rgba(0,0,0,.45); }
+  #title .native[lang="he"] { font-family: 'Noto Sans Hebrew'; font-weight: 600; font-stretch: 80%; font-size: 76px; }
+  #title .native[lang="ar"] { font-family: 'Noto Kufi Arabic'; font-weight: 600; font-size: 62px; line-height: 1.6; }
+  #title .bar { width: 300px; height: 3px; background: linear-gradient(90deg, rgba(var(--ember-rgb),0), var(--ember) 25%, var(--hot) 50%, var(--ember) 75%, rgba(var(--ember-rgb),0)); box-shadow: 0 0 24px rgba(var(--ember-rgb),.75); transform-origin: 50% 50%; }
+  #title .text { margin-top: 34px; font-family: var(--serif); font-style: italic; font-variation-settings: 'opsz' 36; font-size: 54px; color: rgba(233,220,192,.94); text-shadow: 0 2px 24px rgba(0,0,0,.5); }
+  #title .text .w { display: inline-block; white-space: pre; }
+  .notext .lab, .notext #title { display: none; }
+</style>
+</head>
+<body>
+<canvas id="gl" width="1920" height="1080"></canvas>
+<div class="layer" id="labels"></div>
+<div class="layer" id="title"></div>
+<script type="module" src="drone.js"></script>
+</body>
+</html>
