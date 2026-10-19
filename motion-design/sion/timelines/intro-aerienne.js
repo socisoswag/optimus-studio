@@ -38,7 +38,18 @@
     fadeStart: 1.2,
     fadeIn: 2.6,
     fadeOut: 1.6,
-    dips: [[35, 0.5], [49, 0.5], [64, 0.5]],
+    dips: [],
+    // effets : turbulence à l'entrée dans l'atmosphère, coupes en filé, flash et impact avant le titre, bandes cinéma
+    fx: {
+      letterbox: 2.39, streak: 0.35,
+      cuts: [
+        { t: 35, type: 'whip', dir: 1 },
+        { t: 49, type: 'whip', dir: -1 },
+        { t: 64, type: 'flash', col: [1, 0.86, 0.7], pre: 0.14, dur: 0.45 },
+        { t: 67.8, type: 'flash', col: [1, 0.55, 0.25], k: 0.28, pre: 0.05, dur: 0.5 },
+      ],
+      shakes: [[16.8, 2.2, 1.4], [18.9, 3.2, 1.1], [20.6, 4.5, 0.9], [64, 7, 0.55], [67.8, 6, 0.7]],
+    },
     dipCol: [0.93, 0.87, 0.79],
     shots: [
       {
@@ -63,7 +74,7 @@
         ],
       },
       {
-        id: 'cote', t0: 23, t1: 35, cloudPass: [[0, 1], [0.35, 1], [1.7, 0]], light: 'cote', detail: 'cote', sun: [101, 3.2], env: dawn,
+        id: 'cote', t0: 23, t1: 35, ramp: [[0, 1.9], [1.6, 0.95], [10.6, 0.95], [12, 1.8]], cloudPass: [[0, 1], [0.35, 1], [1.7, 0]], light: 'cote', detail: 'cote', sun: [101, 3.2], env: dawn,
         label: { at: 3.2, eyebrow: '32°02′ N · 34°41′ E', place: 'Mer Méditerranée', sub: 'Au large de Jaffa' },
         pins: [{ name: 'Jaffa', lon: 34.7525, lat: 32.0540, at: 5.4, out: 10.6, h: 40 }],
         keys: [
@@ -73,7 +84,7 @@
         ],
       },
       {
-        id: 'collines', t0: 35, t1: 49, light: 'collines', detail: 'collines', sun: [128, 11], env: morning,
+        id: 'collines', t0: 35, t1: 49, ramp: [[0, 2.0], [1.4, 0.9], [12.5, 0.9], [14, 1.9]], light: 'collines', detail: 'collines', sun: [128, 11], env: morning,
         label: { at: 2.4, eyebrow: '31°46′ N · 35°06′ E', place: 'Monts de Judée', sub: 'À l’ouest de Jérusalem' },
         pins: [
           { name: 'Jérusalem', lon: 35.2345, lat: 31.7767, at: 4.6, out: 12.4, h: 60 },
@@ -86,7 +97,7 @@
         ],
       },
       {
-        id: 'desert', t0: 49, t1: 64, light: 'desert', detail: 'desert', sun: [114, 17], env: desert,
+        id: 'desert', t0: 49, t1: 64, ramp: [[0, 2.0], [1.4, 0.92], [13.4, 0.92], [15, 1.7]], light: 'desert', detail: 'desert', sun: [114, 17], env: desert,
         label: { at: 8.6, eyebrow: '31°28′ N · 35°23′ E', place: 'Désert de Judée', sub: 'La mer Morte, à plus de 430 mètres sous le niveau de la mer' },
         gauge: { at: 6.2, dur: 3.2, from: 150, to: -430, out: 13.6, k: 'Altitude du sol', done: 'Le point le plus bas de la Terre' },
         keys: [
@@ -97,7 +108,7 @@
         ],
       },
       {
-        id: 'titre', t0: 64, t1: 84, light: 'titre', detail: 'desert', sun: [118, 14], env: title,
+        id: 'titre', t0: 64, t1: 84, ramp: [[0, 1.8], [1.8, 0.85], [20, 0.85]], light: 'titre', detail: 'desert', sun: [118, 14], env: title,
         keys: [
           { t: -0.6, lon: 35.49, lat: 31.785, alt: 2500, hdg: 184, pitch: -14 },
           { t: 9, lon: 35.49, lat: 31.770, alt: 2650, hdg: 183, pitch: -11.5 },
@@ -106,6 +117,7 @@
       },
     ],
     title: { at: 67.8, out: 80.2, word: 'SION', scripts: ['ציון', 'صهيون'], sub: 'L’idée, la terre, le choc' },
-    sound: { space: [0, 15], sunrise: 6.4, entry: [12, 22.8], surf: [23, 35.6], reveal: 56.6, titleSilence: 0.7 }, // ressac sous le plan de la mer, grondement quand la mer Morte apparaît
+    sound: { space: [0, 15], sunrise: 6.4, entry: [12, 22.8], surf: [23, 35.6], reveal: 56.6, titleSilence: 0.7,
+      whips: [[35, 1], [49, -1]], risers: [[62.4, 64]], impacts: [[64, 1]] }, // ressac sous le plan de la mer, grondement quand la mer Morte apparaît
   };
 })(typeof window !== 'undefined' ? window : globalThis);

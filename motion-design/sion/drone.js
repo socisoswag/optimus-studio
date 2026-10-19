@@ -599,6 +599,7 @@ const rtOpt = { type: THREE.HalfFloatType, format: THREE.RGBAFormat, depthBuffer
 const rtHDR = new THREE.WebGLRenderTarget(W, H, { ...rtOpt, samples: I.msaa ?? 4 });
 const rtB = [0, 1].map(() => new THREE.WebGLRenderTarget(W / 4, H / 4, { ...rtOpt, depthBuffer: false }));
 const rtC = [0, 1].map(() => new THREE.WebGLRenderTarget(W / 16, H / 16, { ...rtOpt, depthBuffer: false }));
+const rtS = [0, 1].map(() => new THREE.WebGLRenderTarget(W / 4, H / 4, { ...rtOpt, depthBuffer: false }));
 const PV = /* glsl */`out vec2 vUv; void main() { vUv = position.xy * 0.5 + 0.5; gl_Position = vec4(position.xy, 0.0, 1.0); }`;
 const passMat = (frag, uniforms) => new THREE.ShaderMaterial({ glslVersion: THREE.GLSL3, depthTest: false, depthWrite: false, uniforms, vertexShader: PV, fragmentShader: frag });
 const brightMat = passMat(/* glsl */`
@@ -627,23 +628,42 @@ in vec2 vUv; out vec4 o;
 void main() { vec3 s = vec3(0); for (int j = -1; j <= 2; j++) for (int i = -1; i <= 2; i++) s += texture(src, vUv + vec2(i, j) * texel).rgb; o = vec4(s / 16.0, 1.0); }`,
 { src: { value: null }, texel: { value: new THREE.Vector2(4 / W, 4 / H) } });
 const finalMat = passMat(/* glsl */`
-uniform sampler2D hdr, bloomA, bloomB;
-uniform float exposure, fade, dip, time, sunVis, grain, flareK, cloud, tintK;
-uniform vec3 dipCol, sunCol;
-uniform vec2 sunPos;
+uniform sampler2D hdr, bloomA, bloomB, streak;
+uniform float exposure, fade, dip, time, sunVis, grain, flareK, cloud, tintK, blurAmt, flash, streakK, lb;
+uniform vec3 dipCol, sunCol, flashCol;
+uniform vec2 sunPos, blurDir;
+uniform vec4 shk; // décalage x, y (uv), rotation (rad), zoom
 in vec2 vUv; out vec4 o;
 float hash(vec2 p) { p = fract(p * vec2(443.897, 441.423)); p += dot(p, p.yx + 19.19); return fract((p.x + p.y) * p.x); }
 float vn(vec2 p) { vec2 i = floor(p), f = fract(p); vec2 u = f * f * (3.0 - 2.0 * f);
   return mix(mix(hash(i), hash(i + vec2(1, 0)), u.x), mix(hash(i + vec2(0, 1)), hash(i + vec2(1, 1)), u.x), u.y); }
 float fb(vec2 p) { float s = 0.0, a = 0.5; for (int i = 0; i < 5; i++) { s += a * vn(p); p = p * 2.07 + 11.3; a *= 0.5; } return s; }
 vec3 aces(vec3 x) { return clamp((x * (2.51 * x + 0.03)) / (x * (2.43 * x + 0.59) + 0.14), 0.0, 1.0); }
+vec3 hdrCA(vec2 uv, float k) {
+  vec2 c = uv - 0.5;
+  vec2 ca = c * 0.0088 * dot(c, c) * k;
+  return vec3(texture(hdr, uv + ca).r, texture(hdr, uv).g, texture(hdr, uv - ca).b);
+}
 void main() {
+  // secousse d'impact : le cadre bouge, tourne un peu et se resserre (jamais de bord vide)
+  vec2 asp = vec2(16.0 / 9.0, 1.0);
+  vec2 q = (vUv - 0.5) * asp;
+  q = vec2(q.x * cos(shk.z) - q.y * sin(shk.z), q.x * sin(shk.z) + q.y * cos(shk.z)) / asp;
+  vec2 uv = 0.5 + q / (1.0 + shk.w) + shk.xy;
   vec2 c = vUv - 0.5;
   float r2 = dot(c, c);
-  // aberration chromatique légère vers les bords
-  vec2 ca = c * 0.0022 * r2 * 4.0;
-  vec3 col = vec3(texture(hdr, vUv + ca).r, texture(hdr, vUv).g, texture(hdr, vUv - ca).b);
-  col += texture(bloomA, vUv).rgb * 0.22 + texture(bloomB, vUv).rgb * 0.30;
+  // aberration chromatique légère vers les bords, plus forte pendant un filé
+  float kca = 1.0 + 7.0 * blurAmt;
+  vec3 col;
+  if (blurAmt > 0.002) {
+    // filé de caméra : flou directionnel le long du mouvement
+    col = vec3(0);
+    for (int i = 0; i < 18; i++) col += hdrCA(uv + blurDir * ((float(i) / 17.0 - 0.5) * blurAmt * 0.11), kca);
+    col /= 18.0;
+  } else col = hdrCA(uv, kca);
+  col += texture(bloomA, uv).rgb * 0.22 + texture(bloomB, uv).rgb * 0.30;
+  // traînées horizontales d'objectif anamorphique sur les lumières vives
+  col += texture(streak, uv).rgb * vec3(0.62, 0.8, 1.15) * streakK;
   // reflets d'objectif quand le soleil est dans le champ
   if (sunVis > 0.001) {
     vec2 sp = sunPos, axis = vec2(0.5) - sp;
@@ -683,11 +703,17 @@ void main() {
     vec3 cc = mix(vec3(0.74, 0.72, 0.70), vec3(1.0, 0.96, 0.9), n);
     col = mix(col, cc, m * m * (3.0 - 2.0 * m));
   }
+  // flash : éclat de lumière à la coupe ou à l'impact
+  col = 1.0 - (1.0 - col) * (1.0 - clamp(flashCol * flash, 0.0, 1.0));
   col *= fade;
   col += (hash(vUv * vec2(1920.0, 1080.0) + fract(time * 7.13) * 91.7) - 0.5) * grain;
+  // bandes cinéma (format 2,39)
+  col *= 1.0 - step(lb, abs(vUv.y - 0.5));
   o = vec4(col, 1.0);
 }`, {
-  hdr: { value: rtHDR.texture }, bloomA: { value: rtB[0].texture }, bloomB: { value: rtC[0].texture },
+  hdr: { value: rtHDR.texture }, bloomA: { value: rtB[0].texture }, bloomB: { value: rtC[0].texture }, streak: { value: rtS[1].texture },
+  blurAmt: { value: 0 }, blurDir: { value: new THREE.Vector2(1, 0) }, flash: { value: 0 }, flashCol: { value: new THREE.Vector3(1, 0.93, 0.84) },
+  shk: { value: new THREE.Vector4() }, streakK: { value: 0 }, lb: { value: 0.5 },
   exposure: { value: 1 }, fade: { value: 1 }, dip: { value: 0 }, time: { value: 0 }, sunVis: { value: 0 }, grain: { value: 0.03 }, flareK: { value: 1 }, cloud: { value: 0 }, tintK: { value: 1 },
   dipCol: { value: new THREE.Vector3(1, 0.95, 0.88) }, sunCol: { value: new THREE.Vector3() }, sunPos: { value: new THREE.Vector2() },
 });
@@ -708,6 +734,53 @@ const shots = I.shots.map((s) => ({
     const [x, y] = toXY(k.lon, k.lat); return { roll: 0, ...k, x, y };
   }),
 }));
+// rampes de vitesse (s.ramp : [[t, vitesse], ...]) : le plan entre vite, ralentit, repart vers la coupe ;
+// la longueur du trajet ne change pas, seule la vitesse se répartit autrement
+for (const s of shots) {
+  if (!s.ramp) continue;
+  const D = s.t1 - s.t0, N = Math.ceil(D * 50), cum = new Float64Array(N + 1);
+  for (let i = 1; i <= N; i++) cum[i] = cum[i - 1] + Math.max(0.05, keyAt(s.ramp, (i - 0.5) / 50));
+  s.warp = (tl) => {
+    if (tl <= 0 || tl >= D) return tl;
+    const x = tl * 50, i = Math.floor(x);
+    return (cum[i] + (cum[Math.min(i + 1, N)] - cum[i]) * (x - i)) * D / cum[N];
+  };
+}
+// effets (I.fx) : coupes en filé ou en flash, secousses d'impact, traînées, bandes cinéma
+const FX = I.fx || {};
+function whipYaw(t) { // le filé tourne la caméra : le plan sortant part d'un côté, le suivant arrive du même élan
+  let y = 0;
+  for (const c of FX.cuts || []) {
+    if (c.type !== 'whip') continue;
+    const h = c.dur ?? 0.32, d = (c.deg ?? 26) * (c.dir ?? 1);
+    if (t < c.t) y += d * smooth(c.t - h, c.t, t) ** 2;
+    else y -= d * (1 - smooth(c.t, c.t + h, t)) ** 2;
+  }
+  return y;
+}
+function fxAt(t) {
+  const o = { blur: 0, dir: 1, flash: 0, col: [1, 0.93, 0.84], sx: 0, sy: 0, rot: 0, zoom: 0, lift: 0 };
+  for (const c of FX.cuts || []) {
+    if (c.type === 'whip') {
+      const w = 1 - smooth(0, c.dur ?? 0.32, Math.abs(t - c.t));
+      if (w > o.blur) { o.blur = w; o.dir = c.dir ?? 1; }
+      o.lift = Math.max(o.lift, w * 0.3);
+    } else if (c.type === 'flash') {
+      const f = (t < c.t ? smooth(c.t - (c.pre ?? 0.1), c.t, t) : Math.exp(-(t - c.t) / (c.dur ?? 0.35))) * (c.k ?? 1);
+      if (f > o.flash) { o.flash = f; o.col = c.col || o.col; }
+    }
+  }
+  for (const [ts, amp, dur] of FX.shakes || []) {
+    if (t < ts) continue;
+    const e = amp * Math.exp(-(t - ts) / (dur ?? 0.5));
+    o.sx += e * (Math.sin(t * 61.3 + ts) * 0.6 + Math.sin(t * 37.1 + 2 * ts) * 0.4);
+    o.sy += e * (Math.sin(t * 53.7 + 1.7 * ts) * 0.6 + Math.sin(t * 29.3 + ts) * 0.4);
+    o.rot += e * 0.06 * Math.sin(t * 41.9 + ts);
+    o.zoom = Math.max(o.zoom, e * 0.0032);
+  }
+  return o;
+}
+if (FX.letterbox) document.body.classList.add('lb');
 function camAt(s, tl) {
   const K = s.K;
   let i = 0;
@@ -742,6 +815,8 @@ const outroEl = document.getElementById('outro');
 if (I.outro && outroEl) {
   outroEl.innerHTML = (I.outro.eyebrow ? `<div class="eyebrow"><span class="tick"></span><span>${I.outro.eyebrow}</span><span class="tick r"></span></div>` : '')
     + I.outro.lines.map((l) => `<div class="ln">${words(l)}</div>`).join('');
+  // les nombres défilent jusqu'à leur valeur
+  outroEl.querySelectorAll('.ln .w').forEach((w) => { if (/^\d+$/.test(w.textContent)) { w.dataset.n = w.textContent; w.classList.add('num'); } });
 }
 function updateOutro(t) {
   if (!I.outro || !outroEl) return;
@@ -751,6 +826,7 @@ function updateOutro(t) {
   if (vis <= 0) return;
   outroEl.querySelectorAll('.ln .w').forEach((w, k) => {
     const k0 = O.at + 0.3 + k * 0.16, e = smooth(k0, k0 + 0.9, t);
+    if (w.dataset.n) { const c = clamp((t - k0) / 1.4); w.textContent = String(Math.round(+w.dataset.n * (1 - (1 - c) ** 3))); }
     w.style.opacity = e.toFixed(3);
     w.style.filter = `blur(${((1 - e) * 10).toFixed(2)}px)`;
     w.style.transform = `translateY(${((1 - e) * 20).toFixed(1)}px)`;
@@ -767,6 +843,8 @@ function updateText(t) {
     el.style.opacity = vis.toFixed(3);
     if (vis <= 0) continue;
     el.querySelector('.tick').style.transform = `scaleX(${smooth(a0, a0 + 0.6, t).toFixed(3)})`;
+    // le titre se resserre en apparaissant
+    el.querySelector('.place').style.letterSpacing = `${(0.005 + 0.11 * (1 - smooth(a0 + 0.3, a0 + 1.8, t))).toFixed(4)}em`;
     const ey = L.eyebrow, n = Math.floor(clamp((t - a0 - 0.2) / 0.9) * ey.length);
     el.querySelector('.ey').textContent = ey.slice(0, n);
     el.querySelectorAll('.place .w, .sub .w').forEach((w, k) => {
@@ -941,9 +1019,9 @@ function renderFrame(t) {
   const s = shotAt(t), tl = t - s.t0;
   if (s.type === 'space') { pins(s, tl, { x: 0, y: 0, z: 1e9 }); return finish(t, renderSpace(t, s, tl)); }
   gauge(s, tl);
-  const c = camAt(s, tl);
+  const c = camAt(s, s.warp ? s.warp(tl) : tl);
   const wa = (s.wobble ?? 1);
-  const hdg = c.hdg + wob(t, 0.37, 1.1) * 0.35 * wa, pitch = c.pitch + wob(t, 0.29, 2.3) * 0.22 * wa, roll = c.roll + wob(t, 0.23, 0.4) * 0.3 * wa;
+  const hdg = c.hdg + whipYaw(t) + wob(t, 0.37, 1.1) * 0.35 * wa, pitch = c.pitch + wob(t, 0.29, 2.3) * 0.22 * wa, roll = c.roll + wob(t, 0.23, 0.4) * 0.3 * wa;
   const fwd = new THREE.Vector3(Math.sin(rad(hdg)) * Math.cos(rad(pitch)), Math.sin(rad(pitch)), -Math.cos(rad(hdg)) * Math.cos(rad(pitch)));
   camera.position.set(0, 0, 0);
   camera.up.set(0, 1, 0);
@@ -1010,6 +1088,11 @@ function finish(t, o) {
   const { E, sv } = o;
   // halo : seuil puis deux niveaux de flou
   brightMat.uniforms.src.value = rtHDR.texture; brightMat.uniforms.thr.value = E.bloomThr ?? 1.1; pass(brightMat, rtB[0]);
+  const sk = E.streak ?? FX.streak ?? 0;
+  if (sk > 0) { // traînées : le seuil lumineux étiré à l'horizontale, par passes de plus en plus longues
+    let src = rtB[0];
+    [1, 3, 9, 27].forEach((k, i) => { blurMat.uniforms.src.value = src.texture; blurMat.uniforms.dir.value.set(4 * k / W, 0); pass(blurMat, rtS[i % 2]); src = rtS[i % 2]; });
+  }
   blurMat.uniforms.src.value = rtB[0].texture; blurMat.uniforms.dir.value.set(4 / W, 0); pass(blurMat, rtB[1]);
   blurMat.uniforms.src.value = rtB[1].texture; blurMat.uniforms.dir.value.set(0, 4 / H); pass(blurMat, rtB[0]);
   downMat.uniforms.src.value = rtB[0].texture; pass(downMat, rtC[0]);
@@ -1026,6 +1109,13 @@ function finish(t, o) {
   F.flareK.value = E.flare ?? 1;
   F.tintK.value = E.tint ?? 1;
   F.time.value = t;
+  const fx = fxAt(t);
+  F.blurAmt.value = fx.blur; F.blurDir.value.set(fx.dir, 0);
+  F.flash.value = fx.flash; F.flashCol.value.set(...fx.col);
+  F.shk.value.set(fx.sx / W, fx.sy / H, fx.rot * Math.PI / 180, fx.zoom + (FX.shakes ? 0.012 : 0));
+  F.streakK.value = sk; F.streak.value = rtS[1].texture;
+  F.lb.value = FX.letterbox ? 0.5 * (W / FX.letterbox) / H : 0.5;
+  F.exposure.value *= 1 + fx.lift;
   // fondus : noir au début et à la fin, passages dans la brume entre les plans
   const f0 = I.fadeStart ?? 0;
   let fade = smooth(f0, f0 + (I.fadeIn ?? 2), t) * (1 - smooth(I.total - (I.fadeOut ?? 1.5), I.total, t));

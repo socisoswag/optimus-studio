@@ -51,6 +51,7 @@
       },
     ],
     // grondement sourd quand le front se met en marche, souffle qui le suit
-    sound: { reveal: 7.6, sweeps: [[7.2, 10.5]] },
+    fx: { streak: 0.45, cuts: [{ t: 7.2, type: 'flash', col: [1, 0.6, 0.3], k: 0.3, pre: 0.08, dur: 0.6 }], shakes: [[7.2, 4, 0.8]] },
+    sound: { reveal: 7.6, sweeps: [[7.2, 10.5]], risers: [[5.6, 7.2]], impacts: [[7.2, 0.8]] },
   };
 })(typeof window !== 'undefined' ? window : globalThis);

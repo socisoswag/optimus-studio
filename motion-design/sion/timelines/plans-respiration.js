@@ -39,6 +39,7 @@
         { lon: 35.060, lat: 31.735, alt: 2750, hdg: 82, pitch: -11 }, { lon: 35.078, lat: 31.739, alt: 2800, hdg: 84, pitch: -11 }, { detail: 'collines' }),
     ],
     plans: true,
+    fx: { streak: 0.3 },
     sound: { },
   };
 })(typeof window !== 'undefined' ? window : globalThis);

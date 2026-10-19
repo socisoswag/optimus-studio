@@ -45,6 +45,7 @@
       },
     ],
     outro: { at: 36.4, out: 42.6, eyebrow: '1947 · 1949', lines: ['418 villages', 'vidés de leurs habitants'] },
-    sound: { night: true, crackle: [1.6, 29.0], hits: [36.6] },
+    fx: { streak: 0.55, cuts: [{ t: 36.4, type: 'flash', col: [1, 0.6, 0.3], k: 0.3, pre: 0.08, dur: 0.6 }], shakes: [[36.4, 4, 0.7]] },
+    sound: { night: true, crackle: [1.6, 29.0], risers: [[34.8, 36.4]], impacts: [[36.4, 0.8]], counts: [[36.7, 1.4]] },
   };
 })(typeof window !== 'undefined' ? window : globalThis);

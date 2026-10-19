@@ -26,9 +26,9 @@
         // ordre le long du tracé : 0 au nord (32,6° N), 1 au sud (31,3° N) ; Qalandia vers 0,56, Bethléem vers 0,69
         wall: { at: 0.4, prog: [[0, 0.50], [5, 0.56], [30, 0.95], [40, 1.0]], k: 1.0, planned: 0.6 },
         pins: [
-          { name: 'Qalandia', lon: 35.2131, lat: 31.8656, at: 4.5, out: 14.0, h: 40 },
-          { name: 'Jérusalem', lon: 35.2345, lat: 31.7767, at: 9.5, out: 28.0, h: 60 },
-          { name: 'Abu Dis', lon: 35.2611, lat: 31.7617, at: 13.0, out: 28.0, h: 40 },
+          { name: 'Qalandia', lon: 35.2131, lat: 31.8656, at: 1.6, out: 6.0, h: 40 },
+          { name: 'Jérusalem', lon: 35.2345, lat: 31.7767, at: 8.0, out: 21.0, h: 60 },
+          { name: 'Abu Dis', lon: 35.2611, lat: 31.7617, at: 11.0, out: 21.0, h: 40 },
           { name: 'Bethléem', lon: 35.2024, lat: 31.7054, at: 17.5, out: 34.0, h: 50 },
         ],
         keys: [
@@ -40,6 +40,7 @@
       },
     ],
     outro: { at: 33.6, out: 38.4, eyebrow: 'Janvier 2018', lines: ['464 km construits', 'sur 714 prévus'] },
-    sound: { crackle: [5.0, 30.0], hits: [33.8] },
+    fx: { streak: 0.5, cuts: [{ t: 33.6, type: 'flash', col: [1, 0.6, 0.3], k: 0.3, pre: 0.08, dur: 0.6 }], shakes: [[33.6, 4, 0.7]] },
+    sound: { crackle: [5.0, 30.0], risers: [[32.0, 33.6]], impacts: [[33.6, 0.8]], counts: [[33.9, 1.4], [34.06, 1.4]] },
   };
 })(typeof window !== 'undefined' ? window : globalThis);

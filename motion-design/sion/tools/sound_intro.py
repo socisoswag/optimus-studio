@@ -326,6 +326,48 @@ if rv is not None:
     g = norm(bp(noise(int(4 * SR)), 300, 2200)) * np.sin(np.pi * np.arange(int(4 * SR)) / (4 * SR)) ** 2
     add((g, np.roll(g, 900)), rv - 1.4, 0.16)
 
+# ------------------------------------------------------------------ effets : filés, montées, impacts, chiffres qui défilent
+for tw, d in SND.get("whips", []):  # filé de caméra : souffle rapide qui traverse l'image, petit coup sourd à la coupe
+    sw = whoosh(1.15)
+    n = len(sw)
+    p = np.arange(n) / n
+    gl, gr = pan_gains((-0.8 + 1.6 * p) * d)
+    add((sw * gl, sw * gr), tw - 0.62, 0.5)
+    m = int(1.2 * SR)
+    tm = np.arange(m) / SR
+    thump = np.sin(2 * np.pi * np.cumsum(48 + 40 * np.exp(-tm / 0.05)) / SR) * env_exp(m, 0.22, 0.002)
+    add(verb(thump, wet=0.3, dry=1.0), tw, 0.22)
+for r0, r1 in SND.get("risers", []):  # montée : bruit qui s'éclaircit et enfle jusqu'à l'impact, coupé net
+    n = int((r1 - r0) * SR)
+    x = noise(n)
+    hop, win = 256, 2048
+    w = np.hanning(win)
+    out = np.zeros(n + win)
+    lf = np.log(np.maximum(np.fft.rfftfreq(win, 1 / SR), 20))
+    for i in range(0, n - win, hop):
+        k = i / n
+        mask = np.exp(-0.5 * ((lf - np.log(180 * 25 ** k)) / 0.7) ** 2)
+        out[i:i + win] += np.fft.irfft(np.fft.rfft(x[i:i + win] * w) * mask, win)
+    tt = np.arange(n) / SR
+    rise = norm(out[:n]) * (tt / (r1 - r0)) ** 2.5
+    tone = np.sin(2 * np.pi * np.cumsum(55 * 2 ** (2 * tt / (r1 - r0))) / SR) * (tt / (r1 - r0)) ** 3 * 0.4
+    add(verb(rise + tone, wet=0.4, dry=1.0), r0, 0.26)
+for ti, k in SND.get("impacts", []):  # impact : chute dans le grave, craquement, longue traîne
+    n = int(5 * SR)
+    tt = np.arange(n) / SR
+    sub = np.sin(2 * np.pi * np.cumsum(26 + 46 * np.exp(-tt / 0.09)) / SR) * env_exp(n, 0.9, 0.002)
+    thud = norm(lp(noise(n), 200)) * env_exp(n, 0.14, 0.001)
+    crk = norm(hp(noise(n), 2200)) * env_exp(n, 0.025, 0.0005)
+    add(verb(sub + 0.8 * thud + 0.25 * crk, wet=0.6, dry=1.0), ti, 0.42 * k)
+for c0, cd in SND.get("counts", []):  # chiffres qui défilent : petits clics qui ralentissent
+    tc = c0
+    while tc < c0 + cd:
+        ln = int(0.004 * SR)
+        click = np.sin(2 * np.pi * 2600 * np.arange(ln) / SR) * np.exp(-np.arange(ln) / (ln / 3))
+        add(click, tc, 0.05, 0.1)
+        u = (tc - c0) / cd
+        tc += 0.028 + 0.16 * u ** 2.4
+
 # ------------------------------------------------------------------ titre : impact sourd, éclat, longue traîne
 ti = (I.get("title") or {}).get("at")
 if ti is not None:

@@ -27,9 +27,9 @@
   .lab .w { display: inline-block; white-space: pre; }
 
   /* titre du film, comme dans le générique */
-  #title { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; }
+  #title { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; isolation: isolate; }
   #title::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 58% 52% at 50% 52%, rgba(14,11,8,.46) 0%, rgba(14,11,8,.22) 55%, rgba(14,11,8,0) 100%); z-index: -1; }
-  .lab::before { content: ''; position: absolute; left: -140px; right: -220px; top: -90px; bottom: -80px; background: radial-gradient(ellipse 66% 64% at 32% 55%, rgba(14,11,8,.5) 0%, rgba(14,11,8,.26) 55%, rgba(14,11,8,0) 100%); z-index: -1; }
+  .lab::before { content: ''; position: absolute; left: -140px; right: -220px; top: -90px; bottom: -80px; background: radial-gradient(closest-side, rgba(14,11,8,.5) 0%, rgba(14,11,8,.28) 55%, rgba(14,11,8,0) 100%); z-index: -1; }
   #title .big { font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 860; font-size: 430px; line-height: .86; letter-spacing: .09em; padding-left: .14em; text-transform: uppercase; white-space: nowrap; text-shadow: 0 6px 60px rgba(0,0,0,.35); }
   #title .big .ch { display: inline-block; }
   #title .scripts { display: flex; align-items: center; justify-content: center; gap: 46px; margin-top: 4px; }
@@ -43,7 +43,7 @@
   #hud { opacity: 0; }
   #hud .box { position: absolute; isolation: isolate; right: 112px; top: 96px; text-align: right; font-family: var(--mono); text-transform: uppercase; text-shadow: 0 0 2px rgba(0,0,0,.55), 0 1px 5px rgba(0,0,0,.5), 0 1px 16px rgba(0,0,0,.6); }
   /* fond sombre adouci : lisible même sur le sable clair (Gaza, désert) */
-  #hud .box::before { content: ''; position: absolute; left: -170px; right: -130px; top: -80px; bottom: -70px; background: radial-gradient(ellipse 72% 70% at 60% 50%, rgba(14,11,8,.62) 0%, rgba(14,11,8,.46) 55%, rgba(14,11,8,0) 100%); z-index: -1; }
+  #hud .box::before { content: ''; position: absolute; left: -230px; right: -230px; top: -120px; bottom: -110px; background: radial-gradient(closest-side, rgba(14,11,8,.5) 0%, rgba(14,11,8,.32) 50%, rgba(14,11,8,0) 100%); z-index: -1; }
   #hud .k { display: flex; justify-content: flex-end; align-items: center; gap: 14px; font-size: 17px; letter-spacing: .28em; color: var(--hot); }
   #hud .k::after { content: ''; width: 44px; height: 2px; background: var(--ember); box-shadow: 0 0 12px rgba(var(--ember-rgb),.6); }
   #hud .v { margin-top: 10px; font-size: 54px; letter-spacing: .04em; color: var(--stone); font-variant-numeric: tabular-nums; }
@@ -55,13 +55,17 @@
   .pin .nm { position: absolute; isolation: isolate; left: 0; bottom: 72px; transform: translateX(-50%); font-family: var(--mono); font-size: 19px; letter-spacing: .3em; text-transform: uppercase; color: var(--stone); white-space: nowrap; text-shadow: 0 0 2px rgba(0,0,0,.7), 0 1px 5px rgba(0,0,0,.6), 0 1px 12px rgba(0,0,0,.7); }
   .pin .nm::before { content: ''; position: absolute; left: -36px; right: -30px; top: -18px; bottom: -18px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(14,11,8,.55) 0%, rgba(14,11,8,0) 100%); z-index: -1; }
   /* texte de fin, au centre */
-  #outro { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; }
+  #outro { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; isolation: isolate; }
   #outro::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 45% at 50% 50%, rgba(8,7,6,.5) 0%, rgba(8,7,6,0) 100%); z-index: -1; }
   #outro .eyebrow { display: flex; align-items: center; gap: 18px; font-family: var(--mono); font-size: 19px; letter-spacing: .3em; text-transform: uppercase; color: var(--hot); margin-bottom: 26px; }
   #outro .tick { display: block; width: 56px; height: 2px; background: var(--ember); transform-origin: 100% 50%; }
   #outro .tick.r { transform-origin: 0 50%; }
   #outro .ln { font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 760; font-size: 96px; line-height: 1.02; text-transform: uppercase; color: var(--stone); white-space: nowrap; text-shadow: 0 4px 40px rgba(0,0,0,.5); }
   #outro .w { display: inline-block; white-space: pre; }
+  #outro .w.num { font-variant-numeric: tabular-nums; }
+  /* bandes cinéma (INTRO.fx.letterbox) : les textes restent dans l'image */
+  .lb .lab { bottom: 176px; }
+  .lb #hud .box { top: 172px; }
   .notext .lab, .notext #title, .notext #hud, .notext #pins, .notext #outro { display: none; }
 </style>
 </head>
