@@ -12,7 +12,7 @@
   html, body { width: 1920px; height: 1080px; overflow: hidden; background: #000; color: var(--stone); -webkit-font-smoothing: antialiased; }
   canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
   .layer { position: absolute; inset: 0; pointer-events: none; }
-  .lab { position: absolute; left: 112px; bottom: 112px; opacity: 0; }
+  .lab { position: absolute; left: 112px; bottom: 112px; opacity: 0; isolation: isolate; }
   .lab::before { content: ''; position: absolute; left: -140px; right: -260px; top: -100px; bottom: -90px; background: radial-gradient(ellipse 60% 60% at 30% 60%, rgba(8,7,6,.55) 0%, rgba(8,7,6,0) 100%); z-index: -1; }
   .lab .eyebrow { display: flex; align-items: center; gap: 18px; font-family: var(--mono); font-size: 19px; letter-spacing: .24em; text-transform: uppercase; color: var(--hot); height: 28px; white-space: nowrap; }
   .lab .tick { display: block; width: 56px; height: 2px; background: var(--ember); transform-origin: 0 50%; flex: none; }
