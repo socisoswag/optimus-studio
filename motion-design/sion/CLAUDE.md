@@ -18,6 +18,14 @@
 4. Ne jamais modifier en place `tools/build_intro.sh` (ou tout script bash) pendant qu'un rendu l'exécute :
    écrire un nouveau fichier puis `mv` (nouvel inode).
 
+## Sources (toujours à jour, sans attendre qu'on le demande)
+
+Dès qu'une nouvelle source entre dans le projet (photo, donnée, image satellite, chiffre, citation,
+rapport, police, outil), l'ajouter dans la même livraison à `SOURCES.md` (au bon endroit, avec auteur,
+licence, date et lien) et, si elle compte, à `SOURCES-description-youtube.txt` (moins de 5 000 caractères).
+Une licence CC BY / CC BY-SA ou une mention Copernicus / OCHA va aussi dans « Mentions obligatoires »
+et dans le générique de fin (`timelines/generique-fin.js`). Le signaler en une ligne à l'auteur.
+
 ## Exigences de l'auteur
 
 - 1080p seulement ; bruitages seulement, pas de musique ; voix off faite plus tard.
