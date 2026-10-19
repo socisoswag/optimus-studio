@@ -171,6 +171,33 @@ Utilisées pour les reconstitutions (images de départ des photos animées) :
 - **Survols en 3D** : reconstitutions à partir du relief et des images satellite réelles (section 3), avec
   une lumière et une brume calculées. Ce ne sont pas des prises de vue réelles.
 
+### 4.1 Vrais plans tournés sur place (Adobe Stock, licence standard)
+
+Vidéos réelles de la collection gratuite d'Adobe Stock, licenciées sur le compte Adobe du projet (licence standard,
+usage commercial et YouTube permis, pas de mention obligatoire ; les fichiers sources ne sont jamais publiés). Toutes
+sont marquées « non générées par IA » (isGenTech: false). Mises au format du film par `tools/plans_reels.sh`
+(25 i/s, look SION de `tools/looks.py`). Fiche : `https://stock.adobe.com/search/video?k=<numéro>`.
+Légendes à l'écran : on corrige le vocabulaire des titres d'origine (Jérusalem-Est occupée, Cisjordanie occupée,
+Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Palestine.
+
+| Numéro | Ce qu'on voit (titre d'origine) | Lieu, date | Look | Fichier |
+|---|---|---|---|---|
+| 778425214 | L'esplanade des Mosquées et le Dôme du Rocher pendant le ramadan, vus du ciel | Jérusalem-Est, 3 avril 2024 | terre-dure | `jerusalem-esplanade-des-mosquees-ramadan-2024` |
+| 622507847 | Survol de la vieille ville, Al-Aqsa et le Dôme du Rocher | Jérusalem | terre | `jerusalem-survol-vieille-ville` |
+| 259354360 | Coupoles et clocher du Saint-Sépulcre | Jérusalem, vieille ville | terre | `jerusalem-saint-sepulcre` |
+| 513295332 | Le cimetière juif de Medzhybizh (tombe du Baal Shem Tov) sous la neige | Medzhybizh, Ukraine | archive | `medzhybizh-cimetiere-juif-neige` |
+| 390879149 | Clocher et vieille ville de Jaffa, vue aérienne | Jaffa | terre | `jaffa-clocher-vieille-ville-aerien` |
+| 740254300 | Tour de David, remparts et vieille ville, vue aérienne | Jérusalem | terre | `jerusalem-remparts-tour-de-david-aerien` |
+| 508320837 | Porte de Damas (Bab al-Amoud) et vieille ville, vue aérienne | Jérusalem-Est, mai 2022 | terre | `jerusalem-porte-de-damas-aerien-2022` |
+| 609005799 | Le Dôme du Rocher du coucher du soleil à la nuit | Jérusalem-Est, 2023 | terre | `jerusalem-dome-du-rocher-couchant-nuit-2023` |
+| 487976626 | Le monastère de Mar Saba dans sa vallée | Cisjordanie occupée | terre | `cisjordanie-monastere-mar-saba` |
+| 400434780 | Minaret d'al-Eizariya (Béthanie) au bord du désert, vue aérienne | Cisjordanie occupée | terre | `cisjordanie-al-eizariya-minaret-desert` |
+| 271328836 | Le checkpoint militaire israélien de Hizma | Jérusalem-Est / Cisjordanie occupée | terre-dure | `checkpoint-hizma-jerusalem-est` |
+| 502632607 | Chars détruits et ruines après la guerre des Six Jours (film amateur d'époque) | Cisjordanie, 1967 | aucun (couleurs d'origine) | `cisjordanie-1967-chars-detruits-film-amateur` |
+| 276957095 | Figuier de Barbarie (sabr), symbole des villages détruits | lieu non précisé | terre | `figuier-de-barbarie-sabr` |
+| 259921414 | Récolte des olives à la main | lieu non précisé | terre | `recolte-des-olives-a-la-main` |
+| 198345828 | La mer Morte vue du ciel | mer Morte | terre | `mer-morte-aerien` |
+
 ---
 
 ## 5. Chiffres et faits, vidéo par vidéo

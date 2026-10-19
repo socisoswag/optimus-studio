@@ -28,3 +28,6 @@ data/sons/
 # rendus (vidéos, son, pistes séparées, dossier de montage) : livrés dans le dépôt Montage-Moyen-orient,
 # ce dépôt-ci ne garde que le code et les données qui les fabriquent
 output/
+
+# vidéos Adobe Stock sous licence : jamais dans un dépôt public (le dépôt privé de montage reçoit les plans montés)
+data/stock/

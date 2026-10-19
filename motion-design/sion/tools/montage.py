@@ -73,6 +73,48 @@ EXTRAS = {
 }
 
 
+# Pièces 3D (survols, archives en relief) : (fichier, nom) rangées dans leur chapitre, avec leurs fichiers plan par plan.
+SURVOLS = {
+    13: [("villages-lumieres", "survol-418-villages-vides-en-1948")],
+    23: [("mur-cicatrice", "survol-la-cicatrice-du-mur")],
+    25: [("gaza-vue-du-ciel", "survol-gaza-vue-du-ciel-2023-2025")],
+}
+
+# Vrais plans tournés sur place (output/plans-reels/, tools/plans_reels.sh ; sources : SOURCES.md 4.1), par chapitre.
+PLANS_REELS = {
+    0: ["jaffa-clocher-vieille-ville-aerien", "mer-morte-aerien"],
+    1: ["jerusalem-survol-vieille-ville", "jerusalem-remparts-tour-de-david-aerien", "jerusalem-saint-sepulcre",
+        "jerusalem-dome-du-rocher-couchant-nuit-2023"],
+    2: ["medzhybizh-cimetiere-juif-neige"],
+    13: ["figuier-de-barbarie-sabr", "recolte-des-olives-a-la-main"],
+    19: ["cisjordanie-1967-chars-detruits-film-amateur", "jerusalem-porte-de-damas-aerien-2022",
+         "jerusalem-esplanade-des-mosquees-ramadan-2024"],
+    23: ["checkpoint-hizma-jerusalem-est", "cisjordanie-al-eizariya-minaret-desert", "cisjordanie-monastere-mar-saba"],
+}
+
+
+def reels(ch, cd, items):
+    noms = [n for n in PLANS_REELS.get(ch, []) if os.path.exists(os.path.join(OUT, "plans-reels", f"{n}.mp4"))]
+    if noms:
+        os.makedirs(os.path.join(cd, "plans-reels"), exist_ok=True)
+        for n in noms:
+            copy(os.path.join(OUT, "plans-reels", f"{n}.mp4"), os.path.join(cd, "plans-reels", f"{n}.mp4"))
+        items.append(f"vrais plans tournés sur place : {', '.join(noms)} (sources : SOURCES.md 4.1)")
+
+
+def survol(src, path, items, name):
+    """Pièce 3D entière, ses fichiers plan par plan (output/<src>/) et son son en pistes."""
+    full = os.path.join(OUT, f"{src}.mp4")
+    if not os.path.exists(full):
+        return
+    os.makedirs(path, exist_ok=True)
+    copy(full, os.path.join(path, "00-sequence-complete.mp4"))
+    son(src, path, "00-sequence-complete.mp4")
+    for f in sorted(glob.glob(os.path.join(OUT, src, "*.mp4"))):
+        copy(f, os.path.join(path, os.path.basename(f)))
+    items.append(f"{name.replace('-', ' ')} (survol 3D, dossier)")
+
+
 # Cartons transparents (output/cartons/, tools/build_cartons.sh) : ceux de lieu et date vont dans
 # leur chapitre ; les mentions de source, utiles partout, dans un dossier à part.
 CARTONS = {
@@ -104,6 +146,7 @@ def plans(name, folder):
     full = os.path.join(OUT, f"{name}.mp4")
     os.makedirs(folder, exist_ok=True)
     copy(full, os.path.join(folder, "00-sequence-complete.mp4"))
+    son(name, folder, "00-sequence-complete.mp4")
     segs = segments(name)
     total = duration(full)
     rows = ["| Plan | Fichier | Durée | Dans la séquence | À l'écran |\n", "|---|---|---|---|---|\n"]
@@ -153,9 +196,34 @@ def fresh(src, dst):
 
 
 def copy(src, dst):
-    if not (fresh(src, dst) and os.path.getsize(dst) == os.path.getsize(src)):
-        shutil.copyfile(src, dst)
+    """Lien physique quand c'est possible (aucune place en plus sur le disque), sinon copie."""
+    if not (os.path.exists(dst) and os.path.samefile(src, dst)):
+        if os.path.exists(dst):
+            os.remove(dst)
+        try:
+            os.link(src, dst)
+        except OSError:
+            shutil.copyfile(src, dst)
     KEEP.add(dst)
+
+
+def son(name, folder, video):
+    """Pistes séparées de la pièce (tools/pistes.py) : clips WAV dans son/, séquence XML pour Premiere à côté de la
+    vidéo (Fichier > Importer ; puis Fichier > Exporter > AAF ou OMF pour le studio son)."""
+    src = os.path.join(OUT, "pistes", name)
+    if not os.path.isdir(src):
+        return False
+    os.makedirs(os.path.join(folder, "son"), exist_ok=True)
+    for f in sorted(os.listdir(src)):
+        if f.endswith(".wav"):
+            copy(os.path.join(src, f), os.path.join(folder, "son", f))
+    x = open(os.path.join(src, f"{name}.xml"), encoding="utf-8").read()
+    x = re.sub(r"<pathurl>([^<]+\.wav)</pathurl>", r"<pathurl>son/\1</pathurl>", x)
+    x = x.replace(f"<pathurl>{name}.mp4</pathurl>", f"<pathurl>{video}</pathurl>").replace(f"<name>{name}.mp4</name>", f"<name>{video}</name>")
+    dst = os.path.join(folder, f"{name}-son-premiere.xml")
+    open(dst, "w", encoding="utf-8").write(x)
+    KEEP.add(dst)
+    return True
 
 
 def cut(src, a, b, dst):
@@ -191,7 +259,11 @@ def main():
     a, b = seg["intro"]
     cut(os.path.join(OUT, "chronologie.mp4"), a, b, os.path.join(d0, "02-chronologie-ouverture-facultatif.mp4"))
     copy(os.path.join(OUT, "chronologie.mp4"), os.path.join(d0, "03-chronologie-complete-facultatif.mp4"))
-    lines += ["\n## 0-Generique-et-prologue\n", "- 01 générique\n", "- 02 et 03 : la chronologie en prologue (facultatif)\n"]
+    pro = []
+    survol("intro-aerienne", os.path.join(d0, "00-intro-aerienne"), pro, "intro-aerienne")
+    reels(0, d0, pro)
+    lines += ["\n## 0-Generique-et-prologue\n", "- 00 intro aérienne (de l'orbite à la mer Morte, titre), dossier plan par plan\n",
+              "- 01 générique\n", "- 02 et 03 : la chronologie en prologue (facultatif)\n"] + [f"- {x}\n" for x in pro[1:]]
     for folder, opener, chapters in PARTS:
         d = os.path.join(DST, folder)
         os.makedirs(d, exist_ok=True)
@@ -216,11 +288,16 @@ def main():
                     continue
                 if span is None:
                     copy(full, path)
+                    son(src, cd, os.path.basename(path))
                 elif isinstance(span, str):
                     cut(full, *chrono_cuts(src)[span], path)
                 else:
                     cut(full, span[0], span[1], path)
                 items.append(name.replace("-", " "))
+            for src, name in SURVOLS.get(ch, []):
+                k += 1
+                survol(src, os.path.join(cd, f"{k:02d}-{name}"), items, name)
+            reels(ch, cd, items)
             cart = [c for c, n in CARTONS.items() if n == ch and os.path.exists(carton(c))]
             if cart:
                 os.makedirs(os.path.join(cd, "cartons"), exist_ok=True)
@@ -235,6 +312,12 @@ def main():
         os.makedirs(d9, exist_ok=True)
         copy(fin, os.path.join(d9, "01-generique-de-fin.mp4"))
         lines += ["\n## 9-Generique-de-fin\n", "- 01 générique de fin (crédits des photos, des sources, des cartes et des polices)\n"]
+    extra = []
+    survol("plans-respiration", os.path.join(DST, "Plans-de-respiration"), extra, "plans-de-respiration")
+    survol("archives-vivantes", os.path.join(DST, "Archives-en-relief"), extra, "archives-en-relief")
+    if extra:
+        lines += ["\n## Plans de respiration et archives en relief\n",
+                  "- plans aériens sans texte, à poser entre deux séquences ; photos d'archive en relief\n"]
     srcs = sorted(f for f in glob.glob(os.path.join(OUT, "cartons", "*-source-*.mov")))
     if srcs:
         d9 = os.path.join(DST, "Cartons-sources-transparents")
@@ -242,7 +325,12 @@ def main():
         for f in srcs:
             copy(f, os.path.join(d9, os.path.basename(f)))
         lines += ["\n## Cartons-sources-transparents\n", "- mentions de source transparentes (ONU, UNRWA, OCHA, B'Tselem…), à poser sur n'importe quelle image\n"]
-    lines += ["\n## Cartons transparents\n",
+    lines += ["\n## Le son pour l'ingé son\n",
+              "Chaque séquence a un dossier `son/` (un clip WAV 48 kHz 24 bits par son, rangés par famille : ambiances, "
+              "souffles et montées, impacts, guerre, bruitages) et un fichier `<pièce>-son-premiere.xml` : dans Premiere, "
+              "Fichier > Importer ce XML (s'il demande où sont les médias, montrer la vidéo puis un clip de `son/`), puis "
+              "Fichier > Exporter > AAF ou OMF pour le studio son. La dernière paire de pistes, muette, est le mixage livré.\n",
+              "\n## Cartons transparents\n",
               "Les fichiers `cartons/*.mov` ont un fond transparent (codec PNG avec couche alpha) : pose-les sur une piste "
               "au-dessus des images d'archive. Premiere, DaVinci Resolve et Final Cut les lisent directement.\n"]
     open(os.path.join(DST, "LISEZMOI.md"), "w", encoding="utf-8").write("".join(lines))
