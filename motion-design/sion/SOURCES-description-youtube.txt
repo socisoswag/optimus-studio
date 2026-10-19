@@ -1,0 +1,24 @@
+SOURCES
+
+Images et données
+· Contient des données Copernicus Sentinel modifiées (2023, 2025).
+· Relief : SRTM (NASA), GEBCO. Terre vue de l'espace : NASA Blue Marble, Black Marble 2016.
+· Cartes : Natural Earth (domaine public) ; carte de l'ONU n° 103.1(b), 1947.
+· Zones d'Oslo et tracé du mur : OCHA, HDX (CC BY).
+· Villages palestiniens dépeuplés : Wikidata (CC0) ; Walid Khalidi, All That Remains, 1992.
+· Photos d'archive : G. Eric and Edith Matson Photograph Collection, Bibliothèque du Congrès (no known restrictions on publication).
+· Les survols en 3D sont des reconstitutions à partir d'images satellite réelles. Les photos d'archive animées et la scène du vote de 1947 sont générées par IA et signalées à l'écran.
+
+Portraits (Wikimedia Commons)
+Yasser Arafat : Gideon Markowiz, CC BY 4.0 · Itamar Ben Gvir : Alon Nuriel, CC BY-SA 3.0 · Bernard-Henri Lévy : Itzike, CC BY-SA 3.0 · Alain Finkielkraut : Jérémy Barande, CC BY-SA 2.0 · Arthur Koestler : Eric Koch / Anefo, CC BY-SA 3.0 · Golda Meir : Willem van de Poll, CC BY-SA 4.0 · Gamal Abdel Nasser : Stevan Kragujević, CC BY-SA 3.0 · Benyamin Netanyahou et Bezalel Smotrich : Avi Ohayon, CC BY-SA 3.0 · Yitzhak Rabin : Yaakov Saar, CC BY-SA 3.0 · Ariel Sharon : IPPA, collection Dan Hadani, Bibliothèque nationale d'Israël, CC BY 4.0 · Chaïm Weizmann : Hugo Mendelson, CC BY-SA 3.0 · Ahmed Yassine : Yonathan Torgovnik, CC BY-SA 3.0. Autres portraits : domaine public.
+
+Documents, chiffres et rapports
+Nations unies (Assemblée générale : résolutions 181, 194, 37/123 D ; Conseil de sécurité : 242, 338, 478) · rapport de l'UNSCOP, 1947 · UNRWA · OCHA · Haut-Commissariat de l'ONU aux droits de l'homme (rapports de 2023, mars 2024, 8 novembre 2024) · Commission d'enquête de l'ONU (16 septembre 2025) · Cour internationale de justice (avis du 9 juillet 2004 et du 19 juillet 2024, ordonnance du 26 janvier 2024) · Cour pénale internationale (21 novembre 2024) · IPC (août 2025) · UNOSAT · ministère de la Santé de Gaza · The Lancet (Jamaluddine et al., 2025) · B'Tselem (2021) · Human Rights Watch (27 avril 2021) · Amnesty International (1er février 2022) · PCHR · Zochrot · Al-Haq · Université de Birzeit (S. Kanaana) · police libanaise et commission Kahan (1982-1983) · Village Statistics (1945) · Jewish Virtual Library, Encyclopaedia Judaica, JewishGen · The New York Times et Haaretz (juin 2024) · Meta et OpenAI (mai 2024).
+
+Livres
+Walid Khalidi, All That Remains (1992) · Salman Abu Sitta · Benny Morris, The Birth of the Palestinian Refugee Problem Revisited (2004) et 1948 and After · Avi Shlaim · Meron Benvenisti, Sacred Landscape (2000) · S. Aly, S. Feldman, K. Shikaki, Arabs and Israelis (2013) · Arthur Koestler, Promise and Fulfilment (1949).
+
+Citations
+Theodor Herzl, Journal, 12 juin 1895 (éd. R. Patai, 1960) · David Ben Gourion, 12 juin 1938 (Archives sionistes centrales, cité par B. Morris, 2004) · Golda Meir, The Sunday Times, 15 juin 1969 · Mahmoud Darwich, « Sur cette terre » · La Bible, traduction Louis Segond (1910) · lettre McMahon (24 octobre 1915), accords Sykes-Picot (16 mai 1916), déclaration Balfour (2 novembre 1917).
+
+Polices : Archivo, Newsreader, DM Mono, Courier Prime, Noto Kufi Arabic, Noto Sans Hebrew (SIL Open Font License). Bruitages synthétisés pour le film.

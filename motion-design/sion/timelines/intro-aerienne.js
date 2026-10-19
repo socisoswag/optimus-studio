@@ -7,7 +7,8 @@
  *   3. le plateau du désert de Judée qui s'arrête net : la falaise d'Ein Gedi, la mer Morte 500 m plus bas ;
  *   4. au-dessus de la mer Morte vers le sud, le titre.
  *
- * Relief : SRTM (NASA). Images : Sentinel-2 cloudless 2016 d'EOX (CC BY 4.0). Préparation : tools/prep_drone.py.
+ * Relief : SRTM (NASA). Images : Copernicus Sentinel-2 L2A du 11 mai 2025 ; globe : NASA Blue Marble, Black Marble 2016
+ * et couverture nuageuse (domaine public). Préparation : tools/prep_drone.py, tools/prep_globe.py.
  * La surface de la mer Morte est aujourd'hui à plus de 430 m sous le niveau de la mer (environ -438 m en 2024).
  * Points clés : t (s, depuis le début du plan), lon, lat, alt (m), hdg (cap, degrés), pitch (degrés, négatif vers le bas).
  */
