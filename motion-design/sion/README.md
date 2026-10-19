@@ -268,3 +268,13 @@ alpha, que Premiere, DaVinci Resolve et Final Cut lisent directement.
 - Polices sous licence SIL Open Font License : Archivo (Omnibus-Type), Newsreader (Production Type),
   DM Mono (Colophon), Noto Sans Hebrew et Noto Kufi Arabic (Google).
 - Bandes-son entièrement synthétisées (`tools/sound.py`), sans échantillon externe.
+
+## Photos d'archive animées par IA (reconstitutions)
+
+1. `python3 tools/prep_reconstitution.py <cache>` : images de départ en 16:9 dans `output/reconstitution/`
+   (photos de la Bibliothèque du Congrès, sources dans `data/reconstitution.json` et `SOURCES.md`).
+2. L'auteur anime chaque image dans Gemini (Veo), Kling ou Firefly (textes fournis à part).
+3. `python3 tools/build_reconstitution.py <dossier_des_clips>` : reconnaît chaque clip par sa première image,
+   le ramène en 1080p 25 i/s, puis le rend avec le traitement du film (photo figée, légende, elle s'anime,
+   se fige ; ton papier, grain, poussière ; mention « Photo d'archive animée par IA »). Légendes :
+   `data/reconstitution-legendes.json`. Sortie : `output/reconstitutions/<n>-<nom>.mp4`, un fichier par plan.

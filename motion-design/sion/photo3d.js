@@ -95,13 +95,18 @@ async function tex(url, mip) {
 const photos = I.photos.map((p) => ({ ...p }));
 const OVER = 1.06;
 const cache = new Map(); // photos chargées (au plus trois à la fois : chaque page ne rend qu'un morceau du film)
+// clip vidéo (P.frames : images extraites par tools/build_reconstitution.py) : une image par pas de 1/fps
+const frameUrl = (P, k) => `${P.frames.dir}/${String(k + 1).padStart(4, '0')}.jpg`;
 async function load(P) {
   if (cache.has(P.id)) { const v = cache.get(P.id); cache.delete(P.id); cache.set(P.id, v); return v; }
   const dir = 'data/archives/';
-  const [img, dep, bimg, bdep] = await Promise.all([
-    tex(`${dir}${P.id}.jpg`, true), tex(`${dir}${P.id}-depth.png`, false),
-    tex(`${dir}${P.id}-fond.jpg`, true), tex(`${dir}${P.id}-fond-depth.png`, false),
-  ]);
+  const flat = () => { const t = new THREE.DataTexture(new Uint8Array([128, 128, 128, 255]), 1, 1); t.needsUpdate = true; return t; };
+  const [img, dep, bimg, bdep] = P.frames
+    ? [await tex(frameUrl(P, 0), false), flat(), null, null]   // clip : surface plate, le mouvement est dans l'image
+    : await Promise.all([
+      tex(`${dir}${P.id}.jpg`, true), tex(`${dir}${P.id}-depth.png`, false),
+      tex(`${dir}${P.id}-fond.jpg`, true), tex(`${dir}${P.id}-fond-depth.png`, false),
+    ]);
   const pw = img.image.width, ph = img.image.height;
   const tx = Math.tan(rad((P.fov ?? I.fov ?? 50) / 2)), ty = tx * ph / pw;
   const mk = (im, dp, n, cut, push, order) => {
@@ -119,20 +124,28 @@ async function load(P) {
     return mesh;
   };
   const scene = new THREE.Scene();
-  const fg = mk(img, dep, pw > ph ? 420 : 300, 1, 1, 1);
-  const bg = mk(bimg, bdep, pw > ph ? 200 : 140, 0, 1.004, 0);
+  const fg = P.frames ? mk(img, dep, 8, 0, 1, 1) : mk(img, dep, pw > ph ? 420 : 300, 1, 1, 1);
+  const bg = P.frames ? null : mk(bimg, bdep, pw > ph ? 200 : 140, 0, 1.004, 0);
   if (DBG !== 3) scene.add(fg);
-  scene.add(bg);
+  if (bg) scene.add(bg);
   const cam = new THREE.PerspectiveCamera(2 * Math.atan(ty) * 180 / Math.PI, pw / ph, 0.02, 200);
-  const v = { scene, fg, bg, cam, pw, ph, tex: [img, dep, bimg, bdep] };
+  const v = { scene, fg, bg, cam, pw, ph, tex: [img, dep, bimg, bdep].filter(Boolean), frame: 0 };
   cache.set(P.id, v);
   while (cache.size > 3) { // la plus ancienne s'en va
     const [k, o] = cache.entries().next().value;
     cache.delete(k);
     o.tex.forEach((t) => t.dispose());
-    for (const m of [o.fg, o.bg]) { m.geometry.dispose(); m.material.dispose(); }
+    for (const m of [o.fg, o.bg].filter(Boolean)) { m.geometry.dispose(); m.material.dispose(); }
   }
   return v;
+}
+
+// la photo reste figée P.hold secondes (c'est la première image du clip), s'anime, puis se fige sur la dernière
+async function setFrame(P, V, tl) {
+  const F = P.frames, k = clamp(Math.floor((tl - (P.hold ?? 0)) * (F.fps ?? 25)), 0, F.n - 1);
+  if (V.frame === k) return;
+  const t2 = await tex(frameUrl(P, k), false), u = V.fg.material.uniforms.img, old = u.value;
+  u.value = t2; V.tex[V.tex.indexOf(old)] = t2; old.dispose(); V.frame = k;
 }
 
 // mouvement : un peu plus vite au milieu, sans jamais s'arrêter (le plan continue sous le fondu)
@@ -154,7 +167,7 @@ function drawPhoto(P, V, tl, target) {
   V.cam.position.set(c.x, c.y, -c.z);
   V.cam.setViewOffset(V.pw, V.ph, x0, y0, ww, hh);
   V.cam.updateProjectionMatrix();
-  for (const m of [V.fg, V.bg]) {
+  for (const m of [V.fg, V.bg].filter(Boolean)) {
     const u = m.material.uniforms;
     u.restPx.value = u.grid.value.x * V.pw * W / ww; // pas de grille à l'écran, au départ
     u.focus.value = c.focus; u.cocK.value = P.coc ?? I.coc ?? 2.6; u.camZ.value = c.z;
@@ -254,7 +267,14 @@ function updateText(t) {
     });
     openEl.querySelectorAll('.tick').forEach((k) => { k.style.transform = `scaleX(${smooth(O.at, O.at + 0.8, t).toFixed(3)})`; });
   }
-  if (I.credit) creditEl.style.opacity = (0.9 * smooth(I.credit.at, I.credit.at + 1, t) * (1 - smooth(I.credit.out, I.credit.out + 1, t))).toFixed(3);
+  const cur = photos.find((P) => t >= P.t0 && t < P.t1);
+  if (cur && cur.credit) { // mention propre au plan (photo animée par IA, scène reconstituée)
+    if (creditEl.textContent !== cur.credit) creditEl.textContent = cur.credit;
+    creditEl.style.opacity = (0.9 * smooth(cur.t0 + 0.5, cur.t0 + 1.1, t) * (1 - smooth(cur.t1 - 1.0, cur.t1 - 0.4, t))).toFixed(3);
+  } else if (I.credit) {
+    if (creditEl.textContent !== I.credit.text) creditEl.textContent = I.credit.text;
+    creditEl.style.opacity = (0.9 * smooth(I.credit.at, I.credit.at + 1, t) * (1 - smooth(I.credit.out, I.credit.out + 1, t))).toFixed(3);
+  } else creditEl.style.opacity = '0';
   for (const P of photos) {
     if (!P.el) continue;
     const el = P.el, a0 = P.t0 + (P.at ?? 0.6), a1 = P.t1 - (P.out ?? 1.4);
@@ -280,18 +300,22 @@ async function renderFrame(t) {
   const U = finalMat.uniforms;
   for (let i = 0; i < 2; i++) {
     const P = on[i];
-    if (P) drawPhoto(P, await load(P), t - P.t0, rt[i]);
+    if (P) { const V = await load(P); if (P.frames) await setFrame(P, V, t - P.t0); drawPhoto(P, V, t - P.t0, rt[i]); }
     else { renderer.setRenderTarget(rt[i]); renderer.clear(); }
   }
   const xf = I.xfade ?? 1.0;
   U.mixK.value = on.length > 1 ? smooth(on[1].t0, on[1].t0 + xf, t) : 0;
   const first = photos[0].t0;
   U.fade.value = smooth(first, first + (I.fadeIn ?? 1.2), t) * (1 - smooth(I.total - (I.fadeOut ?? 1.6), I.total, t));
+  // fondu propre à chaque plan (plans montés séparément)
+  for (const P of on) if (P.fade) U.fade.value *= smooth(P.t0, P.t0 + P.fade, t) * (1 - smooth(P.t1 - P.fade, P.t1, t));
   const f = Math.round(t * FPS);
   U.frame.value = f % 9973;
   // papillotement de projection : doux, irrégulier
   const n = (k) => Math.sin(f * k * 12.9898) * 43758.5453 % 1;
   U.flick.value = 1 + (I.flicker ?? 0.022) * (Math.abs(n(1)) - 0.5) * 2 + 0.01 * Math.sin(t * 2.3);
+  // la photo s'anime : bref souffle de lumière, comme un projecteur qui démarre
+  for (const P of on) if (P.frames) { const d = t - P.t0 - (P.hold ?? 0); U.flick.value *= 1 + 0.08 * Math.exp(-((d - 0.05) / 0.12) ** 2); }
   renderer.setRenderTarget(null);
   renderer.clear();
   renderer.render(scenePost, ortho);
