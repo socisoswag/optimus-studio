@@ -1,0 +1,434 @@
+titre: "Partie I · L'idée : le rêve d'un mot"
+intro: >-
+  But de la partie : comprendre d'où vient le sionisme (une réponse réelle à une persécution réelle) et montrer
+  que, dès le départ, la terre visée est habitée, et que ses habitants le disent. Les deux récits sont posés
+  côte à côte dès 1899, par leurs propres auteurs.
+chapitres:
+
+  - num: "I.0"
+    titre: "Ouverture de la partie I"
+    plans:
+      - type: MD
+        fichier: output/partie-1.mp4
+        entree: 0
+        sortie: 15
+        ecran: "Partie I · L'idée · Le rêve d'un mot, puis le sommaire des chapitres 1 à 6"
+
+  - num: "1"
+    titre: "Chapitre 1 · Sion : un mot, un mythe, un monde"
+    intention: >-
+      Partir du mot, pas du conflit. Montrer que Sion est d'abord une colline, une prière, une nostalgie, et que le
+      passage au projet politique date de 1890. Finir sur la phrase qui porte tout le film : la terre n'est pas vide.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-01.mp4
+        entree: 0
+        sortie: 4.6
+      - type: RÉEL
+        fichier: output/plans-reels/jerusalem-survol-vieille-ville.mp4
+        entree: 2
+        sortie: 16
+        source: "SOURCES.md 4.1, Adobe Stock 622507847"
+        ecran: "carton lieu (à fabriquer) : Jérusalem · aujourd'hui"
+        voix: >-
+          Jérusalem. / Pour les musulmans, al-Quds, la sainte. / Pour les chrétiens, la ville de la Passion. //
+          Et pour les Juifs, depuis des millénaires, une colline porte un nom : / **Sion**.
+        son: "ville au loin, vent doux ; la voix entre sur le premier battement d'ailes de la caméra"
+      - type: MD
+        fichier: output/sion-le-mot.mp4
+        entree: 0
+        sortie: 6.6
+        ecran: "Jérusalem · Al-Quds · Sion · Un mot, un mythe, un monde."
+      - type: MD
+        fichier: output/sion-le-mot.mp4
+        entree: 6.6
+        sortie: 19.1
+        ecran: "La Bible, deuxième livre de Samuel : la forteresse de Sion"
+        voix: >-
+          Dans la Bible, Sion est d'abord une forteresse, / prise par le roi David. / Puis le nom glisse à toute la
+          ville, / et devient le cœur d'une foi.
+      - type: MD
+        fichier: output/sion-le-mot.mp4
+        entree: 19.1
+        sortie: 31.1
+        ecran: "Babylone, vers 586 avant notre ère : Psaume 137"
+        voix: >-
+          En 586 avant notre ère, Babylone détruit Jérusalem / et déporte une partie de ses habitants. //
+          Sion devient le nom de l'exil, / et de la **nostalgie**.
+      - type: MD
+        fichier: output/sion-le-mot.mp4
+        entree: 31.1
+        sortie: 42.1
+        ecran: "Pendant des siècles, la diaspora : un mot d'espérance"
+        voix: >-
+          Pendant des siècles de dispersion, le mot reste une prière : / « L'an prochain à Jérusalem. » //
+          Un espoir religieux, / pas un programme **politique**.
+      - type: MD
+        fichier: output/sion-le-mot.mp4
+        entree: 42.1
+        sortie: 53.6
+        ecran: "Vienne, 1890 : sionisme"
+        voix: >-
+          Puis en 1890, à Vienne, un journaliste, Nathan Birnbaum, invente un mot : / « sionisme ». //
+          L'espérance devient un projet. / Et ce projet a besoin d'une **terre**.
+      - type: MD
+        fichier: output/sion-le-mot.mp4
+        entree: 53.6
+        sortie: 60.6
+        ecran: "De la Bible à 1890 : d'une colline de Jérusalem à un projet politique."
+        voix: >-
+          /// Mais cette terre / n'est pas **vide**.
+        son: "laisser l'impact de la pièce tomber après « vide »"
+      - type: RÉEL
+        fichier: output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4
+        entree: 4
+        sortie: 14
+        source: "SOURCES.md 4.1, Adobe Stock 609005799"
+        son: "respiration : ville au crépuscule, vent ; pas de voix"
+        note: "plan de respiration avant l'Europe"
+
+  - num: "2"
+    titre: "Chapitre 2 · L'Europe en feu : entre antisémitisme et émancipation"
+    intention: >-
+      Le sionisme naît d'une persécution réelle. Le dire franchement, avec les chiffres, pour que le spectateur
+      comprenne ce qui pousse ces gens à partir. Puis montrer qu'ils partent presque tous vers l'Amérique :
+      le sionisme est alors un choix très minoritaire.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-02.mp4
+        entree: 0
+        sortie: 4.6
+      - type: RÉEL
+        fichier: output/plans-reels/medzhybizh-cimetiere-juif-neige.mp4
+        entree: 0
+        sortie: 9.28
+        source: "SOURCES.md 4.1, Adobe Stock 513295332"
+        ecran: "carton lieu (à fabriquer) : Medzhybizh, Ukraine · aujourd'hui"
+        voix: >-
+          Pour comprendre le sionisme, il faut partir d'ici : / l'Europe de l'Est, / où vivent alors la plupart des
+          Juifs du **monde**.
+        son: "vent de neige, corbeaux au loin"
+      - type: MD
+        fichier: output/europe-1881-1914.mp4
+        entree: 0
+        sortie: 6.4
+        ecran: "De 1881 à 1914, Europe : à l'Ouest, l'égalité des droits ; à l'Est, la violence."
+      - type: MD
+        fichier: output/europe-1881-1914.mp4
+        entree: 6.4
+        sortie: 17.0
+        ecran: "De 1791 à 1871, l'Ouest : l'émancipation"
+        voix: >-
+          À l'Ouest, la France fait des Juifs des citoyens dès 1791, / et l'Europe suit. //
+          Dans l'Empire russe, ils restent assignés à une **zone**.
+      - type: MD
+        fichier: output/europe-1881-1914.mp4
+        entree: 17.0
+        sortie: 28.6
+        ecran: "De 1881 à 1906, l'Empire russe : les pogroms (Kichinev 1903 : 49 morts)"
+        voix: >-
+          En 1881, le tsar est assassiné. / Les Juifs sont désignés coupables. // Vagues de **pogroms** : /
+          des quartiers pillés, des familles tuées.
+        son: "les impacts de la pièce portent la violence ; la voix reste basse"
+      - type: MD
+        fichier: output/europe-1881-1914.mp4
+        entree: 28.6
+        sortie: 39.4
+        ecran: "À l'Ouest aussi, Paris, Vienne : l'antisémitisme politique"
+        voix: >-
+          Même à l'Ouest, la haine se modernise. / Elle entre en politique, / et prend un nom : /
+          **antisémitisme**.
+      - type: MD
+        fichier: output/europe-1881-1914.mp4
+        entree: 39.4
+        sortie: 51.8
+        ecran: "De 1881 à 1914, environ 2 400 000 Juifs émigrent"
+        voix: >-
+          Ils sont environ deux millions quatre cent mille à partir. // Presque tous vers l'**Amérique**.
+      - type: MD
+        fichier: output/europe-1881-1914.mp4
+        entree: 51.8
+        sortie: 62.8
+        ecran: "Vers la Palestine, environ 70 000 immigrants juifs"
+        voix: >-
+          Vers la Palestine, environ soixante-dix mille. / Moins de trois sur cent. // À cette époque, le sionisme
+          reste un rêve de **minorité**.
+      - type: MD
+        fichier: output/europe-1881-1914.mp4
+        entree: 62.8
+        sortie: 69.8
+        ecran: "Ils fuient l'Europe, presque tous vers l'Amérique."
+      - type: PHOTO
+        fichier: "data/archives/ds-14863.jpg"
+        duree: 6
+        a_obtenir: true
+        source: "SOURCES.md 2.2, Bibliothèque du Congrès ds 14863 (domaine public)"
+        ecran: "carton : Ellis Island, New York · vers 1907"
+        note: "photo à télécharger (Bibliothèque du Congrès) et à animer en relief comme les autres archives"
+        son: "salle immense, murmures, tampon"
+
+  - num: "3"
+    titre: "Chapitre 3 · L'affaire Dreyfus : fracture française et choc identitaire"
+    intention: >-
+      Une seule scène, racontée comme un choc : la dégradation de 1895. Puis l'innocence, Zola, la réhabilitation.
+      Et dans la foule, Herzl. Pas de leçon : la scène suffit.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-03.mp4
+        entree: 0
+        sortie: 4.6
+      - type: PHOTO
+        fichier: "à télécharger : Le Petit Journal, supplément illustré du 13 janvier 1895 (« Le traître »)"
+        duree: 11
+        a_obtenir: true
+        source: "domaine public (Gallica ou Wikimedia Commons)"
+        ecran: "carton : Paris · 5 janvier 1895"
+        voix: >-
+          Paris, 5 janvier 1895. / Dans la cour de l'École militaire, on arrache ses galons au capitaine Alfred
+          Dreyfus. // La foule crie : / « Mort aux **juifs**. »
+        son: "roulement de tambour militaire au loin, foule ; un seul coup sec sur « juifs »"
+      - type: PHOTO
+        fichier: portraits/dreyfus.png
+        duree: 9
+        source: "SOURCES.md 2.1 (Aron Gerschel, domaine public)"
+        voix: >-
+          Il est innocent. / Le vrai traître est un autre officier, Esterhazy. // Mais Dreyfus est juif, /
+          et cela **suffit**.
+      - type: ARCH
+        fichier: "à télécharger : L'Affaire Dreyfus, film de Georges Méliès (1899)"
+        duree: 10
+        a_obtenir: true
+        source: "domaine public (Méliès, mort en 1938 : domaine public en France depuis 2009)"
+        ecran: "mention : L'Affaire Dreyfus · film de Georges Méliès · 1899 (scène reconstituée à l'époque)"
+        voix: >-
+          Il faudra douze ans, / la lettre de Zola, « J'accuse », / et une France coupée en deux, / pour qu'il soit
+          **réhabilité**, en 1906.
+      - type: PHOTO
+        fichier: portraits/herzl.png
+        duree: 8
+        source: "SOURCES.md 2.1 (Carl Pietzner, domaine public)"
+        voix: >-
+          En 1895, dans la cour de l'École militaire, / il y a un journaliste viennois. // Il s'appelle Theodor
+          **Herzl**.
+        note: "transition vers le chapitre 4 : la voix enchaîne sans pause sur le carton"
+
+  - num: "4"
+    titre: "Chapitre 4 · Theodor Herzl : le prophète du retour"
+    intention: >-
+      Rendre justice à l'idée telle que la voyaient ses partisans (un refuge pour un peuple persécuté), puis montrer
+      ce que Herzl lui-même écrit des habitants de la terre rêvée. Les deux à la suite, sans commentaire appuyé.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-04.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 6.0
+        sortie: 10.4
+        ecran: "fiche de la chronologie : Theodor Herzl"
+        voix: >-
+          En 1896, il publie un petit livre : / « L'État des **Juifs** ».
+      - type: PHOTO
+        fichier: portraits/herzl.png
+        duree: 10
+        source: "SOURCES.md 2.1"
+        ecran: "carton transparent : output/cartons/01-vienne-1896.mov"
+        voix: >-
+          Son idée est simple : / l'antisémitisme ne disparaîtra pas. / Les Juifs doivent avoir un **État**, /
+          reconnu par les grandes puissances.
+      - type: PHOTO
+        fichier: "à télécharger : photo du premier congrès sioniste, Bâle, août 1897"
+        duree: 10
+        a_obtenir: true
+        source: "domaine public (Wikimedia Commons)"
+        ecran: "carton transparent : output/cartons/02-bale-1897.mov"
+        voix: >-
+          Août 1897, à Bâle. / Le premier congrès sioniste fixe le but : / un foyer pour le peuple juif en
+          **Palestine**, / garanti par le droit public.
+        son: "salle, applaudissements lointains, coup de marteau de séance"
+      - type: PHOTO
+        fichier: portraits/herzl.png
+        duree: 11
+        note: "citation à confirmer mot pour mot (journal de Herzl, 3 septembre 1897) par la documentaliste"
+        voix: >-
+          Dans son journal, il écrit : / « À Bâle, j'ai fondé l'État juif. / Peut-être dans cinq ans, / et
+          certainement dans cinquante, / tout le monde le **verra**. »
+      - type: NOIR
+        duree: 5
+        voix: >-
+          Cinquante ans plus tard, / presque jour pour jour, / l'ONU vote le **partage**.
+        son: "silence, un seul battement de cœur grave"
+      - type: PHOTO
+        fichier: portraits/herzl.png
+        duree: 9
+        voix: >-
+          Mais deux ans avant Bâle, en juin 1895, / il note déjà, à propos des habitants du pays qu'il espère
+          obtenir :
+      - type: MD
+        fichier: output/citation-herzl.mp4
+        entree: 0
+        sortie: 13
+        source: "SOURCES.md 6 (journal de Herzl, 12 juin 1895)"
+        ecran: "« Nous tenterons de faire passer discrètement la population sans ressources de l'autre côté de la frontière […] en lui refusant tout travail dans notre propre pays. »"
+        voix: >-
+          (lire lentement, sans effet) « Nous tenterons de faire passer discrètement la population sans ressources
+          de l'autre côté de la frontière, / en lui refusant tout travail dans notre propre pays. »
+      - type: RÉEL
+        fichier: output/plans-reels/jerusalem-remparts-tour-de-david-aerien.mp4
+        entree: 10
+        sortie: 25
+        source: "SOURCES.md 4.1, Adobe Stock 740254300"
+        voix: >-
+          Pour ses partisans, Herzl est un sauveur : / il offre un refuge à un peuple persécuté. // Pour les
+          habitants de la Palestine, / qui n'ont rien demandé, / il ouvre une **dépossession**.
+
+  - num: "5"
+    titre: "Chapitre 5 · Les premiers colons juifs en Palestine"
+    intention: >-
+      Les pionniers ont un vrai idéal (fuir les pogroms, travailler la terre, faire revivre l'hébreu) : le dire.
+      Et montrer la règle qui exclut déjà les Arabes : le « travail hébreu ».
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-05.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/aliyas.mp4
+        entree: 0
+        sortie: 6.5
+        ecran: "De 1882 à 1939, aliyas : les « montées »"
+      - type: MD
+        fichier: output/aliyas.mp4
+        entree: 6.5
+        sortie: 17.0
+        ecran: "De 1882 à 1914, Russie, Roumanie : les premières colonies (55 000 à 75 000 personnes)"
+        voix: >-
+          Les premiers arrivent dès 1882, de Russie et de Roumanie. / Ils fondent des colonies agricoles, /
+          souvent financées par le baron Edmond de **Rothschild**.
+        note: "la suite de la pièce (1919 à 1945) sert au chapitre 8"
+      - type: RÉEL
+        fichier: output/plans-reels/recolte-des-olives-a-la-main.mp4
+        entree: 0
+        sortie: 11.4
+        source: "SOURCES.md 4.1, Adobe Stock 259921414 (lieu non précisé : aucune légende de lieu)"
+        voix: >-
+          La deuxième vague, après 1904, est différente. / De jeunes socialistes rêvent d'un Juif nouveau, /
+          paysan sur sa terre, / qui parle l'hébreu **ressuscité**.
+      - type: PHOTO
+        fichier: "data/archives/12172.jpg"
+        duree: 10
+        a_obtenir: true
+        source: "SOURCES.md 2.2, Bibliothèque du Congrès matpc 12172 (domaine public)"
+        ecran: "carton : Près de Jérusalem · entre 1898 et 1946"
+        note: "photo à télécharger (laboureur et ses bœufs, Jérusalem au fond) et à animer en relief"
+        voix: >-
+          Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, /
+          et les ouvriers arabes sont écartés.
+      - type: RÉEL
+        fichier: output/plans-reels/jaffa-clocher-vieille-ville-aerien.mp4
+        entree: 0
+        sortie: 10
+        source: "SOURCES.md 4.1, Adobe Stock 390879149"
+        ecran: "carton lieu (à fabriquer) : Jaffa · aujourd'hui"
+        voix: >-
+          En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la
+          ville arabe.
+
+  - num: "6"
+    titre: "Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface"
+    intention: >-
+      Le chapitre clé de la partie. Montrer un pays vivant, nommé, habité ; puis l'échange de 1899 entre Youssouf
+      Diya al-Khalidi et Herzl, chacun avec ses propres mots ; puis les premiers conflits pour la terre ; et la voix
+      d'un sioniste lucide, Ahad Ha'am. Finir sur la guerre de 1914.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-06.mp4
+        entree: 0
+        sortie: 4.6
+      - type: ARCH
+        fichier: "output/archives-filmees/1897-porte-de-jaffa-lumiere (nom définitif à confirmer)"
+        duree: 10
+        a_obtenir: true
+        source: "SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine public)"
+        ecran: "carton : Jérusalem · avril 1897 · film des frères Lumière"
+        voix: >-
+          Jérusalem, 1897. / Les frères Lumière filment la porte de Jaffa. // Voilà le pays que Bâle, la même année,
+          choisit pour **foyer**.
+      - type: PHOTO
+        fichier: output/archives-vivantes.mp4
+        entree: 3.2
+        sortie: 10.4
+        source: "SOURCES.md 2.2, matpc 06520 (Jaffa vue des orangeraies, entre 1898 et 1914)"
+        ecran: "déjà dans la pièce : Entre 1898 et 1914 · Jaffa"
+        voix: >-
+          Un pays de villages et de villes anciennes. / Jaffa exporte ses **oranges** dans le monde entier.
+      - type: IA
+        fichier: output/reconstitutions/1-1-orangeraies-jaffa.mp4
+        entree: 0
+        sortie: 12
+        source: "SOURCES.md 4 (Google Veo, d'après matpc 06520)"
+        ecran: "mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
+        voix: >-
+          Musulmans, chrétiens et juifs y vivent depuis des siècles, / sous l'autorité de l'Empire **ottoman**.
+      - type: PHOTO
+        fichier: output/archives-vivantes.mp4
+        entree: 9.4
+        sortie: 16.6
+        source: "SOURCES.md 2.2, matpc 04992 (le port de Jaffa)"
+        note: "chiffres de population à confirmer (Justin McCarthy, 1990 ; recensement ottoman) par la documentaliste"
+        voix: >-
+          Vers 1914, la Palestine compte environ sept cent mille habitants. / Moins d'un sur dix est **juif**.
+      - type: IA
+        fichier: output/reconstitutions/2-2-quai-jaffa.mp4
+        entree: 0
+        sortie: 10.2
+        source: "SOURCES.md 4 (Google Veo, d'après matpc 04992)"
+        ecran: "mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
+        voix: >-
+          Le pays n'est pas vide. / Il a un nom, des villes, des paysans, / et bientôt des journaux qui
+          s'**inquiètent**.
+      - type: PHOTO
+        fichier: "à télécharger : portrait de Youssouf Diya al-Khalidi (domaine public)"
+        duree: 16
+        a_obtenir: true
+        note: "citation à confirmer mot pour mot (lettre du 1er mars 1899) par la documentaliste"
+        voix: >-
+          En 1899, un ancien maire de Jérusalem, Youssouf Diya al-Khalidi, écrit à Herzl. / Il reconnaît les
+          souffrances des Juifs, / mais il prévient : la Palestine est habitée. // « Au nom de Dieu, /
+          qu'on laisse la Palestine en **paix**. »
+        son: "plume sur le papier, salle silencieuse"
+      - type: PHOTO
+        fichier: portraits/herzl.png
+        duree: 15
+        note: "réponse de Herzl du 19 mars 1899 à confirmer mot pour mot"
+        voix: >-
+          Herzl répond poliment. / Les habitants, écrit-il, profiteront de l'arrivée des Juifs : / qui songerait à
+          les chasser ? // Quatre ans plus tôt, dans son journal, / il envisageait de les faire passer la
+          **frontière**.
+      - type: RÉEL
+        fichier: output/plans-reels/figuier-de-barbarie-sabr.mp4
+        entree: 0
+        sortie: 11.7
+        source: "SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé : aucune légende de lieu)"
+        note: "faits d'al-Fula (1910-1911) et des journaux Filastin et al-Karmil à confirmer par la documentaliste"
+        voix: >-
+          Dès 1910, de grandes familles vendent leurs terres. / À al-Fula, les paysans sont **expulsés**. //
+          À Jaffa et à Haïfa, des journaux arabes s'alarment.
+      - type: PHOTO
+        fichier: "à télécharger : portrait d'Ahad Ha'am (domaine public)"
+        duree: 12
+        a_obtenir: true
+        note: "texte exact d'Ahad Ha'am (Vérité de la terre d'Israël, 1891) à confirmer par la documentaliste"
+        voix: >-
+          Même parmi les sionistes, certains voient le danger. / Dès 1891, le penseur Ahad Ha'am écrit : /
+          on croit là-bas que la terre est déserte. / C'est **faux**.
+      - type: RÉEL
+        fichier: output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4
+        entree: 10
+        sortie: 26
+        source: "SOURCES.md 4.1, Adobe Stock 609005799"
+        voix: >-
+          En 1914, la guerre éclate. / L'Empire ottoman va s'effondrer, / et trois promesses contradictoires vont
+          être faites sur la même **terre**. ///
+        son: "la nuit tombe sur la ville ; montée lente vers l'ouverture de la partie II"

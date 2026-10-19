@@ -1,0 +1,26 @@
+titre: "Ouverture : intro aérienne et générique"
+intro: >-
+  Pas de voix dans l'ouverture : le spectateur entre par l'image et le son. Le titre SION, en trois écritures,
+  dit tout seul ce que le film va raconter.
+chapitres:
+  - num: "O"
+    titre: "Ouverture"
+    intention: >-
+      Cinq secondes de noir, puis la Terre la nuit, la descente jusqu'à la Méditerranée, les monts de Judée,
+      la mer Morte, et le titre. Aucun mot : on installe le lieu avant l'histoire.
+    plans:
+      - type: NOIR
+        duree: 2
+        son: "silence complet, puis le grondement très grave de l'espace qui monte"
+      - type: 3D
+        fichier: output/intro-aerienne.mp4
+        entree: 0
+        sortie: 84
+        ecran: "altitudes, lieux (Mer Méditerranée, Monts de Judée, Désert de Judée), titre SION · ציון · صهيون"
+        son: "bande-son de la pièce (déjà mixée, pistes séparées dans le dossier son)"
+        note: "étalonnée plan par plan (look terre et terre dure à partir des monts de Judée)"
+      - type: MD
+        fichier: output/generique.mp4
+        entree: 0
+        sortie: 34.6
+        ecran: "générique d'ouverture"
