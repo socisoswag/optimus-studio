@@ -120,6 +120,10 @@ if opt.get("timeline"):
         for a, b, v in spans(lambda f: "flou" if f["mag"] > 5 else ""):
             mx = max(f["mag"] for f in q["frames"] if a <= f["t"] <= b)
             warn.append(f"sol trop agrandi de {a:.1f} à {b:.1f} s (jusqu'à {mx} px par pixel satellite : image floue de près)")
+        due = {n for f in q["frames"] for n in f.get("due", [])}
+        shown = {n for f in q["frames"] for n in f.get("shown", [])}
+        for n in sorted(due - shown):
+            bad.append(f"le nom « {n} » est programmé mais n'apparaît jamais à l'écran")
         qa_lines.append(f"textes et netteté : {len(q['frames'])} instants contrôlés")
     else:
         qa_lines.append("textes et netteté : la page ne propose pas de contrôle (regarder la planche)")

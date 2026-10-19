@@ -1010,6 +1010,19 @@ function pins(s, tl, c) {
     p.el.style.opacity = vis.toFixed(3);
     if (vis <= 0) continue;
     const sx = (v.x * 0.5 + 0.5) * W, sy = (1 - (v.y * 0.5 + 0.5)) * H;
+    // le nom s'efface près des bords de l'image (ou des bandes cinéma) et des autres textes : jamais coupé, jamais par-dessus
+    const nm = p.el.querySelector('.nm'), hw = (nm.offsetWidth || 160) / 2, top = sy - 72 - (nm.offsetHeight || 34);
+    const lbT = FX.letterbox ? H / 2 - W / FX.letterbox / 2 : 0;
+    vis *= smooth(50, 130, sx - hw) * smooth(50, 130, W - sx - hw) * smooth(lbT + 40, lbT + 110, top) * smooth(lbT + 10, lbT + 60, H - sy - 8);
+    for (const [o, el] of [[HUD, HUD.querySelector('.box')], ...shots.filter((x) => x.labelEl).map((x) => [x.labelEl, x.labelEl])]) {
+      const k = +(o.style.opacity || 0);
+      if (k < 0.05) continue;
+      const r = el.getBoundingClientRect();
+      const dx = Math.min(sx + hw, r.right + 28) - Math.max(sx - hw, r.left - 28), dy = Math.min(sy - 72, r.bottom + 28) - Math.max(top, r.top - 28);
+      if (dx > 0 && dy > 0) vis *= 1 - smooth(0, 36, Math.min(dx, dy)) * Math.min(1, k * 2);
+    }
+    if (outroEl) vis *= 1 - Math.min(1, 2 * (+(outroEl.style.opacity || 0)));
+    p.el.style.opacity = vis.toFixed(3);
     p.el.style.transform = `translate(${sx.toFixed(1)}px, ${sy.toFixed(1)}px)`;
     p.el.querySelector('.ln').style.height = `${(lerp(0, 64, smooth(p.at, p.at + 0.7, tl))).toFixed(1)}px`;
   }
@@ -1017,6 +1030,7 @@ function pins(s, tl, c) {
 
 function renderFrame(t) {
   const s = shotAt(t), tl = t - s.t0;
+  updateText(t);
   if (s.type === 'space') { QA_CAM = null; pins(s, tl, { x: 0, y: 0, z: 1e9 }); return finish(t, renderSpace(t, s, tl)); }
   gauge(s, tl);
   const c = camAt(s, s.warp ? s.warp(tl) : tl);
@@ -1141,7 +1155,8 @@ function groundMag() { // pixels d'écran par pixel satellite (10 m) au bas de l
   const { x, y, z, hdg, pitch, fov } = QA_CAM, th = rad(-pitch + fov / 2), dpx = rad(fov) / H;
   for (let r = 50; r < 60000; r += 25) {
     const d = r * Math.cos(th), gz = z - r * Math.sin(th);
-    if (gz <= heightAt(x + d * Math.sin(rad(hdg)), y + d * Math.cos(rad(hdg)))) return 10 / (r * dpx);
+    const gh = heightAt(x + d * Math.sin(rad(hdg)), y + d * Math.cos(rad(hdg)));
+    if (gz <= gh) return Math.abs(gh) < 1 || Math.abs(gh + 411.8) < 1 ? 0 : 10 / (r * dpx);
   }
   return 0;
 }
@@ -1167,7 +1182,10 @@ window.qa = async (t) => {
       if (ix > 4 && iy > 4) over.push(`${boxes[i].group} / ${boxes[j].group}`);
     }
   }
-  return { t, over, out, mag: Math.round(groundMag() * 10) / 10 };
+  // noms programmés à cet instant : à l'écran ou non
+  const s = shotAt(t), due = (s.pins || []).filter((p) => t - s.t0 >= p.at + 0.6 && t - s.t0 <= p.out).map((p) => p.name);
+  const shown = boxes.filter((b) => b.group.startsWith('nom ')).map((b) => b.name);
+  return { t, over, out, mag: Math.round(groundMag() * 10) / 10, due, shown };
 };
 window.TOTAL = I.total;
 window.renderFrame = renderFrame;

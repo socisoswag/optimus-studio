@@ -78,9 +78,9 @@
         label: { at: 3.2, eyebrow: '32°02′ N · 34°41′ E', place: 'Mer Méditerranée', sub: 'Au large de Jaffa' },
         pins: [{ name: 'Jaffa', lon: 34.7525, lat: 32.0540, at: 5.4, out: 10.6, h: 40 }],
         keys: [
-          { t: 0, lon: 34.668, lat: 32.031, alt: 640, hdg: 103, pitch: -5.5 },
-          { t: 7, lon: 34.678, lat: 32.029, alt: 590, hdg: 102.4, pitch: -5.0 },
-          { t: 14.6, lon: 34.689, lat: 32.026, alt: 540, hdg: 101.6, pitch: -4.4 },
+          { t: 0, lon: 34.668, lat: 32.031, alt: 640, hdg: 90, pitch: -5.5 },
+          { t: 7, lon: 34.678, lat: 32.029, alt: 590, hdg: 89.4, pitch: -5.0 },
+          { t: 14.6, lon: 34.689, lat: 32.026, alt: 540, hdg: 88.6, pitch: -4.4 },
         ],
       },
       {

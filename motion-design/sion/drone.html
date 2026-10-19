@@ -29,7 +29,7 @@
   /* titre du film, comme dans le générique */
   #title { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; isolation: isolate; }
   #title::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 58% 52% at 50% 52%, rgba(14,11,8,.46) 0%, rgba(14,11,8,.22) 55%, rgba(14,11,8,0) 100%); z-index: -1; }
-  .lab::before { content: ''; position: absolute; left: -140px; right: -220px; top: -90px; bottom: -80px; background: radial-gradient(closest-side, rgba(14,11,8,.5) 0%, rgba(14,11,8,.28) 55%, rgba(14,11,8,0) 100%); z-index: -1; }
+  .lab::before { content: ''; position: absolute; left: -112px; bottom: -112px; width: 1150px; height: 600px; background: radial-gradient(ellipse 100% 100% at 0% 100%, rgba(10,8,6,.52) 0%, rgba(10,8,6,.28) 45%, rgba(10,8,6,0) 100%); z-index: -1; }
   #title .big { font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 860; font-size: 430px; line-height: .86; letter-spacing: .09em; padding-left: .14em; text-transform: uppercase; white-space: nowrap; text-shadow: 0 6px 60px rgba(0,0,0,.35); }
   #title .big .ch { display: inline-block; }
   #title .scripts { display: flex; align-items: center; justify-content: center; gap: 46px; margin-top: 4px; }
@@ -40,10 +40,10 @@
   #title .text { margin-top: 34px; font-family: var(--serif); font-style: italic; font-variation-settings: 'opsz' 36; font-size: 54px; color: rgba(233,220,192,.94); text-shadow: 0 2px 24px rgba(0,0,0,.5); }
   #title .text .w { display: inline-block; white-space: pre; }
   /* altimètre de la descente depuis l'espace */
-  #hud { opacity: 0; }
+  #hud { opacity: 0; isolation: isolate; }
+  #hud::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 48% at 100% 0%, rgba(10,8,6,.72) 0%, rgba(10,8,6,.42) 45%, rgba(10,8,6,0) 100%); z-index: -1; }
   #hud .box { position: absolute; isolation: isolate; right: 112px; top: 96px; text-align: right; font-family: var(--mono); text-transform: uppercase; text-shadow: 0 0 2px rgba(0,0,0,.55), 0 1px 5px rgba(0,0,0,.5), 0 1px 16px rgba(0,0,0,.6); }
   /* fond sombre adouci : lisible même sur le sable clair (Gaza, désert) */
-  #hud .box::before { content: ''; position: absolute; left: -230px; right: -230px; top: -120px; bottom: -110px; background: radial-gradient(closest-side, rgba(14,11,8,.5) 0%, rgba(14,11,8,.32) 50%, rgba(14,11,8,0) 100%); z-index: -1; }
   #hud .k { display: flex; justify-content: flex-end; align-items: center; gap: 14px; font-size: 17px; letter-spacing: .28em; color: var(--hot); }
   #hud .k::after { content: ''; width: 44px; height: 2px; background: var(--ember); box-shadow: 0 0 12px rgba(var(--ember-rgb),.6); }
   #hud .v { margin-top: 10px; font-size: 54px; letter-spacing: .04em; color: var(--stone); font-variant-numeric: tabular-nums; }
@@ -52,8 +52,7 @@
   .pin { position: absolute; left: 0; top: 0; opacity: 0; }
   .pin .dot { position: absolute; left: -5px; top: -5px; width: 10px; height: 10px; border-radius: 50%; background: var(--hot); box-shadow: 0 0 0 4px rgba(var(--ember-rgb),.25), 0 0 16px rgba(var(--ember-rgb),.9); }
   .pin .ln { position: absolute; left: -1px; bottom: 0; width: 2px; height: 0; background: linear-gradient(0deg, var(--ember), rgba(var(--ember-rgb),0)); }
-  .pin .nm { position: absolute; isolation: isolate; left: 0; bottom: 72px; transform: translateX(-50%); font-family: var(--mono); font-size: 19px; letter-spacing: .3em; text-transform: uppercase; color: var(--stone); white-space: nowrap; text-shadow: 0 0 2px rgba(0,0,0,.7), 0 1px 5px rgba(0,0,0,.6), 0 1px 12px rgba(0,0,0,.7); }
-  .pin .nm::before { content: ''; position: absolute; left: -36px; right: -30px; top: -18px; bottom: -18px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(14,11,8,.55) 0%, rgba(14,11,8,0) 100%); z-index: -1; }
+  .pin .nm { position: absolute; isolation: isolate; left: 0; bottom: 72px; transform: translateX(-50%); font-family: var(--mono); font-size: 19px; letter-spacing: .3em; text-transform: uppercase; color: var(--stone); white-space: nowrap; background: rgba(12,10,8,.64); padding: 6px 8px 5px 14px; border-bottom: 2px solid rgba(var(--ember-rgb),.9); box-shadow: 0 2px 14px rgba(0,0,0,.22); text-shadow: 0 1px 3px rgba(0,0,0,.6); }
   /* texte de fin, au centre */
   #outro { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; isolation: isolate; }
   #outro::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 45% at 50% 50%, rgba(8,7,6,.5) 0%, rgba(8,7,6,0) 100%); z-index: -1; }
@@ -65,6 +64,7 @@
   #outro .w.num { font-variant-numeric: tabular-nums; }
   /* bandes cinéma (INTRO.fx.letterbox) : les textes restent dans l'image */
   .lb .lab { bottom: 176px; }
+  .lb .lab::before { bottom: -176px; height: 664px; }
   .lb #hud .box { top: 172px; }
   .notext .lab, .notext #title, .notext #hud, .notext #pins, .notext #outro { display: none; }
 </style>
