@@ -31,6 +31,7 @@ Trois règles :
   - Yitzhak Rabin : Yaakov Saar · CC BY-SA 3.0
   - Ariel Sharon : IPPA, collection Dan Hadani, Bibliothèque nationale d'Israël · CC BY 4.0
   - Chaïm Weizmann : Hugo Mendelson · CC BY-SA 3.0
+  - Mahmoud Darwich : UmmNuniya · CC BY-SA 4.0
   - Cheikh Ahmed Yassine : Yonathan Torgovnik, unité du porte-parole de l'armée israélienne · CC BY-SA 3.0
 
 ---
@@ -74,6 +75,7 @@ Restaurés, détourés et mis en noir et blanc pour le film. Le nom de fichier e
 | Mark Sykes | auteur inconnu | domaine public | Mark Sykes00.jpg |
 | Chaïm Weizmann | Hugo Mendelson | CC BY-SA 3.0 | Flickr - Government Press Office (GPO) - President Chaim Weizmann (retouched).jpg |
 | Cheikh Ahmed Yassine | Yonathan Torgovnik, unité du porte-parole de l'armée israélienne | CC BY-SA 3.0 | Military trial of Ahmed Yassin, March 1990 I (cropped1).jpg |
+| Mahmoud Darwich | UmmNuniya | CC BY-SA 4.0 | (portrait utilisé dans la citation « Sur cette terre ») |
 
 ### 2.2 Photos d'archive de la Palestine (Bibliothèque du Congrès)
 

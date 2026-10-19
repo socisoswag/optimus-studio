@@ -78,21 +78,33 @@
       ],
     },
     {
-      h: 'Cartographie',
-      lines: [['Natural Earth', 'domaine public'], ['OCHA · HDX', 'zones des accords d’Oslo, tracé du mur, janvier 2018'], ['Autorité palestinienne', 'ministère du Plan'],
-        ['Relief SRTM · NASA', 'domaine public'], ['Blue Marble, Black Marble · NASA', 'domaine public'],
-        ['Copernicus Sentinel-2 · ESA', 'Contains modified Copernicus Sentinel data 2025']],
+      h: 'Photographies d’archive',
+      lines: [['G. Eric and Edith Matson Photograph Collection', 'Bibliothèque du Congrès · no known restrictions'],
+        ['Immigrants juifs à Ellis Island, vers 1907', 'Bibliothèque du Congrès'],
+        ['Carte des Nations unies n° 103.1(b), 1947', 'domaine public']],
+    },
+    {
+      h: 'Images animées et reconstitutions',
+      lines: [['Photos d’archive animées par IA', 'Google Veo · Kling'], ['Scène du vote de 1947', 'reconstituée par IA'],
+        ['Archives en relief', 'Depth Anything V2 · Apache 2.0'], ['Survols en 3D', 'reconstitués à partir d’images satellite réelles']],
+    },
+    {
+      h: 'Cartographie et images satellite',
+      lines: [['Natural Earth', 'domaine public'], ['OCHA · HDX', 'zones des accords d’Oslo, tracé du mur, janvier 2018 · CC BY'], ['Autorité palestinienne', 'ministère du Plan'],
+        ['Relief SRTM · NASA · GEBCO', 'domaine public'], ['Blue Marble, Black Marble · NASA', 'domaine public'],
+        ['Wikidata', 'villages palestiniens dépeuplés, localités de 1947 · CC0'],
+        ['Copernicus Sentinel-2 · ESA', 'Contains modified Copernicus Sentinel data 2023, 2025']],
     },
     {
       h: 'Polices de caractères',
-      lines: [['Archivo · Newsreader · DM Mono', 'SIL Open Font License'], ['Noto Sans Hebrew · Noto Kufi Arabic', 'SIL Open Font License']],
+      lines: [['Archivo · Newsreader · DM Mono · Courier Prime', 'SIL Open Font License'], ['Noto Sans Hebrew · Noto Kufi Arabic', 'SIL Open Font License']],
     },
     { lines: ['À la mémoire de toutes les victimes.'] },
     { big: 'SION', lines: ['L’idée, la terre, le choc'] },
   ];
   const segments = [
     {
-      id: 'roll', type: 'roll', dur: 62.0, fly: 1.5, hitAt: 0, hold: 5.0, sections,
+      id: 'roll', type: 'roll', dur: 68.0, fly: 1.5, hitAt: 0, hold: 5.0, sections,
       cam: { lon: 35.0, lat: 32.3, w: 0.13, pitch: 40, bearing: -8 },
       camEnd: { lon: 35.15, lat: 31.6, w: 0.1, pitch: 50, bearing: 6 },
     },
