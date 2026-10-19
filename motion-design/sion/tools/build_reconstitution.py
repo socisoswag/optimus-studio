@@ -12,7 +12,7 @@
    (ressemblance de chaque image du clip avec la photo, deux fois par seconde) :
    - le clip anime vraiment la photo : elle reste figée 1,4 s le temps que la légende arrive, s'anime, se fige
      0,6 s sur sa dernière image ; mention « Photo d'archive animée par IA » ;
-   - le clip réinvente la scène : la vraie photo d'abord (mention « Photo d'archive »), puis fondu vers le clip
+   - le clip réinvente la scène : la vraie photo d'abord, 2,6 s (mention « Photo d'archive »), puis fondu vers le clip
      (mention « Reconstitution par IA, d'après une photo d'archive ») ; si le clip part de la photo puis change
      de scène, ce passage est coupé ;
    - sans photo de départ (le vote) : « Scène reconstituée par IA ».
@@ -38,6 +38,7 @@ MANUEL = dict(x.split("=", 1) for x in sys.argv[2:] if "=" in x)
 LEG = json.load(open(os.path.join(ROOT, "data", "reconstitution-legendes.json")))
 REF = {os.path.splitext(os.path.basename(f))[0]: f for f in glob.glob(os.path.join(ROOT, "output", "reconstitution", "*.jpg"))}
 FPS, HOLD, FREEZE, FADE = 25, 1.4, 0.6, 0.35
+PHOTO = 2.6  # la vraie photo, seule à l'écran avant le fondu vers la reconstitution
 
 
 def sig(img):
@@ -112,7 +113,7 @@ for name in order:
         # la photo elle-même, animée : figée sur sa première image, elle s'anime, se fige sur la dernière
         dur = HOLD + n / FPS + FREEZE
         photos.append({"id": name, "t0": round(t, 3), "t1": round(t + dur, 3), "fade": FADE, "hold": HOLD, **clip, **lab,
-                       "out": max(1.0, dur - 5.2), "credit": f"Photo d’archive animée par IA · {src}"})
+                       "out": max(1.0, dur - 5.2), "credit": f"Photo d’archive animée par IA\n{src}"})
         t += dur
         mode = "photo animée"
     elif name in refs:
@@ -123,15 +124,15 @@ for name in order:
         still = os.path.join(tmp, name + "-photo")
         os.makedirs(still, exist_ok=True)
         Image.open(REF[name]).convert("RGB").save(os.path.join(still, "0001.jpg"), quality=95)
-        photos.append({"id": name + "-photo", "t0": round(t, 3), "t1": round(t + HOLD + XF, 3), "fadeIn": FADE,
+        photos.append({"id": name + "-photo", "t0": round(t, 3), "t1": round(t + PHOTO + XF, 3), "fadeIn": FADE,
                        "frames": {"dir": f"output/reconstitution/images/{name}-photo", "n": 1, "fps": FPS},
                        "from": {"cx": 0.5, "cy": 0.5, "w": 1.0, "focus": 0.5}, "to": {"cx": 0.5, "cy": 0.5, "w": 0.985, "focus": 0.5},
-                       **lab, "out": -4.0, "credit": f"Photo d’archive · {src}"})
+                       **lab, "out": -4.0, "credit": f"Photo d’archive\n{src}"})
         clip["frames"]["start"] = round(start, 2)
         cd = (n - start * FPS) / FPS + FREEZE
-        photos.append({"id": name, "t0": round(t + HOLD, 3), "t1": round(t + HOLD + cd, 3), "fadeOut": FADE, "hold": 0, **clip,
-                       "credit": f"Reconstitution par IA, d’après une photo d’archive · {src}"})
-        t += HOLD + cd
+        photos.append({"id": name, "t0": round(t + PHOTO, 3), "t1": round(t + PHOTO + cd, 3), "fadeOut": FADE, "hold": 0, **clip,
+                       "credit": f"Reconstitution par IA, d’après une photo d’archive\n{src}"})
+        t += PHOTO + cd
         mode = f"reconstitution d'après la photo (clip pris à partir de {start:.1f} s)"
     else:
         # sans photo de départ (la scène du vote)

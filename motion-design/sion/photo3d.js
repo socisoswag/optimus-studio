@@ -270,7 +270,9 @@ function updateText(t) {
   const cur = photos.find((P) => t >= P.t0 && t < P.t1);
   if (cur && cur.credit) { // mention propre au plan (photo animée par IA, scène reconstituée)
     if (creditEl.textContent !== cur.credit) creditEl.textContent = cur.credit;
-    creditEl.style.opacity = (0.9 * smooth(cur.t0 + 0.5, cur.t0 + 1.1, t) * (1 - smooth(cur.t1 - 1.0, cur.t1 - 0.4, t))).toFixed(3);
+    // pendant un fondu, la mention du plan précédent reste jusqu'au bout : la nouvelle arrive après, sans saut
+    const c0 = Math.max(cur.t0, ...photos.filter((P) => P !== cur && P.t0 < cur.t0 && P.t1 > cur.t0).map((P) => P.t1 - 0.2));
+    creditEl.style.opacity = (0.9 * smooth(c0 + 0.5, c0 + 1.1, t) * (1 - smooth(cur.t1 - 1.0, cur.t1 - 0.4, t))).toFixed(3);
   } else if (I.credit) {
     if (creditEl.textContent !== I.credit.text) creditEl.textContent = I.credit.text;
     creditEl.style.opacity = (0.9 * smooth(I.credit.at, I.credit.at + 1, t) * (1 - smooth(I.credit.out, I.credit.out + 1, t))).toFixed(3);
