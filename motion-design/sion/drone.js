@@ -1017,7 +1017,7 @@ function pins(s, tl, c) {
 
 function renderFrame(t) {
   const s = shotAt(t), tl = t - s.t0;
-  if (s.type === 'space') { pins(s, tl, { x: 0, y: 0, z: 1e9 }); return finish(t, renderSpace(t, s, tl)); }
+  if (s.type === 'space') { QA_CAM = null; pins(s, tl, { x: 0, y: 0, z: 1e9 }); return finish(t, renderSpace(t, s, tl)); }
   gauge(s, tl);
   const c = camAt(s, s.warp ? s.warp(tl) : tl);
   const wa = (s.wobble ?? 1);
@@ -1030,6 +1030,7 @@ function renderFrame(t) {
   camera.fov = s.fov || I.fov || 38;
   camera.updateProjectionMatrix();
   camera.updateMatrixWorld();
+  QA_CAM = { x: c.x, y: c.y, z: c.z, hdg, pitch, fov: camera.fov };
   const E = s.env;
   const sd = sunVec(s.sun);
   for (const m of [terrainMat, skyMat]) {
@@ -1132,6 +1133,42 @@ function finish(t, o) {
   return new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
 }
 
+// ------------------------------------------------------------------ contrôle qualité (node render.mjs --qa 0.5, tools/verif_video.py)
+// textes qui se chevauchent, textes hors de la zone sûre ou dans les bandes, sol trop agrandi (image floue de près)
+let QA_CAM = null;
+function groundMag() { // pixels d'écran par pixel satellite (10 m) au bas de l'image, au centre
+  if (!QA_CAM) return 0;
+  const { x, y, z, hdg, pitch, fov } = QA_CAM, th = rad(-pitch + fov / 2), dpx = rad(fov) / H;
+  for (let r = 50; r < 60000; r += 25) {
+    const d = r * Math.cos(th), gz = z - r * Math.sin(th);
+    if (gz <= heightAt(x + d * Math.sin(rad(hdg)), y + d * Math.cos(rad(hdg)))) return 10 / (r * dpx);
+  }
+  return 0;
+}
+window.qa = async (t) => {
+  await renderFrame(t);
+  const seen = (el) => { for (let e = el; e && e !== document.body; e = e.parentElement) if (+getComputedStyle(e).opacity < 0.35 || getComputedStyle(e).display === 'none') return false; return true; };
+  const boxes = [];
+  const add = (group, name, el) => { if (el && seen(el)) { const r = el.getBoundingClientRect(); if (r.width > 0) boxes.push({ group, name, r }); } };
+  document.querySelectorAll('.lab').forEach((el) => add('légende', el.querySelector('.place')?.textContent || '', el));
+  document.querySelectorAll('.pin').forEach((el) => add('nom ' + el.querySelector('.nm')?.textContent, el.querySelector('.nm')?.textContent, el.querySelector('.nm')));
+  add('altimètre', 'hud', document.querySelector('#hud .box'));
+  document.querySelectorAll('#outro .ln').forEach((el, i) => add('chiffres', 'outro ' + i, el));
+  add('titre', 'titre', document.querySelector('#title .big'));
+  add('titre', 'sous-titre', document.querySelector('#title .text'));
+  const over = [], out = [];
+  const top = FX.letterbox ? H / 2 - (W / FX.letterbox) / 2 : 54, bot = H - top;
+  for (let i = 0; i < boxes.length; i++) {
+    const a = boxes[i].r;
+    if (a.left < 60 || a.right > W - 60 || a.top < top || a.bottom > bot) out.push(boxes[i].group);
+    for (let j = i + 1; j < boxes.length; j++) {
+      if (boxes[i].group === boxes[j].group) continue;
+      const b = boxes[j].r, ix = Math.min(a.right, b.right) - Math.max(a.left, b.left), iy = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
+      if (ix > 4 && iy > 4) over.push(`${boxes[i].group} / ${boxes[j].group}`);
+    }
+  }
+  return { t, over, out, mag: Math.round(groundMag() * 10) / 10 };
+};
 window.TOTAL = I.total;
 window.renderFrame = renderFrame;
 window.camHeight = (lon, lat) => heightAt(...toXY(lon, lat));

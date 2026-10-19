@@ -71,7 +71,15 @@ const ALPHA = !!args.alpha; // --alpha : fond transparent, vidéo MOV (codec PNG
 const NOTEXT = !!args.notext; // --notext : sans légendes ni chiffres (pour poser une voix off), les mentions sur la carte restent
 
 try {
-  if (args.stills) {
+  if (args.qa) {
+    // contrôle qualité : la page dit, image par image, ce qui ne va pas (window.qa, si elle le propose)
+    const page = await openPage(browser, port);
+    const total = await page.evaluate(() => window.TOTAL);
+    const hasQa = await page.evaluate(() => typeof window.qa === 'function');
+    const res = [];
+    if (hasQa) for (let t = 0.2; t < total; t += parseFloat(args.qa)) res.push(await page.evaluate((x) => window.qa(x), t));
+    console.log(JSON.stringify({ total, qa: hasQa, frames: res }));
+  } else if (args.stills) {
     const out = args.out || path.join(ROOT, 'stills');
     fs.mkdirSync(out, { recursive: true });
     const page = await openPage(browser, port);
