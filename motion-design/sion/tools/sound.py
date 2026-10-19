@@ -20,6 +20,7 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bruitages as BR  # noqa: E402
+import pistes as PI  # noqa: E402
 
 SR = 48000
 REEL = os.environ.get("SYNTH", "0") != "1"
@@ -37,6 +38,7 @@ t = np.arange(N) / SR
 rng = np.random.default_rng(1948)
 L = np.zeros(N)
 R = np.zeros(N)
+PST = PI.Pistes(N)  # une piste par famille de sons, pour le montage son (Premiere, AAF)
 
 
 # ------------------------------------------------------------------ outils
@@ -96,6 +98,7 @@ def add(sig, start, gain=1.0, pan=0.0):
         return
     L[i0:i0 + n] += gain * l[:n]
     R[i0:i0 + n] += gain * r[:n]
+    PST.ajoute(i0, gain * l[:n], gain * r[:n])
 
 
 # réverbération : réponse impulsionnelle synthétique, décorrélée gauche/droite
@@ -221,6 +224,7 @@ else:
     crl = crack * bed * bed_in * 0.09
     add((crl, np.roll(crl, int(0.021 * SR))), 0, 1.0)
 
+PST("bruitages")
 # ------------------------------------------------------------------ tic-tac (le temps qui passe)
 tick_start, tick_end = SND.get("ticks") or (0.0, -1.0)
 tk = 0
@@ -265,6 +269,7 @@ def whoosh(dur, big=False):
     return out * tail / (np.abs(out).max() + 1e-9)
 
 
+PST("souffles")
 for fl in cues["flights"]:
     if fl["dur"] <= 0:
         continue
@@ -282,6 +287,7 @@ for fl in cues["flights"]:
     g = 0.5 if fl["big"] else 0.36
     add((s * gl + 0.5 * sub, s * gr + 0.5 * sub), fl["t0"], g)
 
+PST("bruitages")
 # ------------------------------------------------------------------ flux humains : rumeur de foule, pas, poussière
 for fl in cues.get("flows", []):
     dur = fl["dur"]
@@ -308,6 +314,7 @@ for fl in cues.get("flows", []):
     gl, gr = pan_gains(pan)
     add((l * gl, r * gr), fl["t0"], 0.16)
 
+PST("guerre")
 # ------------------------------------------------------------------ guerre : avions (passage), chars (grondement, chenilles)
 for j in cues.get("jets", []):
     dur = min(j["dur"], 6.0) + 1.0
@@ -368,6 +375,7 @@ if REEL:
         _dip[i1_:i2_] = np.minimum(_dip[i1_:i2_], np.linspace(d_, 1, i2_ - i1_))
     L *= _dip
     R *= _dip
+    PST.multiplie(_dip)
 
 
 def hit(k=1.0, metal=True):
@@ -404,6 +412,7 @@ def click():
 for im in cues["impacts"]:
     k = im["k"]
     kind = im["kind"]
+    PST("bruitages" if kind == "tick" else "guerre" if kind in ("boom", "crumble") else "impacts")
     if kind == "event":
         continue
     if reel("impact", "impact_objet", "montee", "tic", "explosion", "ecroulement"):
@@ -421,15 +430,19 @@ for im in cues["impacts"]:
             (sl_, sr_), a_ = BR.impact(rng, 0.6 * k, lourd=False)
             add(BR.reverb((BR.passe_bas(sl_, 2500), BR.passe_bas(sr_, 2500)), "ir_grand", wet=0.5), t_ - a_ / SR, 0.35 * k / 0.45)
         elif kind == "title":
+            PST("souffles")
             m_ = BR.montee(rng, 1.44)
             add(BR.reverb(m_, "ir_grand", wet=0.4, couleur=9000), t_ - 0.06 - len(m_[0]) / SR, 0.12)
+            PST("impacts")
             s_, a_ = BR.impact(rng, 1.3)
             add(BR.reverb(s_, "ir_grand", wet=0.6), t_ - a_ / SR, 0.5)
         else:  # coup sur un titre, une date, un chiffre : montée courte puis impact en couches réelles
             serre = any(0 < abs(u - t_) < 0.6 for u in HITS)  # coups en rafale : courts et nets, sans montée
             if not serre:  # montée discrète qui s'arrête 80 ms avant : l'attaque du coup reste nette
+                PST("souffles")
                 m_ = BR.montee(rng, 0.72)
                 add(BR.reverb(m_, "ir_grand", wet=0.3, couleur=9000), t_ - 0.08 - len(m_[0]) / SR, 0.06 * k)
+            PST("impacts")
             s_, a_ = BR.impact(rng, k, court=serre)
             add(BR.reverb(s_, "ir_salle", wet=0.2 if serre else 0.32), t_ - a_ / SR, 0.55 * min(k, 1.2))
         continue
@@ -472,6 +485,7 @@ for im in cues["impacts"]:
     rs = riser(0.8)
     add(rs, im["t"] - len(rs) / SR, 0.06 * k)
 
+PST("guerre")
 # ------------------------------------------------------------------ artillerie lointaine (son en retard sur l'éclair)
 for f in cues["flashes"]:
     if reel("explosion"):  # vraies détonations lointaines, une différente à chaque éclair
@@ -495,6 +509,7 @@ for f in cues["flashes"]:
         continue
     add((l * gl * 1.4, r * gr * 1.4), t0, 0.16 * f["power"])
 
+PST("impacts")
 # ------------------------------------------------------------------ séquence « événement » (1995) : impact, cœur, acouphène
 def heartbeat():
     n = int(0.35 * SR)
@@ -631,6 +646,7 @@ KNOCK = knock()
 FOLEY_REEL = reel("machine", "machine_cloche", "tic", "marteau", "salle", "feu", "papier_coupe", "pierre", "radio", "tir")
 for fo in (SND.get("foley") or []):
     k, t0, g = fo["kind"], fo["t"], fo.get("gain", 1.0)
+    PST("ambiances" if k in ("room", "shimmer") else "guerre" if k == "shot" else "bruitages")
     if FOLEY_REEL:
         if k == "key":  # vraies frappes de machine à écrire
             add(BR.reverb(BR.coup("machine", rng, 0.09), "ir_salle", wet=0.1), t0 - 0.003, 0.16 * g)
@@ -746,3 +762,11 @@ with wave.open(OUT, "wb") as w:
     w.writeframes(raw)
 rms = np.sqrt(np.mean(mix_l ** 2))
 print(OUT, f"{TOTAL:.1f} s", f"RMS {20 * np.log10(rms):.1f} dBFS")
+
+# pistes séparées pour l'ingé son : mêmes niveaux que le mixage, sans limiteur ni saturation (PISTES=0 : rien)
+if os.environ.get("PISTES", "1") == "1":
+    k_ = 1.25 / peak / np.tanh(1.25) * g * (ceil / tp if tp > ceil else 1.0)
+    try:
+        PI.ecrire(PST, cues["name"], lambda l, r: (hp(l * master, 22) * k_, hp(r * master, 22) * k_), (mix_l, mix_r))
+    except Exception as e:  # le mixage est déjà écrit : les pistes ne le font jamais échouer
+        print(f"pistes non écrites ({e.__class__.__name__}: {e})")

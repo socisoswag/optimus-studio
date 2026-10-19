@@ -44,6 +44,9 @@ un seul moteur, une timeline par pièce.
 | Générique de fin (sans nom de l'équipe) | `timelines/generique-fin.js` | 1 min 02 | `output/generique-fin.mp4` |
 | 26 cartons transparents : lieux et dates, mentions de source | `timelines/cartons.js` | 5,5 s chacun | `output/cartons/*.mov` |
 
+Les rendus ne sont plus dans ce dépôt : vidéos, son, pistes séparées et dossier de montage sont livrés dans le
+dépôt privé **Montage-Moyen-orient** (ce dépôt garde le code et les données qui les fabriquent).
+
 Le dossier `output/montage/` range tout pour le montage : un dossier par partie, un sous-dossier par
 chapitre, et chaque séquence découpée **plan par plan** (séquence complète, un fichier par plan et
 `PLANS.md` avec la durée, la place dans la séquence et le texte de chaque plan). Il se refait avec

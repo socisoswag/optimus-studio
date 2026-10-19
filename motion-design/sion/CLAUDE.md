@@ -24,8 +24,10 @@
 
 ## Bruitages (vrais sons, jamais « IA »)
 
-- Toujours de vrais enregistrements de la banque (data/bruitages.json, Freesound CC0 uniquement ;
-  `python3 tools/banque_sons.py prendre` les télécharge). La synthèse ne sert qu'en secours.
+- Toujours de vrais enregistrements de la banque (data/bruitages.json, Freesound CC0 ou CC BY ; jamais de licence
+  « non commerciale » ni Sampling+ ; `python3 tools/banque_sons.py ajouter <rôle> <numéro>` contrôle licence, titre et
+  étiquettes, `prendre` télécharge). 100 % de vrais sons, 0 % d'IA : la synthèse ne sert qu'en secours si une prise manque.
+- Une prise CC BY se crédite (titre, auteur, licence, lien) dans SOURCES.md, au générique de fin et dans la description.
 - Avant d'ajouter une prise : `python3 tools/banque_sons.py essai <rôle>` (aucun ton pur, aucun motif qui se répète,
   pas de son « Synth » ou « simulation »), puis `python3 tools/banque_sons.py sources` pour SOURCES.md.
 - Après un changement de son : `bash tools/resound.sh <pièce>` (l'image n'est pas re-rendue), puis le contrôle.

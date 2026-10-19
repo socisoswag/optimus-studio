@@ -18,6 +18,7 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bruitages as BR  # noqa: E402
+import pistes as PI  # noqa: E402
 
 SR = 48000
 REEL = os.environ.get("SYNTH", "0") != "1"
@@ -38,6 +39,8 @@ t = np.arange(N) / SR
 rng = np.random.default_rng(1897)
 L = np.zeros(N)
 R = np.zeros(N)
+PST = PI.Pistes(N)  # une piste par famille de sons, pour le montage son (Premiere, AAF)
+PST = PI.Pistes(N)  # une piste par famille de sons, pour le montage son (Premiere, AAF)
 
 
 def spec(x, gain):
@@ -85,6 +88,7 @@ def add(sig, start, gain=1.0, pan=0.0):
     if n > 0:
         L[i0:i0 + n] += gain * l[:n]
         R[i0:i0 + n] += gain * r[:n]
+        PST.ajoute(i0, gain * l[:n], gain * r[:n])
 
 
 def conv(x, h):
@@ -242,8 +246,10 @@ elif sp:
 # lever du soleil derrière la Terre : scintillement qui monte, puis un coup très doux
 sr = SND.get("sunrise")
 if sr is not None and reel("montee", "impact_sourd"):  # cymbale frottée qui monte, coup sourd très doux
+    PST("souffles")
     m_ = BR.montee(rng, 2.2)
     add(BR.reverb(m_, "ir_grand", wet=0.6, couleur=7000), sr - 2.2, 0.07)
+    PST("impacts")
     s_, a_ = BR.impact_sourd(rng)
     add(BR.reverb(s_, "ir_grand", wet=0.7), sr - a_ / SR, 0.12)
 elif sr is not None:
@@ -256,6 +262,7 @@ elif sr is not None:
     boom = np.sin(2 * np.pi * np.cumsum(32 + 20 * np.exp(-tm / 0.2)) / SR) * env_exp(m, 1.0, 0.01)
     add(verb(boom, wet=0.6, dry=1.0), sr, 0.2)
 
+PST("souffles")
 # rentrée dans l'atmosphère : un souffle qui s'épaissit et s'éclaircit jusqu'aux nuages
 def ouvre(x, dur):
     """Passe-bas qui s'ouvre de 120 Hz à 2,7 kHz pendant dur secondes (le son « arrive »)."""
@@ -298,6 +305,7 @@ elif en:
     roar = norm(out[:n]) * p ** 2.2 * np.clip((en[1] - en[0] + 1.5 - tt) / 1.2, 0, 1)
     add((roar, np.roll(roar, 700)), en[0], 0.8)
 
+PST("ambiances")
 # ------------------------------------------------------------------ nuit : grillons au loin, lumières qui s'allument
 if SND.get("night") and reel("nuit"):  # vrais grillons
     l, r = BR.moins_aigu(BR.fond("nuit", N / SR, rng, -36), -6)
@@ -337,6 +345,7 @@ elif cr:
     tt = np.arange(n) / SR
     env = np.clip(tt / 2, 0, 1) * np.clip((cr[1] - cr[0] + 2 - tt) / 2, 0, 1)
     add(verb(x * env, wet=0.5, dry=0.7), cr[0], 0.05)
+PST("impacts")
 for th in SND.get("hits", []):
     if reel("impact", "impact_objet"):  # coup discret mais audible au téléphone
         s_, a_ = BR.impact(rng, 0.6, lourd=False)
@@ -348,6 +357,7 @@ for th in SND.get("hits", []):
     x = np.sin(2 * np.pi * np.cumsum(f) / SR) * env_exp(n, 1.2, 0.004) + 0.5 * norm(lp(noise(n), 140)) * env_exp(n, 0.2, 0.002)
     add(verb(x, wet=0.65, dry=1.0), th, 0.16)
 
+PST("ambiances")
 # ------------------------------------------------------------------ ressac lointain (plan de la mer)
 s0, s1 = SND.get("surf", [0, 0])
 if s1 > s0 and reel("mer"):  # vraie mer sur les rochers, entendue de haut : adoucie
@@ -366,6 +376,7 @@ elif s1 > s0:
     add(verb(wash * env, wet=0.6, dry=0.6), s0, 0.12)
 
 
+PST("souffles")
 # ------------------------------------------------------------------ passages dans la brume : souffle qui enfle et retombe
 def whoosh(dur):
     n = int(dur * SR)
@@ -433,8 +444,10 @@ elif rv is not None:
 # ------------------------------------------------------------------ effets : filés, montées, impacts, chiffres qui défilent
 for tw, d in SND.get("whips", []):  # filé de caméra : souffle rapide qui traverse l'image, petit coup sourd à la coupe
     if reel("souffle", "impact_sourd"):  # le sommet du vrai souffle tombe sur la coupe
+        PST("souffles")
         s_, pk_ = BR.souffle(rng, 1.15, sens=d)
         add(s_, tw - pk_ / SR, 0.5)
+        PST("impacts")
         t_, a_ = BR.impact_sourd(rng)
         add(BR.reverb(t_, "ir_grand", wet=0.3), tw - a_ / SR, 0.2)
         continue
@@ -447,6 +460,7 @@ for tw, d in SND.get("whips", []):  # filé de caméra : souffle rapide qui trav
     tm = np.arange(m) / SR
     thump = np.sin(2 * np.pi * np.cumsum(48 + 40 * np.exp(-tm / 0.05)) / SR) * env_exp(m, 0.22, 0.002)
     add(verb(thump, wet=0.3, dry=1.0), tw, 0.22)
+PST("souffles")
 for r0, r1 in SND.get("risers", []):  # montée : bruit qui s'éclaircit et enfle jusqu'à l'impact, coupé net
     if reel("montee"):  # vraie cymbale qui culmine sur l'impact
         m_ = BR.montee(rng, r1 - r0 - 0.06)  # s'arrête 60 ms avant l'impact : le coup « tombe »
@@ -484,6 +498,8 @@ if REEL:
         _dip[i1_:i2_] = np.minimum(_dip[i1_:i2_], np.linspace(d_, 1, i2_ - i1_))
     L *= _dip
     R *= _dip
+    PST.multiplie(_dip)
+PST("impacts")
 for ti, k in SND.get("impacts", []):  # impact : chute dans le grave, craquement, longue traîne
     if reel("impact", "impact_objet"):  # vraies prises superposées, attaque pile sur l'image
         s_, a_ = BR.impact(rng, k)
@@ -495,6 +511,7 @@ for ti, k in SND.get("impacts", []):  # impact : chute dans le grave, craquement
     thud = norm(lp(noise(n), 200)) * env_exp(n, 0.14, 0.001)
     crk = norm(hp(noise(n), 2200)) * env_exp(n, 0.025, 0.0005)
     add(verb(sub + 0.8 * thud + 0.25 * crk, wet=0.6, dry=1.0), ti, 0.42 * k)
+PST("bruitages")
 for c0, cd in SND.get("counts", []):  # chiffres qui défilent : petits clics qui ralentissent
     tc = c0
     while tc < c0 + cd:
@@ -514,8 +531,10 @@ if ti is not None and reel("impact", "impact_objet", "montee"):
     for c_ in (I.get("fx") or {}).get("cuts", []):
         if c_.get("type") == "flash" and abs(c_["t"] - ti) < 0.3:
             th_ = c_["t"]  # l'impact tombe sur le flash du titre
+    PST("souffles")
     m_ = BR.montee(rng, 1.54)
     add(BR.reverb(m_, "ir_grand", wet=0.5, couleur=9000), th_ - 0.06 - len(m_[0]) / SR, 0.18)
+    PST("impacts")
     s_, a_ = BR.impact(rng, 1.3)
     add(BR.reverb(s_, "ir_grand", wet=0.6), th_ - a_ / SR, 0.62)
 elif ti is not None:
@@ -556,3 +575,11 @@ with wave.open(OUT, "wb") as w:
     w.setframerate(SR)
     w.writeframes(pcm.reshape(-1).view(np.uint8).reshape(-1, 4)[:, :3].tobytes())
 print(OUT, f"{TOTAL:.1f} s", f"RMS {20 * np.log10(np.sqrt(np.mean(ml ** 2))):.1f} dBFS")
+
+# pistes séparées pour l'ingé son : mêmes niveaux que le mixage, sans limiteur ni saturation (PISTES=0 : rien)
+if os.environ.get("PISTES", "1") == "1":
+    k_ = 1.2 / peak / np.tanh(1.2) * g * (ceil / tp if tp > ceil else 1.0)
+    try:
+        PI.ecrire(PST, I["name"], lambda l, r: (hp(l * master, 22) * k_, hp(r * master, 22) * k_), (ml, mr))
+    except Exception as e:  # le mixage est déjà écrit : les pistes ne le font jamais échouer
+        print(f"pistes non écrites ({e.__class__.__name__}: {e})")

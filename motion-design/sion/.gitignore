@@ -24,3 +24,7 @@ output/reconstitutions/
 
 # bruitages téléchargés (catalogue : data/bruitages.json, python3 tools/banque_sons.py prendre)
 data/sons/
+
+# rendus (vidéos, son, pistes séparées, dossier de montage) : livrés dans le dépôt Montage-Moyen-orient,
+# ce dépôt-ci ne garde que le code et les données qui les fabriquent
+output/
