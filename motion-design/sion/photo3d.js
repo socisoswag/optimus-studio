@@ -142,7 +142,7 @@ async function load(P) {
 
 // la photo reste figée P.hold secondes (c'est la première image du clip), s'anime, puis se fige sur la dernière
 async function setFrame(P, V, tl) {
-  const F = P.frames, k = clamp(Math.floor((tl - (P.hold ?? 0)) * (F.fps ?? 25)), 0, F.n - 1);
+  const F = P.frames, k = clamp(Math.floor((tl - (P.hold ?? 0)) * (F.fps ?? 25)) + Math.round((F.start ?? 0) * (F.fps ?? 25)), 0, F.n - 1);
   if (V.frame === k) return;
   const t2 = await tex(frameUrl(P, k), false), u = V.fg.material.uniforms.img, old = u.value;
   u.value = t2; V.tex[V.tex.indexOf(old)] = t2; old.dispose(); V.frame = k;
@@ -308,14 +308,18 @@ async function renderFrame(t) {
   const first = photos[0].t0;
   U.fade.value = smooth(first, first + (I.fadeIn ?? 1.2), t) * (1 - smooth(I.total - (I.fadeOut ?? 1.6), I.total, t));
   // fondu propre à chaque plan (plans montés séparément)
-  for (const P of on) if (P.fade) U.fade.value *= smooth(P.t0, P.t0 + P.fade, t) * (1 - smooth(P.t1 - P.fade, P.t1, t));
+  for (const P of on) {
+    const fi = P.fadeIn ?? P.fade, fo = P.fadeOut ?? P.fade;
+    if (fi) U.fade.value *= smooth(P.t0, P.t0 + fi, t);
+    if (fo) U.fade.value *= 1 - smooth(P.t1 - fo, P.t1, t);
+  }
   const f = Math.round(t * FPS);
   U.frame.value = f % 9973;
   // papillotement de projection : doux, irrégulier
   const n = (k) => Math.sin(f * k * 12.9898) * 43758.5453 % 1;
   U.flick.value = 1 + (I.flicker ?? 0.022) * (Math.abs(n(1)) - 0.5) * 2 + 0.01 * Math.sin(t * 2.3);
   // la photo s'anime : bref souffle de lumière, comme un projecteur qui démarre
-  for (const P of on) if (P.frames) { const d = t - P.t0 - (P.hold ?? 0); U.flick.value *= 1 + 0.08 * Math.exp(-((d - 0.05) / 0.12) ** 2); }
+  for (const P of on) if (P.frames) { const d = t - P.t0 - (P.hold ?? 0); U.flick.value *= 1 + 0.08 * Math.exp(-(((d - 0.05) / 0.12) ** 2)); }
   renderer.setRenderTarget(null);
   renderer.clear();
   renderer.render(scenePost, ortho);
@@ -324,6 +328,26 @@ async function renderFrame(t) {
   return new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
 }
 
+// contrôle qualité (node render.mjs --qa 0.5, tools/verif_video.py) : textes qui se chevauchent ou sortent de la zone sûre
+window.qa = async (t) => {
+  await renderFrame(t);
+  const seen = (el) => { for (let e = el; e && e !== document.body; e = e.parentElement) if (+getComputedStyle(e).opacity < 0.35 || getComputedStyle(e).display === 'none') return false; return true; };
+  const boxes = [];
+  document.querySelectorAll('.lab').forEach((el) => { if (seen(el)) boxes.push({ group: 'légende', r: el.getBoundingClientRect() }); });
+  if (seen(creditEl) && creditEl.textContent) boxes.push({ group: 'mention', r: creditEl.getBoundingClientRect() });
+  document.querySelectorAll('#open .ln').forEach((el) => { if (seen(el)) boxes.push({ group: 'ouverture', r: el.getBoundingClientRect() }); });
+  const over = [], out = [];
+  for (let i = 0; i < boxes.length; i++) {
+    const a = boxes[i].r;
+    if (a.left < 60 || a.right > W - 60 || a.top < 54 || a.bottom > H - 54) out.push(boxes[i].group);
+    for (let j = i + 1; j < boxes.length; j++) {
+      if (boxes[i].group === boxes[j].group) continue;
+      const b = boxes[j].r, ix = Math.min(a.right, b.right) - Math.max(a.left, b.left), iy = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
+      if (ix > 4 && iy > 4) over.push(`${boxes[i].group} / ${boxes[j].group}`);
+    }
+  }
+  return { t, over, out, mag: 0, due: [], shown: [] };
+};
 window.TOTAL = I.total;
 window.renderFrame = renderFrame;
 await document.fonts.ready;

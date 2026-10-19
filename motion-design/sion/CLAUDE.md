@@ -15,7 +15,9 @@
    - un nom de lieu n'apparaît que quand son point est bien dans l'image ;
    - effets : filés, flashs et secousses courts et nets, pas de bord vide pendant une secousse.
 3. Penser au téléphone : l'aperçu envoyé est compressé, le grain fort y devient de la bouillie.
-4. Ne jamais modifier en place `tools/build_intro.sh` (ou tout script bash) pendant qu'un rendu l'exécute :
+4. Avant tout rendu, vérifier la syntaxe des pages en module : `cp drone.js /tmp/x.mjs && node --check /tmp/x.mjs`
+   (un simple `node --check drone.js` laisse passer des erreurs de module).
+5. Ne jamais modifier en place `tools/build_intro.sh` (ou tout script bash) pendant qu'un rendu l'exécute :
    écrire un nouveau fichier puis `mv` (nouvel inode).
 
 ## Sources (toujours à jour, sans attendre qu'on le demande)
