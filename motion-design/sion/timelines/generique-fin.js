@@ -96,6 +96,11 @@
         ['Copernicus Sentinel-2 · ESA', 'Contains modified Copernicus Sentinel data 2023, 2025']],
     },
     {
+      h: 'Bruitages',
+      lines: [['Enregistrements de terrain · Freesound', 'CC0 · domaine public'],
+        'sounds_from_palestine, felix.blume, kyles et d’autres preneurs de son'],
+    },
+    {
       h: 'Polices de caractères',
       lines: [['Archivo · Newsreader · DM Mono · Courier Prime', 'SIL Open Font License'], ['Noto Sans Hebrew · Noto Kufi Arabic', 'SIL Open Font License']],
     },

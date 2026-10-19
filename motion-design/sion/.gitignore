@@ -21,3 +21,6 @@ output/reconstitution/images/
 output/reconstitutions.mp4
 output/reconstitutions.wav
 output/reconstitutions/
+
+# bruitages téléchargés (catalogue : data/bruitages.json, python3 tools/banque_sons.py prendre)
+data/sons/

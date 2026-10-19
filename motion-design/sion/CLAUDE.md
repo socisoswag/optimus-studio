@@ -15,10 +15,23 @@
    - un nom de lieu n'apparaît que quand son point est bien dans l'image ;
    - effets : filés, flashs et secousses courts et nets, pas de bord vide pendant une secousse.
 3. Penser au téléphone : l'aperçu envoyé est compressé, le grain fort y devient de la bouillie.
+   Le contrôle comprend celui des bruitages (tools/verif_son.py) : regarder aussi le spectrogramme
+   `output/verif/<nom>-son.png` (pas de bandes horizontales fixes, les temps forts doivent ressortir du fond).
 4. Avant tout rendu, vérifier la syntaxe des pages en module : `cp drone.js /tmp/x.mjs && node --check /tmp/x.mjs`
    (un simple `node --check drone.js` laisse passer des erreurs de module).
 5. Ne jamais modifier en place `tools/build_intro.sh` (ou tout script bash) pendant qu'un rendu l'exécute :
    écrire un nouveau fichier puis `mv` (nouvel inode).
+
+## Bruitages (vrais sons, jamais « IA »)
+
+- Toujours de vrais enregistrements de la banque (data/bruitages.json, Freesound CC0 uniquement ;
+  `python3 tools/banque_sons.py prendre` les télécharge). La synthèse ne sert qu'en secours.
+- Avant d'ajouter une prise : `python3 tools/banque_sons.py essai <rôle>` (aucun ton pur, aucun motif qui se répète,
+  pas de son « Synth » ou « simulation »), puis `python3 tools/banque_sons.py sources` pour SOURCES.md.
+- Après un changement de son : `bash tools/resound.sh <pièce>` (l'image n'est pas re-rendue), puis le contrôle.
+- Mixage : les fonds restent bas (vent vers -25 dBFS avant la mise à niveau) pour que les coups ressortent ;
+  une montée s'arrête 60 ms avant l'impact ; un impact a toujours une couche dans le médium (audible au téléphone) ;
+  jamais de décalage d'un canal sur un son grave (il s'annule en mono) ; crête vraie sous -1 dBTP.
 
 ## Sources (toujours à jour, sans attendre qu'on le demande)
 

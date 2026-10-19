@@ -309,7 +309,101 @@ Utilisées pour les reconstitutions (images de départ des photos animées) :
   - three.js (MIT) pour la 3D ;
   - Depth Anything V2 (Apache 2.0) pour la profondeur des archives en relief ;
   - EDSR (Apache 2.0) et rembg, avec les modèles IS-Net et U²-Net (Apache 2.0), pour restaurer et détourer les portraits.
-- **Son** : bruitages entièrement synthétisés pour le film, aucun son externe. Pas de musique.
+- **Son** : pas de musique. Les bruitages sont de vrais enregistrements de terrain, pris sur Freesound et tous sous
+  licence **CC0 (domaine public)** : aucune mention n'est obligatoire, ils sont cités par honnêteté et au générique
+  (« Bruitages »). Parmi eux, des prises faites en Palestine par sounds_from_palestine (souk de Ramallah, oliveraie d'un
+  village, nuit à Ein Qiniya), les ambiances de felix.blume et de kyles. Les réverbérations sont de vraies réponses
+  d'une église et d'une salle de concert. Montage, mixage et nettoyage (clics, souffle du vent sur le micro) faits pour
+  le film (tools/bruitages.py, tools/banque_sons.py) ; la synthèse ne sert plus qu'en secours.
+  Catalogue complet : data/bruitages.json ; liste ci-dessous (réécrite par `python3 tools/banque_sons.py sources`).
+
+<!-- bruitages -->
+| Rôle | Prise | Preneur de son | Lien |
+|---|---|---|---|
+| Vent fort (survols) | Strong wind blowing in the plain in Anatolia (Turkey) | felix.blume | https://freesound.org/people/felix.blume/sounds/167684/ |
+| Vent fort (survols) | mountain wind heavy strong gusts Swiss Alps.flac | kyles | https://freesound.org/people/kyles/sounds/454092/ |
+| Vent léger | wind light desert day steady eerie with crickets.flac | kyles | https://freesound.org/people/kyles/sounds/454361/ |
+| Vent léger | a gentle breeze, wind 3 | mario1298 | https://freesound.org/people/mario1298/sounds/181252/ |
+| Vent léger | breeze.wav | keweldog | https://freesound.org/people/keweldog/sounds/181801/ |
+| Brise de jour | a gentle breeze, wind 3 | mario1298 | https://freesound.org/people/mario1298/sounds/181252/ |
+| Brise de jour | breeze.wav | keweldog | https://freesound.org/people/keweldog/sounds/181801/ |
+| Rue de village | Street Village Ambience on a Summer Windy Day | sounds_from_palestine | https://freesound.org/people/sounds_from_palestine/sounds/818390/ |
+| Mer sur les rochers | Waves_Crashing_Rocks_IT.wav | uniuniversal | https://freesound.org/people/uniuniversal/sounds/620213/ |
+| Mer sur les rochers | Sea Waves Against Rocks | emainta | https://freesound.org/people/emainta/sounds/648860/ |
+| Mer sur les rochers | Calm Mediterranean Sea.flac | Znalac | https://freesound.org/people/Znalac/sounds/163696/ |
+| Souk | Evening Bazaar Ambience at Souq Al Bashorah, Ramallah – Palestine | sounds_from_palestine | https://freesound.org/people/sounds_from_palestine/sounds/819223/ |
+| Grande salle | crowd int large hall carpeted murmur2 busier Montreal, Canada.flac | kyles | https://freesound.org/people/kyles/sounds/453906/ |
+| Atelier | Arabic Crowd Ambience – Indoor Lobby , Palestine | sounds_from_palestine | https://freesound.org/people/sounds_from_palestine/sounds/816180/ |
+| Atelier | navette de métier à tisser.wav | Naïma | https://freesound.org/people/Na%C3%AFma/sounds/510266/ |
+| Moutons | Sheep in a farm, sheep herd bleating in a shed (Spain) | nomadas | https://freesound.org/people/nomadas/sounds/609160/ |
+| Moutons | sheep bleating dry grass.wav | cognito perceptu | https://freesound.org/people/cognito%20perceptu/sounds/88423/ |
+| Campagne | Evening Crickets in an Olive Grove – Palestinian Village | sounds_from_palestine | https://freesound.org/people/sounds_from_palestine/sounds/817744/ |
+| Campagne | Field in Romania, countryside ambience | felix.blume | https://freesound.org/people/felix.blume/sounds/503728/ |
+| Nuit, grillons | Night Crickets Back Porch.aiff | hdfreema | https://freesound.org/people/hdfreema/sounds/333221/ |
+| Nuit, grillons | AMBIENCE NIGHT FIELD CRICKET 01.wav | sengjinn | https://freesound.org/people/sengjinn/sounds/175020/ |
+| Nuit, ville au loin | Distant Voices, Crickets, and Faraway City – Night Ambience in Ein Qiniya, Ramallah | sounds_from_palestine | https://freesound.org/people/sounds_from_palestine/sounds/817087/ |
+| Feu, braises | Crackling Fire | samarobryn | https://freesound.org/people/samarobryn/sounds/414767/ |
+| Projecteur de cinéma | Film Projector - Long Run with Finish | Stefan021 | https://freesound.org/people/Stefan021/sounds/412145/ |
+| Projecteur de cinéma | 8mm projector sound | videofueralle | https://freesound.org/people/videofueralle/sounds/241886/ |
+| Grondement lointain | 230405 Thunder DRY rolling distant low rumbles, roof, EM272s, Toronto 7am | TRP | https://freesound.org/people/TRP/sounds/717845/ |
+| Explosions lointaines | distant explosions | Kostrava | https://freesound.org/people/Kostrava/sounds/320788/ |
+| Explosions lointaines | Distant Blasts.wav | DylanTheFish | https://freesound.org/people/DylanTheFish/sounds/455513/ |
+| Explosions lointaines | Explosion Distant  | Johnnyfarmer | https://freesound.org/people/Johnnyfarmer/sounds/209769/ |
+| Explosions lointaines | Muffled Distant Explosion | NenadSimic | https://freesound.org/people/NenadSimic/sounds/149966/ |
+| Artillerie | R12-31-Artillery Guns Firing.wav | craigsmith | https://freesound.org/people/craigsmith/sounds/486027/ |
+| Souffles (coupes, survols) | quick woosh | florianreichelt | https://freesound.org/people/florianreichelt/sounds/683101/ |
+| Souffles (coupes, survols) | Very Big Whoosh | Paul368 | https://freesound.org/people/Paul368/sounds/237980/ |
+| Souffles (coupes, survols) | woosh.wav | freakinbehemoth | https://freesound.org/people/freakinbehemoth/sounds/243400/ |
+| Souffles (coupes, survols) | swoosh | Halgrimm | https://freesound.org/people/Halgrimm/sounds/169867/ |
+| Souffles (coupes, survols) | Woosh (stick swung in the air) | Dalesome | https://freesound.org/people/Dalesome/sounds/352719/ |
+| Souffles (coupes, survols) | light slow swoosh.mp3 | Mikes-MultiMedia | https://freesound.org/people/Mikes-MultiMedia/sounds/349698/ |
+| Impacts | Cinematic Impact | deleted_user_3277771 | https://freesound.org/people/deleted_user_3277771/sounds/177242/ |
+| Impacts | Cinematic Boom | Rizzard | https://freesound.org/people/Rizzard/sounds/559529/ |
+| Impacts | DSGNStngr_basic trailer boom impact | harrisonlace | https://freesound.org/people/harrisonlace/sounds/816376/ |
+| Impacts | Epic Hit Big.wav | Paul368 | https://freesound.org/people/Paul368/sounds/264059/ |
+| Impacts | Bass Hit | zombieallen | https://freesound.org/people/zombieallen/sounds/725203/ |
+| Impacts | Big impact.wav | AudioPapkin | https://freesound.org/people/AudioPapkin/sounds/430977/ |
+| Coups d'objets | door metal big heavy close kinda slam thud echo offmic.wav | kyles | https://freesound.org/people/kyles/sounds/406197/ |
+| Coups d'objets | Iron-Wood Slam | Hakren | https://freesound.org/people/Hakren/sounds/372877/ |
+| Coups d'objets | Door Smash 1 | qubodup | https://freesound.org/people/qubodup/sounds/218890/ |
+| Coups d'objets | metal thud | zaneclampett | https://freesound.org/people/zaneclampett/sounds/263620/ |
+| Coups sourds | Muffled Boom | UnderlinedDesigns | https://freesound.org/people/UnderlinedDesigns/sounds/191697/ |
+| Coups sourds | Low impact.wav | AudioPapkin | https://freesound.org/people/AudioPapkin/sounds/430978/ |
+| Timbales | Timpani C2 | Terry93D | https://freesound.org/people/Terry93D/sounds/369394/ |
+| Timbales | JH Big Tom 2 (F 1.5 sec).wav | Johnnie_Holiday | https://freesound.org/people/Johnnie_Holiday/sounds/687924/ |
+| Timbales | JH Big Tom 3 (C 1.5 sec).wav | Johnnie_Holiday | https://freesound.org/people/Johnnie_Holiday/sounds/687926/ |
+| Tampon | traditional stamp.wav | I.fekry | https://freesound.org/people/I.fekry/sounds/470710/ |
+| Montées (cymbales) | Cymbals (susp_hit_woodmall_roll_cresc.wav) | sgossner | https://freesound.org/people/sgossner/sounds/375527/ |
+| Montées (cymbales) | Orch 006 cymbal roll.wav | Karma-Ron | https://freesound.org/people/Karma-Ron/sounds/151819/ |
+| Montées (cymbales) | Cymbal Hits Reversed.wav | HUMANOISEMAKER | https://freesound.org/people/HUMANOISEMAKER/sounds/148930/ |
+| Montées (cymbales) | rise5.wav | soneproject | https://freesound.org/people/soneproject/sounds/334525/ |
+| Montées (cymbales) | reverse crash.wav | genocidalguitar | https://freesound.org/people/genocidalguitar/sounds/110218/ |
+| Tic-tac | Mechanical alarm clock is ticking (SLAVA).wav | ST303 | https://freesound.org/people/ST303/sounds/171043/ |
+| Tic-tac | Clock ticking | olver | https://freesound.org/people/olver/sounds/130388/ |
+| Machine à écrire | Typewriter | exterminat | https://freesound.org/people/exterminat/sounds/164807/ |
+| Machine à écrire | type writer.aif | Walter_Odington | https://freesound.org/people/Walter_Odington/sounds/18625/ |
+| Sonnette de machine à écrire | Typewriter bell & carriage reset | knufds | https://freesound.org/people/knufds/sounds/345955/ |
+| Cœur | Heartbeats 61.wav | patobottos | https://freesound.org/people/patobottos/sounds/369017/ |
+| Avions de chasse | F-18 hornet pass 01.wav | FreqMan | https://freesound.org/people/FreqMan/sounds/135495/ |
+| Avions de chasse | F15 Eagle flyover.wav | klangfabrik | https://freesound.org/people/klangfabrik/sounds/324370/ |
+| Avions de chasse | Jet Plane Flyby.flac | qubodup | https://freesound.org/people/qubodup/sounds/189446/ |
+| Coups de feu lointains | Distant Gunshot | Resaural | https://freesound.org/people/Resaural/sounds/541164/ |
+| Coups de feu lointains | distantshot.wav | Sclolex | https://freesound.org/people/Sclolex/sounds/210531/ |
+| Radio | Radio tuning-static-interference | quantumriver | https://freesound.org/people/quantumriver/sounds/552160/ |
+| Radio | Radio noise and static.wav | Johnny97 | https://freesound.org/people/Johnny97/sounds/566449/ |
+| Char | t26_moving_01.wav | greatmganga | https://freesound.org/people/greatmganga/sounds/329800/ |
+| Pas, foule qui marche | Crowd Walking on Gravel Towards Temple | timothyd4y | https://freesound.org/people/timothyd4y/sounds/473792/ |
+| Pas, foule qui marche | Three People Walking on Concrete – Group Footsteps | ZackSoundLab | https://freesound.org/people/ZackSoundLab/sounds/789609/ |
+| Pierre | Scraping Stone  | dslrguide | https://freesound.org/people/dslrguide/sounds/321488/ |
+| Papier | Page Turn | davidbain | https://freesound.org/people/davidbain/sounds/136778/ |
+| Papier | Rustling Paper | HarpyHarpHarp | https://freesound.org/people/HarpyHarpHarp/sounds/449127/ |
+| Effondrement | Explosion and Rubble/Debris | deleted_user_1887925 | https://freesound.org/people/deleted_user_1887925/sounds/132929/ |
+| Marteau de séance | Wooden Gavel Hits | Stefan021 | https://freesound.org/people/Stefan021/sounds/798872/ |
+| Papier coupé | 12Cutting_paper.wav | 14Douderova_Adela | https://freesound.org/people/14Douderova_Adela/sounds/420009/ |
+| Papier coupé | Cutting paper.wav | Marissrar | https://freesound.org/people/Marissrar/sounds/366895/ |
+| Réverbération d'une salle de concert | IR Liverpool Philharmonic Hall.wav | johnnyguitar01 | https://freesound.org/people/johnnyguitar01/sounds/423866/ |
+| Réverbération d'une église | Impulse Response Church | jmuehlhans | https://freesound.org/people/jmuehlhans/sounds/220752/ |
+<!-- /bruitages -->
 
 ---
 

@@ -5,7 +5,8 @@
 
 Vérifie :
   - format : 1920 x 1080, 25 images/s, durée de la timeline, son présent, moins de 95 Mo (limite GitHub) ;
-  - son : niveau intégré entre -24 et -14 LUFS, crêtes sous -0,5 dBTP ;
+  - son : niveau intégré entre -24 et -14 LUFS, crêtes sous -0,5 dBTP, puis tout le contrôle des bruitages
+    (tools/verif_son.py : clics, coupures sèches, sons de synthèse, écoute en mono et au téléphone, synchro) ;
   - image : passages noirs ou figés en dehors des fondus d'ouverture et de fin ;
   - textes (avec --timeline, pages qui proposent window.qa) : textes qui se chevauchent, textes hors de la zone sûre
     ou dans les bandes cinéma, sol trop agrandi (plus de 5 pixels d'écran par pixel satellite : image floue de près).
@@ -65,6 +66,19 @@ if aus:
         warn.append(f"crête {peak} dBTP (au-dessus de -0,5)")
 else:
     lufs = peak = None
+
+# ------------------------------------------------------------------ bruitages (tools/verif_son.py : clics, sons de synthèse, mono, synchro)
+son_lines = []
+if aus:
+    cmd = ["python3", os.path.join(ROOT, "tools", "verif_son.py"), video, "--json", "--nom", name]
+    if opt.get("timeline"):
+        cmd += ["--timeline", opt["timeline"]]
+    out = run(cmd).stdout.strip()
+    if out.startswith("{"):
+        vs_ = json.loads(out)
+        bad += vs_["bad"]
+        warn += vs_["warn"]
+        son_lines = [vs_["summary"]] + vs_["info"] + [f"spectrogramme : {vs_['image']}"]
 
 # ------------------------------------------------------------------ noirs et images figées (hors fondus d'ouverture et de fin)
 fin = float((tl or {}).get("fadeIn", 2.5)) + 0.4
@@ -130,7 +144,7 @@ if opt.get("timeline"):
 
 # ------------------------------------------------------------------ rapport
 print(f"{name} : {dur:.2f} s, {size:.1f} Mo, son {lufs} LUFS, crête {peak} dBTP")
-for line in qa_lines:
+for line in qa_lines + son_lines:
     print("  " + line)
 for b in bad:
     print("  DÉFAUT    " + b)

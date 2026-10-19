@@ -278,3 +278,18 @@ alpha, que Premiere, DaVinci Resolve et Final Cut lisent directement.
    le ramène en 1080p 25 i/s, puis le rend avec le traitement du film (photo figée, légende, elle s'anime,
    se fige ; ton papier, grain, poussière ; mention « Photo d'archive animée par IA »). Légendes :
    `data/reconstitution-legendes.json`. Sortie : `output/reconstitutions/<n>-<nom>.mp4`, un fichier par plan.
+
+## Bruitages réels et contrôle du son
+
+- `tools/banque_sons.py` : banque de vrais enregistrements Freesound sous licence CC0 (catalogue `data/bruitages.json`,
+  fichiers dans `data/sons/`, hors du dépôt). `prendre` télécharge, `chercher` trouve de nouvelles prises (CC0 seulement),
+  `essai <rôle>` contrôle chaque prise, `sources` réécrit la liste dans SOURCES.md. Les prises sont nettoyées au chargement
+  (clics, grave sous 30 Hz).
+- `tools/bruitages.py` : briques prêtes à mixer (fonds sans boucle audible, impacts en couches réelles calés sur leur
+  attaque, souffles amenés à la durée d'une coupe, montées qui culminent sur l'impact, coups découpés dans les prises,
+  vraies réverbérations).
+- `tools/verif_son.py` : contrôle de chaque bande-son (lancé aussi par `verif_video.py`) : niveau, crête vraie, clics,
+  coupures sèches, sons de synthèse (tons purs, souffle trop blanc, oscillateur régulier, même son répété), mono et
+  téléphone, synchro avec les coupes, les flashs et les impacts de la timeline ; spectrogramme dans `output/verif/`.
+- `tools/resound.sh <pièce>` refait le son d'une pièce déjà rendue (2D, 3D ou photo) sans toucher à l'image.
+

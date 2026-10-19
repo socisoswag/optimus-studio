@@ -1,0 +1,832 @@
+{
+ "_": "Bruitages réels : enregistrements Freesound sous licence CC0 (domaine public). Téléchargement : python3 tools/banque_sons.py prendre (dans data/sons/, hors du dépôt). Sources : SOURCES.md, section bruitages.",
+ "roles": {
+  "vent": [
+   {
+    "id": 167684,
+    "auteur": "felix.blume",
+    "titre": "Strong wind blowing in the plain in Anatolia (Turkey)",
+    "duree": 181.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/felix.blume/sounds/167684/",
+    "ogg": "https://cdn.freesound.org/previews/167/167684_1661766-hq.ogg"
+   },
+   {
+    "id": 454092,
+    "auteur": "kyles",
+    "titre": "mountain wind heavy strong gusts Swiss Alps.flac",
+    "duree": 171.2,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/kyles/sounds/454092/",
+    "ogg": "https://cdn.freesound.org/previews/454/454092_612689-hq.ogg"
+   }
+  ],
+  "vent_doux": [
+   {
+    "id": 454361,
+    "auteur": "kyles",
+    "titre": "wind light desert day steady eerie with crickets.flac",
+    "duree": 118.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/kyles/sounds/454361/",
+    "ogg": "https://cdn.freesound.org/previews/454/454361_612689-hq.ogg"
+   },
+   {
+    "id": 181252,
+    "auteur": "mario1298",
+    "titre": "a gentle breeze, wind 3",
+    "duree": 124.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/mario1298/sounds/181252/",
+    "ogg": "https://cdn.freesound.org/previews/181/181252_499617-hq.ogg"
+   },
+   {
+    "id": 181801,
+    "auteur": "keweldog",
+    "titre": "breeze.wav",
+    "duree": 64.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/keweldog/sounds/181801/",
+    "ogg": "https://cdn.freesound.org/previews/181/181801_3153523-hq.ogg"
+   }
+  ],
+  "brise": [
+   {
+    "id": 181252,
+    "auteur": "mario1298",
+    "titre": "a gentle breeze, wind 3",
+    "duree": 124.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/mario1298/sounds/181252/",
+    "ogg": "https://cdn.freesound.org/previews/181/181252_499617-hq.ogg"
+   },
+   {
+    "id": 181801,
+    "auteur": "keweldog",
+    "titre": "breeze.wav",
+    "duree": 64.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/keweldog/sounds/181801/",
+    "ogg": "https://cdn.freesound.org/previews/181/181801_3153523-hq.ogg"
+   }
+  ],
+  "village": [
+   {
+    "id": 818390,
+    "auteur": "sounds_from_palestine",
+    "titre": "Street Village Ambience on a Summer Windy Day",
+    "duree": 102.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/sounds_from_palestine/sounds/818390/",
+    "ogg": "https://cdn.freesound.org/previews/818/818390_17247322-hq.ogg"
+   }
+  ],
+  "mer": [
+   {
+    "id": 620213,
+    "auteur": "uniuniversal",
+    "titre": "Waves_Crashing_Rocks_IT.wav",
+    "duree": 212.5,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/uniuniversal/sounds/620213/",
+    "ogg": "https://cdn.freesound.org/previews/620/620213_13601611-hq.ogg"
+   },
+   {
+    "id": 648860,
+    "auteur": "emainta",
+    "titre": "Sea Waves Against Rocks",
+    "duree": 89.4,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/emainta/sounds/648860/",
+    "ogg": "https://cdn.freesound.org/previews/648/648860_8860118-hq.ogg"
+   },
+   {
+    "id": 163696,
+    "auteur": "Znalac",
+    "titre": "Calm Mediterranean Sea.flac",
+    "duree": 93.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Znalac/sounds/163696/",
+    "ogg": "https://cdn.freesound.org/previews/163/163696_2497892-hq.ogg"
+   }
+  ],
+  "foule": [
+   {
+    "id": 819223,
+    "auteur": "sounds_from_palestine",
+    "titre": "Evening Bazaar Ambience at Souq Al Bashorah, Ramallah – Palestine",
+    "duree": 120.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/sounds_from_palestine/sounds/819223/",
+    "ogg": "https://cdn.freesound.org/previews/819/819223_17247322-hq.ogg"
+   }
+  ],
+  "salle": [
+   {
+    "id": 453906,
+    "auteur": "kyles",
+    "titre": "crowd int large hall carpeted murmur2 busier Montreal, Canada.flac",
+    "duree": 136.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/kyles/sounds/453906/",
+    "ogg": "https://cdn.freesound.org/previews/453/453906_612689-hq.ogg"
+   }
+  ],
+  "atelier": [
+   {
+    "id": 816180,
+    "auteur": "sounds_from_palestine",
+    "titre": "Arabic Crowd Ambience – Indoor Lobby , Palestine",
+    "duree": 78.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/sounds_from_palestine/sounds/816180/",
+    "ogg": "https://cdn.freesound.org/previews/816/816180_17247322-hq.ogg"
+   },
+   {
+    "id": 510266,
+    "auteur": "Naïma",
+    "titre": "navette de métier à tisser.wav",
+    "duree": 58.1,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Na%C3%AFma/sounds/510266/",
+    "ogg": "https://cdn.freesound.org/previews/510/510266_8371354-hq.ogg"
+   }
+  ],
+  "moutons": [
+   {
+    "id": 609160,
+    "auteur": "nomadas",
+    "titre": "Sheep in a farm, sheep herd bleating in a shed (Spain)",
+    "duree": 99.9,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/nomadas/sounds/609160/",
+    "ogg": "https://cdn.freesound.org/previews/609/609160_938246-hq.ogg"
+   },
+   {
+    "id": 88423,
+    "auteur": "cognito perceptu",
+    "titre": "sheep bleating dry grass.wav",
+    "duree": 33.2,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/cognito%20perceptu/sounds/88423/",
+    "ogg": "https://cdn.freesound.org/previews/88/88423_57789-hq.ogg"
+   }
+  ],
+  "campagne": [
+   {
+    "id": 817744,
+    "auteur": "sounds_from_palestine",
+    "titre": "Evening Crickets in an Olive Grove – Palestinian Village",
+    "duree": 56.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/sounds_from_palestine/sounds/817744/",
+    "ogg": "https://cdn.freesound.org/previews/817/817744_17247322-hq.ogg"
+   },
+   {
+    "id": 503728,
+    "auteur": "felix.blume",
+    "titre": "Field in Romania, countryside ambience",
+    "duree": 210.1,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/felix.blume/sounds/503728/",
+    "ogg": "https://cdn.freesound.org/previews/503/503728_1661766-hq.ogg"
+   }
+  ],
+  "nuit": [
+   {
+    "id": 333221,
+    "auteur": "hdfreema",
+    "titre": "Night Crickets Back Porch.aiff",
+    "duree": 220.1,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/hdfreema/sounds/333221/",
+    "ogg": "https://cdn.freesound.org/previews/333/333221_2098408-hq.ogg"
+   },
+   {
+    "id": 175020,
+    "auteur": "sengjinn",
+    "titre": "AMBIENCE NIGHT FIELD CRICKET 01.wav",
+    "duree": 60.4,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/sengjinn/sounds/175020/",
+    "ogg": "https://cdn.freesound.org/previews/175/175020_2979997-hq.ogg"
+   }
+  ],
+  "nuit_ville": [
+   {
+    "id": 817087,
+    "auteur": "sounds_from_palestine",
+    "titre": "Distant Voices, Crickets, and Faraway City – Night Ambience in Ein Qiniya, Ramallah",
+    "duree": 180.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/sounds_from_palestine/sounds/817087/",
+    "ogg": "https://cdn.freesound.org/previews/817/817087_17247322-hq.ogg"
+   }
+  ],
+  "feu": [
+   {
+    "id": 414767,
+    "auteur": "samarobryn",
+    "titre": "Crackling Fire",
+    "duree": 60.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/samarobryn/sounds/414767/",
+    "ogg": "https://cdn.freesound.org/previews/414/414767_4955305-hq.ogg"
+   }
+  ],
+  "projecteur": [
+   {
+    "id": 412145,
+    "auteur": "Stefan021",
+    "titre": "Film Projector - Long Run with Finish",
+    "duree": 99.7,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Stefan021/sounds/412145/",
+    "ogg": "https://cdn.freesound.org/previews/412/412145_3821443-hq.ogg"
+   },
+   {
+    "id": 241886,
+    "auteur": "videofueralle",
+    "titre": "8mm projector sound",
+    "duree": 161.5,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/videofueralle/sounds/241886/",
+    "ogg": "https://cdn.freesound.org/previews/241/241886_1130120-hq.ogg"
+   }
+  ],
+  "grondement": [
+   {
+    "id": 717845,
+    "auteur": "TRP",
+    "titre": "230405 Thunder DRY rolling distant low rumbles, roof, EM272s, Toronto 7am",
+    "duree": 177.6,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/TRP/sounds/717845/",
+    "ogg": "https://cdn.freesound.org/previews/717/717845_97550-hq.ogg"
+   }
+  ],
+  "explosion": [
+   {
+    "id": 320788,
+    "auteur": "Kostrava",
+    "titre": "distant explosions",
+    "duree": 64.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Kostrava/sounds/320788/",
+    "ogg": "https://cdn.freesound.org/previews/320/320788_1134415-hq.ogg"
+   },
+   {
+    "id": 455513,
+    "auteur": "DylanTheFish",
+    "titre": "Distant Blasts.wav",
+    "duree": 197.2,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/DylanTheFish/sounds/455513/",
+    "ogg": "https://cdn.freesound.org/previews/455/455513_7482766-hq.ogg"
+   },
+   {
+    "id": 209769,
+    "auteur": "Johnnyfarmer",
+    "titre": "Explosion Distant ",
+    "duree": 10.9,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Johnnyfarmer/sounds/209769/",
+    "ogg": "https://cdn.freesound.org/previews/209/209769_2012390-hq.ogg"
+   },
+   {
+    "id": 149966,
+    "auteur": "NenadSimic",
+    "titre": "Muffled Distant Explosion",
+    "duree": 5.1,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/NenadSimic/sounds/149966/",
+    "ogg": "https://cdn.freesound.org/previews/149/149966_2514850-hq.ogg"
+   }
+  ],
+  "artillerie": [
+   {
+    "id": 486027,
+    "auteur": "craigsmith",
+    "titre": "R12-31-Artillery Guns Firing.wav",
+    "duree": 46.6,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/craigsmith/sounds/486027/",
+    "ogg": "https://cdn.freesound.org/previews/486/486027_2524442-hq.ogg"
+   }
+  ],
+  "souffle": [
+   {
+    "id": 683101,
+    "auteur": "florianreichelt",
+    "titre": "quick woosh",
+    "duree": 2.1,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/florianreichelt/sounds/683101/",
+    "ogg": "https://cdn.freesound.org/previews/683/683101_6253486-hq.ogg"
+   },
+   {
+    "id": 237980,
+    "auteur": "Paul368",
+    "titre": "Very Big Whoosh",
+    "duree": 3.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Paul368/sounds/237980/",
+    "ogg": "https://cdn.freesound.org/previews/237/237980_2971294-hq.ogg"
+   },
+   {
+    "id": 243400,
+    "auteur": "freakinbehemoth",
+    "titre": "woosh.wav",
+    "duree": 1.3,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/freakinbehemoth/sounds/243400/",
+    "ogg": "https://cdn.freesound.org/previews/243/243400_4146245-hq.ogg"
+   },
+   {
+    "id": 169867,
+    "auteur": "Halgrimm",
+    "titre": "swoosh",
+    "duree": 2.3,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Halgrimm/sounds/169867/",
+    "ogg": "https://cdn.freesound.org/previews/169/169867_2834921-hq.ogg"
+   },
+   {
+    "id": 352719,
+    "auteur": "Dalesome",
+    "titre": "Woosh (stick swung in the air)",
+    "duree": 0.6,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Dalesome/sounds/352719/",
+    "ogg": "https://cdn.freesound.org/previews/352/352719_6513636-hq.ogg"
+   },
+   {
+    "id": 349698,
+    "auteur": "Mikes-MultiMedia",
+    "titre": "light slow swoosh.mp3",
+    "duree": 2.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Mikes-MultiMedia/sounds/349698/",
+    "ogg": "https://cdn.freesound.org/previews/349/349698_5632532-hq.ogg"
+   }
+  ],
+  "impact": [
+   {
+    "id": 177242,
+    "auteur": "deleted_user_3277771",
+    "titre": "Cinematic Impact",
+    "duree": 7.9,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/deleted_user_3277771/sounds/177242/",
+    "ogg": "https://cdn.freesound.org/previews/177/177242_3277771-hq.ogg"
+   },
+   {
+    "id": 559529,
+    "auteur": "Rizzard",
+    "titre": "Cinematic Boom",
+    "duree": 6.2,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Rizzard/sounds/559529/",
+    "ogg": "https://cdn.freesound.org/previews/559/559529_10825267-hq.ogg"
+   },
+   {
+    "id": 816376,
+    "auteur": "harrisonlace",
+    "titre": "DSGNStngr_basic trailer boom impact",
+    "duree": 6.9,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/harrisonlace/sounds/816376/",
+    "ogg": "https://cdn.freesound.org/previews/816/816376_9839964-hq.ogg"
+   },
+   {
+    "id": 264059,
+    "auteur": "Paul368",
+    "titre": "Epic Hit Big.wav",
+    "duree": 7.5,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Paul368/sounds/264059/",
+    "ogg": "https://cdn.freesound.org/previews/264/264059_2971294-hq.ogg"
+   },
+   {
+    "id": 725203,
+    "auteur": "zombieallen",
+    "titre": "Bass Hit",
+    "duree": 6.4,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/zombieallen/sounds/725203/",
+    "ogg": "https://cdn.freesound.org/previews/725/725203_985232-hq.ogg"
+   },
+   {
+    "id": 430977,
+    "auteur": "AudioPapkin",
+    "titre": "Big impact.wav",
+    "duree": 5.4,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/AudioPapkin/sounds/430977/",
+    "ogg": "https://cdn.freesound.org/previews/430/430977_8698658-hq.ogg"
+   }
+  ],
+  "impact_objet": [
+   {
+    "id": 406197,
+    "auteur": "kyles",
+    "titre": "door metal big heavy close kinda slam thud echo offmic.wav",
+    "duree": 3.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/kyles/sounds/406197/",
+    "ogg": "https://cdn.freesound.org/previews/406/406197_612689-hq.ogg"
+   },
+   {
+    "id": 372877,
+    "auteur": "Hakren",
+    "titre": "Iron-Wood Slam",
+    "duree": 1.7,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Hakren/sounds/372877/",
+    "ogg": "https://cdn.freesound.org/previews/372/372877_6944346-hq.ogg"
+   },
+   {
+    "id": 218890,
+    "auteur": "qubodup",
+    "titre": "Door Smash 1",
+    "duree": 6.4,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/qubodup/sounds/218890/",
+    "ogg": "https://cdn.freesound.org/previews/218/218890_71257-hq.ogg"
+   },
+   {
+    "id": 263620,
+    "auteur": "zaneclampett",
+    "titre": "metal thud",
+    "duree": 2.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/zaneclampett/sounds/263620/",
+    "ogg": "https://cdn.freesound.org/previews/263/263620_2492210-hq.ogg"
+   }
+  ],
+  "impact_sourd": [
+   {
+    "id": 191697,
+    "auteur": "UnderlinedDesigns",
+    "titre": "Muffled Boom",
+    "duree": 3.2,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/UnderlinedDesigns/sounds/191697/",
+    "ogg": "https://cdn.freesound.org/previews/191/191697_2213158-hq.ogg"
+   },
+   {
+    "id": 430978,
+    "auteur": "AudioPapkin",
+    "titre": "Low impact.wav",
+    "duree": 5.2,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/AudioPapkin/sounds/430978/",
+    "ogg": "https://cdn.freesound.org/previews/430/430978_8698658-hq.ogg"
+   }
+  ],
+  "timbale": [
+   {
+    "id": 369394,
+    "auteur": "Terry93D",
+    "titre": "Timpani C2",
+    "duree": 4.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Terry93D/sounds/369394/",
+    "ogg": "https://cdn.freesound.org/previews/369/369394_5622625-hq.ogg"
+   },
+   {
+    "id": 687924,
+    "auteur": "Johnnie_Holiday",
+    "titre": "JH Big Tom 2 (F 1.5 sec).wav",
+    "duree": 1.5,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Johnnie_Holiday/sounds/687924/",
+    "ogg": "https://cdn.freesound.org/previews/687/687924_4819210-hq.ogg"
+   },
+   {
+    "id": 687926,
+    "auteur": "Johnnie_Holiday",
+    "titre": "JH Big Tom 3 (C 1.5 sec).wav",
+    "duree": 1.5,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Johnnie_Holiday/sounds/687926/",
+    "ogg": "https://cdn.freesound.org/previews/687/687926_4819210-hq.ogg"
+   }
+  ],
+  "tampon": [
+   {
+    "id": 470710,
+    "auteur": "I.fekry",
+    "titre": "traditional stamp.wav",
+    "duree": 1.6,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/I.fekry/sounds/470710/",
+    "ogg": "https://cdn.freesound.org/previews/470/470710_9906084-hq.ogg"
+   }
+  ],
+  "montee": [
+   {
+    "id": 375527,
+    "auteur": "sgossner",
+    "titre": "Cymbals (susp_hit_woodmall_roll_cresc.wav)",
+    "duree": 8.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/sgossner/sounds/375527/",
+    "ogg": "https://cdn.freesound.org/previews/375/375527_2475994-hq.ogg"
+   },
+   {
+    "id": 151819,
+    "auteur": "Karma-Ron",
+    "titre": "Orch 006 cymbal roll.wav",
+    "duree": 3.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Karma-Ron/sounds/151819/",
+    "ogg": "https://cdn.freesound.org/previews/151/151819_16058-hq.ogg"
+   },
+   {
+    "id": 148930,
+    "auteur": "HUMANOISEMAKER",
+    "titre": "Cymbal Hits Reversed.wav",
+    "duree": 7.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/HUMANOISEMAKER/sounds/148930/",
+    "ogg": "https://cdn.freesound.org/previews/148/148930_2259717-hq.ogg"
+   },
+   {
+    "id": 334525,
+    "auteur": "soneproject",
+    "titre": "rise5.wav",
+    "duree": 8.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/soneproject/sounds/334525/",
+    "ogg": "https://cdn.freesound.org/previews/334/334525_2127539-hq.ogg"
+   },
+   {
+    "id": 110218,
+    "auteur": "genocidalguitar",
+    "titre": "reverse crash.wav",
+    "duree": 3.1,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/genocidalguitar/sounds/110218/",
+    "ogg": "https://cdn.freesound.org/previews/110/110218_1763875-hq.ogg"
+   }
+  ],
+  "tic": [
+   {
+    "id": 171043,
+    "auteur": "ST303",
+    "titre": "Mechanical alarm clock is ticking (SLAVA).wav",
+    "duree": 121.5,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/ST303/sounds/171043/",
+    "ogg": "https://cdn.freesound.org/previews/171/171043_2449563-hq.ogg"
+   },
+   {
+    "id": 130388,
+    "auteur": "olver",
+    "titre": "Clock ticking",
+    "duree": 5.9,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/olver/sounds/130388/",
+    "ogg": "https://cdn.freesound.org/previews/130/130388_2037384-hq.ogg"
+   }
+  ],
+  "machine": [
+   {
+    "id": 164807,
+    "auteur": "exterminat",
+    "titre": "Typewriter",
+    "duree": 56.9,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/exterminat/sounds/164807/",
+    "ogg": "https://cdn.freesound.org/previews/164/164807_1460963-hq.ogg"
+   },
+   {
+    "id": 18625,
+    "auteur": "Walter_Odington",
+    "titre": "type writer.aif",
+    "duree": 96.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Walter_Odington/sounds/18625/",
+    "ogg": "https://cdn.freesound.org/previews/18/18625_48671-hq.ogg"
+   }
+  ],
+  "machine_cloche": [
+   {
+    "id": 345955,
+    "auteur": "knufds",
+    "titre": "Typewriter bell & carriage reset",
+    "duree": 2.9,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/knufds/sounds/345955/",
+    "ogg": "https://cdn.freesound.org/previews/345/345955_191884-hq.ogg"
+   }
+  ],
+  "coeur": [
+   {
+    "id": 369017,
+    "auteur": "patobottos",
+    "titre": "Heartbeats 61.wav",
+    "duree": 125.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/patobottos/sounds/369017/",
+    "ogg": "https://cdn.freesound.org/previews/369/369017_881494-hq.ogg"
+   }
+  ],
+  "avion": [
+   {
+    "id": 135495,
+    "auteur": "FreqMan",
+    "titre": "F-18 hornet pass 01.wav",
+    "duree": 63.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/FreqMan/sounds/135495/",
+    "ogg": "https://cdn.freesound.org/previews/135/135495_92661-hq.ogg"
+   },
+   {
+    "id": 324370,
+    "auteur": "klangfabrik",
+    "titre": "F15 Eagle flyover.wav",
+    "duree": 30.6,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/klangfabrik/sounds/324370/",
+    "ogg": "https://cdn.freesound.org/previews/324/324370_181941-hq.ogg"
+   },
+   {
+    "id": 189446,
+    "auteur": "qubodup",
+    "titre": "Jet Plane Flyby.flac",
+    "duree": 17.7,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/qubodup/sounds/189446/",
+    "ogg": "https://cdn.freesound.org/previews/189/189446_71257-hq.ogg"
+   }
+  ],
+  "tir": [
+   {
+    "id": 541164,
+    "auteur": "Resaural",
+    "titre": "Distant Gunshot",
+    "duree": 3.3,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Resaural/sounds/541164/",
+    "ogg": "https://cdn.freesound.org/previews/541/541164_9662992-hq.ogg"
+   },
+   {
+    "id": 210531,
+    "auteur": "Sclolex",
+    "titre": "distantshot.wav",
+    "duree": 5.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Sclolex/sounds/210531/",
+    "ogg": "https://cdn.freesound.org/previews/210/210531_985466-hq.ogg"
+   }
+  ],
+  "radio": [
+   {
+    "id": 552160,
+    "auteur": "quantumriver",
+    "titre": "Radio tuning-static-interference",
+    "duree": 18.6,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/quantumriver/sounds/552160/",
+    "ogg": "https://cdn.freesound.org/previews/552/552160_716433-hq.ogg"
+   },
+   {
+    "id": 566449,
+    "auteur": "Johnny97",
+    "titre": "Radio noise and static.wav",
+    "duree": 173.7,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Johnny97/sounds/566449/",
+    "ogg": "https://cdn.freesound.org/previews/566/566449_5409451-hq.ogg"
+   }
+  ],
+  "char": [
+   {
+    "id": 329800,
+    "auteur": "greatmganga",
+    "titre": "t26_moving_01.wav",
+    "duree": 14.4,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/greatmganga/sounds/329800/",
+    "ogg": "https://cdn.freesound.org/previews/329/329800_1204841-hq.ogg"
+   }
+  ],
+  "pas": [
+   {
+    "id": 473792,
+    "auteur": "timothyd4y",
+    "titre": "Crowd Walking on Gravel Towards Temple",
+    "duree": 33.4,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/timothyd4y/sounds/473792/",
+    "ogg": "https://cdn.freesound.org/previews/473/473792_288104-hq.ogg"
+   },
+   {
+    "id": 789609,
+    "auteur": "ZackSoundLab",
+    "titre": "Three People Walking on Concrete – Group Footsteps",
+    "duree": 10.2,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/ZackSoundLab/sounds/789609/",
+    "ogg": "https://cdn.freesound.org/previews/789/789609_15768996-hq.ogg"
+   }
+  ],
+  "pierre": [
+   {
+    "id": 321488,
+    "auteur": "dslrguide",
+    "titre": "Scraping Stone ",
+    "duree": 2.5,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/dslrguide/sounds/321488/",
+    "ogg": "https://cdn.freesound.org/previews/321/321488_5485024-hq.ogg"
+   }
+  ],
+  "papier": [
+   {
+    "id": 136778,
+    "auteur": "davidbain",
+    "titre": "Page Turn",
+    "duree": 2.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/davidbain/sounds/136778/",
+    "ogg": "https://cdn.freesound.org/previews/136/136778_2207512-hq.ogg"
+   },
+   {
+    "id": 449127,
+    "auteur": "HarpyHarpHarp",
+    "titre": "Rustling Paper",
+    "duree": 6.4,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/HarpyHarpHarp/sounds/449127/",
+    "ogg": "https://cdn.freesound.org/previews/449/449127_8895476-hq.ogg"
+   }
+  ],
+  "ecroulement": [
+   {
+    "id": 132929,
+    "auteur": "deleted_user_1887925",
+    "titre": "Explosion and Rubble/Debris",
+    "duree": 7.5,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/deleted_user_1887925/sounds/132929/",
+    "ogg": "https://cdn.freesound.org/previews/132/132929_1887925-hq.ogg"
+   }
+  ],
+  "marteau": [
+   {
+    "id": 798872,
+    "auteur": "Stefan021",
+    "titre": "Wooden Gavel Hits",
+    "duree": 29.3,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Stefan021/sounds/798872/",
+    "ogg": "https://cdn.freesound.org/previews/798/798872_3821443-hq.ogg"
+   }
+  ],
+  "papier_coupe": [
+   {
+    "id": 420009,
+    "auteur": "14Douderova_Adela",
+    "titre": "12Cutting_paper.wav",
+    "duree": 9.1,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/14Douderova_Adela/sounds/420009/",
+    "ogg": "https://cdn.freesound.org/previews/420/420009_8374106-hq.ogg"
+   },
+   {
+    "id": 366895,
+    "auteur": "Marissrar",
+    "titre": "Cutting paper.wav",
+    "duree": 16.8,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/Marissrar/sounds/366895/",
+    "ogg": "https://cdn.freesound.org/previews/366/366895_6050874-hq.ogg"
+   }
+  ],
+  "ir_salle": [
+   {
+    "id": 423866,
+    "auteur": "johnnyguitar01",
+    "titre": "IR Liverpool Philharmonic Hall.wav",
+    "duree": 2.0,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/johnnyguitar01/sounds/423866/",
+    "ogg": "https://cdn.freesound.org/previews/423/423866_4844309-hq.ogg"
+   }
+  ],
+  "ir_grand": [
+   {
+    "id": 220752,
+    "auteur": "jmuehlhans",
+    "titre": "Impulse Response Church",
+    "duree": 5.2,
+    "licence": "CC0",
+    "page": "https://freesound.org/people/jmuehlhans/sounds/220752/",
+    "ogg": "https://cdn.freesound.org/previews/220/220752_3847866-hq.ogg"
+   }
+  ]
+ }
+}
