@@ -79,7 +79,9 @@
     },
     {
       h: 'Cartographie',
-      lines: [['Natural Earth', 'domaine public'], ['OCHA · HDX', 'zones des accords d’Oslo, tracé du mur, janvier 2018'], ['Autorité palestinienne', 'ministère du Plan']],
+      lines: [['Natural Earth', 'domaine public'], ['OCHA · HDX', 'zones des accords d’Oslo, tracé du mur, janvier 2018'], ['Autorité palestinienne', 'ministère du Plan'],
+        ['Relief SRTM · NASA', 'domaine public'], ['Blue Marble, Black Marble · NASA', 'domaine public'],
+        ['Copernicus Sentinel-2 · ESA', 'Contains modified Copernicus Sentinel data 2025']],
     },
     {
       h: 'Polices de caractères',

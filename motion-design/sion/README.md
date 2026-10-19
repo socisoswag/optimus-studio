@@ -40,6 +40,7 @@ un seul moteur, une timeline par pièce.
 | La guerre numérique (chapitre 27) | `timelines/guerre-numerique.js` | 1 min | `output/guerre-numerique.mp4` |
 | Les noms effacés (chapitre 34) | `timelines/noms-effaces.js` | 1 min 17 | `output/noms-effaces.mp4` |
 | Apartheid, ce que disent les textes (chapitre 35) | `timelines/apartheid-textes.js` | 1 min 02 | `output/apartheid-textes.mp4` |
+| Intro aérienne en 3D : de l'orbite à la mer Morte, titre | `timelines/intro-aerienne.js` (`drone.html`) | 1 min 24 | `output/intro-aerienne.mp4` |
 | Générique de fin (sans nom de l'équipe) | `timelines/generique-fin.js` | 1 min 02 | `output/generique-fin.mp4` |
 | 26 cartons transparents : lieux et dates, mentions de source | `timelines/cartons.js` | 5,5 s chacun | `output/cartons/*.mov` |
 
@@ -200,6 +201,36 @@ localités Wikidata, vote, ombrage du relief SRTM. Le minutage se déclare dans 
 pour 1 %). Les bruitages (machine à écrire, marteau de séance, scalpel, dalles, radio, coups de feu)
 sont listés dans `TL.sound.foley`. La version sans texte (`node render.mjs --notext`) garde les
 mentions tapées sur la carte et retire légendes, titres et chiffres, pour une voix off.
+
+## L'intro aérienne
+
+Un survol en 3D du relief réel, rendu image par image dans Chromium (WebGL, three.js) :
+
+1. **l'espace** : la Terre de nuit vue de 7 000 km, les lumières des villes, le soleil qui se lève
+   derrière le bord de la planète, puis une plongée continue jusqu'à 3 km, à travers une nappe de
+   cumulus au large de Jaffa (altimètre en haut à droite) ;
+2. **la mer** au large de Jaffa à l'aube, face au soleil ;
+3. **les monts de Judée** à l'ouest de Jérusalem, repères accrochés au relief (Jérusalem, Bethléem) ;
+4. **le désert de Judée** jusqu'à la falaise d'Ein Gedi : l'altimètre plonge à −430 m ;
+5. **la mer Morte** vers le sud et le titre SION, en braise qui refroidit.
+
+Le globe est calculé par pixel : atmosphère à diffusion simple (bleu du ciel, aube, halo du bord de la
+Terre), ombre de la nuit, lumières des villes, reflet du soleil sur la mer, nuages. Les textures passent
+de la Terre entière (5 km) au Levant (500 m), à Sentinel-2 (60 m) puis au relief fin (17 m, détails à
+8 m). Au sol : relief SRTM (33 m), ombres et lumière du ciel précalculées pour le soleil de chaque plan,
+brume en altitude, scintillement sur l'eau, halo et reflets d'objectif, étalonnage. Bruitages seuls.
+
+```bash
+python3 tools/prep_drone.py <cache>   # relief, Sentinel-2 du 11 mai 2025, lumière → data/drone/
+python3 tools/prep_globe.py <cache>   # Terre entière, Levant, Sentinel-2 à 60 m (NASA, Copernicus)
+tools/build_intro.sh                  # → output/intro-aerienne.mp4 ; NOTEXT=1 : sans lieux ni titre
+node render.mjs --page drone.html --timeline intro-aerienne --stills 6,40 --out stills
+```
+
+`data/drone/` (environ 200 Mo) n'est pas versionné : les deux scripts le refont. Sources libres pour un
+usage commercial : NASA (domaine public), Copernicus Sentinel-2 (« Contains modified Copernicus Sentinel
+data 2025 »), SRTM. Les données de 2000 du relief placent la mer Morte à −412 m ; son rivage de 2025 vient
+de l'image satellite.
 
 ## Fabriquer une pièce
 
