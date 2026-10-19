@@ -4,13 +4,13 @@
  * dans output/plans-respiration/. Relief SRTM, images Sentinel-2 du 11 mai 2025, lumières précalculées.
  */
 (function (root) {
-  const base = { waves: 1.0, bloomThr: 1.3, flare: 0.5, sat: 1.15, detail: 0.8, clouds: 0.22 };
+  const base = { waves: 1.0, bloomThr: 1.9, flare: 0.5, sat: 0.98, detail: 0.8, clouds: 0.22 };
   const dawn = { ...base, sun: [3.6, 1.85, 0.9], sky: [0.22, 0.27, 0.38], haze: [0.50, 0.40, 0.34], glow: [1.35, 0.68, 0.32],
     zenith: [0.07, 0.13, 0.30], horizon: [0.92, 0.60, 0.38], fogA: 2.2e-5, fogB: 1 / 1300, rayK: 4e-6, exposure: 1.05, albedo: 0.5, flare: 0.9 };
   const morning = { ...base, sun: [4.4, 3.1, 2.0], sky: [0.26, 0.33, 0.46], haze: [0.50, 0.50, 0.52], glow: [1.0, 0.76, 0.52],
     zenith: [0.06, 0.15, 0.38], horizon: [0.66, 0.64, 0.64], fogA: 2.0e-5, fogB: 1 / 1100, rayK: 5e-6, exposure: 1.0, albedo: 0.48 };
   const desert = { ...base, sun: [3.5, 2.75, 1.95], sky: [0.27, 0.34, 0.48], haze: [0.54, 0.52, 0.52], glow: [0.95, 0.80, 0.60],
-    zenith: [0.06, 0.16, 0.40], horizon: [0.68, 0.66, 0.66], fogA: 1.9e-5, fogB: 1 / 1600, rayK: 5e-6, exposure: 0.95, albedo: 0.38, waves: 2.6 };
+    zenith: [0.06, 0.16, 0.40], horizon: [0.68, 0.66, 0.66], fogA: 1.9e-5, fogB: 1 / 1600, rayK: 5e-6, exposure: 0.95, albedo: 0.38, waves: 1.3 };
   const dusk = { ...base, sun: [3.2, 1.55, 0.75], sky: [0.20, 0.22, 0.32], haze: [0.42, 0.34, 0.33], glow: [1.25, 0.62, 0.32],
     zenith: [0.05, 0.08, 0.20], horizon: [0.80, 0.50, 0.36], fogA: 2.2e-5, fogB: 1 / 1300, rayK: 4e-6, exposure: 1.0, albedo: 0.46, flare: 0.9 };
   const P = (id, t0, light, sun, env, a, b, extra = {}) => ({ id, t0, t1: t0 + 9, light, sun, env, wobble: 0.7, ...extra,

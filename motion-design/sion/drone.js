@@ -783,15 +783,15 @@ function updateText(t) {
     titleEl.style.opacity = vis.toFixed(3);
     if (vis > 0) {
       titleEl.querySelectorAll('.big .ch').forEach((c, k) => {
-        const k0 = t0 + k * 0.11, e = smooth(k0, k0 + 1.1, t);
-        const cool = smooth(k0 + 0.5, k0 + 2.6, t); // braise, puis pierre
+        const k0 = t0 + k * 0.09, e = smooth(k0, k0 + 0.9, t);
+        const cool = smooth(k0 + 0.25, k0 + 1.6, t); // braise brève, puis pierre
         c.style.opacity = e.toFixed(3);
-        c.style.filter = `blur(${((1 - e) * 22).toFixed(2)}px)`;
-        c.style.transform = `translateY(${((1 - e) * 26).toFixed(1)}px) scale(${(1.06 - 0.06 * e).toFixed(4)})`;
+        c.style.filter = `blur(${((1 - e) * 7).toFixed(2)}px)`;
+        c.style.transform = `translateY(${((1 - e) * 18).toFixed(1)}px) scale(${(1.04 - 0.04 * e).toFixed(4)})`;
         const mix3 = (a, b) => a.map((v, i) => Math.round(v + (b[i] - v) * cool));
         c.style.color = `rgb(${mix3([255, 196, 120], [233, 220, 192]).join(',')})`;
         const g = (1 - cool) * e;
-        c.style.textShadow = `0 0 ${(18 + 50 * g).toFixed(0)}px rgba(255,91,31,${(0.9 * g).toFixed(3)}), 0 0 ${(6 + 10 * g).toFixed(0)}px rgba(255,174,90,${(0.8 * g).toFixed(3)}), 0 6px 60px rgba(0,0,0,.35)`;
+        c.style.textShadow = `0 0 ${(10 + 26 * g).toFixed(0)}px rgba(255,91,31,${(0.5 * g).toFixed(3)}), 0 0 ${(4 + 6 * g).toFixed(0)}px rgba(255,174,90,${(0.45 * g).toFixed(3)}), 0 6px 60px rgba(0,0,0,.35)`;
       });
       const big = titleEl.querySelector('.big');
       big.style.transform = `scale(${(1 + (t - t0) * 0.004).toFixed(4)})`;
