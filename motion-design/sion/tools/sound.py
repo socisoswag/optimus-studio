@@ -212,6 +212,8 @@ if reel("vent_doux", "feu"):
     # vrai vent léger (sans le souffle sur le micro) et vraies braises au loin, crêtes arrondies
     vl_, vr_ = BR.fond("vent_doux", N / SR, rng, -25)
     vl_, vr_ = BR.passe_haut(vl_, 90, 3), BR.passe_haut(vr_, 90, 3)
+    # les rafales de la prise passent en souffle blanc : aigus adoucis, le fond ne brille jamais plus que la voix
+    vl_, vr_ = BR.moins_aigu((vl_, vr_), -7.0, 3000.0)
     fl_, fr_ = BR.adoucit(BR.fond("feu", N / SR, rng, -30), 3.5)
     fl_, fr_ = BR.passe_bas(fl_, 6000), BR.passe_bas(fr_, 6000)
     env_ = bed * bed_in * duck

@@ -244,7 +244,9 @@ def fond(role, n, rng, rms_db=-20.0, xf=3.0):
         if last is not None and last[0] == s["id"] and abs(a - last[1]) < seg_len and len(x) > 2 * seg_len:
             a = (last[1] + seg_len + int(rng.integers(0, SR * 5))) % max(1, len(x) - seg_len)
         seg = x[a:a + seg_len].copy()
-        seg *= 10 ** (rms_db / 20) / _rms(seg)
+        # un passage très calme n'est pas remonté au niveau des autres (son souffle de micro deviendrait du bruit
+        # blanc) : la remontée s'arrête à la moitié du niveau moyen de la prise
+        seg *= 10 ** (rms_db / 20) / max(_rms(seg), 0.5 * _rms(x))
         if os.environ.get("SONS_TRACE"):
             print(f"fond {role} : prise {s['id']} de {a / SR:.2f} s, placée à {max(0, pos) / SR:.2f} s", file=sys.stderr)
         if pos == 0:
