@@ -33,6 +33,9 @@ Trois règles :
   - Chaïm Weizmann : Hugo Mendelson · CC BY-SA 3.0
   - Mahmoud Darwich : UmmNuniya · CC BY-SA 4.0
   - Cheikh Ahmed Yassine : Yonathan Torgovnik, unité du porte-parole de l'armée israélienne · CC BY-SA 3.0
+- Document sous licence CC BY-SA :
+  - Lettre de Theodor Herzl à Youssouf Diya al-Khalidi, 19 mars 1899 (version anglaise) : Institut d'études
+    palestiniennes, PalQuest, via Wikimedia Commons · CC BY-SA 4.0
 
 ---
 
@@ -115,11 +118,29 @@ Utilisées pour les reconstitutions (images de départ des photos animées) :
 | matpc 18217 | Palestine disturbances 1936. Lorry of dry goods being unloaded into an Arab store on reopening day after the six months strike [Jerusalem] | 1936 | https://www.loc.gov/pictures/item/2019708987/ |
 | matpc 18171 | Palestine disturbances 1936. New & temporary vegetable market along the Jerusalem Jaffa railroad line. Scene at the Bittir station | 1936 | https://www.loc.gov/pictures/item/2019708941/ |
 
+Utilisées dans le script (plans fixes animés en relief) :
+
+| N° | Titre d'origine | Date | Lien |
+|---|---|---|---|
+| matpc 05530 | Northern views. Plain of Esdraelon, telephoto from Nazareth | vers 1900 à 1920 | https://www.loc.gov/pictures/item/2019695480/ |
+| ds 14863 et matpc 12172 | (voir le tableau ci-dessus) : chapitres 2 et 5 | | |
+
 ### 2.3 Carte historique
 
 - Carte des Nations unies n° 103.1(b), « Palestine : plan of partition with economic union proposed by the
   Ad Hoc Committee on the Palestinian Question » (1947, fond : Survey of Palestine, 1946). Wikimedia Commons,
   fichier « UN_Palestine_Partition_Versions_1947.jpg », domaine public. Calée et vectorisée pour « Le découpage ».
+
+### 2.4 Documents et portraits du script (partie I)
+
+Fichiers dans `data/archives/documents/`.
+
+| Fichier | Contenu | Auteur, licence | Lien |
+|---|---|---|---|
+| al-khalidi-portrait.jpg | Youssouf Diya al-Khalidi (1842-1906), député de Jérusalem au Parlement ottoman | auteur inconnu, domaine public (Wikimedia Commons, d'après l'encyclopédie de l'islam TDV) | https://commons.wikimedia.org/wiki/File:Yusuf_Ziya_el-Halidi.jpg |
+| 1899-lettre-herzl-al-khalidi.jpg | Lettre de Herzl à al-Khalidi, 19 mars 1899, version anglaise dactylographiée | Theodor Herzl ; numérisation PalQuest (Institut d'études palestiniennes), CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Letter_from_Theodore_Herzl_to_Yusuf_Diya-uddin_al-Khalidi_-_19_MARCH_1899.jpg |
+| ahad-haam-portrait.jpg | Ahad Ha'am (Asher Ginzberg, 1856-1927) | domaine public (Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Ahad_Haam.jpg |
+| (à obtenir) | Une du journal Filastin, Jaffa, 1911 | domaine public (plus de 100 ans) | https://www.nli.org.il/en/newspapers/falastin |
 
 ---
 
@@ -212,6 +233,25 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
   Karl Lueger maire de Vienne (1897).
 - Migrations : environ 2,4 millions de Juifs quittent l'Europe de l'Est de 1881 à 1914, dont environ
   2 millions vers les États-Unis et environ 70 000 vers la Palestine (JewishGen).
+
+**La Palestine ottomane** (chapitre 6, script)
+- Population vers 1914 : environ 800 000 habitants (798 389), dont 657 377 musulmans (avec 55 000 nomades),
+  81 012 chrétiens et environ 60 000 juifs (61 000 au tableau 2.18), juifs de nationalité étrangère compris.
+  Justin McCarthy, *The Population of Palestine*, Columbia University Press, 1990, p. 24, 26 (tableau 2.3) et
+  37 (tableau 2.18). Attention : le tableau de la p. 10 (38 754 juifs, 722 143 habitants) ne compte que les
+  sujets ottomans. Estimation sioniste d'époque : 85 000 juifs (Arthur Ruppin, *Syrien als Wirtschaftsgebiet*,
+  1916), jugée gonflée par McCarthy (p. 17-20). D'où « environ un sur dix » dans la voix.
+- Lettres de 1899 : voir section 6.
+- Al-Fula : en 1910-1911, Élias Sursock (Beyrouth) vend environ 10 000 dounams autour d'al-Fula, plaine de
+  Marj Ibn Amer, au Fonds national juif ; les villageois refusent de partir et écrivent au grand vizir (la
+  vente priverait « 1 000 villageois » de leur subsistance) ; le caïmacam de Nazareth, Shukri al-Asali, refuse
+  de conclure la vente ; la colonie de Merhavia est fondée en 1911. Sources : Institut d'études
+  palestiniennes, « Political Opposition to Zionism in Palestine and Greater Syria: 1910-1911 as a Turning
+  Point » (https://www.palestine-studies.org/en/node/165370) ; Kristen Alff, cité dans l'article Wikipedia
+  « Sursock Purchases » (pour retrouver les références).
+- Presse : al-Karmil, Haïfa, fondé en 1908 par Najib Nassar ; Filastin, Jaffa, premier numéro en janvier 1911
+  (Issa et Youssef al-Issa). Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers/falastin et
+  https://www.nli.org.il/en/newspapers/elcarmel.
 
 **Les aliyas** (chapitre 5)
 - Fourchettes de la Jewish Virtual Library et de l'Encyclopaedia Judaica pour chaque vague (1882 à 1939).
@@ -325,6 +365,10 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | Auteur | Référence exacte |
 |---|---|
 | Theodor Herzl | Journal, 12 juin 1895 (Paris). The Complete Diaries of Theodor Herzl, éd. R. Patai, 1960, vol. 1, p. 88 |
+| Theodor Herzl | Journal, 3 septembre 1897 (« In Basel habe ich den Judenstaat gegründet... ») ; notre traduction de l'allemand |
+| Youssouf Diya al-Khalidi | Lettre à Zadoc Kahn, grand-rabbin de France, 1er mars 1899 (original en français), citée par Rashid Khalidi, The Hundred Years' War on Palestine, Metropolitan Books, 2020, chapitre 1 ; traduite de l'anglais |
+| Theodor Herzl | Lettre à Youssouf Diya al-Khalidi, 19 mars 1899, version anglaise publiée par PalQuest (https://www.palquest.org/en/historictext/9700/letter-theodore-herzl-yusuf-diya-uddin-al-khalidi) ; notre traduction |
+| Ahad Ha'am | « Vérité de la terre d'Israël » (Emet me-Eretz Yisrael), Hamelitz, juin 1891 ; traduction anglaise complète : Alan Dowty, « Much Ado about Little », Israel Studies, vol. 5, n° 2, 2000, p. 154-181 ; extraits : Jewish Virtual Library (https://www.jewishvirtuallibrary.org/ahad-ha-rsquo-am) ; notre traduction |
 | David Ben Gourion | Réunion de l'Exécutif de l'Agence juive, 12 juin 1938 (Archives sionistes centrales, S100-24B), cité par Benny Morris, The Birth of the Palestinian Refugee Problem Revisited, Cambridge University Press, 2004, p. 50 |
 | Golda Meir | Entretien avec Frank Giles, The Sunday Times, 15 juin 1969, p. 12 |
 | Mahmoud Darwich | Poème « Sur cette terre » (على هذه الأرض ما يستحق الحياة), traduit de l'arabe |

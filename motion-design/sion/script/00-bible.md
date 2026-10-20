@@ -120,14 +120,13 @@ images de l'UNRWA, de l'ONU ou d'agences, elles prendront la place prévue (rep�
 Pose ces questions telles quelles et colle-moi les réponses AVEC les liens. Je vérifie chaque source moi-même ;
 une réponse sans source primaire ne sert pas.
 
-1. Population de la Palestine ottomane en 1914 (total, musulmans, chrétiens, juifs) d'après le recensement ottoman
-   et Justin McCarthy, *The Population of Palestine* (1990) : chiffres et pages.
-2. Lettre de Youssouf Diya al-Khalidi à Zadoc Kahn (1er mars 1899) et réponse de Herzl (19 mars 1899) : texte exact
-   des deux phrases clés, en français ou en anglais, avec la référence de publication (Rashid Khalidi, *The Hundred
-   Years' War on Palestine*, 2020 ; Walid Khalidi).
-3. Vente de terres d'al-Fula (1910-1911, famille Sursock) et expulsion des paysans : sources historiques.
-4. Journal *Filastin* (Jaffa, 1911) et *al-Karmil* (Haïfa, 1908) contre les achats de terres sionistes : dates et
-   citations sourcées.
+1. ~~Population de 1914~~ **fait** (vérifié dans le livre de McCarthy : la réponse de Perplexity donnait 38 754 juifs,
+   chiffre des seuls sujets ottomans ; le vrai total de McCarthy est d'environ 60 000 juifs sur 800 000 habitants).
+2. ~~Lettres al-Khalidi et Herzl de 1899~~ **fait** (texte de Herzl relu en entier ; reste à trouver l'original
+   français d'al-Khalidi, dans l'édition française du livre de Rashid Khalidi, si tu l'as sous la main).
+3. ~~Al-Fula~~ **fait**.
+4. ~~Filastin et al-Karmil~~ **fait** pour les dates ; il manque une image de la une de Filastin en 1911
+   (Bibliothèque nationale d'Israël).
 5. Traité Haavara (25 août 1933) : nombre d'émigrants et montants transférés selon Edwin Black et Yehuda Bauer ;
    débat à l'époque (boycott). Assassinat d'Arlozoroff (16 juin 1933) : état actuel de l'enquête (commission de 1982).
 6. Lettre de Ben Gourion à son fils Amos (5 octobre 1937) : la controverse sur la phrase « nous devons expulser les

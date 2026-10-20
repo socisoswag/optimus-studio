@@ -13,6 +13,9 @@ data/drone-*/
 # Photos d’archive en relief (photo3d.html), préparées par tools/prep_archives.py : versionnées
 !data/archives/*.jpg
 !data/archives/*.png
+# documents et portraits du script (lettres, unes de journaux) : versionnés aussi
+!data/archives/documents/*.jpg
+!data/archives/documents/*.png
 # Reconstitutions : timeline générée par tools/build_reconstitution.py, images extraites des clips
 timelines/reconstitutions.js
 output/reconstitution/images/

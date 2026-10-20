@@ -184,7 +184,7 @@ Note : transition vers le chapitre 4 : la voix enchaîne sans pause sur le carto
 
 ## Chapitre 4 · Theodor Herzl : le prophète du retour
 
-Film 00:05:57:02 → 00:07:19:02 · durée 1 min 22.0 s
+Film 00:05:57:02 → 00:07:26:02 · durée 1 min 29.0 s
 
 *Intention : Rendre justice à l'idée telle que la voyaient ses partisans (un refuge pour un peuple persécuté), puis montrer ce que Herzl lui-même écrit des habitants de la terre rêvée. Les deux à la suite, sans commentaire appuyé.*
 
@@ -214,31 +214,33 @@ Source : domaine public (Wikimedia Commons)
 Son : salle, applaudissements lointains, coup de marteau de séance
 
 
-**4.5** · film **00:06:26:02 → 00:06:37:02** (11.0 s) · **[PHOTO]** `portraits/herzl.png`  
-> VOIX : Dans son journal, il écrit : / « À Bâle, j'ai fondé l'État juif. / Peut-être dans cinq ans, / et certainement dans cinquante, / tout le monde le **verra**. »  
-(24 mots, 2.2 par seconde)  
-Note : citation à confirmer mot pour mot (journal de Herzl, 3 septembre 1897) par la documentaliste
+**4.5** · film **00:06:26:02 → 00:06:44:02** (18.0 s) · **[PHOTO]** `portraits/herzl.png`  
+Source : SOURCES.md 6 (journal de Herzl, 3 septembre 1897 : « In Basel habe ich den Judenstaat gegründet. Wenn ich das heute laut sagte, würde mir ein universelles Gelächter antworten. Vielleicht in fünf Jahren, jedenfalls in fünfzig wird es Jeder einsehen. » ; notre traduction)  
+À l'écran : « À Bâle, j'ai fondé l'État juif. » · Theodor Herzl, journal, 3 septembre 1897  
+> VOIX : Le 3 septembre, il note dans son journal : / « À Bâle, j'ai fondé l'État juif. / Si je le disais aujourd'hui à voix haute, / on me répondrait par un éclat de rire. / Dans cinq ans peut-être, / dans cinquante à coup sûr, / chacun le **comprendra**. »  
+(42 mots, 2.3 par seconde)
 
 
-**4.6** · film **00:06:37:02 → 00:06:42:02** (5.0 s) · **[NOIR]** (à fabriquer)  
-> VOIX : Cinquante ans plus tard, / presque jour pour jour, / l'ONU vote le **partage**.  
-(12 mots, 2.4 par seconde)  
-Son : silence, un seul battement de cœur grave
+**4.6** · film **00:06:44:02 → 00:06:49:02** (5.0 s) · **[NOIR]** (à fabriquer)  
+> VOIX : Cinquante ans plus tard, / en novembre 1947, / l'ONU vote le **partage**.  
+(11 mots, 2.2 par seconde)  
+Son : silence, un seul battement de cœur grave  
+Note : ne pas dire « jour pour jour » : le journal date du 3 septembre 1897, le vote du 29 novembre 1947 (le rapport de l'UNSCOP qui recommande le partage est, lui, du 31 août 1947)
 
 
-**4.7** · film **00:06:42:02 → 00:06:51:02** (9.0 s) · **[PHOTO]** `portraits/herzl.png`  
+**4.7** · film **00:06:49:02 → 00:06:58:02** (9.0 s) · **[PHOTO]** `portraits/herzl.png`  
 > VOIX : Mais deux ans avant Bâle, en juin 1895, / il note déjà, à propos des habitants du pays qu'il espère obtenir :  
 (20 mots, 2.2 par seconde)
 
 
-**4.8** · film **00:06:51:02 → 00:07:04:02** (13.0 s) · **[MD]** `output/citation-herzl.mp4` · source 00:00:00:00 → 00:00:13:00  
+**4.8** · film **00:06:58:02 → 00:07:11:02** (13.0 s) · **[MD]** `output/citation-herzl.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : SOURCES.md 6 (journal de Herzl, 12 juin 1895)  
 À l'écran : « Nous tenterons de faire passer discrètement la population sans ressources de l'autre côté de la frontière […] en lui refusant tout travail dans notre propre pays. »  
 > VOIX : (lire lentement, sans effet) « Nous tenterons de faire passer discrètement la population sans ressources de l'autre côté de la frontière, / en lui refusant tout travail dans notre propre pays. »  
 (25 mots, 1.9 par seconde)
 
 
-**4.9** · film **00:07:04:02 → 00:07:19:02** (15.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-remparts-tour-de-david-aerien.mp4` · source 00:00:10:00 → 00:00:25:00  
+**4.9** · film **00:07:11:02 → 00:07:26:02** (15.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-remparts-tour-de-david-aerien.mp4` · source 00:00:10:00 → 00:00:25:00  
 Source : SOURCES.md 4.1, Adobe Stock 740254300  
 > VOIX : Pour ses partisans, Herzl est un sauveur : / il offre un refuge à un peuple persécuté. // Pour les habitants de la Palestine, / qui n'ont rien demandé, / il ouvre une **dépossession**.  
 (29 mots, 1.9 par seconde)
@@ -246,34 +248,34 @@ Source : SOURCES.md 4.1, Adobe Stock 740254300
 
 ## Chapitre 5 · Les premiers colons juifs en Palestine
 
-Film 00:07:19:02 → 00:08:12:02 · durée 0 min 53.0 s
+Film 00:07:26:02 → 00:08:19:02 · durée 0 min 53.0 s
 
 *Intention : Les pionniers ont un vrai idéal (fuir les pogroms, travailler la terre, faire revivre l'hébreu) : le dire. Et montrer la règle qui exclut déjà les Arabes : le « travail hébreu ».*
 
 
-**5.1** · film **00:07:19:02 → 00:07:23:17** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-05.mp4` · source 00:00:00:00 → 00:00:04:15  
+**5.1** · film **00:07:26:02 → 00:07:30:17** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-05.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**5.2** · film **00:07:23:17 → 00:07:30:04** (6.5 s) · **[MD]** `output/aliyas.mp4` · source 00:00:00:00 → 00:00:06:12  
+**5.2** · film **00:07:30:17 → 00:07:37:05** (6.5 s) · **[MD]** `output/aliyas.mp4` · source 00:00:00:00 → 00:00:06:12  
 À l'écran : De 1882 à 1939, aliyas : les « montées »  
 > VOIX : silence
 
 
-**5.3** · film **00:07:30:04 → 00:07:40:17** (10.5 s) · **[MD]** `output/aliyas.mp4` · source 00:00:06:12 → 00:00:17:00  
+**5.3** · film **00:07:37:05 → 00:07:47:17** (10.5 s) · **[MD]** `output/aliyas.mp4` · source 00:00:06:12 → 00:00:17:00  
 À l'écran : De 1882 à 1914, Russie, Roumanie : les premières colonies (55 000 à 75 000 personnes)  
 > VOIX : Les premiers arrivent dès 1882, de Russie et de Roumanie. / Ils fondent des colonies agricoles, / souvent financées par le baron Edmond de **Rothschild**.  
 (23 mots, 2.2 par seconde)  
 Note : la suite de la pièce (1919 à 1945) sert au chapitre 8
 
 
-**5.4** · film **00:07:40:17 → 00:07:52:02** (11.4 s) · **[RÉEL]** `output/plans-reels/recolte-des-olives-a-la-main.mp4` · source 00:00:00:00 → 00:00:11:10  
+**5.4** · film **00:07:47:17 → 00:07:59:02** (11.4 s) · **[RÉEL]** `output/plans-reels/recolte-des-olives-a-la-main.mp4` · source 00:00:00:00 → 00:00:11:10  
 Source : SOURCES.md 4.1, Adobe Stock 259921414 (lieu non précisé : aucune légende de lieu)  
 > VOIX : La deuxième vague, après 1904, est différente. / De jeunes socialistes rêvent d'un Juif nouveau, / paysan sur sa terre, / qui parle l'hébreu **ressuscité**.  
 (22 mots, 1.9 par seconde)
 
 
-**5.5** · film **00:07:52:02 → 00:08:02:02** (10.0 s) · **[PHOTO]** `data/archives/12172.jpg` · **À OBTENIR**  
+**5.5** · film **00:07:59:02 → 00:08:09:02** (10.0 s) · **[PHOTO]** `data/archives/12172.jpg` · **À OBTENIR**  
 Source : SOURCES.md 2.2, Bibliothèque du Congrès matpc 12172 (domaine public)  
 À l'écran : carton : Près de Jérusalem · entre 1898 et 1946  
 > VOIX : Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, / et les ouvriers arabes sont écartés.  
@@ -281,7 +283,7 @@ Source : SOURCES.md 2.2, Bibliothèque du Congrès matpc 12172 (domaine public)
 Note : photo à télécharger (laboureur et ses bœufs, Jérusalem au fond) et à animer en relief
 
 
-**5.6** · film **00:08:02:02 → 00:08:12:02** (10.0 s) · **[RÉEL]** `output/plans-reels/jaffa-clocher-vieille-ville-aerien.mp4` · source 00:00:00:00 → 00:00:10:00  
+**5.6** · film **00:08:09:02 → 00:08:19:02** (10.0 s) · **[RÉEL]** `output/plans-reels/jaffa-clocher-vieille-ville-aerien.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 4.1, Adobe Stock 390879149  
 À l'écran : carton lieu (à fabriquer) : Jaffa · aujourd'hui  
 > VOIX : En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la ville arabe.  
@@ -290,77 +292,122 @@ Source : SOURCES.md 4.1, Adobe Stock 390879149
 
 ## Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface
 
-Film 00:08:12:02 → 00:10:14:00 · durée 2 min 01.9 s
+Film 00:08:19:02 → 00:11:33:00 · durée 3 min 13.9 s
 
 *Intention : Le chapitre clé de la partie. Montrer un pays vivant, nommé, habité ; puis l'échange de 1899 entre Youssouf Diya al-Khalidi et Herzl, chacun avec ses propres mots ; puis les premiers conflits pour la terre ; et la voix d'un sioniste lucide, Ahad Ha'am. Finir sur la guerre de 1914.*
 
 
-**6.1** · film **00:08:12:02 → 00:08:16:17** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-06.mp4` · source 00:00:00:00 → 00:00:04:15  
+**6.1** · film **00:08:19:02 → 00:08:23:17** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-06.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**6.2** · film **00:08:16:17 → 00:08:26:17** (10.0 s) · **[ARCH]** `output/archives-filmees/1897-porte-de-jaffa-lumiere (nom définitif à confirmer)` · **À OBTENIR**  
+**6.2** · film **00:08:23:17 → 00:08:33:17** (10.0 s) · **[ARCH]** `output/archives-filmees/1897-porte-de-jaffa-lumiere (nom définitif à confirmer)` · **À OBTENIR**  
 Source : SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine public)  
 À l'écran : carton : Jérusalem · avril 1897 · film des frères Lumière  
 > VOIX : Jérusalem, 1897. / Les frères Lumière filment la porte de Jaffa. // Voilà le pays que Bâle, la même année, choisit pour **foyer**.  
 (21 mots, 2.1 par seconde)
 
 
-**6.3** · film **00:08:26:17 → 00:08:33:22** (7.2 s) · **[PHOTO]** `output/archives-vivantes.mp4` · source 00:00:03:05 → 00:00:10:10  
+**6.3** · film **00:08:33:17 → 00:08:40:22** (7.2 s) · **[PHOTO]** `output/archives-vivantes.mp4` · source 00:00:03:05 → 00:00:10:10  
 Source : SOURCES.md 2.2, matpc 06520 (Jaffa vue des orangeraies, entre 1898 et 1914)  
 À l'écran : déjà dans la pièce : Entre 1898 et 1914 · Jaffa  
 > VOIX : Un pays de villages et de villes anciennes. / Jaffa exporte ses **oranges** dans le monde entier.  
 (16 mots, 2.2 par seconde)
 
 
-**6.4** · film **00:08:33:22 → 00:08:45:22** (12.0 s) · **[IA]** `output/reconstitutions/1-1-orangeraies-jaffa.mp4` · source 00:00:00:00 → 00:00:12:00  
+**6.4** · film **00:08:40:22 → 00:08:52:22** (12.0 s) · **[IA]** `output/reconstitutions/1-1-orangeraies-jaffa.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : SOURCES.md 4 (Google Veo, d'après matpc 06520)  
 À l'écran : mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
 > VOIX : Musulmans, chrétiens et juifs y vivent depuis des siècles, / sous l'autorité de l'Empire **ottoman**.  
 (14 mots, 1.2 par seconde)
 
 
-**6.5** · film **00:08:45:22 → 00:08:53:02** (7.2 s) · **[PHOTO]** `output/archives-vivantes.mp4` · source 00:00:09:10 → 00:00:16:15  
-Source : SOURCES.md 2.2, matpc 04992 (le port de Jaffa)  
-> VOIX : Vers 1914, la Palestine compte environ sept cent mille habitants. / Moins d'un sur dix est **juif**.  
+**6.5** · film **00:08:52:22 → 00:09:00:02** (7.2 s) · **[PHOTO]** `output/archives-vivantes.mp4` · source 00:00:09:10 → 00:00:16:15  
+Source : SOURCES.md 2.2, matpc 04992 (le port de Jaffa) ; chiffres : Justin McCarthy, The Population of Palestine, Columbia University Press, 1990, p. 24, 26 et 37 (tableaux 2.3 et 2.18)  
+À l'écran : Palestine, 1914 · environ 800 000 habitants · musulmans 82 % · chrétiens 10 % · juifs 8 % · d'après Justin McCarthy, 1990  
+> VOIX : Vers 1914, la Palestine compte environ huit cent mille habitants. / Environ un sur dix est **juif**.  
 (16 mots, 2.2 par seconde)  
-Note : chiffres de population à confirmer (Justin McCarthy, 1990 ; recensement ottoman) par la documentaliste
+Note : vérifié dans le livre. McCarthy : 798 389 habitants, dont 657 377 musulmans (avec 55 000 nomades), 81 012 chrétiens et environ 60 000 juifs (61 000 au tableau 2.18), en comptant les juifs de nationalité étrangère. Piège : le chiffre de 38 754 juifs (p. 10, repris par Perplexity) ne compte que les sujets ottomans, il oublie environ 20 000 juifs étrangers. L'estimation sioniste d'époque (Arthur Ruppin) dit 85 000 juifs, soit 12 % ; McCarthy la juge gonflée. « Environ un sur dix » couvre les deux.
 
 
-**6.6** · film **00:08:53:02 → 00:09:03:07** (10.2 s) · **[IA]** `output/reconstitutions/2-2-quai-jaffa.mp4` · source 00:00:00:00 → 00:00:10:05  
+**6.6** · film **00:09:00:02 → 00:09:10:07** (10.2 s) · **[IA]** `output/reconstitutions/2-2-quai-jaffa.mp4` · source 00:00:00:00 → 00:00:10:05  
 Source : SOURCES.md 4 (Google Veo, d'après matpc 04992)  
 À l'écran : mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
 > VOIX : Le pays n'est pas vide. / Il a un nom, des villes, des paysans, / et bientôt des journaux qui s'**inquiètent**.  
 (20 mots, 2.0 par seconde)
 
 
-**6.7** · film **00:09:03:07 → 00:09:19:07** (16.0 s) · **[PHOTO]** `à télécharger : portrait de Youssouf Diya al-Khalidi (domaine public)` · **À OBTENIR**  
-> VOIX : En 1899, un ancien maire de Jérusalem, Youssouf Diya al-Khalidi, écrit à Herzl. / Il reconnaît les souffrances des Juifs, / mais il prévient : la Palestine est habitée. // « Au nom de Dieu, / qu'on laisse la Palestine en **paix**. »  
-(36 mots, 2.2 par seconde)  
+**6.7** · film **00:09:10:07 → 00:09:22:07** (12.0 s) · **[PHOTO]** `data/archives/documents/al-khalidi-portrait.jpg`  
+Source : SOURCES.md 2.3 (portrait de Youssouf Diya al-Khalidi, auteur inconnu, domaine public) ; lettre du 1er mars 1899 citée par Rashid Khalidi, The Hundred Years' War on Palestine, 2020, chapitre 1  
+À l'écran : Youssouf Diya al-Khalidi · ancien maire de Jérusalem, député au Parlement ottoman  
+> VOIX : Le 1er mars 1899, un ancien maire de Jérusalem, / Youssouf Diya al-Khalidi, / écrit au grand-rabbin de France, / pour que sa lettre parvienne à **Herzl**.  
+(24 mots, 2.0 par seconde)  
 Son : plume sur le papier, salle silencieuse  
-Note : citation à confirmer mot pour mot (lettre du 1er mars 1899) par la documentaliste
+Note : portrait petit (320 × 455) : le présenter en cadre, comme une photo posée sur la table, jamais plein écran
 
 
-**6.8** · film **00:09:19:07 → 00:09:34:07** (15.0 s) · **[PHOTO]** `portraits/herzl.png`  
-> VOIX : Herzl répond poliment. / Les habitants, écrit-il, profiteront de l'arrivée des Juifs : / qui songerait à les chasser ? // Quatre ans plus tôt, dans son journal, / il envisageait de les faire passer la **frontière**.  
-(31 mots, 2.1 par seconde)  
-Note : réponse de Herzl du 19 mars 1899 à confirmer mot pour mot
+**6.8** · film **00:09:22:07 → 00:09:42:07** (20.0 s) · **[PHOTO]** `data/archives/documents/al-khalidi-portrait.jpg`  
+Source : lettre du 1er mars 1899, d'après R. Khalidi 2020 (traduite de l'anglais ; l'original est en français)  
+À l'écran : citations, une par une : « Historiquement, c'est bien votre pays. » · « Elle est habitée par d'autres. » · « Au nom de Dieu, qu'on laisse la Palestine tranquille. »  
+> VOIX : Il écrit d'abord : / « Qui pourrait contester les droits des Juifs sur la Palestine ? / Historiquement, c'est bien votre pays. » // Puis il prévient : / la Palestine fait partie de l'Empire ottoman, / « et, plus grave, / elle est habitée par d'autres ». /// « Au nom de Dieu, / qu'on laisse la Palestine **tranquille**. »  
+(45 mots, 2.2 par seconde)  
+Note : les deux phrases vont ensemble : couper la première ferait de lui un sioniste, couper la seconde cacherait qu'il reconnaît l'histoire juive. Si on obtient l'original français (édition française du livre de R. Khalidi), recaler le texte mot pour mot.
 
 
-**6.9** · film **00:09:34:07 → 00:09:46:00** (11.7 s) · **[RÉEL]** `output/plans-reels/figuier-de-barbarie-sabr.mp4` · source 00:00:00:00 → 00:00:11:17  
-Source : SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé : aucune légende de lieu)  
-> VOIX : Dès 1910, de grandes familles vendent leurs terres. / À al-Fula, les paysans sont **expulsés**. // À Jaffa et à Haïfa, des journaux arabes s'alarment.  
-(23 mots, 2.0 par seconde)  
-Note : faits d'al-Fula (1910-1911) et des journaux Filastin et al-Karmil à confirmer par la documentaliste
+**6.9** · film **00:09:42:07 → 00:09:58:07** (16.0 s) · **[PHOTO]** `data/archives/documents/1899-lettre-herzl-al-khalidi.jpg`  
+Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)  
+À l'écran : la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »  
+> VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive. / Mais qui songerait à les **éloigner** ? » // Leur terre, promet-il, vaudra dix fois plus cher.  
+(32 mots, 2.0 par seconde)
 
 
-**6.10** · film **00:09:46:00 → 00:09:58:00** (12.0 s) · **[PHOTO]** `à télécharger : portrait d'Ahad Ha'am (domaine public)` · **À OBTENIR**  
-> VOIX : Même parmi les sionistes, certains voient le danger. / Dès 1891, le penseur Ahad Ha'am écrit : / on croit là-bas que la terre est déserte. / C'est **faux**.  
-(25 mots, 2.1 par seconde)  
-Note : texte exact d'Ahad Ha'am (Vérité de la terre d'Israël, 1891) à confirmer par la documentaliste
+**6.10** · film **00:09:58:07 → 00:10:11:07** (13.0 s) · **[PHOTO]** `portraits/herzl.png`  
+Source : SOURCES.md 6 (journal de Herzl, 12 juin 1895) ; lettre du 19 mars 1899  
+> VOIX : Personne ne lui avait parlé de les chasser. // Et quatre ans plus tôt, dans son journal, / il envisageait de faire passer les pauvres de l'autre côté de la **frontière**.  
+(29 mots, 2.2 par seconde)  
+Note : al-Khalidi n'a jamais évoqué une expulsion : c'est Herzl qui répond à une question qu'on ne lui a pas posée (remarque de R. Khalidi, vérifiable en lisant les deux lettres). La phrase « nous trouverons ailleurs ce qu'il nous faut » (si le sultan refuse) est dans la même lettre : à garder pour une version longue.
 
 
-**6.11** · film **00:09:58:00 → 00:10:14:00** (16.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:10:00 → 00:00:26:00  
+**6.11** · film **00:10:11:07 → 00:10:23:00** (11.7 s) · **[RÉEL]** `output/plans-reels/figuier-de-barbarie-sabr.mp4` · source 00:00:00:00 → 00:00:11:17  
+Source : SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé) ; faits : pétition des villageois au grand vizir, 1910, citée dans « Sursock Purchases » (Wikipedia, d'après Kristen Alff et Rashid Khalidi) ; Institut d'études palestiniennes, « 1910-1911 as a Turning Point »  
+À l'écran : carton lieu : al-Fula · plaine de Marj Ibn Amer · 1910  
+> VOIX : En 1910, un riche propriétaire de Beyrouth, / Élias Sursock, / vend dix mille dounams autour d'al-Fula au Fonds national juif. // Les paysans qui les cultivent refusent de **partir**.  
+(27 mots, 2.3 par seconde)  
+Note : 1 dounam = 1 000 m² : 10 000 dounams = 10 km². Le vendeur est arabe : le dire, c'est un fait.
+
+
+**6.12** · film **00:10:23:00 → 00:10:36:00** (13.0 s) · **[PHOTO]** `data/archives/05530.jpg`  
+Source : SOURCES.md 2.2, Bibliothèque du Congrès, collection Matson, LC-DIG-matpc-05530 (« Plain of Esdraelon, telephoto from Nazareth », vers 1900-1920, domaine public) ; faits : mêmes sources que le plan précédent  
+À l'écran : carton : Nazareth et la plaine · vers 1900-1920 · photo de la colonie américaine (Matson)  
+> VOIX : Ils écrivent à Istanbul : / la vente prive mille villageois de leur **pain**. // Le sous-préfet de Nazareth refuse de la signer. / En vain : / en 1911, la colonie de Merhavia s'installe.  
+(29 mots, 2.2 par seconde)  
+Note : « mille villageois » : chiffre de leur pétition (le dire comme tel). Ne pas dire « tués » ni « massacre » : ce sont des expulsions et des heurts, pas plus.
+
+
+**6.13** · film **00:10:36:00 → 00:10:47:00** (11.0 s) · **[PHOTO]** `à télécharger : une du journal Filastin, Jaffa, 1911 (Bibliothèque nationale d'Israël, collection Jrayed)` · **À OBTENIR**  
+Source : Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers/falastin (premier numéro : janvier 1911) ; al-Karmil, Haïfa, fondé en 1908 par Najib Nassar  
+À l'écran : à défaut : le bandeau du journal (Wikimedia Commons, « Falastin newspaper's masthead »)  
+> VOIX : À Haïfa, le journal al-Karmil fait campagne contre ces ventes. / À Jaffa, en 1911, naît un journal au nom qui dit tout : / **Filastin**. / Palestine.  
+(24 mots, 2.2 par seconde)  
+Note : premier numéro de Filastin : 14 ou 15 janvier 1911 selon les sources ; dire seulement « en 1911 »
+
+
+**6.14** · film **00:10:47:00 → 00:11:02:00** (15.0 s) · **[PHOTO]** `data/archives/documents/ahad-haam-portrait.jpg`  
+Source : Ahad Ha'am, « Vérité de la terre d'Israël » (Emet me-Eretz Yisrael), Hamelitz, juin 1891 ; traduction anglaise complète : Alan Dowty, Israel Studies, vol. 5, n° 2, 2000, p. 154-181 ; extraits : Jewish Virtual Library ; notre traduction  
+À l'écran : « Mais ce n'est pas vrai. » · Ahad Ha'am, 1891  
+> VOIX : Même chez les sionistes, certains voient venir le conflit. / En 1891, le penseur Ahad Ha'am écrit : / « Nous croyons, à l'étranger, que la terre d'Israël est presque toute déserte. / Mais ce n'est pas **vrai**. »  
+(33 mots, 2.2 par seconde)
+
+
+**6.15** · film **00:11:02:00 → 00:11:17:00** (15.0 s) · **[PHOTO]** `data/archives/documents/ahad-haam-portrait.jpg`  
+Source : même texte (Dowty 2000) ; la phrase sur la cruauté est aussi citée par la Jewish Virtual Library  
+À l'écran : « avec hostilité et cruauté »  
+> VOIX : Il décrit des colons qui traitent les Arabes / « avec hostilité et cruauté », / et qui « s'en vantent ». // Et il prévient : / le jour où nous prendrons leur place, / ils ne s'écarteront pas si **facilement**.  
+(32 mots, 2.1 par seconde)  
+Note : la Jewish Virtual Library est un site pro-israélien : la citer rend la phrase inattaquable. Pagination exacte dans Dowty à relever si on obtient l'article (accès Project MUSE).
+
+
+**6.16** · film **00:11:17:00 → 00:11:33:00** (16.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:10:00 → 00:00:26:00  
 Source : SOURCES.md 4.1, Adobe Stock 609005799  
 > VOIX : En 1914, la guerre éclate. / L'Empire ottoman va s'effondrer, / et trois promesses contradictoires vont être faites sur la même **terre**. ///  
 (20 mots, 1.2 par seconde)  
@@ -368,4 +415,4 @@ Son : la nuit tombe sur la ville ; montée lente vers l'ouverture de la partie I
 
 
 ---
-Durée de la partie : 8 min 13.4 s (film 00:02:00:15 → 00:10:14:00)
+Durée de la partie : 9 min 32.4 s (film 00:02:00:15 → 00:11:33:00)

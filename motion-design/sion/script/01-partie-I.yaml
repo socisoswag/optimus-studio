@@ -161,10 +161,9 @@ chapitres:
       - type: PHOTO
         fichier: "data/archives/ds-14863.jpg"
         duree: 6
-        a_obtenir: true
         source: "SOURCES.md 2.2, Bibliothèque du Congrès ds 14863 (domaine public)"
         ecran: "carton : Ellis Island, New York · vers 1907"
-        note: "photo à télécharger (Bibliothèque du Congrès) et à animer en relief comme les autres archives"
+        note: "photo téléchargée (pleine définition) (Bibliothèque du Congrès), à animer en relief comme les autres archives"
         son: "salle immense, murmures, tampon"
 
   - num: "3"
@@ -249,16 +248,24 @@ chapitres:
         son: "salle, applaudissements lointains, coup de marteau de séance"
       - type: PHOTO
         fichier: portraits/herzl.png
-        duree: 11
-        note: "citation à confirmer mot pour mot (journal de Herzl, 3 septembre 1897) par la documentaliste"
+        duree: 18
+        source: >-
+          SOURCES.md 6 (journal de Herzl, 3 septembre 1897 : « In Basel habe ich den Judenstaat gegründet. Wenn ich
+          das heute laut sagte, würde mir ein universelles Gelächter antworten. Vielleicht in fünf Jahren, jedenfalls
+          in fünfzig wird es Jeder einsehen. » ; notre traduction)
+        ecran: "« À Bâle, j'ai fondé l'État juif. » · Theodor Herzl, journal, 3 septembre 1897"
         voix: >-
-          Dans son journal, il écrit : / « À Bâle, j'ai fondé l'État juif. / Peut-être dans cinq ans, / et
-          certainement dans cinquante, / tout le monde le **verra**. »
+          Le 3 septembre, il note dans son journal : / « À Bâle, j'ai fondé l'État juif. / Si je le disais
+          aujourd'hui à voix haute, / on me répondrait par un éclat de rire. / Dans cinq ans peut-être, / dans
+          cinquante à coup sûr, / chacun le **comprendra**. »
       - type: NOIR
         duree: 5
         voix: >-
-          Cinquante ans plus tard, / presque jour pour jour, / l'ONU vote le **partage**.
+          Cinquante ans plus tard, / en novembre 1947, / l'ONU vote le **partage**.
         son: "silence, un seul battement de cœur grave"
+        note: >-
+          ne pas dire « jour pour jour » : le journal date du 3 septembre 1897, le vote du 29 novembre 1947
+          (le rapport de l'UNSCOP qui recommande le partage est, lui, du 31 août 1947)
       - type: PHOTO
         fichier: portraits/herzl.png
         duree: 9
@@ -318,10 +325,9 @@ chapitres:
       - type: PHOTO
         fichier: "data/archives/12172.jpg"
         duree: 10
-        a_obtenir: true
         source: "SOURCES.md 2.2, Bibliothèque du Congrès matpc 12172 (domaine public)"
         ecran: "carton : Près de Jérusalem · entre 1898 et 1946"
-        note: "photo à télécharger (laboureur et ses bœufs, Jérusalem au fond) et à animer en relief"
+        note: "photo téléchargée (pleine définition) (laboureur et ses bœufs, Jérusalem au fond), à animer en relief"
         voix: >-
           Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, /
           et les ouvriers arabes sont écartés.
@@ -375,10 +381,20 @@ chapitres:
         fichier: output/archives-vivantes.mp4
         entree: 9.4
         sortie: 16.6
-        source: "SOURCES.md 2.2, matpc 04992 (le port de Jaffa)"
-        note: "chiffres de population à confirmer (Justin McCarthy, 1990 ; recensement ottoman) par la documentaliste"
+        source: >-
+          SOURCES.md 2.2, matpc 04992 (le port de Jaffa) ; chiffres : Justin McCarthy, The Population of Palestine,
+          Columbia University Press, 1990, p. 24, 26 et 37 (tableaux 2.3 et 2.18)
+        ecran: >-
+          Palestine, 1914 · environ 800 000 habitants · musulmans 82 % · chrétiens 10 % · juifs 8 %
+          · d'après Justin McCarthy, 1990
         voix: >-
-          Vers 1914, la Palestine compte environ sept cent mille habitants. / Moins d'un sur dix est **juif**.
+          Vers 1914, la Palestine compte environ huit cent mille habitants. / Environ un sur dix est **juif**.
+        note: >-
+          vérifié dans le livre. McCarthy : 798 389 habitants, dont 657 377 musulmans (avec 55 000 nomades),
+          81 012 chrétiens et environ 60 000 juifs (61 000 au tableau 2.18), en comptant les juifs de nationalité
+          étrangère. Piège : le chiffre de 38 754 juifs (p. 10, repris par Perplexity) ne compte que les sujets
+          ottomans, il oublie environ 20 000 juifs étrangers. L'estimation sioniste d'époque (Arthur Ruppin) dit
+          85 000 juifs, soit 12 % ; McCarthy la juge gonflée. « Environ un sur dix » couvre les deux.
       - type: IA
         fichier: output/reconstitutions/2-2-quai-jaffa.mp4
         entree: 0
@@ -389,40 +405,120 @@ chapitres:
           Le pays n'est pas vide. / Il a un nom, des villes, des paysans, / et bientôt des journaux qui
           s'**inquiètent**.
       - type: PHOTO
-        fichier: "à télécharger : portrait de Youssouf Diya al-Khalidi (domaine public)"
-        duree: 16
-        a_obtenir: true
-        note: "citation à confirmer mot pour mot (lettre du 1er mars 1899) par la documentaliste"
+        fichier: data/archives/documents/al-khalidi-portrait.jpg
+        duree: 12
+        source: >-
+          SOURCES.md 2.3 (portrait de Youssouf Diya al-Khalidi, auteur inconnu, domaine public) ; lettre du
+          1er mars 1899 citée par Rashid Khalidi, The Hundred Years' War on Palestine, 2020, chapitre 1
+        ecran: "Youssouf Diya al-Khalidi · ancien maire de Jérusalem, député au Parlement ottoman"
+        note: >-
+          portrait petit (320 × 455) : le présenter en cadre, comme une photo posée sur la table, jamais plein écran
         voix: >-
-          En 1899, un ancien maire de Jérusalem, Youssouf Diya al-Khalidi, écrit à Herzl. / Il reconnaît les
-          souffrances des Juifs, / mais il prévient : la Palestine est habitée. // « Au nom de Dieu, /
-          qu'on laisse la Palestine en **paix**. »
+          Le 1er mars 1899, un ancien maire de Jérusalem, / Youssouf Diya al-Khalidi, / écrit au grand-rabbin de
+          France, / pour que sa lettre parvienne à **Herzl**.
         son: "plume sur le papier, salle silencieuse"
       - type: PHOTO
-        fichier: portraits/herzl.png
-        duree: 15
-        note: "réponse de Herzl du 19 mars 1899 à confirmer mot pour mot"
+        fichier: data/archives/documents/al-khalidi-portrait.jpg
+        duree: 20
+        source: "lettre du 1er mars 1899, d'après R. Khalidi 2020 (traduite de l'anglais ; l'original est en français)"
+        ecran: >-
+          citations, une par une : « Historiquement, c'est bien votre pays. » · « Elle est habitée par d'autres. »
+          · « Au nom de Dieu, qu'on laisse la Palestine tranquille. »
         voix: >-
-          Herzl répond poliment. / Les habitants, écrit-il, profiteront de l'arrivée des Juifs : / qui songerait à
-          les chasser ? // Quatre ans plus tôt, dans son journal, / il envisageait de les faire passer la
-          **frontière**.
+          Il écrit d'abord : / « Qui pourrait contester les droits des Juifs sur la Palestine ? / Historiquement,
+          c'est bien votre pays. » // Puis il prévient : / la Palestine fait partie de l'Empire ottoman, / « et,
+          plus grave, / elle est habitée par d'autres ». /// « Au nom de Dieu, / qu'on laisse la Palestine
+          **tranquille**. »
+        note: >-
+          les deux phrases vont ensemble : couper la première ferait de lui un sioniste, couper la seconde cacherait
+          qu'il reconnaît l'histoire juive. Si on obtient l'original français (édition française du livre de
+          R. Khalidi), recaler le texte mot pour mot.
+      - type: PHOTO
+        fichier: data/archives/documents/1899-lettre-herzl-al-khalidi.jpg
+        duree: 16
+        source: >-
+          SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études
+          palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)
+        ecran: "la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »"
+        voix: >-
+          Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la
+          population non juive. / Mais qui songerait à les **éloigner** ? » // Leur terre, promet-il, vaudra
+          dix fois plus cher.
+      - type: PHOTO
+        fichier: portraits/herzl.png
+        duree: 13
+        source: "SOURCES.md 6 (journal de Herzl, 12 juin 1895) ; lettre du 19 mars 1899"
+        voix: >-
+          Personne ne lui avait parlé de les chasser. // Et quatre ans plus tôt, dans son journal, / il envisageait
+          de faire passer les pauvres de l'autre côté de la **frontière**.
+        note: >-
+          al-Khalidi n'a jamais évoqué une expulsion : c'est Herzl qui répond à une question qu'on ne lui a pas
+          posée (remarque de R. Khalidi, vérifiable en lisant les deux lettres). La phrase « nous trouverons
+          ailleurs ce qu'il nous faut » (si le sultan refuse) est dans la même lettre : à garder pour une version
+          longue.
       - type: RÉEL
         fichier: output/plans-reels/figuier-de-barbarie-sabr.mp4
         entree: 0
         sortie: 11.7
-        source: "SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé : aucune légende de lieu)"
-        note: "faits d'al-Fula (1910-1911) et des journaux Filastin et al-Karmil à confirmer par la documentaliste"
+        source: >-
+          SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé) ; faits : pétition des villageois au grand
+          vizir, 1910, citée dans « Sursock Purchases » (Wikipedia, d'après Kristen Alff et Rashid Khalidi) ;
+          Institut d'études palestiniennes, « 1910-1911 as a Turning Point »
+        ecran: "carton lieu : al-Fula · plaine de Marj Ibn Amer · 1910"
         voix: >-
-          Dès 1910, de grandes familles vendent leurs terres. / À al-Fula, les paysans sont **expulsés**. //
-          À Jaffa et à Haïfa, des journaux arabes s'alarment.
+          En 1910, un riche propriétaire de Beyrouth, / Élias Sursock, / vend dix mille dounams autour d'al-Fula au
+          Fonds national juif. // Les paysans qui les cultivent refusent de **partir**.
+        note: "1 dounam = 1 000 m² : 10 000 dounams = 10 km². Le vendeur est arabe : le dire, c'est un fait."
       - type: PHOTO
-        fichier: "à télécharger : portrait d'Ahad Ha'am (domaine public)"
-        duree: 12
-        a_obtenir: true
-        note: "texte exact d'Ahad Ha'am (Vérité de la terre d'Israël, 1891) à confirmer par la documentaliste"
+        fichier: data/archives/05530.jpg
+        duree: 13
+        source: >-
+          SOURCES.md 2.2, Bibliothèque du Congrès, collection Matson, LC-DIG-matpc-05530 (« Plain of Esdraelon,
+          telephoto from Nazareth », vers 1900-1920, domaine public) ; faits : mêmes sources que le plan précédent
+        ecran: "carton : Nazareth et la plaine · vers 1900-1920 · photo de la colonie américaine (Matson)"
+        note: >-
+          recadrer : enlever le bord de la plaque de verre et la bande de légende en haut. Lente poussée de Nazareth
+          (premier plan) vers la plaine au fond, où se trouve al-Fula. À passer en relief comme archives-vivantes.
         voix: >-
-          Même parmi les sionistes, certains voient le danger. / Dès 1891, le penseur Ahad Ha'am écrit : /
-          on croit là-bas que la terre est déserte. / C'est **faux**.
+          Ils écrivent à Istanbul : / la vente prive mille villageois de leur **pain**. // Le sous-préfet de Nazareth
+          refuse de la signer. / En vain : / en 1911, la colonie de Merhavia s'installe.
+        note: >-
+          « mille villageois » : chiffre de leur pétition (le dire comme tel). Ne pas dire « tués » ni « massacre » :
+          ce sont des expulsions et des heurts, pas plus.
+      - type: PHOTO
+        fichier: "à télécharger : une du journal Filastin, Jaffa, 1911 (Bibliothèque nationale d'Israël, collection Jrayed)"
+        duree: 11
+        a_obtenir: true
+        source: >-
+          Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers/falastin (premier numéro : janvier
+          1911) ; al-Karmil, Haïfa, fondé en 1908 par Najib Nassar
+        ecran: "à défaut : le bandeau du journal (Wikimedia Commons, « Falastin newspaper's masthead »)"
+        voix: >-
+          À Haïfa, le journal al-Karmil fait campagne contre ces ventes. / À Jaffa, en 1911, naît un journal au nom
+          qui dit tout : / **Filastin**. / Palestine.
+        note: "premier numéro de Filastin : 14 ou 15 janvier 1911 selon les sources ; dire seulement « en 1911 »"
+      - type: PHOTO
+        fichier: data/archives/documents/ahad-haam-portrait.jpg
+        duree: 15
+        source: >-
+          Ahad Ha'am, « Vérité de la terre d'Israël » (Emet me-Eretz Yisrael), Hamelitz, juin 1891 ; traduction
+          anglaise complète : Alan Dowty, Israel Studies, vol. 5, n° 2, 2000, p. 154-181 ; extraits : Jewish Virtual
+          Library ; notre traduction
+        ecran: "« Mais ce n'est pas vrai. » · Ahad Ha'am, 1891"
+        voix: >-
+          Même chez les sionistes, certains voient venir le conflit. / En 1891, le penseur Ahad Ha'am écrit : / « Nous
+          croyons, à l'étranger, que la terre d'Israël est presque toute déserte. / Mais ce n'est pas **vrai**. »
+      - type: PHOTO
+        fichier: data/archives/documents/ahad-haam-portrait.jpg
+        duree: 15
+        source: "même texte (Dowty 2000) ; la phrase sur la cruauté est aussi citée par la Jewish Virtual Library"
+        ecran: "« avec hostilité et cruauté »"
+        voix: >-
+          Il décrit des colons qui traitent les Arabes / « avec hostilité et cruauté », / et qui « s'en vantent ».
+          // Et il prévient : / le jour où nous prendrons leur place, / ils ne s'écarteront pas si **facilement**.
+        note: >-
+          la Jewish Virtual Library est un site pro-israélien : la citer rend la phrase inattaquable. Pagination
+          exacte dans Dowty à relever si on obtient l'article (accès Project MUSE).
       - type: RÉEL
         fichier: output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4
         entree: 10
