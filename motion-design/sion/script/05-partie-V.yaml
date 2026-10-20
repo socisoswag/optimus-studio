@@ -1,0 +1,379 @@
+titre: "Partie V · La dérive d'un projet"
+intro: >-
+  L'Israël d'aujourd'hui, par ses dirigeants. Règle 7 de la bible, sans exception : les personnes vivantes ne sont
+  montrées qu'à travers leurs propres mots, datés et sourcés, et des faits établis (condamnations, mandats, votes).
+  Aucun adjectif sur elles. Le 7 octobre est raconté sans détour, puis Gaza, avec les qualifications attribuées à
+  ceux qui les prononcent (Cour internationale de justice, CPI, commission de l'ONU).
+chapitres:
+  - num: "V.0"
+    titre: "Ouverture de la partie V"
+    plans:
+      - type: MD
+        fichier: output/partie-5.mp4
+        entree: 0
+        sortie: 14
+        ecran: "Partie V · La dérive d'un projet"
+
+  - num: "24"
+    titre: "Chapitre 24 · Netanyahou, Lieberman, et la haine institutionnalisée"
+    titre_de_rechange: "Chapitre 24 · Netanyahou, Lieberman : la droite au pouvoir"
+    intention: >-
+      Leurs mots, rien que leurs mots. Le titre d'origine juge ; le titre de rechange laisse les citations juger,
+      et elles suffisent. La loi de 2018 est citée comme un texte de loi, pas comme une opinion.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-24.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/figures-aujourdhui.mp4
+        entree: 0
+        sortie: 5.4
+        ecran: "Israël depuis 1996 · les figures de la droite au pouvoir"
+      - type: MD
+        fichier: output/figures-aujourdhui.mp4
+        entree: 5.4
+        sortie: 10.2
+        ecran: "fiche : Benyamin Netanyahou"
+        voix: >-
+          Benyamin Netanyahou. / Premier ministre pour la première fois en **1996**.
+      - type: PHOTO
+        fichier: portraits/netanyahou.png
+        duree: 12
+        source: "vidéo de Benyamin Netanyahou, jour des élections, 17 mars 2015 ; notre traduction"
+        voix: >-
+          Le jour des élections de 2015, il lance aux électeurs de droite : / « Les électeurs arabes vont voter en
+          masse. » // Un citoyen sur cinq est **arabe**.
+      - type: PHOTO
+        fichier: "à fabriquer : carton du texte de loi (Loi fondamentale : Israël, État-nation du peuple juif, 19 juillet 2018)"
+        duree: 15
+        a_obtenir: true
+        source: "Loi fondamentale : Israël, État-nation du peuple juif, 19 juillet 2018, article 1 (c) et article 4 ; notre traduction"
+        voix: >-
+          En 2018, une loi fondamentale proclame : / « Le droit à l'autodétermination nationale dans l'État d'Israël
+          est propre au peuple juif. » // L'arabe perd son statut de langue **officielle**.
+      - type: PHOTO
+        fichier: portraits/netanyahou.png
+        duree: 9
+        source: "message de Benyamin Netanyahou sur Instagram, 10 mars 2019"
+        voix: >-
+          Netanyahou précise : / « Israël n'est pas l'État de tous ses citoyens. »
+      - type: MD
+        fichier: output/figures-aujourdhui.mp4
+        entree: 10.2
+        sortie: 15
+        ecran: "fiche : Avigdor Lieberman (« Pas de loyauté, pas de citoyenneté », 2009)"
+        voix: >-
+          Avigdor Lieberman, ministre des Affaires étrangères puis de la **Défense**.
+      - type: PHOTO
+        fichier: portraits/lieberman.png
+        duree: 15
+        source: >-
+          réunion électorale au Centre interdisciplinaire d'Herzliya, 8 mars 2015 (rapportée par Haaretz, NBC News,
+          Adalah) ; le parquet refuse d'ouvrir une enquête le 25 mai 2015 ; notre traduction
+        voix: >-
+          En 2015, à propos des citoyens arabes jugés déloyaux : / « Ceux qui sont contre nous, / il faut lever la
+          hache et leur couper la tête. » // Le parquet refuse d'ouvrir une **enquête**.
+      - type: PHOTO
+        fichier: portraits/netanyahou.png
+        duree: 14
+        source: "conférence de presse de Benyamin Netanyahou, 18 janvier 2024 ; déclaration du 21 septembre 2025"
+        voix: >-
+          En septembre 2025, Netanyahou résume son action : / « Pendant des années, j'ai empêché la création de cet
+          État terroriste. » // Il parle de l'État **palestinien**.
+
+  - num: "25"
+    titre: "Chapitre 25 · Gaza, un champ d'expérimentation militaire"
+    titre_de_rechange: "Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre"
+    intention: >-
+      Le chapitre le plus dur du film. Le 7 octobre est raconté en premier, et sans détour : c'est la condition pour
+      être entendu ensuite sur Gaza. Puis le blocus, les offensives, le siège, les morts, les ruines, et ce que disent
+      les juges. La thèse du « laboratoire » est attribuée à celui qui la défend. Aucune image de corps.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-25.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 0
+        sortie: 6
+        voix: >-
+          Gaza. / Plus de deux millions d'habitants, / sur 365 kilomètres **carrés**.
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 6
+        sortie: 17
+        ecran: "carton : output/cartons/gaza-2007"
+        voix: >-
+          En 2007, le Hamas prend le pouvoir. / Israël, avec l'Égypte, boucle le territoire par terre, par mer et par
+          **air**.
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 17
+        sortie: 30
+        voix: >-
+          Puis les offensives : 2008, 2014, 2021. / Des milliers de morts à Gaza ; / des dizaines en **Israël**.
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 30
+        sortie: 39
+        ecran: "carton : output/cartons/gaza-2023"
+        voix: >-
+          Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
+      - type: NOIR
+        duree: 18
+        source: >-
+          environ 1 200 morts en Israël, dont une majorité de civils ; 251 otages ; festival Nova : environ 360 morts ;
+          rapport de la représentante spéciale de l'ONU sur les violences sexuelles en conflit, 4 mars 2024
+        voix: >-
+          Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un
+          festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///
+        son: "silence presque total ; aucune musique, aucun effet"
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 39
+        sortie: 50
+        source: "Yoav Gallant, ministre de la Défense, 9 octobre 2023 (vidéo) ; cité par la Cour internationale de justice"
+        voix: >-
+          Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. /
+          Nous combattons des animaux **humains**. »
+      - type: PHOTO
+        fichier: portraits/netanyahou.png
+        duree: 9
+        source: "discours de Benyamin Netanyahou, 28 octobre 2023 (Deutéronome 25, 17)"
+        voix: >-
+          Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
+        note: "dans la Bible, l'ordre qui suit est d'effacer Amalek ; la Cour internationale de justice a relevé la phrase. Ne pas l'expliquer plus : le spectateur comprend."
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 50
+        sortie: 62
+        voix: >-
+          Plus de soixante-quatorze mille Palestiniens tués, / selon le ministère de la Santé de Gaza. / Un décompte
+          sans doute **inférieur** à la réalité.
+      - type: MD
+        fichier: output/chiffre-gaza.mp4
+        entree: 0
+        sortie: 12.52
+        ecran: "déjà dans la pièce : près de 70 % de femmes et d'enfants parmi les morts vérifiés par l'ONU"
+        voix: >-
+          Parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des
+          **enfants**.
+      - type: 3D
+        fichier: output/gaza-vue-du-ciel.mp4
+        entree: 0
+        sortie: 36
+        ecran: "déjà dans la pièce : avant et après, images Sentinel-2 de septembre 2023 et septembre 2025"
+        voix: >-
+          Vu du ciel, avant, / et après. ///
+        note: "à étalonner en terre-dure ; laisser l'image parler, la voix seulement au début"
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 62
+        sortie: 73.5
+        voix: >-
+          Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est
+          **déclarée**.
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 73.5
+        sortie: 84.5
+        source: "CIJ, ordonnance du 26 janvier 2024 ; CPI, mandats du 21 novembre 2024 ; commission d'enquête de l'ONU, 16 septembre 2025"
+        voix: >-
+          La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre
+          Netanyahou, Gallant, et un chef du **Hamas**.
+      - type: NOIR
+        duree: 12
+        source: "commission internationale indépendante d'enquête de l'ONU, rapport du 16 septembre 2025 ; position du gouvernement israélien"
+        voix: >-
+          En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations,
+          / et parle de **légitime défense**.
+        note: "règle 6 de la bible : la voix dit qui affirme, sur quelle base, et ce qui reste à juger"
+      - type: PHOTO
+        fichier: "à télécharger : couverture du livre The Palestine Laboratory (Verso, 2023) ou carton"
+        duree: 15
+        a_obtenir: true
+        source: "Antony Loewenstein, The Palestine Laboratory, Verso, 2023"
+        voix: >-
+          Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance
+          utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 84.5
+        sortie: 93.52
+        voix: >-
+          10 octobre 2025 : un cessez-le-feu. / Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
+
+  - num: "26"
+    titre: "Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique"
+    intention: >-
+      D'où vient le sionisme religieux (le rabbin Kook, le Goush Emounim), ce qu'il a produit de pire (Hébron 1994),
+      et comment il est arrivé au gouvernement. Smotrich et Ben Gvir, par leurs mots et leur casier. Rappeler que
+      beaucoup de religieux juifs s'y opposent (chapitre 30).
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-26.mp4
+        entree: 0
+        sortie: 4.6
+      - type: PHOTO
+        fichier: "à télécharger : colons du Goush Emounim, Sébastia, 1975 (GPO, domaine public)"
+        duree: 15
+        a_obtenir: true
+        source: "Goush Emounim, fondé en 1974 ; enseignement du rabbin Zvi Yehouda Kook"
+        voix: >-
+          Après 1967, une partie des Juifs religieux voit dans la conquête un signe de Dieu. / En 1974, ils fondent le
+          Goush Emounim, / « le bloc de la foi » : / s'installer partout, en Judée et en **Samarie**.
+      - type: NOIR
+        duree: 11
+        source: "massacre du tombeau des Patriarches, Hébron, 25 février 1994 : 29 morts"
+        ecran: "carton : Hébron · 25 février 1994"
+        voix: >-
+          Le 25 février 1994, à Hébron, / un colon, Baruch Goldstein, tue 29 Palestiniens en prière dans la **mosquée**.
+      - type: MD
+        fichier: output/figures-aujourdhui.mp4
+        entree: 15
+        sortie: 20.4
+        ecran: "fiche : Smotrich et Ben Gvir, ministres à partir de décembre 2022, tous deux colons"
+        voix: >-
+          En 2022, ce courant entre au **gouvernement**.
+      - type: PHOTO
+        fichier: portraits/ben-gvir.png
+        duree: 16
+        source: "condamnation de 2007 (incitation au racisme, soutien à une organisation terroriste, le Kach) ; portrait de Baruch Goldstein retiré de son salon en 2020"
+        voix: >-
+          Itamar Ben Gvir, ministre de la Sécurité nationale. / Condamné en 2007 pour incitation au racisme / et soutien
+          à une organisation terroriste. // Chez lui, il a longtemps gardé un portrait de Baruch **Goldstein**.
+      - type: PHOTO
+        fichier: portraits/ben-gvir.png
+        duree: 12
+        source: "entretien à la chaîne 12, 23 août 2023 ; notre traduction"
+        voix: >-
+          En 2023 : / « Mon droit de circuler sur les routes de Judée et de Samarie / passe avant le droit de circuler
+          des **Arabes**. »
+      - type: PHOTO
+        fichier: portraits/smotrich.png
+        duree: 13
+        source: "Bezalel Smotrich, 1er mars 2023, après l'attaque de colons contre Huwara ; il retire ensuite ses propos"
+        voix: >-
+          Bezalel Smotrich, ministre des Finances, / après une attaque de colons contre le village de Huwara : / « Il
+          faut effacer Huwara. »
+        note: "dire qu'il a ensuite retiré ses propos : la voix le fait au plan suivant"
+      - type: PHOTO
+        fichier: portraits/smotrich.png
+        duree: 15
+        source: "Bezalel Smotrich, 5 août 2024 (CNN, 6 août 2024) ; notre traduction"
+        voix: >-
+          Il retire ce mot. / En 2024, il dit qu'affamer deux millions d'habitants de Gaza / serait peut-être « juste et
+          moral », / mais que « personne au monde ne nous laisserait **faire** ».
+
+  - num: "27"
+    titre: "Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation"
+    intention: >-
+      Une enquête documentée de bout en bout (The New York Times, Meta, OpenAI) plutôt qu'une thèse générale. Dire
+      que la désinformation existe dans tous les camps de cette guerre ; celle-ci se distingue parce qu'un ministère
+      l'a payée.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-27.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/guerre-numerique.mp4
+        entree: 0
+        sortie: 6.4
+        voix: >-
+          Des Américains qui n'existent **pas**.
+      - type: MD
+        fichier: output/guerre-numerique.mp4
+        entree: 6.4
+        sortie: 19
+        voix: >-
+          Pendant la guerre, des centaines de faux comptes se font passer pour des Américains, / et interpellent des élus
+          du **Congrès**.
+      - type: MD
+        fichier: output/guerre-numerique.mp4
+        entree: 19
+        sortie: 29
+        voix: >-
+          Leurs messages sont écrits par une intelligence **artificielle**.
+      - type: MD
+        fichier: output/guerre-numerique.mp4
+        entree: 29
+        sortie: 41
+        voix: >-
+          En mai 2024, Meta supprime 510 comptes Facebook. / Le réseau n'avait presque aucune audience **réelle**.
+      - type: MD
+        fichier: output/guerre-numerique.mp4
+        entree: 41
+        sortie: 53.4
+        voix: >-
+          Selon The New York Times, environ deux millions de dollars d'argent public, / venus du ministère israélien de
+          la Diaspora. / Le ministère **dément**.
+      - type: MD
+        fichier: output/guerre-numerique.mp4
+        entree: 53.4
+        sortie: 60.2
+        source: "rapports trimestriels de Meta sur les réseaux de comportement inauthentique coordonné (réseaux iraniens et autres, 2023-2024)"
+        voix: >-
+          Des faux comptes, il y en a dans tous les camps de cette **guerre**.
+      - type: NOIR
+        duree: 4
+        voix: >-
+          Celui-ci était payé par un **État**.
+
+  - num: "28"
+    titre: "Chapitre 28 · Le racisme en Israël : mizrahim, éthiopiens et palestiniens"
+    titre_de_rechange: "Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens"
+    intention: >-
+      Les faits établis par des commissions et des rapports israéliens eux-mêmes, et la contestation venue de
+      l'intérieur (les Black Panthers, les manifestations de 2015). Le point de vue israélien a sa place : les
+      citoyens arabes votent, siègent à la Knesset et à la Cour suprême.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-28.mp4
+        entree: 0
+        sortie: 4.6
+      - type: PHOTO
+        fichier: "à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)"
+        duree: 15
+        a_obtenir: true
+        source: "Black Panthers israéliens, fondés en 1971 à Moussrara, Jérusalem ; propos de Golda Meir (« pas gentils ») rapportés par la presse, avril 1971, à vérifier"
+        voix: >-
+          Les Juifs venus des pays arabes, les mizrahim, se heurtent à une élite venue d'Europe. / En 1971, des jeunes de
+          Jérusalem fondent les Black Panthers. / Golda Meir les juge « pas **gentils** ».
+      - type: PHOTO
+        fichier: "à télécharger : immigrants yéménites, camp de Rosh HaAyin, vers 1950 (GPO, domaine public)"
+        duree: 16
+        a_obtenir: true
+        source: "commission Kedmi, rapport de 2001 ; décision du gouvernement israélien d'indemniser les familles, février 2021"
+        voix: >-
+          Entre 1948 et 1954, des centaines d'enfants d'immigrants yéménites disparaissent des hôpitaux et des camps. /
+          On dit aux parents qu'ils sont morts. // En 2021, l'État accepte d'indemniser les **familles**.
+        note: "la commission Kedmi n'a pas retenu d'enlèvements organisés ; l'indemnisation est accordée sans reconnaissance de responsabilité"
+      - type: PHOTO
+        fichier: "à télécharger : manifestation des Israéliens d'origine éthiopienne, Tel-Aviv, mai 2015 (licence libre, Wikimedia Commons)"
+        duree: 16
+        a_obtenir: true
+        source: "directive du directeur du ministère de la Santé, Ron Gamzu, janvier 2013 (Haaretz, 27 janvier 2013) ; manifestations de mai 2015"
+        voix: >-
+          En 2013, le ministère de la Santé ordonne d'arrêter d'injecter un contraceptif à des femmes éthiopiennes / qui
+          n'en comprenaient pas les effets. // En 2015, des milliers d'Israéliens éthiopiens manifestent contre les
+          violences **policières**.
+      - type: NOIR
+        duree: 13
+        source: "octobre 2000 : 13 citoyens arabes tués par la police (commission Or, 2003)"
+        ecran: "carton : Galilée · octobre 2000"
+        voix: >-
+          Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize d'entre eux
+          pendant des **manifestations**.
+      - type: NOIR
+        duree: 14
+        source: "Ra'am dans la coalition gouvernementale, 2021-2022 ; Khaled Kabub, juge à la Cour suprême depuis 2022"
+        voix: >-
+          Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à
+          la Cour suprême, / et un parti arabe a gouverné en **2021**.
+      - type: NOIR
+        duree: 9
+        voix: >-
+          Pour beaucoup de ces citoyens, / la loi de 2018 a dit l'inverse. ///

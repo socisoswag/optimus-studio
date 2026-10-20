@@ -30,7 +30,13 @@
 | Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans drapeau | 00:41:04:12 | 2 min 01.5 s |
 | Chapitre 22 · Les intifadas : pierres contre tanks | 00:43:05:24 | 1 min 46.4 s |
 | Chapitre 23 · Colonisation rampante et colonies illégales | 00:44:52:08 | 2 min 57.7 s |
-| **Total** | | **47 min 50.1 s** |
+| Ouverture de la partie V | 00:47:50:02 | 0 min 14.0 s |
+| Chapitre 24 · Netanyahou, Lieberman, et la haine institutionnalisée | 00:48:04:02 | 1 min 24.6 s |
+| Chapitre 25 · Gaza, un champ d'expérimentation militaire | 00:49:28:17 | 3 min 20.6 s |
+| Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique | 00:52:49:08 | 1 min 32.0 s |
+| Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation | 00:54:21:08 | 1 min 08.8 s |
+| Chapitre 28 · Le racisme en Israël : mizrahim, éthiopiens et palestiniens | 00:55:30:03 | 1 min 27.6 s |
+| **Total** | | **56 min 57.7 s** |
 
 ## Images à obtenir
 
@@ -75,3 +81,9 @@
 - 22.4 : à fabriquer : carton noir à deux lignes (bilan de la première intifada)
 - 22.9 : à fabriquer : carton noir (la deuxième intifada)
 - 22.10 : même carton, ligne de bilan
+- 24.5 : à fabriquer : carton du texte de loi (Loi fondamentale : Israël, État-nation du peuple juif, 19 juillet 2018)
+- 25.15 : à télécharger : couverture du livre The Palestine Laboratory (Verso, 2023) ou carton
+- 26.2 : à télécharger : colons du Goush Emounim, Sébastia, 1975 (GPO, domaine public)
+- 28.2 : à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)
+- 28.3 : à télécharger : immigrants yéménites, camp de Rosh HaAyin, vers 1950 (GPO, domaine public) (la commission Kedmi n'a pas retenu d'enlèvements organisés ; l'indemnisation est accordée sans reconnaissance de responsabilité)
+- 28.4 : à télécharger : manifestation des Israéliens d'origine éthiopienne, Tel-Aviv, mai 2015 (licence libre, Wikimedia Commons)

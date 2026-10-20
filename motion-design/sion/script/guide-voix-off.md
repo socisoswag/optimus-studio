@@ -153,3 +153,20 @@ existe, mais il rend souvent la voix artificielle : je ne l'utilise qu'en secour
 | Hamas | Ha-mass |
 | Ahmed Yassine | Ah-mèd Ya-ssine |
 | Hizma | Hiz-ma |
+
+## 13. Prononciation (partie V)
+
+| Mot | Dire |
+|---|---|
+| Benyamin Netanyahou | Bé-nya-mine Né-ta-nia-hou |
+| Avigdor Lieberman | A-vig-dor Li-bèr-mane |
+| Yoav Gallant | Yo-av Ga-lante |
+| Amalek | A-ma-lèk |
+| Goush Emounim | Gouch É-mou-nim |
+| Baruch Goldstein | Ba-rouk Gold-chtaïne |
+| Itamar Ben Gvir | I-ta-mar Bène Gvir |
+| Bezalel Smotrich | Bé-tsa-lèl Smo-tritch |
+| Huwara | Hou-wa-ra |
+| mizrahim | miz-ra-him |
+| Ra'am | Ra-am |
+| Khaled Kabub | Kha-lèd Ka-boub |

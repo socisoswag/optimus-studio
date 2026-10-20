@@ -322,6 +322,28 @@ Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans s
 - Charte du Hamas, 18 août 1988 (article 32) ; document de principes du Hamas, 1er mai 2017.
 - Cour internationale de justice : avis du 9 juillet 2004 (le mur) et du 19 juillet 2024 (l'occupation, les colonies).
 
+**Partie V, aujourd'hui** (chapitres 24 à 28, script ; personnes vivantes : leurs propres mots seulement)
+- Benyamin Netanyahou : vidéo du jour des élections, 17 mars 2015 ; Instagram, 10 mars 2019 (« Israël n'est pas
+  l'État de tous ses citoyens ») ; discours du 28 octobre 2023 (Amalek, Deutéronome 25, 17) ; conférence de
+  presse du 18 janvier 2024 ; déclaration du 21 septembre 2025 (« j'ai empêché la création de cet État terroriste »).
+- Loi fondamentale : Israël, État-nation du peuple juif, 19 juillet 2018 (articles 1 et 4).
+- Avigdor Lieberman : réunion électorale d'Herzliya, 8 mars 2015 (Haaretz, NBC News ; plainte d'Adalah, refus
+  du parquet le 25 mai 2015).
+- Yoav Gallant, 9 octobre 2023 (« animaux humains »), cité par la Cour internationale de justice.
+- 7 octobre 2023 : environ 1 200 morts en Israël, dont une majorité de civils ; 251 otages ; rapport de la
+  représentante spéciale de l'ONU sur les violences sexuelles en conflit, 4 mars 2024.
+- CIJ, ordonnance du 26 janvier 2024 ; CPI, mandats d'arrêt du 21 novembre 2024 (Netanyahou, Gallant, Mohammed
+  Deif) ; commission internationale indépendante d'enquête de l'ONU, 16 septembre 2025 ; cessez-le-feu du
+  10 octobre 2025.
+- Antony Loewenstein, The Palestine Laboratory, Verso, 2023.
+- Goush Emounim, 1974 ; massacre du tombeau des Patriarches, Hébron, 25 février 1994 : 29 morts.
+- Itamar Ben Gvir : condamné en 2007 (incitation au racisme, soutien au Kach) ; chaîne 12, 23 août 2023.
+- Bezalel Smotrich : 1er mars 2023 (Huwara) ; 5 août 2024 (CNN, 6 août 2024).
+- Meta, rapports sur les réseaux de comportement inauthentique coordonné, 2023-2024.
+- Black Panthers israéliens, 1971 ; commission Kedmi (2001) et indemnisation de février 2021 ; directive du
+  ministère de la Santé, janvier 2013 (Haaretz, 27 janvier 2013) ; octobre 2000 : 13 citoyens arabes tués (commission
+  Or, 2003) ; Ra'am au gouvernement (2021-2022) ; Khaled Kabub, juge à la Cour suprême depuis 2022.
+
 **Les aliyas** (chapitre 5)
 - Fourchettes de la Jewish Virtual Library et de l'Encyclopaedia Judaica pour chaque vague (1882 à 1939).
 - Population en 1945 : Village Statistics du gouvernement mandataire (553 600 Juifs sur 1 764 520 habitants).
