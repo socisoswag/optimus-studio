@@ -22,6 +22,28 @@
 5. Ne jamais modifier en place `tools/build_intro.sh` (ou tout script bash) pendant qu'un rendu l'exécute :
    écrire un nouveau fichier puis `mv` (nouvel inode).
 
+## Réalisme et étalonnage : contrôlés avant de montrer quoi que ce soit (automatisme)
+
+L'auteur ne doit jamais découvrir lui-même un défaut visible. Avant toute livraison ou tout aperçu :
+
+1. **Effet maquette** : tout plan 3D près du sol (moins de 5 km d'altitude environ) est comparé, image contre image,
+   à un vrai plan du même type de paysage. S'il manque la matière du réel (arbres, pierres, maisons, eau vivante),
+   ce n'est pas livrable : le remplacer par un vrai plan, ou monter plus haut. La 3D sert l'espace, la haute altitude
+   et les données (cartes, tracés, lumières) ; la terre vue de près, ce sont de vrais plans.
+2. **Raccord de couleur** : chaque plan est comparé au plan de référence (la Terre de l'intro) et à ses voisins de
+   montage, côte à côte. Même chaîne de finition partout (tools/looks.py, halo, courbe, grain, bandes) ; aucun plan
+   plus gris, plus froid, plus bouché ou plus saturé que ses voisins sans raison de récit.
+3. **Matière de départ** : les vrais plans se téléchargent dans la meilleure définition proposée (4K), puis se
+   réduisent en 1080p ; jamais de rendu de prévisualisation comme source.
+4. Ces contrôles se font sans attendre qu'on les demande ; les défauts trouvés se corrigent avant d'envoyer.
+
+## Recherches à confier à Perplexity
+
+Dès qu'un fait, un chiffre ou une citation ne peut pas être vérifié ici dans une source primaire (texte original,
+vidéo, archive, page de livre), le dire tout de suite à l'auteur : une question par point, prête à copier, avec ce
+qu'il faut rapporter (texte exact dans la langue d'origine, date, lien). Ne pas chercher à sa place quand il l'a
+demandé, et ne rien enregistrer en voix tant que la réponse n'est pas vérifiée.
+
 ## Bruitages (vrais sons, jamais « IA »)
 
 - Toujours de vrais enregistrements de la banque (data/bruitages.json, Freesound CC0 ou CC BY ; jamais de licence

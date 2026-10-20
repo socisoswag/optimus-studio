@@ -146,3 +146,11 @@ une réponse sans source primaire ne sert pas.
     c'est bien votre pays », « habitée par d'autres » et « au nom de Dieu, qu'on laisse la Palestine tranquille ».
 11. Golda Meir et les Black Panthers israéliens (1971) : la phrase exacte (« ils ne sont pas gentils ») et sa source.
 12. Edwin Montagu, mémorandum du 23 août 1917 : la cote exacte aux Archives nationales britanniques (série CAB 24).
+13. Avigdor Lieberman, 8 mars 2015 : la phrase exacte de la hache en hébreu, sa traduction, la source d'origine
+    (vidéo ou article du jour : Haaretz, Ynet, The Times of Israel) et le lieu précis.
+14. Primo Levi, 1982 : l'entretien où il dit « chacun est le Juif de quelqu'un » (journal, date, phrase en italien,
+    et la phrase exacte du journaliste sur les Palestiniens).
+15. Edgar Morin, « Israël-Palestine : le cancer » (Le Monde, 4 juin 2002) : dates exactes de la condamnation en appel
+    et de l'arrêt de la Cour de cassation.
+16. Google Earth Studio : conditions d'utilisation pour un documentaire publié sur YouTube et monétisé (est-ce permis,
+    et quelle mention exacte doit rester à l'écran).

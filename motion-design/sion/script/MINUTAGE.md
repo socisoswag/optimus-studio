@@ -83,7 +83,7 @@
 - 14.3 : à télécharger : l'hôtel King David après l'attentat, 22 juillet 1946 (domaine public, Wikimedia Commons)
 - 14.5 : à télécharger : portrait de Folke Bernadotte (domaine public, Wikimedia Commons)
 - 14.8 : à fabriquer : carton noir à une ligne (Jérusalem · 22 février 1948 · rue Ben Yehuda)
-- 14.9 : à télécharger : la lettre au New York Times du 4 décembre 1948 (page du journal) (À TOI DE DÉCIDER. La citation est exacte et célèbre, mais c'est la seule du film qui compare à l'Allemagne nazie. Elle vient de Juifs, en 1948, ce qui la rend défendable ; elle peut aussi servir de prétexte pour attaquer tout le film. Si on la garde : la lire sans effet, et montrer la page du journal.)
+- 14.9 : à télécharger : la lettre au New York Times du 4 décembre 1948 (page du journal) (gardée (choix de l'auteur, 20 octobre). Seule comparaison du film avec l'Allemagne nazie, mais ce sont les mots de Juifs, en 1948 : la lire sans effet, et montrer la page du journal.)
 - 15.7 : à télécharger : le convoi de Hadassah, Jérusalem, 13 avril 1948 (domaine public, Wikimedia Commons)
 - 16.3 : à télécharger : la déclaration d'indépendance d'Israël, 14 mai 1948 (document, domaine public)
 - 16.6 : à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)
