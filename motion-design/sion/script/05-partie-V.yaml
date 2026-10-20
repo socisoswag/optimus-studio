@@ -35,24 +35,26 @@ chapitres:
         ecran: "fiche : Benyamin Netanyahou"
         voix: >-
           Benyamin Netanyahou. / Premier ministre pour la première fois en **1996**.
-      - type: PHOTO
-        fichier: portraits/netanyahou.png
-        duree: 12
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 0
+        sortie: 12
         source: "vidéo de Benyamin Netanyahou, jour des élections, 17 mars 2015 ; notre traduction"
         voix: >-
-          Le jour des élections de 2015, il lance aux électeurs de droite : / « Les électeurs arabes vont voter en
-          masse. » // Un citoyen sur cinq est **arabe**.
-      - type: PHOTO
-        fichier: "à fabriquer : carton du texte de loi (Loi fondamentale : Israël, État-nation du peuple juif, 19 juillet 2018)"
-        duree: 15
-        a_obtenir: true
+          Le jour des élections de 2015, il lance aux électeurs de droite : / « Les électeurs arabes se rendent en
+          masse aux urnes. » // Un citoyen sur cinq est **arabe**.
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 69
+        sortie: 84
         source: "Loi fondamentale : Israël, État-nation du peuple juif, 19 juillet 2018, article 1 (c) et article 4 ; notre traduction"
         voix: >-
           En 2018, une loi fondamentale proclame : / « Le droit à l'autodétermination nationale dans l'État d'Israël
           est propre au peuple juif. » // L'arabe perd son statut de langue **officielle**.
-      - type: PHOTO
-        fichier: portraits/netanyahou.png
-        duree: 9
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 12
+        sortie: 21
         source: "message de Benyamin Netanyahou sur Instagram, 10 mars 2019"
         voix: >-
           Netanyahou précise : / « Israël n'est pas l'État de tous ses citoyens. »
@@ -63,9 +65,10 @@ chapitres:
         ecran: "fiche : Avigdor Lieberman (« Pas de loyauté, pas de citoyenneté », 2009)"
         voix: >-
           Avigdor Lieberman, ministre des Affaires étrangères puis de la **Défense**.
-      - type: PHOTO
-        fichier: portraits/lieberman.png
-        duree: 24
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 21
+        sortie: 45
         source: >-
           entretien avec Oudi Segal, congrès « Démocratie électorale 2015 », Centre interdisciplinaire d'Herzliya,
           8 mars 2015 ; texte hébreu publié le jour même par N12 / Mako ; le parquet refuse d'ouvrir une enquête le
@@ -79,9 +82,10 @@ chapitres:
         note: >-
           texte vérifié sur la source hébraïque du jour (Perplexity, 20 octobre) : singulier, phrase entière, sans
           rien couper. « Les citoyens arabes » est le contexte donné par N12, hors des guillemets.
-      - type: PHOTO
-        fichier: portraits/netanyahou.png
-        duree: 14
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 45
+        sortie: 59
         source: "conférence de presse de Benyamin Netanyahou, 18 janvier 2024 ; déclaration du 21 septembre 2025"
         voix: >-
           En septembre 2025, Netanyahou résume son action : / « Pendant des années, j'ai empêché la création de cet
@@ -142,9 +146,10 @@ chapitres:
         voix: >-
           Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. /
           Nous combattons des animaux **humains**. »
-      - type: PHOTO
-        fichier: portraits/netanyahou.png
-        duree: 9
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 59
+        sortie: 68
         source: "discours de Benyamin Netanyahou, 28 octobre 2023 (Deutéronome 25, 17)"
         voix: >-
           Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
@@ -194,10 +199,10 @@ chapitres:
           En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations,
           / et parle de **légitime défense**.
         note: "règle 6 de la bible : la voix dit qui affirme, sur quelle base, et ce qui reste à juger"
-      - type: PHOTO
-        fichier: "à télécharger : couverture du livre The Palestine Laboratory (Verso, 2023) ou carton"
-        duree: 15
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 84
+        sortie: 99
         source: "Antony Loewenstein, The Palestine Laboratory, Verso, 2023"
         voix: >-
           Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance
@@ -241,35 +246,39 @@ chapitres:
         ecran: "fiche : Smotrich et Ben Gvir, ministres à partir de décembre 2022, tous deux colons"
         voix: >-
           En 2022, ce courant entre au **gouvernement**.
-      - type: PHOTO
-        fichier: portraits/ben-gvir.png
-        duree: 16
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 68
+        sortie: 84
         source: "condamnation de 2007 (incitation au racisme, soutien à une organisation terroriste, le Kach) ; portrait de Baruch Goldstein retiré de son salon en 2020"
         voix: >-
           Itamar Ben Gvir, ministre de la Sécurité nationale. / Condamné en 2007 pour incitation au racisme / et soutien
           à une organisation terroriste. // Chez lui, il a longtemps gardé un portrait de Baruch **Goldstein**.
-      - type: PHOTO
-        fichier: portraits/ben-gvir.png
-        duree: 12
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 84
+        sortie: 97
         source: "entretien à la chaîne 12, 23 août 2023 ; notre traduction"
         voix: >-
-          En 2023 : / « Mon droit de circuler sur les routes de Judée et de Samarie / passe avant le droit de circuler
-          des **Arabes**. »
-      - type: PHOTO
-        fichier: portraits/smotrich.png
-        duree: 13
+          En 2023 : / « Mon droit, celui de ma femme et de mes enfants, / de circuler sur les routes de Judée et de
+          Samarie / passe avant la liberté de circulation des **Arabes**. »
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 97
+        sortie: 110
         source: "Bezalel Smotrich, 1er mars 2023, après l'attaque de colons contre Huwara ; il retire ensuite ses propos"
         voix: >-
-          Bezalel Smotrich, ministre des Finances, / après une attaque de colons contre le village de Huwara : / « Il
-          faut effacer Huwara. »
+          Bezalel Smotrich, ministre des Finances, / après une attaque de colons contre le village de Huwara : / « Le
+          village de Huwara doit être **effacé**. »
         note: "dire qu'il a ensuite retiré ses propos : la voix le fait au plan suivant"
-      - type: PHOTO
-        fichier: portraits/smotrich.png
-        duree: 15
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 110
+        sortie: 125
         source: "Bezalel Smotrich, 5 août 2024 (CNN, 6 août 2024) ; notre traduction"
         voix: >-
-          Il retire ce mot. / En 2024, il dit qu'affamer deux millions d'habitants de Gaza / serait peut-être « juste et
-          moral », / mais que « personne au monde ne nous laisserait **faire** ».
+          Il retire ce mot. / En 2024, il dit : / « Personne au monde ne nous laissera affamer deux millions de
+          personnes, / même si cela pouvait être justifié et **moral**, / jusqu'à ce qu'ils rendent les otages. »
 
   - num: "27"
     titre: "Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation"

@@ -158,12 +158,12 @@ chapitres:
         entree: 62.8
         sortie: 69.8
         ecran: "Ils fuient l'Europe, presque tous vers l'Amérique."
-      - type: PHOTO
-        fichier: "data/archives/ds-14863.jpg"
-        duree: 6
-        source: "SOURCES.md 2.2, Bibliothèque du Congrès ds 14863 (domaine public)"
-        ecran: "carton : Ellis Island, New York · vers 1907"
-        note: "photo téléchargée (pleine définition) (Bibliothèque du Congrès), à animer en relief comme les autres archives"
+      - type: ARCH
+        fichier: output/archives-filmees/1903-ellis-island-immigrants.mp4
+        entree: 0
+        sortie: 6
+        source: "SOURCES.md 4.2 (Emigrants [i.e. Immigrants] Landing at Ellis Island, Thomas A. Edison, Inc., 1903, domaine public)"
+        ecran: "carton : Ellis Island, New York · 1903"
         son: "salle immense, murmures, tampon"
 
   - num: "3"
@@ -176,35 +176,39 @@ chapitres:
         fichier: output/chapitres/chapitre-03.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: "à télécharger : Le Petit Journal, supplément illustré du 13 janvier 1895 (« Le traître »)"
-        duree: 11
-        a_obtenir: true
-        source: "domaine public (Gallica ou Wikimedia Commons)"
-        ecran: "carton : Paris · 5 janvier 1895"
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 113
+        sortie: 124
+        source: "dégradation du capitaine Dreyfus, cour de l'École militaire, Paris, 5 janvier 1895 (jamais filmée)"
+        ecran: "Paris · cour de l'École militaire · 5 janvier 1895 · La dégradation du capitaine Dreyfus · « Mort aux juifs ! »"
         voix: >-
           Paris, 5 janvier 1895. / Dans la cour de l'École militaire, on arrache ses galons au capitaine Alfred
           Dreyfus. // La foule crie : / « Mort aux **juifs**. »
         son: "roulement de tambour militaire au loin, foule ; un seul coup sec sur « juifs »"
-      - type: PHOTO
-        fichier: portraits/dreyfus.png
-        duree: 9
-        source: "SOURCES.md 2.1 (Aron Gerschel, domaine public)"
+      - type: ARCH
+        fichier: output/archives-filmees/1899-melies-dreyfus-ile-du-diable.mp4
+        entree: 0
+        sortie: 9
+        source: "SOURCES.md 4.2 (Georges Méliès, L'Affaire Dreyfus, 1899, tableau « L'île du Diable », domaine public)"
+        ecran: "mention obligatoire : Reconstitution de Georges Méliès, 1899"
+        note: "le film de Méliès est une reconstitution tournée en 1899, pendant l'Affaire : toujours le dire à l'écran"
         voix: >-
           Il est innocent. / Le vrai traître est un autre officier, Esterhazy. // Mais Dreyfus est juif, /
           et cela **suffit**.
       - type: ARCH
-        fichier: "à télécharger : L'Affaire Dreyfus, film de Georges Méliès (1899)"
-        duree: 10
-        a_obtenir: true
-        source: "domaine public (Méliès, mort en 1938 : domaine public en France depuis 2009)"
+        fichier: output/archives-filmees/1899-melies-dreyfus-bagarre-journalistes.mp4
+        entree: 0
+        sortie: 10
+        source: "SOURCES.md 4.2 (Georges Méliès, L'Affaire Dreyfus, 1899, tableau « Bagarre entre journalistes » ; Méliès, mort en 1938 : domaine public)"
         ecran: "mention : L'Affaire Dreyfus · film de Georges Méliès · 1899 (scène reconstituée à l'époque)"
         voix: >-
           Il faudra douze ans, / la lettre de Zola, « J'accuse », / et une France coupée en deux, / pour qu'il soit
           **réhabilité**, en 1906.
-      - type: PHOTO
-        fichier: portraits/herzl.png
-        duree: 8
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 0
+        sortie: 8
         source: "SOURCES.md 2.1 (Carl Pietzner, domaine public)"
         voix: >-
           En 1895, dans la cour de l'École militaire, / il y a un journaliste viennois. // Il s'appelle Theodor
@@ -228,9 +232,10 @@ chapitres:
         ecran: "fiche de la chronologie : Theodor Herzl"
         voix: >-
           En 1896, il publie un petit livre : / « L'État des **Juifs** ».
-      - type: PHOTO
-        fichier: portraits/herzl.png
-        duree: 10
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 8
+        sortie: 18
         source: "SOURCES.md 2.1"
         ecran: "carton transparent : output/cartons/01-vienne-1896.mov"
         voix: >-
@@ -246,9 +251,10 @@ chapitres:
           Août 1897, à Bâle. / Le premier congrès sioniste fixe le but : / un foyer pour le peuple juif en
           **Palestine**, / garanti par le droit public.
         son: "salle, applaudissements lointains, coup de marteau de séance"
-      - type: PHOTO
-        fichier: portraits/herzl.png
-        duree: 18
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 18
+        sortie: 36
         source: >-
           SOURCES.md 6 (journal de Herzl, 3 septembre 1897 : « In Basel habe ich den Judenstaat gegründet. Wenn ich
           das heute laut sagte, würde mir ein universelles Gelächter antworten. Vielleicht in fünf Jahren, jedenfalls
@@ -266,9 +272,10 @@ chapitres:
         note: >-
           ne pas dire « jour pour jour » : le journal date du 3 septembre 1897, le vote du 29 novembre 1947
           (le rapport de l'UNSCOP qui recommande le partage est, lui, du 31 août 1947)
-      - type: PHOTO
-        fichier: portraits/herzl.png
-        duree: 9
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 36
+        sortie: 45
         voix: >-
           Mais deux ans avant Bâle, en juin 1895, / il note déjà, à propos des habitants du pays qu'il espère
           obtenir :
@@ -354,22 +361,22 @@ chapitres:
         entree: 0
         sortie: 4.6
       - type: ARCH
-        fichier: "output/archives-filmees/1897-porte-de-jaffa-lumiere (nom définitif à confirmer)"
-        duree: 10
-        a_obtenir: true
+        fichier: output/archives-filmees/1897-lumiere-jerusalem-porte-de-jaffa.mp4
+        entree: 0
+        sortie: 10
         source: "SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine public)"
         ecran: "carton : Jérusalem · avril 1897 · film des frères Lumière"
         voix: >-
           Jérusalem, 1897. / Les frères Lumière filment la porte de Jaffa. // Voilà le pays que Bâle, la même année,
           choisit pour **foyer**.
-      - type: PHOTO
-        fichier: output/archives-vivantes.mp4
-        entree: 3.2
-        sortie: 10.4
-        source: "SOURCES.md 2.2, matpc 06520 (Jaffa vue des orangeraies, entre 1898 et 1914)"
-        ecran: "déjà dans la pièce : Entre 1898 et 1914 · Jaffa"
+      - type: IA
+        fichier: output/reconstitutions/4-5-savonnerie-naplouse.mp4
+        entree: 0
+        sortie: 7.2
+        source: "SOURCES.md 4 (Google Veo, d'après matpc 20377, la savonnerie de Naplouse)"
+        ecran: "la vraie photo d'abord (« Photo d'archive »), puis « Reconstitution par IA, d'après une photo d'archive »"
         voix: >-
-          Un pays de villages et de villes anciennes. / Jaffa exporte ses **oranges** dans le monde entier.
+          Un pays de villages et de villes anciennes. / Naplouse fait son savon, / Jaffa exporte ses **oranges**.
       - type: IA
         fichier: output/reconstitutions/1-1-orangeraies-jaffa.mp4
         entree: 0
@@ -378,16 +385,14 @@ chapitres:
         ecran: "mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
         voix: >-
           Musulmans, chrétiens et juifs y vivent depuis des siècles, / sous l'autorité de l'Empire **ottoman**.
-      - type: PHOTO
-        fichier: output/archives-vivantes.mp4
-        entree: 9.4
-        sortie: 16.6
+      - type: IA
+        fichier: output/reconstitutions/3-3-porte-de-damas.mp4
+        entree: 0
+        sortie: 7.2
         source: >-
-          SOURCES.md 2.2, matpc 04992 (le port de Jaffa) ; chiffres : Justin McCarthy, The Population of Palestine,
+          SOURCES.md 4 (Google Veo, d'après matpc 21600, le marché aux moutons devant la porte de Damas) ; chiffres : Justin McCarthy, The Population of Palestine,
           Columbia University Press, 1990, p. 24, 26 et 37 (tableaux 2.3 et 2.18)
-        ecran: >-
-          Palestine, 1914 · environ 800 000 habitants · musulmans 82 % · chrétiens 10 % · juifs 8 %
-          · d'après Justin McCarthy, 1990
+        ecran: "la vraie photo d'abord, puis la reconstitution (mentions de la pièce)"
         voix: >-
           Vers 1914, la Palestine compte environ huit cent mille habitants. / Environ un sur dix est **juif**.
         note: >-
@@ -405,9 +410,10 @@ chapitres:
         voix: >-
           Le pays n'est pas vide. / Il a un nom, des villes, des paysans, / et bientôt des journaux qui
           s'**inquiètent**.
-      - type: PHOTO
-        fichier: data/archives/documents/al-khalidi-portrait.jpg
-        duree: 12
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 45
+        sortie: 57
         source: >-
           SOURCES.md 2.3 (portrait de Youssouf Diya al-Khalidi, auteur inconnu, domaine public) ; lettre du
           1er mars 1899 citée par Rashid Khalidi, The Hundred Years' War on Palestine, 2020, chapitre 1
@@ -418,9 +424,10 @@ chapitres:
           Le 1er mars 1899, un ancien maire de Jérusalem, / Youssouf Diya al-Khalidi, / écrit au grand-rabbin de
           France, / pour que sa lettre parvienne à **Herzl**.
         son: "plume sur le papier, salle silencieuse"
-      - type: PHOTO
-        fichier: data/archives/documents/al-khalidi-portrait.jpg
-        duree: 25
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 57
+        sortie: 82
         source: >-
           lettre à Zadoc Kahn, Constantinople, 1er mars 1899, texte original français : Yohanan Manor, Naissance du
           sionisme politique, Gallimard, 1981, p. 217 et suivantes ; Henry Laurens, La Question de Palestine, t. I,
@@ -436,22 +443,23 @@ chapitres:
         note: >-
           texte français d'origine, vérifié (Perplexity, 20 octobre). Les deux phrases vont ensemble : couper la
           première ferait de lui un sioniste, couper la seconde cacherait qu'il reconnaît l'histoire juive.
-      - type: PHOTO
-        fichier: data/archives/documents/1899-lettre-herzl-al-khalidi.jpg
-        duree: 16
-        a_obtenir: true
-        note: "Wikimedia bloque le téléchargement depuis ce serveur : à récupérer à la main (lien dans SOURCES.md 2.4)"
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 124
+        sortie: 140
+        note: "scène document (la lettre en texte) ; la page originale (SOURCES.md 2.4) reste à récupérer à la main si on veut la montrer"
         source: >-
           SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études
           palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)
         ecran: "la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »"
         voix: >-
           Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la
-          population non juive. / Mais qui songerait à les **éloigner** ? » // Leur terre, promet-il, vaudra
-          dix fois plus cher.
-      - type: PHOTO
-        fichier: portraits/herzl.png
-        duree: 13
+          population non juive. / Mais qui songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il,
+          montera de cinq à dix fois.
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 82
+        sortie: 95
         source: "SOURCES.md 6 (journal de Herzl, 12 juin 1895) ; lettre du 19 mars 1899"
         voix: >-
           Personne ne lui avait parlé de les chasser. // Et quatre ans plus tôt, dans son journal, / il envisageait
@@ -490,21 +498,22 @@ chapitres:
         note: >-
           « mille villageois » : chiffre de leur pétition (le dire comme tel). Ne pas dire « tués » ni « massacre » :
           ce sont des expulsions et des heurts, pas plus.
-      - type: PHOTO
-        fichier: "à télécharger : une du journal Filastin, Jaffa, 1911 (Bibliothèque nationale d'Israël, collection Jrayed)"
-        duree: 11
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 0
+        sortie: 11
         source: >-
           Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers/falastin (premier numéro : janvier
           1911) ; al-Karmil, Haïfa, fondé en 1908 par Najib Nassar
-        ecran: "à défaut : le bandeau du journal (Wikimedia Commons, « Falastin newspaper's masthead »)"
+        ecran: "Filastin, « Palestine » · Jaffa, 1911 · al-Karmil (Haïfa, 1908) contre les ventes de terres"
         voix: >-
           À Haïfa, le journal al-Karmil fait campagne contre ces ventes. / À Jaffa, en 1911, naît un journal au nom
           qui dit tout : / **Filastin**. / Palestine.
         note: "premier numéro de Filastin : 14 ou 15 janvier 1911 selon les sources ; dire seulement « en 1911 »"
-      - type: PHOTO
-        fichier: data/archives/documents/ahad-haam-portrait.jpg
-        duree: 15
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 95
+        sortie: 110
         source: >-
           Ahad Ha'am, « Vérité de la terre d'Israël » (Emet me-Eretz Yisrael), Hamelitz, juin 1891 ; traduction
           anglaise complète : Alan Dowty, Israel Studies, vol. 5, n° 2, 2000, p. 154-181 ; extraits : Jewish Virtual
@@ -513,9 +522,10 @@ chapitres:
         voix: >-
           Même chez les sionistes, certains voient venir le conflit. / En 1891, le penseur Ahad Ha'am écrit : / « Nous
           croyons, à l'étranger, que la terre d'Israël est presque toute déserte. / Mais ce n'est pas **vrai**. »
-      - type: PHOTO
-        fichier: data/archives/documents/ahad-haam-portrait.jpg
-        duree: 15
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 110
+        sortie: 125
         source: "même texte (Dowty 2000) ; la phrase sur la cruauté est aussi citée par la Jewish Virtual Library"
         ecran: "« avec hostilité et cruauté »"
         voix: >-

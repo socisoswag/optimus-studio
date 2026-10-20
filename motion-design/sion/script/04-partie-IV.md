@@ -279,7 +279,7 @@ Film 00:41:13:02 → 00:43:14:14 · durée 2 min 01.5 s
 > VOIX : silence
 
 
-**21.3** · film **00:41:22:02 → 00:41:36:02** (14.0 s) · **[PHOTO]** `portraits/arafat.png`  
+**21.3** · film **00:41:22:02 → 00:41:36:02** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:22:00 → 00:01:36:00  
 > VOIX : Yasser Arafat fonde le Fatah à la fin des années cinquante, / et prend la tête de l'OLP en 1969. / Pour son peuple, il est le visage de la **résistance**.  
 (29 mots, 2.1 par seconde)
 
@@ -327,7 +327,7 @@ Source : discours de Yasser Arafat à l'Assemblée générale de l'ONU, 13 novem
 (18 mots, 1.9 par seconde)
 
 
-**21.12** · film **00:42:56:14 → 00:43:02:14** (6.0 s) · **[PHOTO]** `portraits/arafat.png`  
+**21.12** · film **00:42:56:14 → 00:43:02:14** (6.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:36:00 → 00:01:42:00  
 > VOIX : « Ne laissez pas le rameau d'olivier tomber de ma **main**. »  
 (10 mots, 1.7 par seconde)
 
@@ -372,7 +372,7 @@ Source : 1987-1993 : l'armée israélienne tue de 1 087 à 1 204 Palestiniens, d
 > VOIX : silence
 
 
-**22.6** · film **00:44:04:14 → 00:44:12:14** (8.0 s) · **[PHOTO]** `portraits/yassine.png`  
+**22.6** · film **00:44:04:14 → 00:44:12:14** (8.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:42:00 → 00:01:50:00  
 > VOIX : La même année naît le Hamas, / fondé à Gaza par le cheikh Ahmed **Yassine**.  
 (14 mots, 1.8 par seconde)
 
@@ -419,7 +419,7 @@ Film 00:45:00:23 → 00:47:58:17 · durée 2 min 57.7 s
 (8 mots, 1.7 par seconde)
 
 
-**23.3** · film **00:45:10:08 → 00:45:22:08** (12.0 s) · **[PHOTO]** `portraits/rabin.png`  
+**23.3** · film **00:45:10:08 → 00:45:22:08** (12.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:50:00 → 00:02:02:00  
 > VOIX : Pour la première fois, Israël et l'OLP se reconnaissent. / Les Palestiniens espèrent un État ; / les Israéliens, la **sécurité**.  
 (18 mots, 1.5 par seconde)
 

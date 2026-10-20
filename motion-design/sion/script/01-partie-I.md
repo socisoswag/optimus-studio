@@ -135,12 +135,11 @@ Son : les impacts de la pièce portent la violence ; la voix reste basse
 > VOIX : silence
 
 
-**2.10** · film **00:05:01:19 → 00:05:07:19** (6.0 s) · **[PHOTO]** `data/archives/ds-14863.jpg`  
-Source : SOURCES.md 2.2, Bibliothèque du Congrès ds 14863 (domaine public)  
-À l'écran : carton : Ellis Island, New York · vers 1907  
+**2.10** · film **00:05:01:19 → 00:05:07:19** (6.0 s) · **[ARCH]** `output/archives-filmees/1903-ellis-island-immigrants.mp4` · source 00:00:00:00 → 00:00:06:00  
+Source : SOURCES.md 4.2 (Emigrants [i.e. Immigrants] Landing at Ellis Island, Thomas A. Edison, Inc., 1903, domaine public)  
+À l'écran : carton : Ellis Island, New York · 1903  
 > VOIX : silence  
-Son : salle immense, murmures, tampon  
-Note : photo téléchargée (pleine définition) (Bibliothèque du Congrès), à animer en relief comme les autres archives
+Son : salle immense, murmures, tampon
 
 
 ## Chapitre 3 · L'affaire Dreyfus : fracture française et choc identitaire
@@ -154,28 +153,30 @@ Film 00:05:07:19 → 00:05:50:09 · durée 0 min 42.6 s
 > VOIX : silence
 
 
-**3.2** · film **00:05:12:09 → 00:05:23:09** (11.0 s) · **[PHOTO]** `à télécharger : Le Petit Journal, supplément illustré du 13 janvier 1895 (« Le traître »)` · **À OBTENIR**  
-Source : domaine public (Gallica ou Wikimedia Commons)  
-À l'écran : carton : Paris · 5 janvier 1895  
+**3.2** · film **00:05:12:09 → 00:05:23:09** (11.0 s) · **[MD]** `output/documents.mp4` · source 00:01:53:00 → 00:02:04:00  
+Source : dégradation du capitaine Dreyfus, cour de l'École militaire, Paris, 5 janvier 1895 (jamais filmée)  
+À l'écran : Paris · cour de l'École militaire · 5 janvier 1895 · La dégradation du capitaine Dreyfus · « Mort aux juifs ! »  
 > VOIX : Paris, 5 janvier 1895. / Dans la cour de l'École militaire, on arrache ses galons au capitaine Alfred Dreyfus. // La foule crie : / « Mort aux **juifs**. »  
 (24 mots, 2.2 par seconde)  
 Son : roulement de tambour militaire au loin, foule ; un seul coup sec sur « juifs »
 
 
-**3.3** · film **00:05:23:09 → 00:05:32:09** (9.0 s) · **[PHOTO]** `portraits/dreyfus.png`  
-Source : SOURCES.md 2.1 (Aron Gerschel, domaine public)  
+**3.3** · film **00:05:23:09 → 00:05:32:09** (9.0 s) · **[ARCH]** `output/archives-filmees/1899-melies-dreyfus-ile-du-diable.mp4` · source 00:00:00:00 → 00:00:09:00  
+Source : SOURCES.md 4.2 (Georges Méliès, L'Affaire Dreyfus, 1899, tableau « L'île du Diable », domaine public)  
+À l'écran : mention obligatoire : Reconstitution de Georges Méliès, 1899  
 > VOIX : Il est innocent. / Le vrai traître est un autre officier, Esterhazy. // Mais Dreyfus est juif, / et cela **suffit**.  
-(18 mots, 2.0 par seconde)
+(18 mots, 2.0 par seconde)  
+Note : le film de Méliès est une reconstitution tournée en 1899, pendant l'Affaire : toujours le dire à l'écran
 
 
-**3.4** · film **00:05:32:09 → 00:05:42:09** (10.0 s) · **[ARCH]** `à télécharger : L'Affaire Dreyfus, film de Georges Méliès (1899)` · **À OBTENIR**  
-Source : domaine public (Méliès, mort en 1938 : domaine public en France depuis 2009)  
+**3.4** · film **00:05:32:09 → 00:05:42:09** (10.0 s) · **[ARCH]** `output/archives-filmees/1899-melies-dreyfus-bagarre-journalistes.mp4` · source 00:00:00:00 → 00:00:10:00  
+Source : SOURCES.md 4.2 (Georges Méliès, L'Affaire Dreyfus, 1899, tableau « Bagarre entre journalistes » ; Méliès, mort en 1938 : domaine public)  
 À l'écran : mention : L'Affaire Dreyfus · film de Georges Méliès · 1899 (scène reconstituée à l'époque)  
 > VOIX : Il faudra douze ans, / la lettre de Zola, « J'accuse », / et une France coupée en deux, / pour qu'il soit **réhabilité**, en 1906.  
 (21 mots, 2.1 par seconde)
 
 
-**3.5** · film **00:05:42:09 → 00:05:50:09** (8.0 s) · **[PHOTO]** `portraits/herzl.png`  
+**3.5** · film **00:05:42:09 → 00:05:50:09** (8.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:00:00 → 00:00:08:00  
 Source : SOURCES.md 2.1 (Carl Pietzner, domaine public)  
 > VOIX : En 1895, dans la cour de l'École militaire, / il y a un journaliste viennois. // Il s'appelle Theodor **Herzl**.  
 (18 mots, 2.2 par seconde)  
@@ -199,7 +200,7 @@ Film 00:05:50:09 → 00:07:19:09 · durée 1 min 29.0 s
 (10 mots, 2.3 par seconde)
 
 
-**4.3** · film **00:05:59:09 → 00:06:09:09** (10.0 s) · **[PHOTO]** `portraits/herzl.png`  
+**4.3** · film **00:05:59:09 → 00:06:09:09** (10.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:08:00 → 00:00:18:00  
 Source : SOURCES.md 2.1  
 À l'écran : carton transparent : output/cartons/01-vienne-1896.mov  
 > VOIX : Son idée est simple : / l'antisémitisme ne disparaîtra pas. / Les Juifs doivent avoir un **État**, / reconnu par les grandes puissances.  
@@ -214,7 +215,7 @@ Source : domaine public (Wikimedia Commons)
 Son : salle, applaudissements lointains, coup de marteau de séance
 
 
-**4.5** · film **00:06:19:09 → 00:06:37:09** (18.0 s) · **[PHOTO]** `portraits/herzl.png`  
+**4.5** · film **00:06:19:09 → 00:06:37:09** (18.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:18:00 → 00:00:36:00  
 Source : SOURCES.md 6 (journal de Herzl, 3 septembre 1897 : « In Basel habe ich den Judenstaat gegründet. Wenn ich das heute laut sagte, würde mir ein universelles Gelächter antworten. Vielleicht in fünf Jahren, jedenfalls in fünfzig wird es Jeder einsehen. » ; notre traduction)  
 À l'écran : « À Bâle, j'ai fondé l'État juif. » · Theodor Herzl, journal, 3 septembre 1897  
 > VOIX : Le 3 septembre, il note dans son journal : / « À Bâle, j'ai fondé l'État juif. / Si je le disais aujourd'hui à voix haute, / on me répondrait par un éclat de rire. / Dans cinq ans peut-être, / dans cinquante à coup sûr, / chacun le **comprendra**. »  
@@ -228,7 +229,7 @@ Son : silence, un seul battement de cœur grave
 Note : ne pas dire « jour pour jour » : le journal date du 3 septembre 1897, le vote du 29 novembre 1947 (le rapport de l'UNSCOP qui recommande le partage est, lui, du 31 août 1947)
 
 
-**4.7** · film **00:06:42:09 → 00:06:51:09** (9.0 s) · **[PHOTO]** `portraits/herzl.png`  
+**4.7** · film **00:06:42:09 → 00:06:51:09** (9.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:36:00 → 00:00:45:00  
 > VOIX : Mais deux ans avant Bâle, en juin 1895, / il note déjà, à propos des habitants du pays qu'il espère obtenir :  
 (20 mots, 2.2 par seconde)
 
@@ -302,17 +303,17 @@ Film 00:08:12:09 → 00:11:31:07 · durée 3 min 18.9 s
 > VOIX : silence
 
 
-**6.2** · film **00:08:16:24 → 00:08:26:24** (10.0 s) · **[ARCH]** `output/archives-filmees/1897-porte-de-jaffa-lumiere (nom définitif à confirmer)` · **À OBTENIR**  
+**6.2** · film **00:08:16:24 → 00:08:26:24** (10.0 s) · **[ARCH]** `output/archives-filmees/1897-lumiere-jerusalem-porte-de-jaffa.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine public)  
 À l'écran : carton : Jérusalem · avril 1897 · film des frères Lumière  
 > VOIX : Jérusalem, 1897. / Les frères Lumière filment la porte de Jaffa. // Voilà le pays que Bâle, la même année, choisit pour **foyer**.  
 (21 mots, 2.1 par seconde)
 
 
-**6.3** · film **00:08:26:24 → 00:08:34:04** (7.2 s) · **[PHOTO]** `output/archives-vivantes.mp4` · source 00:00:03:05 → 00:00:10:10  
-Source : SOURCES.md 2.2, matpc 06520 (Jaffa vue des orangeraies, entre 1898 et 1914)  
-À l'écran : déjà dans la pièce : Entre 1898 et 1914 · Jaffa  
-> VOIX : Un pays de villages et de villes anciennes. / Jaffa exporte ses **oranges** dans le monde entier.  
+**6.3** · film **00:08:26:24 → 00:08:34:04** (7.2 s) · **[IA]** `output/reconstitutions/4-5-savonnerie-naplouse.mp4` · source 00:00:00:00 → 00:00:07:05  
+Source : SOURCES.md 4 (Google Veo, d'après matpc 20377, la savonnerie de Naplouse)  
+À l'écran : la vraie photo d'abord (« Photo d'archive »), puis « Reconstitution par IA, d'après une photo d'archive »  
+> VOIX : Un pays de villages et de villes anciennes. / Naplouse fait son savon, / Jaffa exporte ses **oranges**.  
 (16 mots, 2.2 par seconde)
 
 
@@ -323,9 +324,9 @@ Source : SOURCES.md 4 (Google Veo, d'après matpc 06520)
 (14 mots, 1.2 par seconde)
 
 
-**6.5** · film **00:08:46:04 → 00:08:53:09** (7.2 s) · **[PHOTO]** `output/archives-vivantes.mp4` · source 00:00:09:10 → 00:00:16:15  
-Source : SOURCES.md 2.2, matpc 04992 (le port de Jaffa) ; chiffres : Justin McCarthy, The Population of Palestine, Columbia University Press, 1990, p. 24, 26 et 37 (tableaux 2.3 et 2.18)  
-À l'écran : Palestine, 1914 · environ 800 000 habitants · musulmans 82 % · chrétiens 10 % · juifs 8 % · d'après Justin McCarthy, 1990  
+**6.5** · film **00:08:46:04 → 00:08:53:09** (7.2 s) · **[IA]** `output/reconstitutions/3-3-porte-de-damas.mp4` · source 00:00:00:00 → 00:00:07:05  
+Source : SOURCES.md 4 (Google Veo, d'après matpc 21600, le marché aux moutons devant la porte de Damas) ; chiffres : Justin McCarthy, The Population of Palestine, Columbia University Press, 1990, p. 24, 26 et 37 (tableaux 2.3 et 2.18)  
+À l'écran : la vraie photo d'abord, puis la reconstitution (mentions de la pièce)  
 > VOIX : Vers 1914, la Palestine compte environ huit cent mille habitants. / Environ un sur dix est **juif**.  
 (16 mots, 2.2 par seconde)  
 Note : vérifié dans le livre. McCarthy : 798 389 habitants, dont 657 377 musulmans (avec 55 000 nomades), 81 012 chrétiens et environ 60 000 juifs (61 000 au tableau 2.18), en comptant les juifs de nationalité étrangère. Piège : le chiffre de 38 754 juifs (p. 10, repris par Perplexity) ne compte que les sujets ottomans, il oublie environ 20 000 juifs étrangers. L'estimation sioniste d'époque (Arthur Ruppin) dit 85 000 juifs, soit 12 % ; McCarthy la juge gonflée. « Environ un sur dix » couvre les deux.
@@ -338,7 +339,7 @@ Source : SOURCES.md 4 (Google Veo, d'après matpc 04992)
 (20 mots, 2.0 par seconde)
 
 
-**6.7** · film **00:09:03:14 → 00:09:15:14** (12.0 s) · **[PHOTO]** `data/archives/documents/al-khalidi-portrait.jpg`  
+**6.7** · film **00:09:03:14 → 00:09:15:14** (12.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:45:00 → 00:00:57:00  
 Source : SOURCES.md 2.3 (portrait de Youssouf Diya al-Khalidi, auteur inconnu, domaine public) ; lettre du 1er mars 1899 citée par Rashid Khalidi, The Hundred Years' War on Palestine, 2020, chapitre 1  
 À l'écran : Youssouf Diya al-Khalidi · ancien maire de Jérusalem, député au Parlement ottoman  
 > VOIX : Le 1er mars 1899, un ancien maire de Jérusalem, / Youssouf Diya al-Khalidi, / écrit au grand-rabbin de France, / pour que sa lettre parvienne à **Herzl**.  
@@ -347,7 +348,7 @@ Son : plume sur le papier, salle silencieuse
 Note : portrait petit (320 × 455) : le présenter en cadre, comme une photo posée sur la table, jamais plein écran
 
 
-**6.8** · film **00:09:15:14 → 00:09:40:14** (25.0 s) · **[PHOTO]** `data/archives/documents/al-khalidi-portrait.jpg`  
+**6.8** · film **00:09:15:14 → 00:09:40:14** (25.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:57:00 → 00:01:22:00  
 Source : lettre à Zadoc Kahn, Constantinople, 1er mars 1899, texte original français : Yohanan Manor, Naissance du sionisme politique, Gallimard, 1981, p. 217 et suivantes ; Henry Laurens, La Question de Palestine, t. I, Fayard, 1999, p. 204 (transcription Clio-Texte, 31 octobre 2023)  
 À l'écran : citations, une par une : « Mon Dieu, historiquement, c'est bien votre pays ! » · « elle est habitée par d'autres que des Israélites » · « Au nom de Dieu, qu'on laisse la Palestine tranquille »  
 > VOIX : Il écrit d'abord : / « Qui peut contester les droits des Juifs sur la Palestine ? / Mon Dieu, historiquement, c'est bien votre pays ! » // Puis : / « La Palestine fait maintenant partie intégrale de l'Empire ottoman, / et, ce qui est plus grave, / elle est habitée par d'autres que des Israélites. » /// « Au nom de Dieu, / qu'on laisse la Palestine **tranquille**. »  
@@ -355,15 +356,15 @@ Source : lettre à Zadoc Kahn, Constantinople, 1er mars 1899, texte original fra
 Note : texte français d'origine, vérifié (Perplexity, 20 octobre). Les deux phrases vont ensemble : couper la première ferait de lui un sioniste, couper la seconde cacherait qu'il reconnaît l'histoire juive.
 
 
-**6.9** · film **00:09:40:14 → 00:09:56:14** (16.0 s) · **[PHOTO]** `data/archives/documents/1899-lettre-herzl-al-khalidi.jpg` · **À OBTENIR**  
+**6.9** · film **00:09:40:14 → 00:09:56:14** (16.0 s) · **[MD]** `output/documents.mp4` · source 00:02:04:00 → 00:02:20:00  
 Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)  
 À l'écran : la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »  
-> VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive. / Mais qui songerait à les **éloigner** ? » // Leur terre, promet-il, vaudra dix fois plus cher.  
-(32 mots, 2.0 par seconde)  
-Note : Wikimedia bloque le téléchargement depuis ce serveur : à récupérer à la main (lien dans SOURCES.md 2.4)
+> VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive. / Mais qui songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il, montera de cinq à dix fois.  
+(36 mots, 2.2 par seconde)  
+Note : scène document (la lettre en texte) ; la page originale (SOURCES.md 2.4) reste à récupérer à la main si on veut la montrer
 
 
-**6.10** · film **00:09:56:14 → 00:10:09:14** (13.0 s) · **[PHOTO]** `portraits/herzl.png`  
+**6.10** · film **00:09:56:14 → 00:10:09:14** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:01:22:00 → 00:01:35:00  
 Source : SOURCES.md 6 (journal de Herzl, 12 juin 1895) ; lettre du 19 mars 1899  
 > VOIX : Personne ne lui avait parlé de les chasser. // Et quatre ans plus tôt, dans son journal, / il envisageait de faire passer les pauvres de l'autre côté de la **frontière**.  
 (29 mots, 2.2 par seconde)  
@@ -386,22 +387,22 @@ Source : SOURCES.md 2.2, Bibliothèque du Congrès, collection Matson, LC-DIG-ma
 Note : « mille villageois » : chiffre de leur pétition (le dire comme tel). Ne pas dire « tués » ni « massacre » : ce sont des expulsions et des heurts, pas plus.
 
 
-**6.13** · film **00:10:34:07 → 00:10:45:07** (11.0 s) · **[PHOTO]** `à télécharger : une du journal Filastin, Jaffa, 1911 (Bibliothèque nationale d'Israël, collection Jrayed)` · **À OBTENIR**  
+**6.13** · film **00:10:34:07 → 00:10:45:07** (11.0 s) · **[MD]** `output/documents.mp4` · source 00:00:00:00 → 00:00:11:00  
 Source : Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers/falastin (premier numéro : janvier 1911) ; al-Karmil, Haïfa, fondé en 1908 par Najib Nassar  
-À l'écran : à défaut : le bandeau du journal (Wikimedia Commons, « Falastin newspaper's masthead »)  
+À l'écran : Filastin, « Palestine » · Jaffa, 1911 · al-Karmil (Haïfa, 1908) contre les ventes de terres  
 > VOIX : À Haïfa, le journal al-Karmil fait campagne contre ces ventes. / À Jaffa, en 1911, naît un journal au nom qui dit tout : / **Filastin**. / Palestine.  
 (24 mots, 2.2 par seconde)  
 Note : premier numéro de Filastin : 14 ou 15 janvier 1911 selon les sources ; dire seulement « en 1911 »
 
 
-**6.14** · film **00:10:45:07 → 00:11:00:07** (15.0 s) · **[PHOTO]** `data/archives/documents/ahad-haam-portrait.jpg`  
+**6.14** · film **00:10:45:07 → 00:11:00:07** (15.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:01:35:00 → 00:01:50:00  
 Source : Ahad Ha'am, « Vérité de la terre d'Israël » (Emet me-Eretz Yisrael), Hamelitz, juin 1891 ; traduction anglaise complète : Alan Dowty, Israel Studies, vol. 5, n° 2, 2000, p. 154-181 ; extraits : Jewish Virtual Library ; notre traduction  
 À l'écran : « Mais ce n'est pas vrai. » · Ahad Ha'am, 1891  
 > VOIX : Même chez les sionistes, certains voient venir le conflit. / En 1891, le penseur Ahad Ha'am écrit : / « Nous croyons, à l'étranger, que la terre d'Israël est presque toute déserte. / Mais ce n'est pas **vrai**. »  
 (33 mots, 2.2 par seconde)
 
 
-**6.15** · film **00:11:00:07 → 00:11:15:07** (15.0 s) · **[PHOTO]** `data/archives/documents/ahad-haam-portrait.jpg`  
+**6.15** · film **00:11:00:07 → 00:11:15:07** (15.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:01:50:00 → 00:02:05:00  
 Source : même texte (Dowty 2000) ; la phrase sur la cruauté est aussi citée par la Jewish Virtual Library  
 À l'écran : « avec hostilité et cruauté »  
 > VOIX : Il décrit des colons qui traitent les Arabes / « avec hostilité et cruauté », / et qui « s'en vantent ». // Et il prévient : / le jour où nous prendrons leur place, / ils ne s'écarteront pas si **facilement**.  

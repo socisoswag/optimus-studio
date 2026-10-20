@@ -52,7 +52,7 @@ Source : SOURCES.md 6 (déclaration Balfour, 2 novembre 1917)
 (25 mots, 1.9 par seconde)
 
 
-**7.6** · film **00:12:34:12 → 00:12:49:12** (15.0 s) · **[PHOTO]** `à télécharger : la déclaration Balfour (lettre originale, British Library, domaine public, Wikimedia Commons)` · **À OBTENIR**  
+**7.6** · film **00:12:34:12 → 00:12:49:12** (15.0 s) · **[MD]** `output/documents.mp4` · source 00:00:23:00 → 00:00:38:00  
 Source : texte de la déclaration ; population : Justin McCarthy, 1990, tableau 2.3 (1918 : 58 728 juifs sur 748 128 habitants, soit 8 %)  
 À l'écran : la caméra glisse sur la lettre, jusqu'à « the civil and religious rights of existing non-Jewish communities »  
 > VOIX : Une phrase protège « les droits civils et religieux » / des « collectivités non juives ». // Elles forment alors neuf habitants sur **dix**. / Leurs droits politiques ne sont pas cités.  
@@ -60,7 +60,7 @@ Source : texte de la déclaration ; population : Justin McCarthy, 1990, tableau 
 Son : papier, horloge lointaine, salle de ministère
 
 
-**7.7** · film **00:12:49:12 → 00:13:01:12** (12.0 s) · **[PHOTO]** `portraits/balfour.png`  
+**7.7** · film **00:12:49:12 → 00:13:01:12** (12.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:05:00 → 00:02:17:00  
 > VOIX : Pour les sionistes, c'est une victoire immense. / Pour la première fois, une grande puissance reconnaît le lien du peuple juif avec cette **terre**.  
 (23 mots, 1.9 par seconde)
 
@@ -71,7 +71,7 @@ Son : papier, horloge lointaine, salle de ministère
 (9 mots, 2.0 par seconde)
 
 
-**7.9** · film **00:13:05:22 → 00:13:18:22** (13.0 s) · **[PHOTO]** `à télécharger : portrait d'Edwin Montagu (domaine public, Wikimedia Commons)` · **À OBTENIR**  
+**7.9** · film **00:13:05:22 → 00:13:18:22** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:17:00 → 00:02:30:00  
 Source : Edwin Montagu, « Memorandum on the Anti-Semitism of the Present Government », note au cabinet britannique, 23 août 1917, mémorandum G.T. 1868 (The National Archives, Kew, CAB 24/24/71) ; notre traduction  
 À l'écran : Edwin Montagu · secrétaire d'État pour l'Inde · seul ministre juif du gouvernement  
 > VOIX : Un seul ministre juif siège au gouvernement : / Edwin Montagu. // Il s'y oppose. / Le sionisme, écrit-il, est « une doctrine politique **nuisible** ».  
@@ -133,7 +133,7 @@ Source : SOURCES.md 4.2 (Paths to Palestine, 1930)
 (7 mots, 1.6 par seconde)
 
 
-**8.6** · film **00:14:32:11 → 00:14:48:11** (16.0 s) · **[PHOTO]** `portraits/amin-husseini.png`  
+**8.6** · film **00:14:32:11 → 00:14:48:11** (16.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:30:00 → 00:02:46:00  
 Source : faits biographiques (SOURCES.md 5, chronologie) ; rencontre avec Hitler à Berlin, 28 novembre 1941  
 > VOIX : Amin al-Husseini, un jeune notable de Jérusalem, / deviendra le chef du mouvement national palestinien. // Pendant la Seconde Guerre mondiale, / il s'alliera à l'Allemagne nazie, / et rencontrera Hitler à **Berlin**.  
 (29 mots, 1.8 par seconde)  
@@ -154,9 +154,9 @@ Source : SOURCES.md 4.2 ; bilan d'août 1929 : commission Shaw, 1930
 (21 mots, 2.1 par seconde)
 
 
-**8.9** · film **00:15:07:13 → 00:15:19:13** (12.0 s) · **[PHOTO]** `à télécharger : Hébron, août 1929 (Bibliothèque du Congrès, collection Matson, série « Palestine riots 1929 »)` · **À OBTENIR**  
+**8.9** · film **00:15:07:13 → 00:15:19:13** (12.0 s) · **[MD]** `output/documents.mp4` · source 00:02:20:00 → 00:02:32:00  
 Source : commission Shaw, 1930 ; 1929 Hebron massacre (Wikipedia, pour les références)  
-À l'écran : carton : Hébron · 24 août 1929  
+À l'écran : Hébron · 24 août 1929 · Le massacre d'Hébron · 67 Juifs tués · des familles cachées chez leurs voisins arabes  
 > VOIX : À Hébron, 67 Juifs sont massacrés, / dans une ville où leur communauté vivait depuis des **siècles**. // Des familles arabes en cachent d'autres chez elles.  
 (24 mots, 2.0 par seconde)  
 Son : silence presque complet, un vent sec  
@@ -168,7 +168,7 @@ Note : le nombre de Juifs cachés par des voisins arabes est débattu : ne pas d
 > VOIX : silence
 
 
-**8.11** · film **00:15:23:23 → 00:15:37:23** (14.0 s) · **[PHOTO]** `portraits/qassam.png`  
+**8.11** · film **00:15:23:23 → 00:15:37:23** (14.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:46:00 → 00:03:00:00  
 > VOIX : En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il est tué en novembre. // Il devient un **symbole**.  
 (24 mots, 1.7 par seconde)
 
@@ -229,7 +229,7 @@ Film 00:16:57:11 → 00:18:25:01 · durée 1 min 27.6 s
 > VOIX : silence
 
 
-**9.2** · film **00:17:02:01 → 00:17:17:01** (15.0 s) · **[PHOTO]** `portraits/arlozoroff.png`  
+**9.2** · film **00:17:02:01 → 00:17:17:01** (15.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:00:00 → 00:03:15:00  
 Source : lois antijuives d'avril 1933 (fonction publique le 7 avril, quotas scolaires le 25 avril)  
 > VOIX : 1933. / Hitler prend le pouvoir. / Les Juifs d'Allemagne sont chassés de la fonction publique, / des écoles, des métiers. // Un dirigeant sioniste, Haïm Arlosoroff, cherche à les faire **sortir**.  
 (28 mots, 1.9 par seconde)  
@@ -247,12 +247,12 @@ Source : article « Haavara Agreement » (Wikipedia, d'après Edwin Black, The T
 (27 mots, 2.1 par seconde)
 
 
-**9.5** · film **00:17:46:01 → 00:17:54:01** (8.0 s) · **[PHOTO]** `portraits/jabotinsky.png`  
+**9.5** · film **00:17:46:01 → 00:17:54:01** (8.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:15:00 → 00:03:23:00  
 > VOIX : La droite sioniste, autour de Zeev Jabotinsky, / crie à la **trahison**.  
 (11 mots, 1.4 par seconde)
 
 
-**9.6** · film **00:17:54:01 → 00:18:11:01** (17.0 s) · **[PHOTO]** `portraits/arlozoroff.png`  
+**9.6** · film **00:17:54:01 → 00:18:11:01** (17.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:23:00 → 00:03:40:00  
 Source : procès de 1934 (Stavsky condamné puis acquitté en appel, faute de preuve qui corrobore) ; commission d'enquête israélienne créée en 1982, rapport de juin 1985 (Jewish Telegraphic Agency, 17 juin 1985)  
 À l'écran : carton : Tel-Aviv · 16 juin 1933  
 > VOIX : Le 16 juin 1933, Arlosoroff est tué par balles sur la plage de Tel-Aviv. / Deux militants de cette droite sont accusés, / puis acquittés. // En 1985, une commission israélienne les lave de tout soupçon. / Les tueurs n'ont jamais été **identifiés**.  
@@ -290,20 +290,21 @@ Source : Bund (Union générale des travailleurs juifs), fondé à Vilnius en oc
 (30 mots, 2.0 par seconde)
 
 
-**10.4** · film **00:19:00:16 → 00:19:14:16** (14.0 s) · **[PHOTO]** `à télécharger : Juifs du vieux Yichouv au mur des Lamentations, vers 1900 (Bibliothèque du Congrès, Matson)` · **À OBTENIR**  
-Source : Agoudat Israël, fondé à Katowice en 1912  
+**10.4** · film **00:19:00:16 → 00:19:14:16** (14.0 s) · **[ARCH]** `output/archives-filmees/1918-jerusalem-mur-occidental.mp4` · source 00:00:00:00 → 00:00:14:00  
+Source : Agoudat Israël, fondé à Katowice en 1912 ; image : Jérusalem, 1918, film amateur (collection Jacob Gross), SOURCES.md 4.2  
+À l'écran : carton : Jérusalem · le mur occidental · 1918  
 > VOIX : Pour beaucoup de rabbins orthodoxes, le sionisme est une faute : / seul le Messie doit ramener les Juifs sur la terre d'Israël. // En 1912, ils fondent leur propre parti, Agoudat **Israël**.  
 (30 mots, 2.1 par seconde)
 
 
-**10.5** · film **00:19:14:16 → 00:19:31:16** (17.0 s) · **[PHOTO]** `à télécharger : portrait de Jacob Israël de Haan (domaine public, Wikimedia Commons)` · **À OBTENIR**  
+**10.5** · film **00:19:14:16 → 00:19:31:16** (17.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:40:00 → 00:03:57:00  
 Source : assassiné le 30 juin 1924 à Jérusalem par Avraham Tehomi, membre de la Haganah, qui l'a reconnu en 1985 (entretien avec Shlomo Nakdimon pour la télévision israélienne)  
 À l'écran : carton : Jérusalem · 30 juin 1924  
 > VOIX : À Jérusalem, Jacob Israël de Haan, poète néerlandais devenu juif orthodoxe, / défend la cause antisioniste auprès des Britanniques et des dirigeants arabes. // Le 30 juin 1924, il est abattu à la sortie d'une synagogue. / Par la **Haganah**.  
 (37 mots, 2.2 par seconde)
 
 
-**10.6** · film **00:19:31:16 → 00:19:44:16** (13.0 s) · **[PHOTO]** `à télécharger : Judah Magnes ou Martin Buber (Brit Shalom, Ihoud ; domaine public à vérifier)` · **À OBTENIR**  
+**10.6** · film **00:19:31:16 → 00:19:44:16** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:57:00 → 00:04:10:00  
 Source : Brit Shalom, fondé en 1925 (Arthur Ruppin, Hugo Bergmann, Gershom Scholem) ; Ihoud, 1942 (Judah Magnes, Martin Buber)  
 > VOIX : En 1925, des intellectuels sionistes fondent Brit Shalom, / « l'alliance de la paix » : / un seul État pour deux peuples, à égalité. // Ils restent une petite **minorité**.  
 (25 mots, 1.9 par seconde)  
@@ -331,7 +332,7 @@ Film 00:19:53:16 → 00:21:25:23 · durée 1 min 32.3 s
 > VOIX : silence
 
 
-**11.3** · film **00:20:02:16 → 00:20:18:16** (16.0 s) · **[PHOTO]** `portraits/jabotinsky.png`  
+**11.3** · film **00:20:02:16 → 00:20:18:16** (16.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:04:10:00 → 00:04:26:00  
 Source : Zeev Jabotinsky, « Le Mur de fer » (O jeleznoï stene), Rassvet, 4 novembre 1923 ; traduction anglaise publiée dans The Jewish Herald, 26 novembre 1937 ; notre traduction  
 > VOIX : En 1923, Zeev Jabotinsky écrit « Le Mur de fer ». / Il ne nie pas ce qu'il voit : / « Toute population indigène résiste aux colons, / tant qu'elle garde le moindre espoir d'échapper à la **colonisation**. »  
 (32 mots, 2.0 par seconde)
@@ -364,7 +365,7 @@ Source : A Survey of Palestine, 1946 (553 600 juifs sur 1 764 520 habitants à l
 Note : 6 % des terres de toute la Palestine, désert du Néguev compris ; à garder pour le chapitre 12
 
 
-**11.8** · film **00:21:03:16 → 00:21:16:16** (13.0 s) · **[PHOTO]** `portraits/ben-gourion.png`  
+**11.8** · film **00:21:03:16 → 00:21:16:16** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:04:26:00 → 00:04:39:00  
 Source : programme de Biltmore, conférence sioniste extraordinaire, hôtel Biltmore, New York, 6-11 mai 1942  
 À l'écran : carton : New York · mai 1942  
 > VOIX : En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine devienne « un Commonwealth **juif** ».  

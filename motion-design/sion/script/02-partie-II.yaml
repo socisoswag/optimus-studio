@@ -62,10 +62,10 @@ chapitres:
         voix: >-
           Et le 2 novembre 1917, / le ministre Arthur Balfour écrit à Lord Rothschild : / Londres « envisage
           favorablement » / un foyer national pour le peuple juif en **Palestine**.
-      - type: PHOTO
-        fichier: "à télécharger : la déclaration Balfour (lettre originale, British Library, domaine public, Wikimedia Commons)"
-        duree: 15
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 23
+        sortie: 38
         source: >-
           texte de la déclaration ; population : Justin McCarthy, 1990, tableau 2.3 (1918 : 58 728 juifs sur
           748 128 habitants, soit 8 %)
@@ -74,9 +74,10 @@ chapitres:
           Une phrase protège « les droits civils et religieux » / des « collectivités non juives ». // Elles forment
           alors neuf habitants sur **dix**. / Leurs droits politiques ne sont pas cités.
         son: "papier, horloge lointaine, salle de ministère"
-      - type: PHOTO
-        fichier: portraits/balfour.png
-        duree: 12
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 125
+        sortie: 137
         voix: >-
           Pour les sionistes, c'est une victoire immense. / Pour la première fois, une grande puissance reconnaît le
           lien du peuple juif avec cette **terre**.
@@ -87,10 +88,10 @@ chapitres:
         ecran: "fiche de la chronologie : Chaïm Weizmann"
         voix: >-
           Chaïm Weizmann l'a obtenue / après des mois de **démarches**.
-      - type: PHOTO
-        fichier: "à télécharger : portrait d'Edwin Montagu (domaine public, Wikimedia Commons)"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 137
+        sortie: 150
         source: >-
           Edwin Montagu, « Memorandum on the Anti-Semitism of the Present Government », note au cabinet britannique,
           23 août 1917, mémorandum G.T. 1868 (The National Archives, Kew, CAB 24/24/71) ; notre traduction
@@ -174,9 +175,10 @@ chapitres:
         ecran: "fiche de la chronologie : Amin al-Husseini"
         voix: >-
           En 1921, Londres nomme un grand **mufti**.
-      - type: PHOTO
-        fichier: portraits/amin-husseini.png
-        duree: 16
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 150
+        sortie: 166
         source: "faits biographiques (SOURCES.md 5, chronologie) ; rencontre avec Hitler à Berlin, 28 novembre 1941"
         voix: >-
           Amin al-Husseini, un jeune notable de Jérusalem, / deviendra le chef du mouvement national palestinien. //
@@ -205,12 +207,12 @@ chapitres:
         voix: >-
           Août 1929. / Une querelle autour du mur des Lamentations. / Des émeutiers arabes tuent 133 **Juifs**. / La
           police britannique tue 116 Arabes.
-      - type: PHOTO
-        fichier: "à télécharger : Hébron, août 1929 (Bibliothèque du Congrès, collection Matson, série « Palestine riots 1929 »)"
-        duree: 12
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 140
+        sortie: 152
         source: "commission Shaw, 1930 ; 1929 Hebron massacre (Wikipedia, pour les références)"
-        ecran: "carton : Hébron · 24 août 1929"
+        ecran: "Hébron · 24 août 1929 · Le massacre d'Hébron · 67 Juifs tués · des familles cachées chez leurs voisins arabes"
         voix: >-
           À Hébron, 67 Juifs sont massacrés, / dans une ville où leur communauté vivait depuis des **siècles**. //
           Des familles arabes en cachent d'autres chez elles.
@@ -221,9 +223,10 @@ chapitres:
         entree: 23.6
         sortie: 28
         ecran: "fiche de la chronologie : Izz ad-Din al-Qassam"
-      - type: PHOTO
-        fichier: portraits/qassam.png
-        duree: 14
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 166
+        sortie: 180
         voix: >-
           En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il
           est tué en novembre. // Il devient un **symbole**.
@@ -303,9 +306,10 @@ chapitres:
         fichier: output/chapitres/chapitre-09.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: portraits/arlozoroff.png
-        duree: 15
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 180
+        sortie: 195
         source: "lois antijuives d'avril 1933 (fonction publique le 7 avril, quotas scolaires le 25 avril)"
         voix: >-
           1933. / Hitler prend le pouvoir. / Les Juifs d'Allemagne sont chassés de la fonction publique, / des écoles,
@@ -330,14 +334,16 @@ chapitres:
         voix: >-
           Environ soixante mille Juifs allemands gagnent ainsi la Palestine avant la guerre. // Mais l'accord brise le
           boycott des produits allemands, / lancé par des Juifs du monde **entier**.
-      - type: PHOTO
-        fichier: portraits/jabotinsky.png
-        duree: 8
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 195
+        sortie: 203
         voix: >-
           La droite sioniste, autour de Zeev Jabotinsky, / crie à la **trahison**.
-      - type: PHOTO
-        fichier: portraits/arlozoroff.png
-        duree: 17
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 203
+        sortie: 220
         source: >-
           procès de 1934 (Stavsky condamné puis acquitté en appel, faute de preuve qui corrobore) ; commission
           d'enquête israélienne créée en 1982, rapport de juin 1985 (Jewish Telegraphic Agency, 17 juin 1985)
@@ -386,18 +392,19 @@ chapitres:
         voix: >-
           En 1897, l'année même du congrès de Bâle, / des ouvriers juifs fondent le Bund, à Vilnius. / Leur idée :
           rester, et se battre là où l'on vit. // En yiddish : doikayt, « **l'ici** ».
-      - type: PHOTO
-        fichier: "à télécharger : Juifs du vieux Yichouv au mur des Lamentations, vers 1900 (Bibliothèque du Congrès, Matson)"
-        duree: 14
-        a_obtenir: true
-        source: "Agoudat Israël, fondé à Katowice en 1912"
+      - type: ARCH
+        fichier: output/archives-filmees/1918-jerusalem-mur-occidental.mp4
+        entree: 0
+        sortie: 14
+        source: "Agoudat Israël, fondé à Katowice en 1912 ; image : Jérusalem, 1918, film amateur (collection Jacob Gross), SOURCES.md 4.2"
+        ecran: "carton : Jérusalem · le mur occidental · 1918"
         voix: >-
           Pour beaucoup de rabbins orthodoxes, le sionisme est une faute : / seul le Messie doit ramener les Juifs sur
           la terre d'Israël. // En 1912, ils fondent leur propre parti, Agoudat **Israël**.
-      - type: PHOTO
-        fichier: "à télécharger : portrait de Jacob Israël de Haan (domaine public, Wikimedia Commons)"
-        duree: 17
-        a_obtenir: true
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 220
+        sortie: 237
         source: >-
           assassiné le 30 juin 1924 à Jérusalem par Avraham Tehomi, membre de la Haganah, qui l'a reconnu en 1985
           (entretien avec Shlomo Nakdimon pour la télévision israélienne)
@@ -406,10 +413,10 @@ chapitres:
           À Jérusalem, Jacob Israël de Haan, poète néerlandais devenu juif orthodoxe, / défend la cause antisioniste
           auprès des Britanniques et des dirigeants arabes. // Le 30 juin 1924, il est abattu à la sortie d'une
           synagogue. / Par la **Haganah**.
-      - type: PHOTO
-        fichier: "à télécharger : Judah Magnes ou Martin Buber (Brit Shalom, Ihoud ; domaine public à vérifier)"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 237
+        sortie: 250
         source: "Brit Shalom, fondé en 1925 (Arthur Ruppin, Hugo Bergmann, Gershom Scholem) ; Ihoud, 1942 (Judah Magnes, Martin Buber)"
         voix: >-
           En 1925, des intellectuels sionistes fondent Brit Shalom, / « l'alliance de la paix » : / un seul État pour
@@ -437,9 +444,10 @@ chapitres:
         entree: 19.2
         sortie: 23.6
         ecran: "fiche de la chronologie : Zeev Jabotinsky"
-      - type: PHOTO
-        fichier: portraits/jabotinsky.png
-        duree: 16
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 250
+        sortie: 266
         source: >-
           Zeev Jabotinsky, « Le Mur de fer » (O jeleznoï stene), Rassvet, 4 novembre 1923 ; traduction anglaise
           publiée dans The Jewish Herald, 26 novembre 1937 ; notre traduction
@@ -483,9 +491,10 @@ chapitres:
           À la fin de la guerre, les Juifs sont presque un tiers des habitants. / Ils possèdent moins de six pour cent
           des **terres**.
         note: "6 % des terres de toute la Palestine, désert du Néguev compris ; à garder pour le chapitre 12"
-      - type: PHOTO
-        fichier: portraits/ben-gourion.png
-        duree: 13
+      - type: MD
+        fichier: output/portraits-1.mp4
+        entree: 266
+        sortie: 279
         source: "programme de Biltmore, conférence sioniste extraordinaire, hôtel Biltmore, New York, 6-11 mai 1942"
         ecran: "carton : New York · mai 1942"
         voix: >-

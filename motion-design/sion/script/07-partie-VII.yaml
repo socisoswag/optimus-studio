@@ -25,10 +25,12 @@ chapitres:
         fichier: output/chapitres/chapitre-32.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: "à télécharger : le procès d'Adolf Eichmann, Jérusalem, 1961 (GPO, domaine public en Israël)"
-        duree: 19
-        a_obtenir: true
+      - type: ARCH
+        fichier: output/archives-filmees/1961-proces-eichmann.mp4
+        entree: 0
+        sortie: 19
+        source: "SOURCES.md 4.2 (Universal-International News, « Trial of Century », avril 1961, domaine public)"
+        ecran: "carton : Jérusalem · avril 1961 · le procès d'Adolf Eichmann"
         voix: >-
           Six millions de Juifs assassinés. / La Shoah est au cœur de l'identité d'Israël : / un peuple qui a failli
           disparaître, / et qui s'est juré « plus jamais ». // En 1961, le procès d'Adolf Eichmann fait entendre les
@@ -51,9 +53,10 @@ chapitres:
           vérifié (Perplexity, 20 octobre) : la phrase « aujourd'hui les Palestiniens sont les Juifs des Israéliens »
           est du critique Filippo Gentiloni (il manifesto, 29 juin 1982), jamais de Levi. Ne
           jamais la lui attribuer.
-      - type: PHOTO
-        fichier: portraits/netanyahou.png
-        duree: 17
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 237
+        sortie: 254
         source: "discours de Benyamin Netanyahou au 37e congrès sioniste, Jérusalem, 20 octobre 2015 ; réponse du porte-parole du gouvernement allemand, Steffen Seibert, 21 octobre 2015"
         voix: >-
           En 2015, Benyamin Netanyahou affirme que le mufti de Jérusalem aurait donné à Hitler l'idée d'exterminer les
@@ -264,9 +267,10 @@ chapitres:
         ecran: "fiche de la chronologie : 4 novembre 1995 · carton : output/cartons/tel-aviv-1995"
         voix: >-
           4 novembre **1995**.
-      - type: PHOTO
-        fichier: portraits/rabin.png
-        duree: 13
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 254
+        sortie: 267
         source: "assassinat d'Yitzhak Rabin par Yigal Amir, Tel-Aviv, 4 novembre 1995"
         voix: >-
           Yitzhak Rabin est assassiné par Yigal Amir, un étudiant juif religieux, / opposé aux accords d'Oslo. // Pour

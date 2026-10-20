@@ -184,9 +184,11 @@ chapitres:
         voix: >-
           Une même année. / Deux **mémoires**.
       - type: ARCH
-        fichier: "à extraire : « Arab Refugees », vers 1950 (NARA 446397932), ou « Sands of Sorrow », 1950 (NARA 11960)"
-        duree: 16
-        a_obtenir: true
+        fichier: output/archives-filmees/1950-sands-of-sorrow-refugies.mp4
+        entree: 0
+        sortie: 16
+        source: "SOURCES.md 4.2 (Sands of Sorrow, Theodore A. Morde, 1950 : « les premières images filmées des réfugiés arabes de Palestine », domaine public)"
+        ecran: "carton : Bande de Gaza · 1950 · un camp de réfugiés"
         voix: >-
           Pendant des décennies, le récit officiel israélien affirme : / ils sont partis à l'appel des dirigeants
           arabes. // À partir des années 1980, des historiens israéliens ouvrent les archives de leur propre **armée**.
@@ -234,16 +236,17 @@ chapitres:
         voix: >-
           Le 22 juillet 1946, l'Irgoun fait sauter une aile de l'hôtel King David, / siège de l'administration
           britannique à Jérusalem. // 91 **morts**.
-      - type: PHOTO
-        fichier: portraits/begin.png
-        duree: 12
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 0
+        sortie: 12
         voix: >-
           Son chef, Menahem Begin, sera Premier ministre d'Israël en 1977, / et prix Nobel de la paix l'année
           **suivante**.
-      - type: PHOTO
-        fichier: "à télécharger : portrait de Folke Bernadotte (domaine public, Wikimedia Commons)"
-        duree: 14
-        a_obtenir: true
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 12
+        sortie: 26
         source: "Lord Moyne, tué au Caire le 6 novembre 1944 ; Folke Bernadotte, tué à Jérusalem le 17 septembre 1948"
         voix: >-
           Le Lehi assassine en 1944 un ministre britannique, Lord Moyne, / puis en 1948 le médiateur de l'ONU, Folke
@@ -255,9 +258,10 @@ chapitres:
         ecran: "fiche de la chronologie : Abd al-Qadir al-Husseini"
         voix: >-
           Côté arabe, des milices **locales**.
-      - type: PHOTO
-        fichier: portraits/abd-al-qadir.png
-        duree: 9
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 26
+        sortie: 35
         voix: >-
           Leur chef le plus populaire, Abd al-Qadir al-Husseini, / est tué le 8 avril 1948 à **al-Qastal**.
       - type: CARTON
@@ -268,10 +272,10 @@ chapitres:
         voix: >-
           Les civils juifs sont visés aussi. / Le 22 février 1948, à Jérusalem, / une bombe tue des dizaines de
           personnes rue Ben **Yehuda**.
-      - type: PHOTO
-        fichier: "à télécharger : la lettre au New York Times du 4 décembre 1948 (page du journal)"
-        duree: 17
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 38
+        sortie: 55
         source: >-
           lettre au New York Times, 4 décembre 1948, signée notamment par Albert Einstein et Hannah Arendt ; notre
           traduction
@@ -328,12 +332,12 @@ chapitres:
         sortie: 50
         voix: >-
           Aujourd'hui, les maisons du village abritent un hôpital psychiatrique **israélien**. ///
-      - type: PHOTO
-        fichier: "à télécharger : le convoi de Hadassah, Jérusalem, 13 avril 1948 (domaine public, Wikimedia Commons)"
-        duree: 21
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 152
+        sortie: 173
         source: "condamnation par l'Agence juive et la Haganah ; message de Ben Gourion au roi Abdallah ; convoi de Hadassah, 13 avril 1948, 78 morts"
-        ecran: "carton : Jérusalem · 13 avril 1948"
+        ecran: "Jérusalem · avril 1948 · Le convoi de Hadassah · 78 morts, médecins, infirmières et patients"
         voix: >-
           L'Agence juive et la Haganah condamnent le massacre ; / Ben Gourion présente des excuses au roi Abdallah de
           Transjordanie. // Quatre jours plus tard, à Jérusalem, / des combattants arabes attaquent un convoi de l'hôpital
@@ -350,16 +354,17 @@ chapitres:
         fichier: output/chapitres/chapitre-16.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: portraits/ben-gourion.png
-        duree: 14
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 35
+        sortie: 49
         voix: >-
           Pour la plupart des Israéliens, David Ben Gourion est le père de la nation. / Il a bâti un État, une armée,
           / et accueilli des centaines de milliers de réfugiés **juifs**.
-      - type: PHOTO
-        fichier: "à télécharger : la déclaration d'indépendance d'Israël, 14 mai 1948 (document, domaine public)"
-        duree: 14
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 55
+        sortie: 69
         source: "déclaration d'indépendance de l'État d'Israël, 14 mai 1948 ; notre traduction"
         voix: >-
           La déclaration d'indépendance promet « l'égalité complète des droits sociaux et politiques à tous ses
@@ -372,9 +377,10 @@ chapitres:
         voix: >-
           Mais dix ans plus tôt, devant la direction sioniste, / il disait : / « Je suis pour le transfert forcé. / Je
           n'y vois rien d'**immoral**. »
-      - type: PHOTO
-        fichier: portraits/rabin.png
-        duree: 19
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 49
+        sortie: 68
         source: "passage censuré des mémoires d'Yitzhak Rabin, publié par The New York Times, 23 octobre 1979"
         voix: >-
           Juillet 1948. / Selon les mémoires d'Yitzhak Rabin, quand on lui demande ce qu'il faut faire des habitants de
@@ -455,9 +461,10 @@ chapitres:
         entree: 50.4
         sortie: 54.8
         ecran: "fiche de la chronologie : Golda Meir"
-      - type: PHOTO
-        fichier: portraits/meir.png
-        duree: 14
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 68
+        sortie: 82
         voix: >-
           Golda Meir, née à Kiev, élevée aux États-Unis, / signe la déclaration d'indépendance. / Elle devient Première
           ministre en **1969**.
@@ -469,10 +476,10 @@ chapitres:
         voix: >-
           Cette année-là, elle déclare au Sunday Times : / « Il n'y avait pas de Palestiniens. / Ils n'existaient
           **pas**. »
-      - type: PHOTO
-        fichier: "à télécharger : une du journal Filastin, Jaffa, 1911 (même image qu'au chapitre 6)"
-        duree: 12
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 11
+        sortie: 23
         voix: >-
           Pourtant, dès 1911, à Jaffa, un journal s'appelait Filastin, / et s'adressait à ses lecteurs comme à des
           **Palestiniens**.

@@ -225,8 +225,20 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | Fichier | Film | Auteur, date | Cote | Lien |
 |---|---|---|---|---|
 | 1930-paths-to-palestine-01 à 12 | « Paths to Palestine » (muet, 9 min 35) : Jérusalem, Bethléem, rues, marché, Dôme du Rocher, Jourdain | marine des États-Unis, 1930 (œuvre du gouvernement américain) | NARA, identifiant 2767364 (série 428-NPC) | https://archive.org/details/428-npc-44524 |
+| 1903-ellis-island-immigrants | « Emigrants [i.e. Immigrants] Landing at Ellis Island » (muet) : des immigrants débarquent du ferry, ballots à la main | Thomas A. Edison, Inc., 1903 (domaine public : publié avant 1930) | Bibliothèque du Congrès, Paper Print Collection | https://archive.org/details/emigrants-i.e.-immigrants-landing-at-ellis-island |
+| 1899-melies-dreyfus-ile-du-diable | « L'Affaire Dreyfus », tableau « L'île du Diable » (muet) : reconstitution tournée pendant l'Affaire | Georges Méliès, Star Film n° 207, 1899 (domaine public) | Star Film 206 à 217 | https://archive.org/details/LAffaireDreyfus1899 |
+| 1899-melies-dreyfus-bagarre-journalistes | même film, tableau « Bagarre entre journalistes » (Star Film n° 213) | Georges Méliès, 1899 (domaine public) | Star Film 213 | https://archive.org/details/LAffaireDreyfus1899 |
+| 1950-sands-of-sorrow-refugies | « Sands of Sorrow » (sonore, 28 min) : « les premières images filmées des réfugiés arabes de Palestine », camps de tentes, foules | Theodore A. Morde, photographie Don Senick, 1950, pour le Council for the Relief of Palestine Arab Refugees (domaine public) | NARA 11960 | https://archive.org/details/sands_of_sorrow |
+| 1897-lumiere-jerusalem-porte-de-jaffa | « Porte de Jaffa, côté Est » (muet, restauration 1080p) : la foule devant la porte de Jaffa | Alexandre Promio, société Lumière, avril 1897 (domaine public) | catalogue Lumière | https://archive.org/details/JaffaGateJerusalem1897 |
+| 1918-jerusalem-mur-occidental | « Jérusalem, 1918 » (muet) : prières au mur occidental | film amateur anonyme, 1918, collection Jacob Gross (marqué domaine public) | archive.org jerusalem-1918 | https://archive.org/details/jerusalem-1918 |
+| 1961-proces-eichmann | « Trial of Century : Eichmann Tried for War Crimes » : le tribunal de Jérusalem, Eichmann dans sa cage de verre, les juges | Universal-International News, avril 1961 (actualités Universal, versées au domaine public) | NARA, Universal Newsreels | https://archive.org/details/1961-04-13_Eichmann_trial |
 
-Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans son d'origine (film muet).
+Extraits recadrés à l'intérieur de l'image (sans les bords arrondis de la pellicule), mis en 16:9, 25 images par seconde,
+sans son d'origine ; fabriqués par `tools/archives_filmees.py` (coupes à l'image près, look « archive »). Méliès est une
+reconstitution d'époque : la mention « Reconstitution de Georges Méliès, 1899 » reste à l'écran. Écartés après
+vérification : « Arab Commando Leaders » (1970) et « Palestine: A Nation in Exile » (1976), images d'une chaîne de
+télévision américaine malgré leur dépôt aux Archives nationales ; « A Pilgrimage Through Palestine » (vers 1930), copie
+marquée du filigrane d'une agence commerciale.
 
 ---
 

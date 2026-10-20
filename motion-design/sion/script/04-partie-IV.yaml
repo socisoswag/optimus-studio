@@ -327,9 +327,10 @@ chapitres:
         entree: 46
         sortie: 50.4
         ecran: "fiche de la chronologie : Yasser Arafat"
-      - type: PHOTO
-        fichier: portraits/arafat.png
-        duree: 14
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 82
+        sortie: 96
         voix: >-
           Yasser Arafat fonde le Fatah à la fin des années cinquante, / et prend la tête de l'OLP en 1969. / Pour son
           peuple, il est le visage de la **résistance**.
@@ -384,9 +385,10 @@ chapitres:
         voix: >-
           À l'ONU, Arafat lance : / « Je viens avec un rameau d'olivier, / et un fusil de combattant de la
           **liberté**. »
-      - type: PHOTO
-        fichier: portraits/arafat.png
-        duree: 6
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 96
+        sortie: 102
         voix: >-
           « Ne laissez pas le rameau d'olivier tomber de ma **main**. »
       - type: NOIR
@@ -438,9 +440,10 @@ chapitres:
         entree: 59.6
         sortie: 64
         ecran: "fiche de la chronologie : cheikh Ahmed Yassine"
-      - type: PHOTO
-        fichier: portraits/yassine.png
-        duree: 8
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 102
+        sortie: 110
         voix: >-
           La même année naît le Hamas, / fondé à Gaza par le cheikh Ahmed **Yassine**.
       - type: NOIR
@@ -492,9 +495,10 @@ chapitres:
         ecran: "fiche de la chronologie : Oslo · carton : output/cartons/washington-1993"
         voix: >-
           Septembre 1993, à Washington : / la poignée de **main**.
-      - type: PHOTO
-        fichier: portraits/rabin.png
-        duree: 12
+      - type: MD
+        fichier: output/portraits-2.mp4
+        entree: 110
+        sortie: 122
         voix: >-
           Pour la première fois, Israël et l'OLP se reconnaissent. / Les Palestiniens espèrent un État ; / les
           Israéliens, la **sécurité**.

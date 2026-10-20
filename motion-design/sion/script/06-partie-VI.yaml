@@ -73,10 +73,10 @@ chapitres:
         fichier: output/chapitres/chapitre-30.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: "à télécharger : page du Talmud de Babylone, traité Ketoubot 110b-111a (édition ancienne, domaine public)"
-        duree: 14
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents.mp4
+        entree: 99
+        sortie: 113
         source: "Talmud de Babylone, Ketoubot 110b-111a (les trois serments)"
         voix: >-
           Leur argument vient du Talmud. / Dieu aurait fait jurer aux Juifs de ne pas « monter comme un mur » vers la
@@ -122,54 +122,61 @@ chapitres:
         fichier: output/chapitres/chapitre-31.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: portraits/bhl.png
-        duree: 13
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 125
+        sortie: 138
         voix: >-
           En France, deux philosophes occupent les plateaux depuis quarante ans : / Bernard-Henri Lévy et Alain
           Finkielkraut. / Tous deux défendent Israël, chacun à sa **manière**.
-      - type: PHOTO
-        fichier: portraits/bhl.png
-        duree: 12
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 138
+        sortie: 150
         source: "ouverture du colloque « Democracy and its Challenges », Tel-Aviv, mai 2010 ; notre traduction"
         voix: >-
           En 2010, à Tel-Aviv, Bernard-Henri Lévy déclare : / « Je n'ai jamais vu une armée aussi démocratique, / qui se
           pose autant de questions **morales**. »
-      - type: PHOTO
-        fichier: portraits/bhl.png
-        duree: 11
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 150
+        sortie: 161
         source: "entretien avec Alexandre Devecchio, Le Figaro, 18 mars 2024"
         voix: >-
           En mars 2024, dans Le Figaro : / « Il faut le redire, / la mort des civils de Gaza n'est pas un
           **massacre**. »
-      - type: PHOTO
-        fichier: portraits/bhl.png
-        duree: 15
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 161
+        sortie: 176
         source: "Bernard-Henri Lévy, The Wall Street Journal, 25 septembre 2025 ; commission d'enquête de l'ONU, 16 septembre 2025 ; notre traduction"
         voix: >-
           En septembre 2025, dans The Wall Street Journal : / « Parler de génocide à Gaza est une offense au bon sens, /
           une manœuvre pour diaboliser Israël. » // Neuf jours plus tôt, une commission de l'ONU concluait au
           **génocide**.
-      - type: PHOTO
-        fichier: portraits/finkielkraut.png
-        duree: 17
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 176
+        sortie: 193
         source: "entretien de Dror Mishani et Aurelia Smotriez, Haaretz, novembre 2005 ; excuses ultérieures (« mauvaise traduction »)"
         voix: >-
           Alain Finkielkraut, en 2005, au quotidien israélien Haaretz, à propos des émeutes des banlieues : / l'équipe
           de France serait « black-black-black, / ce qui fait ricaner toute l'Europe ». // Il dira avoir été mal
           **traduit**.
-      - type: PHOTO
-        fichier: portraits/finkielkraut.png
-        duree: 16
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 193
+        sortie: 209
         source: "vidéo du Figaro, 25 octobre 2024 (texte de la page)"
         voix: >-
           Sur Gaza, en octobre 2024, dans Le Figaro : / « Quoi qu'on pense de la riposte israélienne, / le mot de
           génocide est fou, ignoble. / Il permet de nazifier les Juifs, / de leur faire perdre leur crédit victimaire.
           »
         note: "la fin de sa phrase (« et ainsi les faire basculer dans le camp des bourreaux ») peut s'ajouter si le plan s'allonge"
-      - type: PHOTO
-        fichier: portraits/finkielkraut.png
-        duree: 13
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 209
+        sortie: 222
         source: "Louise Couvelaire, « Guerre à Gaza : des personnalités de la communauté juive française prennent position pour dénoncer la situation », Le Monde, 12 mai 2025"
         voix: >-
           Mais en mai 2025, il dit au Monde que le gouvernement Netanyahou / « mène une guerre atroce », / et
@@ -177,10 +184,10 @@ chapitres:
         note: >-
           la « tribune sur les crimes de guerre » évoquée par Orient XXI n'existe pas : ne jamais l'attribuer. Ces
           phrases-là sont vérifiées (Perplexity, 20 octobre).
-      - type: PHOTO
-        fichier: "à télécharger : portrait d'Edgar Morin (licence libre, Wikimedia Commons)"
-        duree: 15
-        a_obtenir: true
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 222
+        sortie: 237
         source: >-
           Edgar Morin, Sami Naïr, Danièle Sallenave, « Israël-Palestine : le cancer », Le Monde, 4 juin 2002 ; cour
           d'appel de Versailles, 26 mai 2005 ; Cour de cassation, 1re chambre civile, 12 juillet 2006, pourvoi

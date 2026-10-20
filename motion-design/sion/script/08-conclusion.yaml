@@ -46,9 +46,10 @@ chapitres:
         fichier: output/chapitres/chapitre-38.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: portraits/darwich.png
-        duree: 10
+      - type: MD
+        fichier: output/portraits-3.mp4
+        entree: 267
+        sortie: 277
         voix: >-
           Mahmoud Darwich naît en 1941 à al-Birwa, en Galilée. / Le village est vidé en 1948, puis **rasé**.
       - type: MD

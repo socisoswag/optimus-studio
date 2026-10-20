@@ -149,7 +149,9 @@ Source : résolution 194 (III) de l'Assemblée générale, 11 décembre 1948, pa
 (5 mots, 1.0 par seconde)
 
 
-**13.13** · film **00:25:49:11 → 00:26:05:11** (16.0 s) · **[ARCH]** `à extraire : « Arab Refugees », vers 1950 (NARA 446397932), ou « Sands of Sorrow », 1950 (NARA 11960)` · **À OBTENIR**  
+**13.13** · film **00:25:49:11 → 00:26:05:11** (16.0 s) · **[ARCH]** `output/archives-filmees/1950-sands-of-sorrow-refugies.mp4` · source 00:00:00:00 → 00:00:16:00  
+Source : SOURCES.md 4.2 (Sands of Sorrow, Theodore A. Morde, 1950 : « les premières images filmées des réfugiés arabes de Palestine », domaine public)  
+À l'écran : carton : Bande de Gaza · 1950 · un camp de réfugiés  
 > VOIX : Pendant des décennies, le récit officiel israélien affirme : / ils sont partis à l'appel des dirigeants arabes. // À partir des années 1980, des historiens israéliens ouvrent les archives de leur propre **armée**.  
 (31 mots, 1.9 par seconde)
 
@@ -189,12 +191,12 @@ Source : attentat du 22 juillet 1946 : 91 morts
 (21 mots, 1.6 par seconde)
 
 
-**14.4** · film **00:27:20:01 → 00:27:32:01** (12.0 s) · **[PHOTO]** `portraits/begin.png`  
+**14.4** · film **00:27:20:01 → 00:27:32:01** (12.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:00:00 → 00:00:12:00  
 > VOIX : Son chef, Menahem Begin, sera Premier ministre d'Israël en 1977, / et prix Nobel de la paix l'année **suivante**.  
 (18 mots, 1.5 par seconde)
 
 
-**14.5** · film **00:27:32:01 → 00:27:46:01** (14.0 s) · **[PHOTO]** `à télécharger : portrait de Folke Bernadotte (domaine public, Wikimedia Commons)` · **À OBTENIR**  
+**14.5** · film **00:27:32:01 → 00:27:46:01** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:12:00 → 00:00:26:00  
 Source : Lord Moyne, tué au Caire le 6 novembre 1944 ; Folke Bernadotte, tué à Jérusalem le 17 septembre 1948  
 > VOIX : Le Lehi assassine en 1944 un ministre britannique, Lord Moyne, / puis en 1948 le médiateur de l'ONU, Folke Bernadotte. // Un de ses chefs, Yitzhak Shamir, sera lui aussi Premier **ministre**.  
 (30 mots, 2.1 par seconde)
@@ -206,7 +208,7 @@ Source : Lord Moyne, tué au Caire le 6 novembre 1944 ; Folke Bernadotte, tué �
 (5 mots, 1.1 par seconde)
 
 
-**14.7** · film **00:27:50:11 → 00:27:59:11** (9.0 s) · **[PHOTO]** `portraits/abd-al-qadir.png`  
+**14.7** · film **00:27:50:11 → 00:27:59:11** (9.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:26:00 → 00:00:35:00  
 > VOIX : Leur chef le plus populaire, Abd al-Qadir al-Husseini, / est tué le 8 avril 1948 à **al-Qastal**.  
 (16 mots, 1.8 par seconde)
 
@@ -217,7 +219,7 @@ Source : attentat de la rue Ben Yehuda, Jérusalem, 22 février 1948 (environ 50
 (22 mots, 2.0 par seconde)
 
 
-**14.9** · film **00:28:10:11 → 00:28:27:11** (17.0 s) · **[PHOTO]** `à télécharger : la lettre au New York Times du 4 décembre 1948 (page du journal)` · **À OBTENIR**  
+**14.9** · film **00:28:10:11 → 00:28:27:11** (17.0 s) · **[MD]** `output/documents.mp4` · source 00:00:38:00 → 00:00:55:00  
 Source : lettre au New York Times, 4 décembre 1948, signée notamment par Albert Einstein et Hannah Arendt ; notre traduction  
 À l'écran : « proche, par son organisation, ses méthodes, sa philosophie politique, des partis nazi et fasciste »  
 > VOIX : En décembre 1948, quand Begin vient aux États-Unis, / des intellectuels juifs, dont Albert Einstein et Hannah Arendt, / jugent son parti « proche, par ses méthodes, / des partis nazi et **fasciste** ».  
@@ -263,9 +265,9 @@ Source : SOURCES.md 5 (Deir Yassin : université de Birzeit, environ 107 morts, 
 (10 mots, 1.1 par seconde)
 
 
-**15.7** · film **00:29:22:01 → 00:29:43:01** (21.0 s) · **[PHOTO]** `à télécharger : le convoi de Hadassah, Jérusalem, 13 avril 1948 (domaine public, Wikimedia Commons)` · **À OBTENIR**  
+**15.7** · film **00:29:22:01 → 00:29:43:01** (21.0 s) · **[MD]** `output/documents.mp4` · source 00:02:32:00 → 00:02:53:00  
 Source : condamnation par l'Agence juive et la Haganah ; message de Ben Gourion au roi Abdallah ; convoi de Hadassah, 13 avril 1948, 78 morts  
-À l'écran : carton : Jérusalem · 13 avril 1948  
+À l'écran : Jérusalem · avril 1948 · Le convoi de Hadassah · 78 morts, médecins, infirmières et patients  
 > VOIX : L'Agence juive et la Haganah condamnent le massacre ; / Ben Gourion présente des excuses au roi Abdallah de Transjordanie. // Quatre jours plus tard, à Jérusalem, / des combattants arabes attaquent un convoi de l'hôpital Hadassah : / 78 morts, médecins, infirmières et **patients**.  
 (39 mots, 1.9 par seconde)
 
@@ -281,12 +283,12 @@ Film 00:29:43:01 → 00:31:07:16 · durée 1 min 24.6 s
 > VOIX : silence
 
 
-**16.2** · film **00:29:47:16 → 00:30:01:16** (14.0 s) · **[PHOTO]** `portraits/ben-gourion.png`  
+**16.2** · film **00:29:47:16 → 00:30:01:16** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:35:00 → 00:00:49:00  
 > VOIX : Pour la plupart des Israéliens, David Ben Gourion est le père de la nation. / Il a bâti un État, une armée, / et accueilli des centaines de milliers de réfugiés **juifs**.  
 (30 mots, 2.1 par seconde)
 
 
-**16.3** · film **00:30:01:16 → 00:30:15:16** (14.0 s) · **[PHOTO]** `à télécharger : la déclaration d'indépendance d'Israël, 14 mai 1948 (document, domaine public)` · **À OBTENIR**  
+**16.3** · film **00:30:01:16 → 00:30:15:16** (14.0 s) · **[MD]** `output/documents.mp4` · source 00:00:55:00 → 00:01:09:00  
 Source : déclaration d'indépendance de l'État d'Israël, 14 mai 1948 ; notre traduction  
 > VOIX : La déclaration d'indépendance promet « l'égalité complète des droits sociaux et politiques à tous ses habitants, / sans distinction de religion, de race ou de **sexe** ».  
 (24 mots, 1.7 par seconde)
@@ -298,7 +300,7 @@ Source : SOURCES.md 6 (réunion de l'Exécutif de l'Agence juive, 12 juin 1938, 
 (23 mots, 1.9 par seconde)
 
 
-**16.5** · film **00:30:27:16 → 00:30:46:16** (19.0 s) · **[PHOTO]** `portraits/rabin.png`  
+**16.5** · film **00:30:27:16 → 00:30:46:16** (19.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:49:00 → 00:01:08:00  
 Source : passage censuré des mémoires d'Yitzhak Rabin, publié par The New York Times, 23 octobre 1979  
 > VOIX : Juillet 1948. / Selon les mémoires d'Yitzhak Rabin, quand on lui demande ce qu'il faut faire des habitants de Lydda, / Ben Gourion fait un geste de la main, / qui veut dire : « Chassez-les. » // Ce passage avait été censuré en **Israël**.  
 (38 mots, 2.0 par seconde)
@@ -369,7 +371,7 @@ Film 00:32:18:01 → 00:33:29:01 · durée 1 min 11.0 s
 > VOIX : silence
 
 
-**18.3** · film **00:32:27:01 → 00:32:41:01** (14.0 s) · **[PHOTO]** `portraits/meir.png`  
+**18.3** · film **00:32:27:01 → 00:32:41:01** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:08:00 → 00:01:22:00  
 > VOIX : Golda Meir, née à Kiev, élevée aux États-Unis, / signe la déclaration d'indépendance. / Elle devient Première ministre en **1969**.  
 (18 mots, 1.3 par seconde)
 
@@ -380,7 +382,7 @@ Source : SOURCES.md 6 (entretien avec Frank Giles, The Sunday Times, 15 juin 196
 (16 mots, 1.3 par seconde)
 
 
-**18.5** · film **00:32:53:01 → 00:33:05:01** (12.0 s) · **[PHOTO]** `à télécharger : une du journal Filastin, Jaffa, 1911 (même image qu'au chapitre 6)` · **À OBTENIR**  
+**18.5** · film **00:32:53:01 → 00:33:05:01** (12.0 s) · **[MD]** `output/documents.mp4` · source 00:00:11:00 → 00:00:23:00  
 > VOIX : Pourtant, dès 1911, à Jaffa, un journal s'appelait Filastin, / et s'adressait à ses lecteurs comme à des **Palestiniens**.  
 (18 mots, 1.5 par seconde)
 

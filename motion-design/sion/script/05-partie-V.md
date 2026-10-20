@@ -35,19 +35,19 @@ Film 00:48:12:17 → 00:49:46:07 · durée 1 min 33.6 s
 (10 mots, 2.1 par seconde)
 
 
-**24.4** · film **00:48:27:12 → 00:48:39:12** (12.0 s) · **[PHOTO]** `portraits/netanyahou.png`  
+**24.4** · film **00:48:27:12 → 00:48:39:12** (12.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : vidéo de Benyamin Netanyahou, jour des élections, 17 mars 2015 ; notre traduction  
-> VOIX : Le jour des élections de 2015, il lance aux électeurs de droite : / « Les électeurs arabes vont voter en masse. » // Un citoyen sur cinq est **arabe**.  
-(25 mots, 2.1 par seconde)
+> VOIX : Le jour des élections de 2015, il lance aux électeurs de droite : / « Les électeurs arabes se rendent en masse aux urnes. » // Un citoyen sur cinq est **arabe**.  
+(27 mots, 2.2 par seconde)
 
 
-**24.5** · film **00:48:39:12 → 00:48:54:12** (15.0 s) · **[PHOTO]** `à fabriquer : carton du texte de loi (Loi fondamentale : Israël, État-nation du peuple juif, 19 juillet 2018)` · **À OBTENIR**  
+**24.5** · film **00:48:39:12 → 00:48:54:12** (15.0 s) · **[MD]** `output/documents.mp4` · source 00:01:09:00 → 00:01:24:00  
 Source : Loi fondamentale : Israël, État-nation du peuple juif, 19 juillet 2018, article 1 (c) et article 4 ; notre traduction  
 > VOIX : En 2018, une loi fondamentale proclame : / « Le droit à l'autodétermination nationale dans l'État d'Israël est propre au peuple juif. » // L'arabe perd son statut de langue **officielle**.  
 (26 mots, 1.7 par seconde)
 
 
-**24.6** · film **00:48:54:12 → 00:49:03:12** (9.0 s) · **[PHOTO]** `portraits/netanyahou.png`  
+**24.6** · film **00:48:54:12 → 00:49:03:12** (9.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:00:12:00 → 00:00:21:00  
 Source : message de Benyamin Netanyahou sur Instagram, 10 mars 2019  
 > VOIX : Netanyahou précise : / « Israël n'est pas l'État de tous ses citoyens. »  
 (10 mots, 1.1 par seconde)
@@ -59,7 +59,7 @@ Source : message de Benyamin Netanyahou sur Instagram, 10 mars 2019
 (10 mots, 2.1 par seconde)
 
 
-**24.8** · film **00:49:08:07 → 00:49:32:07** (24.0 s) · **[PHOTO]** `portraits/lieberman.png`  
+**24.8** · film **00:49:08:07 → 00:49:32:07** (24.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:00:21:00 → 00:00:45:00  
 Source : entretien avec Oudi Segal, congrès « Démocratie électorale 2015 », Centre interdisciplinaire d'Herzliya, 8 mars 2015 ; texte hébreu publié le jour même par N12 / Mako ; le parquet refuse d'ouvrir une enquête le 25 mai 2015 (Adalah) ; notre traduction  
 À l'écran : « Celui qui est contre nous, il n'y a rien à faire : il faut lever une hache et lui couper la tête »  
 > VOIX : En mars 2015, à propos des citoyens arabes d'Israël : / « Celui qui est avec nous doit tout recevoir, / jusqu'à la moitié du royaume. / Celui qui est contre nous, il n'y a rien à faire : / il faut lever une hache, et lui couper la tête. / Sinon, nous ne survivrons pas ici. » // Le parquet refuse d'ouvrir une **enquête**.  
@@ -67,7 +67,7 @@ Source : entretien avec Oudi Segal, congrès « Démocratie électorale 2015 »,
 Note : texte vérifié sur la source hébraïque du jour (Perplexity, 20 octobre) : singulier, phrase entière, sans rien couper. « Les citoyens arabes » est le contexte donné par N12, hors des guillemets.
 
 
-**24.9** · film **00:49:32:07 → 00:49:46:07** (14.0 s) · **[PHOTO]** `portraits/netanyahou.png`  
+**24.9** · film **00:49:32:07 → 00:49:46:07** (14.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:00:45:00 → 00:00:59:00  
 Source : conférence de presse de Benyamin Netanyahou, 18 janvier 2024 ; déclaration du 21 septembre 2025  
 > VOIX : En septembre 2025, Netanyahou résume son action : / « Pendant des années, j'ai empêché la création de cet État terroriste. » // Il parle de l'État **palestinien**.  
 (23 mots, 1.6 par seconde)
@@ -119,7 +119,7 @@ Source : Yoav Gallant, ministre de la Défense, 9 octobre 2023 (vidéo) ; cité 
 (21 mots, 1.9 par seconde)
 
 
-**25.8** · film **00:50:58:22 → 00:51:07:22** (9.0 s) · **[PHOTO]** `portraits/netanyahou.png`  
+**25.8** · film **00:50:58:22 → 00:51:07:22** (9.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:00:59:00 → 00:01:08:00  
 Source : discours de Benyamin Netanyahou, 28 octobre 2023 (Deutéronome 25, 17)  
 > VOIX : Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »  
 (11 mots, 1.2 par seconde)  
@@ -162,7 +162,7 @@ Source : commission internationale indépendante d'enquête de l'ONU, rapport du
 Note : règle 6 de la bible : la voix dit qui affirme, sur quelle base, et ce qui reste à juger
 
 
-**25.15** · film **00:52:42:22 → 00:52:57:22** (15.0 s) · **[PHOTO]** `à télécharger : couverture du livre The Palestine Laboratory (Verso, 2023) ou carton` · **À OBTENIR**  
+**25.15** · film **00:52:42:22 → 00:52:57:22** (15.0 s) · **[MD]** `output/documents.mp4` · source 00:01:24:00 → 00:01:39:00  
 Source : Antony Loewenstein, The Palestine Laboratory, Verso, 2023  
 > VOIX : Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».  
 (29 mots, 1.9 par seconde)
@@ -175,7 +175,7 @@ Source : Antony Loewenstein, The Palestine Laboratory, Verso, 2023
 
 ## Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique
 
-Film 00:53:06:23 → 00:54:38:23 · durée 1 min 32.0 s
+Film 00:53:06:23 → 00:54:39:23 · durée 1 min 33.0 s
 
 *Intention : D'où vient le sionisme religieux (le rabbin Kook, le Goush Emounim), ce qu'il a produit de pire (Hébron 1994), et comment il est arrivé au gouvernement. Smotrich et Ben Gvir, par leurs mots et leur casier. Rappeler que beaucoup de religieux juifs s'y opposent (chapitre 30).*
 
@@ -203,125 +203,125 @@ Source : massacre du tombeau des Patriarches, Hébron, 25 février 1994 : 29 mor
 (7 mots, 1.3 par seconde)
 
 
-**26.5** · film **00:53:42:23 → 00:53:58:23** (16.0 s) · **[PHOTO]** `portraits/ben-gvir.png`  
+**26.5** · film **00:53:42:23 → 00:53:58:23** (16.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:08:00 → 00:01:24:00  
 Source : condamnation de 2007 (incitation au racisme, soutien à une organisation terroriste, le Kach) ; portrait de Baruch Goldstein retiré de son salon en 2020  
 > VOIX : Itamar Ben Gvir, ministre de la Sécurité nationale. / Condamné en 2007 pour incitation au racisme / et soutien à une organisation terroriste. // Chez lui, il a longtemps gardé un portrait de Baruch **Goldstein**.  
 (32 mots, 2.0 par seconde)
 
 
-**26.6** · film **00:53:58:23 → 00:54:10:23** (12.0 s) · **[PHOTO]** `portraits/ben-gvir.png`  
+**26.6** · film **00:53:58:23 → 00:54:11:23** (13.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:24:00 → 00:01:37:00  
 Source : entretien à la chaîne 12, 23 août 2023 ; notre traduction  
-> VOIX : En 2023 : / « Mon droit de circuler sur les routes de Judée et de Samarie / passe avant le droit de circuler des **Arabes**. »  
-(22 mots, 1.8 par seconde)
+> VOIX : En 2023 : / « Mon droit, celui de ma femme et de mes enfants, / de circuler sur les routes de Judée et de Samarie / passe avant la liberté de circulation des **Arabes**. »  
+(30 mots, 2.3 par seconde)
 
 
-**26.7** · film **00:54:10:23 → 00:54:23:23** (13.0 s) · **[PHOTO]** `portraits/smotrich.png`  
+**26.7** · film **00:54:11:23 → 00:54:24:23** (13.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:37:00 → 00:01:50:00  
 Source : Bezalel Smotrich, 1er mars 2023, après l'attaque de colons contre Huwara ; il retire ensuite ses propos  
-> VOIX : Bezalel Smotrich, ministre des Finances, / après une attaque de colons contre le village de Huwara : / « Il faut effacer Huwara. »  
-(19 mots, 1.5 par seconde)  
+> VOIX : Bezalel Smotrich, ministre des Finances, / après une attaque de colons contre le village de Huwara : / « Le village de Huwara doit être **effacé**. »  
+(22 mots, 1.7 par seconde)  
 Note : dire qu'il a ensuite retiré ses propos : la voix le fait au plan suivant
 
 
-**26.8** · film **00:54:23:23 → 00:54:38:23** (15.0 s) · **[PHOTO]** `portraits/smotrich.png`  
+**26.8** · film **00:54:24:23 → 00:54:39:23** (15.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:50:00 → 00:02:05:00  
 Source : Bezalel Smotrich, 5 août 2024 (CNN, 6 août 2024) ; notre traduction  
-> VOIX : Il retire ce mot. / En 2024, il dit qu'affamer deux millions d'habitants de Gaza / serait peut-être « juste et moral », / mais que « personne au monde ne nous laisserait **faire** ».  
-(28 mots, 1.9 par seconde)
+> VOIX : Il retire ce mot. / En 2024, il dit : / « Personne au monde ne nous laissera affamer deux millions de personnes, / même si cela pouvait être justifié et **moral**, / jusqu'à ce qu'ils rendent les otages. »  
+(33 mots, 2.2 par seconde)
 
 
 ## Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation
 
-Film 00:54:38:23 → 00:55:47:18 · durée 1 min 08.8 s
+Film 00:54:39:23 → 00:55:48:18 · durée 1 min 08.8 s
 
 *Intention : Une enquête documentée de bout en bout (The New York Times, Meta, OpenAI) plutôt qu'une thèse générale. Dire que la désinformation existe dans tous les camps de cette guerre ; celle-ci se distingue parce qu'un ministère l'a payée.*
 
 
-**27.1** · film **00:54:38:23 → 00:54:43:13** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-27.mp4` · source 00:00:00:00 → 00:00:04:15  
+**27.1** · film **00:54:39:23 → 00:54:44:13** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-27.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**27.2** · film **00:54:43:13 → 00:54:49:23** (6.4 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:00:00 → 00:00:06:10  
+**27.2** · film **00:54:44:13 → 00:54:50:23** (6.4 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:00:00 → 00:00:06:10  
 > VOIX : Des Américains qui n'existent **pas**.  
 (5 mots, 0.8 par seconde)
 
 
-**27.3** · film **00:54:49:23 → 00:55:02:13** (12.6 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:06:10 → 00:00:19:00  
+**27.3** · film **00:54:50:23 → 00:55:03:13** (12.6 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:06:10 → 00:00:19:00  
 > VOIX : Pendant la guerre, des centaines de faux comptes se font passer pour des Américains, / et interpellent des élus du **Congrès**.  
 (20 mots, 1.6 par seconde)
 
 
-**27.4** · film **00:55:02:13 → 00:55:12:13** (10.0 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:19:00 → 00:00:29:00  
+**27.4** · film **00:55:03:13 → 00:55:13:13** (10.0 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:19:00 → 00:00:29:00  
 > VOIX : Leurs messages sont écrits par une intelligence **artificielle**.  
 (8 mots, 0.8 par seconde)
 
 
-**27.5** · film **00:55:12:13 → 00:55:24:13** (12.0 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:29:00 → 00:00:41:00  
+**27.5** · film **00:55:13:13 → 00:55:25:13** (12.0 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:29:00 → 00:00:41:00  
 > VOIX : En mai 2024, Meta supprime 510 comptes Facebook. / Le réseau n'avait presque aucune audience **réelle**.  
 (15 mots, 1.2 par seconde)
 
 
-**27.6** · film **00:55:24:13 → 00:55:36:23** (12.4 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:41:00 → 00:00:53:10  
+**27.6** · film **00:55:25:13 → 00:55:37:23** (12.4 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:41:00 → 00:00:53:10  
 > VOIX : Selon The New York Times, environ deux millions de dollars d'argent public, / venus du ministère israélien de la Diaspora. / Le ministère **dément**.  
 (22 mots, 1.8 par seconde)
 
 
-**27.7** · film **00:55:36:23 → 00:55:43:18** (6.8 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:53:10 → 00:01:00:05  
+**27.7** · film **00:55:37:23 → 00:55:44:18** (6.8 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:53:10 → 00:01:00:05  
 Source : rapports trimestriels de Meta sur les réseaux de comportement inauthentique coordonné (réseaux iraniens et autres, 2023-2024)  
 > VOIX : Des faux comptes, il y en a dans tous les camps de cette **guerre**.  
 (14 mots, 2.1 par seconde)
 
 
-**27.8** · film **00:55:43:18 → 00:55:47:18** (4.0 s) · **[NOIR]** (à fabriquer)  
+**27.8** · film **00:55:44:18 → 00:55:48:18** (4.0 s) · **[NOIR]** (à fabriquer)  
 > VOIX : Celui-ci était payé par un **État**.  
 (6 mots, 1.5 par seconde)
 
 
 ## Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens
 
-Film 00:55:47:18 → 00:57:17:08 · durée 1 min 29.6 s
+Film 00:55:48:18 → 00:57:18:08 · durée 1 min 29.6 s
 
 *Intention : Les faits établis par des commissions et des rapports israéliens eux-mêmes, et la contestation venue de l'intérieur (les Black Panthers, les manifestations de 2015). Le point de vue israélien a sa place : les citoyens arabes votent, siègent à la Knesset et à la Cour suprême.*
 
 
-**28.1** · film **00:55:47:18 → 00:55:52:08** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-28.mp4` · source 00:00:00:00 → 00:00:04:15  
+**28.1** · film **00:55:48:18 → 00:55:53:08** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-28.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**28.2** · film **00:55:52:08 → 00:56:09:08** (17.0 s) · **[PHOTO]** `à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)` · **À OBTENIR**  
+**28.2** · film **00:55:53:08 → 00:56:10:08** (17.0 s) · **[PHOTO]** `à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)` · **À OBTENIR**  
 Source : Black Panthers israéliens, fondés en 1971 à Moussrara, Jérusalem ; Golda Meir, 19 mai 1971, au lendemain de la manifestation violente du 18 mai, rapporté par Maariv (Avi Picard, université Bar-Ilan, 19 mai 2021)  
 > VOIX : Les Juifs venus des pays arabes, les mizrahim, se heurtent à une élite venue d'Europe. / En 1971, des jeunes de Jérusalem fondent les Black Panthers. / Après une manifestation violente, Golda Meir lance : / « Ce ne sont pas des garçons **gentils**. »  
 (39 mots, 2.3 par seconde)
 
 
-**28.3** · film **00:56:09:08 → 00:56:25:08** (16.0 s) · **[PHOTO]** `à télécharger : immigrants yéménites, camp de Rosh HaAyin, vers 1950 (GPO, domaine public)` · **À OBTENIR**  
+**28.3** · film **00:56:10:08 → 00:56:26:08** (16.0 s) · **[PHOTO]** `à télécharger : immigrants yéménites, camp de Rosh HaAyin, vers 1950 (GPO, domaine public)` · **À OBTENIR**  
 Source : commission Kedmi, rapport de 2001 ; décision du gouvernement israélien d'indemniser les familles, février 2021  
 > VOIX : Entre 1948 et 1954, des centaines d'enfants d'immigrants yéménites disparaissent des hôpitaux et des camps. / On dit aux parents qu'ils sont morts. // En 2021, l'État accepte d'indemniser les **familles**.  
 (29 mots, 1.8 par seconde)  
 Note : la commission Kedmi n'a pas retenu d'enlèvements organisés ; l'indemnisation est accordée sans reconnaissance de responsabilité
 
 
-**28.4** · film **00:56:25:08 → 00:56:41:08** (16.0 s) · **[PHOTO]** `à télécharger : manifestation des Israéliens d'origine éthiopienne, Tel-Aviv, mai 2015 (licence libre, Wikimedia Commons)` · **À OBTENIR**  
+**28.4** · film **00:56:26:08 → 00:56:42:08** (16.0 s) · **[PHOTO]** `à télécharger : manifestation des Israéliens d'origine éthiopienne, Tel-Aviv, mai 2015 (licence libre, Wikimedia Commons)` · **À OBTENIR**  
 Source : directive du directeur du ministère de la Santé, Ron Gamzu, janvier 2013 (Haaretz, 27 janvier 2013) ; manifestations de mai 2015  
 > VOIX : En 2013, le ministère de la Santé ordonne d'arrêter d'injecter un contraceptif à des femmes éthiopiennes / qui n'en comprenaient pas les effets. // En 2015, des milliers d'Israéliens éthiopiens manifestent contre les violences **policières**.  
 (33 mots, 2.1 par seconde)
 
 
-**28.5** · film **00:56:41:08 → 00:56:54:08** (13.0 s) · **[NOIR]** (à fabriquer)  
+**28.5** · film **00:56:42:08 → 00:56:55:08** (13.0 s) · **[NOIR]** (à fabriquer)  
 Source : octobre 2000 : 13 citoyens arabes tués par la police (commission Or, 2003)  
 À l'écran : carton : Galilée · octobre 2000  
 > VOIX : Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize d'entre eux pendant des **manifestations**.  
 (20 mots, 1.5 par seconde)
 
 
-**28.6** · film **00:56:54:08 → 00:57:08:08** (14.0 s) · **[NOIR]** (à fabriquer)  
+**28.6** · film **00:56:55:08 → 00:57:09:08** (14.0 s) · **[NOIR]** (à fabriquer)  
 Source : Ra'am dans la coalition gouvernementale, 2021-2022 ; Khaled Kabub, juge à la Cour suprême depuis 2022  
 > VOIX : Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à la Cour suprême, / et un parti arabe a gouverné en **2021**.  
 (28 mots, 2.0 par seconde)
 
 
-**28.7** · film **00:57:08:08 → 00:57:17:08** (9.0 s) · **[NOIR]** (à fabriquer)  
+**28.7** · film **00:57:09:08 → 00:57:18:08** (9.0 s) · **[NOIR]** (à fabriquer)  
 > VOIX : Pour beaucoup de ces citoyens, / la loi de 2018 a dit l'inverse. ///  
 (12 mots, 1.3 par seconde)
 
 
 ---
-Durée de la partie : 9 min 18.6 s (film 00:47:58:17 → 00:57:17:08)
+Durée de la partie : 9 min 19.6 s (film 00:47:58:17 → 00:57:18:08)
