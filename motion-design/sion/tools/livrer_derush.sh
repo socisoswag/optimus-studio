@@ -7,7 +7,7 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
-REPO="${MONTAGE_REPO:-https://github.com/socisoswag/montage-moyen-orient}"
+REPO="${MONTAGE_REPO:-https://github.com/socisoswag/Montage-Moyen-orient}"
 W="${WORK:-$(dirname "$(dirname "$(dirname "$ROOT")")")/_livraison-sion}"
 push() {
   for d in 2 4 8 16 0; do
