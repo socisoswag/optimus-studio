@@ -1,0 +1,492 @@
+titre: "Partie III · La catastrophe fondatrice"
+intro: >-
+  1947-1949, puis ce qui en découle. Le cœur du film : le partage, la guerre, la Nakba. Ici plus qu'ailleurs, chaque
+  récit est donné dans sa version la plus forte, puis confronté aux archives, y compris celles de l'armée israélienne
+  ouvertes dans les années 1980. Les violences contre les civils sont toutes nommées : Deir Yassin, le convoi de
+  Hadassah, la rue Ben Yehuda, Lydda.
+chapitres:
+  - num: "III.0"
+    titre: "Ouverture de la partie III"
+    plans:
+      - type: MD
+        fichier: output/partie-3.mp4
+        entree: 0
+        sortie: 15.8
+        ecran: "Partie III · La catastrophe fondatrice"
+
+  - num: "12"
+    titre: "Chapitre 12 · 1947 : le plan de partage de l'ONU"
+    intention: >-
+      La carte fait le travail : un pays découpé en six morceaux qui ne se touchent que par des points. La voix
+      reste sobre et laisse les chiffres parler. Puis les deux lectures du refus arabe, chacune dans sa version la plus
+      forte.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-12.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/partage-1947.mp4
+        entree: 0
+        sortie: 12.5
+        source: "SOURCES.md 5 (résolution 181, 29 novembre 1947 : 33 pour, 13 contre, 10 abstentions)"
+        ecran: "carton : output/cartons/new-york-1947"
+        voix: >-
+          29 novembre 1947. / Près de New York, l'Assemblée générale de l'ONU vote le partage de la Palestine. //
+          33 voix pour, / 13 contre, / 10 **abstentions**.
+      - type: MD
+        fichier: output/partage-1947.mp4
+        entree: 12.5
+        sortie: 24
+        voix: >-
+          Sur le terrain, environ un million huit cent cinquante mille habitants. / Deux tiers d'Arabes, / un tiers de
+          **Juifs**.
+      - type: MD
+        fichier: output/partage-1947.mp4
+        entree: 24
+        sortie: 35.5
+        voix: >-
+          Le plan coupe le pays en deux États, / et laisse Jérusalem sous régime **international**.
+      - type: MD
+        fichier: output/partage-1947.mp4
+        entree: 35.5
+        sortie: 45
+        voix: >-
+          Chaque État en trois morceaux, / qui ne se touchent que par des **points**.
+      - type: MD
+        fichier: output/partage-1947.mp4
+        entree: 45
+        sortie: 57.8
+        note: "les deux nœuds, au nord et au sud : pas de voix, la carte suffit"
+      - type: MD
+        fichier: output/partage-1947.mp4
+        entree: 57.8
+        sortie: 64
+        voix: >-
+          Jaffa, ville arabe, se retrouve **enclavée**.
+      - type: MD
+        fichier: output/partage-1947.mp4
+        entree: 64
+        sortie: 76
+        voix: >-
+          L'État juif reçoit 56 % du territoire, / désert du Néguev compris. // Les Juifs forment un tiers de la
+          **population**.
+      - type: MD
+        fichier: output/partage-1947.mp4
+        entree: 76
+        sortie: 84.6
+        voix: >-
+          Et dans cet État juif vivent plus de 400 000 **Arabes**.
+      - type: MD
+        fichier: output/partage-1947.mp4
+        entree: 84.6
+        sortie: 97.8
+        voix: >-
+          L'Agence juive accepte. / Les dirigeants arabes refusent. // Le lendemain, la guerre civile **commence**.
+      - type: ARCH
+        fichier: "à extraire : actualités Universal, vote du partage et réactions, décembre 1947 (domaine public, NARA, série 200 UN)"
+        duree: 24
+        a_obtenir: true
+        source: "terres en propriété juive : moins de 6 % (Village Statistics, 1945) ; SOURCES.md 5, partie II"
+        voix: >-
+          Pour les Israéliens, tout part de ce refus : / ils acceptaient un compromis, on leur a fait la guerre. //
+          Les Palestiniens posent une autre question : / pourquoi les deux tiers des habitants devraient-ils céder plus de
+          la moitié du pays / à ceux qui en possèdent moins de six pour cent des **terres** ?
+
+  - num: "13"
+    titre: "Chapitre 13 · 1948 : la création d'Israël et la Nakba"
+    intention: >-
+      Une même année, deux mémoires : l'indépendance et la survie pour les uns, la catastrophe pour les autres. La
+      carte de la guerre, puis les lumières des villages vidés. Le point décisif : ce que les historiens israéliens
+      ont trouvé dans les archives de leur propre armée.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-13.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 32.4
+        sortie: 36.8
+        ecran: "fiche de la chronologie : David Ben Gourion · carton : output/cartons/tel-aviv-1948"
+        voix: >-
+          14 mai 1948. / Ben Gourion proclame l'État d'**Israël**.
+      - type: MD
+        fichier: output/nakba-1948.mp4
+        entree: 0
+        sortie: 6
+        voix: >-
+          Pour les Palestiniens, c'est la Nakba. / La **catastrophe**.
+      - type: MD
+        fichier: output/nakba-1948.mp4
+        entree: 6
+        sortie: 20
+        voix: >-
+          Avant même l'entrée des armées arabes, / Tibériade, Haïfa, Safed et Jaffa sont prises. / Leurs habitants
+          arabes fuient, / ou sont **chassés**.
+      - type: MD
+        fichier: output/nakba-1948.mp4
+        entree: 20
+        sortie: 32
+        source: "pertes israéliennes : environ 6 000 morts (ministère israélien de la Défense), pour environ 650 000 Juifs"
+        voix: >-
+          Le 15 mai, cinq armées arabes entrent en guerre. / Pour Israël, c'est une guerre de survie : / environ six
+          mille morts, / un Juif du pays sur **cent**.
+      - type: MD
+        fichier: output/nakba-1948.mp4
+        entree: 32
+        sortie: 44
+        ecran: "carton : output/cartons/lydda-1948"
+        voix: >-
+          En juillet, à Lydda et Ramle, / entre cinquante et soixante-dix mille habitants sont expulsés. / Ils marchent
+          vers l'est, en pleine **chaleur**.
+      - type: MD
+        fichier: output/nakba-1948.mp4
+        entree: 44
+        sortie: 59
+        voix: >-
+          À l'automne, / le Néguev, / puis la **Galilée**.
+      - type: MD
+        fichier: output/nakba-1948.mp4
+        entree: 59
+        sortie: 72
+        source: "Walid Khalidi (dir.), All That Remains, Institute for Palestine Studies, 1992 (418 villages)"
+        voix: >-
+          En tout, plus de quatre cents villages sont vidés. / La plupart sont rasés. // Leurs habitants ne reviendront
+          **jamais**.
+      - type: MD
+        fichier: output/nakba-1948.mp4
+        entree: 72
+        sortie: 83
+        voix: >-
+          En 1949, Israël tient 78 % de la Palestine mandataire. / La Cisjordanie passe à la Jordanie, / Gaza à
+          l'**Égypte**.
+      - type: MD
+        fichier: output/nakba-1948.mp4
+        entree: 83
+        sortie: 93
+        source: "résolution 194 (III) de l'Assemblée générale, 11 décembre 1948, paragraphe 11"
+        voix: >-
+          Le 11 décembre 1948, l'ONU demande que les réfugiés qui le souhaitent puissent rentrer chez eux. // Ce n'est
+          jamais **appliqué**.
+      - type: MD
+        fichier: output/flux-humains.mp4
+        entree: 6.2
+        sortie: 20.7
+        voix: >-
+          Environ sept cent mille Palestiniens deviennent réfugiés, / au Liban, en Syrie, en Transjordanie, en
+          Cisjordanie et à **Gaza**.
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 36.8
+        sortie: 41.6
+        ecran: "fiche de la chronologie : 1948, deux regards"
+        voix: >-
+          Une même année. / Deux **mémoires**.
+      - type: ARCH
+        fichier: "à extraire : « Arab Refugees », vers 1950 (NARA 446397932), ou « Sands of Sorrow », 1950 (NARA 11960)"
+        duree: 16
+        a_obtenir: true
+        voix: >-
+          Pendant des décennies, le récit officiel israélien affirme : / ils sont partis à l'appel des dirigeants
+          arabes. // À partir des années 1980, des historiens israéliens ouvrent les archives de leur propre **armée**.
+      - type: 3D
+        fichier: output/villages-lumieres.mp4
+        entree: 0
+        sortie: 25
+        ecran: "déjà dans la pièce : 1947 · 1949 · Les villages vidés · Chaque lumière, un village palestinien dépeuplé"
+        son: "la nuit, le vent ; une note grave à chaque vague de lumières"
+      - type: 3D
+        fichier: output/villages-lumieres.mp4
+        entree: 25
+        sortie: 45
+        source: >-
+          Benny Morris, The Birth of the Palestinian Refugee Problem Revisited, Cambridge University Press, 2004 ;
+          décision du gouvernement israélien d'empêcher le retour, 16 juin 1948 (même ouvrage)
+        voix: >-
+          Benny Morris, le plus cité d'entre eux, conclut : / la plupart ont fui les combats et la peur, / beaucoup ont
+          été expulsés, / et seule une petite partie est partie sur ordre de dirigeants arabes. // Le retour leur est
+          interdit dès juin **1948**.
+
+  - num: "14"
+    titre: "Chapitre 14 · Les milices juives : Haganah, Irgoun, Lehi"
+    intention: >-
+      Trois forces, trois cultures politiques, et deux futurs Premiers ministres. Le chapitre montre aussi les
+      combattants arabes et les attentats contre les civils juifs : le film ne choisit pas ses morts.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-14.mp4
+        entree: 0
+        sortie: 4.6
+      - type: PHOTO
+        fichier: "à télécharger : membres de la Haganah, 1947-1948 (domaine public, Wikimedia Commons)"
+        duree: 12
+        a_obtenir: true
+        voix: >-
+          Côté juif, trois forces armées. / La Haganah, la plus grande, liée à Ben Gourion. / Et deux groupes plus
+          radicaux : / l'Irgoun et le **Lehi**.
+      - type: PHOTO
+        fichier: "à télécharger : l'hôtel King David après l'attentat, 22 juillet 1946 (domaine public, Wikimedia Commons)"
+        duree: 13
+        a_obtenir: true
+        source: "attentat du 22 juillet 1946 : 91 morts"
+        ecran: "carton : Jérusalem · 22 juillet 1946"
+        voix: >-
+          Le 22 juillet 1946, l'Irgoun fait sauter une aile de l'hôtel King David, / siège de l'administration
+          britannique à Jérusalem. // 91 **morts**.
+      - type: PHOTO
+        fichier: portraits/begin.png
+        duree: 12
+        voix: >-
+          Son chef, Menahem Begin, sera Premier ministre d'Israël en 1977, / et prix Nobel de la paix l'année
+          **suivante**.
+      - type: PHOTO
+        fichier: "à télécharger : portrait de Folke Bernadotte (domaine public, Wikimedia Commons)"
+        duree: 14
+        a_obtenir: true
+        source: "Lord Moyne, tué au Caire le 6 novembre 1944 ; Folke Bernadotte, tué à Jérusalem le 17 septembre 1948"
+        voix: >-
+          Le Lehi assassine en 1944 un ministre britannique, Lord Moyne, / puis en 1948 le médiateur de l'ONU, Folke
+          Bernadotte. // Un de ses chefs, Yitzhak Shamir, sera lui aussi Premier **ministre**.
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 28
+        sortie: 32.4
+        ecran: "fiche de la chronologie : Abd al-Qadir al-Husseini"
+        voix: >-
+          Côté arabe, des milices **locales**.
+      - type: PHOTO
+        fichier: portraits/abd-al-qadir.png
+        duree: 9
+        voix: >-
+          Leur chef le plus populaire, Abd al-Qadir al-Husseini, / est tué le 8 avril 1948 à **al-Qastal**.
+      - type: CARTON
+        fichier: "à fabriquer : carton noir à une ligne (Jérusalem · 22 février 1948 · rue Ben Yehuda)"
+        duree: 11
+        a_obtenir: true
+        source: "attentat de la rue Ben Yehuda, Jérusalem, 22 février 1948 (environ 50 morts selon les sources)"
+        voix: >-
+          Les civils juifs sont visés aussi. / Le 22 février 1948, à Jérusalem, / une bombe tue des dizaines de
+          personnes rue Ben **Yehuda**.
+      - type: PHOTO
+        fichier: "à télécharger : la lettre au New York Times du 4 décembre 1948 (page du journal)"
+        duree: 17
+        a_obtenir: true
+        source: >-
+          lettre au New York Times, 4 décembre 1948, signée notamment par Albert Einstein et Hannah Arendt ; notre
+          traduction
+        ecran: "« proche, par son organisation, ses méthodes, sa philosophie politique, des partis nazi et fasciste »"
+        voix: >-
+          En décembre 1948, quand Begin vient aux États-Unis, / des intellectuels juifs, dont Albert Einstein et Hannah
+          Arendt, / jugent son parti « proche, par ses méthodes, / des partis nazi et **fasciste** ».
+        note: >-
+          À TOI DE DÉCIDER. La citation est exacte et célèbre, mais c'est la seule du film qui compare à l'Allemagne
+          nazie. Elle vient de Juifs, en 1948, ce qui la rend défendable ; elle peut aussi servir de prétexte pour
+          attaquer tout le film. Si on la garde : la lire sans effet, et montrer la page du journal.
+
+  - num: "15"
+    titre: "Chapitre 15 · Le massacre de Deir Yassin"
+    intention: >-
+      La séquence existe ; la voix l'accompagne sans la doubler. Puis la condamnation par la direction juive, et le
+      massacre du convoi de Hadassah quatre jours plus tard : les deux faits sont liés dans l'histoire, ils le sont
+      dans le film.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-15.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/deir-yassin.mp4
+        entree: 0
+        sortie: 6
+        ecran: "carton : output/cartons/deir-yassin-1948"
+        voix: >-
+          9 avril 1948. / Deir Yassin, un village à l'ouest de **Jérusalem**.
+      - type: MD
+        fichier: output/deir-yassin.mp4
+        entree: 6
+        sortie: 19
+        voix: >-
+          À l'aube, des miliciens de l'Irgoun et du Lehi entrent dans le village. / Maison après maison, des habitants
+          sont tués : / des hommes, des femmes, des **enfants**.
+      - type: MD
+        fichier: output/deir-yassin.mp4
+        entree: 19
+        sortie: 30
+        source: "SOURCES.md 5 (Deir Yassin : université de Birzeit, environ 107 morts, estimations de 101 à 140)"
+        voix: >-
+          Environ cent sept morts, selon les recherches de l'université palestinienne de Birzeit. / Sur le moment,
+          l'Irgoun en annonce plus du **double**.
+      - type: MD
+        fichier: output/deir-yassin.mp4
+        entree: 30
+        sortie: 41
+        voix: >-
+          Le récit du massacre se répand dans tout le pays, / et accélère l'**exode**.
+      - type: MD
+        fichier: output/deir-yassin.mp4
+        entree: 41
+        sortie: 50
+        voix: >-
+          Aujourd'hui, les maisons du village abritent un hôpital psychiatrique **israélien**. ///
+      - type: PHOTO
+        fichier: "à télécharger : le convoi de Hadassah, Jérusalem, 13 avril 1948 (domaine public, Wikimedia Commons)"
+        duree: 21
+        a_obtenir: true
+        source: "condamnation par l'Agence juive et la Haganah ; message de Ben Gourion au roi Abdallah ; convoi de Hadassah, 13 avril 1948, 78 morts"
+        ecran: "carton : Jérusalem · 13 avril 1948"
+        voix: >-
+          L'Agence juive et la Haganah condamnent le massacre ; / Ben Gourion présente des excuses au roi Abdallah de
+          Transjordanie. // Quatre jours plus tard, à Jérusalem, / des combattants arabes attaquent un convoi de l'hôpital
+          Hadassah : / 78 morts, médecins, infirmières et **patients**.
+
+  - num: "16"
+    titre: "Chapitre 16 · Ben Gourion : bâtir un État, effacer un peuple"
+    titre_de_rechange: "Chapitre 16 · David Ben Gourion : fonder un État"
+    intention: >-
+      Le portrait le plus délicat. D'abord ce qu'il est pour les Israéliens, sincèrement. Puis ses propres mots
+      (1938), ce que raconte Rabin de Lydda, et le gouvernement militaire imposé aux Arabes restés. Le titre d'origine
+      donne la conclusion avant les faits : le titre de rechange laisse les faits la donner.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-16.mp4
+        entree: 0
+        sortie: 4.6
+      - type: PHOTO
+        fichier: portraits/ben-gourion.png
+        duree: 14
+        voix: >-
+          Pour la plupart des Israéliens, David Ben Gourion est le père de la nation. / Il a bâti un État, une armée,
+          / et accueilli des centaines de milliers de réfugiés **juifs**.
+      - type: PHOTO
+        fichier: "à télécharger : la déclaration d'indépendance d'Israël, 14 mai 1948 (document, domaine public)"
+        duree: 14
+        a_obtenir: true
+        source: "déclaration d'indépendance de l'État d'Israël, 14 mai 1948 ; notre traduction"
+        voix: >-
+          La déclaration d'indépendance promet « l'égalité complète des droits sociaux et politiques à tous ses
+          habitants, / sans distinction de religion, de race ou de **sexe** ».
+      - type: MD
+        fichier: output/citation-ben-gourion.mp4
+        entree: 0
+        sortie: 12
+        source: "SOURCES.md 6 (réunion de l'Exécutif de l'Agence juive, 12 juin 1938, d'après Benny Morris)"
+        voix: >-
+          Mais dix ans plus tôt, devant la direction sioniste, / il disait : / « Je suis pour le transfert forcé. / Je
+          n'y vois rien d'**immoral**. »
+      - type: PHOTO
+        fichier: portraits/rabin.png
+        duree: 19
+        source: "passage censuré des mémoires d'Yitzhak Rabin, publié par The New York Times, 23 octobre 1979"
+        voix: >-
+          Juillet 1948. / Selon les mémoires d'Yitzhak Rabin, quand on lui demande ce qu'il faut faire des habitants de
+          Lydda, / Ben Gourion fait un geste de la main, / qui veut dire : « Chassez-les. » // Ce passage avait été
+          censuré en **Israël**.
+      - type: PHOTO
+        fichier: "à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)"
+        duree: 13
+        a_obtenir: true
+        source: "gouvernement militaire sur les citoyens arabes d'Israël, 1948-1966 (Shira Robinson, Citizen Strangers, Stanford University Press, 2013)"
+        voix: >-
+          Les Arabes restés en Israël deviennent citoyens. / Mais jusqu'en 1966, ils vivent sous gouvernement militaire
+          : / il leur faut un permis pour quitter leur **village**.
+      - type: NOIR
+        duree: 8
+        voix: >-
+          Un bâtisseur, pour les uns. / Pour les autres, / l'homme qui a fermé la porte du **retour**.
+
+  - num: "17"
+    titre: "Chapitre 17 · L'exode des juifs arabes et sépharades"
+    intention: >-
+      L'autre exil, souvent oublié en Europe. Des violences réelles, des lois de déchéance, et aussi des départs
+      organisés par les émissaires sionistes. Puis l'argument de « l'échange de populations », et la réponse
+      palestinienne : les deux sont dits.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-17.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/flux-humains.mp4
+        entree: 20.7
+        sortie: 37.7
+        voix: >-
+          Dans le même temps, environ 850 000 Juifs quittent les pays arabes, / du Maroc à l'Irak. / La plupart
+          s'installent en **Israël**.
+      - type: PHOTO
+        fichier: "à télécharger : Juifs irakiens à l'aéroport de Lod, 1951 (GPO, domaine public)"
+        duree: 17
+        a_obtenir: true
+        source: "Farhoud, Bagdad, 1er et 2 juin 1941 (bilans de plus d'une centaine à près de deux cents morts) ; loi irakienne de 1950 ; expulsions d'Égypte après 1956"
+        voix: >-
+          Certains fuient des violences : / à Bagdad, en juin 1941, le Farhoud fait plus d'une centaine de morts juifs.
+          // Après 1948, l'Irak ne les laisse partir qu'en renonçant à leur nationalité ; / l'Égypte en expulse des
+          milliers après **1956**.
+      - type: PHOTO
+        fichier: "à télécharger : une maabara (camp de transit), Israël, vers 1950 (GPO, domaine public)"
+        duree: 16
+        a_obtenir: true
+        source: "opérations Tapis volant (Yémen, 1949-1950) et Ezra et Néhémie (Irak, 1951-1952) ; maabarot"
+        voix: >-
+          D'autres sont poussés au départ par les émissaires sionistes, / qui organisent des ponts aériens, du Yémen à
+          l'Irak. // En Israël, beaucoup vivent des années dans des camps de **toile**.
+      - type: MD
+        fichier: output/flux-humains.mp4
+        entree: 37.7
+        sortie: 44.52
+        ecran: "déjà dans la pièce : Deux exils. Deux mémoires. Une même terre."
+      - type: NOIR
+        duree: 9
+        voix: >-
+          Israël parle d'un échange de populations. / Les Palestiniens répondent : / ce n'est pas à eux d'en payer le
+          **prix**.
+
+  - num: "18"
+    titre: "Chapitre 18 · Golda Meir : « Les Palestiniens n'existent pas »"
+    intention: >-
+      Le titre est sa phrase, pas notre thèse. La citer en entier, y compris la suite (« et que nous étions venus les
+      chasser »), qui dit pourquoi elle compte. Rappeler Filastin, 1911 (chapitre 6). Finir sur un peuple qui prend
+      la parole : la partie IV commence.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-18.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 50.4
+        sortie: 54.8
+        ecran: "fiche de la chronologie : Golda Meir"
+      - type: PHOTO
+        fichier: portraits/meir.png
+        duree: 14
+        voix: >-
+          Golda Meir, née à Kiev, élevée aux États-Unis, / signe la déclaration d'indépendance. / Elle devient Première
+          ministre en **1969**.
+      - type: MD
+        fichier: output/citation-meir.mp4
+        entree: 0
+        sortie: 12
+        source: "SOURCES.md 6 (entretien avec Frank Giles, The Sunday Times, 15 juin 1969, p. 12)"
+        voix: >-
+          Cette année-là, elle déclare au Sunday Times : / « Il n'y avait pas de Palestiniens. / Ils n'existaient
+          **pas**. »
+      - type: PHOTO
+        fichier: "à télécharger : une du journal Filastin, Jaffa, 1911 (même image qu'au chapitre 6)"
+        duree: 12
+        a_obtenir: true
+        voix: >-
+          Pourtant, dès 1911, à Jaffa, un journal s'appelait Filastin, / et s'adressait à ses lecteurs comme à des
+          **Palestiniens**.
+      - type: NOIR
+        duree: 18
+        source: "même entretien : « It was not as though there was a Palestinian people [...] and we came and threw them out and took their country away from them. »"
+        voix: >-
+          Elle ajoute : ce n'est pas comme s'il y avait eu un peuple palestinien, / « et que nous étions venus les
+          chasser, / et leur prendre leur pays ». // Tout est là : / s'il n'y a pas de peuple, / il n'y a rien à
+          **rendre**.
+      - type: NOIR
+        duree: 6
+        voix: >-
+          Ce peuple, pourtant, va prendre la **parole**. ///
+        son: "montée lente vers l'ouverture de la partie IV"

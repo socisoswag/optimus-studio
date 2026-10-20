@@ -2,21 +2,29 @@
 
 | Bloc | Début | Durée |
 |---|---|---|
-| Ouverture | 00:00:00:00 | 2 min 00.6 s |
-| Ouverture de la partie I | 00:02:00:15 | 0 min 15.0 s |
-| Chapitre 1 · Sion : un mot, un mythe, un monde | 00:02:15:15 | 1 min 29.2 s |
-| Chapitre 2 · L'Europe en feu : entre antisémitisme et émancipation | 00:03:44:20 | 1 min 29.7 s |
-| Chapitre 3 · L'affaire Dreyfus : fracture française et choc identitaire | 00:05:14:12 | 0 min 42.6 s |
-| Chapitre 4 · Theodor Herzl : le prophète du retour | 00:05:57:02 | 1 min 29.0 s |
-| Chapitre 5 · Les premiers colons juifs en Palestine | 00:07:26:02 | 0 min 53.0 s |
-| Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface | 00:08:19:02 | 3 min 13.9 s |
-| Ouverture de la partie II | 00:11:33:00 | 0 min 14.6 s |
-| Chapitre 7 · La déclaration Balfour (1917) | 00:11:47:15 | 2 min 02.5 s |
-| Chapitre 8 · Le mandat britannique : promesses brisées, haine semée | 00:13:50:02 | 3 min 09.1 s |
-| Chapitre 9 · Le traité Haavara et l'assassinat d'Arlozoroff | 00:16:59:04 | 1 min 27.6 s |
-| Chapitre 10 · Les juifs contre les juifs : sionistes, orthodoxes et antisionistes | 00:18:26:19 | 1 min 28.6 s |
-| Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens | 00:19:55:09 | 1 min 32.3 s |
-| **Total** | | **21 min 27.7 s** |
+| Ouverture | 00:00:00:00 | 1 min 50.3 s |
+| Ouverture de la partie I | 00:01:50:07 | 0 min 15.0 s |
+| Chapitre 1 · Sion : un mot, un mythe, un monde | 00:02:05:07 | 1 min 29.2 s |
+| Chapitre 2 · L'Europe en feu : entre antisémitisme et émancipation | 00:03:34:12 | 1 min 29.7 s |
+| Chapitre 3 · L'affaire Dreyfus : fracture française et choc identitaire | 00:05:04:04 | 0 min 42.6 s |
+| Chapitre 4 · Theodor Herzl : le prophète du retour | 00:05:46:19 | 1 min 29.0 s |
+| Chapitre 5 · Les premiers colons juifs en Palestine | 00:07:15:19 | 0 min 53.0 s |
+| Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface | 00:08:08:19 | 3 min 13.9 s |
+| Ouverture de la partie II | 00:11:22:17 | 0 min 14.6 s |
+| Chapitre 7 · La déclaration Balfour (1917) | 00:11:37:07 | 2 min 02.5 s |
+| Chapitre 8 · Le mandat britannique : promesses brisées, haine semée | 00:13:39:19 | 3 min 09.1 s |
+| Chapitre 9 · Le traité Haavara et l'assassinat d'Arlozoroff | 00:16:48:20 | 1 min 27.6 s |
+| Chapitre 10 · Les juifs contre les juifs : sionistes, orthodoxes et antisionistes | 00:18:16:10 | 1 min 28.6 s |
+| Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens | 00:19:45:01 | 1 min 32.3 s |
+| Ouverture de la partie III | 00:21:17:08 | 0 min 15.8 s |
+| Chapitre 12 · 1947 : le plan de partage de l'ONU | 00:21:33:03 | 2 min 06.4 s |
+| Chapitre 13 · 1948 : la création d'Israël et la Nakba | 00:23:39:13 | 3 min 02.3 s |
+| Chapitre 14 · Les milices juives : Haganah, Irgoun, Lehi | 00:26:41:21 | 1 min 37.0 s |
+| Chapitre 15 · Le massacre de Deir Yassin | 00:28:18:21 | 1 min 15.6 s |
+| Chapitre 16 · Ben Gourion : bâtir un État, effacer un peuple | 00:29:34:11 | 1 min 24.6 s |
+| Chapitre 17 · L'exode des juifs arabes et sépharades | 00:30:59:01 | 1 min 10.4 s |
+| Chapitre 18 · Golda Meir : « Les Palestiniens n'existent pas » | 00:32:09:11 | 1 min 11.0 s |
+| **Total** | | **33 min 20.5 s** |
 
 ## Images à obtenir
 
@@ -42,3 +50,16 @@
 - 10.5 : à télécharger : portrait de Jacob Israël de Haan (domaine public, Wikimedia Commons)
 - 10.6 : à télécharger : Judah Magnes ou Martin Buber (Brit Shalom, Ihoud ; domaine public à vérifier) (détail fort : Arthur Ruppin, celui qui organise les achats de terres, en est un des fondateurs)
 - 11.4 : à fabriquer : citation (modèle citation-herzl) · Jabotinsky, 1923 (texte capital pour les deux récits : le récit sioniste y lit le réalisme (on ne négocie qu'en position de force), le récit palestinien la preuve d'un projet colonial assumé. La voix ne commente pas.)
+- 12.11 : à extraire : actualités Universal, vote du partage et réactions, décembre 1947 (domaine public, NARA, série 200 UN)
+- 13.13 : à extraire : « Arab Refugees », vers 1950 (NARA 446397932), ou « Sands of Sorrow », 1950 (NARA 11960)
+- 14.2 : à télécharger : membres de la Haganah, 1947-1948 (domaine public, Wikimedia Commons)
+- 14.3 : à télécharger : l'hôtel King David après l'attentat, 22 juillet 1946 (domaine public, Wikimedia Commons)
+- 14.5 : à télécharger : portrait de Folke Bernadotte (domaine public, Wikimedia Commons)
+- 14.8 : à fabriquer : carton noir à une ligne (Jérusalem · 22 février 1948 · rue Ben Yehuda)
+- 14.9 : à télécharger : la lettre au New York Times du 4 décembre 1948 (page du journal) (À TOI DE DÉCIDER. La citation est exacte et célèbre, mais c'est la seule du film qui compare à l'Allemagne nazie. Elle vient de Juifs, en 1948, ce qui la rend défendable ; elle peut aussi servir de prétexte pour attaquer tout le film. Si on la garde : la lire sans effet, et montrer la page du journal.)
+- 15.7 : à télécharger : le convoi de Hadassah, Jérusalem, 13 avril 1948 (domaine public, Wikimedia Commons)
+- 16.3 : à télécharger : la déclaration d'indépendance d'Israël, 14 mai 1948 (document, domaine public)
+- 16.6 : à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)
+- 17.3 : à télécharger : Juifs irakiens à l'aéroport de Lod, 1951 (GPO, domaine public)
+- 17.4 : à télécharger : une maabara (camp de transit), Israël, vers 1950 (GPO, domaine public)
+- 18.5 : à télécharger : une du journal Filastin, Jaffa, 1911 (même image qu'au chapitre 6)

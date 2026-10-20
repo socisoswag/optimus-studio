@@ -111,3 +111,24 @@ existe, mais il rend souvent la voix artificielle : je ne l'utilise qu'en secour
 | Haganah | Ha-ga-na |
 | Irgoun | Ir-goune |
 | Biltmore | Bilt-mor |
+
+## 11. Prononciation (partie III)
+
+| Mot | Dire |
+|---|---|
+| Nakba | Nak-ba (appui sur « Nak ») |
+| Lake Success | Léïk Sak-sèss |
+| Safed | Sa-fèd |
+| Ramle | Ram-lé |
+| Néguev | Né-guèv |
+| Menahem Begin | Mé-na-hèm Bé-guine |
+| Folke Bernadotte | Fol-ké Ber-na-dot |
+| Yitzhak Shamir | Yits-hak Cha-mir |
+| Abd al-Qadir al-Husseini | Abd al-Qa-dir al-Hou-ssé-ni |
+| al-Qastal | al-Qas-tal |
+| Ben Yehuda | Bène Yé-hou-da |
+| Deir Yassin | Dèïr Ya-ssine |
+| Birzeit | Bir-zéït |
+| Hadassah | Ha-da-ssa |
+| Farhoud | Far-houd |
+| maabara, maabarot | ma-a-ba-ra, ma-a-ba-rote |

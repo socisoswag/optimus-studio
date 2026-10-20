@@ -6,7 +6,7 @@ chapitres:
   - num: "O"
     titre: "Ouverture"
     intention: >-
-      Cinq secondes de noir, puis la Terre la nuit, la descente jusqu'à la Méditerranée, les monts de Judée,
+      Deux secondes de noir, puis la Terre la nuit, la descente jusqu'à la Méditerranée, le désert de Judée,
       la mer Morte, et le titre. Aucun mot : on installe le lieu avant l'histoire.
     plans:
       - type: NOIR
@@ -15,10 +15,15 @@ chapitres:
       - type: 3D
         fichier: output/intro-aerienne.mp4
         entree: 0
-        sortie: 84
-        ecran: "altitudes, lieux (Mer Méditerranée, Monts de Judée, Désert de Judée), titre SION · ציון · صهيون"
+        sortie: 73.68
+        source: >-
+          espace et mer : notre 3D (NASA, Copernicus) ; désert de Judée : Adobe Stock 593067850 (ouadi Qelt, monastère
+          Saint-Georges) ; mer Morte : Adobe Stock 198345828 (SOURCES.md 4.1)
+        ecran: "lieux (Mer Méditerranée, Désert de Judée), altimètre -430 m, titre SION · ציון · صهيون"
         son: "bande-son de la pièce (déjà mixée, pistes séparées dans le dossier son)"
-        note: "étalonnée plan par plan (look terre et terre dure à partir des monts de Judée)"
+        note: >-
+          intro hybride (tools/intro_hybride.sh) : l'espace et la mer en 3D, la terre en vrais plans réchauffés pour
+          raccorder avec l'aube. Les anciens plans 3D des monts et du désert de Judée sont abandonnés (effet maquette).
       - type: MD
         fichier: output/generique.mp4
         entree: 0

@@ -218,6 +218,7 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 276957095 | Figuier de Barbarie (sabr), symbole des villages détruits | lieu non précisé | terre | `figuier-de-barbarie-sabr` |
 | 259921414 | Récolte des olives à la main | lieu non précisé | terre | `recolte-des-olives-a-la-main` |
 | 198345828 | La mer Morte vue du ciel | mer Morte | terre | `mer-morte-aerien` |
+| 593067850 | Le monastère Saint-Georges dans le ouadi Qelt, désert de Judée | Cisjordanie occupée, entre Jérusalem et Jéricho | terre (réchauffé dans l'intro) | `desert-judee-ouadi-qelt-saint-georges` |
 
 ### 4.2 Archives filmées (domaine public)
 
@@ -286,6 +287,26 @@ Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans s
   fin 1945 : 553 600 juifs sur 1 764 520 habitants (A Survey of Palestine, 1946) ; terres en propriété juive :
   moins de 6 % de la Palestine (Village Statistics, 1945).
 - Programme de Biltmore, New York, 6-11 mai 1942.
+
+**Partie III, de 1947 à 1969** (chapitres 12 à 18, script)
+- Résolution 181 (II), 29 novembre 1947 : 33 voix pour, 13 contre, 10 abstentions.
+- Pertes israéliennes de la guerre de 1948 : environ 6 000 morts (ministère israélien de la Défense), pour une
+  population juive d'environ 650 000 personnes.
+- Lydda et Ramle, 12-13 juillet 1948 : 50 000 à 70 000 expulsés (Benny Morris) ; geste de Ben Gourion raconté
+  dans le passage censuré des mémoires d'Yitzhak Rabin, The New York Times, 23 octobre 1979.
+- Villages vidés : 418 (Walid Khalidi (dir.), All That Remains, Institute for Palestine Studies, 1992).
+- Causes de l'exode et refus du retour (décision du gouvernement israélien, 16 juin 1948) : Benny Morris, The Birth
+  of the Palestinian Refugee Problem Revisited, Cambridge University Press, 2004.
+- Résolution 194 (III), 11 décembre 1948, paragraphe 11.
+- Hôtel King David, 22 juillet 1946 : 91 morts. Lord Moyne, 6 novembre 1944 ; Folke Bernadotte, 17 septembre 1948.
+- Abd al-Qadir al-Husseini, tué le 8 avril 1948 à al-Qastal. Rue Ben Yehuda, Jérusalem, 22 février 1948.
+- Lettre au New York Times du 4 décembre 1948 (Albert Einstein, Hannah Arendt et d'autres).
+- Deir Yassin, 9 avril 1948 (voir plus haut) ; convoi de Hadassah, 13 avril 1948 : 78 morts.
+- Déclaration d'indépendance de l'État d'Israël, 14 mai 1948. Gouvernement militaire sur les citoyens arabes,
+  1948-1966 (Shira Robinson, Citizen Strangers, Stanford University Press, 2013).
+- Juifs des pays arabes : Farhoud de Bagdad, 1er et 2 juin 1941 ; loi irakienne de 1950 ; départs d'Égypte après
+  1956 ; opérations Tapis volant (1949-1950) et Ezra et Néhémie (1951-1952) ; camps de transit (maabarot).
+- Golda Meir, The Sunday Times, 15 juin 1969 (citation complète en section 6).
 
 **Les aliyas** (chapitre 5)
 - Fourchettes de la Jewish Virtual Library et de l'Encyclopaedia Judaica pour chaque vague (1882 à 1939).
