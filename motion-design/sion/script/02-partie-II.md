@@ -79,7 +79,7 @@ Source : Edwin Montagu, « Memorandum on the Anti-Semitism of the Present Govern
 Note : Montagu juge la déclaration antisémite : elle ferait des Juifs anglais des étrangers dans leur pays. C'est la preuve que Juifs et sionisme ne sont pas la même chose (règle 2 de la bible).
 
 
-**7.10** · film **00:13:18:22 → 00:13:37:22** (19.0 s) · **[MD]** `à fabriquer : citation Balfour 1919 (même modèle que output/citation-herzl.mp4)` · **À OBTENIR**  
+**7.10** · film **00:13:18:22 → 00:13:37:22** (19.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:00:00 → 00:00:19:00  
 Source : Arthur Balfour, mémorandum du 11 août 1919, Documents on British Foreign Policy 1919-1939, première série, vol. IV, p. 345 ; notre traduction  
 À l'écran : « En Palestine, nous ne proposons même pas de consulter les habitants actuels du pays. » · Arthur Balfour, 11 août 1919  
 > VOIX : Deux ans plus tard, Balfour l'écrit sans détour, dans une note interne : / « En Palestine, nous ne proposons même pas de consulter les habitants actuels du pays. » // Le sionisme, ajoute-t-il, compte plus que « les désirs et les préjugés / de 700 000 **Arabes** ».  
@@ -193,14 +193,14 @@ Source : bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centa
 (19 mots, 1.6 par seconde)
 
 
-**8.15** · film **00:16:08:01 → 00:16:25:01** (17.0 s) · **[CARTON]** `à fabriquer : carton noir à deux lignes (modèle des cartons de lieu)` · **À OBTENIR**  
+**8.15** · film **00:16:08:01 → 00:16:25:01** (17.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:19:00 → 00:00:36:00  
 Source : Tibériade, 2 octobre 1938 : 19 Juifs tués dont 11 enfants ; bombes de l'Irgoun sur les marchés arabes de Haïfa et de Jérusalem en juillet 1938 (The New York Times, 16 juillet 1938) ; liste des attaques de l'Irgoun (Wikipedia, pour les références)  
 À l'écran : Tibériade · octobre 1938 · 19 Juifs tués, dont 11 enfants / Haïfa, Jérusalem · juillet 1938 · bombes de l'Irgoun sur les marchés arabes  
 > VOIX : Les civils paient des deux côtés. / À Tibériade, en octobre 1938, / dix-neuf Juifs sont tués, dont onze enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés **arabes**.  
 (34 mots, 2.0 par seconde)
 
 
-**8.16** · film **00:16:25:01 → 00:16:42:01** (17.0 s) · **[MD]** `à fabriquer : carte du plan Peel de 1937 (moteur des cartes, même style que partage-1947)` · **À OBTENIR**  
+**8.16** · film **00:16:25:01 → 00:16:42:01** (17.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:36:00 → 00:00:53:00  
 Source : rapport de la commission Peel, 7 juillet 1937 (transfert proposé : jusqu'à 225 000 Arabes et 1 250 Juifs)  
 > VOIX : En 1937, la commission Peel propose pour la première fois de couper le pays en deux, / et de déplacer jusqu'à 225 000 Arabes. // Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**.  
 (36 mots, 2.1 par seconde)
@@ -236,13 +236,13 @@ Source : lois antijuives d'avril 1933 (fonction publique le 7 avril, quotas scol
 Note : on dit « Ar-lo-so-rof »
 
 
-**9.3** · film **00:17:17:01 → 00:17:33:01** (16.0 s) · **[CARTON]** `à fabriquer : carton Haavara (août 1933 · environ 60 000 émigrants · 105 millions de reichsmarks de marchandises)` · **À OBTENIR**  
+**9.3** · film **00:17:17:01 → 00:17:33:01** (16.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:53:00 → 00:01:09:00  
 Source : article « Haavara Agreement » (Wikipedia, d'après Edwin Black, The Transfer Agreement, 1984, et Yehuda Bauer, Jews for Sale?, 1994) : environ 60 000 Juifs allemands en Palestine de 1933 à 1939 ; 105 millions de reichsmarks de marchandises allemandes exportées  
 > VOIX : En août 1933, un accord est signé avec l'Allemagne nazie : / Haavara, « le transfert » en hébreu. / Les Juifs qui partent pour la Palestine sauvent une partie de leurs biens, / sous forme de marchandises **allemandes**.  
 (33 mots, 2.1 par seconde)
 
 
-**9.4** · film **00:17:33:01 → 00:17:46:01** (13.0 s) · **[CARTON]** `même carton, deuxième ligne` · **À OBTENIR**  
+**9.4** · film **00:17:33:01 → 00:17:46:01** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:01:09:00 → 00:01:22:00  
 > VOIX : Environ soixante mille Juifs allemands gagnent ainsi la Palestine avant la guerre. // Mais l'accord brise le boycott des produits allemands, / lancé par des Juifs du monde **entier**.  
 (27 mots, 2.1 par seconde)
 
@@ -277,11 +277,11 @@ Film 00:18:25:01 → 00:19:53:16 · durée 1 min 28.6 s
 > VOIX : silence
 
 
-**10.2** · film **00:18:29:16 → 00:18:45:16** (16.0 s) · **[MD]** `à fabriquer : citation (modèle citation-herzl) · déclaration de Pittsburgh, 1885` · **À OBTENIR**  
+**10.2** · film **00:18:29:16 → 00:18:45:16** (16.0 s) · **[MD]** `output/documents-2.mp4` · source 00:01:22:00 → 00:01:38:00  
 Source : déclaration de Pittsburgh, conférence des rabbins réformés, 16-19 novembre 1885, article 5 ; notre traduction  
 À l'écran : « Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse. » · Pittsburgh, 1885  
-> VOIX : Au début, le sionisme est minoritaire chez les Juifs. / En 1885, aux États-Unis, les rabbins réformés déclarent : / « Nous ne sommes plus une nation, mais une communauté religieuse. / Nous n'attendons pas de retour en **Palestine**. »  
-(34 mots, 2.1 par seconde)
+> VOIX : Au début, le sionisme est minoritaire chez les Juifs. / En 1885, aux États-Unis, les rabbins réformés déclarent : / « Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse, / et n'attendons donc pas de retour en **Palestine**. »  
+(38 mots, 2.4 par seconde)
 
 
 **10.3** · film **00:18:45:16 → 00:19:00:16** (15.0 s) · **[PHOTO]** `à télécharger : photo du Bund, Russie, vers 1905 (domaine public, Wikimedia Commons ou YIVO)` · **À OBTENIR**  
@@ -338,7 +338,7 @@ Source : Zeev Jabotinsky, « Le Mur de fer » (O jeleznoï stene), Rassvet, 4 no
 (32 mots, 2.0 par seconde)
 
 
-**11.4** · film **00:20:18:16 → 00:20:31:16** (13.0 s) · **[MD]** `à fabriquer : citation (modèle citation-herzl) · Jabotinsky, 1923` · **À OBTENIR**  
+**11.4** · film **00:20:18:16 → 00:20:31:16** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:01:38:00 → 00:01:51:00  
 À l'écran : « derrière un mur de fer, que la population indigène ne pourra pas percer » · Zeev Jabotinsky, 1923  
 > VOIX : Sa conclusion : / la colonisation ne peut avancer / que « derrière un mur de fer, / que la population indigène ne pourra pas **percer** ».  
 (21 mots, 1.6 par seconde)  

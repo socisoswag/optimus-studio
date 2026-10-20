@@ -81,18 +81,18 @@ chapitres:
         voix: >-
           Leur argument vient du Talmud. / Dieu aurait fait jurer aux Juifs de ne pas « monter comme un mur » vers la
           terre d'Israël, / et de ne pas se révolter contre les **nations**.
-      - type: PHOTO
-        fichier: "à télécharger : le rabbin Joel Teitelbaum de Satmar (domaine public à vérifier)"
-        duree: 14
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-2.mp4
+        entree: 186
+        sortie: 200
         source: "Joel Teitelbaum, Vayoel Moshe, fin des années 1950"
         voix: >-
           À New York, le rabbin de Satmar, Joel Teitelbaum, en tire un livre entier contre l'État d'Israël. / Ses
           fidèles, des dizaines de milliers, s'en réclament **encore**.
-      - type: PHOTO
-        fichier: "à télécharger : Yeshayahou Leibowitz (GPO ou licence libre)"
-        duree: 12
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-2.mp4
+        entree: 200
+        sortie: 212
         source: "Yeshayahou Leibowitz, textes de la fin des années 1960 sur les territoires"
         voix: >-
           Même un religieux sioniste, le philosophe Yeshayahou Leibowitz, / prévient dès la fin des années soixante : /

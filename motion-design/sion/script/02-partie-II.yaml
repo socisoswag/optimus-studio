@@ -103,9 +103,9 @@ chapitres:
           Montagu juge la déclaration antisémite : elle ferait des Juifs anglais des étrangers dans leur pays. C'est
           la preuve que Juifs et sionisme ne sont pas la même chose (règle 2 de la bible).
       - type: MD
-        fichier: "à fabriquer : citation Balfour 1919 (même modèle que output/citation-herzl.mp4)"
-        duree: 19
-        a_obtenir: true
+        fichier: output/documents-2.mp4
+        entree: 0
+        sortie: 19
         source: >-
           Arthur Balfour, mémorandum du 11 août 1919, Documents on British Foreign Policy 1919-1939, première série,
           vol. IV, p. 345 ; notre traduction
@@ -256,10 +256,10 @@ chapitres:
         voix: >-
           La répression britannique est terrible : / maisons dynamitées, / pendaisons, / villages punis. // En trois
           ans, environ cinq mille Arabes sont **tués**.
-      - type: CARTON
-        fichier: "à fabriquer : carton noir à deux lignes (modèle des cartons de lieu)"
-        duree: 17
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-2.mp4
+        entree: 19
+        sortie: 36
         source: >-
           Tibériade, 2 octobre 1938 : 19 Juifs tués dont 11 enfants ; bombes de l'Irgoun sur les marchés arabes de
           Haïfa et de Jérusalem en juillet 1938 (The New York Times, 16 juillet 1938) ; liste des attaques de l'Irgoun
@@ -270,9 +270,9 @@ chapitres:
           enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés
           **arabes**.
       - type: MD
-        fichier: "à fabriquer : carte du plan Peel de 1937 (moteur des cartes, même style que partage-1947)"
-        duree: 17
-        a_obtenir: true
+        fichier: output/documents-2.mp4
+        entree: 36
+        sortie: 53
         source: "rapport de la commission Peel, 7 juillet 1937 (transfert proposé : jusqu'à 225 000 Arabes et 1 250 Juifs)"
         voix: >-
           En 1937, la commission Peel propose pour la première fois de couper le pays en deux, / et de déplacer
@@ -315,10 +315,10 @@ chapitres:
           1933. / Hitler prend le pouvoir. / Les Juifs d'Allemagne sont chassés de la fonction publique, / des écoles,
           des métiers. // Un dirigeant sioniste, Haïm Arlosoroff, cherche à les faire **sortir**.
         note: "on dit « Ar-lo-so-rof »"
-      - type: CARTON
-        fichier: "à fabriquer : carton Haavara (août 1933 · environ 60 000 émigrants · 105 millions de reichsmarks de marchandises)"
-        duree: 16
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-2.mp4
+        entree: 53
+        sortie: 69
         source: >-
           article « Haavara Agreement » (Wikipedia, d'après Edwin Black, The Transfer Agreement, 1984, et Yehuda
           Bauer, Jews for Sale?, 1994) : environ 60 000 Juifs allemands en Palestine de 1933 à 1939 ; 105 millions
@@ -327,10 +327,10 @@ chapitres:
           En août 1933, un accord est signé avec l'Allemagne nazie : / Haavara, « le transfert » en hébreu. / Les
           Juifs qui partent pour la Palestine sauvent une partie de leurs biens, / sous forme de marchandises
           **allemandes**.
-      - type: CARTON
-        fichier: "même carton, deuxième ligne"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-2.mp4
+        entree: 69
+        sortie: 82
         voix: >-
           Environ soixante mille Juifs allemands gagnent ainsi la Palestine avant la guerre. // Mais l'accord brise le
           boycott des produits allemands, / lancé par des Juifs du monde **entier**.
@@ -375,15 +375,15 @@ chapitres:
         entree: 0
         sortie: 4.6
       - type: MD
-        fichier: "à fabriquer : citation (modèle citation-herzl) · déclaration de Pittsburgh, 1885"
-        duree: 16
-        a_obtenir: true
+        fichier: output/documents-2.mp4
+        entree: 82
+        sortie: 98
         source: "déclaration de Pittsburgh, conférence des rabbins réformés, 16-19 novembre 1885, article 5 ; notre traduction"
         ecran: "« Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse. » · Pittsburgh, 1885"
         voix: >-
           Au début, le sionisme est minoritaire chez les Juifs. / En 1885, aux États-Unis, les rabbins réformés
-          déclarent : / « Nous ne sommes plus une nation, mais une communauté religieuse. / Nous n'attendons pas de
-          retour en **Palestine**. »
+          déclarent : / « Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse, / et
+          n'attendons donc pas de retour en **Palestine**. »
       - type: PHOTO
         fichier: "à télécharger : photo du Bund, Russie, vers 1905 (domaine public, Wikimedia Commons ou YIVO)"
         duree: 15
@@ -455,9 +455,9 @@ chapitres:
           En 1923, Zeev Jabotinsky écrit « Le Mur de fer ». / Il ne nie pas ce qu'il voit : / « Toute population
           indigène résiste aux colons, / tant qu'elle garde le moindre espoir d'échapper à la **colonisation**. »
       - type: MD
-        fichier: "à fabriquer : citation (modèle citation-herzl) · Jabotinsky, 1923"
-        duree: 13
-        a_obtenir: true
+        fichier: output/documents-2.mp4
+        entree: 98
+        sortie: 111
         ecran: "« derrière un mur de fer, que la population indigène ne pourra pas percer » · Zeev Jabotinsky, 1923"
         voix: >-
           Sa conclusion : / la colonisation ne peut avancer / que « derrière un mur de fer, / que la population

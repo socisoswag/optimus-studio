@@ -425,10 +425,10 @@ chapitres:
         voix: >-
           C'est l'étincelle. / Toute une génération se soulève : / grèves, boycotts, pierres contre les soldats. //
           Intifada, en arabe : le **soulèvement**.
-      - type: CARTON
-        fichier: "à fabriquer : carton noir à deux lignes (bilan de la première intifada)"
-        duree: 15
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-2.mp4
+        entree: 146
+        sortie: 161
         source: >-
           1987-1993 : l'armée israélienne tue de 1 087 à 1 204 Palestiniens, dont 241 enfants ; 100 civils et 60
           soldats israéliens tués (B'Tselem ; article « First Intifada »)
@@ -461,17 +461,17 @@ chapitres:
         ecran: "carton : output/cartons/jerusalem-2000"
         voix: >-
           Septembre 2000. / Ariel Sharon se rend sur l'esplanade des **Mosquées**.
-      - type: CARTON
-        fichier: "à fabriquer : carton noir (la deuxième intifada)"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-2.mp4
+        entree: 161
+        sortie: 174
         voix: >-
           La deuxième intifada est plus meurtrière. / Attentats-suicides dans les bus, les cafés, les hôtels d'Israël ;
           / chars et hélicoptères dans les villes **palestiniennes**.
-      - type: CARTON
-        fichier: "même carton, ligne de bilan"
-        duree: 12
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-2.mp4
+        entree: 174
+        sortie: 186
         source: "2000-2005 : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens tués, dont 644 à 773 civils israéliens (article « Second Intifada », d'après B'Tselem)"
         voix: >-
           En cinq ans, plus de trois mille Palestiniens / et environ mille Israéliens sont tués, / dont beaucoup de

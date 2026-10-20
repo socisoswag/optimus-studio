@@ -361,7 +361,7 @@ Source : 9 décembre 1987, camp de Jabaliya (article « First Intifada »)
 (18 mots, 1.4 par seconde)
 
 
-**22.4** · film **00:43:45:04 → 00:44:00:04** (15.0 s) · **[CARTON]** `à fabriquer : carton noir à deux lignes (bilan de la première intifada)` · **À OBTENIR**  
+**22.4** · film **00:43:45:04 → 00:44:00:04** (15.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:26:00 → 00:02:41:00  
 Source : 1987-1993 : l'armée israélienne tue de 1 087 à 1 204 Palestiniens, dont 241 enfants ; 100 civils et 60 soldats israéliens tués (B'Tselem ; article « First Intifada »)  
 > VOIX : En six ans, l'armée israélienne tue plus de mille Palestiniens, / dont plus de deux cents enfants. / Environ cent soixante Israéliens sont tués, / dont cent **civils**.  
 (25 mots, 1.7 par seconde)
@@ -391,12 +391,12 @@ Source : SOURCES.md 4.1, Adobe Stock 778425214 (plan d'aujourd'hui : ne pas le p
 (10 mots, 1.4 par seconde)
 
 
-**22.9** · film **00:44:35:23 → 00:44:48:23** (13.0 s) · **[CARTON]** `à fabriquer : carton noir (la deuxième intifada)` · **À OBTENIR**  
+**22.9** · film **00:44:35:23 → 00:44:48:23** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:41:00 → 00:02:54:00  
 > VOIX : La deuxième intifada est plus meurtrière. / Attentats-suicides dans les bus, les cafés, les hôtels d'Israël ; / chars et hélicoptères dans les villes **palestiniennes**.  
 (22 mots, 1.7 par seconde)
 
 
-**22.10** · film **00:44:48:23 → 00:45:00:23** (12.0 s) · **[CARTON]** `même carton, ligne de bilan` · **À OBTENIR**  
+**22.10** · film **00:44:48:23 → 00:45:00:23** (12.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:54:00 → 00:03:06:00  
 Source : 2000-2005 : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens tués, dont 644 à 773 civils israéliens (article « Second Intifada », d'après B'Tselem)  
 > VOIX : En cinq ans, plus de trois mille Palestiniens / et environ mille Israéliens sont tués, / dont beaucoup de civils, des deux **côtés**.  
 (21 mots, 1.8 par seconde)

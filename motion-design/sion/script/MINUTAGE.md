@@ -55,30 +55,18 @@
 ## Images à obtenir
 
 - 5.6 : à télécharger : la loterie des terrains d'Ahuzat Bayit (futur Tel-Aviv), avril 1909, photo d'Avraham Soskine (domaine public, Wikimedia Commons) (le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même plan dans le film))
-- 7.10 : à fabriquer : citation Balfour 1919 (même modèle que output/citation-herzl.mp4)
 - 8.2 : à générer : reconstitution de l'entrée d'Allenby (image de départ : output/reconstitution/08-entree-britanniques-1917.jpg)
 - 8.13 : à générer : reconstitution de la grève de 1936 (image de départ : output/reconstitution/18-greve-1936-camion.jpg)
 - 8.14 : à télécharger : maison détruite par l'armée britannique, Lydda, 1936 (Wikimedia Commons, domaine public)
-- 8.15 : à fabriquer : carton noir à deux lignes (modèle des cartons de lieu)
-- 8.16 : à fabriquer : carte du plan Peel de 1937 (moteur des cartes, même style que partage-1947)
-- 9.3 : à fabriquer : carton Haavara (août 1933 · environ 60 000 émigrants · 105 millions de reichsmarks de marchandises)
-- 9.4 : même carton, deuxième ligne
-- 10.2 : à fabriquer : citation (modèle citation-herzl) · déclaration de Pittsburgh, 1885
 - 10.3 : à télécharger : photo du Bund, Russie, vers 1905 (domaine public, Wikimedia Commons ou YIVO)
-- 11.4 : à fabriquer : citation (modèle citation-herzl) · Jabotinsky, 1923 (texte capital pour les deux récits : le récit sioniste y lit le réalisme (on ne négocie qu'en position de force), le récit palestinien la preuve d'un projet colonial assumé. La voix ne commente pas.)
-- 12.11 : à extraire : actualités Universal, vote du partage et réactions, décembre 1947 (domaine public, NARA, série 200 UN)
 - 14.2 : à télécharger : membres de la Haganah, 1947-1948 (domaine public, Wikimedia Commons)
 - 14.3 : à télécharger : l'hôtel King David après l'attentat, 22 juillet 1946 (domaine public, Wikimedia Commons)
-- 14.8 : à fabriquer : carton noir à une ligne (Jérusalem · 22 février 1948 · rue Ben Yehuda)
 - 16.6 : à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)
 - 17.3 : à télécharger : Juifs irakiens à l'aéroport de Lod, 1951 (GPO, domaine public)
 - 17.4 : à télécharger : une maabara (camp de transit), Israël, vers 1950 (GPO, domaine public)
 - 20.7 : à télécharger : Amman, septembre 1970 (photo du domaine public ou sous licence libre, Wikimedia Commons)
 - 22.2 : à télécharger : première intifada, Gaza, 1987-1988 (Wikimedia Commons, licence libre à vérifier)
 - 22.3 : même photo, ou une deuxième de la même période
-- 22.4 : à fabriquer : carton noir à deux lignes (bilan de la première intifada)
-- 22.9 : à fabriquer : carton noir (la deuxième intifada)
-- 22.10 : même carton, ligne de bilan
 - 26.2 : à télécharger : colons du Goush Emounim, Sébastia, 1975 (GPO, domaine public)
 - 28.2 : à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)
 - 28.3 : à télécharger : immigrants yéménites, camp de Rosh HaAyin, vers 1950 (GPO, domaine public) (la commission Kedmi n'a pas retenu d'enlèvements organisés ; l'indemnisation est accordée sans reconnaissance de responsabilité)
@@ -87,8 +75,6 @@
 - 29.3 : à télécharger : rassemblement de Jewish Voice for Peace, octobre 2023 (licence libre, Wikimedia Commons)
 - 29.4 : même série : la gare de Grand Central, New York, 27 octobre 2023
 - 29.5 : à télécharger : rassemblement de Briser le silence ou de jeunes objecteurs, Tel-Aviv (licence libre)
-- 30.3 : à télécharger : le rabbin Joel Teitelbaum de Satmar (domaine public à vérifier)
-- 30.4 : à télécharger : Yeshayahou Leibowitz (GPO ou licence libre)
 - 30.5 : à télécharger : manifestation ultra-orthodoxe contre la conscription, Jérusalem, 2024 (licence libre)
 - 36.4 : à télécharger : manifestation contre la réforme de la justice, Tel-Aviv, 2023 (licence libre, Wikimedia Commons)
 - 36.6 : même photo que le chapitre 30 (ultra-orthodoxes et conscription), ou une autre de 2024

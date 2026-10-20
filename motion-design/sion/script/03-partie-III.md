@@ -71,7 +71,7 @@ Note : les deux nœuds, au nord et au sud : pas de voix, la carte suffit
 (13 mots, 1.0 par seconde)
 
 
-**12.11** · film **00:23:24:04 → 00:23:48:04** (24.0 s) · **[ARCH]** `à extraire : actualités Universal, vote du partage et réactions, décembre 1947 (domaine public, NARA, série 200 UN)` · **À OBTENIR**  
+**12.11** · film **00:23:24:04 → 00:23:48:04** (24.0 s) · **[MD]** `output/documents-2.mp4` · source 00:01:51:00 → 00:02:15:00  
 Source : terres en propriété juive : moins de 6 % (Village Statistics, 1945) ; SOURCES.md 5, partie II  
 > VOIX : Pour les Israéliens, tout part de ce refus : / ils acceptaient un compromis, on leur a fait la guerre. // Les Palestiniens posent une autre question : / pourquoi les deux tiers des habitants devraient-ils céder plus de la moitié du pays / à ceux qui en possèdent moins de six pour cent des **terres** ?  
 (50 mots, 2.1 par seconde)
@@ -213,7 +213,7 @@ Source : Lord Moyne, tué au Caire le 6 novembre 1944 ; Folke Bernadotte, tué �
 (16 mots, 1.8 par seconde)
 
 
-**14.8** · film **00:27:59:11 → 00:28:10:11** (11.0 s) · **[CARTON]** `à fabriquer : carton noir à une ligne (Jérusalem · 22 février 1948 · rue Ben Yehuda)` · **À OBTENIR**  
+**14.8** · film **00:27:59:11 → 00:28:10:11** (11.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:15:00 → 00:02:26:00  
 Source : attentat de la rue Ben Yehuda, Jérusalem, 22 février 1948 (environ 50 morts selon les sources)  
 > VOIX : Les civils juifs sont visés aussi. / Le 22 février 1948, à Jérusalem, / une bombe tue des dizaines de personnes rue Ben **Yehuda**.  
 (22 mots, 2.0 par seconde)

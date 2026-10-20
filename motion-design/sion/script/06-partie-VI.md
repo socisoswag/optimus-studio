@@ -71,13 +71,13 @@ Source : Talmud de Babylone, Ketoubot 110b-111a (les trois serments)
 (31 mots, 2.2 par seconde)
 
 
-**30.3** · film **00:59:05:23 → 00:59:19:23** (14.0 s) · **[PHOTO]** `à télécharger : le rabbin Joel Teitelbaum de Satmar (domaine public à vérifier)` · **À OBTENIR**  
+**30.3** · film **00:59:05:23 → 00:59:19:23** (14.0 s) · **[MD]** `output/documents-2.mp4` · source 00:03:06:00 → 00:03:20:00  
 Source : Joel Teitelbaum, Vayoel Moshe, fin des années 1950  
 > VOIX : À New York, le rabbin de Satmar, Joel Teitelbaum, en tire un livre entier contre l'État d'Israël. / Ses fidèles, des dizaines de milliers, s'en réclament **encore**.  
 (26 mots, 1.9 par seconde)
 
 
-**30.4** · film **00:59:19:23 → 00:59:31:23** (12.0 s) · **[PHOTO]** `à télécharger : Yeshayahou Leibowitz (GPO ou licence libre)` · **À OBTENIR**  
+**30.4** · film **00:59:19:23 → 00:59:31:23** (12.0 s) · **[MD]** `output/documents-2.mp4` · source 00:03:20:00 → 00:03:32:00  
 Source : Yeshayahou Leibowitz, textes de la fin des années 1960 sur les territoires  
 > VOIX : Même un religieux sioniste, le philosophe Yeshayahou Leibowitz, / prévient dès la fin des années soixante : / l'occupation corrompra **Israël**.  
 (18 mots, 1.5 par seconde)
