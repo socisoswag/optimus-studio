@@ -132,3 +132,24 @@ existe, mais il rend souvent la voix artificielle : je ne l'utilise qu'en secour
 | Hadassah | Ha-da-ssa |
 | Farhoud | Far-houd |
 | maabara, maabarot | ma-a-ba-ra, ma-a-ba-rote |
+
+## 12. Prononciation (partie IV)
+
+| Mot | Dire |
+|---|---|
+| Kafr Qassem | Kafr Qa-ssèm |
+| Khan Younès | Khane You-nèss |
+| Tiran | Ti-rane |
+| Latroun | La-troune |
+| Maghrébins | Ma-gré-bain |
+| Golan | Go-lane |
+| Jénine, Tulkarem | Jé-nine, Toul-ka-rèm |
+| Sabra et Chatila | Sa-bra é Cha-ti-la |
+| Kahan | Ka-hane |
+| Fatah | Fa-tah (appui sur « tah ») |
+| Kippour | Ki-pour |
+| Jabaliya | Ja-ba-li-ya |
+| intifada | in-ti-fa-da |
+| Hamas | Ha-mass |
+| Ahmed Yassine | Ah-mèd Ya-ssine |
+| Hizma | Hiz-ma |

@@ -24,7 +24,13 @@
 | Chapitre 16 · Ben Gourion : bâtir un État, effacer un peuple | 00:29:34:11 | 1 min 24.6 s |
 | Chapitre 17 · L'exode des juifs arabes et sépharades | 00:30:59:01 | 1 min 10.4 s |
 | Chapitre 18 · Golda Meir : « Les Palestiniens n'existent pas » | 00:32:09:11 | 1 min 11.0 s |
-| **Total** | | **33 min 20.5 s** |
+| Ouverture de la partie IV | 00:33:20:11 | 0 min 13.6 s |
+| Chapitre 19 · Cisjordanie, Gaza, Jérusalem : terres volées, peuples divisés | 00:33:34:01 | 5 min 00.3 s |
+| Chapitre 20 · Les camps palestiniens et la vie dans l'exil | 00:38:34:09 | 2 min 30.1 s |
+| Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans drapeau | 00:41:04:12 | 2 min 01.5 s |
+| Chapitre 22 · Les intifadas : pierres contre tanks | 00:43:05:24 | 1 min 46.4 s |
+| Chapitre 23 · Colonisation rampante et colonies illégales | 00:44:52:08 | 2 min 57.7 s |
+| **Total** | | **47 min 50.1 s** |
 
 ## Images à obtenir
 
@@ -63,3 +69,9 @@
 - 17.3 : à télécharger : Juifs irakiens à l'aéroport de Lod, 1951 (GPO, domaine public)
 - 17.4 : à télécharger : une maabara (camp de transit), Israël, vers 1950 (GPO, domaine public)
 - 18.5 : à télécharger : une du journal Filastin, Jaffa, 1911 (même image qu'au chapitre 6)
+- 20.7 : à télécharger : Amman, septembre 1970 (photo du domaine public ou sous licence libre, Wikimedia Commons)
+- 22.2 : à télécharger : première intifada, Gaza, 1987-1988 (Wikimedia Commons, licence libre à vérifier)
+- 22.3 : même photo, ou une deuxième de la même période
+- 22.4 : à fabriquer : carton noir à deux lignes (bilan de la première intifada)
+- 22.9 : à fabriquer : carton noir (la deuxième intifada)
+- 22.10 : même carton, ligne de bilan

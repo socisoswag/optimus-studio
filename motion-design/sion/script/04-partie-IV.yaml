@@ -1,0 +1,574 @@
+titre: "Partie IV · Résistances et oppressions"
+intro: >-
+  De 1956 aux accords d'Oslo et au mur. Les cartes et les chiffres sont déjà à l'écran : la voix les accompagne sans
+  les répéter, et dit ce que l'image ne dit pas (le point de vue de chaque camp, le poids d'un mot). La violence contre
+  les civils est nommée des deux côtés : Kafr Qassem, Sabra et Chatila, Munich, les attentats-suicides.
+chapitres:
+  - num: "IV.0"
+    titre: "Ouverture de la partie IV"
+    plans:
+      - type: MD
+        fichier: output/partie-4.mp4
+        entree: 0
+        sortie: 13.6
+        ecran: "Partie IV · Résistances et oppressions"
+
+  - num: "19"
+    titre: "Chapitre 19 · Cisjordanie, Gaza, Jérusalem : terres volées, peuples divisés"
+    titre_de_rechange: "Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation"
+    intention: >-
+      Le chapitre le plus long de la partie : quatre cartes pour tout comprendre, Suez 1956 et Kafr Qassem, la guerre
+      de 1967 racontée avec la lecture israélienne (guerre préventive) puis ses conséquences, et Jérusalem. « Terres
+      volées » est un jugement ; « occupation » est le mot du droit international, plus fort parce qu'incontestable.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-19.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/frontieres.mp4
+        entree: 0
+        sortie: 10
+        voix: >-
+          Pour comprendre la suite, / quatre **cartes**.
+      - type: MD
+        fichier: output/frontieres.mp4
+        entree: 10
+        sortie: 21
+        voix: >-
+          En 1949, Israël s'étend sur 78 % de la Palestine mandataire. / Restent la Cisjordanie et **Gaza**.
+      - type: MD
+        fichier: output/frontieres.mp4
+        entree: 21
+        sortie: 31
+        voix: >-
+          En juin 1967, Israël occupe tout le **reste**.
+      - type: MD
+        fichier: output/frontieres.mp4
+        entree: 31
+        sortie: 42
+        voix: >-
+          Aujourd'hui, les zones palestiniennes autonomes et Gaza / font moins d'un dixième de la Palestine
+          **mandataire**.
+      - type: MD
+        fichier: output/frontieres.mp4
+        entree: 42
+        sortie: 50.5
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 41.6
+        sortie: 46
+        ecran: "fiche de la chronologie : Gamal Abdel Nasser"
+        voix: >-
+          En Égypte, Gamal Abdel **Nasser**.
+      - type: MD
+        fichier: output/suez-1956.mp4
+        entree: 0
+        sortie: 6
+        voix: >-
+          1956. / Israël, la France et le Royaume-Uni attaquent l'**Égypte**.
+      - type: MD
+        fichier: output/suez-1956.mp4
+        entree: 6
+        sortie: 15.5
+        voix: >-
+          Nasser a nationalisé le canal de Suez. / À Sèvres, en secret, les trois pays préparent la **guerre**.
+      - type: MD
+        fichier: output/suez-1956.mp4
+        entree: 15.5
+        sortie: 27.5
+        voix: >-
+          Les parachutistes israéliens sautent sur le **Sinaï**.
+      - type: MD
+        fichier: output/suez-1956.mp4
+        entree: 27.5
+        sortie: 38.5
+        voix: >-
+          Le premier soir, à Kafr Qassem, en Israël, / la police des frontières abat 49 villageois palestiniens, /
+          citoyens israéliens, qui rentraient des **champs**.
+      - type: MD
+        fichier: output/suez-1956.mp4
+        entree: 38.5
+        sortie: 49.5
+        voix: >-
+          Paris et Londres **bombardent**.
+      - type: MD
+        fichier: output/suez-1956.mp4
+        entree: 49.5
+        sortie: 60.5
+        voix: >-
+          À Gaza, l'armée israélienne tue environ 275 personnes à Khan Younès, / et 111 à **Rafah**.
+      - type: MD
+        fichier: output/suez-1956.mp4
+        entree: 60.5
+        sortie: 69.5
+        voix: >-
+          Sous la pression de Washington et de Moscou, / Israël doit tout **rendre**.
+      - type: NOIR
+        duree: 8
+        source: "fermeture du détroit de Tiran, 22 mai 1967 ; retrait de la force de l'ONU du Sinaï à la demande de l'Égypte"
+        voix: >-
+          Mai 1967. / L'Égypte ferme le détroit de Tiran aux navires israéliens, / et masse ses troupes dans le
+          **Sinaï**.
+      - type: MD
+        fichier: output/six-jours.mp4
+        entree: 0
+        sortie: 6
+        voix: >-
+          Juin 1967. / Pour les Palestiniens : la Naksa, le **revers**.
+      - type: MD
+        fichier: output/six-jours.mp4
+        entree: 6
+        sortie: 15
+        voix: >-
+          Le 5 juin, Israël frappe le premier. / Pour lui, c'est une guerre **préventive**.
+      - type: MD
+        fichier: output/six-jours.mp4
+        entree: 15
+        sortie: 26
+        voix: >-
+          Le Sinaï tombe, / Gaza passe sous **occupation**.
+      - type: MD
+        fichier: output/six-jours.mp4
+        entree: 26
+        sortie: 39
+        voix: >-
+          Le 7 juin, Jérusalem-Est est prise. / Près de Latroun, trois villages sont vidés, puis **rasés**.
+      - type: MD
+        fichier: output/six-jours.mp4
+        entree: 39
+        sortie: 49
+        voix: >-
+          Dans la nuit du 10 juin, au pied du mur des Lamentations, / le quartier des Maghrébins est **rasé**.
+      - type: MD
+        fichier: output/six-jours.mp4
+        entree: 49
+        sortie: 61
+        voix: >-
+          Environ trois cent mille Palestiniens sont déplacés. / Pour beaucoup, c'est le deuxième **exil**.
+      - type: MD
+        fichier: output/six-jours.mp4
+        entree: 61
+        sortie: 70
+        voix: >-
+          Sur le Golan, plus de cent mille habitants fuient, / ou sont **chassés**.
+      - type: MD
+        fichier: output/six-jours.mp4
+        entree: 70
+        sortie: 80
+        voix: >-
+          Six jours de guerre. / Une occupation qui dure **encore**.
+      - type: ARCH
+        fichier: output/plans-reels/cisjordanie-1967-chars-detruits-film-amateur.mp4
+        entree: 0
+        sortie: 12
+        source: "SOURCES.md 4.1, Adobe Stock 502632607 (film amateur d'époque, couleurs d'origine)"
+        ecran: "carton : Cisjordanie · 1967 · film amateur"
+        son: "vent, cliquetis d'une tôle ; pas de voix"
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 54.8
+        sortie: 59.6
+        ecran: "fiche de la chronologie : Camp David"
+        voix: >-
+          1978, Camp David : / l'Égypte fait la **paix**.
+      - type: MD
+        fichier: output/jerusalem.mp4
+        entree: 6.5
+        sortie: 18.5
+        voix: >-
+          Jérusalem. / Moins d'un kilomètre carré, / trois **religions**.
+      - type: MD
+        fichier: output/jerusalem.mp4
+        entree: 18.5
+        sortie: 30.5
+        voix: >-
+          Israël annexe Jérusalem-Est et vingt-huit villages alentour. / L'ONU juge cette annexion **nulle**.
+      - type: MD
+        fichier: output/jerusalem.mp4
+        entree: 30.5
+        sortie: 41
+        voix: >-
+          Plus de deux cent vingt-neuf mille colons y vivent aujourd'hui, / à côté de plus de trois cent cinquante
+          mille **Palestiniens**.
+      - type: MD
+        fichier: output/jerusalem.mp4
+        entree: 41
+        sortie: 52.5
+        voix: >-
+          Le mur coupe la ville : / des quartiers entiers de Jérusalem se retrouvent de l'autre **côté**.
+      - type: MD
+        fichier: output/jerusalem.mp4
+        entree: 52.5
+        sortie: 61
+      - type: RÉEL
+        fichier: output/plans-reels/jerusalem-porte-de-damas-aerien-2022.mp4
+        entree: 0
+        sortie: 12
+        source: "SOURCES.md 4.1, Adobe Stock 508320837 ; retraits du statut de résident : B'Tselem (plus de 14 000 depuis 1967)"
+        voix: >-
+          Les Palestiniens de Jérusalem-Est sont des résidents, / pas des citoyens. / Leur droit de vivre là peut leur
+          être **retiré**.
+
+  - num: "20"
+    titre: "Chapitre 20 · Les camps palestiniens et la vie dans l'exil"
+    intention: >-
+      Les camps comme lieu de mémoire et de vie, de 1948 à 2025. Puis l'exil armé : la Jordanie en 1970, le Liban
+      en 1982, Sabra et Chatila, et ce qu'en dit la commission d'enquête israélienne elle-même.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-20.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/camps.mp4
+        entree: 0
+        sortie: 6.5
+        voix: >-
+          Depuis 1948, des tentes, / puis des quartiers de **béton**.
+      - type: MD
+        fichier: output/camps.mp4
+        entree: 6.5
+        sortie: 18.5
+        voix: >-
+          L'ONU reconnaît 58 camps, dans cinq territoires. / Plus d'un million et demi de personnes y **vivent**.
+      - type: MD
+        fichier: output/camps.mp4
+        entree: 18.5
+        sortie: 31
+        voix: >-
+          Début 2025, dans le nord de la Cisjordanie, / l'armée israélienne vide les camps de Jénine et de Tulkarem : /
+          environ quarante mille **réfugiés**.
+      - type: MD
+        fichier: output/camps.mp4
+        entree: 31
+        sortie: 39.5
+        voix: >-
+          Réfugiés depuis quatre **générations**.
+      - type: MD
+        fichier: output/chiffre-refugies.mp4
+        entree: 0
+        sortie: 12.52
+        ecran: "déjà dans la pièce : 5 964 782 réfugiés palestiniens enregistrés (UNRWA, 31 décembre 2025)"
+      - type: PHOTO
+        fichier: "à télécharger : Amman, septembre 1970 (photo du domaine public ou sous licence libre, Wikimedia Commons)"
+        duree: 11
+        a_obtenir: true
+        source: "Septembre noir, Jordanie, septembre 1970 à juillet 1971 : environ 3 400 morts (article « Black September »)"
+        ecran: "carton : output/cartons/amman-1970"
+        voix: >-
+          Septembre 1970, en Jordanie : / l'armée du roi Hussein écrase les combattants palestiniens. / Des milliers de
+          morts. / L'OLP part pour le **Liban**.
+      - type: MD
+        fichier: output/liban-1982.mp4
+        entree: 0
+        sortie: 6
+        voix: >-
+          Juin 1982. / Israël envahit le **Liban**.
+      - type: MD
+        fichier: output/liban-1982.mp4
+        entree: 6
+        sortie: 18
+        voix: >-
+          Le but : chasser l'OLP. / En une semaine, l'armée israélienne est aux portes de **Beyrouth**.
+      - type: MD
+        fichier: output/liban-1982.mp4
+        entree: 18
+        sortie: 30
+        ecran: "carton : output/cartons/beyrouth-1982"
+        voix: >-
+          Deux mois de siège. / Bombardements par terre, par mer et par air ; / l'eau et l'électricité **coupées**.
+      - type: MD
+        fichier: output/liban-1982.mp4
+        entree: 30
+        sortie: 41
+        voix: >-
+          Plus de dix-neuf mille morts au Liban, selon la police libanaise. / À Beyrouth, huit sur dix sont des
+          **civils**.
+      - type: MD
+        fichier: output/liban-1982.mp4
+        entree: 41
+        sortie: 51
+        voix: >-
+          Fin août, l'OLP quitte Beyrouth par la mer. / Arafat part pour **Tunis**.
+      - type: MD
+        fichier: output/liban-1982.mp4
+        entree: 51
+        sortie: 64
+        voix: >-
+          Mi-septembre, dans les camps de Sabra et Chatila, encerclés par l'armée israélienne, / des miliciens chrétiens
+          libanais massacrent des centaines de civils, / peut-être des **milliers**.
+        note: "estimations de 460 à plus de 3 000 morts : ne pas donner de chiffre précis à la voix"
+      - type: MD
+        fichier: output/liban-1982.mp4
+        entree: 64
+        sortie: 73.5
+        voix: >-
+          La commission d'enquête israélienne conclut à la responsabilité personnelle du ministre de la Défense, Ariel
+          **Sharon**.
+      - type: MD
+        fichier: output/liban-1982.mp4
+        entree: 73.5
+        sortie: 82.5
+        voix: >-
+          Sharon doit quitter la Défense. / Il sera Premier ministre en **2001**.
+
+  - num: "21"
+    titre: "Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans drapeau"
+    intention: >-
+      Le héros des uns, le terroriste des autres, puis l'homme d'Oslo. Les deux lectures sont dites, Munich compris.
+      La guerre d'octobre 1973 sert de pivot : le monde arabe découvre l'arme du pétrole, et l'OLP entre à l'ONU.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-21.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 46
+        sortie: 50.4
+        ecran: "fiche de la chronologie : Yasser Arafat"
+      - type: PHOTO
+        fichier: portraits/arafat.png
+        duree: 14
+        voix: >-
+          Yasser Arafat fonde le Fatah à la fin des années cinquante, / et prend la tête de l'OLP en 1969. / Pour son
+          peuple, il est le visage de la **résistance**.
+      - type: NOIR
+        duree: 14
+        source: "Munich, 5 et 6 septembre 1972 : onze membres de l'équipe olympique israélienne tués par Septembre noir"
+        ecran: "carton : Munich · 5 septembre 1972"
+        voix: >-
+          Pour Israël et l'Occident, l'OLP est alors une organisation terroriste : / détournements d'avions, / et à
+          Munich, en 1972, onze athlètes israéliens tués par le groupe Septembre **noir**.
+      - type: MD
+        fichier: output/octobre-1973.mp4
+        entree: 0
+        sortie: 6
+        voix: >-
+          Octobre 1973. / L'Égypte et la Syrie **attaquent**.
+      - type: MD
+        fichier: output/octobre-1973.mp4
+        entree: 6
+        sortie: 17
+        voix: >-
+          Le jour du Kippour, l'armée égyptienne franchit le canal de **Suez**.
+      - type: MD
+        fichier: output/octobre-1973.mp4
+        entree: 17
+        sortie: 26
+        voix: >-
+          Sur le Golan, les chars syriens percent, / puis sont **repoussés**.
+      - type: MD
+        fichier: output/octobre-1973.mp4
+        entree: 26
+        sortie: 37
+        voix: >-
+          Israël se reprend, / mais la guerre a brisé le mythe de son **invincibilité**.
+      - type: MD
+        fichier: output/octobre-1973.mp4
+        entree: 37
+        sortie: 47
+        voix: >-
+          Les pays arabes ferment le robinet du pétrole : / le monde **tremble**.
+      - type: MD
+        fichier: output/octobre-1973.mp4
+        entree: 47
+        sortie: 57
+        voix: >-
+          En 1974, les États arabes reconnaissent l'OLP / comme seul représentant du peuple **palestinien**.
+      - type: MD
+        fichier: output/octobre-1973.mp4
+        entree: 57
+        sortie: 66.5
+        source: "discours de Yasser Arafat à l'Assemblée générale de l'ONU, 13 novembre 1974"
+        voix: >-
+          À l'ONU, Arafat lance : / « Je viens avec un rameau d'olivier, / et un fusil de combattant de la
+          **liberté**. »
+      - type: PHOTO
+        fichier: portraits/arafat.png
+        duree: 6
+        voix: >-
+          « Ne laissez pas le rameau d'olivier tomber de ma **main**. »
+      - type: NOIR
+        duree: 12
+        source: "déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration de Genève, 14 décembre 1988 ; mort le 11 novembre 2004"
+        voix: >-
+          En 1988, il accepte la résolution 242 : / un État palestinien à côté d'Israël. // Il meurt en 2004, / sans
+          avoir vu cet **État**.
+
+  - num: "22"
+    titre: "Chapitre 22 · Les intifadas : pierres contre tanks"
+    titre_de_rechange: "Chapitre 22 · Les intifadas : les soulèvements"
+    intention: >-
+      Deux soulèvements, deux natures : le premier, populaire et presque sans armes à feu ; le second, armé, avec les
+      attentats-suicides contre les civils israéliens. Le Hamas naît en 1987 : sa charte de 1988 et son texte de 2017
+      sont cités tous les deux, sans rien adoucir.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-22.mp4
+        entree: 0
+        sortie: 4.6
+      - type: PHOTO
+        fichier: "à télécharger : première intifada, Gaza, 1987-1988 (Wikimedia Commons, licence libre à vérifier)"
+        duree: 13
+        a_obtenir: true
+        source: "9 décembre 1987, camp de Jabaliya (article « First Intifada »)"
+        ecran: "carton : output/cartons/jabaliya-1987"
+        voix: >-
+          Décembre 1987, camp de Jabaliya, à Gaza. / Un camion israélien percute des voitures : / quatre ouvriers
+          palestiniens **tués**.
+      - type: PHOTO
+        fichier: "même photo, ou une deuxième de la même période"
+        duree: 13
+        a_obtenir: true
+        voix: >-
+          C'est l'étincelle. / Toute une génération se soulève : / grèves, boycotts, pierres contre les soldats. //
+          Intifada, en arabe : le **soulèvement**.
+      - type: CARTON
+        fichier: "à fabriquer : carton noir à deux lignes (bilan de la première intifada)"
+        duree: 15
+        a_obtenir: true
+        source: >-
+          1987-1993 : l'armée israélienne tue de 1 087 à 1 204 Palestiniens, dont 241 enfants ; 100 civils et 60
+          soldats israéliens tués (B'Tselem ; article « First Intifada »)
+        voix: >-
+          En six ans, l'armée israélienne tue plus de mille Palestiniens, / dont plus de deux cents enfants. / Environ
+          cent soixante Israéliens sont tués, / dont cent **civils**.
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 59.6
+        sortie: 64
+        ecran: "fiche de la chronologie : cheikh Ahmed Yassine"
+      - type: PHOTO
+        fichier: portraits/yassine.png
+        duree: 8
+        voix: >-
+          La même année naît le Hamas, / fondé à Gaza par le cheikh Ahmed **Yassine**.
+      - type: NOIR
+        duree: 16
+        source: "charte du Hamas, 18 août 1988 (article 32 : les Protocoles des sages de Sion) ; document de principes du Hamas, 1er mai 2017"
+        voix: >-
+          Sa charte de 1988 reprend des thèmes antisémites, / jusqu'aux Protocoles des sages de Sion, un faux. // En
+          2017, un nouveau texte dit combattre le sionisme, / pas les **Juifs**.
+        note: "règle 3 de la bible : l'antisémitisme est montré, quel que soit le camp"
+      - type: RÉEL
+        fichier: output/plans-reels/jerusalem-esplanade-des-mosquees-ramadan-2024.mp4
+        entree: 0
+        sortie: 7.36
+        source: "SOURCES.md 4.1, Adobe Stock 778425214 (plan d'aujourd'hui : ne pas le présenter comme une archive)"
+        ecran: "carton : output/cartons/jerusalem-2000"
+        voix: >-
+          Septembre 2000. / Ariel Sharon se rend sur l'esplanade des **Mosquées**.
+      - type: CARTON
+        fichier: "à fabriquer : carton noir (la deuxième intifada)"
+        duree: 13
+        a_obtenir: true
+        voix: >-
+          La deuxième intifada est plus meurtrière. / Attentats-suicides dans les bus, les cafés, les hôtels d'Israël ;
+          / chars et hélicoptères dans les villes **palestiniennes**.
+      - type: CARTON
+        fichier: "même carton, ligne de bilan"
+        duree: 12
+        a_obtenir: true
+        source: "2000-2005 : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens tués, dont 644 à 773 civils israéliens (article « Second Intifada », d'après B'Tselem)"
+        voix: >-
+          En cinq ans, plus de trois mille Palestiniens / et environ mille Israéliens sont tués, / dont beaucoup de
+          civils, des deux **côtés**.
+
+  - num: "23"
+    titre: "Chapitre 23 · Colonisation rampante et colonies illégales"
+    intention: >-
+      Oslo, l'espoir, puis la carte qui découpe la Cisjordanie et le mur. Le mot « illégales » est celui de la Cour
+      internationale de justice (2004, 2024) : il est attribué. Le récit des colons (la Judée et la Samarie de la
+      Bible) est dit avec leurs mots. Finir sur les collines, sans voix.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-23.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 64
+        sortie: 68.8
+        ecran: "fiche de la chronologie : Oslo · carton : output/cartons/washington-1993"
+        voix: >-
+          Septembre 1993, à Washington : / la poignée de **main**.
+      - type: PHOTO
+        fichier: portraits/rabin.png
+        duree: 12
+        voix: >-
+          Pour la première fois, Israël et l'OLP se reconnaissent. / Les Palestiniens espèrent un État ; / les
+          Israéliens, la **sécurité**.
+      - type: MD
+        fichier: output/oslo-mur.mp4
+        entree: 0
+        sortie: 6
+        voix: >-
+          Mais l'accord est provisoire. / La Cisjordanie est **découpée**.
+      - type: MD
+        fichier: output/oslo-mur.mp4
+        entree: 6
+        sortie: 17
+        voix: >-
+          Les zones A et B, environ 40 % : / les villes, sous administration palestinienne, / la sécurité restant
+          souvent **israélienne**.
+      - type: MD
+        fichier: output/oslo-mur.mp4
+        entree: 17
+        sortie: 27
+        voix: >-
+          La zone C, environ 60 % : / Israël y garde tout le contrôle. / C'est là que s'étendent les **colonies**.
+      - type: MD
+        fichier: output/chiffre-zone-c.mp4
+        entree: 0
+        sortie: 12.52
+        ecran: "déjà dans la pièce : moins de 1 % de la zone C planifié pour les Palestiniens (OCHA)"
+      - type: MD
+        fichier: output/oslo-mur.mp4
+        entree: 27
+        sortie: 40
+        ecran: "carton : output/cartons/cisjordanie-2002"
+        voix: >-
+          Depuis 2002, le mur, / en grande partie à l'intérieur de la Cisjordanie. / En 2004, la Cour internationale de
+          justice le juge contraire au droit **international**.
+      - type: MD
+        fichier: output/oslo-mur.mp4
+        entree: 40
+        sortie: 48.5
+      - type: 3D
+        fichier: output/mur-cicatrice.mp4
+        entree: 0
+        sortie: 40
+        note: "en cours de rendu ; à étalonner en terre-dure"
+        voix: >-
+          Vu du ciel, le tracé ressemble à une **cicatrice**. ///
+      - type: MD
+        fichier: output/chiffre-colons.mp4
+        entree: 0
+        sortie: 13
+        ecran: "déjà dans la pièce : environ 700 000 colons, quelque 300 colonies et avant-postes"
+      - type: RÉEL
+        fichier: output/plans-reels/checkpoint-hizma-jerusalem-est.mp4
+        entree: 0
+        sortie: 18.4
+        source: "SOURCES.md 4.1, Adobe Stock 271328836"
+        ecran: "carton : output/cartons/cisjordanie-aujourdhui"
+        voix: >-
+          Pour les Palestiniens, l'occupation, c'est d'abord ça : / des checkpoints, des permis, des **attentes**. ///
+      - type: RÉEL
+        fichier: output/plans-reels/cisjordanie-al-eizariya-minaret-desert.mp4
+        entree: 0
+        sortie: 14.24
+        source: "SOURCES.md 4.1, Adobe Stock 400434780"
+        voix: >-
+          Pour une partie des Israéliens, ces collines sont la Judée et la Samarie, / la terre de la Bible, rendue à son
+          **peuple**.
+      - type: RÉEL
+        fichier: output/plans-reels/cisjordanie-monastere-mar-saba.mp4
+        entree: 0
+        sortie: 9.68
+        source: "SOURCES.md 4.1, Adobe Stock 487976626 ; Cour internationale de justice, avis du 19 juillet 2024"
+        voix: >-
+          Pour le droit international, les colonies sont **illégales**. / La Cour internationale de justice l'a redit
+          en 2024. ///

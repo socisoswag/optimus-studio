@@ -308,6 +308,20 @@ Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans s
   1956 ; opérations Tapis volant (1949-1950) et Ezra et Néhémie (1951-1952) ; camps de transit (maabarot).
 - Golda Meir, The Sunday Times, 15 juin 1969 (citation complète en section 6).
 
+**Partie IV, de 1956 à aujourd'hui** (chapitres 19 à 23, script ; les chiffres à l'écran sont sourcés plus haut, pièce par pièce)
+- Fermeture du détroit de Tiran par l'Égypte, 22 mai 1967.
+- Retraits du statut de résident des Palestiniens de Jérusalem-Est : plus de 14 000 depuis 1967 (B'Tselem).
+- Septembre noir, Jordanie, 1970-1971 : environ 3 400 morts. Munich, 5 et 6 septembre 1972 : onze membres de
+  l'équipe olympique israélienne tués.
+- Discours de Yasser Arafat à l'Assemblée générale de l'ONU, 13 novembre 1974 ; déclaration d'Alger, 15 novembre
+  1988 ; déclaration de Genève, 14 décembre 1988.
+- Première intifada (9 décembre 1987 à 1993) : de 1 087 à 1 204 Palestiniens tués par l'armée, dont 241 enfants ;
+  100 civils et 60 soldats israéliens tués (B'Tselem, article « First Intifada »).
+- Deuxième intifada (2000-2005) : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens tués, dont 644 à 773
+  civils israéliens (article « Second Intifada », d'après B'Tselem).
+- Charte du Hamas, 18 août 1988 (article 32) ; document de principes du Hamas, 1er mai 2017.
+- Cour internationale de justice : avis du 9 juillet 2004 (le mur) et du 19 juillet 2024 (l'occupation, les colonies).
+
 **Les aliyas** (chapitre 5)
 - Fourchettes de la Jewish Virtual Library et de l'Encyclopaedia Judaica pour chaque vague (1882 à 1939).
 - Population en 1945 : Village Statistics du gouvernement mandataire (553 600 Juifs sur 1 764 520 habitants).
