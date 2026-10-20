@@ -48,6 +48,7 @@ python3 tools/portraits.py --bords portraits
 | `bhl`, `finkielkraut` | Bernard-Henri Lévy, Alain Finkielkraut | ouverture VI, chapitre 31 |
 | `netanyahou`, `lieberman` | Benyamin Netanyahou, Avigdor Lieberman | figures d'aujourd'hui, chapitre 24 |
 | `smotrich`, `ben-gvir` | Bezalel Smotrich, Itamar Ben Gvir | figures d'aujourd'hui, chapitre 26 |
+| `al-khalidi`, `ahad-haam` | Youssouf Diya al-Khalidi, Ahad Ha'am | personnages, chapitre 6 (portraits-1) |
 
 ## Sources et licences (pour le générique de fin)
 
@@ -57,6 +58,8 @@ citer l'auteur ; une photo du domaine public peut être citée par courtoisie.
 | Clé | Licence | Auteur | Fichier sur Commons |
 |---|---|---|---|
 | `abd-al-qadir` | domaine public | auteur inconnu | Husseini Abd Al Qader1.jpg |
+| `ahad-haam` | domaine public | auteur inconnu | Ahad Haam.jpg |
+| `al-khalidi` | domaine public | auteur inconnu | Yusuf Ziya el-Halidi.jpg |
 | `amin-husseini` | domaine public | American Colony, Jérusalem | Amin al-Husseini 1929 (3x4 cropped).jpg |
 | `arafat` | CC BY 4.0 | Gideon Markowiz | Leader of the PLO, Yasser Arafat, 1996 Dan Hadani Archive.jpg |
 | `arlozoroff` | domaine public | auteur inconnu | Haim Arlozorov enface.jpg |

@@ -160,7 +160,7 @@ Film 01:05:12:21 → 01:06:34:13 · durée 1 min 21.7 s
 
 ## Chapitre 35 · Colonialisme, apartheid : le poids des mots
 
-Film 01:06:34:13 → 01:08:09:23 · durée 1 min 35.4 s
+Film 01:06:34:13 → 01:08:08:23 · durée 1 min 34.4 s
 
 *Intention : Deux mots lourds, chacun attribué : « apartheid » (B'Tselem, HRW, Amnesty, la CIJ et sa formule exacte) et « colonialisme de peuplement » (des historiens), face à la lecture sioniste (le retour d'un peuple chez lui) et à la réponse d'Israël.*
 
@@ -204,50 +204,51 @@ Source : CIJ, avis du 19 juillet 2024, § 229 (article 3 de la convention sur l'
 (22 mots, 1.8 par seconde)
 
 
-**35.9** · film **01:07:52:23 → 01:08:09:23** (17.0 s) · **[RÉEL]** `à licencier : colonie au sommet d'une colline, Cisjordanie, vue aérienne (Adobe Stock, collection gratuite)` · **À OBTENIR**  
-Source : Rashid Khalidi, The Hundred Years' War on Palestine, 2020 ; Ilan Pappé, The Ethnic Cleansing of Palestine, 2006  
+**35.9** · film **01:07:52:23 → 01:08:08:23** (16.0 s) · **[RÉEL]** `output/plans-reels/cisjordanie-kfar-etzion-collines-vignes.mp4` · source 00:00:00:00 → 00:00:16:00  
+Source : image : SOURCES.md 4.1, Adobe Stock 827361688 ; Rashid Khalidi, The Hundred Years' War on Palestine, 2020 ; Ilan Pappé, The Ethnic Cleansing of Palestine, 2006  
+À l'écran : carton : Kfar Etzion, colonie israélienne · Cisjordanie occupée  
 > VOIX : Pour des historiens comme Rashid Khalidi ou Ilan Pappé, le sionisme est un colonialisme de peuplement, / comme en Amérique ou en Australie. // Pour les sionistes, c'est le retour d'un peuple **chez lui**.  
-(32 mots, 1.9 par seconde)
+(32 mots, 2.0 par seconde)
 
 
 ## Chapitre 36 · La fracture en Israël : la démocratie en question
 
-Film 01:08:09:23 → 01:09:04:18 · durée 0 min 54.8 s
+Film 01:08:08:23 → 01:09:03:18 · durée 0 min 54.8 s
 
 *Intention : Rabin, tué par un Juif religieux opposé à la paix ; 2023, des centaines de milliers d'Israéliens dans la rue pour leur démocratie ; et la remarque que beaucoup de Palestiniens leur opposent. Les ultra-orthodoxes et l'armée.*
 
 
-**36.1** · film **01:08:09:23 → 01:08:14:13** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-36.mp4` · source 00:00:00:00 → 00:00:04:15  
+**36.1** · film **01:08:08:23 → 01:08:13:13** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-36.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**36.2** · film **01:08:14:13 → 01:08:18:18** (4.2 s) · **[MD]** `output/chronologie.mp4` · source 00:01:08:20 → 00:01:13:00  
+**36.2** · film **01:08:13:13 → 01:08:17:18** (4.2 s) · **[MD]** `output/chronologie.mp4` · source 00:01:08:20 → 00:01:13:00  
 À l'écran : fiche de la chronologie : 4 novembre 1995 · carton : output/cartons/tel-aviv-1995  
 > VOIX : 4 novembre **1995**.  
 (3 mots, 0.7 par seconde)
 
 
-**36.3** · film **01:08:18:18 → 01:08:31:18** (13.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:04:14:00 → 00:04:27:00  
+**36.3** · film **01:08:17:18 → 01:08:30:18** (13.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:04:14:00 → 00:04:27:00  
 Source : assassinat d'Yitzhak Rabin par Yigal Amir, Tel-Aviv, 4 novembre 1995  
 > VOIX : Yitzhak Rabin est assassiné par Yigal Amir, un étudiant juif religieux, / opposé aux accords d'Oslo. // Pour beaucoup, la paix meurt avec **lui**.  
 (22 mots, 1.7 par seconde)
 
 
-**36.4** · film **01:08:31:18 → 01:08:44:18** (13.0 s) · **[PHOTO]** `à télécharger : manifestation contre la réforme de la justice, Tel-Aviv, 2023 (licence libre, Wikimedia Commons)` · **À OBTENIR**  
+**36.4** · film **01:08:30:18 → 01:08:43:18** (13.0 s) · **[PHOTO]** `à télécharger : manifestation contre la réforme de la justice, Tel-Aviv, 2023 (licence libre, Wikimedia Commons)` · **À OBTENIR**  
 Source : manifestations de 2023 contre la réforme judiciaire (jusqu'à des centaines de milliers de personnes, le 26 mars 2023)  
 > VOIX : En 2023, des centaines de milliers d'Israéliens manifestent contre la réforme de la justice, / pour défendre, disent-ils, leur **démocratie**.  
 (19 mots, 1.5 par seconde)
 
 
-**36.5** · film **01:08:44:18 → 01:08:55:18** (11.0 s) · **[NOIR]** (à fabriquer)  
+**36.5** · film **01:08:43:18 → 01:08:54:18** (11.0 s) · **[NOIR]** (à fabriquer)  
 > VOIX : Pour beaucoup de Palestiniens, ces manifestations ne parlaient pas d'eux : / une démocratie pour les uns, / l'occupation pour les **autres**.  
 (19 mots, 1.7 par seconde)
 
 
-**36.6** · film **01:08:55:18 → 01:09:04:18** (9.0 s) · **[PHOTO]** `même photo que le chapitre 30 (ultra-orthodoxes et conscription), ou une autre de 2024` · **À OBTENIR**  
+**36.6** · film **01:08:54:18 → 01:09:03:18** (9.0 s) · **[PHOTO]** `même photo que le chapitre 30 (ultra-orthodoxes et conscription), ou une autre de 2024` · **À OBTENIR**  
 > VOIX : Et la fracture traverse la religion : / l'armée, l'État, la loi juive. / Tout est **contesté**.  
 (14 mots, 1.6 par seconde)
 
 
 ---
-Durée de la partie : 7 min 08.2 s (film 01:01:56:13 → 01:09:04:18)
+Durée de la partie : 7 min 07.2 s (film 01:01:56:13 → 01:09:03:18)

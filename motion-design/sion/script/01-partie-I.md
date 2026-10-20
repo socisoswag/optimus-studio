@@ -207,8 +207,8 @@ Source : SOURCES.md 2.1
 (19 mots, 1.9 par seconde)
 
 
-**4.4** · film **00:06:09:09 → 00:06:19:09** (10.0 s) · **[PHOTO]** `à télécharger : photo du premier congrès sioniste, Bâle, août 1897` · **À OBTENIR**  
-Source : domaine public (Wikimedia Commons)  
+**4.4** · film **00:06:09:09 → 00:06:19:09** (10.0 s) · **[RÉEL]** `output/plans-reels/bale-rhin-cathedrale-jour-nuit.mp4` · source 00:00:00:00 → 00:00:10:00  
+Source : SOURCES.md 4.1, Adobe Stock 617556932 (Bâle, le Rhin et la cathédrale ; le congrès se tient au Casino municipal)  
 À l'écran : carton transparent : output/cartons/02-bale-1897.mov  
 > VOIX : Août 1897, à Bâle. / Le premier congrès sioniste fixe le but : / un foyer pour le peuple juif en **Palestine**, / garanti par le droit public.  
 (24 mots, 2.4 par seconde)  
@@ -379,9 +379,9 @@ Source : SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé) ; faits : p�
 Note : 1 dounam = 1 000 m² : 10 000 dounams = 10 km². Le vendeur est arabe : le dire, c'est un fait.
 
 
-**6.12** · film **00:10:21:07 → 00:10:34:07** (13.0 s) · **[PHOTO]** `data/archives/05530.jpg`  
-Source : SOURCES.md 2.2, Bibliothèque du Congrès, collection Matson, LC-DIG-matpc-05530 (« Plain of Esdraelon, telephoto from Nazareth », vers 1900-1920, domaine public) ; faits : mêmes sources que le plan précédent  
-À l'écran : carton : Nazareth et la plaine · vers 1900-1920 · photo de la colonie américaine (Matson)  
+**6.12** · film **00:10:21:07 → 00:10:34:07** (13.0 s) · **[RÉEL]** `output/plans-reels/plaine-de-jezreel-mont-thabor-aerien.mp4` · source 00:00:00:00 → 00:00:13:00  
+Source : SOURCES.md 4.1, Adobe Stock 279606071 (le mont Thabor et la plaine de Jezréel, vue aérienne) ; faits : mêmes sources que le plan précédent  
+À l'écran : carton : Le mont Thabor, au bord de la plaine de Jezréel (Marj Ibn Amer) · aujourd'hui  
 > VOIX : Ils écrivent à Istanbul : / la vente prive mille villageois de leur **pain**. // Le sous-préfet de Nazareth refuse de la signer. / En vain : / en 1911, la colonie de Merhavia s'installe.  
 (29 mots, 2.2 par seconde)  
 Note : « mille villageois » : chiffre de leur pétition (le dire comme tel). Ne pas dire « tués » ni « massacre » : ce sont des expulsions et des heurts, pas plus.

@@ -69,3 +69,14 @@ Plans concernés : 28.4, 29.2, 29.3, 29.4, 29.5, 30.5, 36.4, 36.6, 38.5.
 Pour les fiches en motion design (je les détoure) : Edwin Montagu, Jacob Israël de Haan, Folke Bernadotte, Judah
 Magnes, Martin Buber, le rabbin Joel Teitelbaum, Yeshayahou Leibowitz, Edgar Morin. Mets-les dans `portraits/src/`,
 nommées par la personne (`montagu.jpg`, `de-haan.jpg`…).
+
+## 5. À vérifier sur Perplexity (avant d'enregistrer la voix)
+
+1. « Dans la lettre de Theodor Herzl à Youssouf Diya al-Khalidi du 19 mars 1899 (version anglaise publiée par PalQuest,
+   Institut d'études palestiniennes), quelle est la phrase exacte sur la hausse de la valeur des terres arabes
+   ("five and ten times" ?) ? Donne le texte anglais exact et le lien. »
+2. « Le film "Sands of Sorrow" (1950, Theodore A. Morde, narration Dorothy Thompson) : qui l'a produit (le Council for the
+   Relief of Palestine Arab Refugees ?), est-il dans le domaine public aux États-Unis (droits non renouvelés ?), et
+   quelle est sa cote aux Archives nationales américaines ? »
+3. « Le film "Jérusalem, 1918" mis en ligne sur archive.org par Jacob Gross (identifiant jerusalem-1918) : qui l'a tourné,
+   d'où vient la copie, et est-il réellement dans le domaine public ? »

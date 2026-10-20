@@ -242,10 +242,11 @@ chapitres:
           Israël rejette ce mot : / ses citoyens arabes votent et siègent au Parlement, / et les territoires relèvent,
           dit-il, d'un conflit, pas d'un **système**.
       - type: RÉEL
-        fichier: "à licencier : colonie au sommet d'une colline, Cisjordanie, vue aérienne (Adobe Stock, collection gratuite)"
-        duree: 17
-        a_obtenir: true
-        source: "Rashid Khalidi, The Hundred Years' War on Palestine, 2020 ; Ilan Pappé, The Ethnic Cleansing of Palestine, 2006"
+        fichier: output/plans-reels/cisjordanie-kfar-etzion-collines-vignes.mp4
+        entree: 0
+        sortie: 16
+        ecran: "carton : Kfar Etzion, colonie israélienne · Cisjordanie occupée"
+        source: "image : SOURCES.md 4.1, Adobe Stock 827361688 ; Rashid Khalidi, The Hundred Years' War on Palestine, 2020 ; Ilan Pappé, The Ethnic Cleansing of Palestine, 2006"
         voix: >-
           Pour des historiens comme Rashid Khalidi ou Ilan Pappé, le sionisme est un colonialisme de peuplement, /
           comme en Amérique ou en Australie. // Pour les sionistes, c'est le retour d'un peuple **chez lui**.

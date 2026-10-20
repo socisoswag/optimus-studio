@@ -219,6 +219,10 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 259921414 | Récolte des olives à la main | lieu non précisé | terre | `recolte-des-olives-a-la-main` |
 | 198345828 | La mer Morte vue du ciel | mer Morte | terre | `mer-morte-aerien` |
 | 593067850 | Le monastère Saint-Georges dans le ouadi Qelt, désert de Judée | Cisjordanie occupée, entre Jérusalem et Jéricho | terre (réchauffé dans l'intro) | `desert-judee-ouadi-qelt-saint-georges` |
+| 617556932 | Bâle, le Rhin et la cathédrale, du jour à la nuit (accéléré) | Bâle, Suisse | terre | `bale-rhin-cathedrale-jour-nuit` |
+| 279606071 | Le mont Thabor, au bord de la plaine de Jezréel, vue aérienne | Basse-Galilée, Israël | terre | `plaine-de-jezreel-mont-thabor-aerien` |
+| 827361688 | Collines, vignes et arbres de Kfar Etzion (titre d'origine : « paysage rural israélien ») | colonie de Kfar Etzion, Cisjordanie occupée | terre | `cisjordanie-kfar-etzion-collines-vignes` |
+| 547188073 | Des mains sur le tronc d'un olivier | lieu non précisé | terre | `olivier-mains-sur-le-tronc` |
 
 ### 4.2 Archives filmées (domaine public)
 

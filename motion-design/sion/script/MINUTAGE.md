@@ -44,17 +44,16 @@
 | Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique | 01:02:09:08 | 1 min 43.6 s |
 | Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338 | 01:03:52:23 | 1 min 19.9 s |
 | Chapitre 34 · L'effacement culturel : villages détruits, noms effacés | 01:05:12:21 | 1 min 21.7 s |
-| Chapitre 35 · Colonialisme, apartheid : le poids des mots | 01:06:34:13 | 1 min 35.4 s |
-| Chapitre 36 · La fracture en Israël : la démocratie en question | 01:08:09:23 | 0 min 54.8 s |
-| Ouverture de la conclusion | 01:09:04:18 | 0 min 14.0 s |
-| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:09:18:18 | 0 min 28.6 s |
-| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:09:47:08 | 0 min 51.6 s |
-| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:10:38:23 | 1 min 36.2 s |
-| **Total** | | **72 min 15.1 s** |
+| Chapitre 35 · Colonialisme, apartheid : le poids des mots | 01:06:34:13 | 1 min 34.4 s |
+| Chapitre 36 · La fracture en Israël : la démocratie en question | 01:08:08:23 | 0 min 54.8 s |
+| Ouverture de la conclusion | 01:09:03:18 | 0 min 14.0 s |
+| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:09:17:18 | 0 min 28.6 s |
+| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:09:46:08 | 0 min 51.6 s |
+| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:10:37:23 | 1 min 36.2 s |
+| **Total** | | **72 min 14.1 s** |
 
 ## Images à obtenir
 
-- 4.4 : à télécharger : photo du premier congrès sioniste, Bâle, août 1897
 - 5.6 : à télécharger : la loterie des terrains d'Ahuzat Bayit (futur Tel-Aviv), avril 1909, photo d'Avraham Soskine (domaine public, Wikimedia Commons) (le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même plan dans le film))
 - 7.10 : à fabriquer : citation Balfour 1919 (même modèle que output/citation-herzl.mp4)
 - 8.2 : à générer : reconstitution de l'entrée d'Allenby (image de départ : output/reconstitution/08-entree-britanniques-1917.jpg)
@@ -91,8 +90,6 @@
 - 30.3 : à télécharger : le rabbin Joel Teitelbaum de Satmar (domaine public à vérifier)
 - 30.4 : à télécharger : Yeshayahou Leibowitz (GPO ou licence libre)
 - 30.5 : à télécharger : manifestation ultra-orthodoxe contre la conscription, Jérusalem, 2024 (licence libre)
-- 35.9 : à licencier : colonie au sommet d'une colline, Cisjordanie, vue aérienne (Adobe Stock, collection gratuite)
 - 36.4 : à télécharger : manifestation contre la réforme de la justice, Tel-Aviv, 2023 (licence libre, Wikimedia Commons)
 - 36.6 : même photo que le chapitre 30 (ultra-orthodoxes et conscription), ou une autre de 2024
-- 38.4 : à licencier : récolte des olives ou broderie palestinienne (Adobe Stock, collection gratuite ; autre plan que celui du chapitre 5)
 - 38.5 : à télécharger : rencontre du Cercle des parents, familles israéliennes et palestiniennes endeuillées (licence libre)

@@ -60,9 +60,10 @@ chapitres:
         voix: >-
           « Sur cette terre, / il y a ce qui mérite la **vie**. » ///
       - type: RÉEL
-        fichier: "à licencier : récolte des olives ou broderie palestinienne (Adobe Stock, collection gratuite ; autre plan que celui du chapitre 5)"
-        duree: 9
-        a_obtenir: true
+        fichier: output/plans-reels/olivier-mains-sur-le-tronc.mp4
+        entree: 0
+        sortie: 9
+        source: "SOURCES.md 4.1, Adobe Stock 547188073 (des mains sur le tronc d'un olivier ; lieu non précisé)"
         voix: >-
           Les Palestiniens ont un mot pour cela : / sumud. / Tenir. / **Rester**.
       - type: PHOTO

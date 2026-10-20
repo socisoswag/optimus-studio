@@ -241,11 +241,11 @@ chapitres:
         voix: >-
           Son idée est simple : / l'antisémitisme ne disparaîtra pas. / Les Juifs doivent avoir un **État**, /
           reconnu par les grandes puissances.
-      - type: PHOTO
-        fichier: "à télécharger : photo du premier congrès sioniste, Bâle, août 1897"
-        duree: 10
-        a_obtenir: true
-        source: "domaine public (Wikimedia Commons)"
+      - type: RÉEL
+        fichier: output/plans-reels/bale-rhin-cathedrale-jour-nuit.mp4
+        entree: 0
+        sortie: 10
+        source: "SOURCES.md 4.1, Adobe Stock 617556932 (Bâle, le Rhin et la cathédrale ; le congrès se tient au Casino municipal)"
         ecran: "carton transparent : output/cartons/02-bale-1897.mov"
         voix: >-
           Août 1897, à Bâle. / Le premier congrès sioniste fixe le but : / un foyer pour le peuple juif en
@@ -482,16 +482,15 @@ chapitres:
           En 1910, un riche propriétaire de Beyrouth, / Élias Sursock, / vend dix mille dounams autour d'al-Fula au
           Fonds national juif. // Les paysans qui les cultivent refusent de **partir**.
         note: "1 dounam = 1 000 m² : 10 000 dounams = 10 km². Le vendeur est arabe : le dire, c'est un fait."
-      - type: PHOTO
-        fichier: data/archives/05530.jpg
-        duree: 13
+      - type: RÉEL
+        fichier: output/plans-reels/plaine-de-jezreel-mont-thabor-aerien.mp4
+        entree: 0
+        sortie: 13
         source: >-
-          SOURCES.md 2.2, Bibliothèque du Congrès, collection Matson, LC-DIG-matpc-05530 (« Plain of Esdraelon,
-          telephoto from Nazareth », vers 1900-1920, domaine public) ; faits : mêmes sources que le plan précédent
-        ecran: "carton : Nazareth et la plaine · vers 1900-1920 · photo de la colonie américaine (Matson)"
-        note: >-
-          recadrer : enlever le bord de la plaque de verre et la bande de légende en haut. Lente poussée de Nazareth
-          (premier plan) vers la plaine au fond, où se trouve al-Fula. À passer en relief comme archives-vivantes.
+          SOURCES.md 4.1, Adobe Stock 279606071 (le mont Thabor et la plaine de Jezréel, vue aérienne) ; faits : mêmes
+          sources que le plan précédent
+        ecran: "carton : Le mont Thabor, au bord de la plaine de Jezréel (Marj Ibn Amer) · aujourd'hui"
+        note: "vrai plan d'aujourd'hui à la place de la photo Matson 05530 (la plaine où se trouvait al-Fula)"
         voix: >-
           Ils écrivent à Istanbul : / la vente prive mille villageois de leur **pain**. // Le sous-préfet de Nazareth
           refuse de la signer. / En vain : / en 1911, la colonie de Merhavia s'installe.
