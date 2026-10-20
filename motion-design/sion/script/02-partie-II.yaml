@@ -1,0 +1,508 @@
+titre: "Partie II · Le basculement"
+intro: >-
+  De la promesse de 1917 à la veille du partage. Trente ans où tout se noue : trois promesses contradictoires, un
+  mandat britannique qui ne consulte pas la majorité, des violences contre les civils des deux côtés, l'Allemagne
+  nazie, et des Juifs qui se divisent sur le sionisme lui-même. Le ton reste le même : les faits d'abord, chaque camp
+  avec ses propres mots.
+chapitres:
+  - num: "II.0"
+    titre: "Ouverture de la partie II"
+    plans:
+      - type: MD
+        fichier: output/partie-2.mp4
+        entree: 0
+        sortie: 14.6
+        ecran: "Partie II · Le basculement"
+        son: "bande-son de la pièce"
+
+  - num: "7"
+    titre: "Chapitre 7 · La déclaration Balfour (1917)"
+    intention: >-
+      Trois promesses en deux ans, et la phrase de Balfour lue en entier, y compris ce qu'elle ne dit pas : les
+      « collectivités non juives » sont neuf habitants sur dix, et leurs droits politiques n'y figurent pas. Le point
+      de vue sioniste a sa place (une grande puissance reconnaît enfin le lien du peuple juif à cette terre), comme
+      le seul ministre juif du gouvernement, qui s'y oppose. Finir sur la note de Balfour de 1919 : la preuve, de sa
+      main, que les habitants ne seront pas consultés.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-07.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/trois-promesses.mp4
+        entree: 0
+        sortie: 6
+        ecran: "Première Guerre mondiale · de 1915 à 1917 · Trois engagements britanniques, en deux ans"
+        voix: >-
+          1915. / Pour abattre l'Empire ottoman, / Londres fait trois **promesses**.
+      - type: MD
+        fichier: output/trois-promesses.mp4
+        entree: 6
+        sortie: 18.5
+        source: "SOURCES.md 6 (lettre de McMahon à Hussein, 24 octobre 1915)"
+        ecran: "Le Caire · 24 octobre 1915 · Correspondance Hussein-McMahon"
+        voix: >-
+          Aux Arabes d'abord. / S'ils se soulèvent contre les Ottomans, / la Grande-Bretagne soutiendra leur
+          **indépendance**. // C'est la lettre de Henry McMahon au chérif Hussein de La Mecque.
+      - type: MD
+        fichier: output/trois-promesses.mp4
+        entree: 18.5
+        sortie: 31
+        source: "SOURCES.md 6 (accords Sykes-Picot, 16 mai 1916)"
+        ecran: "Londres · 16 mai 1916 · secret · Accords Sykes-Picot"
+        voix: >-
+          En même temps, en secret, / Londres et Paris se partagent déjà la région : / c'est l'accord Sykes-Picot.
+          // La Palestine doit devenir une zone **internationale**.
+      - type: MD
+        fichier: output/trois-promesses.mp4
+        entree: 31
+        sortie: 44
+        source: "SOURCES.md 6 (déclaration Balfour, 2 novembre 1917)"
+        ecran: "Londres · 2 novembre 1917 · Déclaration Balfour"
+        voix: >-
+          Et le 2 novembre 1917, / le ministre Arthur Balfour écrit à Lord Rothschild : / Londres « envisage
+          favorablement » / un foyer national pour le peuple juif en **Palestine**.
+      - type: PHOTO
+        fichier: "à télécharger : la déclaration Balfour (lettre originale, British Library, domaine public, Wikimedia Commons)"
+        duree: 15
+        a_obtenir: true
+        source: >-
+          texte de la déclaration ; population : Justin McCarthy, 1990, tableau 2.3 (1918 : 58 728 juifs sur
+          748 128 habitants, soit 8 %)
+        ecran: "la caméra glisse sur la lettre, jusqu'à « the civil and religious rights of existing non-Jewish communities »"
+        voix: >-
+          Une phrase protège « les droits civils et religieux » / des « collectivités non juives ». // Elles forment
+          alors neuf habitants sur **dix**. / Leurs droits politiques ne sont pas cités.
+        son: "papier, horloge lointaine, salle de ministère"
+      - type: PHOTO
+        fichier: portraits/balfour.png
+        duree: 12
+        voix: >-
+          Pour les sionistes, c'est une victoire immense. / Pour la première fois, une grande puissance reconnaît le
+          lien du peuple juif avec cette **terre**.
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 10.4
+        sortie: 14.8
+        ecran: "fiche de la chronologie : Chaïm Weizmann"
+        voix: >-
+          Chaïm Weizmann l'a obtenue / après des mois de **démarches**.
+      - type: PHOTO
+        fichier: "à télécharger : portrait d'Edwin Montagu (domaine public, Wikimedia Commons)"
+        duree: 13
+        a_obtenir: true
+        source: >-
+          Edwin Montagu, « Memorandum on the Anti-Semitism of the Present Government », note au cabinet britannique,
+          23 août 1917 (Archives nationales britanniques, série CAB 24, cote à vérifier) ; notre traduction
+        ecran: "Edwin Montagu · secrétaire d'État pour l'Inde · seul ministre juif du gouvernement"
+        voix: >-
+          Un seul ministre juif siège au gouvernement : / Edwin Montagu. // Il s'y oppose. / Le sionisme, écrit-il,
+          est « une doctrine politique **nuisible** ».
+        note: >-
+          Montagu juge la déclaration antisémite : elle ferait des Juifs anglais des étrangers dans leur pays. C'est
+          la preuve que Juifs et sionisme ne sont pas la même chose (règle 2 de la bible).
+      - type: MD
+        fichier: "à fabriquer : citation Balfour 1919 (même modèle que output/citation-herzl.mp4)"
+        duree: 19
+        a_obtenir: true
+        source: >-
+          Arthur Balfour, mémorandum du 11 août 1919, Documents on British Foreign Policy 1919-1939, première série,
+          vol. IV, p. 345 ; notre traduction
+        ecran: >-
+          « En Palestine, nous ne proposons même pas de consulter les habitants actuels du pays. » · Arthur Balfour,
+          11 août 1919
+        voix: >-
+          Deux ans plus tard, Balfour l'écrit sans détour, dans une note interne : / « En Palestine, nous ne
+          proposons même pas de consulter les habitants actuels du pays. » // Le sionisme, ajoute-t-il, compte plus
+          que « les désirs et les préjugés / de 700 000 **Arabes** ».
+        son: "salle vide, une seule respiration du papier"
+      - type: MD
+        fichier: output/trois-promesses.mp4
+        entree: 44
+        sortie: 54.5
+        source: "SOURCES.md 6 (Arthur Koestler, Promise and Fulfilment, 1949)"
+        ecran: "« Une nation promettait solennellement à une deuxième le pays d'une troisième. »"
+        voix: >-
+          Arthur Koestler, longtemps sioniste, résumera : // « Une nation promettait solennellement à une deuxième /
+          le pays d'une **troisième**. » ///
+
+  - num: "8"
+    titre: "Chapitre 8 · Le mandat britannique : promesses brisées, haine semée"
+    titre_de_rechange: "Chapitre 8 · Le mandat britannique : trente ans sous tension"
+    intention: >-
+      Trente ans en trois minutes. Un pouvoir étranger qui refuse un gouvernement élu (la majorité aurait dit non),
+      les violences de 1920, 1921 et 1929 avec leurs morts juifs et arabes, Hébron, la révolte de 1936 et sa
+      répression, les bombes de l'Irgoun et le massacre de Tibériade, puis le livre blanc de 1939 qui ferme la porte
+      au moment où les Juifs d'Europe cherchent à fuir. Le mufti est montré tel qu'il fut, y compris son alliance
+      avec Hitler : le cacher ruinerait tout le reste.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-08.mp4
+        entree: 0
+        sortie: 4.6
+      - type: IA
+        fichier: "à générer : reconstitution de l'entrée d'Allenby (image de départ : output/reconstitution/08-entree-britanniques-1917.jpg)"
+        duree: 10
+        a_obtenir: true
+        source: "SOURCES.md 2.2, matpc 02225 (entrée du maréchal Allenby, porte de Jaffa, 11 décembre 1917)"
+        ecran: "carton : output/cartons/jerusalem-1917 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
+        voix: >-
+          Le 11 décembre 1917, le général Allenby entre à pied dans Jérusalem. / Pour trente ans, la Palestine sera
+          **britannique**.
+        son: "pas de troupe, foule, cloches lointaines"
+      - type: ARCH
+        fichier: output/archives-filmees/1930-paths-to-palestine-02.mp4
+        entree: 0
+        sortie: 13.48
+        source: "SOURCES.md 4.2 (Paths to Palestine, marine américaine, 1930, NARA 2767364, domaine public)"
+        ecran: "carton : Jérusalem · 1930 · film de la marine américaine"
+        voix: >-
+          En 1922, la Société des Nations confie la Palestine à Londres. / Le mandat reprend la promesse Balfour, /
+          et demande de faciliter l'immigration **juive**.
+        note: "préambule du mandat (texte de la déclaration) et article 6 (immigration, installation sur les terres)"
+      - type: ARCH
+        fichier: output/archives-filmees/1930-paths-to-palestine-05.mp4
+        entree: 0
+        sortie: 11.6
+        source: "SOURCES.md 4.2 (Paths to Palestine, 1930)"
+        voix: >-
+          Les Arabes de Palestine réclament un gouvernement élu. / Londres ne l'accordera jamais : / une majorité
+          arabe aurait fermé la porte au foyer **juif**.
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 14.8
+        sortie: 19.2
+        ecran: "fiche de la chronologie : Amin al-Husseini"
+        voix: >-
+          En 1921, Londres nomme un grand **mufti**.
+      - type: PHOTO
+        fichier: portraits/amin-husseini.png
+        duree: 16
+        source: "faits biographiques (SOURCES.md 5, chronologie) ; rencontre avec Hitler à Berlin, 28 novembre 1941"
+        voix: >-
+          Amin al-Husseini, un jeune notable de Jérusalem, / deviendra le chef du mouvement national palestinien. //
+          Pendant la Seconde Guerre mondiale, / il s'alliera à l'Allemagne nazie, / et rencontrera Hitler à
+          **Berlin**.
+        note: >-
+          à dire sans adjectif : le fait suffit. Le récit israélien en fait le visage du nationalisme palestinien ;
+          le film montre aussi, plus loin, les autres voix palestiniennes.
+      - type: ARCH
+        fichier: output/archives-filmees/1930-paths-to-palestine-04.mp4
+        entree: 0
+        sortie: 9.16
+        source: >-
+          SOURCES.md 4.2 (Paths to Palestine, 1930) ; bilans : rapports britanniques (commission Palin 1920, commission
+          Haycraft 1921, commission Shaw 1930)
+        ecran: "Jérusalem, avril 1920 · 5 Juifs et 4 Arabes tués · Jaffa, mai 1921 · 47 Juifs et 48 Arabes tués"
+        voix: >-
+          La colère monte. / Avril 1920, à Jérusalem : / cinq Juifs et quatre Arabes tués. / Mai 1921, à Jaffa : /
+          près de cent **morts**.
+      - type: ARCH
+        fichier: output/archives-filmees/1930-paths-to-palestine-12.mp4
+        entree: 0
+        sortie: 9.92
+        source: "SOURCES.md 4.2 ; bilan d'août 1929 : commission Shaw, 1930"
+        ecran: "Août 1929 · 133 Juifs tués · 116 Arabes tués, surtout par la police britannique"
+        voix: >-
+          Août 1929. / Une querelle autour du mur des Lamentations. / Des émeutiers arabes tuent 133 **Juifs**. / La
+          police britannique tue 116 Arabes.
+      - type: PHOTO
+        fichier: "à télécharger : Hébron, août 1929 (Bibliothèque du Congrès, collection Matson, série « Palestine riots 1929 »)"
+        duree: 12
+        a_obtenir: true
+        source: "commission Shaw, 1930 ; 1929 Hebron massacre (Wikipedia, pour les références)"
+        ecran: "carton : Hébron · 24 août 1929"
+        voix: >-
+          À Hébron, 67 Juifs sont massacrés, / dans une ville où leur communauté vivait depuis des **siècles**. //
+          Des familles arabes en cachent d'autres chez elles.
+        note: "le nombre de Juifs cachés par des voisins arabes est débattu : ne pas donner de chiffre"
+        son: "silence presque complet, un vent sec"
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 23.6
+        sortie: 28
+        ecran: "fiche de la chronologie : Izz ad-Din al-Qassam"
+      - type: PHOTO
+        fichier: portraits/qassam.png
+        duree: 14
+        voix: >-
+          En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il
+          est tué en novembre. // Il devient un **symbole**.
+      - type: PHOTO
+        fichier: output/archives-vivantes.mp4
+        entree: 40.4
+        sortie: 48.5
+        source: "SOURCES.md 2.2, matpc 15788 (manifestation de Jaffa, octobre 1933)"
+        ecran: "déjà dans la pièce : Octobre 1933 · Jaffa · La foule des manifestants face à la police britannique"
+        voix: >-
+          1933. / Hitler arrive au pouvoir, / l'immigration juive s'accélère, / et Jaffa **manifeste**.
+      - type: IA
+        fichier: "à générer : reconstitution de la grève de 1936 (image de départ : output/reconstitution/18-greve-1936-camion.jpg)"
+        duree: 10
+        a_obtenir: true
+        source: "SOURCES.md 2.2, matpc 18217 (réouverture des magasins après la grève de six mois, 1936)"
+        ecran: "carton : output/cartons/jaffa-1936 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
+        voix: >-
+          En 1936, la Palestine arabe se met en grève. / Six mois. // C'est le début de la grande **révolte**.
+      - type: PHOTO
+        fichier: "à télécharger : maison détruite par l'armée britannique, Lydda, 1936 (Wikimedia Commons, domaine public)"
+        duree: 12
+        a_obtenir: true
+        source: >-
+          bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centaines de Juifs (article « 1936-1939 Arab
+          revolt in Palestine », d'après Walid Khalidi et Matthew Hughes, Britain's Pacification of Palestine, 2019)
+        voix: >-
+          La répression britannique est terrible : / maisons dynamitées, / pendaisons, / villages punis. // En trois
+          ans, environ cinq mille Arabes sont **tués**.
+      - type: CARTON
+        fichier: "à fabriquer : carton noir à deux lignes (modèle des cartons de lieu)"
+        duree: 17
+        a_obtenir: true
+        source: >-
+          Tibériade, 2 octobre 1938 : 19 Juifs tués dont 11 enfants ; bombes de l'Irgoun sur les marchés arabes de
+          Haïfa et de Jérusalem en juillet 1938 (The New York Times, 16 juillet 1938) ; liste des attaques de l'Irgoun
+          (Wikipedia, pour les références)
+        ecran: "Tibériade · octobre 1938 · 19 Juifs tués, dont 11 enfants / Haïfa, Jérusalem · juillet 1938 · bombes de l'Irgoun sur les marchés arabes"
+        voix: >-
+          Les civils paient des deux côtés. / À Tibériade, en octobre 1938, / dix-neuf Juifs sont tués, dont onze
+          enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés
+          **arabes**.
+      - type: MD
+        fichier: "à fabriquer : carte du plan Peel de 1937 (moteur des cartes, même style que partage-1947)"
+        duree: 17
+        a_obtenir: true
+        source: "rapport de la commission Peel, 7 juillet 1937 (transfert proposé : jusqu'à 225 000 Arabes et 1 250 Juifs)"
+        voix: >-
+          En 1937, la commission Peel propose pour la première fois de couper le pays en deux, / et de déplacer
+          jusqu'à 225 000 Arabes. // Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais
+          pas ce **tracé**.
+      - type: ARCH
+        fichier: output/archives-filmees/1930-paths-to-palestine-06.mp4
+        entree: 0
+        sortie: 8.52
+        source: "livre blanc britannique du 17 mai 1939"
+        ecran: "Mai 1939 · livre blanc · 75 000 immigrants juifs en cinq ans, puis plus rien sans l'accord des Arabes"
+        voix: >-
+          En 1939, Londres fait marche arrière : / l'immigration juive est limitée / à 75 000 personnes en cinq
+          **ans**.
+      - type: ARCH
+        fichier: output/archives-filmees/1930-paths-to-palestine-08.mp4
+        entree: 0
+        sortie: 6.88
+        voix: >-
+          Au moment même où les Juifs d'Europe / cherchent à fuir le **nazisme**. ///
+
+  - num: "9"
+    titre: "Chapitre 9 · Le traité Haavara et l'assassinat d'Arlozoroff"
+    intention: >-
+      Le chapitre le plus piégé du film (voir la bible, risque 2). On raconte exactement ce que disent les
+      historiens : un accord de transfert qui sauve des vies et des biens, signé avec un régime qui veut chasser les
+      Juifs, et qui brise le boycott lancé par des Juifs du monde entier. Puis le meurtre d'Arlosoroff, sans jamais
+      désigner un coupable que la justice n'a pas désigné. Finir en désamorçant la récupération antisémite.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-09.mp4
+        entree: 0
+        sortie: 4.6
+      - type: PHOTO
+        fichier: portraits/arlozoroff.png
+        duree: 15
+        source: "lois antijuives d'avril 1933 (fonction publique le 7 avril, quotas scolaires le 25 avril)"
+        voix: >-
+          1933. / Hitler prend le pouvoir. / Les Juifs d'Allemagne sont chassés de la fonction publique, / des écoles,
+          des métiers. // Un dirigeant sioniste, Haïm Arlosoroff, cherche à les faire **sortir**.
+        note: "on écrit Arlozoroff dans le titre du chapitre (déjà fait) ; on dit « Arlo-so-rof »"
+      - type: CARTON
+        fichier: "à fabriquer : carton Haavara (août 1933 · environ 60 000 émigrants · 105 millions de reichsmarks de marchandises)"
+        duree: 16
+        a_obtenir: true
+        source: >-
+          article « Haavara Agreement » (Wikipedia, d'après Edwin Black, The Transfer Agreement, 1984, et Yehuda
+          Bauer, Jews for Sale?, 1994) : environ 60 000 Juifs allemands en Palestine de 1933 à 1939 ; 105 millions
+          de reichsmarks de marchandises allemandes exportées
+        voix: >-
+          En août 1933, un accord est signé avec l'Allemagne nazie : / Haavara, « le transfert » en hébreu. / Les
+          Juifs qui partent pour la Palestine sauvent une partie de leurs biens, / sous forme de marchandises
+          **allemandes**.
+      - type: CARTON
+        fichier: "même carton, deuxième ligne"
+        duree: 13
+        a_obtenir: true
+        voix: >-
+          Environ soixante mille Juifs allemands gagnent ainsi la Palestine avant la guerre. // Mais l'accord brise le
+          boycott des produits allemands, / lancé par des Juifs du monde **entier**.
+      - type: PHOTO
+        fichier: portraits/jabotinsky.png
+        duree: 8
+        voix: >-
+          La droite sioniste, autour de Zeev Jabotinsky, / crie à la **trahison**.
+      - type: PHOTO
+        fichier: portraits/arlozoroff.png
+        duree: 17
+        source: >-
+          procès de 1934 (Stavsky condamné puis acquitté en appel, faute de preuve qui corrobore) ; commission
+          d'enquête israélienne créée en 1982, rapport de juin 1985 (Jewish Telegraphic Agency, 17 juin 1985)
+        ecran: "carton : Tel-Aviv · 16 juin 1933"
+        voix: >-
+          Le 16 juin 1933, Arlosoroff est tué par balles sur la plage de Tel-Aviv. / Deux militants de cette droite
+          sont accusés, / puis acquittés. // En 1985, une commission israélienne les lave de tout soupçon. / Les
+          tueurs n'ont jamais été **identifiés**.
+        son: "mer la nuit, un seul coup sec très lointain, puis la mer seule"
+      - type: NOIR
+        duree: 14
+        source: >-
+          lecture « accord de sauvetage » : Yehuda Bauer, Jews for Sale?, 1994 ; lecture critique : Edwin Black, The
+          Transfer Agreement, 1984 (les deux à citer en description)
+        voix: >-
+          Ce traité est aujourd'hui repris par des antisémites, / qui parlent de « collaboration ». // Les historiens
+          disent autre chose : / un accord de sauvetage, / arraché à un régime qui voulait chasser les **Juifs**.
+
+  - num: "10"
+    titre: "Chapitre 10 · Les juifs contre les juifs : sionistes, orthodoxes et antisionistes"
+    titre_de_rechange: "Chapitre 10 · Les Juifs face au sionisme : le grand débat"
+    intention: >-
+      Avant 1948, le sionisme est loin de faire l'unanimité chez les Juifs : réformés américains, ouvriers du Bund,
+      rabbins orthodoxes, sionistes partisans d'un État pour deux peuples. Un fait dur (l'assassinat de de Haan par
+      la Haganah) montre que ce débat n'était pas seulement intellectuel. Les voix d'aujourd'hui viendront dans la
+      partie VI.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-10.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: "à fabriquer : citation (modèle citation-herzl) · déclaration de Pittsburgh, 1885"
+        duree: 16
+        a_obtenir: true
+        source: "déclaration de Pittsburgh, conférence des rabbins réformés, 16-19 novembre 1885, article 5 ; notre traduction"
+        ecran: "« Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse. » · Pittsburgh, 1885"
+        voix: >-
+          Au début, le sionisme est minoritaire chez les Juifs. / En 1885, aux États-Unis, les rabbins réformés
+          déclarent : / « Nous ne sommes plus une nation, mais une communauté religieuse. / Nous n'attendons pas de
+          retour en **Palestine**. »
+      - type: PHOTO
+        fichier: "à télécharger : photo du Bund, Russie, vers 1905 (domaine public, Wikimedia Commons ou YIVO)"
+        duree: 15
+        a_obtenir: true
+        source: "Bund (Union générale des travailleurs juifs), fondé à Vilnius en octobre 1897"
+        voix: >-
+          En 1897, l'année même du congrès de Bâle, / des ouvriers juifs fondent le Bund, à Vilnius. / Leur idée :
+          rester, et se battre là où l'on vit. // En yiddish : doikayt, « **l'ici** ».
+      - type: PHOTO
+        fichier: "à télécharger : Juifs du vieux Yichouv au mur des Lamentations, vers 1900 (Bibliothèque du Congrès, Matson)"
+        duree: 14
+        a_obtenir: true
+        source: "Agoudat Israël, fondé à Katowice en 1912"
+        voix: >-
+          Pour beaucoup de rabbins orthodoxes, le sionisme est une faute : / seul le Messie doit ramener les Juifs sur
+          la terre d'Israël. // En 1912, ils fondent leur propre parti, Agoudat **Israël**.
+      - type: PHOTO
+        fichier: "à télécharger : portrait de Jacob Israël de Haan (domaine public, Wikimedia Commons)"
+        duree: 17
+        a_obtenir: true
+        source: >-
+          assassiné le 30 juin 1924 à Jérusalem par Avraham Tehomi, membre de la Haganah, qui l'a reconnu en 1985
+          (entretien avec Shlomo Nakdimon pour la télévision israélienne)
+        ecran: "carton : Jérusalem · 30 juin 1924"
+        voix: >-
+          À Jérusalem, Jacob Israël de Haan, poète néerlandais devenu juif orthodoxe, / défend la cause antisioniste
+          auprès des Britanniques et des dirigeants arabes. // Le 30 juin 1924, il est abattu à la sortie d'une
+          synagogue. / Par la **Haganah**.
+      - type: PHOTO
+        fichier: "à télécharger : Judah Magnes ou Martin Buber (Brit Shalom, Ihoud ; domaine public à vérifier)"
+        duree: 13
+        a_obtenir: true
+        source: "Brit Shalom, fondé en 1925 (Arthur Ruppin, Hugo Bergmann, Gershom Scholem) ; Ihoud, 1942 (Judah Magnes, Martin Buber)"
+        voix: >-
+          En 1925, des intellectuels sionistes fondent Brit Shalom, / « l'alliance de la paix » : / un seul État pour
+          deux peuples, à égalité. // Ils restent une petite **minorité**.
+        note: "détail fort : Arthur Ruppin, celui qui organise les achats de terres, en est un des fondateurs"
+      - type: NOIR
+        duree: 9
+        voix: >-
+          Puis viendra la Shoah. // Et pour la plupart des survivants, / la question ne se posera plus de la même
+          **façon**.
+
+  - num: "11"
+    titre: "Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens"
+    intention: >-
+      La logique du rapport de force, dite par un dirigeant sioniste lui-même : Jabotinsky et le « Mur de fer »
+      (1923), un texte d'une franchise rare. Puis les chiffres de l'immigration et de la terre, et le tournant de 1942
+      à New York : le mouvement demande toute la Palestine. Finir sur l'ONU, qui ouvre la partie III.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-11.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 19.2
+        sortie: 23.6
+        ecran: "fiche de la chronologie : Zeev Jabotinsky"
+      - type: PHOTO
+        fichier: portraits/jabotinsky.png
+        duree: 16
+        source: >-
+          Zeev Jabotinsky, « Le Mur de fer » (O jeleznoï stene), Rassvet, 4 novembre 1923 ; traduction anglaise
+          publiée dans The Jewish Herald, 26 novembre 1937 ; notre traduction
+        voix: >-
+          En 1923, Zeev Jabotinsky écrit « Le Mur de fer ». / Il ne nie pas ce qu'il voit : / « Toute population
+          indigène résiste aux colons, / tant qu'elle garde le moindre espoir d'échapper à la **colonisation**. »
+      - type: MD
+        fichier: "à fabriquer : citation (modèle citation-herzl) · Jabotinsky, 1923"
+        duree: 13
+        a_obtenir: true
+        ecran: "« derrière un mur de fer, que la population indigène ne pourra pas percer » · Zeev Jabotinsky, 1923"
+        voix: >-
+          Sa conclusion : / la colonisation ne peut avancer / que « derrière un mur de fer, / que la population
+          indigène ne pourra pas **percer** ».
+        note: >-
+          texte capital pour les deux récits : le récit sioniste y lit le réalisme (on ne négocie qu'en position de
+          force), le récit palestinien la preuve d'un projet colonial assumé. La voix ne commente pas.
+      - type: MD
+        fichier: output/aliyas.mp4
+        entree: 17
+        sortie: 27.5
+        ecran: "déjà dans la pièce : De 1919 à 1929 · environ 120 000 arrivées en dix ans"
+        voix: >-
+          Les immigrants arrivent par vagues. / Environ cent vingt mille dans les années **vingt**.
+      - type: MD
+        fichier: output/aliyas.mp4
+        entree: 27.5
+        sortie: 38
+        ecran: "déjà dans la pièce : De 1929 à 1939 · environ 250 000 arrivées, beaucoup fuient l'Allemagne nazie"
+        voix: >-
+          Deux cent cinquante mille dans les années trente, / beaucoup fuyant l'Allemagne **nazie**.
+      - type: MD
+        fichier: output/aliyas.mp4
+        entree: 38
+        sortie: 49
+        source: >-
+          A Survey of Palestine, 1946 (553 600 juifs sur 1 764 520 habitants à la fin de 1945) ; terres : Village
+          Statistics, 1945 (environ 1,5 million de dounams en propriété juive sur 26,3 millions, soit moins de 6 %)
+        ecran: "déjà dans la pièce : 1945 · 553 600 Juifs en Palestine · sur 1 764 520 habitants"
+        voix: >-
+          À la fin de la guerre, les Juifs sont presque un tiers des habitants. / Ils possèdent moins de six pour cent
+          des **terres**.
+        note: "6 % des terres de toute la Palestine, désert du Néguev compris ; à garder pour le chapitre 12"
+      - type: PHOTO
+        fichier: portraits/ben-gourion.png
+        duree: 13
+        source: "programme de Biltmore, conférence sioniste extraordinaire, hôtel Biltmore, New York, 6-11 mai 1942"
+        ecran: "carton : New York · mai 1942"
+        voix: >-
+          En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine
+          devienne « un Commonwealth **juif** ».
+      - type: ARCH
+        fichier: output/archives-filmees/1930-paths-to-palestine-01.mp4
+        entree: 0
+        sortie: 4.32
+        voix: >-
+          Après la guerre, épuisée, / la Grande-Bretagne
+      - type: ARCH
+        fichier: output/archives-filmees/1930-paths-to-palestine-07.mp4
+        entree: 0
+        sortie: 5
+        voix: >-
+          remet la question à l'ONU. // Nous sommes en **1947**. ///
+        son: "montée lente vers l'ouverture de la partie III"

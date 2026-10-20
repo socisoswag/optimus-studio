@@ -135,12 +135,12 @@ Son : les impacts de la pièce portent la violence ; la voix reste basse
 > VOIX : silence
 
 
-**2.10** · film **00:05:08:12 → 00:05:14:12** (6.0 s) · **[PHOTO]** `data/archives/ds-14863.jpg` · **À OBTENIR**  
+**2.10** · film **00:05:08:12 → 00:05:14:12** (6.0 s) · **[PHOTO]** `data/archives/ds-14863.jpg`  
 Source : SOURCES.md 2.2, Bibliothèque du Congrès ds 14863 (domaine public)  
 À l'écran : carton : Ellis Island, New York · vers 1907  
 > VOIX : silence  
 Son : salle immense, murmures, tampon  
-Note : photo à télécharger (Bibliothèque du Congrès) et à animer en relief comme les autres archives
+Note : photo téléchargée (pleine définition) (Bibliothèque du Congrès), à animer en relief comme les autres archives
 
 
 ## Chapitre 3 · L'affaire Dreyfus : fracture française et choc identitaire
@@ -275,12 +275,12 @@ Source : SOURCES.md 4.1, Adobe Stock 259921414 (lieu non précisé : aucune lég
 (22 mots, 1.9 par seconde)
 
 
-**5.5** · film **00:07:59:02 → 00:08:09:02** (10.0 s) · **[PHOTO]** `data/archives/12172.jpg` · **À OBTENIR**  
+**5.5** · film **00:07:59:02 → 00:08:09:02** (10.0 s) · **[PHOTO]** `data/archives/12172.jpg`  
 Source : SOURCES.md 2.2, Bibliothèque du Congrès matpc 12172 (domaine public)  
 À l'écran : carton : Près de Jérusalem · entre 1898 et 1946  
 > VOIX : Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, / et les ouvriers arabes sont écartés.  
 (22 mots, 2.2 par seconde)  
-Note : photo à télécharger (laboureur et ses bœufs, Jérusalem au fond) et à animer en relief
+Note : photo téléchargée (pleine définition) (laboureur et ses bœufs, Jérusalem au fond), à animer en relief
 
 
 **5.6** · film **00:08:09:02 → 00:08:19:02** (10.0 s) · **[RÉEL]** `output/plans-reels/jaffa-clocher-vieille-ville-aerien.mp4` · source 00:00:00:00 → 00:00:10:00  

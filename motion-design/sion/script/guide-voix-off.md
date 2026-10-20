@@ -91,3 +91,23 @@ existe, mais il rend souvent la voix artificielle : je ne l'utilise qu'en secour
 | Ahad Ha'am | A-had Ha-am |
 | al-Fula | al-Fou-la |
 | Filastin | Fi-lass-tine |
+
+## 10. Prononciation (partie II)
+
+| Mot | Dire |
+|---|---|
+| Chaïm Weizmann | Haïm Vaïts-mann (le « ch » se dit comme un « h » qui racle un peu) |
+| McMahon | Mac-Ma-honne |
+| Sykes-Picot | Saïkse-Pi-co |
+| Amin al-Husseini | A-mine al-Hou-ssé-ni |
+| Izz ad-Din al-Qassam | Iz-ad-dine al-Qa-ssam |
+| Haavara | Ha-a-va-ra |
+| Haïm Arlosoroff | Ha-ïm Ar-lo-so-rof |
+| Zeev Jabotinsky | Zé-èv Ja-bo-tinn-ski |
+| Agoudat Israël | A-gou-dat Iss-ra-èl |
+| Brit Shalom | Brit Cha-lom |
+| doikayt | doï-kaïte |
+| Jacob Israël de Haan | Ja-cob Iss-ra-èl de Hane |
+| Haganah | Ha-ga-na |
+| Irgoun | Ir-goune |
+| Biltmore | Bilt-mor |

@@ -8,6 +8,7 @@ Chaque plan du YAML :
     fichier: output/... (chemin depuis le dossier sion)        entree / sortie : secondes dans le fichier source
     duree: secondes (si pas d'entrée/sortie)                   voix : le texte de la voix off (avec / // ///)
     ecran / son / source / note : facultatifs                  a_obtenir: true si l'image reste à trouver
+Chaque chapitre : num, titre, titre_de_rechange (facultatif), intention, plans.
 La voix est contrôlée : au plus 2,4 mots par seconde de plan (environ 140 mots par minute, pauses comprises).
 """
 import glob
@@ -87,6 +88,8 @@ def main():
                 t += duree(p)
             lignes.append(f"\n## {ch['titre']}\n")
             lignes.append(f"Film {tc(t_ch)} → {tc(t)} · durée {(t - t_ch) // 60:.0f} min {(t - t_ch) % 60:04.1f} s\n")
+            if ch.get("titre_de_rechange"):
+                lignes.append(f"Titre de rechange proposé : **{ch['titre_de_rechange']}**\n")
             if ch.get("intention"):
                 lignes.append(f"*Intention : {ch['intention'].strip()}*\n")
             lignes += ["\n" + c for c in corps]

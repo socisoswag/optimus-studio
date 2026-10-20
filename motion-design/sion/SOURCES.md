@@ -219,6 +219,14 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 259921414 | Récolte des olives à la main | lieu non précisé | terre | `recolte-des-olives-a-la-main` |
 | 198345828 | La mer Morte vue du ciel | mer Morte | terre | `mer-morte-aerien` |
 
+### 4.2 Archives filmées (domaine public)
+
+| Fichier | Film | Auteur, date | Cote | Lien |
+|---|---|---|---|---|
+| 1930-paths-to-palestine-01 à 12 | « Paths to Palestine » (muet, 9 min 35) : Jérusalem, Bethléem, rues, marché, Dôme du Rocher, Jourdain | marine des États-Unis, 1930 (œuvre du gouvernement américain) | NARA, identifiant 2767364 (série 428-NPC) | https://archive.org/details/428-npc-44524 |
+
+Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans son d'origine (film muet).
+
 ---
 
 ## 5. Chiffres et faits, vidéo par vidéo
@@ -252,6 +260,32 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 - Presse : al-Karmil, Haïfa, fondé en 1908 par Najib Nassar ; Filastin, Jaffa, premier numéro en janvier 1911
   (Issa et Youssef al-Issa). Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers/falastin et
   https://www.nli.org.il/en/newspapers/elcarmel.
+
+**Partie II, de 1917 à 1947** (chapitres 7 à 11, script)
+- Population de 1918 : 58 728 juifs sur 748 128 habitants, 8 % (McCarthy, 1990, tableau 2.3) : d'où « neuf
+  habitants sur dix » non juifs en 1917.
+- Mandat : Société des Nations, 24 juillet 1922 (préambule : texte de la déclaration Balfour ; article 6 :
+  faciliter l'immigration juive et l'installation sur les terres).
+- Violences : Jérusalem, 4-7 avril 1920 : 5 Juifs et 4 Arabes tués (commission Palin) ; Jaffa, mai 1921 :
+  47 Juifs et 48 Arabes tués (commission Haycraft) ; août 1929 : 133 Juifs tués par des émeutiers arabes, 116
+  Arabes tués, surtout par la police britannique (commission Shaw, 1930) ; Hébron, 24 août 1929 : 67 Juifs tués.
+- Révolte de 1936-1939 : environ 5 000 Arabes, 262 Britanniques et plusieurs centaines de Juifs tués (Walid
+  Khalidi ; Matthew Hughes, Britain's Pacification of Palestine, Cambridge University Press, 2019) ; Tibériade,
+  2 octobre 1938 : 19 Juifs tués dont 11 enfants ; bombes de l'Irgoun sur des marchés arabes de Haïfa et de
+  Jérusalem en juillet 1938 (The New York Times, 16 juillet 1938 : 10 Arabes tués au marché de Jérusalem).
+- Commission Peel, rapport du 7 juillet 1937 : partage, transfert de jusqu'à 225 000 Arabes et 1 250 Juifs.
+- Livre blanc du 17 mai 1939 : 75 000 immigrants juifs en cinq ans ; État indépendant dans dix ans.
+- Haavara (août 1933) : environ 60 000 Juifs allemands en Palestine de 1933 à 1939 ; 105 millions de
+  reichsmarks de marchandises exportées. Edwin Black, The Transfer Agreement, 1984 ; Yehuda Bauer, Jews for
+  Sale?, Yale University Press, 1994.
+- Arlosoroff, tué le 16 juin 1933 : Stavsky condamné en 1934 puis acquitté en appel ; commission d'enquête
+  israélienne de 1982, rapport de juin 1985 (Jewish Telegraphic Agency, 17 juin 1985).
+- Jacob Israël de Haan, tué le 30 juin 1924 par Avraham Tehomi (Haganah), aveu de 1985 à Shlomo Nakdimon.
+- Bund : fondé à Vilnius en octobre 1897 ; Agoudat Israël : Katowice, 1912 ; Brit Shalom : 1925.
+- Immigration : environ 120 000 arrivées de 1919 à 1929 et 250 000 de 1929 à 1939 (pièce « Les aliyas ») ;
+  fin 1945 : 553 600 juifs sur 1 764 520 habitants (A Survey of Palestine, 1946) ; terres en propriété juive :
+  moins de 6 % de la Palestine (Village Statistics, 1945).
+- Programme de Biltmore, New York, 6-11 mai 1942.
 
 **Les aliyas** (chapitre 5)
 - Fourchettes de la Jewish Virtual Library et de l'Encyclopaedia Judaica pour chaque vague (1882 à 1939).
@@ -369,6 +403,10 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | Youssouf Diya al-Khalidi | Lettre à Zadoc Kahn, grand-rabbin de France, 1er mars 1899 (original en français), citée par Rashid Khalidi, The Hundred Years' War on Palestine, Metropolitan Books, 2020, chapitre 1 ; traduite de l'anglais |
 | Theodor Herzl | Lettre à Youssouf Diya al-Khalidi, 19 mars 1899, version anglaise publiée par PalQuest (https://www.palquest.org/en/historictext/9700/letter-theodore-herzl-yusuf-diya-uddin-al-khalidi) ; notre traduction |
 | Ahad Ha'am | « Vérité de la terre d'Israël » (Emet me-Eretz Yisrael), Hamelitz, juin 1891 ; traduction anglaise complète : Alan Dowty, « Much Ado about Little », Israel Studies, vol. 5, n° 2, 2000, p. 154-181 ; extraits : Jewish Virtual Library (https://www.jewishvirtuallibrary.org/ahad-ha-rsquo-am) ; notre traduction |
+| Edwin Montagu | « Memorandum on the Anti-Semitism of the Present Government », 23 août 1917 (Archives nationales britanniques, série CAB 24, cote exacte à vérifier) |
+| Arthur Balfour | Mémorandum du 11 août 1919, Documents on British Foreign Policy 1919-1939, première série, vol. IV, p. 345 |
+| Rabbins réformés américains | Déclaration de Pittsburgh, novembre 1885, article 5 |
+| Zeev Jabotinsky | « Le Mur de fer », Rassvet, 4 novembre 1923 ; traduction anglaise : The Jewish Herald, 26 novembre 1937 |
 | David Ben Gourion | Réunion de l'Exécutif de l'Agence juive, 12 juin 1938 (Archives sionistes centrales, S100-24B), cité par Benny Morris, The Birth of the Palestinian Refugee Problem Revisited, Cambridge University Press, 2004, p. 50 |
 | Golda Meir | Entretien avec Frank Giles, The Sunday Times, 15 juin 1969, p. 12 |
 | Mahmoud Darwich | Poème « Sur cette terre » (على هذه الأرض ما يستحق الحياة), traduit de l'arabe |
