@@ -4,7 +4,8 @@
 #   tools/build.sh generique            → output/generique.mp4 + output/generique.wav
 #   PREVIEW_DIR=/tmp tools/build.sh generique   → ajoute un aperçu < 29 Mo dans /tmp
 #
-# Variables : WORKERS (4 par défaut), BITRATE (9000k, moins pour tenir sous 95 Mo), NOTEXT=1 (version sans texte).
+# Variables : WORKERS (4 par défaut), BITRATE (9000k, moins pour tenir sous 95 Mo), NOTEXT=1 (version sans texte),
+# CRF (vidéo intermédiaire, 14 par défaut ; 17 la rend deux fois plus légère quand le disque est juste).
 set -euo pipefail
 NAME="${1:?nom de la timeline, ex. generique}"
 # NOTEXT=1 : version sans texte (output/<nom>-sans-texte.mp4), même bande-son que la version normale
@@ -17,7 +18,7 @@ cd "$ROOT"
 mkdir -p output
 
 # SHUTTER=2 : flou de bougé réel (deux sous-images par image, obturateur à 180°), rendu deux fois plus long
-node render.mjs --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf 14 $RFLAGS --out "$TMP/video.mp4"
+node render.mjs --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf "${CRF:-14}" $RFLAGS --out "$TMP/video.mp4"
 # tout se fabrique dans $TMP ; les fichiers finis ne rejoignent output/ qu'à la fin (jamais à moitié écrits)
 WAV="output/$NAME.wav"
 if [ "$OUTNAME" = "$NAME" ] || [ ! -f "output/$NAME.wav" ]; then
