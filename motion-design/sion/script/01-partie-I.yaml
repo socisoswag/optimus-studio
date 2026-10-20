@@ -419,20 +419,22 @@ chapitres:
         son: "plume sur le papier, salle silencieuse"
       - type: PHOTO
         fichier: data/archives/documents/al-khalidi-portrait.jpg
-        duree: 20
-        source: "lettre du 1er mars 1899, d'après R. Khalidi 2020 (traduite de l'anglais ; l'original est en français)"
+        duree: 25
+        source: >-
+          lettre à Zadoc Kahn, Constantinople, 1er mars 1899, texte original français : Yohanan Manor, Naissance du
+          sionisme politique, Gallimard, 1981, p. 217 et suivantes ; Henry Laurens, La Question de Palestine, t. I,
+          Fayard, 1999, p. 204 (transcription Clio-Texte, 31 octobre 2023)
         ecran: >-
-          citations, une par une : « Historiquement, c'est bien votre pays. » · « Elle est habitée par d'autres. »
-          · « Au nom de Dieu, qu'on laisse la Palestine tranquille. »
+          citations, une par une : « Mon Dieu, historiquement, c'est bien votre pays ! » · « elle est habitée par
+          d'autres que des Israélites » · « Au nom de Dieu, qu'on laisse la Palestine tranquille »
         voix: >-
-          Il écrit d'abord : / « Qui pourrait contester les droits des Juifs sur la Palestine ? / Historiquement,
-          c'est bien votre pays. » // Puis il prévient : / la Palestine fait partie de l'Empire ottoman, / « et,
-          plus grave, / elle est habitée par d'autres ». /// « Au nom de Dieu, / qu'on laisse la Palestine
-          **tranquille**. »
+          Il écrit d'abord : / « Qui peut contester les droits des Juifs sur la Palestine ? / Mon Dieu,
+          historiquement, c'est bien votre pays ! » // Puis : / « La Palestine fait maintenant partie intégrale de
+          l'Empire ottoman, / et, ce qui est plus grave, / elle est habitée par d'autres que des Israélites. » ///
+          « Au nom de Dieu, / qu'on laisse la Palestine **tranquille**. »
         note: >-
-          les deux phrases vont ensemble : couper la première ferait de lui un sioniste, couper la seconde cacherait
-          qu'il reconnaît l'histoire juive. Si on obtient l'original français (édition française du livre de
-          R. Khalidi), recaler le texte mot pour mot.
+          texte français d'origine, vérifié (Perplexity, 20 octobre). Les deux phrases vont ensemble : couper la
+          première ferait de lui un sioniste, couper la seconde cacherait qu'il reconnaît l'histoire juive.
       - type: PHOTO
         fichier: data/archives/documents/1899-lettre-herzl-al-khalidi.jpg
         duree: 16

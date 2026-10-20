@@ -292,7 +292,7 @@ Source : SOURCES.md 4.1, Adobe Stock 390879149
 
 ## Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface
 
-Film 00:08:08:19 → 00:11:22:17 · durée 3 min 13.9 s
+Film 00:08:08:19 → 00:11:27:17 · durée 3 min 18.9 s
 
 *Intention : Le chapitre clé de la partie. Montrer un pays vivant, nommé, habité ; puis l'échange de 1899 entre Youssouf Diya al-Khalidi et Herzl, chacun avec ses propres mots ; puis les premiers conflits pour la terre ; et la voix d'un sioniste lucide, Ahad Ha'am. Finir sur la guerre de 1914.*
 
@@ -346,15 +346,15 @@ Son : plume sur le papier, salle silencieuse
 Note : portrait petit (320 × 455) : le présenter en cadre, comme une photo posée sur la table, jamais plein écran
 
 
-**6.8** · film **00:09:11:24 → 00:09:31:24** (20.0 s) · **[PHOTO]** `data/archives/documents/al-khalidi-portrait.jpg`  
-Source : lettre du 1er mars 1899, d'après R. Khalidi 2020 (traduite de l'anglais ; l'original est en français)  
-À l'écran : citations, une par une : « Historiquement, c'est bien votre pays. » · « Elle est habitée par d'autres. » · « Au nom de Dieu, qu'on laisse la Palestine tranquille. »  
-> VOIX : Il écrit d'abord : / « Qui pourrait contester les droits des Juifs sur la Palestine ? / Historiquement, c'est bien votre pays. » // Puis il prévient : / la Palestine fait partie de l'Empire ottoman, / « et, plus grave, / elle est habitée par d'autres ». /// « Au nom de Dieu, / qu'on laisse la Palestine **tranquille**. »  
-(45 mots, 2.2 par seconde)  
-Note : les deux phrases vont ensemble : couper la première ferait de lui un sioniste, couper la seconde cacherait qu'il reconnaît l'histoire juive. Si on obtient l'original français (édition française du livre de R. Khalidi), recaler le texte mot pour mot.
+**6.8** · film **00:09:11:24 → 00:09:36:24** (25.0 s) · **[PHOTO]** `data/archives/documents/al-khalidi-portrait.jpg`  
+Source : lettre à Zadoc Kahn, Constantinople, 1er mars 1899, texte original français : Yohanan Manor, Naissance du sionisme politique, Gallimard, 1981, p. 217 et suivantes ; Henry Laurens, La Question de Palestine, t. I, Fayard, 1999, p. 204 (transcription Clio-Texte, 31 octobre 2023)  
+À l'écran : citations, une par une : « Mon Dieu, historiquement, c'est bien votre pays ! » · « elle est habitée par d'autres que des Israélites » · « Au nom de Dieu, qu'on laisse la Palestine tranquille »  
+> VOIX : Il écrit d'abord : / « Qui peut contester les droits des Juifs sur la Palestine ? / Mon Dieu, historiquement, c'est bien votre pays ! » // Puis : / « La Palestine fait maintenant partie intégrale de l'Empire ottoman, / et, ce qui est plus grave, / elle est habitée par d'autres que des Israélites. » /// « Au nom de Dieu, / qu'on laisse la Palestine **tranquille**. »  
+(53 mots, 2.1 par seconde)  
+Note : texte français d'origine, vérifié (Perplexity, 20 octobre). Les deux phrases vont ensemble : couper la première ferait de lui un sioniste, couper la seconde cacherait qu'il reconnaît l'histoire juive.
 
 
-**6.9** · film **00:09:31:24 → 00:09:47:24** (16.0 s) · **[PHOTO]** `data/archives/documents/1899-lettre-herzl-al-khalidi.jpg` · **À OBTENIR**  
+**6.9** · film **00:09:36:24 → 00:09:52:24** (16.0 s) · **[PHOTO]** `data/archives/documents/1899-lettre-herzl-al-khalidi.jpg` · **À OBTENIR**  
 Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)  
 À l'écran : la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »  
 > VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive. / Mais qui songerait à les **éloigner** ? » // Leur terre, promet-il, vaudra dix fois plus cher.  
@@ -362,14 +362,14 @@ Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publi
 Note : Wikimedia bloque le téléchargement depuis ce serveur : à récupérer à la main (lien dans SOURCES.md 2.4)
 
 
-**6.10** · film **00:09:47:24 → 00:10:00:24** (13.0 s) · **[PHOTO]** `portraits/herzl.png`  
+**6.10** · film **00:09:52:24 → 00:10:05:24** (13.0 s) · **[PHOTO]** `portraits/herzl.png`  
 Source : SOURCES.md 6 (journal de Herzl, 12 juin 1895) ; lettre du 19 mars 1899  
 > VOIX : Personne ne lui avait parlé de les chasser. // Et quatre ans plus tôt, dans son journal, / il envisageait de faire passer les pauvres de l'autre côté de la **frontière**.  
 (29 mots, 2.2 par seconde)  
 Note : al-Khalidi n'a jamais évoqué une expulsion : c'est Herzl qui répond à une question qu'on ne lui a pas posée (remarque de R. Khalidi, vérifiable en lisant les deux lettres). La phrase « nous trouverons ailleurs ce qu'il nous faut » (si le sultan refuse) est dans la même lettre : à garder pour une version longue.
 
 
-**6.11** · film **00:10:00:24 → 00:10:12:17** (11.7 s) · **[RÉEL]** `output/plans-reels/figuier-de-barbarie-sabr.mp4` · source 00:00:00:00 → 00:00:11:17  
+**6.11** · film **00:10:05:24 → 00:10:17:17** (11.7 s) · **[RÉEL]** `output/plans-reels/figuier-de-barbarie-sabr.mp4` · source 00:00:00:00 → 00:00:11:17  
 Source : SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé) ; faits : pétition des villageois au grand vizir, 1910, citée dans « Sursock Purchases » (Wikipedia, d'après Kristen Alff et Rashid Khalidi) ; Institut d'études palestiniennes, « 1910-1911 as a Turning Point »  
 À l'écran : carton lieu : al-Fula · plaine de Marj Ibn Amer · 1910  
 > VOIX : En 1910, un riche propriétaire de Beyrouth, / Élias Sursock, / vend dix mille dounams autour d'al-Fula au Fonds national juif. // Les paysans qui les cultivent refusent de **partir**.  
@@ -377,7 +377,7 @@ Source : SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé) ; faits : p�
 Note : 1 dounam = 1 000 m² : 10 000 dounams = 10 km². Le vendeur est arabe : le dire, c'est un fait.
 
 
-**6.12** · film **00:10:12:17 → 00:10:25:17** (13.0 s) · **[PHOTO]** `data/archives/05530.jpg`  
+**6.12** · film **00:10:17:17 → 00:10:30:17** (13.0 s) · **[PHOTO]** `data/archives/05530.jpg`  
 Source : SOURCES.md 2.2, Bibliothèque du Congrès, collection Matson, LC-DIG-matpc-05530 (« Plain of Esdraelon, telephoto from Nazareth », vers 1900-1920, domaine public) ; faits : mêmes sources que le plan précédent  
 À l'écran : carton : Nazareth et la plaine · vers 1900-1920 · photo de la colonie américaine (Matson)  
 > VOIX : Ils écrivent à Istanbul : / la vente prive mille villageois de leur **pain**. // Le sous-préfet de Nazareth refuse de la signer. / En vain : / en 1911, la colonie de Merhavia s'installe.  
@@ -385,7 +385,7 @@ Source : SOURCES.md 2.2, Bibliothèque du Congrès, collection Matson, LC-DIG-ma
 Note : « mille villageois » : chiffre de leur pétition (le dire comme tel). Ne pas dire « tués » ni « massacre » : ce sont des expulsions et des heurts, pas plus.
 
 
-**6.13** · film **00:10:25:17 → 00:10:36:17** (11.0 s) · **[PHOTO]** `à télécharger : une du journal Filastin, Jaffa, 1911 (Bibliothèque nationale d'Israël, collection Jrayed)` · **À OBTENIR**  
+**6.13** · film **00:10:30:17 → 00:10:41:17** (11.0 s) · **[PHOTO]** `à télécharger : une du journal Filastin, Jaffa, 1911 (Bibliothèque nationale d'Israël, collection Jrayed)` · **À OBTENIR**  
 Source : Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers/falastin (premier numéro : janvier 1911) ; al-Karmil, Haïfa, fondé en 1908 par Najib Nassar  
 À l'écran : à défaut : le bandeau du journal (Wikimedia Commons, « Falastin newspaper's masthead »)  
 > VOIX : À Haïfa, le journal al-Karmil fait campagne contre ces ventes. / À Jaffa, en 1911, naît un journal au nom qui dit tout : / **Filastin**. / Palestine.  
@@ -393,14 +393,14 @@ Source : Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers
 Note : premier numéro de Filastin : 14 ou 15 janvier 1911 selon les sources ; dire seulement « en 1911 »
 
 
-**6.14** · film **00:10:36:17 → 00:10:51:17** (15.0 s) · **[PHOTO]** `data/archives/documents/ahad-haam-portrait.jpg`  
+**6.14** · film **00:10:41:17 → 00:10:56:17** (15.0 s) · **[PHOTO]** `data/archives/documents/ahad-haam-portrait.jpg`  
 Source : Ahad Ha'am, « Vérité de la terre d'Israël » (Emet me-Eretz Yisrael), Hamelitz, juin 1891 ; traduction anglaise complète : Alan Dowty, Israel Studies, vol. 5, n° 2, 2000, p. 154-181 ; extraits : Jewish Virtual Library ; notre traduction  
 À l'écran : « Mais ce n'est pas vrai. » · Ahad Ha'am, 1891  
 > VOIX : Même chez les sionistes, certains voient venir le conflit. / En 1891, le penseur Ahad Ha'am écrit : / « Nous croyons, à l'étranger, que la terre d'Israël est presque toute déserte. / Mais ce n'est pas **vrai**. »  
 (33 mots, 2.2 par seconde)
 
 
-**6.15** · film **00:10:51:17 → 00:11:06:17** (15.0 s) · **[PHOTO]** `data/archives/documents/ahad-haam-portrait.jpg`  
+**6.15** · film **00:10:56:17 → 00:11:11:17** (15.0 s) · **[PHOTO]** `data/archives/documents/ahad-haam-portrait.jpg`  
 Source : même texte (Dowty 2000) ; la phrase sur la cruauté est aussi citée par la Jewish Virtual Library  
 À l'écran : « avec hostilité et cruauté »  
 > VOIX : Il décrit des colons qui traitent les Arabes / « avec hostilité et cruauté », / et qui « s'en vantent ». // Et il prévient : / le jour où nous prendrons leur place, / ils ne s'écarteront pas si **facilement**.  
@@ -408,7 +408,7 @@ Source : même texte (Dowty 2000) ; la phrase sur la cruauté est aussi citée p
 Note : la Jewish Virtual Library est un site pro-israélien : la citer rend la phrase inattaquable. Pagination exacte dans Dowty à relever si on obtient l'article (accès Project MUSE).
 
 
-**6.16** · film **00:11:06:17 → 00:11:22:17** (16.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:10:00 → 00:00:26:00  
+**6.16** · film **00:11:11:17 → 00:11:27:17** (16.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:10:00 → 00:00:26:00  
 Source : SOURCES.md 4.1, Adobe Stock 609005799  
 > VOIX : En 1914, la guerre éclate. / L'Empire ottoman va s'effondrer, / et trois promesses contradictoires vont être faites sur la même **terre**. ///  
 (20 mots, 1.2 par seconde)  
@@ -416,4 +416,4 @@ Son : la nuit tombe sur la ville ; montée lente vers l'ouverture de la partie I
 
 
 ---
-Durée de la partie : 9 min 32.4 s (film 00:01:50:07 → 00:11:22:17)
+Durée de la partie : 9 min 37.4 s (film 00:01:50:07 → 00:11:27:17)

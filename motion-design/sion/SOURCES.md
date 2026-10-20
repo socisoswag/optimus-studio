@@ -327,8 +327,9 @@ Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans s
   l'État de tous ses citoyens ») ; discours du 28 octobre 2023 (Amalek, Deutéronome 25, 17) ; conférence de
   presse du 18 janvier 2024 ; déclaration du 21 septembre 2025 (« j'ai empêché la création de cet État terroriste »).
 - Loi fondamentale : Israël, État-nation du peuple juif, 19 juillet 2018 (articles 1 et 4).
-- Avigdor Lieberman : réunion électorale d'Herzliya, 8 mars 2015 (Haaretz, NBC News ; plainte d'Adalah, refus
-  du parquet le 25 mai 2015).
+- Avigdor Lieberman : entretien avec Oudi Segal, congrès « Démocratie électorale 2015 », Centre interdisciplinaire
+  d'Herzliya, 8 mars 2015 ; texte hébreu publié le jour même par N12 / Mako ; plainte d'Adalah, refus du parquet
+  le 25 mai 2015.
 - Yoav Gallant, 9 octobre 2023 (« animaux humains »), cité par la Cour internationale de justice.
 - 7 octobre 2023 : environ 1 200 morts en Israël, dont une majorité de civils ; 251 otages ; rapport de la
   représentante spéciale de l'ONU sur les violences sexuelles en conflit, 4 mars 2024.
@@ -341,7 +342,8 @@ Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans s
 - Bezalel Smotrich : 1er mars 2023 (Huwara) ; 5 août 2024 (CNN, 6 août 2024).
 - Meta, rapports sur les réseaux de comportement inauthentique coordonné, 2023-2024.
 - Black Panthers israéliens, 1971 ; commission Kedmi (2001) et indemnisation de février 2021 ; directive du
-  ministère de la Santé, janvier 2013 (Haaretz, 27 janvier 2013) ; octobre 2000 : 13 citoyens arabes tués (commission
+  ministère de la Santé, janvier 2013 (Haaretz, 27 janvier 2013) ; Golda Meir, 19 mai 1971 (Maariv, d'après Avi Picard,
+  université Bar-Ilan, 19 mai 2021) ; octobre 2000 : 13 citoyens arabes tués (commission
   Or, 2003) ; Ra'am au gouvernement (2021-2022) ; Khaled Kabub, juge à la Cour suprême depuis 2022.
 
 **Parties VI et VII, conclusion** (chapitres 29 à 39, script)
@@ -352,11 +354,15 @@ Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans s
   d'Israël, arrêt du 25 juin 2024 (conscription).
 - Bernard-Henri Lévy : colloque « Democracy and its Challenges », Tel-Aviv, mai 2010 ; Le Figaro, 18 mars 2024 ;
   The Wall Street Journal, 25 septembre 2025.
-- Alain Finkielkraut : Haaretz, novembre 2005 (et ses excuses) ; textes de 2024 (Le Figaro) et 2025 (Le Monde) À
-  CONFIRMER dans l'original avant l'enregistrement.
-- Edgar Morin, Sami Naïr, Danièle Sallenave, Le Monde, 4 juin 2002 ; condamnation en appel (2005) cassée en 2006.
-- Yehuda Elkana, Haaretz, 2 mars 1988 ; Primo Levi, entretien avec Filippo Gentiloni, 1982 (Carole Angier, The Double
-  Bond, 2002) ; Idith Zertal, Israel's Holocaust and the Politics of Nationhood, 2005.
+- Alain Finkielkraut : Haaretz, novembre 2005 (et ses excuses) ; vidéo du Figaro, 25 octobre 2024 (« le mot de
+  génocide est fou, ignoble ») ; propos rapportés par Louise Couvelaire, Le Monde, 12 mai 2025 (« une guerre
+  atroce »). Aucune tribune de Finkielkraut sur des « crimes de guerre » n'a été trouvée : ne pas l'attribuer.
+- Edgar Morin, Sami Naïr, Danièle Sallenave, Le Monde, 4 juin 2002 ; cour d'appel de Versailles, 26 mai 2005
+  (procédure civile) ; Cour de cassation, 1re chambre civile, 12 juillet 2006, pourvoi n° 05-17.704, sans renvoi.
+- Yehuda Elkana, Haaretz, 2 mars 1988 ; Primo Levi, Se non ora, quando ?, Einaudi, 1982, p. 187, et entretien avec
+  Giampaolo Pansa, La Repubblica, 24 septembre 1982 (la phrase sur les Palestiniens est du critique Filippo
+  Gentiloni, il manifesto, 29 juin 1982 : Domenico Scarpa et Irene Soave, Il Sole 24 Ore, 8 avril 2012) ; Idith
+  Zertal, Israel's Holocaust and the Politics of Nationhood, 2005.
 - Benyamin Netanyahou au 37e congrès sioniste, 20 octobre 2015, et réponse de Steffen Seibert, 21 octobre 2015.
 - Conférence de Téhéran, 11-12 décembre 2006 ; discours de Mahmoud Abbas, août 2023, et lettre ouverte d'universitaires
   palestiniens, septembre 2023.
@@ -478,10 +484,10 @@ Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans s
 |---|---|
 | Theodor Herzl | Journal, 12 juin 1895 (Paris). The Complete Diaries of Theodor Herzl, éd. R. Patai, 1960, vol. 1, p. 88 |
 | Theodor Herzl | Journal, 3 septembre 1897 (« In Basel habe ich den Judenstaat gegründet... ») ; notre traduction de l'allemand |
-| Youssouf Diya al-Khalidi | Lettre à Zadoc Kahn, grand-rabbin de France, 1er mars 1899 (original en français), citée par Rashid Khalidi, The Hundred Years' War on Palestine, Metropolitan Books, 2020, chapitre 1 ; traduite de l'anglais |
+| Youssouf Diya al-Khalidi | Lettre à Zadoc Kahn, Constantinople, 1er mars 1899, texte original français : Yohanan Manor, Naissance du sionisme politique, Gallimard, 1981, p. 217 et suivantes ; Henry Laurens, La Question de Palestine, t. I, Fayard, 1999, p. 204 (transcription Clio-Texte, 31 octobre 2023) ; voir aussi Rashid Khalidi, The Hundred Years' War on Palestine, 2020, chapitre 1 |
 | Theodor Herzl | Lettre à Youssouf Diya al-Khalidi, 19 mars 1899, version anglaise publiée par PalQuest (https://www.palquest.org/en/historictext/9700/letter-theodore-herzl-yusuf-diya-uddin-al-khalidi) ; notre traduction |
 | Ahad Ha'am | « Vérité de la terre d'Israël » (Emet me-Eretz Yisrael), Hamelitz, juin 1891 ; traduction anglaise complète : Alan Dowty, « Much Ado about Little », Israel Studies, vol. 5, n° 2, 2000, p. 154-181 ; extraits : Jewish Virtual Library (https://www.jewishvirtuallibrary.org/ahad-ha-rsquo-am) ; notre traduction |
-| Edwin Montagu | « Memorandum on the Anti-Semitism of the Present Government », 23 août 1917 (Archives nationales britanniques, série CAB 24, cote exacte à vérifier) |
+| Edwin Montagu | « Memorandum on the Anti-Semitism of the Present Government », 23 août 1917 mémorandum G.T. 1868, The National Archives, Kew, CAB 24/24/71 |
 | Arthur Balfour | Mémorandum du 11 août 1919, Documents on British Foreign Policy 1919-1939, première série, vol. IV, p. 345 |
 | Rabbins réformés américains | Déclaration de Pittsburgh, novembre 1885, article 5 |
 | Zeev Jabotinsky | « Le Mur de fer », Rassvet, 4 novembre 1923 ; traduction anglaise : The Jewish Herald, 26 novembre 1937 |

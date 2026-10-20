@@ -40,13 +40,17 @@ chapitres:
           En 1988, Yehuda Elkana, philosophe, déporté enfant à Auschwitz, écrit dans Haaretz : / il ne voit pas de plus
           grande menace pour l'avenir d'Israël / que d'avoir fait de la Shoah l'axe de la conscience **nationale**.
       - type: NOIR
-        duree: 21
-        source: "entretien de Primo Levi avec Filippo Gentiloni, 1982 (d'après Carole Angier, The Double Bond, 2002)"
+        duree: 17
+        source: >-
+          Primo Levi, Se non ora, quando ?, Einaudi, 1982, p. 187 (réplique de Mendel) ; Giampaolo Pansa, « Io, Primo
+          Levi, chiedo le dimissioni di Begin », La Repubblica, 24 septembre 1982
         voix: >-
-          En 1982, après Sabra et Chatila, Primo Levi, survivant d'Auschwitz, dit à un journaliste italien : / « Chacun
-          est le Juif de quelqu'un. » // Le journaliste ajoute : les Palestiniens sont aujourd'hui les Juifs des
-          Israéliens. / Levi précisera qu'il ne parlait pas d'**extermination**.
-        note: "la seconde phrase est du journaliste, pas de Levi : la voix le dit, ne jamais la lui attribuer"
+          Primo Levi, survivant d'Auschwitz, fait dire à un personnage de son roman de 1982 : / « Chacun est le Juif
+          de quelqu'un. » // Après Sabra et Chatila, il demande la démission de Menahem **Begin**.
+        note: >-
+          vérifié (Perplexity, 20 octobre) : la phrase « aujourd'hui les Palestiniens sont les Juifs des Israéliens »
+          est du critique Filippo Gentiloni (il manifesto, 29 juin 1982), jamais de Levi. Ne
+          jamais la lui attribuer.
       - type: PHOTO
         fichier: portraits/netanyahou.png
         duree: 17

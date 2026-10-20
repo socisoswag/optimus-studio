@@ -160,20 +160,36 @@ chapitres:
           **traduit**.
       - type: PHOTO
         fichier: portraits/finkielkraut.png
-        duree: 11
-        source: "à confirmer mot pour mot : sa tribune du Monde en 2025 (« Israël commet bien des crimes de guerre à Gaza », d'après Orient XXI) ; refus du mot génocide (Le Figaro, 2024, d'après Politis)"
-        note: "À CONFIRMER avant enregistrement : retrouver les deux textes originaux (Perplexity ou archives du Monde et du Figaro)"
+        duree: 16
+        source: "vidéo du Figaro, 25 octobre 2024 (texte de la page)"
         voix: >-
-          Sur Gaza, il refuse le mot de génocide. / Mais en 2025, il écrit qu'Israël y commet des crimes de
-          **guerre**.
+          Sur Gaza, en octobre 2024, dans Le Figaro : / « Quoi qu'on pense de la riposte israélienne, / le mot de
+          génocide est fou, ignoble. / Il permet de nazifier les Juifs, / de leur faire perdre leur crédit victimaire.
+          »
+        note: "la fin de sa phrase (« et ainsi les faire basculer dans le camp des bourreaux ») peut s'ajouter si le plan s'allonge"
+      - type: PHOTO
+        fichier: portraits/finkielkraut.png
+        duree: 13
+        source: "Louise Couvelaire, « Guerre à Gaza : des personnalités de la communauté juive française prennent position pour dénoncer la situation », Le Monde, 12 mai 2025"
+        voix: >-
+          Mais en mai 2025, il dit au Monde que le gouvernement Netanyahou / « mène une guerre atroce », / et
+          « sacrifie délibérément les **otages** ».
+        note: >-
+          la « tribune sur les crimes de guerre » évoquée par Orient XXI n'existe pas : ne jamais l'attribuer. Ces
+          phrases-là sont vérifiées (Perplexity, 20 octobre).
       - type: PHOTO
         fichier: "à télécharger : portrait d'Edgar Morin (licence libre, Wikimedia Commons)"
         duree: 15
         a_obtenir: true
-        source: "Edgar Morin, Sami Naïr, Danièle Sallenave, « Israël-Palestine : le cancer », Le Monde, 4 juin 2002 ; condamnation en appel en 2005, cassée par la Cour de cassation en 2006"
+        source: >-
+          Edgar Morin, Sami Naïr, Danièle Sallenave, « Israël-Palestine : le cancer », Le Monde, 4 juin 2002 ; cour
+          d'appel de Versailles, 26 mai 2005 ; Cour de cassation, 1re chambre civile, 12 juillet 2006, pourvoi
+          n° 05-17.704 (cassation sans renvoi)
         voix: >-
           D'autres voix juives disent l'inverse. / En 2002, Edgar Morin dénonce dans Le Monde le sort des Palestiniens.
-          / Poursuivi pour diffamation raciale, / il est finalement **relaxé**.
+          / Une cour d'appel y voit une diffamation raciale ; / en 2006, la Cour de cassation annule cette
+          **décision**.
+        note: "procédure civile : ne pas dire « condamné » ni « relaxé »"
       - type: NOIR
         duree: 9
         voix: >-

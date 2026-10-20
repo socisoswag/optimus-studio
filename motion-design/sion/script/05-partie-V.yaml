@@ -65,13 +65,20 @@ chapitres:
           Avigdor Lieberman, ministre des Affaires étrangères puis de la **Défense**.
       - type: PHOTO
         fichier: portraits/lieberman.png
-        duree: 15
+        duree: 24
         source: >-
-          réunion électorale au Centre interdisciplinaire d'Herzliya, 8 mars 2015 (rapportée par Haaretz, NBC News,
-          Adalah) ; le parquet refuse d'ouvrir une enquête le 25 mai 2015 ; notre traduction
+          entretien avec Oudi Segal, congrès « Démocratie électorale 2015 », Centre interdisciplinaire d'Herzliya,
+          8 mars 2015 ; texte hébreu publié le jour même par N12 / Mako ; le parquet refuse d'ouvrir une enquête le
+          25 mai 2015 (Adalah) ; notre traduction
+        ecran: "« Celui qui est contre nous, il n'y a rien à faire : il faut lever une hache et lui couper la tête »"
         voix: >-
-          En 2015, à propos des citoyens arabes jugés déloyaux : / « Ceux qui sont contre nous, / il faut lever la
-          hache et leur couper la tête. » // Le parquet refuse d'ouvrir une **enquête**.
+          En mars 2015, à propos des citoyens arabes d'Israël : / « Celui qui est avec nous doit tout recevoir, /
+          jusqu'à la moitié du royaume. / Celui qui est contre nous, il n'y a rien à faire : / il faut lever une hache,
+          et lui couper la tête. / Sinon, nous ne survivrons pas ici. » // Le parquet refuse d'ouvrir une
+          **enquête**.
+        note: >-
+          texte vérifié sur la source hébraïque du jour (Perplexity, 20 octobre) : singulier, phrase entière, sans
+          rien couper. « Les citoyens arabes » est le contexte donné par N12, hors des guillemets.
       - type: PHOTO
         fichier: portraits/netanyahou.png
         duree: 14
@@ -332,12 +339,15 @@ chapitres:
         sortie: 4.6
       - type: PHOTO
         fichier: "à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)"
-        duree: 15
+        duree: 17
         a_obtenir: true
-        source: "Black Panthers israéliens, fondés en 1971 à Moussrara, Jérusalem ; propos de Golda Meir (« pas gentils ») rapportés par la presse, avril 1971, à vérifier"
+        source: >-
+          Black Panthers israéliens, fondés en 1971 à Moussrara, Jérusalem ; Golda Meir, 19 mai 1971, au lendemain de
+          la manifestation violente du 18 mai, rapporté par Maariv (Avi Picard, université Bar-Ilan, 19 mai 2021)
         voix: >-
           Les Juifs venus des pays arabes, les mizrahim, se heurtent à une élite venue d'Europe. / En 1971, des jeunes de
-          Jérusalem fondent les Black Panthers. / Golda Meir les juge « pas **gentils** ».
+          Jérusalem fondent les Black Panthers. / Après une manifestation violente, Golda Meir lance : / « Ce ne sont
+          pas des garçons **gentils**. »
       - type: PHOTO
         fichier: "à télécharger : immigrants yéménites, camp de Rosh HaAyin, vers 1950 (GPO, domaine public)"
         duree: 16

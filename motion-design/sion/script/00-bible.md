@@ -136,20 +136,12 @@ une réponse sans source primaire ne sert pas.
 7. ~~Neturei Karta et Jewish Voice for Peace~~ **fait**.
 8. ~~Discriminations~~ **fait** (commission Kedmi, directive de 2013, commission Or).
 
-**Encore à vérifier avant l'enregistrement de la voix (questions pour Perplexity, à poser telles quelles) :**
+**Vérifié par Perplexity le 20 octobre (dossier intégré au script)** : Lieberman (texte hébreu du jour, N12),
+Finkielkraut (Le Figaro 2024, Le Monde 2025 ; la « tribune sur les crimes de guerre » n'existe pas), al-Khalidi
+(texte français d'origine), Golda Meir (19 mai 1971, Maariv), Primo Levi (phrase de roman ; la phrase sur les
+Palestiniens est d'un critique), Edgar Morin (procédure civile, cassation sans renvoi en 2006), Montagu
+(CAB 24/24/71), Google Earth Studio (permis sur YouTube monétisé, avec la mention générée à l'écran pendant tout le
+plan).
 
-9. Alain Finkielkraut et Gaza : le texte exact (date, journal, phrase entière) où il refuse le mot « génocide »
-   (Le Figaro, 2024, cité par Politis le 29 octobre 2024), et sa tribune du Monde de 2025 où il écrit qu'Israël
-   commet des crimes de guerre à Gaza (titre exact, date, phrase clé).
-10. Lettre de Youssouf Diya al-Khalidi du 1er mars 1899 : le texte français original des phrases « historiquement,
-    c'est bien votre pays », « habitée par d'autres » et « au nom de Dieu, qu'on laisse la Palestine tranquille ».
-11. Golda Meir et les Black Panthers israéliens (1971) : la phrase exacte (« ils ne sont pas gentils ») et sa source.
-12. Edwin Montagu, mémorandum du 23 août 1917 : la cote exacte aux Archives nationales britanniques (série CAB 24).
-13. Avigdor Lieberman, 8 mars 2015 : la phrase exacte de la hache en hébreu, sa traduction, la source d'origine
-    (vidéo ou article du jour : Haaretz, Ynet, The Times of Israel) et le lieu précis.
-14. Primo Levi, 1982 : l'entretien où il dit « chacun est le Juif de quelqu'un » (journal, date, phrase en italien,
-    et la phrase exacte du journaliste sur les Palestiniens).
-15. Edgar Morin, « Israël-Palestine : le cancer » (Le Monde, 4 juin 2002) : dates exactes de la condamnation en appel
-    et de l'arrêt de la Cour de cassation.
-16. Google Earth Studio : conditions d'utilisation pour un documentaire publié sur YouTube et monétisé (est-ce permis,
-    et quelle mention exacte doit rester à l'écran).
+**Reste à contrôler au niveau primaire, sans bloquer l'enregistrement** : le numéro de Maariv sur Golda Meir, le
+fac-similé du manifesto de 1982, la notice complète CAB 24/24/71.
