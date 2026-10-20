@@ -3,7 +3,8 @@
  *
  * L'espace et la mer sont en 3D ; la terre est filmée pour de vrai :
  *   1. la nuit sur la Méditerranée vue de l'espace, puis la plongée jusqu'au large de Jaffa (3D) ;
- *   2. l'arrivée par la mer, face au soleil qui se lève sur les collines (3D) ;
+ *   2. la sortie des nuages au-dessus de la mer, face au soleil qui se lève (3D) ;
+ *   2 bis. Jaffa, la vieille ville et le port (vrai plan, Adobe Stock 390879149), après un fondu ;
  *   3. le désert de Judée, le ouadi Qelt et le monastère Saint-Georges (vrai plan, Adobe Stock 593067850) ;
  *   4. la mer Morte vue du ciel, l'altimètre à -430 m, le titre (vrai plan, Adobe Stock 198345828).
  * Les plans 3 et 4 (« plate ») ne sont pas calculés en 3D : la page n'en rend que les textes, sur fond transparent
@@ -36,7 +37,7 @@
     sun: [3.0, 2.2, 1.6], bloomThr: 1.6, flare: 0.6, tint: 0.15 };
   root.INTRO = {
     name: 'intro-aerienne',
-    total: 73.68,
+    total: 77.28,
     fov: 38,
     fadeStart: 1.2,
     fadeIn: 2.6,
@@ -46,9 +47,9 @@
     fx: {
       letterbox: 2.39, streak: 0.35,
       cuts: [
-        { t: 35, type: 'whip', dir: 1 },
-        { t: 53.12, type: 'flash', col: [1, 0.86, 0.7], pre: 0.14, dur: 0.45 },
-        { t: 59.6, type: 'flash', col: [1, 0.55, 0.25], k: 0.28, pre: 0.05, dur: 0.5 },
+        { t: 28.6, type: 'fondu', dur: 0.8 },
+        { t: 56.72, type: 'flash', col: [1, 0.86, 0.7], pre: 0.14, dur: 0.45 },
+        { t: 63.2, type: 'flash', col: [1, 0.55, 0.25], k: 0.28, pre: 0.05, dur: 0.5 },
       ],
       shakes: [[16.8, 2.2, 1.4], [18.9, 3.2, 1.1], [20.6, 4.5, 0.9]],
     },
@@ -76,7 +77,7 @@
         ],
       },
       {
-        id: 'cote', t0: 23, t1: 35, ramp: [[0, 1.9], [1.6, 0.95], [10.6, 0.95], [12, 1.8]], cloudPass: [[0, 1], [0.35, 1], [1.7, 0]], light: 'cote', detail: 'cote', sun: [101, 3.2], env: dawn,
+        id: 'cote', t0: 23, t1: 28.6, ramp: [[0, 1.9], [1.6, 0.95], [10.6, 0.95], [12, 1.8]], cloudPass: [[0, 1], [0.35, 1], [1.7, 0]], light: 'cote', detail: 'cote', sun: [101, 3.2], env: dawn,
         label: { at: 3.2, eyebrow: '32°02′ N · 34°41′ E', place: 'Mer Méditerranée', sub: 'Au large de Jaffa' },
         pins: [{ name: 'Jaffa', lon: 34.7525, lat: 32.0540, at: 5.4, out: 10.6, h: 40 }],
         keys: [
@@ -86,8 +87,18 @@
         ],
       },
       {
+        // vrai plan : Jaffa, le clocher, la vieille ville et le port ; on y arrive par un fondu depuis la mer en 3D
+        id: 'jaffa', t0: 28.6, t1: 38.6, plate: { src: 'output/plans-reels/jaffa-clocher-vieille-ville-aerien.mp4', stock: '390879149' },
+        light: 'cote', detail: 'cote', sun: [101, 3.2], env: dawn,
+        label: { at: 1.4, eyebrow: '32°03′ N · 34°45′ E', place: 'Jaffa', sub: 'La vieille ville, face à la Méditerranée' },
+        keys: [
+          { t: 0, lon: 34.668, lat: 32.031, alt: 640, hdg: 90, pitch: -5.5 },
+          { t: 10, lon: 34.689, lat: 32.026, alt: 540, hdg: 88.6, pitch: -4.4 },
+        ],
+      },
+      {
         // vrai plan : le ouadi Qelt, entre Jérusalem et Jéricho (Cisjordanie)
-        id: 'desert', t0: 35, t1: 53.12, plate: { src: 'output/plans-reels/desert-judee-ouadi-qelt-saint-georges.mp4', stock: '593067850' },
+        id: 'desert', t0: 38.6, t1: 56.72, plate: { src: 'output/plans-reels/desert-judee-ouadi-qelt-saint-georges.mp4', stock: '593067850' },
         light: 'desert', detail: 'desert', sun: [114, 17], env: desert,
         label: { at: 2.2, eyebrow: '31°51′ N · 35°25′ E', place: 'Désert de Judée', sub: 'Le ouadi Qelt, entre Jérusalem et Jéricho' },
         keys: [
@@ -97,7 +108,7 @@
       },
       {
         // vrai plan : la mer Morte vue du ciel, le point le plus bas de la Terre, puis le titre
-        id: 'titre', t0: 53.12, t1: 73.68, plate: { src: 'output/plans-reels/mer-morte-aerien.mp4', stock: '198345828' },
+        id: 'titre', t0: 56.72, t1: 77.28, plate: { src: 'output/plans-reels/mer-morte-aerien.mp4', stock: '198345828' },
         light: 'titre', detail: 'desert', sun: [118, 14], env: title,
         gauge: { at: 0.6, dur: 3.0, from: 150, to: -430, out: 5.4, k: 'Altitude du sol', done: 'Le point le plus bas de la Terre' },
         keys: [
@@ -106,8 +117,8 @@
         ],
       },
     ],
-    title: { at: 59.6, out: 71.0, word: 'SION', scripts: ['ציון', 'صهيون'], sub: 'L’idée, la terre, le choc' },
-    sound: { space: [0, 15], sunrise: 6.4, entry: [12, 22.8], surf: [23, 35.6], reveal: 53.3, titleSilence: 0.7,
-      whips: [[35, 1]], risers: [[51.5, 53.12]], impacts: [[53.12, 1]] }, // ressac sous le plan de la mer, grondement quand la mer Morte apparaît
+    title: { at: 63.2, out: 74.6, word: 'SION', scripts: ['ציון', 'صهيون'], sub: 'L’idée, la terre, le choc' },
+    sound: { space: [0, 15], sunrise: 6.4, entry: [12, 22.8], surf: [23, 39.2], reveal: 56.9, titleSilence: 0.7,
+      whips: [[38.6, 1]], risers: [[55.1, 56.72]], impacts: [[56.72, 1]] }, // ressac sous le plan de la mer, grondement quand la mer Morte apparaît
   };
 })(typeof window !== 'undefined' ? window : globalThis);

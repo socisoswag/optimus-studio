@@ -8,19 +8,22 @@
 #                                 plan « plate » de la timeline) ;
 #   les vrais plans conformés     tools/plans_reels.sh (chemins dans timelines/intro-aerienne.js, shots[].plate.src).
 # La page 3D rend seulement les textes des plans réels (lieux, altimètre, titre) sur fond transparent ; ils sont posés
-# sur les vrais plans, réchauffés pour raccorder avec l'aube de la 3D, avec le filé d'entrée, les éclairs et les bandes.
+# sur les vrais plans, réchauffés pour raccorder avec l'aube de la 3D. Passage 3D → réel : un fondu de 0,8 s ; entre
+# deux vrais plans : un filé (souffle de la bande-son) puis l'éclair de la mer Morte ; bandes cinéma partout.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 node -e "require('./timelines/intro-aerienne.js'); console.log(JSON.stringify(globalThis.INTRO))" > "$TMP/intro.json"
-read -r T0 TOTAL CUT2 TITLE PLATES < <(python3 - "$TMP/intro.json" <<'EOF'
+read -r T0 TOTAL CUT2 TITLE WHIP PLATES < <(python3 - "$TMP/intro.json" <<'EOF'
 import json, sys
 I = json.load(open(sys.argv[1]))
 p = [s for s in I["shots"] if s.get("plate")]
 flash = [c["t"] for c in I["fx"]["cuts"] if c["type"] == "flash"]
-print(p[0]["t0"], I["total"], flash[0], flash[1], ",".join(s["plate"]["src"] + ":" + str(s["t1"] - s["t0"]) for s in p))
+whip = p[1]["t0"] - p[0]["t0"] if len(p) > 1 else 0   # filé à l'entrée du deuxième vrai plan
+print(p[0]["t0"], I["total"], flash[0], flash[1], round(whip, 3),
+      ",".join(s["plate"]["src"] + ":" + str(round(s["t1"] - s["t0"], 3)) for s in p))
 EOF
 )
 [ -f output/intro-aerienne-3d.mp4 ] || { echo "output/intro-aerienne-3d.mp4 manque" >&2; exit 1; }
@@ -39,20 +42,27 @@ for e in "${PL[@]}"; do
   FC+="[$((k + 2)):v]trim=0:$d,setpts=PTS-STARTPTS,colorbalance=rs=0.05:bs=-0.06:rm=0.06:gm=0.01:bm=-0.06:rh=0.04:bh=-0.05,eq=saturation=1.05[p$k];"
   k=$((k + 1))
 done
-PLATE_D=$(python3 -c "print(round($TOTAL - $T0, 3))")
-C2=$(python3 -c "print(round($CUT2 - $T0, 3))"); CT=$(python3 -c "print(round($TITLE - $T0, 3))")
-FO=$(python3 -c "print(round($TOTAL - $T0 - 1.6, 3))")
-# filé d'entrée : flou horizontal qui retombe en 0,32 s, comme la sortie du plan 3D
-printf '0.00 dblur radius 70;\n0.04 dblur radius 52;\n0.08 dblur radius 36;\n0.12 dblur radius 24;\n0.16 dblur radius 14;\n0.20 dblur radius 7;\n0.24 dblur radius 3;\n0.28 dblur radius 1;\n0.32 dblur radius 0.01;\n' > "$TMP/file.cmd"
-FC+="$(for j in $(seq 0 $((k - 1))); do printf '[p%d]' "$j"; done)concat=n=$k:v=1:a=0,format=yuv420p,sendcmd=f=$TMP/file.cmd,dblur=angle=0:radius=70:enable='lt(t,0.34)'[pl];"
+r(){ python3 -c "print(round($1, 3))"; }
+PLATE_D=$(r "$TOTAL - $T0"); C2=$(r "$CUT2 - $T0"); CT=$(r "$TITLE - $T0"); FO=$(r "$TOTAL - $T0 - 1.6")
+# filé : flou horizontal qui retombe en 0,32 s à l'entrée du deuxième vrai plan
+W=$WHIP
+python3 -c "
+w = $W
+print(''.join(f'{w + 0.04 * i:.2f} dblur radius {r};\\n' for i, r in enumerate([70, 52, 36, 24, 14, 7, 3, 1, 0.01])))" > "$TMP/file.cmd"
+FC+="$(for j in $(seq 0 $((k - 1))); do printf '[p%d]' "$j"; done)concat=n=$k:v=1:a=0,format=yuv420p,sendcmd=f=$TMP/file.cmd,dblur=angle=0:radius=0.01:enable='between(t,$W,$(r "$W + 0.34"))'[pl];"
 # éclairs : coupe vers la mer Morte (chaud, net) et arrivée du titre (braise, léger)
 FC+="color=c=0xFFDBB3:s=1920x1080:r=25:d=0.6,format=rgba,fade=t=in:st=0:d=0.14:alpha=1,fade=t=out:st=0.14:d=0.45:alpha=1,setpts=PTS-STARTPTS+($C2-0.14)/TB[f1];"
 FC+="color=c=0xFF8C40@0.28:s=1920x1080:r=25:d=0.56,format=rgba,fade=t=in:st=0:d=0.05:alpha=1,fade=t=out:st=0.05:d=0.5:alpha=1,setpts=PTS-STARTPTS+($CT-0.05)/TB[f2];"
 FC+="[pl][f1]overlay=eof_action=pass[x1];[x1][f2]overlay=eof_action=pass[x2];"
 FC+="[1:v]setpts=PTS-STARTPTS[tx];[x2][tx]overlay=0:0:eof_action=pass,noise=c0s=3:c0f=t+u:c1s=0:c2s=0,"
 FC+="drawbox=x=0:y=0:w=1920:h=138:color=black:t=fill,drawbox=x=0:y=942:w=1920:h=138:color=black:t=fill,"
-FC+="fade=t=out:st=$FO:d=1.6,trim=0:$PLATE_D,setpts=PTS-STARTPTS,format=yuv420p,setsar=1[reel];"
-FC+="[0:v]trim=0:$T0,setpts=PTS-STARTPTS,format=yuv420p,setsar=1[d3];[d3][reel]concat=n=2:v=1:a=0[v]"
+FC+="fade=t=out:st=$FO:d=1.6,trim=0:$PLATE_D,setpts=PTS-STARTPTS,format=yuv420p,setsar=1,"
+# fondu 3D → réel centré sur T0 : 0,4 s d'image figée devant le vrai plan pour garder la synchronisation
+FC+="tpad=start_duration=0.4:start_mode=clone,fps=25,settb=AVTB[reel];"
+# ciel de la mer en 3D : le haut assombri en dégradé, comme un filtre gradué de chef opérateur
+FC+="[0:v]trim=0:$(r "$T0 + 0.4"),setpts=PTS-STARTPTS,format=yuv444p,"
+FC+="geq=lum='lum(X,Y)*(1-0.32*pow(clip(1-(Y-138)/(H*0.36),0,1),1.5))':cb='cb(X,Y)':cr='cr(X,Y)':enable='gte(t,23)',"
+FC+="format=yuv420p,setsar=1,fps=25,settb=AVTB[d3];[d3][reel]xfade=transition=fade:duration=0.8:offset=$(r "$T0 - 0.4"),format=yuv420p[v]"
 
 AUTO=$(python3 -c "print(min(12000, int(95 * 8000 / $TOTAL - 330)))")
 B="${BITRATE:-${AUTO}k}"

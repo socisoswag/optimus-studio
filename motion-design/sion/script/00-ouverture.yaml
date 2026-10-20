@@ -15,11 +15,11 @@ chapitres:
       - type: 3D
         fichier: output/intro-aerienne.mp4
         entree: 0
-        sortie: 73.68
+        sortie: 77.28
         source: >-
-          espace et mer : notre 3D (NASA, Copernicus) ; désert de Judée : Adobe Stock 593067850 (ouadi Qelt, monastère
+          espace et mer : notre 3D (NASA, Copernicus) ; Jaffa : Adobe Stock 390879149 ; désert de Judée : Adobe Stock 593067850 (ouadi Qelt, monastère
           Saint-Georges) ; mer Morte : Adobe Stock 198345828 (SOURCES.md 4.1)
-        ecran: "lieux (Mer Méditerranée, Désert de Judée), altimètre -430 m, titre SION · ציון · صهيون"
+        ecran: "lieux (Mer Méditerranée, Jaffa, Désert de Judée), altimètre -430 m, titre SION · ציון · صهيون"
         son: "bande-son de la pièce (déjà mixée, pistes séparées dans le dossier son)"
         note: >-
           intro hybride (tools/intro_hybride.sh) : l'espace et la mer en 3D, la terre en vrais plans réchauffés pour

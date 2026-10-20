@@ -331,12 +331,13 @@ chapitres:
         voix: >-
           Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, /
           et les ouvriers arabes sont écartés.
-      - type: RÉEL
-        fichier: output/plans-reels/jaffa-clocher-vieille-ville-aerien.mp4
-        entree: 0
-        sortie: 10
-        source: "SOURCES.md 4.1, Adobe Stock 390879149"
-        ecran: "carton lieu (à fabriquer) : Jaffa · aujourd'hui"
+      - type: PHOTO
+        fichier: "à télécharger : la loterie des terrains d'Ahuzat Bayit (futur Tel-Aviv), avril 1909, photo d'Avraham Soskine (domaine public, Wikimedia Commons)"
+        duree: 10
+        a_obtenir: true
+        source: "photo d'Avraham Soskine, 11 avril 1909 (domaine public)"
+        ecran: "carton : Jaffa · avril 1909"
+        note: "le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même plan dans le film)"
         voix: >-
           En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la
           ville arabe.
