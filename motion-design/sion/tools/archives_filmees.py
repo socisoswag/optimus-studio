@@ -19,14 +19,16 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "output", "archives-filmees")
 IA = "https://archive.org/download/"
 
-# nom : (identifiant archive.org, fichier, recadrage w:h:x:y dans la source, [(début, fin) de chaque coupe, en s])
+# nom : (identifiant archive.org, fichier, recadrage w:h:x:y dans la source, [(début, fin) de chaque coupe, en s]
+#        [, réglage d'exposition avant le look, pour une copie trop claire ou trop sombre])
 ARCHIVES = {
     "1903-ellis-island-immigrants": ("emigrants-i.e.-immigrants-landing-at-ellis-island",
                                      "Emigrants_(i.e._immigrants)_landing_at_Ellis_Island_-.mp4", "610:458:15:11", [(85.0, 91.0)]),
     "1899-melies-dreyfus-ile-du-diable": ("LAffaireDreyfus1899", "L’Affaire Dreyfus (1899).mp4", "620:465:10:8", [(83.0, 92.0)]),
     "1899-melies-dreyfus-bagarre-journalistes": ("LAffaireDreyfus1899", "L’Affaire Dreyfus (1899).mp4", "620:465:10:8", [(451.0, 461.0)]),
     "1950-sands-of-sorrow-refugies": ("sands_of_sorrow", "sands_of_sorrow.mpeg", "690:466:15:7",
-                                      [(126.0, 131.0), (148.0, 154.0), (220.5, 225.5)]),
+                                      [(126.0, 131.0), (148.0, 154.0), (220.5, 225.5)],
+                                      "curves=all='0/0 0.35/0.24 0.7/0.55 1/0.84'"),
     "1897-lumiere-jerusalem-porte-de-jaffa": ("JaffaGateJerusalem1897", "Porte de Jaffa - coté Est.mkv", "1300:975:310:54", [(10.0, 20.0)]),
     "1918-jerusalem-mur-occidental": ("jerusalem-1918", "Jérusalem, 1918.mp4", "600:450:20:15",
                                       [(77.2, 83.4), (110.8, 116.7), (123.0, 124.9)]),
@@ -56,7 +58,7 @@ def finition():
             "crop=w=1904:h=1071:x='8+1.1*sin(n*0.37)+0.6*sin(n*1.13)':y='4.5+0.9*sin(n*0.29+1)+0.5*sin(n*0.97)',scale=1920:1080:flags=lanczos")
 
 
-def fabrique(nom, ident, fichier, crop, coupes):
+def fabrique(nom, ident, fichier, crop, coupes, pre=None):
     src = url(ident, fichier)
     net = ["-http_proxy", os.environ["HTTPS_PROXY"]] if os.environ.get("HTTPS_PROXY") else []
     with tempfile.TemporaryDirectory() as tmp:
@@ -72,6 +74,7 @@ def fabrique(nom, ident, fichier, crop, coupes):
         open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
         lut = os.path.join(ROOT, "data", "looks", "archive.cube")
         vf = (f"scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,"
+              + (f"{pre}," if pre else "") +
               f"unsharp=lx=13:ly=13:la=0.5:cx=5:cy=5:ca=0,lut3d=file={lut}:interp=tetrahedral,{finition()},"
               "noise=c0s=7:c0f=t+u:c1s=0:c2s=0,vignette=angle=PI/5,format=yuv420p,setsar=1")
         os.makedirs(OUT, exist_ok=True)
@@ -86,6 +89,6 @@ def fabrique(nom, ident, fichier, crop, coupes):
 
 if __name__ == "__main__":
     filtre = sys.argv[1:]
-    for nom, (ident, fichier, crop, coupes) in ARCHIVES.items():
+    for nom, args in ARCHIVES.items():
         if not filtre or any(f in nom for f in filtre):
-            fabrique(nom, ident, fichier, crop, coupes)
+            fabrique(nom, *args)
