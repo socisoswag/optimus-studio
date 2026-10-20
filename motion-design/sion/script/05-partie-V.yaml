@@ -15,11 +15,9 @@ chapitres:
         ecran: "Partie V · La dérive d'un projet"
 
   - num: "24"
-    titre: "Chapitre 24 · Netanyahou, Lieberman, et la haine institutionnalisée"
-    titre_de_rechange: "Chapitre 24 · Netanyahou, Lieberman : la droite au pouvoir"
+    titre: "Chapitre 24 · Netanyahou, Lieberman : leurs propres mots"
     intention: >-
-      Leurs mots, rien que leurs mots. Le titre d'origine juge ; le titre de rechange laisse les citations juger,
-      et elles suffisent. La loi de 2018 est citée comme un texte de loi, pas comme une opinion.
+      Leurs mots, rien que leurs mots : le titre le dit, et les citations jugent d'elles-mêmes. La loi de 2018 est citée comme un texte de loi, pas comme une opinion.
     plans:
       - type: CARTON
         fichier: output/chapitres/chapitre-24.mp4
@@ -83,8 +81,7 @@ chapitres:
           État terroriste. » // Il parle de l'État **palestinien**.
 
   - num: "25"
-    titre: "Chapitre 25 · Gaza, un champ d'expérimentation militaire"
-    titre_de_rechange: "Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre"
+    titre: "Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre"
     intention: >-
       Le chapitre le plus dur du film. Le 7 octobre est raconté en premier, et sans détour : c'est la condition pour
       être entendu ensuite sur Gaza. Puis le blocus, les offensives, le siège, les morts, les ruines, et ce que disent
@@ -323,8 +320,7 @@ chapitres:
           Celui-ci était payé par un **État**.
 
   - num: "28"
-    titre: "Chapitre 28 · Le racisme en Israël : mizrahim, éthiopiens et palestiniens"
-    titre_de_rechange: "Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens"
+    titre: "Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens"
     intention: >-
       Les faits établis par des commissions et des rapports israéliens eux-mêmes, et la contestation venue de
       l'intérieur (les Black Panthers, les manifestations de 2015). Le point de vue israélien a sa place : les

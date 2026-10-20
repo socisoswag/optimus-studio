@@ -14,12 +14,11 @@ chapitres:
         ecran: "Partie IV · Résistances et oppressions"
 
   - num: "19"
-    titre: "Chapitre 19 · Cisjordanie, Gaza, Jérusalem : terres volées, peuples divisés"
-    titre_de_rechange: "Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation"
+    titre: "Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation"
     intention: >-
       Le chapitre le plus long de la partie : quatre cartes pour tout comprendre, Suez 1956 et Kafr Qassem, la guerre
-      de 1967 racontée avec la lecture israélienne (guerre préventive) puis ses conséquences, et Jérusalem. « Terres
-      volées » est un jugement ; « occupation » est le mot du droit international, plus fort parce qu'incontestable.
+      de 1967 racontée avec la lecture israélienne (guerre préventive) puis ses conséquences, et Jérusalem. Le titre dit
+      « occupation » : le mot du droit international, plus fort parce qu'incontestable.
     plans:
       - type: CARTON
         fichier: output/chapitres/chapitre-19.mp4
@@ -314,7 +313,7 @@ chapitres:
           Sharon doit quitter la Défense. / Il sera Premier ministre en **2001**.
 
   - num: "21"
-    titre: "Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans drapeau"
+    titre: "Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans État"
     intention: >-
       Le héros des uns, le terroriste des autres, puis l'homme d'Oslo. Les deux lectures sont dites, Munich compris.
       La guerre d'octobre 1973 sert de pivot : le monde arabe découvre l'arme du pétrole, et l'OLP entre à l'ONU.
@@ -398,8 +397,7 @@ chapitres:
           avoir vu cet **État**.
 
   - num: "22"
-    titre: "Chapitre 22 · Les intifadas : pierres contre tanks"
-    titre_de_rechange: "Chapitre 22 · Les intifadas : les soulèvements"
+    titre: "Chapitre 22 · Les intifadas : deux soulèvements"
     intention: >-
       Deux soulèvements, deux natures : le premier, populaire et presque sans armes à feu ; le second, armé, avec les
       attentats-suicides contre les civils israéliens. Le Hamas naît en 1987 : sa charte de 1988 et son texte de 2017
@@ -477,7 +475,7 @@ chapitres:
           civils, des deux **côtés**.
 
   - num: "23"
-    titre: "Chapitre 23 · Colonisation rampante et colonies illégales"
+    titre: "Chapitre 23 · Oslo, le mur et les colonies"
     intention: >-
       Oslo, l'espoir, puis la carte qui découpe la Cisjordanie et le mur. Le mot « illégales » est celui de la Cour
       internationale de justice (2004, 2024) : il est attribué. Le récit des colons (la Judée et la Samarie de la

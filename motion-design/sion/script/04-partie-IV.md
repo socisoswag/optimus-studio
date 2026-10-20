@@ -13,13 +13,11 @@ Film 00:33:20:11 → 00:33:34:01 · durée 0 min 13.6 s
 > VOIX : silence
 
 
-## Chapitre 19 · Cisjordanie, Gaza, Jérusalem : terres volées, peuples divisés
+## Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation
 
 Film 00:33:34:01 → 00:38:34:09 · durée 5 min 00.3 s
 
-Titre de rechange proposé : **Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation**
-
-*Intention : Le chapitre le plus long de la partie : quatre cartes pour tout comprendre, Suez 1956 et Kafr Qassem, la guerre de 1967 racontée avec la lecture israélienne (guerre préventive) puis ses conséquences, et Jérusalem. « Terres volées » est un jugement ; « occupation » est le mot du droit international, plus fort parce qu'incontestable.*
+*Intention : Le chapitre le plus long de la partie : quatre cartes pour tout comprendre, Suez 1956 et Kafr Qassem, la guerre de 1967 racontée avec la lecture israélienne (guerre préventive) puis ses conséquences, et Jérusalem. Le titre dit « occupation » : le mot du droit international, plus fort parce qu'incontestable.*
 
 
 **19.1** · film **00:33:34:01 → 00:33:38:16** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-19.mp4` · source 00:00:00:00 → 00:00:04:15  
@@ -265,7 +263,7 @@ Note : estimations de 460 à plus de 3 000 morts : ne pas donner de chiffre pré
 (11 mots, 1.2 par seconde)
 
 
-## Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans drapeau
+## Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans État
 
 Film 00:41:04:12 → 00:43:05:24 · durée 2 min 01.5 s
 
@@ -340,11 +338,9 @@ Source : déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration d
 (22 mots, 1.8 par seconde)
 
 
-## Chapitre 22 · Les intifadas : pierres contre tanks
+## Chapitre 22 · Les intifadas : deux soulèvements
 
 Film 00:43:05:24 → 00:44:52:08 · durée 1 min 46.4 s
-
-Titre de rechange proposé : **Chapitre 22 · Les intifadas : les soulèvements**
 
 *Intention : Deux soulèvements, deux natures : le premier, populaire et presque sans armes à feu ; le second, armé, avec les attentats-suicides contre les civils israéliens. Le Hamas naît en 1987 : sa charte de 1988 et son texte de 2017 sont cités tous les deux, sans rien adoucir.*
 
@@ -406,7 +402,7 @@ Source : 2000-2005 : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens
 (21 mots, 1.8 par seconde)
 
 
-## Chapitre 23 · Colonisation rampante et colonies illégales
+## Chapitre 23 · Oslo, le mur et les colonies
 
 Film 00:44:52:08 → 00:47:50:02 · durée 2 min 57.7 s
 

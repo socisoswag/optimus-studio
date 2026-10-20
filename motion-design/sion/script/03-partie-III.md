@@ -270,13 +270,11 @@ Source : condamnation par l'Agence juive et la Haganah ; message de Ben Gourion 
 (39 mots, 1.9 par seconde)
 
 
-## Chapitre 16 · Ben Gourion : bâtir un État, effacer un peuple
+## Chapitre 16 · David Ben Gourion : l'État avant tout
 
 Film 00:29:34:11 → 00:30:59:01 · durée 1 min 24.6 s
 
-Titre de rechange proposé : **Chapitre 16 · David Ben Gourion : fonder un État**
-
-*Intention : Le portrait le plus délicat. D'abord ce qu'il est pour les Israéliens, sincèrement. Puis ses propres mots (1938), ce que raconte Rabin de Lydda, et le gouvernement militaire imposé aux Arabes restés. Le titre d'origine donne la conclusion avant les faits : le titre de rechange laisse les faits la donner.*
+*Intention : Le portrait le plus délicat. D'abord ce qu'il est pour les Israéliens, sincèrement. Puis ses propres mots (1938), ce que raconte Rabin de Lydda, et le gouvernement militaire imposé aux Arabes restés. Le titre (« l'État avant tout ») annonce le sujet ; ce sont les faits qui donnent la conclusion.*
 
 
 **16.1** · film **00:29:34:11 → 00:29:39:01** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-16.mp4` · source 00:00:00:00 → 00:00:04:15  
@@ -317,7 +315,7 @@ Source : gouvernement militaire sur les citoyens arabes d'Israël, 1948-1966 (Sh
 (16 mots, 2.0 par seconde)
 
 
-## Chapitre 17 · L'exode des juifs arabes et sépharades
+## Chapitre 17 · L'exode des Juifs des pays arabes
 
 Film 00:30:59:01 → 00:32:09:11 · durée 1 min 10.4 s
 
@@ -355,7 +353,7 @@ Source : opérations Tapis volant (Yémen, 1949-1950) et Ezra et Néhémie (Irak
 (18 mots, 2.0 par seconde)
 
 
-## Chapitre 18 · Golda Meir : « Les Palestiniens n'existent pas »
+## Chapitre 18 · Golda Meir : « Ils n'existaient pas »
 
 Film 00:32:09:11 → 00:33:20:11 · durée 1 min 11.0 s
 

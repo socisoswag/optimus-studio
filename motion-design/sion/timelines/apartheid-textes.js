@@ -83,7 +83,7 @@
     name: 'apartheid-textes',
     seed: 35,
     segments,
-    hud: { label: ['Sion', 'Chapitre 35 · Le destin manifeste'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
+    hud: { label: ['Sion', 'Chapitre 35 · Le poids des mots'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,
     fadeOut: 1.2,
     sound: { ticks: [0.6, 54.0] },

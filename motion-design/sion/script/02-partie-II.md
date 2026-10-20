@@ -94,11 +94,9 @@ Source : SOURCES.md 6 (Arthur Koestler, Promise and Fulfilment, 1949)
 (16 mots, 1.5 par seconde)
 
 
-## Chapitre 8 · Le mandat britannique : promesses brisées, haine semée
+## Chapitre 8 · Le mandat britannique : trente ans sous tension
 
 Film 00:13:39:19 → 00:16:48:20 · durée 3 min 09.1 s
-
-Titre de rechange proposé : **Chapitre 8 · Le mandat britannique : trente ans sous tension**
 
 *Intention : Trente ans en trois minutes. Un pouvoir étranger qui refuse un gouvernement élu (la majorité aurait dit non), les violences de 1920, 1921 et 1929 avec leurs morts juifs et arabes, Hébron, la révolte de 1936 et sa répression, les bombes de l'Irgoun et le massacre de Tibériade, puis le livre blanc de 1939 qui ferme la porte au moment où les Juifs d'Europe cherchent à fuir. Le mufti est montré tel qu'il fut, y compris son alliance avec Hitler : le cacher ruinerait tout le reste.*
 
@@ -220,7 +218,7 @@ Source : livre blanc britannique du 17 mai 1939
 (12 mots, 1.7 par seconde)
 
 
-## Chapitre 9 · Le traité Haavara et l'assassinat d'Arlozoroff
+## Chapitre 9 · L'accord Haavara et l'assassinat d'Arlosoroff
 
 Film 00:16:48:20 → 00:18:16:10 · durée 1 min 27.6 s
 
@@ -235,7 +233,7 @@ Film 00:16:48:20 → 00:18:16:10 · durée 1 min 27.6 s
 Source : lois antijuives d'avril 1933 (fonction publique le 7 avril, quotas scolaires le 25 avril)  
 > VOIX : 1933. / Hitler prend le pouvoir. / Les Juifs d'Allemagne sont chassés de la fonction publique, / des écoles, des métiers. // Un dirigeant sioniste, Haïm Arlosoroff, cherche à les faire **sortir**.  
 (28 mots, 1.9 par seconde)  
-Note : on écrit Arlozoroff dans le titre du chapitre (déjà fait) ; on dit « Arlo-so-rof »
+Note : on dit « Ar-lo-so-rof »
 
 
 **9.3** · film **00:17:08:10 → 00:17:24:10** (16.0 s) · **[CARTON]** `à fabriquer : carton Haavara (août 1933 · environ 60 000 émigrants · 105 millions de reichsmarks de marchandises)` · **À OBTENIR**  
@@ -268,11 +266,9 @@ Source : lecture « accord de sauvetage » : Yehuda Bauer, Jews for Sale?, 1994 
 (30 mots, 2.1 par seconde)
 
 
-## Chapitre 10 · Les juifs contre les juifs : sionistes, orthodoxes et antisionistes
+## Chapitre 10 · Les Juifs face au sionisme : le grand débat
 
 Film 00:18:16:10 → 00:19:45:01 · durée 1 min 28.6 s
-
-Titre de rechange proposé : **Chapitre 10 · Les Juifs face au sionisme : le grand débat**
 
 *Intention : Avant 1948, le sionisme est loin de faire l'unanimité chez les Juifs : réformés américains, ouvriers du Bund, rabbins orthodoxes, sionistes partisans d'un État pour deux peuples. Un fait dur (l'assassinat de de Haan par la Haganah) montre que ce débat n'était pas seulement intellectuel. Les voix d'aujourd'hui viendront dans la partie VI.*
 

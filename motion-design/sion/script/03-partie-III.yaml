@@ -340,12 +340,11 @@ chapitres:
           Hadassah : / 78 morts, médecins, infirmières et **patients**.
 
   - num: "16"
-    titre: "Chapitre 16 · Ben Gourion : bâtir un État, effacer un peuple"
-    titre_de_rechange: "Chapitre 16 · David Ben Gourion : fonder un État"
+    titre: "Chapitre 16 · David Ben Gourion : l'État avant tout"
     intention: >-
       Le portrait le plus délicat. D'abord ce qu'il est pour les Israéliens, sincèrement. Puis ses propres mots
-      (1938), ce que raconte Rabin de Lydda, et le gouvernement militaire imposé aux Arabes restés. Le titre d'origine
-      donne la conclusion avant les faits : le titre de rechange laisse les faits la donner.
+      (1938), ce que raconte Rabin de Lydda, et le gouvernement militaire imposé aux Arabes restés. Le titre (« l'État
+      avant tout ») annonce le sujet ; ce sont les faits qui donnent la conclusion.
     plans:
       - type: CARTON
         fichier: output/chapitres/chapitre-16.mp4
@@ -395,7 +394,7 @@ chapitres:
           Un bâtisseur, pour les uns. / Pour les autres, / l'homme qui a fermé la porte du **retour**.
 
   - num: "17"
-    titre: "Chapitre 17 · L'exode des juifs arabes et sépharades"
+    titre: "Chapitre 17 · L'exode des Juifs des pays arabes"
     intention: >-
       L'autre exil, souvent oublié en Europe. Des violences réelles, des lois de déchéance, et aussi des départs
       organisés par les émissaires sionistes. Puis l'argument de « l'échange de populations », et la réponse
@@ -441,7 +440,7 @@ chapitres:
           **prix**.
 
   - num: "18"
-    titre: "Chapitre 18 · Golda Meir : « Les Palestiniens n'existent pas »"
+    titre: "Chapitre 18 · Golda Meir : « Ils n'existaient pas »"
     intention: >-
       Le titre est sa phrase, pas notre thèse. La citer en entier, y compris la suite (« et que nous étions venus les
       chasser »), qui dit pourquoi elle compte. Rappeler Filastin, 1911 (chapitre 6). Finir sur un peuple qui prend

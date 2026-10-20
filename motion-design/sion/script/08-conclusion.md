@@ -13,7 +13,7 @@ Film 01:08:30:03 → 01:08:44:03 · durée 0 min 14.0 s
 > VOIX : silence
 
 
-## Chapitre 37 · Le droit des peuples : libre arbitre contre dogme
+## Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes
 
 Film 01:08:44:03 → 01:09:12:18 · durée 0 min 28.6 s
 

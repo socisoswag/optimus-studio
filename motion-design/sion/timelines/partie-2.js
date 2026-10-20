@@ -14,7 +14,7 @@
   Object.assign(p, {
     numeral: "II", label: "Partie II", titleLines: ["Le", "basculement"],
     firstChapter: 7,
-    chapters: ["La Déclaration Balfour (1917)", "Le mandat britannique : promesses brisées, haine semée", "Le traité Haavara et l’assassinat d’Arlozoroff", "Les juifs contre les juifs : sionistes, orthodoxes et antisionistes", "Congrès sionistes et montée des tensions avec les Arabes palestiniens"],
+    chapters: ["La Déclaration Balfour (1917)", "Le mandat britannique : trente ans sous tension", "L’accord Haavara et l’assassinat d’Arlosoroff", "Les Juifs face au sionisme : le grand débat", "Congrès sionistes et montée des tensions avec les Arabes palestiniens"],
     chapAt: [2.2, 5.5, 6.1, 6.7, 10.6],
   });
 

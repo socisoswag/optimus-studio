@@ -14,7 +14,7 @@
   Object.assign(p, {
     numeral: "III", label: "Partie III", titleLines: ["La catastrophe", "fondatrice"],
     firstChapter: 12,
-    chapters: ["1947 : le plan de partage de l’ONU", "1948 : la création d’Israël et la Nakba", "Les milices juives : Haganah, Irgoun, Lehi", "Le massacre de Deir Yassin", "Ben Gourion : bâtir un État, effacer un peuple", "L’exode des juifs arabes et sépharades", "Golda Meir : « Les Palestiniens n’existent pas »"],
+    chapters: ["1947 : le plan de partage de l’ONU", "1948 : la création d’Israël et la Nakba", "Les milices juives : Haganah, Irgoun, Lehi", "Le massacre de Deir Yassin", "David Ben Gourion : l’État avant tout", "L’exode des Juifs des pays arabes", "Golda Meir : « Ils n’existaient pas »"],
     chapAt: [2.2, 6.0, 6.6, 7.2, 7.8, 12.0, 12.6],
   });
 

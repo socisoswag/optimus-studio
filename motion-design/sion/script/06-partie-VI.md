@@ -13,7 +13,7 @@ Film 00:56:57:18 → 00:57:12:03 · durée 0 min 14.4 s
 > VOIX : silence
 
 
-## Chapitre 29 · Les juifs antisionistes : Neturei Karta, Jewish Voice for Peace
+## Chapitre 29 · Les Juifs antisionistes : Neturei Karta, Jewish Voice for Peace
 
 Film 00:57:12:03 → 00:58:26:18 · durée 1 min 14.6 s
 

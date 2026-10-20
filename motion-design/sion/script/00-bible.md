@@ -101,12 +101,11 @@ images de l'UNRWA, de l'ONU ou d'agences, elles prendront la place prévue (rep�
 
 ## 5. Ce que je te dis sans filtre (risques et conseils)
 
-1. **Certains titres de chapitre desservent le film.** « Ben Gourion : bâtir un État, effacer un peuple »,
-   « Netanyahou, Lieberman, et la haine institutionnalisée », « Gaza, un champ d'expérimentation militaire » : ce sont
-   des thèses, pas des titres. Un spectateur neutre (celui qu'il faut convaincre) se ferme dès le titre, et un
-   adversaire n'a plus besoin de regarder pour dire « propagande ». Le contenu peut être aussi dur, mais il convainc
-   mieux s'il arrive par les faits. Je propose pour chacun un titre de rechange dans son chapitre ; tu décides.
-   Les cartons sont déjà faits : en changer un, c'est quelques minutes.
+1. **Les titres de chapitre annoncent le sujet, ils ne rendent pas le verdict.** Dix-sept titres ont été changés le
+   20 octobre (liste dans `CHAPITRES.md`) : par exemple « Ben Gourion : bâtir un État, effacer un peuple » devient
+   « David Ben Gourion : l'État avant tout », « Gaza, un champ d'expérimentation militaire » devient « Gaza : le
+   blocus, le 7 octobre, la guerre ». Un spectateur neutre ne se ferme plus dès le titre, et un adversaire ne peut plus
+   crier à la propagande sans regarder. La dureté est intacte : elle vient des faits.
 2. **Les chapitres 9 (Haavara) et 32 (Shoah) sont des champs de mines.** Le traité Haavara est un fait historique,
    mais il est au cœur d'un discours antisémite (« les sionistes ont collaboré avec les nazis »). Le script le raconte
    exactement comme les historiens : un accord de sauvetage et de transfert de biens, très contesté à l'époque même

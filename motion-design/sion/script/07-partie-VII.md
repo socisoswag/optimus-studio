@@ -156,7 +156,7 @@ Film 01:04:38:06 → 01:05:59:23 · durée 1 min 21.7 s
 > VOIX : silence
 
 
-## Chapitre 35 · Le destin manifeste : colonialisme, apartheid, dépossession
+## Chapitre 35 · Colonialisme, apartheid : le poids des mots
 
 Film 01:05:59:23 → 01:07:35:08 · durée 1 min 35.4 s
 
@@ -208,7 +208,7 @@ Source : Rashid Khalidi, The Hundred Years' War on Palestine, 2020 ; Ilan Pappé
 (32 mots, 1.9 par seconde)
 
 
-## Chapitre 36 · La fracture en Israël : extrémisme religieux vs démocratie
+## Chapitre 36 · La fracture en Israël : la démocratie en question
 
 Film 01:07:35:08 → 01:08:30:03 · durée 0 min 54.8 s
 

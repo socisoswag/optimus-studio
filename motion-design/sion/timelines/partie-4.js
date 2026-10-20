@@ -14,7 +14,7 @@
   Object.assign(p, {
     numeral: "IV", label: "Partie IV", titleLines: ["Résistances et", "oppressions"],
     firstChapter: 19,
-    chapters: ["Cisjordanie, Gaza, Jérusalem : terres volées, peuples divisés", "Les camps palestiniens et la vie dans l’exil", "Yasser Arafat : l’icône d’un peuple sans drapeau", "Les intifadas : pierres contre tanks", "Colonisation rampante et colonies illégales"],
+    chapters: ["Cisjordanie, Gaza, Jérusalem : l’occupation", "Les camps palestiniens et la vie dans l’exil", "Yasser Arafat : l’icône d’un peuple sans État", "Les intifadas : deux soulèvements", "Oslo, le mur et les colonies"],
     chapAt: [2.2, 5.6, 6.2, 9.7, 10.3],
   });
 

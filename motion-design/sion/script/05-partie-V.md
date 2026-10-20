@@ -13,13 +13,11 @@ Film 00:47:50:02 → 00:48:04:02 · durée 0 min 14.0 s
 > VOIX : silence
 
 
-## Chapitre 24 · Netanyahou, Lieberman, et la haine institutionnalisée
+## Chapitre 24 · Netanyahou, Lieberman : leurs propres mots
 
 Film 00:48:04:02 → 00:49:28:17 · durée 1 min 24.6 s
 
-Titre de rechange proposé : **Chapitre 24 · Netanyahou, Lieberman : la droite au pouvoir**
-
-*Intention : Leurs mots, rien que leurs mots. Le titre d'origine juge ; le titre de rechange laisse les citations juger, et elles suffisent. La loi de 2018 est citée comme un texte de loi, pas comme une opinion.*
+*Intention : Leurs mots, rien que leurs mots : le titre le dit, et les citations jugent d'elles-mêmes. La loi de 2018 est citée comme un texte de loi, pas comme une opinion.*
 
 
 **24.1** · film **00:48:04:02 → 00:48:08:17** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-24.mp4` · source 00:00:00:00 → 00:00:04:15  
@@ -73,11 +71,9 @@ Source : conférence de presse de Benyamin Netanyahou, 18 janvier 2024 ; déclar
 (23 mots, 1.6 par seconde)
 
 
-## Chapitre 25 · Gaza, un champ d'expérimentation militaire
+## Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre
 
 Film 00:49:28:17 → 00:52:49:08 · durée 3 min 20.6 s
-
-Titre de rechange proposé : **Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre**
 
 *Intention : Le chapitre le plus dur du film. Le 7 octobre est raconté en premier, et sans détour : c'est la condition pour être entendu ensuite sur Gaza. Puis le blocus, les offensives, le siège, les morts, les ruines, et ce que disent les juges. La thèse du « laboratoire » est attribuée à celui qui la défend. Aucune image de corps.*
 
@@ -277,11 +273,9 @@ Source : rapports trimestriels de Meta sur les réseaux de comportement inauthen
 (6 mots, 1.5 par seconde)
 
 
-## Chapitre 28 · Le racisme en Israël : mizrahim, éthiopiens et palestiniens
+## Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens
 
 Film 00:55:30:03 → 00:56:57:18 · durée 1 min 27.6 s
-
-Titre de rechange proposé : **Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens**
 
 *Intention : Les faits établis par des commissions et des rapports israéliens eux-mêmes, et la contestation venue de l'intérieur (les Black Panthers, les manifestations de 2015). Le point de vue israélien a sa place : les citoyens arabes votent, siègent à la Knesset et à la Cour suprême.*
 
