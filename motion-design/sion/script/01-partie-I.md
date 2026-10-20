@@ -354,11 +354,12 @@ Source : lettre du 1er mars 1899, d'après R. Khalidi 2020 (traduite de l'anglai
 Note : les deux phrases vont ensemble : couper la première ferait de lui un sioniste, couper la seconde cacherait qu'il reconnaît l'histoire juive. Si on obtient l'original français (édition française du livre de R. Khalidi), recaler le texte mot pour mot.
 
 
-**6.9** · film **00:09:31:24 → 00:09:47:24** (16.0 s) · **[PHOTO]** `data/archives/documents/1899-lettre-herzl-al-khalidi.jpg`  
+**6.9** · film **00:09:31:24 → 00:09:47:24** (16.0 s) · **[PHOTO]** `data/archives/documents/1899-lettre-herzl-al-khalidi.jpg` · **À OBTENIR**  
 Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)  
 À l'écran : la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »  
 > VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive. / Mais qui songerait à les **éloigner** ? » // Leur terre, promet-il, vaudra dix fois plus cher.  
-(32 mots, 2.0 par seconde)
+(32 mots, 2.0 par seconde)  
+Note : Wikimedia bloque le téléchargement depuis ce serveur : à récupérer à la main (lien dans SOURCES.md 2.4)
 
 
 **6.10** · film **00:09:47:24 → 00:10:00:24** (13.0 s) · **[PHOTO]** `portraits/herzl.png`  

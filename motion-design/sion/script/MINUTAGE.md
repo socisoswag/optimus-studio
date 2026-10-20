@@ -58,6 +58,7 @@
 - 3.4 : à télécharger : L'Affaire Dreyfus, film de Georges Méliès (1899)
 - 4.4 : à télécharger : photo du premier congrès sioniste, Bâle, août 1897
 - 6.2 : output/archives-filmees/1897-porte-de-jaffa-lumiere (nom définitif à confirmer)
+- 6.9 : data/archives/documents/1899-lettre-herzl-al-khalidi.jpg (Wikimedia bloque le téléchargement depuis ce serveur : à récupérer à la main (lien dans SOURCES.md 2.4))
 - 6.13 : à télécharger : une du journal Filastin, Jaffa, 1911 (Bibliothèque nationale d'Israël, collection Jrayed) (premier numéro de Filastin : 14 ou 15 janvier 1911 selon les sources ; dire seulement « en 1911 »)
 - 7.6 : à télécharger : la déclaration Balfour (lettre originale, British Library, domaine public, Wikimedia Commons)
 - 7.9 : à télécharger : portrait d'Edwin Montagu (domaine public, Wikimedia Commons) (Montagu juge la déclaration antisémite : elle ferait des Juifs anglais des étrangers dans leur pays. C'est la preuve que Juifs et sionisme ne sont pas la même chose (règle 2 de la bible).)

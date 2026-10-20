@@ -436,6 +436,8 @@ chapitres:
       - type: PHOTO
         fichier: data/archives/documents/1899-lettre-herzl-al-khalidi.jpg
         duree: 16
+        a_obtenir: true
+        note: "Wikimedia bloque le téléchargement depuis ce serveur : à récupérer à la main (lien dans SOURCES.md 2.4)"
         source: >-
           SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études
           palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)
