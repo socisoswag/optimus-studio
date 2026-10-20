@@ -170,3 +170,27 @@ existe, mais il rend souvent la voix artificielle : je ne l'utilise qu'en secour
 | mizrahim | miz-ra-him |
 | Ra'am | Ra-am |
 | Khaled Kabub | Kha-lèd Ka-boub |
+
+## 14. Prononciation (parties VI, VII et conclusion)
+
+| Mot | Dire |
+|---|---|
+| Neturei Karta | Né-tou-réï Kar-ta |
+| Jewish Voice for Peace | Djou-ich Voïss for Pis |
+| Ketoubot | Ké-tou-bot |
+| Satmar, Joel Teitelbaum | Sat-mar, Jo-èl Taï-tel-baoum |
+| Yeshayahou Leibowitz | Yé-cha-ya-hou Laï-bo-vitz |
+| Haaretz | Ha-a-rèts |
+| Yehuda Elkana | Yé-hou-da El-ka-na |
+| Filippo Gentiloni | Fi-lip-po Djèn-ti-lo-ni |
+| Idith Zertal | I-dit Zèr-tal |
+| Isdud, Ashdod | Iss-doud, Ach-dod |
+| al-Majdal, Ashkelon | al-Maj-dal, Ach-ké-lone |
+| Saffuriyya, Tzippori | Saf-fou-ri-ya, Tsi-po-ri |
+| Ayn Hawd, Ein Hod | Aïn Haoud, Èïne Hod |
+| Imwas, Yalu, Beit Nuba | Im-wass, Ya-lou, Béït Nou-ba |
+| Lifta | Lif-ta |
+| B'Tselem | Bé-tsé-lèm |
+| Yigal Amir | Yi-gal A-mir |
+| al-Birwa | al-Bir-wa |
+| sumud | sou-moud |

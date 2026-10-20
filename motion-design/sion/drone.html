@@ -17,6 +17,7 @@
   html, body { width: 1920px; height: 1080px; overflow: hidden; background: #000; color: var(--stone); -webkit-font-smoothing: antialiased; }
   canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
   .layer { position: absolute; inset: 0; pointer-events: none; }
+  .plate, .plate body { background: transparent !important; } .plate canvas { display: none; }
 
   /* lieu survolé, en bas à gauche */
   .lab { position: absolute; left: 112px; bottom: 112px; opacity: 0; isolation: isolate; }

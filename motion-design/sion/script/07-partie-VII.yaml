@@ -1,0 +1,288 @@
+titre: "Partie VII · Une histoire universelle ?"
+intro: >-
+  Ce que ce conflit dit au monde : la mémoire de la Shoah et son usage, le droit international, l'effacement des noms,
+  le mot apartheid, et la fracture à l'intérieur d'Israël. Le chapitre 32 est un champ de mines (bible, risque 2) :
+  jamais de comparaison par nous, seulement les mots de survivants, d'historiens et de dirigeants, datés.
+chapitres:
+  - num: "VII.0"
+    titre: "Ouverture de la partie VII"
+    plans:
+      - type: MD
+        fichier: output/partie-7.mp4
+        entree: 0
+        sortie: 12.8
+        ecran: "Partie VII · Une histoire universelle ?"
+
+  - num: "32"
+    titre: "Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique"
+    intention: >-
+      D'abord le deuil, entier : six millions, le « plus jamais », Eichmann. Puis les Juifs et Israéliens qui
+      s'inquiètent de son usage (Elkana, survivant ; Levi, survivant ; Zertal, historienne). Puis un usage politique
+      daté (Netanyahou, 2015) et le négationnisme dans le monde arabe et en Iran (Téhéran 2006, Abbas 2023) : les deux
+      côtés.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-32.mp4
+        entree: 0
+        sortie: 4.6
+      - type: PHOTO
+        fichier: "à télécharger : le procès d'Adolf Eichmann, Jérusalem, 1961 (GPO, domaine public en Israël)"
+        duree: 19
+        a_obtenir: true
+        voix: >-
+          Six millions de Juifs assassinés. / La Shoah est au cœur de l'identité d'Israël : / un peuple qui a failli
+          disparaître, / et qui s'est juré « plus jamais ». // En 1961, le procès d'Adolf Eichmann fait entendre les
+          **survivants**.
+      - type: NOIR
+        duree: 17
+        source: "Yehuda Elkana, « Pour l'oubli » (Bizkhout ha-shikheha), Haaretz, 2 mars 1988"
+        voix: >-
+          En 1988, Yehuda Elkana, philosophe, déporté enfant à Auschwitz, écrit dans Haaretz : / il ne voit pas de plus
+          grande menace pour l'avenir d'Israël / que d'avoir fait de la Shoah l'axe de la conscience **nationale**.
+      - type: NOIR
+        duree: 21
+        source: "entretien de Primo Levi avec Filippo Gentiloni, 1982 (d'après Carole Angier, The Double Bond, 2002)"
+        voix: >-
+          En 1982, après Sabra et Chatila, Primo Levi, survivant d'Auschwitz, dit à un journaliste italien : / « Chacun
+          est le Juif de quelqu'un. » // Le journaliste ajoute : les Palestiniens sont aujourd'hui les Juifs des
+          Israéliens. / Levi précisera qu'il ne parlait pas d'**extermination**.
+        note: "la seconde phrase est du journaliste, pas de Levi : la voix le dit, ne jamais la lui attribuer"
+      - type: PHOTO
+        fichier: portraits/netanyahou.png
+        duree: 17
+        source: "discours de Benyamin Netanyahou au 37e congrès sioniste, Jérusalem, 20 octobre 2015 ; réponse du porte-parole du gouvernement allemand, Steffen Seibert, 21 octobre 2015"
+        voix: >-
+          En 2015, Benyamin Netanyahou affirme que le mufti de Jérusalem aurait donné à Hitler l'idée d'exterminer les
+          Juifs. / Les historiens le démentent, / et Berlin répond : la responsabilité est **allemande**.
+      - type: NOIR
+        duree: 18
+        source: "conférence de Téhéran, 11-12 décembre 2006 ; discours de Mahmoud Abbas, août 2023, et lettre ouverte de plus de cent universitaires palestiniens, septembre 2023"
+        voix: >-
+          La Shoah est aussi niée ou minimisée : / à Téhéran, en 2006, une conférence entière la met en doute. / En 2023,
+          Mahmoud Abbas l'explique par le « rôle social » des Juifs ; / plus de cent intellectuels palestiniens le
+          **condamnent**.
+      - type: NOIR
+        duree: 11
+        source: "Idith Zertal, Israel's Holocaust and the Politics of Nationhood, Cambridge University Press, 2005"
+        voix: >-
+          Pour l'historienne israélienne Idith Zertal, / cette mémoire sert aussi à justifier la politique de l'État envers
+          les **Palestiniens**.
+
+  - num: "33"
+    titre: "Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338"
+    intention: >-
+      Les textes mot pour mot, la nuance de l'article dans la version anglaise de la 242, la réponse israélienne, et
+      la résolution 2334 de 2016.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-33.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/resolutions.mp4
+        entree: 0
+        sortie: 6.4
+        voix: >-
+          Trois textes de l'ONU, / mot pour **mot**.
+      - type: MD
+        fichier: output/resolutions.mp4
+        entree: 6.4
+        sortie: 18.9
+        voix: >-
+          1948, résolution 194 : / permettre aux réfugiés qui le désirent de rentrer dans leurs **foyers**.
+      - type: MD
+        fichier: output/resolutions.mp4
+        entree: 18.9
+        sortie: 31.9
+        voix: >-
+          1967, résolution 242 : / le retrait des territoires occupés, / et le droit de chaque État de la région à vivre
+          en **paix**.
+      - type: MD
+        fichier: output/resolutions.mp4
+        entree: 31.9
+        sortie: 40.5
+        voix: >-
+          En anglais, il manque l'article : / « from territories ». / Israël s'appuie sur ce **silence**.
+      - type: MD
+        fichier: output/resolutions.mp4
+        entree: 40.5
+        sortie: 52.5
+        voix: >-
+          1973, résolution 338 : / appliquer la 242, / dès le **cessez-le-feu**.
+      - type: MD
+        fichier: output/resolutions.mp4
+        entree: 52.5
+        sortie: 59.32
+      - type: NOIR
+        duree: 16
+        source: "résolution 2334 du Conseil de sécurité, 23 décembre 2016"
+        voix: >-
+          Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître.
+          // En 2016, le Conseil de sécurité qualifie encore les colonies de « violation flagrante » du droit
+          **international**.
+
+  - num: "34"
+    titre: "Chapitre 34 · L'effacement culturel : villages détruits, noms effacés"
+    intention: >-
+      La séquence parle d'elle-même ; la voix donne les paires de noms et la lecture israélienne (rendre à la terre ses
+      noms bibliques). Lifta en dernier : le seul village resté debout.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-34.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/noms-effaces.mp4
+        entree: 0
+        sortie: 6.2
+        voix: >-
+          Effacer les villages, / puis leurs **noms**.
+      - type: MD
+        fichier: output/noms-effaces.mp4
+        entree: 6.2
+        sortie: 17.2
+        voix: >-
+          À partir de 1949, une commission gouvernementale remplace plus de neuf mille noms arabes / par des noms
+          **hébreux**.
+      - type: MD
+        fichier: output/noms-effaces.mp4
+        entree: 17.2
+        sortie: 28.2
+        voix: >-
+          Pour l'État, c'est rendre à la terre ses noms bibliques. / Isdud devient Ashdod, / al-Majdal devient
+          **Ashkelon**.
+      - type: MD
+        fichier: output/noms-effaces.mp4
+        entree: 28.2
+        sortie: 39.2
+        voix: >-
+          Saffuriyya devient Tzippori. / Al-Khalisa devient Kiryat **Shmona**.
+      - type: MD
+        fichier: output/noms-effaces.mp4
+        entree: 39.2
+        sortie: 49.7
+        voix: >-
+          Ayn Hawd devient Ein Hod, / un village d'artistes **israéliens**.
+      - type: MD
+        fichier: output/noms-effaces.mp4
+        entree: 49.7
+        sortie: 60.7
+        voix: >-
+          Sur Imwas, Yalu et Beit Nuba, rasés en 1967, / le Fonds national juif plante une forêt : / le Canada
+          **Park**.
+      - type: MD
+        fichier: output/noms-effaces.mp4
+        entree: 60.7
+        sortie: 70.3
+        voix: >-
+          Lifta, à l'entrée de Jérusalem : / debout, mais **vide**.
+      - type: MD
+        fichier: output/noms-effaces.mp4
+        entree: 70.3
+        sortie: 77.08
+
+  - num: "35"
+    titre: "Chapitre 35 · Le destin manifeste : colonialisme, apartheid, dépossession"
+    intention: >-
+      Deux mots lourds, chacun attribué : « apartheid » (B'Tselem, HRW, Amnesty, la CIJ et sa formule exacte) et
+      « colonialisme de peuplement » (des historiens), face à la lecture sioniste (le retour d'un peuple chez lui) et à
+      la réponse d'Israël.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-35.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/apartheid-textes.mp4
+        entree: 0
+        sortie: 6.2
+        voix: >-
+          Un mot très lourd : / **apartheid**.
+      - type: MD
+        fichier: output/apartheid-textes.mp4
+        entree: 6.2
+        sortie: 17.8
+        voix: >-
+          En 2021, B'Tselem, une ONG israélienne, l'emploie la première, / pour tout le territoire, du Jourdain à la
+          **mer**.
+      - type: MD
+        fichier: output/apartheid-textes.mp4
+        entree: 17.8
+        sortie: 28.2
+        voix: >-
+          Puis Human Rights **Watch**.
+      - type: MD
+        fichier: output/apartheid-textes.mp4
+        entree: 28.2
+        sortie: 40
+        voix: >-
+          Puis Amnesty International, en **2022**.
+      - type: MD
+        fichier: output/apartheid-textes.mp4
+        entree: 40
+        sortie: 55
+        source: "CIJ, avis du 19 juillet 2024, § 229 (article 3 de la convention sur l'élimination de la discrimination raciale)"
+        voix: >-
+          En 2024, la Cour internationale de justice juge que la politique israélienne en Cisjordanie viole l'article
+          qui interdit ségrégation et apartheid, / sans dire lequel des **deux**.
+      - type: MD
+        fichier: output/apartheid-textes.mp4
+        entree: 55
+        sortie: 61.8
+      - type: NOIR
+        duree: 12
+        voix: >-
+          Israël rejette ce mot : / ses citoyens arabes votent et siègent au Parlement, / et les territoires relèvent,
+          dit-il, d'un conflit, pas d'un **système**.
+      - type: RÉEL
+        fichier: "à licencier : colonie au sommet d'une colline, Cisjordanie, vue aérienne (Adobe Stock, collection gratuite)"
+        duree: 17
+        a_obtenir: true
+        source: "Rashid Khalidi, The Hundred Years' War on Palestine, 2020 ; Ilan Pappé, The Ethnic Cleansing of Palestine, 2006"
+        voix: >-
+          Pour des historiens comme Rashid Khalidi ou Ilan Pappé, le sionisme est un colonialisme de peuplement, /
+          comme en Amérique ou en Australie. // Pour les sionistes, c'est le retour d'un peuple **chez lui**.
+
+  - num: "36"
+    titre: "Chapitre 36 · La fracture en Israël : extrémisme religieux vs démocratie"
+    intention: >-
+      Rabin, tué par un Juif religieux opposé à la paix ; 2023, des centaines de milliers d'Israéliens dans la rue pour
+      leur démocratie ; et la remarque que beaucoup de Palestiniens leur opposent. Les ultra-orthodoxes et l'armée.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-36.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 68.8
+        sortie: 73
+        ecran: "fiche de la chronologie : 4 novembre 1995 · carton : output/cartons/tel-aviv-1995"
+        voix: >-
+          4 novembre **1995**.
+      - type: PHOTO
+        fichier: portraits/rabin.png
+        duree: 13
+        source: "assassinat d'Yitzhak Rabin par Yigal Amir, Tel-Aviv, 4 novembre 1995"
+        voix: >-
+          Yitzhak Rabin est assassiné par Yigal Amir, un étudiant juif religieux, / opposé aux accords d'Oslo. // Pour
+          beaucoup, la paix meurt avec **lui**.
+      - type: PHOTO
+        fichier: "à télécharger : manifestation contre la réforme de la justice, Tel-Aviv, 2023 (licence libre, Wikimedia Commons)"
+        duree: 13
+        a_obtenir: true
+        source: "manifestations de 2023 contre la réforme judiciaire (jusqu'à des centaines de milliers de personnes, le 26 mars 2023)"
+        voix: >-
+          En 2023, des centaines de milliers d'Israéliens manifestent contre la réforme de la justice, / pour défendre,
+          disent-ils, leur **démocratie**.
+      - type: NOIR
+        duree: 11
+        voix: >-
+          Pour beaucoup de Palestiniens, ces manifestations ne parlaient pas d'eux : / une démocratie pour les uns, /
+          l'occupation pour les **autres**.
+      - type: PHOTO
+        fichier: "même photo que le chapitre 30 (ultra-orthodoxes et conscription), ou une autre de 2024"
+        duree: 9
+        a_obtenir: true
+        voix: >-
+          Et la fracture traverse la religion : / l'armée, l'État, la loi juive. / Tout est **contesté**.

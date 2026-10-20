@@ -344,6 +344,27 @@ Extraits recadrés (image 4:3 dans le cadre 16:9), 25 images par seconde, sans s
   ministère de la Santé, janvier 2013 (Haaretz, 27 janvier 2013) ; octobre 2000 : 13 citoyens arabes tués (commission
   Or, 2003) ; Ra'am au gouvernement (2021-2022) ; Khaled Kabub, juge à la Cour suprême depuis 2022.
 
+**Parties VI et VII, conclusion** (chapitres 29 à 39, script)
+- Neturei Karta, Jérusalem, 1938 ; Jewish Voice for Peace, Berkeley, septembre 1996 (plus de 32 000 membres en 2024) ;
+  sit-in du 18 octobre 2023 au Congrès et du 27 octobre 2023 à Grand Central ; Briser le silence, 2004 ; Pew Research
+  Center, Jewish Americans in 2020.
+- Talmud de Babylone, Ketoubot 110b-111a (les trois serments) ; Joel Teitelbaum, Vayoel Moshe ; Cour suprême
+  d'Israël, arrêt du 25 juin 2024 (conscription).
+- Bernard-Henri Lévy : colloque « Democracy and its Challenges », Tel-Aviv, mai 2010 ; Le Figaro, 18 mars 2024 ;
+  The Wall Street Journal, 25 septembre 2025.
+- Alain Finkielkraut : Haaretz, novembre 2005 (et ses excuses) ; textes de 2024 (Le Figaro) et 2025 (Le Monde) À
+  CONFIRMER dans l'original avant l'enregistrement.
+- Edgar Morin, Sami Naïr, Danièle Sallenave, Le Monde, 4 juin 2002 ; condamnation en appel (2005) cassée en 2006.
+- Yehuda Elkana, Haaretz, 2 mars 1988 ; Primo Levi, entretien avec Filippo Gentiloni, 1982 (Carole Angier, The Double
+  Bond, 2002) ; Idith Zertal, Israel's Holocaust and the Politics of Nationhood, 2005.
+- Benyamin Netanyahou au 37e congrès sioniste, 20 octobre 2015, et réponse de Steffen Seibert, 21 octobre 2015.
+- Conférence de Téhéran, 11-12 décembre 2006 ; discours de Mahmoud Abbas, août 2023, et lettre ouverte d'universitaires
+  palestiniens, septembre 2023.
+- Résolution 2334 du Conseil de sécurité, 23 décembre 2016.
+- Rashid Khalidi, The Hundred Years' War on Palestine, 2020 ; Ilan Pappé, The Ethnic Cleansing of Palestine, 2006.
+- Assassinat d'Yitzhak Rabin, 4 novembre 1995 ; manifestations de 2023 contre la réforme judiciaire.
+- Charte des Nations unies, article 1, paragraphe 2 ; Parents Circle-Families Forum, 1995.
+
 **Les aliyas** (chapitre 5)
 - Fourchettes de la Jewish Virtual Library et de l'Encyclopaedia Judaica pour chaque vague (1882 à 1939).
 - Population en 1945 : Village Statistics du gouvernement mandataire (553 600 Juifs sur 1 764 520 habitants).

@@ -79,6 +79,11 @@ Vitesse de lecture : environ 140 mots par minute, pauses comprises. Un plan de 1
 
 Les parties III et IV sont le cœur du film : elles ont le plus de temps et le plus d'images fortes.
 
+**Minutage réel du script (20 octobre)** : ouverture 1 min 50, partie I 9 min 32, II 9 min 55, III 11 min 48,
+IV 14 min 30, V 9 min 07, VI 4 min 37, VII 7 min 12, conclusion avec générique 4 min 59. **Total : 1 h 11 min 40.**
+Les parties I, II et IV dépassent leur budget, compensées par III, VI et VII. Si on veut gagner du temps, le
+chapitre 19 (5 min) est le premier à resserrer. Détail plan par plan : `MINUTAGE.md`.
+
 ## 4. Ce qui est déjà en images (et ce qui manque)
 
 - **Motion design et 3D** : 45 pièces terminées (liste dans `README.md`), toutes avec bruitages réels.
@@ -127,10 +132,17 @@ une réponse sans source primaire ne sert pas.
 3. ~~Al-Fula~~ **fait**.
 4. ~~Filastin et al-Karmil~~ **fait** pour les dates ; il manque une image de la une de Filastin en 1911
    (Bibliothèque nationale d'Israël).
-5. Traité Haavara (25 août 1933) : nombre d'émigrants et montants transférés selon Edwin Black et Yehuda Bauer ;
-   débat à l'époque (boycott). Assassinat d'Arlozoroff (16 juin 1933) : état actuel de l'enquête (commission de 1982).
-6. Lettre de Ben Gourion à son fils Amos (5 octobre 1937) : la controverse sur la phrase « nous devons expulser les
-   Arabes » (rayée ou non dans l'original ; Shabtai Teveth, Benny Morris, Efraim Karsh).
-7. Neturei Karta et Jewish Voice for Peace : dates de fondation, positions officielles, chiffres de membres.
-8. Discriminations des Juifs éthiopiens et mizrahim en Israël : rapports officiels (affaire du Depo-Provera 2013,
-   rapport sur le racisme de 2016, Black Panthers israéliens 1971).
+5. ~~Haavara et Arlosoroff~~ **fait** (Black, Bauer ; rapport de la commission de 1985).
+6. ~~Lettre de Ben Gourion à Amos (1937)~~ : non utilisée, le film cite la réunion du 12 juin 1938 (Benny Morris).
+7. ~~Neturei Karta et Jewish Voice for Peace~~ **fait**.
+8. ~~Discriminations~~ **fait** (commission Kedmi, directive de 2013, commission Or).
+
+**Encore à vérifier avant l'enregistrement de la voix (questions pour Perplexity, à poser telles quelles) :**
+
+9. Alain Finkielkraut et Gaza : le texte exact (date, journal, phrase entière) où il refuse le mot « génocide »
+   (Le Figaro, 2024, cité par Politis le 29 octobre 2024), et sa tribune du Monde de 2025 où il écrit qu'Israël
+   commet des crimes de guerre à Gaza (titre exact, date, phrase clé).
+10. Lettre de Youssouf Diya al-Khalidi du 1er mars 1899 : le texte français original des phrases « historiquement,
+    c'est bien votre pays », « habitée par d'autres » et « au nom de Dieu, qu'on laisse la Palestine tranquille ».
+11. Golda Meir et les Black Panthers israéliens (1971) : la phrase exacte (« ils ne sont pas gentils ») et sa source.
+12. Edwin Montagu, mémorandum du 23 août 1917 : la cote exacte aux Archives nationales britanniques (série CAB 24).

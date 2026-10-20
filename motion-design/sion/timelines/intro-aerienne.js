@@ -1,11 +1,13 @@
 /*
- * Intro aérienne du film (drone.html), environ 1 min, sans voix.
+ * Intro aérienne du film (drone.html), environ 1 min 14, sans voix.
  *
- * Quatre plans d'un même matin, reliés par des passages dans la brume :
- *   1. l'arrivée par la mer, au large de Jaffa, face au soleil qui se lève sur les collines ;
- *   2. les monts de Judée à l'ouest de Jérusalem, lumière rasante du sud-est ;
- *   3. le plateau du désert de Judée qui s'arrête net : la falaise d'Ein Gedi, la mer Morte 500 m plus bas ;
- *   4. au-dessus de la mer Morte vers le sud, le titre.
+ * L'espace et la mer sont en 3D ; la terre est filmée pour de vrai :
+ *   1. la nuit sur la Méditerranée vue de l'espace, puis la plongée jusqu'au large de Jaffa (3D) ;
+ *   2. l'arrivée par la mer, face au soleil qui se lève sur les collines (3D) ;
+ *   3. le désert de Judée, le ouadi Qelt et le monastère Saint-Georges (vrai plan, Adobe Stock 593067850) ;
+ *   4. la mer Morte vue du ciel, l'altimètre à -430 m, le titre (vrai plan, Adobe Stock 198345828).
+ * Les plans 3 et 4 (« plate ») ne sont pas calculés en 3D : la page n'en rend que les textes, sur fond transparent
+ * (render.mjs --alpha), et tools/intro_hybride.sh les pose sur les vrais plans.
  *
  * Relief : SRTM (NASA). Images : Copernicus Sentinel-2 L2A du 11 mai 2025 ; globe : NASA Blue Marble, Black Marble 2016
  * et couverture nuageuse (domaine public). Préparation : tools/prep_drone.py, tools/prep_globe.py.
@@ -34,7 +36,7 @@
     sun: [3.0, 2.2, 1.6], bloomThr: 1.6, flare: 0.6, tint: 0.15 };
   root.INTRO = {
     name: 'intro-aerienne',
-    total: 84,
+    total: 73.68,
     fov: 38,
     fadeStart: 1.2,
     fadeIn: 2.6,
@@ -45,11 +47,10 @@
       letterbox: 2.39, streak: 0.35,
       cuts: [
         { t: 35, type: 'whip', dir: 1 },
-        { t: 49, type: 'whip', dir: -1 },
-        { t: 64, type: 'flash', col: [1, 0.86, 0.7], pre: 0.14, dur: 0.45 },
-        { t: 67.8, type: 'flash', col: [1, 0.55, 0.25], k: 0.28, pre: 0.05, dur: 0.5 },
+        { t: 53.12, type: 'flash', col: [1, 0.86, 0.7], pre: 0.14, dur: 0.45 },
+        { t: 59.6, type: 'flash', col: [1, 0.55, 0.25], k: 0.28, pre: 0.05, dur: 0.5 },
       ],
-      shakes: [[16.8, 2.2, 1.4], [18.9, 3.2, 1.1], [20.6, 4.5, 0.9], [64, 7, 0.55], [67.8, 6, 0.7]],
+      shakes: [[16.8, 2.2, 1.4], [18.9, 3.2, 1.1], [20.6, 4.5, 0.9]],
     },
     dipCol: [0.93, 0.87, 0.79],
     shots: [
@@ -85,40 +86,28 @@
         ],
       },
       {
-        id: 'collines', t0: 35, t1: 49, ramp: [[0, 2.0], [1.4, 0.9], [12.5, 0.9], [14, 1.9]], light: 'collines', detail: 'collines', sun: [128, 11], env: morning,
-        label: { at: 2.4, eyebrow: '31°46′ N · 35°06′ E', place: 'Monts de Judée', sub: 'À l’ouest de Jérusalem' },
-        pins: [
-          { name: 'Jérusalem', lon: 35.2345, lat: 31.7767, at: 4.6, out: 12.4, h: 60 },
-          { name: 'Bethléem', lon: 35.2024, lat: 31.7054, at: 5.6, out: 12.4, h: 60 },
-        ],
+        // vrai plan : le ouadi Qelt, entre Jérusalem et Jéricho (Cisjordanie)
+        id: 'desert', t0: 35, t1: 53.12, plate: { src: 'output/plans-reels/desert-judee-ouadi-qelt-saint-georges.mp4', stock: '593067850' },
+        light: 'desert', detail: 'desert', sun: [114, 17], env: desert,
+        label: { at: 2.2, eyebrow: '31°51′ N · 35°25′ E', place: 'Désert de Judée', sub: 'Le ouadi Qelt, entre Jérusalem et Jéricho' },
         keys: [
-          { t: -0.6, lon: 35.040, lat: 31.7580, alt: 2700, hdg: 88, pitch: -11, roll: -1.2 },
-          { t: 7, lon: 35.058, lat: 31.7620, alt: 2680, hdg: 89.5, pitch: -10.3, roll: -0.6 },
-          { t: 14.6, lon: 35.076, lat: 31.766, alt: 2700, hdg: 91, pitch: -9.6, roll: 0 },
+          { t: 0, lon: 35.336, lat: 31.4712, alt: 2350, hdg: 88, pitch: -13 },
+          { t: 18.2, lon: 35.392, lat: 31.4694, alt: 2330, hdg: 92, pitch: -7.5 },
         ],
       },
       {
-        id: 'desert', t0: 49, t1: 64, ramp: [[0, 2.0], [1.4, 0.92], [13.4, 0.92], [15, 1.7]], light: 'desert', detail: 'desert', sun: [114, 17], env: desert,
-        label: { at: 8.6, eyebrow: '31°28′ N · 35°23′ E', place: 'Désert de Judée', sub: 'La mer Morte, à plus de 430 mètres sous le niveau de la mer' },
-        gauge: { at: 6.2, dur: 3.2, from: 150, to: -430, out: 13.6, k: 'Altitude du sol', done: 'Le point le plus bas de la Terre' },
+        // vrai plan : la mer Morte vue du ciel, le point le plus bas de la Terre, puis le titre
+        id: 'titre', t0: 53.12, t1: 73.68, plate: { src: 'output/plans-reels/mer-morte-aerien.mp4', stock: '198345828' },
+        light: 'titre', detail: 'desert', sun: [118, 14], env: title,
+        gauge: { at: 0.6, dur: 3.0, from: 150, to: -430, out: 5.4, k: 'Altitude du sol', done: 'Le point le plus bas de la Terre' },
         keys: [
-          { t: -0.6, lon: 35.336, lat: 31.4712, alt: 2350, hdg: 88, pitch: -13 },
-          { t: 5, lon: 35.355, lat: 31.4706, alt: 2330, hdg: 89, pitch: -12 },
-          { t: 10, lon: 35.373, lat: 31.4700, alt: 2320, hdg: 90.5, pitch: -9.5 },
-          { t: 15.6, lon: 35.392, lat: 31.4694, alt: 2330, hdg: 92, pitch: -7.5 },
-        ],
-      },
-      {
-        id: 'titre', t0: 64, t1: 84, ramp: [[0, 1.8], [1.8, 0.85], [20, 0.85]], light: 'titre', detail: 'desert', sun: [118, 14], env: title,
-        keys: [
-          { t: -0.6, lon: 35.49, lat: 31.785, alt: 2500, hdg: 184, pitch: -14 },
-          { t: 9, lon: 35.49, lat: 31.770, alt: 2650, hdg: 183, pitch: -11.5 },
-          { t: 18.6, lon: 35.49, lat: 31.755, alt: 2850, hdg: 182, pitch: -9.5 },
+          { t: 0, lon: 35.49, lat: 31.785, alt: 2500, hdg: 184, pitch: -14 },
+          { t: 20.6, lon: 35.49, lat: 31.755, alt: 2850, hdg: 182, pitch: -9.5 },
         ],
       },
     ],
-    title: { at: 67.8, out: 80.2, word: 'SION', scripts: ['ציון', 'صهيون'], sub: 'L’idée, la terre, le choc' },
-    sound: { space: [0, 15], sunrise: 6.4, entry: [12, 22.8], surf: [23, 35.6], reveal: 56.6, titleSilence: 0.7,
-      whips: [[35, 1], [49, -1]], risers: [[62.4, 64]], impacts: [[64, 1]] }, // ressac sous le plan de la mer, grondement quand la mer Morte apparaît
+    title: { at: 59.6, out: 71.0, word: 'SION', scripts: ['ציון', 'صهيون'], sub: 'L’idée, la terre, le choc' },
+    sound: { space: [0, 15], sunrise: 6.4, entry: [12, 22.8], surf: [23, 35.6], reveal: 53.3, titleSilence: 0.7,
+      whips: [[35, 1]], risers: [[51.5, 53.12]], impacts: [[53.12, 1]] }, // ressac sous le plan de la mer, grondement quand la mer Morte apparaît
   };
 })(typeof window !== 'undefined' ? window : globalThis);

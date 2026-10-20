@@ -36,7 +36,21 @@
 | Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique | 00:52:49:08 | 1 min 32.0 s |
 | Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation | 00:54:21:08 | 1 min 08.8 s |
 | Chapitre 28 · Le racisme en Israël : mizrahim, éthiopiens et palestiniens | 00:55:30:03 | 1 min 27.6 s |
-| **Total** | | **56 min 57.7 s** |
+| Ouverture de la partie VI | 00:56:57:18 | 0 min 14.4 s |
+| Chapitre 29 · Les juifs antisionistes : Neturei Karta, Jewish Voice for Peace | 00:57:12:03 | 1 min 14.6 s |
+| Chapitre 30 · Les religieux contre le sionisme : foi ou nationalisme ? | 00:58:26:18 | 1 min 03.6 s |
+| Chapitre 31 · Les intellectuels français : BHL, Finkielkraut et le débat public | 00:59:30:08 | 1 min 47.6 s |
+| Ouverture de la partie VII | 01:01:17:23 | 0 min 12.8 s |
+| Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique | 01:01:30:18 | 1 min 47.6 s |
+| Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338 | 01:03:18:08 | 1 min 19.9 s |
+| Chapitre 34 · L'effacement culturel : villages détruits, noms effacés | 01:04:38:06 | 1 min 21.7 s |
+| Chapitre 35 · Le destin manifeste : colonialisme, apartheid, dépossession | 01:05:59:23 | 1 min 35.4 s |
+| Chapitre 36 · La fracture en Israël : extrémisme religieux vs démocratie | 01:07:35:08 | 0 min 54.8 s |
+| Ouverture de la conclusion | 01:08:30:03 | 0 min 14.0 s |
+| Chapitre 37 · Le droit des peuples : libre arbitre contre dogme | 01:08:44:03 | 0 min 28.6 s |
+| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:09:12:18 | 0 min 51.6 s |
+| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:10:04:08 | 1 min 36.2 s |
+| **Total** | | **71 min 40.5 s** |
 
 ## Images à obtenir
 
@@ -87,3 +101,18 @@
 - 28.2 : à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)
 - 28.3 : à télécharger : immigrants yéménites, camp de Rosh HaAyin, vers 1950 (GPO, domaine public) (la commission Kedmi n'a pas retenu d'enlèvements organisés ; l'indemnisation est accordée sans reconnaissance de responsabilité)
 - 28.4 : à télécharger : manifestation des Israéliens d'origine éthiopienne, Tel-Aviv, mai 2015 (licence libre, Wikimedia Commons)
+- 29.2 : à télécharger : manifestation de Neturei Karta (licence libre, Wikimedia Commons)
+- 29.3 : à télécharger : rassemblement de Jewish Voice for Peace, octobre 2023 (licence libre, Wikimedia Commons)
+- 29.4 : même série : la gare de Grand Central, New York, 27 octobre 2023
+- 29.5 : à télécharger : rassemblement de Briser le silence ou de jeunes objecteurs, Tel-Aviv (licence libre)
+- 30.2 : à télécharger : page du Talmud de Babylone, traité Ketoubot 110b-111a (édition ancienne, domaine public)
+- 30.3 : à télécharger : le rabbin Joel Teitelbaum de Satmar (domaine public à vérifier)
+- 30.4 : à télécharger : Yeshayahou Leibowitz (GPO ou licence libre)
+- 30.5 : à télécharger : manifestation ultra-orthodoxe contre la conscription, Jérusalem, 2024 (licence libre)
+- 31.8 : à télécharger : portrait d'Edgar Morin (licence libre, Wikimedia Commons)
+- 32.2 : à télécharger : le procès d'Adolf Eichmann, Jérusalem, 1961 (GPO, domaine public en Israël)
+- 35.9 : à licencier : colonie au sommet d'une colline, Cisjordanie, vue aérienne (Adobe Stock, collection gratuite)
+- 36.4 : à télécharger : manifestation contre la réforme de la justice, Tel-Aviv, 2023 (licence libre, Wikimedia Commons)
+- 36.6 : même photo que le chapitre 30 (ultra-orthodoxes et conscription), ou une autre de 2024
+- 38.4 : à licencier : récolte des olives ou broderie palestinienne (Adobe Stock, collection gratuite ; autre plan que celui du chapitre 5)
+- 38.5 : à télécharger : rencontre du Cercle des parents, familles israéliennes et palestiniennes endeuillées (licence libre)

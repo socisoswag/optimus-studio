@@ -11,6 +11,9 @@ import * as THREE from './vendor/three.module.min.js';
 const Q = new URLSearchParams(location.search);
 const TLN = (Q.get('tl') || 'intro-aerienne').replace(/[^a-z0-9-]/gi, '');
 if (Q.get('notext')) document.body.classList.add('notext');
+// ?alpha=1 : les textes seuls (lieux, altimètre, titre) sur fond transparent, à poser sur de vrais plans tournés
+const PLATE = !!Q.get('alpha');
+if (PLATE) document.documentElement.classList.add('plate');
 await import(`./timelines/${TLN}.js`);
 const I = window.INTRO;
 const DIR = `data/${I.data || 'drone'}`;
@@ -1031,6 +1034,7 @@ function pins(s, tl, c) {
 function renderFrame(t) {
   const s = shotAt(t), tl = t - s.t0;
   updateText(t);
+  if (PLATE) { gauge(s, tl); updateText(t); return new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))); }
   if (s.type === 'space') { QA_CAM = null; pins(s, tl, { x: 0, y: 0, z: 1e9 }); return finish(t, renderSpace(t, s, tl)); }
   gauge(s, tl);
   const c = camAt(s, s.warp ? s.warp(tl) : tl);

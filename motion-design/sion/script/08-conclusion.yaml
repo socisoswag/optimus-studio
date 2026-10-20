@@ -1,0 +1,106 @@
+titre: "Conclusion"
+intro: >-
+  Le film dit sa position, une seule fois et clairement : l'égalité des droits, entre la mer et le Jourdain. Puis il
+  laisse la dernière image à la terre. Pas de discours, pas de musique : la voix se fait rare, le son de la ville monte.
+chapitres:
+  - num: "C.0"
+    titre: "Ouverture de la conclusion"
+    plans:
+      - type: MD
+        fichier: output/conclusion.mp4
+        entree: 0
+        sortie: 14
+        ecran: "Conclusion"
+
+  - num: "37"
+    titre: "Chapitre 37 · Le droit des peuples : libre arbitre contre dogme"
+    intention: >-
+      Le principe, sa source (la Charte de l'ONU) et son rappel par la Cour en 2024. Le film le défend : c'est sa
+      position, dite comme telle.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-37.mp4
+        entree: 0
+        sortie: 4.6
+      - type: NOIR
+        duree: 14
+        source: "Charte des Nations unies, 26 juin 1945, article 1, paragraphe 2 ; CIJ, avis du 19 juillet 2024 (droit du peuple palestinien à l'autodétermination)"
+        voix: >-
+          En 1945, la Charte des Nations unies pose un principe : / le droit des peuples à disposer d'eux-mêmes. // En
+          2024, la Cour internationale de justice le rappelle pour le peuple **palestinien**.
+      - type: RÉEL
+        fichier: output/plans-reels/jaffa-clocher-vieille-ville-aerien.mp4
+        entree: 0
+        sortie: 10
+        source: "SOURCES.md 4.1, Adobe Stock 390879149"
+        voix: >-
+          Ce droit, le sionisme l'a revendiqué pour les Juifs. / On ne peut pas le refuser aux **Palestiniens**.
+
+  - num: "38"
+    titre: "Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière"
+    intention: >-
+      Darwich, puis un mot palestinien (sumud), puis les familles endeuillées des deux peuples qui se parlent : la
+      douleur n'a pas de camp.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-38.mp4
+        entree: 0
+        sortie: 4.6
+      - type: PHOTO
+        fichier: portraits/darwich.png
+        duree: 10
+        voix: >-
+          Mahmoud Darwich naît en 1941 à al-Birwa, en Galilée. / Le village est vidé en 1948, puis **rasé**.
+      - type: MD
+        fichier: output/citation-darwich.mp4
+        entree: 0
+        sortie: 13
+        source: "SOURCES.md 6 (Mahmoud Darwich, « Sur cette terre »)"
+        voix: >-
+          « Sur cette terre, / il y a ce qui mérite la **vie**. » ///
+      - type: RÉEL
+        fichier: "à licencier : récolte des olives ou broderie palestinienne (Adobe Stock, collection gratuite ; autre plan que celui du chapitre 5)"
+        duree: 9
+        a_obtenir: true
+        voix: >-
+          Les Palestiniens ont un mot pour cela : / sumud. / Tenir. / **Rester**.
+      - type: PHOTO
+        fichier: "à télécharger : rencontre du Cercle des parents, familles israéliennes et palestiniennes endeuillées (licence libre)"
+        duree: 15
+        a_obtenir: true
+        source: "Parents Circle-Families Forum, fondé en 1995"
+        voix: >-
+          Depuis 1995, des familles israéliennes et palestiniennes qui ont perdu un enfant se réunissent : / le Cercle des
+          parents. // Elles disent : nous ne voulons plus de nouveaux **membres**.
+
+  - num: "39"
+    titre: "Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire"
+    intention: >-
+      La position du film, en une phrase. Puis la terre, et la ville, sans voix.
+    plans:
+      - type: CARTON
+        fichier: output/chapitres/chapitre-39.mp4
+        entree: 0
+        sortie: 4.6
+      - type: MD
+        fichier: output/chronologie.mp4
+        entree: 73
+        sortie: 79.6
+        ecran: "fiche de fin : De 1897 à 1995 · Un siècle. Deux peuples. Une terre."
+      - type: NOIR
+        duree: 15
+        voix: >-
+          Ce film a pris position : / pour l'égalité des droits, entre la mer et le Jourdain. / Il ne demande à personne
+          de partir. / Il demande que personne ne soit plus **chassé**.
+      - type: RÉEL
+        fichier: output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4
+        entree: 0
+        sortie: 10
+        source: "SOURCES.md 4.1, Adobe Stock 609005799"
+        voix: >-
+          Aimer cette terre, / sans la **détruire**. ///
+        son: "la ville le soir, un appel lointain, des cloches, puis le silence"
+      - type: MD
+        fichier: output/generique-fin.mp4
+        duree: 60
+        note: "générique de fin : à finaliser à la toute fin (crédits CC BY et CC BY-SA, voir SOURCES.md 1)"
