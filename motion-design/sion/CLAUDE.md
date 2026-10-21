@@ -73,3 +73,21 @@ et dans le générique de fin (`timelines/generique-fin.js`). Le signaler en une
 - Rendu « grand documentaire » : ça doit bouger et claquer (coupes en filé, flashs, impacts,
   rampes de vitesse, traînées d'objectif, chiffres qui défilent), jamais cheap.
 - Ne jamais mettre le nom de l'auteur dans les fichiers.
+
+## Reprise dans une nouvelle session (à lire d'abord)
+
+État du projet et choses à faire : `script/A-FABRIQUER.md` (ce qui manque, prompts Gemini, questions Perplexity),
+`script/CHANGEMENTS.md` (ce qui a changé à chaque envoi, à tenir à jour), `SOURCES.md`. Le dossier `output/` n'est
+pas versionné : dans un conteneur neuf, les rendus n'existent pas ; ne relivrer une partie qu'après avoir refait
+les rendus qu'elle utilise (derush garde les plans déjà livrés dont le rendu manque, mais ne les met pas à jour).
+
+- Reconstitutions IA (Gemini/Veo, toujours d'après une vraie photo d'archive) : ranger chaque nouveau clip dans
+  `data/gemini/<nom de la photo>.mp4` (noms dans `output/reconstitution/`, légendes dans
+  `data/reconstitution-legendes.json`), puis `python3 tools/build_reconstitution.py data/gemini` ; placer le
+  fichier `output/reconstitutions/<n>-<nom>.mp4` dans le plan du script (type IA, entree/sortie).
+- Livraison plan par plan : `bash tools/livrer_derush.sh <parties>` (0 ouverture, 1 à 7, 8 conclusion), dépôt
+  `Montage-Moyen-orient` ; noter dans `script/CHANGEMENTS.md` chaque plan nouveau, remplacé ou retiré.
+- Voix off : `python3 tools/texte_voix.py` (texte à lire, `script/VOIX-A-LIRE.md`) ; nettoyage sans IA :
+  `python3 tools/voix.py <brut.wav> --ton 10` → `output/voix/`. Mixage : la voix à -16 LUFS, les bruitages
+  baissés dessous (dans Premiere : Son essentiel, atténuation automatique), le film fini à -14 LUFS.
+- Après une modification du script : `python3 tools/script.py`, puis commit et push.
