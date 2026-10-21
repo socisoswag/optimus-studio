@@ -35,3 +35,15 @@ marché de Jaffa, `08.R1` les bannières de Nebi Musa à al-Aqsa.
 **Voix off** : plan 6.9, la fin devient « Le prix de leurs terres, promet-il, va « quintupler et décupler ». » (les
 mots de Herzl, dont la lettre est en français). La citation « Mais qui songerait à les éloigner ? » attend encore
 le texte français exact (question Perplexity dans A-FABRIQUER.md) : enregistre le chapitre 6 après la réponse.
+
+## 21 octobre 2026, le soir
+
+**Nouveaux plans (avant : « à venir »)** : les événements récents, en fiches animées sur la carte (pas d'IA pour un
+événement récent). Tous dans `documents-3`, nommés `<plan>-MD-documents-3.mp4` :
+20.07 septembre 1970 · 22.02 Jabaliya, 9 décembre 1987 · 22.03 l'intifada · 28.04 les Israéliens éthiopiens ·
+29.02 Neturei Karta · 29.03 Jewish Voice for Peace · 29.04 « Pas en notre nom », octobre 2023 · 29.05 Briser le
+silence · 30.05 la Cour suprême et les yeshivas · 36.04 contre la réforme de la justice · 36.06 « Tout est
+contesté » · 38.05 le Cercle des parents.
+
+**Photos de départ ajoutées pour Gemini** (`photos-de-depart/`) : 5.6 Tel-Aviv 1909, 10.3 le Bund 1917, 14.2 la
+Haganah 1948, 17.3 Lod 1951, 17.4 la maabara de Nahariya 1952, 28.3 Rosh HaAyin 1950.

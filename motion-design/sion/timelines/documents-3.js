@@ -71,8 +71,8 @@
       rows: [['Fondé en 1996', 'à Berkeley, en Californie'], ['En 2024', 'plus de 32 000 membres']],
       rowAt: [2.4, 6.0],
       lon: -122.27, lat: 37.87, pin: true, place: 'Berkeley', pinLabel: true,
-      cam: { lon: -122.3, lat: 37.8, w: 0.12, pitch: 40, bearing: -4 },
-      camEnd: { lon: -122.3, lat: 37.8, w: 0.1, pitch: 46, bearing: 4 },
+      cam: { lon: -121.0, lat: 37.6, w: 0.6, pitch: 40, bearing: -4 },
+      camEnd: { lon: -121.0, lat: 37.6, w: 0.52, pitch: 46, bearing: 4 },
     },
     {
       ...D, id: 'd29-4', dur: 13, fly: 2.6, hitAt: 0.8,
