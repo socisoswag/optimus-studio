@@ -98,10 +98,12 @@ for name in order:
     os.makedirs(out, exist_ok=True)
     for old in glob.glob(os.path.join(out, "*.jpg")):
         os.remove(old)
-    vf = f"fps={FPS},scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080"
+    L = LEG.get(name, {})
+    # « vitesse » < 1 (légendes) : clip ralenti, images fondues entre elles (pas de saccade)
+    vit = f"setpts=PTS/{L['vitesse']},minterpolate=fps={FPS}:mi_mode=blend," if L.get("vitesse") else ""
+    vf = f"{vit}fps={FPS},scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080"
     subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", found[name], "-vf", vf, "-q:v", "3", os.path.join(out, "%04d.jpg")], check=True)
     n = len(glob.glob(os.path.join(out, "*.jpg")))
-    L = LEG.get(name, {})
     src = "Bibliothèque du Congrès" if name == "07-immigrants-ellis-island" else SRC_CREDIT
     lab = {"eyebrow": L.get("eyebrow", ""), "place": L.get("place", ""), "sub": L.get("sub", ""), "at": 0.35}
     clip = {"frames": {"dir": f"output/reconstitution/images/{name}", "n": n, "fps": FPS},
@@ -115,8 +117,10 @@ for name in order:
         dr, first, low = [], 0, 0
     if name in refs and first >= 0.9 and low >= 0.7:
         # la photo elle-même, animée : figée sur sa première image, elle s'anime, se fige sur la dernière
-        dur = HOLD + n / FPS + FREEZE
-        photos.append({"id": name, "t0": round(t, 3), "t1": round(t + dur, 3), "fade": FADE, "hold": HOLD, **clip, **lab,
+        # « hold » (légendes) : la photo reste plus longtemps figée au début, quand le plan dure plus que le clip
+        hold = L.get("hold", HOLD)
+        dur = hold + n / FPS + FREEZE
+        photos.append({"id": name, "t0": round(t, 3), "t1": round(t + dur, 3), "fade": FADE, "hold": hold, **clip, **lab,
                        "out": max(1.0, dur - 5.2), "credit": f"Photo d’archive animée par IA\n{src}"})
         t += dur
         mode = "photo animée"

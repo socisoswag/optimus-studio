@@ -188,9 +188,9 @@ Source : SOURCES.md 2.2, matpc 18170 (le souk des bijoutiers, désert pendant le
 (18 mots, 1.8 par seconde)
 
 
-**8.14** · film **00:15:55:24 → 00:16:07:24** (12.0 s) · **[IA]** `à générer : reconstitution d'une maison dynamitée à Lydda (image de départ : output/reconstitution/21-maison-dynamitee-lydda-1936.jpg)` · **À OBTENIR**  
+**8.14** · film **00:15:55:24 → 00:16:07:24** (12.0 s) · **[IA]** `output/reconstitutions/12-21-maison-dynamitee-lydda-1936.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : SOURCES.md 2.2, matpc 18126 (maison de Lydda dynamitée sur ordre militaire, 1936) ; bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centaines de Juifs (article « 1936-1939 Arab revolt in Palestine », d'après Walid Khalidi et Matthew Hughes, Britain's Pacification of Palestine, 2019)  
-À l'écran : déjà dans le plan : 1936 · Lydda · Maison dynamitée par l'armée, ses habitants dans les décombres · mention : Reconstitution par IA, d'après une photo d'archive  
+À l'écran : déjà dans le plan : 1936 · Lydda · Maison dynamitée par l'armée · Photo d'archive animée par IA  
 > VOIX : La répression britannique est terrible : / maisons dynamitées, / pendaisons, / villages punis. // En trois ans, environ cinq mille Arabes sont **tués**.  
 (19 mots, 1.6 par seconde)
 
@@ -286,8 +286,9 @@ Source : déclaration de Pittsburgh, conférence des rabbins réformés, 16-19 n
 (38 mots, 2.4 par seconde)
 
 
-**10.3** · film **00:18:45:14 → 00:19:00:14** (15.0 s) · **[IA]** `à générer : reconstitution d'une manifestation du Bund, 1917 (image de départ : data/reconstitution/28-bund-1917.jpg)` · **À OBTENIR**  
+**10.3** · film **00:18:45:14 → 00:19:00:14** (15.0 s) · **[IA]** `output/reconstitutions/13-28-bund-1917.mp4` · source 00:00:00:00 → 00:00:15:00  
 Source : Bund (Union générale des travailleurs juifs), fondé à Vilnius en octobre 1897  
+À l'écran : déjà dans le plan : 1917 · Empire russe · Une manifestation du Bund · Photo d'archive animée par IA  
 > VOIX : En 1897, l'année même du congrès de Bâle, / des ouvriers juifs fondent le Bund, à Vilnius. / Leur idée : rester, et se battre là où l'on vit. // En yiddish : doikayt, « **l'ici** ».  
 (30 mots, 2.0 par seconde)
 

@@ -47,3 +47,12 @@ contesté » · 38.05 le Cercle des parents.
 
 **Photos de départ ajoutées pour Gemini** (`photos-de-depart/`) : 5.6 Tel-Aviv 1909, 10.3 le Bund 1917, 14.2 la
 Haganah 1948, 17.3 Lod 1951, 17.4 la maabara de Nahariya 1952, 28.3 Rosh HaAyin 1950.
+
+## 22 octobre 2026
+
+**Nouveaux plans (tes clips Gemini)** : `05.06-IA-14-29-tel-aviv-1909.mp4` (la loterie de 1909),
+`08.14-IA-12-21-maison-dynamitee-lydda-1936.mp4` (Lydda, 1936), `10.03-IA-13-28-bund-1917.mp4` (le Bund, 1917 ; la
+banderole en russe et en yiddish est restée fidèle à la photo).
+
+**À refaire** : 8.13 le souk (une silhouette « fantôme » apparaissait), 10.4 le mur occidental (5 s au lieu de 8).
+

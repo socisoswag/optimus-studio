@@ -253,12 +253,10 @@ chapitres:
         voix: >-
           En 1936, la Palestine arabe se met en grève. / Six mois. // C'est le début de la grande **révolte**.
       - type: IA
-        fichier: "à générer : reconstitution d'une maison dynamitée à Lydda (image de départ : output/reconstitution/21-maison-dynamitee-lydda-1936.jpg)"
-        duree: 12
-        a_obtenir: true
-        ecran: >-
-          déjà dans le plan : 1936 · Lydda · Maison dynamitée par l'armée, ses habitants dans les décombres ·
-          mention : Reconstitution par IA, d'après une photo d'archive
+        fichier: output/reconstitutions/12-21-maison-dynamitee-lydda-1936.mp4
+        entree: 0
+        sortie: 12
+        ecran: "déjà dans le plan : 1936 · Lydda · Maison dynamitée par l'armée · Photo d'archive animée par IA"
         source: >-
           SOURCES.md 2.2, matpc 18126 (maison de Lydda dynamitée sur ordre militaire, 1936) ;
           bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centaines de Juifs (article « 1936-1939 Arab
@@ -395,10 +393,11 @@ chapitres:
           déclarent : / « Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse, / et
           n'attendons donc pas de retour en **Palestine**. »
       - type: IA
-        fichier: "à générer : reconstitution d'une manifestation du Bund, 1917 (image de départ : data/reconstitution/28-bund-1917.jpg)"
+        fichier: output/reconstitutions/13-28-bund-1917.mp4
+        entree: 0
+        sortie: 15
+        ecran: "déjà dans le plan : 1917 · Empire russe · Une manifestation du Bund · Photo d'archive animée par IA"
         photo: "Wikimedia Commons, « Bundist demonstration », auteur inconnu, février-mars 1917, domaine public"
-        duree: 15
-        a_obtenir: true
         source: "Bund (Union générale des travailleurs juifs), fondé à Vilnius en octobre 1897"
         voix: >-
           En 1897, l'année même du congrès de Bâle, / des ouvriers juifs fondent le Bund, à Vilnius. / Leur idée :

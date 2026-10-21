@@ -54,10 +54,7 @@
 
 ## Images à obtenir
 
-- 5.6 : à générer : reconstitution de la loterie d'Ahuzat Bayit, 11 avril 1909 (image de départ : data/reconstitution/29-tel-aviv-1909.jpg) (le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même plan dans le film))
 - 8.13 : à générer : reconstitution de la grève de 1936 (image de départ : output/reconstitution/20-greve-1936-souk-desert.jpg)
-- 8.14 : à générer : reconstitution d'une maison dynamitée à Lydda (image de départ : output/reconstitution/21-maison-dynamitee-lydda-1936.jpg)
-- 10.3 : à générer : reconstitution d'une manifestation du Bund, 1917 (image de départ : data/reconstitution/28-bund-1917.jpg)
 - 10.4 : à générer : reconstitution de la prière au mur occidental (image de départ : output/reconstitution/23-mur-occidental.jpg)
 - 14.2 : à générer : reconstitution de l'entraînement de la Haganah, avril 1948 (image de départ : data/reconstitution/27-haganah-1948.jpg)
 - 14.3 : à générer : reconstitution de l'hôtel King David après l'attentat (image de départ : output/reconstitution/22-king-david-1946.jpg)

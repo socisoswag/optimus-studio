@@ -339,12 +339,12 @@ chapitres:
           Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, /
           et les ouvriers arabes sont écartés.
       - type: IA
-        fichier: "à générer : reconstitution de la loterie d'Ahuzat Bayit, 11 avril 1909 (image de départ : data/reconstitution/29-tel-aviv-1909.jpg)"
+        fichier: output/reconstitutions/14-29-tel-aviv-1909.mp4
+        entree: 0
+        sortie: 10
+        ecran: "déjà dans le plan : 11 avril 1909 · Au nord de Jaffa · le tirage au sort des terrains · Photo d'archive animée par IA"
         photo: "Wikimedia Commons, « TelAviv-Founding », Avraham Soskin, 1909, domaine public"
-        duree: 10
-        a_obtenir: true
         source: "photo d'Avraham Soskine, 11 avril 1909 (domaine public)"
-        ecran: "carton : Jaffa · avril 1909"
         note: "le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même plan dans le film)"
         voix: >-
           En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la
