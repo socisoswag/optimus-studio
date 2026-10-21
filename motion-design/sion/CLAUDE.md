@@ -91,3 +91,21 @@ les rendus qu'elle utilise (derush garde les plans déjà livrés dont le rendu 
   `python3 tools/voix.py <brut.wav> --ton 10` → `output/voix/`. Mixage : la voix à -16 LUFS, les bruitages
   baissés dessous (dans Premiere : Son essentiel, atténuation automatique), le film fini à -14 LUFS.
 - Après une modification du script : `python3 tools/script.py`, puis commit et push.
+
+## Direction artistique (fixée : ne pas la réinventer, la reprendre)
+
+Toute nouvelle pièce part de la timeline existante la plus proche (`timelines/*.js`), copiée puis adaptée : même
+moteur, mêmes gabarits, même finition. Rien de neuf sans raison de récit.
+- Couleurs : `data/palette.js` (fond, accent orange, halo) ; étalonnage par les LUT de `data/looks/`
+  (`archive.cube` pour les archives filmées, `reconstitution.cube` pour les clips IA, `terre*.cube` pour la 3D).
+- Polices (`index.html`) : Archivo en capitales pour les titres et les lieux, Newsreader italique pour les phrases,
+  DM Mono espacée pour les dates et les mentions ; Noto Kufi Arabic et Noto Sans Hebrew pour l'arabe et l'hébreu.
+- Légende d'un plan : date en DM Mono orange précédée d'un trait, lieu en grandes capitales Archivo, phrase en
+  Newsreader italique ; mention de source ou « Reconstitution par IA, d'après une photo d'archive » en bas.
+- Gabarits du moteur : `quote` (citation et visage), `doc` (fiche d'événement sur la carte 3D : date, titre,
+  citation, lignes, épingle), `figure` (fiche de personnage) ; `photo3d.html` pour les archives et les
+  reconstitutions ; cartons transparents `timelines/cartons.js`.
+- Finition commune (`tools/build.sh`, `tools/build_intro.sh`, `tools/archives_filmees.py`) : halo chaud des hautes
+  lumières, courbe argentique, léger flottement de l'image, grain, vignette ; 1080p 25 i/s.
+- Son : vrais enregistrements de la banque seulement (`data/bruitages.json`), réglés par `tools/sound.py` et
+  `tools/sound_intro.py`, contrôlés par `tools/verif_son.py`.
