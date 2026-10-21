@@ -220,8 +220,9 @@ chapitres:
         fichier: output/chapitres/chapitre-14.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: "à télécharger : membres de la Haganah, 1947-1948 (domaine public, Wikimedia Commons)"
+      - type: IA
+        fichier: "à générer : reconstitution de l'entraînement de la Haganah, avril 1948 (image de départ : data/reconstitution/27-haganah-1948.jpg)"
+        photo: "Wikimedia Commons, « Training for the Hagana », GPO, 4 avril 1948, CC BY-SA 3.0"
         duree: 12
         a_obtenir: true
         voix: >-
@@ -417,8 +418,9 @@ chapitres:
         voix: >-
           Dans le même temps, environ 850 000 Juifs quittent les pays arabes, / du Maroc à l'Irak. / La plupart
           s'installent en **Israël**.
-      - type: PHOTO
-        fichier: "à télécharger : Juifs irakiens à l'aéroport de Lod, 1951 (GPO, domaine public)"
+      - type: IA
+        fichier: "à générer : reconstitution de l'arrivée d'immigrants juifs d'Irak à Lod, mai 1951 (image de départ : data/reconstitution/24-immigrants-irak-lod-1951.jpg)"
+        photo: "Wikimedia Commons, « Immigrants 1951 », GPO, mai 1951, domaine public"
         duree: 17
         a_obtenir: true
         source: "Farhoud, Bagdad, 1er et 2 juin 1941 (bilans de plus d'une centaine à près de deux cents morts) ; loi irakienne de 1950 ; expulsions d'Égypte après 1956"
@@ -426,8 +428,9 @@ chapitres:
           Certains fuient des violences : / à Bagdad, en juin 1941, le Farhoud fait plus d'une centaine de morts juifs.
           // Après 1948, l'Irak ne les laisse partir qu'en renonçant à leur nationalité ; / l'Égypte en expulse des
           milliers après **1956**.
-      - type: PHOTO
-        fichier: "à télécharger : une maabara (camp de transit), Israël, vers 1950 (GPO, domaine public)"
+      - type: IA
+        fichier: "à générer : reconstitution de la maabara de Nahariya, février 1952 (image de départ : data/reconstitution/25-maabara-nahariya-1952.jpg)"
+        photo: "Wikimedia Commons, « Nahariya Maabara », Fritz Cohen, GPO, février 1952, domaine public"
         duree: 16
         a_obtenir: true
         source: "opérations Tapis volant (Yémen, 1949-1950) et Ezra et Néhémie (Irak, 1951-1952) ; maabarot"

@@ -292,7 +292,7 @@ Source : Black Panthers israéliens, fondés en 1971 à Moussrara, Jérusalem ; 
 (39 mots, 2.3 par seconde)
 
 
-**28.3** · film **00:56:10:06 → 00:56:26:06** (16.0 s) · **[PHOTO]** `à télécharger : immigrants yéménites, camp de Rosh HaAyin, vers 1950 (GPO, domaine public)` · **À OBTENIR**  
+**28.3** · film **00:56:10:06 → 00:56:26:06** (16.0 s) · **[IA]** `à générer : reconstitution de les immigrants yéménites de Rosh HaAyin, février 1950 (image de départ : data/reconstitution/26-rosh-haayin-1950.jpg)` · **À OBTENIR**  
 Source : commission Kedmi, rapport de 2001 ; décision du gouvernement israélien d'indemniser les familles, février 2021  
 > VOIX : Entre 1948 et 1954, des centaines d'enfants d'immigrants yéménites disparaissent des hôpitaux et des camps. / On dit aux parents qu'ils sont morts. // En 2021, l'État accepte d'indemniser les **familles**.  
 (29 mots, 1.8 par seconde)  

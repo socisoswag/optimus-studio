@@ -26,5 +26,10 @@
   "20-greve-1936-souk-desert": { "eyebrow": "1936", "place": "Le souk des bijoutiers", "sub": "Désert pendant les six mois de grève générale", "amb": "vent" },
   "21-maison-dynamitee-lydda-1936": { "eyebrow": "1936", "place": "Lydda", "sub": "Maison dynamitée par l’armée, ses habitants dans les décombres", "amb": "vent" },
   "22-king-david-1946": { "eyebrow": "22 juillet 1946", "place": "Jérusalem", "sub": "L’hôtel King David après l’attentat de l’Irgoun", "amb": "vent" },
-  "23-mur-occidental": { "eyebrow": "Entre 1898 et 1946", "place": "Jérusalem", "sub": "La prière au mur occidental", "amb": "foule" }
+  "23-mur-occidental": { "eyebrow": "Entre 1898 et 1946", "place": "Jérusalem", "sub": "La prière au mur occidental", "amb": "foule" },
+  "24-immigrants-irak-lod-1951": { "eyebrow": "Mai 1951", "place": "Aéroport de Lod", "sub": "Des immigrants juifs d’Irak à leur arrivée", "amb": "foule", "credit": "GPO (domaine public)" },
+  "25-maabara-nahariya-1952": { "eyebrow": "Février 1952", "place": "Nahariya", "sub": "Une maabara, camp de transit des nouveaux immigrants", "amb": "vent", "credit": "Fritz Cohen, GPO (domaine public)" },
+  "26-rosh-haayin-1950": { "eyebrow": "Février 1950", "place": "Rosh HaAyin", "sub": "Des immigrants yéménites au camp de transit", "amb": "foule", "credit": "Zoltan Kluger, GPO (domaine public)" },
+  "27-haganah-1948": { "eyebrow": "Avril 1948", "place": "Palestine", "sub": "L’entraînement de recrues de la Haganah", "amb": "vent", "credit": "GPO, CC BY-SA 3.0" },
+  "28-bund-1917": { "eyebrow": "1917", "place": "Empire russe", "sub": "Une manifestation du Bund, sous sa bannière en yiddish et en russe", "amb": "foule" }
 }

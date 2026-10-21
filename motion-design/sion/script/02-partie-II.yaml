@@ -394,8 +394,9 @@ chapitres:
           Au début, le sionisme est minoritaire chez les Juifs. / En 1885, aux États-Unis, les rabbins réformés
           déclarent : / « Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse, / et
           n'attendons donc pas de retour en **Palestine**. »
-      - type: PHOTO
-        fichier: "à télécharger : photo du Bund, Russie, vers 1905 (domaine public, Wikimedia Commons ou YIVO)"
+      - type: IA
+        fichier: "à générer : reconstitution d'une manifestation du Bund, 1917 (image de départ : data/reconstitution/28-bund-1917.jpg)"
+        photo: "Wikimedia Commons, « Bundist demonstration », auteur inconnu, février-mars 1917, domaine public"
         duree: 15
         a_obtenir: true
         source: "Bund (Union générale des travailleurs juifs), fondé à Vilnius en octobre 1897"

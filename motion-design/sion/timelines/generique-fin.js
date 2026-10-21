@@ -57,6 +57,7 @@
           ["Bezalel Smotrich", "Avi Ohayon · CC BY-SA 3.0"],
           ["Chaïm Weizmann", "Hugo Mendelson · CC BY-SA 3.0"],
           ["Cheikh Ahmed Yassine", "Yonathan Torgovnik, porte-parole de l’armée israélienne · CC BY-SA 3.0"],
+          ["Entraînement de la Haganah, 1948", "Government Press Office (GPO) · CC BY-SA 3.0"],
           ["David Ben Gourion", "Fritz Cohen · domaine public"],
           ["François Georges-Picot", "auteur inconnu · domaine public"],
           ["Gamal Abdel Nasser", "Stevan Kragujević · CC BY-SA 3.0"],

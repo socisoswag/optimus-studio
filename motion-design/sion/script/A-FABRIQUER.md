@@ -31,22 +31,22 @@ Le texte complet, prêt à coller plan par plan, est aussi dans `output/a-faire-
 | 8.14 | 12 s | Lydda, 1936 : les propriétaires d'une maison dynamitée par l'armée cherchent leurs affaires | `output/reconstitution/21-maison-dynamitee-lydda-1936.jpg` | The family and the neighbours search the rubble of the blown-up house for their belongings: they bend down, lift stones, the old man in the striped robe walks slowly forward; dust drifts in the sunlight. |
 | 10.4 | 14 s | des Juifs en prière au mur occidental (remplace le film « Jérusalem, 1918 », droits non établis) | `output/reconstitution/23-mur-occidental.jpg` | The women and men pray facing the wall, small movements: heads bow, a hand touches the stones, a shawl moves; the children at the right look around. |
 | 14.3 | 13 s | l'hôtel King David après l'attentat, 22 juillet 1946 | `output/reconstitution/22-king-david-1946.jpg` | Thin dust and smoke drift from the collapsed wing; the crane arms move slowly; soldiers and rescuers search the rubble. No bodies, no blood. |
+| 17.3 | 17 s | des immigrants juifs d'Irak arrivent à l'aéroport de Lod, mai 1951 (photo 6) | `data/reconstitution/24-immigrants-irak-lod-1951.jpg` | The families wait next to the truck; a man hands bundles and bags down from the truck to the people below; the propeller plane stands still in the background; wind moves the scarves and the clothes. |
+| 17.4 | 16 s | la maabara de Nahariya, février 1952 (photo 7) | `data/reconstitution/25-maabara-nahariya-1952.jpg` | The women at the table fill in forms and talk; the man with the briefcase walks slowly toward the table; the tablecloth moves slightly in the wind. |
+| 28.3 | 16 s | des immigrants yéménites au camp de Rosh HaAyin, février 1950 (photo 8) | `data/reconstitution/26-rosh-haayin-1950.jpg` | The crowd of families stands in front of the tents with small movements: heads turn, a mother holds her child, people shift their weight; wind moves the tent canvas. |
+| 14.2 | 12 s | l'entraînement de recrues de la Haganah, avril 1948 (photo 9) | `data/reconstitution/27-haganah-1948.jpg` | The young recruits stand and listen in the courtyard; a few walk slowly forward holding their rifles; slight wind in the pine tree. |
+| 10.3 | 15 s | une manifestation du Bund, 1917 (photo 10) | `data/reconstitution/28-bund-1917.jpg` | The demonstrators stand still on the snowy street, small movements, breath in the cold air; the banner moves gently in the wind. |
 
 **Photos à télécharger toi-même** sur Wikimedia Commons (mots à taper entre guillemets ; envoie-moi la photo avec le clip) :
 
 | Plan | Durée | Ce qu'on doit voir | Chercher | Ligne à ajouter au prompt |
 |---|---|---|---|---|
 | 5.6 | 10 s | la loterie des terrains d'Ahuzat Bayit, futur Tel-Aviv, 11 avril 1909 (photo d'Avraham Soskine) | « Ahuzat Bayit lottery Soskine » | The crowd on the sand dunes gathers; a man draws shells from a box; the wind moves the clothes. |
-| 10.3 | 15 s | des membres du Bund, Russie, vers 1905 | « General Jewish Labour Bund 1905 » | The group stands still for the photographer with small movements; a flag moves in the wind. |
-| 14.2 | 12 s | des combattants de la Haganah, 1947-1948 | « Haganah 1948 » | The men walk with their rifles, slow camera. |
 | 16.6 | 13 s | un soldat contrôle le laissez-passer d'un Arabe israélien, années 1950 | « Israel military government 1950s permit » (si rien : une fiche) | The soldier checks the paper, the man waits. |
-| 17.3 | 17 s | des Juifs irakiens arrivent à l'aéroport de Lod, 1951 | « Operation Ezra and Nehemiah Lod 1951 » | Families step down from the plane with their bags. |
-| 17.4 | 16 s | une maabara (camp de toile), vers 1950 | « Ma'abarot » | Children walk between the tents, laundry moves in the wind. |
 | 20.7 | 11 s | Amman, septembre 1970 | « Black September 1970 Amman » | Smoke rises slowly over the city, the street is empty. |
 | 22.2 et 22.3 | 13 s et 13 s | la première intifada, Gaza, 1987-1988 (CC BY ou CC BY-SA obligatoire) | « First Intifada Gaza » | Young people in the street, soldiers in the distance, no violence shown close up. |
 | 26.2 | 15 s | les colons du Goush Emounim à Sébastia, 1975 | « Gush Emunim Sebastia 1975 » | The crowd of settlers stands on the hill, flags move in the wind. |
 | 28.2 | 17 s | la manifestation des Black Panthers israéliens, Jérusalem, 1971 | « Israeli Black Panthers 1971 » | The demonstrators march with their signs. |
-| 28.3 | 16 s | des immigrants yéménites, camp de Rosh HaAyin, vers 1950 | « Rosh HaAyin immigrant camp 1950 » | Families sit in front of the tents, children move. |
 
 Pas d'IA, par choix : les massacres (Hébron 1929, Deir Yassin, le convoi de Hadassah) restent en fiches sobres, sans
 images reconstituées.

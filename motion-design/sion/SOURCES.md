@@ -33,6 +33,7 @@ Trois règles :
   - Chaïm Weizmann : Hugo Mendelson · CC BY-SA 3.0
   - Mahmoud Darwich : UmmNuniya · CC BY-SA 4.0
   - Cheikh Ahmed Yassine : Yonathan Torgovnik, unité du porte-parole de l'armée israélienne · CC BY-SA 3.0
+  - Entraînement de la Haganah, 1948 (plan 14.2) : Government Press Office (GPO) · CC BY-SA 3.0
 - Document sous licence CC BY-SA :
   - Lettre de Theodor Herzl à Youssouf Diya al-Khalidi, 19 mars 1899 (version anglaise) : Institut d'études
     palestiniennes, PalQuest, via Wikimedia Commons · CC BY-SA 4.0
@@ -128,6 +129,20 @@ Utilisées dans le script (plans fixes animés en relief) :
 |---|---|---|---|
 | matpc 05530 | Northern views. Plain of Esdraelon, telephoto from Nazareth | vers 1900 à 1920 | https://www.loc.gov/pictures/item/2019695480/ |
 | ds 14863 et matpc 12172 | (voir le tableau ci-dessus) : chapitres 2 et 5 | | |
+
+### 2.2 bis Photos de départ des reconstitutions (Wikimedia Commons, GPO israélien)
+
+Photos du Bureau de presse du gouvernement israélien (GPO), versées sur Wikimedia Commons ; animées par IA
+(SOURCES.md 4), toujours montrées d'abord telles quelles. Vérifié le 21 octobre 2026 sur les pages Wikipédia
+qui les utilisent.
+
+| Plan | Fichier Commons | Auteur, date | Licence |
+|---|---|---|---|
+| 14.2 | Flickr - Government Press Office (GPO) - TRAINING FOR THE HAGANA.jpg | GPO, 4 avril 1948 | CC BY-SA 3.0 |
+| 17.3 | Immigrants 1951.jpg | photographe du GPO, mai 1951 | domaine public |
+| 17.4 | Nahariya Maabara.jpg | Fritz Cohen, GPO, février 1952 | domaine public |
+| 10.3 | Bundist demonstration.jpg | auteur inconnu, février-mars 1917 | domaine public |
+| 28.3 | Zoltan Kluger. Rosh Ha-Ayin 1950.jpg | Zoltan Kluger, GPO, 2 février 1950 | domaine public |
 
 ### 2.3 Carte historique
 

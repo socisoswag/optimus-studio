@@ -357,8 +357,9 @@ chapitres:
           Les Juifs venus des pays arabes, les mizrahim, se heurtent à une élite venue d'Europe. / En 1971, des jeunes de
           Jérusalem fondent les Black Panthers. / Après une manifestation violente, Golda Meir lance : / « Ce ne sont
           pas des garçons **gentils**. »
-      - type: PHOTO
-        fichier: "à télécharger : immigrants yéménites, camp de Rosh HaAyin, vers 1950 (GPO, domaine public)"
+      - type: IA
+        fichier: "à générer : reconstitution de les immigrants yéménites de Rosh HaAyin, février 1950 (image de départ : data/reconstitution/26-rosh-haayin-1950.jpg)"
+        photo: "Wikimedia Commons, « Zoltan Kluger. Rosh Ha-Ayin 1950 », GPO, 2 février 1950, domaine public"
         duree: 16
         a_obtenir: true
         source: "commission Kedmi, rapport de 2001 ; décision du gouvernement israélien d'indemniser les familles, février 2021"

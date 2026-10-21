@@ -286,7 +286,7 @@ Source : déclaration de Pittsburgh, conférence des rabbins réformés, 16-19 n
 (38 mots, 2.4 par seconde)
 
 
-**10.3** · film **00:18:45:14 → 00:19:00:14** (15.0 s) · **[PHOTO]** `à télécharger : photo du Bund, Russie, vers 1905 (domaine public, Wikimedia Commons ou YIVO)` · **À OBTENIR**  
+**10.3** · film **00:18:45:14 → 00:19:00:14** (15.0 s) · **[IA]** `à générer : reconstitution d'une manifestation du Bund, 1917 (image de départ : data/reconstitution/28-bund-1917.jpg)` · **À OBTENIR**  
 Source : Bund (Union générale des travailleurs juifs), fondé à Vilnius en octobre 1897  
 > VOIX : En 1897, l'année même du congrès de Bâle, / des ouvriers juifs fondent le Bund, à Vilnius. / Leur idée : rester, et se battre là où l'on vit. // En yiddish : doikayt, « **l'ici** ».  
 (30 mots, 2.0 par seconde)
