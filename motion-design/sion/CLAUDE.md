@@ -82,7 +82,7 @@ pas versionné : dans un conteneur neuf, les rendus n'existent pas ; ne relivrer
 les rendus qu'elle utilise (derush garde les plans déjà livrés dont le rendu manque, mais ne les met pas à jour).
 
 - Reconstitutions IA (Gemini/Veo, toujours d'après une vraie photo d'archive) : ranger chaque nouveau clip dans
-  `data/gemini/<nom de la photo>.mp4` (noms dans `output/reconstitution/`, légendes dans
+  `data/gemini/<nom de la photo>.mp4` (noms des photos dans `data/reconstitution/`, légendes dans
   `data/reconstitution-legendes.json`), puis `python3 tools/build_reconstitution.py data/gemini` ; placer le
   fichier `output/reconstitutions/<n>-<nom>.mp4` dans le plan du script (type IA, entree/sortie).
 - Livraison plan par plan : `bash tools/livrer_derush.sh <parties>` (0 ouverture, 1 à 7, 8 conclusion), dépôt

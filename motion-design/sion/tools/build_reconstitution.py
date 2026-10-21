@@ -37,7 +37,8 @@ essai = "--essai" in sys.argv
 # attribution à la main : un morceau du nom du fichier = nom du plan (pour une scène trop réinventée pour être reconnue)
 MANUEL = dict(x.split("=", 1) for x in sys.argv[2:] if "=" in x)
 LEG = json.load(open(os.path.join(ROOT, "data", "reconstitution-legendes.json")))
-REF = {os.path.splitext(os.path.basename(f))[0]: f for f in glob.glob(os.path.join(ROOT, "output", "reconstitution", "*.jpg"))}
+# photos de départ : copie versionnée dans data/reconstitution/, celles de output/reconstitution/ (tools/prep_reconstitution.py) passent devant
+REF = {os.path.splitext(os.path.basename(f))[0]: f for d in ("data", "output") for f in sorted(glob.glob(os.path.join(ROOT, d, "reconstitution", "*.jpg")))}
 FPS, HOLD, FREEZE, FADE = 25, 1.4, 0.6, 0.35
 PHOTO = 2.6  # la vraie photo, seule à l'écran avant le fondu vers la reconstitution
 
