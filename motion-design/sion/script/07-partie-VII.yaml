@@ -276,10 +276,11 @@ chapitres:
         voix: >-
           Yitzhak Rabin est assassiné par Yigal Amir, un étudiant juif religieux, / opposé aux accords d'Oslo. // Pour
           beaucoup, la paix meurt avec **lui**.
-      - type: PHOTO
-        fichier: "à télécharger : manifestation contre la réforme de la justice, Tel-Aviv, 2023 (licence libre, Wikimedia Commons)"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 122
+        sortie: 135
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "manifestations de 2023 contre la réforme judiciaire (jusqu'à des centaines de milliers de personnes, le 26 mars 2023)"
         voix: >-
           En 2023, des centaines de milliers d'Israéliens manifestent contre la réforme de la justice, / pour défendre,
@@ -289,9 +290,10 @@ chapitres:
         voix: >-
           Pour beaucoup de Palestiniens, ces manifestations ne parlaient pas d'eux : / une démocratie pour les uns, /
           l'occupation pour les **autres**.
-      - type: PHOTO
-        fichier: "même photo que le chapitre 30 (ultra-orthodoxes et conscription), ou une autre de 2024"
-        duree: 9
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 135
+        sortie: 144
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         voix: >-
           Et la fracture traverse la religion : / l'armée, l'État, la loi juive. / Tout est **contesté**.

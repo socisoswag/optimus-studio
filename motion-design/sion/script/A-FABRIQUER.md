@@ -43,8 +43,6 @@ Le texte complet, prêt à coller plan par plan, est aussi dans `output/a-faire-
 |---|---|---|---|---|
 | 5.6 | 10 s | la loterie des terrains d'Ahuzat Bayit, futur Tel-Aviv, 11 avril 1909 (photo d'Avraham Soskine) | « Ahuzat Bayit lottery Soskine » | The crowd on the sand dunes gathers; a man draws shells from a box; the wind moves the clothes. |
 | 16.6 | 13 s | un soldat contrôle le laissez-passer d'un Arabe israélien, années 1950 | « Israel military government 1950s permit » (si rien : une fiche) | The soldier checks the paper, the man waits. |
-| 20.7 | 11 s | Amman, septembre 1970 | « Black September 1970 Amman » | Smoke rises slowly over the city, the street is empty. |
-| 22.2 et 22.3 | 13 s et 13 s | la première intifada, Gaza, 1987-1988 (CC BY ou CC BY-SA obligatoire) | « First Intifada Gaza » | Young people in the street, soldiers in the distance, no violence shown close up. |
 | 26.2 | 15 s | les colons du Goush Emounim à Sébastia, 1975 | « Gush Emunim Sebastia 1975 » | The crowd of settlers stands on the hill, flags move in the wind. |
 | 28.2 | 17 s | la manifestation des Black Panthers israéliens, Jérusalem, 1971 | « Israeli Black Panthers 1971 » | The demonstrators march with their signs. |
 
@@ -59,23 +57,13 @@ bannières de Nebi Musa à al-Aqsa, la place du marché de Jaffa, le laboureur e
 l'aire de battage près de Bethléem, la manifestation de Jaffa en 1933 (plan 8.12). Il manque seulement **la scène du vote de l'ONU (1947)** : renvoie-la si tu l'as
 encore.
 
-## 3. Vraies vidéos d'aujourd'hui : à chercher avec Perplexity, à télécharger toi-même
+## 3. Événements récents : faits en fiches sur la carte (fait)
 
-Pas d'IA pour des événements récents et réels : il faut de vraies images sous licence libre (CC BY ou CC BY-SA,
-jamais « NC »). Wikimedia bloque ce serveur : c'est toi qui télécharges. Questions prêtes à copier :
-
-1. « Liste des fichiers vidéo (webm, ogv) sur Wikimedia Commons montrant les manifestations contre la réforme
-   judiciaire en Israël en 2023 (Tel-Aviv, rue Kaplan, mars à juillet 2023) : nom exact du fichier, auteur, licence,
-   durée, lien. Seulement CC BY, CC BY-SA ou domaine public. »
-2. « Même chose pour : les manifestations d'Israéliens d'origine éthiopienne à Tel-Aviv en mai 2015 ; les
-   manifestations de Neturei Karta (New York, Londres, Jérusalem) ; les manifestations ultra-orthodoxes contre la
-   conscription à Jérusalem en 2024. »
-3. « Même chose pour : le sit-in de Jewish Voice for Peace au Capitole (18 octobre 2023) et à la gare de Grand Central
-   (27 octobre 2023) ; des rassemblements de l'association Breaking the Silence ou de jeunes objecteurs de conscience
-   israéliens ; une rencontre du Parents Circle-Families Forum. Inclure aussi les vidéos du domaine public du
-   gouvernement américain (Voice of America, Congrès) si elles existent. »
-
-Plans concernés : 28.4, 29.2, 29.3, 29.4, 29.5, 30.5, 36.4, 36.6, 38.5.
+Pas d'IA pour un événement récent ni pour une tuerie : septembre 1970 (20.7), Jabaliya et l'intifada (22.2, 22.3),
+les Israéliens éthiopiens (28.4), Neturei Karta, Jewish Voice for Peace, Briser le silence (29.2 à 29.5), les
+yeshivas (30.5), la réforme de la justice (36.4, 36.6) et le Cercle des parents (38.5) sont des fiches animées sur
+la carte, dans la DA du film (`timelines/documents-3.js`, `output/documents-3.mp4`). Si tu trouves plus tard une
+vraie vidéo sous licence libre (CC BY ou CC BY-SA), elle peut remplacer la fiche à la même durée.
 
 ## 4. Photos de portraits à télécharger (Wikimedia Commons, domaine public ou licence libre)
 

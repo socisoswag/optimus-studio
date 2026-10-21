@@ -234,8 +234,9 @@ Source : assassinat d'Yitzhak Rabin par Yigal Amir, Tel-Aviv, 4 novembre 1995
 (22 mots, 1.7 par seconde)
 
 
-**36.4** · film **01:08:30:16 → 01:08:43:17** (13.0 s) · **[PHOTO]** `à télécharger : manifestation contre la réforme de la justice, Tel-Aviv, 2023 (licence libre, Wikimedia Commons)` · **À OBTENIR**  
+**36.4** · film **01:08:30:16 → 01:08:43:17** (13.0 s) · **[MD]** `output/documents-3.mp4` · source 00:02:02:00 → 00:02:15:00  
 Source : manifestations de 2023 contre la réforme judiciaire (jusqu'à des centaines de milliers de personnes, le 26 mars 2023)  
+À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : En 2023, des centaines de milliers d'Israéliens manifestent contre la réforme de la justice, / pour défendre, disent-ils, leur **démocratie**.  
 (19 mots, 1.5 par seconde)
 
@@ -245,7 +246,8 @@ Source : manifestations de 2023 contre la réforme judiciaire (jusqu'à des cent
 (19 mots, 1.7 par seconde)
 
 
-**36.6** · film **01:08:54:16 → 01:09:03:17** (9.0 s) · **[PHOTO]** `même photo que le chapitre 30 (ultra-orthodoxes et conscription), ou une autre de 2024` · **À OBTENIR**  
+**36.6** · film **01:08:54:16 → 01:09:03:17** (9.0 s) · **[MD]** `output/documents-3.mp4` · source 00:02:15:00 → 00:02:24:00  
+À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : Et la fracture traverse la religion : / l'armée, l'État, la loi juive. / Tout est **contesté**.  
 (14 mots, 1.6 par seconde)
 

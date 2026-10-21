@@ -24,34 +24,38 @@ chapitres:
         fichier: output/chapitres/chapitre-29.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: "à télécharger : manifestation de Neturei Karta (licence libre, Wikimedia Commons)"
-        duree: 16
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 53
+        sortie: 69
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "Neturei Karta, fondé à Jérusalem en 1938"
         voix: >-
           Il existe des Juifs qui refusent le sionisme au nom de leur foi. / Les Neturei Karta, « les gardiens de la
           cité », fondés à Jérusalem en 1938, / pour qui un État juif avant le Messie est une **faute**.
-      - type: PHOTO
-        fichier: "à télécharger : rassemblement de Jewish Voice for Peace, octobre 2023 (licence libre, Wikimedia Commons)"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 69
+        sortie: 82
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "Jewish Voice for Peace, fondé en septembre 1996 à Berkeley ; plus de 32 000 membres cotisants en 2024"
         voix: >-
           D'autres le refusent au nom de l'égalité. / Aux États-Unis, Jewish Voice for Peace, fondé en 1996, /
           revendique plus de trente mille **membres**.
-      - type: PHOTO
-        fichier: "même série : la gare de Grand Central, New York, 27 octobre 2023"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 82
+        sortie: 95
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "sit-in du 18 octobre 2023 dans un bâtiment du Congrès à Washington ; gare de Grand Central, 27 octobre 2023"
         voix: >-
           En octobre 2023, ses militants occupent un bâtiment du Congrès, / puis la gare de Grand Central à New York, /
           avec ce slogan : « Pas en notre **nom**. »
-      - type: PHOTO
-        fichier: "à télécharger : rassemblement de Briser le silence ou de jeunes objecteurs, Tel-Aviv (licence libre)"
-        duree: 16
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 95
+        sortie: 111
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "Briser le silence (Shovrim Shtika), fondée en 2004 ; objecteurs emprisonnés, par exemple Tal Mitnick (2023-2024)"
         voix: >-
           En Israël même, d'anciens soldats racontent ce qu'ils ont fait dans les territoires : / c'est l'association
@@ -97,10 +101,11 @@ chapitres:
         voix: >-
           Même un religieux sioniste, le philosophe Yeshayahou Leibowitz, / prévient dès la fin des années soixante : /
           l'occupation corrompra **Israël**.
-      - type: PHOTO
-        fichier: "à télécharger : manifestation ultra-orthodoxe contre la conscription, Jérusalem, 2024 (licence libre)"
-        duree: 11
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 111
+        sortie: 122
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "Cour suprême d'Israël, arrêt du 25 juin 2024 sur la conscription des étudiants des yeshivas"
         voix: >-
           Aujourd'hui, les ultra-orthodoxes refusent le service militaire. / En 2024, la Cour suprême ordonne de les

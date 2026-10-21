@@ -367,10 +367,11 @@ chapitres:
           Entre 1948 et 1954, des centaines d'enfants d'immigrants yéménites disparaissent des hôpitaux et des camps. /
           On dit aux parents qu'ils sont morts. // En 2021, l'État accepte d'indemniser les **familles**.
         note: "la commission Kedmi n'a pas retenu d'enlèvements organisés ; l'indemnisation est accordée sans reconnaissance de responsabilité"
-      - type: PHOTO
-        fichier: "à télécharger : manifestation des Israéliens d'origine éthiopienne, Tel-Aviv, mai 2015 (licence libre, Wikimedia Commons)"
-        duree: 16
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 37
+        sortie: 53
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "directive du directeur du ministère de la Santé, Ron Gamzu, janvier 2013 (Haaretz, 27 janvier 2013) ; manifestations de mai 2015"
         voix: >-
           En 2013, le ministère de la Santé ordonne d'arrêter d'injecter un contraceptif à des femmes éthiopiennes / qui

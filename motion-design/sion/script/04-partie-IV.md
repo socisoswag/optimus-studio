@@ -214,9 +214,9 @@ Film 00:38:42:22 → 00:41:13:00 · durée 2 min 30.1 s
 > VOIX : silence
 
 
-**20.7** · film **00:39:39:13 → 00:39:50:13** (11.0 s) · **[PHOTO]** `à télécharger : Amman, septembre 1970 (photo du domaine public ou sous licence libre, Wikimedia Commons)` · **À OBTENIR**  
+**20.7** · film **00:39:39:13 → 00:39:50:13** (11.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:00:00 → 00:00:11:00  
 Source : Septembre noir, Jordanie, septembre 1970 à juillet 1971 : environ 3 400 morts (article « Black September »)  
-À l'écran : carton : output/cartons/amman-1970  
+À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : Septembre 1970, en Jordanie : / l'armée du roi Hussein écrase les combattants palestiniens. / Des milliers de morts. / L'OLP part pour le **Liban**.  
 (21 mots, 1.9 par seconde)
 
@@ -349,14 +349,15 @@ Film 00:43:14:13 → 00:45:00:22 · durée 1 min 46.4 s
 > VOIX : silence
 
 
-**22.2** · film **00:43:19:03 → 00:43:32:03** (13.0 s) · **[PHOTO]** `à télécharger : première intifada, Gaza, 1987-1988 (Wikimedia Commons, licence libre à vérifier)` · **À OBTENIR**  
+**22.2** · film **00:43:19:03 → 00:43:32:03** (13.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:11:00 → 00:00:24:00  
 Source : 9 décembre 1987, camp de Jabaliya (article « First Intifada »)  
-À l'écran : carton : output/cartons/jabaliya-1987  
+À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : Décembre 1987, camp de Jabaliya, à Gaza. / Un camion israélien percute des voitures : / quatre ouvriers palestiniens **tués**.  
 (17 mots, 1.3 par seconde)
 
 
-**22.3** · film **00:43:32:03 → 00:43:45:03** (13.0 s) · **[PHOTO]** `même photo, ou une deuxième de la même période` · **À OBTENIR**  
+**22.3** · film **00:43:32:03 → 00:43:45:03** (13.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:24:00 → 00:00:37:00  
+À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : C'est l'étincelle. / Toute une génération se soulève : / grèves, boycotts, pierres contre les soldats. // Intifada, en arabe : le **soulèvement**.  
 (18 mots, 1.4 par seconde)
 

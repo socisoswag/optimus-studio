@@ -66,10 +66,11 @@ chapitres:
         source: "SOURCES.md 4.1, Adobe Stock 547188073 (des mains sur le tronc d'un olivier ; lieu non précisé)"
         voix: >-
           Les Palestiniens ont un mot pour cela : / sumud. / Tenir. / **Rester**.
-      - type: PHOTO
-        fichier: "à télécharger : rencontre du Cercle des parents, familles israéliennes et palestiniennes endeuillées (licence libre)"
-        duree: 15
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 144
+        sortie: 159
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "Parents Circle-Families Forum, fondé en 1995"
         voix: >-
           Depuis 1995, des familles israéliennes et palestiniennes qui ont perdu un enfant se réunissent : / le Cercle des

@@ -299,8 +299,9 @@ Source : commission Kedmi, rapport de 2001 ; décision du gouvernement israélie
 Note : la commission Kedmi n'a pas retenu d'enlèvements organisés ; l'indemnisation est accordée sans reconnaissance de responsabilité
 
 
-**28.4** · film **00:56:26:06 → 00:56:42:06** (16.0 s) · **[PHOTO]** `à télécharger : manifestation des Israéliens d'origine éthiopienne, Tel-Aviv, mai 2015 (licence libre, Wikimedia Commons)` · **À OBTENIR**  
+**28.4** · film **00:56:26:06 → 00:56:42:06** (16.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:37:00 → 00:00:53:00  
 Source : directive du directeur du ministère de la Santé, Ron Gamzu, janvier 2013 (Haaretz, 27 janvier 2013) ; manifestations de mai 2015  
+À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : En 2013, le ministère de la Santé ordonne d'arrêter d'injecter un contraceptif à des femmes éthiopiennes / qui n'en comprenaient pas les effets. // En 2015, des milliers d'Israéliens éthiopiens manifestent contre les violences **policières**.  
 (33 mots, 2.1 par seconde)
 

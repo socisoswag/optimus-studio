@@ -64,8 +64,9 @@ Source : SOURCES.md 4.1, Adobe Stock 547188073 (des mains sur le tronc d'un oliv
 (10 mots, 1.1 par seconde)
 
 
-**38.5** · film **01:10:22:22 → 01:10:37:22** (15.0 s) · **[PHOTO]** `à télécharger : rencontre du Cercle des parents, familles israéliennes et palestiniennes endeuillées (licence libre)` · **À OBTENIR**  
+**38.5** · film **01:10:22:22 → 01:10:37:22** (15.0 s) · **[MD]** `output/documents-3.mp4` · source 00:02:24:00 → 00:02:39:00  
 Source : Parents Circle-Families Forum, fondé en 1995  
+À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : Depuis 1995, des familles israéliennes et palestiniennes qui ont perdu un enfant se réunissent : / le Cercle des parents. // Elles disent : nous ne voulons plus de nouveaux **membres**.  
 (27 mots, 1.8 par seconde)
 

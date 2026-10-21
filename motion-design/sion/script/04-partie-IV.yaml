@@ -249,12 +249,12 @@ chapitres:
         entree: 0
         sortie: 12.52
         ecran: "déjà dans la pièce : 5 964 782 réfugiés palestiniens enregistrés (UNRWA, 31 décembre 2025)"
-      - type: PHOTO
-        fichier: "à télécharger : Amman, septembre 1970 (photo du domaine public ou sous licence libre, Wikimedia Commons)"
-        duree: 11
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 0
+        sortie: 11
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "Septembre noir, Jordanie, septembre 1970 à juillet 1971 : environ 3 400 morts (article « Black September »)"
-        ecran: "carton : output/cartons/amman-1970"
         voix: >-
           Septembre 1970, en Jordanie : / l'armée du roi Hussein écrase les combattants palestiniens. / Des milliers de
           morts. / L'OLP part pour le **Liban**.
@@ -409,19 +409,20 @@ chapitres:
         fichier: output/chapitres/chapitre-22.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: "à télécharger : première intifada, Gaza, 1987-1988 (Wikimedia Commons, licence libre à vérifier)"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 11
+        sortie: 24
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         source: "9 décembre 1987, camp de Jabaliya (article « First Intifada »)"
-        ecran: "carton : output/cartons/jabaliya-1987"
         voix: >-
           Décembre 1987, camp de Jabaliya, à Gaza. / Un camion israélien percute des voitures : / quatre ouvriers
           palestiniens **tués**.
-      - type: PHOTO
-        fichier: "même photo, ou une deuxième de la même période"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-3.mp4
+        entree: 24
+        sortie: 37
+        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
         voix: >-
           C'est l'étincelle. / Toute une génération se soulève : / grèves, boycotts, pierres contre les soldats. //
           Intifada, en arabe : le **soulèvement**.
