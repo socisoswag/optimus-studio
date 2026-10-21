@@ -50,9 +50,11 @@ Haganah 1948, 17.3 Lod 1951, 17.4 la maabara de Nahariya 1952, 28.3 Rosh HaAyin 
 
 ## 22 octobre 2026
 
-**Nouveaux plans (tes clips Gemini)** : `05.06-IA-14-29-tel-aviv-1909.mp4` (la loterie de 1909),
-`08.14-IA-12-21-maison-dynamitee-lydda-1936.mp4` (Lydda, 1936), `10.03-IA-13-28-bund-1917.mp4` (le Bund, 1917 ; la
-banderole en russe et en yiddish est restée fidèle à la photo).
+**Nouveaux plans (tes clips Gemini)** : `05.06-IA-15-29-tel-aviv-1909.mp4` (la loterie de 1909),
+`08.14-IA-12-21-maison-dynamitee-lydda-1936.mp4` (Lydda, 1936), `10.03-IA-14-28-bund-1917.mp4` (le Bund, 1917 ; la
+banderole en russe et en yiddish est restée fidèle à la photo), `10.04-IA-13-23-mur-occidental.mp4` (le mur
+occidental ; la vraie photo plus longue, puis ton clip un peu ralenti pour tenir les 14 s).
 
-**À refaire** : 8.13 le souk (une silhouette « fantôme » apparaissait), 10.4 le mur occidental (5 s au lieu de 8).
+**En attente** : `08.13-PHOTO-16-20-greve-1936-souk-desert.mp4`, la vraie photo du souk seule, avec une lente avancée
+de la caméra (ton clip montrait une silhouette « fantôme »). À remplacer par un nouveau clip Gemini plus tard.
 

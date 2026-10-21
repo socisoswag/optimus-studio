@@ -283,7 +283,7 @@ Source : SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 12172, laboureur et ses
 (22 mots, 2.2 par seconde)
 
 
-**5.6** · film **00:08:02:09 → 00:08:12:09** (10.0 s) · **[IA]** `output/reconstitutions/14-29-tel-aviv-1909.mp4` · source 00:00:00:00 → 00:00:10:00  
+**5.6** · film **00:08:02:09 → 00:08:12:09** (10.0 s) · **[IA]** `output/reconstitutions/15-29-tel-aviv-1909.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : photo d'Avraham Soskine, 11 avril 1909 (domaine public)  
 À l'écran : déjà dans le plan : 11 avril 1909 · Au nord de Jaffa · le tirage au sort des terrains · Photo d'archive animée par IA  
 > VOIX : En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la ville arabe.  

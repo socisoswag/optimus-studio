@@ -132,18 +132,19 @@ for name in order:
         saut = next((dr[i + 1][0] for i in range(len(dr) - 1) if dr[i][1] - dr[i + 1][1] >= 0.25), None)
         if first >= 0.9 and saut is not None:
             start = saut + 0.3
+        ph = L.get("photo", PHOTO)  # « photo » (légendes) : la vraie photo reste plus longtemps avant le fondu
         still = os.path.join(tmp, name + "-photo")
         os.makedirs(still, exist_ok=True)
         Image.open(REF[name]).convert("RGB").save(os.path.join(still, "0001.jpg"), quality=95)
-        photos.append({"id": name + "-photo", "t0": round(t, 3), "t1": round(t + PHOTO + XF, 3), "fadeIn": FADE,
+        photos.append({"id": name + "-photo", "t0": round(t, 3), "t1": round(t + ph + XF, 3), "fadeIn": FADE,
                        "frames": {"dir": f"output/reconstitution/images/{name}-photo", "n": 1, "fps": FPS},
                        "from": {"cx": 0.5, "cy": 0.5, "w": 1.0, "focus": 0.5}, "to": {"cx": 0.5, "cy": 0.5, "w": 0.985, "focus": 0.5},
                        **lab, "out": -4.0, "credit": f"Photo d’archive\n{src}"})
         clip["frames"]["start"] = round(start, 2)
         cd = (n - start * FPS) / FPS + FREEZE
-        photos.append({"id": name, "t0": round(t + PHOTO, 3), "t1": round(t + PHOTO + cd, 3), "fadeOut": FADE, "hold": 0, **clip,
+        photos.append({"id": name, "t0": round(t + ph, 3), "t1": round(t + ph + cd, 3), "fadeOut": FADE, "hold": 0, **clip,
                        "credit": f"Reconstitution par IA, d’après une photo d’archive\n{src}"})
-        t += PHOTO + cd
+        t += ph + cd
         mode = f"reconstitution d'après la photo (clip pris à partir de {start:.1f} s)"
     else:
         # sans photo de départ (la scène du vote)
@@ -155,6 +156,25 @@ for name in order:
     shots.append({"id": name, "t0": round(t0, 3), "t1": round(t, 3)})
     amb.append([round(t0, 3), round(t, 3), L.get("amb", "vent"), 0.9])
     print(f"  {name} : {mode}, {t - t0:.1f} s")
+
+# photos sans clip, en attente de leur reconstitution (« provisoire » : durée en s, dans les légendes) : la vraie
+# photo seule, lente avancée de la caméra, mention « Photo d'archive » ; le clip la remplacera au même nom
+for name, L in LEG.items():
+    if name in found or not isinstance(L, dict) or not L.get("provisoire") or name not in REF:
+        continue
+    dur = float(L["provisoire"])
+    still = os.path.join(tmp, name + "-photo")
+    os.makedirs(still, exist_ok=True)
+    Image.open(REF[name]).convert("RGB").save(os.path.join(still, "0001.jpg"), quality=95)
+    lab = {"eyebrow": L.get("eyebrow", ""), "place": L.get("place", ""), "sub": L.get("sub", ""), "at": 0.35}
+    photos.append({"id": name, "t0": round(t, 3), "t1": round(t + dur, 3), "fade": FADE, "hold": 0,
+                   "frames": {"dir": f"output/reconstitution/images/{name}-photo", "n": 1, "fps": FPS},
+                   "from": {"cx": 0.5, "cy": 0.5, "w": 1.0, "focus": 0.4}, "to": {"cx": 0.52, "cy": 0.52, "w": 0.88, "focus": 0.7},
+                   **lab, "out": max(1.0, dur - 5.2), "credit": f"Photo d’archive\n{SRC_CREDIT}"})
+    shots.append({"id": name, "t0": round(t, 3), "t1": round(t + dur, 3)})
+    amb.append([round(t, 3), round(t + dur, 3), L.get("amb", "vent"), 0.9])
+    t += dur
+    print(f"  {name} : photo seule, en attente de son clip, {dur:.1f} s")
 
 if not photos:
     sys.exit("aucun clip reconnu")

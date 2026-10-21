@@ -54,8 +54,6 @@
 
 ## Images à obtenir
 
-- 8.13 : à générer : reconstitution de la grève de 1936 (image de départ : output/reconstitution/20-greve-1936-souk-desert.jpg)
-- 10.4 : à générer : reconstitution de la prière au mur occidental (image de départ : output/reconstitution/23-mur-occidental.jpg)
 - 14.2 : à générer : reconstitution de l'entraînement de la Haganah, avril 1948 (image de départ : data/reconstitution/27-haganah-1948.jpg)
 - 14.3 : à générer : reconstitution de l'hôtel King David après l'attentat (image de départ : output/reconstitution/22-king-david-1946.jpg)
 - 16.6 : à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)

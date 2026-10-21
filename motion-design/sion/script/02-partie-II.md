@@ -181,9 +181,9 @@ Source : SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 15788, manifestation de
 (11 mots, 1.4 par seconde)
 
 
-**8.13** · film **00:15:45:24 → 00:15:55:24** (10.0 s) · **[IA]** `à générer : reconstitution de la grève de 1936 (image de départ : output/reconstitution/20-greve-1936-souk-desert.jpg)` · **À OBTENIR**  
+**8.13** · film **00:15:45:24 → 00:15:55:24** (10.0 s) · **[PHOTO]** `output/reconstitutions/16-20-greve-1936-souk-desert.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 2.2, matpc 18170 (le souk des bijoutiers, désert pendant les six mois de grève, 1936)  
-À l'écran : carton : output/cartons/jaffa-1936 · déjà dans le plan : 1936 · Le souk des bijoutiers · Désert pendant les six mois de grève générale · mention : Reconstitution par IA, d'après une photo d'archive  
+À l'écran : déjà dans le plan : 1936 · Le souk des bijoutiers · Désert pendant les six mois de grève générale · Photo d'archive (en attente de sa reconstitution par IA)  
 > VOIX : En 1936, la Palestine arabe se met en grève. / Six mois. // C'est le début de la grande **révolte**.  
 (18 mots, 1.8 par seconde)
 
@@ -286,16 +286,16 @@ Source : déclaration de Pittsburgh, conférence des rabbins réformés, 16-19 n
 (38 mots, 2.4 par seconde)
 
 
-**10.3** · film **00:18:45:14 → 00:19:00:14** (15.0 s) · **[IA]** `output/reconstitutions/13-28-bund-1917.mp4` · source 00:00:00:00 → 00:00:15:00  
+**10.3** · film **00:18:45:14 → 00:19:00:14** (15.0 s) · **[IA]** `output/reconstitutions/14-28-bund-1917.mp4` · source 00:00:00:00 → 00:00:15:00  
 Source : Bund (Union générale des travailleurs juifs), fondé à Vilnius en octobre 1897  
 À l'écran : déjà dans le plan : 1917 · Empire russe · Une manifestation du Bund · Photo d'archive animée par IA  
 > VOIX : En 1897, l'année même du congrès de Bâle, / des ouvriers juifs fondent le Bund, à Vilnius. / Leur idée : rester, et se battre là où l'on vit. // En yiddish : doikayt, « **l'ici** ».  
 (30 mots, 2.0 par seconde)
 
 
-**10.4** · film **00:19:00:14 → 00:19:14:14** (14.0 s) · **[IA]** `à générer : reconstitution de la prière au mur occidental (image de départ : output/reconstitution/23-mur-occidental.jpg)` · **À OBTENIR**  
+**10.4** · film **00:19:00:14 → 00:19:14:14** (14.0 s) · **[IA]** `output/reconstitutions/13-23-mur-occidental.mp4` · source 00:00:00:00 → 00:00:14:00  
 Source : Agoudat Israël, fondé à Katowice en 1912 ; photo SOURCES.md 2.2, matpc 04802 (Jews at Wailing Wall). Le film « Jérusalem, 1918 » est retiré : droits non établis (SOURCES.md 4.2)  
-À l'écran : carton : Jérusalem · le mur occidental · mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
+À l'écran : déjà dans le plan : la vraie photo, puis la reconstitution (Entre 1898 et 1946 · Jérusalem · La prière au mur occidental)  
 > VOIX : Pour beaucoup de rabbins orthodoxes, le sionisme est une faute : / seul le Messie doit ramener les Juifs sur la terre d'Israël. // En 1912, ils fondent leur propre parti, Agoudat **Israël**.  
 (30 mots, 2.1 par seconde)
 
