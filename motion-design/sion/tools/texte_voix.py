@@ -24,7 +24,10 @@ def mmss(s):
 out = ["# Voix off : le texte à lire", "",
        "`/` petite respiration · `//` vrai silence, une seconde · `///` long silence, deux secondes · **mot en gras** : c'est lui qu'on appuie. "
        "Le numéro devant chaque phrase est celui du plan (pour retrouver la prise au montage). Prononciation des noms : "
-       "`guide-voix-off.md`. Au début de chaque séance : 10 secondes de silence, sans bouger.", ""]
+       "`guide-voix-off.md`. Au début de chaque séance : 10 secondes de silence, sans bouger.", "",
+       "**Pour la synchronisation automatique** : un fichier par chapitre (`chapitre-08.wav`), et **2 secondes de silence "
+       "entre deux plans** (entre deux numéros). À l'intérieur d'un plan, les `//` et `///` restent plus courts "
+       "(une à deux secondes au plus).", ""]
 for f in sorted(glob.glob(os.path.join(ROOT, "script", "0[0-9]-*.yaml"))):
     data = yaml.safe_load(open(f, encoding="utf-8"))
     for ch in data.get("chapitres", []):

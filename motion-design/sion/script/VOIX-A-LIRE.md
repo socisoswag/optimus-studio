@@ -2,6 +2,8 @@
 
 `/` petite respiration · `//` vrai silence, une seconde · `///` long silence, deux secondes · **mot en gras** : c'est lui qu'on appuie. Le numéro devant chaque phrase est celui du plan (pour retrouver la prise au montage). Prononciation des noms : `guide-voix-off.md`. Au début de chaque séance : 10 secondes de silence, sans bouger.
 
+**Pour la synchronisation automatique** : un fichier par chapitre (`chapitre-08.wav`), et **2 secondes de silence entre deux plans** (entre deux numéros). À l'intérieur d'un plan, les `//` et `///` restent plus courts (une à deux secondes au plus).
+
 ## Chapitre 1 · Sion : un mot, un mythe, un monde
 
 *1 min 29 de film*
