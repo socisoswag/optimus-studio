@@ -329,12 +329,12 @@ chapitres:
         voix: >-
           La deuxième vague, après 1904, est différente. / De jeunes socialistes rêvent d'un Juif nouveau, /
           paysan sur sa terre, / qui parle l'hébreu **ressuscité**.
-      - type: PHOTO
-        fichier: "data/archives/12172.jpg"
-        duree: 10
-        source: "SOURCES.md 2.2, Bibliothèque du Congrès matpc 12172 (domaine public)"
-        ecran: "carton : Près de Jérusalem · entre 1898 et 1946"
-        note: "photo téléchargée (pleine définition) (laboureur et ses bœufs, Jérusalem au fond), à animer en relief"
+      - type: IA
+        fichier: output/reconstitutions/9-10-labour-boeufs.mp4
+        entree: 0
+        sortie: 10
+        source: "SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 12172, laboureur et ses bœufs, Jérusalem au fond)"
+        ecran: "déjà dans le plan : la vraie photo, puis la reconstitution (Entre 1898 et 1946 · Jérusalem · Labour aux bœufs au pied de la ville)"
         voix: >-
           Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, /
           et les ouvriers arabes sont écartés.
@@ -351,6 +351,11 @@ chapitres:
 
   - num: "6"
     titre: "Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface"
+    reserve:
+      - fichier: output/reconstitutions/10-11-aire-de-battage.mp4
+        note: "l'aire de battage près de Bethléem, entre 1920 et 1933 (la vraie photo, puis la reconstitution par IA) : des paysans, pour le plan 6.6"
+      - fichier: output/reconstitutions/4-4-marche-jaffa.mp4
+        note: "la place du marché de Jaffa, entre 1940 et 1946 (photo animée par IA) : une ville vivante"
     intention: >-
       Le chapitre clé de la partie. Montrer un pays vivant, nommé, habité ; puis l'échange de 1899 entre Youssouf
       Diya al-Khalidi et Herzl, chacun avec ses propres mots ; puis les premiers conflits pour la terre ; et la voix
@@ -370,7 +375,7 @@ chapitres:
           Jérusalem, 1897. / Les frères Lumière filment la porte de Jaffa. // Voilà le pays que Bâle, la même année,
           choisit pour **foyer**.
       - type: IA
-        fichier: output/reconstitutions/4-5-savonnerie-naplouse.mp4
+        fichier: output/reconstitutions/5-5-savonnerie-naplouse.mp4
         entree: 0
         sortie: 7.2
         source: "SOURCES.md 4 (Google Veo, d'après matpc 20377, la savonnerie de Naplouse)"
@@ -455,7 +460,7 @@ chapitres:
         voix: >-
           Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la
           population non juive. / Mais qui songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il,
-          montera de cinq à dix fois.
+          va « quintupler et décupler ».
       - type: MD
         fichier: output/portraits-1.mp4
         entree: 82

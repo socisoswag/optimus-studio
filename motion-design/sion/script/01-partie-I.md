@@ -276,12 +276,11 @@ Source : SOURCES.md 4.1, Adobe Stock 259921414 (lieu non précisé : aucune lég
 (22 mots, 1.9 par seconde)
 
 
-**5.5** · film **00:07:52:09 → 00:08:02:09** (10.0 s) · **[PHOTO]** `data/archives/12172.jpg`  
-Source : SOURCES.md 2.2, Bibliothèque du Congrès matpc 12172 (domaine public)  
-À l'écran : carton : Près de Jérusalem · entre 1898 et 1946  
+**5.5** · film **00:07:52:09 → 00:08:02:09** (10.0 s) · **[IA]** `output/reconstitutions/9-10-labour-boeufs.mp4` · source 00:00:00:00 → 00:00:10:00  
+Source : SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 12172, laboureur et ses bœufs, Jérusalem au fond)  
+À l'écran : déjà dans le plan : la vraie photo, puis la reconstitution (Entre 1898 et 1946 · Jérusalem · Labour aux bœufs au pied de la ville)  
 > VOIX : Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, / et les ouvriers arabes sont écartés.  
-(22 mots, 2.2 par seconde)  
-Note : photo téléchargée (pleine définition) (laboureur et ses bœufs, Jérusalem au fond), à animer en relief
+(22 mots, 2.2 par seconde)
 
 
 **5.6** · film **00:08:02:09 → 00:08:12:09** (10.0 s) · **[PHOTO]** `à télécharger : la loterie des terrains d'Ahuzat Bayit (futur Tel-Aviv), avril 1909, photo d'Avraham Soskine (domaine public, Wikimedia Commons)` · **À OBTENIR**  
@@ -310,7 +309,7 @@ Source : SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine
 (21 mots, 2.1 par seconde)
 
 
-**6.3** · film **00:08:26:24 → 00:08:34:04** (7.2 s) · **[IA]** `output/reconstitutions/4-5-savonnerie-naplouse.mp4` · source 00:00:00:00 → 00:00:07:05  
+**6.3** · film **00:08:26:24 → 00:08:34:04** (7.2 s) · **[IA]** `output/reconstitutions/5-5-savonnerie-naplouse.mp4` · source 00:00:00:00 → 00:00:07:05  
 Source : SOURCES.md 4 (Google Veo, d'après matpc 20377, la savonnerie de Naplouse)  
 À l'écran : la vraie photo d'abord (« Photo d'archive »), puis « Reconstitution par IA, d'après une photo d'archive »  
 > VOIX : Un pays de villages et de villes anciennes. / Naplouse fait son savon, / Jaffa exporte ses **oranges**.  
@@ -359,8 +358,8 @@ Note : texte français d'origine, vérifié (Perplexity, 20 octobre). Les deux p
 **6.9** · film **00:09:40:14 → 00:09:56:14** (16.0 s) · **[MD]** `output/documents.mp4` · source 00:02:04:00 → 00:02:20:00  
 Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)  
 À l'écran : la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »  
-> VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive. / Mais qui songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il, montera de cinq à dix fois.  
-(36 mots, 2.2 par seconde)  
+> VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive. / Mais qui songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il, va « quintupler et décupler ».  
+(34 mots, 2.1 par seconde)  
 Note : scène document (la lettre en texte) ; la page originale (SOURCES.md 2.4) reste à récupérer à la main si on veut la montrer
 
 

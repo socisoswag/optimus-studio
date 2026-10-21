@@ -158,6 +158,14 @@ def part(yml, folder):
             os.makedirs(os.path.join(cd, "cartons"), exist_ok=True)
             for c in dict.fromkeys(cartons):
                 link(c, os.path.join(cd, "cartons", os.path.basename(c)))
+        # plans en réserve (clé « reserve » du chapitre) : rendus en entier, à placer librement au montage
+        reserve = []
+        for r, x in enumerate(ch.get("reserve") or [], start=1):
+            src = os.path.join(ROOT, x["fichier"])
+            if os.path.exists(src):
+                name = f"{plan_id(ch['num'], 0)[:-3]}.R{r}-IA-{slug(os.path.splitext(os.path.basename(x['fichier']))[0], 40).lower()}.mp4"
+                cut(src, 0, duration(src), os.path.join(cd, name))
+                reserve.append(f"| `{name}` | {duration(src):.1f} s | {flat(x.get('note')).replace('|', '/')} |")
         doc = [f"# {ch['titre']}\n", f"{len(ch['plans'])} plans, {total:.1f} s. Pose les fichiers dans l'ordre de leur numéro : "
                "chaque plan a la durée prévue par le script pour sa voix off (2,4 mots par seconde au plus).\n"]
         if ch.get("intention"):
@@ -165,6 +173,8 @@ def part(yml, folder):
         doc += ["| Plan | Fichier | Type | Durée | À l'écran | Voix off |", "|---|---|---|---|---|---|"] + rows
         if manque:
             doc += ["", "## Pas encore en vidéo", "", "| Plan | Type | Durée | Ce qu'il faut |", "|---|---|---|---|"] + manque
+        if reserve:
+            doc += ["", "## En réserve (plans en plus, à placer où tu veux)", "", "| Fichier | Durée | Ce que c'est |", "|---|---|---|"] + reserve
         if cartons:
             doc += ["", "Cartons transparents (lieu et date, fond transparent) dans `cartons/` : à poser au-dessus du plan qui les cite."]
         path = os.path.join(cd, "PLANS.md")

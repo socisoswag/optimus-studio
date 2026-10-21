@@ -119,8 +119,11 @@ for name in order:
     elif name in refs:
         # scène réinventée d'après la photo : la vraie photo d'abord, puis fondu vers la reconstitution
         start = 0.0
-        if first >= 0.9:  # le clip part de la photo puis change de scène : on coupe ce passage
-            start = next((tt for tt, v in dr if v < 0.6), 0.0) + 0.3
+        # le clip part de la photo puis change de scène (saut brusque entre deux images à 0,5 s) : on coupe ce
+        # passage ; une ressemblance qui baisse peu à peu, c'est juste du mouvement (troupes qui défilent, caméra)
+        saut = next((dr[i + 1][0] for i in range(len(dr) - 1) if dr[i][1] - dr[i + 1][1] >= 0.25), None)
+        if first >= 0.9 and saut is not None:
+            start = saut + 0.3
         still = os.path.join(tmp, name + "-photo")
         os.makedirs(still, exist_ok=True)
         Image.open(REF[name]).convert("RGB").save(os.path.join(still, "0001.jpg"), quality=95)

@@ -12,6 +12,9 @@ Méthode du film (SOURCES.md 4) : on part toujours d'une **vraie photo d'archive
 Clip de 8 à 10 s, 16:9, 1080p au moins. Les photos prêtes sont dans `Script/photos-de-depart/` du dépôt de montage. Je reconnais chaque clip tout seul à sa première image
 (`tools/build_reconstitution.py`), pas besoin de le renommer.
 
+Chaque clip reçoit le traitement des archives du film (ton papier, grain, poussière, papillotement) et sa légende
+(date · lieu · ce qu'on voit, `data/reconstitution-legendes.json`), puis la mention « Reconstitution par IA ».
+
 Prompt de base (à coller, puis ajouter la ligne du plan) :
 
 > Animate this archival black-and-white photograph as real film footage from its era. Keep the exact composition,
@@ -24,7 +27,6 @@ Le texte complet, prêt à coller plan par plan, est aussi dans `output/a-faire-
 
 | Plan | Durée | Ce qu'on doit voir | Photo de départ | Ligne à ajouter au prompt |
 |---|---|---|---|---|
-| 8.12 | 8 s | la manifestation de Jaffa, octobre 1933 (remplacera la photo en relief) | `output/reconstitution/19-manifestation-jaffa-1933.jpg` | The crowd of demonstrators slowly advances along the street toward the line of British policemen in the foreground; the policemen hold their line with small movements; dust hangs in the sunlight. |
 | 8.13 | 10 s | la grève générale de 1936 : le souk des bijoutiers, désert pendant six mois | `output/reconstitution/20-greve-1936-souk-desert.jpg` | Very slow push forward along the empty covered market; the wooden shop doors stay closed; dust floats in the sunbeams at the end of the alley. Nobody walks in, the street stays empty. |
 | 8.14 | 12 s | Lydda, 1936 : les propriétaires d'une maison dynamitée par l'armée cherchent leurs affaires | `output/reconstitution/21-maison-dynamitee-lydda-1936.jpg` | The family and the neighbours search the rubble of the blown-up house for their belongings: they bend down, lift stones, the old man in the striped robe walks slowly forward; dust drifts in the sunlight. |
 | 10.4 | 14 s | des Juifs en prière au mur occidental (remplace le film « Jérusalem, 1918 », droits non établis) | `output/reconstitution/23-mur-occidental.jpg` | The women and men pray facing the wall, small movements: heads bow, a hand touches the stones, a shawl moves; the children at the right look around. |
@@ -51,10 +53,10 @@ images reconstituées.
 
 ## 2. Clips Gemini déjà reçus
 
-Reçus et reconnus (10) : les orangeraies de Jaffa, le port de Jaffa, le marché aux moutons de la porte de Damas, la
+Reçus et reconnus (11) : les orangeraies de Jaffa, le port de Jaffa, le marché aux moutons de la porte de Damas, la
 savonnerie de Naplouse, l'entrée des troupes britanniques par la porte de Jaffa (1917), la procession de Nebi Musa, les
 bannières de Nebi Musa à al-Aqsa, la place du marché de Jaffa, le laboureur et ses bœufs devant Jérusalem (plan 5.5),
-l'aire de battage près de Bethléem. Il manque seulement **la scène du vote de l'ONU (1947)** : renvoie-la si tu l'as
+l'aire de battage près de Bethléem, la manifestation de Jaffa en 1933 (plan 8.12). Il manque seulement **la scène du vote de l'ONU (1947)** : renvoie-la si tu l'as
 encore.
 
 ## 3. Vraies vidéos d'aujourd'hui : à chercher avec Perplexity, à télécharger toi-même
