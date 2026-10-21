@@ -457,6 +457,7 @@ chapitres:
           SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études
           palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)
         ecran: "la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »"
+        verifier: "le texte français exact de « Mais qui songerait à les éloigner ? » (question Perplexity, A-FABRIQUER.md)"
         voix: >-
           Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la
           population non juive. / Mais qui songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il,

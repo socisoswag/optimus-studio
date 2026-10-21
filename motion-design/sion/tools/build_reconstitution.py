@@ -3,6 +3,7 @@
     python3 tools/build_reconstitution.py <dossier_des_clips>            reconnaît, prépare et rend tous les clips
     python3 tools/build_reconstitution.py <dossier_des_clips> --essai    reconnaît et prépare seulement (pas de rendu)
     python3 tools/build_reconstitution.py <dossier> 6a0417f9=2-quai-jaffa   attribue un clip à la main (morceau de son nom)
+    python3 tools/build_reconstitution.py data/gemini   les clips reçus, gardés sous le nom de leur photo de départ
 
 1. Reconnaissance : la première image de chaque clip est comparée aux images de départ
    (output/reconstitution/*.jpg) ; pas besoin de renommer les fichiers. Un clip sans photo de départ
@@ -61,6 +62,8 @@ for f in clips:
     hand = [v for k, v in MANUEL.items() if k.lower() in base]
     if hand:
         name, score = hand[0], 1.0
+    elif os.path.splitext(base)[0] in {k.lower() for k in REF}:  # clip rangé sous le nom de sa photo (data/gemini/)
+        name, score = next(k for k in REF if k.lower() == os.path.splitext(base)[0]), 1.0
     elif "vote" in base or base.startswith("19"):
         name, score = "19-vote-onu-1947", 1.0
     else:

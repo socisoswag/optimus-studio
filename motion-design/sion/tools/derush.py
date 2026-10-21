@@ -148,8 +148,14 @@ def part(yml, folder):
                 name = f"{pid}-{typ.replace('É', 'E')}-{slug(base, 40).lower()}.mp4"
                 cut(src, a, d, os.path.join(cd, name))
             else:
-                why = "à obtenir" if p.get("a_obtenir") else ("photo à remplacer par de la vidéo" if typ == "PHOTO" else "pas encore rendu")
-                manque.append(f"| {pid} | {typ} | {d:.1f} s | {why} : {fic.replace('|', '/')} |")
+                # rendu absent sur cette machine (nouvelle session) mais plan déjà livré : on garde la version livrée
+                old = [] if p.get("a_obtenir") or not src else sorted(glob.glob(os.path.join(cd, f"{pid}-*.mp4")))
+                if old:
+                    name = os.path.basename(old[0])
+                    KEEP.add(old[0])
+                else:
+                    why = "à obtenir" if p.get("a_obtenir") else ("photo à remplacer par de la vidéo" if typ == "PHOTO" else "pas encore rendu")
+                    manque.append(f"| {pid} | {typ} | {d:.1f} s | {why} : {fic.replace('|', '/')} |")
             ok += name is not None
             cartons += cartons_of(p)
             rows.append(f"| {pid} | `{name}` | {typ} | {d:.1f} s | {flat(p.get('ecran')).replace('|', '/')} | {flat(p.get('voix')).replace('|', '/') or 'silence'} |"
