@@ -27,7 +27,6 @@ Le texte complet, prêt à coller plan par plan, est aussi dans `output/a-faire-
 
 | Plan | Durée | Ce qu'on doit voir | Photo de départ | Ligne à ajouter au prompt |
 |---|---|---|---|---|
-| 8.13 | 10 s | **à refaire quand tu auras des crédits** (le premier clip montrait une silhouette « fantôme » ; en attendant, la vraie photo seule, avec une lente avancée) : la grève générale de 1936, le souk des bijoutiers, désert pendant six mois | `output/reconstitution/20-greve-1936-souk-desert.jpg` | Very slow push forward along the empty covered market; the wooden shop doors stay closed; dust floats in the sunbeams at the end of the alley. Nobody walks in, the street stays empty. |
 | 14.3 | 13 s | l'hôtel King David après l'attentat, 22 juillet 1946 | `output/reconstitution/22-king-david-1946.jpg` | Thin dust and smoke drift from the collapsed wing; the crane arms move slowly; soldiers and rescuers search the rubble. No bodies, no blood. |
 | 17.3 | 17 s | des immigrants juifs d'Irak arrivent à l'aéroport de Lod, mai 1951 (photo 6) | `data/reconstitution/24-immigrants-irak-lod-1951.jpg` | The families wait next to the truck; a man hands bundles and bags down from the truck to the people below; the propeller plane stands still in the background; wind moves the scarves and the clothes. |
 | 17.4 | 16 s | la maabara de Nahariya, février 1952 (photo 7) | `data/reconstitution/25-maabara-nahariya-1952.jpg` | The women at the table fill in forms and talk; the man with the briefcase walks slowly toward the table; the tablecloth moves slightly in the wind. |

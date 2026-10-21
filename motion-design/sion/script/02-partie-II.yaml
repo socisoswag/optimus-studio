@@ -242,16 +242,16 @@ chapitres:
         ecran: "déjà dans le plan : Octobre 1933 · Jaffa · La foule des manifestants face à la police britannique · Photo d'archive animée par IA"
         voix: >-
           1933. / Hitler arrive au pouvoir, / l'immigration juive s'accélère, / et Jaffa **manifeste**.
-      - type: PHOTO
-        fichier: output/reconstitutions/16-20-greve-1936-souk-desert.mp4
+      - type: IA
+        fichier: output/reconstitutions/12-20-greve-1936-souk-desert.mp4
         entree: 0
         sortie: 10
-        ecran: "déjà dans le plan : 1936 · Le souk des bijoutiers · Désert pendant les six mois de grève générale · Photo d'archive (en attente de sa reconstitution par IA)"
+        ecran: "déjà dans le plan : la vraie photo, puis la reconstitution (1936 · Le souk des bijoutiers · Désert pendant les six mois de grève générale)"
         source: "SOURCES.md 2.2, matpc 18170 (le souk des bijoutiers, désert pendant les six mois de grève, 1936)"
         voix: >-
           En 1936, la Palestine arabe se met en grève. / Six mois. // C'est le début de la grande **révolte**.
       - type: IA
-        fichier: output/reconstitutions/12-21-maison-dynamitee-lydda-1936.mp4
+        fichier: output/reconstitutions/13-21-maison-dynamitee-lydda-1936.mp4
         entree: 0
         sortie: 12
         ecran: "déjà dans le plan : 1936 · Lydda · Maison dynamitée par l'armée · Photo d'archive animée par IA"
@@ -391,7 +391,7 @@ chapitres:
           déclarent : / « Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse, / et
           n'attendons donc pas de retour en **Palestine**. »
       - type: IA
-        fichier: output/reconstitutions/14-28-bund-1917.mp4
+        fichier: output/reconstitutions/15-28-bund-1917.mp4
         entree: 0
         sortie: 15
         ecran: "déjà dans le plan : 1917 · Empire russe · Une manifestation du Bund · Photo d'archive animée par IA"
@@ -401,7 +401,7 @@ chapitres:
           En 1897, l'année même du congrès de Bâle, / des ouvriers juifs fondent le Bund, à Vilnius. / Leur idée :
           rester, et se battre là où l'on vit. // En yiddish : doikayt, « **l'ici** ».
       - type: IA
-        fichier: output/reconstitutions/13-23-mur-occidental.mp4
+        fichier: output/reconstitutions/14-23-mur-occidental.mp4
         entree: 0
         sortie: 14
         ecran: "déjà dans le plan : la vraie photo, puis la reconstitution (Entre 1898 et 1946 · Jérusalem · La prière au mur occidental)"
