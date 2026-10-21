@@ -283,7 +283,7 @@ Source : SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 12172, laboureur et ses
 (22 mots, 2.2 par seconde)
 
 
-**5.6** · film **00:08:02:09 → 00:08:12:09** (10.0 s) · **[PHOTO]** `à télécharger : la loterie des terrains d'Ahuzat Bayit (futur Tel-Aviv), avril 1909, photo d'Avraham Soskine (domaine public, Wikimedia Commons)` · **À OBTENIR**  
+**5.6** · film **00:08:02:09 → 00:08:12:09** (10.0 s) · **[IA]** `à générer : reconstitution de la loterie d'Ahuzat Bayit, 11 avril 1909 (image de départ : data/reconstitution/29-tel-aviv-1909.jpg)` · **À OBTENIR**  
 Source : photo d'Avraham Soskine, 11 avril 1909 (domaine public)  
 À l'écran : carton : Jaffa · avril 1909  
 > VOIX : En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la ville arabe.  

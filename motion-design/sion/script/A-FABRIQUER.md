@@ -36,12 +36,12 @@ Le texte complet, prêt à coller plan par plan, est aussi dans `output/a-faire-
 | 28.3 | 16 s | des immigrants yéménites au camp de Rosh HaAyin, février 1950 (photo 8) | `data/reconstitution/26-rosh-haayin-1950.jpg` | The crowd of families stands in front of the tents with small movements: heads turn, a mother holds her child, people shift their weight; wind moves the tent canvas. |
 | 14.2 | 12 s | l'entraînement de recrues de la Haganah, avril 1948 (photo 9) | `data/reconstitution/27-haganah-1948.jpg` | The young recruits stand and listen in the courtyard; a few walk slowly forward holding their rifles; slight wind in the pine tree. |
 | 10.3 | 15 s | une manifestation du Bund, 1917 (photo 10) | `data/reconstitution/28-bund-1917.jpg` | The demonstrators stand still on the snowy street, small movements, breath in the cold air; the banner moves gently in the wind. |
+| 5.6 | 10 s | la loterie des terrains d'Ahuzat Bayit, futur Tel-Aviv, 11 avril 1909 (photo 11) | `data/reconstitution/29-tel-aviv-1909.jpg` | The crowd on the sand dunes gathers around the organisers; people lean in to watch the lots being drawn; the wind moves the clothes and the sand. |
 
 **Photos à télécharger toi-même** sur Wikimedia Commons (mots à taper entre guillemets ; envoie-moi la photo avec le clip) :
 
 | Plan | Durée | Ce qu'on doit voir | Chercher | Ligne à ajouter au prompt |
 |---|---|---|---|---|
-| 5.6 | 10 s | la loterie des terrains d'Ahuzat Bayit, futur Tel-Aviv, 11 avril 1909 (photo d'Avraham Soskine) | « Ahuzat Bayit lottery Soskine » | The crowd on the sand dunes gathers; a man draws shells from a box; the wind moves the clothes. |
 | 16.6 | 13 s | un soldat contrôle le laissez-passer d'un Arabe israélien, années 1950 | « Israel military government 1950s permit » (si rien : une fiche) | The soldier checks the paper, the man waits. |
 | 26.2 | 15 s | les colons du Goush Emounim à Sébastia, 1975 | « Gush Emunim Sebastia 1975 » | The crowd of settlers stands on the hill, flags move in the wind. |
 | 28.2 | 17 s | la manifestation des Black Panthers israéliens, Jérusalem, 1971 | « Israeli Black Panthers 1971 » | The demonstrators march with their signs. |

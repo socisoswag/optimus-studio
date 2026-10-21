@@ -141,6 +141,7 @@ qui les utilisent.
 | 14.2 | Flickr - Government Press Office (GPO) - TRAINING FOR THE HAGANA.jpg | GPO, 4 avril 1948 | CC BY-SA 3.0 |
 | 17.3 | Immigrants 1951.jpg | photographe du GPO, mai 1951 | domaine public |
 | 17.4 | Nahariya Maabara.jpg | Fritz Cohen, GPO, février 1952 | domaine public |
+| 5.6 | TelAviv-Founding.jpg | Avraham Soskin, 11 avril 1909 | domaine public |
 | 10.3 | Bundist demonstration.jpg | auteur inconnu, février-mars 1917 | domaine public |
 | 28.3 | Zoltan Kluger. Rosh Ha-Ayin 1950.jpg | Zoltan Kluger, GPO, 2 février 1950 | domaine public |
 

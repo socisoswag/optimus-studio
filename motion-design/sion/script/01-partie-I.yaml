@@ -338,8 +338,9 @@ chapitres:
         voix: >-
           Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, /
           et les ouvriers arabes sont écartés.
-      - type: PHOTO
-        fichier: "à télécharger : la loterie des terrains d'Ahuzat Bayit (futur Tel-Aviv), avril 1909, photo d'Avraham Soskine (domaine public, Wikimedia Commons)"
+      - type: IA
+        fichier: "à générer : reconstitution de la loterie d'Ahuzat Bayit, 11 avril 1909 (image de départ : data/reconstitution/29-tel-aviv-1909.jpg)"
+        photo: "Wikimedia Commons, « TelAviv-Founding », Avraham Soskin, 1909, domaine public"
         duree: 10
         a_obtenir: true
         source: "photo d'Avraham Soskine, 11 avril 1909 (domaine public)"

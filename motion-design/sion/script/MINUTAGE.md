@@ -54,7 +54,7 @@
 
 ## Images à obtenir
 
-- 5.6 : à télécharger : la loterie des terrains d'Ahuzat Bayit (futur Tel-Aviv), avril 1909, photo d'Avraham Soskine (domaine public, Wikimedia Commons) (le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même plan dans le film))
+- 5.6 : à générer : reconstitution de la loterie d'Ahuzat Bayit, 11 avril 1909 (image de départ : data/reconstitution/29-tel-aviv-1909.jpg) (le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même plan dans le film))
 - 8.13 : à générer : reconstitution de la grève de 1936 (image de départ : output/reconstitution/20-greve-1936-souk-desert.jpg)
 - 8.14 : à générer : reconstitution d'une maison dynamitée à Lydda (image de départ : output/reconstitution/21-maison-dynamitee-lydda-1936.jpg)
 - 10.3 : à générer : reconstitution d'une manifestation du Bund, 1917 (image de départ : data/reconstitution/28-bund-1917.jpg)
