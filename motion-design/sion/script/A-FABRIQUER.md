@@ -40,11 +40,12 @@ Prompt de base (à coller, puis ajouter la ligne du plan) :
 Pas d'IA, par choix : les massacres (Hébron 1929, Deir Yassin, le convoi de Hadassah) restent en fiches sobres, sans
 images reconstituées.
 
-## 2. Clips Gemini déjà faits mais absents du disque : à renvoyer
+## 2. Clips Gemini déjà reçus
 
-Ils sont dans SOURCES.md 4 mais plus ici (le conteneur a été vidé) : **les troupes britanniques entrent par la porte de
-Jaffa (1917)**, **la procession de Nebi Musa**, **les bannières de Nebi Musa à al-Aqsa**, **la place du marché de
-Jaffa**, et **la scène du vote de l'ONU (1947)**. Renvoie-les tels quels, je les reconnais tout seul.
+Reçus et reconnus : les orangeraies de Jaffa, le port de Jaffa, le marché aux moutons de la porte de Damas, la savonnerie
+de Naplouse, l'entrée des troupes britanniques par la porte de Jaffa (1917), la procession de Nebi Musa, les bannières
+de Nebi Musa à al-Aqsa, la place du marché de Jaffa. Il manque seulement **la scène du vote de l'ONU (1947)** : renvoie-la
+si tu l'as encore.
 
 ## 3. Vraies vidéos d'aujourd'hui : à chercher avec Perplexity, à télécharger toi-même
 
