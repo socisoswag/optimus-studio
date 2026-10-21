@@ -184,9 +184,9 @@ Film 00:26:50:11 → 00:28:27:11 · durée 1 min 37.0 s
 (23 mots, 1.9 par seconde)
 
 
-**14.3** · film **00:27:07:01 → 00:27:20:01** (13.0 s) · **[PHOTO]** `à télécharger : l'hôtel King David après l'attentat, 22 juillet 1946 (domaine public, Wikimedia Commons)` · **À OBTENIR**  
-Source : attentat du 22 juillet 1946 : 91 morts  
-À l'écran : carton : Jérusalem · 22 juillet 1946  
+**14.3** · film **00:27:07:01 → 00:27:20:01** (13.0 s) · **[IA]** `à générer : reconstitution de l'hôtel King David après l'attentat (image de départ : output/reconstitution/22-king-david-1946.jpg)` · **À OBTENIR**  
+Source : attentat du 22 juillet 1946 : 91 morts ; photo SOURCES.md 2.2, matpc 12969 (Matson, juillet 1946)  
+À l'écran : carton : Jérusalem · 22 juillet 1946 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
 > VOIX : Le 22 juillet 1946, l'Irgoun fait sauter une aile de l'hôtel King David, / siège de l'administration britannique à Jérusalem. // 91 **morts**.  
 (21 mots, 1.6 par seconde)
 

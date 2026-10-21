@@ -227,12 +227,12 @@ chapitres:
         voix: >-
           Côté juif, trois forces armées. / La Haganah, la plus grande, liée à Ben Gourion. / Et deux groupes plus
           radicaux : / l'Irgoun et le **Lehi**.
-      - type: PHOTO
-        fichier: "à télécharger : l'hôtel King David après l'attentat, 22 juillet 1946 (domaine public, Wikimedia Commons)"
+      - type: IA
+        fichier: "à générer : reconstitution de l'hôtel King David après l'attentat (image de départ : output/reconstitution/22-king-david-1946.jpg)"
         duree: 13
         a_obtenir: true
-        source: "attentat du 22 juillet 1946 : 91 morts"
-        ecran: "carton : Jérusalem · 22 juillet 1946"
+        source: "attentat du 22 juillet 1946 : 91 morts ; photo SOURCES.md 2.2, matpc 12969 (Matson, juillet 1946)"
+        ecran: "carton : Jérusalem · 22 juillet 1946 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
         voix: >-
           Le 22 juillet 1946, l'Irgoun fait sauter une aile de l'hôtel King David, / siège de l'administration
           britannique à Jérusalem. // 91 **morts**.

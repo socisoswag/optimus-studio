@@ -117,6 +117,10 @@ Utilisées pour les reconstitutions (images de départ des photos animées) :
 | matpc 15738 | Arab protest delegations, demonstrations and strikes against British policy in Palestine. Arab womens' delegation to the High Commissioner | 1929 | https://www.loc.gov/pictures/item/2019706516/ |
 | matpc 18217 | Palestine disturbances 1936. Lorry of dry goods being unloaded into an Arab store on reopening day after the six months strike [Jerusalem] | 1936 | https://www.loc.gov/pictures/item/2019708987/ |
 | matpc 18171 | Palestine disturbances 1936. New & temporary vegetable market along the Jerusalem Jaffa railroad line. Scene at the Bittir station | 1936 | https://www.loc.gov/pictures/item/2019708941/ |
+| matpc 18170 | Palestine disturbances 1936. Deserted scene in Jewelers market, as it has appeared during the months of strike, otherwise a crowded bazaar | 1936 | https://www.loc.gov/pictures/item/2019708940/ |
+| matpc 18126 | Palestine disturbances 1936. Site of a house in Lydda blown up by military order. Owners searching for family relics | 1936 | https://www.loc.gov/pictures/item/2019708896/ |
+| matpc 12969 | Crash of Hotel King David on Monday, July 22, 1946 | juillet 1946 | https://www.loc.gov/pictures/item/2019704356/ |
+| matpc 04802 | Jews at Wailing Wall | entre 1898 et 1946 | https://www.loc.gov/pictures/item/2019697243/ |
 
 Utilisées dans le script (plans fixes animés en relief) :
 
@@ -138,7 +142,7 @@ Fichiers dans `data/archives/documents/`.
 | Fichier | Contenu | Auteur, licence | Lien |
 |---|---|---|---|
 | al-khalidi-portrait.jpg | Youssouf Diya al-Khalidi (1842-1906), député de Jérusalem au Parlement ottoman | auteur inconnu, domaine public (Wikimedia Commons, d'après l'encyclopédie de l'islam TDV) | https://commons.wikimedia.org/wiki/File:Yusuf_Ziya_el-Halidi.jpg |
-| 1899-lettre-herzl-al-khalidi.jpg | Lettre de Herzl à al-Khalidi, 19 mars 1899, version anglaise dactylographiée | Theodor Herzl ; numérisation PalQuest (Institut d'études palestiniennes), CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Letter_from_Theodore_Herzl_to_Yusuf_Diya-uddin_al-Khalidi_-_19_MARCH_1899.jpg |
+| 1899-lettre-herzl-al-khalidi.jpg | Lettre de Herzl à al-Khalidi, 19 mars 1899, version anglaise dactylographiée (l'original est en français ; transcription PalQuest vérifiée le 21 octobre 2026 : « d'en voir quintupler et décupler la valeur peut-être en quelques mois ») | Theodor Herzl ; numérisation PalQuest (Institut d'études palestiniennes), CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Letter_from_Theodore_Herzl_to_Yusuf_Diya-uddin_al-Khalidi_-_19_MARCH_1899.jpg |
 | ahad-haam-portrait.jpg | Ahad Ha'am (Asher Ginzberg, 1856-1927) | domaine public (Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Ahad_Haam.jpg |
 | (à obtenir) | Une du journal Filastin, Jaffa, 1911 | domaine public (plus de 100 ans) | https://www.nli.org.il/en/newspapers/falastin |
 
@@ -232,10 +236,11 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 1903-ellis-island-immigrants | « Emigrants [i.e. Immigrants] Landing at Ellis Island » (muet) : des immigrants débarquent du ferry, ballots à la main | Thomas A. Edison, Inc., 1903 (domaine public : publié avant 1930) | Bibliothèque du Congrès, Paper Print Collection | https://archive.org/details/emigrants-i.e.-immigrants-landing-at-ellis-island |
 | 1899-melies-dreyfus-ile-du-diable | « L'Affaire Dreyfus », tableau « L'île du Diable » (muet) : reconstitution tournée pendant l'Affaire | Georges Méliès, Star Film n° 207, 1899 (domaine public) | Star Film 206 à 217 | https://archive.org/details/LAffaireDreyfus1899 |
 | 1899-melies-dreyfus-bagarre-journalistes | même film, tableau « Bagarre entre journalistes » (Star Film n° 213) | Georges Méliès, 1899 (domaine public) | Star Film 213 | https://archive.org/details/LAffaireDreyfus1899 |
-| 1950-sands-of-sorrow-refugies | « Sands of Sorrow » (sonore, 28 min) : « les premières images filmées des réfugiés arabes de Palestine », camps de tentes, foules | Theodore A. Morde, photographie Don Senick, 1950, pour le Council for the Relief of Palestine Arab Refugees (domaine public) | NARA 11960 | https://archive.org/details/sands_of_sorrow |
+| 1950-sands-of-sorrow-refugies | « Sands of Sorrow » (sonore, 28 min) : « les premières images filmées des réfugiés arabes de Palestine », camps de tentes, foules | Theodore A. Morde, photographie Don Senick, 1950, pour le Council for the Relief of Palestine Arab Refugees (domaine public : « Usage: Public Domain » sur Internet Archive, aussi répertorié comme domaine public par Footage Farm et Buyout Footage, vérifié le 21 octobre 2026) | NARA 11960 | https://archive.org/details/sands_of_sorrow |
 | 1897-lumiere-jerusalem-porte-de-jaffa | « Porte de Jaffa, côté Est » (muet, restauration 1080p) : la foule devant la porte de Jaffa | Alexandre Promio, société Lumière, avril 1897 (domaine public) | catalogue Lumière | https://archive.org/details/JaffaGateJerusalem1897 |
-| 1918-jerusalem-mur-occidental | « Jérusalem, 1918 » (muet) : prières au mur occidental | film amateur anonyme, 1918, collection Jacob Gross (marqué domaine public) | archive.org jerusalem-1918 | https://archive.org/details/jerusalem-1918 |
 | 1961-proces-eichmann | « Trial of Century : Eichmann Tried for War Crimes » : le tribunal de Jérusalem, Eichmann dans sa cage de verre, les juges | Universal-International News, avril 1961 (actualités Universal, versées au domaine public) | NARA, Universal Newsreels | https://archive.org/details/1961-04-13_Eichmann_trial |
+
+Retiré : « Jérusalem, 1918 » (archive.org jerusalem-1918). Vérification du 21 octobre 2026 : images amateurs retrouvées dans une famille à Amsterdam, montées par Yaakov Gross (musique de Nahum Heiman) ; aucune autorisation générale de réutilisation établie. Le plan 10.4 passe en reconstitution d'après une photo de la Bibliothèque du Congrès.
 
 Extraits recadrés à l'intérieur de l'image (sans les bords arrondis de la pellicule), mis en 16:9, 25 images par seconde,
 sans son d'origine ; fabriqués par `tools/archives_filmees.py` (coupes à l'image près, look « archive »). Méliès est une

@@ -1,6 +1,6 @@
 """Images de départ pour les reconstitutions (photos d'archive animées par IA : Gemini/Veo, Kling, Firefly).
 
-    python3 tools/prep_reconstitution.py <dossier_cache>
+    python3 tools/prep_reconstitution.py <dossier_cache> [noms...]   (sans nom : toutes)
 
 Chaque photo : original TIFF de la Bibliothèque du Congrès (« no known restrictions on publication »), bord du négatif
 rogné, niveaux automatiques doux, cadrage 16:9 en 1920 x 1080 dans output/reconstitution/<nom>.jpg.
@@ -40,6 +40,11 @@ PHOTOS = {
     "17-manifestation-1929": ("2019706516", (0.5, 0.6, 1.0)),
     "18-greve-1936-camion": ("2019708987", (0.5, 0.55, 1.0)),
     "18b-marche-1936": ("2019708941", (0.5, 0.56, 1.0)),
+    "19-manifestation-jaffa-1933": ("2019706566", (0.47, 0.55, 0.94)),
+    "20-greve-1936-souk-desert": ("2019708940", (0.5, 0.5, 1.0)),
+    "21-maison-dynamitee-lydda-1936": ("2019708896", (0.5, 0.5, 1.0)),
+    "22-king-david-1946": ("2019704356", (0.5, 0.5, 1.0)),
+    "23-mur-occidental": ("2019697243", (0.6, 0.5, 0.78)),
 }
 if os.environ.get("CADRAGE"):  # cadrages ajustés à l'œil (JSON {nom: [cx, cy, w]})
     for k, v in json.load(open(os.environ["CADRAGE"])).items():
@@ -72,6 +77,8 @@ os.makedirs(OUT, exist_ok=True)
 src_path = os.path.join(ROOT, "data", "reconstitution.json")
 sources = json.load(open(src_path)) if os.path.exists(src_path) else {}
 for name, (iid, (cx, cy, fw)) in PHOTOS.items():
+    if sys.argv[2:] and name not in sys.argv[2:]:
+        continue
     full = os.path.join(CACHE, f"{name}.jpg")
     if not os.path.exists(full):
         d = json.loads(get(f"https://www.loc.gov/pictures/item/{iid}/?fo=json"))

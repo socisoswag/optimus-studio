@@ -180,15 +180,16 @@ Source : SOURCES.md 2.2, matpc 15788 (manifestation de Jaffa, octobre 1933)
 (11 mots, 1.4 par seconde)
 
 
-**8.13** · film **00:15:46:01 → 00:15:56:01** (10.0 s) · **[IA]** `à générer : reconstitution de la grève de 1936 (image de départ : output/reconstitution/18-greve-1936-camion.jpg)` · **À OBTENIR**  
-Source : SOURCES.md 2.2, matpc 18217 (réouverture des magasins après la grève de six mois, 1936)  
-À l'écran : carton : output/cartons/jaffa-1936 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
+**8.13** · film **00:15:46:01 → 00:15:56:01** (10.0 s) · **[IA]** `à générer : reconstitution de la grève de 1936 (image de départ : output/reconstitution/20-greve-1936-souk-desert.jpg)` · **À OBTENIR**  
+Source : SOURCES.md 2.2, matpc 18170 (le souk des bijoutiers, désert pendant les six mois de grève, 1936)  
+À l'écran : carton : output/cartons/jaffa-1936 · légende : Le souk des bijoutiers, désert pendant la grève · 1936 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
 > VOIX : En 1936, la Palestine arabe se met en grève. / Six mois. // C'est le début de la grande **révolte**.  
 (18 mots, 1.8 par seconde)
 
 
-**8.14** · film **00:15:56:01 → 00:16:08:01** (12.0 s) · **[PHOTO]** `à télécharger : maison détruite par l'armée britannique, Lydda, 1936 (Wikimedia Commons, domaine public)` · **À OBTENIR**  
-Source : bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centaines de Juifs (article « 1936-1939 Arab revolt in Palestine », d'après Walid Khalidi et Matthew Hughes, Britain's Pacification of Palestine, 2019)  
+**8.14** · film **00:15:56:01 → 00:16:08:01** (12.0 s) · **[IA]** `à générer : reconstitution d'une maison dynamitée à Lydda (image de départ : output/reconstitution/21-maison-dynamitee-lydda-1936.jpg)` · **À OBTENIR**  
+Source : SOURCES.md 2.2, matpc 18126 (maison de Lydda dynamitée sur ordre militaire, 1936) ; bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centaines de Juifs (article « 1936-1939 Arab revolt in Palestine », d'après Walid Khalidi et Matthew Hughes, Britain's Pacification of Palestine, 2019)  
+À l'écran : légende : Lydda, 1936 · Une maison dynamitée sur ordre de l'armée ; les propriétaires cherchent leurs affaires · mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
 > VOIX : La répression britannique est terrible : / maisons dynamitées, / pendaisons, / villages punis. // En trois ans, environ cinq mille Arabes sont **tués**.  
 (19 mots, 1.6 par seconde)
 
@@ -290,9 +291,9 @@ Source : Bund (Union générale des travailleurs juifs), fondé à Vilnius en oc
 (30 mots, 2.0 par seconde)
 
 
-**10.4** · film **00:19:00:16 → 00:19:14:16** (14.0 s) · **[ARCH]** `output/archives-filmees/1918-jerusalem-mur-occidental.mp4` · source 00:00:00:00 → 00:00:14:00  
-Source : Agoudat Israël, fondé à Katowice en 1912 ; image : Jérusalem, 1918, film amateur (collection Jacob Gross), SOURCES.md 4.2  
-À l'écran : carton : Jérusalem · le mur occidental · 1918  
+**10.4** · film **00:19:00:16 → 00:19:14:16** (14.0 s) · **[IA]** `à générer : reconstitution de la prière au mur occidental (image de départ : output/reconstitution/23-mur-occidental.jpg)` · **À OBTENIR**  
+Source : Agoudat Israël, fondé à Katowice en 1912 ; photo SOURCES.md 2.2, matpc 04802 (Jews at Wailing Wall). Le film « Jérusalem, 1918 » est retiré : droits non établis (SOURCES.md 4.2)  
+À l'écran : carton : Jérusalem · le mur occidental · mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
 > VOIX : Pour beaucoup de rabbins orthodoxes, le sionisme est une faute : / seul le Messie doit ramener les Juifs sur la terre d'Israël. // En 1912, ils fondent leur propre parti, Agoudat **Israël**.  
 (30 mots, 2.1 par seconde)
 
