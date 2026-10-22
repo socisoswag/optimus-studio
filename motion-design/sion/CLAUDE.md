@@ -87,7 +87,7 @@ les rendus qu'elle utilise (derush garde les plans déjà livrés dont le rendu 
   fichier `output/reconstitutions/<n>-<nom>.mp4` dans le plan du script (type IA, entree/sortie).
 - Livraison plan par plan : `bash tools/livrer_derush.sh <parties>` (0 ouverture, 1 à 7, 8 conclusion), dépôt
   `Montage-Moyen-orient` ; noter dans `script/CHANGEMENTS.md` chaque plan nouveau, remplacé ou retiré.
-- Voix off : `python3 tools/texte_voix.py` (texte à lire, `script/VOIX-A-LIRE.md`) ; nettoyage sans IA :
+- Voix off : `python3 tools/texte_voix.py` (texte à lire, `script/VOIX-A-LIRE.md`) et `python3 tools/script_pdf.py` (le scénario complet en PDF pour l'enregistrement, `script/SION-scenario-voix-off.pdf`) ; nettoyage sans IA :
   `python3 tools/voix.py <brut.wav> --ton 10` → `output/voix/`. Mixage : la voix à -16 LUFS, les bruitages
   baissés dessous (dans Premiere : Son essentiel, atténuation automatique), le film fini à -14 LUFS.
 - Après une modification du script : `python3 tools/script.py`, puis commit et push.

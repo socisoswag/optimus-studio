@@ -54,11 +54,15 @@ la quatrième séance. Donc on enregistrera le chapitre 1 en premier, en test, e
 ## 6. La méthode d'enregistrement
 
 1. Au début de chaque séance : **10 secondes de silence** (le bruit de la pièce, j'en ai besoin pour nettoyer).
-2. Avant chaque bloc, dis son numéro : « plan 4.7, prise 1 ». Ça me fait gagner des heures au montage.
-3. Deux ou trois prises par bloc. Si tu butes, ne t'arrête pas en jurant : marque une pause, et **reprends la phrase
-   entière** (pas le mot).
+2. **2 secondes de silence entre deux plans** : c'est grâce à elles que je cale chaque plan sur ta voix. Pas besoin
+   de dire les numéros des plans.
+3. Si tu butes, ne t'arrête pas en jurant : tais-toi **3 secondes**, et **reprends la phrase entière** (pas le mot).
+   Je garde toujours la dernière prise de chaque phrase.
 4. Séances de 45 minutes au plus. Après, la voix se fatigue et ça s'entend.
-5. Un fichier par séance ou par chapitre, nommé `voix-chapitre-04-seance-1.wav`.
+5. Un fichier par chapitre, nommé `chapitre-04.wav`.
+
+Le tout est repris dans `SION-scenario-voix-off.pdf` (le scénario complet, plan par plan, à lire pendant
+l'enregistrement ; refait par `python3 tools/script_pdf.py`).
 
 **Première étape : enregistre seulement le chapitre 1 et envoie-le-moi.** Je te fais un retour précis (rythme,
 appuis, son de la pièce) avant que tu enregistres tout le reste.
