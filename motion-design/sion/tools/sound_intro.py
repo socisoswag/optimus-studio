@@ -29,7 +29,8 @@ def reel(*roles):
 
 
 # ambiances des photos (data/reconstitution-legendes.json, timelines) : nom → rôle de la banque ; « foule+moutons » mélange
-AMB = {"vent": "brise", "mer": "mer", "foule": "foule", "atelier": "atelier", "moutons": "moutons", "campagne": "campagne"}
+# « rafales » : le vrai vent qui bouge (la « brise » seule a des aigus presque figés, elle sonne comme une machine)
+AMB = {"vent": "brise", "rafales": "vent", "mer": "mer", "foule": "foule", "atelier": "atelier", "moutons": "moutons", "campagne": "campagne"}
 I = json.load(open(sys.argv[1]))
 OUT = sys.argv[2]
 TOTAL = I["total"]
