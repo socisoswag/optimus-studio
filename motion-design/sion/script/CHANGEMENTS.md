@@ -74,3 +74,6 @@ Bibliothèque du Congrès ». Les autres plans de reconstitution des parties I e
 
 Toutes les reconstitutions prévues sont maintenant faites.
 
+**Voix off, plan 6.9** (réponse Perplexity) : « Vous voyez une autre difficulté, Excellence, dans l'existence de la
+population non juive en Palestine. Mais qui donc songerait à les éloigner ? » Le chapitre 6 peut s'enregistrer. Le plan
+`06.09-MD-documents.mp4` garde son nom (nouvelle version : la phrase exacte à l'écran).

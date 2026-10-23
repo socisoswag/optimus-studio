@@ -69,13 +69,12 @@ Réponses reçues le 21 octobre 2026 : Herzl écrit bien « quintupler et décup
 « Sands of Sorrow » est donné dans le domaine public (gardé, avec le crédit) ; « Jérusalem, 1918 » : droits non
 établis, film retiré (plan 10.4 en reconstitution).
 
-Encore deux questions :
+Réponse du 23 octobre : la phrase de Herzl (plan 6.9) est « Mais qui donc songerait à les éloigner ? » (transcription
+PalQuest ; « Mans » y est une coquille). Voix et fiche corrigées.
 
-1. « Dans la lettre de Theodor Herzl à Youssouf Diya al-Khalidi du 19 mars 1899, écrite en français (transcription
-   publiée par PalQuest, Institut d'études palestiniennes), quel est le texte français exact de la phrase qui correspond
-   en anglais à "You see another difficulty, Excellency, in the existence of the non-Jewish population in Palestine.
-   But who would think of sending them away?" ? Donne le texte français mot pour mot et le lien. »
-2. « Le film "Paths in Palestine" (Archives nationales américaines, NARA, identifiant 2767364, série 428-NPC, copie
+Encore une question :
+
+1. « Le film "Paths in Palestine" (Archives nationales américaines, NARA, identifiant 2767364, série 428-NPC, copie
    archive.org 428-npc-44524) porte au générique "Copyright MCMXXXIV, International Copyright Secured". Qui l'a
    produit (la marine des États-Unis ou une société privée ?), le droit d'auteur de 1934 a-t-il été renouvelé
    (registre du Copyright Office, 1961-1962), et le film est-il aujourd'hui dans le domaine public aux États-Unis ? »

@@ -115,14 +115,14 @@
       camEnd: { w: 0.04, pitch: 50, bearing: 3 },
     },
     {
-      // chapitre 6 : lettre de Herzl à Youssouf Diya al-Khalidi, 19 mars 1899 (version anglaise, Institut d'études
-      // palestiniennes) : « You see another difficulty, Excellency, in the existence of the non-Jewish population in
-      // Palestine. But who would think of sending them away? » ; la valeur de leurs terres montera « five and ten times »
+      // chapitre 6 : lettre de Herzl à Youssouf Diya al-Khalidi, 19 mars 1899, écrite en français (transcription PalQuest,
+      // Institut d'études palestiniennes, d'après W. Khalidi, From Haven to Conquest, 1987 ; « Mans » y est une coquille
+      // pour « Mais ») ; la valeur de leurs terres va « quintupler et décupler »
       id: 'lettre-herzl-1899', type: 'doc', dur: 16, fly: 2.4, layout: 'L', anchor: [540, 40], hitAt: 0.8,
       faces: [root.face('herzl', { tagPos: 'above', x: 1520, h: 720, at: 1.8 })],
       ghost: '1899', eyebrow: 'Vienne · 19 mars 1899', title: ['Herzl répond', 'à al-Khalidi'],
       meta: 'Theodor Herzl → Youssouf Diya al-Khalidi',
-      quote: 'Vous voyez une autre difficulté, Excellence, dans l’existence de la population non juive en Palestine. [[Mais qui songerait à les éloigner ?]]',
+      quote: 'Vous voyez une autre difficulté, Excellence, dans l’existence de la population non juive en Palestine. [[Mais qui donc songerait à les éloigner ?]]',
       ref: 'Traduit de l’anglais',
       note: 'Le prix de leurs terres, promet-il, montera « de cinq et dix fois ».', noteAt: 9.0,
       lon: 16.37, lat: 48.21, pin: true, place: 'Vienne', pinLabel: true,

@@ -356,10 +356,10 @@ Note : texte français d'origine, vérifié (Perplexity, 20 octobre). Les deux p
 
 
 **6.9** · film **00:09:40:14 → 00:09:56:14** (16.0 s) · **[MD]** `output/documents.mp4` · source 00:02:04:00 → 00:02:20:00  
-Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)  
-À l'écran : la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »  
-> VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive. / Mais qui songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il, va « quintupler et décupler ».  
-(34 mots, 2.1 par seconde)  
+Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, écrite en français ; transcription PalQuest, Institut d'études palestiniennes, d'après Walid Khalidi (dir.), From Haven to Conquest, 2e édition, 1987)  
+À l'écran : fiche de la lettre, phrase surlignée : « Mais qui donc songerait à les éloigner ? »  
+> VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive en Palestine. / Mais qui donc songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il, va « quintupler et décupler ».  
+(37 mots, 2.3 par seconde)  
 Note : scène document (la lettre en texte) ; la page originale (SOURCES.md 2.4) reste à récupérer à la main si on veut la montrer
 
 

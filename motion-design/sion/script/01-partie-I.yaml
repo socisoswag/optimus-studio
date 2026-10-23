@@ -455,14 +455,13 @@ chapitres:
         sortie: 140
         note: "scène document (la lettre en texte) ; la page originale (SOURCES.md 2.4) reste à récupérer à la main si on veut la montrer"
         source: >-
-          SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, version anglaise publiée par l'Institut d'études
-          palestiniennes, PalQuest, via Wikimedia Commons, CC BY-SA 4.0 ; notre traduction)
-        ecran: "la lettre, la caméra glisse jusqu'à la phrase surlignée : « But who would think of sending them away? »"
-        verifier: "le texte français exact de « Mais qui songerait à les éloigner ? » (question Perplexity, A-FABRIQUER.md)"
+          SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, écrite en français ; transcription PalQuest, Institut
+          d'études palestiniennes, d'après Walid Khalidi (dir.), From Haven to Conquest, 2e édition, 1987)
+        ecran: "fiche de la lettre, phrase surlignée : « Mais qui donc songerait à les éloigner ? »"
         voix: >-
           Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la
-          population non juive. / Mais qui songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il,
-          va « quintupler et décupler ».
+          population non juive en Palestine. / Mais qui donc songerait à les **éloigner** ? » // Le prix de leurs
+          terres, promet-il, va « quintupler et décupler ».
       - type: MD
         fichier: output/portraits-1.mp4
         entree: 82

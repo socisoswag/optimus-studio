@@ -98,7 +98,7 @@
 
 **6.8** Il écrit d'abord : / « Qui peut contester les droits des Juifs sur la Palestine ? / Mon Dieu, historiquement, c'est bien votre pays ! » // Puis : / « La Palestine fait maintenant partie intégrale de l'Empire ottoman, / et, ce qui est plus grave, / elle est habitée par d'autres que des Israélites. » /// « Au nom de Dieu, / qu'on laisse la Palestine **tranquille**. »
 
-**6.9** Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive. / Mais qui songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il, va « quintupler et décupler ». *(attends avant d'enregistrer : le texte français exact de « Mais qui songerait à les éloigner ? » (question Perplexity, A-FABRIQUER.md))*
+**6.9** Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive en Palestine. / Mais qui donc songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il, va « quintupler et décupler ».
 
 **6.10** Personne ne lui avait parlé de les chasser. // Et quatre ans plus tôt, dans son journal, / il envisageait de faire passer les pauvres de l'autre côté de la **frontière**.
 

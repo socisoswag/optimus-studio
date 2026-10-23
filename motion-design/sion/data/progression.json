@@ -1,5 +1,5 @@
 {
- "maj": "23 octobre 2026, 01 h 50",
+ "maj": "23 octobre 2026, 02 h 00",
  "taches": [
   {
    "nom": "Plans du film en vidéo",
@@ -16,7 +16,7 @@
    "detail": "images faites, encodage final en cours"
   },
   {
-   "nom": "Photos fixes 26.2 et 28.2, fiche 16.6",
+   "nom": "Photos fixes 26.2 et 28.2, fiche 16.6, lettre de Herzl (6.9)",
    "pct": 30,
    "poids": 1,
    "qui": "moi",
@@ -31,10 +31,10 @@
   },
   {
    "nom": "Réponses Perplexity",
-   "pct": 0,
+   "pct": 50,
    "poids": 2,
    "qui": "toi",
-   "detail": "la phrase de Herzl (plan 6.9), les droits de Paths in Palestine"
+   "detail": "Herzl : fait (plan 6.9 corrigé, le chapitre 6 peut s'enregistrer) ; reste les droits de Paths in Palestine"
   },
   {
    "nom": "Voix off",

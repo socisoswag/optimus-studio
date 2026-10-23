@@ -184,7 +184,7 @@ Film 00:53:06:21 → 00:54:39:21 · durée 1 min 33.0 s
 > VOIX : silence
 
 
-**26.2** · film **00:53:11:11 → 00:53:26:11** (15.0 s) · **[PHOTO]** `à télécharger : colons du Goush Emounim, Sébastia, 1975 (GPO, domaine public)` · **À OBTENIR**  
+**26.2** · film **00:53:11:11 → 00:53:26:11** (15.0 s) · **[IA]** `à générer : reconstitution de colons du Goush Emounim levant le drapeau, 1978 (image de départ : data/reconstitution/30-goush-emounim-1978.jpg)` · **À OBTENIR**  
 Source : Goush Emounim, fondé en 1974 ; enseignement du rabbin Zvi Yehouda Kook  
 > VOIX : Après 1967, une partie des Juifs religieux voit dans la conquête un signe de Dieu. / En 1974, ils fondent le Goush Emounim, / « le bloc de la foi » : / s'installer partout, en Judée et en **Samarie**.  
 (34 mots, 2.3 par seconde)
@@ -286,7 +286,7 @@ Film 00:55:48:16 → 00:57:18:06 · durée 1 min 29.6 s
 > VOIX : silence
 
 
-**28.2** · film **00:55:53:07 → 00:56:10:06** (17.0 s) · **[PHOTO]** `à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)` · **À OBTENIR**  
+**28.2** · film **00:55:53:07 → 00:56:10:06** (17.0 s) · **[IA]** `à générer : reconstitution de militants des Black Panthers israéliens, 1972 (image de départ : data/reconstitution/31-black-panthers-1972.jpg)` · **À OBTENIR**  
 Source : Black Panthers israéliens, fondés en 1971 à Moussrara, Jérusalem ; Golda Meir, 19 mai 1971, au lendemain de la manifestation violente du 18 mai, rapporté par Maariv (Avi Picard, université Bar-Ilan, 19 mai 2021)  
 > VOIX : Les Juifs venus des pays arabes, les mizrahim, se heurtent à une élite venue d'Europe. / En 1971, des jeunes de Jérusalem fondent les Black Panthers. / Après une manifestation violente, Golda Meir lance : / « Ce ne sont pas des garçons **gentils**. »  
 (39 mots, 2.3 par seconde)

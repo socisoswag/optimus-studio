@@ -55,5 +55,5 @@
 ## Images à obtenir
 
 - 16.6 : à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)
-- 26.2 : à télécharger : colons du Goush Emounim, Sébastia, 1975 (GPO, domaine public)
-- 28.2 : à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)
+- 26.2 : à générer : reconstitution de colons du Goush Emounim levant le drapeau, 1978 (image de départ : data/reconstitution/30-goush-emounim-1978.jpg)
+- 28.2 : à générer : reconstitution de militants des Black Panthers israéliens, 1972 (image de départ : data/reconstitution/31-black-panthers-1972.jpg)
