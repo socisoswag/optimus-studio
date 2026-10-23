@@ -18,7 +18,13 @@ cd "$ROOT"
 mkdir -p output
 
 # SHUTTER=2 : flou de bougé réel (deux sous-images par image, obturateur à 180°), rendu deux fois plus long
-node render.mjs --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf "${CRF:-14}" $RFLAGS --out "$TMP/video.mp4"
+# VIDEO_LIST : liste concat de morceaux déjà rendus (tools/rendu_morceaux.sh) ; sinon rendu complet ici
+if [ -n "${VIDEO_LIST:-}" ]; then
+  IN=(-f concat -safe 0 -i "$VIDEO_LIST")
+else
+  node render.mjs --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf "${CRF:-14}" $RFLAGS --out "$TMP/video.mp4"
+  IN=(-i "$TMP/video.mp4")
+fi
 # tout se fabrique dans $TMP ; les fichiers finis ne rejoignent output/ qu'à la fin (jamais à moitié écrits)
 WAV="output/$NAME.wav"
 if [ "$OUTNAME" = "$NAME" ] || [ ! -f "output/$NAME.wav" ]; then
@@ -35,9 +41,9 @@ HAL=$(node -e "global.window={}; require('./data/palette.js'); const h=window.PA
 FINISH="format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=sigma=26,colorchannelmixer=$HAL[h];[a][h]blend=all_mode=screen:all_opacity=0.38,curves=all='0/0.02 0.18/0.155 0.5/0.49 0.82/0.86 1/0.965',crop=w=1904:h=1071:x='8+1.1*sin(n*0.37)+0.6*sin(n*1.13)':y='4.5+0.9*sin(n*0.29+1)+0.5*sin(n*0.97)',scale=1920:1080:flags=lanczos"
 
 encode() { # $1 = débit vidéo, $2 = fichier de sortie, $3 = filtre vidéo
-  ffmpeg -y -loglevel error -i "$TMP/video.mp4" -vf "$3" -c:v libx264 -preset slow -b:v "$1" -maxrate "$1" -bufsize "$1" \
+  ffmpeg -y -loglevel error "${IN[@]}" -vf "$3" -c:v libx264 -preset slow -b:v "$1" -maxrate "$1" -bufsize "$1" \
     -tune grain -pix_fmt yuv420p -pass 1 -passlogfile "$TMP/x264" -an -f mp4 /dev/null
-  ffmpeg -y -loglevel error -i "$TMP/video.mp4" -i "$WAV" -map 0:v -map 1:a -vf "$3" -c:v libx264 -preset slow \
+  ffmpeg -y -loglevel error "${IN[@]}" -i "$WAV" -map 0:v -map 1:a -vf "$3" -c:v libx264 -preset slow \
     -b:v "$1" -maxrate "$1" -bufsize "$1" -tune grain -pix_fmt yuv420p -pass 2 -passlogfile "$TMP/x264" \
     -c:a aac -b:a 320k -t "$DUR" -movflags +faststart "$2"
 }
