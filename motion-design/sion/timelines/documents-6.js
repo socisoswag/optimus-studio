@@ -22,6 +22,12 @@
  *   Jérusalem : reconnaissance par les États-Unis le 6 décembre 2017, ambassade ouverte le 14 mai 2018.
  *   Mineurs devant les tribunaux militaires et détention administrative (chiffres à vérifier).
  *   Edward Said (Jérusalem, 1935 ; New York, 2003), The Question of Palestine, 1979.
+ *   Camp David, juillet 2000 ; Taba, janvier 2001. Retrait de Gaza, août-septembre 2005. Élections législatives
+ *   palestiniennes du 25 janvier 2006. Liban : mort de Hassan Nasrallah, 27 septembre 2024 ; Syrie : chute d'Assad,
+ *   8 décembre 2024 ; guerre Israël-Iran, 13-24 juin 2025. Cisjordanie : opération « Mur de fer », janvier 2025.
+ *   Knesset : lois contre l'UNRWA, 28 octobre 2024. Marwan Barghouti, condamné en 2004. Emmanuel Macron, dîner du
+ *   CRIF, 20 février 2019 ; résolution de l'Assemblée nationale, 3 décembre 2019. Ghassan Kanafani (8 juillet 1972) ;
+ *   Naji al-Ali (Londres, 1987). No Other Land, Oscar du documentaire, 2 mars 2025.
  */
 (function (root) {
   const D = { type: 'doc', layout: 'L', anchor: [540, 40] };
@@ -157,6 +163,81 @@
       meta: 'Né à Jérusalem, il quitte la ville en 1947 et fait entendre la Palestine dans le monde',
       note: 'The Question of Palestine, 1979', noteAt: 8.0,
       ...JER,
+    },
+    {
+      ...D, id: 'd22-campdavid', dur: 13, fly: 2.4, hitAt: 0.8,
+      ghost: '2000', eyebrow: 'Camp David · juillet 2000', title: ['Camp David', '2000'],
+      rows: [['Ehud Barak et Yasser Arafat', 'aucun accord'], ['Taba, janvier 2001', 'les négociations s’arrêtent']],
+      rowAt: [2.2, 6.2],
+      lon: 35.0, lat: 31.8, pin: false, ...PAL,
+    },
+    {
+      ...D, id: 'd25-retrait', dur: 13, fly: 2.4, hitAt: 0.8,
+      ghost: '2005', eyebrow: 'Gaza · août et septembre 2005', title: ['Le retrait', 'de Gaza'],
+      rows: [['Environ 8 000 colons évacués', 'sur ordre d’Ariel Sharon'], ['Israël garde le contrôle', 'des frontières, de la mer et du ciel']],
+      rowAt: [2.2, 6.2],
+      ...GAZA,
+    },
+    {
+      ...D, id: 'd25-elections', dur: 13, fly: 2.0, hitAt: 0.8,
+      ghost: '2006', eyebrow: 'Territoires palestiniens · 25 janvier 2006', title: ['Le Hamas gagne', 'les élections'],
+      rows: [['Israël, les États-Unis et l’Europe', 'boycottent son gouvernement'], ['Depuis', 'aucune élection nationale palestinienne']],
+      rowAt: [2.2, 6.2],
+      lon: 35.0, lat: 31.8, pin: false, ...PAL,
+    },
+    {
+      ...D, id: 'd25-region', dur: 15, fly: 2.6, hitAt: 0.8,
+      ghost: '2024', eyebrow: 'Liban, Syrie, Iran · 2024 et 2025', title: ['La guerre', 's’étend'],
+      rows: [['Septembre 2024', 'au Liban, Hassan Nasrallah est tué'], ['Décembre 2024', 'Israël avance en Syrie après la chute d’Assad'], ['Juin 2025', 'douze jours de guerre avec l’Iran']],
+      rowAt: [2.0, 5.6, 9.4],
+      lon: 35.5, lat: 33.0, pin: false,
+      cam: { lon: 35.6, lat: 32.6, w: 0.5, pitch: 40, bearing: -4 },
+      camEnd: { lon: 35.6, lat: 32.6, w: 0.44, pitch: 46, bearing: 4 },
+    },
+    {
+      ...D, id: 'd26-cisjordanie', dur: 14, fly: 2.4, hitAt: 0.8, ...SOFT,
+      ghost: '2025', eyebrow: 'Cisjordanie occupée · depuis octobre 2023', title: ['En Cisjordanie', 'aussi'],
+      rows: [['Attaques de colons', 'raids de l’armée'], ['Janvier 2025 · opération « Mur de fer »', 'les camps de Jénine et de Tulkarem vidés']],
+      rowAt: [2.2, 6.2],
+      lon: 35.25, lat: 32.3, pin: true, place: 'Tulkarem', pinLabel: true,
+      cam: { lon: 35.2, lat: 32.2, w: 0.14, pitch: 42, bearing: -4 },
+      camEnd: { lon: 35.2, lat: 32.2, w: 0.12, pitch: 48, bearing: 4 },
+    },
+    {
+      ...D, id: 'd20-unrwa', dur: 12, fly: 2.0, hitAt: 0.8,
+      ghost: '2024', eyebrow: 'Knesset · 28 octobre 2024', title: ['L’UNRWA', 'interdite'],
+      meta: 'L’agence de l’ONU pour les réfugiés palestiniens n’a plus le droit d’opérer en Israël',
+      ...JER,
+    },
+    {
+      ...D, id: 'd21-barghouti', dur: 12, fly: 2.0, hitAt: 0.8,
+      ghost: '2002', eyebrow: 'En prison depuis 2002', title: ['Marwan', 'Barghouti'],
+      rows: [['Figure du Fatah', 'cinq condamnations à perpétuité'], ['Dans les sondages', 'le dirigeant palestinien le plus populaire']],
+      rowAt: [2.0, 5.8],
+      lon: 35.0, lat: 31.8, pin: false, ...PAL,
+    },
+    {
+      ...D, id: 'd31-antisionisme', dur: 15, fly: 2.0, hitAt: 0.8,
+      ghost: '2019', eyebrow: 'Paris · 2019', title: ['Antisionisme', 'et antisémitisme'],
+      rows: [['20 février 2019', 'Emmanuel Macron les rapproche'], ['3 décembre 2019', 'l’Assemblée adopte la définition de l’IHRA']],
+      rowAt: [2.0, 6.0],
+      note: 'Critiquer un projet politique n’est pas haïr un peuple.', noteAt: 10.2,
+      lon: 35.0, lat: 31.8, pin: false, ...PAL,
+    },
+    {
+      ...D, id: 'd38-kanafani', dur: 14, fly: 2.4, hitAt: 0.8,
+      ghost: '1972', eyebrow: 'Beyrouth 1972 · Londres 1987', title: ['Kanafani', 'et Handala'],
+      rows: [['Ghassan Kanafani', 'écrivain, tué dans un attentat à Beyrouth en 1972'], ['Naji al-Ali', 'père de Handala, tué à Londres en 1987']],
+      rowAt: [2.2, 6.4],
+      lon: 35.0, lat: 31.8, pin: false, ...PAL,
+    },
+    {
+      ...D, id: 'd38-nootherland', dur: 12, fly: 2.0, hitAt: 0.8,
+      ghost: '2025', eyebrow: 'Masafer Yatta · Oscar, 2 mars 2025', title: ['No Other', 'Land'],
+      meta: 'Un film palestinien et israélien reçoit l’Oscar du documentaire',
+      lon: 35.12, lat: 31.4, pin: true, place: 'Masafer Yatta', pinLabel: true,
+      cam: { lon: 35.1, lat: 31.42, w: 0.08, pitch: 42, bearing: -4 },
+      camEnd: { lon: 35.1, lat: 31.42, w: 0.065, pitch: 48, bearing: 4 },
     },
   ];
 

@@ -103,6 +103,22 @@ chapitres:
         entree: 0
         sortie: 4.6
       - type: MD
+        fichier: output/documents-6.mp4
+        entree: 228
+        sortie: 241
+        ecran: "fiche : Gaza · août et septembre 2005 · Le retrait de Gaza"
+        source: "plan de désengagement, août-septembre 2005 ; position de l'ONU sur l'occupation de Gaza"
+        voix: >-
+          En 2005, Ariel Sharon fait évacuer les colonies de Gaza. / Mais Israël garde les frontières, la mer et le ciel : / pour l'ONU, Gaza reste **occupée**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 241
+        sortie: 254
+        ecran: "fiche : 25 janvier 2006 · Le Hamas gagne les élections"
+        source: "élections législatives palestiniennes du 25 janvier 2006"
+        voix: >-
+          En janvier 2006, le Hamas gagne les élections. / Israël, les États-Unis et l'Europe boycottent son gouvernement. / Depuis, les Palestiniens n'ont plus **voté**.
+      - type: MD
         fichier: output/gaza.mp4
         entree: 0
         sortie: 6
@@ -233,6 +249,14 @@ chapitres:
           / et parle de **légitime défense**.
         note: "règle 6 de la bible : la voix dit qui affirme, sur quelle base, et ce qui reste à juger"
       - type: MD
+        fichier: output/documents-6.mp4
+        entree: 254
+        sortie: 269
+        ecran: "fiche : Liban, Syrie, Iran · 2024 et 2025 · La guerre s'étend"
+        source: "mort de Hassan Nasrallah, 27 septembre 2024 ; chute de Bachar al-Assad, 8 décembre 2024 ; guerre Israël-Iran, 13-24 juin 2025"
+        voix: >-
+          La guerre déborde. / En septembre 2024, au Liban, Israël tue le chef du Hezbollah, Hassan Nasrallah. / Après la chute d'Assad, son armée avance en Syrie. / En juin 2025, douze jours de guerre avec l'**Iran**.
+      - type: MD
         fichier: output/documents.mp4
         entree: 84
         sortie: 99
@@ -306,6 +330,15 @@ chapitres:
           Bezalel Smotrich, ministre des Finances, / après une attaque de colons contre le village de Huwara : / « Le
           village de Huwara doit être **effacé**. »
         note: "dire qu'il a ensuite retiré ses propos : la voix le fait au plan suivant"
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 269
+        sortie: 283
+        ecran: "fiche : Cisjordanie occupée · depuis octobre 2023 · En Cisjordanie aussi"
+        source: "OCHA (violences de colons) ; UNRWA (déplacés de l'opération « Mur de fer », 2025)"
+        verifier: "les chiffres des violences de colons et des déplacés de 2025 (question Perplexity)"
+        voix: >-
+          En Cisjordanie aussi, la violence explose : / attaques de colons, raids de l'armée. / En 2025, l'opération « Mur de fer » vide les camps de Jénine et de Tulkarem : / des dizaines de milliers de **déplacés**.
       - type: MD
         fichier: output/portraits-3.mp4
         entree: 110

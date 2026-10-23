@@ -78,24 +78,28 @@ Toutes les reconstitutions prévues sont maintenant faites.
 population non juive en Palestine. Mais qui donc songerait à les éloigner ? » Le chapitre 6 peut s'enregistrer. Le plan
 `06.09-MD-documents.mp4` garde son nom (nouvelle version : la phrase exacte à l'écran).
 
-**Seize sujets ajoutés** (le film passe à 1 h 15 min 49), tous en fiches sur la carte, `<plan>-MD-documents-6.mp4` :
+**Vingt-six sujets ajoutés** (le film passe à 1 h 18 min 02), tous en fiches sur la carte, `<plan>-MD-documents-6.mp4` :
 les lois de 1950 (ch. 16), l'eau et Cheikh Jarrah (ch. 23), le Mavi Marmara, la grande marche du retour, l'argent du
 Qatar et les accords d'Abraham (ch. 25, avant le 7 octobre), Shireen Abu Akleh (ch. 27), le Jour de la Terre et les
 villages bédouins (ch. 28), le rôle de la France (ch. 31), la Cour internationale de justice, le soutien américain et
-l'ambassade à Jérusalem (ch. 33), les tribunaux militaires (ch. 35), Edward Said (ch. 38). Les chapitres gardent leurs numéros (1 à 39). Dans ces 9 chapitres, les plans qui suivent un ajout changent de
+l'ambassade à Jérusalem (ch. 33), les tribunaux militaires (ch. 35), Edward Said (ch. 38) ; puis Camp David 2000 (ch. 22), l'UNRWA interdite (ch. 20), Marwan Barghouti (ch. 21), le retrait de Gaza en 2005, les élections de 2006 et la guerre qui s'étend au Liban, en Syrie et en Iran (ch. 25), la Cisjordanie depuis 2023 (ch. 26), antisionisme et antisémitisme en France (ch. 31), Kanafani et Handala, No Other Land (ch. 38). Les chapitres gardent leurs numéros (1 à 39). Dans ces 9 chapitres, les plans qui suivent un ajout changent de
 numéro (même image, nouveau nom de fichier) :
 
 | Avant | Maintenant |
 |---|---|
 | 16.07 | 16.08 |
+| 20.15 | 20.16 |
+| 21.13 | 21.14 |
+| 22.08 à 22.10 | 22.09 à 22.11 |
 | 23.14 | 23.16 |
-| 25.05 à 25.16 | 25.09 à 25.20 (4 de plus : le 7 octobre est maintenant le plan 25.09) |
+| 25.02 à 25.16 | 25.04 à 25.23 |
+| 26.08 | 26.09 |
 | 27.08 | 27.09 |
 | 28.07 | 28.09 |
-| 31.10 | 31.11 |
+| 31.10 | 31.12 |
 | 33.08 | 33.11 |
 | 35.09 | 35.10 |
-| 38.05 | 38.06 |
+| 38.05 | 38.08 |
 
 **Archives en réserve** (actualités Universal, domaine public) : `13.R1-ARCH-…` le camp de réfugiés juifs d'Admont, 1946 ;
 `19.R1` à `19.R4` Nasser et Suez (1956), Sinaï et Gaza, Jérusalem, le Conseil de sécurité (juin 1967).

@@ -319,6 +319,14 @@ chapitres:
           La commission d'enquête israélienne conclut à la responsabilité personnelle du ministre de la Défense, Ariel
           **Sharon**.
       - type: MD
+        fichier: output/documents-6.mp4
+        entree: 283
+        sortie: 295
+        ecran: "fiche : Knesset · 28 octobre 2024 · L'UNRWA interdite"
+        source: "lois de la Knesset du 28 octobre 2024, en vigueur le 30 janvier 2025"
+        voix: >-
+          En octobre 2024, la Knesset interdit à l'UNRWA, l'agence de l'ONU pour les réfugiés palestiniens, d'agir sur son sol. / L'ONU s'alarme pour des millions de **réfugiés**.
+      - type: MD
         fichier: output/liban-1982.mp4
         entree: 73.5
         sortie: 82.5
@@ -404,6 +412,15 @@ chapitres:
         sortie: 102
         voix: >-
           « Ne laissez pas le rameau d'olivier tomber de ma **main**. »
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 295
+        sortie: 307
+        ecran: "fiche : en prison depuis 2002 · Marwan Barghouti"
+        source: "condamnation de Marwan Barghouti, 6 juin 2004 ; sondages du Palestinian Center for Policy and Survey Research"
+        verifier: "le dernier sondage du PCPSR qui le place en tête (question Perplexity)"
+        voix: >-
+          Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / Dans les sondages, il reste le dirigeant palestinien le plus **populaire**.
       - type: NOIR
         duree: 12
         source: "déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration de Genève, 14 décembre 1988 ; mort le 11 novembre 2004"
@@ -467,6 +484,14 @@ chapitres:
           Sa charte de 1988 reprend des thèmes antisémites, / jusqu'aux Protocoles des sages de Sion, un faux. // En
           2017, un nouveau texte dit combattre le sionisme, / pas les **Juifs**.
         note: "règle 3 de la bible : l'antisémitisme est montré, quel que soit le camp"
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 215
+        sortie: 228
+        ecran: "fiche : Camp David · juillet 2000 · Camp David 2000"
+        source: "sommet de Camp David, 11-25 juillet 2000 ; négociations de Taba, janvier 2001"
+        voix: >-
+          En juillet 2000, à Camp David, Barak et Arafat se séparent sans accord. / Pour Israël, Arafat a refusé une offre généreuse ; / pour les Palestiniens, l'offre était un territoire **morcelé**.
       - type: RÉEL
         fichier: output/plans-reels/jerusalem-esplanade-des-mosquees-ramadan-2024.mp4
         entree: 0

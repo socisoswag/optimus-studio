@@ -694,4 +694,14 @@ marquée du filigrane d'une agence commerciale.
 | ch. 33 | L'ambassade américaine à Jérusalem | reconnaissance du 6 décembre 2017 ; ouverture le 14 mai 2018 |
 | ch. 35 | Les tribunaux militaires, la détention administrative | chiffres : réponse Perplexity attendue |
 | ch. 38 | Edward Said | Edward W. Said, The Question of Palestine, 1979 (trad. française, La Question de Palestine) |
+| ch. 20 | L'UNRWA interdite | lois de la Knesset du 28 octobre 2024, en vigueur le 30 janvier 2025 |
+| ch. 21 | Marwan Barghouti | condamnation du 6 juin 2004 ; sondages du PCPSR (à vérifier) |
+| ch. 22 | Camp David 2000 | sommet du 11 au 25 juillet 2000 ; Taba, janvier 2001 |
+| ch. 25 | Le retrait de Gaza | plan de désengagement, août-septembre 2005 |
+| ch. 25 | Les élections de 2006 | élections législatives palestiniennes du 25 janvier 2006 |
+| ch. 25 | La guerre s'étend | Hassan Nasrallah tué le 27 septembre 2024 ; chute d'Assad le 8 décembre 2024 ; guerre Israël-Iran du 13 au 24 juin 2025 |
+| ch. 26 | La Cisjordanie depuis 2023 | OCHA ; UNRWA ; opération « Mur de fer », janvier 2025 (chiffres à vérifier) |
+| ch. 31 | Antisionisme et antisémitisme | Emmanuel Macron, dîner du CRIF, 20 février 2019 (phrase à vérifier) ; Assemblée nationale, résolution du 3 décembre 2019 |
+| ch. 38 | Kanafani et Handala | Ghassan Kanafani, tué à Beyrouth le 8 juillet 1972 ; Naji al-Ali, mort à Londres le 29 août 1987 |
+| ch. 38 | No Other Land | Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor ; Oscar du meilleur documentaire, 2 mars 2025 |
 

@@ -424,7 +424,7 @@
 
 ## Chapitre 20 · Les camps palestiniens et la vie dans l'exil
 
-*2 min 30 de film*
+*2 min 42 de film*
 
 **20.2** Depuis 1948, des tentes, / puis des quartiers de **béton**.
 
@@ -450,11 +450,13 @@
 
 **20.14** La commission d'enquête israélienne conclut à la responsabilité personnelle du ministre de la Défense, Ariel **Sharon**.
 
-**20.15** Sharon doit quitter la Défense. / Il sera Premier ministre en **2001**.
+**20.15** En octobre 2024, la Knesset interdit à l'UNRWA, l'agence de l'ONU pour les réfugiés palestiniens, d'agir sur son sol. / L'ONU s'alarme pour des millions de **réfugiés**.
+
+**20.16** Sharon doit quitter la Défense. / Il sera Premier ministre en **2001**.
 
 ## Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans État
 
-*2 min 02 de film*
+*2 min 14 de film*
 
 **21.3** Yasser Arafat fonde le Fatah à la fin des années cinquante, / et prend la tête de l'OLP en 1969. / Pour son peuple, il est le visage de la **résistance**.
 
@@ -476,11 +478,13 @@
 
 **21.12** « Ne laissez pas le rameau d'olivier tomber de ma **main**. »
 
-**21.13** En 1988, il accepte la résolution 242 : / un État palestinien à côté d'Israël. // Il meurt en 2004, / sans avoir vu cet **État**.
+**21.13** Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / Dans les sondages, il reste le dirigeant palestinien le plus **populaire**. *(attends avant d'enregistrer : le dernier sondage du PCPSR qui le place en tête (question Perplexity))*
+
+**21.14** En 1988, il accepte la résolution 242 : / un État palestinien à côté d'Israël. // Il meurt en 2004, / sans avoir vu cet **État**.
 
 ## Chapitre 22 · Les intifadas : deux soulèvements
 
-*1 min 46 de film*
+*1 min 59 de film*
 
 **22.2** Décembre 1987, camp de Jabaliya, à Gaza. / Un camion israélien percute des voitures : / quatre ouvriers palestiniens **tués**.
 
@@ -492,11 +496,13 @@
 
 **22.7** Sa charte de 1988 reprend des thèmes antisémites, / jusqu'aux Protocoles des sages de Sion, un faux. // En 2017, un nouveau texte dit combattre le sionisme, / pas les **Juifs**.
 
-**22.8** Septembre 2000. / Ariel Sharon se rend sur l'esplanade des **Mosquées**.
+**22.8** En juillet 2000, à Camp David, Barak et Arafat se séparent sans accord. / Pour Israël, Arafat a refusé une offre généreuse ; / pour les Palestiniens, l'offre était un territoire **morcelé**.
 
-**22.9** La deuxième intifada est plus meurtrière. / Attentats-suicides dans les bus, les cafés, les hôtels d'Israël ; / chars et hélicoptères dans les villes **palestiniennes**.
+**22.9** Septembre 2000. / Ariel Sharon se rend sur l'esplanade des **Mosquées**.
 
-**22.10** En cinq ans, plus de trois mille Palestiniens / et environ mille Israéliens sont tués, / dont beaucoup de civils, des deux **côtés**.
+**22.10** La deuxième intifada est plus meurtrière. / Attentats-suicides dans les bus, les cafés, les hôtels d'Israël ; / chars et hélicoptères dans les villes **palestiniennes**.
+
+**22.11** En cinq ans, plus de trois mille Palestiniens / et environ mille Israéliens sont tués, / dont beaucoup de civils, des deux **côtés**.
 
 ## Chapitre 23 · Oslo, le mur et les colonies
 
@@ -546,49 +552,55 @@
 
 ## Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre
 
-*4 min 12 de film*
+*4 min 53 de film*
 
-**25.2** Gaza. / Plus de deux millions d'habitants, / sur 365 kilomètres **carrés**.
+**25.2** En 2005, Ariel Sharon fait évacuer les colonies de Gaza. / Mais Israël garde les frontières, la mer et le ciel : / pour l'ONU, Gaza reste **occupée**.
 
-**25.3** En 2007, le Hamas prend le pouvoir. / Israël, avec l'Égypte, boucle le territoire par terre, par mer et par **air**.
+**25.3** En janvier 2006, le Hamas gagne les élections. / Israël, les États-Unis et l'Europe boycottent son gouvernement. / Depuis, les Palestiniens n'ont plus **voté**.
 
-**25.4** Puis les offensives : 2008, 2014, 2021. / Des milliers de morts à Gaza ; / des dizaines en **Israël**.
+**25.4** Gaza. / Plus de deux millions d'habitants, / sur 365 kilomètres **carrés**.
 
-**25.5** En 2010, une flottille tente de briser le blocus. / L'armée israélienne prend d'assaut le Mavi Marmara : / dix militants en **meurent**.
+**25.5** En 2007, le Hamas prend le pouvoir. / Israël, avec l'Égypte, boucle le territoire par terre, par mer et par **air**.
 
-**25.6** En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
+**25.6** Puis les offensives : 2008, 2014, 2021. / Des milliers de morts à Gaza ; / des dizaines en **Israël**.
 
-**25.7** En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
+**25.7** En 2010, une flottille tente de briser le blocus. / L'armée israélienne prend d'assaut le Mavi Marmara : / dix militants en **meurent**.
 
-**25.8** Pendant ce temps, le gouvernement Netanyahou laisse le Qatar financer Gaza, gouvernée par le Hamas. / Selon le New York Times, / il s'agit de garder les Palestiniens **divisés**. *(attends avant d'enregistrer : le texte exact de l'enquête du New York Times du 10 décembre 2023 et de la phrase de Netanyahou citée par Haaretz (question Perplexity))*
+**25.8** En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
 
-**25.9** Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
+**25.9** En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
 
-**25.10** Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///
+**25.10** Pendant ce temps, le gouvernement Netanyahou laisse le Qatar financer Gaza, gouvernée par le Hamas. / Selon le New York Times, / il s'agit de garder les Palestiniens **divisés**. *(attends avant d'enregistrer : le texte exact de l'enquête du New York Times du 10 décembre 2023 et de la phrase de Netanyahou citée par Haaretz (question Perplexity))*
 
-**25.11** Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. / Nous combattons des animaux **humains**. »
+**25.11** Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
 
-**25.12** Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
+**25.12** Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///
 
-**25.13** En octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués. / Un décompte sans doute **inférieur** à la réalité.
+**25.13** Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. / Nous combattons des animaux **humains**. »
 
-**25.14** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
+**25.14** Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
 
-**25.15** Vu du ciel, avant, / et après. ///
+**25.15** En octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués. / Un décompte sans doute **inférieur** à la réalité.
 
-**25.16** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
+**25.16** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
 
-**25.17** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
+**25.17** Vu du ciel, avant, / et après. ///
 
-**25.18** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
+**25.18** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
 
-**25.19** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
+**25.19** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
 
-**25.20** 10 octobre 2025 : un cessez-le-feu. / Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
+**25.20** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
+
+**25.21** La guerre déborde. / En septembre 2024, au Liban, Israël tue le chef du Hezbollah, Hassan Nasrallah. / Après la chute d'Assad, son armée avance en Syrie. / En juin 2025, douze jours de guerre avec l'**Iran**.
+
+**25.22** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
+
+**25.23** 10 octobre 2025 : un cessez-le-feu. / Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
 
 ## Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique
 
-*1 min 33 de film*
+*1 min 47 de film*
 
 **26.2** Après 1967, une partie des Juifs religieux voit dans la conquête un signe de Dieu. / En 1974, ils fondent le Goush Emounim, / « le bloc de la foi » : / s'installer partout, en Judée et en **Samarie**.
 
@@ -602,7 +614,9 @@
 
 **26.7** Bezalel Smotrich, ministre des Finances, / après une attaque de colons contre le village de Huwara : / « Le village de Huwara doit être **effacé**. »
 
-**26.8** Il retire ce mot. / En 2024, il dit : / « Personne au monde ne nous laissera affamer deux millions de personnes, / même si cela pouvait être justifié et **moral**, / jusqu'à ce qu'ils rendent les otages. »
+**26.8** En Cisjordanie aussi, la violence explose : / attaques de colons, raids de l'armée. / En 2025, l'opération « Mur de fer » vide les camps de Jénine et de Tulkarem : / des dizaines de milliers de **déplacés**. *(attends avant d'enregistrer : les chiffres des violences de colons et des déplacés de 2025 (question Perplexity))*
+
+**26.9** Il retire ce mot. / En 2024, il dit : / « Personne au monde ne nous laissera affamer deux millions de personnes, / même si cela pouvait être justifié et **moral**, / jusqu'à ce qu'ils rendent les otages. »
 
 ## Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation
 
@@ -674,7 +688,7 @@
 
 ## Chapitre 31 · Les intellectuels français : BHL, Finkielkraut et le débat public
 
-*2 min 22 de film*
+*2 min 37 de film*
 
 **31.2** En France, deux philosophes occupent les plateaux depuis quarante ans : / Bernard-Henri Lévy et Alain Finkielkraut. / Tous deux défendent Israël, chacun à sa **manière**.
 
@@ -694,7 +708,9 @@
 
 **31.10** Et la France ? / En 1957, elle aide Israël à bâtir la centrale de Dimona. / En 2020, la Cour européenne la condamne pour avoir puni des appels au boycott. // En 2025, elle reconnaît la **Palestine**.
 
-**31.11** Dans ce débat, une question revient sans cesse : / qui parle de cette terre, / et qui l'on **écoute**.
+**31.11** En France, le débat est vif. / En 2019, Emmanuel Macron rapproche antisionisme et antisémitisme ; / l'Assemblée adopte la définition de l'IHRA. // Ce film critique un projet politique, / jamais un **peuple**. *(attends avant d'enregistrer : la phrase exacte d'Emmanuel Macron au dîner du CRIF du 20 février 2019 (question Perplexity))*
+
+**31.12** Dans ce débat, une question revient sans cesse : / qui parle de cette terre, / et qui l'on **écoute**.
 
 ## Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique
 
@@ -796,7 +812,7 @@
 
 ## Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière
 
-*1 min 05 de film*
+*1 min 31 de film*
 
 **38.2** Mahmoud Darwich naît en 1941 à al-Birwa, en Galilée. / Le village est vidé en 1948, puis **rasé**.
 
@@ -806,7 +822,11 @@
 
 **38.5** Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».
 
-**38.6** Depuis 1995, des familles israéliennes et palestiniennes qui ont perdu un enfant se réunissent : / le Cercle des parents. // Elles disent : nous ne voulons plus de nouveaux **membres**.
+**38.6** La Palestine a ses voix : / l'écrivain Ghassan Kanafani, tué dans un attentat à Beyrouth en 1972 ; / le dessinateur Naji al-Ali, père de Handala, l'enfant qui tourne le dos, tué à Londres en **1987**.
+
+**38.7** En 2025, « No Other Land », tourné à Masafer Yatta par des Palestiniens et des Israéliens, / reçoit l'Oscar du meilleur **documentaire**.
+
+**38.8** Depuis 1995, des familles israéliennes et palestiniennes qui ont perdu un enfant se réunissent : / le Cercle des parents. // Elles disent : nous ne voulons plus de nouveaux **membres**.
 
 ## Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire
 

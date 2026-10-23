@@ -75,6 +75,22 @@ chapitres:
         voix: >-
           Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».
       - type: MD
+        fichier: output/documents-6.mp4
+        entree: 322
+        sortie: 336
+        ecran: "fiche : Beyrouth 1972 · Londres 1987 · Kanafani et Handala"
+        source: "Ghassan Kanafani, tué à Beyrouth le 8 juillet 1972 ; Naji al-Ali, blessé par balle à Londres en juillet 1987, mort le 29 août 1987"
+        voix: >-
+          La Palestine a ses voix : / l'écrivain Ghassan Kanafani, tué dans un attentat à Beyrouth en 1972 ; / le dessinateur Naji al-Ali, père de Handala, l'enfant qui tourne le dos, tué à Londres en **1987**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 336
+        sortie: 348
+        ecran: "fiche : Masafer Yatta · Oscar, 2 mars 2025 · No Other Land"
+        source: "No Other Land (Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor), Oscar du meilleur documentaire, 2 mars 2025"
+        voix: >-
+          En 2025, « No Other Land », tourné à Masafer Yatta par des Palestiniens et des Israéliens, / reçoit l'Oscar du meilleur **documentaire**.
+      - type: MD
         fichier: output/documents-3.mp4
         entree: 144
         sortie: 159

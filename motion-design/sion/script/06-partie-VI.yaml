@@ -210,6 +210,15 @@ chapitres:
         source: "accord nucléaire franco-israélien, 1957 ; CEDH, Baldassi et autres c. France, 11 juin 2020 ; reconnaissance de l'État de Palestine, 22 septembre 2025"
         voix: >-
           Et la France ? / En 1957, elle aide Israël à bâtir la centrale de Dimona. / En 2020, la Cour européenne la condamne pour avoir puni des appels au boycott. // En 2025, elle reconnaît la **Palestine**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 307
+        sortie: 322
+        ecran: "fiche : Paris · 2019 · Antisionisme et antisémitisme"
+        source: "Emmanuel Macron, dîner du CRIF, 20 février 2019 ; résolution de l'Assemblée nationale du 3 décembre 2019 (définition de l'IHRA)"
+        verifier: "la phrase exacte d'Emmanuel Macron au dîner du CRIF du 20 février 2019 (question Perplexity)"
+        voix: >-
+          En France, le débat est vif. / En 2019, Emmanuel Macron rapproche antisionisme et antisémitisme ; / l'Assemblée adopte la définition de l'IHRA. // Ce film critique un projet politique, / jamais un **peuple**.
       - type: NOIR
         duree: 9
         voix: >-

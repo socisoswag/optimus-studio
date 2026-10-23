@@ -109,3 +109,11 @@ plans marqués « verifier » dans le script ne s'enregistrent pas avant.
 > du 8 octobre 2023 (« For years, Netanyahu propped up Hamas ») : titre et passage clé ; 5) la réponse officielle du
 > bureau de Netanyahou à ces accusations.
 
+### Encore trois vérifications (sujets ajoutés le 23 octobre au soir)
+
+> 1) La phrase exacte d'Emmanuel Macron sur l'antisionisme au dîner du CRIF du 20 février 2019 (et celle du 16 juillet
+> 2017 au Vel d'Hiv), avec le lien vers le texte officiel de l'Élysée ; 2) en Cisjordanie depuis octobre 2023 : nombre
+> d'attaques de colons recensées par l'OCHA et nombre de déplacés des camps de Jénine, Tulkarem et Nour Chams depuis
+> l'opération « Mur de fer » de janvier 2025 (UNRWA, OCHA), avec la date du décompte ; 3) le dernier sondage du
+> Palestinian Center for Policy and Survey Research (PCPSR) sur Marwan Barghouti : date et pourcentage.
+
