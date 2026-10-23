@@ -18,6 +18,7 @@ data/drone-*/
 !data/archives/documents/*.png
 # Reconstitutions : timeline générée par tools/build_reconstitution.py, images extraites des clips
 timelines/reconstitutions.js
+timelines/photos-fixes.js
 output/reconstitution/images/
 
 # brouillon des reconstitutions IA : remonté et poussé quand tous les clips seront là
