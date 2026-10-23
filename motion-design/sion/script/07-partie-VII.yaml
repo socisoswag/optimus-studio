@@ -61,9 +61,12 @@ chapitres:
         voix: >-
           En 2015, Benyamin Netanyahou affirme que le mufti de Jérusalem aurait donné à Hitler l'idée d'exterminer les
           Juifs. / Les historiens le démentent, / et Berlin répond : la responsabilité est **allemande**.
-      - type: NOIR
-        duree: 18
-        source: "conférence de Téhéran, 11-12 décembre 2006 ; discours de Mahmoud Abbas, août 2023, et lettre ouverte de plus de cent universitaires palestiniens, septembre 2023"
+      - type: ARCH
+        fichier: output/archives-filmees/1945-ohrdruf-camp-libere.mp4
+        entree: 0
+        sortie: 17.92
+        ecran: "carton : avril 1945 · Ohrdruf, Allemagne · Eisenhower, Bradley et Patton dans le camp libéré"
+        source: "actualités Universal « Nazi Murder Mills », 26 avril 1945 (fiche d'époque : Ohrdruf camp viewed by Ike, Bradley, Patton), domaine public ; seulement des visages, aucun corps à l'image ; conférence de Téhéran, 11-12 décembre 2006 ; discours de Mahmoud Abbas, août 2023, et lettre ouverte de plus de cent universitaires palestiniens, septembre 2023"
         voix: >-
           La Shoah est aussi niée ou minimisée : / à Téhéran, en 2006, une conférence entière la met en doute. / En 2023,
           Mahmoud Abbas l'explique par le « rôle social » des Juifs ; / plus de cent intellectuels palestiniens le
@@ -140,7 +143,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1973-pont-aerien-americain.mp4
         entree: 0
-        sortie: 17.5
+        sortie: 16.72
         ecran: "carton : octobre 1973 · Lod · Le pont aérien américain"
         source: "US Air Force, film 342-ADW-264, octobre 1973 (archives nationales américaines, identifiant 62010), domaine public"
         voix: >-

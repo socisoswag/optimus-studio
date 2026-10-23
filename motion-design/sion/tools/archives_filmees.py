@@ -33,7 +33,8 @@ IA = "https://archive.org/download/"
 
 # nom : (identifiant archive.org, fichier d'origine, recadrage w:h:x:y en pixels du fichier, [(début, fin) de chaque coupe, en s]
 #        [, options : pre = réglage d'exposition avant le look (copie trop claire ou trop sombre), stab = corriger le
-#        tremblement de la pellicule, decimer = copie déjà désentrelacée qui garde les images en double du télécinéma])
+#        tremblement de la pellicule, decimer = copie déjà désentrelacée qui garde les images en double du télécinéma,
+#        rayure = (x, largeur) d'une rayure verticale permanente de la copie, en pixels du fichier, comblée par ses voisins])
 ARCHIVES = {
     "1903-ellis-island-immigrants": ("emigrants-i.e.-immigrants-landing-at-ellis-island",
                                      "Emigrants_(i.e._immigrants)_landing_at_Ellis_Island_-.webm", "1408:1056:16:12", [(85.0, 91.0)],
@@ -85,6 +86,27 @@ ARCHIVES = {
                                    [(2.6, 4.3), (4.6, 7.0), (7.3, 10.5), (13.5, 15.3)]),
     "1967-mai-pacte-nasser-hussein": ("1967-06-06_Mid-East", "1967-06-06_Mid-East.mpeg", "696:462:12:9",
                                       [(30.0, 33.4), (47.5, 52.5), (35.6, 42.0)]),
+    # film amateur de la famille Levy (Prelinger Archives, domaine public), 1933 : la prière au mur occidental, l'inscription
+    # en hébreu sur les pierres, la foule au pied du mur ; rayure verticale permanente de la copie retirée (colonnes 182-187)
+    "1933-jerusalem-mur-occidental": ("Levycoll1933", "Levycoll1933.mpeg", "360:466:2:8",
+                                      [(376.2, 378.9), (381.0, 385.0), (396.1, 402.6), (403.4, 405.4)],
+                                      {"rayure": (182, 6), "pre": "curves=all='0/0.03 0.2/0.32 0.55/0.7 1/0.98'"}),
+    # US Army Signal Corps (archives nationales américaines 111-ADC-9721), « Freed Jews », 17 avril 1945 : un train de
+    # déportés juifs libéré par l'armée américaine en Allemagne, les rescapés le long des wagons, la foule autour d'un soldat
+    "1945-deportes-juifs-liberes": ("111-adc-9721", "111-adc-9721.mp4", "1424:1068:248:6",
+                                    [(63.6, 67.3), (75.0, 78.6), (96.8, 99.6)]),
+    # US Army Signal Corps (111-ADC-5604), « D P Zionist demonstration, Frankfurt, Germany », novembre 1945 : banderole à
+    # Truman, un jeune homme qui crie, « Open the gates of Palestine », le drapeau à l'étoile de David
+    "1945-francfort-personnes-deplacees-juives": ("111-adc-5604", "111-adc-5604.mp4", "688:440:12:26",
+                                                  [(160.5, 164.0), (133.2, 136.0), (201.7, 205.2), (218.5, 221.0)]),
+    # actualités Universal « Nazi Murder Mills », 26 avril 1945 (domaine public) : Eisenhower, Bradley et Patton au camp
+    # d'Ohrdruf, puis des rescapés ; seulement des visages, aucun corps à l'image
+    "1945-ohrdruf-camp-libere": ("1945-04-26_Nazi_Murder_Mills", "1945-04-26_Nazi_Murder_Mills.mpeg", "672:450:24:14",
+                                 [(128.2, 131.3), (140.2, 145.8), (151.2, 154.2), (251.0, 252.9), (257.0, 259.6), (260.1, 262.7)]),
+    # même bobine, « Nations Meet To Map World Security Plan » : la conférence de San Francisco, qui écrit la Charte des
+    # Nations unies, s'ouvre le 25 avril 1945 (la tribune et les drapeaux, la salle, les délégués)
+    "1945-san-francisco-charte-onu": ("1945-04-26_Nazi_Murder_Mills", "1945-04-26_Nazi_Murder_Mills.mpeg", "672:450:24:14",
+                                      [(441.4, 446.0), (438.2, 440.3), (448.0, 452.0), (456.5, 460.5)]),
 }
 
 
@@ -180,6 +202,11 @@ def fabrique(nom, ident, fichier, crop, coupes, opts=None):
     src = url(ident, fichier)
     net = ["-http_proxy", os.environ["HTTPS_PROXY"]] if os.environ.get("HTTPS_PROXY") else []
     cad, fps = cadence(src, net, opts)
+    if opts.get("rayure"):
+        x, w = opts["rayure"]
+        h = int(subprocess.check_output(["ffprobe", "-v", "error", *net, "-select_streams", "v:0", "-show_entries", "stream=height",
+                                         "-of", "csv=p=0", src], text=True).strip().split(",")[0])
+        cad += f",delogo=x={x}:y=1:w={w}:h={h - 2}"
     with tempfile.TemporaryDirectory() as tmp:
         parts = []
         for k, (a, b) in enumerate(coupes):

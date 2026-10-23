@@ -427,6 +427,10 @@ chapitres:
 
   - num: "10"
     titre: "Chapitre 10 · Les Juifs face au sionisme : le grand débat"
+    reserve:
+      - fichier: output/reconstitutions/14-23-mur-occidental.mp4
+        type: IA
+        note: "La prière au mur occidental (reconstitution d'après la photo matpc 04802, SOURCES.md 2.2) : remplacée en 10.4 par le vrai film de 1933"
     intention: >-
       Avant 1948, le sionisme est loin de faire l'unanimité chez les Juifs : réformés américains, ouvriers du Bund,
       rabbins orthodoxes, sionistes partisans d'un État pour deux peuples. Un fait dur (l'assassinat de de Haan par
@@ -457,14 +461,12 @@ chapitres:
         voix: >-
           En 1897, l'année même du congrès de Bâle, / des ouvriers juifs fondent le Bund, à Vilnius. / Leur idée :
           rester, et se battre là où l'on vit. // En yiddish : doikayt, « **l'ici** ».
-      - type: IA
-        fichier: output/reconstitutions/14-23-mur-occidental.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1933-jerusalem-mur-occidental.mp4
         entree: 0
-        sortie: 14
-        ecran: "déjà dans le plan : la vraie photo, puis la reconstitution (Entre 1898 et 1946 · Jérusalem · La prière au mur occidental)"
-        source: >-
-          Agoudat Israël, fondé à Katowice en 1912 ; photo SOURCES.md 2.2, matpc 04802 (Jews at Wailing Wall). Le film
-          « Jérusalem, 1918 » est retiré : droits non établis (SOURCES.md 4.2)
+        sortie: 14.56
+        ecran: "carton : 1933 · Jérusalem · Au mur occidental (film amateur)"
+        source: "film amateur de la famille Levy, 1933, Prelinger Archives (archive.org, Levycoll1933), domaine public ; Agoudat Israël, fondé à Katowice en 1912"
         voix: >-
           Pour beaucoup de rabbins orthodoxes, le sionisme est une faute : / seul le Messie doit ramener les Juifs sur
           la terre d'Israël. // En 1912, ils fondent leur propre parti, Agoudat **Israël**.
@@ -489,8 +491,12 @@ chapitres:
           En 1925, des intellectuels sionistes fondent Brit Shalom, / « l'alliance de la paix » : / un seul État pour
           deux peuples, à égalité. // Ils restent une petite **minorité**.
         note: "détail fort : Arthur Ruppin, celui qui organise les achats de terres, en est un des fondateurs"
-      - type: NOIR
-        duree: 9
+      - type: ARCH
+        fichier: output/archives-filmees/1945-deportes-juifs-liberes.mp4
+        entree: 0
+        sortie: 9.64
+        ecran: "carton : avril 1945 · Allemagne · Des déportés juifs libérés par l'armée américaine"
+        source: "US Army Signal Corps, « Freed Jews », 17 avril 1945, archives nationales américaines 111-ADC-9721 (catalogue 23486)"
         voix: >-
           Puis viendra la Shoah. // Et pour la plupart des survivants, / la question ne se posera plus de la même
           **façon**.
@@ -594,12 +600,21 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1945-roosevelt-ibn-saoud.mp4
         entree: 0
-        sortie: 19
+        sortie: 18.16
         ecran: "carton : février 1945 · Grand Lac Amer · Roosevelt reçoit Ibn Saoud"
         source: "actualités Universal du 21 février 1945 (archives nationales américaines), domaine public ; lettre de Roosevelt à Ibn Saoud du 5 avril 1945, Foreign Relations of the United States 1945, vol. VIII (texte : Avalon Project, Yale)"
         voix: >-
           Février 1945. / Sur un croiseur américain, Roosevelt reçoit le roi d'Arabie saoudite, Ibn Saoud. // Le 5 avril, il lui écrit qu'il ne prendra aucune mesure / « qui pourrait se révéler hostile au peuple arabe ». / Il meurt une semaine plus **tard**.
         note: "texte anglais : « I would take no action […] which might prove hostile to the Arab people »"
+      - type: ARCH
+        fichier: output/archives-filmees/1945-francfort-personnes-deplacees-juives.mp4
+        entree: 0
+        sortie: 12.36
+        ecran: "carton : novembre 1945 · Francfort · Des personnes déplacées juives manifestent"
+        source: "US Army Signal Corps, « D P Zionist demonstration, Frankfurt, Germany », novembre 1945, archives nationales américaines 111-ADC-5604 (catalogue 19403) ; banderole « Open the gates of Palestine » à l'image"
+        voix: >-
+          Fin 1945, en Allemagne, les survivants juifs attendent encore, / dans des camps de personnes déplacées. // À Francfort, ils défilent : / « Ouvrez les portes de la **Palestine**. »
+        note: "banderoles à l'image : « There cannot be real world freedom without Jewish freedom », « Open the gates of Palestine », une pancarte qui remercie le président Truman"
       - type: ARCH
         fichier: output/archives-filmees/1946-refugies-juifs-palestine.mp4
         entree: 0

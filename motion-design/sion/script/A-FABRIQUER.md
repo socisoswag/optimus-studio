@@ -220,3 +220,31 @@ Questions gardées pour Perplexity (quand le compte aura des crédits) :
 4. « Amnesty International, Troubled Waters (octobre 2009) : quelle part de l'eau de la nappe de la montagne Israël
    utilise-t-il (environ 80 %) et que dit le rapport du comité mixte de l'eau et des refus de puits palestiniens ?
    Citer les phrases. »
+
+## 12. Nouvelles archives filmées du 23 octobre au soir (plans 10.4, 10.7, 11.13, 32.6, 37.2)
+
+- 10.4, le mur occidental en 1933 : film amateur de la famille Levy (Prelinger Archives, marque « domaine public »).
+  La reconstitution par IA du mur occidental passe en réserve du chapitre 10.
+- 10.7, déportés juifs libérés (US Army Signal Corps, « Freed Jews », 17 avril 1945) et 11.13, manifestation des
+  personnes déplacées juives à Francfort (« D P Zionist Demonstration », novembre 1945) : films de l'armée américaine,
+  donc du gouvernement fédéral, mais le catalogue des Archives nationales porte la mention générale « Restricted -
+  Possibly : Copyright ». À confirmer avant diffusion.
+- 11.13, voix nouvelle à enregistrer ; ce qu'elle dit se lit à l'image (banderole « Open the gates of Palestine ») et
+  dans la fiche des Archives nationales (« D P Zionist demonstration, Frankfurt, Germany »).
+- 32.6, Ohrdruf (actualités Universal, 26 avril 1945, domaine public) : la fiche d'époque nomme Eisenhower, Bradley et
+  Patton. Seulement les généraux et des visages de rescapés, aucun corps à l'image.
+- 37.2, la conférence de San Francisco qui écrit la Charte des Nations unies (actualités Universal, 26 avril 1945,
+  domaine public), sous la phrase sur la Charte de 1945.
+- 16.8 (Ben Gourion) reste en noir : aucune image libre de lui trouvée sur archive.org (l'actualité Universal de
+  juin 1967 ne montre que Nixon et Dayan) ; à chercher dans les actualités Universal des Archives nationales.
+
+Questions pour Perplexity (quand le compte aura des crédits) :
+
+5. « Aux Archives nationales américaines, les films du Signal Corps 111-ADC-9721 (« Freed Jews », 17 avril 1945,
+   catalogue 23486) et 111-ADC-5604 (« D P Zionist Demonstration, Frankfurt », 1945, catalogue 19403) portent la mention
+   « Restricted - Possibly : Copyright ». Ces films de l'armée américaine sont-ils dans le domaine public ? Sinon, d'où
+   viennent les images protégées ? Donner la page du catalogue et la règle de la NARA. »
+6. « Le train de déportés juifs du film « Freed Jews » (17 avril 1945) est-il le train de Farsleben (libéré le 13 avril
+   1945 près de Magdebourg) ? Donner la source (USHMM, NARA). »
+7. « Où trouver des images filmées libres de droits de David Ben Gourion (années 1948 à 1963) : actualités Universal
+   aux Archives nationales américaines (cote, date), ou autre fonds du domaine public ? »

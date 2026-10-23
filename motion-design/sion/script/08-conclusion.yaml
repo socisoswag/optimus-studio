@@ -22,9 +22,12 @@ chapitres:
         fichier: output/chapitres/chapitre-37.mp4
         entree: 0
         sortie: 4.6
-      - type: NOIR
-        duree: 14
-        source: "Charte des Nations unies, 26 juin 1945, article 1, paragraphe 2 ; CIJ, avis du 19 juillet 2024 (droit du peuple palestinien à l'autodétermination)"
+      - type: ARCH
+        fichier: output/archives-filmees/1945-san-francisco-charte-onu.mp4
+        entree: 0
+        sortie: 14.0
+        ecran: "carton : avril 1945 · San Francisco · La conférence qui écrit la Charte des Nations unies"
+        source: "actualités Universal « Nations Meet To Map World Security Plan », 26 avril 1945 (même bobine que « Nazi Murder Mills »), domaine public ; Charte des Nations unies, 26 juin 1945, article 1, paragraphe 2 ; CIJ, avis du 19 juillet 2024 (droit du peuple palestinien à l'autodétermination)"
         voix: >-
           En 1945, la Charte des Nations unies pose un principe : / le droit des peuples à disposer d'eux-mêmes. // En
           2024, la Cour internationale de justice le rappelle pour le peuple **palestinien**.

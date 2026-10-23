@@ -106,7 +106,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1956-port-said.mp4
         entree: 0
-        sortie: 10.9
+        sortie: 10.44
         ecran: "carton : novembre 1956 · Port-Saïd · La ville après les bombardements"
         source: "actualités Universal du 12 novembre 1956 (archives nationales américaines), domaine public"
         voix: >-
@@ -114,7 +114,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1956-sinai-gaza-armee-israelienne.mp4
         entree: 0
-        sortie: 8
+        sortie: 7.67
         ecran: "carton : novembre 1956 · Sinaï · L'armée israélienne"
         source: "actualités Universal du 5 novembre 1956 (archives nationales américaines), domaine public"
         voix: >-
@@ -134,7 +134,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1957-tel-aviv-retrait-gaza.mp4
         entree: 0
-        sortie: 9.1
+        sortie: 8.72
         ecran: "carton : février 1957 · Tel-Aviv · La foule contre le retrait de Gaza et du Sinaï"
         source: "actualités Universal du 14 février 1957 (archives nationales américaines), domaine public ; retrait israélien de Gaza achevé début mars 1957, la force d'urgence de l'ONU (FUNU) le remplace"
         voix: >-
@@ -142,7 +142,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1967-mai-pacte-nasser-hussein.mp4
         entree: 0
-        sortie: 14.8
+        sortie: 14.16
         ecran: "carton : mai 1967 · Le Caire · Nasser et le roi Hussein de Jordanie signent un pacte de défense"
         source: "fermeture du détroit de Tiran, 22 mai 1967 ; retrait de la force de l'ONU du Sinaï à la demande de l'Égypte ; pacte de défense égypto-jordanien, Le Caire, 30 mai 1967 ; actualités Universal du 6 juin 1967 (archives nationales américaines), domaine public"
         voix: >-

@@ -278,8 +278,13 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 1956-nasser-canal-de-suez | actualités Universal du 30 juillet 1956 : Nasser annonce à la foule la nationalisation du canal de Suez | Universal-International News, 1956 (domaine public) | archive.org 1956-07-30_Suez_Canal_Seized | https://archive.org/details/1956-07-30_Suez_Canal_Seized |
 | 1967-sinai-gaza | actualités Universal du 9 juin 1967 : chars israéliens dans le Sinaï, panneau « Welcome to Gaza » | Universal-International News, 1967 (domaine public) | archive.org 1967-06-09_Egypt_Accepts_UN_Cease-Fire | https://archive.org/details/1967-06-09_Egypt_Accepts_UN_Cease-Fire |
 | 1967-jerusalem et 1967-onu-conseil-de-securite | actualités Universal du 13 juin 1967 : Jérusalem, Moshe Dayan, drapeau hissé ; débat au Conseil de sécurité | Universal-International News, 1967 (domaine public) | archive.org 1967-06-13_Cease-Fire | https://archive.org/details/1967-06-13_Cease-Fire |
+| 1933-jerusalem-mur-occidental | film amateur de la famille Levy, « Middle East » (muet, 16 min 30) : la prière au mur occidental, l'inscription en hébreu sur les pierres, la foule ; rayure verticale de la copie retirée | famille Levy, 1933 (Prelinger Archives, marque « domaine public » sur Internet Archive) | archive.org Levycoll1933 | https://archive.org/details/Levycoll1933 |
+| 1945-deportes-juifs-liberes | « Freed Jews » (muet) : un train de déportés juifs libéré par l'armée américaine en Allemagne, les rescapés le long des wagons, la foule autour d'un soldat | US Army Signal Corps, 17 avril 1945 (œuvre du gouvernement fédéral américain ; le catalogue porte la mention générale « Possibly restricted : copyright », à confirmer) | NARA 111-ADC-9721 (catalogue 23486) | https://archive.org/details/111-adc-9721 |
+| 1945-francfort-personnes-deplacees-juives | « D P Zionist Demonstration, Frankfurt, Germany » (muet) : défilé de personnes déplacées juives, banderoles « There cannot be real world freedom without Jewish freedom » et « Open the gates of Palestine », pancarte au président Truman, drapeau à l'étoile de David | US Army Signal Corps, novembre 1945 (même statut que la ligne précédente) | NARA 111-ADC-5604 (catalogue 19403) | https://archive.org/details/111-adc-5604 |
+| 1945-ohrdruf-camp-libere | actualités Universal du 26 avril 1945, « Nazi Murder Mills » : les généraux Eisenhower, Bradley et Patton au camp d'Ohrdruf (fiche d'époque : « Ohrdruf camp viewed by Ike, Bradley, Patton »), des rescapés ; seulement des visages, aucun corps à l'image | Universal-International News, 1945 (domaine public) | archive.org 1945-04-26_Nazi_Murder_Mills | https://archive.org/details/1945-04-26_Nazi_Murder_Mills |
+| 1945-san-francisco-charte-onu | même bobine, « Nations Meet To Map World Security Plan » : la conférence de San Francisco, qui écrit la Charte des Nations unies, ouverte le 25 avril 1945 par Edward Stettinius (la tribune et les drapeaux, la salle, les délégués) | Universal-International News, 1945 (domaine public) | archive.org 1945-04-26_Nazi_Murder_Mills | https://archive.org/details/1945-04-26_Nazi_Murder_Mills |
 
-Retiré : « Jérusalem, 1918 » (archive.org jerusalem-1918). Vérification du 21 octobre 2026 : images amateurs retrouvées dans une famille à Amsterdam, montées par Yaakov Gross (musique de Nahum Heiman) ; aucune autorisation générale de réutilisation établie. Le plan 10.4 passe en reconstitution d'après une photo de la Bibliothèque du Congrès.
+Retiré : « Jérusalem, 1918 » (archive.org jerusalem-1918). Vérification du 21 octobre 2026 : images amateurs retrouvées dans une famille à Amsterdam, montées par Yaakov Gross (musique de Nahum Heiman) ; aucune autorisation générale de réutilisation établie. Le plan 10.4 passe en reconstitution d'après une photo de la Bibliothèque du Congrès. Le 23 octobre 2026, il reprend un vrai film : celui de la famille Levy (1933, Prelinger Archives, domaine public) ; la reconstitution passe en réserve du chapitre 10.
 
 Extraits recadrés à l'intérieur de l'image (sans les bords arrondis de la pellicule), mis en 16:9, 25 images par seconde,
 sans son d'origine ; fabriqués par `tools/archives_filmees.py` (coupes à l'image près, look « archive »). Méliès est une
@@ -289,7 +294,7 @@ télévision américaine malgré leur dépôt aux Archives nationales ; « A Pil
 marquée du filigrane d'une agence commerciale.
 
 ---
-- Réfugiés juifs débarquant en Palestine, et Amman fêtant l'indépendance de la Transjordanie, juin 1946 (plan 11.13,
+- Réfugiés juifs débarquant en Palestine, et Amman fêtant l'indépendance de la Transjordanie, juin 1946 (plan 11.14,
   réserve 13.R2) : United News (Office of War Information), actualité de juin 1946, archives nationales américaines
   (ARC 39119), copie archive.org ARC-31482, domaine public.
 - Roosevelt reçoit Ibn Saoud, février 1945 (plan 11.12) : actualités Universal du 21 février 1945, archives nationales
@@ -307,6 +312,19 @@ marquée du filigrane d'une agence commerciale.
   copies archive.org 1967-06-06_Mid-East, 1967-06-09_Egypt_Accepts_UN_Cease-Fire, 1967-06-13_Cease-Fire, domaine public.
 - Le pont aérien américain vers Israël, octobre 1973 (plan 33.10) : US Air Force, film 342-ADW-264, « Israel Airlift
   Operation », archives nationales américaines (identifiant 62010), copie archive.org 342-adw-264, domaine public.
+- Le mur occidental, 1933 (plan 10.4) : film amateur de la famille Levy, Prelinger Archives, copie archive.org Levycoll1933,
+  domaine public.
+- Déportés juifs libérés, avril 1945 (plan 10.7), et manifestation des personnes déplacées juives à Francfort, novembre 1945
+  (plan 11.13) : US Army Signal Corps, « Freed Jews » (17 avril 1945, NARA 111-ADC-9721) et « D P Zionist Demonstration,
+  Frankfurt, Germany » (NARA 111-ADC-5604, qui réunit trois sujets datés du 16 novembre au 12 décembre 1945), copies
+  archive.org 111-adc-9721 et 111-adc-5604 ; films de l'armée américaine, donc du gouvernement fédéral (domaine public aux
+  États-Unis), mais le catalogue des Archives nationales porte une mention générale « droits possiblement restreints » :
+  à confirmer avant diffusion (script/A-FABRIQUER.md).
+- Ohrdruf, avril 1945 (plan 32.6) : actualités Universal du 26 avril 1945, « Nazi Murder Mills », copie archive.org
+  1945-04-26_Nazi_Murder_Mills, domaine public. Choix de montage : seulement les généraux et les visages des rescapés,
+  aucun corps à l'image.
+- La conférence de San Francisco, avril 1945 (plan 37.2) : même bobine, sujet « Nations Meet To Map World Security
+  Plan », domaine public.
 - Écarté : « La Vie des Juifs en Palestine » (1913), domaine public aux États-Unis, mais la copie disponible ici porte
   les logos de ses restaurateurs ; à reprendre d'une copie sans logo.
 

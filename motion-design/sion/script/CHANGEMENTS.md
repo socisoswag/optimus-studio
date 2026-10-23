@@ -267,3 +267,26 @@ ne change pas.
 pentes éclairées chaudes, brume bleutée au loin), la grille de points s'efface sous le relief, et le grain est plus fin
 et plus doux (il tient mieux à la compression de YouTube et au téléphone). Toutes les pièces sont refaites, mêmes noms.
 
+
+## 23 octobre 2026, la nuit (nouvelles archives filmées)
+
+**Plans remplacés (nouveau nom : à changer dans la timeline)**
+
+| Plan | Ancien fichier | Nouveau fichier | Ce que c'est |
+|---|---|---|---|
+| 10.04 | `10.04-IA-14-23-mur-occidental.mp4` | `10.04-ARCH-1933-jerusalem-mur-occidental.mp4` | le vrai mur occidental en 1933 (film amateur, domaine public) au lieu de la reconstitution par IA ; la reconstitution passe en réserve `10.R1` |
+| 10.07 | noir | `10.07-ARCH-1945-deportes-juifs-liberes.mp4` | avril 1945 : un train de déportés juifs libéré par l'armée américaine |
+| 32.06 | noir | `32.06-ARCH-1945-ohrdruf-camp-libere.mp4` | avril 1945 : Eisenhower, Bradley et Patton au camp d'Ohrdruf, puis des rescapés (aucun corps à l'image) |
+| 37.02 | noir | `37.02-ARCH-1945-san-francisco-charte-onu.mp4` | avril 1945 : la conférence de San Francisco qui écrit la Charte des Nations unies |
+
+**Nouveau plan** : `11.13-ARCH-1945-francfort-personnes-deplacees-juives.mp4`, novembre 1945, des personnes
+déplacées juives défilent à Francfort (« Open the gates of Palestine »). Voix nouvelle à enregistrer : « Fin 1945, en
+Allemagne, les survivants juifs attendent encore, dans des camps de personnes déplacées. À Francfort, ils défilent :
+« Ouvrez les portes de la Palestine. » » Chapitre 11 : 11.13 et suivants deviennent 11.14 et suivants.
+
+**Mêmes noms, archives refaites** : 11.12 (Roosevelt et Ibn Saoud), 19.14 (Port-Saïd), 19.15 (Sinaï et Gaza), 19.18
+(Tel-Aviv), 19.19 (mai 1967), 33.10 (pont aérien de 1973) : restaurées, 4 % plus courtes (passage à 25 images par
+seconde sans doubler d'image).
+
+Au total : environ une minute d'archives filmées en plus. Générique de fin : crédits des nouvelles archives et des
+cartes de 1916 et 1937 ajoutés.
