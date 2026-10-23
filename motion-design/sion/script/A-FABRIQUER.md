@@ -25,13 +25,16 @@ Le texte complet, prêt à coller plan par plan, est aussi dans `output/a-faire-
 
 **Photos prêtes** : toutes faites (les 5 dernières, 14.2, 14.3, 17.3, 17.4 et 28.3, avec Kling le 23 octobre).
 
-**Photos à télécharger toi-même** sur Wikimedia Commons (mots à taper entre guillemets ; envoie-moi la photo avec le clip) :
+**Deux dernières photos, prêtes pour Kling** (trouvées le 23 octobre sur Wikimedia Commons ; dans
+`output/a-faire-kling/`, 6 et 7) :
 
-| Plan | Durée | Ce qu'on doit voir | Chercher | Ligne à ajouter au prompt |
+| Plan | Durée | Ce qu'on doit voir | Photo de départ | Ligne à ajouter au prompt |
 |---|---|---|---|---|
-| 16.6 | 13 s | un soldat contrôle le laissez-passer d'un Arabe israélien, années 1950 | « Israel military government 1950s permit » (si rien : une fiche) | The soldier checks the paper, the man waits. |
-| 26.2 | 15 s | les colons du Goush Emounim à Sébastia, 1975 | « Gush Emunim Sebastia 1975 » | The crowd of settlers stands on the hill, flags move in the wind. |
-| 28.2 | 17 s | la manifestation des Black Panthers israéliens, Jérusalem, 1971 | « Israeli Black Panthers 1971 » | The demonstrators march with their signs. |
+| 26.2 | 15 s | des colons du Goush Emounim lèvent le drapeau sur une colonie non autorisée, 22 septembre 1978 | `data/reconstitution/30-goush-emounim-1978.jpg` | The settlers on the rocky hilltop gather around the flagpole and unpack their equipment; the flag waves slowly in the wind and keeps its exact design; a few people walk slowly over the rocks. |
+| 28.2 | 17 s | des militants des Black Panthers israéliens, université de Tel-Aviv, 1972 | `data/reconstitution/31-black-panthers-1972.jpg` | The young men and women stand together in the sun with small natural movements: a smile, a glance, a hand moving; light wind in their hair and shirts. Nobody walks in. |
+
+Le plan 16.6 (le gouvernement militaire, 1948 à 1966) devient une fiche sur la carte (`timelines/documents-4.js`) :
+aucune photo libre d'un contrôle de laissez-passer.
 
 Pas d'IA, par choix : les massacres (Hébron 1929, Deir Yassin, le convoi de Hadassah) restent en fiches sobres, sans
 images reconstituées.

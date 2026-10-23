@@ -34,6 +34,8 @@ Trois règles :
   - Mahmoud Darwich : UmmNuniya · CC BY-SA 4.0
   - Cheikh Ahmed Yassine : Yonathan Torgovnik, unité du porte-parole de l'armée israélienne · CC BY-SA 3.0
   - Entraînement de la Haganah, 1948 (plan 14.2) : Government Press Office (GPO) · CC BY-SA 3.0
+  - Colons du Goush Emounim, 1978 (plan 26.2) : Asher Koralik, collection Dan Hadani, Bibliothèque nationale d'Israël · CC BY 4.0
+  - Black Panthers israéliens, 1972 (plan 28.2) : David Ben-Nun · CC BY-SA 4.0
 - Document sous licence CC BY-SA :
   - Lettre de Theodor Herzl à Youssouf Diya al-Khalidi, 19 mars 1899 (version anglaise) : Institut d'études
     palestiniennes, PalQuest, via Wikimedia Commons · CC BY-SA 4.0
@@ -144,6 +146,8 @@ qui les utilisent.
 | 5.6 | TelAviv-Founding.jpg | Avraham Soskin, 11 avril 1909 | domaine public |
 | 10.3 | Bundist demonstration.jpg | auteur inconnu, février-mars 1917 | domaine public |
 | 28.3 | Zoltan Kluger. Rosh Ha-Ayin 1950.jpg | Zoltan Kluger, GPO, 2 février 1950 | domaine public |
+| 26.2 | Gush Emunim movement continues to send settlers to illegal settlements in Judea and Samaria even though the IDF evacuates them (FL45816230).jpg | Asher Koralik, collection Dan Hadani, Bibliothèque nationale d'Israël, 22 septembre 1978 | CC BY 4.0 |
+| 28.2 | Yigal Bin-Nun 2.jpg | David Ben-Nun, manifestation des Black Panthers à l'université de Tel-Aviv, 1972 | CC BY-SA 4.0 |
 
 ### 2.3 Carte historique
 

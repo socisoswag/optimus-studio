@@ -225,8 +225,9 @@ chapitres:
         fichier: output/chapitres/chapitre-26.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: "à télécharger : colons du Goush Emounim, Sébastia, 1975 (GPO, domaine public)"
+      - type: IA
+        fichier: "à générer : reconstitution de colons du Goush Emounim levant le drapeau, 1978 (image de départ : data/reconstitution/30-goush-emounim-1978.jpg)"
+        photo: "Wikimedia Commons, « Gush Emunim movement continues to send settlers to illegal settlements… (FL45816230) », Asher Koralik, collection Dan Hadani, Bibliothèque nationale d'Israël, 22 septembre 1978, CC BY 4.0"
         duree: 15
         a_obtenir: true
         source: "Goush Emounim, fondé en 1974 ; enseignement du rabbin Zvi Yehouda Kook"
@@ -346,8 +347,9 @@ chapitres:
         fichier: output/chapitres/chapitre-28.mp4
         entree: 0
         sortie: 4.6
-      - type: PHOTO
-        fichier: "à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)"
+      - type: IA
+        fichier: "à générer : reconstitution de militants des Black Panthers israéliens, 1972 (image de départ : data/reconstitution/31-black-panthers-1972.jpg)"
+        photo: "Wikimedia Commons, « Yigal Bin-Nun 2 », David Ben-Nun, manifestation des Black Panthers à l'université de Tel-Aviv, 1972, CC BY-SA 4.0"
         duree: 17
         a_obtenir: true
         source: >-
