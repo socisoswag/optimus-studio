@@ -91,7 +91,9 @@ les rendus qu'elle utilise (derush garde les plans déjà livrés dont le rendu 
 - Voix off : `python3 tools/texte_voix.py` (texte à lire, `script/VOIX-A-LIRE.md`) et `python3 tools/script_pdf.py` (le scénario complet en PDF pour l'enregistrement, `script/SION-scenario-voix-off.pdf`) ; nettoyage sans IA :
   `python3 tools/voix.py <brut.wav> --ton 10` → `output/voix/`. Mixage : la voix à -16 LUFS, les bruitages
   baissés dessous (dans Premiere : Son essentiel, atténuation automatique), le film fini à -14 LUFS.
-- Après une modification du script : `python3 tools/script.py`, puis commit et push.
+- Après une modification du script : `python3 tools/script.py`, puis `python3 tools/coherence.py` (chapitres qui se
+  suivent, fichiers et durées des plans, références « plan 25.8 » des documents), puis commit et push. Un plan inséré
+  décale les suivants du chapitre : noter l'ancien et le nouveau numéro dans `script/CHANGEMENTS.md`.
 - Page de téléchargement de l'auteur (artefact « SION Projection », https://claude.ai/artifact/5vRzrQzskK6wFNDaWCiiZ7) :
   après chaque livraison, `python3 tools/page_sion.py` puis la republier (même url). Les barres de progression lisent le
   document `progression/etat` de sa base : mettre à jour `data/progression.json` puis l'y écrire (ArtifactData, set).

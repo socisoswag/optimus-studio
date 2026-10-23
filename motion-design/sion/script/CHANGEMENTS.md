@@ -82,8 +82,20 @@ population non juive en Palestine. Mais qui donc songerait à les éloigner ? »
 les lois de 1950 (ch. 16), l'eau et Cheikh Jarrah (ch. 23), le Mavi Marmara, la grande marche du retour, l'argent du
 Qatar et les accords d'Abraham (ch. 25, avant le 7 octobre), Shireen Abu Akleh (ch. 27), le Jour de la Terre et les
 villages bédouins (ch. 28), le rôle de la France (ch. 31), la Cour internationale de justice, le soutien américain et
-l'ambassade à Jérusalem (ch. 33), les tribunaux militaires (ch. 35), Edward Said (ch. 38). Les plans qui suivaient
-dans ces chapitres changent de numéro : refais leur place dans la timeline (les noms de fichiers suivent le script).
+l'ambassade à Jérusalem (ch. 33), les tribunaux militaires (ch. 35), Edward Said (ch. 38). Les chapitres gardent leurs numéros (1 à 39). Dans ces 9 chapitres, les plans qui suivent un ajout changent de
+numéro (même image, nouveau nom de fichier) :
+
+| Avant | Maintenant |
+|---|---|
+| 16.07 | 16.08 |
+| 23.14 | 23.16 |
+| 25.05 à 25.16 | 25.09 à 25.20 (4 de plus : le 7 octobre est maintenant le plan 25.09) |
+| 27.08 | 27.09 |
+| 28.07 | 28.09 |
+| 31.10 | 31.11 |
+| 33.08 | 33.11 |
+| 35.09 | 35.10 |
+| 38.05 | 38.06 |
 
 **Archives en réserve** (actualités Universal, domaine public) : `13.R1-ARCH-…` le camp de réfugiés juifs d'Admont, 1946 ;
 `19.R1` à `19.R4` Nasser et Suez (1956), Sinaï et Gaza, Jérusalem, le Conseil de sécurité (juin 1967).

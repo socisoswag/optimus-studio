@@ -53,7 +53,7 @@ seulement **la scène du vote de l'ONU (1947)** : renvoie-la si tu l'as encore.
 
 Pas d'IA pour un événement récent ni pour une tuerie : septembre 1970 (20.7), Jabaliya et l'intifada (22.2, 22.3),
 les Israéliens éthiopiens (28.4), Neturei Karta, Jewish Voice for Peace, Briser le silence (29.2 à 29.5), les
-yeshivas (30.5), la réforme de la justice (36.4, 36.6) et le Cercle des parents (38.5) sont des fiches animées sur
+yeshivas (30.5), la réforme de la justice (36.4, 36.6) et le Cercle des parents (38.6) sont des fiches animées sur
 la carte, dans la DA du film (`timelines/documents-3.js`, `output/documents-3.mp4`). Si tu trouves plus tard une
 vraie vidéo sous licence libre (CC BY ou CC BY-SA), elle peut remplacer la fiche à la même durée.
 
