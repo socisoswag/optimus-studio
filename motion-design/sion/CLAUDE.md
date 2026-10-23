@@ -91,6 +91,9 @@ les rendus qu'elle utilise (derush garde les plans déjà livrés dont le rendu 
   `python3 tools/voix.py <brut.wav> --ton 10` → `output/voix/`. Mixage : la voix à -16 LUFS, les bruitages
   baissés dessous (dans Premiere : Son essentiel, atténuation automatique), le film fini à -14 LUFS.
 - Après une modification du script : `python3 tools/script.py`, puis commit et push.
+- Page de téléchargement de l'auteur (artefact « SION Projection », https://claude.ai/artifact/5vRzrQzskK6wFNDaWCiiZ7) :
+  après chaque livraison, `python3 tools/page_sion.py` puis la republier (même url). Les barres de progression lisent le
+  document `progression/etat` de sa base : mettre à jour `data/progression.json` puis l'y écrire (ArtifactData, set).
 
 ## Direction artistique (fixée : ne pas la réinventer, la reprendre)
 
