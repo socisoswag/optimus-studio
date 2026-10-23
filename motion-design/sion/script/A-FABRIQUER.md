@@ -121,4 +121,6 @@ Fiches faites, plans marqués « verifier » dans le script : ne pas les enregis
 > exemples ; 14) l'AIPAC et le United Democracy Project : dépenses aux primaires de 2024 (total et exemples : Jamaal
 > Bowman, Cori Bush), d'après la FEC ou OpenSecrets ; nombre de membres revendiqué par Christians United for Israel ;
 > 15) les villages bédouins non reconnus : une source (Human Rights Watch, « Off the Map », 2008, ou plus récente) sur
-> l'absence de raccordement aux réseaux d'eau et d'électricité.
+> l'absence de raccordement aux réseaux d'eau et d'électricité ; 16) le logiciel espion Pegasus (NSO Group) : la licence
+> d'exportation du ministère israélien de la Défense, et le numéro d'Emmanuel Macron dans la liste révélée par Forbidden
+> Stories et Le Monde en juillet 2021 (quel pays client est soupçonné, qu'a confirmé l'enquête).
