@@ -16,15 +16,6 @@ chapitres:
   - num: "19"
     titre: "Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation"
     reserve:
-      - fichier: output/archives-filmees/1956-nasser-canal-de-suez.mp4
-        type: ARCH
-        note: "Juillet 1956 · Égypte · Nasser annonce la nationalisation du canal de Suez (actualités Universal, domaine public) : avant ou pendant la carte de Suez"
-      - fichier: output/archives-filmees/1967-sinai-gaza.mp4
-        type: ARCH
-        note: "Juin 1967 · Sinaï et Gaza · un char israélien dans le Sinaï, le panneau « Welcome to Gaza » posé par l'armée (actualités Universal, domaine public)"
-      - fichier: output/archives-filmees/1967-jerusalem.mp4
-        type: ARCH
-        note: "Juin 1967 · Jérusalem · les barbelés de la ville divisée depuis 1948, Moshe Dayan, le drapeau israélien hissé (actualités Universal, domaine public)"
       - fichier: output/archives-filmees/1967-onu-conseil-de-securite.mp4
         type: ARCH
         note: "Juin 1967 · New York · le Conseil de sécurité des Nations unies pendant la guerre (actualités Universal, domaine public) : avant la résolution 242"
@@ -79,12 +70,20 @@ chapitres:
         sortie: 6
         voix: >-
           1956. / Israël, la France et le Royaume-Uni attaquent l'**Égypte**.
+      - type: ARCH
+        fichier: output/archives-filmees/1956-nasser-canal-de-suez.mp4
+        entree: 0
+        sortie: 7
+        ecran: "carton : juillet 1956 · Égypte · Nasser nationalise le canal de Suez"
+        source: "actualités Universal du 30 juillet 1956 (archives nationales américaines), domaine public"
+        voix: >-
+          Trois mois plus tôt, / Nasser a nationalisé le canal de **Suez**.
       - type: MD
         fichier: output/suez-1956.mp4
         entree: 6
         sortie: 15.5
         voix: >-
-          Nasser a nationalisé le canal de Suez. / À Sèvres, en secret, les trois pays préparent la **guerre**.
+          À Sèvres, en secret, / les trois pays préparent la **guerre**.
       - type: MD
         fichier: output/suez-1956.mp4
         entree: 15.5
@@ -104,6 +103,22 @@ chapitres:
         sortie: 49.5
         voix: >-
           Paris et Londres **bombardent**.
+      - type: ARCH
+        fichier: output/archives-filmees/1956-port-said.mp4
+        entree: 0
+        sortie: 10.9
+        ecran: "carton : novembre 1956 · Port-Saïd · La ville après les bombardements"
+        source: "actualités Universal du 12 novembre 1956 (archives nationales américaines), domaine public"
+        voix: >-
+          Les 5 et 6 novembre, / leurs troupes débarquent à **Port-Saïd**.
+      - type: ARCH
+        fichier: output/archives-filmees/1956-sinai-gaza-armee-israelienne.mp4
+        entree: 0
+        sortie: 10.8
+        ecran: "carton : novembre 1956 · Sinaï · L'armée israélienne"
+        source: "actualités Universal du 5 novembre 1956 (archives nationales américaines), domaine public"
+        voix: >-
+          Israël, lui, a déjà pris le Sinaï / et la bande de **Gaza**.
       - type: MD
         fichier: output/suez-1956.mp4
         entree: 49.5
@@ -116,12 +131,22 @@ chapitres:
         sortie: 69.5
         voix: >-
           Sous la pression de Washington et de Moscou, / Israël doit tout **rendre**.
-      - type: NOIR
-        duree: 8
-        source: "fermeture du détroit de Tiran, 22 mai 1967 ; retrait de la force de l'ONU du Sinaï à la demande de l'Égypte"
+      - type: ARCH
+        fichier: output/archives-filmees/1957-tel-aviv-retrait-gaza.mp4
+        entree: 0
+        sortie: 9.1
+        ecran: "carton : février 1957 · Tel-Aviv · La foule contre le retrait de Gaza et du Sinaï"
+        source: "actualités Universal du 14 février 1957 (archives nationales américaines), domaine public ; retrait israélien de Gaza achevé début mars 1957, la force d'urgence de l'ONU (FUNU) le remplace"
         voix: >-
-          Mai 1967. / L'Égypte ferme le détroit de Tiran aux navires israéliens, / et masse ses troupes dans le
-          **Sinaï**.
+          En février 1957, à Tel-Aviv, / la foule manifeste contre le retrait. / En mars, l'armée israélienne quitte **Gaza**.
+      - type: ARCH
+        fichier: output/archives-filmees/1967-mai-pacte-nasser-hussein.mp4
+        entree: 0
+        sortie: 14.8
+        ecran: "carton : mai 1967 · Le Caire · Nasser et le roi Hussein de Jordanie signent un pacte de défense"
+        source: "fermeture du détroit de Tiran, 22 mai 1967 ; retrait de la force de l'ONU du Sinaï à la demande de l'Égypte ; pacte de défense égypto-jordanien, Le Caire, 30 mai 1967 ; actualités Universal du 6 juin 1967 (archives nationales américaines), domaine public"
+        voix: >-
+          Mai 1967. / L'Égypte ferme le détroit de Tiran aux navires israéliens, / et masse ses troupes dans le Sinaï. // Le 30 mai, le roi Hussein de Jordanie / signe un pacte de défense avec **Nasser**.
       - type: MD
         fichier: output/six-jours.mp4
         entree: 0
@@ -140,12 +165,26 @@ chapitres:
         sortie: 26
         voix: >-
           Le Sinaï tombe, / Gaza passe sous **occupation**.
+      - type: ARCH
+        fichier: output/archives-filmees/1967-sinai-gaza.mp4
+        entree: 0
+        sortie: 9.7
+        ecran: "carton : juin 1967 · Sinaï et Gaza · « Welcome to Gaza », le panneau de l'armée israélienne"
+        source: "actualités Universal du 9 juin 1967 (archives nationales américaines), domaine public"
+        note: "respiration d'archive, sans voix"
       - type: MD
         fichier: output/six-jours.mp4
         entree: 26
         sortie: 39
         voix: >-
           Le 7 juin, Jérusalem-Est est prise. / Près de Latroun, trois villages sont vidés, puis **rasés**.
+      - type: ARCH
+        fichier: output/archives-filmees/1967-jerusalem.mp4
+        entree: 0
+        sortie: 8
+        ecran: "carton : juin 1967 · Jérusalem · Moshe Dayan dans la vieille ville"
+        source: "actualités Universal du 13 juin 1967 (archives nationales américaines), domaine public"
+        note: "respiration d'archive, sans voix"
       - type: MD
         fichier: output/six-jours.mp4
         entree: 39

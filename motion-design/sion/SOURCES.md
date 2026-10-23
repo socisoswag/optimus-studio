@@ -289,9 +289,22 @@ télévision américaine malgré leur dépôt aux Archives nationales ; « A Pil
 marquée du filigrane d'une agence commerciale.
 
 ---
-- Réfugiés juifs débarquant en Palestine, et Amman fêtant l'indépendance de la Transjordanie, juin 1946 (plan 11.9,
+- Réfugiés juifs débarquant en Palestine, et Amman fêtant l'indépendance de la Transjordanie, juin 1946 (plan 11.10,
   réserve 13.R2) : United News (Office of War Information), actualité de juin 1946, archives nationales américaines
   (ARC 39119), copie archive.org ARC-31482, domaine public.
+- Roosevelt reçoit Ibn Saoud, février 1945 (plan 11.9) : actualités Universal du 21 février 1945, archives nationales
+  américaines, copie archive.org 1945-02-21_FDR_confers_with_Middle_East_Chiefs, domaine public. Lettre de Roosevelt à
+  Ibn Saoud du 5 avril 1945 : Foreign Relations of the United States 1945, vol. VIII, texte sur
+  https://avalon.law.yale.edu/20th_century/decad161.asp (« I would take no action [...] which might prove hostile to the
+  Arab people »).
+- Suez, 1956 (plans 19.9, 19.14, 19.15) : actualités Universal du 30 juillet 1956 (Nasser), du 12 novembre 1956
+  (Port-Saïd après les bombardements) et du 5 novembre 1956 (l'armée israélienne dans le Sinaï et à Gaza), copies
+  archive.org 1956-07-30_Suez_Canal_Seized, 1956-11-12_Near_East_Crisis, 1956-11-05_Eisenhower_Re-Elected, domaine public.
+- Tel-Aviv, février 1957 (plan 19.18) : actualités Universal du 14 février 1957, manifestation contre l'ordre de l'ONU
+  d'évacuer Gaza et le Sinaï, copie archive.org 1957-02-14_Tel_Aviv_Israel, domaine public.
+- Mai et juin 1967 (plans 19.19, 19.23, 19.25) : actualités Universal du 6 juin 1967 (foule au Caire, pacte de défense
+  signé par Nasser et le roi Hussein le 30 mai), du 9 juin 1967 (« Welcome to Gaza ») et du 13 juin 1967 (Jérusalem),
+  copies archive.org 1967-06-06_Mid-East, 1967-06-09_Egypt_Accepts_UN_Cease-Fire, 1967-06-13_Cease-Fire, domaine public.
 - Le pont aérien américain vers Israël, octobre 1973 (plan 33.10) : US Air Force, film 342-ADW-264, « Israel Airlift
   Operation », archives nationales américaines (identifiant 62010), copie archive.org 342-adw-264, domaine public.
 - Écarté : « La Vie des Juifs en Palestine » (1913), domaine public aux États-Unis, mais la copie disponible ici porte

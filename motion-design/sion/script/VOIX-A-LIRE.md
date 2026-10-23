@@ -232,7 +232,7 @@
 
 ## Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens
 
-*1 min 47 de film*
+*2 min 06 de film*
 
 **11.3** En 1923, Zeev Jabotinsky écrit « Le Mur de fer ». / Il ne nie pas ce qu'il voit : / « Toute population indigène résiste aux colons, / tant qu'elle garde le moindre espoir d'échapper à la **colonisation**. »
 
@@ -246,11 +246,13 @@
 
 **11.8** En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine devienne « un Commonwealth **juif** ».
 
-**11.9** En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.
+**11.9** Février 1945. / Sur un croiseur américain, Roosevelt reçoit le roi d'Arabie saoudite, Ibn Saoud. // Le 5 avril, il lui écrit qu'il ne prendra aucune mesure / « qui pourrait se révéler hostile au peuple arabe ». / Il meurt une semaine plus **tard**.
 
-**11.10** Après la guerre, épuisée, / la Grande-Bretagne
+**11.10** En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.
 
-**11.11** remet la question à l'ONU. // Nous sommes en **1947**. ///
+**11.11** Après la guerre, épuisée, / la Grande-Bretagne
+
+**11.12** remet la question à l'ONU. // Nous sommes en **1947**. ///
 
 ## Chapitre 12 · 1947 : le plan de partage de l'ONU
 
@@ -390,7 +392,7 @@
 
 ## Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation
 
-*5 min 00 de film*
+*6 min 03 de film*
 
 **19.2** Pour comprendre la suite, / quatre **cartes**.
 
@@ -404,47 +406,55 @@
 
 **19.8** 1956. / Israël, la France et le Royaume-Uni attaquent l'**Égypte**.
 
-**19.9** Nasser a nationalisé le canal de Suez. / À Sèvres, en secret, les trois pays préparent la **guerre**.
+**19.9** Trois mois plus tôt, / Nasser a nationalisé le canal de **Suez**.
 
-**19.10** Les parachutistes israéliens sautent sur le **Sinaï**.
+**19.10** À Sèvres, en secret, / les trois pays préparent la **guerre**.
 
-**19.11** Le premier soir, à Kafr Qassem, en Israël, / la police des frontières abat 49 villageois palestiniens, / citoyens israéliens, qui rentraient des **champs**.
+**19.11** Les parachutistes israéliens sautent sur le **Sinaï**.
 
-**19.12** Paris et Londres **bombardent**.
+**19.12** Le premier soir, à Kafr Qassem, en Israël, / la police des frontières abat 49 villageois palestiniens, / citoyens israéliens, qui rentraient des **champs**.
 
-**19.13** À Gaza, l'armée israélienne tue environ 275 personnes à Khan Younès, / et 111 à **Rafah**.
+**19.13** Paris et Londres **bombardent**.
 
-**19.14** Sous la pression de Washington et de Moscou, / Israël doit tout **rendre**.
+**19.14** Les 5 et 6 novembre, / leurs troupes débarquent à **Port-Saïd**.
 
-**19.15** Mai 1967. / L'Égypte ferme le détroit de Tiran aux navires israéliens, / et masse ses troupes dans le **Sinaï**.
+**19.15** Israël, lui, a déjà pris le Sinaï / et la bande de **Gaza**.
 
-**19.16** Juin 1967. / Pour les Palestiniens : la Naksa, le **revers**.
+**19.16** À Gaza, l'armée israélienne tue environ 275 personnes à Khan Younès, / et 111 à **Rafah**.
 
-**19.17** Le 5 juin, Israël frappe le premier. / Pour lui, c'est une guerre **préventive**.
+**19.17** Sous la pression de Washington et de Moscou, / Israël doit tout **rendre**.
 
-**19.18** Le Sinaï tombe, / Gaza passe sous **occupation**.
+**19.18** En février 1957, à Tel-Aviv, / la foule manifeste contre le retrait. / En mars, l'armée israélienne quitte **Gaza**.
 
-**19.19** Le 7 juin, Jérusalem-Est est prise. / Près de Latroun, trois villages sont vidés, puis **rasés**.
+**19.19** Mai 1967. / L'Égypte ferme le détroit de Tiran aux navires israéliens, / et masse ses troupes dans le Sinaï. // Le 30 mai, le roi Hussein de Jordanie / signe un pacte de défense avec **Nasser**.
 
-**19.20** Dans la nuit du 10 juin, au pied du mur des Lamentations, / le quartier des Maghrébins est **rasé**.
+**19.20** Juin 1967. / Pour les Palestiniens : la Naksa, le **revers**.
 
-**19.21** Environ trois cent mille Palestiniens sont déplacés. / Pour beaucoup, c'est le deuxième **exil**.
+**19.21** Le 5 juin, Israël frappe le premier. / Pour lui, c'est une guerre **préventive**.
 
-**19.22** Sur le Golan, plus de cent mille habitants fuient, / ou sont **chassés**.
+**19.22** Le Sinaï tombe, / Gaza passe sous **occupation**.
 
-**19.23** Six jours de guerre. / Une occupation qui dure **encore**.
+**19.24** Le 7 juin, Jérusalem-Est est prise. / Près de Latroun, trois villages sont vidés, puis **rasés**.
 
-**19.25** 1978, Camp David : / l'Égypte fait la **paix**.
+**19.26** Dans la nuit du 10 juin, au pied du mur des Lamentations, / le quartier des Maghrébins est **rasé**.
 
-**19.26** Jérusalem. / Moins d'un kilomètre carré, / trois **religions**.
+**19.27** Environ trois cent mille Palestiniens sont déplacés. / Pour beaucoup, c'est le deuxième **exil**.
 
-**19.27** Israël annexe Jérusalem-Est et vingt-huit villages alentour. / L'ONU juge cette annexion **nulle**.
+**19.28** Sur le Golan, plus de cent mille habitants fuient, / ou sont **chassés**.
 
-**19.28** Plus de deux cent vingt-neuf mille colons y vivent aujourd'hui, / à côté de plus de trois cent cinquante mille **Palestiniens**.
+**19.29** Six jours de guerre. / Une occupation qui dure **encore**.
 
-**19.29** Le mur coupe la ville : / des quartiers entiers de Jérusalem se retrouvent de l'autre **côté**.
+**19.31** 1978, Camp David : / l'Égypte fait la **paix**.
 
-**19.31** Les Palestiniens de Jérusalem-Est sont des résidents, / pas des citoyens. / Leur droit de vivre là peut leur être **retiré**.
+**19.32** Jérusalem. / Moins d'un kilomètre carré, / trois **religions**.
+
+**19.33** Israël annexe Jérusalem-Est et vingt-huit villages alentour. / L'ONU juge cette annexion **nulle**.
+
+**19.34** Plus de deux cent vingt-neuf mille colons y vivent aujourd'hui, / à côté de plus de trois cent cinquante mille **Palestiniens**.
+
+**19.35** Le mur coupe la ville : / des quartiers entiers de Jérusalem se retrouvent de l'autre **côté**.
+
+**19.37** Les Palestiniens de Jérusalem-Est sont des résidents, / pas des citoyens. / Leur droit de vivre là peut leur être **retiré**.
 
 ## Chapitre 20 · Les camps palestiniens et la vie dans l'exil
 

@@ -342,7 +342,7 @@ Note : détail fort : Arthur Ruppin, celui qui organise les achats de terres, en
 
 ## Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens
 
-Film 00:21:54:14 → 00:23:41:22 · durée 1 min 47.3 s
+Film 00:21:54:14 → 00:24:00:22 · durée 2 min 06.3 s
 
 *Intention : La logique du rapport de force, dite par un dirigeant sioniste lui-même : Jabotinsky et le « Mur de fer » (1923), un texte d'une franchise rare. Puis les chiffres de l'immigration et de la terre, et le tournant de 1942 à New York : le mouvement demande toute la Palestine. Finir sur l'ONU, qui ouvre la partie III.*
 
@@ -396,23 +396,31 @@ Source : programme de Biltmore, conférence sioniste extraordinaire, hôtel Bilt
 (22 mots, 1.7 par seconde)
 
 
-**11.9** · film **00:23:17:14 → 00:23:32:14** (15.0 s) · **[ARCH]** `output/archives-filmees/1946-refugies-juifs-palestine.mp4` · source 00:00:00:00 → 00:00:15:00  
+**11.9** · film **00:23:17:14 → 00:23:36:14** (19.0 s) · **[ARCH]** `output/archives-filmees/1945-roosevelt-ibn-saoud.mp4` · source 00:00:00:00 → 00:00:19:00  
+Source : actualités Universal du 21 février 1945 (archives nationales américaines), domaine public ; lettre de Roosevelt à Ibn Saoud du 5 avril 1945, Foreign Relations of the United States 1945, vol. VIII (texte : Avalon Project, Yale)  
+À l'écran : carton : février 1945 · Grand Lac Amer · Roosevelt reçoit Ibn Saoud  
+> VOIX : Février 1945. / Sur un croiseur américain, Roosevelt reçoit le roi d'Arabie saoudite, Ibn Saoud. // Le 5 avril, il lui écrit qu'il ne prendra aucune mesure / « qui pourrait se révéler hostile au peuple arabe ». / Il meurt une semaine plus **tard**.  
+(39 mots, 2.1 par seconde)  
+Note : texte anglais : « I would take no action […] which might prove hostile to the Arab people »
+
+
+**11.10** · film **00:23:36:14 → 00:23:51:14** (15.0 s) · **[ARCH]** `output/archives-filmees/1946-refugies-juifs-palestine.mp4` · source 00:00:00:00 → 00:00:15:00  
 Source : United News (Office of War Information), actualité de juin 1946, archives nationales américaines ARC 39119, domaine public  
 À l'écran : carton : 1946 · Palestine · Des réfugiés juifs d'Europe débarquent  
 > VOIX : En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.  
 (17 mots, 1.1 par seconde)
 
 
-**11.10** · film **00:23:32:14 → 00:23:36:22** (4.3 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-01.mp4` · source 00:00:00:00 → 00:00:04:08  
+**11.11** · film **00:23:51:14 → 00:23:55:22** (4.3 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-01.mp4` · source 00:00:00:00 → 00:00:04:08  
 > VOIX : Après la guerre, épuisée, / la Grande-Bretagne  
 (6 mots, 1.4 par seconde)
 
 
-**11.11** · film **00:23:36:22 → 00:23:41:22** (5.0 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-07.mp4` · source 00:00:00:00 → 00:00:05:00  
+**11.12** · film **00:23:55:22 → 00:24:00:22** (5.0 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-07.mp4` · source 00:00:00:00 → 00:00:05:00  
 > VOIX : remet la question à l'ONU. // Nous sommes en **1947**. ///  
 (9 mots, 1.8 par seconde)  
 Son : montée lente vers l'ouverture de la partie III
 
 
 ---
-Durée de la partie : 10 min 50.6 s (film 00:12:51:07 → 00:23:41:22)
+Durée de la partie : 11 min 09.6 s (film 00:12:51:07 → 00:24:00:22)

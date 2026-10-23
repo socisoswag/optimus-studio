@@ -181,3 +181,25 @@ entreprises des colonies (33.14), l'AIPAC (33.13), les chrétiens de Palestine (
 1858 (6.11), Petah Tikva (6.12), le Fonds national juif (6.13), les Sursock (8.11), Hope Simpson (8.13), les paroles
 de 2023 (25.20), le blocus de 2025 (25.33), E1 (26.09), le patrimoine de Gaza (34.10), la séquence génocide
 (35.09 à 35.18). Tout le scénario peut s'enregistrer.
+
+## 23 octobre 2026, l'après-midi
+
+**Huit plans d'archives filmées entrent dans le film** (actualités Universal des archives nationales américaines,
+domaine public ; le film passe à 1 h 30 min 16). Trois sortent de la réserve du chapitre 19, cinq sont nouveaux.
+
+| Plan | Fichier | Ce que c'est |
+|---|---|---|
+| 11.9 | `1945-roosevelt-ibn-saoud.mp4` | février 1945, Roosevelt reçoit Ibn Saoud ; sa lettre du 5 avril 1945 dans la voix |
+| 19.9 | `1956-nasser-canal-de-suez.mp4` | juillet 1956, Nasser nationalise le canal (sortait de la réserve) |
+| 19.14 | `1956-port-said.mp4` | novembre 1956, Port-Saïd après les bombardements |
+| 19.15 | `1956-sinai-gaza-armee-israelienne.mp4` | novembre 1956, l'armée israélienne dans le Sinaï et à Gaza |
+| 19.18 | `1957-tel-aviv-retrait-gaza.mp4` | février 1957, la foule de Tel-Aviv contre le retrait de Gaza |
+| 19.19 | `1967-mai-pacte-nasser-hussein.mp4` | remplace l'écran noir de mai 1967 : le pacte entre l'Égypte et la Jordanie |
+| 19.23 | `1967-sinai-gaza.mp4` | juin 1967, « Welcome to Gaza », sans voix (sortait de la réserve) |
+| 19.25 | `1967-jerusalem.mp4` | juin 1967, Moshe Dayan dans la vieille ville, sans voix (sortait de la réserve) |
+
+Voix changée : 19.10 (« À Sèvres, en secret, les trois pays préparent la guerre » ; la nationalisation passe en 19.9).
+
+**Plans renumérotés** : chapitre 11, 11.9 à 11.11 deviennent 11.10 à 11.12. Chapitre 19 : 19.9 à 19.12 deviennent
+19.10 à 19.13 ; 19.13 et 19.14 deviennent 19.16 et 19.17 ; 19.15 (écran noir) est remplacé par 19.19 ; 19.16 à 19.18
+deviennent 19.20 à 19.22 ; 19.19 devient 19.24 ; 19.20 à 19.31 deviennent 19.26 à 19.37.

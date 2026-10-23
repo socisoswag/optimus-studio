@@ -536,6 +536,15 @@ chapitres:
           En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine
           devienne « un Commonwealth **juif** ».
       - type: ARCH
+        fichier: output/archives-filmees/1945-roosevelt-ibn-saoud.mp4
+        entree: 0
+        sortie: 19
+        ecran: "carton : février 1945 · Grand Lac Amer · Roosevelt reçoit Ibn Saoud"
+        source: "actualités Universal du 21 février 1945 (archives nationales américaines), domaine public ; lettre de Roosevelt à Ibn Saoud du 5 avril 1945, Foreign Relations of the United States 1945, vol. VIII (texte : Avalon Project, Yale)"
+        voix: >-
+          Février 1945. / Sur un croiseur américain, Roosevelt reçoit le roi d'Arabie saoudite, Ibn Saoud. // Le 5 avril, il lui écrit qu'il ne prendra aucune mesure / « qui pourrait se révéler hostile au peuple arabe ». / Il meurt une semaine plus **tard**.
+        note: "texte anglais : « I would take no action […] which might prove hostile to the Arab people »"
+      - type: ARCH
         fichier: output/archives-filmees/1946-refugies-juifs-palestine.mp4
         entree: 0
         sortie: 15

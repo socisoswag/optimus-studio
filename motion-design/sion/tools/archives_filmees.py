@@ -59,6 +59,17 @@ ARCHIVES = {
     # US Air Force (domaine public), octobre 1973 : le pont aérien vers Israël, déchargement d'un char à Lod
     "1973-pont-aerien-americain": ("342-adw-264", "342-adw-264-r6.mp4", "1400:1050:260:15",
                                    [(380.0, 386.5), (915.5, 921.0), (927.0, 932.5)]),
+    "1945-roosevelt-ibn-saoud": ("1945-02-21_FDR_confers_with_Middle_East_Chiefs",
+                                 "1945-02-21_FDR_confers_with_Middle_East_Chiefs.mpeg", "616:462:12:9",
+                                 [(79.5, 83.6), (87.2, 90.3), (124.5, 136.3)]),
+    "1956-sinai-gaza-armee-israelienne": ("1956-11-05_Eisenhower_Re-Elected", "1956-11-05_Eisenhower_Re-Elected.mp4",
+                                          "616:462:12:9", [(57.0, 62.6), (63.3, 66.4), (66.9, 69.0)]),
+    "1956-port-said": ("1956-11-12_Near_East_Crisis", "1956-11-12_Near_East_Crisis.mp4", "616:462:12:9",
+                       [(5.5, 10.8), (30.2, 33.0), (44.0, 46.8)]),
+    "1957-tel-aviv-retrait-gaza": ("1957-02-14_Tel_Aviv_Israel", "1957-02-14_Tel_Aviv_Israel.mp4", "616:462:12:9",
+                                   [(2.6, 4.3), (4.6, 7.0), (7.3, 10.5), (13.5, 15.3)]),
+    "1967-mai-pacte-nasser-hussein": ("1967-06-06_Mid-East", "1967-06-06_Mid-East.mpeg", "616:462:12:9",
+                                      [(30.0, 33.4), (47.5, 52.5), (35.6, 42.0)]),
 }
 
 

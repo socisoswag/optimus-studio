@@ -91,7 +91,7 @@
       lines: [['Porte de Jaffa, 1897', 'société Lumière'], ['L’Affaire Dreyfus, 1899', 'Georges Méliès'],
         ['Immigrants à Ellis Island, 1903', 'Edison · Bibliothèque du Congrès'], ['Paths in Palestine, 1934', 'Archives nationales américaines'],
         ['Sands of Sorrow, 1950', 'Theodore A. Morde'], ['Le procès Eichmann, 1961', 'Universal News · Archives nationales américaines'],
-        ['Actualités de 1946, 1956 et 1967', 'Universal News et United News · domaine public'],
+        ['Actualités de 1945 à 1967', 'Universal News et United News · domaine public'],
         ['Le pont aérien vers Israël, 1973', 'US Air Force · Archives nationales américaines']],
     },
     {
