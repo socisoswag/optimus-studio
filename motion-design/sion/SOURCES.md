@@ -263,11 +263,11 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 827361688 | Collines, vignes et arbres de Kfar Etzion (titre d'origine : « paysage rural israélien ») | colonie de Kfar Etzion, Cisjordanie occupée | terre | `cisjordanie-kfar-etzion-collines-vignes` |
 | 547188073 | Des mains sur le tronc d'un olivier | lieu non précisé | terre | `olivier-mains-sur-le-tronc` |
 
-### 4.2 Archives filmées (domaine public)
+### 4.2 Archives filmées (domaine public, sauf mention)
 
 | Fichier | Film | Auteur, date | Cote | Lien |
 |---|---|---|---|---|
-| 1930-paths-to-palestine-01 à 12 | « Paths to Palestine » (muet, 9 min 35) : Jérusalem, Bethléem, rues, marché, Dôme du Rocher, Jourdain | marine des États-Unis, 1930 (œuvre du gouvernement américain) | NARA, identifiant 2767364 (série 428-NPC) | https://archive.org/details/428-npc-44524 |
+| 1930-paths-to-palestine-01 à 12 | « Paths in Palestine » (muet, 9 min 35) : Jérusalem, Bethléem, Nazareth, le Jourdain, des marins américains en visite | producteur non établi ; au générique « Copyright MCMXXXIV, International Copyright Secured » (1934) ; un film Fox du même titre existe (série Magic Carpet, 1933). Renouvellement du droit d'auteur non vérifié (recherche Perplexity du 23 octobre 2026) : statut non établi, gardé par choix de l'auteur | NARA, identifiant 2767364 (série 428-NPC) | https://archive.org/details/428-npc-44524 |
 | 1903-ellis-island-immigrants | « Emigrants [i.e. Immigrants] Landing at Ellis Island » (muet) : des immigrants débarquent du ferry, ballots à la main | Thomas A. Edison, Inc., 1903 (domaine public : publié avant 1930) | Bibliothèque du Congrès, Paper Print Collection | https://archive.org/details/emigrants-i.e.-immigrants-landing-at-ellis-island |
 | 1899-melies-dreyfus-ile-du-diable | « L'Affaire Dreyfus », tableau « L'île du Diable » (muet) : reconstitution tournée pendant l'Affaire | Georges Méliès, Star Film n° 207, 1899 (domaine public) | Star Film 206 à 217 | https://archive.org/details/LAffaireDreyfus1899 |
 | 1899-melies-dreyfus-bagarre-journalistes | même film, tableau « Bagarre entre journalistes » (Star Film n° 213) | Georges Méliès, 1899 (domaine public) | Star Film 213 | https://archive.org/details/LAffaireDreyfus1899 |

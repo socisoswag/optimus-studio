@@ -114,15 +114,15 @@ Son : pas de troupe, foule, cloches lointaines
 
 
 **8.3** · film **00:14:02:24 → 00:14:16:11** (13.5 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-02.mp4` · source 00:00:00:00 → 00:00:13:12  
-Source : SOURCES.md 4.2 (Paths to Palestine, marine américaine, 1930, NARA 2767364, domaine public)  
-À l'écran : carton : Jérusalem · 1930 · film de la marine américaine  
+Source : SOURCES.md 4.2 (« Paths in Palestine », 1934, NARA 2767364 ; producteur et statut du droit d'auteur non établis)  
+À l'écran : carton : Jérusalem · 1934  
 > VOIX : En 1922, la Société des Nations confie la Palestine à Londres. / Le mandat reprend la promesse Balfour, / et demande de faciliter l'immigration **juive**.  
 (23 mots, 1.7 par seconde)  
 Note : préambule du mandat (texte de la déclaration) et article 6 (immigration, installation sur les terres)
 
 
 **8.4** · film **00:14:16:11 → 00:14:28:01** (11.6 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-05.mp4` · source 00:00:00:00 → 00:00:11:15  
-Source : SOURCES.md 4.2 (Paths to Palestine, 1930)  
+Source : SOURCES.md 4.2 (« Paths in Palestine », 1934)  
 > VOIX : Les Arabes de Palestine réclament un gouvernement élu. / Londres ne l'accordera jamais : / une majorité arabe aurait fermé la porte au foyer **juif**.  
 (22 mots, 1.9 par seconde)
 
