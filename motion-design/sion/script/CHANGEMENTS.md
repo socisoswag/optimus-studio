@@ -113,7 +113,7 @@ donnent maintenant les chiffres exacts et datés. Gaza au 22 octobre 2026 (25.19
 Macron, phrase exacte (31.16) ; les vetos : 52 depuis 1972 (33.9) ; les tribunaux militaires et la détention
 administrative (35.9) ; la photo du Goush Emounim (26.2) : « Mont Huwara, près de Naplouse » (même nom, nouvelle version).
 
-**Vingt-trois plans ajoutés** (le film passe à 1 h 22 min 22), tous `<plan>-MD-documents-6.mp4` sauf 25.30 (`gaza`) :
+**Dix-neuf plans ajoutés** (le film passe à 1 h 22 min 22), tous `<plan>-MD-documents-6.mp4` sauf 25.30 (`gaza`) :
 
 | Plan | Ce que c'est |
 |---|---|
@@ -137,7 +137,7 @@ administrative (35.9) ; la photo du Goush Emounim (26.2) : « Mont Huwara, près
 | 35.10 | « Bienvenue en enfer » : les prisons, Sde Teiman |
 | 38.06 | les chrétiens de Palestine |
 
-Les plans 22.08, 25.08, 25.12, 25.13 et 25.30 sont vérifiés ; les autres attendent la deuxième série de questions
+Les plans 22.08, 25.08, 25.12, 25.13 et 25.30 sont sûrs (textes officiels, dossier Perplexity) ; les autres attendent la deuxième série de questions
 Perplexity (A-FABRIQUER.md, section 7) : ne pas les enregistrer en voix avant.
 
 Les plans qui suivent un ajout changent de numéro (même image, nouveau nom de fichier) :
