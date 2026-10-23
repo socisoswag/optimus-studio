@@ -67,7 +67,8 @@ et dans le générique de fin (`timelines/generique-fin.js`). Le signaler en une
 
 ## Exigences de l'auteur
 
-- 1080p seulement ; bruitages seulement, pas de musique ; voix off faite plus tard.
+- 1080p seulement ; voix off de l'auteur. Musique : sur tout le film, choisie par l'auteur à la fin (Envato, licence par
+  morceau, chaîne YouTube enregistrée) ; les rendus livrés restent sans musique (bruitages seuls) pour le mixage.
 - Aucun tiret long ou moyen à l'écran, pas de formules « à la IA ».
 - Point de vue factuel et sourcé, sans rien qui puisse passer pour antisémite.
 - Rendu « grand documentaire » : ça doit bouger et claquer (coupes en filé, flashs, impacts,
