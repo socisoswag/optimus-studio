@@ -1735,7 +1735,8 @@
   const RLF = {};
   async function loadRelief() {
     if (!PTD) return;
-    await Promise.all(Object.entries(PTD.relief).map(([k, m]) => new Promise((done) => {
+    // relief de la Palestine (data/partage.js) et, au-delà, de la région et du monde (data/relief-plus.js)
+    await Promise.all(Object.entries({ ...PTD.relief, ...(window.RELIEF_PLUS || {}) }).map(([k, m]) => new Promise((done) => {
       const img = new Image();
       img.onload = () => {
         const c = canvas(img.naturalWidth, img.naturalHeight), g = c.getContext('2d');
@@ -1767,9 +1768,26 @@
   const TCV = {};
   function tintCanvas(key) { if (!TCV[key]) TCV[key] = canvas(W, H).getContext('2d'); return TCV[key]; }
   // rendu point par point : chaque pixel de l'écran retrouve son point du sol (projection inverse)
+  // couches du relief, de la plus large à la plus fine : le monde, la région, le Sinaï, le Liban, puis la base
+  // (Palestine) ; une couche s'efface quand elle devient trop floue (de 4 à 7 pixels d'écran par pixel de texture)
+  const RL_ORDER = ['monde', 'region', 'sinai', 'liban', 'est', 'base'];
+  function rlWeight(T, k) {
+    if (k === 'base') return 1;
+    const mag = Ps / T.su;
+    return clamp((7 - mag) / 3);
+  }
+  // rendu point par point : chaque pixel de l'écran retrouve son point du sol (projection inverse)
   function renderRelief(cam, box, RT = 0) {
     const base = RLF.base;
     if (!base) return false;
+    const layers = [];
+    for (const k of RL_ORDER) {
+      const T = RLF[k];
+      if (!T || T.X1 < VIEW.x0 || T.X0 > VIEW.x1 || T.Y1 < VIEW.y0 || T.Y0 > VIEW.y1) continue;
+      const lw = rlWeight(T, k);
+      if (lw > 0.002) layers.push([T, lw, k === 'monde' || k === 'region' ? 50 : 170]);
+    }
+    if (!layers.length) return false;
     // détail : texture fine de la zone filmée en gros plan
     let det = null, dw = 0;
     if (cam.w < 0.04) for (const k of ['nord', 'sud', 'jaffa', 'jer']) {
@@ -1784,7 +1802,7 @@
     const C = PART.C, tt = RT;
     const mix = C.light && base.L ? 0.6 * (0.5 - 0.5 * Math.cos((tt / (C.lightPeriod || 36)) * 6.2832)) : 0;
     const hz = C.haze && base.V ? C.haze * (0.85 + 0.15 * Math.sin(tt * 0.35)) : 0;
-    const LB = base.L, VB = base.V;
+    const nl = layers.length;
     for (let sy = y0; sy < y1; sy++) {
       const v = sy - Poy, den = Pcp * FOCAL + v * Psp;
       let i = (sy * W + x0) * 4;
@@ -1794,17 +1812,26 @@
       let X = Pcx + (Pcb * rx0 + Psb * ry) / Ps, Y = Pcy - (-Psb * rx0 + Pcb * ry) / Ps;
       const dX = (Pcb * drx) / Ps, dY = (Psb * drx) / Ps;
       for (let sx = x0; sx < x1; sx++, i += 4, X += dX, Y += dY) {
-        let u = (X - base.X0) * base.su - 0.5, w = (base.Y1 - Y) * base.sv - 0.5;
-        if (u < 0 || w < 0 || u >= base.w - 1 || w >= base.h - 1) { d[i + 3] = 0; continue; }
-        let iu = u | 0, iw = w | 0, fu = u - iu, fw = w - iw, o = iw * base.w + iu, A = base.a;
-        let val = (A[o] * (1 - fu) + A[o + 1] * fu) * (1 - fw) + (A[o + base.w] * (1 - fu) + A[o + base.w + 1] * fu) * fw;
-        let mist = 0;
-        if (mix > 0.002) val += (((LB[o] * (1 - fu) + LB[o + 1] * fu) * (1 - fw) + (LB[o + base.w] * (1 - fu) + LB[o + base.w + 1] * fu) * fw) - val) * mix;
-        if (hz > 0.002) mist = ((VB[o] * (1 - fu) + VB[o + 1] * fu) * (1 - fw) + (VB[o + base.w] * (1 - fu) + VB[o + base.w + 1] * fu) * fw) / 255;
+        let val = 0, mist = 0, cov = 0;
+        for (let q = 0; q < nl; q++) {
+          const L = layers[q], T = L[0];
+          const u = (X - T.X0) * T.su - 0.5, w = (T.Y1 - Y) * T.sv - 0.5;
+          if (u < 0 || w < 0 || u >= T.w - 1 || w >= T.h - 1) continue;
+          // fondu vers le bord de la texture (sauf la plus large)
+          const e = Math.min(u, w, T.w - 1 - u, T.h - 1 - w), lw = L[1] * (e > L[2] ? 1 : e / L[2]);
+          if (lw <= 0.002) continue;
+          const iu = u | 0, iw = w | 0, fu = u - iu, fw = w - iw, o = iw * T.w + iu, A = T.a, tw_ = T.w;
+          let lv = (A[o] * (1 - fu) + A[o + 1] * fu) * (1 - fw) + (A[o + tw_] * (1 - fu) + A[o + tw_ + 1] * fu) * fw;
+          let lm = 0;
+          if (mix > 0.002 && T.L) { const B = T.L; lv += (((B[o] * (1 - fu) + B[o + 1] * fu) * (1 - fw) + (B[o + tw_] * (1 - fu) + B[o + tw_ + 1] * fu) * fw) - lv) * mix; }
+          if (hz > 0.002 && T.V) { const B = T.V; lm = ((B[o] * (1 - fu) + B[o + 1] * fu) * (1 - fw) + (B[o + tw_] * (1 - fu) + B[o + tw_ + 1] * fu) * fw) / 255; }
+          if (cov === 0) { val = lv; mist = lm; cov = lw; } else { val += (lv - val) * lw; mist += (lm - mist) * lw; cov += (1 - cov) * lw; }
+        }
+        if (cov <= 0.002) { d[i + 3] = 0; continue; }
         if (det) {
-          u = (X - det.X0) * det.su - 0.5; w = (det.Y1 - Y) * det.sv - 0.5;
+          const u = (X - det.X0) * det.su - 0.5, w = (det.Y1 - Y) * det.sv - 0.5;
           if (u >= 0 && w >= 0 && u < det.w - 1 && w < det.h - 1) {
-            iu = u | 0; iw = w | 0; fu = u - iu; fw = w - iw; o = iw * det.w + iu; A = det.a;
+            const iu = u | 0, iw = w | 0, fu = u - iu, fw = w - iw, o = iw * det.w + iu, A = det.a;
             // fondu vers le bord de la texture fine
             const e = Math.min(u, w, det.w - 1 - u, det.h - 1 - w), f = dw * (e > 40 ? 1 : e / 40);
             let dv = (A[o] * (1 - fu) + A[o + 1] * fu) * (1 - fw) + (A[o + det.w] * (1 - fu) + A[o + det.w + 1] * fu) * fw;
@@ -1814,7 +1841,7 @@
         }
         // brume : les creux s'éclaircissent et se voilent, plus fort au loin (haut de l'image)
         if (mist > 0.01) { const m2 = Math.min(1, mist * mist * mist * 2.2) * hz * (0.5 + 0.5 * (1 - sy / H)); val += (226 - val) * m2; }
-        d[i] = d[i + 1] = d[i + 2] = val; d[i + 3] = 255;
+        d[i] = d[i + 1] = d[i + 2] = val; d[i + 3] = cov >= 0.998 ? 255 : cov * 255;
       }
     }
     rcx.clearRect(0, 0, W, H);
@@ -1878,11 +1905,46 @@
     const C = PART.C;
     return tw(t, PART.T('land'), PART.T('land') + ((C.land && C.land.dur) || 2.5), E.inOutCubic) * (1 - (C.drain ? tw(t, PART.T('drain'), PART.T('drain') + (C.drain.dur || 3), E.inOutCubic) : 0));
   }
+  let LMC = null;
+  function landMask(cam) {
+    if (!LMC) LMC = canvas(W, H).getContext('2d');
+    const m = LMC;
+    m.globalCompositeOperation = 'source-over';
+    m.clearRect(0, 0, W, H);
+    m.fillStyle = '#fff';
+    if (cam.w < 2.2) { pathPolys(m, G.landHi); m.fill('evenodd'); }
+    pathPolys(m, G.landLo); m.fill('evenodd');
+    m.globalCompositeOperation = 'destination-out';
+    pathPolys(m, G.lakes); m.fill('evenodd');
+    m.globalCompositeOperation = 'source-over';
+    return m.canvas;
+  }
   function drawPartage(g, t, cam) {
     if (!PART) return;
     const A = landAlpha(t) * reliefZoom(cam) * titleDim(t);
     const OFF = pieceOffsets(t);
-    if (A > 0.004) {
+    if (A > 0.004 && PART.C.terres) {
+      // relief sur toutes les terres de l'image (Palestine, pays voisins, Europe), pas seulement sur la Palestine mandataire
+      if (renderRelief(cam, [0, 0, W, H], t)) {
+        const tc = tintCanvas('neutre'), col = PSTATE.neutre(), shade = PART.C.shade || 1.0;
+        tc.globalCompositeOperation = 'copy'; tc.globalAlpha = 1;
+        tc.drawImage(RC, 0, 0);
+        tc.globalCompositeOperation = 'multiply';
+        tc.fillStyle = `rgb(${Math.round(col[0] * shade)},${Math.round(col[1] * shade)},${Math.round(col[2] * shade)})`;
+        tc.fillRect(0, 0, W, H);
+        tc.globalCompositeOperation = 'destination-in';
+        tc.drawImage(RC, 0, 0);
+        // seulement sur la terre : côtes et lacs de la carte
+        const lm = landMask(cam);
+        tc.drawImage(lm, 0, 0);
+        tc.globalCompositeOperation = 'source-over';
+        g.save();
+        g.globalCompositeOperation = 'lighter';
+        g.globalAlpha = A;
+        g.drawImage(tc.canvas, 0, 0);
+        g.restore();
+      }
+    } else if (A > 0.004) {
       // emprise écran des morceaux (plus la marge du décalage)
       let x0 = W, y0 = H, x1 = 0, y1 = 0;
       for (const p of PART.pieces) for (const [X, Y] of [[p.b[0], p.b[1]], [p.b[2], p.b[1]], [p.b[0], p.b[3]], [p.b[2], p.b[3]], [p.cX, p.b[1]], [p.cX, p.b[3]], [p.b[0], p.cY], [p.b[2], p.cY]]) {

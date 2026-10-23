@@ -173,7 +173,7 @@ Fichiers dans `data/archives/documents/`.
 | Donnée | Source | Licence | Utilisée dans |
 |---|---|---|---|
 | Côtes, fleuves, lacs, pays, territoires (Israël 1949, Cisjordanie, Gaza, Jérusalem-Est, Golan, Sinaï, Palestine mandataire) | Natural Earth (naturalearthdata.com), 1:10 M et 1:110 M | domaine public | toutes les cartes |
-| Relief (altitudes) | SRTM, NASA ; bathymétrie GEBCO ; via les tuiles « Terrain Tiles » (AWS Open Data) | domaine public / libre | cartes en relief, toutes les vidéos 3D |
+| Relief (altitudes) | SRTM, NASA ; bathymétrie GEBCO ; via les tuiles « Terrain Tiles » (AWS Open Data) | domaine public / libre | cartes en relief (Palestine, Sinaï, Liban, Jordanie, Syrie, Égypte, Europe : tools/prep_partage.py, tools/prep_relief_region.py), toutes les vidéos 3D |
 | Images satellite, intro et plans aériens | Copernicus Sentinel-2 L2A, couleurs vraies (10 m), 4 tuiles du 11 mai 2025 | Copernicus, mention obligatoire | intro, mur, villages, plans de respiration |
 | Images satellite, Gaza avant et après | Copernicus Sentinel-2 L2A : S2A du 17 septembre 2023 et S2B du 11 septembre 2025, tuile 36RXV | Copernicus, mention obligatoire | Gaza vue du ciel |
 | Accès aux images Sentinel-2 | Earth Search (Element 84), archive « sentinel-cogs » sur AWS | libre | idem |

@@ -177,7 +177,7 @@
       fadeOut: def.fadeOut !== undefined ? def.fadeOut : 1.25,
       fps: 25, width: 1920, height: 1080,
       // relief : le relief éclairé de la carte du partage (SRTM, NASA) sous toute la pièce, effacé de près
-      partage: def.relief ? { center: [35.0, 31.6], land: { seg: segments[0].id, at: 0, dur: 0.05 }, fadeBelow: (def.relief.fadeBelow || [0.004, 0.008]), light: def.relief.light !== false, haze: def.relief.haze !== undefined ? def.relief.haze : 0.45, dof: def.relief.dof === true } : undefined,
+      partage: def.relief ? { center: [35.0, 31.6], land: { seg: segments[0].id, at: 0, dur: 0.05 }, fadeBelow: (def.relief.fadeBelow || [0.004, 0.008]), light: def.relief.light !== false, haze: def.relief.haze !== undefined ? def.relief.haze : 0.45, dof: def.relief.dof === true, terres: def.relief.terres !== false } : undefined,
     };
   };
 })(typeof window !== 'undefined' ? window : globalThis);

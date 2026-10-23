@@ -112,6 +112,12 @@ moteur, mêmes gabarits, même finition. Rien de neuf sans raison de récit.
   Newsreader italique ; mention de source ou « Reconstitution par IA, d'après une photo d'archive » en bas.
 - Cartes de données en 3D : `TL.columns` (colonnes de lumière posées sur la carte, hauteur en mètres, valeur au sommet)
   et `TL.partage = { center, land, drain }` sans découpage pour poser une carte sur le relief éclairé (voir terres-1945.js).
+  Relief sur toutes les terres de l'image (`relief: true` dans buildTL, ou `terres: true` dans TL.partage) : base Palestine
+  (data/partage.js) puis, au-delà, Sinaï, Liban, Jordanie et Golan, région et Europe (data/relief-plus.js, tools/prep_relief_region.py) ;
+  une couche trop floue pour le cadrage s'efface d'elle-même.
+- Archives filmées (`tools/archives_filmees.py`) : toujours le fichier d'origine d'archive.org (jamais les copies réduites),
+  recadrage en pixels du fichier ; télécinéma inverse des actualités NTSC, 24 i/s passés à 25 sans doubler d'image (durée
+  raccourcie de 4 %), poussières d'une image retirées, tremblement corrigé pour les films à la manivelle (option stab).
 - Gabarits du moteur : `quote` (citation et visage), `doc` (fiche d'événement sur la carte 3D : date, titre,
   citation, lignes, épingle), `figure` (fiche de personnage) ; `photo3d.html` pour les archives et les
   reconstitutions ; cartons transparents `timelines/cartons.js`.

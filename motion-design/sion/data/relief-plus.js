@@ -1,0 +1,4 @@
+/* Relief au-delà de la Palestine (tools/prep_relief_region.py) : altitudes SRTM / NASA, tuiles terrarium d'AWS
+ * (domaine public). Textures plus larges et moins fines que data/partage.js (relief), utilisées là où la base
+ * ne va pas : Égypte, Sinaï, Liban, Syrie, Jordanie, Irak, Europe et Méditerranée. */
+window.RELIEF_PLUS = {"monde": {"src": "data/relief/monde.png", "bbox": [-0.39269908, 0.39269908, 0.9817477, 1.37444679], "w": 1792, "h": 1280}, "region": {"src": "data/relief/region.png", "bbox": [0.44178647, 0.46633016, 0.73631078, 0.71176709], "w": 3072, "h": 2560}, "sinai": {"src": "data/relief/sinai.png", "bbox": [0.54609716, 0.53382531, 0.60132047, 0.58904862], "w": 2304, "h": 2304}, "liban": {"src": "data/relief/liban.png", "bbox": [0.61052435, 0.61052435, 0.62893212, 0.63506805], "w": 1536, "h": 2048}, "est": {"src": "data/relief/est.png", "bbox": [0.61972824, 0.53382531, 0.65040785, 0.63813601], "w": 1280, "h": 4352}};

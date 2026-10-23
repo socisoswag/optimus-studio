@@ -100,6 +100,7 @@
 
   root.TL = root.buildTL({
     name: 'europe-1881-1914',
+    relief: true,
     seed: 1881,
     segments,
     markers,

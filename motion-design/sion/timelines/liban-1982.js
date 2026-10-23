@@ -168,6 +168,7 @@
 
   root.TL = root.buildTL({
     name: 'liban-1982',
+    relief: true,
     seed: 1982,
     segments,
     cities: root.CITIES.filter(([n]) => !['Jaffa', 'Rishon LeZion', 'Le Golan', 'Sinaï', 'Eilat'].includes(n)),
