@@ -301,14 +301,30 @@ chapitres:
           enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés
           **arabes**.
       - type: MD
-        fichier: output/documents-2.mp4
-        entree: 36
-        sortie: 53
-        source: "rapport de la commission Peel, 7 juillet 1937 (transfert proposé : jusqu'à 225 000 Arabes et 1 250 Juifs)"
+        fichier: output/peel-1937.mp4
+        entree: 0
+        sortie: 9.5
+        ecran: "déjà dans le plan : les trois zones du plan sur le relief (État juif, État arabe, zone sous mandat) ; mention « tracé simplifié »"
+        source: "rapport de la commission royale pour la Palestine, Cmd. 5479, 7 juillet 1937 ; carte : « Peel map pd.png », Wikimedia Commons, domaine public (tracé simplifié, tools/prep_peel.py)"
         voix: >-
-          En 1937, la commission Peel propose pour la première fois de couper le pays en deux, / et de déplacer
-          jusqu'à 225 000 Arabes. // Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais
-          pas ce **tracé**.
+          En 1937, la commission Peel propose pour la première fois / de couper le pays en **deux**.
+      - type: MD
+        fichier: output/peel-1937.mp4
+        entree: 9.5
+        sortie: 18.5
+        ecran: "déjà dans le plan : « Jusqu'à 225 000 Arabes à déplacer hors de l'État juif »"
+        source: "rapport Peel, 1937 (transfert proposé : jusqu'à 225 000 Arabes et 1 250 Juifs)"
+        voix: >-
+          Et de déplacer jusqu'à 225 000 Arabes / hors du futur État **juif**.
+      - type: MD
+        fichier: output/peel-1937.mp4
+        entree: 18.5
+        sortie: 27
+        ecran: "déjà dans le plan : « Deux refus »"
+        source: "refus du Haut Comité arabe (juillet 1937) ; 20e congrès sioniste, Zurich, août 1937 (principe accepté, tracé rejeté) ; commission Woodhead et livre blanc de novembre 1938 (plan abandonné)"
+        verifier: "la position du 20e congrès sioniste (août 1937) et la date de l'abandon du plan par Londres (novembre 1938)"
+        voix: >-
+          Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**.
       - type: ARCH
         fichier: output/archives-filmees/1930-paths-to-palestine-06.mp4
         entree: 0

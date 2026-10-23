@@ -190,3 +190,17 @@ par plan (les autres donnent au mieux une bibliographie en description), cartes 
 4. « La liste nominative des morts de Gaza publiée par le ministère de la Santé (reprise par Tech for Palestine,
    data.techforpalestine.org) : combien de noms dans la mise à jour du 27 juillet 2026, combien d'enfants de moins de
    18 ans et de moins d'un an ? Le site donne 72 835 noms, 21 637 enfants, 1 072 de moins d'un an. »
+
+## 11. À confirmer sur Perplexity (cartes « Le plan Peel » et « L'eau », 23 octobre 2026)
+
+1. « Dans le rapport de la commission royale pour la Palestine (commission Peel, Cmd. 5479, 7 juillet 1937), quels
+   chiffres exacts sont donnés pour le transfert de population proposé (Arabes de l'État juif, Juifs de l'État arabe) ?
+   Citer le paragraphe en anglais. On a : jusqu'à 225 000 Arabes et 1 250 Juifs. »
+2. « Qu'a décidé le 20e congrès sioniste (Zurich, août 1937) sur le plan Peel : rejet du tracé et mandat pour
+   négocier un meilleur partage ? Et à quelle date Londres a-t-il abandonné le partage (rapport Woodhead et déclaration
+   du gouvernement, novembre 1938) ? Citer la résolution et le texte britannique. »
+3. « Le rapport « Parched » de B'Tselem (2 mai 2023) cite-t-il un minimum de 100 litres par jour et par personne
+   recommandé par l'Organisation mondiale de la santé ? Citer la phrase exacte. »
+4. « Amnesty International, Troubled Waters (octobre 2009) : quelle part de l'eau de la nappe de la montagne Israël
+   utilise-t-il (environ 80 %) et que dit le rapport du comité mixte de l'eau et des refus de puits palestiniens ?
+   Citer les phrases. »

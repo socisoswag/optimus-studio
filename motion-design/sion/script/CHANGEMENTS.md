@@ -230,3 +230,31 @@ du ministère de la Santé ; enfin « 21 637 enfants identifiés par leur nom »
 **Relief** : 42 pièces sont maintenant posées sur le relief éclairé (SRTM, NASA), avec une lumière qui glisse
 lentement et une brume dans les vallées ; toutes sont à remplacer dans ta timeline (mêmes noms de fichiers).
 **Archives filmées** : restaurées (scintillement lissé, bruit atténué), mêmes noms de fichiers.
+
+## 23 octobre 2026, la nuit (suite)
+
+**Relief partout** : le relief éclairé (SRTM, NASA) couvre maintenant toute la terre de l'image, plus seulement la
+Palestine mandataire : Sinaï et canal de Suez, Liban, Golan et Damas, Jordanie, Égypte, Europe. Toutes les cartes
+sont refaites (mêmes noms de fichiers). Liban 1982, l'Europe 1881-1914, Gaza et « Quatre guerres » passent en relief.
+
+**Archives filmées refaites** (mêmes noms de fichiers) : fichiers d'origine d'archive.org (Ellis Island 1903 en
+1440×1080 au lieu de 640×480, réfugiés de 1946 en 1280×720 au lieu de 640×360, MPEG-2 d'origine des actualités
+Universal) ; on perdait environ 13 % de l'image à droite sur les actualités, c'est corrigé ; les lignes en dents de
+scie des mouvements (vidéo entrelacée) disparaissent, chaque image du film d'origine est retrouvée ; poussières
+retirées ; tremblement corrigé pour 1903 et 1918. Les archives à 24 images par seconde passent à 25 sans doubler
+d'image : elles durent 4 % de moins (les sorties du script sont mises à jour).
+
+**Deux nouvelles cartes**
+- `peel-1937.mp4`, chapitre 8, plans 8.19 à 8.21 : « Le plan Peel » (1937), le premier partage proposé, sur le relief,
+  puis le transfert de 225 000 Arabes, puis les deux refus. Remplace l'ancien plan 8.19 (`documents-2.mp4`, de 36 à
+  53 s) : supprime-le de ta timeline.
+- `eau.mp4`, chapitre 23, plans 23.14 à 23.17 : « L'eau », la nappe de la montagne sous la Cisjordanie, l'eau qui
+  coule sous terre vers Israël, les 80 % d'Oslo, puis 82 litres contre 247 en colonnes de lumière. Remplace l'ancien
+  plan 23.14 (`documents-6.mp4`, de 41 à 55 s) : supprime-le de ta timeline.
+
+**Plans renumérotés** : chapitre 8, 8.20 et suivants deviennent 8.22 et suivants. Chapitre 23 : 23.15 et suivants
+deviennent 23.18 et suivants.
+
+**Intifadas** (chapitre 22) : chiffres vérifiés sur les tableaux de B'Tselem (1 070 Palestiniens tués par les forces
+israéliennes de 1987 à 1993, dont 237 mineurs ; 100 civils et 60 membres des forces de sécurité israéliens) ; la voix
+ne change pas.

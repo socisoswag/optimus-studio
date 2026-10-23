@@ -592,6 +592,35 @@ marquée du filigrane d'une agence commerciale.
   https://data.techforpalestine.org/api/v3/summary.json). À l'écran : les 1 072 enfants de moins d'un an, nom arabe
   et transcription, dans l'ordre de la liste ; ni numéro d'identité ni date de naissance.
 
+**Le plan Peel** (chapitre 8, `timelines/peel-1937.js`, tracés `data/peel-1937.js` écrits par `tools/prep_peel.py`)
+- Rapport de la commission royale pour la Palestine (commission Peel), Cmd. 5479, Londres, 7 juillet 1937 : premier
+  plan de partage (État juif : Galilée, vallée de Jezréel, plaine côtière ; État arabe uni à la Transjordanie ; zone
+  sous mandat : Jérusalem, Bethléem, couloir jusqu'à la mer, Nazareth) ; transfert proposé : jusqu'à 225 000 Arabes et
+  1 250 Juifs. Refus du Haut Comité arabe ; 20e congrès sioniste (Zurich, août 1937) : principe du partage accepté,
+  tracé rejeté ; commission Woodhead et livre blanc britannique de novembre 1938 : plan abandonné (à confirmer, voir
+  A-FABRIQUER section 11).
+- Carte : « Peel map pd.png », par Ynhockey, Wikimedia Commons, domaine public,
+  https://commons.wikimedia.org/wiki/File:Peel_map_pd.png, d'après la carte du rapport ; géoréférencée sur 13 villes
+  (écart moyen 1,9 km), limites intérieures seulement (côtes et frontières : Natural Earth). Tracé simplifié, dit à
+  l'écran.
+
+**L'eau** (chapitre 23, `timelines/eau.js`)
+- Accords d'Oslo II, 28 septembre 1995, annexe III, article 40 : les trois bassins de la nappe de la montagne (ouest,
+  nord-est, est) et le comité mixte de l'eau (décisions par consensus).
+- Amnesty International, Troubled Waters: Palestinians Denied Fair Access to Water, octobre 2009 (MDE 15/027/2009) :
+  environ 80 % de l'eau de la nappe pour Israël ; la nappe se recharge surtout sous la Cisjordanie.
+- B'Tselem, Parched, 2 mai 2023 : 82,4 litres par jour et par Palestinien de Cisjordanie, 247 par Israélien (colons
+  compris) ; minimum de l'OMS : 100 litres (à confirmer sur le rapport, A-FABRIQUER section 11).
+- Les trajets de l'eau sous terre sont un schéma (des collines vers la sortie de chaque bassin).
+
+**Les intifadas** (chapitre 22, chiffres de la voix)
+- B'Tselem, « Fatalities in the first Intifada », https://www.btselem.org/statistics/first_intifada_tables (lu le
+  23 octobre 2026) : du 9 décembre 1987 au 13 septembre 1993, 1 070 Palestiniens tués par les forces de sécurité
+  israéliennes dans les territoires occupés, dont 237 mineurs, et 54 par des civils israéliens ; 100 civils israéliens
+  et 60 membres des forces de sécurité tués par des Palestiniens (territoires occupés et Israël).
+- B'Tselem, communiqué du 29 décembre 2004, https://www.btselem.org/press_releases/20041229 : depuis le 29 septembre
+  2000, 3 174 Palestiniens tués, dont 617 mineurs, et 940 Israéliens, dont 167 mineurs.
+
 **Chronologie des figures (1897 à 1995)**
 - Faits biographiques courants (dates, fonctions, événements), présents dans toutes les encyclopédies.
   Pour citer une référence précise : les notices de l'Encyclopædia Britannica ou de l'Encyclopædia

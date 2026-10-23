@@ -499,8 +499,10 @@ chapitres:
         entree: 146
         sortie: 161
         source: >-
-          1987-1993 : l'armée israélienne tue de 1 087 à 1 204 Palestiniens, dont 241 enfants ; 100 civils et 60
-          soldats israéliens tués (B'Tselem ; article « First Intifada »)
+          B'Tselem, tableaux de la première intifada (9 décembre 1987 au 13 septembre 1993) : 1 070 Palestiniens tués
+          par les forces de sécurité israéliennes dans les territoires occupés, dont 237 mineurs, et 54 par des civils
+          israéliens ; 100 civils israéliens et 60 membres des forces de sécurité tués par des Palestiniens, dans les
+          territoires occupés et en Israël
         voix: >-
           En six ans, l'armée israélienne tue plus de mille Palestiniens, / dont plus de deux cents enfants. / Environ
           cent soixante Israéliens sont tués, / dont cent **civils**.
@@ -557,7 +559,7 @@ chapitres:
         fichier: output/documents-2.mp4
         entree: 174
         sortie: 186
-        source: "2000-2005 : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens tués, dont 644 à 773 civils israéliens (article « Second Intifada », d'après B'Tselem)"
+        source: "B'Tselem, 29 décembre 2004 : depuis le 29 septembre 2000, 3 174 Palestiniens tués, dont 617 mineurs, et 940 Israéliens, dont 167 mineurs ; jusqu'en février 2005 : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens (article « Second Intifada », d'après B'Tselem)"
         voix: >-
           En cinq ans, plus de trois mille Palestiniens / et environ mille Israéliens sont tués, / dont beaucoup de
           civils, des deux **côtés**.
@@ -652,13 +654,38 @@ chapitres:
           Pour une partie des Israéliens, ces collines sont la Judée et la Samarie, / la terre de la Bible, rendue à son
           **peuple**.
       - type: MD
-        fichier: output/documents-6.mp4
-        entree: 41
-        sortie: 55
-        ecran: "fiche : Cisjordanie · depuis Oslo II, 1995 · Le partage de l'eau"
-        source: "accords d'Oslo II, 28 septembre 1995, annexe III, article 40 ; Amnesty International, Troubled Waters, 2009 (environ 80 % de l'aquifère de la montagne pour Israël) ; B'Tselem, Parched, 2 mai 2023 (82,4 litres par jour et par Palestinien, 247 par Israélien, colons compris)"
+        fichier: output/eau.mp4
+        entree: 0
+        sortie: 5
+        ecran: "déjà dans le plan : titre « L'eau » sur le relief de la Cisjordanie"
+        source: "Amnesty International, Troubled Waters, 2009 (la nappe de la montagne, rechargée surtout sous la Cisjordanie)"
         voix: >-
-          Avec Oslo, Israël garde environ 80 % de l'eau de la grande nappe de Cisjordanie. / En 2023, un Palestinien y dispose de 82 litres par jour ; / un Israélien, colons compris, de **247**.
+          Sous les collines de Cisjordanie, / il y a de l'**eau**.
+      - type: MD
+        fichier: output/eau.mp4
+        entree: 5
+        sortie: 14
+        ecran: "déjà dans le plan : l'eau coule sous terre des collines vers les sorties des trois bassins (schéma)"
+        source: "accords d'Oslo II, 28 septembre 1995, annexe III, article 40 (bassins ouest, nord-est et est de la nappe) ; Amnesty International, 2009"
+        voix: >-
+          La pluie y remplit une grande nappe souterraine, / qui coule surtout vers l'ouest, / vers **Israël**.
+      - type: MD
+        fichier: output/eau.mp4
+        entree: 14
+        sortie: 22
+        ecran: "déjà dans le plan : « Environ 80 % de l'eau de la nappe pour Israël »"
+        source: "accords d'Oslo II, annexe III, article 40 (comité mixte de l'eau, décisions par consensus) ; Amnesty International, Troubled Waters, 2009 (MDE 15/027/2009) : environ 80 % pour Israël"
+        voix: >-
+          Avec Oslo, Israël garde environ 80 % de cette eau. / Et tout nouveau puits palestinien / doit recevoir son **accord**.
+      - type: MD
+        fichier: output/eau.mp4
+        entree: 22
+        sortie: 32
+        ecran: "déjà dans le plan : deux colonnes de lumière, 247 litres à Tel Aviv, 82,4 litres à Ramallah"
+        source: "B'Tselem, Parched, 2 mai 2023 : 82,4 litres par jour et par Palestinien de Cisjordanie, 247 par Israélien (colons compris) ; OMS : au moins 100 litres"
+        verifier: "le minimum de 100 litres de l'OMS, tel que cité dans le rapport Parched de B'Tselem"
+        voix: >-
+          En 2023, un Palestinien de Cisjordanie dispose de 82 litres par jour ; / un Israélien, colons compris, de **247**.
         note: "247 litres : moyenne de tous les Israéliens, pas des seuls colons ; chiffres publiés en 2023"
       - type: MD
         fichier: output/documents-6.mp4
