@@ -179,14 +179,15 @@ Film 00:26:50:10 → 00:28:27:09 · durée 1 min 37.0 s
 > VOIX : silence
 
 
-**14.2** · film **00:26:54:24 → 00:27:06:24** (12.0 s) · **[IA]** `à générer : reconstitution de l'entraînement de la Haganah, avril 1948 (image de départ : data/reconstitution/27-haganah-1948.jpg)` · **À OBTENIR**  
+**14.2** · film **00:26:54:24 → 00:27:06:24** (12.0 s) · **[IA]** `output/reconstitutions/17-27-haganah-1948.mp4` · source 00:00:00:00 → 00:00:12:00  
+À l'écran : déjà dans le plan : Avril 1948 · Palestine · L'entraînement de recrues de la Haganah · la vraie photo, puis Reconstitution par IA, d'après une photo d'archive · GPO, CC BY-SA 3.0  
 > VOIX : Côté juif, trois forces armées. / La Haganah, la plus grande, liée à Ben Gourion. / Et deux groupes plus radicaux : / l'Irgoun et le **Lehi**.  
 (23 mots, 1.9 par seconde)
 
 
-**14.3** · film **00:27:06:24 → 00:27:19:24** (13.0 s) · **[IA]** `à générer : reconstitution de l'hôtel King David après l'attentat (image de départ : output/reconstitution/22-king-david-1946.jpg)` · **À OBTENIR**  
+**14.3** · film **00:27:06:24 → 00:27:19:24** (13.0 s) · **[IA]** `output/reconstitutions/18-22-king-david-1946.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : attentat du 22 juillet 1946 : 91 morts ; photo SOURCES.md 2.2, matpc 12969 (Matson, juillet 1946)  
-À l'écran : carton : Jérusalem · 22 juillet 1946 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
+À l'écran : déjà dans le plan : 22 juillet 1946 · Jérusalem · L'hôtel King David après l'attentat de l'Irgoun · Photo d'archive animée par IA  
 > VOIX : Le 22 juillet 1946, l'Irgoun fait sauter une aile de l'hôtel King David, / siège de l'administration britannique à Jérusalem. // 91 **morts**.  
 (21 mots, 1.6 par seconde)
 
@@ -333,14 +334,16 @@ Film 00:31:07:14 → 00:32:18:00 · durée 1 min 10.4 s
 (21 mots, 1.2 par seconde)
 
 
-**17.3** · film **00:31:29:04 → 00:31:46:04** (17.0 s) · **[IA]** `à générer : reconstitution de l'arrivée d'immigrants juifs d'Irak à Lod, mai 1951 (image de départ : data/reconstitution/24-immigrants-irak-lod-1951.jpg)` · **À OBTENIR**  
+**17.3** · film **00:31:29:04 → 00:31:46:04** (17.0 s) · **[IA]** `output/reconstitutions/19-24-immigrants-irak-lod-1951.mp4` · source 00:00:00:00 → 00:00:17:00  
 Source : Farhoud, Bagdad, 1er et 2 juin 1941 (bilans de plus d'une centaine à près de deux cents morts) ; loi irakienne de 1950 ; expulsions d'Égypte après 1956  
+À l'écran : déjà dans le plan : Mai 1951 · Aéroport de Lod · Des immigrants juifs d'Irak à leur arrivée · Photo d'archive animée par IA  
 > VOIX : Certains fuient des violences : / à Bagdad, en juin 1941, le Farhoud fait plus d'une centaine de morts juifs. // Après 1948, l'Irak ne les laisse partir qu'en renonçant à leur nationalité ; / l'Égypte en expulse des milliers après **1956**.  
 (37 mots, 2.2 par seconde)
 
 
-**17.4** · film **00:31:46:04 → 00:32:02:04** (16.0 s) · **[IA]** `à générer : reconstitution de la maabara de Nahariya, février 1952 (image de départ : data/reconstitution/25-maabara-nahariya-1952.jpg)` · **À OBTENIR**  
+**17.4** · film **00:31:46:04 → 00:32:02:04** (16.0 s) · **[IA]** `output/reconstitutions/20-25-maabara-nahariya-1952.mp4` · source 00:00:00:00 → 00:00:16:00  
 Source : opérations Tapis volant (Yémen, 1949-1950) et Ezra et Néhémie (Irak, 1951-1952) ; maabarot  
+À l'écran : déjà dans le plan : Février 1952 · Nahariya · Une maabara, camp de transit des nouveaux immigrants · Photo d'archive animée par IA  
 > VOIX : D'autres sont poussés au départ par les émissaires sionistes, / qui organisent des ponts aériens, du Yémen à l'Irak. // En Israël, beaucoup vivent des années dans des camps de **toile**.  
 (29 mots, 1.8 par seconde)
 

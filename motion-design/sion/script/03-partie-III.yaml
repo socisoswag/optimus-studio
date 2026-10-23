@@ -221,19 +221,21 @@ chapitres:
         entree: 0
         sortie: 4.6
       - type: IA
-        fichier: "à générer : reconstitution de l'entraînement de la Haganah, avril 1948 (image de départ : data/reconstitution/27-haganah-1948.jpg)"
+        fichier: output/reconstitutions/17-27-haganah-1948.mp4
         photo: "Wikimedia Commons, « Training for the Hagana », GPO, 4 avril 1948, CC BY-SA 3.0"
-        duree: 12
-        a_obtenir: true
+        entree: 0
+        sortie: 12
+        ecran: "déjà dans le plan : Avril 1948 · Palestine · L'entraînement de recrues de la Haganah · la vraie photo, puis Reconstitution par IA, d'après une photo d'archive · GPO, CC BY-SA 3.0"
         voix: >-
           Côté juif, trois forces armées. / La Haganah, la plus grande, liée à Ben Gourion. / Et deux groupes plus
           radicaux : / l'Irgoun et le **Lehi**.
       - type: IA
-        fichier: "à générer : reconstitution de l'hôtel King David après l'attentat (image de départ : output/reconstitution/22-king-david-1946.jpg)"
-        duree: 13
-        a_obtenir: true
+        fichier: output/reconstitutions/18-22-king-david-1946.mp4
+        entree: 0
+        sortie: 13
+        photo: "Bibliothèque du Congrès, collection Matson, matpc 12969, juillet 1946"
         source: "attentat du 22 juillet 1946 : 91 morts ; photo SOURCES.md 2.2, matpc 12969 (Matson, juillet 1946)"
-        ecran: "carton : Jérusalem · 22 juillet 1946 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
+        ecran: "déjà dans le plan : 22 juillet 1946 · Jérusalem · L'hôtel King David après l'attentat de l'Irgoun · Photo d'archive animée par IA"
         voix: >-
           Le 22 juillet 1946, l'Irgoun fait sauter une aile de l'hôtel King David, / siège de l'administration
           britannique à Jérusalem. // 91 **morts**.
@@ -419,20 +421,22 @@ chapitres:
           Dans le même temps, environ 850 000 Juifs quittent les pays arabes, / du Maroc à l'Irak. / La plupart
           s'installent en **Israël**.
       - type: IA
-        fichier: "à générer : reconstitution de l'arrivée d'immigrants juifs d'Irak à Lod, mai 1951 (image de départ : data/reconstitution/24-immigrants-irak-lod-1951.jpg)"
+        fichier: output/reconstitutions/19-24-immigrants-irak-lod-1951.mp4
         photo: "Wikimedia Commons, « Immigrants 1951 », GPO, mai 1951, domaine public"
-        duree: 17
-        a_obtenir: true
+        entree: 0
+        sortie: 17
+        ecran: "déjà dans le plan : Mai 1951 · Aéroport de Lod · Des immigrants juifs d'Irak à leur arrivée · Photo d'archive animée par IA"
         source: "Farhoud, Bagdad, 1er et 2 juin 1941 (bilans de plus d'une centaine à près de deux cents morts) ; loi irakienne de 1950 ; expulsions d'Égypte après 1956"
         voix: >-
           Certains fuient des violences : / à Bagdad, en juin 1941, le Farhoud fait plus d'une centaine de morts juifs.
           // Après 1948, l'Irak ne les laisse partir qu'en renonçant à leur nationalité ; / l'Égypte en expulse des
           milliers après **1956**.
       - type: IA
-        fichier: "à générer : reconstitution de la maabara de Nahariya, février 1952 (image de départ : data/reconstitution/25-maabara-nahariya-1952.jpg)"
+        fichier: output/reconstitutions/20-25-maabara-nahariya-1952.mp4
         photo: "Wikimedia Commons, « Nahariya Maabara », Fritz Cohen, GPO, février 1952, domaine public"
-        duree: 16
-        a_obtenir: true
+        entree: 0
+        sortie: 16
+        ecran: "déjà dans le plan : Février 1952 · Nahariya · Une maabara, camp de transit des nouveaux immigrants · Photo d'archive animée par IA"
         source: "opérations Tapis volant (Yémen, 1949-1950) et Ezra et Néhémie (Irak, 1951-1952) ; maabarot"
         voix: >-
           D'autres sont poussés au départ par les émissaires sionistes, / qui organisent des ponts aériens, du Yémen à

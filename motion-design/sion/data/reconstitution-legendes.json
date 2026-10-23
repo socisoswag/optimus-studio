@@ -25,12 +25,12 @@
   "19-manifestation-jaffa-1933": { "eyebrow": "Octobre 1933", "place": "Jaffa", "sub": "La foule des manifestants face à la police britannique", "amb": "foule" },
   "20-greve-1936-souk-desert": { "eyebrow": "1936", "place": "Le souk des bijoutiers", "sub": "Désert pendant les six mois de grève générale", "amb": "vent_doux" },
   "21-maison-dynamitee-lydda-1936": { "eyebrow": "1936", "place": "Lydda", "sub": "Maison dynamitée par l’armée, ses habitants dans les décombres", "amb": "vent+village", "hold": 3.4 },
-  "22-king-david-1946": { "eyebrow": "22 juillet 1946", "place": "Jérusalem", "sub": "L’hôtel King David après l’attentat de l’Irgoun", "amb": "rafales" },
   "23-mur-occidental": { "eyebrow": "Entre 1898 et 1946", "place": "Jérusalem", "sub": "La prière au mur occidental", "amb": "rafales", "photo": 4.4, "vitesse": 0.55 },
-  "24-immigrants-irak-lod-1951": { "eyebrow": "Mai 1951", "place": "Aéroport de Lod", "sub": "Des immigrants juifs d’Irak à leur arrivée", "amb": "rafales", "credit": "GPO (domaine public)" },
-  "25-maabara-nahariya-1952": { "eyebrow": "Février 1952", "place": "Nahariya", "sub": "Une maabara, camp de transit des nouveaux immigrants", "amb": "rafales", "credit": "Fritz Cohen, GPO (domaine public)" },
-  "26-rosh-haayin-1950": { "eyebrow": "Février 1950", "place": "Rosh HaAyin", "sub": "Des immigrants yéménites au camp de transit", "amb": "vent_doux", "credit": "Zoltan Kluger, GPO (domaine public)" },
-  "27-haganah-1948": { "eyebrow": "Avril 1948", "place": "Palestine", "sub": "L’entraînement de recrues de la Haganah", "amb": "rafales", "credit": "GPO, CC BY-SA 3.0" },
-  "28-bund-1917": { "eyebrow": "1917", "place": "Empire russe", "sub": "Une manifestation du Bund, sous sa bannière en yiddish et en russe", "amb": "rafales", "hold": 4.4, "vitesse": 0.8 },
-  "29-tel-aviv-1909": { "eyebrow": "11 avril 1909", "place": "Au nord de Jaffa", "sub": "Sur les dunes, le tirage au sort des terrains de la future Tel-Aviv", "amb": "vent_doux", "credit": "Avraham Soskin (domaine public)" }
+  "28-bund-1917": { "eyebrow": "1917", "place": "Empire russe", "sub": "Une manifestation du Bund, sous sa bannière en yiddish et en russe", "amb": "rafales", "hold": 4.4, "vitesse": 0.8, "credit": "Wikimedia Commons (domaine public)" },
+  "29-tel-aviv-1909": { "eyebrow": "11 avril 1909", "place": "Au nord de Jaffa", "sub": "Sur les dunes, le tirage au sort des terrains de la future Tel-Aviv", "amb": "vent_doux", "credit": "Avraham Soskin (domaine public)" },
+  "27-haganah-1948": { "eyebrow": "Avril 1948", "place": "Palestine", "sub": "L’entraînement de recrues de la Haganah", "amb": "rafales+vent_doux", "credit": "GPO, CC BY-SA 3.0" },
+  "22-king-david-1946": { "eyebrow": "22 juillet 1946", "place": "Jérusalem", "sub": "L’hôtel King David après l’attentat de l’Irgoun", "amb": "rafales+pierre+village", "hold": 2.4 },
+  "24-immigrants-irak-lod-1951": { "eyebrow": "Mai 1951", "place": "Aéroport de Lod", "sub": "Des immigrants juifs d’Irak à leur arrivée", "amb": "rafales+village", "credit": "GPO (domaine public)", "hold": 5.5, "vitesse": 0.58 },
+  "25-maabara-nahariya-1952": { "eyebrow": "Février 1952", "place": "Nahariya", "sub": "Une maabara, camp de transit des nouveaux immigrants", "amb": "rafales+papier", "credit": "Fritz Cohen, GPO (domaine public)", "hold": 3.6, "vitesse": 0.85 },
+  "26-rosh-haayin-1950": { "eyebrow": "Février 1950", "place": "Rosh HaAyin", "sub": "Des immigrants yéménites au camp de transit", "amb": "rafales+salle", "credit": "Zoltan Kluger, GPO (domaine public)", "photo": 4.4, "vitesse": 0.9 }
 }

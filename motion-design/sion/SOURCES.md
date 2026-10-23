@@ -202,9 +202,24 @@ Fichiers dans `data/archives/documents/`.
   | Les troupes britanniques entrent par la porte de Jaffa (1917) | matpc 02225 | Google Veo (Gemini) | octobre 2026 |
   | La procession de Nebi Musa quitte Jérusalem | matpc 01218 | Google Veo (Gemini) | octobre 2026 |
   | Les bannières de Nebi Musa arrivent à al-Aqsa (1918) | matpc 05603 | Google Veo (Gemini) | octobre 2026 |
+  | Le laboureur et ses bœufs devant Jérusalem | LoC 2019702392 | Google Veo (Gemini) | octobre 2026 |
+  | L'aire de battage près de Bethléem | LoC 2019696292 | Google Veo (Gemini) | octobre 2026 |
+  | La manifestation de Jaffa (octobre 1933) | matpc 15788 | Google Veo | octobre 2026 |
+  | Le souk des bijoutiers vide pendant la grève (1936) | matpc 18170 | Google Veo | octobre 2026 |
+  | Lydda, la maison dynamitée (1936) | matpc 18126 | Google Veo | octobre 2026 |
+  | Juifs en prière au mur occidental | matpc 04802 | Google Veo | octobre 2026 |
+  | Une manifestation du Bund (1917) | Wikimedia Commons, « Bundist demonstration » | Google Veo | octobre 2026 |
+  | Le tirage au sort des terrains de Tel-Aviv (1909) | Wikimedia Commons, Avraham Soskin | Google Veo | octobre 2026 |
+  | L'entraînement de recrues de la Haganah (1948) | Wikimedia Commons, GPO, CC BY-SA 3.0 | Kling | octobre 2026 |
+  | L'hôtel King David après l'attentat (1946) | matpc 12969 | Kling | octobre 2026 |
+  | Des immigrants juifs d'Irak à l'aéroport de Lod (1951) | Wikimedia Commons, GPO | Kling | octobre 2026 |
+  | La maabara de Nahariya (1952) | Wikimedia Commons, Fritz Cohen, GPO | Kling | octobre 2026 |
+  | Des immigrants yéménites à Rosh HaAyin (1950) | Wikimedia Commons, Zoltan Kluger, GPO | Kling | octobre 2026 |
 
   À surveiller : l'IA invente parfois des inscriptions (faux arabe sur les bannières de Nebi Musa en fin de clip) ;
-  ces passages sont coupés au montage, aucune inscription inventée n'est montrée.
+  ces passages sont coupés au montage, aucune inscription inventée n'est montrée. Même règle pour les silhouettes
+  qui se déforment : la fin du clip de Lod (une silhouette qui se dissout dans la poussière) est coupée.
+  La source affichée à l'écran est celle de chaque photo (Matson, GPO ou Wikimedia Commons).
 - **Scène du vote de l'ONU (29 novembre 1947)**, générée par IA sans photo de départ.
   Mention à l'écran : « Scène reconstituée par IA ».
 - **Archives en relief** : profondeur estimée par le modèle Depth Anything V2 (Apache 2.0). C'est un relief

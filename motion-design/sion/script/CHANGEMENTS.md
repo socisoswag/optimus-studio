@@ -55,3 +55,22 @@ Haganah 1948, 17.3 Lod 1951, 17.4 la maabara de Nahariya 1952, 28.3 Rosh HaAyin 
 `08.14-IA-13-21-maison-dynamitee-lydda-1936.mp4` (Lydda, 1936), `10.03-IA-15-28-bund-1917.mp4` (le Bund, 1917 ; la
 banderole en russe et en yiddish est restée fidèle à la photo), `10.04-IA-14-23-mur-occidental.mp4` (le mur
 occidental ; la vraie photo plus longue, puis ton clip un peu ralenti pour tenir les 14 s).
+
+## 23 octobre 2026
+
+**Nouveaux plans (tes clips Kling ; avant : « à venir »)**
+
+| Plan | Nouveau fichier | Ce que c'est |
+|---|---|---|
+| 14.02 | `14.02-IA-17-27-haganah-1948.mp4` | l'entraînement de recrues de la Haganah, avril 1948 |
+| 14.03 | `14.03-IA-18-22-king-david-1946.mp4` | l'hôtel King David après l'attentat, 22 juillet 1946 |
+| 17.03 | `17.03-IA-19-24-immigrants-irak-lod-1951.mp4` | des immigrants juifs d'Irak à l'aéroport de Lod, mai 1951 (la fin du clip est coupée : une silhouette s'y déformait ; la photo reste plus longtemps et le clip est ralenti) |
+| 17.04 | `17.04-IA-20-25-maabara-nahariya-1952.mp4` | la maabara de Nahariya, février 1952 |
+| 28.03 | `28.03-IA-21-26-rosh-haayin-1950.mp4` | des immigrants yéménites au camp de Rosh HaAyin, février 1950 |
+
+**Même nom, nouvelle version (correction de la source affichée)** : 05.06 (Tel-Aviv 1909 : « Avraham Soskin,
+domaine public ») et 10.03 (le Bund : « Wikimedia Commons, domaine public ») affichaient par erreur « Matson ·
+Bibliothèque du Congrès ». Les autres plans de reconstitution des parties I et II sont refaits à l'identique.
+
+Toutes les reconstitutions prévues sont maintenant faites.
+

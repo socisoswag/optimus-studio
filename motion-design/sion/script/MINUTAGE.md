@@ -54,11 +54,6 @@
 
 ## Images à obtenir
 
-- 14.2 : à générer : reconstitution de l'entraînement de la Haganah, avril 1948 (image de départ : data/reconstitution/27-haganah-1948.jpg)
-- 14.3 : à générer : reconstitution de l'hôtel King David après l'attentat (image de départ : output/reconstitution/22-king-david-1946.jpg)
 - 16.6 : à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)
-- 17.3 : à générer : reconstitution de l'arrivée d'immigrants juifs d'Irak à Lod, mai 1951 (image de départ : data/reconstitution/24-immigrants-irak-lod-1951.jpg)
-- 17.4 : à générer : reconstitution de la maabara de Nahariya, février 1952 (image de départ : data/reconstitution/25-maabara-nahariya-1952.jpg)
 - 26.2 : à télécharger : colons du Goush Emounim, Sébastia, 1975 (GPO, domaine public)
 - 28.2 : à télécharger : manifestation des Black Panthers israéliens, Jérusalem, 1971 (GPO, domaine public)
-- 28.3 : à générer : reconstitution de les immigrants yéménites de Rosh HaAyin, février 1950 (image de départ : data/reconstitution/26-rosh-haayin-1950.jpg) (la commission Kedmi n'a pas retenu d'enlèvements organisés ; l'indemnisation est accordée sans reconnaissance de responsabilité)

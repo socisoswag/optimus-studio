@@ -23,15 +23,7 @@ Prompt de base (à coller, puis ajouter la ligne du plan) :
 
 Le texte complet, prêt à coller plan par plan, est aussi dans `output/a-faire-gemini/PROMPTS.txt`.
 
-**Photos prêtes** (1920 x 1080, dans `Script/photos-de-depart/`) :
-
-| Plan | Durée | Ce qu'on doit voir | Photo de départ | Ligne à ajouter au prompt |
-|---|---|---|---|---|
-| 14.3 | 13 s | l'hôtel King David après l'attentat, 22 juillet 1946 | `output/reconstitution/22-king-david-1946.jpg` | Thin dust and smoke drift from the collapsed wing; the crane arms move slowly; soldiers and rescuers search the rubble. No bodies, no blood. |
-| 17.3 | 17 s | des immigrants juifs d'Irak arrivent à l'aéroport de Lod, mai 1951 (photo 6) | `data/reconstitution/24-immigrants-irak-lod-1951.jpg` | The families wait next to the truck; a man hands bundles and bags down from the truck to the people below; the propeller plane stands still in the background; wind moves the scarves and the clothes. |
-| 17.4 | 16 s | la maabara de Nahariya, février 1952 (photo 7) | `data/reconstitution/25-maabara-nahariya-1952.jpg` | The women at the table fill in forms and talk; the man with the briefcase walks slowly toward the table; the tablecloth moves slightly in the wind. |
-| 28.3 | 16 s | des immigrants yéménites au camp de Rosh HaAyin, février 1950 (photo 8) | `data/reconstitution/26-rosh-haayin-1950.jpg` | The crowd of families stands in front of the tents with small movements: heads turn, a mother holds her child, people shift their weight; wind moves the tent canvas. |
-| 14.2 | 12 s | l'entraînement de recrues de la Haganah, avril 1948 (photo 9) | `data/reconstitution/27-haganah-1948.jpg` | The young recruits stand and listen in the courtyard; a few walk slowly forward holding their rifles; slight wind in the pine tree. |
+**Photos prêtes** : toutes faites (les 5 dernières, 14.2, 14.3, 17.3, 17.4 et 28.3, avec Kling le 23 octobre).
 
 **Photos à télécharger toi-même** sur Wikimedia Commons (mots à taper entre guillemets ; envoie-moi la photo avec le clip) :
 
@@ -46,11 +38,13 @@ images reconstituées.
 
 ## 2. Clips Gemini déjà reçus
 
-Reçus et reconnus (11) : les orangeraies de Jaffa, le port de Jaffa, le marché aux moutons de la porte de Damas, la
+Reçus et reconnus (21) : les orangeraies de Jaffa, le port de Jaffa, le marché aux moutons de la porte de Damas, la
 savonnerie de Naplouse, l'entrée des troupes britanniques par la porte de Jaffa (1917), la procession de Nebi Musa, les
 bannières de Nebi Musa à al-Aqsa, la place du marché de Jaffa, le laboureur et ses bœufs devant Jérusalem (plan 5.5),
-l'aire de battage près de Bethléem, la manifestation de Jaffa en 1933 (plan 8.12). Il manque seulement **la scène du vote de l'ONU (1947)** : renvoie-la si tu l'as
-encore.
+l'aire de battage près de Bethléem, la manifestation de Jaffa en 1933 (8.12), le souk vide en 1936 (8.13), Lydda en
+1936 (8.14), le mur occidental (10.4), le Bund en 1917 (10.3), Tel-Aviv en 1909 (5.6), puis avec Kling : la Haganah
+(14.2), l'hôtel King David (14.3), Lod en 1951 (17.3), la maabara de Nahariya (17.4) et Rosh HaAyin (28.3). Il manque
+seulement **la scène du vote de l'ONU (1947)** : renvoie-la si tu l'as encore.
 
 ## 3. Événements récents : faits en fiches sur la carte (fait)
 

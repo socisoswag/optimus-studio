@@ -104,7 +104,8 @@ for name in order:
     vf = f"{vit}fps={FPS},scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080"
     subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", found[name], "-vf", vf, "-q:v", "3", os.path.join(out, "%04d.jpg")], check=True)
     n = len(glob.glob(os.path.join(out, "*.jpg")))
-    src = "Bibliothèque du Congrès" if name == "07-immigrants-ellis-island" else SRC_CREDIT
+    # source de la photo : « credit » des légendes (photos hors fonds Matson : GPO, Wikimedia Commons), sinon Matson
+    src = L.get("credit") or ("Bibliothèque du Congrès" if name == "07-immigrants-ellis-island" else SRC_CREDIT)
     lab = {"eyebrow": L.get("eyebrow", ""), "place": L.get("place", ""), "sub": L.get("sub", ""), "at": 0.35}
     clip = {"frames": {"dir": f"output/reconstitution/images/{name}", "n": n, "fps": FPS},
             "from": {"cx": 0.5, "cy": 0.5, "w": 1.0, "focus": 0.5}, "to": {"cx": 0.5, "cy": 0.5, "w": 0.95, "focus": 0.5}}
