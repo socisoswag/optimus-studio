@@ -5,7 +5,8 @@
  * Faits retenus (rapport de la commission royale pour la Palestine, Cmd. 5479, 7 juillet 1937) :
  *   - premier plan de partage : un État juif (Galilée, vallée de Jezréel, plaine côtière), un État arabe uni à la
  *     Transjordanie, une zone sous mandat britannique (Jérusalem, Bethléem et un couloir jusqu'à la mer ; Nazareth) ;
- *   - un « transfert » de population : jusqu'à 225 000 Arabes hors de l'État juif, 1 250 Juifs dans l'autre sens ;
+ *   - un « transfert » de population : « Sooner or later there should be a transfer of land and, as far as possible, an
+ *     exchange of population » ; environ 225 000 Arabes dans la zone de l'État juif, environ 1 250 Juifs dans la zone arabe ;
  *   - les dirigeants arabes refusent ; le 20e congrès sioniste (Zurich, août 1937) accepte le principe du partage mais
  *     rejette ce tracé ; en novembre 1938, après la commission Woodhead, Londres abandonne le plan.
  * Tracés : data/peel-1937.js (tools/prep_peel.py, d'après la carte « Peel map pd.png », Wikimedia Commons, domaine

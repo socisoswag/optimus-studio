@@ -191,7 +191,23 @@ par plan (les autres donnent au mieux une bibliographie en description), cartes 
    data.techforpalestine.org) : combien de noms dans la mise à jour du 27 juillet 2026, combien d'enfants de moins de
    18 ans et de moins d'un an ? Le site donne 72 835 noms, 21 637 enfants, 1 072 de moins d'un an. »
 
-## 11. À confirmer sur Perplexity (cartes « Le plan Peel » et « L'eau », 23 octobre 2026)
+## 11. Cartes « Le plan Peel » et « L'eau » : vérifié le 23 octobre au soir (Perplexity à court de crédits, sources primaires)
+
+- Peel, transfert : CONFIRMÉ sur le texte du rapport (Cmd. 5479, chapitre XXII, texte sur la Jewish Virtual Library) :
+  « Sooner or later there should be a transfer of land and, as far as possible, an exchange of population. » ;
+  « in the area allocated to the Jewish State [...] there are now about 225,000 Arabs. In the area allocated to the
+  Arab State there are only about 1,250 Jews ».
+- 20e congrès sioniste (Zurich, août 1937) : CONFIRMÉ (Encyclopaedia Judaica, « Palestine, Partition and Partition
+  Plans ») : le plan est jugé inacceptable, l'exécutif est autorisé à négocier les termes précis d'un État juif, à
+  soumettre à un nouveau congrès. Abandon par Londres : déclaration de novembre 1938 après le rapport Woodhead (Cmd. 5893).
+- B'Tselem, Parched (mai 2023) : CONFIRMÉ, 82,4 et 247 litres ; « the World Health Organization and the United States
+  Agency for International Development recommend 100 liters of water per person per day ». Israël, de son côté,
+  invoque l'accord intérimaire de 1995.
+- Amnesty, Troubled Waters (octobre 2009) : CONFIRMÉ, « Israel uses more than 80 per cent of the water from the Mountain
+  Aquifer » ; le comité mixte de l'eau décide par consensus (Oslo II, annexe III, article 40), chaque côté peut donc
+  refuser un projet.
+
+Questions gardées pour Perplexity (quand le compte aura des crédits) :
 
 1. « Dans le rapport de la commission royale pour la Palestine (commission Peel, Cmd. 5479, 7 juillet 1937), quels
    chiffres exacts sont donnés pour le transfert de population proposé (Arabes de l'État juif, Juifs de l'État arabe) ?
