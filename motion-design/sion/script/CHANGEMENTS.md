@@ -262,3 +262,8 @@ deviennent 8.22 et suivants. Chapitre 23 : 23.15 et suivants deviennent 23.18 et
 **Intifadas** (chapitre 22) : chiffres vérifiés sur les tableaux de B'Tselem (1 070 Palestiniens tués par les forces
 israéliennes de 1987 à 1993, dont 237 mineurs ; 100 civils et 60 membres des forces de sécurité israéliens) ; la voix
 ne change pas.
+
+**Rendu de toutes les cartes** : le relief est maintenant étalonné comme au cinéma (ombres froides et profondes,
+pentes éclairées chaudes, brume bleutée au loin), la grille de points s'efface sous le relief, et le grain est plus fin
+et plus doux (il tient mieux à la compression de YouTube et au téléphone). Toutes les pièces sont refaites, mêmes noms.
+

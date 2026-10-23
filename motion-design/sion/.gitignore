@@ -37,3 +37,5 @@ output/
 data/stock/
 # Copies temporaires des essais de relief (scratchpad/relief/essai.sh)
 timelines/zz-*.js
+engine-essai.js
+index-essai.html

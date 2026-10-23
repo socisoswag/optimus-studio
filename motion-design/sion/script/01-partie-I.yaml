@@ -161,7 +161,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1903-ellis-island-immigrants.mp4
         entree: 0
-        sortie: 6
+        sortie: 5.76
         source: "SOURCES.md 4.2 (Emigrants [i.e. Immigrants] Landing at Ellis Island, Thomas A. Edison, Inc., 1903, domaine public)"
         ecran: "carton : Ellis Island, New York · 1903"
         son: "salle immense, murmures, tampon"
@@ -395,7 +395,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1897-lumiere-jerusalem-porte-de-jaffa.mp4
         entree: 0
-        sortie: 10
+        sortie: 9.6
         source: "SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine public)"
         ecran: "carton : Jérusalem · avril 1897 · film des frères Lumière"
         voix: >-

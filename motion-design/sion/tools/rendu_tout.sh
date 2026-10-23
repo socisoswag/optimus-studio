@@ -6,7 +6,7 @@ flock -n 9 || exit 0
 rm -rf /tmp/chrono-* 2>/dev/null
 LOG=output/rendu-tout.log
 export CRF=20 WORKERS=3
-LISTE="suez-1956 six-jours octobre-1973 eau peel-1937 sykes-picot frontieres nakba-1948 camps liban-1982 gaza gaza-guerres terres-1945 aliyas flux-humains europe-1881-1914 oslo-mur jerusalem noms-effaces deir-yassin trois-promesses chronologie les-noms generique-fin chapitres partie-1 partie-2 partie-3 partie-4 partie-5 partie-6 partie-7 citation-ben-gourion citation-darwich citation-herzl citation-meir chiffre-colons chiffre-zone-c figures-aujourdhui resolutions apartheid-textes genocide-textes documents documents-2 documents-3 documents-7 portraits-1 portraits-2 portraits-3 documents-6"
+LISTE="suez-1956 six-jours octobre-1973 eau peel-1937 sykes-picot frontieres nakba-1948 camps liban-1982 gaza gaza-guerres terres-1945 aliyas flux-humains europe-1881-1914 oslo-mur jerusalem noms-effaces deir-yassin trois-promesses chronologie les-noms generique-fin chapitres partie-1 partie-2 partie-3 partie-4 partie-5 partie-6 partie-7 citation-ben-gourion citation-darwich citation-herzl citation-meir chiffre-colons chiffre-zone-c figures-aujourdhui resolutions apartheid-textes genocide-textes documents documents-2 documents-3 documents-7 portraits-1 portraits-2 portraits-3 documents-6 chiffre-gaza chiffre-refugies conclusion documents-4 gaza-vue-du-ciel generique guerre-numerique mur-cicatrice partage-1947 sion-le-mot villages-lumieres"
 {
   echo "=== $(date -u +%H:%M) départ"
   for t in $LISTE; do

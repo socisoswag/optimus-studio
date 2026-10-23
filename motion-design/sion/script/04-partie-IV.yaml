@@ -73,7 +73,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1956-nasser-canal-de-suez.mp4
         entree: 0
-        sortie: 7
+        sortie: 6.71
         ecran: "carton : juillet 1956 · Égypte · Nasser nationalise le canal de Suez"
         source: "actualités Universal du 30 juillet 1956 (archives nationales américaines), domaine public"
         voix: >-
@@ -168,7 +168,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1967-sinai-gaza.mp4
         entree: 0
-        sortie: 9.7
+        sortie: 9.24
         ecran: "carton : juin 1967 · Sinaï et Gaza · « Welcome to Gaza », le panneau de l'armée israélienne"
         source: "actualités Universal du 9 juin 1967 (archives nationales américaines), domaine public"
         note: "respiration d'archive, sans voix"
@@ -181,7 +181,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1967-jerusalem.mp4
         entree: 0
-        sortie: 8
+        sortie: 7.67
         ecran: "carton : juin 1967 · Jérusalem · Moshe Dayan dans la vieille ville"
         source: "actualités Universal du 13 juin 1967 (archives nationales américaines), domaine public"
         note: "respiration d'archive, sans voix"

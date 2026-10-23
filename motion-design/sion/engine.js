@@ -526,13 +526,19 @@
     return c;
   })();
 
-  // grain argentique
+  // grain argentique : fin et doux (grains de 1 à 2 pixels, adoucis), comme une pellicule, pas un bruit d'écran ;
+  // un grain dur pixel par pixel devient de la bouillie une fois compressé par YouTube
   const GRAIN = (() => {
     const s = 512, c = canvas(s, s), g = c.getContext('2d'), img = g.createImageData(s, s), r = mulberry32(77);
-    for (let i = 0; i < s * s; i++) {
-      const v = (r() + r() + r() + r() - 2) * 0.5; // ~ gaussien
-      const k = 128 + v * 150;
-      img.data[i * 4] = img.data[i * 4 + 1] = img.data[i * 4 + 2] = k; img.data[i * 4 + 3] = 255;
+    const n = new Float32Array(s * s);
+    for (let i = 0; i < s * s; i++) n[i] = (r() + r() + r() + r() - 2) * 0.5; // ~ gaussien
+    // léger flou (noyau 3 x 3, bords bouclés) : le grain s'arrondit
+    for (let y = 0; y < s; y++) for (let x = 0; x < s; x++) {
+      let a = 0;
+      for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) a += n[((y + dy + s) % s) * s + ((x + dx + s) % s)] * (dx || dy ? (dx && dy ? 0.05 : 0.1) : 0.4);
+      const k = 128 + a * 210;
+      const i = (y * s + x) * 4;
+      img.data[i] = img.data[i + 1] = img.data[i + 2] = k; img.data[i + 3] = 255;
     }
     g.putImageData(img, 0, 0);
     return c;
@@ -717,6 +723,8 @@
   }
   function drawDots(g, sources, t, mot) {
     const pxPerDeg = D2R * Ps;
+    // sous le relief, la grille de points se fait discrète (elle ne garde que ses lueurs autour des événements)
+    const dotDim = PART && PART.C.terres ? 1 - 0.7 * landAlpha(t) * reliefZoom(camAt(t)) : 1;
     const heat = [];
     const NS = sources.length;
     const wLev = gridWeight(0.05, 0.05 * pxPerDeg), wLev2 = gridWeight(0.025, 0.025 * pxPerDeg);
@@ -729,7 +737,7 @@
       // fondu spatial avec les zones fines
       const isLocal = grid.step === 0.08, isLev = grid.step === 0.05, isLev2 = grid.step === 0.025;
       const blend = (isLocal && wLev > 0.01) || isLev || isLev2;
-      g.fillStyle = rgba(COL.map, 0.5 * a);
+      g.fillStyle = rgba(COL.map, 0.5 * a * dotDim);
       g.beginPath();
       for (let i = 0; i < A.length; i += 2) {
         const X = A[i], Y = A[i + 1];
@@ -1776,8 +1784,22 @@
     const mag = Ps / T.su;
     return clamp((7 - mag) / 3);
   }
+  // étalonnage du relief sur toutes les terres : ombres froides et profondes, pentes éclairées chaudes (lumière de fin
+  // de journée), brume bleutée au loin ; table de 256 teintes par interpolation de quelques repères
+  const GRADE = (() => {
+    const K = [[0, [6, 9, 14]], [70, [30, 36, 45]], [118, [76, 71, 62]], [150, [128, 109, 84]], [190, [184, 151, 108]], [255, [248, 208, 152]]];
+    const L = new Uint8ClampedArray(256 * 3);
+    for (let v = 0; v < 256; v++) {
+      let j = 0;
+      while (j < K.length - 2 && v > K[j + 1][0]) j++;
+      const [v0, c0] = K[j], [v1, c1] = K[j + 1], f = clamp((v - v0) / (v1 - v0));
+      for (let c = 0; c < 3; c++) L[v * 3 + c] = c0[c] + (c1[c] - c0[c]) * f;
+    }
+    return L;
+  })();
+  const HAZE_C = [150, 158, 166], AIR_C = [92, 104, 118];
   // rendu point par point : chaque pixel de l'écran retrouve son point du sol (projection inverse)
-  function renderRelief(cam, box, RT = 0) {
+  function renderRelief(cam, box, RT = 0, graded = false) {
     const base = RLF.base;
     if (!base) return false;
     const layers = [];
@@ -1811,6 +1833,8 @@
       const rx0 = (x0 - Pox) / k, drx = 1 / k;
       let X = Pcx + (Pcb * rx0 + Psb * ry) / Ps, Y = Pcy - (-Psb * rx0 + Pcb * ry) / Ps;
       const dX = (Pcb * drx) / Ps, dY = (Psb * drx) / Ps;
+      // perspective aérienne : le lointain bleuit et se voile (seulement caméra inclinée)
+      const air = graded ? 0.34 * Math.pow(clamp(1 - sy / H), 1.7) * clamp(Psp / 0.7) : 0;
       for (let sx = x0; sx < x1; sx++, i += 4, X += dX, Y += dY) {
         let val = 0, mist = 0, cov = 0;
         for (let q = 0; q < nl; q++) {
@@ -1840,8 +1864,18 @@
           }
         }
         // brume : les creux s'éclaircissent et se voilent, plus fort au loin (haut de l'image)
-        if (mist > 0.01) { const m2 = Math.min(1, mist * mist * mist * 2.2) * hz * (0.5 + 0.5 * (1 - sy / H)); val += (226 - val) * m2; }
-        d[i] = d[i + 1] = d[i + 2] = val; d[i + 3] = cov >= 0.998 ? 255 : cov * 255;
+        const m2 = mist > 0.01 ? Math.min(1, mist * mist * mist * 2.2) * hz * (0.5 + 0.5 * (1 - sy / H)) : 0;
+        if (graded) {
+          const q = (val < 0 ? 0 : val > 255 ? 255 : val | 0) * 3;
+          let r = GRADE[q], gg = GRADE[q + 1], b = GRADE[q + 2];
+          if (m2 > 0) { r += (HAZE_C[0] - r) * m2; gg += (HAZE_C[1] - gg) * m2; b += (HAZE_C[2] - b) * m2; }
+          if (air > 0.002) { r += (AIR_C[0] - r) * air; gg += (AIR_C[1] - gg) * air; b += (AIR_C[2] - b) * air; }
+          d[i] = r; d[i + 1] = gg; d[i + 2] = b;
+        } else {
+          if (m2 > 0) val += (226 - val) * m2;
+          d[i] = d[i + 1] = d[i + 2] = val;
+        }
+        d[i + 3] = cov >= 0.998 ? 255 : cov * 255;
       }
     }
     rcx.clearRect(0, 0, W, H);
@@ -1987,15 +2021,19 @@
     const OFF = pieceOffsets(t);
     if (A > 0.004 && PART.C.terres) {
       // relief sur toutes les terres de l'image (Palestine, pays voisins, Europe), pas seulement sur la Palestine mandataire
-      if (renderRelief(cam, [0, 0, W, H], t)) {
+      const graded = PART.C.grade !== false;
+      if (renderRelief(cam, [0, 0, W, H], t, graded)) {
         const tc = tintCanvas('neutre'), col = PSTATE.neutre(), shade = PART.C.shade || 1.0;
         tc.globalCompositeOperation = 'copy'; tc.globalAlpha = 1;
         tc.drawImage(RC, 0, 0);
-        tc.globalCompositeOperation = 'multiply';
-        tc.fillStyle = `rgb(${Math.round(col[0] * shade)},${Math.round(col[1] * shade)},${Math.round(col[2] * shade)})`;
-        tc.fillRect(0, 0, W, H);
+        if (!graded) {
+          tc.globalCompositeOperation = 'multiply';
+          tc.fillStyle = `rgb(${Math.round(col[0] * shade)},${Math.round(col[1] * shade)},${Math.round(col[2] * shade)})`;
+          tc.fillRect(0, 0, W, H);
+          tc.globalCompositeOperation = 'destination-in';
+          tc.drawImage(RC, 0, 0);
+        }
         tc.globalCompositeOperation = 'destination-in';
-        tc.drawImage(RC, 0, 0);
         // seulement sur la terre : côtes et lacs de la carte
         const lm = landMask(cam);
         tc.drawImage(lm, 0, 0);
@@ -3572,12 +3610,12 @@
     const ox = Math.floor(rnd() * 512), oy = Math.floor(rnd() * 512);
     for (let y = -oy; y < H; y += 512) for (let x = -ox; x < W; x += 512) gr.drawImage(GRAIN, x, y);
     // poussières et rayures de pellicule
-    const nd = Math.floor(rnd() * 5);
+    const nd = rnd() < 0.35 ? 1 : 0;
     for (let i = 0; i < nd; i++) {
       gr.fillStyle = rnd() < 0.5 ? 'rgba(0,0,0,.9)' : 'rgba(255,255,255,.8)';
       gr.beginPath(); gr.ellipse(rnd() * W, rnd() * H, 1 + rnd() * 3, 1 + rnd() * 2, rnd() * 3, 0, 7); gr.fill();
     }
-    if (rnd() < 0.08) { gr.fillStyle = 'rgba(255,255,255,.55)'; gr.fillRect(rnd() * W, 0, 1.2, H); }
+    if (rnd() < 0.02) { gr.fillStyle = 'rgba(255,255,255,.4)'; gr.fillRect(rnd() * W, 0, 1.2, H); }
   }
 
   // Charge chaque photo détourée, repère la tête dans le canal alpha et y place réticule et nom.
