@@ -91,6 +91,7 @@
     name: 'trois-promesses',
     seed: 1915,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', 'Chapitre 7 · Trois promesses, de 1915 à 1917'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

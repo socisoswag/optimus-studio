@@ -84,6 +84,7 @@
     name: 'flux-humains',
     seed: 1949,
     segments,
+    relief: true,
     markers,
     flows,
     hud: { label: ['Sion', 'Chapitres 13 et 17 · Exodes'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },

@@ -220,6 +220,7 @@
   root.TL = root.buildTL({
     name: 'chronologie',
     segments,
+    relief: true,
     events,
     hud: { label: ['Israël · Palestine', 'Chronologie des figures'], index: true, coords: true, ruler: true, odo: true, from: 4.6 },
     sound: {

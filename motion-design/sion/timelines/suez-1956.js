@@ -139,6 +139,7 @@
     name: 'suez-1956',
     seed: 1956,
     segments,
+    relief: true,
     cities: root.CITIES.filter(([n]) => !['Jaffa', 'Rishon LeZion', 'Le Golan', 'Eilat', 'Suez', 'Port-Saïd'].includes(n)),
     markers,
     units,

@@ -79,6 +79,7 @@
     name: 'aliyas',
     seed: 1882,
     segments,
+    relief: true,
     flows,
     markers,
     clock,
