@@ -113,7 +113,7 @@ donnent maintenant les chiffres exacts et datés. Gaza au 22 octobre 2026 (25.21
 Macron, phrase exacte (31.16) ; les vetos : 52 depuis 1972 (33.9) ; les tribunaux militaires et la détention
 administrative (35.19) ; la photo du Goush Emounim (26.2) : « Mont Huwara, près de Naplouse » (même nom, nouvelle version).
 
-**Quarante-sept plans ajoutés** (le film passe à 1 h 28 min 23). Fiches sur la carte (`<plan>-MD-documents-6.mp4` ou
+**Quarante-neuf plans ajoutés** (le film passe à 1 h 28 min 56). Fiches sur la carte (`<plan>-MD-documents-6.mp4` ou
 `documents-7`), vraies photos d'archives (`PHOTO`, collection Matson) et une nouvelle séquence, `genocide-textes` :
 
 | Plan | Ce que c'est |
@@ -121,6 +121,7 @@ administrative (35.19) ; la photo du Goush Emounim (26.2) : « Mont Huwara, prè
 | 5.04 à 5.06 | le baron Edmond de Rothschild ; photos d'archives : Zikhron Yaakov, les caves de Rishon LeZion |
 | 6.11 à 6.13 | le code foncier ottoman de 1858 ; Petah Tikva, 1886, le premier heurt ; le Fonds national juif, 1901 |
 | 8.11 à 8.13 | la vente de la plaine de Jezréel par les Sursock ; photo d'archive : un tracteur dans la plaine ; le rapport Hope Simpson, 1930 |
+| 11.09 | archive filmée : des réfugiés juifs d'Europe débarquent en Palestine, juin 1946 |
 | 13.04 | le plan Dalet, mars 1948 |
 | 15.08 | Tantura et al-Dawayima, 1948 |
 | 22.08 | le document du Hamas de 2017 |
@@ -133,7 +134,8 @@ administrative (35.19) ; la photo du Goush Emounim (26.2) : « Mont Huwara, prè
 | 25.31 à 25.35 | « Lavender » ; la « Riviera » de Trump ; onze semaines sans aide ; tués en cherchant à manger ; depuis le cessez-le-feu (`gaza`) |
 | 26.09 | le projet E1, août 2025 |
 | 31.11 à 31.15 | des pièces françaises ; manifester pour Gaza ; Meyer Habib ; les réseaux pro-israéliens ; les pressions sur Paris |
-| 33.12 à 33.14 | les soutiens d'Israël aux États-Unis ; les entreprises des colonies ; l'économie de l'occupation (Albanese) |
+| 33.10 | archive filmée : le pont aérien américain vers Israël, octobre 1973 (un char déchargé à Lod) |
+| 33.13 à 33.15 | les soutiens d'Israël aux États-Unis ; les entreprises des colonies ; l'économie de l'occupation (Albanese) |
 | 34.10 | effacer aussi la mémoire : le patrimoine de Gaza |
 | 35.09 à 35.18 | « Génocide : ce que disent les textes » : la convention de 1948, Amnesty, Human Rights Watch, B'Tselem, les chercheurs du génocide, Omer Bartov, la commission de l'ONU, puis la réponse d'Israël |
 | 35.20 | « Bienvenue en enfer » : les prisons, Sde Teiman |
@@ -150,6 +152,7 @@ Les plans qui suivent un ajout changent de numéro (même image, nouveau nom de 
 | 5.04 à 5.06 | 5.07 à 5.09 |
 | 6.11 à 6.16 | 6.14 à 6.19 |
 | 8.11 à 8.18 | 8.14 à 8.21 |
+| 11.09 et 11.10 | 11.10 et 11.11 |
 | 13.04 à 13.15 | 13.05 à 13.16 |
 | 22.08 à 22.11 | 22.09 à 22.12 |
 | 25.07 | 25.08 |
@@ -160,17 +163,21 @@ Les plans qui suivent un ajout changent de numéro (même image, nouveau nom de 
 | 25.23 | 25.36 (même image, la voix ne dit plus que « Une prison à ciel ouvert, devenue un champ de ruines ») |
 | 26.09 | 26.10 |
 | 31.11 et 31.12 | 31.16 et 31.17 |
+| 33.10 et 33.11 | 33.11 et 33.12 |
 | 35.09 | 35.19 |
 | 35.10 | 35.21 |
 | 38.06 à 38.08 | 38.07 à 38.09 |
+
+**En réserve** : `13.R2-ARCH-…` Amman fête l'indépendance de la Transjordanie, l'émir Abdallah et la Légion arabe (1946),
+pour l'annexion de la Cisjordanie (13.10).
 
 **Même nom, nouvelle version** : toutes les fiches `documents-6` (chiffres exacts, rythme : chaque ligne reste à
 l'écran au moins 2,6 s et la note au moins 3,4 s), `gaza` (bilan au 22 octobre 2026, nouvelle fiche avant la fin),
 le générique de fin (archives filmées, nouveaux crédits photo).
 
 **Vérifications des séries 2 et 3 intégrées (même nuit)** : plus aucun plan « à vérifier ». Corrections à l'écran et
-dans la voix : Meyer Habib (31.13, sa phrase à l'Assemblée du 23 octobre 2023), ELNET (31.14), Albanese (33.14), les
-entreprises des colonies (33.13), l'AIPAC (33.12), les chrétiens de Palestine (38.06), le Néguev (28.08), le code de
+dans la voix : Meyer Habib (31.13, sa phrase à l'Assemblée du 23 octobre 2023), ELNET (31.14), Albanese (33.15), les
+entreprises des colonies (33.14), l'AIPAC (33.13), les chrétiens de Palestine (38.06), le Néguev (28.08), le code de
 1858 (6.11), Petah Tikva (6.12), le Fonds national juif (6.13), les Sursock (8.11), Hope Simpson (8.13), les paroles
 de 2023 (25.20), le blocus de 2025 (25.33), E1 (26.09), le patrimoine de Gaza (34.10), la séquence génocide
 (35.09 à 35.18). Tout le scénario peut s'enregistrer.

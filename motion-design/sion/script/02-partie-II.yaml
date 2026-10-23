@@ -536,6 +536,14 @@ chapitres:
           En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine
           devienne « un Commonwealth **juif** ».
       - type: ARCH
+        fichier: output/archives-filmees/1946-refugies-juifs-palestine.mp4
+        entree: 0
+        sortie: 15
+        ecran: "carton : 1946 · Palestine · Des réfugiés juifs d'Europe débarquent"
+        source: "United News (Office of War Information), actualité de juin 1946, archives nationales américaines ARC 39119, domaine public"
+        voix: >-
+          En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.
+      - type: ARCH
         fichier: output/archives-filmees/1930-paths-to-palestine-01.mp4
         entree: 0
         sortie: 4.32

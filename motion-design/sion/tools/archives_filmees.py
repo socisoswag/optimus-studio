@@ -50,6 +50,15 @@ ARCHIVES = {
     # juin 1967 : le Conseil de sécurité des Nations unies, à New York
     "1967-onu-conseil-de-securite": ("1967-06-13_Cease-Fire", "1967-06-13_Cease-Fire.mpeg", "616:462:12:9",
                                      [(5.4, 11.0), (17.7, 23.5), (47.9, 51.5)]),
+    # United News (Office of War Information, domaine public), juin 1946 : des réfugiés juifs d'Europe débarquent en Palestine
+    "1946-refugies-juifs-palestine": ("ARC-31482", "ARC-31482.mp4", "624:352:8:4",
+                                      [(309.5, 313.5), (314.0, 317.5), (318.0, 321.0), (322.0, 326.5)]),
+    # même actualité : Amman fête l'indépendance de la Transjordanie, l'émir Abdallah, la Légion arabe (en réserve)
+    "1946-transjordanie-independance": ("ARC-31482", "ARC-31482.mp4", "624:352:8:4",
+                                        [(336.0, 339.0), (343.5, 346.5), (366.0, 369.0), (375.0, 380.0)]),
+    # US Air Force (domaine public), octobre 1973 : le pont aérien vers Israël, déchargement d'un char à Lod
+    "1973-pont-aerien-americain": ("342-adw-264", "342-adw-264-r6.mp4", "1400:1050:260:15",
+                                   [(380.0, 386.5), (915.5, 921.0), (927.0, 932.5)]),
 }
 
 

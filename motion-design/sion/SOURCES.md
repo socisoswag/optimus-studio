@@ -289,6 +289,13 @@ télévision américaine malgré leur dépôt aux Archives nationales ; « A Pil
 marquée du filigrane d'une agence commerciale.
 
 ---
+- Réfugiés juifs débarquant en Palestine, et Amman fêtant l'indépendance de la Transjordanie, juin 1946 (plan 11.9,
+  réserve 13.R2) : United News (Office of War Information), actualité de juin 1946, archives nationales américaines
+  (ARC 39119), copie archive.org ARC-31482, domaine public.
+- Le pont aérien américain vers Israël, octobre 1973 (plan 33.10) : US Air Force, film 342-ADW-264, « Israel Airlift
+  Operation », archives nationales américaines (identifiant 62010), copie archive.org 342-adw-264, domaine public.
+- Écarté : « La Vie des Juifs en Palestine » (1913), domaine public aux États-Unis, mais la copie disponible ici porte
+  les logos de ses restaurateurs ; à reprendre d'une copie sans logo.
 
 ## 5. Chiffres et faits, vidéo par vidéo
 

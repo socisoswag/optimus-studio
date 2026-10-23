@@ -342,7 +342,7 @@ Note : détail fort : Arthur Ruppin, celui qui organise les achats de terres, en
 
 ## Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens
 
-Film 00:21:54:14 → 00:23:26:22 · durée 1 min 32.3 s
+Film 00:21:54:14 → 00:23:41:22 · durée 1 min 47.3 s
 
 *Intention : La logique du rapport de force, dite par un dirigeant sioniste lui-même : Jabotinsky et le « Mur de fer » (1923), un texte d'une franchise rare. Puis les chiffres de l'immigration et de la terre, et le tournant de 1942 à New York : le mouvement demande toute la Palestine. Finir sur l'ONU, qui ouvre la partie III.*
 
@@ -396,16 +396,23 @@ Source : programme de Biltmore, conférence sioniste extraordinaire, hôtel Bilt
 (22 mots, 1.7 par seconde)
 
 
-**11.9** · film **00:23:17:14 → 00:23:21:22** (4.3 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-01.mp4` · source 00:00:00:00 → 00:00:04:08  
+**11.9** · film **00:23:17:14 → 00:23:32:14** (15.0 s) · **[ARCH]** `output/archives-filmees/1946-refugies-juifs-palestine.mp4` · source 00:00:00:00 → 00:00:15:00  
+Source : United News (Office of War Information), actualité de juin 1946, archives nationales américaines ARC 39119, domaine public  
+À l'écran : carton : 1946 · Palestine · Des réfugiés juifs d'Europe débarquent  
+> VOIX : En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.  
+(17 mots, 1.1 par seconde)
+
+
+**11.10** · film **00:23:32:14 → 00:23:36:22** (4.3 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-01.mp4` · source 00:00:00:00 → 00:00:04:08  
 > VOIX : Après la guerre, épuisée, / la Grande-Bretagne  
 (6 mots, 1.4 par seconde)
 
 
-**11.10** · film **00:23:21:22 → 00:23:26:22** (5.0 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-07.mp4` · source 00:00:00:00 → 00:00:05:00  
+**11.11** · film **00:23:36:22 → 00:23:41:22** (5.0 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-07.mp4` · source 00:00:00:00 → 00:00:05:00  
 > VOIX : remet la question à l'ONU. // Nous sommes en **1947**. ///  
 (9 mots, 1.8 par seconde)  
 Son : montée lente vers l'ouverture de la partie III
 
 
 ---
-Durée de la partie : 10 min 35.6 s (film 00:12:51:07 → 00:23:26:22)
+Durée de la partie : 10 min 50.6 s (film 00:12:51:07 → 00:23:41:22)

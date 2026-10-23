@@ -137,6 +137,14 @@ chapitres:
         voix: >-
           Pourquoi rien ne change ? / Les États-Unis versent à Israël 3,8 milliards de dollars d'aide militaire par an, / et depuis 1972, ils ont mis leur veto 52 fois à des textes de l'ONU sur **Israël**.
         note: "52 = 51 projets et 1 amendement, périmètre large (Liban et Golan compris) : ne jamais dire « 52 résolutions »"
+      - type: ARCH
+        fichier: output/archives-filmees/1973-pont-aerien-americain.mp4
+        entree: 0
+        sortie: 17.5
+        ecran: "carton : octobre 1973 · Lod · Le pont aérien américain"
+        source: "US Air Force, film 342-ADW-264, octobre 1973 (archives nationales américaines, identifiant 62010), domaine public"
+        voix: >-
+          Ce soutien se voit en 1973. / Pendant la guerre du Kippour, un pont aérien américain livre chars et munitions jusqu'à l'aéroport de **Lod**.
       - type: MD
         fichier: output/documents-6.mp4
         entree: 176

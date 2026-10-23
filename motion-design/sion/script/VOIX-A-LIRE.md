@@ -232,7 +232,7 @@
 
 ## Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens
 
-*1 min 32 de film*
+*1 min 47 de film*
 
 **11.3** En 1923, Zeev Jabotinsky écrit « Le Mur de fer ». / Il ne nie pas ce qu'il voit : / « Toute population indigène résiste aux colons, / tant qu'elle garde le moindre espoir d'échapper à la **colonisation**. »
 
@@ -246,9 +246,11 @@
 
 **11.8** En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine devienne « un Commonwealth **juif** ».
 
-**11.9** Après la guerre, épuisée, / la Grande-Bretagne
+**11.9** En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.
 
-**11.10** remet la question à l'ONU. // Nous sommes en **1947**. ///
+**11.10** Après la guerre, épuisée, / la Grande-Bretagne
+
+**11.11** remet la question à l'ONU. // Nous sommes en **1947**. ///
 
 ## Chapitre 12 · 1947 : le plan de partage de l'ONU
 
@@ -792,7 +794,7 @@
 
 ## Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338
 
-*2 min 45 de film*
+*3 min 02 de film*
 
 **33.2** Trois textes de l'ONU, / mot pour **mot**.
 
@@ -808,15 +810,17 @@
 
 **33.9** Pourquoi rien ne change ? / Les États-Unis versent à Israël 3,8 milliards de dollars d'aide militaire par an, / et depuis 1972, ils ont mis leur veto 52 fois à des textes de l'ONU sur **Israël**.
 
-**33.10** En 2018, Washington installe son ambassade à Jérusalem. / Le même jour, à Gaza, des dizaines de manifestants sont **tués**.
+**33.10** Ce soutien se voit en 1973. / Pendant la guerre du Kippour, un pont aérien américain livre chars et munitions jusqu'à l'aéroport de **Lod**.
 
-**33.11** Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître. // En 2016, le Conseil de sécurité qualifie encore les colonies de « violation flagrante » du droit **international**.
+**33.11** En 2018, Washington installe son ambassade à Jérusalem. / Le même jour, à Gaza, des dizaines de manifestants sont **tués**.
 
-**33.12** En 2023 et 2024, le comité politique de l'AIPAC dépense plus de soixante millions de dollars, / dont près de quinze dans la seule primaire de Jamaal Bowman, un élu critique d'Israël. / Les évangéliques sionistes revendiquent dix millions de membres. / Et l'aide militaire profite d'abord aux industriels **américains**. // Ces groupes ne parlent pas au nom des Juifs.
+**33.12** Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître. // En 2016, le Conseil de sécurité qualifie encore les colonies de « violation flagrante » du droit **international**.
 
-**33.13** Et l'argent ? / En 2020, l'ONU publie la liste des entreprises qui travaillent dans les colonies : 112 sociétés, dont Airbnb ou Booking. / En 2023, 97 y restent, dont deux groupes français, Alstom et **Egis**.
+**33.13** En 2023 et 2024, le comité politique de l'AIPAC dépense plus de soixante millions de dollars, / dont près de quinze dans la seule primaire de Jamaal Bowman, un élu critique d'Israël. / Les évangéliques sionistes revendiquent dix millions de membres. / Et l'aide militaire profite d'abord aux industriels **américains**. // Ces groupes ne parlent pas au nom des Juifs.
 
-**33.14** En juillet 2025, la rapporteuse de l'ONU Francesca Albanese va plus loin : / elle recense un millier d'entreprises, et en nomme des dizaines qui profitent de l'occupation et de la guerre, / des marchands d'armes aux géants de la tech. / Le 9 juillet, Washington la **sanctionne**.
+**33.14** Et l'argent ? / En 2020, l'ONU publie la liste des entreprises qui travaillent dans les colonies : 112 sociétés, dont Airbnb ou Booking. / En 2023, 97 y restent, dont deux groupes français, Alstom et **Egis**.
+
+**33.15** En juillet 2025, la rapporteuse de l'ONU Francesca Albanese va plus loin : / elle recense un millier d'entreprises, et en nomme des dizaines qui profitent de l'occupation et de la guerre, / des marchands d'armes aux géants de la tech. / Le 9 juillet, Washington la **sanctionne**.
 
 ## Chapitre 34 · L'effacement culturel : villages détruits, noms effacés
 
