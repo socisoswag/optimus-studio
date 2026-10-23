@@ -249,7 +249,7 @@ Source : SOURCES.md 4.1, Adobe Stock 740254300
 
 ## Chapitre 5 · Les premiers colons juifs en Palestine
 
-Film 00:07:19:09 → 00:08:12:09 · durée 0 min 53.0 s
+Film 00:07:19:09 → 00:08:51:09 · durée 1 min 32.0 s
 
 *Intention : Les pionniers ont un vrai idéal (fuir les pogroms, travailler la terre, faire revivre l'hébreu) : le dire. Et montrer la règle qui exclut déjà les Arabes : le « travail hébreu ».*
 
@@ -270,20 +270,41 @@ Film 00:07:19:09 → 00:08:12:09 · durée 0 min 53.0 s
 Note : la suite de la pièce (1919 à 1945) sert au chapitre 8
 
 
-**5.4** · film **00:07:40:24 → 00:07:52:09** (11.4 s) · **[RÉEL]** `output/plans-reels/recolte-des-olives-a-la-main.mp4` · source 00:00:00:00 → 00:00:11:10  
+**5.4** · film **00:07:40:24 → 00:07:55:24** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:00:00 → 00:00:15:00  
+Source : Edmond de Rothschild (1845-1934) : Rishon LeZion, Zikhron Yaakov, Rosh Pina, à partir de 1882-1883 ; colonies confiées à la Jewish Colonization Association en 1899  
+À l'écran : fiche : Rishon LeZion · 1882 · Le baron de Rothschild  
+> VOIX : Derrière ces colonies, un banquier de Paris : / le baron Edmond de Rothschild. / Dès 1882, il finance Rishon LeZion, Zikhron Yaakov, Rosh Pina. / Ses agents achètent des terres, souvent à de grands propriétaires qui n'y vivent **pas**.  
+(36 mots, 2.4 par seconde)
+
+
+**5.5** · film **00:07:55:24 → 00:08:07:24** (12.0 s) · **[PHOTO]** `output/photos-fixes/3-32-zikhron-yaakov.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : Zikhron Yaakov, « souvenir de Jacob », du nom de James (Jacob) de Rothschild, père d'Edmond  
+À l'écran : déjà dans le plan : Années 1920 · Zikhron Yaakov · Une colonie fondée en 1882 et financée par le baron Edmond de Rothschild · Photo d'archive  
+> VOIX : Zikhron Yaakov porte le nom de son père, Jacob. / Le baron y paie les maisons, la synagogue, les **vignes**.  
+(19 mots, 1.6 par seconde)
+
+
+**5.6** · film **00:08:07:24 → 00:08:19:24** (12.0 s) · **[PHOTO]** `output/photos-fixes/4-33-rishon-lezion.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : caves de Rishon LeZion (1890) ; ouvriers arabes dans les colonies du baron (Gershon Shafir, Land, Labor and the Origins of the Israeli-Palestinian Conflict, 1989)  
+À l'écran : déjà dans le plan : Entre 1898 et 1934 · Rishon LeZion · Les caves à vin bâties par le baron de Rothschild · Photo d'archive  
+> VOIX : À Rishon LeZion, il fait creuser de grandes caves à vin. / Dans ses colonies travaillent des ouvriers arabes, par centaines. / La vague suivante ne voudra plus de ce **modèle**.  
+(29 mots, 2.4 par seconde)
+
+
+**5.7** · film **00:08:19:24 → 00:08:31:09** (11.4 s) · **[RÉEL]** `output/plans-reels/recolte-des-olives-a-la-main.mp4` · source 00:00:00:00 → 00:00:11:10  
 Source : SOURCES.md 4.1, Adobe Stock 259921414 (lieu non précisé : aucune légende de lieu)  
 > VOIX : La deuxième vague, après 1904, est différente. / De jeunes socialistes rêvent d'un Juif nouveau, / paysan sur sa terre, / qui parle l'hébreu **ressuscité**.  
 (22 mots, 1.9 par seconde)
 
 
-**5.5** · film **00:07:52:09 → 00:08:02:09** (10.0 s) · **[IA]** `output/reconstitutions/9-10-labour-boeufs.mp4` · source 00:00:00:00 → 00:00:10:00  
+**5.8** · film **00:08:31:09 → 00:08:41:09** (10.0 s) · **[IA]** `output/reconstitutions/9-10-labour-boeufs.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 12172, laboureur et ses bœufs, Jérusalem au fond)  
 À l'écran : déjà dans le plan : la vraie photo, puis la reconstitution (Entre 1898 et 1946 · Jérusalem · Labour aux bœufs au pied de la ville)  
 > VOIX : Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, / et les ouvriers arabes sont écartés.  
 (22 mots, 2.2 par seconde)
 
 
-**5.6** · film **00:08:02:09 → 00:08:12:09** (10.0 s) · **[IA]** `output/reconstitutions/16-29-tel-aviv-1909.mp4` · source 00:00:00:00 → 00:00:10:00  
+**5.9** · film **00:08:41:09 → 00:08:51:09** (10.0 s) · **[IA]** `output/reconstitutions/16-29-tel-aviv-1909.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : photo d'Avraham Soskine, 11 avril 1909 (domaine public)  
 À l'écran : déjà dans le plan : 11 avril 1909 · Au nord de Jaffa · le tirage au sort des terrains · Photo d'archive animée par IA  
 > VOIX : En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la ville arabe.  
@@ -293,37 +314,37 @@ Note : le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même
 
 ## Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface
 
-Film 00:08:12:09 → 00:11:31:07 · durée 3 min 18.9 s
+Film 00:08:51:09 → 00:12:51:07 · durée 3 min 59.9 s
 
 *Intention : Le chapitre clé de la partie. Montrer un pays vivant, nommé, habité ; puis l'échange de 1899 entre Youssouf Diya al-Khalidi et Herzl, chacun avec ses propres mots ; puis les premiers conflits pour la terre ; et la voix d'un sioniste lucide, Ahad Ha'am. Finir sur la guerre de 1914.*
 
 
-**6.1** · film **00:08:12:09 → 00:08:16:24** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-06.mp4` · source 00:00:00:00 → 00:00:04:15  
+**6.1** · film **00:08:51:09 → 00:08:55:24** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-06.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**6.2** · film **00:08:16:24 → 00:08:26:24** (10.0 s) · **[ARCH]** `output/archives-filmees/1897-lumiere-jerusalem-porte-de-jaffa.mp4` · source 00:00:00:00 → 00:00:10:00  
+**6.2** · film **00:08:55:24 → 00:09:05:24** (10.0 s) · **[ARCH]** `output/archives-filmees/1897-lumiere-jerusalem-porte-de-jaffa.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine public)  
 À l'écran : carton : Jérusalem · avril 1897 · film des frères Lumière  
 > VOIX : Jérusalem, 1897. / Les frères Lumière filment la porte de Jaffa. // Voilà le pays que Bâle, la même année, choisit pour **foyer**.  
 (21 mots, 2.1 par seconde)
 
 
-**6.3** · film **00:08:26:24 → 00:08:34:04** (7.2 s) · **[IA]** `output/reconstitutions/5-5-savonnerie-naplouse.mp4` · source 00:00:00:00 → 00:00:07:05  
+**6.3** · film **00:09:05:24 → 00:09:13:04** (7.2 s) · **[IA]** `output/reconstitutions/5-5-savonnerie-naplouse.mp4` · source 00:00:00:00 → 00:00:07:05  
 Source : SOURCES.md 4 (Google Veo, d'après matpc 20377, la savonnerie de Naplouse)  
 À l'écran : la vraie photo d'abord (« Photo d'archive »), puis « Reconstitution par IA, d'après une photo d'archive »  
 > VOIX : Un pays de villages et de villes anciennes. / Naplouse fait son savon, / Jaffa exporte ses **oranges**.  
 (16 mots, 2.2 par seconde)
 
 
-**6.4** · film **00:08:34:04 → 00:08:46:04** (12.0 s) · **[IA]** `output/reconstitutions/1-1-orangeraies-jaffa.mp4` · source 00:00:00:00 → 00:00:12:00  
+**6.4** · film **00:09:13:04 → 00:09:25:04** (12.0 s) · **[IA]** `output/reconstitutions/1-1-orangeraies-jaffa.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : SOURCES.md 4 (Google Veo, d'après matpc 06520)  
 À l'écran : mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
 > VOIX : Musulmans, chrétiens et juifs y vivent depuis des siècles, / sous l'autorité de l'Empire **ottoman**.  
 (14 mots, 1.2 par seconde)
 
 
-**6.5** · film **00:08:46:04 → 00:08:53:09** (7.2 s) · **[IA]** `output/reconstitutions/3-3-porte-de-damas.mp4` · source 00:00:00:00 → 00:00:07:05  
+**6.5** · film **00:09:25:04 → 00:09:32:09** (7.2 s) · **[IA]** `output/reconstitutions/3-3-porte-de-damas.mp4` · source 00:00:00:00 → 00:00:07:05  
 Source : SOURCES.md 4 (Google Veo, d'après matpc 21600, le marché aux moutons devant la porte de Damas) ; chiffres : Justin McCarthy, The Population of Palestine, Columbia University Press, 1990, p. 24, 26 et 37 (tableaux 2.3 et 2.18)  
 À l'écran : la vraie photo d'abord, puis la reconstitution (mentions de la pièce)  
 > VOIX : Vers 1914, la Palestine compte environ huit cent mille habitants. / Environ un sur dix est **juif**.  
@@ -331,14 +352,14 @@ Source : SOURCES.md 4 (Google Veo, d'après matpc 21600, le marché aux moutons 
 Note : vérifié dans le livre. McCarthy : 798 389 habitants, dont 657 377 musulmans (avec 55 000 nomades), 81 012 chrétiens et environ 60 000 juifs (61 000 au tableau 2.18), en comptant les juifs de nationalité étrangère. Piège : le chiffre de 38 754 juifs (p. 10, repris par Perplexity) ne compte que les sujets ottomans, il oublie environ 20 000 juifs étrangers. L'estimation sioniste d'époque (Arthur Ruppin) dit 85 000 juifs, soit 12 % ; McCarthy la juge gonflée. « Environ un sur dix » couvre les deux.
 
 
-**6.6** · film **00:08:53:09 → 00:09:03:14** (10.2 s) · **[IA]** `output/reconstitutions/2-2-quai-jaffa.mp4` · source 00:00:00:00 → 00:00:10:05  
+**6.6** · film **00:09:32:09 → 00:09:42:14** (10.2 s) · **[IA]** `output/reconstitutions/2-2-quai-jaffa.mp4` · source 00:00:00:00 → 00:00:10:05  
 Source : SOURCES.md 4 (Google Veo, d'après matpc 04992)  
 À l'écran : mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
 > VOIX : Le pays n'est pas vide. / Il a un nom, des villes, des paysans, / et bientôt des journaux qui s'**inquiètent**.  
 (20 mots, 2.0 par seconde)
 
 
-**6.7** · film **00:09:03:14 → 00:09:15:14** (12.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:45:00 → 00:00:57:00  
+**6.7** · film **00:09:42:14 → 00:09:54:14** (12.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:45:00 → 00:00:57:00  
 Source : SOURCES.md 2.3 (portrait de Youssouf Diya al-Khalidi, auteur inconnu, domaine public) ; lettre du 1er mars 1899 citée par Rashid Khalidi, The Hundred Years' War on Palestine, 2020, chapitre 1  
 À l'écran : Youssouf Diya al-Khalidi · ancien maire de Jérusalem, député au Parlement ottoman  
 > VOIX : Le 1er mars 1899, un ancien maire de Jérusalem, / Youssouf Diya al-Khalidi, / écrit au grand-rabbin de France, / pour que sa lettre parvienne à **Herzl**.  
@@ -347,7 +368,7 @@ Son : plume sur le papier, salle silencieuse
 Note : portrait petit (320 × 455) : le présenter en cadre, comme une photo posée sur la table, jamais plein écran
 
 
-**6.8** · film **00:09:15:14 → 00:09:40:14** (25.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:57:00 → 00:01:22:00  
+**6.8** · film **00:09:54:14 → 00:10:19:14** (25.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:57:00 → 00:01:22:00  
 Source : lettre à Zadoc Kahn, Constantinople, 1er mars 1899, texte original français : Yohanan Manor, Naissance du sionisme politique, Gallimard, 1981, p. 217 et suivantes ; Henry Laurens, La Question de Palestine, t. I, Fayard, 1999, p. 204 (transcription Clio-Texte, 31 octobre 2023)  
 À l'écran : citations, une par une : « Mon Dieu, historiquement, c'est bien votre pays ! » · « elle est habitée par d'autres que des Israélites » · « Au nom de Dieu, qu'on laisse la Palestine tranquille »  
 > VOIX : Il écrit d'abord : / « Qui peut contester les droits des Juifs sur la Palestine ? / Mon Dieu, historiquement, c'est bien votre pays ! » // Puis : / « La Palestine fait maintenant partie intégrale de l'Empire ottoman, / et, ce qui est plus grave, / elle est habitée par d'autres que des Israélites. » /// « Au nom de Dieu, / qu'on laisse la Palestine **tranquille**. »  
@@ -355,7 +376,7 @@ Source : lettre à Zadoc Kahn, Constantinople, 1er mars 1899, texte original fra
 Note : texte français d'origine, vérifié (Perplexity, 20 octobre). Les deux phrases vont ensemble : couper la première ferait de lui un sioniste, couper la seconde cacherait qu'il reconnaît l'histoire juive.
 
 
-**6.9** · film **00:09:40:14 → 00:09:56:14** (16.0 s) · **[MD]** `output/documents.mp4` · source 00:02:04:00 → 00:02:20:00  
+**6.9** · film **00:10:19:14 → 00:10:35:14** (16.0 s) · **[MD]** `output/documents.mp4` · source 00:02:04:00 → 00:02:20:00  
 Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, écrite en français ; transcription PalQuest, Institut d'études palestiniennes, d'après Walid Khalidi (dir.), From Haven to Conquest, 2e édition, 1987)  
 À l'écran : fiche de la lettre, phrase surlignée : « Mais qui donc songerait à les éloigner ? »  
 > VOIX : Herzl répond le 19 mars. / « Vous voyez une autre difficulté, Excellence, / dans l'existence de la population non juive en Palestine. / Mais qui donc songerait à les **éloigner** ? » // Le prix de leurs terres, promet-il, va « quintupler et décupler ».  
@@ -363,14 +384,35 @@ Source : SOURCES.md 2.3 (lettre de Herzl du 19 mars 1899, écrite en français ;
 Note : scène document (la lettre en texte) ; la page originale (SOURCES.md 2.4) reste à récupérer à la main si on veut la montrer
 
 
-**6.10** · film **00:09:56:14 → 00:10:09:14** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:01:22:00 → 00:01:35:00  
+**6.10** · film **00:10:35:14 → 00:10:48:14** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:01:22:00 → 00:01:35:00  
 Source : SOURCES.md 6 (journal de Herzl, 12 juin 1895) ; lettre du 19 mars 1899  
 > VOIX : Personne ne lui avait parlé de les chasser. // Et quatre ans plus tôt, dans son journal, / il envisageait de faire passer les pauvres de l'autre côté de la **frontière**.  
 (29 mots, 2.2 par seconde)  
 Note : al-Khalidi n'a jamais évoqué une expulsion : c'est Herzl qui répond à une question qu'on ne lui a pas posée (remarque de R. Khalidi, vérifiable en lisant les deux lettres). La phrase « nous trouverons ailleurs ce qu'il nous faut » (si le sultan refuse) est dans la même lettre : à garder pour une version longue.
 
 
-**6.11** · film **00:10:09:14 → 00:10:21:07** (11.7 s) · **[RÉEL]** `output/plans-reels/figuier-de-barbarie-sabr.mp4` · source 00:00:00:00 → 00:00:11:17  
+**6.11** · film **00:10:48:14 → 00:11:03:14** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:15:00 → 00:00:30:00  
+Source : code foncier ottoman du 21 avril 1858 et loi sur l'enregistrement des terres (tapu) ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984  
+À l'écran : fiche : Empire ottoman · 1858 · Le code foncier  
+> VOIX : Pour comprendre ces ventes, il faut remonter à 1858. / L'Empire ottoman impose d'enregistrer les terres. / Beaucoup de paysans les inscrivent au nom de notables, pour échapper à l'impôt et à l'armée. / Des familles de Beyrouth deviennent propriétaires de villages **entiers**.  
+(40 mots, 2.7 par seconde)
+
+
+**6.12** · film **00:11:03:14 → 00:11:16:14** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:30:00 → 00:00:43:00  
+Source : Petah Tikva et le village de Yahudiya, mars 1886  
+À l'écran : fiche : Petah Tikva · 1886 · Le premier heurt  
+> VOIX : Les acheteurs traitent avec ces propriétaires, pas avec les paysans. / En 1886, à Petah Tikva, les villageois de Yahudiya, privés de leurs pâturages, attaquent la colonie. / C'est le premier affrontement pour la **terre**.  
+(33 mots, 2.5 par seconde)
+
+
+**6.13** · film **00:11:16:14 → 00:11:29:14** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:43:00 → 00:00:56:00  
+Source : Fonds national juif (Keren Kayemeth LeIsrael), 5e congrès sioniste, Bâle, 29 décembre 1901 ; statuts : terres inaliénables, louées  
+À l'écran : fiche : Bâle · décembre 1901 · Le Fonds national juif  
+> VOIX : En 1901, à Bâle, le mouvement sioniste crée le Fonds national juif, pour acheter la terre. / Une règle : ses terres ne se revendent jamais, / et elles sont louées à des **Juifs**.  
+(31 mots, 2.4 par seconde)
+
+
+**6.14** · film **00:11:29:14 → 00:11:41:07** (11.7 s) · **[RÉEL]** `output/plans-reels/figuier-de-barbarie-sabr.mp4` · source 00:00:00:00 → 00:00:11:17  
 Source : SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé) ; faits : pétition des villageois au grand vizir, 1910, citée dans « Sursock Purchases » (Wikipedia, d'après Kristen Alff et Rashid Khalidi) ; Institut d'études palestiniennes, « 1910-1911 as a Turning Point »  
 À l'écran : carton lieu : al-Fula · plaine de Marj Ibn Amer · 1910  
 > VOIX : En 1910, un riche propriétaire de Beyrouth, / Élias Sursock, / vend dix mille dounams autour d'al-Fula au Fonds national juif. // Les paysans qui les cultivent refusent de **partir**.  
@@ -378,7 +420,7 @@ Source : SOURCES.md 4.1, Adobe Stock 276957095 (lieu non précisé) ; faits : p�
 Note : 1 dounam = 1 000 m² : 10 000 dounams = 10 km². Le vendeur est arabe : le dire, c'est un fait.
 
 
-**6.12** · film **00:10:21:07 → 00:10:34:07** (13.0 s) · **[RÉEL]** `output/plans-reels/plaine-de-jezreel-mont-thabor-aerien.mp4` · source 00:00:00:00 → 00:00:13:00  
+**6.15** · film **00:11:41:07 → 00:11:54:07** (13.0 s) · **[RÉEL]** `output/plans-reels/plaine-de-jezreel-mont-thabor-aerien.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : SOURCES.md 4.1, Adobe Stock 279606071 (le mont Thabor et la plaine de Jezréel, vue aérienne) ; faits : mêmes sources que le plan précédent  
 À l'écran : carton : Le mont Thabor, au bord de la plaine de Jezréel (Marj Ibn Amer) · aujourd'hui  
 > VOIX : Ils écrivent à Istanbul : / la vente prive mille villageois de leur **pain**. // Le sous-préfet de Nazareth refuse de la signer. / En vain : / en 1911, la colonie de Merhavia s'installe.  
@@ -386,7 +428,7 @@ Source : SOURCES.md 4.1, Adobe Stock 279606071 (le mont Thabor et la plaine de J
 Note : « mille villageois » : chiffre de leur pétition (le dire comme tel). Ne pas dire « tués » ni « massacre » : ce sont des expulsions et des heurts, pas plus.
 
 
-**6.13** · film **00:10:34:07 → 00:10:45:07** (11.0 s) · **[MD]** `output/documents.mp4` · source 00:00:00:00 → 00:00:11:00  
+**6.16** · film **00:11:54:07 → 00:12:05:07** (11.0 s) · **[MD]** `output/documents.mp4` · source 00:00:00:00 → 00:00:11:00  
 Source : Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers/falastin (premier numéro : janvier 1911) ; al-Karmil, Haïfa, fondé en 1908 par Najib Nassar  
 À l'écran : Filastin, « Palestine » · Jaffa, 1911 · al-Karmil (Haïfa, 1908) contre les ventes de terres  
 > VOIX : À Haïfa, le journal al-Karmil fait campagne contre ces ventes. / À Jaffa, en 1911, naît un journal au nom qui dit tout : / **Filastin**. / Palestine.  
@@ -394,14 +436,14 @@ Source : Bibliothèque nationale d'Israël, https://www.nli.org.il/en/newspapers
 Note : premier numéro de Filastin : 14 ou 15 janvier 1911 selon les sources ; dire seulement « en 1911 »
 
 
-**6.14** · film **00:10:45:07 → 00:11:00:07** (15.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:01:35:00 → 00:01:50:00  
+**6.17** · film **00:12:05:07 → 00:12:20:07** (15.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:01:35:00 → 00:01:50:00  
 Source : Ahad Ha'am, « Vérité de la terre d'Israël » (Emet me-Eretz Yisrael), Hamelitz, juin 1891 ; traduction anglaise complète : Alan Dowty, Israel Studies, vol. 5, n° 2, 2000, p. 154-181 ; extraits : Jewish Virtual Library ; notre traduction  
 À l'écran : « Mais ce n'est pas vrai. » · Ahad Ha'am, 1891  
 > VOIX : Même chez les sionistes, certains voient venir le conflit. / En 1891, le penseur Ahad Ha'am écrit : / « Nous croyons, à l'étranger, que la terre d'Israël est presque toute déserte. / Mais ce n'est pas **vrai**. »  
 (33 mots, 2.2 par seconde)
 
 
-**6.15** · film **00:11:00:07 → 00:11:15:07** (15.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:01:50:00 → 00:02:05:00  
+**6.18** · film **00:12:20:07 → 00:12:35:07** (15.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:01:50:00 → 00:02:05:00  
 Source : même texte (Dowty 2000) ; la phrase sur la cruauté est aussi citée par la Jewish Virtual Library  
 À l'écran : « avec hostilité et cruauté »  
 > VOIX : Il décrit des colons qui traitent les Arabes / « avec hostilité et cruauté », / et qui « s'en vantent ». // Et il prévient : / le jour où nous prendrons leur place, / ils ne s'écarteront pas si **facilement**.  
@@ -409,7 +451,7 @@ Source : même texte (Dowty 2000) ; la phrase sur la cruauté est aussi citée p
 Note : la Jewish Virtual Library est un site pro-israélien : la citer rend la phrase inattaquable. Pagination exacte dans Dowty à relever si on obtient l'article (accès Project MUSE).
 
 
-**6.16** · film **00:11:15:07 → 00:11:31:07** (16.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:10:00 → 00:00:26:00  
+**6.19** · film **00:12:35:07 → 00:12:51:07** (16.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:10:00 → 00:00:26:00  
 Source : SOURCES.md 4.1, Adobe Stock 609005799  
 > VOIX : En 1914, la guerre éclate. / L'Empire ottoman va s'effondrer, / et trois promesses contradictoires vont être faites sur la même **terre**. ///  
 (20 mots, 1.2 par seconde)  
@@ -417,4 +459,4 @@ Son : la nuit tombe sur la ville ; montée lente vers l'ouverture de la partie I
 
 
 ---
-Durée de la partie : 9 min 37.4 s (film 00:01:53:22 → 00:11:31:07)
+Durée de la partie : 10 min 57.4 s (film 00:01:53:22 → 00:12:51:07)

@@ -139,6 +139,15 @@ chapitres:
         voix: >-
           Puis les offensives : 2008, 2014, 2021. / Des milliers de morts à Gaza ; / des dizaines en **Israël**.
       - type: MD
+        fichier: output/documents-7.mp4
+        entree: 115
+        sortie: 129
+        ecran: "fiche : Israël · octobre 2008 · La doctrine Dahiya"
+        source: "Gadi Eisenkot, entretien au Yedioth Ahronoth, octobre 2008 (cité par le rapport Goldstone de l'ONU, 2009)"
+        verifier: "les mots exacts de Gadi Eisenkot en 2008 (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          Ces offensives suivent une doctrine. / En 2008, le général Gadi Eisenkot, futur chef d'état-major, l'explique : / « Nous emploierons une force disproportionnée. » / Les villages d'où l'on tire « ne sont pas des villages civils, ce sont des bases **militaires** ».
+      - type: MD
         fichier: output/documents-6.mp4
         entree: 93
         sortie: 105
@@ -238,6 +247,16 @@ chapitres:
           Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
         note: "dans la Bible, l'ordre qui suit est d'effacer Amalek ; la Cour internationale de justice a relevé la phrase. Ne pas l'expliquer plus : le spectateur comprend."
       - type: MD
+        fichier: output/documents-7.mp4
+        entree: 129
+        sortie: 146
+        ecran: "fiche : Israël · octobre et novembre 2023 · D'autres paroles"
+        source: "Isaac Herzog, 13 octobre 2023 ; Amichai Eliyahu, 5 novembre 2023 ; Avi Dichter, 11 novembre 2023 ; requête de l'Afrique du Sud à la CIJ, 29 décembre 2023 ; ordonnance de la CIJ du 26 janvier 2024"
+        verifier: "les trois phrases exactes, en hébreu ou en anglais, et leurs dates (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          D'autres paroles suivent. / Le président Isaac Herzog : « C'est toute une nation, là-bas, qui est responsable. » / Le ministre Amichai Eliyahu juge une bombe atomique sur Gaza « une des possibilités ». / Le ministre Avi Dichter : « Nous sommes en train de dérouler la Nakba de **Gaza** ».
+        note: "Herzog dit ses mots sortis de leur contexte ; Netanyahou suspend Eliyahu des réunions du gouvernement le jour même"
+      - type: MD
         fichier: output/gaza.mp4
         entree: 50
         sortie: 62
@@ -252,6 +271,24 @@ chapitres:
         voix: >-
           Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près
           de sept sur dix sont des femmes et des **enfants**.
+      - type: MD
+        fichier: output/documents-7.mp4
+        entree: 146
+        sortie: 161
+        ecran: "fiche : Gaza · 29 janvier 2024 · Hind Rajab"
+        source: "Croissant-Rouge palestinien (enregistrements de l'appel) ; Forensic Architecture et The Washington Post, 2024 ; Kaouther Ben Hania, « La Voix de Hind Rajab », 2025"
+        verifier: "les faits et dates de la mort de Hind Rajab et des deux secouristes (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          Le 29 janvier 2024, à Gaza-ville, Hind Rajab, six ans, est coincée dans une voiture, au milieu des corps de sa famille. / Pendant des heures, elle parle au Croissant-Rouge. / L'ambulance envoyée la chercher est détruite. / On la retrouve morte douze jours plus **tard**.
+      - type: MD
+        fichier: output/documents-7.mp4
+        entree: 161
+        sortie: 175
+        ecran: "fiche : Rafah · 23 mars 2025 · Les secouristes de Rafah"
+        source: "Croissant-Rouge palestinien, Défense civile de Gaza, OCHA ; vidéo du téléphone de Rifaat Radwan (The New York Times, avril 2025) ; enquête de l'armée israélienne, 20 avril 2025"
+        verifier: "le bilan, la vidéo et les conclusions de l'enquête de l'armée (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          Le 23 mars 2025, à Rafah, quinze secouristes sont tués, puis enterrés avec leurs ambulances. / L'armée dit d'abord qu'ils roulaient sans phares. / La vidéo retrouvée sur le téléphone de l'un d'eux montre le **contraire**.
       - type: 3D
         fichier: output/gaza-vue-du-ciel.mp4
         entree: 0
@@ -316,6 +353,15 @@ chapitres:
         verifier: "les mots exacts de Donald Trump le 4 février 2025 (question Perplexity, A-FABRIQUER.md)"
         voix: >-
           En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.
+      - type: MD
+        fichier: output/documents-7.mp4
+        entree: 175
+        sortie: 188
+        ecran: "fiche : Gaza · 2 mars au 19 mai 2025 · Onze semaines sans rien"
+        source: "blocus total de l'aide, 2 mars au 19 mai 2025 (OCHA) ; CPI, mandats du 21 novembre 2024 (famine comme méthode de guerre)"
+        verifier: "les dates du blocus total de 2025 (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          Le 2 mars 2025, Israël bloque toute entrée d'aide à Gaza : / onze semaines sans nourriture ni médicaments. / La CPI vise déjà Netanyahou pour la famine comme méthode de **guerre**.
       - type: MD
         fichier: output/documents-6.mp4
         entree: 469
@@ -408,6 +454,15 @@ chapitres:
         voix: >-
           En Cisjordanie aussi, la violence explose : / plus de 5 700 attaques de colons en trois ans, d'après les relevés de l'ONU. / En 2025, l'armée lance l'opération « Mur de fer » dans les camps du nord : / à Jénine, Tulkarem et Nour Chams, plus de 34 000 **déplacés**.
         note: "5 700 : somme des séries de l'OCHA (incidents avec victimes ou dégâts) ; à Jénine, une partie des déplacés date d'une opération de l'Autorité palestinienne"
+      - type: MD
+        fichier: output/documents-7.mp4
+        entree: 188
+        sortie: 202
+        ecran: "fiche : Cisjordanie · août 2025 · Le projet E1"
+        source: "Conseil supérieur de la planification, approbation du projet E1, 20 août 2025 ; Bezalel Smotrich, 14 août 2025"
+        verifier: "la date d'approbation d'E1, le nombre de logements et la phrase exacte de Smotrich (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          En août 2025, Israël approuve E1 : / 3 400 logements entre Jérusalem et la colonie de Maalé Adoumim, / de quoi couper la Cisjordanie en deux. / Smotrich : « Cela enterre l'idée d'un État **palestinien** ».
       - type: MD
         fichier: output/portraits-3.mp4
         entree: 110

@@ -108,48 +108,60 @@ numéro (même image, nouveau nom de fichier) :
 ## 23 octobre 2026, la nuit
 
 **Vérifications Perplexity intégrées** (dossier du 23 octobre, voir A-FABRIQUER.md section 6) : les fiches et les voix
-donnent maintenant les chiffres exacts et datés. Gaza au 22 octobre 2026 (25.19) ; l'argent du Qatar (25.11) ; l'eau
+donnent maintenant les chiffres exacts et datés. Gaza au 22 octobre 2026 (25.21) ; l'argent du Qatar (25.12) ; l'eau
 (23.14) ; le Néguev (28.8) ; la Cisjordanie (26.8) ; les journalistes, d'après le CPJ (27.8) ; Marwan Barghouti (21.13) ;
 Macron, phrase exacte (31.16) ; les vetos : 52 depuis 1972 (33.9) ; les tribunaux militaires et la détention
-administrative (35.9) ; la photo du Goush Emounim (26.2) : « Mont Huwara, près de Naplouse » (même nom, nouvelle version).
+administrative (35.19) ; la photo du Goush Emounim (26.2) : « Mont Huwara, près de Naplouse » (même nom, nouvelle version).
 
-**Dix-neuf plans ajoutés** (le film passe à 1 h 22 min 22), tous `<plan>-MD-documents-6.mp4` sauf 25.30 (`gaza`) :
+**Quarante-sept plans ajoutés** (le film passe à 1 h 28 min 23). Fiches sur la carte (`<plan>-MD-documents-6.mp4` ou
+`documents-7`), vraies photos d'archives (`PHOTO`, collection Matson) et une nouvelle séquence, `genocide-textes` :
 
 | Plan | Ce que c'est |
 |---|---|
-| 22.08 | le document du Hamas de 2017 (État dans les frontières de 1967, sans reconnaître Israël) |
-| 25.08 | l'échange Shalit, 2011, et Yahya Sinwar |
-| 25.12 | citation : la phrase de Netanyahou rapportée par la presse israélienne (2019), avec son démenti |
-| 25.13 | citation : Smotrich, 2015, « le Hamas est un atout » |
-| 25.14 | le plan « Mur de Jéricho » : l'armée avait le plan de l'attaque un an avant |
-| 25.27 | « Lavender », l'intelligence artificielle qui désigne les cibles |
-| 25.28 | Trump, février 2025 : « la Riviera du Moyen-Orient » |
-| 25.29 | tués en cherchant à manger, mai à juillet 2025 |
-| 25.30 | depuis le cessez-le-feu : plus de 1 500 morts, la « ligne jaune » |
-| 31.11 | des pièces françaises (Disclose, Eurosatory) |
-| 31.12 | manifester pour Gaza, octobre 2023 |
-| 31.13 | Meyer Habib |
-| 31.14 | les réseaux pro-israéliens en France (ELNET) |
-| 31.15 | les pressions sur Paris en 2025 (visas annulés, lettre de Netanyahou) |
-| 33.12 | les soutiens d'Israël aux États-Unis (AIPAC, évangéliques, armement) |
-| 33.13 | les entreprises des colonies (liste de l'ONU) |
-| 33.14 | l'économie de l'occupation (rapport de Francesca Albanese, 2025) |
-| 35.10 | « Bienvenue en enfer » : les prisons, Sde Teiman |
+| 5.04 à 5.06 | le baron Edmond de Rothschild ; photos d'archives : Zikhron Yaakov, les caves de Rishon LeZion |
+| 6.11 à 6.13 | le code foncier ottoman de 1858 ; Petah Tikva, 1886, le premier heurt ; le Fonds national juif, 1901 |
+| 8.11 à 8.13 | la vente de la plaine de Jezréel par les Sursock ; photo d'archive : un tracteur dans la plaine ; le rapport Hope Simpson, 1930 |
+| 13.04 | le plan Dalet, mars 1948 |
+| 15.08 | Tantura et al-Dawayima, 1948 |
+| 22.08 | le document du Hamas de 2017 |
+| 25.07 | la doctrine Dahiya, 2008 |
+| 25.09 | l'échange Shalit, 2011, et Yahya Sinwar |
+| 25.13 et 25.14 | citations : Netanyahou (2019, propos rapportés, avec son démenti), Smotrich (2015) |
+| 25.15 | le plan « Mur de Jéricho » : l'armée avait le plan de l'attaque un an avant |
+| 25.20 | d'autres paroles : Herzog, Eliyahu, Dichter (octobre et novembre 2023) |
+| 25.23 et 25.24 | Hind Rajab ; les secouristes de Rafah |
+| 25.31 à 25.35 | « Lavender » ; la « Riviera » de Trump ; onze semaines sans aide ; tués en cherchant à manger ; depuis le cessez-le-feu (`gaza`) |
+| 26.09 | le projet E1, août 2025 |
+| 31.11 à 31.15 | des pièces françaises ; manifester pour Gaza ; Meyer Habib ; les réseaux pro-israéliens ; les pressions sur Paris |
+| 33.12 à 33.14 | les soutiens d'Israël aux États-Unis ; les entreprises des colonies ; l'économie de l'occupation (Albanese) |
+| 34.10 | effacer aussi la mémoire : le patrimoine de Gaza |
+| 35.09 à 35.18 | « Génocide : ce que disent les textes » : la convention de 1948, Amnesty, Human Rights Watch, B'Tselem, les chercheurs du génocide, Omer Bartov, la commission de l'ONU, puis la réponse d'Israël |
+| 35.20 | « Bienvenue en enfer » : les prisons, Sde Teiman |
 | 38.06 | les chrétiens de Palestine |
 
-Les plans 22.08, 25.08, 25.12, 25.13 et 25.30 sont sûrs (textes officiels, dossier Perplexity) ; les autres attendent la deuxième série de questions
-Perplexity (A-FABRIQUER.md, section 7) : ne pas les enregistrer en voix avant.
+Sûrs dès maintenant : 22.08, 25.09, 25.13, 25.14, 25.35 et le début de la séquence génocide (35.09 et 35.10). Les
+autres plans nouveaux attendent les réponses Perplexity (A-FABRIQUER.md, sections 7 et 8) : ne pas les enregistrer en
+voix avant (le PDF du scénario les signale).
 
 Les plans qui suivent un ajout changent de numéro (même image, nouveau nom de fichier) :
 
 | Avant | Maintenant |
 |---|---|
+| 5.04 à 5.06 | 5.07 à 5.09 |
+| 6.11 à 6.16 | 6.14 à 6.19 |
+| 8.11 à 8.18 | 8.14 à 8.21 |
+| 13.04 à 13.15 | 13.05 à 13.16 |
 | 22.08 à 22.11 | 22.09 à 22.12 |
-| 25.08 à 25.10 | 25.09 à 25.11 |
-| 25.11 à 25.22 | 25.15 à 25.26 |
-| 25.23 | 25.31 (même image, la voix ne dit plus que « Une prison à ciel ouvert, devenue un champ de ruines ») |
+| 25.07 | 25.08 |
+| 25.08 à 25.10 | 25.10 à 25.12 |
+| 25.11 à 25.14 | 25.16 à 25.19 |
+| 25.15 et 25.16 | 25.21 et 25.22 |
+| 25.17 à 25.22 | 25.25 à 25.30 |
+| 25.23 | 25.36 (même image, la voix ne dit plus que « Une prison à ciel ouvert, devenue un champ de ruines ») |
+| 26.09 | 26.10 |
 | 31.11 et 31.12 | 31.16 et 31.17 |
-| 35.10 | 35.11 |
+| 35.09 | 35.19 |
+| 35.10 | 35.21 |
 | 38.06 à 38.08 | 38.07 à 38.09 |
 
 **Même nom, nouvelle version** : toutes les fiches `documents-6` (chiffres exacts, rythme : chaque ligne reste à

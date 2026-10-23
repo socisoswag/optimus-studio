@@ -143,7 +143,7 @@ qui les utilisent.
 | 14.2 | Flickr - Government Press Office (GPO) - TRAINING FOR THE HAGANA.jpg | GPO, 4 avril 1948 | CC BY-SA 3.0 |
 | 17.3 | Immigrants 1951.jpg | photographe du GPO, mai 1951 | domaine public |
 | 17.4 | Nahariya Maabara.jpg | Fritz Cohen, GPO, février 1952 | domaine public |
-| 5.6 | TelAviv-Founding.jpg | Avraham Soskin, 11 avril 1909 | domaine public |
+| 5.9 | TelAviv-Founding.jpg | Avraham Soskin, 11 avril 1909 | domaine public |
 | 10.3 | Bundist demonstration.jpg | auteur inconnu, février-mars 1917 | domaine public |
 | 28.3 | Zoltan Kluger. Rosh Ha-Ayin 1950.jpg | Zoltan Kluger, GPO, 2 février 1950 | domaine public |
 | 26.2 | Gush Emunim movement continues to send settlers to illegal settlements in Judea and Samaria even though the IDF evacuates them (FL45816230).jpg | Asher Koralik, collection Dan Hadani, Bibliothèque nationale d'Israël, 22 septembre 1978 | CC BY 4.0 |
@@ -669,7 +669,7 @@ marquée du filigrane d'une agence commerciale.
 
 ## 8. À relire juste avant la diffusion
 
-- Le bilan du ministère de la Santé de Gaza (chapitre 25, plans 25.19 et 25.30 ; fiches `timelines/gaza.js`) : il est
+- Le bilan du ministère de la Santé de Gaza (chapitre 25, plans 25.21 et 25.35 ; fiches `timelines/gaza.js`) : il est
   au 22 octobre 2026 ; le mettre à la date de sortie.
 - La ponctuation des résolutions de l'ONU sur les documents officiels (digitallibrary.un.org).
 - Les fiches « figures d'aujourd'hui » sont écrites au passé daté, pour rester justes après les législatives
@@ -729,6 +729,24 @@ attente de la deuxième série de questions (script/A-FABRIQUER.md, section 7), 
 | ch. 26 | La Cisjordanie depuis 2023 | OCHA, rapport de situation du 15 octobre 2026 et instantanés : plus de 5 773 incidents de colons avec victimes ou dégâts du 7 octobre 2023 au 12 octobre 2026 (somme des séries annuelles) ; UNRWA, repris par l'OCHA le 14 septembre 2026 : 34 176 déplacés des camps de Jénine (12 557), Tulkarem (12 412) et Nour Chams (9 207) |
 | ch. 38 | Kanafani et Handala | Ghassan Kanafani, tué à Beyrouth le 8 juillet 1972 ; Naji al-Ali, mort à Londres le 29 août 1987 |
 | ch. 38 | No Other Land | Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor ; Oscar du meilleur documentaire, 2 mars 2025 |
+| ch. 5 | Le baron de Rothschild | Edmond de Rothschild (1845-1934), colonies de Rishon LeZion, Zikhron Yaakov, Rosh Pina ; Jewish Colonization Association, 1899 (à vérifier) |
+| ch. 5 | Photos : Zikhron Yaakov, les caves de Rishon LeZion | Bibliothèque du Congrès, collection Matson, LC-DIG-matpc-15201 (vers 1920-1933) et LC-DIG-matpc-04774 (entre 1898 et 1934), domaine public |
+| ch. 6 | Le code foncier de 1858 | code foncier ottoman du 21 avril 1858 ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984 (à vérifier) |
+| ch. 6 | Petah Tikva, 1886 | affrontement avec les villageois de Yahudiya (à vérifier) |
+| ch. 6 | Le Fonds national juif | 5e congrès sioniste, Bâle, décembre 1901 (à vérifier) |
+| ch. 8 | La vente de la plaine de Jezréel | ventes Sursock, années 1920 ; Kenneth W. Stein ; Rashid Khalidi, The Hundred Years' War on Palestine, 2020 (à vérifier) |
+| ch. 8 | Photo : un tracteur dans la plaine de Jezréel | Bibliothèque du Congrès, collection Matson, LC-DIG-matpc-15225 (vers 1920-1933), domaine public |
+| ch. 8 | Le rapport Hope Simpson | Sir John Hope Simpson, rapport d'octobre 1930 ; lettre de Ramsay MacDonald, 13 février 1931 (à vérifier) |
+| ch. 13 | Le plan Dalet | plan de la Haganah, 10 mars 1948 (Walid Khalidi, Journal of Palestine Studies, 1988) ; Ilan Pappé, 2006 ; Benny Morris, 2004 (à vérifier) |
+| ch. 15 | Tantura et al-Dawayima | Benny Morris, 2004 ; Alon Schwarz, « Tantura », 2022 (à vérifier) |
+| ch. 25 | La doctrine Dahiya | Gadi Eisenkot, Yedioth Ahronoth, octobre 2008 (à vérifier) |
+| ch. 25 | D'autres paroles | Herzog, Eliyahu, Dichter ; requête de l'Afrique du Sud à la CIJ, 29 décembre 2023 (à vérifier) |
+| ch. 25 | Hind Rajab | Croissant-Rouge palestinien ; Forensic Architecture, 2024 (à vérifier) |
+| ch. 25 | Les secouristes de Rafah | 23 mars 2025 ; enquête de l'armée israélienne, 20 avril 2025 (à vérifier) |
+| ch. 25 | Onze semaines sans aide | 2 mars au 19 mai 2025 (à vérifier) ; CPI, 21 novembre 2024 |
+| ch. 26 | Le projet E1 | approbation du 20 août 2025 ; Bezalel Smotrich, 14 août 2025 (à vérifier) |
+| ch. 34 | Le patrimoine de Gaza | Grande Mosquée al-Omari, universités, Archives centrales ; experts de l'ONU, avril 2024 (à vérifier) |
+| ch. 35 | Génocide : ce que disent les textes | Convention pour la prévention et la répression du crime de génocide, 9 décembre 1948, article II ; Raphael Lemkin, 1944 ; Amnesty International, 5 décembre 2024 ; Human Rights Watch, 19 décembre 2024 ; B'Tselem et PHRI, 28 juillet 2025 ; IAGS, 1er septembre 2025 ; Omer Bartov, The New York Times, 15 juillet 2025 ; commission d'enquête de l'ONU, 16 septembre 2025 (textes à vérifier mot pour mot) |
 
 Liens principaux du dossier de vérification :
 - OCHA, Gaza Reported Impact Snapshot, 14 octobre 2026 : https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_14_October_2026.pdf

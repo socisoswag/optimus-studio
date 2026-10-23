@@ -240,6 +240,15 @@ chapitres:
         fichier: output/noms-effaces.mp4
         entree: 70.3
         sortie: 77.08
+      - type: MD
+        fichier: output/documents-7.mp4
+        entree: 202
+        sortie: 217
+        ecran: "fiche : Gaza · depuis octobre 2023 · Effacer aussi la mémoire"
+        source: "Grande Mosquée al-Omari, 8 décembre 2023 ; universités de Gaza ; Archives centrales de Gaza ; experts de l'ONU, avril 2024 (« scolasticide ») ; UNESCO"
+        verifier: "les destructions de la mosquée al-Omari, des universités et des Archives centrales, avec dates et sources (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          À Gaza aussi, on efface. / En décembre 2023, la Grande Mosquée al-Omari, la plus ancienne de la ville, est détruite. / Les universités sont toutes touchées, / et les Archives centrales brûlent, avec plus d'un siècle de **documents**.
 
   - num: "35"
     titre: "Chapitre 35 · Colonialisme, apartheid : le poids des mots"
@@ -294,6 +303,78 @@ chapitres:
         voix: >-
           Israël rejette ce mot : / ses citoyens arabes votent et siègent au Parlement, / et les territoires relèvent,
           dit-il, d'un conflit, pas d'un **système**.
+      - type: MD
+        fichier: output/genocide-textes.mp4
+        entree: 0
+        sortie: 6.2
+        source: "séquence « Génocide : ce que disent les textes » (timelines/genocide-textes.js)"
+        voix: >-
+          Un mot plus lourd encore : / **génocide**.
+      - type: MD
+        fichier: output/genocide-textes.mp4
+        entree: 6.2
+        sortie: 20.2
+        source: "Convention pour la prévention et la répression du crime de génocide, 9 décembre 1948, article II (texte français officiel) ; Raphael Lemkin, Axis Rule in Occupied Europe, 1944"
+        voix: >-
+          Le mot naît en 1944, sous la plume d'un juriste juif polonais, Raphael Lemkin. / En 1948, après la Shoah, l'ONU en fait un crime : / des actes commis dans l'intention de détruire, en tout ou en partie, un groupe national, ethnique, racial ou **religieux**.
+      - type: MD
+        fichier: output/genocide-textes.mp4
+        entree: 20.2
+        sortie: 31.7
+        source: "Amnesty International, rapport du 5 décembre 2024 ; déclaration d'Agnès Callamard"
+        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          En décembre 2024, Amnesty International conclut : / Israël commet un génocide à **Gaza**.
+      - type: MD
+        fichier: output/genocide-textes.mp4
+        entree: 31.7
+        sortie: 42.2
+        source: "Human Rights Watch, « Extermination et actes de génocide », 19 décembre 2024"
+        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          Human Rights Watch parle d'« actes de génocide » : / Israël prive Gaza d'**eau**.
+      - type: MD
+        fichier: output/genocide-textes.mp4
+        entree: 42.2
+        sortie: 54.2
+        source: "B'Tselem et Médecins pour les droits humains-Israël, « Notre génocide », 28 juillet 2025"
+        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          En juillet 2025, deux ONG israéliennes, B'Tselem et Médecins pour les droits humains, publient leur rapport. / Son titre : « Notre **génocide** ».
+      - type: MD
+        fichier: output/genocide-textes.mp4
+        entree: 54.2
+        sortie: 65.2
+        source: "Association internationale des chercheurs sur le génocide (IAGS), résolution du 1er septembre 2025"
+        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          En septembre, l'association internationale des chercheurs sur le génocide vote : / ce qui se passe à Gaza répond à la définition **juridique**.
+      - type: MD
+        fichier: output/genocide-textes.mp4
+        entree: 65.2
+        sortie: 76.2
+        source: "Omer Bartov, « I'm a Genocide Scholar. I Know It When I See It. », The New York Times, 15 juillet 2025"
+        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          Omer Bartov, historien israélien de la Shoah, écrit dans le New York Times : / « Israël commet un génocide contre le peuple **palestinien** ».
+      - type: MD
+        fichier: output/genocide-textes.mp4
+        entree: 76.2
+        sortie: 89.2
+        source: "commission internationale indépendante d'enquête de l'ONU, rapport du 16 septembre 2025 (présidente : Navi Pillay)"
+        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
+        voix: >-
+          Puis la commission d'enquête de l'ONU, présidée par une ancienne juge du tribunal pour le Rwanda : / Israël « a commis un **génocide** ».
+      - type: MD
+        fichier: output/genocide-textes.mp4
+        entree: 89.2
+        sortie: 96
+      - type: NOIR
+        duree: 12
+        source: "position du gouvernement israélien ; CIJ, affaire Afrique du Sud c. Israël (pas de jugement au fond au 23 octobre 2026)"
+        voix: >-
+          Israël rejette ces conclusions : / il dit combattre le Hamas, pas un peuple, / et invoque la légitime défense. // La Cour internationale de justice, elle, n'a pas encore jugé le **fond**.
+        note: "règle 6 de la bible : qui affirme, sur quelle base, ce qui reste à juger"
       - type: MD
         fichier: output/documents-6.mp4
         entree: 188

@@ -76,19 +76,25 @@
 
 ## Chapitre 5 · Les premiers colons juifs en Palestine
 
-*0 min 53 de film*
+*1 min 32 de film*
 
 **5.3** Les premiers arrivent dès 1882, de Russie et de Roumanie. / Ils fondent des colonies agricoles, / souvent financées par le baron Edmond de **Rothschild**.
 
-**5.4** La deuxième vague, après 1904, est différente. / De jeunes socialistes rêvent d'un Juif nouveau, / paysan sur sa terre, / qui parle l'hébreu **ressuscité**.
+**5.4** Derrière ces colonies, un banquier de Paris : / le baron Edmond de Rothschild. / Dès 1882, il finance Rishon LeZion, Zikhron Yaakov, Rosh Pina. / Ses agents achètent des terres, souvent à de grands propriétaires qui n'y vivent **pas**. *(attends avant d'enregistrer : les dates du soutien de Rothschild, le passage à la JCA, la façon dont ses agents achetaient les terres (question Perplexity, A-FABRIQUER.md section 8))*
 
-**5.5** Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, / et les ouvriers arabes sont écartés.
+**5.5** Zikhron Yaakov porte le nom de son père, Jacob. / Le baron y paie les maisons, la synagogue, les **vignes**.
 
-**5.6** En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la ville arabe.
+**5.6** À Rishon LeZion, il fait creuser de grandes caves à vin. / Dans ses colonies travaillent des ouvriers arabes, par centaines. / La vague suivante ne voudra plus de ce **modèle**. *(attends avant d'enregistrer : l'emploi d'ouvriers arabes dans les colonies de Rothschild, ordre de grandeur (question Perplexity, A-FABRIQUER.md section 8))*
+
+**5.7** La deuxième vague, après 1904, est différente. / De jeunes socialistes rêvent d'un Juif nouveau, / paysan sur sa terre, / qui parle l'hébreu **ressuscité**.
+
+**5.8** Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, / et les ouvriers arabes sont écartés.
+
+**5.9** En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la ville arabe.
 
 ## Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface
 
-*3 min 19 de film*
+*3 min 60 de film*
 
 **6.2** Jérusalem, 1897. / Les frères Lumière filment la porte de Jaffa. // Voilà le pays que Bâle, la même année, choisit pour **foyer**.
 
@@ -108,17 +114,23 @@
 
 **6.10** Personne ne lui avait parlé de les chasser. // Et quatre ans plus tôt, dans son journal, / il envisageait de faire passer les pauvres de l'autre côté de la **frontière**.
 
-**6.11** En 1910, un riche propriétaire de Beyrouth, / Élias Sursock, / vend dix mille dounams autour d'al-Fula au Fonds national juif. // Les paysans qui les cultivent refusent de **partir**.
+**6.11** Pour comprendre ces ventes, il faut remonter à 1858. / L'Empire ottoman impose d'enregistrer les terres. / Beaucoup de paysans les inscrivent au nom de notables, pour échapper à l'impôt et à l'armée. / Des familles de Beyrouth deviennent propriétaires de villages **entiers**. *(attends avant d'enregistrer : le code foncier de 1858 et les inscriptions au nom de notables (question Perplexity, A-FABRIQUER.md section 8))*
 
-**6.12** Ils écrivent à Istanbul : / la vente prive mille villageois de leur **pain**. // Le sous-préfet de Nazareth refuse de la signer. / En vain : / en 1911, la colonie de Merhavia s'installe.
+**6.12** Les acheteurs traitent avec ces propriétaires, pas avec les paysans. / En 1886, à Petah Tikva, les villageois de Yahudiya, privés de leurs pâturages, attaquent la colonie. / C'est le premier affrontement pour la **terre**. *(attends avant d'enregistrer : la date et les faits de l'affrontement de Petah Tikva en 1886 (question Perplexity, A-FABRIQUER.md section 8))*
 
-**6.13** À Haïfa, le journal al-Karmil fait campagne contre ces ventes. / À Jaffa, en 1911, naît un journal au nom qui dit tout : / **Filastin**. / Palestine.
+**6.13** En 1901, à Bâle, le mouvement sioniste crée le Fonds national juif, pour acheter la terre. / Une règle : ses terres ne se revendent jamais, / et elles sont louées à des **Juifs**. *(attends avant d'enregistrer : les règles du Fonds national juif sur ses terres, texte et date (question Perplexity, A-FABRIQUER.md section 8))*
 
-**6.14** Même chez les sionistes, certains voient venir le conflit. / En 1891, le penseur Ahad Ha'am écrit : / « Nous croyons, à l'étranger, que la terre d'Israël est presque toute déserte. / Mais ce n'est pas **vrai**. »
+**6.14** En 1910, un riche propriétaire de Beyrouth, / Élias Sursock, / vend dix mille dounams autour d'al-Fula au Fonds national juif. // Les paysans qui les cultivent refusent de **partir**.
 
-**6.15** Il décrit des colons qui traitent les Arabes / « avec hostilité et cruauté », / et qui « s'en vantent ». // Et il prévient : / le jour où nous prendrons leur place, / ils ne s'écarteront pas si **facilement**.
+**6.15** Ils écrivent à Istanbul : / la vente prive mille villageois de leur **pain**. // Le sous-préfet de Nazareth refuse de la signer. / En vain : / en 1911, la colonie de Merhavia s'installe.
 
-**6.16** En 1914, la guerre éclate. / L'Empire ottoman va s'effondrer, / et trois promesses contradictoires vont être faites sur la même **terre**. ///
+**6.16** À Haïfa, le journal al-Karmil fait campagne contre ces ventes. / À Jaffa, en 1911, naît un journal au nom qui dit tout : / **Filastin**. / Palestine.
+
+**6.17** Même chez les sionistes, certains voient venir le conflit. / En 1891, le penseur Ahad Ha'am écrit : / « Nous croyons, à l'étranger, que la terre d'Israël est presque toute déserte. / Mais ce n'est pas **vrai**. »
+
+**6.18** Il décrit des colons qui traitent les Arabes / « avec hostilité et cruauté », / et qui « s'en vantent ». // Et il prévient : / le jour où nous prendrons leur place, / ils ne s'écarteront pas si **facilement**.
+
+**6.19** En 1914, la guerre éclate. / L'Empire ottoman va s'effondrer, / et trois promesses contradictoires vont être faites sur la même **terre**. ///
 
 ## Chapitre 7 · La déclaration Balfour (1917)
 
@@ -146,7 +158,7 @@
 
 ## Chapitre 8 · Le mandat britannique : trente ans sous tension
 
-*3 min 09 de film*
+*3 min 50 de film*
 
 **8.2** Le 11 décembre 1917, le général Allenby entre à pied dans Jérusalem. / Pour trente ans, la Palestine sera **britannique**.
 
@@ -164,21 +176,27 @@
 
 **8.9** À Hébron, 67 Juifs sont massacrés, / dans une ville où leur communauté vivait depuis des **siècles**. // Des familles arabes en cachent d'autres chez elles.
 
-**8.11** En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il est tué en novembre. // Il devient un **symbole**.
+**8.11** Sous le mandat, les ventes changent d'échelle. / Dans les années 1920, la famille Sursock vend une grande partie de la plaine de Jezréel. / Des milliers de métayers arabes, qui la cultivaient depuis des générations, sont **expulsés**. *(attends avant d'enregistrer : les surfaces vendues par les Sursock, le nombre de villages et de métayers expulsés (question Perplexity, A-FABRIQUER.md section 8))*
 
-**8.12** 1933. / Hitler arrive au pouvoir, / l'immigration juive s'accélère, / et Jaffa **manifeste**.
+**8.12** Sur ces terres naissent des colonies juives. / Beaucoup de paysans chassés s'entassent dans les bidonvilles de Haïfa. // C'est là que prêchera Izz ad-Din al-**Qassam**. *(attends avant d'enregistrer : le lien entre paysans chassés, bidonvilles de Haïfa et al-Qassam (question Perplexity, A-FABRIQUER.md section 8))*
 
-**8.13** En 1936, la Palestine arabe se met en grève. / Six mois. // C'est le début de la grande **révolte**.
+**8.13** En 1930, un enquêteur britannique, John Hope Simpson, conclut : / près de trois familles arabes sur dix, dans les villages, n'ont plus de terre. / Londres promet de freiner les achats, / puis recule l'année suivante, sous la pression du mouvement **sioniste**. *(attends avant d'enregistrer : le pourcentage de familles sans terre du rapport Hope Simpson et la lettre MacDonald (question Perplexity, A-FABRIQUER.md section 8))*
 
-**8.14** La répression britannique est terrible : / maisons dynamitées, / pendaisons, / villages punis. // En trois ans, environ cinq mille Arabes sont **tués**.
+**8.14** En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il est tué en novembre. // Il devient un **symbole**.
 
-**8.15** Les civils paient des deux côtés. / À Tibériade, en octobre 1938, / dix-neuf Juifs sont tués, dont onze enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés **arabes**.
+**8.15** 1933. / Hitler arrive au pouvoir, / l'immigration juive s'accélère, / et Jaffa **manifeste**.
 
-**8.16** En 1937, la commission Peel propose pour la première fois de couper le pays en deux, / et de déplacer jusqu'à 225 000 Arabes. // Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**.
+**8.16** En 1936, la Palestine arabe se met en grève. / Six mois. // C'est le début de la grande **révolte**.
 
-**8.17** En 1939, Londres fait marche arrière : / l'immigration juive est limitée / à 75 000 personnes en cinq **ans**.
+**8.17** La répression britannique est terrible : / maisons dynamitées, / pendaisons, / villages punis. // En trois ans, environ cinq mille Arabes sont **tués**.
 
-**8.18** Au moment même où les Juifs d'Europe / cherchent à fuir le **nazisme**. ///
+**8.18** Les civils paient des deux côtés. / À Tibériade, en octobre 1938, / dix-neuf Juifs sont tués, dont onze enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés **arabes**.
+
+**8.19** En 1937, la commission Peel propose pour la première fois de couper le pays en deux, / et de déplacer jusqu'à 225 000 Arabes. // Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**.
+
+**8.20** En 1939, Londres fait marche arrière : / l'immigration juive est limitée / à 75 000 personnes en cinq **ans**.
+
+**8.21** Au moment même où les Juifs d'Europe / cherchent à fuir le **nazisme**. ///
 
 ## Chapitre 9 · L'accord Haavara et l'assassinat d'Arlosoroff
 
@@ -256,33 +274,35 @@
 
 ## Chapitre 13 · 1948 : la création d'Israël et la Nakba
 
-*3 min 02 de film*
+*3 min 17 de film*
 
 **13.2** 14 mai 1948. / Ben Gourion proclame l'État d'**Israël**.
 
 **13.3** Pour les Palestiniens, c'est la Nakba. / La **catastrophe**.
 
-**13.4** Avant même l'entrée des armées arabes, / Tibériade, Haïfa, Safed et Jaffa sont prises. / Leurs habitants arabes fuient, / ou sont **chassés**.
+**13.4** Dès le 10 mars 1948, la Haganah adopte le plan Dalet. / Il prévoit de détruire des villages, / et, en cas de résistance, / d'expulser leurs habitants « hors des frontières de l'**État** ». *(attends avant d'enregistrer : le texte exact du plan Dalet sur la destruction des villages et l'expulsion (question Perplexity, A-FABRIQUER.md section 8))*
 
-**13.5** Le 15 mai, cinq armées arabes entrent en guerre. / Pour Israël, c'est une guerre de survie : / environ six mille morts, / un Juif du pays sur **cent**.
+**13.5** Avant même l'entrée des armées arabes, / Tibériade, Haïfa, Safed et Jaffa sont prises. / Leurs habitants arabes fuient, / ou sont **chassés**.
 
-**13.6** En juillet, à Lydda et Ramle, / entre cinquante et soixante-dix mille habitants sont expulsés. / Ils marchent vers l'est, en pleine **chaleur**.
+**13.6** Le 15 mai, cinq armées arabes entrent en guerre. / Pour Israël, c'est une guerre de survie : / environ six mille morts, / un Juif du pays sur **cent**.
 
-**13.7** À l'automne, / le Néguev, / puis la **Galilée**.
+**13.7** En juillet, à Lydda et Ramle, / entre cinquante et soixante-dix mille habitants sont expulsés. / Ils marchent vers l'est, en pleine **chaleur**.
 
-**13.8** En tout, plus de quatre cents villages sont vidés. / La plupart sont rasés. // Leurs habitants ne reviendront **jamais**.
+**13.8** À l'automne, / le Néguev, / puis la **Galilée**.
 
-**13.9** En 1949, Israël tient 78 % de la Palestine mandataire. / La Cisjordanie passe à la Jordanie, / Gaza à l'**Égypte**.
+**13.9** En tout, plus de quatre cents villages sont vidés. / La plupart sont rasés. // Leurs habitants ne reviendront **jamais**.
 
-**13.10** Le 11 décembre 1948, l'ONU demande que les réfugiés qui le souhaitent puissent rentrer chez eux. // Ce n'est jamais **appliqué**.
+**13.10** En 1949, Israël tient 78 % de la Palestine mandataire. / La Cisjordanie passe à la Jordanie, / Gaza à l'**Égypte**.
 
-**13.11** Environ sept cent mille Palestiniens deviennent réfugiés, / au Liban, en Syrie, en Transjordanie, en Cisjordanie et à **Gaza**.
+**13.11** Le 11 décembre 1948, l'ONU demande que les réfugiés qui le souhaitent puissent rentrer chez eux. // Ce n'est jamais **appliqué**.
 
-**13.12** Une même année. / Deux **mémoires**.
+**13.12** Environ sept cent mille Palestiniens deviennent réfugiés, / au Liban, en Syrie, en Transjordanie, en Cisjordanie et à **Gaza**.
 
-**13.13** Pendant des décennies, le récit officiel israélien affirme : / ils sont partis à l'appel des dirigeants arabes. // À partir des années 1980, des historiens israéliens ouvrent les archives de leur propre **armée**.
+**13.13** Une même année. / Deux **mémoires**.
 
-**13.15** Benny Morris, le plus cité d'entre eux, conclut : / la plupart ont fui les combats et la peur, / beaucoup ont été expulsés, / et seule une petite partie est partie sur ordre de dirigeants arabes. // Le retour leur est interdit dès juin **1948**.
+**13.14** Pendant des décennies, le récit officiel israélien affirme : / ils sont partis à l'appel des dirigeants arabes. // À partir des années 1980, des historiens israéliens ouvrent les archives de leur propre **armée**.
+
+**13.16** Benny Morris, le plus cité d'entre eux, conclut : / la plupart ont fui les combats et la peur, / beaucoup ont été expulsés, / et seule une petite partie est partie sur ordre de dirigeants arabes. // Le retour leur est interdit dès juin **1948**.
 
 ## Chapitre 14 · Les milices juives : Haganah, Irgoun, Lehi
 
@@ -306,7 +326,7 @@
 
 ## Chapitre 15 · Le massacre de Deir Yassin
 
-*1 min 16 de film*
+*1 min 31 de film*
 
 **15.2** 9 avril 1948. / Deir Yassin, un village à l'ouest de **Jérusalem**.
 
@@ -319,6 +339,8 @@
 **15.6** Aujourd'hui, les maisons du village abritent un hôpital psychiatrique **israélien**. ///
 
 **15.7** L'Agence juive et la Haganah condamnent le massacre ; / Ben Gourion présente des excuses au roi Abdallah de Transjordanie. // Quatre jours plus tard, à Jérusalem, / des combattants arabes attaquent un convoi de l'hôpital Hadassah : / 78 morts, médecins, infirmières et **patients**.
+
+**15.8** Deir Yassin n'est pas un cas isolé. / À Tantura, en mai 1948, des dizaines d'hommes sont tués après la prise du village. / À al-Dawayima, en octobre, des dizaines, peut-être des centaines. // En 2022, d'anciens soldats israéliens racontent Tantura devant la **caméra**. *(attends avant d'enregistrer : les bilans de Tantura et d'al-Dawayima selon les historiens (question Perplexity, A-FABRIQUER.md section 8))*
 
 ## Chapitre 16 · David Ben Gourion : l'État avant tout
 
@@ -554,7 +576,7 @@
 
 ## Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre
 
-*6 min 39 de film*
+*7 min 52 de film*
 
 **25.2** En 2005, Ariel Sharon fait évacuer les colonies de Gaza. / Mais Israël garde les frontières, la mer et le ciel : / pour l'ONU, Gaza reste **occupée**.
 
@@ -566,59 +588,69 @@
 
 **25.6** Puis les offensives : 2008, 2014, 2021. / Des milliers de morts à Gaza ; / des dizaines en **Israël**.
 
-**25.7** En 2010, une flottille tente de briser le blocus. / L'armée israélienne prend d'assaut le Mavi Marmara : / dix militants en **meurent**.
+**25.7** Ces offensives suivent une doctrine. / En 2008, le général Gadi Eisenkot, futur chef d'état-major, l'explique : / « Nous emploierons une force disproportionnée. » / Les villages d'où l'on tire « ne sont pas des villages civils, ce sont des bases **militaires** ». *(attends avant d'enregistrer : les mots exacts de Gadi Eisenkot en 2008 (question Perplexity, A-FABRIQUER.md section 8))*
 
-**25.8** En 2011, Israël échange le soldat Gilad Shalit, otage depuis cinq ans, contre 1 027 prisonniers palestiniens. / Parmi eux, Yahya Sinwar : / il dirigera le Hamas à Gaza, et sera tenu pour l'architecte du 7 **octobre**.
+**25.8** En 2010, une flottille tente de briser le blocus. / L'armée israélienne prend d'assaut le Mavi Marmara : / dix militants en **meurent**.
 
-**25.9** En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
+**25.9** En 2011, Israël échange le soldat Gilad Shalit, otage depuis cinq ans, contre 1 027 prisonniers palestiniens. / Parmi eux, Yahya Sinwar : / il dirigera le Hamas à Gaza, et sera tenu pour l'architecte du 7 **octobre**.
 
-**25.10** En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
+**25.10** En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
 
-**25.11** Pendant ce temps, Netanyahou laisse le Qatar verser des millions de dollars par mois à Gaza, gouvernée par le Hamas. / Selon le New York Times, il parie qu'un Hamas fort, mais pas trop, / éloignera la pression pour un État **palestinien**.
+**25.11** En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
 
-**25.12** En 2019, la presse israélienne lui prête ces mots : / « Celui qui veut empêcher la création d'un État palestinien / doit soutenir le renforcement du Hamas, et le transfert d'argent au Hamas. » // Il dément l'avoir dit ; / son bureau parle d'aide **humanitaire**.
+**25.12** Pendant ce temps, Netanyahou laisse le Qatar verser des millions de dollars par mois à Gaza, gouvernée par le Hamas. / Selon le New York Times, il parie qu'un Hamas fort, mais pas trop, / éloignera la pression pour un État **palestinien**.
 
-**25.13** Dès 2015, Bezalel Smotrich, aujourd'hui ministre des Finances, le disait à sa façon : / « L'Autorité palestinienne est un fardeau, / et le Hamas est un **atout**. »
+**25.13** En 2019, la presse israélienne lui prête ces mots : / « Celui qui veut empêcher la création d'un État palestinien / doit soutenir le renforcement du Hamas, et le transfert d'argent au Hamas. » // Il dément l'avoir dit ; / son bureau parle d'aide **humanitaire**.
 
-**25.14** Et le plan du Hamas, l'armée l'avait. / Plus d'un an avant le 7 octobre, un document d'une quarantaine de pages décrit l'attaque. / Ses chefs le jugent hors de portée du **Hamas**. *(attends avant d'enregistrer : le document « Jericho Wall », ses auteurs et les alertes de 2023 (question Perplexity, A-FABRIQUER.md))*
+**25.14** Dès 2015, Bezalel Smotrich, aujourd'hui ministre des Finances, le disait à sa façon : / « L'Autorité palestinienne est un fardeau, / et le Hamas est un **atout**. »
 
-**25.15** Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
+**25.15** Et le plan du Hamas, l'armée l'avait. / Plus d'un an avant le 7 octobre, un document d'une quarantaine de pages décrit l'attaque. / Ses chefs le jugent hors de portée du **Hamas**. *(attends avant d'enregistrer : le document « Jericho Wall », ses auteurs et les alertes de 2023 (question Perplexity, A-FABRIQUER.md))*
 
-**25.16** Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///
+**25.16** Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
 
-**25.17** Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. / Nous combattons des animaux **humains**. »
+**25.17** Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///
 
-**25.18** Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
+**25.18** Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. / Nous combattons des animaux **humains**. »
 
-**25.19** Au 22 octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués, / et plus de cent soixante-quinze mille blessés. / Un décompte sans doute **inférieur** à la réalité.
+**25.19** Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
 
-**25.20** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
+**25.20** D'autres paroles suivent. / Le président Isaac Herzog : « C'est toute une nation, là-bas, qui est responsable. » / Le ministre Amichai Eliyahu juge une bombe atomique sur Gaza « une des possibilités ». / Le ministre Avi Dichter : « Nous sommes en train de dérouler la Nakba de **Gaza** ». *(attends avant d'enregistrer : les trois phrases exactes, en hébreu ou en anglais, et leurs dates (question Perplexity, A-FABRIQUER.md section 8))*
 
-**25.21** Vu du ciel, avant, / et après. ///
+**25.21** Au 22 octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués, / et plus de cent soixante-quinze mille blessés. / Un décompte sans doute **inférieur** à la réalité.
 
-**25.22** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
+**25.22** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
 
-**25.23** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
+**25.23** Le 29 janvier 2024, à Gaza-ville, Hind Rajab, six ans, est coincée dans une voiture, au milieu des corps de sa famille. / Pendant des heures, elle parle au Croissant-Rouge. / L'ambulance envoyée la chercher est détruite. / On la retrouve morte douze jours plus **tard**. *(attends avant d'enregistrer : les faits et dates de la mort de Hind Rajab et des deux secouristes (question Perplexity, A-FABRIQUER.md section 8))*
 
-**25.24** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
+**25.24** Le 23 mars 2025, à Rafah, quinze secouristes sont tués, puis enterrés avec leurs ambulances. / L'armée dit d'abord qu'ils roulaient sans phares. / La vidéo retrouvée sur le téléphone de l'un d'eux montre le **contraire**. *(attends avant d'enregistrer : le bilan, la vidéo et les conclusions de l'enquête de l'armée (question Perplexity, A-FABRIQUER.md section 8))*
 
-**25.25** La guerre déborde. / En septembre 2024, au Liban, Israël tue le chef du Hezbollah, Hassan Nasrallah. / Après la chute d'Assad, son armée avance en Syrie. / En juin 2025, douze jours de guerre avec l'**Iran**.
+**25.25** Vu du ciel, avant, / et après. ///
 
-**25.26** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
+**25.26** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
 
-**25.27** Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**. *(attends avant d'enregistrer : les chiffres de l'enquête « Lavender » et la réponse de l'armée (question Perplexity, A-FABRIQUER.md))*
+**25.27** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
 
-**25.28** En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**. *(attends avant d'enregistrer : les mots exacts de Donald Trump le 4 février 2025 (question Perplexity, A-FABRIQUER.md))*
+**25.28** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
 
-**25.29** En mai 2025, une fondation soutenue par Israël et les États-Unis prend en main l'aide alimentaire. / En deux mois, selon l'ONU, plus de mille trois cents Palestiniens sont tués en cherchant de quoi **manger**. *(attends avant d'enregistrer : le bilan du HCDH au 31 juillet 2025 (1 373 morts, dont 859 près des sites de la GHF ?) (question Perplexity, A-FABRIQUER.md))*
+**25.29** La guerre déborde. / En septembre 2024, au Liban, Israël tue le chef du Hezbollah, Hassan Nasrallah. / Après la chute d'Assad, son armée avance en Syrie. / En juin 2025, douze jours de guerre avec l'**Iran**.
 
-**25.30** 10 octobre 2025 : un cessez-le-feu. / Les grandes offensives s'arrêtent, pas les tirs : / au 22 octobre 2026, plus de mille cinq cents morts depuis la trêve. / Israël tient encore environ les deux tiers de la **bande**.
+**25.30** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
 
-**25.31** Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
+**25.31** Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**. *(attends avant d'enregistrer : les chiffres de l'enquête « Lavender » et la réponse de l'armée (question Perplexity, A-FABRIQUER.md))*
+
+**25.32** En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**. *(attends avant d'enregistrer : les mots exacts de Donald Trump le 4 février 2025 (question Perplexity, A-FABRIQUER.md))*
+
+**25.33** Le 2 mars 2025, Israël bloque toute entrée d'aide à Gaza : / onze semaines sans nourriture ni médicaments. / La CPI vise déjà Netanyahou pour la famine comme méthode de **guerre**. *(attends avant d'enregistrer : les dates du blocus total de 2025 (question Perplexity, A-FABRIQUER.md section 8))*
+
+**25.34** En mai 2025, une fondation soutenue par Israël et les États-Unis prend en main l'aide alimentaire. / En deux mois, selon l'ONU, plus de mille trois cents Palestiniens sont tués en cherchant de quoi **manger**. *(attends avant d'enregistrer : le bilan du HCDH au 31 juillet 2025 (1 373 morts, dont 859 près des sites de la GHF ?) (question Perplexity, A-FABRIQUER.md))*
+
+**25.35** 10 octobre 2025 : un cessez-le-feu. / Les grandes offensives s'arrêtent, pas les tirs : / au 22 octobre 2026, plus de mille cinq cents morts depuis la trêve. / Israël tient encore environ les deux tiers de la **bande**.
+
+**25.36** Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
 
 ## Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique
 
-*1 min 47 de film*
+*2 min 01 de film*
 
 **26.2** Après 1967, une partie des Juifs religieux voit dans la conquête un signe de Dieu. / En 1974, ils fondent le Goush Emounim, / « le bloc de la foi » : / s'installer partout, en Judée et en **Samarie**.
 
@@ -634,7 +666,9 @@
 
 **26.8** En Cisjordanie aussi, la violence explose : / plus de 5 700 attaques de colons en trois ans, d'après les relevés de l'ONU. / En 2025, l'armée lance l'opération « Mur de fer » dans les camps du nord : / à Jénine, Tulkarem et Nour Chams, plus de 34 000 **déplacés**.
 
-**26.9** Il retire ce mot. / En 2024, il dit : / « Personne au monde ne nous laissera affamer deux millions de personnes, / même si cela pouvait être justifié et **moral**, / jusqu'à ce qu'ils rendent les otages. »
+**26.9** En août 2025, Israël approuve E1 : / 3 400 logements entre Jérusalem et la colonie de Maalé Adoumim, / de quoi couper la Cisjordanie en deux. / Smotrich : « Cela enterre l'idée d'un État **palestinien** ». *(attends avant d'enregistrer : la date d'approbation d'E1, le nombre de logements et la phrase exacte de Smotrich (question Perplexity, A-FABRIQUER.md section 8))*
+
+**26.10** Il retire ce mot. / En 2024, il dit : / « Personne au monde ne nous laissera affamer deux millions de personnes, / même si cela pouvait être justifié et **moral**, / jusqu'à ce qu'ils rendent les otages. »
 
 ## Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation
 
@@ -786,7 +820,7 @@
 
 ## Chapitre 34 · L'effacement culturel : villages détruits, noms effacés
 
-*1 min 22 de film*
+*1 min 37 de film*
 
 **34.2** Effacer les villages, / puis leurs **noms**.
 
@@ -802,9 +836,11 @@
 
 **34.8** Lifta, à l'entrée de Jérusalem : / debout, mais **vide**.
 
+**34.10** À Gaza aussi, on efface. / En décembre 2023, la Grande Mosquée al-Omari, la plus ancienne de la ville, est détruite. / Les universités sont toutes touchées, / et les Archives centrales brûlent, avec plus d'un siècle de **documents**. *(attends avant d'enregistrer : les destructions de la mosquée al-Omari, des universités et des Archives centrales, avec dates et sources (question Perplexity, A-FABRIQUER.md section 8))*
+
 ## Chapitre 35 · Colonialisme, apartheid : le poids des mots
 
-*2 min 03 de film*
+*3 min 51 de film*
 
 **35.2** Un mot très lourd : / **apartheid**.
 
@@ -818,11 +854,29 @@
 
 **35.8** Israël rejette ce mot : / ses citoyens arabes votent et siègent au Parlement, / et les territoires relèvent, dit-il, d'un conflit, pas d'un **système**.
 
-**35.9** Dans les années 2010, 500 à 700 enfants palestiniens sont poursuivis chaque année devant des tribunaux militaires. / Au 1er octobre 2026, 3 101 personnes sont en « détention administrative » : / sans inculpation, sans **procès**.
+**35.9** Un mot plus lourd encore : / **génocide**.
 
-**35.10** Et dans les prisons ? / En 2024, l'ONG israélienne B'Tselem recueille 55 témoignages d'anciens détenus. / Son rapport s'intitule « Bienvenue en enfer ». / Au camp de Sde Teiman, des soldats sont soupçonnés de sévices sexuels sur un **détenu**. *(attends avant d'enregistrer : le rapport de B'Tselem (date, nombre de témoignages) et les faits de Sde Teiman du 29 juillet 2024 (question Perplexity, A-FABRIQUER.md))*
+**35.10** Le mot naît en 1944, sous la plume d'un juriste juif polonais, Raphael Lemkin. / En 1948, après la Shoah, l'ONU en fait un crime : / des actes commis dans l'intention de détruire, en tout ou en partie, un groupe national, ethnique, racial ou **religieux**.
 
-**35.11** Pour des historiens comme Rashid Khalidi ou Ilan Pappé, le sionisme est un colonialisme de peuplement, / comme en Amérique ou en Australie. // Pour les sionistes, c'est le retour d'un peuple **chez lui**.
+**35.11** En décembre 2024, Amnesty International conclut : / Israël commet un génocide à **Gaza**. *(attends avant d'enregistrer : le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8))*
+
+**35.12** Human Rights Watch parle d'« actes de génocide » : / Israël prive Gaza d'**eau**. *(attends avant d'enregistrer : le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8))*
+
+**35.13** En juillet 2025, deux ONG israéliennes, B'Tselem et Médecins pour les droits humains, publient leur rapport. / Son titre : « Notre **génocide** ». *(attends avant d'enregistrer : le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8))*
+
+**35.14** En septembre, l'association internationale des chercheurs sur le génocide vote : / ce qui se passe à Gaza répond à la définition **juridique**. *(attends avant d'enregistrer : le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8))*
+
+**35.15** Omer Bartov, historien israélien de la Shoah, écrit dans le New York Times : / « Israël commet un génocide contre le peuple **palestinien** ». *(attends avant d'enregistrer : le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8))*
+
+**35.16** Puis la commission d'enquête de l'ONU, présidée par une ancienne juge du tribunal pour le Rwanda : / Israël « a commis un **génocide** ». *(attends avant d'enregistrer : le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8))*
+
+**35.18** Israël rejette ces conclusions : / il dit combattre le Hamas, pas un peuple, / et invoque la légitime défense. // La Cour internationale de justice, elle, n'a pas encore jugé le **fond**.
+
+**35.19** Dans les années 2010, 500 à 700 enfants palestiniens sont poursuivis chaque année devant des tribunaux militaires. / Au 1er octobre 2026, 3 101 personnes sont en « détention administrative » : / sans inculpation, sans **procès**.
+
+**35.20** Et dans les prisons ? / En 2024, l'ONG israélienne B'Tselem recueille 55 témoignages d'anciens détenus. / Son rapport s'intitule « Bienvenue en enfer ». / Au camp de Sde Teiman, des soldats sont soupçonnés de sévices sexuels sur un **détenu**. *(attends avant d'enregistrer : le rapport de B'Tselem (date, nombre de témoignages) et les faits de Sde Teiman du 29 juillet 2024 (question Perplexity, A-FABRIQUER.md))*
+
+**35.21** Pour des historiens comme Rashid Khalidi ou Ilan Pappé, le sionisme est un colonialisme de peuplement, / comme en Amérique ou en Australie. // Pour les sionistes, c'est le retour d'un peuple **chez lui**.
 
 ## Chapitre 36 · La fracture en Israël : la démocratie en question
 

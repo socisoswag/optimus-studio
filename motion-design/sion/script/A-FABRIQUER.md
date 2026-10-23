@@ -43,9 +43,9 @@ images reconstituées.
 
 Reçus et reconnus (21) : les orangeraies de Jaffa, le port de Jaffa, le marché aux moutons de la porte de Damas, la
 savonnerie de Naplouse, l'entrée des troupes britanniques par la porte de Jaffa (1917), la procession de Nebi Musa, les
-bannières de Nebi Musa à al-Aqsa, la place du marché de Jaffa, le laboureur et ses bœufs devant Jérusalem (plan 5.5),
-l'aire de battage près de Bethléem, la manifestation de Jaffa en 1933 (8.12), le souk vide en 1936 (8.13), Lydda en
-1936 (8.14), le mur occidental (10.4), le Bund en 1917 (10.3), Tel-Aviv en 1909 (5.6), puis avec Kling : la Haganah
+bannières de Nebi Musa à al-Aqsa, la place du marché de Jaffa, le laboureur et ses bœufs devant Jérusalem (plan 5.8),
+l'aire de battage près de Bethléem, la manifestation de Jaffa en 1933 (8.15), le souk vide en 1936 (8.16), Lydda en
+1936 (8.17), le mur occidental (10.4), le Bund en 1917 (10.3), Tel-Aviv en 1909 (5.9), puis avec Kling : la Haganah
 (14.2), l'hôtel King David (14.3), Lod en 1951 (17.3), la maabara de Nahariya (17.4) et Rosh HaAyin (28.3). Il manque
 seulement **la scène du vote de l'ONU (1947)** : renvoie-la si tu l'as encore.
 
@@ -83,9 +83,9 @@ Encore une question :
 
 Fiches (`timelines/documents-6.js`, `timelines/gaza.js`) et voix corrigées, sources dans SOURCES.md (section 7) :
 Gaza au 22 octobre 2026 (74 498 morts, 175 616 blessés, 1 538 morts depuis la trêve ; nouvelle fiche « depuis le
-cessez-le-feu », plan 25.30) ; l'argent du Qatar (plan 25.11), la phrase rapportée de Netanyahou avec son démenti
-(plan 25.12) et celle de Smotrich (plan 25.13) ; l'eau (plan 23.14) ; le Néguev (plan 28.8) ; les détenus (plan
-35.9) ; les journalistes, d'après le CPJ (plan 27.8) ; les vetos (plan 33.9 : 52, de 1972 à 2025, dont un amendement) ;
+cessez-le-feu », plan 25.35) ; l'argent du Qatar (plan 25.12), la phrase rapportée de Netanyahou avec son démenti
+(plan 25.13) et celle de Smotrich (plan 25.14) ; l'eau (plan 23.14) ; le Néguev (plan 28.8) ; les détenus (plan
+35.19) ; les journalistes, d'après le CPJ (plan 27.8) ; les vetos (plan 33.9 : 52, de 1972 à 2025, dont un amendement) ;
 Macron (plan 31.16) ; la Cisjordanie (plan 26.8) ; Barghouti (plan 21.13) ; la photo du Goush Emounim (plan 26.2) :
 mont Huwara, près de Naplouse.
 
@@ -124,3 +124,36 @@ Fiches faites, plans marqués « verifier » dans le script : ne pas les enregis
 > l'absence de raccordement aux réseaux d'eau et d'électricité ; 16) le logiciel espion Pegasus (NSO Group) : la licence
 > d'exportation du ministère israélien de la Défense, et le numéro d'Emmanuel Macron dans la liste révélée par Forbidden
 > Stories et Le Monde en juillet 2021 (quel pays client est soupçonné, qu'a confirmé l'enquête).
+
+## 8. Relecture complète du 23 octobre (la terre, 1948, Gaza, le génocide) : à vérifier sur Perplexity
+
+Fiches faites (`timelines/documents-7.js`, `timelines/genocide-textes.js`), plans marqués « verifier ». Copier tel quel :
+
+> Pour un documentaire, avec pour chaque point le texte exact dans la langue d'origine, la date, la source primaire
+> ou l'historien de référence, et le lien. 1) Edmond de Rothschild : à partir de quelle date il finance Rishon LeZion,
+> Zikhron Yaakov et Rosh Pina, quand il confie ses colonies à la Jewish Colonization Association, comment ses agents
+> achetaient les terres, et l'ordre de grandeur des ouvriers arabes employés dans ses colonies vers 1890-1900 (Gershon
+> Shafir, Ran Aaronsohn) ; 2) le code foncier ottoman de 1858 : l'obligation d'enregistrer les terres et les inscriptions
+> au nom de notables pour échapper à l'impôt et à la conscription (Kenneth Stein, Rashid Khalidi) ; 3) Petah Tikva et le
+> village de Yahudiya en 1886 : date exacte et faits de l'affrontement ; 4) le Fonds national juif (1901) : la règle
+> des terres inaliénables, louées seulement à des Juifs, et le texte qui la fixe ; 5) les ventes de la famille Sursock
+> dans la plaine de Jezréel dans les années 1920 : surfaces, nombre de villages, nombre de familles ou de métayers
+> expulsés ; 6) le rapport Hope Simpson (octobre 1930) : le pourcentage exact de familles arabes rurales sans terre, et
+> la lettre de Ramsay MacDonald du 13 février 1931 ; 7) le lien entre paysans chassés, bidonvilles de Haïfa et
+> Izz ad-Din al-Qassam ; 8) le plan Dalet du 10 mars 1948 : la phrase exacte sur la destruction des villages et
+> l'expulsion de la population en cas de résistance (texte hébreu et traduction de Walid Khalidi, 1988) ; 9) Tantura
+> (22-23 mai 1948) et al-Dawayima (29 octobre 1948) : bilans selon les historiens (Benny Morris, Adam Raz, Teddy Katz) et
+> le film « Tantura » d'Alon Schwarz (2022) ; 10) Gadi Eisenkot, doctrine Dahiya, Yedioth Ahronoth, octobre 2008 : phrase
+> exacte (« force disproportionnée », « ce ne sont pas des villages civils, ce sont des bases militaires ») ; 11) Isaac
+> Herzog (13 octobre 2023), Amichai Eliyahu (5 novembre 2023) et Avi Dichter (11 novembre 2023) : phrases exactes, et
+> où la Cour internationale de justice ou la requête de l'Afrique du Sud les citent ; 12) Hind Rajab (29 janvier 2024) :
+> faits, date où elle est retrouvée, les deux secouristes, l'enquête de Forensic Architecture ; 13) les secouristes tués
+> à Rafah le 23 mars 2025 : nombre, organisations, la vidéo, les conclusions de l'enquête de l'armée israélienne ;
+> 14) le blocus total de l'aide à Gaza en 2025 : date de début et de reprise ; 15) le projet E1 : date d'approbation,
+> nombre de logements, phrase exacte de Bezalel Smotrich ; 16) Gaza : la Grande Mosquée al-Omari (date de destruction),
+> les universités (combien détruites ou endommagées), les Archives centrales, le mot « scolasticide » des experts de
+> l'ONU ; 17) le texte exact (en français si possible) des conclusions sur le génocide : Amnesty International
+> (5 décembre 2024, Agnès Callamard), Human Rights Watch (19 décembre 2024, titre du rapport), B'Tselem et PHRI
+> (« Notre génocide », 28 juillet 2025), l'Association internationale des chercheurs sur le génocide (résolution du
+> 1er septembre 2025, et le pourcentage des votes), Omer Bartov (The New York Times, 15 juillet 2025), la commission
+> d'enquête de l'ONU (16 septembre 2025, phrase de conclusion et actes retenus).
