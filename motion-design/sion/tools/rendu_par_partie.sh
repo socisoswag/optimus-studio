@@ -6,7 +6,7 @@
 cd /home/user/optimus-studio/motion-design/sion
 exec 9>output/.rendu.lock
 flock -n 9 || exit 0
-rm -rf /tmp/chrono-* 2>/dev/null
+find /tmp -maxdepth 1 -name "chrono-*" -mmin +30 -exec rm -rf {} + 2>/dev/null  # restes de rendus tués (un rendu en cours écrit sans cesse dans le sien)
 LOG=output/rendu-tout.log
 export CRF=20 WORKERS=3
 LISTE=$(grep -o 'LISTE="[^"]*"' tools/rendu_tout.sh | head -1 | cut -d'"' -f2)
