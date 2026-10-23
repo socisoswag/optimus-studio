@@ -35,3 +35,5 @@ output/
 
 # vidéos Adobe Stock sous licence : jamais dans un dépôt public (le dépôt privé de montage reçoit les plans montés)
 data/stock/
+# Copies temporaires des essais de relief (scratchpad/relief/essai.sh)
+timelines/zz-*.js
