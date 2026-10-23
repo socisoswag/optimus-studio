@@ -279,7 +279,7 @@ et plus doux (il tient mieux à la compression de YouTube et au téléphone). To
 | 32.06 | noir | `32.06-ARCH-1945-ohrdruf-camp-libere.mp4` | avril 1945 : Eisenhower, Bradley et Patton au camp d'Ohrdruf, puis des rescapés (aucun corps à l'image) |
 | 37.02 | noir | `37.02-ARCH-1945-san-francisco-charte-onu.mp4` | avril 1945 : la conférence de San Francisco qui écrit la Charte des Nations unies |
 
-**Nouveau plan** : `11.13-ARCH-1945-francfort-personnes-deplacees-juives.mp4`, novembre 1945, des personnes
+**Nouveau plan** : `11.13-ARCH-1945-francfort-personnes-deplacees-juive.mp4`, novembre 1945, des personnes
 déplacées juives défilent à Francfort (« Open the gates of Palestine »). Voix nouvelle à enregistrer : « Fin 1945, en
 Allemagne, les survivants juifs attendent encore, dans des camps de personnes déplacées. À Francfort, ils défilent :
 « Ouvrez les portes de la Palestine. » » Chapitre 11 : 11.13 et suivants deviennent 11.14 et suivants.

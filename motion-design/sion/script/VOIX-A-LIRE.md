@@ -28,7 +28,7 @@
 
 ## Chapitre 2 · L'Europe en feu : entre antisémitisme et émancipation
 
-*1 min 30 de film*
+*1 min 29 de film*
 
 **2.2** Pour comprendre le sionisme, il faut partir d'ici : / l'Europe de l'Est, / où vivent alors la plupart des Juifs du **monde**.
 
@@ -134,7 +134,7 @@
 
 ## Chapitre 7 · La déclaration Balfour (1917)
 
-*2 min 02 de film*
+*2 min 22 de film*
 
 **7.2** 1915. / Pour abattre l'Empire ottoman, / Londres fait trois **promesses**.
 
@@ -142,23 +142,27 @@
 
 **7.4** En même temps, en secret, / Londres et Paris se partagent déjà la région : / c'est l'accord Sykes-Picot. // La Palestine doit devenir une zone **internationale**.
 
-**7.5** Et le 2 novembre 1917, / le ministre Arthur Balfour écrit à Lord Rothschild : / Londres « envisage favorablement » / un foyer national pour le peuple juif en **Palestine**.
+**7.5** Sur la carte signée en mai 1916, / la France prend le bleu, / le Royaume-Uni le **rouge**.
 
-**7.6** Une phrase protège « les droits civils et religieux » / des « collectivités non juives ». // Elles forment alors neuf habitants sur **dix**. / Leurs droits politiques ne sont pas cités.
+**7.6** La Palestine, en jaune, / doit passer sous une administration **internationale**.
 
-**7.7** Pour les sionistes, c'est une victoire immense. / Pour la première fois, une grande puissance reconnaît le lien du peuple juif avec cette **terre**.
+**7.7** Et le 2 novembre 1917, / le ministre Arthur Balfour écrit à Lord Rothschild : / Londres « envisage favorablement » / un foyer national pour le peuple juif en **Palestine**.
 
-**7.8** Chaïm Weizmann l'a obtenue / après des mois de **démarches**.
+**7.8** Une phrase protège « les droits civils et religieux » / des « collectivités non juives ». // Elles forment alors neuf habitants sur **dix**. / Leurs droits politiques ne sont pas cités.
 
-**7.9** Un seul ministre juif siège au gouvernement : / Edwin Montagu. // Il s'y oppose. / Le sionisme, écrit-il, est « une doctrine politique **nuisible** ».
+**7.9** Pour les sionistes, c'est une victoire immense. / Pour la première fois, une grande puissance reconnaît le lien du peuple juif avec cette **terre**.
 
-**7.10** Deux ans plus tard, Balfour l'écrit sans détour, dans une note interne : / « En Palestine, nous ne proposons même pas de consulter les habitants actuels du pays. » // Le sionisme, ajoute-t-il, compte plus que « les désirs et les préjugés / de 700 000 **Arabes** ».
+**7.10** Chaïm Weizmann l'a obtenue / après des mois de **démarches**.
 
-**7.11** Arthur Koestler, longtemps sioniste, résumera : // « Une nation promettait solennellement à une deuxième / le pays d'une **troisième**. » ///
+**7.11** Un seul ministre juif siège au gouvernement : / Edwin Montagu. // Il s'y oppose. / Le sionisme, écrit-il, est « une doctrine politique **nuisible** ».
+
+**7.12** Deux ans plus tard, Balfour l'écrit sans détour, dans une note interne : / « En Palestine, nous ne proposons même pas de consulter les habitants actuels du pays. » // Le sionisme, ajoute-t-il, compte plus que « les désirs et les préjugés / de 700 000 **Arabes** ».
+
+**7.13** Arthur Koestler, longtemps sioniste, résumera : // « Une nation promettait solennellement à une deuxième / le pays d'une **troisième**. » ///
 
 ## Chapitre 8 · Le mandat britannique : trente ans sous tension
 
-*3 min 50 de film*
+*4 min 00 de film*
 
 **8.2** Le 11 décembre 1917, le général Allenby entre à pied dans Jérusalem. / Pour trente ans, la Palestine sera **britannique**.
 
@@ -182,7 +186,7 @@
 
 **8.13** En 1930, un enquêteur britannique, John Hope Simpson, étudie 104 villages : / 29,4 % des familles n'y possèdent pas de terre. / Londres promet de freiner les achats, / puis recule l'année suivante, sous la pression du mouvement **sioniste**.
 
-**8.14** En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il est tué en novembre. // Il devient un **symbole**.
+**8.14** En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il est tué en novembre. // La branche armée du Hamas porte aujourd'hui son **nom**.
 
 **8.15** 1933. / Hitler arrive au pouvoir, / l'immigration juive s'accélère, / et Jaffa **manifeste**.
 
@@ -192,11 +196,15 @@
 
 **8.18** Les civils paient des deux côtés. / À Tibériade, en octobre 1938, / dix-neuf Juifs sont tués, dont onze enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés **arabes**.
 
-**8.19** En 1937, la commission Peel propose pour la première fois de couper le pays en deux, / et de déplacer jusqu'à 225 000 Arabes. // Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**.
+**8.19** En 1937, la commission Peel propose pour la première fois / de couper le pays en **deux**.
 
-**8.20** En 1939, Londres fait marche arrière : / l'immigration juive est limitée / à 75 000 personnes en cinq **ans**.
+**8.20** Et de déplacer jusqu'à 225 000 Arabes / hors du futur État **juif**.
 
-**8.21** Au moment même où les Juifs d'Europe / cherchent à fuir le **nazisme**. ///
+**8.21** Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**. *(attends avant d'enregistrer : la position du 20e congrès sioniste (août 1937) et la date de l'abandon du plan par Londres (novembre 1938))*
+
+**8.22** En 1939, Londres fait marche arrière : / l'immigration juive est limitée / à 75 000 personnes en cinq **ans**.
+
+**8.23** Au moment même où les Juifs d'Europe / cherchent à fuir le **nazisme**. ///
 
 ## Chapitre 9 · L'accord Haavara et l'assassinat d'Arlosoroff
 
@@ -216,7 +224,7 @@
 
 ## Chapitre 10 · Les Juifs face au sionisme : le grand débat
 
-*1 min 29 de film*
+*1 min 30 de film*
 
 **10.2** Au début, le sionisme est minoritaire chez les Juifs. / En 1885, aux États-Unis, les rabbins réformés déclarent : / « Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse, / et n'attendons donc pas de retour en **Palestine**. »
 
@@ -232,7 +240,7 @@
 
 ## Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens
 
-*2 min 38 de film*
+*2 min 49 de film*
 
 **11.3** En 1923, Zeev Jabotinsky écrit « Le Mur de fer ». / Il ne nie pas ce qu'il voit : / « Toute population indigène résiste aux colons, / tant qu'elle garde le moindre espoir d'échapper à la **colonisation**. »
 
@@ -254,11 +262,13 @@
 
 **11.12** Février 1945. / Sur un croiseur américain, Roosevelt reçoit le roi d'Arabie saoudite, Ibn Saoud. // Le 5 avril, il lui écrit qu'il ne prendra aucune mesure / « qui pourrait se révéler hostile au peuple arabe ». / Il meurt une semaine plus **tard**.
 
-**11.13** En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.
+**11.13** Fin 1945, en Allemagne, les survivants juifs attendent encore, / dans des camps de personnes déplacées. // À Francfort, ils défilent : / « Ouvrez les portes de la **Palestine**. »
 
-**11.14** Après la guerre, épuisée, / la Grande-Bretagne
+**11.14** En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.
 
-**11.15** remet la question à l'ONU. // Nous sommes en **1947**. ///
+**11.15** Après la guerre, épuisée, / la Grande-Bretagne
+
+**11.16** remet la question à l'ONU. // Nous sommes en **1947**. ///
 
 ## Chapitre 12 · 1947 : le plan de partage de l'ONU
 
@@ -284,7 +294,7 @@
 
 ## Chapitre 13 · 1948 : la création d'Israël et la Nakba
 
-*3 min 17 de film*
+*3 min 31 de film*
 
 **13.2** 14 mai 1948. / Ben Gourion proclame l'État d'**Israël**.
 
@@ -294,25 +304,25 @@
 
 **13.5** Avant même l'entrée des armées arabes, / Tibériade, Haïfa, Safed et Jaffa sont prises. / Leurs habitants arabes fuient, / ou sont **chassés**.
 
-**13.6** Le 15 mai, cinq armées arabes entrent en guerre. / Pour Israël, c'est une guerre de survie : / environ six mille morts, / un Juif du pays sur **cent**.
+**13.7** Le 15 mai, cinq armées arabes entrent en guerre. / Pour Israël, c'est une guerre de survie : / environ six mille morts, / un Juif du pays sur **cent**.
 
-**13.7** En juillet, à Lydda et Ramle, / entre cinquante et soixante-dix mille habitants sont expulsés. / Ils marchent vers l'est, en pleine **chaleur**.
+**13.8** En juillet, à Lydda et Ramle, / entre cinquante et soixante-dix mille habitants sont expulsés. / Ils marchent vers l'est, en pleine **chaleur**.
 
-**13.8** À l'automne, / le Néguev, / puis la **Galilée**.
+**13.9** À l'automne, / le Néguev, / puis la **Galilée**.
 
-**13.9** En tout, plus de quatre cents villages sont vidés. / La plupart sont rasés. // Leurs habitants ne reviendront **jamais**.
+**13.10** En tout, plus de quatre cents villages sont vidés. / La plupart sont rasés. // Leurs habitants ne reviendront **jamais**.
 
-**13.10** En 1949, Israël tient 78 % de la Palestine mandataire. / La Cisjordanie passe à la Jordanie, / Gaza à l'**Égypte**.
+**13.11** En 1949, Israël tient 78 % de la Palestine mandataire. / La Cisjordanie passe à la Jordanie, / Gaza à l'**Égypte**.
 
-**13.11** Le 11 décembre 1948, l'ONU demande que les réfugiés qui le souhaitent puissent rentrer chez eux. // Ce n'est jamais **appliqué**.
+**13.12** Le 11 décembre 1948, l'ONU demande que les réfugiés qui le souhaitent puissent rentrer chez eux. // Ce n'est jamais **appliqué**.
 
-**13.12** Environ sept cent mille Palestiniens deviennent réfugiés, / au Liban, en Syrie, en Transjordanie, en Cisjordanie et à **Gaza**.
+**13.13** Environ sept cent mille Palestiniens deviennent réfugiés, / au Liban, en Syrie, en Transjordanie, en Cisjordanie et à **Gaza**.
 
-**13.13** Une même année. / Deux **mémoires**.
+**13.14** Une même année. / Deux **mémoires**.
 
-**13.14** Pendant des décennies, le récit officiel israélien affirme : / ils sont partis à l'appel des dirigeants arabes. // À partir des années 1980, des historiens israéliens ouvrent les archives de leur propre **armée**.
+**13.15** Pendant des décennies, le récit officiel israélien affirme : / ils sont partis à l'appel des dirigeants arabes. // À partir des années 1980, des historiens israéliens ouvrent les archives de leur propre **armée**.
 
-**13.16** Benny Morris, le plus cité d'entre eux, conclut : / la plupart ont fui les combats et la peur, / beaucoup ont été expulsés, / et seule une petite partie est partie sur ordre de dirigeants arabes. // Le retour leur est interdit dès juin **1948**.
+**13.17** Benny Morris, le plus cité d'entre eux, conclut : / la plupart ont fui les combats et la peur, / beaucoup ont été expulsés, / et seule une petite partie est partie sur ordre de dirigeants arabes. // Le retour leur est interdit dès juin **1948**.
 
 ## Chapitre 14 · Les milices juives : Haganah, Irgoun, Lehi
 
@@ -392,13 +402,13 @@
 
 **18.5** Pourtant, dès 1911, à Jaffa, un journal s'appelait Filastin, / et s'adressait à ses lecteurs comme à des **Palestiniens**.
 
-**18.6** Elle ajoute : ce n'est pas comme s'il y avait eu un peuple palestinien, / « et que nous étions venus les chasser, / et leur prendre leur pays ». // Tout est là : / s'il n'y a pas de peuple, / il n'y a rien à **rendre**.
+**18.6** Elle ajoute : ce n'est pas comme s'il y avait eu un peuple palestinien, / « et que nous étions venus les chasser, / et leur prendre leur pays ». // S'il n'y a pas de peuple, / il n'y a rien à **rendre**.
 
 **18.7** Ce peuple, pourtant, va prendre la **parole**. ///
 
 ## Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation
 
-*5 min 60 de film*
+*5 min 57 de film*
 
 **19.2** Pour comprendre la suite, / quatre **cartes**.
 
@@ -548,7 +558,7 @@
 
 ## Chapitre 23 · Oslo, le mur et les colonies
 
-*3 min 24 de film*
+*4 min 15 de film*
 
 **23.2** Septembre 1993, à Washington : / la poignée de **main**.
 
@@ -566,13 +576,25 @@
 
 **23.12** Pour les Palestiniens, l'occupation, c'est d'abord ça : / des checkpoints, des permis, des **attentes**. ///
 
-**23.13** Pour une partie des Israéliens, ces collines sont la Judée et la Samarie, / la terre de la Bible, rendue à son **peuple**.
+**23.13** Fin 2025, l'ONU compte 925 obstacles sur les routes de Cisjordanie : / postes de contrôle, barrières, blocs de terre. // Israël les dit nécessaires à sa **sécurité**.
 
-**23.14** Avec Oslo, Israël garde environ 80 % de l'eau de la grande nappe de Cisjordanie. / En 2023, un Palestinien y dispose de 82 litres par jour ; / un Israélien, colons compris, de **247**.
+**23.14** En zone C, de 2016 à 2020, / 2 550 demandes de permis de construire palestiniennes. / 24 sont **acceptées**.
 
-**23.15** En mai 2021, à Cheikh Jarrah, à Jérusalem-Est, des familles palestiniennes doivent laisser leurs maisons à des colons. / La colère embrase Jérusalem, / puis **Gaza**.
+**23.15** Sans permis, on démolit. / Depuis 2009, plus de quinze mille constructions palestiniennes détruites, / plus de vingt-trois mille personnes **déplacées**.
 
-**23.16** Pour le droit international, les colonies sont **illégales**. / La Cour internationale de justice l'a redit en 2024. ///
+**23.16** Pour une partie des Israéliens, ces collines sont la Judée et la Samarie, / la terre de la Bible, rendue à son **peuple**.
+
+**23.17** Sous les collines de Cisjordanie, / il y a de l'**eau**.
+
+**23.18** La pluie y remplit une grande nappe souterraine, / qui coule surtout vers l'ouest, / vers **Israël**.
+
+**23.19** Avec Oslo, Israël garde environ 80 % de cette eau. / Et tout nouveau puits palestinien / doit recevoir son **accord**.
+
+**23.20** En 2023, un Palestinien de Cisjordanie dispose de 82 litres par jour ; / un Israélien, colons compris, de **247**. *(attends avant d'enregistrer : le minimum de 100 litres de l'OMS, tel que cité dans le rapport Parched de B'Tselem)*
+
+**23.21** En mai 2021, à Cheikh Jarrah, à Jérusalem-Est, des familles palestiniennes doivent laisser leurs maisons à des colons. / La colère embrase Jérusalem, / puis **Gaza**.
+
+**23.22** Pour le droit international, les colonies sont **illégales**. / La Cour internationale de justice l'a redit en 2024. ///
 
 ## Chapitre 24 · Netanyahou, Lieberman : leurs propres mots
 
@@ -808,9 +830,9 @@
 
 ## Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique
 
-*1 min 44 de film*
+*1 min 43 de film*
 
-**32.2** Six millions de Juifs assassinés. / La Shoah est au cœur de l'identité d'Israël : / un peuple qui a failli disparaître, / et qui s'est juré « plus jamais ». // En 1961, le procès d'Adolf Eichmann fait entendre les **survivants**.
+**32.2** Six millions de Juifs assassinés. / La Shoah marque l'identité d'Israël : / un peuple qui a failli disparaître, / et qui s'est juré « plus jamais ». // En 1961, le procès d'Adolf Eichmann fait entendre les **survivants**.
 
 **32.3** En 1988, Yehuda Elkana, philosophe, déporté enfant à Auschwitz, écrit dans Haaretz : / il ne voit pas de plus grande menace pour l'avenir d'Israël / que d'avoir fait de la Shoah l'axe de la conscience **nationale**.
 
@@ -928,7 +950,7 @@
 
 ## Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes
 
-*0 min 29 de film*
+*0 min 26 de film*
 
 **37.2** En 1945, la Charte des Nations unies pose un principe : / le droit des peuples à disposer d'eux-mêmes. // En 2024, la Cour internationale de justice le rappelle pour le peuple **palestinien**.
 

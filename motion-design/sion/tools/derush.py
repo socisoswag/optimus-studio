@@ -110,7 +110,7 @@ def chapter_folder(num, titre):
 def cartons_of(plan):
     """Cartons transparents cités par un plan (output/cartons/<nom>, avec ou sans numéro ni extension)."""
     out = []
-    for m in re.findall(r"output/cartons/([A-Za-z0-9_-]+)", " ".join(flat(plan.get(k)) for k in ("ecran", "fichier", "note"))):
+    for m in re.findall(r"output/cartons/([A-Za-z0-9_-]+)", " ".join(flat(plan.get(k)) for k in ("ecran", "fichier", "note", "carton"))):
         name = re.sub(r"^\d+-", "", m.removesuffix(".mov"))
         found = glob.glob(os.path.join(ROOT, "output", "cartons", f"*{name}.mov"))
         out += found[:1]
@@ -158,7 +158,8 @@ def part(yml, folder):
                     manque.append(f"| {pid} | {typ} | {d:.1f} s | {why} : {fic.replace('|', '/')} |")
             ok += name is not None
             cartons += cartons_of(p)
-            rows.append(f"| {pid} | `{name}` | {typ} | {d:.1f} s | {flat(p.get('ecran')).replace('|', '/')} | {flat(p.get('voix')).replace('|', '/') or 'silence'} |"
+            ecr = flat(p.get('ecran')) + (f" (carton `{os.path.basename(flat(p['carton']))}`)" if p.get("carton") else "")
+            rows.append(f"| {pid} | `{name}` | {typ} | {d:.1f} s | {ecr.replace('|', '/')} | {flat(p.get('voix')).replace('|', '/') or 'silence'} |"
                         if name else f"| {pid} | à venir | {typ} | {d:.1f} s | {flat(p.get('ecran')).replace('|', '/')} | {flat(p.get('voix')).replace('|', '/') or 'silence'} |")
         if cartons:
             os.makedirs(os.path.join(cd, "cartons"), exist_ok=True)
