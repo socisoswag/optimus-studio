@@ -34,6 +34,22 @@ ARCHIVES = {
                                       [(77.2, 83.4), (110.8, 116.7), (123.0, 124.9)]),
     "1961-proces-eichmann": ("1961-04-13_Eichmann_trial", "1961-04-13_Eichmann_trial.mp4", "580:436:30:22",
                              [(4.9, 8.8), (9.1, 13.0), (13.3, 21.2), (35.7, 39.0)]),
+    # actualités Universal (domaine public), en réserve : camp de personnes déplacées d'Admont, Autriche, septembre 1946
+    "1946-camp-refugies-juifs-autriche": ("1946-09-19_Sec_Wallace_Stirs_Foreign_Policy_Debate",
+                                          "1946-09-19_Sec_Wallace_Stirs_Foreign_Policy_Debate.mpeg", "616:462:12:9",
+                                          [(68.9, 73.9), (77.4, 81.1), (114.3, 117.5)]),
+    # Nasser annonce la nationalisation du canal de Suez, juillet 1956
+    "1956-nasser-canal-de-suez": ("1956-07-30_Suez_Canal_Seized", "1956-07-30_Suez_Canal_Seized.mpeg", "616:462:12:9",
+                                  [(4.6, 7.4), (11.9, 16.8), (31.1, 34.5)]),
+    # juin 1967 : un char dans le Sinaï, le panneau « Welcome to Gaza »
+    "1967-sinai-gaza": ("1967-06-09_Egypt_Accepts_UN_Cease-Fire", "1967-06-09_Egypt_Accepts_UN_Cease-Fire.mpeg", "616:462:12:9",
+                        [(3.6, 7.7), (24.1, 29.7)]),
+    # juin 1967 : la ligne de partage de Jérusalem, Moshe Dayan, le drapeau hissé
+    "1967-jerusalem": ("1967-06-13_Cease-Fire", "1967-06-13_Cease-Fire.mpeg", "616:462:12:9",
+                       [(252.1, 257.2), (268.9, 273.6), (274.2, 279.3)]),
+    # juin 1967 : le Conseil de sécurité des Nations unies, à New York
+    "1967-onu-conseil-de-securite": ("1967-06-13_Cease-Fire", "1967-06-13_Cease-Fire.mpeg", "616:462:12:9",
+                                     [(5.4, 11.0), (17.7, 23.5), (47.9, 51.5)]),
 }
 
 

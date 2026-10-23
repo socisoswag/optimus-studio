@@ -169,7 +169,8 @@ def part(yml, folder):
         for r, x in enumerate(ch.get("reserve") or [], start=1):
             src = os.path.join(ROOT, x["fichier"])
             if os.path.exists(src):
-                name = f"{plan_id(ch['num'], 0)[:-3]}.R{r}-IA-{slug(os.path.splitext(os.path.basename(x['fichier']))[0], 40).lower()}.mp4"
+                typ = (x.get("type") or "IA").replace("É", "E")  # une archive filmée en réserve garde son type
+                name = f"{plan_id(ch['num'], 0)[:-3]}.R{r}-{typ}-{slug(os.path.splitext(os.path.basename(x['fichier']))[0], 40).lower()}.mp4"
                 cut(src, 0, duration(src), os.path.join(cd, name))
                 reserve.append(f"| `{name}` | {duration(src):.1f} s | {flat(x.get('note')).replace('|', '/')} |")
         doc = [f"# {ch['titre']}\n", f"{len(ch['plans'])} plans, {total:.1f} s. Pose les fichiers dans l'ordre de leur numéro : "

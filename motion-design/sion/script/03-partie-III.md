@@ -307,8 +307,9 @@ Source : passage censuré des mémoires d'Yitzhak Rabin, publié par The New Yor
 (38 mots, 2.0 par seconde)
 
 
-**16.6** · film **00:30:46:14 → 00:30:59:14** (13.0 s) · **[PHOTO]** `à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)` · **À OBTENIR**  
+**16.6** · film **00:30:46:14 → 00:30:59:14** (13.0 s) · **[MD]** `output/documents-4.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : gouvernement militaire sur les citoyens arabes d'Israël, 1948-1966 (Shira Robinson, Citizen Strangers, Stanford University Press, 2013)  
+À l'écran : fiche : Galilée, Triangle, Néguev · 1948 à 1966 · Le gouvernement militaire  
 > VOIX : Les Arabes restés en Israël deviennent citoyens. / Mais jusqu'en 1966, ils vivent sous gouvernement militaire : / il leur faut un permis pour quitter leur **village**.  
 (24 mots, 1.8 par seconde)
 

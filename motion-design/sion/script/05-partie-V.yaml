@@ -225,11 +225,12 @@ chapitres:
         fichier: output/chapitres/chapitre-26.mp4
         entree: 0
         sortie: 4.6
-      - type: IA
-        fichier: "à générer : reconstitution de colons du Goush Emounim levant le drapeau, 1978 (image de départ : data/reconstitution/30-goush-emounim-1978.jpg)"
+      - type: PHOTO
+        fichier: output/photos-fixes/1-30-goush-emounim-1978.mp4
         photo: "Wikimedia Commons, « Gush Emunim movement continues to send settlers to illegal settlements… (FL45816230) », Asher Koralik, collection Dan Hadani, Bibliothèque nationale d'Israël, 22 septembre 1978, CC BY 4.0"
-        duree: 15
-        a_obtenir: true
+        entree: 0
+        sortie: 15
+        ecran: "déjà dans le plan : 22 septembre 1978 · Cisjordanie occupée · Des colons du Goush Emounim lèvent le drapeau sur une colonie non autorisée · Photo d'archive"
         source: "Goush Emounim, fondé en 1974 ; enseignement du rabbin Zvi Yehouda Kook"
         voix: >-
           Après 1967, une partie des Juifs religieux voit dans la conquête un signe de Dieu. / En 1974, ils fondent le
@@ -347,11 +348,12 @@ chapitres:
         fichier: output/chapitres/chapitre-28.mp4
         entree: 0
         sortie: 4.6
-      - type: IA
-        fichier: "à générer : reconstitution de militants des Black Panthers israéliens, 1972 (image de départ : data/reconstitution/31-black-panthers-1972.jpg)"
+      - type: PHOTO
+        fichier: output/photos-fixes/2-31-black-panthers-1972.mp4
         photo: "Wikimedia Commons, « Yigal Bin-Nun 2 », David Ben-Nun, manifestation des Black Panthers à l'université de Tel-Aviv, 1972, CC BY-SA 4.0"
-        duree: 17
-        a_obtenir: true
+        entree: 0
+        sortie: 17
+        ecran: "déjà dans le plan : 1972 · Université de Tel-Aviv · Des militants des Black Panthers israéliens · Photo d'archive"
         source: >-
           Black Panthers israéliens, fondés en 1971 à Moussrara, Jérusalem ; Golda Meir, 19 mai 1971, au lendemain de
           la manifestation violente du 18 mai, rapporté par Maariv (Avi Picard, université Bar-Ilan, 19 mai 2021)

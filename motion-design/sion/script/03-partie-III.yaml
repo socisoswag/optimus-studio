@@ -95,6 +95,10 @@ chapitres:
 
   - num: "13"
     titre: "Chapitre 13 · 1948 : la création d'Israël et la Nakba"
+    reserve:
+      - fichier: output/archives-filmees/1946-camp-refugies-juifs-autriche.mp4
+        type: ARCH
+        note: "Septembre 1946 · Autriche · des rescapés juifs au camp de personnes déplacées d'Admont, qui attendent de partir pour la Palestine (actualités Universal, domaine public) : avant les plans de 1947-1948"
     intention: >-
       Une même année, deux mémoires : l'indépendance et la survie pour les uns, la catastrophe pour les autres. La
       carte de la guerre, puis les lumières des villages vidés. Le point décisif : ce que les historiens israéliens
@@ -389,10 +393,11 @@ chapitres:
           Juillet 1948. / Selon les mémoires d'Yitzhak Rabin, quand on lui demande ce qu'il faut faire des habitants de
           Lydda, / Ben Gourion fait un geste de la main, / qui veut dire : « Chassez-les. » // Ce passage avait été
           censuré en **Israël**.
-      - type: PHOTO
-        fichier: "à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)"
-        duree: 13
-        a_obtenir: true
+      - type: MD
+        fichier: output/documents-4.mp4
+        entree: 0
+        sortie: 13
+        ecran: "fiche : Galilée, Triangle, Néguev · 1948 à 1966 · Le gouvernement militaire"
         source: "gouvernement militaire sur les citoyens arabes d'Israël, 1948-1966 (Shira Robinson, Citizen Strangers, Stanford University Press, 2013)"
         voix: >-
           Les Arabes restés en Israël deviennent citoyens. / Mais jusqu'en 1966, ils vivent sous gouvernement militaire

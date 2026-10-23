@@ -15,6 +15,19 @@ chapitres:
 
   - num: "19"
     titre: "Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation"
+    reserve:
+      - fichier: output/archives-filmees/1956-nasser-canal-de-suez.mp4
+        type: ARCH
+        note: "Juillet 1956 · Égypte · Nasser annonce la nationalisation du canal de Suez (actualités Universal, domaine public) : avant ou pendant la carte de Suez"
+      - fichier: output/archives-filmees/1967-sinai-gaza.mp4
+        type: ARCH
+        note: "Juin 1967 · Sinaï et Gaza · un char israélien dans le Sinaï, le panneau « Welcome to Gaza » posé par l'armée (actualités Universal, domaine public)"
+      - fichier: output/archives-filmees/1967-jerusalem.mp4
+        type: ARCH
+        note: "Juin 1967 · Jérusalem · les barbelés de la ville divisée depuis 1948, Moshe Dayan, le drapeau israélien hissé (actualités Universal, domaine public)"
+      - fichier: output/archives-filmees/1967-onu-conseil-de-securite.mp4
+        type: ARCH
+        note: "Juin 1967 · New York · le Conseil de sécurité des Nations unies pendant la guerre (actualités Universal, domaine public) : avant la résolution 242"
     intention: >-
       Le chapitre le plus long de la partie : quatre cartes pour tout comprendre, Suez 1956 et Kafr Qassem, la guerre
       de 1967 racontée avec la lecture israélienne (guerre préventive) puis ses conséquences, et Jérusalem. Le titre dit

@@ -92,7 +92,8 @@ def main():
                     + f'<span class="tx">{html.escape(ecran)}</span>'
                     + (f'<span class="vo">« {html.escape(voix)} »</span>' if voix and voix.lower() != "silence" else "") + "</li>")
             for r, x in enumerate(ch.get("reserve") or [], start=1):
-                name = f"{plan_id(ch['num'], 0)[:-3]}.R{r}-IA-{slug(os.path.splitext(os.path.basename(x['fichier']))[0], 40).lower()}.mp4"
+                typ = (x.get("type") or "IA").replace("É", "E")
+                name = f"{plan_id(ch['num'], 0)[:-3]}.R{r}-{typ}-{slug(os.path.splitext(os.path.basename(x['fichier']))[0], 40).lower()}.mp4"
                 rows.append(f'<li class="res"><span class="id">{name.split("-")[0]}</span><span class="ty">En réserve</span><span class="du"></span>'
                             f'<a class="dl" href="{url(RAW, folder, cf, name)}" target="_blank" rel="noopener">Télécharger</a>'
                             f'<span class="tx">{html.escape(court(flat(x.get("note")), 110))}</span></li>')

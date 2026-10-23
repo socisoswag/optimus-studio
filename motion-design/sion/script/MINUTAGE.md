@@ -51,9 +51,3 @@
 | Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:09:46:06 | 0 min 51.6 s |
 | Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:10:37:22 | 1 min 36.2 s |
 | **Total** | | **72 min 14.1 s** |
-
-## Images à obtenir
-
-- 16.6 : à télécharger : contrôle d'un laissez-passer sous le gouvernement militaire, années 1950 (GPO ou NLI)
-- 26.2 : à générer : reconstitution de colons du Goush Emounim levant le drapeau, 1978 (image de départ : data/reconstitution/30-goush-emounim-1978.jpg)
-- 28.2 : à générer : reconstitution de militants des Black Panthers israéliens, 1972 (image de départ : data/reconstitution/31-black-panthers-1972.jpg)
