@@ -322,7 +322,7 @@
 
 ## Chapitre 16 · David Ben Gourion : l'État avant tout
 
-*1 min 25 de film*
+*1 min 40 de film*
 
 **16.2** Pour la plupart des Israéliens, David Ben Gourion est le père de la nation. / Il a bâti un État, une armée, / et accueilli des centaines de milliers de réfugiés **juifs**.
 
@@ -334,7 +334,9 @@
 
 **16.6** Les Arabes restés en Israël deviennent citoyens. / Mais jusqu'en 1966, ils vivent sous gouvernement militaire : / il leur faut un permis pour quitter leur **village**.
 
-**16.7** Un bâtisseur, pour les uns. / Pour les autres, / l'homme qui a fermé la porte du **retour**.
+**16.7** En 1950, deux lois. / La loi du retour : tout Juif du monde peut devenir israélien. / La loi sur les biens des absents : les terres des réfugiés passent à l'État. // Eux ne pourront pas **revenir**.
+
+**16.8** Un bâtisseur, pour les uns. / Pour les autres, / l'homme qui a fermé la porte du **retour**.
 
 ## Chapitre 17 · L'exode des Juifs des pays arabes
 
@@ -498,7 +500,7 @@
 
 ## Chapitre 23 · Oslo, le mur et les colonies
 
-*2 min 58 de film*
+*3 min 24 de film*
 
 **23.2** Septembre 1993, à Washington : / la poignée de **main**.
 
@@ -518,7 +520,11 @@
 
 **23.13** Pour une partie des Israéliens, ces collines sont la Judée et la Samarie, / la terre de la Bible, rendue à son **peuple**.
 
-**23.14** Pour le droit international, les colonies sont **illégales**. / La Cour internationale de justice l'a redit en 2024. ///
+**23.14** Avec Oslo, Israël garde la main sur l'eau de Cisjordanie. / Les colonies sont raccordées ; / beaucoup de villages palestiniens achètent leur eau par **camion**. *(attends avant d'enregistrer : les chiffres de l'eau (question Perplexity, A-FABRIQUER.md) : la fiche reste qualitative en attendant)*
+
+**23.15** En mai 2021, à Cheikh Jarrah, à Jérusalem-Est, des familles palestiniennes doivent laisser leurs maisons à des colons. / La colère embrase Jérusalem, / puis **Gaza**.
+
+**23.16** Pour le droit international, les colonies sont **illégales**. / La Cour internationale de justice l'a redit en 2024. ///
 
 ## Chapitre 24 · Netanyahou, Lieberman : leurs propres mots
 
@@ -540,7 +546,7 @@
 
 ## Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre
 
-*3 min 21 de film*
+*4 min 12 de film*
 
 **25.2** Gaza. / Plus de deux millions d'habitants, / sur 365 kilomètres **carrés**.
 
@@ -548,29 +554,37 @@
 
 **25.4** Puis les offensives : 2008, 2014, 2021. / Des milliers de morts à Gaza ; / des dizaines en **Israël**.
 
-**25.5** Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
+**25.5** En 2010, une flottille tente de briser le blocus. / L'armée israélienne prend d'assaut le Mavi Marmara : / dix militants en **meurent**.
 
-**25.6** Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///
+**25.6** En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
 
-**25.7** Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. / Nous combattons des animaux **humains**. »
+**25.7** Pendant ce temps, le gouvernement Netanyahou laisse le Qatar financer Gaza, gouvernée par le Hamas. / Selon le New York Times, / il s'agit de garder les Palestiniens **divisés**. *(attends avant d'enregistrer : le texte exact de l'enquête du New York Times du 10 décembre 2023 et de la phrase de Netanyahou citée par Haaretz (question Perplexity))*
 
-**25.8** Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
+**25.8** En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
 
-**25.9** En octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués. / Un décompte sans doute **inférieur** à la réalité.
+**25.9** Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
 
-**25.10** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
+**25.10** Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///
 
-**25.11** Vu du ciel, avant, / et après. ///
+**25.11** Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. / Nous combattons des animaux **humains**. »
 
-**25.12** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
+**25.12** Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
 
-**25.13** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
+**25.13** En octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués. / Un décompte sans doute **inférieur** à la réalité.
 
-**25.14** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
+**25.14** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
 
-**25.15** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
+**25.15** Vu du ciel, avant, / et après. ///
 
-**25.16** 10 octobre 2025 : un cessez-le-feu. / Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
+**25.16** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
+
+**25.17** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
+
+**25.18** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
+
+**25.19** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
+
+**25.20** 10 octobre 2025 : un cessez-le-feu. / Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
 
 ## Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique
 
@@ -592,7 +606,7 @@
 
 ## Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation
 
-*1 min 09 de film*
+*1 min 22 de film*
 
 **27.2** Des Américains qui n'existent **pas**.
 
@@ -606,11 +620,13 @@
 
 **27.7** Des faux comptes, il y en a dans tous les camps de cette **guerre**.
 
-**27.8** Celui-ci était payé par un **État**.
+**27.8** Le 11 mai 2022, la journaliste Shireen Abu Akleh est tuée à Jénine. / L'armée accuse d'abord des tireurs palestiniens ; / l'ONU conclut à un tir **israélien**.
+
+**27.9** Celui-ci était payé par un **État**.
 
 ## Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens
 
-*1 min 30 de film*
+*1 min 56 de film*
 
 **28.2** Les Juifs venus des pays arabes, les mizrahim, se heurtent à une élite venue d'Europe. / En 1971, des jeunes de Jérusalem fondent les Black Panthers. / Après une manifestation violente, Golda Meir lance : / « Ce ne sont pas des garçons **gentils**. »
 
@@ -622,7 +638,11 @@
 
 **28.6** Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à la Cour suprême, / et un parti arabe a gouverné en **2021**.
 
-**28.7** Pour beaucoup de ces citoyens, / la loi de 2018 a dit l'inverse. ///
+**28.7** Le 30 mars 1976, les Arabes d'Israël font grève contre la confiscation de leurs terres. / Six manifestants sont tués. // Depuis, chaque 30 mars, c'est le Jour de la **Terre**.
+
+**28.8** Dans le Néguev, des dizaines de villages bédouins ne sont pas reconnus par l'État : / ni eau courante, ni électricité. / À al-Araqib, les maisons sont détruites, puis rebâties, des dizaines de **fois**. *(attends avant d'enregistrer : le nombre de villages non reconnus et de démolitions d'al-Araqib (question Perplexity, A-FABRIQUER.md))*
+
+**28.9** Pour beaucoup de ces citoyens, / la loi de 2018 a dit l'inverse. ///
 
 ## Chapitre 29 · Les Juifs antisionistes : Neturei Karta, Jewish Voice for Peace
 
@@ -654,7 +674,7 @@
 
 ## Chapitre 31 · Les intellectuels français : BHL, Finkielkraut et le débat public
 
-*2 min 06 de film*
+*2 min 22 de film*
 
 **31.2** En France, deux philosophes occupent les plateaux depuis quarante ans : / Bernard-Henri Lévy et Alain Finkielkraut. / Tous deux défendent Israël, chacun à sa **manière**.
 
@@ -672,7 +692,9 @@
 
 **31.9** D'autres voix juives disent l'inverse. / En 2002, Edgar Morin dénonce dans Le Monde le sort des Palestiniens. / Une cour d'appel y voit une diffamation raciale ; / en 2006, la Cour de cassation annule cette **décision**.
 
-**31.10** Dans ce débat, une question revient sans cesse : / qui parle de cette terre, / et qui l'on **écoute**.
+**31.10** Et la France ? / En 1957, elle aide Israël à bâtir la centrale de Dimona. / En 2020, la Cour européenne la condamne pour avoir puni des appels au boycott. // En 2025, elle reconnaît la **Palestine**.
+
+**31.11** Dans ce débat, une question revient sans cesse : / qui parle de cette terre, / et qui l'on **écoute**.
 
 ## Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique
 
@@ -692,7 +714,7 @@
 
 ## Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338
 
-*1 min 20 de film*
+*2 min 01 de film*
 
 **33.2** Trois textes de l'ONU, / mot pour **mot**.
 
@@ -704,7 +726,13 @@
 
 **33.6** 1973, résolution 338 : / appliquer la 242, / dès le **cessez-le-feu**.
 
-**33.8** Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître. // En 2016, le Conseil de sécurité qualifie encore les colonies de « violation flagrante » du droit **international**.
+**33.8** Le 19 juillet 2024, la Cour internationale de justice le dit : / l'occupation est **illégale**. / Israël doit y mettre fin et évacuer les colons. // L'ONU lui donne douze mois.
+
+**33.9** Pourquoi rien ne change ? / Les États-Unis versent à Israël 3,8 milliards de dollars d'aide militaire par an, / et bloquent par leur veto des dizaines de résolutions de l'**ONU**.
+
+**33.10** En 2018, Washington installe son ambassade à Jérusalem. / Le même jour, à Gaza, des dizaines de manifestants sont **tués**.
+
+**33.11** Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître. // En 2016, le Conseil de sécurité qualifie encore les colonies de « violation flagrante » du droit **international**.
 
 ## Chapitre 34 · L'effacement culturel : villages détruits, noms effacés
 
@@ -726,7 +754,7 @@
 
 ## Chapitre 35 · Colonialisme, apartheid : le poids des mots
 
-*1 min 34 de film*
+*1 min 48 de film*
 
 **35.2** Un mot très lourd : / **apartheid**.
 
@@ -740,7 +768,9 @@
 
 **35.8** Israël rejette ce mot : / ses citoyens arabes votent et siègent au Parlement, / et les territoires relèvent, dit-il, d'un conflit, pas d'un **système**.
 
-**35.9** Pour des historiens comme Rashid Khalidi ou Ilan Pappé, le sionisme est un colonialisme de peuplement, / comme en Amérique ou en Australie. // Pour les sionistes, c'est le retour d'un peuple **chez lui**.
+**35.9** Chaque année, des centaines d'enfants palestiniens passent devant des tribunaux militaires. / Des milliers de Palestiniens sont détenus sans procès, / en « détention **administrative** ». *(attends avant d'enregistrer : les chiffres récents des mineurs jugés et des détenus administratifs (question Perplexity))*
+
+**35.10** Pour des historiens comme Rashid Khalidi ou Ilan Pappé, le sionisme est un colonialisme de peuplement, / comme en Amérique ou en Australie. // Pour les sionistes, c'est le retour d'un peuple **chez lui**.
 
 ## Chapitre 36 · La fracture en Israël : la démocratie en question
 
@@ -766,7 +796,7 @@
 
 ## Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière
 
-*0 min 52 de film*
+*1 min 05 de film*
 
 **38.2** Mahmoud Darwich naît en 1941 à al-Birwa, en Galilée. / Le village est vidé en 1948, puis **rasé**.
 
@@ -774,7 +804,9 @@
 
 **38.4** Les Palestiniens ont un mot pour cela : / sumud. / Tenir. / **Rester**.
 
-**38.5** Depuis 1995, des familles israéliennes et palestiniennes qui ont perdu un enfant se réunissent : / le Cercle des parents. // Elles disent : nous ne voulons plus de nouveaux **membres**.
+**38.5** Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».
+
+**38.6** Depuis 1995, des familles israéliennes et palestiniennes qui ont perdu un enfant se réunissent : / le Cercle des parents. // Elles disent : nous ne voulons plus de nouveaux **membres**.
 
 ## Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire
 

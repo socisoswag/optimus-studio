@@ -123,6 +123,39 @@ chapitres:
         voix: >-
           Puis les offensives : 2008, 2014, 2021. / Des milliers de morts à Gaza ; / des dizaines en **Israël**.
       - type: MD
+        fichier: output/documents-6.mp4
+        entree: 93
+        sortie: 105
+        ecran: "fiche : eaux internationales · 31 mai 2010 · Le Mavi Marmara"
+        source: "abordage du Mavi Marmara, 31 mai 2010 : neuf militants tués, un dixième mort de ses blessures en 2014"
+        voix: >-
+          En 2010, une flottille tente de briser le blocus. / L'armée israélienne prend d'assaut le Mavi Marmara : / dix militants en **meurent**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 80
+        sortie: 93
+        ecran: "fiche : Gaza · 2018-2019 · La grande marche du retour"
+        source: "commission d'enquête de l'ONU sur les manifestations de 2018 à Gaza, février 2019 : 189 Palestiniens tués du 30 mars au 31 décembre 2018"
+        voix: >-
+          En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 105
+        sortie: 118
+        ecran: "fiche : Gaza · 2018-2023 · L'argent du Qatar"
+        source: "The New York Times, 10 décembre 2023 ; Haaretz"
+        verifier: "le texte exact de l'enquête du New York Times du 10 décembre 2023 et de la phrase de Netanyahou citée par Haaretz (question Perplexity)"
+        voix: >-
+          Pendant ce temps, le gouvernement Netanyahou laisse le Qatar financer Gaza, gouvernée par le Hamas. / Selon le New York Times, / il s'agit de garder les Palestiniens **divisés**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 67
+        sortie: 80
+        ecran: "fiche : Washington · 15 septembre 2020 · Les accords d'Abraham"
+        source: "accords d'Abraham, 15 septembre 2020"
+        voix: >-
+          En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
+      - type: MD
         fichier: output/gaza.mp4
         entree: 30
         sortie: 39
@@ -332,6 +365,14 @@ chapitres:
         source: "rapports trimestriels de Meta sur les réseaux de comportement inauthentique coordonné (réseaux iraniens et autres, 2023-2024)"
         voix: >-
           Des faux comptes, il y en a dans tous les camps de cette **guerre**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 118
+        sortie: 131
+        ecran: "fiche : Jénine · 11 mai 2022 · Shireen Abu Akleh"
+        source: "Haut-Commissariat de l'ONU aux droits de l'homme, juin 2022 ; Comité pour la protection des journalistes (CPJ)"
+        voix: >-
+          Le 11 mai 2022, la journaliste Shireen Abu Akleh est tuée à Jénine. / L'armée accuse d'abord des tireurs palestiniens ; / l'ONU conclut à un tir **israélien**.
       - type: NOIR
         duree: 4
         voix: >-
@@ -395,6 +436,23 @@ chapitres:
         voix: >-
           Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à
           la Cour suprême, / et un parti arabe a gouverné en **2021**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 15
+        sortie: 28
+        ecran: "fiche : Galilée · 30 mars 1976 · Le Jour de la Terre"
+        source: "Jour de la Terre, 30 mars 1976 : grève générale, six citoyens arabes tués"
+        voix: >-
+          Le 30 mars 1976, les Arabes d'Israël font grève contre la confiscation de leurs terres. / Six manifestants sont tués. // Depuis, chaque 30 mars, c'est le Jour de la **Terre**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 28
+        sortie: 41
+        ecran: "fiche : Néguev · aujourd'hui · Les villages non reconnus"
+        source: "villages bédouins non reconnus du Néguev ; al-Araqib"
+        verifier: "le nombre de villages non reconnus et de démolitions d'al-Araqib (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Dans le Néguev, des dizaines de villages bédouins ne sont pas reconnus par l'État : / ni eau courante, ni électricité. / À al-Araqib, les maisons sont détruites, puis rebâties, des dizaines de **fois**.
       - type: NOIR
         duree: 9
         voix: >-

@@ -67,6 +67,14 @@ chapitres:
         voix: >-
           Les Palestiniens ont un mot pour cela : / sumud. / Tenir. / **Rester**.
       - type: MD
+        fichier: output/documents-6.mp4
+        entree: 202
+        sortie: 215
+        ecran: "fiche : Jérusalem 1935 · New York 2003 · Edward Said"
+        source: "Edward Said, The Question of Palestine, 1979 (La Question de Palestine)"
+        voix: >-
+          Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».
+      - type: MD
         fichier: output/documents-3.mp4
         entree: 144
         sortie: 159

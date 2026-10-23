@@ -202,6 +202,14 @@ chapitres:
           / Une cour d'appel y voit une diffamation raciale ; / en 2006, la Cour de cassation annule cette
           **décision**.
         note: "procédure civile : ne pas dire « condamné » ni « relaxé »"
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 131
+        sortie: 147
+        ecran: "fiche : la France · de 1957 à 2025 · Le rôle de la France"
+        source: "accord nucléaire franco-israélien, 1957 ; CEDH, Baldassi et autres c. France, 11 juin 2020 ; reconnaissance de l'État de Palestine, 22 septembre 2025"
+        voix: >-
+          Et la France ? / En 1957, elle aide Israël à bâtir la centrale de Dimona. / En 2020, la Cour européenne la condamne pour avoir puni des appels au boycott. // En 2025, elle reconnaît la **Palestine**.
       - type: NOIR
         duree: 9
         voix: >-

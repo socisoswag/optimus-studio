@@ -120,6 +120,30 @@ chapitres:
         fichier: output/resolutions.mp4
         entree: 52.5
         sortie: 59.32
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 147
+        sortie: 162
+        ecran: "fiche : La Haye · 19 juillet 2024 · La Cour internationale de justice"
+        source: "CIJ, avis consultatif du 19 juillet 2024 ; Assemblée générale de l'ONU, résolution ES-10/24, 18 septembre 2024"
+        voix: >-
+          Le 19 juillet 2024, la Cour internationale de justice le dit : / l'occupation est **illégale**. / Israël doit y mettre fin et évacuer les colons. // L'ONU lui donne douze mois.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 162
+        sortie: 176
+        ecran: "fiche : Washington · 14 septembre 2016 · Le soutien américain"
+        source: "protocole d'accord du 14 septembre 2016 : 38 milliards de dollars d'aide militaire pour 2019-2028 ; vetos au Conseil de sécurité"
+        voix: >-
+          Pourquoi rien ne change ? / Les États-Unis versent à Israël 3,8 milliards de dollars d'aide militaire par an, / et bloquent par leur veto des dizaines de résolutions de l'**ONU**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 176
+        sortie: 188
+        ecran: "fiche : Jérusalem · 14 mai 2018 · L'ambassade américaine"
+        source: "reconnaissance de Jérusalem par les États-Unis, 6 décembre 2017 ; ouverture de l'ambassade, 14 mai 2018"
+        voix: >-
+          En 2018, Washington installe son ambassade à Jérusalem. / Le même jour, à Gaza, des dizaines de manifestants sont **tués**.
       - type: NOIR
         duree: 16
         source: "résolution 2334 du Conseil de sécurité, 23 décembre 2016"
@@ -241,6 +265,15 @@ chapitres:
         voix: >-
           Israël rejette ce mot : / ses citoyens arabes votent et siègent au Parlement, / et les territoires relèvent,
           dit-il, d'un conflit, pas d'un **système**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 188
+        sortie: 202
+        ecran: "fiche : Cisjordanie occupée · aujourd'hui · Les tribunaux militaires"
+        source: "mineurs devant les tribunaux militaires et détention administrative (chiffres à préciser)"
+        verifier: "les chiffres récents des mineurs jugés et des détenus administratifs (question Perplexity)"
+        voix: >-
+          Chaque année, des centaines d'enfants palestiniens passent devant des tribunaux militaires. / Des milliers de Palestiniens sont détenus sans procès, / en « détention **administrative** ».
       - type: RÉEL
         fichier: output/plans-reels/cisjordanie-kfar-etzion-collines-vignes.mp4
         entree: 0

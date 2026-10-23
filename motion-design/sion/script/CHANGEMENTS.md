@@ -77,3 +77,14 @@ Toutes les reconstitutions prévues sont maintenant faites.
 **Voix off, plan 6.9** (réponse Perplexity) : « Vous voyez une autre difficulté, Excellence, dans l'existence de la
 population non juive en Palestine. Mais qui donc songerait à les éloigner ? » Le chapitre 6 peut s'enregistrer. Le plan
 `06.09-MD-documents.mp4` garde son nom (nouvelle version : la phrase exacte à l'écran).
+
+**Seize sujets ajoutés** (le film passe à 1 h 15 min 49), tous en fiches sur la carte, `<plan>-MD-documents-6.mp4` :
+les lois de 1950 (ch. 16), l'eau et Cheikh Jarrah (ch. 23), le Mavi Marmara, la grande marche du retour, l'argent du
+Qatar et les accords d'Abraham (ch. 25, avant le 7 octobre), Shireen Abu Akleh (ch. 27), le Jour de la Terre et les
+villages bédouins (ch. 28), le rôle de la France (ch. 31), la Cour internationale de justice, le soutien américain et
+l'ambassade à Jérusalem (ch. 33), les tribunaux militaires (ch. 35), Edward Said (ch. 38). Les plans qui suivaient
+dans ces chapitres changent de numéro : refais leur place dans la timeline (les noms de fichiers suivent le script).
+
+**Archives en réserve** (actualités Universal, domaine public) : `13.R1-ARCH-…` le camp de réfugiés juifs d'Admont, 1946 ;
+`19.R1` à `19.R4` Nasser et Suez (1956), Sinaï et Gaza, Jérusalem, le Conseil de sécurité (juin 1967).
+

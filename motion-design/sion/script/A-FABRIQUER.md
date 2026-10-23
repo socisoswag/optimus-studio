@@ -78,3 +78,22 @@ Encore une question :
    archive.org 428-npc-44524) porte au générique "Copyright MCMXXXIV, International Copyright Secured". Qui l'a
    produit (la marine des États-Unis ou une société privée ?), le droit d'auteur de 1934 a-t-il été renouvelé
    (registre du Copyright Office, 1961-1962), et le film est-il aujourd'hui dans le domaine public aux États-Unis ? »
+
+## 6. Sujets ajoutés le 23 octobre : chiffres à vérifier sur Perplexity
+
+Les fiches sont faites (`timelines/documents-6.js`) et restent qualitatives tant que la réponse n'est pas là ; les
+plans marqués « verifier » dans le script ne s'enregistrent pas avant.
+
+> Pour un documentaire, donne des chiffres récents et datés avec leurs sources primaires (lien) : 1) l'eau en
+> Cisjordanie : consommation moyenne par Palestinien et par colon (litres par jour), part des nappes contrôlée par
+> Israël depuis Oslo II (rapports B'Tselem, Amnesty, Banque mondiale, ONU) ; 2) les villages bédouins non reconnus du
+> Néguev : combien aujourd'hui, et combien de fois al-Araqib a été démoli ; 3) les mineurs palestiniens jugés chaque
+> année par les tribunaux militaires israéliens, et le nombre de détenus administratifs au dernier décompte (B'Tselem,
+> HaMoked, Defense for Children International, UNICEF) ; 4) l'enquête du New York Times du 10 décembre 2023 sur l'argent
+> du Qatar vers Gaza et la phrase de Netanyahou rapportée par Haaretz (mars 2019) : texte exact, date, lien ; 5) le
+> nombre de journalistes tués à Gaza depuis octobre 2023 selon le CPJ, et la phrase du CPJ qui en fait le conflit le
+> plus meurtrier ; 6) le nombre exact de vetos américains au Conseil de sécurité sur des résolutions concernant Israël
+> et la Palestine depuis 1972 ; 7) des photos libres de droits (domaine public ou CC BY) du Jour de la Terre (30 mars
+> 1976) et des maisons arabes de Jaffa ou d'Ajami occupées par de nouveaux immigrants en 1949 (fonds GPO, Wikimedia
+> Commons, Bibliothèque nationale d'Israël).
+

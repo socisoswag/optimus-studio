@@ -275,7 +275,7 @@ Source : condamnation par l'Agence juive et la Haganah ; message de Ben Gourion 
 
 ## Chapitre 16 · David Ben Gourion : l'État avant tout
 
-Film 00:29:42:24 → 00:31:07:14 · durée 1 min 24.6 s
+Film 00:29:42:24 → 00:31:22:14 · durée 1 min 39.6 s
 
 *Intention : Le portrait le plus délicat. D'abord ce qu'il est pour les Israéliens, sincèrement. Puis ses propres mots (1938), ce que raconte Rabin de Lydda, et le gouvernement militaire imposé aux Arabes restés. Le titre (« l'État avant tout ») annonce le sujet ; ce sont les faits qui donnent la conclusion.*
 
@@ -314,94 +314,101 @@ Source : gouvernement militaire sur les citoyens arabes d'Israël, 1948-1966 (Sh
 (24 mots, 1.8 par seconde)
 
 
-**16.7** · film **00:30:59:14 → 00:31:07:14** (8.0 s) · **[NOIR]** (à fabriquer)  
+**16.7** · film **00:30:59:14 → 00:31:14:14** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:00:00 → 00:00:15:00  
+Source : loi sur les biens des absents, 14 mars 1950 ; loi du retour, 5 juillet 1950  
+À l'écran : fiche : Knesset · 1950 · Deux lois de 1950  
+> VOIX : En 1950, deux lois. / La loi du retour : tout Juif du monde peut devenir israélien. / La loi sur les biens des absents : les terres des réfugiés passent à l'État. // Eux ne pourront pas **revenir**.  
+(34 mots, 2.3 par seconde)
+
+
+**16.8** · film **00:31:14:14 → 00:31:22:14** (8.0 s) · **[NOIR]** (à fabriquer)  
 > VOIX : Un bâtisseur, pour les uns. / Pour les autres, / l'homme qui a fermé la porte du **retour**.  
 (16 mots, 2.0 par seconde)
 
 
 ## Chapitre 17 · L'exode des Juifs des pays arabes
 
-Film 00:31:07:14 → 00:32:18:00 · durée 1 min 10.4 s
+Film 00:31:22:14 → 00:32:33:00 · durée 1 min 10.4 s
 
 *Intention : L'autre exil, souvent oublié en Europe. Des violences réelles, des lois de déchéance, et aussi des départs organisés par les émissaires sionistes. Puis l'argument de « l'échange de populations », et la réponse palestinienne : les deux sont dits.*
 
 
-**17.1** · film **00:31:07:14 → 00:31:12:04** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-17.mp4` · source 00:00:00:00 → 00:00:04:15  
+**17.1** · film **00:31:22:14 → 00:31:27:04** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-17.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**17.2** · film **00:31:12:04 → 00:31:29:04** (17.0 s) · **[MD]** `output/flux-humains.mp4` · source 00:00:20:18 → 00:00:37:18  
+**17.2** · film **00:31:27:04 → 00:31:44:04** (17.0 s) · **[MD]** `output/flux-humains.mp4` · source 00:00:20:18 → 00:00:37:18  
 > VOIX : Dans le même temps, environ 850 000 Juifs quittent les pays arabes, / du Maroc à l'Irak. / La plupart s'installent en **Israël**.  
 (21 mots, 1.2 par seconde)
 
 
-**17.3** · film **00:31:29:04 → 00:31:46:04** (17.0 s) · **[IA]** `output/reconstitutions/19-24-immigrants-irak-lod-1951.mp4` · source 00:00:00:00 → 00:00:17:00  
+**17.3** · film **00:31:44:04 → 00:32:01:04** (17.0 s) · **[IA]** `output/reconstitutions/19-24-immigrants-irak-lod-1951.mp4` · source 00:00:00:00 → 00:00:17:00  
 Source : Farhoud, Bagdad, 1er et 2 juin 1941 (bilans de plus d'une centaine à près de deux cents morts) ; loi irakienne de 1950 ; expulsions d'Égypte après 1956  
 À l'écran : déjà dans le plan : Mai 1951 · Aéroport de Lod · Des immigrants juifs d'Irak à leur arrivée · Photo d'archive animée par IA  
 > VOIX : Certains fuient des violences : / à Bagdad, en juin 1941, le Farhoud fait plus d'une centaine de morts juifs. // Après 1948, l'Irak ne les laisse partir qu'en renonçant à leur nationalité ; / l'Égypte en expulse des milliers après **1956**.  
 (37 mots, 2.2 par seconde)
 
 
-**17.4** · film **00:31:46:04 → 00:32:02:04** (16.0 s) · **[IA]** `output/reconstitutions/20-25-maabara-nahariya-1952.mp4` · source 00:00:00:00 → 00:00:16:00  
+**17.4** · film **00:32:01:04 → 00:32:17:04** (16.0 s) · **[IA]** `output/reconstitutions/20-25-maabara-nahariya-1952.mp4` · source 00:00:00:00 → 00:00:16:00  
 Source : opérations Tapis volant (Yémen, 1949-1950) et Ezra et Néhémie (Irak, 1951-1952) ; maabarot  
 À l'écran : déjà dans le plan : Février 1952 · Nahariya · Une maabara, camp de transit des nouveaux immigrants · Photo d'archive animée par IA  
 > VOIX : D'autres sont poussés au départ par les émissaires sionistes, / qui organisent des ponts aériens, du Yémen à l'Irak. // En Israël, beaucoup vivent des années dans des camps de **toile**.  
 (29 mots, 1.8 par seconde)
 
 
-**17.5** · film **00:32:02:04 → 00:32:09:00** (6.8 s) · **[MD]** `output/flux-humains.mp4` · source 00:00:37:18 → 00:00:44:13  
+**17.5** · film **00:32:17:04 → 00:32:24:00** (6.8 s) · **[MD]** `output/flux-humains.mp4` · source 00:00:37:18 → 00:00:44:13  
 À l'écran : déjà dans la pièce : Deux exils. Deux mémoires. Une même terre.  
 > VOIX : silence
 
 
-**17.6** · film **00:32:09:00 → 00:32:18:00** (9.0 s) · **[NOIR]** (à fabriquer)  
+**17.6** · film **00:32:24:00 → 00:32:33:00** (9.0 s) · **[NOIR]** (à fabriquer)  
 > VOIX : Israël parle d'un échange de populations. / Les Palestiniens répondent : / ce n'est pas à eux d'en payer le **prix**.  
 (18 mots, 2.0 par seconde)
 
 
 ## Chapitre 18 · Golda Meir : « Ils n'existaient pas »
 
-Film 00:32:18:00 → 00:33:29:00 · durée 1 min 11.0 s
+Film 00:32:33:00 → 00:33:44:00 · durée 1 min 11.0 s
 
 *Intention : Le titre est sa phrase, pas notre thèse. La citer en entier, y compris la suite (« et que nous étions venus les chasser »), qui dit pourquoi elle compte. Rappeler Filastin, 1911 (chapitre 6). Finir sur un peuple qui prend la parole : la partie IV commence.*
 
 
-**18.1** · film **00:32:18:00 → 00:32:22:15** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-18.mp4` · source 00:00:00:00 → 00:00:04:15  
+**18.1** · film **00:32:33:00 → 00:32:37:15** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-18.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**18.2** · film **00:32:22:15 → 00:32:27:00** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:50:10 → 00:00:54:20  
+**18.2** · film **00:32:37:15 → 00:32:42:00** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:50:10 → 00:00:54:20  
 À l'écran : fiche de la chronologie : Golda Meir  
 > VOIX : silence
 
 
-**18.3** · film **00:32:27:00 → 00:32:41:00** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:08:00 → 00:01:22:00  
+**18.3** · film **00:32:42:00 → 00:32:56:00** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:08:00 → 00:01:22:00  
 > VOIX : Golda Meir, née à Kiev, élevée aux États-Unis, / signe la déclaration d'indépendance. / Elle devient Première ministre en **1969**.  
 (18 mots, 1.3 par seconde)
 
 
-**18.4** · film **00:32:41:00 → 00:32:53:00** (12.0 s) · **[MD]** `output/citation-meir.mp4` · source 00:00:00:00 → 00:00:12:00  
+**18.4** · film **00:32:56:00 → 00:33:08:00** (12.0 s) · **[MD]** `output/citation-meir.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : SOURCES.md 6 (entretien avec Frank Giles, The Sunday Times, 15 juin 1969, p. 12)  
 > VOIX : Cette année-là, elle déclare au Sunday Times : / « Il n'y avait pas de Palestiniens. / Ils n'existaient **pas**. »  
 (16 mots, 1.3 par seconde)
 
 
-**18.5** · film **00:32:53:00 → 00:33:05:00** (12.0 s) · **[MD]** `output/documents.mp4` · source 00:00:11:00 → 00:00:23:00  
+**18.5** · film **00:33:08:00 → 00:33:20:00** (12.0 s) · **[MD]** `output/documents.mp4` · source 00:00:11:00 → 00:00:23:00  
 > VOIX : Pourtant, dès 1911, à Jaffa, un journal s'appelait Filastin, / et s'adressait à ses lecteurs comme à des **Palestiniens**.  
 (18 mots, 1.5 par seconde)
 
 
-**18.6** · film **00:33:05:00 → 00:33:23:00** (18.0 s) · **[NOIR]** (à fabriquer)  
+**18.6** · film **00:33:20:00 → 00:33:38:00** (18.0 s) · **[NOIR]** (à fabriquer)  
 Source : même entretien : « It was not as though there was a Palestinian people [...] and we came and threw them out and took their country away from them. »  
 > VOIX : Elle ajoute : ce n'est pas comme s'il y avait eu un peuple palestinien, / « et que nous étions venus les chasser, / et leur prendre leur pays ». // Tout est là : / s'il n'y a pas de peuple, / il n'y a rien à **rendre**.  
 (40 mots, 2.2 par seconde)
 
 
-**18.7** · film **00:33:23:00 → 00:33:29:00** (6.0 s) · **[NOIR]** (à fabriquer)  
+**18.7** · film **00:33:38:00 → 00:33:44:00** (6.0 s) · **[NOIR]** (à fabriquer)  
 > VOIX : Ce peuple, pourtant, va prendre la **parole**. ///  
 (7 mots, 1.2 par seconde)  
 Son : montée lente vers l'ouverture de la partie IV
 
 
 ---
-Durée de la partie : 12 min 03.1 s (film 00:21:25:22 → 00:33:29:00)
+Durée de la partie : 12 min 18.1 s (film 00:21:25:22 → 00:33:44:00)

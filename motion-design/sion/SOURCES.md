@@ -673,3 +673,25 @@ marquée du filigrane d'une agence commerciale.
 - La ponctuation des résolutions de l'ONU sur les documents officiels (digitallibrary.un.org).
 - Les fiches « figures d'aujourd'hui » sont écrites au passé daté, pour rester justes après les législatives
   israéliennes du 27 octobre 2026.
+
+## 7. Sujets ajoutés le 23 octobre 2026 (fiches `timelines/documents-6.js`)
+
+| Plan | Sujet | Source |
+|---|---|---|
+| ch. 16 | La loi du retour et la loi sur les biens des absents | lois de la Knesset du 5 juillet 1950 et du 14 mars 1950 |
+| ch. 23 | Le partage de l'eau | accords d'Oslo II, 28 septembre 1995, annexe III, article 40 (chiffres : réponse Perplexity attendue) |
+| ch. 23 | Cheikh Jarrah | expulsions de familles palestiniennes à Jérusalem-Est, avril-mai 2021 |
+| ch. 25 | Le Mavi Marmara | abordage du 31 mai 2010 : neuf militants tués à bord, un dixième mort en 2014 |
+| ch. 25 | La grande marche du retour | commission d'enquête internationale indépendante de l'ONU, rapport de février 2019 : 189 Palestiniens tués du 30 mars au 31 décembre 2018 |
+| ch. 25 | L'argent du Qatar | The New York Times, 10 décembre 2023 ; Haaretz (citation à vérifier) |
+| ch. 25 | Les accords d'Abraham | signés à la Maison-Blanche le 15 septembre 2020 (Émirats arabes unis, Bahreïn), puis Maroc et Soudan |
+| ch. 27 | Shireen Abu Akleh | Haut-Commissariat de l'ONU aux droits de l'homme, 24 juin 2022 ; Comité pour la protection des journalistes (CPJ) |
+| ch. 28 | Le Jour de la Terre | 30 mars 1976 : grève générale contre les expropriations en Galilée, six citoyens arabes tués |
+| ch. 28 | Les villages bédouins non reconnus | Néguev, al-Araqib (chiffres : réponse Perplexity attendue) |
+| ch. 31 | Le rôle de la France | accord nucléaire franco-israélien de 1957 (Dimona) ; CEDH, Baldassi et autres c. France, 11 juin 2020 ; reconnaissance de l'État de Palestine, 22 septembre 2025 |
+| ch. 33 | La Cour internationale de justice | avis consultatif du 19 juillet 2024 ; Assemblée générale, résolution ES-10/24, 18 septembre 2024 |
+| ch. 33 | Le soutien américain | protocole d'accord du 14 septembre 2016 (38 milliards de dollars, 2019-2028) ; vetos au Conseil de sécurité |
+| ch. 33 | L'ambassade américaine à Jérusalem | reconnaissance du 6 décembre 2017 ; ouverture le 14 mai 2018 |
+| ch. 35 | Les tribunaux militaires, la détention administrative | chiffres : réponse Perplexity attendue |
+| ch. 38 | Edward Said | Edward W. Said, The Question of Palestine, 1979 (trad. française, La Question de Palestine) |
+

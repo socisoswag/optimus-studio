@@ -402,6 +402,14 @@ chapitres:
         voix: >-
           Les Arabes restés en Israël deviennent citoyens. / Mais jusqu'en 1966, ils vivent sous gouvernement militaire
           : / il leur faut un permis pour quitter leur **village**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 0
+        sortie: 15
+        ecran: "fiche : Knesset · 1950 · Deux lois de 1950"
+        source: "loi sur les biens des absents, 14 mars 1950 ; loi du retour, 5 juillet 1950"
+        voix: >-
+          En 1950, deux lois. / La loi du retour : tout Juif du monde peut devenir israélien. / La loi sur les biens des absents : les terres des réfugiés passent à l'État. // Eux ne pourront pas **revenir**.
       - type: NOIR
         duree: 8
         voix: >-
