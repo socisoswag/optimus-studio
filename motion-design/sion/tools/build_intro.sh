@@ -7,7 +7,7 @@
 #   tools/build_intro.sh archives-vivantes → photos d'archives en relief (INTRO.page = photo3d.html,
 #                                           après tools/prep_archives.py)
 #
-# Variables : WORKERS (4 par défaut), SHUTTER (1 ; 2 pour un flou de bougé), BITRATE.
+# Variables : WORKERS (4 par défaut), SHUTTER (1 ; 2 pour un flou de bougé), BITRATE, VIDEO_LIST (reprise).
 set -euo pipefail
 NAME="${1:-intro-aerienne}"
 OUTNAME="$NAME"; RFLAGS=""
@@ -24,7 +24,14 @@ if [ "$PAGE" = "drone.html" ]; then
   [ -f data/drone/meta.json ] || { echo "data/drone/ manque : lancer d'abord tools/prep_drone.py" >&2; exit 1; }
 fi
 
-node render.mjs --page "$PAGE" --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf 12 $RFLAGS --out "$TMP/video.mp4"
+# VIDEO_LIST : liste concat des morceaux d'un rendu déjà fait (render.mjs, /tmp/chrono-*/list.txt) dont
+# l'assemblage a échoué (disque plein) : on reprend sans refaire les images
+IN=(-i "$TMP/video.mp4")
+if [ -n "${VIDEO_LIST:-}" ]; then
+  IN=(-f concat -safe 0 -i "$VIDEO_LIST")
+else
+  node render.mjs --page "$PAGE" --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf 12 $RFLAGS --out "$TMP/video.mp4"
+fi
 WAV="output/$NAME.wav"
 if [ "$OUTNAME" = "$NAME" ] || [ ! -f "$WAV" ]; then
   python3 tools/sound_intro.py "$TMP/intro.json" "$TMP/son.wav"
@@ -38,9 +45,9 @@ FINISH="format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=s
 
 AUTO=$(python3 -c "print(min(12000, int(95 * 8000 / $DUR - 330)))")
 B="${BITRATE:-${AUTO}k}"
-ffmpeg -nostdin -y -loglevel error -i "$TMP/video.mp4" -vf "$FINISH" -c:v libx264 -preset slow -b:v "$B" -maxrate "$B" -bufsize "$B" \
+ffmpeg -nostdin -y -loglevel error "${IN[@]}" -vf "$FINISH" -c:v libx264 -preset slow -b:v "$B" -maxrate "$B" -bufsize "$B" \
   -tune grain -pix_fmt yuv420p -pass 1 -passlogfile "$TMP/x264" -an -f mp4 /dev/null
-ffmpeg -nostdin -y -loglevel error -i "$TMP/video.mp4" -i "$WAV" -map 0:v -map 1:a -vf "$FINISH" -c:v libx264 -preset slow \
+ffmpeg -nostdin -y -loglevel error "${IN[@]}" -i "$WAV" -map 0:v -map 1:a -vf "$FINISH" -c:v libx264 -preset slow \
   -b:v "$B" -maxrate "$B" -bufsize "$B" -tune grain -pix_fmt yuv420p -pass 2 -passlogfile "$TMP/x264" \
   -c:a aac -b:a 320k -t "$DUR" -movflags +faststart "$TMP/final.mp4"
 [ "$WAV" = "$TMP/son.wav" ] && mv "$TMP/son.wav" "output/$NAME.wav"
