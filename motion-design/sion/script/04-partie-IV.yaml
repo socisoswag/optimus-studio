@@ -114,7 +114,7 @@ chapitres:
       - type: ARCH
         fichier: output/archives-filmees/1956-sinai-gaza-armee-israelienne.mp4
         entree: 0
-        sortie: 10.8
+        sortie: 8
         ecran: "carton : novembre 1956 · Sinaï · L'armée israélienne"
         source: "actualités Universal du 5 novembre 1956 (archives nationales américaines), domaine public"
         voix: >-

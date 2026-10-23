@@ -392,7 +392,7 @@
 
 ## Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation
 
-*6 min 03 de film*
+*5 min 60 de film*
 
 **19.2** Pour comprendre la suite, / quatre **cartes**.
 

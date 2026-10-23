@@ -185,7 +185,7 @@ de 2023 (25.20), le blocus de 2025 (25.33), E1 (26.09), le patrimoine de Gaza (3
 ## 23 octobre 2026, l'après-midi
 
 **Huit plans d'archives filmées entrent dans le film** (actualités Universal des archives nationales américaines,
-domaine public ; le film passe à 1 h 30 min 16). Trois sortent de la réserve du chapitre 19, cinq sont nouveaux.
+domaine public ; le film passe à 1 h 30 min 14). Trois sortent de la réserve du chapitre 19, cinq sont nouveaux.
 
 | Plan | Fichier | Ce que c'est |
 |---|---|---|
