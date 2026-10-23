@@ -4,6 +4,8 @@
     python3 tools/build_reconstitution.py <dossier_des_clips> --essai    reconnaît et prépare seulement (pas de rendu)
     python3 tools/build_reconstitution.py <dossier> 6a0417f9=2-quai-jaffa   attribue un clip à la main (morceau de son nom)
     python3 tools/build_reconstitution.py data/gemini   les clips reçus, gardés sous le nom de leur photo de départ
+    python3 tools/build_reconstitution.py --fixes       les photos montrées seules par choix (« fixe » dans les
+                                                        légendes) : timelines/photos-fixes.js → output/photos-fixes/
 
 1. Reconnaissance : la première image de chaque clip est comparée aux images de départ
    (output/reconstitution/*.jpg) ; pas besoin de renommer les fichiers. Un clip sans photo de départ
@@ -34,6 +36,10 @@ from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 src = sys.argv[1]
 essai = "--essai" in sys.argv
+# --fixes : seulement les photos sans clip par choix (personnes réelles, sujets où la vraie photo vaut preuve),
+# dans une pièce à part pour ne pas refaire le rendu des reconstitutions
+FIXES = "--fixes" in sys.argv
+NOM = "photos-fixes" if FIXES else "reconstitutions"
 # attribution à la main : un morceau du nom du fichier = nom du plan (pour une scène trop réinventée pour être reconnue)
 MANUEL = dict(x.split("=", 1) for x in sys.argv[2:] if "=" in x)
 LEG = json.load(open(os.path.join(ROOT, "data", "reconstitution-legendes.json")))
@@ -50,7 +56,7 @@ def sig(img):
 
 
 refs = {k: sig(Image.open(f)) for k, f in REF.items()}
-clips = sorted(f for f in glob.glob(os.path.join(src, "*")) if os.path.splitext(f)[1].lower() in (".mp4", ".mov", ".webm", ".mkv"))
+clips = [] if FIXES else sorted(f for f in glob.glob(os.path.join(src, "*")) if os.path.splitext(f)[1].lower() in (".mp4", ".mov", ".webm", ".mkv"))
 found = {}
 tmp = os.path.join(ROOT, "output", "reconstitution", "images")
 os.makedirs(tmp, exist_ok=True)
@@ -158,38 +164,40 @@ for name in order:
     amb.append([round(t0, 3), round(t, 3), L.get("amb", "vent"), 0.9])
     print(f"  {name} : {mode}, {t - t0:.1f} s")
 
-# photos sans clip, en attente de leur reconstitution (« provisoire » : durée en s, dans les légendes) : la vraie
+# photos sans clip, en attente de leur reconstitution (« provisoire » : durée en s, dans les légendes), ou montrées
+# seules par choix (« fixe », avec --fixes ; « vers » : cadrage d'arrivée cx, cy, largeur) : la vraie
 # photo seule, lente avancée de la caméra, mention « Photo d'archive » ; le clip la remplacera au même nom
 for name, L in LEG.items():
-    if name in found or not isinstance(L, dict) or not L.get("provisoire") or name not in REF:
+    if name in found or not isinstance(L, dict) or not L.get("fixe" if FIXES else "provisoire") or name not in REF:
         continue
-    dur = float(L["provisoire"])
+    dur = float(L["fixe" if FIXES else "provisoire"])
+    cx, cy, w = L.get("vers", (0.52, 0.52, 0.88))
     still = os.path.join(tmp, name + "-photo")
     os.makedirs(still, exist_ok=True)
     Image.open(REF[name]).convert("RGB").save(os.path.join(still, "0001.jpg"), quality=95)
     lab = {"eyebrow": L.get("eyebrow", ""), "place": L.get("place", ""), "sub": L.get("sub", ""), "at": 0.35}
     photos.append({"id": name, "t0": round(t, 3), "t1": round(t + dur, 3), "fade": FADE, "hold": 0,
                    "frames": {"dir": f"output/reconstitution/images/{name}-photo", "n": 1, "fps": FPS},
-                   "from": {"cx": 0.5, "cy": 0.5, "w": 1.0, "focus": 0.4}, "to": {"cx": 0.52, "cy": 0.52, "w": 0.88, "focus": 0.7},
-                   **lab, "out": max(1.0, dur - 5.2), "credit": f"Photo d’archive\n{SRC_CREDIT}"})
+                   "from": {"cx": 0.5, "cy": 0.5, "w": 1.0, "focus": 0.4}, "to": {"cx": cx, "cy": cy, "w": w, "focus": 0.7},
+                   **lab, "out": max(1.0, dur - 5.2), "credit": f"Photo d’archive\n{L.get('credit') or SRC_CREDIT}"})
     shots.append({"id": name, "t0": round(t, 3), "t1": round(t + dur, 3)})
     amb.append([round(t, 3), round(t + dur, 3), L.get("amb", "vent"), 0.9])
     t += dur
-    print(f"  {name} : photo seule, en attente de son clip, {dur:.1f} s")
+    print(f"  {name} : photo seule{'' if FIXES else ', en attente de son clip'}, {dur:.1f} s")
 
 if not photos:
     sys.exit("aucun clip reconnu")
 intro = {
-    "name": "reconstitutions", "page": "photo3d.html", "total": round(t, 3), "fov": 50, "xfade": XF, "fadeIn": 0.01, "fadeOut": 0.01,
+    "name": NOM, "page": "photo3d.html", "total": round(t, 3), "fov": 50, "xfade": XF, "fadeIn": 0.01, "fadeOut": 0.01,
     "coc": 0, "photos": photos, "shots": shots, "plans": True,
     "sound": {"wind": False, "projector": True, "amb": amb},
 }
-path = os.path.join(ROOT, "timelines", "reconstitutions.js")
+path = os.path.join(ROOT, "timelines", NOM + ".js")
 with open(path, "w") as fh:
     fh.write("/* Généré par tools/build_reconstitution.py : ne pas modifier à la main (légendes : data/reconstitution-legendes.json). */\n")
     fh.write("(function (root) {\n  root.INTRO = " + json.dumps(intro, ensure_ascii=False, indent=1) + ";\n})(typeof window !== 'undefined' ? window : globalThis);\n")
 print(f"timeline : {path} ({len(photos)} plans, {t:.1f} s)")
 if essai:
     sys.exit(0)
-subprocess.run(["bash", "tools/build_intro.sh", "reconstitutions"], cwd=ROOT, check=True)
-subprocess.run(["python3", "tools/verif_video.py", "output/reconstitutions.mp4", "--timeline", "reconstitutions"], cwd=ROOT)
+subprocess.run(["bash", "tools/build_intro.sh", NOM], cwd=ROOT, check=True)
+subprocess.run(["python3", "tools/verif_video.py", f"output/{NOM}.mp4", "--timeline", NOM], cwd=ROOT)
