@@ -4,6 +4,12 @@
 
 **Pour la synchronisation automatique** : un fichier par chapitre (`chapitre-08.wav`), et **2 secondes de silence entre deux plans** (entre deux numéros). À l'intérieur d'un plan, les `//` et `///` restent plus courts (une à deux secondes au plus).
 
+## Ouverture
+
+*1 min 54 de film*
+
+**O.2** (la voix entre vers 3 s, sur la descente depuis l'espace) 1899. / Theodor Herzl, le fondateur du sionisme, écrit à un ancien maire de Jérusalem : / « Mais qui donc songerait à les éloigner ? » // Un demi-siècle plus tard, / plus de 700 000 Palestiniens ont été chassés de leurs terres. /// Comment en est-on arrivé **là** ?
+
 ## Chapitre 1 · Sion : un mot, un mythe, un monde
 
 *1 min 29 de film*

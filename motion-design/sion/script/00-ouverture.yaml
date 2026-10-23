@@ -21,11 +21,17 @@ chapitres:
           Saint-Georges) ; mer Morte : Adobe Stock 198345828 (SOURCES.md 4.1)
         ecran: "lieux (Mer Méditerranée, Jaffa, Désert de Judée), altimètre -430 m, titre SION · ציון · صهيون"
         son: "bande-son de la pièce (déjà mixée, pistes séparées dans le dossier son)"
+        voix: >-
+          (la voix entre vers 3 s, sur la descente depuis l'espace) 1899. / Theodor Herzl, le fondateur du sionisme,
+          écrit à un ancien maire de Jérusalem : / « Mais qui donc songerait à les éloigner ? » // Un demi-siècle plus
+          tard, / plus de 700 000 Palestiniens ont été chassés de leurs terres. /// Comment en est-on arrivé **là** ?
         note: >-
-          intro hybride (tools/intro_hybride.sh) : l'espace et la mer en 3D, la terre en vrais plans réchauffés pour
+          accroche : la lettre de Herzl à Youssouf Diya al-Khalidi, 19 mars 1899 (plan 6.9) ; plus de 700 000 réfugiés en
+          1948 (chapitre 13). Ensuite l'image et la musique portent la descente jusqu'au titre. Intro hybride (tools/intro_hybride.sh) : l'espace et la mer en 3D, la terre en vrais plans réchauffés pour
           raccorder avec l'aube. Les anciens plans 3D des monts et du désert de Judée sont abandonnés (effet maquette).
       - type: MD
         fichier: output/generique.mp4
         entree: 0
         sortie: 34.6
+        note: "facultatif : à couper si l'ouverture paraît longue (les crédits sont au générique de fin)"
         ecran: "générique d'ouverture"
