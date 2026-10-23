@@ -115,6 +115,8 @@ moteur, mêmes gabarits, même finition. Rien de neuf sans raison de récit.
   Relief sur toutes les terres de l'image (`relief: true` dans buildTL, ou `terres: true` dans TL.partage) : base Palestine
   (data/partage.js) puis, au-delà, Sinaï, Liban, Jordanie et Golan, région et Europe (data/relief-plus.js, tools/prep_relief_region.py) ;
   une couche trop floue pour le cadrage s'efface d'elle-même.
+  Document d'époque posé sur le terrain : `TL.carte = { src, bbox, in, out }` (carte redressée en Mercator, voir
+  tools/prep_sykes_picot.py et timelines/sykes-picot.js) ; les zones se dessinent alors par-dessus.
 - Archives filmées (`tools/archives_filmees.py`) : toujours le fichier d'origine d'archive.org (jamais les copies réduites),
   recadrage en pixels du fichier ; télécinéma inverse des actualités NTSC, 24 i/s passés à 25 sans doubler d'image (durée
   raccourcie de 4 %), poussières d'une image retirées, tremblement corrigé pour les films à la manivelle (option stab).

@@ -252,8 +252,12 @@ d'image : elles durent 4 % de moins (les sorties du script sont mises à jour).
   coule sous terre vers Israël, les 80 % d'Oslo, puis 82 litres contre 247 en colonnes de lumière. Remplace l'ancien
   plan 23.14 (`documents-6.mp4`, de 41 à 55 s) : supprime-le de ta timeline.
 
-**Plans renumérotés** : chapitre 8, 8.20 et suivants deviennent 8.22 et suivants. Chapitre 23 : 23.15 et suivants
-deviennent 23.18 et suivants.
+- `sykes-picot.mp4`, chapitre 7, plans 7.5 et 7.6 (nouveaux, après la fiche de l'accord) : la vraie carte signée par
+  Sykes et Picot le 8 mai 1916 (Archives nationales britanniques), posée sur le relief : bleu pour la France, rouge pour
+  le Royaume-Uni, A et B, puis la Palestine en jaune, « administration internationale ».
+
+**Plans renumérotés** : chapitre 7, 7.5 et suivants deviennent 7.7 et suivants. Chapitre 8, 8.20 et suivants
+deviennent 8.22 et suivants. Chapitre 23 : 23.15 et suivants deviennent 23.18 et suivants.
 
 **Intifadas** (chapitre 22) : chiffres vérifiés sur les tableaux de B'Tselem (1 070 Palestiniens tués par les forces
 israéliennes de 1987 à 1993, dont 237 mineurs ; 100 civils et 60 membres des forces de sécurité israéliens) ; la voix

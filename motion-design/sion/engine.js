@@ -1905,6 +1905,68 @@
     const C = PART.C;
     return tw(t, PART.T('land'), PART.T('land') + ((C.land && C.land.dur) || 2.5), E.inOutCubic) * (1 - (C.drain ? tw(t, PART.T('drain'), PART.T('drain') + (C.drain.dur || 3), E.inOutCubic) : 0));
   }
+  // ---- carte ancienne posée sur le terrain (TL.carte = { src, bbox, in: { seg, at, dur }, out: { seg, at, dur, keep } }) :
+  // un document d'époque redressé en Mercator (par ex. tools/prep_sykes_picot.py), qui épouse le relief
+  const CARTE = TL.carte || null;
+  let CTX = null, CCV = null, ccx = null, CID = null;
+  async function loadCarte() {
+    if (!CARTE) return;
+    await new Promise((done) => {
+      const img = new Image();
+      img.onload = () => {
+        const c = canvas(img.naturalWidth, img.naturalHeight), g = c.getContext('2d');
+        g.drawImage(img, 0, 0);
+        const [X0, Y0, X1, Y1] = CARTE.bbox;
+        CTX = { a: g.getImageData(0, 0, c.width, c.height).data, w: c.width, h: c.height, X0, Y0, X1, Y1, su: c.width / (X1 - X0), sv: c.height / (Y1 - Y0) };
+        done();
+      };
+      img.onerror = () => done();
+      img.src = CARTE.src;
+    });
+  }
+  const carteAt = (o) => (o ? SEG.find((x) => x.id === o.seg).start + (o.at || 0) : 1e9);
+  function carteAlpha(t) {
+    if (!CTX) return 0;
+    const a = CARTE.in, b = CARTE.out, t0 = carteAt(a), t1 = carteAt(b);
+    const keep = b && b.keep !== undefined ? b.keep : 0;
+    return tw(t, t0, t0 + ((a && a.dur) || 2), E.inOutCubic) * (1 - (b ? tw(t, t1, t1 + (b.dur || 2), E.inOutCubic) * (1 - keep) : 0));
+  }
+  function drawCarte(g, t) {
+    const A = carteAlpha(t);
+    if (A <= 0.004) return;
+    if (!CCV) { CCV = canvas(W, H); ccx = CCV.getContext('2d'); CID = ccx.createImageData(W, H); }
+    const T = CTX, d = CID.data, R = RID ? RID.data : null, S = T.a, tw4 = T.w * 4;
+    for (let sy = 0; sy < H; sy++) {
+      const v = sy - Poy, den = Pcp * FOCAL + v * Psp;
+      let i = sy * W * 4;
+      if (den <= 1e-6) { for (let sx = 0; sx < W; sx++, i += 4) d[i + 3] = 0; continue; }
+      const ry = (v * FOCAL) / den, k = FOCAL / (FOCAL - ry * Psp);
+      const rx0 = -Pox / k, drx = 1 / k;
+      let X = Pcx + (Pcb * rx0 + Psb * ry) / Ps, Y = Pcy - (-Psb * rx0 + Pcb * ry) / Ps;
+      const dX = (Pcb * drx) / Ps, dY = (Psb * drx) / Ps;
+      for (let sx = 0; sx < W; sx++, i += 4, X += dX, Y += dY) {
+        const u = (X - T.X0) * T.su - 0.5, w = (T.Y1 - Y) * T.sv - 0.5;
+        if (u < 0 || w < 0 || u >= T.w - 1 || w >= T.h - 1) { d[i + 3] = 0; continue; }
+        const iu = u | 0, iw = w | 0, fu = u - iu, fw = w - iw, o = (iw * T.w + iu) * 4, o2 = o + tw4;
+        const a00 = (1 - fu) * (1 - fw), a10 = fu * (1 - fw), a01 = (1 - fu) * fw, a11 = fu * fw;
+        let r = S[o] * a00 + S[o + 4] * a10 + S[o2] * a01 + S[o2 + 4] * a11;
+        let gg = S[o + 1] * a00 + S[o + 5] * a10 + S[o2 + 1] * a01 + S[o2 + 5] * a11;
+        let b = S[o + 2] * a00 + S[o + 6] * a10 + S[o2 + 2] * a01 + S[o2 + 6] * a11;
+        // hors du cadre de la carte (noir) : transparent
+        const lum = r + gg + b, al = lum >= 240 ? 1 : lum / 240;
+        if (al < 1 && al > 0) { r /= al; gg /= al; b /= al; }
+        // le papier épouse le relief : l'ombrage du terrain passe à travers la carte
+        if (R && R[i + 3] > 0) { const sh = 0.92 + 0.75 * (R[i] / 255 - 0.46); r *= sh; gg *= sh; b *= sh; }
+        d[i] = r; d[i + 1] = gg; d[i + 2] = b; d[i + 3] = al * 255;
+      }
+    }
+    ccx.putImageData(CID, 0, 0);
+    g.save();
+    g.globalCompositeOperation = 'source-over';
+    g.globalAlpha = A * (CARTE.alpha || 0.94);
+    g.drawImage(CCV, 0, 0);
+    g.restore();
+  }
   let LMC = null;
   function landMask(cam) {
     if (!LMC) LMC = canvas(W, H).getContext('2d');
@@ -2258,8 +2320,9 @@
     drawDots(g, sources, t, mot);
     // échelle régionale (territoires, offensives) ou échelle de la rue (plans, maisons)
     const ZR = inv(0.0025, 0.007, cam.w), ZS = inv(0.008, 0.003, cam.w);
-    if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t, Math.pow(clamp(0.011 / cam.w), 0.9)); drawBlocks(g, t, ZS); }
+    if (HAS_WAR) { if (!CARTE) drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t, Math.pow(clamp(0.011 / cam.w), 0.9)); drawBlocks(g, t, ZS); }
     if (PART) { drawVote(g, t); drawPartage(g, t, cam); CITY_DIM = 1 - 0.7 * landAlpha(t) * reliefZoom(cam); }
+    if (CARTE) { drawCarte(g, t); if (HAS_WAR) drawZones(g, t, ZR); }
     if (COLUMNS.length) drawColumns(g, t);
     if (FLOWS.length) drawFlows(g, t);
     if (NETS.length) drawNets(g, t);
@@ -3585,6 +3648,7 @@
     buildSegments();
     await loadFaces();
     await loadRelief();
+    await loadCarte();
     // en-têtes du HUD propres à la pièce
     const H0 = TL.hud;
     $('hudTl').innerHTML = H0.label ? `<b>${esc(H0.label[0])}</b><br><span>${esc(H0.label[1] || '')}</span>` : '';

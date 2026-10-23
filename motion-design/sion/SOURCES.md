@@ -592,6 +592,18 @@ marquée du filigrane d'une agence commerciale.
   https://data.techforpalestine.org/api/v3/summary.json). À l'écran : les 1 072 enfants de moins d'un an, nom arabe
   et transcription, dans l'ordre de la liste ; ni numéro d'identité ni date de naissance.
 
+**La carte de Sykes-Picot** (chapitre 7, `timelines/sykes-picot.js`, carte redressée `data/cartes/sykes-picot-1916.jpg`
+et zone `data/sykes-picot.js` écrites par `tools/prep_sykes_picot.py`)
+- Carte signée par Mark Sykes et François Georges-Picot le 8 mai 1916 : The National Archives (Royaume-Uni), MPK 1/426,
+  domaine public ; copie de Wikimedia Commons, « MPK1-426 Sykes Picot Agreement Map signed 8 May 1916.jpg »,
+  https://commons.wikimedia.org/wiki/File:MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg (fond : Royal
+  Geographical Society, Map of Eastern Turkey in Asia, Syria and Western Persia, 1910, chemins de fer de novembre 1915).
+- Calage sur les graduations de degrés des bords (projection polyconique ajustée, écart moyen 2 px, soit 1,6 km),
+  vérifié sur huit villes ; la zone jaune (administration internationale) est lue à la couleur, le reste est montré
+  tel quel.
+- Accord Sykes-Picot, lettres du 9 au 16 mai 1916 (texte : SOURCES.md 6) : zone bleue (France) et rouge (Royaume-Uni),
+  zones d'influence A et B, zone brune « administration internationale », ports de Haïfa et d'Acre au Royaume-Uni.
+
 **Le plan Peel** (chapitre 8, `timelines/peel-1937.js`, tracés `data/peel-1937.js` écrits par `tools/prep_peel.py`)
 - Rapport de la commission royale pour la Palestine (commission Peel), Cmd. 5479, Londres, 7 juillet 1937 : premier
   plan de partage (État juif : Galilée, vallée de Jezréel, plaine côtière ; État arabe uni à la Transjordanie ; zone

@@ -54,6 +54,22 @@ chapitres:
           En même temps, en secret, / Londres et Paris se partagent déjà la région : / c'est l'accord Sykes-Picot.
           // La Palestine doit devenir une zone **internationale**.
       - type: MD
+        fichier: output/sykes-picot.mp4
+        entree: 0
+        sortie: 10
+        ecran: "déjà dans le plan : la vraie carte de 1916 posée sur le relief (bleu, rouge, A, B, jaune)"
+        source: "carte signée par Mark Sykes et François Georges-Picot, 8 mai 1916, The National Archives (Royaume-Uni), MPK 1/426, domaine public ; accord Sykes-Picot, lettres du 9 au 16 mai 1916"
+        voix: >-
+          Sur la carte signée en mai 1916, / la France prend le bleu, / le Royaume-Uni le **rouge**.
+      - type: MD
+        fichier: output/sykes-picot.mp4
+        entree: 10
+        sortie: 19
+        ecran: "déjà dans le plan : la zone jaune, administration internationale ; Haïfa et Acre au Royaume-Uni"
+        source: "carte signée par Mark Sykes et François Georges-Picot, 8 mai 1916, The National Archives (Royaume-Uni), MPK 1/426, domaine public ; accord Sykes-Picot, lettres du 9 au 16 mai 1916"
+        voix: >-
+          La Palestine, en jaune, / doit passer sous une administration **internationale**.
+      - type: MD
         fichier: output/trois-promesses.mp4
         entree: 31
         sortie: 44
