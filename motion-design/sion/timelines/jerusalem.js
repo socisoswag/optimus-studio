@@ -97,6 +97,7 @@
     name: 'jerusalem',
     seed: 1967,
     segments,
+    relief: true,
     plans,
     zones,
     markers,

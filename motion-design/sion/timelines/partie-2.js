@@ -36,6 +36,7 @@
     name: "partie-2",
     seed: 1917,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', "Partie II · Le basculement"], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

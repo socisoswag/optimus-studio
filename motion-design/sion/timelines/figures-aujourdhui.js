@@ -82,6 +82,7 @@
   root.TL = root.buildTL({
     name: 'figures-aujourdhui',
     segments,
+    relief: true,
     events,
     hud: { label: ['Israël · Palestine', 'Chronologie des figures'], index: true, coords: true, ruler: true, odo: true, from: 4.0 },
     sound: { ticks: [2.0, 19.6] },

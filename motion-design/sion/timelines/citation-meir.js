@@ -35,6 +35,7 @@
     name: 'citation-meir',
     seed: 8504,
     segments,
+    relief: true,
     markers, lights,
     hud: { label: ['Sion', 'Chapitre 18 · Golda Meir'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

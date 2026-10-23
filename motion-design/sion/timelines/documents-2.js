@@ -165,6 +165,7 @@
     name: 'documents-2',
     seed: 1937,
     segments,
+    relief: true,
     hud: { label: ['Sion', 'Les textes'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,
     fadeOut: 1.2,

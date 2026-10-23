@@ -23,6 +23,7 @@
     name: 'citation-ben-gourion',
     seed: 8838,
     segments,
+    relief: true,
     hud: { label: ['Sion', 'Chapitre 16 · Ben Gourion'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,
     fadeOut: 1.2,

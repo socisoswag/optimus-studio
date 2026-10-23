@@ -63,6 +63,7 @@
     name: 'camps',
     seed: 1950,
     segments,
+    relief: true,
     markers,
     lights,
     strikes,

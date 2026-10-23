@@ -26,6 +26,7 @@
     name: "partie-7",
     seed: 1949,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', "Partie VII · Une histoire universelle ?"], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

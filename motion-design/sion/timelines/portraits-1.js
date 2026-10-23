@@ -231,6 +231,7 @@
     name: 'portraits-1',
     seed: 1899,
     segments,
+    relief: true,
     hud: { label: ['Sion', 'Les personnages'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,
     fadeOut: 1.2,

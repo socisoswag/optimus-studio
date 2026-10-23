@@ -204,6 +204,7 @@
     name: 'nakba-1948',
     seed: 1948,
     segments,
+    relief: true,
     cities: root.CITIES.filter(([n]) => !['Jaffa', 'Rishon LeZion', 'Le Golan', 'Sinaï', 'Eilat'].includes(n)),
     markers,
     flows,

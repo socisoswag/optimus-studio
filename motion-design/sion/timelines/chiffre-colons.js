@@ -28,6 +28,7 @@
     name: 'chiffre-colons',
     seed: 9982,
     segments,
+    relief: true,
     markers,
     zones,
     hud: { label: ['Sion', 'Chapitre 23 · Les colonies'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },

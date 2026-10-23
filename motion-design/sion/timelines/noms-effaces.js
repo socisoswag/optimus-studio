@@ -101,6 +101,7 @@
     name: 'noms-effaces',
     seed: 1949,
     segments,
+    relief: true,
     renames,
     markers,
     hud: { label: ['Sion', 'Chapitre 34 · L’effacement culturel'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },

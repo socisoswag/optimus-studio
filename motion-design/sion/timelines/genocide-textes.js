@@ -108,6 +108,7 @@
     name: 'genocide-textes',
     seed: 1948,
     segments,
+    relief: true,
     hud: { label: ['Sion', 'Chapitre 35 · Le poids des mots'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,
     fadeOut: 1.2,

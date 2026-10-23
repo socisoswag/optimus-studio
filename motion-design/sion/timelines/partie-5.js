@@ -33,6 +33,7 @@
     name: "partie-5",
     seed: 2000,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', "Partie V · La dérive d’un projet"], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

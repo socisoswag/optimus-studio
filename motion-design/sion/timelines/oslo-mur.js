@@ -80,6 +80,7 @@
     name: 'oslo-mur',
     seed: 1995,
     segments,
+    relief: true,
     zones,
     plans,
     markers,

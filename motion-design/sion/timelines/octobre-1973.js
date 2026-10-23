@@ -132,6 +132,7 @@
     name: 'octobre-1973',
     seed: 1973,
     segments,
+    relief: true,
     cities: root.CITIES.filter(([n]) => !['Jaffa', 'Rishon LeZion', 'Eilat', 'Suez', 'Port-Saïd'].includes(n)),
     markers,
     units,

@@ -38,6 +38,7 @@
     name: "partie-3",
     seed: 1947,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', "Partie III · La catastrophe fondatrice"], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

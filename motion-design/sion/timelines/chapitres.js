@@ -132,6 +132,7 @@
     seed: 39,
     route: false,
     segments,
+    relief: true,
     markers,
     hud: { label: null, index: false, coords: true, ruler: false, odo: false, from: 0.0 },
     fadeIn: 0,

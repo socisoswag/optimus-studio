@@ -34,6 +34,7 @@
     name: "partie-4",
     seed: 1987,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', "Partie IV · Résistances et oppressions"], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

@@ -26,6 +26,7 @@
     name: 'chiffre-zone-c',
     seed: 9520,
     segments,
+    relief: true,
     markers,
     zones,
     hud: { label: ['Sion', 'Chapitre 19 · Cisjordanie'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },

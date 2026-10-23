@@ -71,6 +71,7 @@
     name: 'frontieres',
     seed: 1949,
     segments,
+    relief: true,
     zones,
     markers,
     clock,

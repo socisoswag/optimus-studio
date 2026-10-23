@@ -35,6 +35,7 @@
     name: "partie-6",
     seed: 1938,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', "Partie VI · Voix et contre-voix"], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

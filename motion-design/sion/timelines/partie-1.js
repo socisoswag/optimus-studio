@@ -55,6 +55,7 @@
     name: 'partie-1',
     seed: 1897,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', 'Partie I · L’idée'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

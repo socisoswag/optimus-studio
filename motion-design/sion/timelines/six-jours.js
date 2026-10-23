@@ -207,6 +207,7 @@
     name: 'six-jours',
     seed: 1967,
     segments,
+    relief: true,
     cities: root.CITIES.filter(([n]) => !['Jaffa', 'Rishon LeZion', 'Ramallah'].includes(n)),
     markers,
     flows,

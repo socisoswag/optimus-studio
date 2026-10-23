@@ -27,6 +27,7 @@
     name: 'citation-darwich',
     seed: 7383,
     segments,
+    relief: true,
     markers, lights,
     hud: { label: ['Sion', 'Chapitre 38 · Mémoire, poésie et lumière'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

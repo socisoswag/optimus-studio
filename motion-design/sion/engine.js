@@ -1823,13 +1823,18 @@
       return [dx * sep * k * pk, dy * sep * k * pk - lift * k * pk, lift * k * pk];
     });
   }
+  // de très près, la texture du relief n'est plus assez fine : elle s'efface (TL.partage.fadeBelow = [w0, w1])
+  function reliefZoom(cam) {
+    const f = PART.C.fadeBelow;
+    return f ? clamp((cam.w - f[0]) / (f[1] - f[0])) : 1;
+  }
   function landAlpha(t) {
     const C = PART.C;
     return tw(t, PART.T('land'), PART.T('land') + ((C.land && C.land.dur) || 2.5), E.inOutCubic) * (1 - (C.drain ? tw(t, PART.T('drain'), PART.T('drain') + (C.drain.dur || 3), E.inOutCubic) : 0));
   }
   function drawPartage(g, t, cam) {
     if (!PART) return;
-    const A = landAlpha(t);
+    const A = landAlpha(t) * reliefZoom(cam);
     const OFF = pieceOffsets(t);
     if (A > 0.004) {
       // emprise écran des morceaux (plus la marge du décalage)
@@ -2146,7 +2151,7 @@
     // échelle régionale (territoires, offensives) ou échelle de la rue (plans, maisons)
     const ZR = inv(0.0025, 0.007, cam.w), ZS = inv(0.008, 0.003, cam.w);
     if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t, Math.pow(clamp(0.011 / cam.w), 0.9)); drawBlocks(g, t, ZS); }
-    if (PART) { drawVote(g, t); drawPartage(g, t, cam); CITY_DIM = 1 - 0.7 * landAlpha(t); }
+    if (PART) { drawVote(g, t); drawPartage(g, t, cam); CITY_DIM = 1 - 0.7 * landAlpha(t) * reliefZoom(cam); }
     if (COLUMNS.length) drawColumns(g, t);
     if (FLOWS.length) drawFlows(g, t);
     if (NETS.length) drawNets(g, t);

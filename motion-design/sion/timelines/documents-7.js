@@ -160,6 +160,7 @@
     name: 'documents-7',
     seed: 1858,
     segments,
+    relief: true,
     hud: { label: ['Sion', 'Les faits'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,
     fadeOut: 1.2,

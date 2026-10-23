@@ -83,6 +83,7 @@
     name: 'resolutions',
     seed: 242,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', 'Chapitre 33 · Les résolutions de l’ONU'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,
