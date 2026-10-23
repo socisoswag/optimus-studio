@@ -558,9 +558,9 @@
 
 **25.6** En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
 
-**25.7** Pendant ce temps, le gouvernement Netanyahou laisse le Qatar financer Gaza, gouvernée par le Hamas. / Selon le New York Times, / il s'agit de garder les Palestiniens **divisés**. *(attends avant d'enregistrer : le texte exact de l'enquête du New York Times du 10 décembre 2023 et de la phrase de Netanyahou citée par Haaretz (question Perplexity))*
+**25.7** En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
 
-**25.8** En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
+**25.8** Pendant ce temps, le gouvernement Netanyahou laisse le Qatar financer Gaza, gouvernée par le Hamas. / Selon le New York Times, / il s'agit de garder les Palestiniens **divisés**. *(attends avant d'enregistrer : le texte exact de l'enquête du New York Times du 10 décembre 2023 et de la phrase de Netanyahou citée par Haaretz (question Perplexity))*
 
 **25.9** Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
 

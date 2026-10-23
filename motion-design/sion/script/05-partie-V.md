@@ -114,18 +114,18 @@ Source : commission d'enquête de l'ONU sur les manifestations de 2018 à Gaza, 
 (24 mots, 1.8 par seconde)
 
 
-**25.7** · film **00:51:26:20 → 00:51:39:21** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:45:00 → 00:01:58:00  
-Source : The New York Times, 10 décembre 2023 ; Haaretz  
-À l'écran : fiche : Gaza · 2018-2023 · L'argent du Qatar  
-> VOIX : Pendant ce temps, le gouvernement Netanyahou laisse le Qatar financer Gaza, gouvernée par le Hamas. / Selon le New York Times, / il s'agit de garder les Palestiniens **divisés**.  
-(27 mots, 2.1 par seconde)
-
-
-**25.8** · film **00:51:39:21 → 00:51:52:20** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:07:00 → 00:01:20:00  
+**25.7** · film **00:51:26:20 → 00:51:39:21** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:07:00 → 00:01:20:00  
 Source : accords d'Abraham, 15 septembre 2020  
 À l'écran : fiche : Washington · 15 septembre 2020 · Les accords d'Abraham  
 > VOIX : En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.  
 (23 mots, 1.8 par seconde)
+
+
+**25.8** · film **00:51:39:21 → 00:51:52:20** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:45:00 → 00:01:58:00  
+Source : The New York Times, 10 décembre 2023 ; Haaretz  
+À l'écran : fiche : Gaza · 2018-2023 · L'argent du Qatar  
+> VOIX : Pendant ce temps, le gouvernement Netanyahou laisse le Qatar financer Gaza, gouvernée par le Hamas. / Selon le New York Times, / il s'agit de garder les Palestiniens **divisés**.  
+(27 mots, 2.1 par seconde)
 
 
 **25.9** · film **00:51:52:20 → 00:52:01:21** (9.0 s) · **[MD]** `output/gaza.mp4` · source 00:00:30:00 → 00:00:39:00  

@@ -97,3 +97,15 @@ plans marqués « verifier » dans le script ne s'enregistrent pas avant.
 > 1976) et des maisons arabes de Jaffa ou d'Ajami occupées par de nouveaux immigrants en 1949 (fonds GPO, Wikimedia
 > Commons, Bibliothèque nationale d'Israël).
 
+### Priorité : l'argent du Qatar (plan 25.8, juste avant le 7 octobre)
+
+> Pour un documentaire, avec le texte exact dans la langue d'origine, la date et le lien : 1) l'enquête du New York
+> Times du 10 décembre 2023 (« Buying Quiet: Inside the Israeli Plan That Propped Up Hamas ») : montants versés par le
+> Qatar à Gaza avec l'accord du gouvernement israélien, période, et la phrase qui résume la stratégie ; 2) la phrase de
+> Benyamin Netanyahou rapportée par Haaretz, réunion des députés du Likoud de mars 2019 (« celui qui veut empêcher un
+> État palestinien doit soutenir le renforcement du Hamas… ») : texte exact en anglais ou en hébreu, qui l'a rapportée,
+> et Netanyahou l'a-t-il démentie ; 3) la phrase de Bezalel Smotrich de 2015 (« l'Autorité palestinienne est un
+> fardeau, le Hamas est un atout ») : texte exact, média, date ; 4) l'article de Tal Schneider dans The Times of Israel
+> du 8 octobre 2023 (« For years, Netanyahu propped up Hamas ») : titre et passage clé ; 5) la réponse officielle du
+> bureau de Netanyahou à ces accusations.
+
