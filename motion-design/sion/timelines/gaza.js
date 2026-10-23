@@ -67,8 +67,8 @@
     },
     {
       id: 'ruines', type: 'cap', dur: 11.5, fly: 2.0, anchor: [330, -90], textW: 900,
-      kicker: 'De 2023 à 2025 · Gaza-ville', title: 'Un champ de ruines',
-      text: '[[Environ 90 % des habitants]] ont été déplacés, souvent plusieurs fois. La plupart des logements sont endommagés ou détruits. En août 2025, la famine est déclarée.',
+      kicker: 'De 2023 à 2025 · bande de Gaza', title: 'Un champ de ruines',
+      text: '[[Environ 90 % des habitants]] ont été déplacés, souvent plusieurs fois (ONU). La plupart des logements sont endommagés ou détruits (UNOSAT). Le 22 août 2025, la famine est déclarée (IPC).',
       cam: { lon: 34.4555, lat: 31.5195, w: 0.0004, pitch: 52, bearing: -40 },
       camEnd: { lon: 34.4555, lat: 31.5195, w: 0.00033, pitch: 56, bearing: -30 },
     },

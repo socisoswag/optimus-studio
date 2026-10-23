@@ -127,14 +127,14 @@ Note : dans la Bible, l'ordre qui suit est d'effacer Amalek ; la Cour internatio
 
 
 **25.9** · film **00:51:07:21 → 00:51:19:21** (12.0 s) · **[MD]** `output/gaza.mp4` · source 00:00:50:00 → 00:01:02:00  
-> VOIX : Plus de soixante-quatorze mille Palestiniens tués, / selon le ministère de la Santé de Gaza. / Un décompte sans doute **inférieur** à la réalité.  
-(22 mots, 1.8 par seconde)
+> VOIX : En octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués. / Un décompte sans doute **inférieur** à la réalité.  
+(25 mots, 2.1 par seconde)
 
 
 **25.10** · film **00:51:19:21 → 00:51:32:08** (12.5 s) · **[MD]** `output/chiffre-gaza.mp4` · source 00:00:00:00 → 00:00:12:13  
 À l'écran : déjà dans la pièce : près de 70 % de femmes et d'enfants parmi les morts vérifiés par l'ONU  
-> VOIX : Parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.  
-(20 mots, 1.6 par seconde)
+> VOIX : Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.  
+(28 mots, 2.2 par seconde)
 
 
 **25.11** · film **00:51:32:08 → 00:52:08:08** (36.0 s) · **[3D]** `output/gaza-vue-du-ciel.mp4` · source 00:00:00:00 → 00:00:36:00  

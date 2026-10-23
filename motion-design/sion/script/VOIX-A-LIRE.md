@@ -556,9 +556,9 @@
 
 **25.8** Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
 
-**25.9** Plus de soixante-quatorze mille Palestiniens tués, / selon le ministère de la Santé de Gaza. / Un décompte sans doute **inférieur** à la réalité.
+**25.9** En octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués. / Un décompte sans doute **inférieur** à la réalité.
 
-**25.10** Parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
+**25.10** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
 
 **25.11** Vu du ciel, avant, / et après. ///
 

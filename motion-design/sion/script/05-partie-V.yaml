@@ -159,16 +159,16 @@ chapitres:
         entree: 50
         sortie: 62
         voix: >-
-          Plus de soixante-quatorze mille Palestiniens tués, / selon le ministère de la Santé de Gaza. / Un décompte
-          sans doute **inférieur** à la réalité.
+          En octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens
+          tués. / Un décompte sans doute **inférieur** à la réalité.
       - type: MD
         fichier: output/chiffre-gaza.mp4
         entree: 0
         sortie: 12.52
         ecran: "déjà dans la pièce : près de 70 % de femmes et d'enfants parmi les morts vérifiés par l'ONU"
         voix: >-
-          Parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des
-          **enfants**.
+          Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près
+          de sept sur dix sont des femmes et des **enfants**.
       - type: 3D
         fichier: output/gaza-vue-du-ciel.mp4
         entree: 0
