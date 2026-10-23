@@ -1865,13 +1865,22 @@
     const f = PART.C.fadeBelow;
     return f ? clamp((cam.w - f[0]) / (f[1] - f[0])) : 1;
   }
+  // sous les grands titres plein écran (beat, outro, chapitre, partie), le relief s'assombrit : le texte reste lisible
+  const TITLE_T = new Set(['beat', 'outro', 'chapter', 'part', 'title']);
+  function titleDim(t) {
+    const k = PART.C.titleDim !== undefined ? PART.C.titleDim : 0.42;
+    let i = SEG.findIndex((s) => t < s.start + s.dur);
+    if (i < 0) i = SEG.length - 1;
+    const f = (s) => (s && TITLE_T.has(s.type) ? k : 1), s = SEG[i];
+    return f(SEG[i - 1]) + (f(s) - f(SEG[i - 1])) * tw(t, s.start, s.start + 0.8);
+  }
   function landAlpha(t) {
     const C = PART.C;
     return tw(t, PART.T('land'), PART.T('land') + ((C.land && C.land.dur) || 2.5), E.inOutCubic) * (1 - (C.drain ? tw(t, PART.T('drain'), PART.T('drain') + (C.drain.dur || 3), E.inOutCubic) : 0));
   }
   function drawPartage(g, t, cam) {
     if (!PART) return;
-    const A = landAlpha(t) * reliefZoom(cam);
+    const A = landAlpha(t) * reliefZoom(cam) * titleDim(t);
     const OFF = pieceOffsets(t);
     if (A > 0.004) {
       // emprise écran des morceaux (plus la marge du décalage)

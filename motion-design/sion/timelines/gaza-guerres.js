@@ -90,6 +90,6 @@
     hud: { label: ['Sion', 'Chapitre 25 · Quatre guerres'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,
     fadeOut: 1.2,
-    sound: { ticks: [0.6] },
+    sound: { ticks: [0.6, 61.5] },
   });
 })(typeof window !== 'undefined' ? window : globalThis);
