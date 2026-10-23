@@ -110,6 +110,8 @@ moteur, mêmes gabarits, même finition. Rien de neuf sans raison de récit.
   DM Mono espacée pour les dates et les mentions ; Noto Kufi Arabic et Noto Sans Hebrew pour l'arabe et l'hébreu.
 - Légende d'un plan : date en DM Mono orange précédée d'un trait, lieu en grandes capitales Archivo, phrase en
   Newsreader italique ; mention de source ou « Reconstitution par IA, d'après une photo d'archive » en bas.
+- Cartes de données en 3D : `TL.columns` (colonnes de lumière posées sur la carte, hauteur en mètres, valeur au sommet)
+  et `TL.partage = { center, land, drain }` sans découpage pour poser une carte sur le relief éclairé (voir terres-1945.js).
 - Gabarits du moteur : `quote` (citation et visage), `doc` (fiche d'événement sur la carte 3D : date, titre,
   citation, lignes, épingle), `figure` (fiche de personnage) ; `photo3d.html` pour les archives et les
   reconstitutions ; cartons transparents `timelines/cartons.js`.

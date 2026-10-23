@@ -1168,6 +1168,58 @@
     }
   }
 
+  // colonnes de lumière posées sur la carte (TL.columns, cartes de données) : hauteur en mètres, montée animée,
+  // valeur au sommet ; dessinées par-dessus le relief, à toutes les échelles
+  const COLUMNS = (TL.columns || []).map((c) => {
+    const s0 = SEG.find((x) => x.id === c.seg).start;
+    return { ...c, X: MX(c.lon), Y: MY(c.lat), hU: c.h * M2U(c.lat), t: s0 + (c.at || 0), tEnd: c.until !== undefined ? s0 + c.until : TL.total + 1 };
+  });
+  function drawColumns(g, t) {
+    if (!COLUMNS.length) return;
+    const fade = 1 - tw(t, TL.total - TL.fadeOut - 0.4, TL.total - 0.2);
+    const L = COLUMNS.map((c) => { const Q = proj(c.X, c.Y); return { c, P: { x: Q.x, y: Q.y, k: Q.k } }; }).sort((a, b) => a.P.y - b.P.y); // proj rend toujours le même objet
+    g.save();
+    for (const { c, P } of L) {
+      const A = tw(t, c.t, c.t + 0.35) * (1 - tw(t, c.tEnd - 0.6, c.tEnd)) * fade;
+      if (A <= 0.01) continue;
+      const grow = E.outCubic(tw(t, c.t, c.t + 1.2));
+      const hp = Math.max(2, c.hU * Ps * P.k * Psp * grow), w = (c.w || 10) * P.k, x = P.x, y0 = P.y, y1 = P.y - hp;
+      const hot = c.cold ? COL.stone : COL.hot;
+      // empreinte au sol, puis le fût : sombre en bas, brûlant en haut
+      g.globalAlpha = A;
+      g.fillStyle = 'rgba(0,0,0,.5)';
+      g.beginPath(); g.ellipse(x + 2, y0 + 1, w * 0.9, w * 0.9 * Pcp, 0, 0, 6.2832); g.fill();
+      const gr = g.createLinearGradient(0, y0, 0, y1);
+      gr.addColorStop(0, rgba(COL.ember, c.cold ? 0.25 : 0.35));
+      gr.addColorStop(1, rgba(hot, 0.95));
+      g.fillStyle = gr;
+      g.fillRect(x - w / 2, y1, w, hp);
+      g.fillStyle = rgba(hot, 0.9);
+      g.beginPath(); g.ellipse(x, y1, w / 2, (w / 2) * Pcp, 0, 0, 6.2832); g.fill();
+      g.globalCompositeOperation = 'lighter';
+      if (!c.cold) {
+        sprite(g, SPR.hot, x, y1, w * 7, 0.55 * A);
+        sprite(g, SPR.ember, x, y0, w * 9, 0.35 * A, w * 9 * Pcp);
+      }
+      g.globalCompositeOperation = 'source-over';
+      // la valeur, au-dessus du sommet
+      if (c.value) {
+        const la = A * tw(t, c.t + 0.8, c.t + 1.3);
+        g.globalAlpha = la;
+        g.font = c.cold ? '760 18px "Archivo"' : '760 24px "Archivo"';
+        g.letterSpacing = '0.5px';
+        g.textAlign = 'center';
+        g.textBaseline = 'alphabetic';
+        g.fillStyle = rgba(c.cold ? COL.stone : COL.hot, 1);
+        g.shadowColor = 'rgba(0,0,0,.85)'; g.shadowBlur = 10;
+        g.fillText(c.value, x + (c.vx || 0), y1 - 12 + (c.vy || 0));
+        g.shadowBlur = 0;
+      }
+      g.globalAlpha = 1;
+    }
+    g.restore();
+  }
+
   // maisons : prismes en relief (pierre) ; à `tf` elles s'écroulent : poussière, gravats, empreinte
   const roofCol = [126, 116, 100], wallLit = [86, 78, 66], wallDark = [36, 32, 28];
   function drawBlocks(g, t, Z) {
@@ -2095,6 +2147,7 @@
     const ZR = inv(0.0025, 0.007, cam.w), ZS = inv(0.008, 0.003, cam.w);
     if (HAS_WAR) { drawZones(g, t, ZR); drawArrows(g, t, ZR); drawPlans(g, t, ZS); if (LIGHTS.length) drawLights(g, t, Math.pow(clamp(0.011 / cam.w), 0.9)); drawBlocks(g, t, ZS); }
     if (PART) { drawVote(g, t); drawPartage(g, t, cam); CITY_DIM = 1 - 0.7 * landAlpha(t); }
+    if (COLUMNS.length) drawColumns(g, t);
     if (FLOWS.length) drawFlows(g, t);
     if (NETS.length) drawNets(g, t);
     if (RENAMES.length) drawRenames(g, t);

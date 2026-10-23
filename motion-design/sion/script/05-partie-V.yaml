@@ -145,9 +145,9 @@ chapitres:
         entree: 6
         sortie: 16
         ecran: "fiche : Plomb durci · 1 387 Palestiniens tués"
-        source: "B'Tselem, 9 septembre 2009 (1 387 tués, dont 773 qui ne prenaient pas part aux combats et 320 mineurs) ; 13 Israéliens tués"
+        source: "B'Tselem, 9 septembre 2009 (1 387 tués, dont 320 mineurs) ; Centre palestinien pour les droits de l'homme (PCHR), décembre 2011 (1 419 tués, dont 1 167 civils) ; 13 Israéliens tués"
         voix: >-
-          Fin 2008, « Plomb durci » : / en trois semaines, 1 387 Palestiniens sont tués, dont 320 mineurs. / Côté israélien, 13 **morts**.
+          Fin 2008, « Plomb durci » : / en trois semaines, environ 1 400 Palestiniens sont tués. / Côté israélien, 13 **morts**.
       - type: MD
         fichier: output/gaza-guerres.mp4
         entree: 16
@@ -161,34 +161,34 @@ chapitres:
         fichier: output/gaza-guerres.mp4
         entree: 30
         sortie: 39
-        ecran: "fiche : Pilier de défense · 167 Palestiniens tués"
-        source: "B'Tselem, rapport de mai 2013 (167 tués, dont au moins 87 qui ne prenaient pas part aux combats ; 4 civils et 2 membres des forces de sécurité tués en Israël)"
+        ecran: "fiche : Pilier de défense · 167 Palestiniens tués (185 selon le ministère de la Santé palestinien)"
+        source: "B'Tselem, rapport de mai 2013 (167 tués, dont au moins 87 qui ne prenaient pas part aux combats ; 4 civils et 2 membres des forces de sécurité tués en Israël) ; ministère de la Santé palestinien, 185 tués (cité par Euro-Med Monitor, à confirmer)"
         voix: >-
-          En novembre 2012, huit jours de guerre : / 167 morts à Gaza, six en **Israël**.
+          En novembre 2012, huit jours de guerre : / entre 167 et 185 morts à Gaza selon les sources, / six en **Israël**.
       - type: MD
         fichier: output/gaza-guerres.mp4
         entree: 39
-        sortie: 50
-        ecran: "fiche : Bordure protectrice · 2 251 Palestiniens tués"
-        source: "commission d'enquête indépendante de l'ONU sur le conflit de Gaza de 2014, juin 2015 ; OCHA, chiffres clés (1 462 civils, 551 enfants ; 67 soldats et 6 civils en Israël)"
+        sortie: 52
+        ecran: "fiche : Bordure protectrice · 2 251 Palestiniens tués (2 310 selon le ministère de la Santé de Gaza)"
+        source: "commission d'enquête indépendante de l'ONU sur le conflit de Gaza de 2014, juin 2015 ; OCHA, chiffres clés (1 462 civils, 551 enfants ; 67 soldats et 6 civils en Israël) ; ministère de la Santé de Gaza, janvier 2015 (2 310 tués)"
         voix: >-
-          À l'été 2014, « Bordure protectrice » : / 2 251 Palestiniens tués, dont 551 enfants. / En Israël, 67 soldats et six **civils**.
+          À l'été 2014, « Bordure protectrice » : / 2 251 Palestiniens tués selon l'ONU, 2 310 selon le ministère de la Santé de Gaza, / dont 551 enfants. / En Israël, 67 soldats et six **civils**.
       - type: MD
         fichier: output/gaza-guerres.mp4
-        entree: 50
-        sortie: 59
-        ecran: "fiche : Mai 2021 · 261 Palestiniens tués"
-        source: "OCHA, rapport de situation n° 10, septembre 2021, d'après le Haut-Commissariat aux droits de l'homme (261 tués, dont 67 enfants ; 13 morts en Israël, dont un soldat)"
+        entree: 52
+        sortie: 62
+        ecran: "fiche : Mai 2021 · 261 Palestiniens tués (243 au cessez-le-feu selon le ministère de la Santé de Gaza)"
+        source: "OCHA, rapport de situation n° 10, septembre 2021, d'après le Haut-Commissariat aux droits de l'homme (261 tués, dont 67 enfants ; 13 morts en Israël, dont un soldat) ; ministère de la Santé de Gaza, 21 mai 2021 (243 tués, dont 66 enfants)"
         voix: >-
           En mai 2021, onze jours : / 261 morts à Gaza, dont 67 enfants. / Treize en **Israël**.
       - type: MD
         fichier: output/gaza-guerres.mp4
-        entree: 59
-        sortie: 67
-        ecran: "carton : 4 066 morts à Gaza · 105 en Israël · avant 2023"
-        source: "total des quatre guerres d'après les sources des plans précédents"
+        entree: 62
+        sortie: 72
+        ecran: "carton : 6 407 Palestiniens · 308 Israéliens · avant le 7 octobre (ONU, OCHA, 2008 à septembre 2023)"
+        source: "OCHA, données sur les victimes du conflit, 2008 à septembre 2023 (Gaza, Cisjordanie et Israël) : 6 407 Palestiniens et 308 Israéliens tués (relevé repris par The Wire et Al Jazeera, à confirmer sur le tableau d'OCHA)"
         voix: >-
-          En quatre guerres, / plus de quatre mille morts à Gaza, / une centaine en Israël. / Avant **2023**.
+          De 2008 à septembre 2023, l'ONU compte 6 407 Palestiniens tués, / à Gaza et en Cisjordanie, / et 308 Israéliens. / Avant le 7 **octobre**.
       - type: MD
         fichier: output/documents-7.mp4
         entree: 115

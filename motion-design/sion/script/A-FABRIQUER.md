@@ -176,3 +176,14 @@ Huit vidéos de plus de 45 minutes retrouvées ; aucune ne couvre en un seul fil
 
 Ce qui distingue SION, à dire tel quel : de 1881 à octobre 2026 en un seul film, la source affichée à l'écran plan
 par plan (les autres donnent au mieux une bibliographie en description), cartes 3D et archives libres de droits.
+
+## 10. À confirmer sur Perplexity (séquence « Quatre guerres », chapitre 25)
+
+1. « Quel est le bilan final du ministère de la Santé de Gaza (ou du ministère de la Santé palestinien) pour l'offensive
+   israélienne de novembre 2012 (« Pilier de défense », 14 au 21 novembre 2012) : nombre de morts, dont enfants ? Donner
+   la source d'origine (communiqué du ministère, date, lien). Euro-Med Monitor cite 185 morts, dont 47 enfants. »
+2. « Sur la page « Data on casualties » d'OCHA (ochaopt.org/data/casualties), combien de Palestiniens et d'Israéliens
+   ont été tués du 1er janvier 2008 au 19 septembre 2023, au total, puis à Gaza seulement ? Plusieurs médias citent
+   6 407 Palestiniens et 308 Israéliens. Donner les chiffres exacts du tableau et la date de consultation. »
+3. « Quel est le bilan final du ministère de la Santé de Gaza pour mai 2021 (10 au 21 mai) ? Le jour du cessez-le-feu,
+   il donnait 243 morts dont 66 enfants ; l'ONU (Haut-Commissariat) en compte 261 dont 67 enfants. »

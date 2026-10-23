@@ -5,32 +5,32 @@ Le film dit sa position, une seule fois et clairement : l'égalité des droits, 
 
 ## Ouverture de la conclusion
 
-Film 01:27:36:04 → 01:27:50:04 · durée 0 min 14.0 s
+Film 01:27:41:04 → 01:27:55:04 · durée 0 min 14.0 s
 
 
-**C.0.1** · film **01:27:36:04 → 01:27:50:04** (14.0 s) · **[MD]** `output/conclusion.mp4` · source 00:00:00:00 → 00:00:14:00  
+**C.0.1** · film **01:27:41:04 → 01:27:55:04** (14.0 s) · **[MD]** `output/conclusion.mp4` · source 00:00:00:00 → 00:00:14:00  
 À l'écran : Conclusion  
 > VOIX : silence
 
 
 ## Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes
 
-Film 01:27:50:04 → 01:28:18:19 · durée 0 min 28.6 s
+Film 01:27:55:04 → 01:28:23:19 · durée 0 min 28.6 s
 
 *Intention : Le principe, sa source (la Charte de l'ONU) et son rappel par la Cour en 2024. Le film le défend : c'est sa position, dite comme telle.*
 
 
-**37.1** · film **01:27:50:04 → 01:27:54:19** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-37.mp4` · source 00:00:00:00 → 00:00:04:15  
+**37.1** · film **01:27:55:04 → 01:27:59:19** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-37.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**37.2** · film **01:27:54:19 → 01:28:08:19** (14.0 s) · **[NOIR]** (à fabriquer)  
+**37.2** · film **01:27:59:19 → 01:28:13:19** (14.0 s) · **[NOIR]** (à fabriquer)  
 Source : Charte des Nations unies, 26 juin 1945, article 1, paragraphe 2 ; CIJ, avis du 19 juillet 2024 (droit du peuple palestinien à l'autodétermination)  
 > VOIX : En 1945, la Charte des Nations unies pose un principe : / le droit des peuples à disposer d'eux-mêmes. // En 2024, la Cour internationale de justice le rappelle pour le peuple **palestinien**.  
 (30 mots, 2.1 par seconde)
 
 
-**37.3** · film **01:28:08:19 → 01:28:18:19** (10.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-porte-de-damas-aerien-2022.mp4` · source 00:00:14:00 → 00:00:24:00  
+**37.3** · film **01:28:13:19 → 01:28:23:19** (10.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-porte-de-damas-aerien-2022.mp4` · source 00:00:14:00 → 00:00:24:00  
 Source : SOURCES.md 4.1, Adobe Stock 508320837 (autre passage que celui du chapitre 19)  
 > VOIX : Ce droit, le sionisme l'a revendiqué pour les Juifs. / On ne peut pas le refuser aux **Palestiniens**.  
 (17 mots, 1.7 par seconde)
@@ -38,61 +38,61 @@ Source : SOURCES.md 4.1, Adobe Stock 508320837 (autre passage que celui du chapi
 
 ## Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière
 
-Film 01:28:18:19 → 01:30:03:09 · durée 1 min 44.6 s
+Film 01:28:23:19 → 01:30:08:09 · durée 1 min 44.6 s
 
 *Intention : Darwich, puis un mot palestinien (sumud), puis les familles endeuillées des deux peuples qui se parlent : la douleur n'a pas de camp.*
 
 
-**38.1** · film **01:28:18:19 → 01:28:23:09** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-38.mp4` · source 00:00:00:00 → 00:00:04:15  
+**38.1** · film **01:28:23:19 → 01:28:28:09** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-38.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**38.2** · film **01:28:23:09 → 01:28:33:09** (10.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:04:27:00 → 00:04:37:00  
+**38.2** · film **01:28:28:09 → 01:28:38:09** (10.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:04:27:00 → 00:04:37:00  
 > VOIX : Mahmoud Darwich naît en 1941 à al-Birwa, en Galilée. / Le village est vidé en 1948, puis **rasé**.  
 (17 mots, 1.7 par seconde)
 
 
-**38.3** · film **01:28:33:09 → 01:28:46:09** (13.0 s) · **[MD]** `output/citation-darwich.mp4` · source 00:00:00:00 → 00:00:13:00  
+**38.3** · film **01:28:38:09 → 01:28:51:09** (13.0 s) · **[MD]** `output/citation-darwich.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : SOURCES.md 6 (Mahmoud Darwich, « Sur cette terre »)  
 > VOIX : « Sur cette terre, / il y a ce qui mérite la **vie**. » ///  
 (11 mots, 0.8 par seconde)
 
 
-**38.4** · film **01:28:46:09 → 01:28:55:09** (9.0 s) · **[RÉEL]** `output/plans-reels/olivier-mains-sur-le-tronc.mp4` · source 00:00:00:00 → 00:00:09:00  
+**38.4** · film **01:28:51:09 → 01:29:00:09** (9.0 s) · **[RÉEL]** `output/plans-reels/olivier-mains-sur-le-tronc.mp4` · source 00:00:00:00 → 00:00:09:00  
 Source : SOURCES.md 4.1, Adobe Stock 547188073 (des mains sur le tronc d'un olivier ; lieu non précisé)  
 > VOIX : Les Palestiniens ont un mot pour cela : / sumud. / Tenir. / **Rester**.  
 (10 mots, 1.1 par seconde)
 
 
-**38.5** · film **01:28:55:09 → 01:29:08:09** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:03:22:00 → 00:03:35:00  
+**38.5** · film **01:29:00:09 → 01:29:13:09** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:03:22:00 → 00:03:35:00  
 Source : Edward Said, The Question of Palestine, 1979 (La Question de Palestine)  
 À l'écran : fiche : Jérusalem 1935 · New York 2003 · Edward Said  
 > VOIX : Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».  
 (27 mots, 2.1 par seconde)
 
 
-**38.6** · film **01:29:08:09 → 01:29:22:09** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:08:17:00 → 00:08:31:00  
+**38.6** · film **01:29:13:09 → 01:29:27:09** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:08:17:00 → 00:08:31:00  
 Source : patriarcat grec-orthodoxe de Jérusalem, 22 octobre 2023 (au moins 18 morts à Saint-Porphyre) ; patriarcat latin de Jérusalem, 17 juillet 2025, et communiqué commun des Églises du 18 juillet (3 morts, 10 blessés)  
 À l'écran : fiche : Gaza · 2023 et 2025 · Les chrétiens de Palestine  
 > VOIX : Edward Said venait d'une famille chrétienne, comme une partie des Palestiniens, de Bethléem à Nazareth. / En octobre 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza, où s'abritent des familles : au moins dix-huit morts. / En juillet 2025, l'église de la Sainte-Famille, seule paroisse catholique de Gaza : trois **morts**.  
 (48 mots, 3.4 par seconde)
 
 
-**38.7** · film **01:29:22:09 → 01:29:36:09** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:05:22:00 → 00:05:36:00  
+**38.7** · film **01:29:27:09 → 01:29:41:09** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:05:22:00 → 00:05:36:00  
 Source : Ghassan Kanafani, tué à Beyrouth le 8 juillet 1972 ; Naji al-Ali, blessé par balle à Londres en juillet 1987, mort le 29 août 1987  
 À l'écran : fiche : Beyrouth 1972 · Londres 1987 · Kanafani et Handala  
 > VOIX : La Palestine a ses voix : / l'écrivain Ghassan Kanafani, tué dans un attentat à Beyrouth en 1972 ; / le dessinateur Naji al-Ali, père de Handala, l'enfant qui tourne le dos, tué à Londres en **1987**.  
 (33 mots, 2.4 par seconde)
 
 
-**38.8** · film **01:29:36:09 → 01:29:48:09** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:05:36:00 → 00:05:48:00  
+**38.8** · film **01:29:41:09 → 01:29:53:09** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:05:36:00 → 00:05:48:00  
 Source : No Other Land (Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor), Oscar du meilleur documentaire, 2 mars 2025  
 À l'écran : fiche : Masafer Yatta · Oscar, 2 mars 2025 · No Other Land  
 > VOIX : En 2025, « No Other Land », tourné à Masafer Yatta par des Palestiniens et des Israéliens, / reçoit l'Oscar du meilleur **documentaire**.  
 (20 mots, 1.7 par seconde)
 
 
-**38.9** · film **01:29:48:09 → 01:30:03:09** (15.0 s) · **[MD]** `output/documents-3.mp4` · source 00:02:24:00 → 00:02:39:00  
+**38.9** · film **01:29:53:09 → 01:30:08:09** (15.0 s) · **[MD]** `output/documents-3.mp4` · source 00:02:24:00 → 00:02:39:00  
 Source : Parents Circle-Families Forum, fondé en 1995  
 À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : Depuis 1995, des familles israéliennes et palestiniennes qui ont perdu un enfant se réunissent : / le Cercle des parents. // Elles disent : nous ne voulons plus de nouveaux **membres**.  
@@ -101,36 +101,36 @@ Source : Parents Circle-Families Forum, fondé en 1995
 
 ## Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire
 
-Film 01:30:03:09 → 01:31:39:14 · durée 1 min 36.2 s
+Film 01:30:08:09 → 01:31:44:14 · durée 1 min 36.2 s
 
 *Intention : La position du film, en une phrase. Puis la terre, et la ville, sans voix.*
 
 
-**39.1** · film **01:30:03:09 → 01:30:07:24** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-39.mp4` · source 00:00:00:00 → 00:00:04:15  
+**39.1** · film **01:30:08:09 → 01:30:12:24** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-39.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**39.2** · film **01:30:07:24 → 01:30:14:14** (6.6 s) · **[MD]** `output/chronologie.mp4` · source 00:01:13:00 → 00:01:19:15  
+**39.2** · film **01:30:12:24 → 01:30:19:14** (6.6 s) · **[MD]** `output/chronologie.mp4` · source 00:01:13:00 → 00:01:19:15  
 À l'écran : fiche de fin : De 1897 à 1995 · Un siècle. Deux peuples. Une terre.  
 > VOIX : silence
 
 
-**39.3** · film **01:30:14:14 → 01:30:29:14** (15.0 s) · **[NOIR]** (à fabriquer)  
+**39.3** · film **01:30:19:14 → 01:30:34:14** (15.0 s) · **[NOIR]** (à fabriquer)  
 > VOIX : Ce film a pris position : / pour l'égalité des droits, entre la mer et le Jourdain. / Il ne demande à personne de partir. / Il demande que personne ne soit plus **chassé**.  
 (30 mots, 2.0 par seconde)
 
 
-**39.4** · film **01:30:29:14 → 01:30:39:14** (10.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:00:00 → 00:00:10:00  
+**39.4** · film **01:30:34:14 → 01:30:44:14** (10.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 4.1, Adobe Stock 609005799  
 > VOIX : Aimer cette terre, / sans la **détruire**. ///  
 (6 mots, 0.6 par seconde)  
 Son : la ville le soir, un appel lointain, des cloches, puis le silence
 
 
-**39.5** · film **01:30:39:14 → 01:31:39:14** (60.0 s) · **[MD]** `output/generique-fin.mp4`  
+**39.5** · film **01:30:44:14 → 01:31:44:14** (60.0 s) · **[MD]** `output/generique-fin.mp4`  
 > VOIX : silence  
 Note : générique de fin : à finaliser à la toute fin (crédits CC BY et CC BY-SA, voir SOURCES.md 1)
 
 
 ---
-Durée de la partie : 4 min 03.4 s (film 01:27:36:04 → 01:31:39:14)
+Durée de la partie : 4 min 03.4 s (film 01:27:41:04 → 01:31:44:14)

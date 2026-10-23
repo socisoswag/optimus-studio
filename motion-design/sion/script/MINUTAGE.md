@@ -32,25 +32,25 @@
 | Chapitre 23 · Oslo, le mur et les colonies | 00:50:40:22 | 3 min 23.7 s |
 | Ouverture de la partie V | 00:54:04:16 | 0 min 14.0 s |
 | Chapitre 24 · Netanyahou, Lieberman : leurs propres mots | 00:54:18:16 | 1 min 33.6 s |
-| Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre | 00:55:52:06 | 8 min 45.6 s |
-| Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique | 01:04:37:21 | 2 min 01.0 s |
-| Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation | 01:06:38:22 | 1 min 21.8 s |
-| Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens | 01:08:00:17 | 1 min 55.6 s |
-| Ouverture de la partie VI | 01:09:56:06 | 0 min 14.4 s |
-| Chapitre 29 · Les Juifs antisionistes : Neturei Karta, Jewish Voice for Peace | 01:10:10:16 | 1 min 14.6 s |
-| Chapitre 30 · Les religieux contre le sionisme : foi ou nationalisme ? | 01:11:25:07 | 1 min 03.6 s |
-| Chapitre 31 · Les intellectuels français : BHL, Finkielkraut et le débat public | 01:12:28:22 | 3 min 45.6 s |
-| Ouverture de la partie VII | 01:16:14:12 | 0 min 12.8 s |
-| Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique | 01:16:27:07 | 1 min 43.6 s |
-| Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338 | 01:18:10:22 | 3 min 02.4 s |
-| Chapitre 34 · L'effacement culturel : villages détruits, noms effacés | 01:21:13:07 | 1 min 36.7 s |
-| Chapitre 35 · Colonialisme, apartheid : le poids des mots | 01:22:49:24 | 3 min 51.4 s |
-| Chapitre 36 · La fracture en Israël : la démocratie en question | 01:26:41:09 | 0 min 54.8 s |
-| Ouverture de la conclusion | 01:27:36:04 | 0 min 14.0 s |
-| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:27:50:04 | 0 min 28.6 s |
-| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:28:18:19 | 1 min 44.6 s |
-| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:30:03:09 | 1 min 36.2 s |
-| **Total** | | **91 min 39.6 s** |
+| Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre | 00:55:52:06 | 8 min 50.6 s |
+| Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique | 01:04:42:22 | 2 min 01.0 s |
+| Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation | 01:06:43:21 | 1 min 21.8 s |
+| Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens | 01:08:05:17 | 1 min 55.6 s |
+| Ouverture de la partie VI | 01:10:01:07 | 0 min 14.4 s |
+| Chapitre 29 · Les Juifs antisionistes : Neturei Karta, Jewish Voice for Peace | 01:10:15:17 | 1 min 14.6 s |
+| Chapitre 30 · Les religieux contre le sionisme : foi ou nationalisme ? | 01:11:30:06 | 1 min 03.6 s |
+| Chapitre 31 · Les intellectuels français : BHL, Finkielkraut et le débat public | 01:12:33:22 | 3 min 45.6 s |
+| Ouverture de la partie VII | 01:16:19:12 | 0 min 12.8 s |
+| Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique | 01:16:32:07 | 1 min 43.6 s |
+| Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338 | 01:18:15:22 | 3 min 02.4 s |
+| Chapitre 34 · L'effacement culturel : villages détruits, noms effacés | 01:21:18:07 | 1 min 36.7 s |
+| Chapitre 35 · Colonialisme, apartheid : le poids des mots | 01:22:54:24 | 3 min 51.4 s |
+| Chapitre 36 · La fracture en Israël : la démocratie en question | 01:26:46:09 | 0 min 54.8 s |
+| Ouverture de la conclusion | 01:27:41:04 | 0 min 14.0 s |
+| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:27:55:04 | 0 min 28.6 s |
+| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:28:23:19 | 1 min 44.6 s |
+| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:30:08:09 | 1 min 36.2 s |
+| **Total** | | **91 min 44.6 s** |
 
 ## Voix trop longue pour le plan
 

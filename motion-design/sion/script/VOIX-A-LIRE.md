@@ -594,7 +594,7 @@
 
 ## Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre
 
-*8 min 46 de film*
+*8 min 51 de film*
 
 **25.2** En 2005, Ariel Sharon fait évacuer les colonies de Gaza. / Mais Israël garde les frontières, la mer et le ciel : / pour l'ONU, Gaza reste **occupée**.
 
@@ -606,17 +606,17 @@
 
 **25.6** Puis les offensives, / tous les deux ou trois **ans**.
 
-**25.7** Fin 2008, « Plomb durci » : / en trois semaines, 1 387 Palestiniens sont tués, dont 320 mineurs. / Côté israélien, 13 **morts**.
+**25.7** Fin 2008, « Plomb durci » : / en trois semaines, environ 1 400 Palestiniens sont tués. / Côté israélien, 13 **morts**.
 
 **25.8** En 2009, une mission de l'ONU, menée par le juge Richard Goldstone, / y voit des crimes de guerre, des deux côtés. // Deux ans plus tard, Goldstone revient sur un point. / Ses trois coauteurs, eux, maintiennent le **rapport**.
 
-**25.9** En novembre 2012, huit jours de guerre : / 167 morts à Gaza, six en **Israël**.
+**25.9** En novembre 2012, huit jours de guerre : / entre 167 et 185 morts à Gaza selon les sources, / six en **Israël**.
 
-**25.10** À l'été 2014, « Bordure protectrice » : / 2 251 Palestiniens tués, dont 551 enfants. / En Israël, 67 soldats et six **civils**.
+**25.10** À l'été 2014, « Bordure protectrice » : / 2 251 Palestiniens tués selon l'ONU, 2 310 selon le ministère de la Santé de Gaza, / dont 551 enfants. / En Israël, 67 soldats et six **civils**.
 
 **25.11** En mai 2021, onze jours : / 261 morts à Gaza, dont 67 enfants. / Treize en **Israël**.
 
-**25.12** En quatre guerres, / plus de quatre mille morts à Gaza, / une centaine en Israël. / Avant **2023**.
+**25.12** De 2008 à septembre 2023, l'ONU compte 6 407 Palestiniens tués, / à Gaza et en Cisjordanie, / et 308 Israéliens. / Avant le 7 **octobre**.
 
 **25.13** Ces offensives suivent une doctrine. / En 2008, le général Gadi Eisenkot, futur chef d'état-major, l'explique : / « Nous emploierons une force disproportionnée. » / Les villages d'où l'on tire « ne sont pas des villages civils, ce sont des bases **militaires** ».
 

@@ -555,25 +555,35 @@ marquée du filigrane d'une agence commerciale.
   Palestine : part juive des terres, sous-district par sous-district (Jaffa 39 %, Tibériade 38 %, Haïfa 35 %, Beisan 34 %,
   Nazareth 28 %, Safed 18 %, Tulkarem 17 %, Ramla 14 %, Gaza 4 %, Acre 3 %, Jérusalem 2 %, Jénine, Naplouse, Ramallah,
   Hébron et Beersheba moins de 1 %) ; tableau repris dans « Sous-districts de la Palestine mandataire » (Wikipédia).
-- Une grappe de lumières par sous-district, posée sur son chef-lieu, de surface proportionnelle à la part juive (les
-  grappes disent la proportion, pas l'emplacement exact des terres).
+- Sur le relief éclairé de la carte du partage (SRTM, NASA, section 3) : une colonne de lumière par sous-district, posée
+  sur son chef-lieu, haute de 1 200 m par point de pourcentage (la colonne dit la proportion, pas l'emplacement exact
+  des terres).
 
 **Quatre guerres** (chapitre 25, `timelines/gaza-guerres.js`)
 - Plomb durci : B'Tselem, communiqué du 9 septembre 2009 (1 387 Palestiniens tués, dont 773 qui ne prenaient pas part
-  aux combats et 320 mineurs) ; 13 Israéliens tués.
+  aux combats et 320 mineurs) ; Centre palestinien pour les droits de l'homme (PCHR), décembre 2011,
+  https://pchrgaza.org/3-years-after-operation-cast-lead-justice-has-been-comprehensively-denied-pchr-release-23-narratives-documenting-the-experience-of-victims/
+  (1 419 tués, dont 1 167 civils) ; 13 Israéliens tués.
 - Mission d'enquête de l'ONU sur le conflit de Gaza (présidée par Richard Goldstone), rapport A/HRC/12/48, septembre
   2009 ; Richard Goldstone, « Reconsidering the Goldstone Report on Israel and war crimes », The Washington Post,
   avril 2011 ; déclaration de Hina Jilani, Christine Chinkin et Desmond Travers, 14 avril 2011.
 - Pilier de défense : B'Tselem, rapport de mai 2013,
   https://www.btselem.org/sites/default/files/sites/default/files2/201305_pillar_of_defense_operation_eng.pdf
   (167 Palestiniens tués, dont au moins 87 qui ne prenaient pas part aux combats ; quatre civils israéliens et deux
-  membres des forces de sécurité tués).
+  membres des forces de sécurité tués) ; ministère de la Santé palestinien, 185 tués (cité par Euro-Med Monitor,
+  https://euromedmonitor.org/en/article/1019/Children-Targeted-in-Pillar-of-Defense ; à confirmer).
 - Bordure protectrice : commission d'enquête indépendante de l'ONU sur le conflit de Gaza de 2014, juin 2015 ; OCHA,
   https://www.ochaopt.org/content/key-figures-2014-hostilities (2 251 Palestiniens tués, dont 1 462 civils et 551
-  enfants ; 67 soldats et 6 civils tués en Israël).
+  enfants ; 67 soldats et 6 civils tués en Israël) ; ministère de la Santé de Gaza, bilan révisé de janvier 2015 (2 310
+  tués, corps retrouvés sous les décombres compris).
 - Mai 2021 : OCHA, rapport de situation n° 10, septembre 2021, d'après le Haut-Commissariat aux droits de l'homme,
   https://www.ochaopt.org/content/response-escalation-opt-situation-report-no-10-september-2021 (261 Palestiniens tués,
-  dont 67 enfants ; 13 morts en Israël, dont un soldat).
+  dont 67 enfants ; 13 morts en Israël, dont un soldat) ; ministère de la Santé de Gaza, 21 mai 2021, jour du
+  cessez-le-feu (243 tués, dont 66 enfants).
+- Fin de la séquence : OCHA, données sur les victimes du conflit, https://www.ochaopt.org/data/casualties, de 2008 à
+  septembre 2023 (Gaza, Cisjordanie et Israël) : 6 407 Palestiniens et 308 Israéliens tués (relevé repris par The Wire,
+  https://thewire.in/world/chart-6407-palestinians-and-308-israelis-killed-in-violence-in-last-15-years ; à confirmer
+  sur le tableau d'OCHA).
 
 **Chronologie des figures (1897 à 1995)**
 - Faits biographiques courants (dates, fonctions, événements), présents dans toutes les encyclopédies.

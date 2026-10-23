@@ -213,6 +213,10 @@ deviennent 19.20 à 19.22 ; 19.19 devient 19.24 ; 19.20 à 19.31 deviennent 19.2
 - `gaza-guerres.mp4`, chapitre 25, plans 25.6 à 25.12 : « Quatre guerres », Plomb durci (2008-2009), le rapport
   Goldstone (2009, et ce qu'il en a dit en 2011), 2012, Bordure protectrice (2014), mai 2021, puis le total. Remplace
   l'ancien plan 25.6 (la fiche « Les offensives » de `gaza.mp4`, de 17 à 30 s) : supprime-le de ta timeline.
+  Chaque bilan donne aussi la source palestinienne (Centre palestinien pour les droits de l'homme, ministère de la
+  Santé de Gaza) ; la fin donne le décompte de l'ONU de 2008 à septembre 2023 : 6 407 Palestiniens, 308 Israéliens.
+- La carte des terres est posée sur le relief éclairé de la carte du partage (SRTM, NASA) : une colonne de lumière
+  par sous-district, haute selon la part juive des terres, la valeur au sommet.
 
 **Plans renumérotés** : chapitre 11, 11.8 à 11.12 deviennent 11.11 à 11.15. Chapitre 25 : 25.7 à 25.36 deviennent
 25.13 à 25.42 (le 7 octobre passe de 25.16 à 25.22, le bilan de Gaza de 25.21 à 25.27).
