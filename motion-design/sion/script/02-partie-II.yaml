@@ -527,6 +527,30 @@ chapitres:
           des **terres**.
         note: "6 % des terres de toute la Palestine, désert du Néguev compris ; à garder pour le chapitre 12"
       - type: MD
+        fichier: output/terres-1945.mp4
+        entree: 0
+        sortie: 13
+        ecran: "fiche : La terre en 1945 · part juive des terres, sous-district par sous-district"
+        source: "Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, d'après les Village Statistics 1945 (Jaffa 39 %, Tibériade 38 %, Haïfa 35 %, Beisan 34 %)"
+        voix: >-
+          Ces terres sont concentrées dans la plaine côtière et les vallées du nord : / à Jaffa, à Tibériade, à Haïfa, à Beisan, / plus d'un tiers des terres du sous-**district**.
+      - type: MD
+        fichier: output/terres-1945.mp4
+        entree: 13
+        sortie: 23
+        ecran: "fiche : Moins de 1 % · les collines et le sud"
+        source: "Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, d'après les Village Statistics 1945 (Jénine, Naplouse, Ramallah, Hébron, Beersheba : moins de 1 %)"
+        voix: >-
+          Dans les collines de Jénine, de Naplouse, de Ramallah et d'Hébron, / moins de un pour **cent**.
+      - type: MD
+        fichier: output/terres-1945.mp4
+        entree: 23
+        sortie: 31.5
+        ecran: "carton : Moins de 6 % en 1945 · 56 % attribués en 1947 · 78 % en 1949"
+        source: "Village Statistics 1945 ; plan de partage, résolution 181 de l'ONU, 29 novembre 1947 ; lignes d'armistice de 1949"
+        voix: >-
+          En 1947, le plan de partage attribuera 56 % du territoire à l'État juif. / En 1949, Israël en tiendra **78 %**.
+      - type: MD
         fichier: output/portraits-1.mp4
         entree: 266
         sortie: 279

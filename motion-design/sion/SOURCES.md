@@ -289,10 +289,10 @@ télévision américaine malgré leur dépôt aux Archives nationales ; « A Pil
 marquée du filigrane d'une agence commerciale.
 
 ---
-- Réfugiés juifs débarquant en Palestine, et Amman fêtant l'indépendance de la Transjordanie, juin 1946 (plan 11.10,
+- Réfugiés juifs débarquant en Palestine, et Amman fêtant l'indépendance de la Transjordanie, juin 1946 (plan 11.13,
   réserve 13.R2) : United News (Office of War Information), actualité de juin 1946, archives nationales américaines
   (ARC 39119), copie archive.org ARC-31482, domaine public.
-- Roosevelt reçoit Ibn Saoud, février 1945 (plan 11.9) : actualités Universal du 21 février 1945, archives nationales
+- Roosevelt reçoit Ibn Saoud, février 1945 (plan 11.12) : actualités Universal du 21 février 1945, archives nationales
   américaines, copie archive.org 1945-02-21_FDR_confers_with_Middle_East_Chiefs, domaine public. Lettre de Roosevelt à
   Ibn Saoud du 5 avril 1945 : Foreign Relations of the United States 1945, vol. VIII, texte sur
   https://avalon.law.yale.edu/20th_century/decad161.asp (« I would take no action [...] which might prove hostile to the
@@ -549,6 +549,32 @@ marquée du filigrane d'une agence commerciale.
 - Amnesty International, rapport du 1er février 2022 (déclaration d'Agnès Callamard).
 - Cour internationale de justice, avis consultatif du 19 juillet 2024, § 225 et § 229.
 
+**La terre en 1945** (chapitre 11, `timelines/terres-1945.js`)
+- Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, comité ad hoc sur la question
+  de Palestine, https://digitallibrary.un.org/record/498482, d'après les Village Statistics 1945 du gouvernement de la
+  Palestine : part juive des terres, sous-district par sous-district (Jaffa 39 %, Tibériade 38 %, Haïfa 35 %, Beisan 34 %,
+  Nazareth 28 %, Safed 18 %, Tulkarem 17 %, Ramla 14 %, Gaza 4 %, Acre 3 %, Jérusalem 2 %, Jénine, Naplouse, Ramallah,
+  Hébron et Beersheba moins de 1 %) ; tableau repris dans « Sous-districts de la Palestine mandataire » (Wikipédia).
+- Une grappe de lumières par sous-district, posée sur son chef-lieu, de surface proportionnelle à la part juive (les
+  grappes disent la proportion, pas l'emplacement exact des terres).
+
+**Quatre guerres** (chapitre 25, `timelines/gaza-guerres.js`)
+- Plomb durci : B'Tselem, communiqué du 9 septembre 2009 (1 387 Palestiniens tués, dont 773 qui ne prenaient pas part
+  aux combats et 320 mineurs) ; 13 Israéliens tués.
+- Mission d'enquête de l'ONU sur le conflit de Gaza (présidée par Richard Goldstone), rapport A/HRC/12/48, septembre
+  2009 ; Richard Goldstone, « Reconsidering the Goldstone Report on Israel and war crimes », The Washington Post,
+  avril 2011 ; déclaration de Hina Jilani, Christine Chinkin et Desmond Travers, 14 avril 2011.
+- Pilier de défense : B'Tselem, rapport de mai 2013,
+  https://www.btselem.org/sites/default/files/sites/default/files2/201305_pillar_of_defense_operation_eng.pdf
+  (167 Palestiniens tués, dont au moins 87 qui ne prenaient pas part aux combats ; quatre civils israéliens et deux
+  membres des forces de sécurité tués).
+- Bordure protectrice : commission d'enquête indépendante de l'ONU sur le conflit de Gaza de 2014, juin 2015 ; OCHA,
+  https://www.ochaopt.org/content/key-figures-2014-hostilities (2 251 Palestiniens tués, dont 1 462 civils et 551
+  enfants ; 67 soldats et 6 civils tués en Israël).
+- Mai 2021 : OCHA, rapport de situation n° 10, septembre 2021, d'après le Haut-Commissariat aux droits de l'homme,
+  https://www.ochaopt.org/content/response-escalation-opt-situation-report-no-10-september-2021 (261 Palestiniens tués,
+  dont 67 enfants ; 13 morts en Israël, dont un soldat).
+
 **Chronologie des figures (1897 à 1995)**
 - Faits biographiques courants (dates, fonctions, événements), présents dans toutes les encyclopédies.
   Pour citer une référence précise : les notices de l'Encyclopædia Britannica ou de l'Encyclopædia
@@ -689,7 +715,7 @@ marquée du filigrane d'une agence commerciale.
 
 ## 8. À relire juste avant la diffusion
 
-- Le bilan du ministère de la Santé de Gaza (chapitre 25, plans 25.21 et 25.35 ; fiches `timelines/gaza.js`) : il est
+- Le bilan du ministère de la Santé de Gaza (chapitre 25, plans 25.27 et 25.41 ; fiches `timelines/gaza.js`) : il est
   au 22 octobre 2026 ; le mettre à la date de sortie.
 - La ponctuation des résolutions de l'ONU sur les documents officiels (digitallibrary.un.org).
 - Les fiches « figures d'aujourd'hui » sont écrites au passé daté, pour rester justes après les législatives

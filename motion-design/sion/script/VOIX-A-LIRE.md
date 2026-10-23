@@ -232,7 +232,7 @@
 
 ## Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens
 
-*2 min 06 de film*
+*2 min 38 de film*
 
 **11.3** En 1923, Zeev Jabotinsky écrit « Le Mur de fer ». / Il ne nie pas ce qu'il voit : / « Toute population indigène résiste aux colons, / tant qu'elle garde le moindre espoir d'échapper à la **colonisation**. »
 
@@ -244,15 +244,21 @@
 
 **11.7** À la fin de la guerre, les Juifs sont presque un tiers des habitants. / Ils possèdent moins de six pour cent des **terres**.
 
-**11.8** En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine devienne « un Commonwealth **juif** ».
+**11.8** Ces terres sont concentrées dans la plaine côtière et les vallées du nord : / à Jaffa, à Tibériade, à Haïfa, à Beisan, / plus d'un tiers des terres du sous-**district**.
 
-**11.9** Février 1945. / Sur un croiseur américain, Roosevelt reçoit le roi d'Arabie saoudite, Ibn Saoud. // Le 5 avril, il lui écrit qu'il ne prendra aucune mesure / « qui pourrait se révéler hostile au peuple arabe ». / Il meurt une semaine plus **tard**.
+**11.9** Dans les collines de Jénine, de Naplouse, de Ramallah et d'Hébron, / moins de un pour **cent**.
 
-**11.10** En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.
+**11.10** En 1947, le plan de partage attribuera 56 % du territoire à l'État juif. / En 1949, Israël en tiendra **78 %**.
 
-**11.11** Après la guerre, épuisée, / la Grande-Bretagne
+**11.11** En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine devienne « un Commonwealth **juif** ».
 
-**11.12** remet la question à l'ONU. // Nous sommes en **1947**. ///
+**11.12** Février 1945. / Sur un croiseur américain, Roosevelt reçoit le roi d'Arabie saoudite, Ibn Saoud. // Le 5 avril, il lui écrit qu'il ne prendra aucune mesure / « qui pourrait se révéler hostile au peuple arabe ». / Il meurt une semaine plus **tard**.
+
+**11.13** En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.
+
+**11.14** Après la guerre, épuisée, / la Grande-Bretagne
+
+**11.15** remet la question à l'ONU. // Nous sommes en **1947**. ///
 
 ## Chapitre 12 · 1947 : le plan de partage de l'ONU
 
@@ -588,7 +594,7 @@
 
 ## Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre
 
-*7 min 52 de film*
+*8 min 46 de film*
 
 **25.2** En 2005, Ariel Sharon fait évacuer les colonies de Gaza. / Mais Israël garde les frontières, la mer et le ciel : / pour l'ONU, Gaza reste **occupée**.
 
@@ -598,67 +604,79 @@
 
 **25.5** En 2007, le Hamas prend le pouvoir. / Israël, avec l'Égypte, boucle le territoire par terre, par mer et par **air**.
 
-**25.6** Puis les offensives : 2008, 2014, 2021. / Des milliers de morts à Gaza ; / des dizaines en **Israël**.
+**25.6** Puis les offensives, / tous les deux ou trois **ans**.
 
-**25.7** Ces offensives suivent une doctrine. / En 2008, le général Gadi Eisenkot, futur chef d'état-major, l'explique : / « Nous emploierons une force disproportionnée. » / Les villages d'où l'on tire « ne sont pas des villages civils, ce sont des bases **militaires** ».
+**25.7** Fin 2008, « Plomb durci » : / en trois semaines, 1 387 Palestiniens sont tués, dont 320 mineurs. / Côté israélien, 13 **morts**.
 
-**25.8** En 2010, une flottille tente de briser le blocus. / L'armée israélienne prend d'assaut le Mavi Marmara : / dix militants en **meurent**.
+**25.8** En 2009, une mission de l'ONU, menée par le juge Richard Goldstone, / y voit des crimes de guerre, des deux côtés. // Deux ans plus tard, Goldstone revient sur un point. / Ses trois coauteurs, eux, maintiennent le **rapport**.
 
-**25.9** En 2011, Israël échange le soldat Gilad Shalit, otage depuis cinq ans, contre 1 027 prisonniers palestiniens. / Parmi eux, Yahya Sinwar : / il dirigera le Hamas à Gaza, et sera tenu pour l'architecte du 7 **octobre**.
+**25.9** En novembre 2012, huit jours de guerre : / 167 morts à Gaza, six en **Israël**.
 
-**25.10** En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
+**25.10** À l'été 2014, « Bordure protectrice » : / 2 251 Palestiniens tués, dont 551 enfants. / En Israël, 67 soldats et six **civils**.
 
-**25.11** En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
+**25.11** En mai 2021, onze jours : / 261 morts à Gaza, dont 67 enfants. / Treize en **Israël**.
 
-**25.12** Pendant ce temps, Netanyahou laisse le Qatar verser des millions de dollars par mois à Gaza, gouvernée par le Hamas. / Selon le New York Times, il parie qu'un Hamas fort, mais pas trop, / éloignera la pression pour un État **palestinien**.
+**25.12** En quatre guerres, / plus de quatre mille morts à Gaza, / une centaine en Israël. / Avant **2023**.
 
-**25.13** En 2019, la presse israélienne lui prête ces mots : / « Celui qui veut empêcher la création d'un État palestinien / doit soutenir le renforcement du Hamas, et le transfert d'argent au Hamas. » // Il dément l'avoir dit ; / son bureau parle d'aide **humanitaire**.
+**25.13** Ces offensives suivent une doctrine. / En 2008, le général Gadi Eisenkot, futur chef d'état-major, l'explique : / « Nous emploierons une force disproportionnée. » / Les villages d'où l'on tire « ne sont pas des villages civils, ce sont des bases **militaires** ».
 
-**25.14** Dès 2015, Bezalel Smotrich, aujourd'hui ministre des Finances, le disait à sa façon : / « L'Autorité palestinienne est un fardeau, / et le Hamas est un **atout**. »
+**25.14** En 2010, une flottille tente de briser le blocus. / L'armée israélienne prend d'assaut le Mavi Marmara : / dix militants en **meurent**.
 
-**25.15** Et le plan du Hamas, l'armée l'avait. / Plus d'un an avant le 7 octobre, un document d'une quarantaine de pages décrit l'attaque. / Ses chefs le jugent hors de portée du **Hamas**.
+**25.15** En 2011, Israël échange le soldat Gilad Shalit, otage depuis cinq ans, contre 1 027 prisonniers palestiniens. / Parmi eux, Yahya Sinwar : / il dirigera le Hamas à Gaza, et sera tenu pour l'architecte du 7 **octobre**.
 
-**25.16** Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
+**25.16** En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
 
-**25.17** Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///
+**25.17** En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
 
-**25.18** Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. / Nous combattons des animaux **humains**. »
+**25.18** Pendant ce temps, Netanyahou laisse le Qatar verser des millions de dollars par mois à Gaza, gouvernée par le Hamas. / Selon le New York Times, il parie qu'un Hamas fort, mais pas trop, / éloignera la pression pour un État **palestinien**.
 
-**25.19** Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
+**25.19** En 2019, la presse israélienne lui prête ces mots : / « Celui qui veut empêcher la création d'un État palestinien / doit soutenir le renforcement du Hamas, et le transfert d'argent au Hamas. » // Il dément l'avoir dit ; / son bureau parle d'aide **humanitaire**.
 
-**25.20** D'autres paroles suivent. / Le président Isaac Herzog : « C'est toute une nation, là-bas, qui est responsable. » / Le ministre Amichai Eliyahu juge une bombe atomique sur Gaza « une des possibilités ». / Le ministre Avi Dichter : « Nous sommes en train de mettre en œuvre la Nakba de **Gaza** ».
+**25.20** Dès 2015, Bezalel Smotrich, aujourd'hui ministre des Finances, le disait à sa façon : / « L'Autorité palestinienne est un fardeau, / et le Hamas est un **atout**. »
 
-**25.21** Au 22 octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués, / et plus de cent soixante-quinze mille blessés. / Un décompte sans doute **inférieur** à la réalité.
+**25.21** Et le plan du Hamas, l'armée l'avait. / Plus d'un an avant le 7 octobre, un document d'une quarantaine de pages décrit l'attaque. / Ses chefs le jugent hors de portée du **Hamas**.
 
-**25.22** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
+**25.22** Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
 
-**25.23** Le 29 janvier 2024, à Gaza-ville, Hind Rajab, six ans, est coincée dans une voiture, au milieu des corps de sa famille. / Pendant des heures, elle parle au Croissant-Rouge. / L'ambulance envoyée la chercher est détruite. / On la retrouve morte douze jours plus **tard**.
+**25.23** Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///
 
-**25.24** Le 23 mars 2025, à Rafah, quinze secouristes sont tués, puis enterrés avec leurs ambulances. / L'armée dit d'abord qu'ils roulaient sans phares. / La vidéo retrouvée sur le téléphone de l'un d'eux montre le **contraire**.
+**25.24** Le 9 octobre, le ministre de la Défense, Yoav Gallant : / « Ni électricité, ni nourriture, ni carburant. / Nous combattons des animaux **humains**. »
 
-**25.25** Vu du ciel, avant, / et après. ///
+**25.25** Le 28 octobre, Netanyahou : / « Souviens-toi de ce que t'a fait **Amalek**. »
 
-**25.26** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
+**25.26** D'autres paroles suivent. / Le président Isaac Herzog : « C'est toute une nation, là-bas, qui est responsable. » / Le ministre Amichai Eliyahu juge une bombe atomique sur Gaza « une des possibilités ». / Le ministre Avi Dichter : « Nous sommes en train de mettre en œuvre la Nakba de **Gaza** ».
 
-**25.27** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
+**25.27** Au 22 octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués, / et plus de cent soixante-quinze mille blessés. / Un décompte sans doute **inférieur** à la réalité.
 
-**25.28** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
+**25.28** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
 
-**25.29** La guerre déborde. / En septembre 2024, au Liban, Israël tue le chef du Hezbollah, Hassan Nasrallah. / Après la chute d'Assad, son armée avance en Syrie. / En juin 2025, douze jours de guerre avec l'**Iran**.
+**25.29** Le 29 janvier 2024, à Gaza-ville, Hind Rajab, six ans, est coincée dans une voiture, au milieu des corps de sa famille. / Pendant des heures, elle parle au Croissant-Rouge. / L'ambulance envoyée la chercher est détruite. / On la retrouve morte douze jours plus **tard**.
 
-**25.30** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
+**25.30** Le 23 mars 2025, à Rafah, quinze secouristes sont tués, puis enterrés avec leurs ambulances. / L'armée dit d'abord qu'ils roulaient sans phares. / La vidéo retrouvée sur le téléphone de l'un d'eux montre le **contraire**.
 
-**25.31** Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**.
+**25.31** Vu du ciel, avant, / et après. ///
 
-**25.32** En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.
+**25.32** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
 
-**25.33** Le 2 mars 2025, Israël bloque toute entrée d'aide à Gaza : / 78 jours sans nourriture ni médicaments, selon l'ONU. / La CPI vise déjà Netanyahou pour la famine comme méthode de **guerre**.
+**25.33** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
 
-**25.34** En mai 2025, une fondation soutenue par Israël et les États-Unis prend en main l'aide alimentaire. / En deux mois, selon l'ONU, plus de mille trois cents Palestiniens sont tués en cherchant de quoi **manger**.
+**25.34** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
 
-**25.35** 10 octobre 2025 : un cessez-le-feu. / Les grandes offensives s'arrêtent, pas les tirs : / au 22 octobre 2026, plus de mille cinq cents morts depuis la trêve. / Israël tient encore environ les deux tiers de la **bande**.
+**25.35** La guerre déborde. / En septembre 2024, au Liban, Israël tue le chef du Hezbollah, Hassan Nasrallah. / Après la chute d'Assad, son armée avance en Syrie. / En juin 2025, douze jours de guerre avec l'**Iran**.
 
-**25.36** Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
+**25.36** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
+
+**25.37** Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**.
+
+**25.38** En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.
+
+**25.39** Le 2 mars 2025, Israël bloque toute entrée d'aide à Gaza : / 78 jours sans nourriture ni médicaments, selon l'ONU. / La CPI vise déjà Netanyahou pour la famine comme méthode de **guerre**.
+
+**25.40** En mai 2025, une fondation soutenue par Israël et les États-Unis prend en main l'aide alimentaire. / En deux mois, selon l'ONU, plus de mille trois cents Palestiniens sont tués en cherchant de quoi **manger**.
+
+**25.41** 10 octobre 2025 : un cessez-le-feu. / Les grandes offensives s'arrêtent, pas les tirs : / au 22 octobre 2026, plus de mille cinq cents morts depuis la trêve. / Israël tient encore environ les deux tiers de la **bande**.
+
+**25.42** Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
 
 ## Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique
 

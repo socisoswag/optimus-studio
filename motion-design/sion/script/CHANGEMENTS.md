@@ -203,3 +203,16 @@ Voix changée : 19.10 (« À Sèvres, en secret, les trois pays préparent la gu
 **Plans renumérotés** : chapitre 11, 11.9 à 11.11 deviennent 11.10 à 11.12. Chapitre 19 : 19.9 à 19.12 deviennent
 19.10 à 19.13 ; 19.13 et 19.14 deviennent 19.16 et 19.17 ; 19.15 (écran noir) est remplacé par 19.19 ; 19.16 à 19.18
 deviennent 19.20 à 19.22 ; 19.19 devient 19.24 ; 19.20 à 19.31 deviennent 19.26 à 19.37.
+
+## 23 octobre 2026, la fin d'après-midi
+
+**Deux nouvelles pièces** (vérifiées sur les sources primaires, Perplexity étant à court de crédits) :
+- `terres-1945.mp4`, chapitre 11, plans 11.8 à 11.10 : la carte « La terre en 1945 », part juive des terres sous-district
+  par sous-district (carte de l'ONU de 1950, d'après les Village Statistics 1945), puis « Moins de 6 % en 1945, 56 %
+  attribués en 1947, 78 % en 1949 ».
+- `gaza-guerres.mp4`, chapitre 25, plans 25.6 à 25.12 : « Quatre guerres », Plomb durci (2008-2009), le rapport
+  Goldstone (2009, et ce qu'il en a dit en 2011), 2012, Bordure protectrice (2014), mai 2021, puis le total. Remplace
+  l'ancien plan 25.6 (la fiche « Les offensives » de `gaza.mp4`, de 17 à 30 s) : supprime-le de ta timeline.
+
+**Plans renumérotés** : chapitre 11, 11.8 à 11.12 deviennent 11.11 à 11.15. Chapitre 25 : 25.7 à 25.36 deviennent
+25.13 à 25.42 (le 7 octobre passe de 25.16 à 25.22, le bilan de Gaza de 25.21 à 25.27).

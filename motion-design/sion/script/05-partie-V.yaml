@@ -133,11 +133,62 @@ chapitres:
           En 2007, le Hamas prend le pouvoir. / Israël, avec l'Égypte, boucle le territoire par terre, par mer et par
           **air**.
       - type: MD
-        fichier: output/gaza.mp4
-        entree: 17
-        sortie: 30
+        fichier: output/gaza-guerres.mp4
+        entree: 0
+        sortie: 6
+        ecran: "titre : Guerres · de 2008 à 2021, quatre offensives sur Gaza"
+        source: "blocus de Gaza par Israël et l'Égypte depuis juin 2007"
         voix: >-
-          Puis les offensives : 2008, 2014, 2021. / Des milliers de morts à Gaza ; / des dizaines en **Israël**.
+          Puis les offensives, / tous les deux ou trois **ans**.
+      - type: MD
+        fichier: output/gaza-guerres.mp4
+        entree: 6
+        sortie: 16
+        ecran: "fiche : Plomb durci · 1 387 Palestiniens tués"
+        source: "B'Tselem, 9 septembre 2009 (1 387 tués, dont 773 qui ne prenaient pas part aux combats et 320 mineurs) ; 13 Israéliens tués"
+        voix: >-
+          Fin 2008, « Plomb durci » : / en trois semaines, 1 387 Palestiniens sont tués, dont 320 mineurs. / Côté israélien, 13 **morts**.
+      - type: MD
+        fichier: output/gaza-guerres.mp4
+        entree: 16
+        sortie: 30
+        ecran: "fiche : Genève · septembre 2009 · Le rapport Goldstone"
+        source: "mission d'enquête de l'ONU sur le conflit de Gaza, rapport A/HRC/12/48, septembre 2009 ; R. Goldstone, The Washington Post, avril 2011 ; déclaration de H. Jilani, C. Chinkin et D. Travers, 14 avril 2011"
+        voix: >-
+          En 2009, une mission de l'ONU, menée par le juge Richard Goldstone, / y voit des crimes de guerre, des deux côtés. // Deux ans plus tard, Goldstone revient sur un point. / Ses trois coauteurs, eux, maintiennent le **rapport**.
+        note: "le point retiré par Goldstone : une politique visant délibérément les civils ; ne pas dire qu'il a renié le rapport"
+      - type: MD
+        fichier: output/gaza-guerres.mp4
+        entree: 30
+        sortie: 39
+        ecran: "fiche : Pilier de défense · 167 Palestiniens tués"
+        source: "B'Tselem, rapport de mai 2013 (167 tués, dont au moins 87 qui ne prenaient pas part aux combats ; 4 civils et 2 membres des forces de sécurité tués en Israël)"
+        voix: >-
+          En novembre 2012, huit jours de guerre : / 167 morts à Gaza, six en **Israël**.
+      - type: MD
+        fichier: output/gaza-guerres.mp4
+        entree: 39
+        sortie: 50
+        ecran: "fiche : Bordure protectrice · 2 251 Palestiniens tués"
+        source: "commission d'enquête indépendante de l'ONU sur le conflit de Gaza de 2014, juin 2015 ; OCHA, chiffres clés (1 462 civils, 551 enfants ; 67 soldats et 6 civils en Israël)"
+        voix: >-
+          À l'été 2014, « Bordure protectrice » : / 2 251 Palestiniens tués, dont 551 enfants. / En Israël, 67 soldats et six **civils**.
+      - type: MD
+        fichier: output/gaza-guerres.mp4
+        entree: 50
+        sortie: 59
+        ecran: "fiche : Mai 2021 · 261 Palestiniens tués"
+        source: "OCHA, rapport de situation n° 10, septembre 2021, d'après le Haut-Commissariat aux droits de l'homme (261 tués, dont 67 enfants ; 13 morts en Israël, dont un soldat)"
+        voix: >-
+          En mai 2021, onze jours : / 261 morts à Gaza, dont 67 enfants. / Treize en **Israël**.
+      - type: MD
+        fichier: output/gaza-guerres.mp4
+        entree: 59
+        sortie: 67
+        ecran: "carton : 4 066 morts à Gaza · 105 en Israël · avant 2023"
+        source: "total des quatre guerres d'après les sources des plans précédents"
+        voix: >-
+          En quatre guerres, / plus de quatre mille morts à Gaza, / une centaine en Israël. / Avant **2023**.
       - type: MD
         fichier: output/documents-7.mp4
         entree: 115

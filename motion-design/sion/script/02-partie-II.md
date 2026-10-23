@@ -342,7 +342,7 @@ Note : détail fort : Arthur Ruppin, celui qui organise les achats de terres, en
 
 ## Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens
 
-Film 00:21:54:14 → 00:24:00:22 · durée 2 min 06.3 s
+Film 00:21:54:14 → 00:24:32:10 · durée 2 min 37.8 s
 
 *Intention : La logique du rapport de force, dite par un dirigeant sioniste lui-même : Jabotinsky et le « Mur de fer » (1923), un texte d'une franchise rare. Puis les chiffres de l'immigration et de la terre, et le tournant de 1942 à New York : le mouvement demande toute la Palestine. Finir sur l'ONU, qui ouvre la partie III.*
 
@@ -389,14 +389,35 @@ Source : A Survey of Palestine, 1946 (553 600 juifs sur 1 764 520 habitants à l
 Note : 6 % des terres de toute la Palestine, désert du Néguev compris ; à garder pour le chapitre 12
 
 
-**11.8** · film **00:23:04:14 → 00:23:17:14** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:04:26:00 → 00:04:39:00  
+**11.8** · film **00:23:04:14 → 00:23:17:14** (13.0 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:00:00 → 00:00:13:00  
+Source : Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, d'après les Village Statistics 1945 (Jaffa 39 %, Tibériade 38 %, Haïfa 35 %, Beisan 34 %)  
+À l'écran : fiche : La terre en 1945 · part juive des terres, sous-district par sous-district  
+> VOIX : Ces terres sont concentrées dans la plaine côtière et les vallées du nord : / à Jaffa, à Tibériade, à Haïfa, à Beisan, / plus d'un tiers des terres du sous-**district**.  
+(29 mots, 2.2 par seconde)
+
+
+**11.9** · film **00:23:17:14 → 00:23:27:14** (10.0 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:13:00 → 00:00:23:00  
+Source : Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, d'après les Village Statistics 1945 (Jénine, Naplouse, Ramallah, Hébron, Beersheba : moins de 1 %)  
+À l'écran : fiche : Moins de 1 % · les collines et le sud  
+> VOIX : Dans les collines de Jénine, de Naplouse, de Ramallah et d'Hébron, / moins de un pour **cent**.  
+(16 mots, 1.6 par seconde)
+
+
+**11.10** · film **00:23:27:14 → 00:23:36:02** (8.5 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:23:00 → 00:00:31:13  
+Source : Village Statistics 1945 ; plan de partage, résolution 181 de l'ONU, 29 novembre 1947 ; lignes d'armistice de 1949  
+À l'écran : carton : Moins de 6 % en 1945 · 56 % attribués en 1947 · 78 % en 1949  
+> VOIX : En 1947, le plan de partage attribuera 56 % du territoire à l'État juif. / En 1949, Israël en tiendra **78 %**.  
+(19 mots, 2.2 par seconde)
+
+
+**11.11** · film **00:23:36:02 → 00:23:49:02** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:04:26:00 → 00:04:39:00  
 Source : programme de Biltmore, conférence sioniste extraordinaire, hôtel Biltmore, New York, 6-11 mai 1942  
 À l'écran : carton : New York · mai 1942  
 > VOIX : En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine devienne « un Commonwealth **juif** ».  
 (22 mots, 1.7 par seconde)
 
 
-**11.9** · film **00:23:17:14 → 00:23:36:14** (19.0 s) · **[ARCH]** `output/archives-filmees/1945-roosevelt-ibn-saoud.mp4` · source 00:00:00:00 → 00:00:19:00  
+**11.12** · film **00:23:49:02 → 00:24:08:02** (19.0 s) · **[ARCH]** `output/archives-filmees/1945-roosevelt-ibn-saoud.mp4` · source 00:00:00:00 → 00:00:19:00  
 Source : actualités Universal du 21 février 1945 (archives nationales américaines), domaine public ; lettre de Roosevelt à Ibn Saoud du 5 avril 1945, Foreign Relations of the United States 1945, vol. VIII (texte : Avalon Project, Yale)  
 À l'écran : carton : février 1945 · Grand Lac Amer · Roosevelt reçoit Ibn Saoud  
 > VOIX : Février 1945. / Sur un croiseur américain, Roosevelt reçoit le roi d'Arabie saoudite, Ibn Saoud. // Le 5 avril, il lui écrit qu'il ne prendra aucune mesure / « qui pourrait se révéler hostile au peuple arabe ». / Il meurt une semaine plus **tard**.  
@@ -404,23 +425,23 @@ Source : actualités Universal du 21 février 1945 (archives nationales américa
 Note : texte anglais : « I would take no action […] which might prove hostile to the Arab people »
 
 
-**11.10** · film **00:23:36:14 → 00:23:51:14** (15.0 s) · **[ARCH]** `output/archives-filmees/1946-refugies-juifs-palestine.mp4` · source 00:00:00:00 → 00:00:15:00  
+**11.13** · film **00:24:08:02 → 00:24:23:02** (15.0 s) · **[ARCH]** `output/archives-filmees/1946-refugies-juifs-palestine.mp4` · source 00:00:00:00 → 00:00:15:00  
 Source : United News (Office of War Information), actualité de juin 1946, archives nationales américaines ARC 39119, domaine public  
 À l'écran : carton : 1946 · Palestine · Des réfugiés juifs d'Europe débarquent  
 > VOIX : En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.  
 (17 mots, 1.1 par seconde)
 
 
-**11.11** · film **00:23:51:14 → 00:23:55:22** (4.3 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-01.mp4` · source 00:00:00:00 → 00:00:04:08  
+**11.14** · film **00:24:23:02 → 00:24:27:09** (4.3 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-01.mp4` · source 00:00:00:00 → 00:00:04:08  
 > VOIX : Après la guerre, épuisée, / la Grande-Bretagne  
 (6 mots, 1.4 par seconde)
 
 
-**11.12** · film **00:23:55:22 → 00:24:00:22** (5.0 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-07.mp4` · source 00:00:00:00 → 00:00:05:00  
+**11.15** · film **00:24:27:09 → 00:24:32:10** (5.0 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-07.mp4` · source 00:00:00:00 → 00:00:05:00  
 > VOIX : remet la question à l'ONU. // Nous sommes en **1947**. ///  
 (9 mots, 1.8 par seconde)  
 Son : montée lente vers l'ouverture de la partie III
 
 
 ---
-Durée de la partie : 11 min 09.6 s (film 00:12:51:07 → 00:24:00:22)
+Durée de la partie : 11 min 41.1 s (film 00:12:51:07 → 00:24:32:10)

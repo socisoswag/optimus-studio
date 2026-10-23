@@ -83,8 +83,8 @@ Encore une question :
 
 Fiches (`timelines/documents-6.js`, `timelines/gaza.js`) et voix corrigées, sources dans SOURCES.md (section 7) :
 Gaza au 22 octobre 2026 (74 498 morts, 175 616 blessés, 1 538 morts depuis la trêve ; nouvelle fiche « depuis le
-cessez-le-feu », plan 25.35) ; l'argent du Qatar (plan 25.12), la phrase rapportée de Netanyahou avec son démenti
-(plan 25.13) et celle de Smotrich (plan 25.14) ; l'eau (plan 23.14) ; le Néguev (plan 28.8) ; les détenus (plan
+cessez-le-feu », plan 25.41) ; l'argent du Qatar (plan 25.18), la phrase rapportée de Netanyahou avec son démenti
+(plan 25.19) et celle de Smotrich (plan 25.20) ; l'eau (plan 23.14) ; le Néguev (plan 28.8) ; les détenus (plan
 35.19) ; les journalistes, d'après le CPJ (plan 27.8) ; les vetos (plan 33.9 : 52, de 1972 à 2025, dont un amendement) ;
 Macron (plan 31.16) ; la Cisjordanie (plan 26.8) ; Barghouti (plan 21.13) ; la photo du Goush Emounim (plan 26.2) :
 mont Huwara, près de Naplouse.
