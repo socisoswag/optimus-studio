@@ -1744,7 +1744,19 @@
         for (let i = 0; i < a.length; i++) a[i] = d[i * 4];
         const [X0, Y0, X1, Y1] = m.bbox;
         RLF[k] = { a, w: c.width, h: c.height, X0, Y0, X1, Y1, su: c.width / (X1 - X0), sv: c.height / (Y1 - Y0) };
-        done();
+        if (!(TL.partage.light || TL.partage.haze)) { done(); return; }
+        // lumière rasante (rouge) et creux des vallées (vert) : tools/prep_relief_lumiere.py
+        const ix = new Image();
+        ix.onload = () => {
+          const cx = canvas(ix.naturalWidth, ix.naturalHeight), gx = cx.getContext('2d');
+          gx.drawImage(ix, 0, 0);
+          const dx = gx.getImageData(0, 0, cx.width, cx.height).data, L = new Uint8Array(a.length), V = new Uint8Array(a.length);
+          if (cx.width === c.width && cx.height === c.height) for (let i = 0; i < a.length; i++) { L[i] = dx[i * 4]; V[i] = dx[i * 4 + 1]; }
+          RLF[k].L = L; RLF[k].V = V;
+          done();
+        };
+        ix.onerror = () => done();
+        ix.src = m.src.replace(/\.png$/, '-x.png');
       };
       img.onerror = () => done();
       img.src = m.src;
@@ -1755,7 +1767,7 @@
   const TCV = {};
   function tintCanvas(key) { if (!TCV[key]) TCV[key] = canvas(W, H).getContext('2d'); return TCV[key]; }
   // rendu point par point : chaque pixel de l'écran retrouve son point du sol (projection inverse)
-  function renderRelief(cam, box) {
+  function renderRelief(cam, box, RT = 0) {
     const base = RLF.base;
     if (!base) return false;
     // détail : texture fine de la zone filmée en gros plan
@@ -1768,6 +1780,11 @@
     }
     const d = RID.data;
     const [x0, y0, x1, y1] = box;
+    // lumière qui glisse : de la lumière du nord-ouest vers la lumière rasante de l'est, lentement (TL.partage.light)
+    const C = PART.C, tt = RT;
+    const mix = C.light && base.L ? 0.6 * (0.5 - 0.5 * Math.cos((tt / (C.lightPeriod || 36)) * 6.2832)) : 0;
+    const hz = C.haze && base.V ? C.haze * (0.85 + 0.15 * Math.sin(tt * 0.35)) : 0;
+    const LB = base.L, VB = base.V;
     for (let sy = y0; sy < y1; sy++) {
       const v = sy - Poy, den = Pcp * FOCAL + v * Psp;
       let i = (sy * W + x0) * 4;
@@ -1781,23 +1798,43 @@
         if (u < 0 || w < 0 || u >= base.w - 1 || w >= base.h - 1) { d[i + 3] = 0; continue; }
         let iu = u | 0, iw = w | 0, fu = u - iu, fw = w - iw, o = iw * base.w + iu, A = base.a;
         let val = (A[o] * (1 - fu) + A[o + 1] * fu) * (1 - fw) + (A[o + base.w] * (1 - fu) + A[o + base.w + 1] * fu) * fw;
+        let mist = 0;
+        if (mix > 0.002) val += (((LB[o] * (1 - fu) + LB[o + 1] * fu) * (1 - fw) + (LB[o + base.w] * (1 - fu) + LB[o + base.w + 1] * fu) * fw) - val) * mix;
+        if (hz > 0.002) mist = ((VB[o] * (1 - fu) + VB[o + 1] * fu) * (1 - fw) + (VB[o + base.w] * (1 - fu) + VB[o + base.w + 1] * fu) * fw) / 255;
         if (det) {
           u = (X - det.X0) * det.su - 0.5; w = (det.Y1 - Y) * det.sv - 0.5;
           if (u >= 0 && w >= 0 && u < det.w - 1 && w < det.h - 1) {
             iu = u | 0; iw = w | 0; fu = u - iu; fw = w - iw; o = iw * det.w + iu; A = det.a;
             // fondu vers le bord de la texture fine
             const e = Math.min(u, w, det.w - 1 - u, det.h - 1 - w), f = dw * (e > 40 ? 1 : e / 40);
-            const dv = (A[o] * (1 - fu) + A[o + 1] * fu) * (1 - fw) + (A[o + det.w] * (1 - fu) + A[o + det.w + 1] * fu) * fw;
+            let dv = (A[o] * (1 - fu) + A[o + 1] * fu) * (1 - fw) + (A[o + det.w] * (1 - fu) + A[o + det.w + 1] * fu) * fw;
+            if (mix > 0.002 && det.L) dv += (((det.L[o] * (1 - fu) + det.L[o + 1] * fu) * (1 - fw) + (det.L[o + det.w] * (1 - fu) + det.L[o + det.w + 1] * fu) * fw) - dv) * mix;
             val += (dv - val) * f;
           }
         }
+        // brume : les creux s'éclaircissent et se voilent, plus fort au loin (haut de l'image)
+        if (mist > 0.01) { const m2 = Math.min(1, mist * mist * mist * 2.2) * hz * (0.5 + 0.5 * (1 - sy / H)); val += (226 - val) * m2; }
         d[i] = d[i + 1] = d[i + 2] = val; d[i + 3] = 255;
       }
     }
     rcx.clearRect(0, 0, W, H);
     rcx.putImageData(RID, 0, 0, x0, y0, x1 - x0, y1 - y0);
+    if (C.dof) {
+      if (!RCB) { RCB = canvas(W, H); rcb = RCB.getContext('2d'); }
+      rcb.globalCompositeOperation = 'source-over';
+      rcb.clearRect(0, 0, W, H);
+      rcb.filter = `blur(${(C.dof === true ? 1.7 : C.dof) * Math.max(0.4, Math.sin(cam.pitch))}px)`;
+      rcb.drawImage(RC, 0, 0);
+      rcb.filter = 'none';
+      rcb.globalCompositeOperation = 'destination-in';
+      const gr = rcb.createLinearGradient(0, 0, 0, H * 0.38);
+      gr.addColorStop(0, 'rgba(0,0,0,1)'); gr.addColorStop(0.5, 'rgba(0,0,0,0.45)'); gr.addColorStop(1, 'rgba(0,0,0,0)');
+      rcb.fillStyle = gr; rcb.fillRect(0, 0, W, H);
+      rcx.drawImage(RCB, 0, 0);
+    }
     return true;
   }
+  let RCB = null, rcb = null;
   const PSTATE = {
     neutre: () => COL.stone.map((c) => c * 0.66),
     arabe: () => COL.life,
@@ -1844,7 +1881,7 @@
       }
       const m = 40;
       const box = [Math.max(0, Math.floor(x0 - m)), Math.max(0, Math.floor(y0 - m)), Math.min(W, Math.ceil(x1 + m)), Math.min(H, Math.ceil(y1 + m))];
-      if (box[2] > box[0] && box[3] > box[1] && renderRelief(cam, box)) {
+      if (box[2] > box[0] && box[3] > box[1] && renderRelief(cam, box, t)) {
         const [bx, by, bw, bh] = [box[0], box[1], box[2] - box[0], box[3] - box[1]];
         // une couche teintée par couleur utilisée
         const used = new Set(['neutre']);

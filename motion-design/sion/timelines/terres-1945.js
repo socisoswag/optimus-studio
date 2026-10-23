@@ -76,5 +76,5 @@
   });
   // le relief éclairé de la carte du partage (SRTM, NASA), sans découpage : la terre elle-même
   root.TL.columns = columns;
-  root.TL.partage = { center: [35.0, 31.6], land: { seg: 'plaine', at: 0.1, dur: 2.0 }, drain: { seg: 'fin', at: 0.4, dur: 2.0 } };
+  root.TL.partage = { center: [35.0, 31.6], land: { seg: 'plaine', at: 0.1, dur: 2.0 }, drain: { seg: 'fin', at: 0.4, dur: 2.0 }, light: true, haze: 0.45 };
 })(typeof window !== 'undefined' ? window : globalThis);
