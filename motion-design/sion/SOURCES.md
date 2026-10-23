@@ -585,6 +585,13 @@ marquée du filigrane d'une agence commerciale.
   https://thewire.in/world/chart-6407-palestinians-and-308-israelis-killed-in-violence-in-last-15-years ; à confirmer
   sur le tableau d'OCHA).
 
+**Leurs noms** (chapitre 25, `timelines/les-noms.js`, écrite par `tools/prep_noms.py`)
+- Ministère de la Santé de Gaza, liste nominative des morts identifiés, mise à jour du 27 juillet 2026 (morts
+  jusqu'au 7 mai 2026) : 72 835 personnes, dont 21 637 enfants de moins de 18 ans et 1 072 de moins d'un an ;
+  données ouvertes de Tech for Palestine, https://data.techforpalestine.org/api/v2/killed-in-gaza.json (résumé :
+  https://data.techforpalestine.org/api/v3/summary.json). À l'écran : les 1 072 enfants de moins d'un an, nom arabe
+  et transcription, dans l'ordre de la liste ; ni numéro d'identité ni date de naissance.
+
 **Chronologie des figures (1897 à 1995)**
 - Faits biographiques courants (dates, fonctions, événements), présents dans toutes les encyclopédies.
   Pour citer une référence précise : les notices de l'Encyclopædia Britannica ou de l'Encyclopædia

@@ -110,9 +110,12 @@ def fabrique(nom, ident, fichier, crop, coupes, pre=None):
         lst = os.path.join(tmp, "liste.txt")
         open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
         lut = os.path.join(ROOT, "data", "looks", "archive.cube")
-        vf = (f"scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,"
+        # restauration avant l'agrandissement, sans IA : scintillement de la pellicule lissé, bruit et poussières
+        # atténués dans le temps (le grain du film est rajouté à la fin, plus fin et régulier)
+        vf = (f"deflicker=size=7:mode=am,hqdn3d=2.2:1.6:5.5:4.5,"
+              f"scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,"
               + (f"{pre}," if pre else "") +
-              f"unsharp=lx=13:ly=13:la=0.5:cx=5:cy=5:ca=0,lut3d=file={lut}:interp=tetrahedral,{finition()},"
+              f"unsharp=lx=13:ly=13:la=0.65:cx=5:cy=5:ca=0,cas=strength=0.35,lut3d=file={lut}:interp=tetrahedral,{finition()},"
               "noise=c0s=7:c0f=t+u:c1s=0:c2s=0,vignette=angle=PI/5,format=yuv420p,setsar=1")
         os.makedirs(OUT, exist_ok=True)
         dst = os.path.join(OUT, f"{nom}.mp4")

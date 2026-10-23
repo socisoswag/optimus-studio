@@ -594,7 +594,7 @@
 
 ## Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre
 
-*8 min 51 de film*
+*10 min 10 de film*
 
 **25.2** En 2005, Ariel Sharon fait évacuer les colonies de Gaza. / Mais Israël garde les frontières, la mer et le ciel : / pour l'ONU, Gaza reste **occupée**.
 
@@ -650,33 +650,35 @@
 
 **25.28** Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près de sept sur dix sont des femmes et des **enfants**.
 
-**25.29** Le 29 janvier 2024, à Gaza-ville, Hind Rajab, six ans, est coincée dans une voiture, au milieu des corps de sa famille. / Pendant des heures, elle parle au Croissant-Rouge. / L'ambulance envoyée la chercher est détruite. / On la retrouve morte douze jours plus **tard**.
+**25.29** Derrière ces chiffres, des noms. / Le ministère de la Santé de Gaza les publie, un par **un**.
 
-**25.30** Le 23 mars 2025, à Rafah, quinze secouristes sont tués, puis enterrés avec leurs ambulances. / L'armée dit d'abord qu'ils roulaient sans phares. / La vidéo retrouvée sur le téléphone de l'un d'eux montre le **contraire**.
+**25.31** Le 29 janvier 2024, à Gaza-ville, Hind Rajab, six ans, est coincée dans une voiture, au milieu des corps de sa famille. / Pendant des heures, elle parle au Croissant-Rouge. / L'ambulance envoyée la chercher est détruite. / On la retrouve morte douze jours plus **tard**.
 
-**25.31** Vu du ciel, avant, / et après. ///
+**25.32** Le 23 mars 2025, à Rafah, quinze secouristes sont tués, puis enterrés avec leurs ambulances. / L'armée dit d'abord qu'ils roulaient sans phares. / La vidéo retrouvée sur le téléphone de l'un d'eux montre le **contraire**.
 
-**25.32** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
+**25.33** Vu du ciel, avant, / et après. ///
 
-**25.33** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
+**25.34** Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.
 
-**25.34** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
+**25.35** La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.
 
-**25.35** La guerre déborde. / En septembre 2024, au Liban, Israël tue le chef du Hezbollah, Hassan Nasrallah. / Après la chute d'Assad, son armée avance en Syrie. / En juin 2025, douze jours de guerre avec l'**Iran**.
+**25.36** En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.
 
-**25.36** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
+**25.37** La guerre déborde. / En septembre 2024, au Liban, Israël tue le chef du Hezbollah, Hassan Nasrallah. / Après la chute d'Assad, son armée avance en Syrie. / En juin 2025, douze jours de guerre avec l'**Iran**.
 
-**25.37** Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**.
+**25.38** Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
 
-**25.38** En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.
+**25.39** Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**.
 
-**25.39** Le 2 mars 2025, Israël bloque toute entrée d'aide à Gaza : / 78 jours sans nourriture ni médicaments, selon l'ONU. / La CPI vise déjà Netanyahou pour la famine comme méthode de **guerre**.
+**25.40** En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.
 
-**25.40** En mai 2025, une fondation soutenue par Israël et les États-Unis prend en main l'aide alimentaire. / En deux mois, selon l'ONU, plus de mille trois cents Palestiniens sont tués en cherchant de quoi **manger**.
+**25.41** Le 2 mars 2025, Israël bloque toute entrée d'aide à Gaza : / 78 jours sans nourriture ni médicaments, selon l'ONU. / La CPI vise déjà Netanyahou pour la famine comme méthode de **guerre**.
 
-**25.41** 10 octobre 2025 : un cessez-le-feu. / Les grandes offensives s'arrêtent, pas les tirs : / au 22 octobre 2026, plus de mille cinq cents morts depuis la trêve. / Israël tient encore environ les deux tiers de la **bande**.
+**25.42** En mai 2025, une fondation soutenue par Israël et les États-Unis prend en main l'aide alimentaire. / En deux mois, selon l'ONU, plus de mille trois cents Palestiniens sont tués en cherchant de quoi **manger**.
 
-**25.42** Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
+**25.43** 10 octobre 2025 : un cessez-le-feu. / Les grandes offensives s'arrêtent, pas les tirs : / au 22 octobre 2026, plus de mille cinq cents morts depuis la trêve. / Israël tient encore environ les deux tiers de la **bande**.
+
+**25.44** Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
 
 ## Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique
 

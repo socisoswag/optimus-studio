@@ -16,6 +16,7 @@
         'Cour internationale de justice · Cour pénale internationale',
         ['IPC', 'classification de la sécurité alimentaire'],
         'B’Tselem · ministère de la Santé de Gaza',
+        ['Tech for Palestine', 'liste nominative des morts de Gaza, données ouvertes'],
         'Human Rights Watch · Amnesty International',
         ['Meta · OpenAI', 'rapports de mai 2024'],
         ['The New York Times · Haaretz', 'juin 2024'],

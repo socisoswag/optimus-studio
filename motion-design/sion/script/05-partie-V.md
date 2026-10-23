@@ -75,7 +75,7 @@ Source : conférence de presse de Benyamin Netanyahou, 18 janvier 2024 ; déclar
 
 ## Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre
 
-Film 00:55:52:06 → 01:04:42:22 · durée 8 min 50.6 s
+Film 00:55:52:06 → 01:06:01:21 · durée 10 min 09.6 s
 
 *Intention : Le chapitre le plus dur du film. Le 7 octobre est raconté en premier, et sans détour : c'est la condition pour être entendu ensuite sur Gaza. Puis le blocus, les offensives, le siège, les morts, les ruines, et ce que disent les juges. La thèse du « laboratoire » est attribuée à celui qui la défend. Aucune image de corps.*
 
@@ -270,149 +270,163 @@ Source : ministère de la Santé de Gaza, bilan du 22 octobre 2026 cité par Eur
 (28 mots, 2.2 par seconde)
 
 
-**25.29** · film **01:01:18:08 → 01:01:33:09** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:02:26:00 → 00:02:41:00  
+**25.29** · film **01:01:18:08 → 01:01:25:09** (7.0 s) · **[MD]** `output/les-noms.mp4` · source 00:00:00:00 → 00:00:07:00  
+Source : ministère de la Santé de Gaza, liste nominative des morts identifiés, mise à jour du 27 juillet 2026 (72 835 personnes, morts jusqu'au 7 mai 2026 ; 21 637 enfants, dont 1 072 de moins d'un an), données ouvertes de Tech for Palestine  
+À l'écran : titre : Leurs noms  
+> VOIX : Derrière ces chiffres, des noms. / Le ministère de la Santé de Gaza les publie, un par **un**.  
+(17 mots, 2.4 par seconde)
+
+
+**25.30** · film **01:01:25:09 → 01:02:37:09** (72.0 s) · **[MD]** `output/les-noms.mp4` · source 00:00:07:00 → 00:01:19:00  
+Source : ministère de la Santé de Gaza, liste nominative des morts identifiés, mise à jour du 27 juillet 2026 (72 835 personnes, morts jusqu'au 7 mai 2026 ; 21 637 enfants, dont 1 072 de moins d'un an), données ouvertes de Tech for Palestine  
+À l'écran : les 1 072 enfants de moins d'un an, nom par nom, puis : 21 637 enfants identifiés par leur nom  
+> VOIX : silence  
+Note : sans voix : laisser défiler les noms dans le silence, sans musique forte
+
+
+**25.31** · film **01:02:37:09 → 01:02:52:08** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:02:26:00 → 00:02:41:00  
 Source : Croissant-Rouge palestinien (enregistrements de l'appel) ; Forensic Architecture et The Washington Post, 2024 ; Kaouther Ben Hania, « La Voix de Hind Rajab », 2025  
 À l'écran : fiche : Gaza · 29 janvier 2024 · Hind Rajab  
 > VOIX : Le 29 janvier 2024, à Gaza-ville, Hind Rajab, six ans, est coincée dans une voiture, au milieu des corps de sa famille. / Pendant des heures, elle parle au Croissant-Rouge. / L'ambulance envoyée la chercher est détruite. / On la retrouve morte douze jours plus **tard**.  
 (43 mots, 2.9 par seconde)
 
 
-**25.30** · film **01:01:33:09 → 01:01:47:09** (14.0 s) · **[MD]** `output/documents-7.mp4` · source 00:02:41:00 → 00:02:55:00  
+**25.32** · film **01:02:52:08 → 01:03:06:08** (14.0 s) · **[MD]** `output/documents-7.mp4` · source 00:02:41:00 → 00:02:55:00  
 Source : Croissant-Rouge palestinien, Défense civile de Gaza, OCHA ; vidéo du téléphone de Rifaat Radwan (The New York Times, avril 2025) ; enquête de l'armée israélienne, 20 avril 2025  
 À l'écran : fiche : Rafah · 23 mars 2025 · Les secouristes de Rafah  
 > VOIX : Le 23 mars 2025, à Rafah, quinze secouristes sont tués, puis enterrés avec leurs ambulances. / L'armée dit d'abord qu'ils roulaient sans phares. / La vidéo retrouvée sur le téléphone de l'un d'eux montre le **contraire**.  
 (34 mots, 2.4 par seconde)
 
 
-**25.31** · film **01:01:47:09 → 01:02:23:09** (36.0 s) · **[3D]** `output/gaza-vue-du-ciel.mp4` · source 00:00:00:00 → 00:00:36:00  
+**25.33** · film **01:03:06:08 → 01:03:42:08** (36.0 s) · **[3D]** `output/gaza-vue-du-ciel.mp4` · source 00:00:00:00 → 00:00:36:00  
 À l'écran : déjà dans la pièce : avant et après, images Sentinel-2 de septembre 2023 et septembre 2025  
 > VOIX : Vu du ciel, avant, / et après. ///  
 (6 mots, 0.2 par seconde)  
 Note : à étalonner en terre-dure ; laisser l'image parler, la voix seulement au début
 
 
-**25.32** · film **01:02:23:09 → 01:02:34:21** (11.5 s) · **[MD]** `output/gaza.mp4` · source 00:01:02:00 → 00:01:13:13  
+**25.34** · film **01:03:42:08 → 01:03:53:21** (11.5 s) · **[MD]** `output/gaza.mp4` · source 00:01:02:00 → 00:01:13:13  
 > VOIX : Environ neuf habitants sur dix ont été déplacés, souvent plusieurs fois. / En août 2025, la famine est **déclarée**.  
 (18 mots, 1.6 par seconde)
 
 
-**25.33** · film **01:02:34:21 → 01:02:45:21** (11.0 s) · **[MD]** `output/gaza.mp4` · source 00:01:13:13 → 00:01:24:12  
+**25.35** · film **01:03:53:21 → 01:04:04:21** (11.0 s) · **[MD]** `output/gaza.mp4` · source 00:01:13:13 → 00:01:24:12  
 Source : CIJ, ordonnance du 26 janvier 2024 ; CPI, mandats du 21 novembre 2024 ; commission d'enquête de l'ONU, 16 septembre 2025  
 > VOIX : La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre Netanyahou, Gallant, et un chef du **Hamas**.  
 (23 mots, 2.1 par seconde)
 
 
-**25.34** · film **01:02:45:21 → 01:02:57:21** (12.0 s) · **[NOIR]** (à fabriquer)  
+**25.36** · film **01:04:04:21 → 01:04:16:21** (12.0 s) · **[NOIR]** (à fabriquer)  
 Source : commission internationale indépendante d'enquête de l'ONU, rapport du 16 septembre 2025 ; position du gouvernement israélien  
 > VOIX : En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.  
 (21 mots, 1.8 par seconde)  
 Note : règle 6 de la bible : la voix dit qui affirme, sur quelle base, et ce qui reste à juger
 
 
-**25.35** · film **01:02:57:21 → 01:03:12:21** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:14:00 → 00:04:29:00  
+**25.37** · film **01:04:16:21 → 01:04:31:21** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:14:00 → 00:04:29:00  
 Source : mort de Hassan Nasrallah, 27 septembre 2024 ; chute de Bachar al-Assad, 8 décembre 2024 ; guerre Israël-Iran, 13-24 juin 2025  
 À l'écran : fiche : Liban, Syrie, Iran · 2024 et 2025 · La guerre s'étend  
 > VOIX : La guerre déborde. / En septembre 2024, au Liban, Israël tue le chef du Hezbollah, Hassan Nasrallah. / Après la chute d'Assad, son armée avance en Syrie. / En juin 2025, douze jours de guerre avec l'**Iran**.  
 (35 mots, 2.3 par seconde)
 
 
-**25.36** · film **01:03:12:21 → 01:03:27:21** (15.0 s) · **[MD]** `output/documents.mp4` · source 00:01:24:00 → 00:01:39:00  
+**25.38** · film **01:04:31:21 → 01:04:46:21** (15.0 s) · **[MD]** `output/documents.mp4` · source 00:01:24:00 → 00:01:39:00  
 Source : Antony Loewenstein, The Palestine Laboratory, Verso, 2023  
 > VOIX : Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».  
 (29 mots, 1.9 par seconde)
 
 
-**25.37** · film **01:03:27:21 → 01:03:41:21** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:07:23:00 → 00:07:37:00  
+**25.39** · film **01:04:46:21 → 01:05:00:21** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:07:23:00 → 00:07:37:00  
 Source : Yuval Abraham, « Lavender », +972 Magazine et Local Call, 3 avril 2024 (six officiers du renseignement) ; réponse de l'armée israélienne  
 À l'écran : fiche : +972 Magazine · 3 avril 2024 · « Lavender »  
 > VOIX : Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**.  
 (32 mots, 2.3 par seconde)
 
 
-**25.38** · film **01:03:41:21 → 01:03:53:21** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:07:37:00 → 00:07:49:00  
+**25.40** · film **01:05:00:21 → 01:05:12:21** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:07:37:00 → 00:07:49:00  
 Source : conférence de presse de Donald Trump et Benyamin Netanyahou, Maison-Blanche, 4 février 2025  
 À l'écran : fiche : Washington · 4 février 2025 · « La Riviera du Moyen-Orient »  
 > VOIX : En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.  
 (27 mots, 2.2 par seconde)
 
 
-**25.39** · film **01:03:53:21 → 01:04:06:21** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:02:55:00 → 00:03:08:00  
+**25.41** · film **01:05:12:21 → 01:05:25:21** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:02:55:00 → 00:03:08:00  
 Source : OCHA, rapport du 18 juin 2025 (78 jours de blocus complet de l'aide, du 2 mars au 19 mai 2025) ; CPI, mandats du 21 novembre 2024 (famine comme méthode de guerre)  
 À l'écran : fiche : Gaza · 2 mars au 19 mai 2025 · 78 jours sans aide  
 > VOIX : Le 2 mars 2025, Israël bloque toute entrée d'aide à Gaza : / 78 jours sans nourriture ni médicaments, selon l'ONU. / La CPI vise déjà Netanyahou pour la famine comme méthode de **guerre**.  
 (31 mots, 2.4 par seconde)
 
 
-**25.40** · film **01:04:06:21 → 01:04:19:21** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:07:49:00 → 00:08:02:00  
+**25.42** · film **01:05:25:21 → 01:05:38:21** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:07:49:00 → 00:08:02:00  
 Source : Haut-Commissariat des Nations unies aux droits de l'homme, bilan au 31 juillet 2025 (Palestiniens tués en cherchant de la nourriture depuis le 27 mai 2025) ; Gaza Humanitarian Foundation  
 À l'écran : fiche : Gaza · mai à juillet 2025 · Tués en cherchant à manger  
 > VOIX : En mai 2025, une fondation soutenue par Israël et les États-Unis prend en main l'aide alimentaire. / En deux mois, selon l'ONU, plus de mille trois cents Palestiniens sont tués en cherchant de quoi **manger**.  
 (34 mots, 2.6 par seconde)
 
 
-**25.41** · film **01:04:19:21 → 01:04:33:21** (14.0 s) · **[MD]** `output/gaza.mp4` · source 00:01:24:12 → 00:01:38:12  
+**25.43** · film **01:05:38:21 → 01:05:52:21** (14.0 s) · **[MD]** `output/gaza.mp4` · source 00:01:24:12 → 00:01:38:12  
 Source : cessez-le-feu du 10 octobre 2025 ; ministère de la Santé de Gaza, 22 octobre 2026 (1 538 morts depuis la trêve, série comptée depuis le 11 octobre 2025) ; Reuters, 7 octobre 2026 (Israël contrôle environ les deux tiers de la bande)  
 > VOIX : 10 octobre 2025 : un cessez-le-feu. / Les grandes offensives s'arrêtent, pas les tirs : / au 22 octobre 2026, plus de mille cinq cents morts depuis la trêve. / Israël tient encore environ les deux tiers de la **bande**.  
 (35 mots, 2.5 par seconde)  
 Note : ne pas additionner les 841 corps retirés des décombres : ce n'est pas la même série
 
 
-**25.42** · film **01:04:33:21 → 01:04:42:22** (9.0 s) · **[MD]** `output/gaza.mp4` · source 00:01:38:12 → 00:01:47:13  
+**25.44** · film **01:05:52:21 → 01:06:01:21** (9.0 s) · **[MD]** `output/gaza.mp4` · source 00:01:38:12 → 00:01:47:13  
 > VOIX : Une prison à ciel ouvert, / devenue un champ de **ruines**. ///  
 (10 mots, 1.1 par seconde)
 
 
 ## Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique
 
-Film 01:04:42:22 → 01:06:43:21 · durée 2 min 01.0 s
+Film 01:06:01:21 → 01:08:02:22 · durée 2 min 01.0 s
 
 *Intention : D'où vient le sionisme religieux (le rabbin Kook, le Goush Emounim), ce qu'il a produit de pire (Hébron 1994), et comment il est arrivé au gouvernement. Smotrich et Ben Gvir, par leurs mots et leur casier. Rappeler que beaucoup de religieux juifs s'y opposent (chapitre 30).*
 
 
-**26.1** · film **01:04:42:22 → 01:04:47:11** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-26.mp4` · source 00:00:00:00 → 00:00:04:15  
+**26.1** · film **01:06:01:21 → 01:06:06:12** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-26.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**26.2** · film **01:04:47:11 → 01:05:02:12** (15.0 s) · **[PHOTO]** `output/photos-fixes/1-30-goush-emounim-1978.mp4` · source 00:00:00:00 → 00:00:15:00  
+**26.2** · film **01:06:06:12 → 01:06:21:11** (15.0 s) · **[PHOTO]** `output/photos-fixes/1-30-goush-emounim-1978.mp4` · source 00:00:00:00 → 00:00:15:00  
 Source : Goush Emounim, fondé en 1974 ; enseignement du rabbin Zvi Yehouda Kook  
 À l'écran : déjà dans le plan : 22 septembre 1978 · Mont Huwara, près de Naplouse · Des colons du Goush Emounim lèvent le drapeau sur une colonie non autorisée · Photo d'archive  
 > VOIX : Après 1967, une partie des Juifs religieux voit dans la conquête un signe de Dieu. / En 1974, ils fondent le Goush Emounim, / « le bloc de la foi » : / s'installer partout, en Judée et en **Samarie**.  
 (34 mots, 2.3 par seconde)
 
 
-**26.3** · film **01:05:02:12 → 01:05:13:11** (11.0 s) · **[NOIR]** (à fabriquer)  
+**26.3** · film **01:06:21:11 → 01:06:32:12** (11.0 s) · **[NOIR]** (à fabriquer)  
 Source : massacre du tombeau des Patriarches, Hébron, 25 février 1994 : 29 morts  
 À l'écran : carton : Hébron · 25 février 1994  
 > VOIX : Le 25 février 1994, à Hébron, / un colon, Baruch Goldstein, tue 29 Palestiniens en prière dans la **mosquée**.  
 (18 mots, 1.6 par seconde)
 
 
-**26.4** · film **01:05:13:11 → 01:05:18:22** (5.4 s) · **[MD]** `output/figures-aujourdhui.mp4` · source 00:00:15:00 → 00:00:20:10  
+**26.4** · film **01:06:32:12 → 01:06:37:21** (5.4 s) · **[MD]** `output/figures-aujourdhui.mp4` · source 00:00:15:00 → 00:00:20:10  
 À l'écran : fiche : Smotrich et Ben Gvir, ministres à partir de décembre 2022, tous deux colons  
 > VOIX : En 2022, ce courant entre au **gouvernement**.  
 (7 mots, 1.3 par seconde)
 
 
-**26.5** · film **01:05:18:22 → 01:05:34:22** (16.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:08:00 → 00:01:24:00  
+**26.5** · film **01:06:37:21 → 01:06:53:21** (16.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:08:00 → 00:01:24:00  
 Source : condamnation de 2007 (incitation au racisme, soutien à une organisation terroriste, le Kach) ; portrait de Baruch Goldstein retiré de son salon en 2020  
 > VOIX : Itamar Ben Gvir, ministre de la Sécurité nationale. / Condamné en 2007 pour incitation au racisme / et soutien à une organisation terroriste. // Chez lui, il a longtemps gardé un portrait de Baruch **Goldstein**.  
 (32 mots, 2.0 par seconde)
 
 
-**26.6** · film **01:05:34:22 → 01:05:47:21** (13.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:24:00 → 00:01:37:00  
+**26.6** · film **01:06:53:21 → 01:07:06:22** (13.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:24:00 → 00:01:37:00  
 Source : entretien à la chaîne 12, 23 août 2023 ; notre traduction  
 > VOIX : En 2023 : / « Mon droit, celui de ma femme et de mes enfants, / de circuler sur les routes de Judée et de Samarie / passe avant la liberté de circulation des **Arabes**. »  
 (30 mots, 2.3 par seconde)
 
 
-**26.7** · film **01:05:47:21 → 01:06:00:22** (13.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:37:00 → 00:01:50:00  
+**26.7** · film **01:07:06:22 → 01:07:19:21** (13.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:37:00 → 00:01:50:00  
 Source : Bezalel Smotrich, 1er mars 2023, après l'attaque de colons contre Huwara ; il retire ensuite ses propos  
 > VOIX : Bezalel Smotrich, ministre des Finances, / après une attaque de colons contre le village de Huwara : / « Le village de Huwara doit être **effacé**. »  
 (22 mots, 1.7 par seconde)  
 Note : dire qu'il a ensuite retiré ses propos : la voix le fait au plan suivant
 
 
-**26.8** · film **01:06:00:22 → 01:06:14:22** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:29:00 → 00:04:43:00  
+**26.8** · film **01:07:19:21 → 01:07:33:21** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:29:00 → 00:04:43:00  
 Source : OCHA, rapport de situation du 15 octobre 2026 et instantané du 14 octobre 2026 (incidents de colons avec victimes ou dégâts : 428 du 7 octobre au 31 décembre 2023, 1 449 en 2024, 1 836 en 2025, plus de 2 060 en 2026 au 12 octobre) ; UNRWA, repris par l'OCHA, 14 septembre 2026 (déplacés : Jénine 12 557, Tulkarem 12 412, Nour Chams 9 207)  
 À l'écran : fiche : Cisjordanie occupée · depuis octobre 2023 · En Cisjordanie aussi  
 > VOIX : En Cisjordanie aussi, la violence explose : / plus de 5 700 attaques de colons en trois ans, d'après les relevés de l'ONU. / En 2025, l'armée lance l'opération « Mur de fer » dans les camps du nord : / à Jénine, Tulkarem et Nour Chams, plus de 34 000 **déplacés**.  
@@ -420,14 +434,14 @@ Source : OCHA, rapport de situation du 15 octobre 2026 et instantané du 14 octo
 Note : 5 700 : somme des séries de l'OCHA (incidents avec victimes ou dégâts) ; à Jénine, une partie des déplacés date d'une opération de l'Autorité palestinienne
 
 
-**26.9** · film **01:06:14:22 → 01:06:28:22** (14.0 s) · **[MD]** `output/documents-7.mp4` · source 00:03:08:00 → 00:03:22:00  
+**26.9** · film **01:07:33:21 → 01:07:47:21** (14.0 s) · **[MD]** `output/documents-7.mp4` · source 00:03:08:00 → 00:03:22:00  
 Source : approbation finale de 3 401 logements dans la zone E1, 20 août 2025 (Reuters) ; Bezalel Smotrich, 14 août 2025 (« bury the idea of a Palestinian state »)  
 À l'écran : fiche : Cisjordanie · août 2025 · Le projet E1  
 > VOIX : En août 2025, Israël approuve E1 : / 3 401 logements entre Jérusalem et la colonie de Maalé Adoumim, / un projet qui menace le passage entre le nord et le sud de la Cisjordanie. / Smotrich : il va « enterrer l'idée d'un État **palestinien** ».  
 (40 mots, 2.9 par seconde)
 
 
-**26.10** · film **01:06:28:22 → 01:06:43:21** (15.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:50:00 → 00:02:05:00  
+**26.10** · film **01:07:47:21 → 01:08:02:22** (15.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:50:00 → 00:02:05:00  
 Source : Bezalel Smotrich, 5 août 2024 (CNN, 6 août 2024) ; notre traduction  
 > VOIX : Il retire ce mot. / En 2024, il dit : / « Personne au monde ne nous laissera affamer deux millions de personnes, / même si cela pouvait être justifié et **moral**, / jusqu'à ce qu'ils rendent les otages. »  
 (33 mots, 2.2 par seconde)
@@ -435,77 +449,77 @@ Source : Bezalel Smotrich, 5 août 2024 (CNN, 6 août 2024) ; notre traduction
 
 ## Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation
 
-Film 01:06:43:21 → 01:08:05:17 · durée 1 min 21.8 s
+Film 01:08:02:22 → 01:09:24:16 · durée 1 min 21.8 s
 
 *Intention : Une enquête documentée de bout en bout (The New York Times, Meta, OpenAI) plutôt qu'une thèse générale. Dire que la désinformation existe dans tous les camps de cette guerre ; celle-ci se distingue parce qu'un ministère l'a payée.*
 
 
-**27.1** · film **01:06:43:21 → 01:06:48:12** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-27.mp4` · source 00:00:00:00 → 00:00:04:15  
+**27.1** · film **01:08:02:22 → 01:08:07:11** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-27.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**27.2** · film **01:06:48:12 → 01:06:54:22** (6.4 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:00:00 → 00:00:06:10  
+**27.2** · film **01:08:07:11 → 01:08:13:21** (6.4 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:00:00 → 00:00:06:10  
 > VOIX : Des Américains qui n'existent **pas**.  
 (5 mots, 0.8 par seconde)
 
 
-**27.3** · film **01:06:54:22 → 01:07:07:11** (12.6 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:06:10 → 00:00:19:00  
+**27.3** · film **01:08:13:21 → 01:08:26:12** (12.6 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:06:10 → 00:00:19:00  
 > VOIX : Pendant la guerre, des centaines de faux comptes se font passer pour des Américains, / et interpellent des élus du **Congrès**.  
 (20 mots, 1.6 par seconde)
 
 
-**27.4** · film **01:07:07:11 → 01:07:17:11** (10.0 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:19:00 → 00:00:29:00  
+**27.4** · film **01:08:26:12 → 01:08:36:12** (10.0 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:19:00 → 00:00:29:00  
 > VOIX : Leurs messages sont écrits par une intelligence **artificielle**.  
 (8 mots, 0.8 par seconde)
 
 
-**27.5** · film **01:07:17:11 → 01:07:29:11** (12.0 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:29:00 → 00:00:41:00  
+**27.5** · film **01:08:36:12 → 01:08:48:12** (12.0 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:29:00 → 00:00:41:00  
 > VOIX : En mai 2024, Meta supprime 510 comptes Facebook. / Le réseau n'avait presque aucune audience **réelle**.  
 (15 mots, 1.2 par seconde)
 
 
-**27.6** · film **01:07:29:11 → 01:07:41:21** (12.4 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:41:00 → 00:00:53:10  
+**27.6** · film **01:08:48:12 → 01:09:00:21** (12.4 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:41:00 → 00:00:53:10  
 > VOIX : Selon The New York Times, environ deux millions de dollars d'argent public, / venus du ministère israélien de la Diaspora. / Le ministère **dément**.  
 (22 mots, 1.8 par seconde)
 
 
-**27.7** · film **01:07:41:21 → 01:07:48:17** (6.8 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:53:10 → 00:01:00:05  
+**27.7** · film **01:09:00:21 → 01:09:07:17** (6.8 s) · **[MD]** `output/guerre-numerique.mp4` · source 00:00:53:10 → 00:01:00:05  
 Source : rapports trimestriels de Meta sur les réseaux de comportement inauthentique coordonné (réseaux iraniens et autres, 2023-2024)  
 > VOIX : Des faux comptes, il y en a dans tous les camps de cette **guerre**.  
 (14 mots, 2.1 par seconde)
 
 
-**27.8** · film **01:07:48:17 → 01:08:01:17** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:58:00 → 00:02:11:00  
+**27.8** · film **01:09:07:17 → 01:09:20:16** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:58:00 → 00:02:11:00  
 Source : Shireen Abu Akleh, 11 mai 2022 (ONU, HCDH, juin 2022) ; CPJ, données au 24 septembre 2026 (189 journalistes et employés des médias palestiniens tués par Israël à Gaza)  
 À l'écran : fiche : Jénine · 11 mai 2022 · Shireen Abu Akleh  
 > VOIX : Le 11 mai 2022, la journaliste Shireen Abu Akleh est tuée à Jénine. / L'armée accuse d'abord des tireurs palestiniens ; / l'ONU conclut à un tir israélien. // À Gaza, depuis 2023, le CPJ compte 189 journalistes et employés des médias tués par **Israël**.  
 (41 mots, 3.2 par seconde)
 
 
-**27.9** · film **01:08:01:17 → 01:08:05:17** (4.0 s) · **[NOIR]** (à fabriquer)  
+**27.9** · film **01:09:20:16 → 01:09:24:16** (4.0 s) · **[NOIR]** (à fabriquer)  
 > VOIX : Celui-ci était payé par un **État**.  
 (6 mots, 1.5 par seconde)
 
 
 ## Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens
 
-Film 01:08:05:17 → 01:10:01:07 · durée 1 min 55.6 s
+Film 01:09:24:16 → 01:11:20:06 · durée 1 min 55.6 s
 
 *Intention : Les faits établis par des commissions et des rapports israéliens eux-mêmes, et la contestation venue de l'intérieur (les Black Panthers, les manifestations de 2015). Le point de vue israélien a sa place : les citoyens arabes votent, siègent à la Knesset et à la Cour suprême.*
 
 
-**28.1** · film **01:08:05:17 → 01:08:10:06** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-28.mp4` · source 00:00:00:00 → 00:00:04:15  
+**28.1** · film **01:09:24:16 → 01:09:29:07** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-28.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**28.2** · film **01:08:10:06 → 01:08:27:07** (17.0 s) · **[PHOTO]** `output/photos-fixes/2-31-black-panthers-1972.mp4` · source 00:00:00:00 → 00:00:17:00  
+**28.2** · film **01:09:29:07 → 01:09:46:06** (17.0 s) · **[PHOTO]** `output/photos-fixes/2-31-black-panthers-1972.mp4` · source 00:00:00:00 → 00:00:17:00  
 Source : Black Panthers israéliens, fondés en 1971 à Moussrara, Jérusalem ; Golda Meir, 19 mai 1971, au lendemain de la manifestation violente du 18 mai, rapporté par Maariv (Avi Picard, université Bar-Ilan, 19 mai 2021)  
 À l'écran : déjà dans le plan : 1972 · Université de Tel-Aviv · Des militants des Black Panthers israéliens · Photo d'archive  
 > VOIX : Les Juifs venus des pays arabes, les mizrahim, se heurtent à une élite venue d'Europe. / En 1971, des jeunes de Jérusalem fondent les Black Panthers. / Après une manifestation violente, Golda Meir lance : / « Ce ne sont pas des garçons **gentils**. »  
 (39 mots, 2.3 par seconde)
 
 
-**28.3** · film **01:08:27:07 → 01:08:43:07** (16.0 s) · **[IA]** `output/reconstitutions/21-26-rosh-haayin-1950.mp4` · source 00:00:00:00 → 00:00:16:00  
+**28.3** · film **01:09:46:06 → 01:10:02:06** (16.0 s) · **[IA]** `output/reconstitutions/21-26-rosh-haayin-1950.mp4` · source 00:00:00:00 → 00:00:16:00  
 Source : commission Kedmi, rapport de 2001 ; décision du gouvernement israélien d'indemniser les familles, février 2021  
 À l'écran : déjà dans le plan : Février 1950 · Rosh HaAyin · Des immigrants yéménites au camp de transit · la vraie photo, puis Reconstitution par IA, d'après une photo d'archive  
 > VOIX : Entre 1948 et 1954, des centaines d'enfants d'immigrants yéménites disparaissent des hôpitaux et des camps. / On dit aux parents qu'ils sont morts. // En 2021, l'État accepte d'indemniser les **familles**.  
@@ -513,44 +527,44 @@ Source : commission Kedmi, rapport de 2001 ; décision du gouvernement israélie
 Note : la commission Kedmi n'a pas retenu d'enlèvements organisés ; l'indemnisation est accordée sans reconnaissance de responsabilité
 
 
-**28.4** · film **01:08:43:07 → 01:08:59:07** (16.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:37:00 → 00:00:53:00  
+**28.4** · film **01:10:02:06 → 01:10:18:06** (16.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:37:00 → 00:00:53:00  
 Source : directive du directeur du ministère de la Santé, Ron Gamzu, janvier 2013 (Haaretz, 27 janvier 2013) ; manifestations de mai 2015  
 À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : En 2013, le ministère de la Santé ordonne d'arrêter d'injecter un contraceptif à des femmes éthiopiennes / qui n'en comprenaient pas les effets. // En 2015, des milliers d'Israéliens éthiopiens manifestent contre les violences **policières**.  
 (33 mots, 2.1 par seconde)
 
 
-**28.5** · film **01:08:59:07 → 01:09:12:06** (13.0 s) · **[NOIR]** (à fabriquer)  
+**28.5** · film **01:10:18:06 → 01:10:31:07** (13.0 s) · **[NOIR]** (à fabriquer)  
 Source : octobre 2000 : 13 citoyens arabes tués par la police (commission Or, 2003)  
 À l'écran : carton : Galilée · octobre 2000  
 > VOIX : Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize d'entre eux pendant des **manifestations**.  
 (20 mots, 1.5 par seconde)
 
 
-**28.6** · film **01:09:12:06 → 01:09:26:06** (14.0 s) · **[NOIR]** (à fabriquer)  
+**28.6** · film **01:10:31:07 → 01:10:45:07** (14.0 s) · **[NOIR]** (à fabriquer)  
 Source : Ra'am dans la coalition gouvernementale, 2021-2022 ; Khaled Kabub, juge à la Cour suprême depuis 2022  
 > VOIX : Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à la Cour suprême, / et un parti arabe a gouverné en **2021**.  
 (28 mots, 2.0 par seconde)
 
 
-**28.7** · film **01:09:26:06 → 01:09:39:07** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:15:00 → 00:00:28:00  
+**28.7** · film **01:10:45:07 → 01:10:58:06** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:15:00 → 00:00:28:00  
 Source : Jour de la Terre, 30 mars 1976 : grève générale, six citoyens arabes tués  
 À l'écran : fiche : Galilée · 30 mars 1976 · Le Jour de la Terre  
 > VOIX : Le 30 mars 1976, les Arabes d'Israël font grève contre la confiscation de leurs terres. / Six manifestants sont tués. // Depuis, chaque 30 mars, c'est le Jour de la **Terre**.  
 (29 mots, 2.2 par seconde)
 
 
-**28.8** · film **01:09:39:07 → 01:09:52:06** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:28:00 → 00:00:41:00  
+**28.8** · film **01:10:58:06 → 01:11:11:07** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:28:00 → 00:00:41:00  
 Source : Negev Coexistence Forum, 27 juillet 2025, projet Recognized, et IWGIA, The Indigenous World 2026 (35 villages non reconnus, non raccordés aux réseaux publics) ; WAFA, 24 décembre 2025 (244e démolition d'al-Araqib depuis 2010)  
 À l'écran : fiche : Néguev · 2025 · Les villages non reconnus  
 > VOIX : Dans le Néguev, 35 villages bédouins ne sont pas reconnus par l'État : / ils ne sont pas raccordés aux réseaux publics d'eau et d'électricité. / Al-Araqib a été démoli, puis rebâti, au moins 244 fois depuis **2010**.  
 (35 mots, 2.7 par seconde)
 
 
-**28.9** · film **01:09:52:06 → 01:10:01:07** (9.0 s) · **[NOIR]** (à fabriquer)  
+**28.9** · film **01:11:11:07 → 01:11:20:06** (9.0 s) · **[NOIR]** (à fabriquer)  
 > VOIX : Pour beaucoup de ces citoyens, / la loi de 2018 a dit l'inverse. ///  
 (12 mots, 1.3 par seconde)
 
 
 ---
-Durée de la partie : 15 min 56.6 s (film 00:54:04:16 → 01:10:01:07)
+Durée de la partie : 17 min 15.6 s (film 00:54:04:16 → 01:11:20:06)

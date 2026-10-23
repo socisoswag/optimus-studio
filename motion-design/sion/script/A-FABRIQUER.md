@@ -187,3 +187,6 @@ par plan (les autres donnent au mieux une bibliographie en description), cartes 
    6 407 Palestiniens et 308 Israéliens. Donner les chiffres exacts du tableau et la date de consultation. »
 3. « Quel est le bilan final du ministère de la Santé de Gaza pour mai 2021 (10 au 21 mai) ? Le jour du cessez-le-feu,
    il donnait 243 morts dont 66 enfants ; l'ONU (Haut-Commissariat) en compte 261 dont 67 enfants. »
+4. « La liste nominative des morts de Gaza publiée par le ministère de la Santé (reprise par Tech for Palestine,
+   data.techforpalestine.org) : combien de noms dans la mise à jour du 27 juillet 2026, combien d'enfants de moins de
+   18 ans et de moins d'un an ? Le site donne 72 835 noms, 21 637 enfants, 1 072 de moins d'un an. »

@@ -2441,7 +2441,9 @@
         // générique déroulant : rubriques et lignes qui montent sur la carte ; une ligne [texte, précision]
         // affiche la précision en plus discret ; big : grand titre de fin
         const line = (l) => (Array.isArray(l) ? `<p class="rl">${esc(fr(l[0]))}<span>${esc(fr(l[1]))}</span></p>` : `<p class="rl">${esc(fr(l))}</p>`);
-        html = `<div class="scrim"></div><div class="rollbox"><div class="rin">${(s.sections || []).map((sec) => `<div class="rs${sec.big ? ' rbig' : ''}">${sec.h ? `<div class="rh">${esc(sec.h)}</div>` : ''}${sec.big ? `<div class="rt">${esc(sec.big)}</div>` : ''}${(sec.lines || []).map(line).join('')}</div>`).join('')}</div></div>`;
+        // grid : noms sur plusieurs colonnes, chacun [nom en arabe, transcription]
+        const cell = (l) => `<p class="rn"><b lang="ar" dir="rtl">${esc(l[0])}</b><span>${esc(l[1])}</span></p>`;
+        html = `<div class="scrim"></div><div class="rollbox"><div class="rin">${(s.sections || []).map((sec) => `<div class="rs${sec.big ? ' rbig' : ''}${sec.grid ? ' rgrid' : ''}">${sec.h ? `<div class="rh">${esc(sec.h)}</div>` : ''}${sec.big ? `<div class="rt">${esc(sec.big)}</div>` : ''}${sec.grid ? `<div class="rlist" style="--cols:${sec.grid}">${(sec.names || []).map(cell).join('')}</div>` : ''}${(sec.lines || []).map(line).join('')}</div>`).join('')}</div></div>`;
       } else if (s.type === 'credit') {
         html = `<div class="scrim"></div><div class="wrap"><p class="text by">${words(s.by)}</p>
           <div class="big cred"><span class="f">${chars(s.name[0].toUpperCase())}</span><span class="ch">&nbsp;</span><span class="l">${chars(s.name[1].toUpperCase())}</span></div>

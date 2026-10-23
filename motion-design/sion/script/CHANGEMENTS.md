@@ -220,3 +220,13 @@ deviennent 19.20 à 19.22 ; 19.19 devient 19.24 ; 19.20 à 19.31 deviennent 19.2
 
 **Plans renumérotés** : chapitre 11, 11.8 à 11.12 deviennent 11.11 à 11.15. Chapitre 25 : 25.7 à 25.36 deviennent
 25.13 à 25.42 (le 7 octobre passe de 25.16 à 25.22, le bilan de Gaza de 25.21 à 25.27).
+
+## 23 octobre 2026, le soir
+
+**Nouvelle séquence « Leurs noms »** (`les-noms.mp4`, chapitre 25, juste après le chiffre des femmes et des enfants) :
+le titre, puis les 1 072 enfants de moins d'un an morts à Gaza, nom par nom (arabe et transcription), d'après la liste
+du ministère de la Santé ; enfin « 21 637 enfants identifiés par leur nom ». Sans voix après le titre : silence.
+
+**Relief** : 42 pièces sont maintenant posées sur le relief éclairé (SRTM, NASA), avec une lumière qui glisse
+lentement et une brume dans les vallées ; toutes sont à remplacer dans ta timeline (mêmes noms de fichiers).
+**Archives filmées** : restaurées (scintillement lissé, bruit atténué), mêmes noms de fichiers.

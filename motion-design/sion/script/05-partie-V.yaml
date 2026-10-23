@@ -320,6 +320,21 @@ chapitres:
           Sur les six premiers mois de la guerre, / parmi les morts dont l'ONU a vérifié elle-même l'identité, / près
           de sept sur dix sont des femmes et des **enfants**.
       - type: MD
+        fichier: output/les-noms.mp4
+        entree: 0
+        sortie: 7
+        ecran: "titre : Leurs noms"
+        source: "ministère de la Santé de Gaza, liste nominative des morts identifiés, mise à jour du 27 juillet 2026 (72 835 personnes, morts jusqu'au 7 mai 2026 ; 21 637 enfants, dont 1 072 de moins d'un an), données ouvertes de Tech for Palestine"
+        voix: >-
+          Derrière ces chiffres, des noms. / Le ministère de la Santé de Gaza les publie, un par **un**.
+      - type: MD
+        fichier: output/les-noms.mp4
+        entree: 7
+        sortie: 79
+        ecran: "les 1 072 enfants de moins d'un an, nom par nom, puis : 21 637 enfants identifiés par leur nom"
+        source: "ministère de la Santé de Gaza, liste nominative des morts identifiés, mise à jour du 27 juillet 2026 (72 835 personnes, morts jusqu'au 7 mai 2026 ; 21 637 enfants, dont 1 072 de moins d'un an), données ouvertes de Tech for Palestine"
+        note: "sans voix : laisser défiler les noms dans le silence, sans musique forte"
+      - type: MD
         fichier: output/documents-7.mp4
         entree: 146
         sortie: 161

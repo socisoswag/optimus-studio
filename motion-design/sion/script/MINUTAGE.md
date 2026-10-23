@@ -32,25 +32,25 @@
 | Chapitre 23 · Oslo, le mur et les colonies | 00:50:40:22 | 3 min 23.7 s |
 | Ouverture de la partie V | 00:54:04:16 | 0 min 14.0 s |
 | Chapitre 24 · Netanyahou, Lieberman : leurs propres mots | 00:54:18:16 | 1 min 33.6 s |
-| Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre | 00:55:52:06 | 8 min 50.6 s |
-| Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique | 01:04:42:22 | 2 min 01.0 s |
-| Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation | 01:06:43:21 | 1 min 21.8 s |
-| Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens | 01:08:05:17 | 1 min 55.6 s |
-| Ouverture de la partie VI | 01:10:01:07 | 0 min 14.4 s |
-| Chapitre 29 · Les Juifs antisionistes : Neturei Karta, Jewish Voice for Peace | 01:10:15:17 | 1 min 14.6 s |
-| Chapitre 30 · Les religieux contre le sionisme : foi ou nationalisme ? | 01:11:30:06 | 1 min 03.6 s |
-| Chapitre 31 · Les intellectuels français : BHL, Finkielkraut et le débat public | 01:12:33:22 | 3 min 45.6 s |
-| Ouverture de la partie VII | 01:16:19:12 | 0 min 12.8 s |
-| Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique | 01:16:32:07 | 1 min 43.6 s |
-| Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338 | 01:18:15:22 | 3 min 02.4 s |
-| Chapitre 34 · L'effacement culturel : villages détruits, noms effacés | 01:21:18:07 | 1 min 36.7 s |
-| Chapitre 35 · Colonialisme, apartheid : le poids des mots | 01:22:54:24 | 3 min 51.4 s |
-| Chapitre 36 · La fracture en Israël : la démocratie en question | 01:26:46:09 | 0 min 54.8 s |
-| Ouverture de la conclusion | 01:27:41:04 | 0 min 14.0 s |
-| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:27:55:04 | 0 min 28.6 s |
-| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:28:23:19 | 1 min 44.6 s |
-| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:30:08:09 | 1 min 36.2 s |
-| **Total** | | **91 min 44.6 s** |
+| Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre | 00:55:52:06 | 10 min 09.6 s |
+| Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique | 01:06:01:21 | 2 min 01.0 s |
+| Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation | 01:08:02:22 | 1 min 21.8 s |
+| Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens | 01:09:24:16 | 1 min 55.6 s |
+| Ouverture de la partie VI | 01:11:20:06 | 0 min 14.4 s |
+| Chapitre 29 · Les Juifs antisionistes : Neturei Karta, Jewish Voice for Peace | 01:11:34:16 | 1 min 14.6 s |
+| Chapitre 30 · Les religieux contre le sionisme : foi ou nationalisme ? | 01:12:49:07 | 1 min 03.6 s |
+| Chapitre 31 · Les intellectuels français : BHL, Finkielkraut et le débat public | 01:13:52:22 | 3 min 45.6 s |
+| Ouverture de la partie VII | 01:17:38:12 | 0 min 12.8 s |
+| Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique | 01:17:51:07 | 1 min 43.6 s |
+| Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338 | 01:19:34:22 | 3 min 02.4 s |
+| Chapitre 34 · L'effacement culturel : villages détruits, noms effacés | 01:22:37:07 | 1 min 36.7 s |
+| Chapitre 35 · Colonialisme, apartheid : le poids des mots | 01:24:13:24 | 3 min 51.4 s |
+| Chapitre 36 · La fracture en Israël : la démocratie en question | 01:28:05:09 | 0 min 54.8 s |
+| Ouverture de la conclusion | 01:29:00:04 | 0 min 14.0 s |
+| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:29:14:04 | 0 min 28.6 s |
+| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:29:42:19 | 1 min 44.6 s |
+| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:31:27:09 | 1 min 36.2 s |
+| **Total** | | **93 min 03.6 s** |
 
 ## Voix trop longue pour le plan
 
@@ -68,10 +68,11 @@
 - 25.19 : 39 mots pour 16.0 s (2.4 mots/s)
 - 25.26 : 44 mots pour 17.0 s (2.6 mots/s)
 - 25.27 : 33 mots pour 12.0 s (2.8 mots/s)
-- 25.29 : 43 mots pour 15.0 s (2.9 mots/s)
-- 25.30 : 34 mots pour 14.0 s (2.4 mots/s)
-- 25.40 : 34 mots pour 13.0 s (2.6 mots/s)
-- 25.41 : 35 mots pour 14.0 s (2.5 mots/s)
+- 25.29 : 17 mots pour 7.0 s (2.4 mots/s)
+- 25.31 : 43 mots pour 15.0 s (2.9 mots/s)
+- 25.32 : 34 mots pour 14.0 s (2.4 mots/s)
+- 25.42 : 34 mots pour 13.0 s (2.6 mots/s)
+- 25.43 : 35 mots pour 14.0 s (2.5 mots/s)
 - 26.8 : 45 mots pour 14.0 s (3.2 mots/s)
 - 26.9 : 40 mots pour 14.0 s (2.9 mots/s)
 - 27.8 : 41 mots pour 13.0 s (3.2 mots/s)
