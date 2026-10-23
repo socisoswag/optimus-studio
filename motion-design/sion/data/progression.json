@@ -1,15 +1,82 @@
 {
-  "maj": "23 octobre 2026, 01 h 40",
-  "taches": [
-    {"nom": "Plans du film en vidéo", "pct": 99, "poids": 60, "qui": "fait", "detail": "383 plans sur 386 ; les 3 derniers sont en rendu"},
-    {"nom": "Rendu des reconstitutions (21 clips)", "pct": 85, "poids": 2, "qui": "moi", "detail": "images faites, encodage final en cours"},
-    {"nom": "Photos fixes 26.2 et 28.2, fiche 16.6", "pct": 30, "poids": 1, "qui": "moi", "detail": "photos trouvées et préparées, rendu après l'encodage"},
-    {"nom": "Livraison des parties I, II, III et V", "pct": 0, "poids": 1, "qui": "moi", "detail": "dès que les rendus sont contrôlés"},
-    {"nom": "Réponses Perplexity", "pct": 0, "poids": 2, "qui": "toi", "detail": "la phrase de Herzl (plan 6.9), les droits de Paths in Palestine"},
-    {"nom": "Voix off", "pct": 0, "poids": 12, "qui": "toi", "detail": "39 chapitres, environ 3 h au micro ; commence par le chapitre 1"},
-    {"nom": "Nettoyage de la voix et coupe des ratés", "pct": 0, "poids": 4, "qui": "moi", "detail": "après réception de la voix"},
-    {"nom": "Calage des 386 plans sur la voix", "pct": 0, "poids": 8, "qui": "moi", "detail": "et nouveaux rendus des animations dont la durée change"},
-    {"nom": "Étalonnage, mixage, générique", "pct": 0, "poids": 7, "qui": "moi", "detail": "raccords de couleur (reconstitutions plus claires que les archives), voix à -16 LUFS"},
-    {"nom": "Timeline Premiere et film complet", "pct": 0, "poids": 3, "qui": "moi", "detail": "XML à importer, film entier en MP4"}
-  ]
+ "maj": "23 octobre 2026, 01 h 50",
+ "taches": [
+  {
+   "nom": "Plans du film en vidéo",
+   "pct": 99,
+   "poids": 60,
+   "qui": "fait",
+   "detail": "383 plans sur 386 ; les 3 derniers sont en rendu"
+  },
+  {
+   "nom": "Rendu des reconstitutions (21 clips)",
+   "pct": 85,
+   "poids": 2,
+   "qui": "moi",
+   "detail": "images faites, encodage final en cours"
+  },
+  {
+   "nom": "Photos fixes 26.2 et 28.2, fiche 16.6",
+   "pct": 30,
+   "poids": 1,
+   "qui": "moi",
+   "detail": "photos trouvées et préparées, rendu après l'encodage"
+  },
+  {
+   "nom": "Livraison des parties I, II, III et V",
+   "pct": 0,
+   "poids": 1,
+   "qui": "moi",
+   "detail": "dès que les rendus sont contrôlés"
+  },
+  {
+   "nom": "Réponses Perplexity",
+   "pct": 0,
+   "poids": 2,
+   "qui": "toi",
+   "detail": "la phrase de Herzl (plan 6.9), les droits de Paths in Palestine"
+  },
+  {
+   "nom": "Voix off",
+   "pct": 0,
+   "poids": 12,
+   "qui": "toi",
+   "detail": "39 chapitres, environ 3 h au micro ; commence par le chapitre 1"
+  },
+  {
+   "nom": "Nettoyage de la voix (si tu veux)",
+   "pct": 0,
+   "poids": 4,
+   "qui": "moi",
+   "detail": "souffle, pièce, niveau, sifflantes ; sans IA"
+  },
+  {
+   "nom": "Raccords de couleur de tous les plans",
+   "pct": 0,
+   "poids": 3,
+   "qui": "moi",
+   "detail": "chaque plan comparé à ses voisins du script ; les reconstitutions trop claires corrigées dans les fichiers (même nom)"
+  },
+  {
+   "nom": "Générique de fin avec les nouveaux crédits",
+   "pct": 0,
+   "poids": 1,
+   "qui": "moi",
+   "detail": "photos de la Haganah, du Goush Emounim et des Black Panthers"
+  },
+  {
+   "nom": "Montage dans Premiere",
+   "pct": 0,
+   "poids": 15,
+   "qui": "toi",
+   "detail": "poser les plans sur ta voix ; les plans sont déjà étalonnés"
+  },
+  {
+   "nom": "Mixage et export",
+   "pct": 0,
+   "poids": 4,
+   "qui": "toi",
+   "detail": "voix à -16 LUFS, bruitages dessous, film fini à -14 LUFS"
+  }
+ ]
 }
