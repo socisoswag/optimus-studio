@@ -55,4 +55,14 @@ DOUBLES VÉRIFICATIONS (si possible)
     rejeté, mandat de négocier ; abandon du partage par Londres en novembre 1938 (rapport Woodhead, Cmd. 5893).
     B'Tselem, « Parched » (2 mai 2023) : 82,4 et 247 litres par jour, minimum de 100 litres recommandé par l'OMS ?
     Amnesty, « Troubled Waters » (octobre 2009) : Israël utilise plus de 80 % de l'eau de la nappe de la montagne ?
+
+LA VIE SOUS OCCUPATION (séquence possible)
+14. Base de données d'OCHA sur les démolitions en Cisjordanie, Jérusalem-Est comprise : combien de structures
+    palestiniennes démolies ou saisies par les autorités israéliennes de 2009 à 2025, et combien de personnes
+    déplacées ? Donner le total et le chiffre de la dernière année complète.
+15. Zone C de la Cisjordanie : quelle part des demandes de permis de construire palestiniennes l'administration
+    civile israélienne accepte-t-elle (chiffres officiels obtenus par Bimkom ou La Paix maintenant, par exemple
+    2016-2020) ?
+16. Dernier relevé d'OCHA des obstacles à la circulation en Cisjordanie (postes de contrôle, barrières, monticules
+    de terre) : combien, à quelle date ?
 ```
