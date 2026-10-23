@@ -93,9 +93,9 @@ Restent ouverts (sans bloquer la voix) : le bulletin original du ministère de l
 en 2026 ; la capture datée du tableau HaMoked ; la date exacte de la photo FL45816230 sur la notice de la Bibliothèque
 nationale d'Israël ; aucune photo libre validée du Jour de la Terre 1976 ni des maisons de Jaffa en 1949 (on s'en passe).
 
-## 7. Nouveaux sujets du 23 octobre au soir : à vérifier sur Perplexity
+## 7. Nouveaux sujets du 23 octobre au soir : réponses reçues et intégrées (dossier Perplexity, 16 points)
 
-Fiches faites, plans marqués « verifier » dans le script : ne pas les enregistrer avant la réponse. Copier tel quel :
+Corrections faites : Meyer Habib (sa phrase du 23 octobre 2023 à l'Assemblée ; « mon meilleur ami » non vérifié, retiré) ; ELNET (101 des 666 voyages, Mediapart) ; Albanese (environ 1 000 entités, des dizaines nommées) ; la base de l'ONU (112 puis 97 entreprises, dont Alstom et Egis) ; l'AIPAC (61 millions de dollars en 2023-2024) ; les églises (18 et 3 morts) ; les villages bédouins (non raccordés aux réseaux publics). Pegasus n'est pas ajouté : l'espionnage relevé vient du Maroc, le lien avec Israël tient à la licence d'exportation. Questions posées :
 
 > Pour un documentaire, avec pour chaque point le texte exact dans la langue d'origine, la date, la source primaire et
 > le lien. 1) The New York Times, 30 novembre 2023, le document « Jericho Wall » : auteurs de l'article, nombre de pages,
@@ -125,9 +125,9 @@ Fiches faites, plans marqués « verifier » dans le script : ne pas les enregis
 > d'exportation du ministère israélien de la Défense, et le numéro d'Emmanuel Macron dans la liste révélée par Forbidden
 > Stories et Le Monde en juillet 2021 (quel pays client est soupçonné, qu'a confirmé l'enquête).
 
-## 8. Relecture complète du 23 octobre (la terre, 1948, Gaza, le génocide) : à vérifier sur Perplexity
+## 8. Relecture complète du 23 octobre (la terre, 1948, Gaza, le génocide) : réponses reçues et intégrées (17 points)
 
-Fiches faites (`timelines/documents-7.js`, `timelines/genocide-textes.js`), plans marqués « verifier ». Copier tel quel :
+Corrections faites : le code de 1858 (des paysans évitent l'enregistrement, des notables accumulent les titres) ; Petah Tikva (29 mars 1886, « l'un des premiers ») ; le Fonds national juif (mémorandum de 1907) ; les Sursock (1 746 familles, chiffres de 1930 discutés) ; Hope Simpson (29,4 % dans 104 villages) ; Herzog (12 octobre) ; le blocus (78 jours) ; E1 (3 401 logements) ; al-Omari (gravement endommagée) ; les phrases exactes d'Amnesty, de B'Tselem, de l'IAGS et de Navi Pillay. Questions posées :
 
 > Pour un documentaire, avec pour chaque point le texte exact dans la langue d'origine, la date, la source primaire
 > ou l'historien de référence, et le lien. 1) Edmond de Rothschild : à partir de quelle date il finance Rishon LeZion,

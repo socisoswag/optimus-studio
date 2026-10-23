@@ -167,3 +167,10 @@ Les plans qui suivent un ajout changent de numéro (même image, nouveau nom de 
 **Même nom, nouvelle version** : toutes les fiches `documents-6` (chiffres exacts, rythme : chaque ligne reste à
 l'écran au moins 2,6 s et la note au moins 3,4 s), `gaza` (bilan au 22 octobre 2026, nouvelle fiche avant la fin),
 le générique de fin (archives filmées, nouveaux crédits photo).
+
+**Vérifications des séries 2 et 3 intégrées (même nuit)** : plus aucun plan « à vérifier ». Corrections à l'écran et
+dans la voix : Meyer Habib (31.13, sa phrase à l'Assemblée du 23 octobre 2023), ELNET (31.14), Albanese (33.14), les
+entreprises des colonies (33.13), l'AIPAC (33.12), les chrétiens de Palestine (38.06), le Néguev (28.08), le code de
+1858 (6.11), Petah Tikva (6.12), le Fonds national juif (6.13), les Sursock (8.11), Hope Simpson (8.13), les paroles
+de 2023 (25.20), le blocus de 2025 (25.33), E1 (26.09), le patrimoine de Gaza (34.10), la séquence génocide
+(35.09 à 35.18). Tout le scénario peut s'enregistrer.

@@ -232,29 +232,26 @@ chapitres:
         entree: 56
         sortie: 70
         ecran: "fiche : Plaine de Jezréel · années 1920 · La grande vente"
-        source: "ventes de la famille Sursock dans la plaine de Jezréel (Marj Ibn Amer), années 1920 ; Kenneth W. Stein, 1984 ; Rashid Khalidi, The Hundred Years' War on Palestine, 2020"
-        verifier: "les surfaces vendues par les Sursock, le nombre de villages et de métayers expulsés (question Perplexity, A-FABRIQUER.md section 8)"
+        source: "ventes Sursock, plaine de Jezréel, années 1920 ; chiffres présentés autour de la commission Shaw, 1930 (environ 240 000 dounams, 1 746 familles), discutés par les historiens"
         voix: >-
-          Sous le mandat, les ventes changent d'échelle. / Dans les années 1920, la famille Sursock vend une grande partie de la plaine de Jezréel. / Des milliers de métayers arabes, qui la cultivaient depuis des générations, sont **expulsés**.
+          Sous le mandat, les ventes changent d'échelle. / Dans les années 1920, la famille Sursock vend une grande partie de la plaine de Jezréel. / Selon les chiffres cités en 1930, plus de mille sept cents familles de métayers doivent **partir**.
       - type: PHOTO
         fichier: output/photos-fixes/5-34-tracteur-jezreel.mp4
         photo: "Bibliothèque du Congrès, collection Matson, domaine public (no known restrictions), LC-DIG-matpc-15225, « The Keren Hayesod. Agricultural colonies on Plain of Esdraelon \"The Emek.\" Tractor disc plowing », vers 1920-1933"
         entree: 0
         sortie: 12
         ecran: "déjà dans le plan : Années 1920 · Plaine de Jezréel · Un tracteur laboure une terre achetée pour les colonies juives · Photo d'archive"
-        source: "paysans sans terre à Haïfa et prédication d'Izz ad-Din al-Qassam (années 1920-1930)"
-        verifier: "le lien entre paysans chassés, bidonvilles de Haïfa et al-Qassam (question Perplexity, A-FABRIQUER.md section 8)"
+        source: "migrations rurales vers Haïfa et recrutement d'Izz ad-Din al-Qassam dans les milieux populaires (PalQuest ; Mark Sanagan, Lightning through the Clouds, 2020)"
         voix: >-
-          Sur ces terres naissent des colonies juives. / Beaucoup de paysans chassés s'entassent dans les bidonvilles de Haïfa. // C'est là que prêchera Izz ad-Din al-**Qassam**.
+          Sur ces terres naissent des colonies juives. / Des paysans sans terre partent vers Haïfa et ses quartiers pauvres. // C'est là que recrutera Izz ad-Din al-**Qassam**.
       - type: MD
         fichier: output/documents-7.mp4
         entree: 70
         sortie: 85
         ecran: "fiche : Londres · octobre 1930 · Le rapport Hope Simpson"
-        source: "Sir John Hope Simpson, Palestine: Report on Immigration, Land Settlement and Development, octobre 1930 ; livre blanc Passfield, octobre 1930 ; lettre de Ramsay MacDonald à Chaim Weizmann, 13 février 1931"
-        verifier: "le pourcentage de familles sans terre du rapport Hope Simpson et la lettre MacDonald (question Perplexity, A-FABRIQUER.md section 8)"
+        source: "Sir John Hope Simpson, rapport du 22 août 1930, publié en octobre (Cmd. 3686) : 29,4 % des familles de 104 villages sans terre ; lettre de Ramsay MacDonald à Chaim Weizmann, 13 février 1931"
         voix: >-
-          En 1930, un enquêteur britannique, John Hope Simpson, conclut : / près de trois familles arabes sur dix, dans les villages, n'ont plus de terre. / Londres promet de freiner les achats, / puis recule l'année suivante, sous la pression du mouvement **sioniste**.
+          En 1930, un enquêteur britannique, John Hope Simpson, étudie 104 villages : / 29,4 % des familles n'y possèdent pas de terre. / Londres promet de freiner les achats, / puis recule l'année suivante, sous la pression du mouvement **sioniste**.
       - type: MD
         fichier: output/portraits-1.mp4
         entree: 166

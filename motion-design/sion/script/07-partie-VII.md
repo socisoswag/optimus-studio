@@ -131,25 +131,25 @@ Source : résolution 2334 du Conseil de sécurité, 23 décembre 2016
 
 
 **33.12** · film **01:17:12:20 → 01:17:30:20** (18.0 s) · **[MD]** `output/documents-6.mp4` · source 00:06:13:00 → 00:06:31:00  
-Source : AIPAC et United Democracy Project, dépenses aux primaires de 2024 (FEC) ; Christians United for Israel ; protocole d'accord de 2016 (aide militaire dépensée aux États-Unis)  
+Source : United Democracy Project (comité de l'AIPAC), cycle 2023-2024 : 61 373 653 dollars de dépenses (FEC) ; primaire Bowman-Latimer : 14 593 635 dollars (OpenSecrets) ; Christians United for Israel, plus de 10 millions de membres revendiqués (22 décembre 2020)  
 À l'écran : fiche : États-Unis · aujourd'hui · Les soutiens d'Israël  
-> VOIX : Ce soutien a ses réseaux. / L'AIPAC, par son comité politique, dépense des dizaines de millions de dollars aux primaires de 2024 contre des candidats critiques d'Israël. / Les évangéliques sionistes revendiquent des millions de fidèles. / Et l'aide militaire profite d'abord aux industriels **américains**. // Ces groupes ne parlent pas au nom des Juifs.  
-(51 mots, 2.8 par seconde)  
+> VOIX : En 2023 et 2024, le comité politique de l'AIPAC dépense plus de soixante millions de dollars, / dont près de quinze dans la seule primaire de Jamaal Bowman, un élu critique d'Israël. / Les évangéliques sionistes revendiquent dix millions de membres. / Et l'aide militaire profite d'abord aux industriels **américains**. // Ces groupes ne parlent pas au nom des Juifs.  
+(56 mots, 3.1 par seconde)  
 Note : jamais « lobby juif » : beaucoup de Juifs américains s'opposent à l'AIPAC (chapitre 29)
 
 
 **33.13** · film **01:17:30:20 → 01:17:42:20** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:06:31:00 → 00:06:43:00  
-Source : Haut-Commissariat des Nations unies aux droits de l'homme, base de données des entreprises liées aux colonies, 12 février 2020 (A/HRC/43/71), mise à jour du 30 juin 2023  
+Source : HCDH, base de données, A/HRC/43/71, 12 février 2020 (112 entreprises) ; mise à jour du 30 juin 2023 (97 entreprises, dont Alstom et Egis comme sociétés mères)  
 À l'écran : fiche : ONU · 12 février 2020 · Les entreprises des colonies  
-> VOIX : Et l'argent ? / En 2020, l'ONU publie la liste des entreprises qui travaillent dans les colonies, / dont des groupes connus dans le monde **entier**.  
-(23 mots, 1.9 par seconde)
+> VOIX : Et l'argent ? / En 2020, l'ONU publie la liste des entreprises qui travaillent dans les colonies : 112 sociétés, dont Airbnb ou Booking. / En 2023, 97 y restent, dont deux groupes français, Alstom et **Egis**.  
+(33 mots, 2.8 par seconde)
 
 
 **33.14** · film **01:17:42:20 → 01:17:56:20** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:09:40:00 → 00:09:54:00  
-Source : Francesca Albanese, rapporteuse spéciale, rapport A/HRC/59/23, « De l'économie de l'occupation à l'économie du génocide », juillet 2025 ; sanctions du département d'État, 9 juillet 2025  
+Source : Francesca Albanese, rapport A/HRC/59/23, « De l'économie de l'occupation à l'économie du génocide », version du 30 juin 2025 (environ 1 000 entités recensées, plus de 45 nommées) ; sanctions américaines annoncées le 9 juillet 2025  
 À l'écran : fiche : ONU · juillet 2025 · L'économie de l'occupation  
-> VOIX : En juillet 2025, la rapporteuse de l'ONU Francesca Albanese va plus loin : / elle nomme 48 entreprises qui profitent de l'occupation et de la guerre, / des marchands d'armes aux géants de la tech. / Quelques jours plus tard, Washington la **sanctionne**.  
-(39 mots, 2.8 par seconde)
+> VOIX : En juillet 2025, la rapporteuse de l'ONU Francesca Albanese va plus loin : / elle recense un millier d'entreprises, et en nomme des dizaines qui profitent de l'occupation et de la guerre, / des marchands d'armes aux géants de la tech. / Le 9 juillet, Washington la **sanctionne**.  
+(44 mots, 3.1 par seconde)
 
 
 ## Chapitre 34 · L'effacement culturel : villages détruits, noms effacés
@@ -203,10 +203,10 @@ Film 01:17:56:20 → 01:19:33:12 · durée 1 min 36.7 s
 
 
 **34.10** · film **01:19:18:12 → 01:19:33:12** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:03:22:00 → 00:03:37:00  
-Source : Grande Mosquée al-Omari, 8 décembre 2023 ; universités de Gaza ; Archives centrales de Gaza ; experts de l'ONU, avril 2024 (« scolasticide ») ; UNESCO  
+Source : procédures spéciales de l'ONU (Grande Mosquée al-Omari, 8 décembre 2023) ; experts de l'ONU, 18 avril 2024 (« scolasticide ») ; rapport culturel préliminaire hébergé par l'UNESCO, mars 2024  
 À l'écran : fiche : Gaza · depuis octobre 2023 · Effacer aussi la mémoire  
-> VOIX : À Gaza aussi, on efface. / En décembre 2023, la Grande Mosquée al-Omari, la plus ancienne de la ville, est détruite. / Les universités sont toutes touchées, / et les Archives centrales brûlent, avec plus d'un siècle de **documents**.  
-(36 mots, 2.4 par seconde)
+> VOIX : À Gaza aussi, on efface. / En décembre 2023, la Grande Mosquée al-Omari, la plus ancienne de la ville, est gravement endommagée. / Les universités sont frappées, plusieurs détruites, / et les Archives centrales sont **perdues**.  
+(33 mots, 2.2 par seconde)
 
 
 ## Chapitre 35 · Colonialisme, apartheid : le poids des mots
@@ -269,8 +269,8 @@ Source : Convention pour la prévention et la répression du crime de génocide,
 
 **35.11** · film **01:21:12:02 → 01:21:23:14** (11.5 s) · **[MD]** `output/genocide-textes.mp4` · source 00:00:20:05 → 00:00:31:17  
 Source : Amnesty International, rapport du 5 décembre 2024 ; déclaration d'Agnès Callamard  
-> VOIX : En décembre 2024, Amnesty International conclut : / Israël commet un génocide à **Gaza**.  
-(12 mots, 1.0 par seconde)
+> VOIX : En décembre 2024, Amnesty International conclut : / Israël a commis, et continue de commettre, un génocide à **Gaza**.  
+(17 mots, 1.5 par seconde)
 
 
 **35.12** · film **01:21:23:14 → 01:21:34:02** (10.5 s) · **[MD]** `output/genocide-textes.mp4` · source 00:00:31:17 → 00:00:42:05  
@@ -286,9 +286,9 @@ Source : B'Tselem et Médecins pour les droits humains-Israël, « Notre génoci
 
 
 **35.14** · film **01:21:46:02 → 01:21:57:02** (11.0 s) · **[MD]** `output/genocide-textes.mp4` · source 00:00:54:05 → 00:01:05:05  
-Source : Association internationale des chercheurs sur le génocide (IAGS), résolution du 1er septembre 2025  
-> VOIX : En septembre, l'association internationale des chercheurs sur le génocide vote : / ce qui se passe à Gaza répond à la définition **juridique**.  
-(21 mots, 1.9 par seconde)
+Source : Association internationale des chercheurs sur le génocide (IAGS), résolution adoptée le 31 août 2025 et publiée le 1er septembre, 86 % des votants (Reuters)  
+> VOIX : En septembre, l'association internationale des chercheurs sur le génocide adopte une résolution, à 86 % des votants : / ce qui se passe à Gaza répond à la définition **juridique**.  
+(27 mots, 2.5 par seconde)
 
 
 **35.15** · film **01:21:57:02 → 01:22:08:02** (11.0 s) · **[MD]** `output/genocide-textes.mp4` · source 00:01:05:05 → 00:01:16:05  
@@ -298,9 +298,9 @@ Source : Omer Bartov, « I'm a Genocide Scholar. I Know It When I See It. », Th
 
 
 **35.16** · film **01:22:08:02 → 01:22:21:02** (13.0 s) · **[MD]** `output/genocide-textes.mp4` · source 00:01:16:05 → 00:01:29:05  
-Source : commission internationale indépendante d'enquête de l'ONU, rapport du 16 septembre 2025 (présidente : Navi Pillay)  
-> VOIX : Puis la commission d'enquête de l'ONU, présidée par une ancienne juge du tribunal pour le Rwanda : / Israël « a commis un **génocide** ».  
-(21 mots, 1.6 par seconde)
+Source : commission internationale indépendante d'enquête de l'ONU, 16 septembre 2025 (« Israel has committed genocide in the Gaza Strip ») ; déclaration de Navi Pillay  
+> VOIX : Puis la commission d'enquête de l'ONU, présidée par une ancienne juge du tribunal pour le Rwanda : / « Il est clair qu'il existe une intention de détruire les Palestiniens à **Gaza** ».  
+(29 mots, 2.2 par seconde)
 
 
 **35.17** · film **01:22:21:02 → 01:22:27:22** (6.8 s) · **[MD]** `output/genocide-textes.mp4` · source 00:01:29:05 → 00:01:36:00  
@@ -323,7 +323,7 @@ Note : chiffre HaMoked lu dans l'index du site : le recontrôler sur le tableau 
 
 
 **35.20** · film **01:22:53:22 → 01:23:08:22** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:08:02:00 → 00:08:17:00  
-Source : B'Tselem, Welcome to Hell, août 2024 (55 témoignages d'anciens détenus) ; Sde Teiman, arrestation de soldats et intrusion de manifestants, 29 juillet 2024  
+Source : B'Tselem, Welcome to Hell, 5 août 2024 (55 témoignages d'anciens détenus) ; Sde Teiman, 29 juillet 2024 : neuf soldats retenus pour interrogatoire, intrusion de manifestants et de députés d'extrême droite (AP ; Human Rights Watch, 31 juillet 2024)  
 À l'écran : fiche : Israël · août 2024 · « Bienvenue en enfer »  
 > VOIX : Et dans les prisons ? / En 2024, l'ONG israélienne B'Tselem recueille 55 témoignages d'anciens détenus. / Son rapport s'intitule « Bienvenue en enfer ». / Au camp de Sde Teiman, des soldats sont soupçonnés de sévices sexuels sur un **détenu**.  
 (35 mots, 2.3 par seconde)

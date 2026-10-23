@@ -157,29 +157,26 @@ chapitres:
         entree: 373
         sortie: 391
         ecran: "fiche : États-Unis · aujourd'hui · Les soutiens d'Israël"
-        source: "AIPAC et United Democracy Project, dépenses aux primaires de 2024 (FEC) ; Christians United for Israel ; protocole d'accord de 2016 (aide militaire dépensée aux États-Unis)"
-        verifier: "les dépenses de l'AIPAC et de l'UDP aux primaires de 2024 et le nombre de membres revendiqué par CUFI (question Perplexity, A-FABRIQUER.md)"
+        source: "United Democracy Project (comité de l'AIPAC), cycle 2023-2024 : 61 373 653 dollars de dépenses (FEC) ; primaire Bowman-Latimer : 14 593 635 dollars (OpenSecrets) ; Christians United for Israel, plus de 10 millions de membres revendiqués (22 décembre 2020)"
         voix: >-
-          Ce soutien a ses réseaux. / L'AIPAC, par son comité politique, dépense des dizaines de millions de dollars aux primaires de 2024 contre des candidats critiques d'Israël. / Les évangéliques sionistes revendiquent des millions de fidèles. / Et l'aide militaire profite d'abord aux industriels **américains**. // Ces groupes ne parlent pas au nom des Juifs.
+          En 2023 et 2024, le comité politique de l'AIPAC dépense plus de soixante millions de dollars, / dont près de quinze dans la seule primaire de Jamaal Bowman, un élu critique d'Israël. / Les évangéliques sionistes revendiquent dix millions de membres. / Et l'aide militaire profite d'abord aux industriels **américains**. // Ces groupes ne parlent pas au nom des Juifs.
         note: "jamais « lobby juif » : beaucoup de Juifs américains s'opposent à l'AIPAC (chapitre 29)"
       - type: MD
         fichier: output/documents-6.mp4
         entree: 391
         sortie: 403
         ecran: "fiche : ONU · 12 février 2020 · Les entreprises des colonies"
-        source: "Haut-Commissariat des Nations unies aux droits de l'homme, base de données des entreprises liées aux colonies, 12 février 2020 (A/HRC/43/71), mise à jour du 30 juin 2023"
-        verifier: "le nombre d'entreprises de la liste en 2020 et en 2023, et les noms connus (question Perplexity, A-FABRIQUER.md)"
+        source: "HCDH, base de données, A/HRC/43/71, 12 février 2020 (112 entreprises) ; mise à jour du 30 juin 2023 (97 entreprises, dont Alstom et Egis comme sociétés mères)"
         voix: >-
-          Et l'argent ? / En 2020, l'ONU publie la liste des entreprises qui travaillent dans les colonies, / dont des groupes connus dans le monde **entier**.
+          Et l'argent ? / En 2020, l'ONU publie la liste des entreprises qui travaillent dans les colonies : 112 sociétés, dont Airbnb ou Booking. / En 2023, 97 y restent, dont deux groupes français, Alstom et **Egis**.
       - type: MD
         fichier: output/documents-6.mp4
         entree: 580
         sortie: 594
         ecran: "fiche : ONU · juillet 2025 · L'économie de l'occupation"
-        source: "Francesca Albanese, rapporteuse spéciale, rapport A/HRC/59/23, « De l'économie de l'occupation à l'économie du génocide », juillet 2025 ; sanctions du département d'État, 9 juillet 2025"
-        verifier: "le nombre d'entreprises nommées, les noms cités et la date des sanctions (question Perplexity, A-FABRIQUER.md)"
+        source: "Francesca Albanese, rapport A/HRC/59/23, « De l'économie de l'occupation à l'économie du génocide », version du 30 juin 2025 (environ 1 000 entités recensées, plus de 45 nommées) ; sanctions américaines annoncées le 9 juillet 2025"
         voix: >-
-          En juillet 2025, la rapporteuse de l'ONU Francesca Albanese va plus loin : / elle nomme 48 entreprises qui profitent de l'occupation et de la guerre, / des marchands d'armes aux géants de la tech. / Quelques jours plus tard, Washington la **sanctionne**.
+          En juillet 2025, la rapporteuse de l'ONU Francesca Albanese va plus loin : / elle recense un millier d'entreprises, et en nomme des dizaines qui profitent de l'occupation et de la guerre, / des marchands d'armes aux géants de la tech. / Le 9 juillet, Washington la **sanctionne**.
 
   - num: "34"
     titre: "Chapitre 34 · L'effacement culturel : villages détruits, noms effacés"
@@ -245,10 +242,9 @@ chapitres:
         entree: 202
         sortie: 217
         ecran: "fiche : Gaza · depuis octobre 2023 · Effacer aussi la mémoire"
-        source: "Grande Mosquée al-Omari, 8 décembre 2023 ; universités de Gaza ; Archives centrales de Gaza ; experts de l'ONU, avril 2024 (« scolasticide ») ; UNESCO"
-        verifier: "les destructions de la mosquée al-Omari, des universités et des Archives centrales, avec dates et sources (question Perplexity, A-FABRIQUER.md section 8)"
+        source: "procédures spéciales de l'ONU (Grande Mosquée al-Omari, 8 décembre 2023) ; experts de l'ONU, 18 avril 2024 (« scolasticide ») ; rapport culturel préliminaire hébergé par l'UNESCO, mars 2024"
         voix: >-
-          À Gaza aussi, on efface. / En décembre 2023, la Grande Mosquée al-Omari, la plus ancienne de la ville, est détruite. / Les universités sont toutes touchées, / et les Archives centrales brûlent, avec plus d'un siècle de **documents**.
+          À Gaza aussi, on efface. / En décembre 2023, la Grande Mosquée al-Omari, la plus ancienne de la ville, est gravement endommagée. / Les universités sont frappées, plusieurs détruites, / et les Archives centrales sont **perdues**.
 
   - num: "35"
     titre: "Chapitre 35 · Colonialisme, apartheid : le poids des mots"
@@ -322,15 +318,13 @@ chapitres:
         entree: 20.2
         sortie: 31.7
         source: "Amnesty International, rapport du 5 décembre 2024 ; déclaration d'Agnès Callamard"
-        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
         voix: >-
-          En décembre 2024, Amnesty International conclut : / Israël commet un génocide à **Gaza**.
+          En décembre 2024, Amnesty International conclut : / Israël a commis, et continue de commettre, un génocide à **Gaza**.
       - type: MD
         fichier: output/genocide-textes.mp4
         entree: 31.7
         sortie: 42.2
         source: "Human Rights Watch, « Extermination et actes de génocide », 19 décembre 2024"
-        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
         voix: >-
           Human Rights Watch parle d'« actes de génocide » : / Israël prive Gaza d'**eau**.
       - type: MD
@@ -338,33 +332,29 @@ chapitres:
         entree: 42.2
         sortie: 54.2
         source: "B'Tselem et Médecins pour les droits humains-Israël, « Notre génocide », 28 juillet 2025"
-        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
         voix: >-
           En juillet 2025, deux ONG israéliennes, B'Tselem et Médecins pour les droits humains, publient leur rapport. / Son titre : « Notre **génocide** ».
       - type: MD
         fichier: output/genocide-textes.mp4
         entree: 54.2
         sortie: 65.2
-        source: "Association internationale des chercheurs sur le génocide (IAGS), résolution du 1er septembre 2025"
-        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
+        source: "Association internationale des chercheurs sur le génocide (IAGS), résolution adoptée le 31 août 2025 et publiée le 1er septembre, 86 % des votants (Reuters)"
         voix: >-
-          En septembre, l'association internationale des chercheurs sur le génocide vote : / ce qui se passe à Gaza répond à la définition **juridique**.
+          En septembre, l'association internationale des chercheurs sur le génocide adopte une résolution, à 86 % des votants : / ce qui se passe à Gaza répond à la définition **juridique**.
       - type: MD
         fichier: output/genocide-textes.mp4
         entree: 65.2
         sortie: 76.2
         source: "Omer Bartov, « I'm a Genocide Scholar. I Know It When I See It. », The New York Times, 15 juillet 2025"
-        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
         voix: >-
           Omer Bartov, historien israélien de la Shoah, écrit dans le New York Times : / « Israël commet un génocide contre le peuple **palestinien** ».
       - type: MD
         fichier: output/genocide-textes.mp4
         entree: 76.2
         sortie: 89.2
-        source: "commission internationale indépendante d'enquête de l'ONU, rapport du 16 septembre 2025 (présidente : Navi Pillay)"
-        verifier: "le texte exact, dans sa langue d'origine (question Perplexity, A-FABRIQUER.md section 8)"
+        source: "commission internationale indépendante d'enquête de l'ONU, 16 septembre 2025 (« Israel has committed genocide in the Gaza Strip ») ; déclaration de Navi Pillay"
         voix: >-
-          Puis la commission d'enquête de l'ONU, présidée par une ancienne juge du tribunal pour le Rwanda : / Israël « a commis un **génocide** ».
+          Puis la commission d'enquête de l'ONU, présidée par une ancienne juge du tribunal pour le Rwanda : / « Il est clair qu'il existe une intention de détruire les Palestiniens à **Gaza** ».
       - type: MD
         fichier: output/genocide-textes.mp4
         entree: 89.2
@@ -389,8 +379,7 @@ chapitres:
         entree: 482
         sortie: 497
         ecran: "fiche : Israël · août 2024 · « Bienvenue en enfer »"
-        source: "B'Tselem, Welcome to Hell, août 2024 (55 témoignages d'anciens détenus) ; Sde Teiman, arrestation de soldats et intrusion de manifestants, 29 juillet 2024"
-        verifier: "le rapport de B'Tselem (date, nombre de témoignages) et les faits de Sde Teiman du 29 juillet 2024 (question Perplexity, A-FABRIQUER.md)"
+        source: "B'Tselem, Welcome to Hell, 5 août 2024 (55 témoignages d'anciens détenus) ; Sde Teiman, 29 juillet 2024 : neuf soldats retenus pour interrogatoire, intrusion de manifestants et de députés d'extrême droite (AP ; Human Rights Watch, 31 juillet 2024)"
         voix: >-
           Et dans les prisons ? / En 2024, l'ONG israélienne B'Tselem recueille 55 témoignages d'anciens détenus. / Son rapport s'intitule « Bienvenue en enfer ». / Au camp de Sde Teiman, des soldats sont soupçonnés de sévices sexuels sur un **détenu**.
       - type: RÉEL

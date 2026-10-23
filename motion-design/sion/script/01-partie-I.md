@@ -392,24 +392,24 @@ Note : al-Khalidi n'a jamais évoqué une expulsion : c'est Herzl qui répond à
 
 
 **6.11** · film **00:10:48:14 → 00:11:03:14** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:15:00 → 00:00:30:00  
-Source : code foncier ottoman du 21 avril 1858 et loi sur l'enregistrement des terres (tapu) ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984  
+Source : code foncier ottoman de 1858 (Tanzimat) ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984  
 À l'écran : fiche : Empire ottoman · 1858 · Le code foncier  
-> VOIX : Pour comprendre ces ventes, il faut remonter à 1858. / L'Empire ottoman impose d'enregistrer les terres. / Beaucoup de paysans les inscrivent au nom de notables, pour échapper à l'impôt et à l'armée. / Des familles de Beyrouth deviennent propriétaires de villages **entiers**.  
-(40 mots, 2.7 par seconde)
+> VOIX : Pour comprendre ces ventes, il faut remonter à 1858. / L'Empire ottoman impose d'enregistrer les terres. / Pour fuir l'impôt et l'armée, des paysans évitent de le faire ; des notables accumulent les titres. / Celui qui possède la terre n'est plus toujours celui qui la **cultive**.  
+(43 mots, 2.9 par seconde)
 
 
 **6.12** · film **00:11:03:14 → 00:11:16:14** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:30:00 → 00:00:43:00  
-Source : Petah Tikva et le village de Yahudiya, mars 1886  
+Source : Liora R. Halperin, « Petah Tikva, 1886: Gender, Anonymity, and the Making of Zionist Memory », Jewish Social Studies, vol. 23, n° 1, 2017 (attaque du 29 mars 1886)  
 À l'écran : fiche : Petah Tikva · 1886 · Le premier heurt  
-> VOIX : Les acheteurs traitent avec ces propriétaires, pas avec les paysans. / En 1886, à Petah Tikva, les villageois de Yahudiya, privés de leurs pâturages, attaquent la colonie. / C'est le premier affrontement pour la **terre**.  
-(33 mots, 2.5 par seconde)
+> VOIX : Les acheteurs traitent avec les propriétaires, pas avec ceux qui cultivent. / Le 29 mars 1886, des paysans du village voisin attaquent Petah Tikva, au terme d'un conflit sur la terre. / C'est l'un des premiers affrontements de ce **genre**.  
+(38 mots, 2.9 par seconde)
 
 
 **6.13** · film **00:11:16:14 → 00:11:29:14** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:43:00 → 00:00:56:00  
-Source : Fonds national juif (Keren Kayemeth LeIsrael), 5e congrès sioniste, Bâle, 29 décembre 1901 ; statuts : terres inaliénables, louées  
+Source : Fonds national juif, 5e congrès sioniste, Bâle, décembre 1901 ; mémorandum de 1907 (« for the purpose of settling Jews on such lands »)  
 À l'écran : fiche : Bâle · décembre 1901 · Le Fonds national juif  
-> VOIX : En 1901, à Bâle, le mouvement sioniste crée le Fonds national juif, pour acheter la terre. / Une règle : ses terres ne se revendent jamais, / et elles sont louées à des **Juifs**.  
-(31 mots, 2.4 par seconde)
+> VOIX : En 1901, à Bâle, le mouvement sioniste crée le Fonds national juif. / Ses statuts de 1907 le disent : acheter la terre « afin d'y établir des Juifs ». / Et ne jamais la revendre : seulement la **louer**.  
+(34 mots, 2.6 par seconde)
 
 
 **6.14** · film **00:11:29:14 → 00:11:41:07** (11.7 s) · **[RÉEL]** `output/plans-reels/figuier-de-barbarie-sabr.mp4` · source 00:00:00:00 → 00:00:11:17  

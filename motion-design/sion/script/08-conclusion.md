@@ -72,10 +72,10 @@ Source : Edward Said, The Question of Palestine, 1979 (La Question de Palestine)
 
 
 **38.6** · film **01:25:51:22 → 01:26:05:22** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:08:17:00 → 00:08:31:00  
-Source : frappe sur l'église Saint-Porphyre, Gaza, 19 octobre 2023 (patriarcat grec-orthodoxe de Jérusalem) ; frappe sur l'église de la Sainte-Famille, Gaza, 17 juillet 2025 (patriarcat latin de Jérusalem)  
+Source : patriarcat grec-orthodoxe de Jérusalem, 22 octobre 2023 (au moins 18 morts à Saint-Porphyre) ; patriarcat latin de Jérusalem, 17 juillet 2025, et communiqué commun des Églises du 18 juillet (3 morts, 10 blessés)  
 À l'écran : fiche : Gaza · 2023 et 2025 · Les chrétiens de Palestine  
-> VOIX : Edward Said venait d'une famille chrétienne, comme une partie des Palestiniens, de Bethléem à Nazareth. / En octobre 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza, où s'abritent des familles. / En 2025, l'église de la Sainte-Famille, seule paroisse catholique de Gaza, est frappée à son **tour**.  
-(46 mots, 3.3 par seconde)
+> VOIX : Edward Said venait d'une famille chrétienne, comme une partie des Palestiniens, de Bethléem à Nazareth. / En octobre 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza, où s'abritent des familles : au moins dix-huit morts. / En juillet 2025, l'église de la Sainte-Famille, seule paroisse catholique de Gaza : trois **morts**.  
+(48 mots, 3.4 par seconde)
 
 
 **38.7** · film **01:26:05:22 → 01:26:19:22** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:05:22:00 → 00:05:36:00  

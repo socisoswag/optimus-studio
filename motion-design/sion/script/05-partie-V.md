@@ -115,7 +115,7 @@ Source : élections législatives palestiniennes du 25 janvier 2006
 
 
 **25.7** · film **00:54:47:21 → 00:55:01:21** (14.0 s) · **[MD]** `output/documents-7.mp4` · source 00:01:55:00 → 00:02:09:00  
-Source : Gadi Eisenkot, entretien au Yedioth Ahronoth, octobre 2008 (cité par le rapport Goldstone de l'ONU, 2009)  
+Source : Gadi Eisenkot, alors chef du front nord, Yedioth Ahronoth, 3 octobre 2008 (repris par Ynet et Reuters)  
 À l'écran : fiche : Israël · octobre 2008 · La doctrine Dahiya  
 > VOIX : Ces offensives suivent une doctrine. / En 2008, le général Gadi Eisenkot, futur chef d'état-major, l'explique : / « Nous emploierons une force disproportionnée. » / Les villages d'où l'on tire « ne sont pas des villages civils, ce sont des bases **militaires** ».  
 (36 mots, 2.6 par seconde)
@@ -206,10 +206,10 @@ Note : dans la Bible, l'ordre qui suit est d'effacer Amalek ; la Cour internatio
 
 
 **25.20** · film **00:57:32:20 → 00:57:49:21** (17.0 s) · **[MD]** `output/documents-7.mp4` · source 00:02:09:00 → 00:02:26:00  
-Source : Isaac Herzog, 13 octobre 2023 ; Amichai Eliyahu, 5 novembre 2023 ; Avi Dichter, 11 novembre 2023 ; requête de l'Afrique du Sud à la CIJ, 29 décembre 2023 ; ordonnance de la CIJ du 26 janvier 2024  
+Source : Isaac Herzog, 12 octobre 2023 (cité par la CIJ, ordonnance du 26 janvier 2024, § 52) ; Amichai Eliyahu, 5 novembre 2023, et Avi Dichter, 11 novembre 2023 (requête de l'Afrique du Sud, 29 décembre 2023, § 101)  
 À l'écran : fiche : Israël · octobre et novembre 2023 · D'autres paroles  
-> VOIX : D'autres paroles suivent. / Le président Isaac Herzog : « C'est toute une nation, là-bas, qui est responsable. » / Le ministre Amichai Eliyahu juge une bombe atomique sur Gaza « une des possibilités ». / Le ministre Avi Dichter : « Nous sommes en train de dérouler la Nakba de **Gaza** ».  
-(42 mots, 2.5 par seconde)  
+> VOIX : D'autres paroles suivent. / Le président Isaac Herzog : « C'est toute une nation, là-bas, qui est responsable. » / Le ministre Amichai Eliyahu juge une bombe atomique sur Gaza « une des possibilités ». / Le ministre Avi Dichter : « Nous sommes en train de mettre en œuvre la Nakba de **Gaza** ».  
+(44 mots, 2.6 par seconde)  
 Note : Herzog dit ses mots sortis de leur contexte ; Netanyahou suspend Eliyahu des réunions du gouvernement le jour même
 
 
@@ -292,10 +292,10 @@ Source : conférence de presse de Donald Trump et Benyamin Netanyahou, Maison-Bl
 
 
 **25.33** · film **01:00:49:21 → 01:01:02:21** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:02:55:00 → 00:03:08:00  
-Source : blocus total de l'aide, 2 mars au 19 mai 2025 (OCHA) ; CPI, mandats du 21 novembre 2024 (famine comme méthode de guerre)  
-À l'écran : fiche : Gaza · 2 mars au 19 mai 2025 · Onze semaines sans rien  
-> VOIX : Le 2 mars 2025, Israël bloque toute entrée d'aide à Gaza : / onze semaines sans nourriture ni médicaments. / La CPI vise déjà Netanyahou pour la famine comme méthode de **guerre**.  
-(29 mots, 2.2 par seconde)
+Source : OCHA, rapport du 18 juin 2025 (78 jours de blocus complet de l'aide, du 2 mars au 19 mai 2025) ; CPI, mandats du 21 novembre 2024 (famine comme méthode de guerre)  
+À l'écran : fiche : Gaza · 2 mars au 19 mai 2025 · 78 jours sans aide  
+> VOIX : Le 2 mars 2025, Israël bloque toute entrée d'aide à Gaza : / 78 jours sans nourriture ni médicaments, selon l'ONU. / La CPI vise déjà Netanyahou pour la famine comme méthode de **guerre**.  
+(31 mots, 2.4 par seconde)
 
 
 **25.34** · film **01:01:02:21 → 01:01:15:21** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:07:49:00 → 00:08:02:00  
@@ -376,10 +376,10 @@ Note : 5 700 : somme des séries de l'OCHA (incidents avec victimes ou dégâts)
 
 
 **26.9** · film **01:03:10:22 → 01:03:24:22** (14.0 s) · **[MD]** `output/documents-7.mp4` · source 00:03:08:00 → 00:03:22:00  
-Source : Conseil supérieur de la planification, approbation du projet E1, 20 août 2025 ; Bezalel Smotrich, 14 août 2025  
+Source : approbation finale de 3 401 logements dans la zone E1, 20 août 2025 (Reuters) ; Bezalel Smotrich, 14 août 2025 (« bury the idea of a Palestinian state »)  
 À l'écran : fiche : Cisjordanie · août 2025 · Le projet E1  
-> VOIX : En août 2025, Israël approuve E1 : / 3 400 logements entre Jérusalem et la colonie de Maalé Adoumim, / de quoi couper la Cisjordanie en deux. / Smotrich : « Cela enterre l'idée d'un État **palestinien** ».  
-(31 mots, 2.2 par seconde)
+> VOIX : En août 2025, Israël approuve E1 : / 3 401 logements entre Jérusalem et la colonie de Maalé Adoumim, / un projet qui menace le passage entre le nord et le sud de la Cisjordanie. / Smotrich : il va « enterrer l'idée d'un État **palestinien** ».  
+(40 mots, 2.9 par seconde)
 
 
 **26.10** · film **01:03:24:22 → 01:03:39:21** (15.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:01:50:00 → 00:02:05:00  
@@ -496,10 +496,10 @@ Source : Jour de la Terre, 30 mars 1976 : grève générale, six citoyens arabes
 
 
 **28.8** · film **01:06:35:07 → 01:06:48:06** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:28:00 → 00:00:41:00  
-Source : Negev Coexistence Forum, 27 juillet 2025, et IWGIA, The Indigenous World 2026 (35 villages non reconnus) ; WAFA, 24 décembre 2025 (244e démolition d'al-Araqib depuis 2010)  
+Source : Negev Coexistence Forum, 27 juillet 2025, projet Recognized, et IWGIA, The Indigenous World 2026 (35 villages non reconnus, non raccordés aux réseaux publics) ; WAFA, 24 décembre 2025 (244e démolition d'al-Araqib depuis 2010)  
 À l'écran : fiche : Néguev · 2025 · Les villages non reconnus  
-> VOIX : Dans le Néguev, 35 villages bédouins ne sont pas reconnus par l'État : / pas de raccordement officiel à l'eau ni à l'électricité. / Al-Araqib a été démoli, puis rebâti, au moins 244 fois depuis **2010**.  
-(33 mots, 2.5 par seconde)
+> VOIX : Dans le Néguev, 35 villages bédouins ne sont pas reconnus par l'État : / ils ne sont pas raccordés aux réseaux publics d'eau et d'électricité. / Al-Araqib a été démoli, puis rebâti, au moins 244 fois depuis **2010**.  
+(35 mots, 2.7 par seconde)
 
 
 **28.9** · film **01:06:48:06 → 01:06:57:07** (9.0 s) · **[NOIR]** (à fabriquer)  

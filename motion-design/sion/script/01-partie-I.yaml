@@ -327,7 +327,6 @@ chapitres:
         sortie: 15
         ecran: "fiche : Rishon LeZion · 1882 · Le baron de Rothschild"
         source: "Edmond de Rothschild (1845-1934) : Rishon LeZion, Zikhron Yaakov, Rosh Pina, à partir de 1882-1883 ; colonies confiées à la Jewish Colonization Association en 1899"
-        verifier: "les dates du soutien de Rothschild, le passage à la JCA, la façon dont ses agents achetaient les terres (question Perplexity, A-FABRIQUER.md section 8)"
         voix: >-
           Derrière ces colonies, un banquier de Paris : / le baron Edmond de Rothschild. / Dès 1882, il finance Rishon LeZion, Zikhron Yaakov, Rosh Pina. / Ses agents achètent des terres, souvent à de grands propriétaires qui n'y vivent **pas**.
       - type: PHOTO
@@ -346,7 +345,6 @@ chapitres:
         sortie: 12
         ecran: "déjà dans le plan : Entre 1898 et 1934 · Rishon LeZion · Les caves à vin bâties par le baron de Rothschild · Photo d'archive"
         source: "caves de Rishon LeZion (1890) ; ouvriers arabes dans les colonies du baron (Gershon Shafir, Land, Labor and the Origins of the Israeli-Palestinian Conflict, 1989)"
-        verifier: "l'emploi d'ouvriers arabes dans les colonies de Rothschild, ordre de grandeur (question Perplexity, A-FABRIQUER.md section 8)"
         voix: >-
           À Rishon LeZion, il fait creuser de grandes caves à vin. / Dans ses colonies travaillent des ouvriers arabes, par centaines. / La vague suivante ne voudra plus de ce **modèle**.
       - type: RÉEL
@@ -508,28 +506,25 @@ chapitres:
         entree: 15
         sortie: 30
         ecran: "fiche : Empire ottoman · 1858 · Le code foncier"
-        source: "code foncier ottoman du 21 avril 1858 et loi sur l'enregistrement des terres (tapu) ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984"
-        verifier: "le code foncier de 1858 et les inscriptions au nom de notables (question Perplexity, A-FABRIQUER.md section 8)"
+        source: "code foncier ottoman de 1858 (Tanzimat) ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984"
         voix: >-
-          Pour comprendre ces ventes, il faut remonter à 1858. / L'Empire ottoman impose d'enregistrer les terres. / Beaucoup de paysans les inscrivent au nom de notables, pour échapper à l'impôt et à l'armée. / Des familles de Beyrouth deviennent propriétaires de villages **entiers**.
+          Pour comprendre ces ventes, il faut remonter à 1858. / L'Empire ottoman impose d'enregistrer les terres. / Pour fuir l'impôt et l'armée, des paysans évitent de le faire ; des notables accumulent les titres. / Celui qui possède la terre n'est plus toujours celui qui la **cultive**.
       - type: MD
         fichier: output/documents-7.mp4
         entree: 30
         sortie: 43
         ecran: "fiche : Petah Tikva · 1886 · Le premier heurt"
-        source: "Petah Tikva et le village de Yahudiya, mars 1886"
-        verifier: "la date et les faits de l'affrontement de Petah Tikva en 1886 (question Perplexity, A-FABRIQUER.md section 8)"
+        source: "Liora R. Halperin, « Petah Tikva, 1886: Gender, Anonymity, and the Making of Zionist Memory », Jewish Social Studies, vol. 23, n° 1, 2017 (attaque du 29 mars 1886)"
         voix: >-
-          Les acheteurs traitent avec ces propriétaires, pas avec les paysans. / En 1886, à Petah Tikva, les villageois de Yahudiya, privés de leurs pâturages, attaquent la colonie. / C'est le premier affrontement pour la **terre**.
+          Les acheteurs traitent avec les propriétaires, pas avec ceux qui cultivent. / Le 29 mars 1886, des paysans du village voisin attaquent Petah Tikva, au terme d'un conflit sur la terre. / C'est l'un des premiers affrontements de ce **genre**.
       - type: MD
         fichier: output/documents-7.mp4
         entree: 43
         sortie: 56
         ecran: "fiche : Bâle · décembre 1901 · Le Fonds national juif"
-        source: "Fonds national juif (Keren Kayemeth LeIsrael), 5e congrès sioniste, Bâle, 29 décembre 1901 ; statuts : terres inaliénables, louées"
-        verifier: "les règles du Fonds national juif sur ses terres, texte et date (question Perplexity, A-FABRIQUER.md section 8)"
+        source: "Fonds national juif, 5e congrès sioniste, Bâle, décembre 1901 ; mémorandum de 1907 (« for the purpose of settling Jews on such lands »)"
         voix: >-
-          En 1901, à Bâle, le mouvement sioniste crée le Fonds national juif, pour acheter la terre. / Une règle : ses terres ne se revendent jamais, / et elles sont louées à des **Juifs**.
+          En 1901, à Bâle, le mouvement sioniste crée le Fonds national juif. / Ses statuts de 1907 le disent : acheter la terre « afin d'y établir des Juifs ». / Et ne jamais la revendre : seulement la **louer**.
       - type: RÉEL
         fichier: output/plans-reels/figuier-de-barbarie-sabr.mp4
         entree: 0

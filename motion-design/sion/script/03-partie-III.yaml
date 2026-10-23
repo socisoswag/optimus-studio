@@ -127,7 +127,6 @@ chapitres:
         sortie: 100
         ecran: "fiche : Haganah · 10 mars 1948 · Le plan Dalet"
         source: "plan Dalet de la Haganah, 10 mars 1948 (traduction de Walid Khalidi, Journal of Palestine Studies, 1988) ; Ilan Pappé, Le Nettoyage ethnique de la Palestine, 2006 ; Benny Morris, 2004"
-        verifier: "le texte exact du plan Dalet sur la destruction des villages et l'expulsion (question Perplexity, A-FABRIQUER.md section 8)"
         voix: >-
           Dès le 10 mars 1948, la Haganah adopte le plan Dalet. / Il prévoit de détruire des villages, / et, en cas de résistance, / d'expulser leurs habitants « hors des frontières de l'**État** ».
       - type: MD
@@ -364,7 +363,6 @@ chapitres:
         sortie: 115
         ecran: "fiche : Tantura · mai 1948 · Tantura et al-Dawayima"
         source: "Tantura, 22-23 mai 1948 (Teddy Katz, 1998 ; Alon Schwarz, « Tantura », 2022) ; al-Dawayima, 29 octobre 1948 (Benny Morris, 2004)"
-        verifier: "les bilans de Tantura et d'al-Dawayima selon les historiens (question Perplexity, A-FABRIQUER.md section 8)"
         voix: >-
           Deir Yassin n'est pas un cas isolé. / À Tantura, en mai 1948, des dizaines d'hommes sont tués après la prise du village. / À al-Dawayima, en octobre, des dizaines, peut-être des centaines. // En 2022, d'anciens soldats israéliens racontent Tantura devant la **caméra**.
 

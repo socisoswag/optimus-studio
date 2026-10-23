@@ -678,7 +678,7 @@ marquée du filigrane d'une agence commerciale.
 ## 7. Sujets ajoutés le 23 octobre 2026 (fiches `timelines/documents-6.js`)
 
 Chiffres et citations vérifiés par le dossier Perplexity du 23 octobre 2026 (liens ci-dessous). « À vérifier » : en
-attente de la deuxième série de questions (script/A-FABRIQUER.md, section 7), voix pas encore enregistrée.
+fin des vérifications : tout est confirmé par les dossiers Perplexity du 23 octobre 2026 (A-FABRIQUER.md, sections 6 à 8).
 
 | Plan | Sujet | Source |
 |---|---|---|
@@ -692,34 +692,34 @@ attente de la deuxième série de questions (script/A-FABRIQUER.md, section 7), 
 | ch. 25 | L'argent du Qatar | M. Mazzetti et R. Bergman, « Buying Quiet », The New York Times, 10 décembre 2023 (15 millions de dollars par mois en 2018, environ 30 millions en 2021 ; réponse du bureau de Netanyahou) |
 | ch. 25 | La phrase rapportée de Netanyahou | réunion du Likoud, mars 2019, propos rapportés (Maariv ; Haaretz, 9 octobre et 15 novembre 2023 ; Tal Schneider, The Times of Israel, 8 octobre 2023, tribune) ; démenti : entretien avec TIME du 4 août 2024 (« That's a false statement. I never said that. ») |
 | ch. 25 | La phrase de Smotrich | chaîne de la Knesset, octobre 2015 (N12, 5 mai 2026 ; Zman Israel, 23 septembre 2026) |
-| ch. 25 | Le plan « Mur de Jéricho » | The New York Times, 30 novembre 2023 (à vérifier) |
+| ch. 25 | Le plan « Mur de Jéricho » | The New York Times, 30 novembre 2023 |
 | ch. 25 | Gaza, le bilan | ministère de la Santé de Gaza, 22 octobre 2026, cité par Europa Press et WAFA : 74 498 morts, 175 616 blessés ; OCHA, Reported Impact Snapshot, 14 octobre 2026 : 74 392 morts |
-| ch. 25 | « Lavender » | Yuval Abraham, +972 Magazine et Local Call, 3 avril 2024 ; réponse de l'armée israélienne (à vérifier) |
-| ch. 25 | « La Riviera du Moyen-Orient » | conférence de presse de Donald Trump et Benyamin Netanyahou, 4 février 2025 (à vérifier) |
-| ch. 25 | Tués en cherchant à manger | Haut-Commissariat de l'ONU aux droits de l'homme, bilan au 31 juillet 2025 (à vérifier) |
+| ch. 25 | « Lavender » | Yuval Abraham, +972 Magazine et Local Call, 3 avril 2024 ; réponse de l'armée israélienne |
+| ch. 25 | « La Riviera du Moyen-Orient » | conférence de presse de Donald Trump et Benyamin Netanyahou, 4 février 2025 |
+| ch. 25 | Tués en cherchant à manger | Haut-Commissariat de l'ONU aux droits de l'homme, bilan au 31 juillet 2025 |
 | ch. 25 | Depuis le cessez-le-feu | ministère de la Santé de Gaza, 22 octobre 2026 : 1 538 morts depuis la trêve (série comptée depuis le 11 octobre 2025) ; Reuters, 7 octobre 2026 : Israël contrôle environ les deux tiers de la bande ; « ligne jaune » : tracé approché |
 | ch. 25 | Les accords d'Abraham | signés à la Maison-Blanche le 15 septembre 2020 (Émirats arabes unis, Bahreïn), puis Maroc et Soudan |
 | ch. 26 | La photo du Goush Emounim | Wikimedia Commons, catégorie « The IDF evacuates Gush Emunim members from Mount Huwara near Nablus, 1978 » ; notice de la Bibliothèque nationale d'Israël, image FL45816230 |
 | ch. 27 | Shireen Abu Akleh | Haut-Commissariat de l'ONU aux droits de l'homme, 24 juin 2022 ; CPJ, données au 24 septembre 2026 : 189 journalistes et employés des médias palestiniens tués par Israël à Gaza (247 pour l'ensemble de la guerre et des conflits voisins) |
 | ch. 28 | Le Jour de la Terre | 30 mars 1976 : grève générale contre les expropriations en Galilée, six citoyens arabes tués |
-| ch. 28 | Les villages bédouins non reconnus | Negev Coexistence Forum, 27 juillet 2025, et IWGIA, The Indigenous World 2026 : 35 villages ; WAFA, 24 décembre 2025 : 244e démolition d'al-Araqib depuis 2010 ; raccordement aux réseaux (à vérifier) |
+| ch. 28 | Les villages bédouins non reconnus | Negev Coexistence Forum, 27 juillet 2025, et IWGIA, The Indigenous World 2026 : 35 villages ; WAFA, 24 décembre 2025 : 244e démolition d'al-Araqib depuis 2010 ; raccordement aux réseaux |
 | ch. 31 | Le rôle de la France | accord nucléaire franco-israélien de 1957 (Dimona) ; CEDH, Baldassi et autres c. France, 11 juin 2020 ; reconnaissance de l'État de Palestine, 22 septembre 2025 |
-| ch. 31 | Des pièces françaises | Disclose et Marsactu, mars 2024 (Eurolinks) ; Eurosatory 2024 (à vérifier) |
-| ch. 31 | Manifester pour Gaza | télégramme du ministre de l'Intérieur, 12 octobre 2023 ; Conseil d'État, ordonnance du 18 octobre 2023 (à vérifier) |
-| ch. 31 | Meyer Habib | député de la 8e circonscription des Français établis hors de France (à vérifier) |
-| ch. 31 | Les réseaux pro-israéliens | répertoire des représentants d'intérêts de la HATVP, ELNET France (à vérifier) |
-| ch. 31 | Les pressions sur Paris | visas de 27 élus français annulés, avril 2025 ; lettre de Netanyahou à Macron, août 2025, et réponse de l'Élysée (à vérifier) |
+| ch. 31 | Des pièces françaises | Disclose et Marsactu, mars 2024 (Eurolinks) ; Eurosatory 2024 |
+| ch. 31 | Manifester pour Gaza | télégramme du ministre de l'Intérieur, 12 octobre 2023 ; Conseil d'État, ordonnance du 18 octobre 2023 |
+| ch. 31 | Meyer Habib | député de la 8e circonscription des Français établis hors de France de 2013 à 2024 ; Assemblée nationale, séance du 23 octobre 2023 ; Conseil constitutionnel, décision n° 2022-5773 AN du 3 février 2023 ; battu le 7 juillet 2024 |
+| ch. 31 | Les réseaux pro-israéliens | HATVP, inscription d'ELNET France le 26 novembre 2024 ; Mediapart, 29 décembre 2024 (101 des 666 voyages déclarés depuis 2017) |
+| ch. 31 | Les pressions sur Paris | visas de 27 élus français annulés, avril 2025 ; lettre de Netanyahou à Macron, août 2025, et réponse de l'Élysée |
 | ch. 31 | Antisionisme et antisémitisme | Emmanuel Macron, Vel d'Hiv, 16 juillet 2017 (« la forme réinventée de l'antisémitisme ») et dîner du CRIF, 20 février 2019 (« une des formes modernes de l'antisémitisme »), transcriptions de l'Élysée ; Assemblée nationale, résolution du 3 décembre 2019 |
 | ch. 33 | La Cour internationale de justice | avis consultatif du 19 juillet 2024 ; Assemblée générale, résolution ES-10/24, 18 septembre 2024 |
 | ch. 33 | Le soutien américain | protocole d'accord du 14 septembre 2016 (38 milliards de dollars, 2019-2028) ; liste officielle des vetos, bibliothèque Dag Hammarskjöld de l'ONU : 52 vetos américains sur des textes concernant Israël du 10 septembre 1972 au 18 septembre 2025 (51 projets, 1 amendement, périmètre large : Liban et Golan compris) |
 | ch. 33 | L'ambassade américaine à Jérusalem | reconnaissance du 6 décembre 2017 ; ouverture le 14 mai 2018 |
-| ch. 33 | Les soutiens d'Israël | AIPAC et United Democracy Project, primaires de 2024 (FEC) ; Christians United for Israel (à vérifier) |
-| ch. 33 | Les entreprises des colonies | HCDH, base de données, 12 février 2020 (A/HRC/43/71), mise à jour de juin 2023 (à vérifier) |
-| ch. 33 | L'économie de l'occupation | Francesca Albanese, rapport A/HRC/59/23, juillet 2025 ; sanctions américaines, 9 juillet 2025 (à vérifier) |
+| ch. 33 | Les soutiens d'Israël | United Democracy Project, cycle 2023-2024 : 61 373 653 dollars de dépenses (FEC) ; primaire Bowman-Latimer : 14 593 635 dollars (OpenSecrets) ; Christians United for Israel, plus de 10 millions de membres revendiqués |
+| ch. 33 | Les entreprises des colonies | HCDH, A/HRC/43/71, 12 février 2020 (112 entreprises) ; mise à jour du 30 juin 2023 (97, dont Airbnb, Booking.com, Expedia, TripAdvisor ; sociétés mères Alstom et Egis) |
+| ch. 33 | L'économie de l'occupation | Francesca Albanese, rapport A/HRC/59/23, version du 30 juin 2025 (environ 1 000 entités, plus de 45 nommées) ; sanctions américaines, 9 juillet 2025 |
 | ch. 35 | Les tribunaux militaires, la détention administrative | DCI-Palestine, No Way to Treat a Child, 14 avril 2016 : 500 à 700 mineurs poursuivis par an ; HaMoked, 1er octobre 2026 : 3 101 détenus administratifs (d'après l'administration pénitentiaire israélienne) |
-| ch. 35 | « Bienvenue en enfer » | B'Tselem, Welcome to Hell, août 2024 ; Sde Teiman, 29 juillet 2024 (à vérifier) |
+| ch. 35 | « Bienvenue en enfer » | B'Tselem, Welcome to Hell, août 2024 ; Sde Teiman, 29 juillet 2024 |
 | ch. 38 | Edward Said | Edward W. Said, The Question of Palestine, 1979 (trad. française, La Question de Palestine) |
-| ch. 38 | Les chrétiens de Palestine | églises Saint-Porphyre (19 octobre 2023) et de la Sainte-Famille (17 juillet 2025), Gaza (à vérifier) |
+| ch. 38 | Les chrétiens de Palestine | églises Saint-Porphyre (19 octobre 2023) et de la Sainte-Famille (17 juillet 2025), Gaza |
 | ch. 20 | L'UNRWA interdite | lois de la Knesset du 28 octobre 2024, en vigueur le 30 janvier 2025 |
 | ch. 21 | Marwan Barghouti | condamnation du 6 juin 2004 ; PCPSR, sondage du 7 au 11 octobre 2026, publié le 14 octobre : 34 % parmi sept noms (47 % en Cisjordanie, 15 % à Gaza) |
 | ch. 22 | Camp David 2000 | sommet du 11 au 25 juillet 2000 ; Taba, janvier 2001 |
@@ -729,24 +729,24 @@ attente de la deuxième série de questions (script/A-FABRIQUER.md, section 7), 
 | ch. 26 | La Cisjordanie depuis 2023 | OCHA, rapport de situation du 15 octobre 2026 et instantanés : plus de 5 773 incidents de colons avec victimes ou dégâts du 7 octobre 2023 au 12 octobre 2026 (somme des séries annuelles) ; UNRWA, repris par l'OCHA le 14 septembre 2026 : 34 176 déplacés des camps de Jénine (12 557), Tulkarem (12 412) et Nour Chams (9 207) |
 | ch. 38 | Kanafani et Handala | Ghassan Kanafani, tué à Beyrouth le 8 juillet 1972 ; Naji al-Ali, mort à Londres le 29 août 1987 |
 | ch. 38 | No Other Land | Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor ; Oscar du meilleur documentaire, 2 mars 2025 |
-| ch. 5 | Le baron de Rothschild | Edmond de Rothschild (1845-1934), colonies de Rishon LeZion, Zikhron Yaakov, Rosh Pina ; Jewish Colonization Association, 1899 (à vérifier) |
+| ch. 5 | Le baron de Rothschild | Edmond de Rothschild (1845-1934), colonies de Rishon LeZion, Zikhron Yaakov, Rosh Pina ; Jewish Colonization Association, 1899 |
 | ch. 5 | Photos : Zikhron Yaakov, les caves de Rishon LeZion | Bibliothèque du Congrès, collection Matson, LC-DIG-matpc-15201 (vers 1920-1933) et LC-DIG-matpc-04774 (entre 1898 et 1934), domaine public |
-| ch. 6 | Le code foncier de 1858 | code foncier ottoman du 21 avril 1858 ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984 (à vérifier) |
-| ch. 6 | Petah Tikva, 1886 | affrontement avec les villageois de Yahudiya (à vérifier) |
-| ch. 6 | Le Fonds national juif | 5e congrès sioniste, Bâle, décembre 1901 (à vérifier) |
-| ch. 8 | La vente de la plaine de Jezréel | ventes Sursock, années 1920 ; Kenneth W. Stein ; Rashid Khalidi, The Hundred Years' War on Palestine, 2020 (à vérifier) |
+| ch. 6 | Le code foncier de 1858 | code foncier ottoman du 21 avril 1858 ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984 |
+| ch. 6 | Petah Tikva, 1886 | affrontement avec les villageois de Yahudiya |
+| ch. 6 | Le Fonds national juif | 5e congrès sioniste, Bâle, décembre 1901 |
+| ch. 8 | La vente de la plaine de Jezréel | ventes Sursock, années 1920 ; chiffres cités autour de la commission Shaw, 1930 (environ 240 000 dounams, 1 746 familles), discutés par les historiens |
 | ch. 8 | Photo : un tracteur dans la plaine de Jezréel | Bibliothèque du Congrès, collection Matson, LC-DIG-matpc-15225 (vers 1920-1933), domaine public |
-| ch. 8 | Le rapport Hope Simpson | Sir John Hope Simpson, rapport d'octobre 1930 ; lettre de Ramsay MacDonald, 13 février 1931 (à vérifier) |
-| ch. 13 | Le plan Dalet | plan de la Haganah, 10 mars 1948 (Walid Khalidi, Journal of Palestine Studies, 1988) ; Ilan Pappé, 2006 ; Benny Morris, 2004 (à vérifier) |
-| ch. 15 | Tantura et al-Dawayima | Benny Morris, 2004 ; Alon Schwarz, « Tantura », 2022 (à vérifier) |
-| ch. 25 | La doctrine Dahiya | Gadi Eisenkot, Yedioth Ahronoth, octobre 2008 (à vérifier) |
-| ch. 25 | D'autres paroles | Herzog, Eliyahu, Dichter ; requête de l'Afrique du Sud à la CIJ, 29 décembre 2023 (à vérifier) |
-| ch. 25 | Hind Rajab | Croissant-Rouge palestinien ; Forensic Architecture, 2024 (à vérifier) |
-| ch. 25 | Les secouristes de Rafah | 23 mars 2025 ; enquête de l'armée israélienne, 20 avril 2025 (à vérifier) |
-| ch. 25 | Onze semaines sans aide | 2 mars au 19 mai 2025 (à vérifier) ; CPI, 21 novembre 2024 |
-| ch. 26 | Le projet E1 | approbation du 20 août 2025 ; Bezalel Smotrich, 14 août 2025 (à vérifier) |
-| ch. 34 | Le patrimoine de Gaza | Grande Mosquée al-Omari, universités, Archives centrales ; experts de l'ONU, avril 2024 (à vérifier) |
-| ch. 35 | Génocide : ce que disent les textes | Convention pour la prévention et la répression du crime de génocide, 9 décembre 1948, article II ; Raphael Lemkin, 1944 ; Amnesty International, 5 décembre 2024 ; Human Rights Watch, 19 décembre 2024 ; B'Tselem et PHRI, 28 juillet 2025 ; IAGS, 1er septembre 2025 ; Omer Bartov, The New York Times, 15 juillet 2025 ; commission d'enquête de l'ONU, 16 septembre 2025 (textes à vérifier mot pour mot) |
+| ch. 8 | Le rapport Hope Simpson | Sir John Hope Simpson, rapport du 22 août 1930, Cmd. 3686 (29,4 % des familles de 104 villages sans terre) ; lettre de Ramsay MacDonald, 13 février 1931 |
+| ch. 13 | Le plan Dalet | plan de la Haganah, 10 mars 1948 (Walid Khalidi, Journal of Palestine Studies, 1988) ; Ilan Pappé, 2006 ; Benny Morris, 2004 |
+| ch. 15 | Tantura et al-Dawayima | Benny Morris, 2004 ; Alon Schwarz, « Tantura », 2022 |
+| ch. 25 | La doctrine Dahiya | Gadi Eisenkot, Yedioth Ahronoth, octobre 2008 |
+| ch. 25 | D'autres paroles | Herzog, Eliyahu, Dichter ; requête de l'Afrique du Sud à la CIJ, 29 décembre 2023 |
+| ch. 25 | Hind Rajab | Croissant-Rouge palestinien ; Forensic Architecture, 2024 |
+| ch. 25 | Les secouristes de Rafah | 23 mars 2025 ; enquête de l'armée israélienne, 20 avril 2025 |
+| ch. 25 | 78 jours sans aide | OCHA, 18 juin 2025 (blocus complet du 2 mars au 19 mai 2025) ; CPI, 21 novembre 2024 |
+| ch. 26 | Le projet E1 | approbation du 20 août 2025 ; Bezalel Smotrich, 14 août 2025 |
+| ch. 34 | Le patrimoine de Gaza | Grande Mosquée al-Omari, universités, Archives centrales ; experts de l'ONU, avril 2024 |
+| ch. 35 | Génocide : ce que disent les textes | Convention pour la prévention et la répression du crime de génocide, 9 décembre 1948, article II ; Raphael Lemkin, 1944 ; Amnesty International, 5 décembre 2024 ; Human Rights Watch, 19 décembre 2024 ; B'Tselem et PHRI, 28 juillet 2025 ; IAGS, 1er septembre 2025 ; Omer Bartov, The New York Times, 15 juillet 2025 ; commission d'enquête de l'ONU, 16 septembre 2025 |
 
 Liens principaux du dossier de vérification :
 - OCHA, Gaza Reported Impact Snapshot, 14 octobre 2026 : https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_14_October_2026.pdf

@@ -168,39 +168,39 @@ Source : accord nucléaire franco-israélien, 1957 ; CEDH, Baldassi et autres c.
 
 
 **31.11** · film **01:11:42:12 → 01:11:57:12** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:08:31:00 → 00:08:46:00  
-Source : Disclose et Marsactu, 26 mars 2024 (Eurolinks, maillons de cartouches livrés à IMI Systems) ; ministère des Armées ; Eurosatory 2024 (décision du 31 mai 2024, tribunal de commerce de Paris, juin 2024)  
+Source : Disclose, 25 mars 2024, et Marsactu, 26 mars 2024 (au moins 100 000 maillons M27 pour bandes de 5,56 mm, Eurolinks, destinataire IMI Systems) ; Sébastien Lecornu (livraisons destinées à la réexportation) ; Eurosatory : exclusion annoncée le 31 mai 2024, suspendue le 18 juin par le tribunal de commerce de Paris  
 À l'écran : fiche : Marseille · octobre 2023 · Des pièces françaises  
 > VOIX : La France arme-t-elle Israël ? / Paris dit ne livrer que des pièces défensives, ou à réexporter. / Mais selon le média Disclose, une entreprise de Marseille a livré en octobre 2023 au moins cent mille maillons de **mitrailleuse**.  
 (36 mots, 2.4 par seconde)
 
 
 **31.12** · film **01:11:57:12 → 01:12:10:12** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:08:46:00 → 00:08:59:00  
-Source : télégramme du ministre de l'Intérieur aux préfets, 12 octobre 2023 ; Conseil d'État, ordonnance du 18 octobre 2023  
+Source : télégramme du ministre de l'Intérieur, 12 octobre 2023 (« les manifestations pro-palestiniennes [...] doivent être interdites ») ; Conseil d'État, ordonnance n° 488860 du 18 octobre 2023  
 À l'écran : fiche : Paris · octobre 2023 · Manifester pour Gaza  
 > VOIX : Le 12 octobre 2023, le ministre de l'Intérieur demande d'interdire les manifestations propalestiniennes. / Six jours plus tard, le Conseil d'État refuse une interdiction **générale**.  
 (24 mots, 1.8 par seconde)
 
 
 **31.13** · film **01:12:10:12 → 01:12:23:12** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:08:59:00 → 00:09:12:00  
-Source : Meyer Habib, député de la 8e circonscription des Français établis hors de France (Israël, Italie, Grèce, Turquie, Chypre, Malte, Saint-Marin, Vatican)  
-À l'écran : fiche : Assemblée nationale · depuis 2013 · Meyer Habib  
-> VOIX : À l'Assemblée, Meyer Habib, élu des Français d'Israël et d'Europe du Sud, / se dit l'ami de Netanyahou depuis des décennies, / et défend son gouvernement dans l'**hémicycle**.  
-(27 mots, 2.1 par seconde)  
+Source : Assemblée nationale, compte rendu de la séance du 23 octobre 2023 ; Conseil constitutionnel, décision n° 2022-5773 AN du 3 février 2023 (élection de 2022 annulée) ; réélu le 16 avril 2023, battu le 7 juillet 2024  
+À l'écran : fiche : Assemblée nationale · 23 octobre 2023 · Meyer Habib  
+> VOIX : À l'Assemblée, le député Meyer Habib, élu des Français d'Israël, défend Netanyahou : / « Israël est une démocratie : Netanyahou a été élu, que cela vous plaise ou non ! » // Battu en 2024, il n'est plus **député**.  
+(33 mots, 2.5 par seconde)  
 Note : jamais « double allégeance » ni « agent » : on cite ses mots et ses votes, pas ses origines
 
 
 **31.14** · film **01:12:23:12 → 01:12:36:12** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:09:12:00 → 00:09:25:00  
-Source : répertoire des représentants d'intérêts de la HATVP (ELNET France) ; voyages d'élus organisés par ELNET  
+Source : HATVP, inscription d'ELNET France le 26 novembre 2024 ; Mediapart, 29 décembre 2024 (101 des 666 voyages déclarés par des parlementaires depuis 2017, payés par ELNET)  
 À l'écran : fiche : France · aujourd'hui · Les réseaux pro-israéliens  
-> VOIX : Des réseaux pro-israéliens travaillent aussi les élus : / ELNET, un lobby déclaré, organise des voyages de parlementaires en Israël. / Ces réseaux ne parlent pas au nom des Juifs de **France**.  
-(29 mots, 2.2 par seconde)
+> VOIX : Des réseaux pro-israéliens travaillent aussi les élus. / Selon Mediapart, ELNET, un lobby pro-israélien, a payé depuis 2017 cent un voyages de parlementaires : / plus d'un sur sept de tous ceux qu'ils ont déclarés. // Ces réseaux ne parlent pas au nom des Juifs de **France**.  
+(43 mots, 3.3 par seconde)
 
 
 **31.15** · film **01:12:36:12 → 01:12:51:12** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:09:25:00 → 00:09:40:00  
-Source : annulation par Israël des visas de 27 élus français, avril 2025 ; lettre de Benyamin Netanyahou à Emmanuel Macron, août 2025, et réponse de l'Élysée  
+Source : visas d'une délégation de 27 élus français de gauche annulés, 20 avril 2025 ; lettre de Benyamin Netanyahou à Emmanuel Macron rendue publique le 19 août 2025 (« Your call for a Palestinian state pours fuel on this antisemitic fire ») ; réponse de l'Élysée, 19 août 2025  
 À l'écran : fiche : Paris et Jérusalem · 2025 · Les pressions sur Paris  
-> VOIX : Et quand Paris s'écarte de la ligne israélienne, la pression monte. / En avril 2025, Israël annule les visas de vingt-sept élus français de gauche. / En août, Netanyahou accuse Macron d'attiser l'antisémitisme ; / l'Élysée parle d'une accusation « **abjecte** ».  
-(36 mots, 2.4 par seconde)
+> VOIX : Et quand Paris s'écarte de la ligne israélienne, la pression monte. / En avril 2025, Israël annule les visas de vingt-sept élus français de gauche. / En août, Netanyahou accuse Macron d'attiser l'antisémitisme ; / l'Élysée parle d'accusations « **abjectes** ».  
+(35 mots, 2.3 par seconde)
 
 
 **31.16** · film **01:12:51:12 → 01:13:06:12** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:05:07:00 → 00:05:22:00  
