@@ -1,5 +1,9 @@
 # Questions pour Perplexity (23 octobre 2026, la nuit)
 
+> Réponses reçues le 24 octobre (PDF, 13 questions) et intégrées : voir A-FABRIQUER.md section 13. Les questions 14 à
+> 16 ont trouvé leur réponse dans les sources primaires (OCHA, La Paix maintenant). Ce qui reste ouvert est listé à la
+> fin de la section 13.
+
 Tout ce qui attend une vérification, en un seul envoi. Copier le bloc ci-dessous tel quel dans Perplexity (mode
 recherche approfondie si possible), puis me recoller la réponse entière : je l'intègre au script, aux sources et à la
 voix. Les questions 1 à 9 comptent le plus ; 10 à 13 sont des doubles vérifications (déjà confirmées sur les textes

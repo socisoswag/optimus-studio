@@ -103,10 +103,29 @@ ARCHIVES = {
     # d'Ohrdruf, puis des rescapés ; seulement des visages, aucun corps à l'image
     "1945-ohrdruf-camp-libere": ("1945-04-26_Nazi_Murder_Mills", "1945-04-26_Nazi_Murder_Mills.mpeg", "672:450:24:14",
                                  [(128.2, 131.3), (140.2, 145.8), (151.2, 154.2), (251.0, 252.9), (257.0, 259.6), (260.1, 262.7)]),
-    # même bobine, « Nations Meet To Map World Security Plan » : la conférence de San Francisco, qui écrit la Charte des
-    # Nations unies, s'ouvre le 25 avril 1945 (la tribune et les drapeaux, la salle, les délégués)
-    "1945-san-francisco-charte-onu": ("1945-04-26_Nazi_Murder_Mills", "1945-04-26_Nazi_Murder_Mills.mpeg", "672:450:24:14",
-                                      [(441.4, 446.0), (438.2, 440.3), (448.0, 452.0), (456.5, 460.5)]),
+    # actualités Universal du 28 juin 1945, « San Francisco Parley Ends » : le 26 juin, cinquante pays signent la Charte des
+    # Nations unies (les délégués et les drapeaux, deux signatures, le livre de la Charte, Truman et Stettinius)
+    "1945-san-francisco-charte-onu": ("1945-06-28_San_Francisco_Parley_Ends", "1945-06-28_San_Francisco_Parley_Ends.mpeg",
+                                      "690:456:16:12", [(16.2, 19.6), (7.2, 9.4), (12.2, 15.6), (33.2, 36.3), (27.2, 30.4)]),
+    # même film amateur Levy, 1933 : le dôme du Rocher, la place devant les murs de Jérusalem, un passant, la foule d'une
+    # rue commerçante, des hommes en robe sur une estrade de marché
+    "1933-jerusalem-bethleem-rues": ("Levycoll1933", "Levycoll1933.mpeg", "360:466:2:8",
+                                     [(538.0, 539.8), (523.0, 531.5), (113.4, 115.4), (900.0, 902.5), (905.5, 909.8)],
+                                     {"rayure": (182, 6)}),
+    # « Sands of Sorrow » (1950), autre passage : les enfants des camps de réfugiés palestiniens, sous la tente-école
+    "1950-sands-of-sorrow-enfants": ("sands_of_sorrow", "sands_of_sorrow.mpeg", "690:466:15:7",
+                                     [(1121.5, 1124.0), (1127.3, 1131.0), (1154.4, 1157.4)],
+                                     {"pre": "curves=all='0/0 0.35/0.24 0.7/0.55 1/0.84'"}),
+    # actualités Universal du 1er novembre 1956, « War in Egypt » : la flotte en Méditerranée orientale, les avions,
+    # une bombe sous l'aile
+    # actualités Universal du 18 mai 1948, « Jews Defend New Zion State », copie du musée américain de l'Holocauste (USHMM,
+    # irn1000897, « Public Domain », d'après la NARA 200 UN 21-144-1) : Haïfa vue d'en haut, des hommes arabes fouillés, des
+    # femmes qui partent avec leurs bagages, une vieille femme, une mère et son enfant ; aucun corps à l'image ; recadrée
+    # au-dessus du minutage incrusté de la copie
+    "1948-haifa-habitants-arabes": ("https://film-assets.ushmm.org/mp4/FV0936_RG601137.01.01.mp4", "", "624:400:8:16",
+                                    [(4.4, 6.8), (28.0, 31.0), (40.1, 44.3), (46.9, 49.3), (50.0, 53.0)], {"decimer": True}),
+    "1956-suez-flotte-et-avions": ("1956-11-01_War_in_Egypt", "1956-11-01_War_in_Egypt.mpeg", "696:458:10:10",
+                                   [(57.2, 60.0), (66.2, 67.6), (68.2, 70.6), (74.2, 76.6), (78.2, 80.6)]),
 }
 
 
@@ -199,7 +218,7 @@ def stabilise(entree, sortie):
 
 def fabrique(nom, ident, fichier, crop, coupes, opts=None):
     opts = opts or {}
-    src = url(ident, fichier)
+    src = ident if ident.startswith("https://") else url(ident, fichier)
     net = ["-http_proxy", os.environ["HTTPS_PROXY"]] if os.environ.get("HTTPS_PROXY") else []
     cad, fps = cadence(src, net, opts)
     if opts.get("rayure"):

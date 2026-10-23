@@ -171,6 +171,7 @@ chapitres:
         son: "pas de troupe, foule, cloches lointaines"
       - type: ARCH
         fichier: output/archives-filmees/1930-paths-to-palestine-02.mp4
+        carton: output/cartons/31-arch-1930-paths-to-palestine-02.mov
         entree: 0
         sortie: 13.48
         source: "SOURCES.md 4.2 (« Paths in Palestine », 1934, NARA 2767364 ; producteur et statut du droit d'auteur non établis)"
@@ -274,7 +275,7 @@ chapitres:
         sortie: 180
         voix: >-
           En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il
-          est tué en novembre. // Il devient un **symbole**.
+          est tué en novembre. // La branche armée du Hamas porte aujourd'hui son **nom**.
       - type: IA
         fichier: output/reconstitutions/11-19-manifestation-jaffa-1933.mp4
         entree: 0
@@ -463,6 +464,7 @@ chapitres:
           rester, et se battre là où l'on vit. // En yiddish : doikayt, « **l'ici** ».
       - type: ARCH
         fichier: output/archives-filmees/1933-jerusalem-mur-occidental.mp4
+        carton: output/cartons/32-arch-1933-jerusalem-mur-occidental.mov
         entree: 0
         sortie: 14.56
         ecran: "carton : 1933 · Jérusalem · Au mur occidental (film amateur)"
@@ -493,10 +495,11 @@ chapitres:
         note: "détail fort : Arthur Ruppin, celui qui organise les achats de terres, en est un des fondateurs"
       - type: ARCH
         fichier: output/archives-filmees/1945-deportes-juifs-liberes.mp4
+        carton: output/cartons/33-arch-1945-deportes-juifs-liberes.mov
         entree: 0
         sortie: 9.64
-        ecran: "carton : avril 1945 · Allemagne · Des déportés juifs libérés par l'armée américaine"
-        source: "US Army Signal Corps, « Freed Jews », 17 avril 1945, archives nationales américaines 111-ADC-9721 (catalogue 23486)"
+        ecran: "carton : avril 1945 · Farsleben, près de Magdebourg · Les rescapés d'un train de déportés juifs, libérés par l'armée américaine"
+        source: "US Army Signal Corps, « Freed Jews », catalogué le 17 avril 1945 (train de Farsleben, libéré le 13 avril ; identification de Matthew Rozell), archives nationales américaines 111-ADC-9721 (catalogue 23486)"
         voix: >-
           Puis viendra la Shoah. // Et pour la plupart des survivants, / la question ne se posera plus de la même
           **façon**.
@@ -599,6 +602,7 @@ chapitres:
           devienne « un Commonwealth **juif** ».
       - type: ARCH
         fichier: output/archives-filmees/1945-roosevelt-ibn-saoud.mp4
+        carton: output/cartons/34-arch-1945-roosevelt-ibn-saoud.mov
         entree: 0
         sortie: 18.16
         ecran: "carton : février 1945 · Grand Lac Amer · Roosevelt reçoit Ibn Saoud"
@@ -608,15 +612,17 @@ chapitres:
         note: "texte anglais : « I would take no action […] which might prove hostile to the Arab people »"
       - type: ARCH
         fichier: output/archives-filmees/1945-francfort-personnes-deplacees-juives.mp4
+        carton: output/cartons/35-arch-1945-francfort-personnes-deplacees-juives.mov
         entree: 0
         sortie: 12.36
-        ecran: "carton : novembre 1945 · Francfort · Des personnes déplacées juives manifestent"
+        ecran: "carton : 16 novembre 1945 · Francfort · Des personnes déplacées juives manifestent"
         source: "US Army Signal Corps, « D P Zionist demonstration, Frankfurt, Germany », novembre 1945, archives nationales américaines 111-ADC-5604 (catalogue 19403) ; banderole « Open the gates of Palestine » à l'image"
         voix: >-
           Fin 1945, en Allemagne, les survivants juifs attendent encore, / dans des camps de personnes déplacées. // À Francfort, ils défilent : / « Ouvrez les portes de la **Palestine**. »
         note: "banderoles à l'image : « There cannot be real world freedom without Jewish freedom », « Open the gates of Palestine », une pancarte qui remercie le président Truman"
       - type: ARCH
         fichier: output/archives-filmees/1946-refugies-juifs-palestine.mp4
+        carton: output/cartons/36-arch-1946-refugies-juifs-palestine.mov
         entree: 0
         sortie: 14.36
         ecran: "carton : 1946 · Palestine · Des réfugiés juifs d'Europe débarquent"

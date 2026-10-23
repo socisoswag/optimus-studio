@@ -282,7 +282,11 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 1945-deportes-juifs-liberes | « Freed Jews » (muet) : un train de déportés juifs libéré par l'armée américaine en Allemagne, les rescapés le long des wagons, la foule autour d'un soldat | US Army Signal Corps, 17 avril 1945 (œuvre du gouvernement fédéral américain ; le catalogue porte la mention générale « Possibly restricted : copyright », à confirmer) | NARA 111-ADC-9721 (catalogue 23486) | https://archive.org/details/111-adc-9721 |
 | 1945-francfort-personnes-deplacees-juives | « D P Zionist Demonstration, Frankfurt, Germany » (muet) : défilé de personnes déplacées juives, banderoles « There cannot be real world freedom without Jewish freedom » et « Open the gates of Palestine », pancarte au président Truman, drapeau à l'étoile de David | US Army Signal Corps, novembre 1945 (même statut que la ligne précédente) | NARA 111-ADC-5604 (catalogue 19403) | https://archive.org/details/111-adc-5604 |
 | 1945-ohrdruf-camp-libere | actualités Universal du 26 avril 1945, « Nazi Murder Mills » : les généraux Eisenhower, Bradley et Patton au camp d'Ohrdruf (fiche d'époque : « Ohrdruf camp viewed by Ike, Bradley, Patton »), des rescapés ; seulement des visages, aucun corps à l'image | Universal-International News, 1945 (domaine public) | archive.org 1945-04-26_Nazi_Murder_Mills | https://archive.org/details/1945-04-26_Nazi_Murder_Mills |
-| 1945-san-francisco-charte-onu | même bobine, « Nations Meet To Map World Security Plan » : la conférence de San Francisco, qui écrit la Charte des Nations unies, ouverte le 25 avril 1945 par Edward Stettinius (la tribune et les drapeaux, la salle, les délégués) | Universal-International News, 1945 (domaine public) | archive.org 1945-04-26_Nazi_Murder_Mills | https://archive.org/details/1945-04-26_Nazi_Murder_Mills |
+| 1945-san-francisco-charte-onu | actualités Universal du 28 juin 1945, « San Francisco Parley Ends » : le 26 juin, cinquante pays signent la Charte des Nations unies (les délégués et les drapeaux, deux signatures, le livre de la Charte, Truman et Stettinius) | Universal-International News, 1945 (collection cédée au gouvernement américain) | archive.org 1945-06-28_San_Francisco_Parley_Ends | https://archive.org/details/1945-06-28_San_Francisco_Parley_Ends |
+| 1933-jerusalem-bethleem-rues | même film amateur Levy, 1933 : le dôme du Rocher, la place devant les murs de Jérusalem, un passant, une rue commerçante, des hommes en robe sur une estrade de marché | famille Levy, 1933 (dédicace au domaine public de la copie) | archive.org Levycoll1933 | https://archive.org/details/Levycoll1933 |
+| 1950-sands-of-sorrow-enfants | « Sands of Sorrow », autre passage : les enfants des camps de réfugiés palestiniens, sous la tente-école | Theodore A. Morde, 1950 (même statut que ci-dessus) | archive.org sands_of_sorrow | https://archive.org/details/sands_of_sorrow |
+| 1956-suez-flotte-et-avions | actualités Universal du 1er novembre 1956, « War in Egypt » : la flotte en Méditerranée orientale, les avions, une bombe sous l'aile | Universal-International News, 1956 | archive.org 1956-11-01_War_in_Egypt | https://archive.org/details/1956-11-01_War_in_Egypt |
+| 1948-haifa-habitants-arabes | actualités Universal du 18 mai 1948, « Jews Defend New Zion State » : Haïfa vue d'en haut, des hommes arabes fouillés, des femmes qui partent avec leurs bagages, une vieille femme, une mère et son enfant (aucun corps à l'image ; minutage incrusté de la copie retiré au recadrage) | Universal News, 1948 ; copie du musée américain de l'Holocauste, « Copyright : Public Domain », crédit « Accessed at United States Holocaust Memorial Museum, courtesy of National Archives & Records Administration » | USHMM irn1000897, NARA 200 UN 21-144-1 | https://collections.ushmm.org/search/catalog/irn1000897 |
 
 Retiré : « Jérusalem, 1918 » (archive.org jerusalem-1918). Vérification du 21 octobre 2026 : images amateurs retrouvées dans une famille à Amsterdam, montées par Yaakov Gross (musique de Nahum Heiman) ; aucune autorisation générale de réutilisation établie. Le plan 10.4 passe en reconstitution d'après une photo de la Bibliothèque du Congrès. Le 23 octobre 2026, il reprend un vrai film : celui de la famille Levy (1933, Prelinger Archives, domaine public) ; la reconstitution passe en réserve du chapitre 10.
 
@@ -312,19 +316,34 @@ marquée du filigrane d'une agence commerciale.
   copies archive.org 1967-06-06_Mid-East, 1967-06-09_Egypt_Accepts_UN_Cease-Fire, 1967-06-13_Cease-Fire, domaine public.
 - Le pont aérien américain vers Israël, octobre 1973 (plan 33.10) : US Air Force, film 342-ADW-264, « Israel Airlift
   Operation », archives nationales américaines (identifiant 62010), copie archive.org 342-adw-264, domaine public.
-- Le mur occidental, 1933 (plan 10.4) : film amateur de la famille Levy, Prelinger Archives, copie archive.org Levycoll1933,
-  domaine public.
+- Le mur occidental, 1933 (plan 10.4), et les rues de Jérusalem et de Bethléem (plan 18.6) : film amateur de la famille
+  Levy, Prelinger Archives, copie archive.org Levycoll1933 (carton « 7.23.1933 », Bethléem). Cette copie porte la
+  dédicace Creative Commons au domaine public (licenseurl creativecommons.org/licenses/publicdomain, relevé le
+  23 octobre 2026) ; Prelinger rappelle que tous ses films ne sont pas libres (« DO NOT ASSUME that all Prelinger
+  Archives films are in the public domain ») et que ses anciennes dédicaces restent valables : la dédicace de cette
+  copie est la preuve gardée.
 - Déportés juifs libérés, avril 1945 (plan 10.7), et manifestation des personnes déplacées juives à Francfort, novembre 1945
-  (plan 11.13) : US Army Signal Corps, « Freed Jews » (17 avril 1945, NARA 111-ADC-9721) et « D P Zionist Demonstration,
-  Frankfurt, Germany » (NARA 111-ADC-5604, qui réunit trois sujets datés du 16 novembre au 12 décembre 1945), copies
-  archive.org 111-adc-9721 et 111-adc-5604 ; films de l'armée américaine, donc du gouvernement fédéral (domaine public aux
-  États-Unis), mais le catalogue des Archives nationales porte une mention générale « droits possiblement restreints » :
-  à confirmer avant diffusion (script/A-FABRIQUER.md).
+  (plan 11.13) : US Army Signal Corps, « Freed Jews » (catalogué le 17 avril 1945, NARA 111-ADC-9721, catalogue 23486 :
+  les rescapés du train de Farsleben, près de Magdebourg, libéré le 13 avril 1945 ; identification du chercheur Matthew
+  Rozell, https://magdeburgtrain.com/a-totally-unexpected-treasure/, tournage attribué au 14 avril) et « (Paris 351) DP
+  Zionist Demonstration, Frankfurt, Germany, November 16, 1945 » (NARA 111-ADC-5604, catalogue 19403 ; date reprise par
+  le portail EHRI), copies archive.org 111-adc-9721 et 111-adc-5604. Règle de la NARA : les images faites par un
+  militaire ou un agent fédéral dans ses fonctions sont des œuvres du gouvernement américain, sans copyright aux
+  États-Unis (https://www.archives.gov/research/motion-pictures/permissions) ; la mention « Restricted - Possibly :
+  Copyright » du catalogue n'a été rattachée à aucun plan précis (vérification du 24 octobre 2026). Crédit demandé :
+  « Courtesy: National Archives and Records Administration ».
 - Ohrdruf, avril 1945 (plan 32.6) : actualités Universal du 26 avril 1945, « Nazi Murder Mills », copie archive.org
   1945-04-26_Nazi_Murder_Mills, domaine public. Choix de montage : seulement les généraux et les visages des rescapés,
   aucun corps à l'image.
-- La conférence de San Francisco, avril 1945 (plan 37.2) : même bobine, sujet « Nations Meet To Map World Security
-  Plan », domaine public.
+- La signature de la Charte des Nations unies, San Francisco, 26 juin 1945 (plan 37.2) : actualités Universal du
+  28 juin 1945, « San Francisco Parley Ends », copie archive.org 1945-06-28_San_Francisco_Parley_Ends.
+- Suez, novembre 1956 (plan 19.13) : actualités Universal du 1er novembre 1956, « War in Egypt », la flotte en
+  Méditerranée orientale et les avions, copie archive.org 1956-11-01_War_in_Egypt.
+- Enfants des camps de réfugiés palestiniens, 1950 (plan 17.6) : « Sands of Sorrow », autre passage (voir le tableau).
+- Actualités Universal, règle de la NARA : « MCA/Universal deeded the copyright to this collection to the US
+  Government. However, individual reels may include content acquired and under copyright to a third party »
+  (https://www.archives.gov/research/motion-pictures/newsreels) ; aucun élément de tiers repéré dans les passages
+  retenus (images sans musique ni son d'origine).
 - Écarté : « La Vie des Juifs en Palestine » (1913), domaine public aux États-Unis, mais la copie disponible ici porte
   les logos de ses restaurateurs ; à reprendre d'une copie sans logo.
 
@@ -588,27 +607,41 @@ marquée du filigrane d'une agence commerciale.
 - Pilier de défense : B'Tselem, rapport de mai 2013,
   https://www.btselem.org/sites/default/files/sites/default/files2/201305_pillar_of_defense_operation_eng.pdf
   (167 Palestiniens tués, dont au moins 87 qui ne prenaient pas part aux combats ; quatre civils israéliens et deux
-  membres des forces de sécurité tués) ; ministère de la Santé palestinien, 185 tués (cité par Euro-Med Monitor,
-  https://euromedmonitor.org/en/article/1019/Children-Targeted-in-Pillar-of-Defense ; à confirmer).
+  membres des forces de sécurité tués) ; ministère de la Santé palestinien, 185 tués dont 47 enfants, chiffre attribué
+  au ministère par Euro-Med Monitor, « Children targeted in Pillar of Defense », 22 novembre 2012,
+  https://euromedmonitor.org/en/article/1020/Children-targeted-in-Pillar-of-Defense (« According to the Palestinian
+  Ministry of Health, 65 percent of the 185 Palestinians killed were non-combatants, including 47 children ») ; le
+  bulletin d'origine du ministère n'a pas été retrouvé (vérification Perplexity du 24 octobre 2026). Autres décomptes :
+  OCHA, 165 tués dont 33 enfants ; Al-Haq, 173 dont 38 enfants. À l'écran et en voix : « entre 167 et 185 selon les
+  sources ».
 - Bordure protectrice : commission d'enquête indépendante de l'ONU sur le conflit de Gaza de 2014, juin 2015 ; OCHA,
   https://www.ochaopt.org/content/key-figures-2014-hostilities (2 251 Palestiniens tués, dont 1 462 civils et 551
   enfants ; 67 soldats et 6 civils tués en Israël) ; ministère de la Santé de Gaza, bilan révisé de janvier 2015 (2 310
   tués, corps retrouvés sous les décombres compris).
 - Mai 2021 : OCHA, rapport de situation n° 10, septembre 2021, d'après le Haut-Commissariat aux droits de l'homme,
   https://www.ochaopt.org/content/response-escalation-opt-situation-report-no-10-september-2021 (261 Palestiniens tués,
-  dont 67 enfants ; 13 morts en Israël, dont un soldat) ; ministère de la Santé de Gaza, 21 mai 2021, jour du
-  cessez-le-feu (243 tués, dont 66 enfants).
+  dont 67 enfants ; 13 morts en Israël, dont un soldat ; bilan rétrospectif d'OCHA, novembre 2021 : « 261 Palestinians
+  were killed, including 67 children and 41 women », d'après le Haut-Commissariat) ; ministère de la Santé de Gaza,
+  21 mai 2021, jour du cessez-le-feu (243 tués, dont 66 enfants ; 248 dans une dépêche des 22-23 mai). Vérifié le
+  24 octobre 2026 : le bilan du cessez-le-feu et le bilan rétrospectif ne se contredisent pas, le second révise le
+  premier.
 - Fin de la séquence : OCHA, données sur les victimes du conflit, https://www.ochaopt.org/data/casualties, de 2008 à
-  septembre 2023 (Gaza, Cisjordanie et Israël) : 6 407 Palestiniens et 308 Israéliens tués (relevé repris par The Wire,
-  https://thewire.in/world/chart-6407-palestinians-and-308-israelis-killed-in-violence-in-last-15-years ; à confirmer
-  sur le tableau d'OCHA).
+  septembre 2023 (Gaza, Cisjordanie et Israël) : 6 407 Palestiniens et 308 Israéliens tués (relevé repris par The Wire le 9 octobre 2023,
+  https://thewire.in/world/chart-6407-palestinians-and-308-israelis-killed-in-violence-in-last-15-years, et par Le
+  Devoir le 27 octobre 2023 : « From 2008 till September 2023, 6,407 Palestinians were recorded to have been
+  killed ») ; la base ne compte que les victimes des affrontements liés à l'occupation et au conflit. Le tableau
+  d'OCHA filtré au 19 septembre 2023 n'a pas été reproduit (vérification du 24 octobre 2026).
 
 **Leurs noms** (chapitre 25, `timelines/les-noms.js`, écrite par `tools/prep_noms.py`)
 - Ministère de la Santé de Gaza, liste nominative des morts identifiés, mise à jour du 27 juillet 2026 (morts
   jusqu'au 7 mai 2026) : 72 835 personnes, dont 21 637 enfants de moins de 18 ans et 1 072 de moins d'un an ;
   données ouvertes de Tech for Palestine, https://data.techforpalestine.org/api/v2/killed-in-gaza.json (résumé :
   https://data.techforpalestine.org/api/v3/summary.json). À l'écran : les 1 072 enfants de moins d'un an, nom arabe
-  et transcription, dans l'ordre de la liste ; ni numéro d'identité ni date de naissance.
+  et transcription, dans l'ordre de la liste ; ni numéro d'identité ni date de naissance. Recompté le 23 octobre 2026
+  sur le fichier complet https://data.techforpalestine.org/api/v3/killed-in-gaza.csv (empreinte SHA-256 commençant par
+  fe38928c2a64aaf3) : 72 835 lignes, 21 637 de moins de 18 ans, 1 072 d'âge 0 ; la liste publiée le 27 juillet 2026
+  s'arrête au 7 mai 2026 (« On July 5th, 2026, Iraq Body Count released an updated list of those killed in Gaza
+  between October 7, 2023 and May 7, 2026 »).
 
 **La carte de Sykes-Picot** (chapitre 7, `timelines/sykes-picot.js`, carte redressée `data/cartes/sykes-picot-1916.jpg`
 et zone `data/sykes-picot.js` écrites par `tools/prep_sykes_picot.py`)
@@ -616,6 +649,9 @@ et zone `data/sykes-picot.js` écrites par `tools/prep_sykes_picot.py`)
   domaine public ; copie de Wikimedia Commons, « MPK1-426 Sykes Picot Agreement Map signed 8 May 1916.jpg »,
   https://commons.wikimedia.org/wiki/File:MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg (fond : Royal
   Geographical Society, Map of Eastern Turkey in Asia, Syria and Western Persia, 1910, chemins de fer de novembre 1915).
+  Fiche des National Archives confirmée le 24 octobre 2026 : « Signed: Sir Mark Sykes and Fr[ançois] Georges-Picot,
+  8 May 1916 », pièce jointe à la lettre de Paul Cambon à Edward Grey du 9 mai 1916 (FO 371/2777, folio 398),
+  https://discovery.nationalarchives.gov.uk/details/r/C3980447.
 - Calage sur les graduations de degrés des bords (projection polyconique ajustée, écart moyen 2 px, soit 1,6 km),
   vérifié sur huit villes ; la zone jaune (administration internationale) est lue à la couleur, le reste est montré
   tel quel.
@@ -627,8 +663,10 @@ et zone `data/sykes-picot.js` écrites par `tools/prep_sykes_picot.py`)
   plan de partage (État juif : Galilée, vallée de Jezréel, plaine côtière ; État arabe uni à la Transjordanie ; zone
   sous mandat : Jérusalem, Bethléem, couloir jusqu'à la mer, Nazareth) ; transfert proposé : jusqu'à 225 000 Arabes et
   1 250 Juifs. Refus du Haut Comité arabe ; 20e congrès sioniste (Zurich, août 1937) : principe du partage accepté,
-  tracé rejeté ; commission Woodhead et livre blanc britannique de novembre 1938 : plan abandonné (à confirmer, voir
-  A-FABRIQUER section 11).
+  tracé rejeté, mandat de négocier ; commission Woodhead (rapport d'octobre 1938, Cmd. 5854) puis déclaration du
+  gouvernement britannique de novembre 1938 (Cmd. 5893) : plan abandonné (numéros des deux fascicules à vérifier,
+  A-FABRIQUER section 13). Texte et chiffres du rapport Peel confirmés le 24 octobre 2026 (« transfer of land and, as
+  far as possible, an exchange of population » ; 225 000 Arabes et 1 250 Juifs vivant dans les zones de l'autre État).
 - Carte : « Peel map pd.png », par Ynhockey, Wikimedia Commons, domaine public,
   https://commons.wikimedia.org/wiki/File:Peel_map_pd.png, d'après la carte du rapport ; géoréférencée sur 13 villes
   (écart moyen 1,9 km), limites intérieures seulement (côtes et frontières : Natural Earth). Tracé simplifié, dit à
@@ -640,7 +678,9 @@ et zone `data/sykes-picot.js` écrites par `tools/prep_sykes_picot.py`)
 - Amnesty International, Troubled Waters: Palestinians Denied Fair Access to Water, octobre 2009 (MDE 15/027/2009) :
   environ 80 % de l'eau de la nappe pour Israël ; la nappe se recharge surtout sous la Cisjordanie.
 - B'Tselem, Parched, 2 mai 2023 : 82,4 litres par jour et par Palestinien de Cisjordanie, 247 par Israélien (colons
-  compris) ; minimum de l'OMS : 100 litres (à confirmer sur le rapport, A-FABRIQUER section 11).
+  compris) ; 100 litres par jour et par personne : seuil que B'Tselem attribue à l'OMS et à l'USAID (« the World Health
+  Organization and the United States Agency for International Development recommend 100 liters »), confirmé le
+  24 octobre 2026 ; le document de l'OMS lui-même reste à citer.
 - Les trajets de l'eau sous terre sont un schéma (des collines vers la sortie de chaque bassin).
 
 **Les intifadas** (chapitre 22, chiffres de la voix)

@@ -274,6 +274,8 @@
   .stat .stlab { margin-top: 10px; font-family: var(--display); font-variation-settings: 'wdth' 62, 'wght' 380; font-size: 66px; line-height: .98; text-transform: uppercase; color: var(--stone); max-width: 980px; }
   .R.stat .stlab { margin-left: auto; }
   .stat .text { font-size: 36px; }
+  /* pas de mot seul en fin de paragraphe */
+  p.text, .stat .stlab { text-wrap: pretty; }
   .stat.B .scrim { background: linear-gradient(0deg, rgba(9,8,7,.9) 0%, rgba(9,8,7,.62) 32%, rgba(9,8,7,0) 58%); }
   .stat.B .block { top: auto; bottom: 96px; left: 132px; width: 1656px; }
   .stat.B .name { display: flex; align-items: baseline; gap: 30px; font-size: 176px; margin-top: 8px; }

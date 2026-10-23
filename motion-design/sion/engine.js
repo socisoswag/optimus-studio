@@ -1013,7 +1013,12 @@
       const off = m.off || 26, lx = x + dx * off, ly = y + dy * off;
       const la = a * tw(h, 0.1, 0.5, E.outCubic) * (m.hideT !== undefined ? 1 - tw(t, m.hideT, m.hideT + 0.5) : 1);
       g.globalAlpha = la;
-      g.strokeStyle = rgba(COL.stone, 0.6);
+      // trait de rappel et nom de lieu cernés de sombre : lisibles sur le relief clair comme sur le fond nuit
+      g.lineCap = 'round';
+      g.strokeStyle = 'rgba(10,9,8,.55)';
+      g.lineWidth = 3;
+      g.beginPath(); g.moveTo(x + dx * 8, y + dy * 8); g.lineTo(lx, ly); g.stroke();
+      g.strokeStyle = rgba(COL.stone, 0.75);
       g.lineWidth = 1;
       g.beginPath(); g.moveTo(x + dx * 8, y + dy * 8); g.lineTo(lx, ly); g.stroke();
       g.font = '500 15px "DM Mono"';
@@ -1028,11 +1033,14 @@
         g.textAlign = 'center';
         g.fillText(num, bx + nw / 2 + 1, ly + 1);
       }
-      g.font = '400 14px "DM Mono"';
+      g.font = '500 15px "DM Mono"';
       g.letterSpacing = '2.5px';
-      g.fillStyle = rgba(COL.stone, 0.92);
       g.textAlign = dx > 0 ? 'left' : 'right';
-      g.fillText(m.label.toUpperCase(), dx > 0 ? bx + nw + (num ? 10 : 4) : bx - (num ? 10 : 4), ly + 1);
+      const tx = dx > 0 ? bx + nw + (num ? 10 : 4) : bx - (num ? 10 : 4);
+      g.lineJoin = 'round'; g.lineWidth = 5; g.strokeStyle = 'rgba(10,9,8,.82)';
+      g.strokeText(m.label.toUpperCase(), tx, ly + 1);
+      g.fillStyle = rgba(COL.stone, 1);
+      g.fillText(m.label.toUpperCase(), tx, ly + 1);
       g.globalAlpha = 1;
       g.restore();
     }
@@ -2554,7 +2562,9 @@
   const typeLayer = $('type');
   const chars = (str) => [...str].map((c) => `<span class="ch">${c === ' ' ? '&nbsp;' : esc(c)}</span>`).join('');
   // typographie française : espaces insécables avant : ; ! ? » et après «
-  const fr = (str) => str.replace(/« /g, '«\u00a0').replace(/ »/g, '\u00a0»').replace(/ ([:;!?])/g, '\u00a0$1');
+  // espaces insécables : guillemets et ponctuation double, groupes de chiffres (15 136), nombre et unité (95 %, 82,4 L, 464 km)
+  const fr = (str) => str.replace(/« /g, '«\u00a0').replace(/ »/g, '\u00a0»').replace(/ ([:;!?])/g, '\u00a0$1')
+    .replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u00a0').replace(/(\d) (%|‰|km²|km|m²|ha|L|kg|°C|°)(?=$|[\s.,;:!?)\]»])/g, '$1\u00a0$2');
   // [[ ... ]] : passage surligné (soulignement de braise qui s'allume)
   const words = (str) => {
     let on = false;

@@ -160,6 +160,7 @@ chapitres:
         ecran: "Ils fuient l'Europe, presque tous vers l'Amérique."
       - type: ARCH
         fichier: output/archives-filmees/1903-ellis-island-immigrants.mp4
+        carton: output/cartons/27-arch-1903-ellis-island-immigrants.mov
         entree: 0
         sortie: 5.76
         source: "SOURCES.md 4.2 (Emigrants [i.e. Immigrants] Landing at Ellis Island, Thomas A. Edison, Inc., 1903, domaine public)"
@@ -188,6 +189,7 @@ chapitres:
         son: "roulement de tambour militaire au loin, foule ; un seul coup sec sur « juifs »"
       - type: ARCH
         fichier: output/archives-filmees/1899-melies-dreyfus-ile-du-diable.mp4
+        carton: output/cartons/28-arch-1899-melies-dreyfus-ile-du-diable.mov
         entree: 0
         sortie: 9
         source: "SOURCES.md 4.2 (Georges Méliès, L'Affaire Dreyfus, 1899, tableau « L'île du Diable », domaine public)"
@@ -198,6 +200,7 @@ chapitres:
           et cela **suffit**.
       - type: ARCH
         fichier: output/archives-filmees/1899-melies-dreyfus-bagarre-journalistes.mp4
+        carton: output/cartons/29-arch-1899-melies-dreyfus-bagarre-journalistes.mov
         entree: 0
         sortie: 10
         source: "SOURCES.md 4.2 (Georges Méliès, L'Affaire Dreyfus, 1899, tableau « Bagarre entre journalistes » ; Méliès, mort en 1938 : domaine public)"
@@ -394,6 +397,7 @@ chapitres:
         sortie: 4.6
       - type: ARCH
         fichier: output/archives-filmees/1897-lumiere-jerusalem-porte-de-jaffa.mp4
+        carton: output/cartons/30-arch-1897-lumiere-jerusalem-porte-de-jaffa.mov
         entree: 0
         sortie: 9.6
         source: "SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine public)"

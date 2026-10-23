@@ -35,10 +35,42 @@
     ['source-sante-gaza', 'Source : ministère de la Santé de Gaza'],
     ['source-archives', 'Images d’archives'],
   ];
+  // ARCHIVES : légendes des archives filmées, écrites par tools/cartons_archives.py d'après le script (ne pas modifier à la main)
+  const ARCHIVES = [
+    ["arch-1903-ellis-island-immigrants", "1903", "Ellis Island, New York", ""],
+    ["arch-1899-melies-dreyfus-ile-du-diable", "1899", "L’Affaire Dreyfus", "Reconstitution de Georges Méliès, 1899."],
+    ["arch-1899-melies-dreyfus-bagarre-journalistes", "1899", "L’Affaire Dreyfus", "Film de Georges Méliès, scène reconstituée à l’époque."],
+    ["arch-1897-lumiere-jerusalem-porte-de-jaffa", "Avril 1897", "Jérusalem", "Film des frères Lumière."],
+    ["arch-1930-paths-to-palestine-02", "1934", "Jérusalem", ""],
+    ["arch-1933-jerusalem-mur-occidental", "1933", "Jérusalem", "Au mur occidental, film amateur."],
+    ["arch-1945-deportes-juifs-liberes", "Avril 1945", "Farsleben, près de Magdebourg", "Les rescapés d’un train de déportés juifs, libérés par l’armée américaine."],
+    ["arch-1945-roosevelt-ibn-saoud", "Février 1945", "Grand Lac Amer", "Roosevelt reçoit Ibn Saoud."],
+    ["arch-1945-francfort-personnes-deplacees-juives", "16 novembre 1945", "Francfort", "Des personnes déplacées juives manifestent."],
+    ["arch-1946-refugies-juifs-palestine", "1946", "Palestine", "Des réfugiés juifs d’Europe débarquent."],
+    ["arch-1948-haifa-habitants-arabes", "Avril 1948", "Haïfa", "Des habitants arabes quittent la ville."],
+    ["arch-1950-sands-of-sorrow-refugies", "1950", "Bande de Gaza", "Un camp de réfugiés."],
+    ["arch-1950-sands-of-sorrow-enfants", "1950", "Camps de réfugiés palestiniens", "Les enfants."],
+    ["arch-1933-jerusalem-bethleem-rues", "1933", "Jérusalem et Bethléem", "Film amateur de la famille Levy."],
+    ["arch-1956-nasser-canal-de-suez", "Juillet 1956", "Égypte", "Nasser nationalise le canal de Suez."],
+    ["arch-1956-suez-flotte-et-avions", "Novembre 1956", "Méditerranée orientale", "Opération Mousquetaire."],
+    ["arch-1956-port-said", "Novembre 1956", "Port-Saïd", "La ville après les bombardements."],
+    ["arch-1956-sinai-gaza-armee-israelienne", "Novembre 1956", "Sinaï", "L’armée israélienne."],
+    ["arch-1957-tel-aviv-retrait-gaza", "Février 1957", "Tel-Aviv", "La foule contre le retrait de Gaza et du Sinaï."],
+    ["arch-1967-mai-pacte-nasser-hussein", "Mai 1967", "Le Caire", "Nasser et le roi Hussein de Jordanie signent un pacte de défense."],
+    ["arch-1967-sinai-gaza", "Juin 1967", "Sinaï et Gaza", "« Welcome to Gaza », le panneau de l’armée israélienne."],
+    ["arch-1967-jerusalem", "Juin 1967", "Jérusalem", "Moshe Dayan dans la vieille ville."],
+    ["arch-cisjordanie-1967-chars-detruits-film-amateur", "1967", "Cisjordanie", "Film amateur."],
+    ["arch-1961-proces-eichmann", "Avril 1961", "Jérusalem", "Le procès d’Adolf Eichmann."],
+    ["arch-1945-ohrdruf-camp-libere", "Avril 1945", "Ohrdruf, Allemagne", "Eisenhower, Bradley et Patton dans le camp libéré."],
+    ["arch-1973-pont-aerien-americain", "Octobre 1973", "Lod", "Le pont aérien américain."],
+    ["arch-1945-san-francisco-charte-onu", "26 juin 1945", "San Francisco", "Cinquante pays signent la Charte des Nations unies."],
+  ];
+  // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };
   const segments = [
     ...LIEUX.map(([id, kicker, title, text]) => ({ id, type: 'cap', layout: 'small', dur: CARD, out: CARD - 0.4, fly: 0.15, capAt: 0.2, kicker, title, text, cam, camEnd: cam })),
     ...SOURCES.map(([id, kicker]) => ({ id, type: 'cap', layout: 'source', dur: CARD, out: CARD - 0.4, fly: 0.15, capAt: 0.2, kicker, title: '', cam, camEnd: cam })),
+    ...ARCHIVES.map(([id, kicker, title, text]) => ({ id, type: 'cap', layout: 'small', dur: CARD, out: CARD - 0.4, fly: 0.15, capAt: 0.2, kicker, title, text, cam, camEnd: cam })),
   ];
   root.TL = root.buildTL({
     name: 'cartons',

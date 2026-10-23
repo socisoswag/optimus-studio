@@ -290,3 +290,33 @@ seconde sans doubler d'image).
 
 Au total : environ une minute d'archives filmées en plus. Générique de fin : crédits des nouvelles archives et des
 cartes de 1916 et 1937 ajoutés.
+
+## 24 octobre 2026, la nuit (archives, occupation, légendes, typographie)
+
+**Nouvelles archives filmées**
+
+| Plan | Avant | Nouveau fichier | Ce que c'est |
+|---|---|---|---|
+| 13.06 | (nouveau, sans voix) | `13.06-ARCH-1948-haifa-habitants-arabes.mp4` | avril 1948, Haïfa : des habitants arabes quittent la ville, une mère et son enfant (aucun corps) |
+| 17.06 | noir | `17.06-ARCH-1950-sands-of-sorrow-enfants.mp4` | 1950, les enfants des camps de réfugiés palestiniens |
+| 18.06 | noir | `18.06-ARCH-1933-jerusalem-bethleem-rues.mp4` | 1933, les rues de Jérusalem et de Bethléem, sous « il n'y avait pas de peuple palestinien » |
+| 19.13 | carte de Suez | `19.13-ARCH-1956-suez-flotte-et-avions.mp4` | novembre 1956, la flotte et les avions de l'opération Mousquetaire |
+| 37.02 | même nom | `37.02-ARCH-1945-san-francisco-charte-onu.mp4` | maintenant la vraie signature de la Charte, le 26 juin 1945 |
+
+**Nouvelle séquence** `occupation.mp4`, chapitre 23, plans 23.13 à 23.15 (après le checkpoint de Hizma) : 925 obstacles sur
+les routes de Cisjordanie (OCHA, fin 2025), 24 permis de construire sur 2 550 demandes en zone C (2016 à 2020), 15 136
+constructions palestiniennes démolies depuis 2009. Trois phrases de voix nouvelles.
+
+**Renumérotés** : chapitre 13, 13.6 et suivants deviennent 13.7 et suivants ; chapitre 23, 23.13 et suivants deviennent
+23.16 et suivants.
+
+**Voix retouchée** (mots qui sonnaient « fabriqués ») : 8.14 « La branche armée du Hamas porte aujourd'hui son nom » (au
+lieu de « Il devient un symbole ») ; 18.6 sans « Tout est là » ; 32.2 « La Shoah marque l'identité d'Israël ».
+
+**Légendes des archives** : un carton transparent pour chaque archive filmée (date, lieu, une phrase), fichiers
+`output/cartons/27-arch-…mov` à `53-arch-…mov`, noté dans chaque plan du script (champ « carton »). À poser au début du
+plan, sur la piste au-dessus de l'image.
+
+**Toutes les cartes** : noms de lieux cernés de sombre (lisibles sur le relief clair), un nombre ne se sépare plus de son
+unité (95 %, 82,4 L, 464 km) ni de ses chiffres (15 136), et plus de mot seul en fin de paragraphe. Toutes les pièces
+sont refaites, mêmes noms.

@@ -72,6 +72,7 @@ chapitres:
           1956. / Israël, la France et le Royaume-Uni attaquent l'**Égypte**.
       - type: ARCH
         fichier: output/archives-filmees/1956-nasser-canal-de-suez.mp4
+        carton: output/cartons/41-arch-1956-nasser-canal-de-suez.mov
         entree: 0
         sortie: 6.71
         ecran: "carton : juillet 1956 · Égypte · Nasser nationalise le canal de Suez"
@@ -97,14 +98,18 @@ chapitres:
         voix: >-
           Le premier soir, à Kafr Qassem, en Israël, / la police des frontières abat 49 villageois palestiniens, /
           citoyens israéliens, qui rentraient des **champs**.
-      - type: MD
-        fichier: output/suez-1956.mp4
-        entree: 38.5
-        sortie: 49.5
+      - type: ARCH
+        fichier: output/archives-filmees/1956-suez-flotte-et-avions.mp4
+        carton: output/cartons/42-arch-1956-suez-flotte-et-avions.mov
+        entree: 0
+        sortie: 10.84
+        ecran: "carton : novembre 1956 · Méditerranée orientale · Opération Mousquetaire"
+        source: "actualités Universal du 1er novembre 1956, « War in Egypt », archive.org 1956-11-01_War_in_Egypt"
         voix: >-
           Paris et Londres **bombardent**.
       - type: ARCH
         fichier: output/archives-filmees/1956-port-said.mp4
+        carton: output/cartons/43-arch-1956-port-said.mov
         entree: 0
         sortie: 10.44
         ecran: "carton : novembre 1956 · Port-Saïd · La ville après les bombardements"
@@ -113,6 +118,7 @@ chapitres:
           Les 5 et 6 novembre, / leurs troupes débarquent à **Port-Saïd**.
       - type: ARCH
         fichier: output/archives-filmees/1956-sinai-gaza-armee-israelienne.mp4
+        carton: output/cartons/44-arch-1956-sinai-gaza-armee-israelienne.mov
         entree: 0
         sortie: 7.67
         ecran: "carton : novembre 1956 · Sinaï · L'armée israélienne"
@@ -133,6 +139,7 @@ chapitres:
           Sous la pression de Washington et de Moscou, / Israël doit tout **rendre**.
       - type: ARCH
         fichier: output/archives-filmees/1957-tel-aviv-retrait-gaza.mp4
+        carton: output/cartons/45-arch-1957-tel-aviv-retrait-gaza.mov
         entree: 0
         sortie: 8.72
         ecran: "carton : février 1957 · Tel-Aviv · La foule contre le retrait de Gaza et du Sinaï"
@@ -141,6 +148,7 @@ chapitres:
           En février 1957, à Tel-Aviv, / la foule manifeste contre le retrait. / En mars, l'armée israélienne quitte **Gaza**.
       - type: ARCH
         fichier: output/archives-filmees/1967-mai-pacte-nasser-hussein.mp4
+        carton: output/cartons/46-arch-1967-mai-pacte-nasser-hussein.mov
         entree: 0
         sortie: 14.16
         ecran: "carton : mai 1967 · Le Caire · Nasser et le roi Hussein de Jordanie signent un pacte de défense"
@@ -167,6 +175,7 @@ chapitres:
           Le Sinaï tombe, / Gaza passe sous **occupation**.
       - type: ARCH
         fichier: output/archives-filmees/1967-sinai-gaza.mp4
+        carton: output/cartons/47-arch-1967-sinai-gaza.mov
         entree: 0
         sortie: 9.24
         ecran: "carton : juin 1967 · Sinaï et Gaza · « Welcome to Gaza », le panneau de l'armée israélienne"
@@ -180,6 +189,7 @@ chapitres:
           Le 7 juin, Jérusalem-Est est prise. / Près de Latroun, trois villages sont vidés, puis **rasés**.
       - type: ARCH
         fichier: output/archives-filmees/1967-jerusalem.mp4
+        carton: output/cartons/48-arch-1967-jerusalem.mov
         entree: 0
         sortie: 7.67
         ecran: "carton : juin 1967 · Jérusalem · Moshe Dayan dans la vieille ville"
@@ -645,6 +655,30 @@ chapitres:
         ecran: "carton : output/cartons/cisjordanie-aujourdhui"
         voix: >-
           Pour les Palestiniens, l'occupation, c'est d'abord ça : / des checkpoints, des permis, des **attentes**. ///
+      - type: MD
+        fichier: output/occupation.mp4
+        entree: 0
+        sortie: 11
+        ecran: "déjà dans le plan : 925 obstacles sur les routes, Qalandia, Hébron zone H2"
+        source: "OCHA, Movement and Access in the West Bank, avril 2026, https://www.ochaopt.org/content/movement-and-access-west-bank-april-2026 (« As of December 2025, OCHA documented 925 movement obstacles » ; 89 postes tenus jour et nuit ; 3,4 millions de Palestiniens)"
+        voix: >-
+          Fin 2025, l'ONU compte 925 obstacles sur les routes de Cisjordanie : / postes de contrôle, barrières, blocs de terre. // Israël les dit nécessaires à sa **sécurité**.
+      - type: MD
+        fichier: output/occupation.mp4
+        entree: 11
+        sortie: 22
+        ecran: "déjà dans le plan : 24 permis sur 2 550 demandes, la zone C"
+        source: "La Paix maintenant, 10 août 2023, https://peacenow.org.il/en?p=39259 (« according to data provided to Bimkom between 2016 and 2020, Palestinians submitted 2,550 building applications, of which only 24 were approved » ; l'administration civile reconnaît 95 % de refus)"
+        voix: >-
+          En zone C, de 2016 à 2020, / 2 550 demandes de permis de construire palestiniennes. / 24 sont **acceptées**.
+      - type: MD
+        fichier: output/occupation.mp4
+        entree: 22
+        sortie: 33
+        ecran: "déjà dans le plan : 15 136 constructions démolies, 23 751 personnes déplacées"
+        source: "OCHA, données sur les démolitions et les déplacements en Cisjordanie, mise à jour du 21 octobre 2026, https://www.ochaopt.org/data/demolition (15 136 structures depuis 2009, 23 751 personnes déplacées, 75 % en zone C)"
+        voix: >-
+          Sans permis, on démolit. / Depuis 2009, plus de quinze mille constructions palestiniennes détruites, / plus de vingt-trois mille personnes **déplacées**.
       - type: RÉEL
         fichier: output/plans-reels/cisjordanie-al-eizariya-minaret-desert.mp4
         entree: 0

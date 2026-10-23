@@ -139,6 +139,14 @@ chapitres:
         voix: >-
           Avant même l'entrée des armées arabes, / Tibériade, Haïfa, Safed et Jaffa sont prises. / Leurs habitants
           arabes fuient, / ou sont **chassés**.
+      - type: ARCH
+        fichier: output/archives-filmees/1948-haifa-habitants-arabes.mp4
+        carton: output/cartons/37-arch-1948-haifa-habitants-arabes.mov
+        entree: 0
+        sortie: 14.32
+        ecran: "carton : avril 1948 · Haïfa · Des habitants arabes quittent la ville"
+        source: "actualités Universal du 18 mai 1948, « Jews Defend New Zion State », copie du musée américain de l'Holocauste (USHMM, irn1000897, domaine public, d'après la NARA 200 UN 21-144-1)"
+        note: "sans voix : un temps pour les visages ; aucun corps à l'image ; ambiance de rue au montage"
       - type: MD
         fichier: output/nakba-1948.mp4
         entree: 20
@@ -200,6 +208,7 @@ chapitres:
           Une même année. / Deux **mémoires**.
       - type: ARCH
         fichier: output/archives-filmees/1950-sands-of-sorrow-refugies.mp4
+        carton: output/cartons/38-arch-1950-sands-of-sorrow-refugies.mov
         entree: 0
         sortie: 15.34
         source: "SOURCES.md 4.2 (Sands of Sorrow, Theodore A. Morde, 1950 : « les premières images filmées des réfugiés arabes de Palestine », domaine public)"
@@ -478,8 +487,13 @@ chapitres:
         entree: 37.7
         sortie: 44.52
         ecran: "déjà dans la pièce : Deux exils. Deux mémoires. Une même terre."
-      - type: NOIR
-        duree: 9
+      - type: ARCH
+        fichier: output/archives-filmees/1950-sands-of-sorrow-enfants.mp4
+        carton: output/cartons/39-arch-1950-sands-of-sorrow-enfants.mov
+        entree: 0
+        sortie: 8.8
+        ecran: "carton : 1950 · Camps de réfugiés palestiniens · Les enfants"
+        source: "« Sands of Sorrow », Theodore A. Morde, 1950, domaine public (SOURCES.md 4.2)"
         voix: >-
           Israël parle d'un échange de populations. / Les Palestiniens répondent : / ce n'est pas à eux d'en payer le
           **prix**.
@@ -522,12 +536,16 @@ chapitres:
         voix: >-
           Pourtant, dès 1911, à Jaffa, un journal s'appelait Filastin, / et s'adressait à ses lecteurs comme à des
           **Palestiniens**.
-      - type: NOIR
-        duree: 18
-        source: "même entretien : « It was not as though there was a Palestinian people [...] and we came and threw them out and took their country away from them. »"
+      - type: ARCH
+        fichier: output/archives-filmees/1933-jerusalem-bethleem-rues.mp4
+        carton: output/cartons/40-arch-1933-jerusalem-bethleem-rues.mov
+        entree: 0
+        sortie: 18.16
+        ecran: "carton : 1933 · Jérusalem et Bethléem · Film amateur de la famille Levy"
+        source: "film amateur de la famille Levy, 1933, Prelinger Archives (archive.org, Levycoll1933), dédicace au domaine public ; même entretien : « It was not as though there was a Palestinian people [...] and we came and threw them out and took their country away from them. »"
         voix: >-
           Elle ajoute : ce n'est pas comme s'il y avait eu un peuple palestinien, / « et que nous étions venus les
-          chasser, / et leur prendre leur pays ». // Tout est là : / s'il n'y a pas de peuple, / il n'y a rien à
+          chasser, / et leur prendre leur pays ». // S'il n'y a pas de peuple, / il n'y a rien à
           **rendre**.
       - type: NOIR
         duree: 6

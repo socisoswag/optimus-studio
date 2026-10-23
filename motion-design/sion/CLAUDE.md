@@ -126,7 +126,7 @@ moteur, mêmes gabarits, même finition. Rien de neuf sans raison de récit.
 - Finition commune (`tools/build.sh`, `tools/build_intro.sh`, `tools/archives_filmees.py`) : halo chaud des hautes
   lumières, courbe argentique, léger flottement de l'image, grain, vignette ; 1080p 25 i/s.
 - Relief étalonné (moteur, mode « terres ») : ombres froides et profondes, pentes éclairées chaudes, brume bleutée au
-  loin (table GRADE de engine.js) ; la grille de points s'efface sous le relief. Grain du moteur fin et doux (grains
+  loin (table GRADE de engine.js) ; la grille de points s'efface sous le relief ; les noms de lieu sont cernés de sombre pour rester lisibles sur le relief clair. Grain du moteur fin et doux (grains
   adoucis, opacité 0,2) : un grain dur pixel par pixel devient de la bouillie une fois compressé par YouTube.
 - Son : vrais enregistrements de la banque seulement (`data/bruitages.json`), réglés par `tools/sound.py` et
   `tools/sound_intro.py`, contrôlés par `tools/verif_son.py`.

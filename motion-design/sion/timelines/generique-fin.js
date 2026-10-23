@@ -95,6 +95,7 @@
         ['Immigrants à Ellis Island, 1903', 'Edison · Bibliothèque du Congrès'], ['Paths in Palestine, 1934', 'Archives nationales américaines'],
         ['Jérusalem, 1933', 'film amateur de la famille Levy · Prelinger Archives'],
         ['Libération des camps et Francfort, 1945', 'US Army Signal Corps · Archives nationales américaines'],
+        ['Haïfa, 1948', 'Universal News · musée américain de l’Holocauste, courtesy of NARA'],
         ['Sands of Sorrow, 1950', 'Theodore A. Morde'], ['Le procès Eichmann, 1961', 'Universal News · Archives nationales américaines'],
         ['Actualités de 1945 à 1967', 'Universal News et United News · domaine public'],
         ['Le pont aérien vers Israël, 1973', 'US Air Force · Archives nationales américaines']],

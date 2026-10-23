@@ -27,12 +27,13 @@ chapitres:
         sortie: 4.6
       - type: ARCH
         fichier: output/archives-filmees/1961-proces-eichmann.mp4
+        carton: output/cartons/50-arch-1961-proces-eichmann.mov
         entree: 0
         sortie: 18.22
         source: "SOURCES.md 4.2 (Universal-International News, « Trial of Century », avril 1961, domaine public)"
         ecran: "carton : Jérusalem · avril 1961 · le procès d'Adolf Eichmann"
         voix: >-
-          Six millions de Juifs assassinés. / La Shoah est au cœur de l'identité d'Israël : / un peuple qui a failli
+          Six millions de Juifs assassinés. / La Shoah marque l'identité d'Israël : / un peuple qui a failli
           disparaître, / et qui s'est juré « plus jamais ». // En 1961, le procès d'Adolf Eichmann fait entendre les
           **survivants**.
       - type: NOIR
@@ -63,6 +64,7 @@ chapitres:
           Juifs. / Les historiens le démentent, / et Berlin répond : la responsabilité est **allemande**.
       - type: ARCH
         fichier: output/archives-filmees/1945-ohrdruf-camp-libere.mp4
+        carton: output/cartons/51-arch-1945-ohrdruf-camp-libere.mov
         entree: 0
         sortie: 17.92
         ecran: "carton : avril 1945 · Ohrdruf, Allemagne · Eisenhower, Bradley et Patton dans le camp libéré"
@@ -142,6 +144,7 @@ chapitres:
         note: "52 = 51 projets et 1 amendement, périmètre large (Liban et Golan compris) : ne jamais dire « 52 résolutions »"
       - type: ARCH
         fichier: output/archives-filmees/1973-pont-aerien-americain.mp4
+        carton: output/cartons/52-arch-1973-pont-aerien-americain.mov
         entree: 0
         sortie: 16.72
         ecran: "carton : octobre 1973 · Lod · Le pont aérien américain"

@@ -148,7 +148,7 @@
       year: 1935, place: 'Haïfa', lon: 34.99, lat: 32.79,
       eyebrow: 'Prédicateur de Haïfa · Chef armé',
       name: ['Izz al-Din', 'al-Qassam'], native: 'عز الدين القسام', lang: 'ar', life: '1882-1935',
-      text: 'Il prend les armes contre les Britanniques en 1935. Tué en novembre, il devient un symbole.',
+      text: 'Il prend les armes contre les Britanniques en 1935 et meurt en novembre. La branche armée du Hamas porte aujourd’hui son nom.',
       photo: P('qassam'),
       cam: { w: 0.06, pitch: 46, bearing: 8 },
     },

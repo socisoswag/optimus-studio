@@ -205,8 +205,8 @@ Source : Sir John Hope Simpson, rapport du 22 août 1930, publié en octobre (Cm
 
 
 **8.14** · film **00:17:43:08 → 00:17:57:08** (14.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:46:00 → 00:03:00:00  
-> VOIX : En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il est tué en novembre. // Il devient un **symbole**.  
-(24 mots, 1.7 par seconde)
+> VOIX : En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il est tué en novembre. // La branche armée du Hamas porte aujourd'hui son **nom**.  
+(29 mots, 2.1 par seconde)
 
 
 **8.15** · film **00:17:57:08 → 00:18:05:08** (8.0 s) · **[IA]** `output/reconstitutions/11-19-manifestation-jaffa-1933.mp4` · source 00:00:00:00 → 00:00:08:00  
@@ -365,8 +365,8 @@ Note : détail fort : Arthur Ruppin, celui qui organise les achats de terres, en
 
 
 **10.7** · film **00:22:14:12 → 00:22:24:03** (9.6 s) · **[ARCH]** `output/archives-filmees/1945-deportes-juifs-liberes.mp4` · source 00:00:00:00 → 00:00:09:16  
-Source : US Army Signal Corps, « Freed Jews », 17 avril 1945, archives nationales américaines 111-ADC-9721 (catalogue 23486)  
-À l'écran : carton : avril 1945 · Allemagne · Des déportés juifs libérés par l'armée américaine  
+Source : US Army Signal Corps, « Freed Jews », catalogué le 17 avril 1945 (train de Farsleben, libéré le 13 avril ; identification de Matthew Rozell), archives nationales américaines 111-ADC-9721 (catalogue 23486)  
+À l'écran : carton : avril 1945 · Farsleben, près de Magdebourg · Les rescapés d'un train de déportés juifs, libérés par l'armée américaine  
 > VOIX : Puis viendra la Shoah. // Et pour la plupart des survivants, / la question ne se posera plus de la même **façon**.  
 (20 mots, 2.1 par seconde)
 
@@ -458,7 +458,7 @@ Note : texte anglais : « I would take no action […] which might prove hostile
 
 **11.13** · film **00:24:36:20 → 00:24:49:03** (12.4 s) · **[ARCH]** `output/archives-filmees/1945-francfort-personnes-deplacees-juives.mp4` · source 00:00:00:00 → 00:00:12:09  
 Source : US Army Signal Corps, « D P Zionist demonstration, Frankfurt, Germany », novembre 1945, archives nationales américaines 111-ADC-5604 (catalogue 19403) ; banderole « Open the gates of Palestine » à l'image  
-À l'écran : carton : novembre 1945 · Francfort · Des personnes déplacées juives manifestent  
+À l'écran : carton : 16 novembre 1945 · Francfort · Des personnes déplacées juives manifestent  
 > VOIX : Fin 1945, en Allemagne, les survivants juifs attendent encore, / dans des camps de personnes déplacées. // À Francfort, ils défilent : / « Ouvrez les portes de la **Palestine**. »  
 (25 mots, 2.0 par seconde)  
 Note : banderoles à l'image : « There cannot be real world freedom without Jewish freedom », « Open the gates of Palestine », une pancarte qui remercie le président Truman

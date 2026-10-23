@@ -87,7 +87,7 @@ Encore une question :
 Fiches (`timelines/documents-6.js`, `timelines/gaza.js`) et voix corrigées, sources dans SOURCES.md (section 7) :
 Gaza au 22 octobre 2026 (74 498 morts, 175 616 blessés, 1 538 morts depuis la trêve ; nouvelle fiche « depuis le
 cessez-le-feu », plan 25.41) ; l'argent du Qatar (plan 25.18), la phrase rapportée de Netanyahou avec son démenti
-(plan 25.19) et celle de Smotrich (plan 25.20) ; l'eau (plan 23.14) ; le Néguev (plan 28.8) ; les détenus (plan
+(plan 25.19) et celle de Smotrich (plan 25.20) ; l'eau (alors plan 23.14, aujourd'hui la carte « L'eau », plans 23.17 à 23.20) ; le Néguev (plan 28.8) ; les détenus (plan
 35.19) ; les journalistes, d'après le CPJ (plan 27.8) ; les vetos (plan 33.9 : 52, de 1972 à 2025, dont un amendement) ;
 Macron (plan 31.16) ; la Cisjordanie (plan 26.8) ; Barghouti (plan 21.13) ; la photo du Goush Emounim (plan 26.2) :
 mont Huwara, près de Naplouse.
@@ -251,3 +251,34 @@ Questions pour Perplexity (quand le compte aura des crédits) :
    1945 près de Magdebourg) ? Donner la source (USHMM, NARA). »
 7. « Où trouver des images filmées libres de droits de David Ben Gourion (années 1948 à 1963) : actualités Universal
    aux Archives nationales américaines (cote, date), ou autre fonds du domaine public ? »
+
+## 13. Réponses Perplexity du 24 octobre 2026 (13 questions, PDF) : intégrées
+
+- Gaza 2012 : 185 morts dont 47 enfants, chiffre que Euro-Med Monitor attribue au ministère palestinien de la Santé
+  (bulletin d'origine non retrouvé) ; OCHA 165 dont 33 enfants, B'Tselem 167, Al-Haq 173. Voix et écran déjà prudents
+  (« entre 167 et 185 selon les sources ») : inchangés.
+- OCHA 2008 à septembre 2023 : 6 407 Palestiniens et 308 Israéliens, chiffres publiés et attribués à OCHA (The Wire,
+  Le Devoir) ; tableau filtré au 19 septembre non reproduit. Gardé, source précisée.
+- Mai 2021 : 243 dont 66 enfants au cessez-le-feu (ministère), 261 dont 67 enfants dans le bilan rétrospectif (ONU) :
+  l'écran présente déjà les deux comme successifs. Inchangé.
+- Liste nominative : 72 835 noms, 21 637 mineurs, liste publiée le 27 juillet 2026 et arrêtée au 7 mai 2026 (déjà écrit
+  ainsi à l'écran). Les 1 072 enfants de moins d'un an : recomptés ici sur le fichier complet (âge 0), confirmé.
+- Droits : Signal Corps (111-ADC) = œuvres du gouvernement américain, sans copyright aux États-Unis ; mention « Possibly
+  restricted » non rattachée à un plan précis. Universal : copyright cédé au gouvernement américain par MCA/Universal,
+  avec réserve des éléments de tiers (aucun dans nos passages, sans son d'origine). Levycoll1933 : la copie porte la
+  dédicace au domaine public. « Paths in Palestine » (1934) : statut toujours non établi (gardé par choix de l'auteur,
+  12 plans du chapitre 8 et 11 ; à décider).
+- Francfort : 16 novembre 1945 confirmé (EHRI). Freed Jews : le train de Farsleben (libéré le 13 avril 1945), selon
+  Matthew Rozell. Sykes-Picot : « Signed: Sir Mark Sykes and Fr[ançois] Georges-Picot, 8 May 1916 », pièce jointe à la
+  lettre de Cambon du 9 mai 1916 (FO 371/2777). Cartons et sources mis à jour.
+- Ben Gourion : pas d'image libre trouvée ; piste à visionner, Universal Newsreel vol. 21, n° 144 (18 mai 1948, « Jews
+  Defend New Zion State », copie USHMM, irn1000897) : Haïfa, réfugiés, drapeau, reconnaissance américaine.
+
+Restent ouverts : bulletin d'origine du ministère pour 2012 ; numéros exacts du rapport Woodhead (Cmd. 5854 ?) et de la
+déclaration de novembre 1938 (Cmd. 5893 ?) ; document de l'OMS pour les 100 litres ; renouvellement de « Paths in
+Palestine ».
+
+Séquence « Sous occupation » (23.13 à 23.15) : chiffres pris directement aux sources primaires le 23 octobre au soir
+(OCHA, avril 2026 : 925 obstacles ; OCHA, base des démolitions au 21 octobre 2026 : 15 136 structures, 23 751 personnes
+déplacées ; La Paix maintenant, 10 août 2023, données de Bimkom : 24 permis sur 2 550 demandes de 2016 à 2020). Les
+questions 14 à 16 du fichier QUESTIONS-PERPLEXITY.md sont donc réglées.
