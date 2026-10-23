@@ -157,3 +157,22 @@ Corrections faites : le code de 1858 (des paysans évitent l'enregistrement, des
 > (« Notre génocide », 28 juillet 2025), l'Association internationale des chercheurs sur le génocide (résolution du
 > 1er septembre 2025, et le pourcentage des votes), Omer Bartov (The New York Times, 15 juillet 2025), la commission
 > d'enquête de l'ONU (16 septembre 2025, phrase de conclusion et actes retenus).
+
+## 9. Les autres films longs en français sur YouTube (relevé Perplexity du 23 octobre 2026)
+
+Huit vidéos de plus de 45 minutes retrouvées ; aucune ne couvre en un seul film la période de 1881 à Gaza en octobre
+2026 (le relevé n'est pas exhaustif : ne jamais écrire « le seul » ni « le premier »).
+
+| Chaîne | Titre | Durée | Période |
+|---|---|---|---|
+| Osons Causer | L'origine du conflit : de l'invention du sionisme à la création d'Israël | 1 h 04 | fin XIXe siècle à 1949 |
+| France Culture | Avant l'État d'Israël, le sionisme et le peuplement de la Palestine (Le Cours de l'histoire) | 59 min | émission de radio |
+| Palestine report | film de Simone Bitton (1992), de 1880 à 1950 | 56 min | 1880 à 1950, beaucoup d'archives |
+| World View - History | Une terre deux fois promise, épisodes 1 et 2 (William Karel, Blanche Finger) | 1 h 46 | 1897 à 1967 |
+| SLICE Histoire | Et Israël fut (Romed Wyder) | 53 min | origines à 1948 |
+| Histoire d'apprendre | L'Histoire du conflit israélo-palestinien (compilation) | 4 h 07 | bibliographie en description |
+| ELUCID | entretien avec Monique Chemillier-Gendreau | 1 h 31 | entretien, jusqu'à 2025 |
+| ARTE | Dans Gaza (Hélène Lam Trong) | 1 h 12 | Gaza depuis octobre 2023 |
+
+Ce qui distingue SION, à dire tel quel : de 1881 à octobre 2026 en un seul film, la source affichée à l'écran plan
+par plan (les autres donnent au mieux une bibliographie en description), cartes 3D et archives libres de droits.
