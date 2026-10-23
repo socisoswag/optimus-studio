@@ -669,39 +669,82 @@ marquée du filigrane d'une agence commerciale.
 
 ## 8. À relire juste avant la diffusion
 
-- Le bilan du ministère de la Santé de Gaza (chapitre 25) : le mettre à la date de sortie.
+- Le bilan du ministère de la Santé de Gaza (chapitre 25, plans 25.19 et 25.30 ; fiches `timelines/gaza.js`) : il est
+  au 22 octobre 2026 ; le mettre à la date de sortie.
 - La ponctuation des résolutions de l'ONU sur les documents officiels (digitallibrary.un.org).
 - Les fiches « figures d'aujourd'hui » sont écrites au passé daté, pour rester justes après les législatives
   israéliennes du 27 octobre 2026.
 
 ## 7. Sujets ajoutés le 23 octobre 2026 (fiches `timelines/documents-6.js`)
 
+Chiffres et citations vérifiés par le dossier Perplexity du 23 octobre 2026 (liens ci-dessous). « À vérifier » : en
+attente de la deuxième série de questions (script/A-FABRIQUER.md, section 7), voix pas encore enregistrée.
+
 | Plan | Sujet | Source |
 |---|---|---|
 | ch. 16 | La loi du retour et la loi sur les biens des absents | lois de la Knesset du 5 juillet 1950 et du 14 mars 1950 |
-| ch. 23 | Le partage de l'eau | accords d'Oslo II, 28 septembre 1995, annexe III, article 40 (chiffres : réponse Perplexity attendue) |
+| ch. 22 | Le document du Hamas de 2017 | Hamas, document de principes et de politiques générales, Doha, 1er mai 2017 (articles 16 et 20) |
+| ch. 23 | Le partage de l'eau | accords d'Oslo II, 28 septembre 1995, annexe III, article 40 ; Amnesty International, Troubled Waters, 2009 (MDE 15/027/2009) : environ 80 % de l'aquifère de la montagne pour Israël ; B'Tselem, Parched, 2 mai 2023 : 82,4 litres par jour et par Palestinien, 247 par Israélien (colons compris) |
 | ch. 23 | Cheikh Jarrah | expulsions de familles palestiniennes à Jérusalem-Est, avril-mai 2021 |
 | ch. 25 | Le Mavi Marmara | abordage du 31 mai 2010 : neuf militants tués à bord, un dixième mort en 2014 |
+| ch. 25 | L'échange Shalit | 18 octobre 2011 : 1 027 prisonniers palestiniens libérés, dont Yahya Sinwar |
 | ch. 25 | La grande marche du retour | commission d'enquête internationale indépendante de l'ONU, rapport de février 2019 : 189 Palestiniens tués du 30 mars au 31 décembre 2018 |
-| ch. 25 | L'argent du Qatar | The New York Times, 10 décembre 2023 ; Haaretz (citation à vérifier) |
+| ch. 25 | L'argent du Qatar | M. Mazzetti et R. Bergman, « Buying Quiet », The New York Times, 10 décembre 2023 (15 millions de dollars par mois en 2018, environ 30 millions en 2021 ; réponse du bureau de Netanyahou) |
+| ch. 25 | La phrase rapportée de Netanyahou | réunion du Likoud, mars 2019, propos rapportés (Maariv ; Haaretz, 9 octobre et 15 novembre 2023 ; Tal Schneider, The Times of Israel, 8 octobre 2023, tribune) ; démenti : entretien avec TIME du 4 août 2024 (« That's a false statement. I never said that. ») |
+| ch. 25 | La phrase de Smotrich | chaîne de la Knesset, octobre 2015 (N12, 5 mai 2026 ; Zman Israel, 23 septembre 2026) |
+| ch. 25 | Le plan « Mur de Jéricho » | The New York Times, 30 novembre 2023 (à vérifier) |
+| ch. 25 | Gaza, le bilan | ministère de la Santé de Gaza, 22 octobre 2026, cité par Europa Press et WAFA : 74 498 morts, 175 616 blessés ; OCHA, Reported Impact Snapshot, 14 octobre 2026 : 74 392 morts |
+| ch. 25 | « Lavender » | Yuval Abraham, +972 Magazine et Local Call, 3 avril 2024 ; réponse de l'armée israélienne (à vérifier) |
+| ch. 25 | « La Riviera du Moyen-Orient » | conférence de presse de Donald Trump et Benyamin Netanyahou, 4 février 2025 (à vérifier) |
+| ch. 25 | Tués en cherchant à manger | Haut-Commissariat de l'ONU aux droits de l'homme, bilan au 31 juillet 2025 (à vérifier) |
+| ch. 25 | Depuis le cessez-le-feu | ministère de la Santé de Gaza, 22 octobre 2026 : 1 538 morts depuis la trêve (série comptée depuis le 11 octobre 2025) ; Reuters, 7 octobre 2026 : Israël contrôle environ les deux tiers de la bande ; « ligne jaune » : tracé approché |
 | ch. 25 | Les accords d'Abraham | signés à la Maison-Blanche le 15 septembre 2020 (Émirats arabes unis, Bahreïn), puis Maroc et Soudan |
-| ch. 27 | Shireen Abu Akleh | Haut-Commissariat de l'ONU aux droits de l'homme, 24 juin 2022 ; Comité pour la protection des journalistes (CPJ) |
+| ch. 26 | La photo du Goush Emounim | Wikimedia Commons, catégorie « The IDF evacuates Gush Emunim members from Mount Huwara near Nablus, 1978 » ; notice de la Bibliothèque nationale d'Israël, image FL45816230 |
+| ch. 27 | Shireen Abu Akleh | Haut-Commissariat de l'ONU aux droits de l'homme, 24 juin 2022 ; CPJ, données au 24 septembre 2026 : 189 journalistes et employés des médias palestiniens tués par Israël à Gaza (247 pour l'ensemble de la guerre et des conflits voisins) |
 | ch. 28 | Le Jour de la Terre | 30 mars 1976 : grève générale contre les expropriations en Galilée, six citoyens arabes tués |
-| ch. 28 | Les villages bédouins non reconnus | Néguev, al-Araqib (chiffres : réponse Perplexity attendue) |
+| ch. 28 | Les villages bédouins non reconnus | Negev Coexistence Forum, 27 juillet 2025, et IWGIA, The Indigenous World 2026 : 35 villages ; WAFA, 24 décembre 2025 : 244e démolition d'al-Araqib depuis 2010 ; raccordement aux réseaux (à vérifier) |
 | ch. 31 | Le rôle de la France | accord nucléaire franco-israélien de 1957 (Dimona) ; CEDH, Baldassi et autres c. France, 11 juin 2020 ; reconnaissance de l'État de Palestine, 22 septembre 2025 |
+| ch. 31 | Des pièces françaises | Disclose et Marsactu, mars 2024 (Eurolinks) ; Eurosatory 2024 (à vérifier) |
+| ch. 31 | Manifester pour Gaza | télégramme du ministre de l'Intérieur, 12 octobre 2023 ; Conseil d'État, ordonnance du 18 octobre 2023 (à vérifier) |
+| ch. 31 | Meyer Habib | député de la 8e circonscription des Français établis hors de France (à vérifier) |
+| ch. 31 | Les réseaux pro-israéliens | répertoire des représentants d'intérêts de la HATVP, ELNET France (à vérifier) |
+| ch. 31 | Les pressions sur Paris | visas de 27 élus français annulés, avril 2025 ; lettre de Netanyahou à Macron, août 2025, et réponse de l'Élysée (à vérifier) |
+| ch. 31 | Antisionisme et antisémitisme | Emmanuel Macron, Vel d'Hiv, 16 juillet 2017 (« la forme réinventée de l'antisémitisme ») et dîner du CRIF, 20 février 2019 (« une des formes modernes de l'antisémitisme »), transcriptions de l'Élysée ; Assemblée nationale, résolution du 3 décembre 2019 |
 | ch. 33 | La Cour internationale de justice | avis consultatif du 19 juillet 2024 ; Assemblée générale, résolution ES-10/24, 18 septembre 2024 |
-| ch. 33 | Le soutien américain | protocole d'accord du 14 septembre 2016 (38 milliards de dollars, 2019-2028) ; vetos au Conseil de sécurité |
+| ch. 33 | Le soutien américain | protocole d'accord du 14 septembre 2016 (38 milliards de dollars, 2019-2028) ; liste officielle des vetos, bibliothèque Dag Hammarskjöld de l'ONU : 52 vetos américains sur des textes concernant Israël du 10 septembre 1972 au 18 septembre 2025 (51 projets, 1 amendement, périmètre large : Liban et Golan compris) |
 | ch. 33 | L'ambassade américaine à Jérusalem | reconnaissance du 6 décembre 2017 ; ouverture le 14 mai 2018 |
-| ch. 35 | Les tribunaux militaires, la détention administrative | chiffres : réponse Perplexity attendue |
+| ch. 33 | Les soutiens d'Israël | AIPAC et United Democracy Project, primaires de 2024 (FEC) ; Christians United for Israel (à vérifier) |
+| ch. 33 | Les entreprises des colonies | HCDH, base de données, 12 février 2020 (A/HRC/43/71), mise à jour de juin 2023 (à vérifier) |
+| ch. 33 | L'économie de l'occupation | Francesca Albanese, rapport A/HRC/59/23, juillet 2025 ; sanctions américaines, 9 juillet 2025 (à vérifier) |
+| ch. 35 | Les tribunaux militaires, la détention administrative | DCI-Palestine, No Way to Treat a Child, 14 avril 2016 : 500 à 700 mineurs poursuivis par an ; HaMoked, 1er octobre 2026 : 3 101 détenus administratifs (d'après l'administration pénitentiaire israélienne) |
+| ch. 35 | « Bienvenue en enfer » | B'Tselem, Welcome to Hell, août 2024 ; Sde Teiman, 29 juillet 2024 (à vérifier) |
 | ch. 38 | Edward Said | Edward W. Said, The Question of Palestine, 1979 (trad. française, La Question de Palestine) |
+| ch. 38 | Les chrétiens de Palestine | églises Saint-Porphyre (19 octobre 2023) et de la Sainte-Famille (17 juillet 2025), Gaza (à vérifier) |
 | ch. 20 | L'UNRWA interdite | lois de la Knesset du 28 octobre 2024, en vigueur le 30 janvier 2025 |
-| ch. 21 | Marwan Barghouti | condamnation du 6 juin 2004 ; sondages du PCPSR (à vérifier) |
+| ch. 21 | Marwan Barghouti | condamnation du 6 juin 2004 ; PCPSR, sondage du 7 au 11 octobre 2026, publié le 14 octobre : 34 % parmi sept noms (47 % en Cisjordanie, 15 % à Gaza) |
 | ch. 22 | Camp David 2000 | sommet du 11 au 25 juillet 2000 ; Taba, janvier 2001 |
 | ch. 25 | Le retrait de Gaza | plan de désengagement, août-septembre 2005 |
 | ch. 25 | Les élections de 2006 | élections législatives palestiniennes du 25 janvier 2006 |
 | ch. 25 | La guerre s'étend | Hassan Nasrallah tué le 27 septembre 2024 ; chute d'Assad le 8 décembre 2024 ; guerre Israël-Iran du 13 au 24 juin 2025 |
-| ch. 26 | La Cisjordanie depuis 2023 | OCHA ; UNRWA ; opération « Mur de fer », janvier 2025 (chiffres à vérifier) |
-| ch. 31 | Antisionisme et antisémitisme | Emmanuel Macron, dîner du CRIF, 20 février 2019 (phrase à vérifier) ; Assemblée nationale, résolution du 3 décembre 2019 |
+| ch. 26 | La Cisjordanie depuis 2023 | OCHA, rapport de situation du 15 octobre 2026 et instantanés : plus de 5 773 incidents de colons avec victimes ou dégâts du 7 octobre 2023 au 12 octobre 2026 (somme des séries annuelles) ; UNRWA, repris par l'OCHA le 14 septembre 2026 : 34 176 déplacés des camps de Jénine (12 557), Tulkarem (12 412) et Nour Chams (9 207) |
 | ch. 38 | Kanafani et Handala | Ghassan Kanafani, tué à Beyrouth le 8 juillet 1972 ; Naji al-Ali, mort à Londres le 29 août 1987 |
 | ch. 38 | No Other Land | Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor ; Oscar du meilleur documentaire, 2 mars 2025 |
 
+Liens principaux du dossier de vérification :
+- OCHA, Gaza Reported Impact Snapshot, 14 octobre 2026 : https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_14_October_2026.pdf
+- WAFA, 22 octobre 2026 : https://english.wafa.ps/Pages/Details/176168
+- OCHA, Humanitarian Situation Report, 15 octobre 2026 : https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026
+- Reuters, 7 octobre 2026 : https://www.reuters.com/world/middle-east/israelis-mark-three-years-since-hamas-attack-that-set-off-gaza-assault-2026-10-07/
+- The New York Times, « Buying Quiet », 10 décembre 2023 : https://www.nytimes.com/2023/12/10/world/middleeast/israel-qatar-money-prop-up-hamas.html
+- The Times of Israel, Tal Schneider, 8 octobre 2023 : https://www.timesofisrael.com/for-years-netanyahu-propped-up-hamas-now-its-blown-up-in-our-faces/
+- TIME, entretien avec Netanyahou, 2024 : https://time.com/7008852/benjamin-netanyahu-interview-transcript/
+- Maariv : https://www.maariv.co.il/journalists/opinions/article-1046431 ; N12 (Smotrich) : https://www.mako.co.il/news-politics/2026_q2/Article-05d42390056fd91026.htm
+- B'Tselem, Parched, 2023 : https://www.btselem.org/video/202305_parched ; Amnesty, Troubled Waters, 2009 : https://www.amnesty.org/en/wp-content/uploads/2021/06/mde150272009en.pdf
+- Negev Coexistence Forum, 2025 : https://www.dukium.org/wp-content/uploads/2025/08/NCF-CSW-Commission-on-the-Status-of-Women-report3.pdf ; WAFA, al-Araqib : https://english.wafa.ps/Pages/Details/165634
+- DCI-Palestine, 2016 : https://reliefweb.int/report/occupied-palestinian-territory/report-no-way-treat-child-palestinian-children-israeli ; HaMoked : https://hamoked.org/
+- CPJ : https://cpj.org/2023/10/journalist-casualties-in-the-israel-gaza-war/
+- ONU, liste des vetos : https://www.un.org/depts/dhl/resguide/scact_veto_table_en.htm
+- Élysée, 20 février 2019 : https://www.elysee.fr/emmanuel-macron/2019/02/20/antisemitisme-plus-jamais-ca ; 16 juillet 2017 : https://www.elysee.fr/emmanuel-macron/2017/07/18/discours-du-president-de-la-republique-francaise-a-loccasion-de-la-commemoration-de-la-rafle-du-vel-dhiv
+- OCHA, Cisjordanie, 14 septembre 2026 : https://www.ochaopt.org/sites/default/files/West%20Bank_info-graphic_14_September_2026.pdf
+- PCPSR, octobre 2026 : https://www.pcpsr.org/en/node/1018
+- Commons, mont Huwara, 1978 : https://commons.wikimedia.org/wiki/Category:The_IDF_evacuates_Gush_Emunim_members_from_Mount_Huwara_near_Nablus,_1978

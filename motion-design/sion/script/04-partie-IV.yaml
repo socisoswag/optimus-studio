@@ -417,10 +417,9 @@ chapitres:
         entree: 295
         sortie: 307
         ecran: "fiche : en prison depuis 2002 · Marwan Barghouti"
-        source: "condamnation de Marwan Barghouti, 6 juin 2004 ; sondages du Palestinian Center for Policy and Survey Research"
-        verifier: "le dernier sondage du PCPSR qui le place en tête (question Perplexity)"
+        source: "condamnation de Marwan Barghouti, 6 juin 2004 ; PCPSR, sondage du 7 au 11 octobre 2026, publié le 14 octobre (1 397 personnes, sept noms proposés)"
         voix: >-
-          Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / Dans les sondages, il reste le dirigeant palestinien le plus **populaire**.
+          Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / En octobre 2026, il reste en tête des sondages : / 34 % des sondés le choisissent, parmi sept **noms**.
       - type: NOIR
         duree: 12
         source: "déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration de Genève, 14 décembre 1988 ; mort le 11 novembre 2004"
@@ -484,6 +483,14 @@ chapitres:
           Sa charte de 1988 reprend des thèmes antisémites, / jusqu'aux Protocoles des sages de Sion, un faux. // En
           2017, un nouveau texte dit combattre le sionisme, / pas les **Juifs**.
         note: "règle 3 de la bible : l'antisémitisme est montré, quel que soit le camp"
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 361
+        sortie: 373
+        ecran: "fiche : Doha · 1er mai 2017 · Le Hamas change de texte"
+        source: "Hamas, document de principes et de politiques générales, Doha, 1er mai 2017 (articles 16 et 20)"
+        voix: >-
+          Ce texte de 2017 accepte aussi un État palestinien dans les frontières de 1967, / « une formule de consensus national », / sans reconnaître **Israël**.
       - type: MD
         fichier: output/documents-6.mp4
         entree: 215
@@ -610,10 +617,10 @@ chapitres:
         entree: 41
         sortie: 55
         ecran: "fiche : Cisjordanie · depuis Oslo II, 1995 · Le partage de l'eau"
-        source: "accords d'Oslo II, 28 septembre 1995, annexe III, article 40"
-        verifier: "les chiffres de l'eau (question Perplexity, A-FABRIQUER.md) : la fiche reste qualitative en attendant"
+        source: "accords d'Oslo II, 28 septembre 1995, annexe III, article 40 ; Amnesty International, Troubled Waters, 2009 (environ 80 % de l'aquifère de la montagne pour Israël) ; B'Tselem, Parched, 2 mai 2023 (82,4 litres par jour et par Palestinien, 247 par Israélien, colons compris)"
         voix: >-
-          Avec Oslo, Israël garde la main sur l'eau de Cisjordanie. / Les colonies sont raccordées ; / beaucoup de villages palestiniens achètent leur eau par **camion**.
+          Avec Oslo, Israël garde environ 80 % de l'eau de la grande nappe de Cisjordanie. / En 2023, un Palestinien y dispose de 82 litres par jour ; / un Israélien, colons compris, de **247**.
+        note: "247 litres : moyenne de tous les Israéliens, pas des seuls colons ; chiffres publiés en 2023"
       - type: MD
         fichier: output/documents-6.mp4
         entree: 55

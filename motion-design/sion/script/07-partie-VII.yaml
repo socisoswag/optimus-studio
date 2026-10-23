@@ -133,9 +133,10 @@ chapitres:
         entree: 162
         sortie: 176
         ecran: "fiche : Washington · 14 septembre 2016 · Le soutien américain"
-        source: "protocole d'accord du 14 septembre 2016 : 38 milliards de dollars d'aide militaire pour 2019-2028 ; vetos au Conseil de sécurité"
+        source: "protocole d'accord du 14 septembre 2016 (38 milliards de dollars, 2019-2028) ; liste officielle des vetos du Conseil de sécurité, bibliothèque Dag Hammarskjöld : 52 vetos américains sur des textes concernant Israël, du 10 septembre 1972 au 18 septembre 2025 (51 projets, 1 amendement)"
         voix: >-
-          Pourquoi rien ne change ? / Les États-Unis versent à Israël 3,8 milliards de dollars d'aide militaire par an, / et bloquent par leur veto des dizaines de résolutions de l'**ONU**.
+          Pourquoi rien ne change ? / Les États-Unis versent à Israël 3,8 milliards de dollars d'aide militaire par an, / et depuis 1972, ils ont mis leur veto 52 fois à des textes de l'ONU sur **Israël**.
+        note: "52 = 51 projets et 1 amendement, périmètre large (Liban et Golan compris) : ne jamais dire « 52 résolutions »"
       - type: MD
         fichier: output/documents-6.mp4
         entree: 176
@@ -151,6 +152,34 @@ chapitres:
           Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître.
           // En 2016, le Conseil de sécurité qualifie encore les colonies de « violation flagrante » du droit
           **international**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 373
+        sortie: 391
+        ecran: "fiche : États-Unis · aujourd'hui · Les soutiens d'Israël"
+        source: "AIPAC et United Democracy Project, dépenses aux primaires de 2024 (FEC) ; Christians United for Israel ; protocole d'accord de 2016 (aide militaire dépensée aux États-Unis)"
+        verifier: "les dépenses de l'AIPAC et de l'UDP aux primaires de 2024 et le nombre de membres revendiqué par CUFI (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Ce soutien a ses réseaux. / L'AIPAC, par son comité politique, dépense des dizaines de millions de dollars aux primaires de 2024 contre des candidats critiques d'Israël. / Les évangéliques sionistes revendiquent des millions de fidèles. / Et l'aide militaire profite d'abord aux industriels **américains**. // Ces groupes ne parlent pas au nom des Juifs.
+        note: "jamais « lobby juif » : beaucoup de Juifs américains s'opposent à l'AIPAC (chapitre 29)"
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 391
+        sortie: 403
+        ecran: "fiche : ONU · 12 février 2020 · Les entreprises des colonies"
+        source: "Haut-Commissariat des Nations unies aux droits de l'homme, base de données des entreprises liées aux colonies, 12 février 2020 (A/HRC/43/71), mise à jour du 30 juin 2023"
+        verifier: "le nombre d'entreprises de la liste en 2020 et en 2023, et les noms connus (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Et l'argent ? / En 2020, l'ONU publie la liste des entreprises qui travaillent dans les colonies, / dont des groupes connus dans le monde **entier**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 580
+        sortie: 594
+        ecran: "fiche : ONU · juillet 2025 · L'économie de l'occupation"
+        source: "Francesca Albanese, rapporteuse spéciale, rapport A/HRC/59/23, « De l'économie de l'occupation à l'économie du génocide », juillet 2025 ; sanctions du département d'État, 9 juillet 2025"
+        verifier: "le nombre d'entreprises nommées, les noms cités et la date des sanctions (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          En juillet 2025, la rapporteuse de l'ONU Francesca Albanese va plus loin : / elle nomme 48 entreprises qui profitent de l'occupation et de la guerre, / des marchands d'armes aux géants de la tech. / Quelques jours plus tard, Washington la **sanctionne**.
 
   - num: "34"
     titre: "Chapitre 34 · L'effacement culturel : villages détruits, noms effacés"
@@ -270,10 +299,19 @@ chapitres:
         entree: 188
         sortie: 202
         ecran: "fiche : Cisjordanie occupée · aujourd'hui · Les tribunaux militaires"
-        source: "mineurs devant les tribunaux militaires et détention administrative (chiffres à préciser)"
-        verifier: "les chiffres récents des mineurs jugés et des détenus administratifs (question Perplexity)"
+        source: "Defense for Children International-Palestine, No Way to Treat a Child, 14 avril 2016 (500 à 700 mineurs poursuivis chaque année ; témoignages de 2012 à 2015) ; HaMoked, d'après l'administration pénitentiaire israélienne, 1er octobre 2026 (3 101 détenus administratifs)"
         voix: >-
-          Chaque année, des centaines d'enfants palestiniens passent devant des tribunaux militaires. / Des milliers de Palestiniens sont détenus sans procès, / en « détention **administrative** ».
+          Dans les années 2010, 500 à 700 enfants palestiniens sont poursuivis chaque année devant des tribunaux militaires. / Au 1er octobre 2026, 3 101 personnes sont en « détention administrative » : / sans inculpation, sans **procès**.
+        note: "chiffre HaMoked lu dans l'index du site : le recontrôler sur le tableau daté avant le montage final"
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 482
+        sortie: 497
+        ecran: "fiche : Israël · août 2024 · « Bienvenue en enfer »"
+        source: "B'Tselem, Welcome to Hell, août 2024 (55 témoignages d'anciens détenus) ; Sde Teiman, arrestation de soldats et intrusion de manifestants, 29 juillet 2024"
+        verifier: "le rapport de B'Tselem (date, nombre de témoignages) et les faits de Sde Teiman du 29 juillet 2024 (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Et dans les prisons ? / En 2024, l'ONG israélienne B'Tselem recueille 55 témoignages d'anciens détenus. / Son rapport s'intitule « Bienvenue en enfer ». / Au camp de Sde Teiman, des soldats sont soupçonnés de sévices sexuels sur un **détenu**.
       - type: RÉEL
         fichier: output/plans-reels/cisjordanie-kfar-etzion-collines-vignes.mp4
         entree: 0

@@ -79,41 +79,46 @@ Encore une question :
    produit (la marine des États-Unis ou une société privée ?), le droit d'auteur de 1934 a-t-il été renouvelé
    (registre du Copyright Office, 1961-1962), et le film est-il aujourd'hui dans le domaine public aux États-Unis ? »
 
-## 6. Sujets ajoutés le 23 octobre : chiffres à vérifier sur Perplexity
+## 6. Réponses Perplexity du 23 octobre 2026 (dossier de vérification, 26 pages) : intégrées
 
-Les fiches sont faites (`timelines/documents-6.js`) et restent qualitatives tant que la réponse n'est pas là ; les
-plans marqués « verifier » dans le script ne s'enregistrent pas avant.
+Fiches (`timelines/documents-6.js`, `timelines/gaza.js`) et voix corrigées, sources dans SOURCES.md (section 7) :
+Gaza au 22 octobre 2026 (74 498 morts, 175 616 blessés, 1 538 morts depuis la trêve ; nouvelle fiche « depuis le
+cessez-le-feu », plan 25.30) ; l'argent du Qatar (plan 25.11), la phrase rapportée de Netanyahou avec son démenti
+(plan 25.12) et celle de Smotrich (plan 25.13) ; l'eau (plan 23.14) ; le Néguev (plan 28.8) ; les détenus (plan
+35.9) ; les journalistes, d'après le CPJ (plan 27.8) ; les vetos (plan 33.9 : 52, de 1972 à 2025, dont un amendement) ;
+Macron (plan 31.16) ; la Cisjordanie (plan 26.8) ; Barghouti (plan 21.13) ; la photo du Goush Emounim (plan 26.2) :
+mont Huwara, près de Naplouse.
 
-> Pour un documentaire, donne des chiffres récents et datés avec leurs sources primaires (lien) : 1) l'eau en
-> Cisjordanie : consommation moyenne par Palestinien et par colon (litres par jour), part des nappes contrôlée par
-> Israël depuis Oslo II (rapports B'Tselem, Amnesty, Banque mondiale, ONU) ; 2) les villages bédouins non reconnus du
-> Néguev : combien aujourd'hui, et combien de fois al-Araqib a été démoli ; 3) les mineurs palestiniens jugés chaque
-> année par les tribunaux militaires israéliens, et le nombre de détenus administratifs au dernier décompte (B'Tselem,
-> HaMoked, Defense for Children International, UNICEF) ; 4) l'enquête du New York Times du 10 décembre 2023 sur l'argent
-> du Qatar vers Gaza et la phrase de Netanyahou rapportée par Haaretz (mars 2019) : texte exact, date, lien ; 5) le
-> nombre de journalistes tués à Gaza depuis octobre 2023 selon le CPJ, et la phrase du CPJ qui en fait le conflit le
-> plus meurtrier ; 6) le nombre exact de vetos américains au Conseil de sécurité sur des résolutions concernant Israël
-> et la Palestine depuis 1972 ; 7) des photos libres de droits (domaine public ou CC BY) du Jour de la Terre (30 mars
-> 1976) et des maisons arabes de Jaffa ou d'Ajami occupées par de nouveaux immigrants en 1949 (fonds GPO, Wikimedia
-> Commons, Bibliothèque nationale d'Israël).
+Restent ouverts (sans bloquer la voix) : le bulletin original du ministère de la Santé de Gaza ; le compteur d'al-Araqib
+en 2026 ; la capture datée du tableau HaMoked ; la date exacte de la photo FL45816230 sur la notice de la Bibliothèque
+nationale d'Israël ; aucune photo libre validée du Jour de la Terre 1976 ni des maisons de Jaffa en 1949 (on s'en passe).
 
-### Priorité : l'argent du Qatar (plan 25.8, juste avant le 7 octobre)
+## 7. Nouveaux sujets du 23 octobre au soir : à vérifier sur Perplexity
 
-> Pour un documentaire, avec le texte exact dans la langue d'origine, la date et le lien : 1) l'enquête du New York
-> Times du 10 décembre 2023 (« Buying Quiet: Inside the Israeli Plan That Propped Up Hamas ») : montants versés par le
-> Qatar à Gaza avec l'accord du gouvernement israélien, période, et la phrase qui résume la stratégie ; 2) la phrase de
-> Benyamin Netanyahou rapportée par Haaretz, réunion des députés du Likoud de mars 2019 (« celui qui veut empêcher un
-> État palestinien doit soutenir le renforcement du Hamas… ») : texte exact en anglais ou en hébreu, qui l'a rapportée,
-> et Netanyahou l'a-t-il démentie ; 3) la phrase de Bezalel Smotrich de 2015 (« l'Autorité palestinienne est un
-> fardeau, le Hamas est un atout ») : texte exact, média, date ; 4) l'article de Tal Schneider dans The Times of Israel
-> du 8 octobre 2023 (« For years, Netanyahu propped up Hamas ») : titre et passage clé ; 5) la réponse officielle du
-> bureau de Netanyahou à ces accusations.
+Fiches faites, plans marqués « verifier » dans le script : ne pas les enregistrer avant la réponse. Copier tel quel :
 
-### Encore trois vérifications (sujets ajoutés le 23 octobre au soir)
-
-> 1) La phrase exacte d'Emmanuel Macron sur l'antisionisme au dîner du CRIF du 20 février 2019 (et celle du 16 juillet
-> 2017 au Vel d'Hiv), avec le lien vers le texte officiel de l'Élysée ; 2) en Cisjordanie depuis octobre 2023 : nombre
-> d'attaques de colons recensées par l'OCHA et nombre de déplacés des camps de Jénine, Tulkarem et Nour Chams depuis
-> l'opération « Mur de fer » de janvier 2025 (UNRWA, OCHA), avec la date du décompte ; 3) le dernier sondage du
-> Palestinian Center for Policy and Survey Research (PCPSR) sur Marwan Barghouti : date et pourcentage.
-
+> Pour un documentaire, avec pour chaque point le texte exact dans la langue d'origine, la date, la source primaire et
+> le lien. 1) The New York Times, 30 novembre 2023, le document « Jericho Wall » : auteurs de l'article, nombre de pages,
+> date à laquelle l'armée l'obtient, et les alertes de 2023 (analyste de l'unité 8200) ; 2) +972 Magazine, 3 avril
+> 2024, « Lavender » : nombre de Palestiniens marqués, nombre d'officiers interrogés, durée du contrôle humain, et la
+> réponse officielle de l'armée israélienne ; 3) Donald Trump, conférence de presse du 4 février 2025 avec Netanyahou :
+> phrases exactes sur la prise de Gaza par les États-Unis, la « Riviera du Moyen-Orient » et le départ des habitants ;
+> 4) le bilan du Haut-Commissariat de l'ONU aux droits de l'homme sur les Palestiniens tués en cherchant de la
+> nourriture du 27 mai au 31 juillet 2025 (total, et près des sites de la Gaza Humanitarian Foundation) ; 5) B'Tselem,
+> « Welcome to Hell », août 2024 : date, nombre de témoignages ; Sde Teiman, 29 juillet 2024 : arrestation de soldats,
+> accusation, intrusion de manifestants et de députés ; 6) les frappes sur l'église Saint-Porphyre (19 octobre 2023) et
+> sur l'église de la Sainte-Famille (17 juillet 2025) à Gaza : bilans et sources ; 7) Disclose et Marsactu, mars 2024 :
+> Eurolinks, nombre de maillons, destinataire, date ; Eurosatory 2024 : décision d'exclure les firmes israéliennes,
+> date, et décision du tribunal de commerce de Paris ; 8) le télégramme du ministre de l'Intérieur du 12 octobre 2023
+> sur les manifestations propalestiniennes, et l'ordonnance du Conseil d'État du 18 octobre 2023 (phrase clé) ;
+> 9) Meyer Habib : ses mandats de député (dates, circonscription, élections annulées ou perdues, situation en octobre
+> 2026) et ses phrases exactes sur son lien avec Benyamin Netanyahou, avec le média et la date ; 10) ELNET France :
+> inscription au répertoire de la HATVP, dépenses déclarées, voyages d'élus en Israël (nombre, années) ; 11) avril 2025 :
+> les visas des élus français annulés par Israël (nombre, partis, date) ; août 2025 : la lettre de Netanyahou à Macron
+> (phrase exacte) et la réponse de l'Élysée (mot exact) ; 12) le rapport A/HRC/59/23 de Francesca Albanese (juillet
+> 2025) : nombre d'entreprises nommées, exemples, et date des sanctions américaines contre elle ; 13) la base de données
+> de l'ONU sur les entreprises liées aux colonies : nombre en février 2020 et après la mise à jour de juin 2023,
+> exemples ; 14) l'AIPAC et le United Democracy Project : dépenses aux primaires de 2024 (total et exemples : Jamaal
+> Bowman, Cori Bush), d'après la FEC ou OpenSecrets ; nombre de membres revendiqué par Christians United for Israel ;
+> 15) les villages bédouins non reconnus : une source (Human Rights Watch, « Off the Map », 2008, ou plus récente) sur
+> l'absence de raccordement aux réseaux d'eau et d'électricité.

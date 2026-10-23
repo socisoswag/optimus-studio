@@ -11,13 +11,15 @@
  *   - 7 octobre 2023 : l'attaque menée par le Hamas tue environ 1 200 personnes en Israël ; 251 otages ;
  *   - 9 octobre : « siège complet » (électricité, nourriture, carburant) ; 13 octobre : ordre
  *     d'évacuation de 1,1 million d'habitants du nord vers le sud de l'oued Gaza ;
- *   - ministère de la Santé de Gaza : 74 237 morts début octobre 2026 ; une étude publiée dans The Lancet
+ *   - ministère de la Santé de Gaza, bilan du 22 octobre 2026 (Europa Press, WAFA) : 74 498 morts et 175 616 blessés
+ *     depuis octobre 2023, dont 1 538 morts depuis le cessez-le-feu (OCHA, au 14 octobre 2026 : 74 392 morts) ; Reuters,
+ *     7 octobre 2026 : Israël contrôle environ les deux tiers de la bande ; une étude publiée dans The Lancet
  *     (Jamaluddine et al., 2025, morts par traumatisme jusqu'au 30 juin 2024) juge ce décompte inférieur à la réalité ;
  *   - environ 90 % des habitants déplacés (ONU) ; la plupart des logements endommagés ou détruits
  *     (UNOSAT) ; famine déclarée par l'IPC en août 2025 ;
  *   - CIJ, 26 janvier 2024 : mesures conservatoires ; CPI, 21 novembre 2024 : mandats d'arrêt contre
  *     B. Netanyahou, Y. Gallant et M. Deif ; commission d'enquête de l'ONU, 16 septembre 2025 :
- *     conclut à un génocide ; cessez-le-feu le 10 octobre 2025.
+ *     conclut à un génocide ; cessez-le-feu le 10 octobre 2025. « Ligne jaune » : tracé approché.
  */
 (function (root) {
   const segments = [
@@ -58,9 +60,9 @@
     },
     {
       id: 'morts', type: 'stat', dur: 12.0, fly: 1.4, layout: 'L', anchor: [480, 20],
-      ghost: '2023', kicker: 'Du 7 octobre 2023 à octobre 2026', pre: 'Plus de', value: 74000, label: 'Palestiniens tués à Gaza',
-      text: 'Selon le ministère de la Santé de Gaza. [[Un décompte sans doute inférieur à la réalité]], selon une étude publiée dans The Lancet.',
-      textAt: 1.6, hlAt: 6.0, source: 'Ministère de la Santé de Gaza, octobre 2026 · The Lancet, 2025', sourceAt: 5.0,
+      ghost: '2023', kicker: 'Du 7 octobre 2023 au 22 octobre 2026', pre: 'Plus de', value: 74000, label: 'Palestiniens tués à Gaza',
+      text: 'Le ministère de la Santé de Gaza compte 74 498 morts et 175 616 blessés. [[Un décompte sans doute inférieur à la réalité]], selon une étude publiée dans The Lancet.',
+      textAt: 1.6, hlAt: 6.0, source: 'Ministère de la Santé de Gaza, 22 octobre 2026 · The Lancet, 2025', sourceAt: 5.0,
       countAt: 0.3, countDur: 5.0,
       cam: { lon: 34.38, lat: 31.4, w: 0.0175, pitch: 42, bearing: -44 },
       camEnd: { lon: 34.38, lat: 31.4, w: 0.016, pitch: 46, bearing: -40 },
@@ -81,8 +83,17 @@
       camEnd: { lon: 34.4555, lat: 31.5195, w: 0.00072, pitch: 48, bearing: -20 },
     },
     {
+      id: 'treve', type: 'stat', dur: 14.0, fly: 1.6, layout: 'L', anchor: [480, 20],
+      ghost: '2025', kicker: 'Depuis le cessez-le-feu du 10 octobre 2025', pre: 'Plus de', value: 1500, label: 'Palestiniens tués depuis la trêve',
+      text: 'Au 22 octobre 2026, le ministère de la Santé de Gaza en compte 1 538. [[Israël tient encore environ les deux tiers de la bande.]]',
+      textAt: 1.6, hlAt: 6.4, source: 'Ministère de la Santé de Gaza, 22 octobre 2026 · Reuters, 7 octobre 2026', sourceAt: 5.0,
+      countAt: 0.3, countDur: 4.0,
+      cam: { lon: 34.38, lat: 31.41, w: 0.024, pitch: 42, bearing: -42 },
+      camEnd: { lon: 34.38, lat: 31.41, w: 0.021, pitch: 46, bearing: -38 },
+    },
+    {
       id: 'fin', type: 'outro', dur: 9.0, fly: 2.0, hitAt: 1.2,
-      eyebrow: '10 octobre 2025 · cessez-le-feu',
+      eyebrow: 'Octobre 2026 · bande de Gaza',
       lines: ['Une prison', 'à ciel ouvert devenue', 'un champ de ruines.'],
       cam: { lon: 34.38, lat: 31.42, w: 0.016, pitch: 40, bearing: -40 },
       camEnd: { lon: 34.38, lat: 31.42, w: 0.014, pitch: 44, bearing: -36 },
@@ -147,6 +158,10 @@
   }
   for (let j = 0; j < 20; j++) strikes.push({ seg: 'ruines', at: 2.4 + rnd() * 6.6, lon: 34.4555 + (rnd() - 0.5) * 0.007, lat: 31.5195 + (rnd() - 0.5) * 0.005, power: 0.7, burn: 4 });
 
+  // ---- depuis la trêve : la « ligne jaune » (tracé approché) et des frappes qui continuent
+  plans.push({ seg: 'treve', at: 2.0, dur: 2.4, any: true, path: [[34.47, 31.585], [34.455, 31.53], [34.41, 31.47], [34.35, 31.4], [34.3, 31.335], [34.255, 31.3]], style: 'dash', label: 'Ligne jaune', labelAt: [34.44, 31.47] });
+  for (let j = 0; j < 9; j++) { const [lon, lat] = inGaza(); strikes.push({ seg: 'treve', at: 4.0 + rnd() * 9, lon, lat, power: 0.4 + rnd() * 0.3, burn: 3 }); }
+
   const DUR = SEGDUR;
   markers.forEach((m) => { if (m.endAt === undefined) m.endAt = DUR[m.seg] + 0.3; });
 
@@ -158,6 +173,7 @@
     { seg: 'morts', at: 0.2, text: 'Octobre 2026' },
     { seg: 'ruines', at: 0.2, text: 'De 2023 à 2025' },
     { seg: 'justice', at: 0.2, text: '2024 et 2025' },
+    { seg: 'treve', at: 0.2, text: 'Depuis le 10 octobre 2025' },
     { seg: 'fin', at: 0.2, text: '' },
   ];
 

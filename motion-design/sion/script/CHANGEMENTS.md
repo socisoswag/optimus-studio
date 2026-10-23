@@ -104,3 +104,54 @@ numéro (même image, nouveau nom de fichier) :
 **Archives en réserve** (actualités Universal, domaine public) : `13.R1-ARCH-…` le camp de réfugiés juifs d'Admont, 1946 ;
 `19.R1` à `19.R4` Nasser et Suez (1956), Sinaï et Gaza, Jérusalem, le Conseil de sécurité (juin 1967).
 
+
+## 23 octobre 2026, la nuit
+
+**Vérifications Perplexity intégrées** (dossier du 23 octobre, voir A-FABRIQUER.md section 6) : les fiches et les voix
+donnent maintenant les chiffres exacts et datés. Gaza au 22 octobre 2026 (25.19) ; l'argent du Qatar (25.11) ; l'eau
+(23.14) ; le Néguev (28.8) ; la Cisjordanie (26.8) ; les journalistes, d'après le CPJ (27.8) ; Marwan Barghouti (21.13) ;
+Macron, phrase exacte (31.16) ; les vetos : 52 depuis 1972 (33.9) ; les tribunaux militaires et la détention
+administrative (35.9) ; la photo du Goush Emounim (26.2) : « Mont Huwara, près de Naplouse » (même nom, nouvelle version).
+
+**Vingt-trois plans ajoutés** (le film passe à 1 h 22 min 22), tous `<plan>-MD-documents-6.mp4` sauf 25.30 (`gaza`) :
+
+| Plan | Ce que c'est |
+|---|---|
+| 22.08 | le document du Hamas de 2017 (État dans les frontières de 1967, sans reconnaître Israël) |
+| 25.08 | l'échange Shalit, 2011, et Yahya Sinwar |
+| 25.12 | citation : la phrase de Netanyahou rapportée par la presse israélienne (2019), avec son démenti |
+| 25.13 | citation : Smotrich, 2015, « le Hamas est un atout » |
+| 25.14 | le plan « Mur de Jéricho » : l'armée avait le plan de l'attaque un an avant |
+| 25.27 | « Lavender », l'intelligence artificielle qui désigne les cibles |
+| 25.28 | Trump, février 2025 : « la Riviera du Moyen-Orient » |
+| 25.29 | tués en cherchant à manger, mai à juillet 2025 |
+| 25.30 | depuis le cessez-le-feu : plus de 1 500 morts, la « ligne jaune » |
+| 31.11 | des pièces françaises (Disclose, Eurosatory) |
+| 31.12 | manifester pour Gaza, octobre 2023 |
+| 31.13 | Meyer Habib |
+| 31.14 | les réseaux pro-israéliens en France (ELNET) |
+| 31.15 | les pressions sur Paris en 2025 (visas annulés, lettre de Netanyahou) |
+| 33.12 | les soutiens d'Israël aux États-Unis (AIPAC, évangéliques, armement) |
+| 33.13 | les entreprises des colonies (liste de l'ONU) |
+| 33.14 | l'économie de l'occupation (rapport de Francesca Albanese, 2025) |
+| 35.10 | « Bienvenue en enfer » : les prisons, Sde Teiman |
+| 38.06 | les chrétiens de Palestine |
+
+Les plans 22.08, 25.08, 25.12, 25.13 et 25.30 sont vérifiés ; les autres attendent la deuxième série de questions
+Perplexity (A-FABRIQUER.md, section 7) : ne pas les enregistrer en voix avant.
+
+Les plans qui suivent un ajout changent de numéro (même image, nouveau nom de fichier) :
+
+| Avant | Maintenant |
+|---|---|
+| 22.08 à 22.11 | 22.09 à 22.12 |
+| 25.08 à 25.10 | 25.09 à 25.11 |
+| 25.11 à 25.22 | 25.15 à 25.26 |
+| 25.23 | 25.31 (même image, la voix ne dit plus que « Une prison à ciel ouvert, devenue un champ de ruines ») |
+| 31.11 et 31.12 | 31.16 et 31.17 |
+| 35.10 | 35.11 |
+| 38.06 à 38.08 | 38.07 à 38.09 |
+
+**Même nom, nouvelle version** : toutes les fiches `documents-6` (chiffres exacts, rythme : chaque ligne reste à
+l'écran au moins 2,6 s et la note au moins 3,4 s), `gaza` (bilan au 22 octobre 2026, nouvelle fiche avant la fin),
+le générique de fin (archives filmées, nouveaux crédits photo).

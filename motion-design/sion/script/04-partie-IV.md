@@ -340,10 +340,10 @@ Source : discours de Yasser Arafat à l'Assemblée générale de l'ONU, 13 novem
 
 
 **21.13** · film **00:43:29:13 → 00:43:41:13** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:55:00 → 00:05:07:00  
-Source : condamnation de Marwan Barghouti, 6 juin 2004 ; sondages du Palestinian Center for Policy and Survey Research  
+Source : condamnation de Marwan Barghouti, 6 juin 2004 ; PCPSR, sondage du 7 au 11 octobre 2026, publié le 14 octobre (1 397 personnes, sept noms proposés)  
 À l'écran : fiche : en prison depuis 2002 · Marwan Barghouti  
-> VOIX : Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / Dans les sondages, il reste le dirigeant palestinien le plus **populaire**.  
-(25 mots, 2.1 par seconde)
+> VOIX : Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / En octobre 2026, il reste en tête des sondages : / 34 % des sondés le choisissent, parmi sept **noms**.  
+(31 mots, 2.6 par seconde)
 
 
 **21.14** · film **00:43:41:13 → 00:43:53:13** (12.0 s) · **[NOIR]** (à fabriquer)  
@@ -354,7 +354,7 @@ Source : déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration d
 
 ## Chapitre 22 · Les intifadas : deux soulèvements
 
-Film 00:43:53:13 → 00:45:52:22 · durée 1 min 59.4 s
+Film 00:43:53:13 → 00:46:04:22 · durée 2 min 11.4 s
 
 *Intention : Deux soulèvements, deux natures : le premier, populaire et presque sans armes à feu ; le second, armé, avec les attentats-suicides contre les civils israéliens. Le Hamas naît en 1987 : sa charte de 1988 et son texte de 2017 sont cités tous les deux, sans rien adoucir.*
 
@@ -399,26 +399,33 @@ Source : charte du Hamas, 18 août 1988 (article 32 : les Protocoles des sages d
 Note : règle 3 de la bible : l'antisémitisme est montré, quel que soit le camp
 
 
-**22.8** · film **00:45:07:13 → 00:45:20:13** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:03:35:00 → 00:03:48:00  
+**22.8** · film **00:45:07:13 → 00:45:19:13** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:06:01:00 → 00:06:13:00  
+Source : Hamas, document de principes et de politiques générales, Doha, 1er mai 2017 (articles 16 et 20)  
+À l'écran : fiche : Doha · 1er mai 2017 · Le Hamas change de texte  
+> VOIX : Ce texte de 2017 accepte aussi un État palestinien dans les frontières de 1967, / « une formule de consensus national », / sans reconnaître **Israël**.  
+(22 mots, 1.8 par seconde)
+
+
+**22.9** · film **00:45:19:13 → 00:45:32:13** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:03:35:00 → 00:03:48:00  
 Source : sommet de Camp David, 11-25 juillet 2000 ; négociations de Taba, janvier 2001  
 À l'écran : fiche : Camp David · juillet 2000 · Camp David 2000  
 > VOIX : En juillet 2000, à Camp David, Barak et Arafat se séparent sans accord. / Pour Israël, Arafat a refusé une offre généreuse ; / pour les Palestiniens, l'offre était un territoire **morcelé**.  
 (29 mots, 2.2 par seconde)
 
 
-**22.9** · film **00:45:20:13 → 00:45:27:22** (7.4 s) · **[RÉEL]** `output/plans-reels/jerusalem-esplanade-des-mosquees-ramadan-2024.mp4` · source 00:00:00:00 → 00:00:07:09  
+**22.10** · film **00:45:32:13 → 00:45:39:22** (7.4 s) · **[RÉEL]** `output/plans-reels/jerusalem-esplanade-des-mosquees-ramadan-2024.mp4` · source 00:00:00:00 → 00:00:07:09  
 Source : SOURCES.md 4.1, Adobe Stock 778425214 (plan d'aujourd'hui : ne pas le présenter comme une archive)  
 À l'écran : carton : output/cartons/jerusalem-2000  
 > VOIX : Septembre 2000. / Ariel Sharon se rend sur l'esplanade des **Mosquées**.  
 (10 mots, 1.4 par seconde)
 
 
-**22.10** · film **00:45:27:22 → 00:45:40:22** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:41:00 → 00:02:54:00  
+**22.11** · film **00:45:39:22 → 00:45:52:22** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:41:00 → 00:02:54:00  
 > VOIX : La deuxième intifada est plus meurtrière. / Attentats-suicides dans les bus, les cafés, les hôtels d'Israël ; / chars et hélicoptères dans les villes **palestiniennes**.  
 (22 mots, 1.7 par seconde)
 
 
-**22.11** · film **00:45:40:22 → 00:45:52:22** (12.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:54:00 → 00:03:06:00  
+**22.12** · film **00:45:52:22 → 00:46:04:22** (12.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:54:00 → 00:03:06:00  
 Source : 2000-2005 : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens tués, dont 644 à 773 civils israéliens (article « Second Intifada », d'après B'Tselem)  
 > VOIX : En cinq ans, plus de trois mille Palestiniens / et environ mille Israéliens sont tués, / dont beaucoup de civils, des deux **côtés**.  
 (21 mots, 1.8 par seconde)
@@ -426,99 +433,100 @@ Source : 2000-2005 : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens
 
 ## Chapitre 23 · Oslo, le mur et les colonies
 
-Film 00:45:52:22 → 00:49:16:15 · durée 3 min 23.7 s
+Film 00:46:04:22 → 00:49:28:15 · durée 3 min 23.7 s
 
 *Intention : Oslo, l'espoir, puis la carte qui découpe la Cisjordanie et le mur. Le mot « illégales » est celui de la Cour internationale de justice (2004, 2024) : il est attribué. Le récit des colons (la Judée et la Samarie de la Bible) est dit avec leurs mots. Finir sur les collines, sans voix.*
 
 
-**23.1** · film **00:45:52:22 → 00:45:57:12** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-23.mp4` · source 00:00:00:00 → 00:00:04:15  
+**23.1** · film **00:46:04:22 → 00:46:09:12** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-23.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**23.2** · film **00:45:57:12 → 00:46:02:07** (4.8 s) · **[MD]** `output/chronologie.mp4` · source 00:01:04:00 → 00:01:08:20  
+**23.2** · film **00:46:09:12 → 00:46:14:07** (4.8 s) · **[MD]** `output/chronologie.mp4` · source 00:01:04:00 → 00:01:08:20  
 À l'écran : fiche de la chronologie : Oslo · carton : output/cartons/washington-1993  
 > VOIX : Septembre 1993, à Washington : / la poignée de **main**.  
 (8 mots, 1.7 par seconde)
 
 
-**23.3** · film **00:46:02:07 → 00:46:14:07** (12.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:50:00 → 00:02:02:00  
+**23.3** · film **00:46:14:07 → 00:46:26:07** (12.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:50:00 → 00:02:02:00  
 > VOIX : Pour la première fois, Israël et l'OLP se reconnaissent. / Les Palestiniens espèrent un État ; / les Israéliens, la **sécurité**.  
 (18 mots, 1.5 par seconde)
 
 
-**23.4** · film **00:46:14:07 → 00:46:20:07** (6.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:00:00 → 00:00:06:00  
+**23.4** · film **00:46:26:07 → 00:46:32:07** (6.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:00:00 → 00:00:06:00  
 > VOIX : Mais l'accord est provisoire. / La Cisjordanie est **découpée**.  
 (8 mots, 1.3 par seconde)
 
 
-**23.5** · film **00:46:20:07 → 00:46:31:07** (11.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:06:00 → 00:00:17:00  
+**23.5** · film **00:46:32:07 → 00:46:43:07** (11.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:06:00 → 00:00:17:00  
 > VOIX : Les zones A et B, environ 40 % : / les villes, sous administration palestinienne, / la sécurité restant souvent **israélienne**.  
 (17 mots, 1.5 par seconde)
 
 
-**23.6** · film **00:46:31:07 → 00:46:41:07** (10.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:17:00 → 00:00:27:00  
+**23.6** · film **00:46:43:07 → 00:46:53:07** (10.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:17:00 → 00:00:27:00  
 > VOIX : La zone C, environ 60 % : / Israël y garde tout le contrôle. / C'est là que s'étendent les **colonies**.  
 (17 mots, 1.7 par seconde)
 
 
-**23.7** · film **00:46:41:07 → 00:46:53:20** (12.5 s) · **[MD]** `output/chiffre-zone-c.mp4` · source 00:00:00:00 → 00:00:12:13  
+**23.7** · film **00:46:53:07 → 00:47:05:20** (12.5 s) · **[MD]** `output/chiffre-zone-c.mp4` · source 00:00:00:00 → 00:00:12:13  
 À l'écran : déjà dans la pièce : moins de 1 % de la zone C planifié pour les Palestiniens (OCHA)  
 > VOIX : silence
 
 
-**23.8** · film **00:46:53:20 → 00:47:06:20** (13.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:27:00 → 00:00:40:00  
+**23.8** · film **00:47:05:20 → 00:47:18:20** (13.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:27:00 → 00:00:40:00  
 À l'écran : carton : output/cartons/cisjordanie-2002  
 > VOIX : Depuis 2002, le mur, / en grande partie à l'intérieur de la Cisjordanie. / En 2004, la Cour internationale de justice le juge contraire au droit **international**.  
 (25 mots, 1.9 par seconde)
 
 
-**23.9** · film **00:47:06:20 → 00:47:15:07** (8.5 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:40:00 → 00:00:48:12  
+**23.9** · film **00:47:18:20 → 00:47:27:07** (8.5 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:40:00 → 00:00:48:12  
 > VOIX : silence
 
 
-**23.10** · film **00:47:15:07 → 00:47:55:07** (40.0 s) · **[3D]** `output/mur-cicatrice.mp4` · source 00:00:00:00 → 00:00:40:00  
+**23.10** · film **00:47:27:07 → 00:48:07:07** (40.0 s) · **[3D]** `output/mur-cicatrice.mp4` · source 00:00:00:00 → 00:00:40:00  
 > VOIX : Vu du ciel, le tracé ressemble à une **cicatrice**. ///  
 (9 mots, 0.2 par seconde)  
 Note : en cours de rendu ; à étalonner en terre-dure
 
 
-**23.11** · film **00:47:55:07 → 00:48:08:08** (13.0 s) · **[MD]** `output/chiffre-colons.mp4` · source 00:00:00:00 → 00:00:13:00  
+**23.11** · film **00:48:07:07 → 00:48:20:08** (13.0 s) · **[MD]** `output/chiffre-colons.mp4` · source 00:00:00:00 → 00:00:13:00  
 À l'écran : déjà dans la pièce : environ 700 000 colons, quelque 300 colonies et avant-postes  
 > VOIX : silence
 
 
-**23.12** · film **00:48:08:08 → 00:48:26:18** (18.4 s) · **[RÉEL]** `output/plans-reels/checkpoint-hizma-jerusalem-est.mp4` · source 00:00:00:00 → 00:00:18:10  
+**23.12** · film **00:48:20:08 → 00:48:38:18** (18.4 s) · **[RÉEL]** `output/plans-reels/checkpoint-hizma-jerusalem-est.mp4` · source 00:00:00:00 → 00:00:18:10  
 Source : SOURCES.md 4.1, Adobe Stock 271328836  
 À l'écran : carton : output/cartons/cisjordanie-aujourdhui  
 > VOIX : Pour les Palestiniens, l'occupation, c'est d'abord ça : / des checkpoints, des permis, des **attentes**. ///  
 (13 mots, 0.7 par seconde)
 
 
-**23.13** · film **00:48:26:18 → 00:48:40:23** (14.2 s) · **[RÉEL]** `output/plans-reels/cisjordanie-al-eizariya-minaret-desert.mp4` · source 00:00:00:00 → 00:00:14:06  
+**23.13** · film **00:48:38:18 → 00:48:52:23** (14.2 s) · **[RÉEL]** `output/plans-reels/cisjordanie-al-eizariya-minaret-desert.mp4` · source 00:00:00:00 → 00:00:14:06  
 Source : SOURCES.md 4.1, Adobe Stock 400434780  
 > VOIX : Pour une partie des Israéliens, ces collines sont la Judée et la Samarie, / la terre de la Bible, rendue à son **peuple**.  
 (22 mots, 1.5 par seconde)
 
 
-**23.14** · film **00:48:40:23 → 00:48:54:23** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:41:00 → 00:00:55:00  
-Source : accords d'Oslo II, 28 septembre 1995, annexe III, article 40  
+**23.14** · film **00:48:52:23 → 00:49:06:23** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:41:00 → 00:00:55:00  
+Source : accords d'Oslo II, 28 septembre 1995, annexe III, article 40 ; Amnesty International, Troubled Waters, 2009 (environ 80 % de l'aquifère de la montagne pour Israël) ; B'Tselem, Parched, 2 mai 2023 (82,4 litres par jour et par Palestinien, 247 par Israélien, colons compris)  
 À l'écran : fiche : Cisjordanie · depuis Oslo II, 1995 · Le partage de l'eau  
-> VOIX : Avec Oslo, Israël garde la main sur l'eau de Cisjordanie. / Les colonies sont raccordées ; / beaucoup de villages palestiniens achètent leur eau par **camion**.  
-(23 mots, 1.6 par seconde)
+> VOIX : Avec Oslo, Israël garde environ 80 % de l'eau de la grande nappe de Cisjordanie. / En 2023, un Palestinien y dispose de 82 litres par jour ; / un Israélien, colons compris, de **247**.  
+(31 mots, 2.2 par seconde)  
+Note : 247 litres : moyenne de tous les Israéliens, pas des seuls colons ; chiffres publiés en 2023
 
 
-**23.15** · film **00:48:54:23 → 00:49:06:23** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:55:00 → 00:01:07:00  
+**23.15** · film **00:49:06:23 → 00:49:18:23** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:55:00 → 00:01:07:00  
 Source : Cheikh Jarrah, avril-mai 2021  
 À l'écran : fiche : Jérusalem-Est · mai 2021 · Cheikh Jarrah  
 > VOIX : En mai 2021, à Cheikh Jarrah, à Jérusalem-Est, des familles palestiniennes doivent laisser leurs maisons à des colons. / La colère embrase Jérusalem, / puis **Gaza**.  
 (24 mots, 2.0 par seconde)
 
 
-**23.16** · film **00:49:06:23 → 00:49:16:15** (9.7 s) · **[RÉEL]** `output/plans-reels/cisjordanie-monastere-mar-saba.mp4` · source 00:00:00:00 → 00:00:09:17  
+**23.16** · film **00:49:18:23 → 00:49:28:15** (9.7 s) · **[RÉEL]** `output/plans-reels/cisjordanie-monastere-mar-saba.mp4` · source 00:00:00:00 → 00:00:09:17  
 Source : SOURCES.md 4.1, Adobe Stock 487976626 ; Cour internationale de justice, avis du 19 juillet 2024  
 > VOIX : Pour le droit international, les colonies sont **illégales**. / La Cour internationale de justice l'a redit en 2024. ///  
 (17 mots, 1.8 par seconde)
 
 
 ---
-Durée de la partie : 15 min 32.6 s (film 00:33:44:00 → 00:49:16:15)
+Durée de la partie : 15 min 44.6 s (film 00:33:44:00 → 00:49:28:15)

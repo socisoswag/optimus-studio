@@ -212,13 +212,59 @@ chapitres:
           Et la France ? / En 1957, elle aide Israël à bâtir la centrale de Dimona. / En 2020, la Cour européenne la condamne pour avoir puni des appels au boycott. // En 2025, elle reconnaît la **Palestine**.
       - type: MD
         fichier: output/documents-6.mp4
+        entree: 511
+        sortie: 526
+        ecran: "fiche : Marseille · octobre 2023 · Des pièces françaises"
+        source: "Disclose et Marsactu, 26 mars 2024 (Eurolinks, maillons de cartouches livrés à IMI Systems) ; ministère des Armées ; Eurosatory 2024 (décision du 31 mai 2024, tribunal de commerce de Paris, juin 2024)"
+        verifier: "l'enquête Disclose sur Eurolinks et la chronologie d'Eurosatory 2024 (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          La France arme-t-elle Israël ? / Paris dit ne livrer que des pièces défensives, ou à réexporter. / Mais selon le média Disclose, une entreprise de Marseille a livré en octobre 2023 au moins cent mille maillons de **mitrailleuse**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 526
+        sortie: 539
+        ecran: "fiche : Paris · octobre 2023 · Manifester pour Gaza"
+        source: "télégramme du ministre de l'Intérieur aux préfets, 12 octobre 2023 ; Conseil d'État, ordonnance du 18 octobre 2023"
+        verifier: "le télégramme du 12 octobre 2023 et l'ordonnance du Conseil d'État du 18 octobre 2023 (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Le 12 octobre 2023, le ministre de l'Intérieur demande d'interdire les manifestations propalestiniennes. / Six jours plus tard, le Conseil d'État refuse une interdiction **générale**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 539
+        sortie: 552
+        ecran: "fiche : Assemblée nationale · depuis 2013 · Meyer Habib"
+        source: "Meyer Habib, député de la 8e circonscription des Français établis hors de France (Israël, Italie, Grèce, Turquie, Chypre, Malte, Saint-Marin, Vatican)"
+        verifier: "les mandats de Meyer Habib et ses mots exacts sur Netanyahou, avec la source (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          À l'Assemblée, Meyer Habib, élu des Français d'Israël et d'Europe du Sud, / se dit l'ami de Netanyahou depuis des décennies, / et défend son gouvernement dans l'**hémicycle**.
+        note: "jamais « double allégeance » ni « agent » : on cite ses mots et ses votes, pas ses origines"
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 552
+        sortie: 565
+        ecran: "fiche : France · aujourd'hui · Les réseaux pro-israéliens"
+        source: "répertoire des représentants d'intérêts de la HATVP (ELNET France) ; voyages d'élus organisés par ELNET"
+        verifier: "l'inscription d'ELNET France à la HATVP, ses dépenses déclarées et ses voyages d'élus (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Des réseaux pro-israéliens travaillent aussi les élus : / ELNET, un lobby déclaré, organise des voyages de parlementaires en Israël. / Ces réseaux ne parlent pas au nom des Juifs de **France**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 565
+        sortie: 580
+        ecran: "fiche : Paris et Jérusalem · 2025 · Les pressions sur Paris"
+        source: "annulation par Israël des visas de 27 élus français, avril 2025 ; lettre de Benyamin Netanyahou à Emmanuel Macron, août 2025, et réponse de l'Élysée"
+        verifier: "les visas annulés d'avril 2025 (nombre, partis) et les mots exacts de la lettre de Netanyahou et de la réponse de l'Élysée (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Et quand Paris s'écarte de la ligne israélienne, la pression monte. / En avril 2025, Israël annule les visas de vingt-sept élus français de gauche. / En août, Netanyahou accuse Macron d'attiser l'antisémitisme ; / l'Élysée parle d'une accusation « **abjecte** ».
+      - type: MD
+        fichier: output/documents-6.mp4
         entree: 307
         sortie: 322
         ecran: "fiche : Paris · 2019 · Antisionisme et antisémitisme"
-        source: "Emmanuel Macron, dîner du CRIF, 20 février 2019 ; résolution de l'Assemblée nationale du 3 décembre 2019 (définition de l'IHRA)"
-        verifier: "la phrase exacte d'Emmanuel Macron au dîner du CRIF du 20 février 2019 (question Perplexity)"
+        source: "Emmanuel Macron, discours du Vel d'Hiv, 16 juillet 2017, et dîner du CRIF, 20 février 2019 (transcriptions de l'Élysée) ; résolution de l'Assemblée nationale du 3 décembre 2019 (définition de l'IHRA)"
         voix: >-
-          En France, le débat est vif. / En 2019, Emmanuel Macron rapproche antisionisme et antisémitisme ; / l'Assemblée adopte la définition de l'IHRA. // Ce film critique un projet politique, / jamais un **peuple**.
+          En France, le débat est vif. / En 2019, Emmanuel Macron qualifie l'antisionisme d'« une des formes modernes de l'antisémitisme » ; / l'Assemblée adopte la définition de l'IHRA. // Ce film critique un projet politique, / jamais un **peuple**.
+        note: "citer la transcription de l'Élysée mot pour mot ; en 2017, il disait « la forme réinventée » : ne pas mélanger les deux"
       - type: NOIR
         duree: 9
         voix: >-

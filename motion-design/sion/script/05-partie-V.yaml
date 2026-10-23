@@ -148,6 +148,14 @@ chapitres:
           En 2010, une flottille tente de briser le blocus. / L'armée israélienne prend d'assaut le Mavi Marmara : / dix militants en **meurent**.
       - type: MD
         fichier: output/documents-6.mp4
+        entree: 348
+        sortie: 361
+        ecran: "fiche : Gaza · 18 octobre 2011 · L'échange Shalit"
+        source: "échange de Gilad Shalit, 18 octobre 2011 : 1 027 prisonniers palestiniens libérés, dont Yahya Sinwar"
+        voix: >-
+          En 2011, Israël échange le soldat Gilad Shalit, otage depuis cinq ans, contre 1 027 prisonniers palestiniens. / Parmi eux, Yahya Sinwar : / il dirigera le Hamas à Gaza, et sera tenu pour l'architecte du 7 **octobre**.
+      - type: MD
+        fichier: output/documents-6.mp4
         entree: 80
         sortie: 93
         ecran: "fiche : Gaza · 2018-2019 · La grande marche du retour"
@@ -166,11 +174,37 @@ chapitres:
         fichier: output/documents-6.mp4
         entree: 105
         sortie: 118
-        ecran: "fiche : Gaza · 2018-2023 · L'argent du Qatar"
-        source: "The New York Times, 10 décembre 2023 ; Haaretz"
-        verifier: "le texte exact de l'enquête du New York Times du 10 décembre 2023 et de la phrase de Netanyahou citée par Haaretz (question Perplexity)"
+        ecran: "fiche : Gaza · de 2018 à 2023 · L'argent du Qatar"
+        source: "M. Mazzetti et R. Bergman, « Buying Quiet », The New York Times, 10 décembre 2023 (15 millions de dollars par mois en espèces en 2018, environ 30 millions par mois en 2021 ; réponse du bureau de Netanyahou : des raisons humanitaires)"
         voix: >-
-          Pendant ce temps, le gouvernement Netanyahou laisse le Qatar financer Gaza, gouvernée par le Hamas. / Selon le New York Times, / il s'agit de garder les Palestiniens **divisés**.
+          Pendant ce temps, Netanyahou laisse le Qatar verser des millions de dollars par mois à Gaza, gouvernée par le Hamas. / Selon le New York Times, il parie qu'un Hamas fort, mais pas trop, / éloignera la pression pour un État **palestinien**.
+        note: "« selon le New York Times » : c'est la synthèse de l'enquête, pas un aveu enregistré ; le démenti vient au plan suivant"
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 403
+        sortie: 419
+        ecran: "citation : Benyamin Netanyahou · réunion du Likoud, mars 2019 (propos rapportés)"
+        source: "propos rapportés d'une réunion du Likoud, mars 2019 (Maariv ; Haaretz, 9 octobre et 15 novembre 2023 ; Tal Schneider, The Times of Israel, 8 octobre 2023) ; démenti de Netanyahou, entretien avec TIME du 4 août 2024 ; réponse de son bureau au New York Times, décembre 2023"
+        voix: >-
+          En 2019, la presse israélienne lui prête ces mots : / « Celui qui veut empêcher la création d'un État palestinien / doit soutenir le renforcement du Hamas, et le transfert d'argent au Hamas. » // Il dément l'avoir dit ; / son bureau parle d'aide **humanitaire**.
+        note: "règle 6 de la bible : propos rapportés d'une réunion fermée, le démenti est dit dans le même plan"
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 419
+        sortie: 430
+        ecran: "citation : Bezalel Smotrich · chaîne de la Knesset, octobre 2015"
+        source: "Bezalel Smotrich, chaîne de la Knesset, octobre 2015 (cité par N12, 5 mai 2026, et Zman Israel, 23 septembre 2026)"
+        voix: >-
+          Dès 2015, Bezalel Smotrich, aujourd'hui ministre des Finances, le disait à sa façon : / « L'Autorité palestinienne est un fardeau, / et le Hamas est un **atout**. »
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 430
+        sortie: 443
+        ecran: "fiche : Israël · 2022 et 2023 · Le plan « Mur de Jéricho »"
+        source: "R. Bergman et A. Goldman, The New York Times, 30 novembre 2023 (document d'une quarantaine de pages, nom de code « Jericho Wall »)"
+        verifier: "le document « Jericho Wall », ses auteurs et les alertes de 2023 (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Et le plan du Hamas, l'armée l'avait. / Plus d'un an avant le 7 octobre, un document d'une quarantaine de pages décrit l'attaque. / Ses chefs le jugent hors de portée du **Hamas**.
       - type: MD
         fichier: output/gaza.mp4
         entree: 30
@@ -207,9 +241,9 @@ chapitres:
         fichier: output/gaza.mp4
         entree: 50
         sortie: 62
+        source: "ministère de la Santé de Gaza, bilan du 22 octobre 2026 cité par Europa Press et WAFA (74 498 morts, 175 616 blessés) ; OCHA, 14 octobre 2026 (74 392 morts) ; Z. Jamaluddine et al., The Lancet, 2025"
         voix: >-
-          En octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens
-          tués. / Un décompte sans doute **inférieur** à la réalité.
+          Au 22 octobre 2026, / le ministère de la Santé de Gaza compte plus de soixante-quatorze mille Palestiniens tués, / et plus de cent soixante-quinze mille blessés. / Un décompte sans doute **inférieur** à la réalité.
       - type: MD
         fichier: output/chiffre-gaza.mp4
         entree: 0
@@ -265,11 +299,46 @@ chapitres:
           Le journaliste Antony Loewenstein parle d'un « laboratoire » : / des armes et des outils de surveillance
           utilisés à Gaza et en Cisjordanie, / puis vendus dans le monde comme « éprouvés au **combat** ».
       - type: MD
+        fichier: output/documents-6.mp4
+        entree: 443
+        sortie: 457
+        ecran: "fiche : +972 Magazine · 3 avril 2024 · « Lavender »"
+        source: "Yuval Abraham, « Lavender », +972 Magazine et Local Call, 3 avril 2024 (six officiers du renseignement) ; réponse de l'armée israélienne"
+        verifier: "les chiffres de l'enquête « Lavender » et la réponse de l'armée (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 457
+        sortie: 469
+        ecran: "fiche : Washington · 4 février 2025 · « La Riviera du Moyen-Orient »"
+        source: "conférence de presse de Donald Trump et Benyamin Netanyahou, Maison-Blanche, 4 février 2025"
+        verifier: "les mots exacts de Donald Trump le 4 février 2025 (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.
+      - type: MD
+        fichier: output/documents-6.mp4
+        entree: 469
+        sortie: 482
+        ecran: "fiche : Gaza · mai à juillet 2025 · Tués en cherchant à manger"
+        source: "Haut-Commissariat des Nations unies aux droits de l'homme, bilan au 31 juillet 2025 (Palestiniens tués en cherchant de la nourriture depuis le 27 mai 2025) ; Gaza Humanitarian Foundation"
+        verifier: "le bilan du HCDH au 31 juillet 2025 (1 373 morts, dont 859 près des sites de la GHF ?) (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          En mai 2025, une fondation soutenue par Israël et les États-Unis prend en main l'aide alimentaire. / En deux mois, selon l'ONU, plus de mille trois cents Palestiniens sont tués en cherchant de quoi **manger**.
+      - type: MD
         fichier: output/gaza.mp4
         entree: 84.5
-        sortie: 93.52
+        sortie: 98.5
+        source: "cessez-le-feu du 10 octobre 2025 ; ministère de la Santé de Gaza, 22 octobre 2026 (1 538 morts depuis la trêve, série comptée depuis le 11 octobre 2025) ; Reuters, 7 octobre 2026 (Israël contrôle environ les deux tiers de la bande)"
         voix: >-
-          10 octobre 2025 : un cessez-le-feu. / Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
+          10 octobre 2025 : un cessez-le-feu. / Les grandes offensives s'arrêtent, pas les tirs : / au 22 octobre 2026, plus de mille cinq cents morts depuis la trêve. / Israël tient encore environ les deux tiers de la **bande**.
+        note: "ne pas additionner les 841 corps retirés des décombres : ce n'est pas la même série"
+      - type: MD
+        fichier: output/gaza.mp4
+        entree: 98.5
+        sortie: 107.52
+        voix: >-
+          Une prison à ciel ouvert, / devenue un champ de **ruines**. ///
 
   - num: "26"
     titre: "Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique"
@@ -287,7 +356,7 @@ chapitres:
         photo: "Wikimedia Commons, « Gush Emunim movement continues to send settlers to illegal settlements… (FL45816230) », Asher Koralik, collection Dan Hadani, Bibliothèque nationale d'Israël, 22 septembre 1978, CC BY 4.0"
         entree: 0
         sortie: 15
-        ecran: "déjà dans le plan : 22 septembre 1978 · Cisjordanie occupée · Des colons du Goush Emounim lèvent le drapeau sur une colonie non autorisée · Photo d'archive"
+        ecran: "déjà dans le plan : 22 septembre 1978 · Mont Huwara, près de Naplouse · Des colons du Goush Emounim lèvent le drapeau sur une colonie non autorisée · Photo d'archive"
         source: "Goush Emounim, fondé en 1974 ; enseignement du rabbin Zvi Yehouda Kook"
         voix: >-
           Après 1967, une partie des Juifs religieux voit dans la conquête un signe de Dieu. / En 1974, ils fondent le
@@ -335,10 +404,10 @@ chapitres:
         entree: 269
         sortie: 283
         ecran: "fiche : Cisjordanie occupée · depuis octobre 2023 · En Cisjordanie aussi"
-        source: "OCHA (violences de colons) ; UNRWA (déplacés de l'opération « Mur de fer », 2025)"
-        verifier: "les chiffres des violences de colons et des déplacés de 2025 (question Perplexity)"
+        source: "OCHA, rapport de situation du 15 octobre 2026 et instantané du 14 octobre 2026 (incidents de colons avec victimes ou dégâts : 428 du 7 octobre au 31 décembre 2023, 1 449 en 2024, 1 836 en 2025, plus de 2 060 en 2026 au 12 octobre) ; UNRWA, repris par l'OCHA, 14 septembre 2026 (déplacés : Jénine 12 557, Tulkarem 12 412, Nour Chams 9 207)"
         voix: >-
-          En Cisjordanie aussi, la violence explose : / attaques de colons, raids de l'armée. / En 2025, l'opération « Mur de fer » vide les camps de Jénine et de Tulkarem : / des dizaines de milliers de **déplacés**.
+          En Cisjordanie aussi, la violence explose : / plus de 5 700 attaques de colons en trois ans, d'après les relevés de l'ONU. / En 2025, l'armée lance l'opération « Mur de fer » dans les camps du nord : / à Jénine, Tulkarem et Nour Chams, plus de 34 000 **déplacés**.
+        note: "5 700 : somme des séries de l'OCHA (incidents avec victimes ou dégâts) ; à Jénine, une partie des déplacés date d'une opération de l'Autorité palestinienne"
       - type: MD
         fichier: output/portraits-3.mp4
         entree: 110
@@ -403,9 +472,9 @@ chapitres:
         entree: 118
         sortie: 131
         ecran: "fiche : Jénine · 11 mai 2022 · Shireen Abu Akleh"
-        source: "Haut-Commissariat de l'ONU aux droits de l'homme, juin 2022 ; Comité pour la protection des journalistes (CPJ)"
+        source: "Shireen Abu Akleh, 11 mai 2022 (ONU, HCDH, juin 2022) ; CPJ, données au 24 septembre 2026 (189 journalistes et employés des médias palestiniens tués par Israël à Gaza)"
         voix: >-
-          Le 11 mai 2022, la journaliste Shireen Abu Akleh est tuée à Jénine. / L'armée accuse d'abord des tireurs palestiniens ; / l'ONU conclut à un tir **israélien**.
+          Le 11 mai 2022, la journaliste Shireen Abu Akleh est tuée à Jénine. / L'armée accuse d'abord des tireurs palestiniens ; / l'ONU conclut à un tir israélien. // À Gaza, depuis 2023, le CPJ compte 189 journalistes et employés des médias tués par **Israël**.
       - type: NOIR
         duree: 4
         voix: >-
@@ -481,11 +550,11 @@ chapitres:
         fichier: output/documents-6.mp4
         entree: 28
         sortie: 41
-        ecran: "fiche : Néguev · aujourd'hui · Les villages non reconnus"
-        source: "villages bédouins non reconnus du Néguev ; al-Araqib"
-        verifier: "le nombre de villages non reconnus et de démolitions d'al-Araqib (question Perplexity, A-FABRIQUER.md)"
+        ecran: "fiche : Néguev · 2025 · Les villages non reconnus"
+        source: "Negev Coexistence Forum, 27 juillet 2025, et IWGIA, The Indigenous World 2026 (35 villages non reconnus) ; WAFA, 24 décembre 2025 (244e démolition d'al-Araqib depuis 2010)"
+        verifier: "la source sur l'absence de raccordement à l'eau et à l'électricité des villages non reconnus (question Perplexity, A-FABRIQUER.md)"
         voix: >-
-          Dans le Néguev, des dizaines de villages bédouins ne sont pas reconnus par l'État : / ni eau courante, ni électricité. / À al-Araqib, les maisons sont détruites, puis rebâties, des dizaines de **fois**.
+          Dans le Néguev, 35 villages bédouins ne sont pas reconnus par l'État : / pas de raccordement officiel à l'eau ni à l'électricité. / Al-Araqib a été démoli, puis rebâti, au moins 244 fois depuis **2010**.
       - type: NOIR
         duree: 9
         voix: >-

@@ -76,6 +76,15 @@ chapitres:
           Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».
       - type: MD
         fichier: output/documents-6.mp4
+        entree: 497
+        sortie: 511
+        ecran: "fiche : Gaza · 2023 et 2025 · Les chrétiens de Palestine"
+        source: "frappe sur l'église Saint-Porphyre, Gaza, 19 octobre 2023 (patriarcat grec-orthodoxe de Jérusalem) ; frappe sur l'église de la Sainte-Famille, Gaza, 17 juillet 2025 (patriarcat latin de Jérusalem)"
+        verifier: "les bilans des deux frappes sur les églises de Gaza (question Perplexity, A-FABRIQUER.md)"
+        voix: >-
+          Edward Said venait d'une famille chrétienne, comme une partie des Palestiniens, de Bethléem à Nazareth. / En octobre 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza, où s'abritent des familles. / En 2025, l'église de la Sainte-Famille, seule paroisse catholique de Gaza, est frappée à son **tour**.
+      - type: MD
+        fichier: output/documents-6.mp4
         entree: 322
         sortie: 336
         ecran: "fiche : Beyrouth 1972 · Londres 1987 · Kanafani et Handala"
