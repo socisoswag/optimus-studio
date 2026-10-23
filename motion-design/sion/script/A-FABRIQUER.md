@@ -5,6 +5,9 @@ encore des photos, et ce qu'il faut pour les passer en vidéo. Quand une vraie a
 avant tout (déjà fait : Ellis Island 1903, Méliès 1899, Lumière 1897, le mur occidental en 1918, les réfugiés en 1950,
 le procès Eichmann).
 
+> Toutes les questions encore ouvertes (sections 5, 10, 11 et 12) sont réunies, prêtes à copier, dans
+> `script/QUESTIONS-PERPLEXITY.md` (23 octobre au soir).
+
 ## 1. Reconstitutions à générer avec Gemini (Veo), d'après une vraie photo
 
 Méthode du film (SOURCES.md 4) : on part toujours d'une **vraie photo d'archive** ; le montage montre la photo
