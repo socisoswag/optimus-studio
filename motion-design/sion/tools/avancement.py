@@ -47,6 +47,11 @@ def main():
         t0 = datetime.datetime.combine(now.date(), datetime.time.fromisoformat(h0))
         if t0 > now:
             t0 -= datetime.timedelta(days=1)
+        # début de la campagne de rendu (output/.campagne, heure UTC) : la vitesse se mesure sur toute la campagne,
+        # pas seulement depuis la dernière relance (la chaîne est relancée toutes les deux heures)
+        camp = os.path.join(ROOT, "output", ".campagne")
+        if os.path.exists(camp):
+            t0 = min(t0, datetime.datetime.fromisoformat(open(camp).read().strip()))
         run = sum(d[t] for t in liste if os.path.exists(f := os.path.join(ROOT, "output", f".rendu-ok-{t}-v2"))
                   and datetime.datetime.fromtimestamp(os.path.getmtime(f), datetime.UTC).replace(tzinfo=None) >= t0)
         if cours in d and not os.path.exists(os.path.join(ROOT, "output", f".rendu-ok-{cours}-v2")):
