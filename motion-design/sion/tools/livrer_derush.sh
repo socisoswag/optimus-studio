@@ -9,6 +9,8 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 REPO="${MONTAGE_REPO:-https://github.com/socisoswag/Montage-Moyen-orient}"
 W="${WORK:-$(dirname "$(dirname "$(dirname "$ROOT")")")/_livraison-sion}"
+# un envoi raté (disque plein, réseau) ne laisse pas son clone sur le disque
+trap 'rm -rf "${W:?}"' EXIT
 push() {
   for d in 2 4 8 16 0; do
     git -C "$W" push -q origin HEAD:main && return 0
