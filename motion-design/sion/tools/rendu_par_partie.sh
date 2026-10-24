@@ -13,6 +13,16 @@ LISTE=$(grep -o 'LISTE="[^"]*"' tools/rendu_tout.sh | head -1 | cut -d'"' -f2)
 rendre() {
   [ -f "output/.rendu-ok-$1-v2" ] && return 0
   echo "=== $(date -u +%H:%M) $1"
+  if grep -q "root.INTRO = " "timelines/$1.js"; then
+    # survols (drone.html, photo3d.html) : rendus par tools/build_intro.sh ; un rendu plus récent que sa timeline et sa page est gardé
+    local PAGE
+    PAGE=$(node -e "require('./timelines/$1.js'); console.log(globalThis.INTRO.page || 'drone.html')")
+    if [ ! -s "output/$1.mp4" ] || [ "timelines/$1.js" -nt "output/$1.mp4" ] || [ "$PAGE" -nt "output/$1.mp4" ] || [ "${PAGE%.html}.js" -nt "output/$1.mp4" ]; then
+      bash tools/build_intro.sh "$1" || return 1
+    fi
+    python3 tools/verif_video.py "output/$1.mp4" --timeline "$1" --page "$PAGE" && touch "output/.rendu-ok-$1-v2"
+    return
+  fi
   bash tools/rendu_morceaux.sh "$1" && python3 tools/verif_video.py "output/$1.mp4" --timeline "$1" && touch "output/.rendu-ok-$1-v2"
 }
 {
