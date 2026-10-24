@@ -21,11 +21,14 @@ import bruitages as BR  # noqa: E402
 import pistes as PI  # noqa: E402
 
 SR = 48000
-REEL = os.environ.get("SYNTH", "0") != "1"
+REEL = True  # 100 % de vrais sons : plus de secours de synthèse (SYNTH=1 n'a plus d'effet)
 
 
 def reel(*roles):
-    return REEL and BR.ok(*roles)
+    """Vraies prises du rôle présentes, sinon arrêt : jamais de son fabriqué à la place d'un enregistrement manquant."""
+    if not BR.ok(*roles):
+        raise SystemExit(f"vraie prise manquante pour {roles} : python3 tools/banque_sons.py prendre")
+    return True
 
 
 # ambiances des photos (data/reconstitution-legendes.json, timelines) : nom → rôle de la banque ; « foule+moutons » mélange
@@ -333,7 +336,7 @@ if cr and reel("feu"):  # vraies braises qui crépitent, au loin
     n = int((cr[1] - cr[0] + 2) * SR)
     tt = np.arange(n) / SR
     env = np.clip(tt / 2, 0, 1) * np.clip((cr[1] - cr[0] + 2 - tt) / 2, 0, 1)
-    l, r = BR.adoucit(BR.fond("feu", n / SR, rng, -28), 3.5)
+    l, r = BR.moins_aigu(BR.adoucit(BR.fond("feu", n / SR, rng, -28), 5.0), -12.0, 2000.0)
     l, r = BR.passe_bas(l, 6000), BR.passe_bas(r, 6000)  # braises au loin : sans claquements secs
     add(BR.reverb((l * env, r * env), "ir_grand", wet=0.25, couleur=5000), cr[0], 0.3)
 elif cr:

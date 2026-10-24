@@ -23,11 +23,14 @@ import bruitages as BR  # noqa: E402
 import pistes as PI  # noqa: E402
 
 SR = 48000
-REEL = os.environ.get("SYNTH", "0") != "1"
+REEL = True  # 100 % de vrais sons : plus de secours de synthèse (SYNTH=1 n'a plus d'effet)
 
 
 def reel(*roles):
-    return REEL and BR.ok(*roles)
+    """Vraies prises du rôle présentes, sinon arrêt : jamais de son fabriqué à la place d'un enregistrement manquant."""
+    if not BR.ok(*roles):
+        raise SystemExit(f"vraie prise manquante pour {roles} : python3 tools/banque_sons.py prendre")
+    return True
 
 
 cues = json.load(open(sys.argv[1]))
@@ -214,8 +217,11 @@ if reel("vent_doux", "feu"):
     vl_, vr_ = BR.passe_haut(vl_, 90, 3), BR.passe_haut(vr_, 90, 3)
     # les rafales de la prise passent en souffle blanc : aigus adoucis, le fond ne brille jamais plus que la voix
     vl_, vr_ = BR.moins_aigu((vl_, vr_), -7.0, 3000.0)
-    fl_, fr_ = BR.adoucit(BR.fond("feu", N / SR, rng, -30), 3.5)
-    fl_, fr_ = BR.passe_bas(fl_, 6000), BR.passe_bas(fr_, 6000)
+    fl_, fr_ = BR.adoucit(BR.fond("feu", N / SR, rng, -30), 5.0)
+    # la prise de feu a beaucoup de souffle aigu (spectre presque blanc) : aigus baissés comme pour le vent, sinon
+    # elle sonne « fabriquée »
+    fl_, fr_ = BR.moins_aigu((fl_, fr_), -12.0, 2000.0)
+    fl_, fr_ = BR.passe_bas(fl_, 7500), BR.passe_bas(fr_, 7500)
     env_ = bed * bed_in * duck
     mus_ = (0.55 * drone + 0.30 * pad) * MUSIC
     add(((vl_ + mus_) * env_, (vr_ + mus_) * env_), 0, 0.62)
@@ -670,7 +676,7 @@ for fo in (SND.get("foley") or []):
             n = int((fo["dur"] + 0.6) * SR)
             tt = np.arange(n) / SR
             e_ = np.clip(tt / 0.8, 0, 1) * np.clip((fo["dur"] + 0.6 - tt) / 0.8, 0, 1)
-            sl_, sr_ = BR.adoucit(BR.fond("feu", n / SR, rng, -26), 3.5)
+            sl_, sr_ = BR.moins_aigu(BR.adoucit(BR.fond("feu", n / SR, rng, -26), 5.0), -12.0, 2000.0)
             add(BR.reverb((BR.passe_haut(sl_, 1500) * e_, BR.passe_haut(sr_, 1500) * e_), "ir_grand", wet=0.4), t0, 0.3 * g)
         elif k == "cut":  # vraie lame dans le papier
             n = int((fo["dur"] + 0.15) * SR)
