@@ -26,7 +26,7 @@ chapitres:
         fichier: output/archives-filmees/1945-san-francisco-charte-onu.mp4
         carton: output/cartons/53-arch-1945-san-francisco-charte-onu.mov
         entree: 0
-        sortie: 11.48
+        sortie: 14.56
         ecran: "carton : 26 juin 1945 · San Francisco · Cinquante pays signent la Charte des Nations unies"
         source: "actualités Universal « San Francisco Parley Ends », 28 juin 1945, archive.org 1945-06-28_San_Francisco_Parley_Ends ; Charte des Nations unies, 26 juin 1945, article 1, paragraphe 2 ; CIJ, avis du 19 juillet 2024 (droit du peuple palestinien à l'autodétermination)"
         voix: >-
@@ -85,7 +85,7 @@ chapitres:
         ecran: "fiche : Gaza · 2023 et 2025 · Les chrétiens de Palestine"
         source: "patriarcat grec-orthodoxe de Jérusalem, 22 octobre 2023 (au moins 18 morts à Saint-Porphyre) ; patriarcat latin de Jérusalem, 17 juillet 2025, et communiqué commun des Églises du 18 juillet (3 morts, 10 blessés)"
         voix: >-
-          Edward Said venait d'une famille chrétienne, comme une partie des Palestiniens, de Bethléem à Nazareth. / En octobre 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza, où s'abritent des familles : au moins dix-huit morts. / En juillet 2025, l'église de la Sainte-Famille, seule paroisse catholique de Gaza : trois **morts**.
+          Edward Said venait d'une famille chrétienne, comme une partie des Palestiniens. / En 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza : dix-huit morts au moins. / En 2025, l'église de la Sainte-Famille : trois **morts**.
       - type: MD
         fichier: output/documents-6.mp4
         entree: 322

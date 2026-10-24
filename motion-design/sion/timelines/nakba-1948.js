@@ -83,7 +83,7 @@
     {
       id: 'fin', type: 'outro', dur: 10.0, fly: 2.2, hitAt: 2.2,
       eyebrow: '11 décembre 1948 · résolution 194 de l’ONU',
-      lines: ['Plus de 700 000 réfugiés.', 'Un retour voté par l’ONU,', 'jamais permis.'],
+      lines: ['Plus de 700 000', 'réfugiés. Leur retour,', 'voté par l’ONU,', 'jamais permis.'],
       cam: { lon: 34.95, lat: 31.7, w: 0.11, pitch: 32, bearing: 0 },
       camEnd: { lon: 35.0, lat: 31.75, w: 0.095, pitch: 36, bearing: 2 },
     },

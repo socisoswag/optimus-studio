@@ -312,8 +312,9 @@ Source : procès de 1934 (Stavsky condamné puis acquitté en appel, faute de pr
 Son : mer la nuit, un seul coup sec très lointain, puis la mer seule
 
 
-**9.7** · film **00:20:40:08 → 00:20:54:08** (14.0 s) · **[NOIR]** (à fabriquer)  
+**9.7** · film **00:20:40:08 → 00:20:54:08** (14.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:05:00 → 00:00:19:00  
 Source : lecture « accord de sauvetage » : Yehuda Bauer, Jews for Sale?, 1994 ; lecture critique : Edwin Black, The Transfer Agreement, 1984 (les deux à citer en description)  
+À l'écran : mots : Un accord repris par des antisémites, puis : Un sauvetage arraché au régime nazi  
 > VOIX : Ce traité est aujourd'hui repris par des antisémites, / qui parlent de « collaboration ». // Les historiens disent autre chose : / un accord de sauvetage, / arraché à un régime qui voulait chasser les **Juifs**.  
 (30 mots, 2.1 par seconde)
 

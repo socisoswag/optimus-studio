@@ -336,9 +336,9 @@ Film 00:47:07:01 → 00:49:20:13 · durée 2 min 13.5 s
 (29 mots, 2.1 par seconde)
 
 
-**21.4** · film **00:47:30:01 → 00:47:44:01** (14.0 s) · **[NOIR]** (à fabriquer)  
+**21.4** · film **00:47:30:01 → 00:47:44:01** (14.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:33:00 → 00:00:47:00  
 Source : Munich, 5 et 6 septembre 1972 : onze membres de l'équipe olympique israélienne tués par Septembre noir  
-À l'écran : carton : Munich · 5 septembre 1972  
+À l'écran : fiche : Munich · 5 septembre 1972 · Pour Israël et l'Occident  
 > VOIX : Pour Israël et l'Occident, l'OLP est alors une organisation terroriste : / détournements d'avions, / et à Munich, en 1972, onze athlètes israéliens tués par le groupe Septembre **noir**.  
 (26 mots, 1.9 par seconde)
 
@@ -391,8 +391,9 @@ Source : condamnation de Marwan Barghouti, 6 juin 2004 ; PCPSR, sondage du 7 au 
 (31 mots, 2.6 par seconde)
 
 
-**21.14** · film **00:49:08:13 → 00:49:20:13** (12.0 s) · **[NOIR]** (à fabriquer)  
+**21.14** · film **00:49:08:13 → 00:49:20:13** (12.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:47:00 → 00:00:59:00  
 Source : déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration de Genève, 14 décembre 1988 ; mort le 11 novembre 2004  
+À l'écran : fiche : Alger et Genève · 1988 · Yasser Arafat  
 > VOIX : En 1988, il accepte la résolution 242 : / un État palestinien à côté d'Israël. // Il meurt en 2004, / sans avoir vu cet **État**.  
 (22 mots, 1.8 par seconde)
 
@@ -437,8 +438,9 @@ Source : B'Tselem, tableaux de la première intifada (9 décembre 1987 au 13 sep
 (14 mots, 1.8 par seconde)
 
 
-**22.7** · film **00:50:18:13 → 00:50:34:13** (16.0 s) · **[NOIR]** (à fabriquer)  
+**22.7** · film **00:50:18:13 → 00:50:34:13** (16.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:59:00 → 00:01:15:00  
 Source : charte du Hamas, 18 août 1988 (article 32 : les Protocoles des sages de Sion) ; document de principes du Hamas, 1er mai 2017  
+À l'écran : fiche : Gaza · 18 août 1988 · La charte du Hamas  
 > VOIX : Sa charte de 1988 reprend des thèmes antisémites, / jusqu'aux Protocoles des sages de Sion, un faux. // En 2017, un nouveau texte dit combattre le sionisme, / pas les **Juifs**.  
 (28 mots, 1.8 par seconde)  
 Note : règle 3 de la bible : l'antisémitisme est montré, quel que soit le camp

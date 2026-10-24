@@ -58,7 +58,7 @@
     {
       id: 'fin', type: 'outro', dur: D.fin,
       eyebrow: 'De 2023 à 2024',
-      lines: ['Des comptes inventés,', 'payés par un ministère', 'qui dément.'],
+      lines: ['Des comptes', 'inventés, payés', 'par un ministère', 'qui dément.'],
       cam: { lon: 35.0, lat: 31.9, w: 0.3, pitch: 28, bearing: 0 },
     },
   ];
@@ -76,6 +76,7 @@
     name: 'guerre-numerique',
     seed: 2024,
     segments,
+    relief: true,
     nets,
     flows,
     markers,

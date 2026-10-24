@@ -31,14 +31,16 @@ Source : SOURCES.md 4.2 (Universal-International News, « Trial of Century », a
 (32 mots, 1.8 par seconde)
 
 
-**32.3** · film **01:19:56:02 → 01:20:13:02** (17.0 s) · **[NOIR]** (à fabriquer)  
+**32.3** · film **01:19:56:02 → 01:20:13:02** (17.0 s) · **[MD]** `output/paroles.mp4` · source 00:03:05:00 → 00:03:22:00  
 Source : Yehuda Elkana, « Pour l'oubli » (Bizkhout ha-shikheha), Haaretz, 2 mars 1988  
+À l'écran : fiche : Haaretz · 2 mars 1988 · Pour l'oubli  
 > VOIX : En 1988, Yehuda Elkana, philosophe, déporté enfant à Auschwitz, écrit dans Haaretz : / il ne voit pas de plus grande menace pour l'avenir d'Israël / que d'avoir fait de la Shoah l'axe de la conscience **nationale**.  
 (34 mots, 2.0 par seconde)
 
 
-**32.4** · film **01:20:13:02 → 01:20:30:02** (17.0 s) · **[NOIR]** (à fabriquer)  
+**32.4** · film **01:20:13:02 → 01:20:30:02** (17.0 s) · **[MD]** `output/paroles.mp4` · source 00:03:22:00 → 00:03:39:00  
 Source : Primo Levi, Se non ora, quando ?, Einaudi, 1982, p. 187 (réplique de Mendel) ; Giampaolo Pansa, « Io, Primo Levi, chiedo le dimissioni di Begin », La Repubblica, 24 septembre 1982  
+À l'écran : citation : « Chacun est le Juif de quelqu'un. » · Primo Levi  
 > VOIX : Primo Levi, survivant d'Auschwitz, fait dire à un personnage de son roman de 1982 : / « Chacun est le Juif de quelqu'un. » // Après Sabra et Chatila, il demande la démission de Menahem **Begin**.  
 (31 mots, 1.8 par seconde)  
 Note : vérifié (Perplexity, 20 octobre) : la phrase « aujourd'hui les Palestiniens sont les Juifs des Israéliens » est du critique Filippo Gentiloni (il manifesto, 29 juin 1982), jamais de Levi. Ne jamais la lui attribuer.
@@ -57,8 +59,9 @@ Source : actualités Universal « Nazi Murder Mills », 26 avril 1945 (fiche d'�
 (36 mots, 2.0 par seconde)
 
 
-**32.7** · film **01:21:05:00 → 01:21:16:00** (11.0 s) · **[NOIR]** (à fabriquer)  
+**32.7** · film **01:21:05:00 → 01:21:16:00** (11.0 s) · **[MD]** `output/paroles.mp4` · source 00:03:39:00 → 00:03:50:00  
 Source : Idith Zertal, Israel's Holocaust and the Politics of Nationhood, Cambridge University Press, 2005  
+À l'écran : fiche : Idith Zertal · La nation et la mort  
 > VOIX : Pour l'historienne israélienne Idith Zertal, / cette mémoire sert aussi à justifier la politique de l'État envers les **Palestiniens**.  
 (18 mots, 1.6 par seconde)
 
@@ -132,8 +135,9 @@ Source : reconnaissance de Jérusalem par les États-Unis, 6 décembre 2017 ; ou
 (19 mots, 1.6 par seconde)
 
 
-**33.12** · film **01:23:17:16 → 01:23:33:16** (16.0 s) · **[NOIR]** (à fabriquer)  
+**33.12** · film **01:23:17:16 → 01:23:33:16** (16.0 s) · **[MD]** `output/paroles.mp4` · source 00:03:50:00 → 00:04:06:00  
 Source : résolution 2334 du Conseil de sécurité, 23 décembre 2016  
+À l'écran : fiche : Nations unies · de 1948 à 2016 · La réponse d'Israël  
 > VOIX : Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître. // En 2016, le Conseil de sécurité qualifie encore les colonies de « violation flagrante » du droit **international**.  
 (33 mots, 2.1 par seconde)
 
@@ -258,7 +262,8 @@ Source : CIJ, avis du 19 juillet 2024, § 229 (article 3 de la convention sur l'
 > VOIX : silence
 
 
-**35.8** · film **01:27:00:18 → 01:27:12:18** (12.0 s) · **[NOIR]** (à fabriquer)  
+**35.8** · film **01:27:00:18 → 01:27:12:18** (12.0 s) · **[MD]** `output/paroles.mp4` · source 00:04:06:00 → 00:04:18:00  
+À l'écran : fiche : Position du gouvernement israélien · Israël rejette ce mot  
 > VOIX : Israël rejette ce mot : / ses citoyens arabes votent et siègent au Parlement, / et les territoires relèvent, dit-il, d'un conflit, pas d'un **système**.  
 (22 mots, 1.8 par seconde)
 
@@ -315,8 +320,9 @@ Source : commission internationale indépendante d'enquête de l'ONU, 16 septemb
 > VOIX : silence
 
 
-**35.18** · film **01:28:48:18 → 01:29:00:18** (12.0 s) · **[NOIR]** (à fabriquer)  
+**35.18** · film **01:28:48:18 → 01:29:00:18** (12.0 s) · **[MD]** `output/paroles.mp4` · source 00:04:18:00 → 00:04:30:00  
 Source : position du gouvernement israélien ; CIJ, affaire Afrique du Sud c. Israël (pas de jugement au fond au 23 octobre 2026)  
+À l'écran : fiche : Position du gouvernement israélien · Israël rejette ces conclusions  
 > VOIX : Israël rejette ces conclusions : / il dit combattre le Hamas, pas un peuple, / et invoque la légitime défense. // La Cour internationale de justice, elle, n'a pas encore jugé le **fond**.  
 (29 mots, 2.4 par seconde)  
 Note : règle 6 de la bible : qui affirme, sur quelle base, ce qui reste à juger
@@ -374,7 +380,8 @@ Source : manifestations de 2023 contre la réforme judiciaire (jusqu'à des cent
 (19 mots, 1.5 par seconde)
 
 
-**36.5** · film **01:30:20:13 → 01:30:31:13** (11.0 s) · **[NOIR]** (à fabriquer)  
+**36.5** · film **01:30:20:13 → 01:30:31:13** (11.0 s) · **[MD]** `output/paroles.mp4` · source 00:04:30:00 → 00:04:41:00  
+À l'écran : face à face : Démocratie · Occupation  
 > VOIX : Pour beaucoup de Palestiniens, ces manifestations ne parlaient pas d'eux : / une démocratie pour les uns, / l'occupation pour les **autres**.  
 (19 mots, 1.7 par seconde)
 

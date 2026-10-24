@@ -97,7 +97,7 @@
     name: 'jerusalem',
     seed: 1967,
     segments,
-    relief: true,
+    relief: { fadeBelow: [0.0022, 0.0032] },  // le relief fin reste sous le titre « Sion » ; la vieille ville, trop près, sans
     plans,
     zones,
     markers,

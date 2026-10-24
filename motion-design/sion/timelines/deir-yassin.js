@@ -46,8 +46,8 @@
     },
     {
       id: 'fin', type: 'outro', dur: 9.0, fly: 2.4, hitAt: 1.0,
-      eyebrow: 'Deir Yassin, aujourd’hui',
-      lines: ['Les maisons du village', 'abritent un hôpital', 'psychiatrique israélien.'],
+      eyebrow: 'Deir Yassin, aujourd’hui · dans les maisons du village',
+      lines: ['Un hôpital', 'psychiatrique', 'israélien.'],
       cam: { lon: C[0], lat: C[1], w: 0.0011, pitch: 46, bearing: 14 },
       camEnd: { lon: C[0], lat: C[1], w: 0.0013, pitch: 44, bearing: 18 },
     },

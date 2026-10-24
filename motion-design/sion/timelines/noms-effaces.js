@@ -53,8 +53,8 @@
       id: 'einhod', type: 'cap', dur: 10.5, fly: 1.4, anchor: [330, -60], textW: 860,
       kicker: 'Ayn Hawd · 1953', title: 'Un village d’artistes',
       text: 'Ses habitants chassés en 1948, les maisons deviennent Ein Hod, un village d’artistes israéliens. [[Quelques familles reconstruisent sur la colline voisine, un village longtemps non reconnu.]]',
-      cam: { lon: 34.965, lat: 32.705, w: 0.0042, pitch: 50, bearing: -10 },
-      camEnd: { lon: 34.967, lat: 32.705, w: 0.0036, pitch: 54, bearing: 0 },
+      cam: { lon: 34.965, lat: 32.705, w: 0.013, pitch: 48, bearing: -10 },
+      camEnd: { lon: 34.967, lat: 32.705, w: 0.011, pitch: 52, bearing: 0 },
     },
     {
       id: 'forets', type: 'cap', dur: 11.0, fly: 1.6, anchor: [330, -60], textW: 860,
@@ -101,7 +101,7 @@
     name: 'noms-effaces',
     seed: 1949,
     segments,
-    relief: true,
+    relief: { fadeBelow: [0.0020, 0.0030] },  // Lifta, près de Jérusalem : le relief fin reste
     renames,
     markers,
     hud: { label: ['Sion', 'Chapitre 34 · L’effacement culturel'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },

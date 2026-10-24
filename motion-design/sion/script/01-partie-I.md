@@ -222,7 +222,8 @@ Source : SOURCES.md 6 (journal de Herzl, 3 septembre 1897 : « In Basel habe ich
 (42 mots, 2.3 par seconde)
 
 
-**4.6** · film **00:06:37:03 → 00:06:42:03** (5.0 s) · **[NOIR]** (à fabriquer)  
+**4.6** · film **00:06:37:03 → 00:06:42:03** (5.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:00:00 → 00:00:05:00  
+À l'écran : mots : Novembre 1947 · l'ONU vote le partage  
 > VOIX : Cinquante ans plus tard, / en novembre 1947, / l'ONU vote le **partage**.  
 (11 mots, 2.2 par seconde)  
 Son : silence, un seul battement de cœur grave  

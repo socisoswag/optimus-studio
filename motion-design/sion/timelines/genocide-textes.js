@@ -99,7 +99,7 @@
     {
       id: 'fin', type: 'outro', dur: 6.8,
       eyebrow: '1948 · 2024 · 2025',
-      lines: ['Paris.', 'Londres, New York, Jérusalem.', 'Genève.'],
+      lines: ['Paris.', 'Londres, New York,', 'Jérusalem, Genève.'],
       cam: { lon: 34.45, lat: 31.45, w: 0.36, pitch: 28, bearing: 0 },
     },
   ];

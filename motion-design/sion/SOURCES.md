@@ -540,7 +540,8 @@ marquée du filigrane d'une agence commerciale.
   de justice, 9 juillet 2004.
 
 **Octobre 1973** (chapitre 21)
-- Résolution 338 (22 octobre 1973) ; embargo de l'OPAEP ; sommet de Rabat (octobre 1974) ;
+- Résolution 338 (22 octobre 1973) ; embargo de l'OPAEP ; prix affiché du brut léger d'Arabie (OPEP) : environ 3 dollars le
+  baril avant la guerre, 11,65 dollars au 1er janvier 1974 (colonnes de la carte : « 3 $ », « près de 12 $ ») ; sommet de Rabat (octobre 1974) ;
   discours de Yasser Arafat à l'ONU (13 novembre 1974).
 
 **Liban, 1982** (chapitre 20)

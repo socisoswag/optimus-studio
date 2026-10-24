@@ -2581,7 +2581,8 @@
     }).join('');
   };
   const nameHTML = (n) => `<div class="name"><div class="ln l1">${chars(n[0])}</div><div class="ln l2">${chars(n[1])}</div></div>`;
-  const nativeHTML = (txt, lang) => `<div class="nativeWrap"><div class="native" lang="${lang}" dir="rtl">${esc(txt)}</div></div>`;
+  // nom dans sa langue (hébreu, arabe) ; vide pour un personnage qui n'en a pas (Balfour) : jamais « undefined »
+  const nativeHTML = (txt, lang) => `<div class="nativeWrap"><div class="native" lang="${lang || 'ar'}" dir="rtl">${esc(txt || '')}</div></div>`;
   const eyebrowHTML = () => `<div class="eyebrow"><i class="tick"></i><span class="tw"></span></div>`;
   const yearStr = (y) => String(y);
 

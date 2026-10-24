@@ -740,9 +740,9 @@
 
 **27.7** Des faux comptes, il y en a dans tous les camps de cette **guerre**.
 
-**27.8** Le 11 mai 2022, la journaliste Shireen Abu Akleh est tuée à Jénine. / L'armée accuse d'abord des tireurs palestiniens ; / l'ONU conclut à un tir israélien. // À Gaza, depuis 2023, le CPJ compte 189 journalistes et employés des médias tués par **Israël**.
+**27.8** Celui-ci était payé par un **État**.
 
-**27.9** Celui-ci était payé par un **État**.
+**27.9** Le 11 mai 2022, la journaliste Shireen Abu Akleh est tuée à Jénine. / L'armée accuse d'abord des tireurs palestiniens ; / l'ONU conclut à un tir israélien. // À Gaza, depuis 2023, le CPJ compte 189 journalistes et employés des médias tués par **Israël**.
 
 ## Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens
 
@@ -754,7 +754,7 @@
 
 **28.4** En 2013, le ministère de la Santé ordonne d'arrêter d'injecter un contraceptif à des femmes éthiopiennes / qui n'en comprenaient pas les effets. // En 2015, des milliers d'Israéliens éthiopiens manifestent contre les violences **policières**.
 
-**28.5** Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize d'entre eux pendant des **manifestations**.
+**28.5** Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize manifestants **arabes**.
 
 **28.6** Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à la Cour suprême, / et un parti arabe a gouverné en **2021**.
 
@@ -950,7 +950,7 @@
 
 ## Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes
 
-*0 min 26 de film*
+*0 min 29 de film*
 
 **37.2** En 1945, la Charte des Nations unies pose un principe : / le droit des peuples à disposer d'eux-mêmes. // En 2024, la Cour internationale de justice le rappelle pour le peuple **palestinien**.
 
@@ -968,7 +968,7 @@
 
 **38.5** Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».
 
-**38.6** Edward Said venait d'une famille chrétienne, comme une partie des Palestiniens, de Bethléem à Nazareth. / En octobre 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza, où s'abritent des familles : au moins dix-huit morts. / En juillet 2025, l'église de la Sainte-Famille, seule paroisse catholique de Gaza : trois **morts**.
+**38.6** Edward Said venait d'une famille chrétienne, comme une partie des Palestiniens. / En 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza : dix-huit morts au moins. / En 2025, l'église de la Sainte-Famille : trois **morts**.
 
 **38.7** La Palestine a ses voix : / l'écrivain Ghassan Kanafani, tué dans un attentat à Beyrouth en 1972 ; / le dessinateur Naji al-Ali, père de Handala, l'enfant qui tourne le dos, tué à Londres en **1987**.
 

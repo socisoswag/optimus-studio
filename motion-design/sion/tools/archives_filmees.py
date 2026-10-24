@@ -106,7 +106,7 @@ ARCHIVES = {
     # actualités Universal du 28 juin 1945, « San Francisco Parley Ends » : le 26 juin, cinquante pays signent la Charte des
     # Nations unies (les délégués et les drapeaux, deux signatures, le livre de la Charte, Truman et Stettinius)
     "1945-san-francisco-charte-onu": ("1945-06-28_San_Francisco_Parley_Ends", "1945-06-28_San_Francisco_Parley_Ends.mpeg",
-                                      "690:456:16:12", [(16.2, 19.6), (7.2, 9.4), (12.2, 15.6), (33.2, 36.3), (27.2, 30.4)]),
+                                      "690:456:16:12", [(16.2, 19.6), (7.2, 9.4), (27.2, 30.4), (12.2, 15.6), (33.2, 36.3)]),
     # même film amateur Levy, 1933 : le dôme du Rocher, la place devant les murs de Jérusalem, un passant, la foule d'une
     # rue commerçante, des hommes en robe sur une estrade de marché
     "1933-jerusalem-bethleem-rues": ("Levycoll1933", "Levycoll1933.mpeg", "360:466:2:8",

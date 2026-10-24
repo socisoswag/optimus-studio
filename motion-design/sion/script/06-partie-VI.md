@@ -52,8 +52,9 @@ Source : Briser le silence (Shovrim Shtika), fondée en 2004 ; objecteurs empris
 (30 mots, 1.9 par seconde)
 
 
-**29.6** · film **01:14:19:07 → 01:14:31:07** (12.0 s) · **[NOIR]** (à fabriquer)  
+**29.6** · film **01:14:19:07 → 01:14:31:07** (12.0 s) · **[MD]** `output/paroles.mp4` · source 00:02:36:00 → 00:02:48:00  
 Source : Pew Research Center, Jewish Americans in 2020 (attachement à Israël)  
+À l'écran : mots : Un refuge et une part d'eux-mêmes  
 > VOIX : Ces voix restent minoritaires. / Pour la plupart des Juifs dans le monde, / Israël demeure un refuge, et une part d'eux-**mêmes**.  
 (21 mots, 1.8 par seconde)
 
@@ -94,7 +95,8 @@ Source : Cour suprême d'Israël, arrêt du 25 juin 2024 sur la conscription des
 (16 mots, 1.5 par seconde)
 
 
-**30.6** · film **01:15:26:22 → 01:15:34:22** (8.0 s) · **[NOIR]** (à fabriquer)  
+**30.6** · film **01:15:26:22 → 01:15:34:22** (8.0 s) · **[MD]** `output/paroles.mp4` · source 00:02:48:00 → 00:02:56:00  
+À l'écran : mots : Un État n'est pas une prière  
 > VOIX : Foi ou nationalisme ? / Pour eux, la réponse est claire : / un État n'est pas une **prière**.  
 (15 mots, 1.9 par seconde)
 
@@ -211,7 +213,8 @@ Source : Emmanuel Macron, discours du Vel d'Hiv, 16 juillet 2017, et dîner du C
 Note : citer la transcription de l'Élysée mot pour mot ; en 2017, il disait « la forme réinventée » : ne pas mélanger les deux
 
 
-**31.17** · film **01:19:11:12 → 01:19:20:12** (9.0 s) · **[NOIR]** (à fabriquer)  
+**31.17** · film **01:19:11:12 → 01:19:20:12** (9.0 s) · **[MD]** `output/paroles.mp4` · source 00:02:56:00 → 00:03:05:00  
+À l'écran : mots : Qui parle de cette terre et qui l'on écoute  
 > VOIX : Dans ce débat, une question revient sans cesse : / qui parle de cette terre, / et qui l'on **écoute**.  
 (17 mots, 1.9 par seconde)
 

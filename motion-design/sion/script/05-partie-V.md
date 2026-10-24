@@ -230,8 +230,9 @@ Source : R. Bergman et A. Goldman, The New York Times, 30 novembre 2023 (documen
 (15 mots, 1.7 par seconde)
 
 
-**25.23** · film **01:01:40:21 → 01:01:58:21** (18.0 s) · **[NOIR]** (à fabriquer)  
+**25.23** · film **01:01:40:21 → 01:01:58:21** (18.0 s) · **[MD]** `output/paroles.mp4` · source 00:01:15:00 → 00:01:33:00  
 Source : environ 1 200 morts en Israël, dont une majorité de civils ; 251 otages ; festival Nova : environ 360 morts ; rapport de la représentante spéciale de l'ONU sur les violences sexuelles en conflit, 4 mars 2024  
+À l'écran : fiche : Sud d'Israël · 7 octobre 2023 · Le 7 octobre  
 > VOIX : Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un festival de musique. // 251 otages emmenés à Gaza. / L'ONU documente des violences **sexuelles**. ///  
 (31 mots, 1.7 par seconde)  
 Son : silence presque total ; aucune musique, aucun effet
@@ -316,8 +317,9 @@ Source : CIJ, ordonnance du 26 janvier 2024 ; CPI, mandats du 21 novembre 2024 ;
 (23 mots, 2.1 par seconde)
 
 
-**25.36** · film **01:05:46:21 → 01:05:58:21** (12.0 s) · **[NOIR]** (à fabriquer)  
+**25.36** · film **01:05:46:21 → 01:05:58:21** (12.0 s) · **[MD]** `output/paroles.mp4` · source 00:01:33:00 → 00:01:45:00  
 Source : commission internationale indépendante d'enquête de l'ONU, rapport du 16 septembre 2025 ; position du gouvernement israélien  
+À l'écran : face à face : Génocide · Rejet · Gaza, 2025  
 > VOIX : En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations, / et parle de **légitime défense**.  
 (21 mots, 1.8 par seconde)  
 Note : règle 6 de la bible : la voix dit qui affirme, sur quelle base, et ce qui reste à juger
@@ -394,9 +396,9 @@ Source : Goush Emounim, fondé en 1974 ; enseignement du rabbin Zvi Yehouda Kook
 (34 mots, 2.3 par seconde)
 
 
-**26.3** · film **01:08:03:12 → 01:08:14:12** (11.0 s) · **[NOIR]** (à fabriquer)  
+**26.3** · film **01:08:03:12 → 01:08:14:12** (11.0 s) · **[MD]** `output/paroles.mp4` · source 00:01:45:00 → 00:01:56:00  
 Source : massacre du tombeau des Patriarches, Hébron, 25 février 1994 : 29 morts  
-À l'écran : carton : Hébron · 25 février 1994  
+À l'écran : fiche : Hébron · 25 février 1994 · Le tombeau des Patriarches  
 > VOIX : Le 25 février 1994, à Hébron, / un colon, Baruch Goldstein, tue 29 Palestiniens en prière dans la **mosquée**.  
 (18 mots, 1.6 par seconde)
 
@@ -489,16 +491,17 @@ Source : rapports trimestriels de Meta sur les réseaux de comportement inauthen
 (14 mots, 2.1 par seconde)
 
 
-**27.8** · film **01:10:49:17 → 01:11:02:17** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:58:00 → 00:02:11:00  
+**27.8** · film **01:10:49:17 → 01:10:53:17** (4.0 s) · **[MD]** `output/paroles.mp4` · source 00:01:56:00 → 00:02:00:00  
+À l'écran : mots : Une campagne payée par un État  
+> VOIX : Celui-ci était payé par un **État**.  
+(6 mots, 1.5 par seconde)
+
+
+**27.9** · film **01:10:53:17 → 01:11:06:17** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:58:00 → 00:02:11:00  
 Source : Shireen Abu Akleh, 11 mai 2022 (ONU, HCDH, juin 2022) ; CPJ, données au 24 septembre 2026 (189 journalistes et employés des médias palestiniens tués par Israël à Gaza)  
 À l'écran : fiche : Jénine · 11 mai 2022 · Shireen Abu Akleh  
 > VOIX : Le 11 mai 2022, la journaliste Shireen Abu Akleh est tuée à Jénine. / L'armée accuse d'abord des tireurs palestiniens ; / l'ONU conclut à un tir israélien. // À Gaza, depuis 2023, le CPJ compte 189 journalistes et employés des médias tués par **Israël**.  
 (41 mots, 3.2 par seconde)
-
-
-**27.9** · film **01:11:02:17 → 01:11:06:17** (4.0 s) · **[NOIR]** (à fabriquer)  
-> VOIX : Celui-ci était payé par un **État**.  
-(6 mots, 1.5 par seconde)
 
 
 ## Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens
@@ -534,15 +537,16 @@ Source : directive du directeur du ministère de la Santé, Ron Gamzu, janvier 2
 (33 mots, 2.1 par seconde)
 
 
-**28.5** · film **01:12:00:07 → 01:12:13:07** (13.0 s) · **[NOIR]** (à fabriquer)  
-Source : octobre 2000 : 13 citoyens arabes tués par la police (commission Or, 2003)  
-À l'écran : carton : Galilée · octobre 2000  
-> VOIX : Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize d'entre eux pendant des **manifestations**.  
-(20 mots, 1.5 par seconde)
+**28.5** · film **01:12:00:07 → 01:12:13:07** (13.0 s) · **[MD]** `output/paroles.mp4` · source 00:02:00:00 → 00:02:13:00  
+Source : octobre 2000 : 13 manifestants arabes tués par la police (commission Or, 1er septembre 2003 : 12 citoyens d'Israël et un habitant de Gaza)  
+À l'écran : fiche : Galilée · octobre 2000 · Un citoyen sur cinq  
+> VOIX : Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize manifestants **arabes**.  
+(17 mots, 1.3 par seconde)
 
 
-**28.6** · film **01:12:13:07 → 01:12:27:07** (14.0 s) · **[NOIR]** (à fabriquer)  
+**28.6** · film **01:12:13:07 → 01:12:27:07** (14.0 s) · **[MD]** `output/paroles.mp4` · source 00:02:13:00 → 00:02:27:00  
 Source : Ra'am dans la coalition gouvernementale, 2021-2022 ; Khaled Kabub, juge à la Cour suprême depuis 2022  
+À l'écran : fiche : Pour ses défenseurs · Une démocratie  
 > VOIX : Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à la Cour suprême, / et un parti arabe a gouverné en **2021**.  
 (28 mots, 2.0 par seconde)
 
@@ -561,7 +565,8 @@ Source : Negev Coexistence Forum, 27 juillet 2025, projet Recognized, et IWGIA, 
 (35 mots, 2.7 par seconde)
 
 
-**28.9** · film **01:12:53:07 → 01:13:02:07** (9.0 s) · **[NOIR]** (à fabriquer)  
+**28.9** · film **01:12:53:07 → 01:13:02:07** (9.0 s) · **[MD]** `output/paroles.mp4` · source 00:02:27:00 → 00:02:36:00  
+À l'écran : fiche : Knesset · 19 juillet 2018 · La loi État-nation  
 > VOIX : Pour beaucoup de ces citoyens, / la loi de 2018 a dit l'inverse. ///  
 (12 mots, 1.3 par seconde)
 

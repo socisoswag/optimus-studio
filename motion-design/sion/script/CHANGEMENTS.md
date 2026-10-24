@@ -320,3 +320,61 @@ plan, sur la piste au-dessus de l'image.
 **Toutes les cartes** : noms de lieux cernés de sombre (lisibles sur le relief clair), un nombre ne se sépare plus de son
 unité (95 %, 82,4 L, 464 km) ni de ses chiffres (15 136), et plus de mot seul en fin de paragraphe. Toutes les pièces
 sont refaites, mêmes noms.
+
+## 24 octobre 2026, au matin (plans noirs en cartes, relief partout, contrôle complet)
+
+**Plus aucun plan noir dans le film** (sauf les 2 secondes du tout début, voulues) : les 25 plans noirs deviennent des
+cartes sur le relief de nuit, à la même durée. Nouveau nom pour chacun : `<plan>-MD-paroles.mp4` remplace
+`<plan>-noir.mp4` (supprime l'ancien plan noir et pose le nouveau à sa place).
+
+| Plan | Ce qu'on voit |
+|---|---|
+| 04.06 | Novembre 1947, l'ONU vote le partage |
+| 09.07 | L'accord Haavara repris par des antisémites, puis : un sauvetage arraché au régime nazi (selon les historiens) |
+| 16.08 | Face à face : Bâtisseur, Sans retour (Ben Gourion) |
+| 18.07 | Ce peuple va prendre la parole (les lumières s'allument sur toute la terre) |
+| 21.04 | Fiche : Munich, 5 septembre 1972 |
+| 21.14 | Fiche : Yasser Arafat, Alger et Genève, 1988 |
+| 22.07 | Fiche : la charte du Hamas, 1988 et 2017 |
+| 25.23 | Fiche : le 7 octobre (sobre, les lumières s'éteignent autour de Gaza, sans effet sonore) |
+| 25.36 | Face à face : Génocide (commission de l'ONU), Rejet (Israël) |
+| 26.03 | Fiche : Hébron, 25 février 1994, avec une colonne de lumière sur la mosquée Ibrahimi |
+| 27.08 | Une campagne payée par un État |
+| 28.05 | Fiche : un citoyen sur cinq, octobre 2000 |
+| 28.06 | Fiche : une démocratie, pour ses défenseurs |
+| 28.09 | Fiche : la loi État-nation, 19 juillet 2018 |
+| 29.06 | Un refuge et une part d'eux-mêmes |
+| 30.06 | Un État n'est pas une prière |
+| 31.17 | Qui parle de cette terre et qui l'on écoute |
+| 32.03 | Fiche : Yehuda Elkana, « Pour l'oubli », 1988 |
+| 32.04 | Citation : « Chacun est le Juif de quelqu'un. » Primo Levi |
+| 32.07 | Fiche : Idith Zertal, La nation et la mort |
+| 33.12 | Fiche : la réponse d'Israël, résolution 2334 |
+| 35.08 | Fiche : Israël rejette ce mot (apartheid) |
+| 35.18 | Fiche : Israël rejette ces conclusions (génocide), la CIJ n'a pas jugé le fond |
+| 36.05 | Face à face : Démocratie, Occupation |
+| 39.03 | L'égalité des droits, puis : que personne ne soit plus chassé (les lumières sur toute la terre) |
+
+**Chapitre 27, deux plans échangés** : « Celui-ci était payé par un État » suit maintenant les faux comptes, comme
+prévu. 27.08 devient `27.08-MD-paroles.mp4` (avant : Shireen Abu Akleh) ; 27.09 devient
+`27.09-MD-documents-6.mp4`, Shireen Abu Akleh (avant : le plan noir).
+
+**Voix off, deux phrases changent** (le PDF est refait) :
+- 28.5 : « En octobre 2000, la police tue treize manifestants arabes. » La commission Or compte douze citoyens
+  d'Israël et un habitant de Gaza : « treize d'entre eux » était faux.
+- 38.6 : resserrée (48 mots pour 14 secondes, impossible à dire) : « Edward Said venait d'une famille chrétienne,
+  comme une partie des Palestiniens. / En 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza :
+  dix-huit morts au moins. / En 2025, l'église de la Sainte-Famille : trois morts. »
+
+**37.02, la Charte de l'ONU (1945)** : l'archive dure maintenant 14,6 s (les cinq coupes), même nom.
+
+**Relief NASA partout** : Europe, Turquie, Irak et Golfe, États-Unis, et en relief fin Londres, Paris, La Haye, les
+Alpes (Genève, Bâle, Turin), Munich, Berlin, Vienne, Istanbul, Washington et New York. Passent en relief : les chiffres
+de Gaza et des réfugiés, l'écran « Conclusion », la fiche du gouvernement militaire, « Sion, le mot », la guerre
+numérique (les États-Unis) ; Jérusalem et Lifta gardent le relief fin en gros plan. Mêmes noms de fichiers.
+
+**Corrigé après contrôle complet de toutes les cartes** (une image par carte, chaque texte vérifié) :
+- fins trop larges qui sortaient de l'image : Deir Yassin, « Génocide : qui le dit », la Nakba, la guerre numérique ;
+- fiche d'Arthur Balfour : le mot « undefined » s'affichait sous son nom ;
+- chapitre 9 : le portrait d'Arlosoroff touchait le titre ;
+- le choc pétrolier de 1973 et les cartes d'Europe gagnent le relief fin.

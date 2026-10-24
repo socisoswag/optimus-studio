@@ -47,10 +47,10 @@
 | Chapitre 35 · Colonialisme, apartheid : le poids des mots | 01:25:54:08 | 3 min 51.4 s |
 | Chapitre 36 · La fracture en Israël : la démocratie en question | 01:29:45:18 | 0 min 54.8 s |
 | Ouverture de la conclusion | 01:30:40:13 | 0 min 14.0 s |
-| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:30:54:13 | 0 min 26.1 s |
-| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:31:20:15 | 1 min 44.6 s |
-| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:33:05:05 | 1 min 36.2 s |
-| **Total** | | **94 min 41.4 s** |
+| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:30:54:13 | 0 min 29.2 s |
+| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:31:23:17 | 1 min 44.6 s |
+| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:33:08:07 | 1 min 36.2 s |
+| **Total** | | **94 min 44.5 s** |
 
 ## Voix trop longue pour le plan
 
@@ -75,7 +75,7 @@
 - 25.43 : 35 mots pour 14.0 s (2.5 mots/s)
 - 26.8 : 45 mots pour 14.0 s (3.2 mots/s)
 - 26.9 : 40 mots pour 14.0 s (2.9 mots/s)
-- 27.8 : 41 mots pour 13.0 s (3.2 mots/s)
+- 27.9 : 41 mots pour 13.0 s (3.2 mots/s)
 - 28.8 : 35 mots pour 13.0 s (2.7 mots/s)
 - 31.13 : 33 mots pour 13.0 s (2.5 mots/s)
 - 31.14 : 43 mots pour 13.0 s (3.3 mots/s)
@@ -86,5 +86,3 @@
 - 35.10 : 43 mots pour 14.0 s (3.1 mots/s)
 - 35.14 : 27 mots pour 11.0 s (2.5 mots/s)
 - 35.18 : 29 mots pour 12.0 s (2.4 mots/s)
-- 37.2 : 30 mots pour 11.5 s (2.6 mots/s)
-- 38.6 : 48 mots pour 14.0 s (3.4 mots/s)

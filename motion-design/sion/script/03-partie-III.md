@@ -342,7 +342,8 @@ Source : loi sur les biens des absents, 14 mars 1950 ; loi du retour, 5 juillet 
 (34 mots, 2.3 par seconde)
 
 
-**16.8** · film **00:35:45:04 → 00:35:53:04** (8.0 s) · **[NOIR]** (à fabriquer)  
+**16.8** · film **00:35:45:04 → 00:35:53:04** (8.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:19:00 → 00:00:27:00  
+À l'écran : face à face : Bâtisseur · Sans retour · David Ben Gourion  
 > VOIX : Un bâtisseur, pour les uns. / Pour les autres, / l'homme qui a fermé la porte du **retour**.  
 (16 mots, 2.0 par seconde)
 
@@ -428,7 +429,8 @@ Source : film amateur de la famille Levy, 1933, Prelinger Archives (archive.org,
 (37 mots, 2.0 par seconde)
 
 
-**18.7** · film **00:38:08:14 → 00:38:14:14** (6.0 s) · **[NOIR]** (à fabriquer)  
+**18.7** · film **00:38:08:14 → 00:38:14:14** (6.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:27:00 → 00:00:33:00  
+À l'écran : mots : Ce peuple va prendre la parole  
 > VOIX : Ce peuple, pourtant, va prendre la **parole**. ///  
 (7 mots, 1.2 par seconde)  
 Son : montée lente vers l'ouverture de la partie IV

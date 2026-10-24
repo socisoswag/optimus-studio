@@ -49,8 +49,8 @@
       id: 'petrole', type: 'cap', dur: 10.0, fly: 1.8, anchor: [300, -40], textW: 900,
       kicker: '17 octobre 1973 · l’arme du pétrole', title: 'Le choc pétrolier',
       text: 'Les producteurs arabes réduisent leur production et frappent d’embargo les alliés d’Israël. [[Le prix du baril est multiplié par quatre.]]',
-      cam: { lon: 44.0, lat: 28.5, w: 0.26, pitch: 36, bearing: -4 },
-      camEnd: { lon: 44.5, lat: 28.5, w: 0.23, pitch: 40, bearing: 2 },
+      cam: { lon: 50.6, lat: 28.4, w: 0.26, pitch: 42, bearing: -4 },
+      camEnd: { lon: 50.9, lat: 28.4, w: 0.23, pitch: 46, bearing: 2 },
     },
     {
       id: 'rabat', type: 'cap', dur: 10.0, fly: 1.8, anchor: [300, -60], textW: 900,
@@ -147,4 +147,9 @@
     fadeOut: 1.2,
     sound: { ticks: null },
   });
+  // le prix du baril de brut d'Arabie, de 3 dollars avant la guerre à près de 12 en janvier 1974 : deux colonnes au large de Ras Tanura
+  root.TL.columns = [
+    { seg: 'petrole', at: 3.2, lon: 50.35, lat: 26.95, h: 60000, w: 20, value: '3 $ en 1973', cold: true },
+    { seg: 'petrole', at: 4.4, lon: 51.0, lat: 26.55, h: 233000, w: 20, value: 'près de 12 $ en 1974' },
+  ];
 })(typeof window !== 'undefined' ? window : globalThis);

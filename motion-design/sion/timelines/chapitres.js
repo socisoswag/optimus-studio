@@ -114,7 +114,9 @@
       const side = layout === 'L' ? 'R' : 'L', two = FACES[n].length > 1;
       // à deux, visages plus petits et repoussés vers le bord : les titres longs restent dégagés
       const xs = side === 'R' ? (two ? [1575, 1815] : [1520]) : (two ? [450, 170] : [400]);
-      s.faces = FACES[n].map((k, j) => root.face(k, { side, x: xs[j], h: two ? 740 - 30 * j : 900, at: 0.45 + 0.35 * j, until: DUR, tag: false }));
+      // titre très long (chapitre 9) : le visage recule et rapetisse pour ne pas toucher le titre
+      const serre = n === 9 ? { x: 300, h: 780 } : null;
+      s.faces = FACES[n].map((k, j) => root.face(k, { side, x: serre ? serre.x : xs[j], h: serre ? serre.h : two ? 740 - 30 * j : 900, at: 0.45 + 0.35 * j, until: DUR, tag: false }));
     }
     if (fx === 'heat') s.heat = { R: 1300, amt: 0.9 };
     if (fx === 'flicker') s.heat = { R: 1500, amt: 1.1, flicker: true };
