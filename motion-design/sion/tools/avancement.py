@@ -39,16 +39,22 @@ def main():
     if cours in d and not os.path.exists(os.path.join(ROOT, "output", f".rendu-ok-{cours}-v2")):
         fait += min(d[cours], 60 * len(glob.glob(os.path.join(ROOT, "output", "morceaux", cours, "[0-9]*.mp4"))))
     p = fait / total if total else 0
-    # fin estimée : vitesse mesurée depuis le départ de la chaîne (environ 12 s de calcul par seconde de film sinon)
-    h0 = etapes[depart].split()[1] if etapes else None
+    # fin estimée : vitesse mesurée sur ce qui a été rendu depuis le départ de la chaîne
     eta = ""
-    if h0 and p > 0.02:
-        t0 = datetime.datetime.combine(datetime.date.today(), datetime.time.fromisoformat(h0))
-        now = datetime.datetime.utcnow()
+    h0 = etapes[depart].split()[1] if etapes else None
+    if h0:
+        now = datetime.datetime.now(datetime.UTC).replace(tzinfo=None)
+        t0 = datetime.datetime.combine(now.date(), datetime.time.fromisoformat(h0))
         if t0 > now:
             t0 -= datetime.timedelta(days=1)
-        reste = (now - t0) / max(p, 1e-3) * (1 - p)
-        eta = f" · fin vers {(now + reste + datetime.timedelta(hours=2)).strftime('%H h %M')} (Paris)"
+        run = sum(d[t] for t in liste if os.path.exists(f := os.path.join(ROOT, "output", f".rendu-ok-{t}-v2"))
+                  and datetime.datetime.fromtimestamp(os.path.getmtime(f), datetime.UTC).replace(tzinfo=None) >= t0)
+        if cours in d and not os.path.exists(os.path.join(ROOT, "output", f".rendu-ok-{cours}-v2")):
+            run += min(d[cours], 60 * len(glob.glob(os.path.join(ROOT, "output", "morceaux", cours, "[0-9]*.mp4"))))
+        if run > 60:
+            fin = now + (now - t0) / run * (total - fait) + datetime.timedelta(hours=2)  # heure de Paris
+            jour = "" if fin.date() == (now + datetime.timedelta(hours=2)).date() else " demain"
+            eta = f" · fin estimée{jour} vers {fin.strftime('%H h %M')} (Paris)"
     n = 20
     barre = "▓" * round(p * n) + "░" * (n - round(p * n))
     livrees = sum(os.path.exists(os.path.join(ROOT, "output", f".livre-{k}-v3")) for k in range(9))
