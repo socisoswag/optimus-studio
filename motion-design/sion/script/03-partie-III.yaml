@@ -438,8 +438,11 @@ chapitres:
         source: "loi sur les biens des absents, 14 mars 1950 ; loi du retour, 5 juillet 1950"
         voix: >-
           En 1950, deux lois. / La loi du retour : tout Juif du monde peut devenir israélien. / La loi sur les biens des absents : les terres des réfugiés passent à l'État. // Eux ne pourront pas **revenir**.
-      - type: NOIR
-        duree: 8
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 19
+        sortie: 27
+        ecran: "face à face : Bâtisseur · Sans retour · David Ben Gourion"
         voix: >-
           Un bâtisseur, pour les uns. / Pour les autres, / l'homme qui a fermé la porte du **retour**.
 
@@ -547,8 +550,11 @@ chapitres:
           Elle ajoute : ce n'est pas comme s'il y avait eu un peuple palestinien, / « et que nous étions venus les
           chasser, / et leur prendre leur pays ». // S'il n'y a pas de peuple, / il n'y a rien à
           **rendre**.
-      - type: NOIR
-        duree: 6
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 27
+        sortie: 33
+        ecran: "mots : Ce peuple va prendre la parole"
         voix: >-
           Ce peuple, pourtant, va prendre la **parole**. ///
         son: "montée lente vers l'ouverture de la partie IV"

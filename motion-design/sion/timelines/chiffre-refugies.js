@@ -31,6 +31,7 @@
     name: 'chiffre-refugies',
     seed: 11410,
     segments,
+    relief: true,
     markers,
     lights,
     hud: { label: ['Sion', 'Chapitre 20 · Les camps'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },

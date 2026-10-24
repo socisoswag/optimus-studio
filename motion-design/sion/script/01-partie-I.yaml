@@ -267,8 +267,11 @@ chapitres:
           Le 3 septembre, il note dans son journal : / « À Bâle, j'ai fondé l'État juif. / Si je le disais
           aujourd'hui à voix haute, / on me répondrait par un éclat de rire. / Dans cinq ans peut-être, / dans
           cinquante à coup sûr, / chacun le **comprendra**. »
-      - type: NOIR
-        duree: 5
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 0
+        sortie: 5
+        ecran: "mots : Novembre 1947 · l'ONU vote le partage"
         voix: >-
           Cinquante ans plus tard, / en novembre 1947, / l'ONU vote le **partage**.
         son: "silence, un seul battement de cœur grave"

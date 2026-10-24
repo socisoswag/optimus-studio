@@ -417,8 +417,11 @@ chapitres:
           sont accusés, / puis acquittés. // En 1985, une commission israélienne les lave de tout soupçon. / Les
           tueurs n'ont jamais été **identifiés**.
         son: "mer la nuit, un seul coup sec très lointain, puis la mer seule"
-      - type: NOIR
-        duree: 14
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 5
+        sortie: 19
+        ecran: "mots : Un accord repris par des antisémites, puis : Un sauvetage arraché au régime nazi"
         source: >-
           lecture « accord de sauvetage » : Yehuda Bauer, Jews for Sale?, 1994 ; lecture critique : Edwin Black, The
           Transfer Agreement, 1984 (les deux à citer en description)

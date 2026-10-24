@@ -1,7 +1,9 @@
 """Relief au-delà de la Palestine : textures d'ombrage de la région et du monde, pour les cartes en relief
 (data/relief/<zone>.png, <zone>-x.png et data/relief-plus.js).
 
-    python3 tools/prep_relief_region.py [dossier de cache des tuiles]
+    python3 tools/prep_relief_region.py [dossier de cache des tuiles] [zone ...]
+
+Sans zone, toutes les zones sont refaites ; avec des zones, seules celles-là, et data/relief-plus.js garde les autres.
 
 Même méthode que tools/prep_partage.py (section 7) et tools/prep_relief_lumiere.py : altitudes SRTM / NASA
 (tuiles « terrarium » d'AWS, domaine public), ombrage multidirectionnel au nord-ouest et relief local ; canal
@@ -9,7 +11,10 @@ rouge : lumière rasante ; canal vert : creux des vallées. Chaque texture est r
 (moyenne et contraste mesurés là où elles se recouvrent) pour qu'on ne voie aucun raccord.
 Zones : monde (Europe, Méditerranée, Proche-Orient), region (Égypte, Liban, Syrie, Jordanie, Irak, nord de l'Arabie),
 sinai (Sinaï et canal de Suez, aussi fin que la base), liban (Liban, Beyrouth, Bekaa), est (plateau de Jordanie,
-Amman, Golan, Damas).
+Amman, Golan, Damas) ; puis, pour les cartes hors du Proche-Orient : europe (de l'Atlantique à la mer Noire et à
+l'Anatolie), orient (Irak, golfe Persique, nord de l'Arabie), usa (les États-Unis), et des textures fines pour les plans
+serrés sur une ville : Londres, Paris, La Haye, les Alpes de Genève, Bâle et Turin, Munich, Berlin, Vienne, Istanbul,
+la côte est américaine (Washington, Philadelphie, Pittsburgh) et New York.
 """
 import json
 import math
@@ -23,13 +28,25 @@ import numpy as np
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CACHE = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "output", "dem")
-os.makedirs(CACHE, exist_ok=True)
+ARGS = sys.argv[1:]
 OUT = os.path.join(ROOT, "data", "relief")
 # zone : (zoom, lon0, lat0, lon1, lat1, exagération)
 ZONES = {"monde": (5, -12.0, 24.0, 52.0, 61.0, 9.0), "region": (8, 26.0, 27.0, 42.0, 37.0, 4.2),
          "sinai": (10, 31.4, 29.3, 34.4, 31.7, 2.6), "liban": (11, 35.0, 33.0, 36.0, 34.1, 2.0),
-         "est": (10, 35.85, 29.3, 37.2, 34.2, 2.6)}
+         "est": (10, 35.85, 29.3, 37.2, 34.2, 2.6),
+         "usa": (6, -125.0, 24.0, -66.0, 50.0, 7.0), "europe": (7, -10.0, 36.0, 33.0, 57.0, 5.5),
+         "orient": (7, 38.0, 24.0, 53.0, 38.0, 5.5),
+         "usa-est": (9, -80.8, 38.2, -72.8, 41.6, 3.4), "newyork": (10, -74.5, 40.3, -73.4, 41.1, 2.6),
+         "londres": (9, -1.4, 50.8, 1.2, 52.2, 3.4), "paris": (9, 1.1, 48.1, 3.6, 49.6, 3.4),
+         "lahaye": (9, 3.2, 51.4, 5.6, 52.8, 3.4), "alpes": (9, 5.4, 44.4, 8.8, 48.2, 2.4),
+         "munich": (9, 10.4, 47.4, 12.8, 48.9, 2.8), "berlin": (9, 12.2, 51.8, 14.6, 53.2, 3.4),
+         "vienne": (9, 15.2, 47.6, 17.6, 48.9, 2.8), "istanbul": (9, 27.8, 40.4, 30.2, 41.6, 2.8)}
+# texture dont chaque zone prend le ton (là où elles se recouvrent) ; par défaut la base de la Palestine
+REF = {"europe": "monde", "orient": "region", "usa-est": "usa", "newyork": "usa-est", "londres": "europe", "paris": "europe",
+       "lahaye": "europe", "alpes": "europe", "munich": "europe", "berlin": "europe", "vienne": "europe", "istanbul": "europe"}
+CHOIX = [a for a in ARGS if a in ZONES] or list(ZONES)
+CACHE = next((a for a in ARGS if a not in ZONES), os.path.join(ROOT, "output", "dem"))
+os.makedirs(CACHE, exist_ok=True)
 
 
 def fetch(url, path):
@@ -109,10 +126,19 @@ def accorde(v, bb, ref, rbb):
     return g, r.mean() - g * a.mean()
 
 
-ref, rbb = charge("base")
-PLUS = {}
-for k, (z, lo0, la0, lo1, la1, exag) in ZONES.items():
+def texture(k):
+    """Texture de ton déjà faite (data/relief/<k>.png) et son cadre, pour accorder une zone voisine."""
+    if k not in PLUS:
+        return charge("base")
+    return np.asarray(Image.open(os.path.join(ROOT, PLUS[k]["src"]))).astype(np.float64) / 255, PLUS[k]["bbox"]
+
+
+src = open(os.path.join(ROOT, "data", "relief-plus.js"), encoding="utf-8").read()
+PLUS = json.loads(src[src.index("=", src.index("window.RELIEF_PLUS")) + 1:].strip().rstrip(";"))
+for k in CHOIX:
+    z, lo0, la0, lo1, la1, exag = ZONES[k]
     base, light, valley, bb, e = ombrage(z, lo0, la0, lo1, la1, exag)
+    ref, rbb = texture(REF.get(k, "base"))
     g, o = accorde(base, bb, ref, rbb)
     if not 0.6 <= g <= 1.8:  # recouvrement trop petit : pas d'accord de ton
         g, o = 1.0, 0.0
@@ -130,7 +156,8 @@ for k, (z, lo0, la0, lo1, la1, exag) in ZONES.items():
 
 js = ("/* Relief au-delà de la Palestine (tools/prep_relief_region.py) : altitudes SRTM / NASA, tuiles terrarium d'AWS\n"
       " * (domaine public). Textures plus larges et moins fines que data/partage.js (relief), utilisées là où la base\n"
-      " * ne va pas : Égypte, Sinaï, Liban, Syrie, Jordanie, Irak, Europe et Méditerranée. */\n"
-      f"window.RELIEF_PLUS = {json.dumps(PLUS)};\n")
+      " * ne va pas : Égypte, Sinaï, Liban, Syrie, Jordanie, Irak, Europe et Méditerranée, États-Unis ; textures fines\n"
+      " * pour les plans serrés sur quelques villes d'Europe et d'Amérique. */\n"
+      f"window.RELIEF_PLUS = {json.dumps({k: PLUS[k] for k in ZONES if k in PLUS})};\n")
 open(os.path.join(ROOT, "data", "relief-plus.js"), "w", encoding="utf-8").write(js)
 print("data/relief-plus.js")

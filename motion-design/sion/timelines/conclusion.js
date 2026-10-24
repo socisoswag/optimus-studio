@@ -25,6 +25,7 @@
     name: "conclusion",
     seed: 2026,
     segments,
+    relief: true,
     markers,
     hud: { label: ['Sion', "Conclusion"], index: false, coords: true, ruler: false, odo: false, from: 0.5 },
     fadeIn: 0.6,

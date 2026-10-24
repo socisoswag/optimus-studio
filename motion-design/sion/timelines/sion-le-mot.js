@@ -88,6 +88,7 @@
     name: 'sion-le-mot',
     seed: 1890,
     segments,
+    relief: { fadeBelow: [0.0022, 0.0034] },  // le premier plan sur Jérusalem garde le relief fin ; la forteresse, trop près, sans
     plans,
     markers,
     flows,

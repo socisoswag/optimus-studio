@@ -173,7 +173,7 @@ Fichiers dans `data/archives/documents/`.
 | Donnée | Source | Licence | Utilisée dans |
 |---|---|---|---|
 | Côtes, fleuves, lacs, pays, territoires (Israël 1949, Cisjordanie, Gaza, Jérusalem-Est, Golan, Sinaï, Palestine mandataire) | Natural Earth (naturalearthdata.com), 1:10 M et 1:110 M | domaine public | toutes les cartes |
-| Relief (altitudes) | SRTM, NASA ; bathymétrie GEBCO ; via les tuiles « Terrain Tiles » (AWS Open Data) | domaine public / libre | cartes en relief (Palestine, Sinaï, Liban, Jordanie, Syrie, Égypte, Europe : tools/prep_partage.py, tools/prep_relief_region.py), toutes les vidéos 3D |
+| Relief (altitudes) | SRTM, NASA ; bathymétrie GEBCO ; via les tuiles « Terrain Tiles » (AWS Open Data) | domaine public / libre | cartes en relief (Palestine, Sinaï, Liban, Jordanie, Syrie, Égypte, Irak, Europe, États-Unis, et en fin de détail Londres, Paris, La Haye, les Alpes, Munich, Berlin, Vienne, Istanbul, Washington et New York : tools/prep_partage.py, tools/prep_relief_region.py), toutes les vidéos 3D |
 | Images satellite, intro et plans aériens | Copernicus Sentinel-2 L2A, couleurs vraies (10 m), 4 tuiles du 11 mai 2025 | Copernicus, mention obligatoire | intro, mur, villages, plans de respiration |
 | Images satellite, Gaza avant et après | Copernicus Sentinel-2 L2A : S2A du 17 septembre 2023 et S2B du 11 septembre 2025, tuile 36RXV | Copernicus, mention obligatoire | Gaza vue du ciel |
 | Accès aux images Sentinel-2 | Earth Search (Element 84), archive « sentinel-cogs » sur AWS | libre | idem |
@@ -460,8 +460,9 @@ marquée du filigrane d'une agence commerciale.
 - Meta, rapports sur les réseaux de comportement inauthentique coordonné, 2023-2024.
 - Black Panthers israéliens, 1971 ; commission Kedmi (2001) et indemnisation de février 2021 ; directive du
   ministère de la Santé, janvier 2013 (Haaretz, 27 janvier 2013) ; Golda Meir, 19 mai 1971 (Maariv, d'après Avi Picard,
-  université Bar-Ilan, 19 mai 2021) ; octobre 2000 : 13 citoyens arabes tués (commission
-  Or, 2003) ; Ra'am au gouvernement (2021-2022) ; Khaled Kabub, juge à la Cour suprême depuis 2022.
+  université Bar-Ilan, 19 mai 2021) ; octobre 2000 : 13 manifestants arabes tués par la
+  police (commission Or, 1er septembre 2003 : 12 citoyens d'Israël et un habitant de Gaza ; d'autres décomptes donnent
+  13 citoyens) ; Ra'am au gouvernement (2021-2022) ; Khaled Kabub, juge à la Cour suprême depuis 2022.
 
 **Parties VI et VII, conclusion** (chapitres 29 à 39, script)
 - Neturei Karta, Jérusalem, 1938 ; Jewish Voice for Peace, Berkeley, septembre 1996 (plus de 32 000 membres en 2024) ;
@@ -720,6 +721,8 @@ et zone `data/sykes-picot.js` écrites par `tools/prep_sykes_picot.py`)
 | Agnès Callamard | Amnesty International, 1er février 2022 |
 | Arthur Koestler | Promise and Fulfilment, 1949 |
 | Henry McMahon · Sykes et Picot · Arthur Balfour | Lettre du 24 octobre 1915 · accords du 16 mai 1916 · déclaration du 2 novembre 1917 |
+| Primo Levi | « Chacun est le Juif de quelqu'un » (« Ognuno è l'ebreo di qualcuno »), Se non ora, quando ?, Einaudi, 1982, p. 187 (réplique de Mendel) ; en français : Maintenant ou jamais, trad. Roland Stragliati, Julliard, 1983 |
+| Loi fondamentale « Israël, État-nation du peuple juif » | Knesset, 19 juillet 2018, article 1 (c) : « L'exercice du droit à l'autodétermination nationale dans l'État d'Israël est propre au peuple juif » ; notre traduction de l'hébreu |
 
 ---
 
@@ -928,3 +931,28 @@ Liens principaux du dossier de vérification :
 - OCHA, Cisjordanie, 14 septembre 2026 : https://www.ochaopt.org/sites/default/files/West%20Bank_info-graphic_14_September_2026.pdf
 - PCPSR, octobre 2026 : https://www.pcpsr.org/en/node/1018
 - Commons, mont Huwara, 1978 : https://commons.wikimedia.org/wiki/Category:The_IDF_evacuates_Gush_Emunim_members_from_Mount_Huwara_near_Nablus,_1978
+
+## 9. Les cartes « paroles » (plans autrefois noirs, `timelines/paroles.js`)
+
+Le texte reprend la voix, déjà vérifiée. Ce qui s'ajoute à l'écran :
+
+| Plan | Carte | Source de ce qui s'ajoute |
+|---|---|---|
+| 4.6 | Novembre 1947, l'ONU vote le partage | résolution 181, 29 novembre 1947 |
+| 9.7 | L'accord Haavara, août 1933 | Yehuda Bauer, Jews for Sale?, 1994 ; lecture critique : Edwin Black, The Transfer Agreement, 1984 |
+| 21.4 | Munich, 5 septembre 1972 | détournements du FPLP, membre de l'OLP depuis 1968 (El Al, 23 juillet 1968 ; Dawson's Field, septembre 1970) ; Munich, 5 et 6 septembre 1972 : onze membres de l'équipe olympique israélienne tués par Septembre noir |
+| 21.14 | Yasser Arafat, 1988 | déclaration d'indépendance, Alger, 15 novembre 1988 ; conférence de presse de Genève, 14 décembre 1988 (résolutions 242 et 338, droit d'Israël à exister) ; mort le 11 novembre 2004 |
+| 22.7 | La charte du Hamas | charte du 18 août 1988, article 32 ; document de principes, Doha, 1er mai 2017 |
+| 25.23 | Le 7 octobre | environ 1 200 morts, 251 otages ; ONU, représentante spéciale sur les violences sexuelles en conflit, 4 mars 2024 |
+| 25.36 | Génocide, rejet | commission internationale indépendante d'enquête de l'ONU, 16 septembre 2025 ; position du gouvernement israélien |
+| 26.3 | Le tombeau des Patriarches | Hébron, 25 février 1994 : Baruch Goldstein, colon de Kiryat Arba ; 29 Palestiniens tués dans la mosquée Ibrahimi |
+| 27.8 | Une campagne payée par un État | The New York Times, 5 juin 2024 (ministère israélien de la Diaspora, qui dément) |
+| 28.5 | Un citoyen sur cinq | commission Or, 1er septembre 2003 |
+| 28.6 | Une démocratie, pour ses défenseurs | Ra'am dans la coalition, juin 2021 ; Khaled Kabub, juge à la Cour suprême depuis 2022 |
+| 28.9 | La loi État-nation | loi fondamentale du 19 juillet 2018, article 1 (c) |
+| 32.3 | Pour l'oubli | Yehuda Elkana, « Bizkhout ha-shikheha », Haaretz, 2 mars 1988 ; déporté à Auschwitz en 1944 ; l'écran résume sa thèse sans guillemets (traduction anglaise « The Need to Forget », Université d'Europe centrale) |
+| 32.4 | « Chacun est le Juif de quelqu'un » | voir section 6 ; La Repubblica, 24 septembre 1982 |
+| 32.7 | La nation et la mort | Idith Zertal, La Nation et la mort. La Shoah dans le discours et la politique d'Israël, La Découverte, 2004 (trad. Marc Saint-Upéry) ; Israel's Holocaust and the Politics of Nationhood, Cambridge University Press, 2005 |
+| 33.12 | La réponse d'Israël | résolution 2334 du Conseil de sécurité, 23 décembre 2016 |
+| 35.8 et 35.18 | Israël rejette | position du gouvernement israélien ; CIJ, Afrique du Sud c. Israël : pas de jugement au fond au 23 octobre 2026 |
+

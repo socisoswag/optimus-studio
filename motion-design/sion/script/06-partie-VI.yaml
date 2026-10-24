@@ -60,8 +60,11 @@ chapitres:
         voix: >-
           En Israël même, d'anciens soldats racontent ce qu'ils ont fait dans les territoires : / c'est l'association
           Briser le silence. / Et chaque année, des jeunes choisissent la prison plutôt que l'**armée**.
-      - type: NOIR
-        duree: 12
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 156
+        sortie: 168
+        ecran: "mots : Un refuge et une part d'eux-mêmes"
         source: "Pew Research Center, Jewish Americans in 2020 (attachement à Israël)"
         voix: >-
           Ces voix restent minoritaires. / Pour la plupart des Juifs dans le monde, / Israël demeure un refuge, et une
@@ -110,8 +113,11 @@ chapitres:
         voix: >-
           Aujourd'hui, les ultra-orthodoxes refusent le service militaire. / En 2024, la Cour suprême ordonne de les
           **mobiliser**.
-      - type: NOIR
-        duree: 8
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 168
+        sortie: 176
+        ecran: "mots : Un État n'est pas une prière"
         voix: >-
           Foi ou nationalisme ? / Pour eux, la réponse est claire : / un État n'est pas une **prière**.
 
@@ -260,7 +266,10 @@ chapitres:
         voix: >-
           En France, le débat est vif. / En 2019, Emmanuel Macron qualifie l'antisionisme d'« une des formes modernes de l'antisémitisme » ; / l'Assemblée adopte la définition de l'IHRA. // Ce film critique un projet politique, / jamais un **peuple**.
         note: "citer la transcription de l'Élysée mot pour mot ; en 2017, il disait « la forme réinventée » : ne pas mélanger les deux"
-      - type: NOIR
-        duree: 9
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 176
+        sortie: 185
+        ecran: "mots : Qui parle de cette terre et qui l'on écoute"
         voix: >-
           Dans ce débat, une question revient sans cesse : / qui parle de cette terre, / et qui l'on **écoute**.

@@ -270,8 +270,11 @@ chapitres:
         ecran: "carton : output/cartons/gaza-2023"
         voix: >-
           Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
-      - type: NOIR
-        duree: 18
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 75
+        sortie: 93
+        ecran: "fiche : Sud d'Israël · 7 octobre 2023 · Le 7 octobre"
         source: >-
           environ 1 200 morts en Israël, dont une majorité de civils ; 251 otages ; festival Nova : environ 360 morts ;
           rapport de la représentante spéciale de l'ONU sur les violences sexuelles en conflit, 4 mars 2024
@@ -373,8 +376,11 @@ chapitres:
         voix: >-
           La Cour internationale de justice ordonne d'empêcher un génocide. / La CPI émet des mandats d'arrêt contre
           Netanyahou, Gallant, et un chef du **Hamas**.
-      - type: NOIR
-        duree: 12
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 93
+        sortie: 105
+        ecran: "face à face : Génocide · Rejet · Gaza, 2025"
         source: "commission internationale indépendante d'enquête de l'ONU, rapport du 16 septembre 2025 ; position du gouvernement israélien"
         voix: >-
           En septembre 2025, une commission d'enquête de l'ONU conclut à un génocide. / Israël rejette ces accusations,
@@ -464,10 +470,12 @@ chapitres:
         voix: >-
           Après 1967, une partie des Juifs religieux voit dans la conquête un signe de Dieu. / En 1974, ils fondent le
           Goush Emounim, / « le bloc de la foi » : / s'installer partout, en Judée et en **Samarie**.
-      - type: NOIR
-        duree: 11
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 105
+        sortie: 116
+        ecran: "fiche : Hébron · 25 février 1994 · Le tombeau des Patriarches"
         source: "massacre du tombeau des Patriarches, Hébron, 25 février 1994 : 29 morts"
-        ecran: "carton : Hébron · 25 février 1994"
         voix: >-
           Le 25 février 1994, à Hébron, / un colon, Baruch Goldstein, tue 29 Palestiniens en prière dans la **mosquée**.
       - type: MD
@@ -579,6 +587,13 @@ chapitres:
         voix: >-
           Des faux comptes, il y en a dans tous les camps de cette **guerre**.
       - type: MD
+        fichier: output/paroles.mp4
+        entree: 116
+        sortie: 120
+        ecran: "mots : Une campagne payée par un État"
+        voix: >-
+          Celui-ci était payé par un **État**.
+      - type: MD
         fichier: output/documents-6.mp4
         entree: 118
         sortie: 131
@@ -586,10 +601,6 @@ chapitres:
         source: "Shireen Abu Akleh, 11 mai 2022 (ONU, HCDH, juin 2022) ; CPJ, données au 24 septembre 2026 (189 journalistes et employés des médias palestiniens tués par Israël à Gaza)"
         voix: >-
           Le 11 mai 2022, la journaliste Shireen Abu Akleh est tuée à Jénine. / L'armée accuse d'abord des tireurs palestiniens ; / l'ONU conclut à un tir israélien. // À Gaza, depuis 2023, le CPJ compte 189 journalistes et employés des médias tués par **Israël**.
-      - type: NOIR
-        duree: 4
-        voix: >-
-          Celui-ci était payé par un **État**.
 
   - num: "28"
     titre: "Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens"
@@ -636,15 +647,19 @@ chapitres:
           En 2013, le ministère de la Santé ordonne d'arrêter d'injecter un contraceptif à des femmes éthiopiennes / qui
           n'en comprenaient pas les effets. // En 2015, des milliers d'Israéliens éthiopiens manifestent contre les
           violences **policières**.
-      - type: NOIR
-        duree: 13
-        source: "octobre 2000 : 13 citoyens arabes tués par la police (commission Or, 2003)"
-        ecran: "carton : Galilée · octobre 2000"
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 120
+        sortie: 133
+        ecran: "fiche : Galilée · octobre 2000 · Un citoyen sur cinq"
+        source: "octobre 2000 : 13 manifestants arabes tués par la police (commission Or, 1er septembre 2003 : 12 citoyens d'Israël et un habitant de Gaza)"
         voix: >-
-          Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize d'entre eux
-          pendant des **manifestations**.
-      - type: NOIR
-        duree: 14
+          Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize manifestants **arabes**.
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 133
+        sortie: 147
+        ecran: "fiche : Pour ses défenseurs · Une démocratie"
         source: "Ra'am dans la coalition gouvernementale, 2021-2022 ; Khaled Kabub, juge à la Cour suprême depuis 2022"
         voix: >-
           Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à
@@ -665,7 +680,10 @@ chapitres:
         source: "Negev Coexistence Forum, 27 juillet 2025, projet Recognized, et IWGIA, The Indigenous World 2026 (35 villages non reconnus, non raccordés aux réseaux publics) ; WAFA, 24 décembre 2025 (244e démolition d'al-Araqib depuis 2010)"
         voix: >-
           Dans le Néguev, 35 villages bédouins ne sont pas reconnus par l'État : / ils ne sont pas raccordés aux réseaux publics d'eau et d'électricité. / Al-Araqib a été démoli, puis rebâti, au moins 244 fois depuis **2010**.
-      - type: NOIR
-        duree: 9
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 147
+        sortie: 156
+        ecran: "fiche : Knesset · 19 juillet 2018 · La loi État-nation"
         voix: >-
           Pour beaucoup de ces citoyens, / la loi de 2018 a dit l'inverse. ///

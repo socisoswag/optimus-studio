@@ -404,10 +404,12 @@ chapitres:
         voix: >-
           Yasser Arafat fonde le Fatah à la fin des années cinquante, / et prend la tête de l'OLP en 1969. / Pour son
           peuple, il est le visage de la **résistance**.
-      - type: NOIR
-        duree: 14
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 33
+        sortie: 47
+        ecran: "fiche : Munich · 5 septembre 1972 · Pour Israël et l'Occident"
         source: "Munich, 5 et 6 septembre 1972 : onze membres de l'équipe olympique israélienne tués par Septembre noir"
-        ecran: "carton : Munich · 5 septembre 1972"
         voix: >-
           Pour Israël et l'Occident, l'OLP est alors une organisation terroriste : / détournements d'avions, / et à
           Munich, en 1972, onze athlètes israéliens tués par le groupe Septembre **noir**.
@@ -469,8 +471,11 @@ chapitres:
         source: "condamnation de Marwan Barghouti, 6 juin 2004 ; PCPSR, sondage du 7 au 11 octobre 2026, publié le 14 octobre (1 397 personnes, sept noms proposés)"
         voix: >-
           Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / En octobre 2026, il reste en tête des sondages : / 34 % des sondés le choisissent, parmi sept **noms**.
-      - type: NOIR
-        duree: 12
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 47
+        sortie: 59
+        ecran: "fiche : Alger et Genève · 1988 · Yasser Arafat"
         source: "déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration de Genève, 14 décembre 1988 ; mort le 11 novembre 2004"
         voix: >-
           En 1988, il accepte la résolution 242 : / un État palestinien à côté d'Israël. // Il meurt en 2004, / sans
@@ -527,8 +532,11 @@ chapitres:
         sortie: 110
         voix: >-
           La même année naît le Hamas, / fondé à Gaza par le cheikh Ahmed **Yassine**.
-      - type: NOIR
-        duree: 16
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 59
+        sortie: 75
+        ecran: "fiche : Gaza · 18 août 1988 · La charte du Hamas"
         source: "charte du Hamas, 18 août 1988 (article 32 : les Protocoles des sages de Sion) ; document de principes du Hamas, 1er mai 2017"
         voix: >-
           Sa charte de 1988 reprend des thèmes antisémites, / jusqu'aux Protocoles des sages de Sion, un faux. // En

@@ -1315,7 +1315,8 @@
     g.save();
     g.globalCompositeOperation = 'lighter';
     for (const l of LIGHTS) {
-      const A = Z * tw(t, l.t - 0.1, l.t + 1.2) * (1 - tw(t, l.tEnd - 0.6, l.tEnd));
+      // wide : lumières vues de loin (tout un pays), sans l'effacement des plans larges
+      const A = (l.wide ? 1 : Z) * tw(t, l.t - 0.1, l.t + 1.2) * (1 - tw(t, l.tEnd - 0.6, l.tEnd));
       if (A <= 0.01) continue;
       for (const [X, Y, a, b] of l.pts) {
         // extinction en cascade sur ~1,5 s, quelques lumières résistent (groupes électrogènes)
@@ -1784,9 +1785,11 @@
   const TCV = {};
   function tintCanvas(key) { if (!TCV[key]) TCV[key] = canvas(W, H).getContext('2d'); return TCV[key]; }
   // rendu point par point : chaque pixel de l'écran retrouve son point du sol (projection inverse)
-  // couches du relief, de la plus large à la plus fine : le monde, la région, le Sinaï, le Liban, puis la base
-  // (Palestine) ; une couche s'efface quand elle devient trop floue (de 4 à 7 pixels d'écran par pixel de texture)
-  const RL_ORDER = ['monde', 'region', 'sinai', 'liban', 'est', 'base'];
+  // couches du relief, de la plus large à la plus fine : le monde, les États-Unis, l'Europe, l'Irak et le Golfe, la
+  // région, le Sinaï, le Liban, l'est, les textures fines de quelques villes, puis la base (Palestine) ; une couche
+  // s'efface quand elle devient trop floue (de 4 à 7 pixels d'écran par pixel de texture)
+  const RL_ORDER = ['monde', 'usa', 'europe', 'orient', 'region', 'sinai', 'liban', 'est', 'usa-est', 'newyork', 'londres', 'paris',
+    'lahaye', 'alpes', 'munich', 'berlin', 'vienne', 'istanbul', 'base'];
   function rlWeight(T, k) {
     if (k === 'base') return 1;
     const mag = Ps / T.su;

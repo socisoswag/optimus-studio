@@ -63,7 +63,7 @@
     {
       ...O, id: 'la-parole', dur: 6, fly: 1.0, hitAt: 0.2,
       eyebrow: 'Et pourtant', lines: ['Ce peuple', 'va prendre', 'la parole'],
-      cam: cam(34.76, 32.05, 0.12, 38, -4), camEnd: cam(34.78, 32.05, 0.1, 42, 3),
+      cam: cam(35.05, 31.55, 0.21, 34, -4), camEnd: cam(35.07, 31.6, 0.19, 38, 3),
     },
     // 21.4 · Partie IV
     {
@@ -247,10 +247,38 @@
     },
   ];
 
+  // la terre entière, de la mer au Jourdain (frontières de 1922, tracé simplifié), Gaza, et les kibboutz autour de Gaza
+  const TERRE = [[34.22, 31.32], [34.48, 31.6], [34.75, 32.05], [34.95, 32.6], [35.1, 33.09], [35.58, 33.27], [35.62, 32.68],
+    [35.55, 32.2], [35.52, 31.5], [35.3, 30.9], [35.12, 30.2], [34.95, 29.55], [34.88, 29.6], [34.5, 30.6], [34.25, 31.2]];
+  const GAZA = [[34.22, 31.32], [34.5, 31.6], [34.57, 31.55], [34.3, 31.22]];
+  const ENVELOPPE = [[34.5, 31.6], [34.62, 31.55], [34.6, 31.3], [34.42, 31.22], [34.36, 31.28], [34.57, 31.55]];
+  const lights = [
+    { seg: 'la-parole', at: 0.8, poly: TERRE, n: 900, wide: true, until: 6.0 },
+    { seg: 'sept-octobre', at: 0.6, poly: ENVELOPPE, n: 320, off: 3.6, keep: 0.3, wide: true, until: 18.0 },
+    { seg: 'genocide-onu', at: 0.4, poly: GAZA, n: 900, off: 2.4, keep: 0.22, wide: true, until: 12.0 },
+    { seg: 'genocide-non', at: 0.4, poly: GAZA, n: 900, off: 2.0, keep: 0.22, wide: true, until: 12.0 },
+    { seg: 'egalite-a', at: 1.0, poly: TERRE, n: 1300, wide: true, until: 15.0 },
+  ];
+  const zones = [
+    { seg: 'octobre-2000', at: 0.6, dur: 1.6, name: 'israel-1949', from: [35.3, 32.75], tone: 'stone' },
+    { seg: 'democratie', at: 0.6, dur: 1.6, name: 'israel-1949', from: [35.2, 31.78], tone: 'stone', until: 23.0 },
+    { seg: 'reponse-israel', at: 7.6, dur: 1.8, name: 'cisjordanie', from: [35.25, 31.95] },
+    { seg: 'reponse-israel', at: 8.2, dur: 1.4, name: 'jerusalem-est-annexee', from: [35.23, 31.78] },
+    { seg: 'apartheid-non', at: 1.6, dur: 1.6, name: 'israel-1949', from: [35.0, 32.0], tone: 'stone' },
+    { seg: 'apartheid-non', at: 4.8, dur: 1.8, name: 'cisjordanie', from: [35.25, 31.95] },
+    { seg: 'apartheid-non', at: 5.2, dur: 1.4, name: 'gaza', from: [34.4, 31.45] },
+  ];
+  // une colonne de lumière là où le sang a coulé
+  const columns = [
+    { seg: 'hebron-1994', at: 5.4, lon: 35.1104, lat: 31.5247, h: 22000, w: 22, value: '29 morts', until: 11.0 },
+  ];
+
   root.TL = root.buildTL({
     name: 'paroles',
     seed: 1897,
     segments,
+    zones,
+    lights,
     relief: true,
     cities: [],
     hud: { label: null, index: false, coords: true, ruler: false, odo: false, from: 0.5 },
@@ -258,4 +286,5 @@
     fadeOut: 1.2,
     sound: { ticks: null },
   });
+  root.TL.columns = columns;
 })(typeof window !== 'undefined' ? window : globalThis);

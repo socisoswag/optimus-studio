@@ -25,6 +25,7 @@
     name: 'chiffre-gaza',
     seed: 8337,
     segments,
+    relief: true,
     zones,
     lights,
     hud: { label: ['Sion', 'Chapitre 25 · Gaza'], index: false, coords: true, ruler: false, odo: false, from: 0.5 },

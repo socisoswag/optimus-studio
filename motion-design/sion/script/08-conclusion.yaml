@@ -126,8 +126,11 @@ chapitres:
         entree: 73
         sortie: 79.6
         ecran: "fiche de fin : De 1897 à 1995 · Un siècle. Deux peuples. Une terre."
-      - type: NOIR
-        duree: 15
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 281
+        sortie: 296
+        ecran: "mots : L'égalité des droits, puis : Que personne ne soit plus chassé"
         voix: >-
           Ce film a pris position : / pour l'égalité des droits, entre la mer et le Jourdain. / Il ne demande à personne
           de partir. / Il demande que personne ne soit plus **chassé**.

@@ -36,14 +36,20 @@ chapitres:
           Six millions de Juifs assassinés. / La Shoah marque l'identité d'Israël : / un peuple qui a failli
           disparaître, / et qui s'est juré « plus jamais ». // En 1961, le procès d'Adolf Eichmann fait entendre les
           **survivants**.
-      - type: NOIR
-        duree: 17
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 185
+        sortie: 202
+        ecran: "fiche : Haaretz · 2 mars 1988 · Pour l'oubli"
         source: "Yehuda Elkana, « Pour l'oubli » (Bizkhout ha-shikheha), Haaretz, 2 mars 1988"
         voix: >-
           En 1988, Yehuda Elkana, philosophe, déporté enfant à Auschwitz, écrit dans Haaretz : / il ne voit pas de plus
           grande menace pour l'avenir d'Israël / que d'avoir fait de la Shoah l'axe de la conscience **nationale**.
-      - type: NOIR
-        duree: 17
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 202
+        sortie: 219
+        ecran: "citation : « Chacun est le Juif de quelqu'un. » · Primo Levi"
         source: >-
           Primo Levi, Se non ora, quando ?, Einaudi, 1982, p. 187 (réplique de Mendel) ; Giampaolo Pansa, « Io, Primo
           Levi, chiedo le dimissioni di Begin », La Repubblica, 24 septembre 1982
@@ -73,8 +79,11 @@ chapitres:
           La Shoah est aussi niée ou minimisée : / à Téhéran, en 2006, une conférence entière la met en doute. / En 2023,
           Mahmoud Abbas l'explique par le « rôle social » des Juifs ; / plus de cent intellectuels palestiniens le
           **condamnent**.
-      - type: NOIR
-        duree: 11
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 219
+        sortie: 230
+        ecran: "fiche : Idith Zertal · La nation et la mort"
         source: "Idith Zertal, Israel's Holocaust and the Politics of Nationhood, Cambridge University Press, 2005"
         voix: >-
           Pour l'historienne israélienne Idith Zertal, / cette mémoire sert aussi à justifier la politique de l'État envers
@@ -159,8 +168,11 @@ chapitres:
         source: "reconnaissance de Jérusalem par les États-Unis, 6 décembre 2017 ; ouverture de l'ambassade, 14 mai 2018"
         voix: >-
           En 2018, Washington installe son ambassade à Jérusalem. / Le même jour, à Gaza, des dizaines de manifestants sont **tués**.
-      - type: NOIR
-        duree: 16
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 230
+        sortie: 246
+        ecran: "fiche : Nations unies · de 1948 à 2016 · La réponse d'Israël"
         source: "résolution 2334 du Conseil de sécurité, 23 décembre 2016"
         voix: >-
           Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître.
@@ -308,8 +320,11 @@ chapitres:
         fichier: output/apartheid-textes.mp4
         entree: 55
         sortie: 61.8
-      - type: NOIR
-        duree: 12
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 246
+        sortie: 258
+        ecran: "fiche : Position du gouvernement israélien · Israël rejette ce mot"
         voix: >-
           Israël rejette ce mot : / ses citoyens arabes votent et siègent au Parlement, / et les territoires relèvent,
           dit-il, d'un conflit, pas d'un **système**.
@@ -373,8 +388,11 @@ chapitres:
         fichier: output/genocide-textes.mp4
         entree: 89.2
         sortie: 96
-      - type: NOIR
-        duree: 12
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 258
+        sortie: 270
+        ecran: "fiche : Position du gouvernement israélien · Israël rejette ces conclusions"
         source: "position du gouvernement israélien ; CIJ, affaire Afrique du Sud c. Israël (pas de jugement au fond au 23 octobre 2026)"
         voix: >-
           Israël rejette ces conclusions : / il dit combattre le Hamas, pas un peuple, / et invoque la légitime défense. // La Cour internationale de justice, elle, n'a pas encore jugé le **fond**.
@@ -440,8 +458,11 @@ chapitres:
         voix: >-
           En 2023, des centaines de milliers d'Israéliens manifestent contre la réforme de la justice, / pour défendre,
           disent-ils, leur **démocratie**.
-      - type: NOIR
-        duree: 11
+      - type: MD
+        fichier: output/paroles.mp4
+        entree: 270
+        sortie: 281
+        ecran: "face à face : Démocratie · Occupation"
         voix: >-
           Pour beaucoup de Palestiniens, ces manifestations ne parlaient pas d'eux : / une démocratie pour les uns, /
           l'occupation pour les **autres**.
