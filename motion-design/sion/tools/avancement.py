@@ -37,7 +37,7 @@ def main():
     depart = max((i for i, l in enumerate(etapes) if "départ" in l), default=0)
     cours = etapes[-1].split(" ", 2)[-1] if etapes else ""
     if cours in d and not os.path.exists(os.path.join(ROOT, "output", f".rendu-ok-{cours}-v2")):
-        fait += min(d[cours], 60 * len(glob.glob(os.path.join(ROOT, "output", "morceaux", cours, "[0-9]*.mp4"))))
+        fait += min(d[cours], 60 * len(glob.glob(os.path.join(ROOT, "output", "morceaux", cours, "[0-9][0-9][0-9].mp4"))))
     p = fait / total if total else 0
     # fin estimée : vitesse mesurée sur ce qui a été rendu depuis le départ de la chaîne
     eta = ""
@@ -55,7 +55,7 @@ def main():
         run = sum(d[t] for t in liste if os.path.exists(f := os.path.join(ROOT, "output", f".rendu-ok-{t}-v2"))
                   and datetime.datetime.fromtimestamp(os.path.getmtime(f), datetime.UTC).replace(tzinfo=None) >= t0)
         if cours in d and not os.path.exists(os.path.join(ROOT, "output", f".rendu-ok-{cours}-v2")):
-            run += min(d[cours], 60 * len(glob.glob(os.path.join(ROOT, "output", "morceaux", cours, "[0-9]*.mp4"))))
+            run += min(d[cours], 60 * len(glob.glob(os.path.join(ROOT, "output", "morceaux", cours, "[0-9][0-9][0-9].mp4"))))
         if run > 60:
             fin = now + (now - t0) / run * (total - fait) + datetime.timedelta(hours=2)  # heure de Paris
             jour = "" if fin.date() == (now + datetime.timedelta(hours=2)).date() else " demain"
