@@ -11,6 +11,7 @@ import json
 import os
 import re
 import subprocess
+import zoneinfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "output", ".durees.json")
@@ -57,8 +58,9 @@ def main():
         if cours in d and not os.path.exists(os.path.join(ROOT, "output", f".rendu-ok-{cours}-v2")):
             run += min(d[cours], 60 * len(glob.glob(os.path.join(ROOT, "output", "morceaux", cours, "[0-9][0-9][0-9].mp4"))))
         if run > 60:
-            fin = now + (now - t0) / run * (total - fait) + datetime.timedelta(hours=2)  # heure de Paris
-            jour = "" if fin.date() == (now + datetime.timedelta(hours=2)).date() else " demain"
+            paris = zoneinfo.ZoneInfo("Europe/Paris")  # heure d'été ou d'hiver selon la date
+            fin = (now + (now - t0) / run * (total - fait)).replace(tzinfo=datetime.UTC).astimezone(paris)
+            jour = "" if fin.date() == now.replace(tzinfo=datetime.UTC).astimezone(paris).date() else " demain"
             eta = f" · fin estimée{jour} vers {fin.strftime('%H h %M')} (Paris)"
     n = 20
     barre = "▓" * round(p * n) + "░" * (n - round(p * n))
