@@ -1,5 +1,5 @@
 {
- "maj": "28 octobre 2026, 20 h 10",
+ "maj": "28 octobre 2026, 21 h 10",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -37,11 +37,39 @@
    "detail": "après le rendu, mêmes noms de fichiers"
   },
   {
+   "nom": "Plans, bruitages et musique Envato à télécharger",
+   "pct": 0,
+   "poids": 3,
+   "qui": "toi",
+   "detail": "listes dans script/ENVATO-A-TELECHARGER.md et script/MUSIQUE.md ; les bruitages du lot 1 d'abord"
+  },
+  {
+   "nom": "Archives libres : 1917 à 1950, puis Gaza et la Cisjordanie de 2000 à 2025",
+   "pct": 0,
+   "poids": 3,
+   "qui": "moi",
+   "detail": "Universal Newsreels, Voice of America, WAFA ; l'ONU et 1948 selon les réponses Perplexity"
+  },
+  {
+   "nom": "Intégrer les plans Envato et les archives",
+   "pct": 0,
+   "poids": 2,
+   "qui": "moi",
+   "detail": "même finition que le film, légendes, script, sources, relivraison"
+  },
+  {
+   "nom": "Bruitages variés et montage musical",
+   "pct": 0,
+   "poids": 2,
+   "qui": "moi",
+   "detail": "aucun son répété à l'identique ; une piste musique par partie pour Premiere"
+  },
+  {
    "nom": "Réponses Perplexity",
    "pct": 50,
    "poids": 2,
    "qui": "toi",
-   "detail": "Herzl : fait (plan 6.9 corrigé, le chapitre 6 peut s'enregistrer) ; reste les droits de Paths in Palestine"
+   "detail": "3 nouvelles questions (images de l'ONU, Voice of America, proclamation de 1948) ; reste aussi les droits de Paths in Palestine"
   },
   {
    "nom": "Voix off",
