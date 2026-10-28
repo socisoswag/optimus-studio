@@ -57,9 +57,12 @@ def main():
                   and datetime.datetime.fromtimestamp(os.path.getmtime(f), datetime.UTC).replace(tzinfo=None) >= t0)
         if cours in d and not os.path.exists(os.path.join(ROOT, "output", f".rendu-ok-{cours}-v2")):
             run += min(d[cours], 60 * len(glob.glob(os.path.join(ROOT, "output", "morceaux", cours, "[0-9][0-9][0-9].mp4"))))
+        # temps où la machine était arrêtée (output/.pause, en secondes) : ne compte pas dans la vitesse
+        pf = os.path.join(ROOT, "output", ".pause")
+        pause = datetime.timedelta(seconds=float(open(pf).read()) if os.path.exists(pf) else 0)
         if run > 60:
             paris = zoneinfo.ZoneInfo("Europe/Paris")  # heure d'été ou d'hiver selon la date
-            fin = (now + (now - t0) / run * (total - fait)).replace(tzinfo=datetime.UTC).astimezone(paris)
+            fin = (now + (now - t0 - pause) / run * (total - fait)).replace(tzinfo=datetime.UTC).astimezone(paris)
             jour = "" if fin.date() == now.replace(tzinfo=datetime.UTC).astimezone(paris).date() else " demain"
             eta = f" · fin estimée{jour} vers {fin.strftime('%H h %M')} (Paris)"
     n = 20
