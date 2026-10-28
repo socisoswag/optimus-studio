@@ -64,17 +64,21 @@ Renommer chaque fichier avec son numéro (A01.mp4, S1a.wav, M01.wav) et l'envoye
 
 ## 2. Bruitages
 
+Le but : que jamais un son ne revienne deux fois à l'identique. Pour chaque numéro, prends le nombre de prises indiqué,
+toutes différentes, chez des contributeurs différents (deux micros, deux lieux, deux sons), en préférant les packs
+(un téléchargement, plusieurs prises). Au total : 38 familles, environ 156 prises.
+
 ### Lot 1, d'abord (ce qu'on entend le plus)
 
 | N° | Son | Liens |
 |---|---|---|
-| S1 | Gros impacts réels | https://elements.envato.com/sound-effects/heavy+metal+impact (Sound-Ideas, HollywoodEdge) ; https://elements.envato.com/metal-gate-slam-FAYJBJ8 ; https://elements.envato.com/metal-door-shut-MZULP8G ; https://elements.envato.com/sound-effects/door+slam |
-| S2 | Impacts mats | https://elements.envato.com/sound-effects/sandbag+drop ; https://elements.envato.com/sound-effects/table+hit ; https://elements.envato.com/sound-effects/stone+drop |
-| S3 | Souffles réels | https://elements.envato.com/foley-whoosh-cloth-01-BK43VW2 (et Cloth 02 à 05) ; https://elements.envato.com/bamboo-woosh-QJCB4UD ; https://elements.envato.com/sound-effects/car+pass+by ; https://elements.envato.com/sound-effects/bird+wings |
-| S4 | Montées jouées | https://elements.envato.com/long-gong-swell-H6JWZTL ; https://elements.envato.com/sound-effects/bowed+cymbal ; https://elements.envato.com/sound-effects/timpani+roll |
-| S29 | Feu de bois | https://elements.envato.com/fires-fireplace-wood-fire-grows-rustle-crackles-sn-URQC6GK ; https://elements.envato.com/fire-crackling-4HQYEK5 ; https://elements.envato.com/fireplace-flames-fluttering-MXQ69FD ; https://elements.envato.com/sound-effects/wood+fire (« Crackling Wood Fire » de Sound-Ideas) |
-| S6 | Explosions lointaines | https://elements.envato.com/warfare-distant-explosions-PMTUCTR ; https://elements.envato.com/distant-explosion-03-8YZH253 ; https://elements.envato.com/distant-explosion-2-Q23NH6R ; https://elements.envato.com/large-distant-explosion-SDT6CJE |
-| S13 | Gravats, effondrements | https://elements.envato.com/sound-effects/rubble+falling (« Mixed Stone Rubble And Debris Falling ») ; https://elements.envato.com/sound-effects/building+collapse (« Concrete And Steel Building Collapse ») ; https://elements.envato.com/sound-effects/bricks+falling |
+| S1 | Gros impacts réels (8 prises différentes) | https://elements.envato.com/sound-effects/heavy+metal+impact (Sound-Ideas, HollywoodEdge) ; https://elements.envato.com/metal-gate-slam-FAYJBJ8 ; https://elements.envato.com/metal-door-shut-MZULP8G ; https://elements.envato.com/sound-effects/door+slam |
+| S2 | Impacts mats (6 prises différentes) | https://elements.envato.com/sound-effects/sandbag+drop ; https://elements.envato.com/sound-effects/table+hit ; https://elements.envato.com/sound-effects/stone+drop |
+| S3 | Souffles réels (8 prises différentes) | https://elements.envato.com/foley-whoosh-cloth-01-BK43VW2 (et Cloth 02 à 05) ; https://elements.envato.com/bamboo-woosh-QJCB4UD ; https://elements.envato.com/sound-effects/car+pass+by ; https://elements.envato.com/sound-effects/bird+wings |
+| S4 | Montées jouées (6 prises différentes) | https://elements.envato.com/long-gong-swell-H6JWZTL ; https://elements.envato.com/sound-effects/bowed+cymbal ; https://elements.envato.com/sound-effects/timpani+roll |
+| S29 | Feu de bois (4 prises différentes) | https://elements.envato.com/fires-fireplace-wood-fire-grows-rustle-crackles-sn-URQC6GK ; https://elements.envato.com/fire-crackling-4HQYEK5 ; https://elements.envato.com/fireplace-flames-fluttering-MXQ69FD ; https://elements.envato.com/sound-effects/wood+fire (« Crackling Wood Fire » de Sound-Ideas) |
+| S6 | Explosions lointaines (8 prises différentes) | https://elements.envato.com/warfare-distant-explosions-PMTUCTR ; https://elements.envato.com/distant-explosion-03-8YZH253 ; https://elements.envato.com/distant-explosion-2-Q23NH6R ; https://elements.envato.com/large-distant-explosion-SDT6CJE |
+| S13 | Gravats, effondrements (5 prises différentes) | https://elements.envato.com/sound-effects/rubble+falling (« Mixed Stone Rubble And Debris Falling ») ; https://elements.envato.com/sound-effects/building+collapse (« Concrete And Steel Building Collapse ») ; https://elements.envato.com/sound-effects/bricks+falling |
 
 À refuser ici : « Trailer Transitions Cymbals… » et « Dark Pad Drone With Cymbal Swell » (fabriqués), « Distant Nuke Explosion » (jeu vidéo).
 
@@ -82,42 +86,42 @@ Renommer chaque fichier avec son numéro (A01.mp4, S1a.wav, M01.wav) et l'envoye
 
 | N° | Son | Lien (recherche) |
 |---|---|---|
-| S17 | Vieille ville de Jérusalem, souk | https://elements.envato.com/sound-effects/souk |
-| S18 | Appel à la prière, cloches au loin | https://elements.envato.com/sound-effects/call+to+prayer ; https://elements.envato.com/sound-effects/church+bells |
-| S19 | Village : coqs, chèvres, clochettes | https://elements.envato.com/sound-effects/rooster ; https://elements.envato.com/sound-effects/goat+bells |
-| S20 | Cigales, grillons | https://elements.envato.com/sound-effects/cicadas |
-| S21 | Port, mouettes, vagues | https://elements.envato.com/sound-effects/harbor |
-| S22 | Vent du désert, tôle au vent | https://elements.envato.com/sound-effects/desert+wind ; https://elements.envato.com/sound-effects/metal+rattle+wind |
-| S23 | Ville la nuit, circulation | https://elements.envato.com/sound-effects/city+night |
-| S24 | Enfants qui jouent au loin | https://elements.envato.com/sound-effects/children+playing |
-| S25 | Pluie sur une tente, sur la tôle | https://elements.envato.com/sound-effects/rain+on+tent ; https://elements.envato.com/sound-effects/rain+on+tin+roof |
-| S26 | Foule qui manifeste | https://elements.envato.com/sound-effects/protest+crowd |
-| S27 | Grande salle, applaudissements | https://elements.envato.com/sound-effects/crowd+murmur ; https://elements.envato.com/sound-effects/applause |
-| S28 | Bureau, salle calme | https://elements.envato.com/sound-effects/room+tone |
+| S17 | Vieille ville de Jérusalem, souk (4 prises différentes) | https://elements.envato.com/sound-effects/souk |
+| S18 | Appel à la prière, cloches au loin (4 prises différentes) | https://elements.envato.com/sound-effects/call+to+prayer ; https://elements.envato.com/sound-effects/church+bells |
+| S19 | Village : coqs, chèvres, clochettes (4 prises différentes) | https://elements.envato.com/sound-effects/rooster ; https://elements.envato.com/sound-effects/goat+bells |
+| S20 | Cigales, grillons (4 prises différentes) | https://elements.envato.com/sound-effects/cicadas |
+| S21 | Port, mouettes, vagues (3 prises différentes) | https://elements.envato.com/sound-effects/harbor |
+| S22 | Vent du désert, tôle au vent (4 prises différentes) | https://elements.envato.com/sound-effects/desert+wind ; https://elements.envato.com/sound-effects/metal+rattle+wind |
+| S23 | Ville la nuit, circulation (4 prises différentes) | https://elements.envato.com/sound-effects/city+night |
+| S24 | Enfants qui jouent au loin (3 prises différentes) | https://elements.envato.com/sound-effects/children+playing |
+| S25 | Pluie sur une tente, sur la tôle (3 prises différentes) | https://elements.envato.com/sound-effects/rain+on+tent ; https://elements.envato.com/sound-effects/rain+on+tin+roof |
+| S26 | Foule qui manifeste (4 prises différentes) | https://elements.envato.com/sound-effects/protest+crowd |
+| S27 | Grande salle, applaudissements (4 prises différentes) | https://elements.envato.com/sound-effects/crowd+murmur ; https://elements.envato.com/sound-effects/applause |
+| S28 | Bureau, salle calme (2 prises différentes) | https://elements.envato.com/sound-effects/room+tone |
 
 ### Lot 3, la finition
 
 | N° | Son | Lien (recherche) |
 |---|---|---|
-| S5 | Bol chantant, cloche seule | https://elements.envato.com/sound-effects/singing+bowl |
-| S7 | Artillerie au loin | https://elements.envato.com/sound-effects/distant+war |
-| S8 | Tirs lointains | https://elements.envato.com/sound-effects/distant+gunfire |
-| S9 | Char, chenilles | https://elements.envato.com/sound-effects/tank+tracks |
-| S10 | Avion à hélice ancien | https://elements.envato.com/sound-effects/propeller+plane |
-| S11 | Avion de chasse, hélicoptère | https://elements.envato.com/sound-effects/fighter+jet ; https://elements.envato.com/sound-effects/helicopter |
-| S12 | Drone au-dessus | https://elements.envato.com/sound-effects/drone+hum |
-| S14 | Sirène au loin | https://elements.envato.com/sound-effects/air+raid+siren |
-| S15 | Radio militaire, grésillements | https://elements.envato.com/sound-effects/radio+static |
-| S16 | Tonnerre lointain | https://elements.envato.com/sound-effects/distant+thunder |
-| S30 | Papier | https://elements.envato.com/sound-effects/paper |
-| S31 | Tampon, machine à écrire | https://elements.envato.com/sound-effects/rubber+stamp ; https://elements.envato.com/sound-effects/typewriter |
-| S32 | Télégraphe, téléscripteur | https://elements.envato.com/sound-effects/telegraph ; https://elements.envato.com/sound-effects/teletype |
-| S33 | Appareil photo ancien, diapositives | https://elements.envato.com/sound-effects/camera+shutter ; https://elements.envato.com/sound-effects/slide+projector |
-| S34 | Stylo plume | https://elements.envato.com/sound-effects/pen+writing |
-| S35 | Marteau de juge, pierre qui racle | https://elements.envato.com/sound-effects/gavel ; https://elements.envato.com/sound-effects/stone+scrape |
-| S36 | Clés anciennes, porte qui grince | https://elements.envato.com/sound-effects/keys+jingle ; https://elements.envato.com/sound-effects/door+creak |
-| S37 | Horloge | https://elements.envato.com/sound-effects/clock+ticking |
-| S38 | Clavier, serveurs | https://elements.envato.com/sound-effects/keyboard+typing ; https://elements.envato.com/sound-effects/server+room |
+| S5 | Bol chantant, cloche seule (3 prises différentes) | https://elements.envato.com/sound-effects/singing+bowl |
+| S7 | Artillerie au loin (4 prises différentes) | https://elements.envato.com/sound-effects/distant+war |
+| S8 | Tirs lointains (4 prises différentes) | https://elements.envato.com/sound-effects/distant+gunfire |
+| S9 | Char, chenilles (4 prises différentes) | https://elements.envato.com/sound-effects/tank+tracks |
+| S10 | Avion à hélice ancien (3 prises différentes) | https://elements.envato.com/sound-effects/propeller+plane |
+| S11 | Avion de chasse, hélicoptère (4 prises différentes) | https://elements.envato.com/sound-effects/fighter+jet ; https://elements.envato.com/sound-effects/helicopter |
+| S12 | Drone au-dessus (2 prises différentes) | https://elements.envato.com/sound-effects/drone+hum |
+| S14 | Sirène au loin (3 prises différentes) | https://elements.envato.com/sound-effects/air+raid+siren |
+| S15 | Radio militaire, grésillements (3 prises différentes) | https://elements.envato.com/sound-effects/radio+static |
+| S16 | Tonnerre lointain (3 prises différentes) | https://elements.envato.com/sound-effects/distant+thunder |
+| S30 | Papier (6 prises différentes) | https://elements.envato.com/sound-effects/paper |
+| S31 | Tampon, machine à écrire (5 prises différentes) | https://elements.envato.com/sound-effects/rubber+stamp ; https://elements.envato.com/sound-effects/typewriter |
+| S32 | Télégraphe, téléscripteur (4 prises différentes) | https://elements.envato.com/sound-effects/telegraph ; https://elements.envato.com/sound-effects/teletype |
+| S33 | Appareil photo ancien, diapositives (4 prises différentes) | https://elements.envato.com/sound-effects/camera+shutter ; https://elements.envato.com/sound-effects/slide+projector |
+| S34 | Stylo plume (2 prises différentes) | https://elements.envato.com/sound-effects/pen+writing |
+| S35 | Marteau de juge, pierre qui racle (3 prises différentes) | https://elements.envato.com/sound-effects/gavel ; https://elements.envato.com/sound-effects/stone+scrape |
+| S36 | Clés anciennes, porte qui grince (4 prises différentes) | https://elements.envato.com/sound-effects/keys+jingle ; https://elements.envato.com/sound-effects/door+creak |
+| S37 | Horloge (3 prises différentes) | https://elements.envato.com/sound-effects/clock+ticking |
+| S38 | Clavier, serveurs (4 prises différentes) | https://elements.envato.com/sound-effects/keyboard+typing ; https://elements.envato.com/sound-effects/server+room |
 
 ## 3. Musique (le détail des minutes est dans script/MUSIQUE.md)
 
