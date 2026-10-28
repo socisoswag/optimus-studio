@@ -6,7 +6,7 @@ plan par plan sur les 39 chapitres, puis sur Envato (28 octobre 2026). Avec elle
 moi-même, l'image réelle passe d'environ 10 % à environ 20 % du film.
 
 Trois parties : A, les clips déjà trouvés (lien direct) ; B, à chercher toi-même sur le site (rien de sûr trouvé de
-l'extérieur) ; C, les bruitages. Puis ce qu'Envato n'a pas, que je trouve ailleurs.
+l'extérieur) ; C, les bruitages (38 familles, environ 150 prises). Puis ce qu'Envato n'a pas, que je trouve ailleurs.
 
 ## Comment me les envoyer
 
@@ -80,27 +80,74 @@ l'extérieur) ; C, les bruitages. Puis ce qu'Envato n'a pas, que je trouve aille
 | B20 | 5.5 (remplace une photo) | 12 s | Zikhron Yaakov, la rue des fondateurs | Zichron Yaakov |
 | B21 | 11.9 | 10 s | Les collines de Naplouse et de Jénine, terrasses d'oliviers | Nablus aerial, Jenin, Samaria hills |
 
-## C. Les bruitages (onglet « Sound Effects »)
+## C. Les bruitages (onglet « Sound Effects ») : le plus de variété possible
 
 Aucun rendu à refaire : un nouveau son se pose avec tools/resound.sh, qui ne refait que la piste son de chaque pièce.
-Une vraie prise de son seulement : refuser « designed », « synth », « cinematic », « trailer », « riser », « AI ».
-Deux ou trois prises par numéro, pour que le même son ne revienne jamais à l'identique.
+But : qu'aucun son ne revienne deux fois à l'identique dans tout le film. Aujourd'hui, 16 sons n'ont qu'une seule prise.
+Une vraie prise de son seulement : refuser « designed », « synth », « cinematic », « trailer », « riser », « AI »
+(Envato a aussi un générateur de sons par IA : jamais rien de là). Prends des prises de contributeurs différents :
+deux micros, deux lieux, deux sons. La colonne « Prises » donne le nombre de fichiers différents à prendre.
 
-| N° | Son | Où chercher | Pourquoi |
+Rayons utiles : https://elements.envato.com/sound-effects/wood+fire et https://elements.envato.com/sound-effects/fire+crackling
+(le reste se cherche avec les mots-clés).
+
+### Les coupes et les temps forts (ce qu'on entend le plus souvent)
+
+| N° | Son | Prises | Mots-clés |
 |---|---|---|---|
-| S1 | Feu de bois qui crépite, de près, sans musique, 30 s au moins | https://elements.envato.com/sound-effects/wood+fire et https://elements.envato.com/sound-effects/fire+crackling | une seule prise aujourd'hui, elle revient partout |
-| S2 | Gros impacts réels : porte métallique, conteneur, porte en bois lourde | metal door slam warehouse, steel container hit, heavy wooden door slam | remplace les « trailer boom » de synthèse des coupes |
-| S3 | Montées jouées par de vrais instruments : cymbale frottée, gong, cordes en crescendo | cymbal swell mallet, bowed cymbal, gong swell, string crescendo | remplace les montées de synthèse |
-| S4 | Explosions et coups sourds lointains, enregistrés | distant explosion recording, quarry blast, muffled boom | une seule prise de coup sourd |
-| S5 | Effondrement, gravats qui tombent | building demolition collapse, rubble falling | Gaza : une seule prise |
-| S6 | Tonnerre lointain qui roule | distant thunder rolling | une seule prise |
-| S7 | Char en mouvement, artillerie au loin | tank moving tracks, artillery distant | une seule prise de chaque |
-| S8 | Village méditerranéen le jour : coqs, voix au loin, chiens | Mediterranean village ambience, Middle East village morning | villages de 1948 |
-| S9 | Ville du Proche-Orient la nuit ; appel à la prière lointain | Middle East city night, distant call to prayer, Jerusalem ambience | Jérusalem, Gaza |
-| S10 | Grande salle qui murmure | large hall crowd murmur, conference walla | votes de l'ONU |
-| S11 | Tampon, cloche de machine à écrire, marteau de juge, pierre qui racle | rubber stamp, typewriter bell, gavel, stone scrape | fiches et documents |
-| S12 | (facultatif) Drone de surveillance au-dessus | surveillance drone hum, UAV overhead | Gaza vue du ciel |
-| S13 | Foule qui manifeste, slogans indistincts | protest crowd chanting distant | les nouveaux plans de manifestations |
+| S1 | Gros impacts réels : porte métallique, conteneur, porte de grange, tôle, coffre lourd | 8 | metal door slam, shipping container hit, barn door slam, sheet metal hit, heavy trunk close |
+| S2 | Impacts mats : sac de sable qui tombe, poing sur une table en bois, pierre sur pierre | 6 | sandbag drop, fist on wooden table, stone drop on stone |
+| S3 | Souffles réels : bâton ou corde qui fend l'air, drap secoué, ailes d'oiseau, voiture qui passe vite | 8 | stick swish, rope whoosh, cloth flap, bird wings flutter, car pass by fast |
+| S4 | Montées jouées : cymbale frottée à l'archet, gong, roulement de timbale, verre frotté, cordes en crescendo | 6 | bowed cymbal, gong swell, timpani roll crescendo, wine glass rub, string crescendo |
+| S5 | Cloche ou bol qui résonne longtemps (fin de chapitre, silence) | 3 | singing bowl, church bell single hit distant, bell decay |
+
+### Les cartes de guerre
+
+| N° | Son | Prises | Mots-clés |
+|---|---|---|---|
+| S6 | Explosions lointaines, enregistrées (carrière, démolition, exercice) | 8 | distant explosion recording, quarry blast distant, demolition blast |
+| S7 | Coups sourds, roulement d'artillerie au loin | 4 | distant artillery, muffled boom, cannon distant |
+| S8 | Tirs lointains, rafales au loin | 4 | distant gunfire, rifle shots far |
+| S9 | Char ou chenilles, moteur diesel lourd | 4 | tank tracks, tracked vehicle, heavy diesel engine idle |
+| S10 | Avion à hélice ancien (1948, 1956) | 3 | vintage propeller plane flyby, WW2 plane pass |
+| S11 | Avion de chasse, hélicoptère (1967 à aujourd'hui) | 4 | fighter jet flyby, military helicopter flyover |
+| S12 | Drone de surveillance qui tourne au-dessus | 2 | surveillance drone hum, UAV overhead |
+| S13 | Effondrement, gravats, verre qui tombe | 5 | building demolition collapse, rubble falling, glass debris |
+| S14 | Sirène d'alerte au loin, ambulance au loin | 3 | air raid siren distant, ambulance siren far |
+| S15 | Radio militaire, talkie, grésillements | 3 | military radio chatter (sans paroles claires), walkie talkie static |
+| S16 | Tonnerre lointain qui roule | 3 | distant thunder rolling |
+
+### Les lieux
+
+| N° | Son | Prises | Mots-clés |
+|---|---|---|---|
+| S17 | Vieille ville de Jérusalem : ruelles, marché, pas sur la pierre | 4 | Jerusalem old city ambience, souk market ambience |
+| S18 | Appel à la prière au loin, cloches d'église au loin | 4 | distant call to prayer, church bells distant |
+| S19 | Village le matin : coqs, chiens, chèvres et leurs clochettes | 4 | village morning roosters, goats bells, rural Middle East |
+| S20 | Cigales et grillons d'été dans les oliviers | 4 | cicadas summer Mediterranean, crickets olive grove |
+| S21 | Port et mer : mouettes, vagues sur la pierre, bateaux | 3 | harbor seagulls, waves on rocks, fishing boats port |
+| S22 | Vent du désert, vent dans les ruines, tôle qui claque au vent | 4 | desert wind, wind through ruins, metal sheet rattling wind |
+| S23 | Ville la nuit, au loin ; ville moderne, circulation | 4 | city night distant, traffic city ambience |
+| S24 | Camp ou quartier dense : enfants qui jouent au loin, voix, radio dans une maison | 3 | children playing distant, neighborhood ambience Middle East |
+| S25 | Pluie sur une tente, pluie sur un toit de tôle | 3 | rain on tent, rain on tin roof |
+| S26 | Foule qui manifeste, slogans indistincts | 4 | protest crowd chanting distant, demonstration crowd |
+| S27 | Grande salle qui murmure, applaudissements d'assemblée | 4 | large hall murmur, assembly applause |
+| S28 | Salle de tribunal ou bureau calme : chaises, pas, porte | 2 | courtroom ambience, office room tone |
+
+### Les documents, les fiches, les photos
+
+| N° | Son | Prises | Mots-clés |
+|---|---|---|---|
+| S29 | Feu de bois qui crépite, de près, sans musique, 30 s au moins ; braises | 4 | fireplace crackling close, campfire crackle, embers |
+| S30 | Papier : page tournée, feuille froissée, enveloppe ouverte | 6 | page turn, paper crumple, envelope open |
+| S31 | Tampon, cloche de machine à écrire, frappes de machine à écrire | 5 | rubber stamp, typewriter bell, typewriter typing |
+| S32 | Télégraphe et morse (1917 à 1948), téléscripteur (1967, 1973) | 4 | telegraph morse key, teletype machine |
+| S33 | Déclencheur d'appareil photo ancien, projecteur de diapositives | 4 | vintage camera shutter, slide projector click |
+| S34 | Stylo plume qui écrit, signature | 2 | fountain pen writing, signing paper |
+| S35 | Marteau de juge, pierre qui racle | 3 | gavel, stone scrape |
+| S36 | Clés anciennes qui tintent, porte de fer rouillée qui grince (les clés du retour) | 4 | old keys jingle, rusty iron door creak |
+| S37 | Horloge, tic-tac, mécanisme | 3 | clock ticking, clockwork mechanism |
+| S38 | Clavier, souris, vibration de téléphone, ronronnement de serveurs (chapitre 27) | 4 | keyboard typing, mouse click, phone vibrate, server room hum |
 
 ## Ce qu'Envato n'a pas : je le cherche ailleurs (domaine public ou licence libre)
 
@@ -114,14 +161,18 @@ Deux ou trois prises par numéro, pour que le même son ne revienne jamais à l'
 
 ## Ce que je fais quand les fichiers arrivent
 
-1. Chaque plan passe par la même finition que le reste du film (tools/looks.py : couleur, halo, grain) et se coupe à
+1. Les sons : chaque prise passe le contrôle (tools/banque_sons.py essai : pas de ton pur, pas de motif qui se répète),
+   puis je change la façon de les tirer au sort : plus jamais une des 4 dernières prises d'un même son, un tirage propre à
+   chaque pièce (aujourd'hui, toutes les pièces partent du même tirage), et de petites variations de hauteur, de niveau et
+   de couleur à chaque coup. Puis tools/resound.sh sur tout le film et le contrôle de chaque spectrogramme.
+2. Chaque plan passe par la même finition que le reste du film (tools/looks.py : couleur, halo, grain) et se coupe à
    l'image près sur la durée du plan.
-2. Les informations à l'écran (date, lieu, chiffre) restent : elles passent en légende par-dessus le vrai plan. Un lieu
+3. Les informations à l'écran (date, lieu, chiffre) restent : elles passent en légende par-dessus le vrai plan. Un lieu
    filmé aujourd'hui porte la mention « aujourd'hui ».
-3. Le script passe ces plans en « RÉEL », puis coherence.py, CHANGEMENTS.md (numéros inchangés), SOURCES.md (numéro de
+4. Le script passe ces plans en « RÉEL », puis coherence.py, CHANGEMENTS.md (numéros inchangés), SOURCES.md (numéro de
    chaque clip, licence Envato Elements) et la description YouTube si besoin.
-4. Les parties concernées sont relivrées sur GitHub, mêmes noms de fichiers, et la page SION est republiée.
-5. Les fichiers Envato bruts ne vont jamais dans le dépôt public : ils restent dans output/ (non versionné), et les plans
+5. Les parties concernées sont relivrées sur GitHub, mêmes noms de fichiers, et la page SION est republiée.
+6. Les fichiers Envato bruts ne vont jamais dans le dépôt public : ils restent dans output/ (non versionné), et les plans
    coupés ne partent que dans Montage-Moyen-orient, qui est privé.
 
 ## La musique (ton choix, à la fin, sur Envato)
