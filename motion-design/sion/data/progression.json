@@ -1,12 +1,12 @@
 {
- "maj": "23 octobre 2026, 02 h 00",
+ "maj": "28 octobre 2026, 20 h 10",
  "taches": [
   {
-   "nom": "Plans du film en vidéo",
-   "pct": 99,
+   "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
+   "pct": 90,
    "poids": 60,
-   "qui": "fait",
-   "detail": "383 plans sur 386 ; les 3 derniers sont en rendu"
+   "qui": "moi",
+   "detail": "90 % rendu ; fin vers 22 h 50 (Paris)"
   },
   {
    "nom": "Rendu des reconstitutions (21 clips)",
@@ -23,11 +23,18 @@
    "detail": "photos trouvées et préparées, rendu après l'encodage"
   },
   {
-   "nom": "Livraison des parties I, II, III et V",
+   "nom": "Livraison sur GitHub, partie par partie",
+   "pct": 55,
+   "poids": 1,
+   "qui": "moi",
+   "detail": "ouverture, parties I, II, III et IV livrées ; V, VI, VII et conclusion dès leur rendu"
+  },
+  {
+   "nom": "Son du feu refait (vrais enregistrements, moins de souffle)",
    "pct": 0,
    "poids": 1,
    "qui": "moi",
-   "detail": "dès que les rendus sont contrôlés"
+   "detail": "après le rendu, mêmes noms de fichiers"
   },
   {
    "nom": "Réponses Perplexity",
