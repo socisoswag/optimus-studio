@@ -240,8 +240,14 @@ tt = tick_start
 if tick_end > tick_start and reel("tic"):  # vrai réveil mécanique, coupé avec le reste pendant les silences
     i0_ = int(tick_start * SR)
     n_ = int((tick_end - tick_start) * SR)
-    tl_, tr_ = BR.fond("tic", n_ / SR, rng, -30)
+    # aigus de la prise baissés (un tic-tac trop brillant masque la voix), enveloppe lissée sur 40 ms : un silence ne
+    # coupe plus le tic-tac net (clic)
+    tl_, tr_ = BR.moins_aigu(BR.fond("tic", n_ / SR, rng, -30), -12.0, 2500.0)
+    # le souffle de la prise entre deux tics (8 à 18 kHz, figé) : coupé au-dessus de 6 kHz
+    tl_, tr_ = BR.passe_bas(tl_, 6000), BR.passe_bas(tr_, 6000)
     e_ = bed[i0_:i0_ + n_][:len(tl_)]
+    w_ = int(0.04 * SR)
+    e_ = np.convolve(np.pad(e_, w_, mode="edge"), np.ones(w_) / w_, "same")[w_:-w_]
     k_ = min(len(e_) // 2, int(0.3 * SR))
     e_ = e_ * np.concatenate((np.linspace(0, 1, k_), np.ones(len(e_) - 2 * k_), np.linspace(1, 0, k_)))
     add((tl_[:len(e_)] * e_, tr_[:len(e_)] * e_), tick_start, 1.0)
