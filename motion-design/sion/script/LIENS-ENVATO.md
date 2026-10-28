@@ -1,0 +1,143 @@
+# Tous les liens Envato à télécharger
+
+Recherche du 29 octobre 2026. Deux sortes de liens :
+- **lien direct** : le clip ou le son précis, il n'y a qu'à télécharger ;
+- **recherche** : la page de résultats Envato déjà filtrée ; prends le premier résultat réel qui correspond.
+
+Toujours refuser : « AI », « generated », « CGI », « 3D », « render », « trailer », « designed », « synth », « gaming »,
+les sons du générateur IA d'Envato, et pour Gaza ou la Cisjordanie un plan sans lieu ni date. Pour les sons, préférer les
+grandes sonothèques enregistrées : Sound-Ideas, HollywoodEdge, prosoundfx.
+Renommer chaque fichier avec son numéro (A01.mp4, S1a.wav, M01.wav) et l'envoyer ici.
+
+## 1. Plans vidéo
+
+| N° | Plan | Lien |
+|---|---|---|
+| A01 | 25.4, 20.3 Gaza, le camp de la plage | https://elements.envato.com/beach-camp-gaza-drone-shot-4k-6PSN2E2 |
+| A02 | 25.43, 25.44 Rafah détruite (titres « Bombed and destroyed neighbourhood in Rafah ») | recherche : https://elements.envato.com/stock-video/gaza+war |
+| A03 | 25.23 Be'eri après le 7 octobre | https://elements.envato.com/aerial-video-over-beeri-of-destroyed-houses-after--XWYWHVU |
+| A04 | 19.35, 20.2 Shuafat et le mur | https://elements.envato.com/east-jerusalem-palestinian-refugge-camp-surrounded-9UQ7S3Z |
+| A05 | 20.5 Anata, le mur, la tour | https://elements.envato.com/anata-refugees-camp-with-security-wall-and-idf-wat-W2E35YR |
+| A06 | 23.8 Le mur à Jérusalem | https://elements.envato.com/aerial-footage-of-the-separation-wall-between-isra-6M4DYEG |
+| A07 | 23.9 La clôture dans les collines | https://elements.envato.com/aerial-footage-over-security-fence-in-the-mountain-9GU2YX7 |
+| A08 | 19.34 Pisgat Zeev | https://elements.envato.com/jerusalem-pisgat-zeev-settlement-aerial-view-4D7W3YC |
+| A09 | 26.9 Campement bédouin, secteur E1 | https://elements.envato.com/bedouin-outpost-in-the-desert-aerial-view-G3P4RHM |
+| A10 | 26.8 Maale Adumim (vérifier le lieu) | https://elements.envato.com/srigim-li-on-village-community-settlement-in-centr-BVY2RDP |
+| A11 | 23.5 Ramallah | https://elements.envato.com/aerial-view-of-palestine-tower-cinema-movie-theate-EBXYSMP |
+| A12 | 23.5 Ramallah, 2e plan | https://elements.envato.com/palestine-tower-cinema-residential-neighborhood-an-JAEP2S5 |
+| A13 | 23.6 Désert de Judée | https://elements.envato.com/view-of-nebi-musain-judean-desert-near-dead-sea-ju-HG6HJL7 |
+| A14 | 23.6 Jéricho | https://elements.envato.com/aerial-view-over-jericho-city-in-palestine-territo-NJL57HF |
+| A15 | 24.5, 28.6 La Knesset (2 clips) | https://elements.envato.com/the-knesset-building-israeli-parliament-house-jeru-6QLBQ3R et https://elements.envato.com/aerial-view-of-the-knesset-the-israeli-house-of-pa-4K3X4NU |
+| A16 | 19.32 Jérusalem vue du ciel (2 clips) | https://elements.envato.com/aerial-of-jerusalem-with-temple-mount-LTDPE7X et https://elements.envato.com/aerial-view-of-the-old-city-of-jerusalem-ABMEBQ5 |
+| A17 | 1.6, 19.26 Prière au mur des Lamentations | https://elements.envato.com/jewish-prayer-at-western-wall-jerusalem-israel-rel-JDMP4TQ |
+| A18 | 34.8 Lifta | https://elements.envato.com/flying-over-abandoned-palestinian-lifta-village-je-2QECUJL |
+| A19 | 32.3, 32.7 Yad Vashem | https://elements.envato.com/aerial-view-of-israel-holocaust-museum-jerusalem-i-P3UTT5A |
+| A20 | 18.5, 12.7 Jaffa | https://elements.envato.com/famous-old-town-of-jaffa-at-tel-aviv-YQ5W8UK |
+| A21 | 8.12 Mont Thabor, plaine de Jezreel | https://elements.envato.com/aerial-video-over-mount-tabor-israel-3YEXVJ8 |
+| A22 | 8.11 Vallée de Beit Netofa | https://elements.envato.com/beit-netofa-valley-with-flooded-agricultural-field-B8CXSWQ |
+| A23 | 28.8 Néguev, village bédouin (2 clips) | https://elements.envato.com/solar-panels-on-the-roof-of-a-school-in-a-bedouin--8RENHMW et https://elements.envato.com/aerial-video-of-a-bedouin-herding-his-sheep-in-isr-NEZCHMQ |
+| A24 | 30.3 Williamsburg | https://elements.envato.com/aerial-views-capture-the-williamsburg-neighborhood-U4FLWEZ |
+| A25 | 31.11 Marseille et son port | https://elements.envato.com/aerial-view-of-the-city-of-marseille-france-in-the-ME4HGLT |
+| A26 | 9.6 Plage de Tel-Aviv | https://elements.envato.com/aerial-footage-of-people-at-tel-aviv-coastline-PQQMXRY |
+| B01 | 26.3, 8.9 Hébron, la vieille ville | https://elements.envato.com/aerial-view-of-historic-city-of-hebron-in-west-ban-NEURWV8 |
+| B02 | 25.5 Frontière de Gaza (titre « Israeli army vehicles near Egypt to Gaza border ») | recherche : https://elements.envato.com/stock-video/israel+army |
+| B03 | 36.4 Manifestations de 2023 en Israël | recherche : https://elements.envato.com/stock-video/israel+protest |
+| B04 | 29.2 Neturei Karta | recherche : https://elements.envato.com/stock-video/neturei+karta |
+| B05 | 30.5 Ultra-orthodoxes qui manifestent | recherche : https://elements.envato.com/stock-video/haredi |
+| B06 | 29.3, 29.4 Jewish Voice for Peace | recherche : https://elements.envato.com/stock-video/ceasefire+protest |
+| B07 | 31.12 Manifestation pour Gaza à Paris | recherche : https://elements.envato.com/stock-video/paris+protest |
+| B08 | 31.13 L'Assemblée nationale | recherche : https://elements.envato.com/stock-video/palais+bourbon |
+| B09 | 34.7 Parc Canada, Latrun | recherche : https://elements.envato.com/stock-video/latrun |
+| B10 | 34.6 Ein Hod | recherche : https://elements.envato.com/stock-video/ein+hod |
+| B11 | 34.5 Tzippori | recherche : https://elements.envato.com/stock-video/zippori |
+| B12 | 20.13 Chatila, Beyrouth | recherche : https://elements.envato.com/stock-video/beirut |
+| B13 | 20.2 Un camp de Cisjordanie | recherche : https://elements.envato.com/stock-video/bethlehem |
+| B14 | 23.20 Citernes sur les toits | recherche : https://elements.envato.com/stock-video/rooftop+water+tanks |
+| B15 | 23.21 Cheikh Jarrah | recherche : https://elements.envato.com/stock-video/east+jerusalem |
+| B16 | 38.8 Masafer Yatta | recherche : https://elements.envato.com/stock-video/south+hebron+hills |
+| B17 | 33.11 Ambassade américaine à Jérusalem | recherche : https://elements.envato.com/stock-video/us+embassy+jerusalem |
+| B18 | 26.8 Récolte des olives | recherche : https://elements.envato.com/stock-video/olive+harvest |
+| B19 | 5.6 Caves de Rishon LeZion | recherche : https://elements.envato.com/stock-video/carmel+winery |
+| B20 | 5.5 Zikhron Yaakov | recherche : https://elements.envato.com/stock-video/zichron+yaakov |
+| B21 | 11.9 Village palestinien des collines | https://elements.envato.com/aerial-footage-over-palestinian-muslim-village-wit-FRM3DL4 |
+| B22 | 23.15 Démolitions (bulldozer D9, vérifier le lieu) | https://elements.envato.com/israeli-d9r-armoured-bulldozer-makes-roads-and-cle-FHQW67M |
+
+## 2. Bruitages
+
+### Lot 1, d'abord (ce qu'on entend le plus)
+
+| N° | Son | Liens |
+|---|---|---|
+| S1 | Gros impacts réels | https://elements.envato.com/sound-effects/heavy+metal+impact (Sound-Ideas, HollywoodEdge) ; https://elements.envato.com/metal-gate-slam-FAYJBJ8 ; https://elements.envato.com/metal-door-shut-MZULP8G ; https://elements.envato.com/sound-effects/door+slam |
+| S2 | Impacts mats | https://elements.envato.com/sound-effects/sandbag+drop ; https://elements.envato.com/sound-effects/table+hit ; https://elements.envato.com/sound-effects/stone+drop |
+| S3 | Souffles réels | https://elements.envato.com/foley-whoosh-cloth-01-BK43VW2 (et Cloth 02 à 05) ; https://elements.envato.com/bamboo-woosh-QJCB4UD ; https://elements.envato.com/sound-effects/car+pass+by ; https://elements.envato.com/sound-effects/bird+wings |
+| S4 | Montées jouées | https://elements.envato.com/long-gong-swell-H6JWZTL ; https://elements.envato.com/sound-effects/bowed+cymbal ; https://elements.envato.com/sound-effects/timpani+roll |
+| S29 | Feu de bois | https://elements.envato.com/fires-fireplace-wood-fire-grows-rustle-crackles-sn-URQC6GK ; https://elements.envato.com/fire-crackling-4HQYEK5 ; https://elements.envato.com/fireplace-flames-fluttering-MXQ69FD ; https://elements.envato.com/sound-effects/wood+fire (« Crackling Wood Fire » de Sound-Ideas) |
+| S6 | Explosions lointaines | https://elements.envato.com/warfare-distant-explosions-PMTUCTR ; https://elements.envato.com/distant-explosion-03-8YZH253 ; https://elements.envato.com/distant-explosion-2-Q23NH6R ; https://elements.envato.com/large-distant-explosion-SDT6CJE |
+| S13 | Gravats, effondrements | https://elements.envato.com/sound-effects/rubble+falling (« Mixed Stone Rubble And Debris Falling ») ; https://elements.envato.com/sound-effects/building+collapse (« Concrete And Steel Building Collapse ») ; https://elements.envato.com/sound-effects/bricks+falling |
+
+À refuser ici : « Trailer Transitions Cymbals… » et « Dark Pad Drone With Cymbal Swell » (fabriqués), « Distant Nuke Explosion » (jeu vidéo).
+
+### Lot 2, les lieux
+
+| N° | Son | Lien (recherche) |
+|---|---|---|
+| S17 | Vieille ville de Jérusalem, souk | https://elements.envato.com/sound-effects/souk |
+| S18 | Appel à la prière, cloches au loin | https://elements.envato.com/sound-effects/call+to+prayer ; https://elements.envato.com/sound-effects/church+bells |
+| S19 | Village : coqs, chèvres, clochettes | https://elements.envato.com/sound-effects/rooster ; https://elements.envato.com/sound-effects/goat+bells |
+| S20 | Cigales, grillons | https://elements.envato.com/sound-effects/cicadas |
+| S21 | Port, mouettes, vagues | https://elements.envato.com/sound-effects/harbor |
+| S22 | Vent du désert, tôle au vent | https://elements.envato.com/sound-effects/desert+wind ; https://elements.envato.com/sound-effects/metal+rattle+wind |
+| S23 | Ville la nuit, circulation | https://elements.envato.com/sound-effects/city+night |
+| S24 | Enfants qui jouent au loin | https://elements.envato.com/sound-effects/children+playing |
+| S25 | Pluie sur une tente, sur la tôle | https://elements.envato.com/sound-effects/rain+on+tent ; https://elements.envato.com/sound-effects/rain+on+tin+roof |
+| S26 | Foule qui manifeste | https://elements.envato.com/sound-effects/protest+crowd |
+| S27 | Grande salle, applaudissements | https://elements.envato.com/sound-effects/crowd+murmur ; https://elements.envato.com/sound-effects/applause |
+| S28 | Bureau, salle calme | https://elements.envato.com/sound-effects/room+tone |
+
+### Lot 3, la finition
+
+| N° | Son | Lien (recherche) |
+|---|---|---|
+| S5 | Bol chantant, cloche seule | https://elements.envato.com/sound-effects/singing+bowl |
+| S7 | Artillerie au loin | https://elements.envato.com/sound-effects/distant+war |
+| S8 | Tirs lointains | https://elements.envato.com/sound-effects/distant+gunfire |
+| S9 | Char, chenilles | https://elements.envato.com/sound-effects/tank+tracks |
+| S10 | Avion à hélice ancien | https://elements.envato.com/sound-effects/propeller+plane |
+| S11 | Avion de chasse, hélicoptère | https://elements.envato.com/sound-effects/fighter+jet ; https://elements.envato.com/sound-effects/helicopter |
+| S12 | Drone au-dessus | https://elements.envato.com/sound-effects/drone+hum |
+| S14 | Sirène au loin | https://elements.envato.com/sound-effects/air+raid+siren |
+| S15 | Radio militaire, grésillements | https://elements.envato.com/sound-effects/radio+static |
+| S16 | Tonnerre lointain | https://elements.envato.com/sound-effects/distant+thunder |
+| S30 | Papier | https://elements.envato.com/sound-effects/paper |
+| S31 | Tampon, machine à écrire | https://elements.envato.com/sound-effects/rubber+stamp ; https://elements.envato.com/sound-effects/typewriter |
+| S32 | Télégraphe, téléscripteur | https://elements.envato.com/sound-effects/telegraph ; https://elements.envato.com/sound-effects/teletype |
+| S33 | Appareil photo ancien, diapositives | https://elements.envato.com/sound-effects/camera+shutter ; https://elements.envato.com/sound-effects/slide+projector |
+| S34 | Stylo plume | https://elements.envato.com/sound-effects/pen+writing |
+| S35 | Marteau de juge, pierre qui racle | https://elements.envato.com/sound-effects/gavel ; https://elements.envato.com/sound-effects/stone+scrape |
+| S36 | Clés anciennes, porte qui grince | https://elements.envato.com/sound-effects/keys+jingle ; https://elements.envato.com/sound-effects/door+creak |
+| S37 | Horloge | https://elements.envato.com/sound-effects/clock+ticking |
+| S38 | Clavier, serveurs | https://elements.envato.com/sound-effects/keyboard+typing ; https://elements.envato.com/sound-effects/server+room |
+
+## 3. Musique (le détail des minutes est dans script/MUSIQUE.md)
+
+| N° | Où | Liens |
+|---|---|---|
+| M01 | Thème SION, ouvertures, générique | https://elements.envato.com/cinematic-arabian-oud-TX8SZ5N ; https://elements.envato.com/emotional-arabian-oud-P2MBBED |
+| M02 | Partie I, l'Europe | https://elements.envato.com/the-cry-of-the-jewish-violin-XW63ZW4 ; https://elements.envato.com/sad-emotional-and-dramatic-piano-JD7AXH4 |
+| M03 | La Palestine ottomane | https://elements.envato.com/arabic-oud-6M25SU8 ; https://elements.envato.com/arabian-qanun-solo-7JRYQHX |
+| M04 | Partie II, le mandat | https://elements.envato.com/tension-documentary-background-YS3GYFW ; https://elements.envato.com/tension-documentary-UHN5S7B |
+| M05 | La Shoah | https://elements.envato.com/emotional-sad-jewish-violin-R2T7VLL ; https://elements.envato.com/jewish-sad-melody-for-violin-TXH9QJW |
+| M06 | 1947, le partage | https://elements.envato.com/tension-pulse-JK5F4BB ; https://elements.envato.com/a-suspense-EEFGAYR |
+| M07 | La Nakba | https://elements.envato.com/sad-qanun-and-duduk-GVH6TXX ; https://elements.envato.com/lonely-duduk-B56FPLC ; https://elements.envato.com/middle-eastern-spiritual-mystic-SNGTCQ2 ; https://elements.envato.com/sad-arabian-flute-and-strings-loop-H4Y2TPN |
+| M08 | « Deux mémoires » | les mêmes que M05 et M07 |
+| M09 | Les guerres sur les cartes | https://elements.envato.com/cinematic-middle-east-percussion-SKDJ6MW ; recherche : https://elements.envato.com/audio/documentary+war |
+| M10 | L'exil, Arafat | https://elements.envato.com/emotional-ambient-arabian-oud-K82CSBH |
+| M11 | Occupation, mur, colonies | https://elements.envato.com/dark-fog-ambient-HYX64CE ; https://elements.envato.com/dark-tension-drone-NBDT5EU |
+| M12 | Leurs propres mots | le même que M06 (Tension Pulse) |
+| M13 | Gaza, le blocus | les mêmes que M11 |
+| M14 | Gaza depuis le 7 octobre | https://elements.envato.com/the-sad-minimal-piano-ETGXTPV ; https://elements.envato.com/sad-piano-documentary-XRZZTPE |
+| M15 | La guerre numérique | https://elements.envato.com/documentary-glitch-56BWYHK ; https://elements.envato.com/cyber-tension-M4D5KHQ |
+| M16 | Les débats | le même que M04 ; https://elements.envato.com/tension-H7P2Q6T |
+| M17 | L'effacement des villages | le même que M10 |
+| M18 | Conclusion, générique | https://elements.envato.com/documentary-piano-emotional-strings-R3VESHM ; https://elements.envato.com/inspiring-emotional-cinematic-piano-and-strings-BR5E2KW |
