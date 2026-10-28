@@ -50,12 +50,26 @@ l'image réelle passe d'environ 10 % à environ 18 % du film.
 | E25 | 34.6 | 10 s | Ein Hod, le village d'artistes | Ein Hod artists village |
 | E26 | 34.5 | 11 s | Tzippori (Saffuriyya), le parc national | Zippori national park, Tzippori |
 
-## Les deux sons qui manquent (Envato, onglet « Sound Effects »)
+## Les bruitages (Envato, onglet « Sound Effects »)
 
-| N° | Son | Mots-clés | À vérifier |
+Aucun rendu à refaire : un nouveau son se pose avec tools/resound.sh, qui ne refait que la piste son de chaque pièce.
+Pour chaque son, une vraie prise de son seulement : refuser « designed », « synth », « cinematic », « trailer », « riser »
+et « AI ». Deux ou trois prises par numéro, pour que le même son ne revienne jamais à l'identique.
+
+| N° | Son | Mots-clés | Pourquoi |
 |---|---|---|---|
-| S1 | Feu de bois qui crépite, de près, sans musique, 30 s au moins (2 ou 3 prises) | fireplace crackling close, campfire crackle | une vraie prise de son, pas « designed », « synth » ou « cinematic » |
-| S2 | Vrai battement de cœur | heartbeat recording, stethoscope heartbeat | pareil : un enregistrement, sans effet ajouté |
+| S1 | Feu de bois qui crépite, de près, sans musique, 30 s au moins | fireplace crackling close, campfire crackle, wood fire | une seule prise aujourd'hui, elle revient partout |
+| S2 | Gros impacts réels : porte métallique, conteneur, porte en bois lourde | metal door slam warehouse, steel container hit, heavy wooden door slam | remplace les « trailer boom » de synthèse des coupes |
+| S3 | Montées jouées par de vrais instruments : cymbale frottée, gong, cordes en crescendo | cymbal swell mallet, bowed cymbal, gong swell, orchestral string crescendo | remplace les montées de synthèse avant les impacts |
+| S4 | Explosions et coups sourds lointains, enregistrés (carrière, démolition) | distant explosion recording, quarry blast distant, muffled boom | cartes de guerre : une seule prise de coup sourd |
+| S5 | Effondrement, gravats qui tombent | building demolition collapse, rubble falling, debris | Gaza : une seule prise |
+| S6 | Tonnerre lointain qui roule | distant thunder rolling | une seule prise |
+| S7 | Char en mouvement, artillerie au loin (1948, 1967, 1973) | tank moving tracks, artillery distant firing | une seule prise de chaque |
+| S8 | Ambiance de village méditerranéen le jour : coqs, voix au loin, chiens | Mediterranean village ambience, Middle East village morning | villages de 1948 : une seule prise |
+| S9 | Ville du Proche-Orient la nuit, au loin ; appel à la prière lointain | Middle East city night ambience, distant call to prayer, Jerusalem ambience | Jérusalem, Gaza : une seule prise |
+| S10 | Grande salle qui murmure (assemblée, conférence) | large hall crowd murmur, conference room walla | votes de l'ONU : une seule prise |
+| S11 | Petits sons de bureau : tampon, cloche de machine à écrire, marteau de juge, pierre qui racle | rubber stamp, typewriter bell, gavel, stone scrape | fiches et documents : une seule prise de chaque |
+| S12 | (facultatif) Drone de surveillance qui tourne au-dessus | surveillance drone hum, UAV overhead | Gaza vue du ciel |
 
 ## Ce que je fais quand les fichiers arrivent
 
