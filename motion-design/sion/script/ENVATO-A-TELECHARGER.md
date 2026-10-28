@@ -175,14 +175,9 @@ Rayons utiles : https://elements.envato.com/sound-effects/wood+fire et https://e
 6. Les fichiers Envato bruts ne vont jamais dans le dépôt public : ils restent dans output/ (non versionné), et les plans
    coupés ne partent que dans Montage-Moyen-orient, qui est privé.
 
-## La musique (ton choix, à la fin, sur Envato)
+## La musique
 
-Ce que je chercherais, si tu veux une piste de départ ; jamais de musique générée par IA (Envato en propose aussi) :
-- Ouverture et partie I : cordes graves et piano, lent, sans percussions (« cinematic documentary piano strings sad »).
-- Parties II et III (mandat, 1948) : oud ou ney, violoncelle, tension qui monte (« oud cello dramatic », « middle east tension »).
-- Parties IV et V (occupation, Gaza) : nappes sourdes, pulsation basse, très peu de mélodie (« dark ambient pulse documentary »).
-- Parties VI et VII (débats) : piano seul, discret, pour laisser parler les textes.
-- Conclusion : cordes qui s'ouvrent, lumineux mais grave (« hopeful strings emotional slow »).
+Voir script/MUSIQUE.md : 18 morceaux trouvés sur Envato, calés sur les minutes du film.
 
 ## Questions pour Perplexity (prêtes à copier)
 
