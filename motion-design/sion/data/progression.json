@@ -1,12 +1,12 @@
 {
- "maj": "28 octobre 2026, 21 h 10",
+ "maj": "28 octobre 2026, 22 h 25",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
-   "pct": 90,
+   "pct": 95,
    "poids": 60,
    "qui": "moi",
-   "detail": "90 % rendu ; fin vers 22 h 50 (Paris)"
+   "detail": "95 % rendu ; fin vers minuit (Paris)"
   },
   {
    "nom": "Rendu des reconstitutions (21 clips)",
@@ -24,10 +24,10 @@
   },
   {
    "nom": "Livraison sur GitHub, partie par partie",
-   "pct": 55,
+   "pct": 78,
    "poids": 1,
    "qui": "moi",
-   "detail": "ouverture, parties I, II, III et IV livrées ; V, VI, VII et conclusion dès leur rendu"
+   "detail": "ouverture, parties I à VI livrées ; VII et conclusion dès leur rendu"
   },
   {
    "nom": "Son du feu refait (vrais enregistrements, moins de souffle)",
