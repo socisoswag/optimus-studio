@@ -64,64 +64,63 @@ Renommer chaque fichier avec son numéro (A01.mp4, S1a.wav, M01.wav) et l'envoye
 
 ## 2. Bruitages
 
-Le but : que jamais un son ne revienne deux fois à l'identique. Pour chaque numéro, prends le nombre de prises indiqué,
-toutes différentes, chez des contributeurs différents (deux micros, deux lieux, deux sons), en préférant les packs
-(un téléchargement, plusieurs prises). Au total : 38 familles, environ 156 prises.
+Liens directs, un par son (29 octobre 2026, version 2) : chaque lien ouvre un son précis, choisi sur son titre et sa
+description. Ce sont des enregistrements réels ; j'ai écarté les sons « Stinger », « Cinematic », « Trailer » et le
+générateur IA d'Envato. Écoute avant de télécharger : si une prise sonne fabriquée, saute-la. Télécharge en WAV et
+mets tout dans un seul dossier Dropbox ; je les range et je les règle moi-même.
 
 ### Lot 1, d'abord (ce qu'on entend le plus)
 
-| N° | Son | Liens |
+| N° | Son | Liens directs |
 |---|---|---|
-| S1 | Gros impacts réels (8 prises différentes) | https://elements.envato.com/sound-effects/heavy+metal+impact (Sound-Ideas, HollywoodEdge) ; https://elements.envato.com/metal-gate-slam-FAYJBJ8 ; https://elements.envato.com/metal-door-shut-MZULP8G ; https://elements.envato.com/sound-effects/door+slam |
-| S2 | Impacts mats (6 prises différentes) | https://elements.envato.com/sound-effects/sandbag+drop ; https://elements.envato.com/sound-effects/table+hit ; https://elements.envato.com/sound-effects/stone+drop |
-| S3 | Souffles réels (8 prises différentes) | https://elements.envato.com/foley-whoosh-cloth-01-BK43VW2 (et Cloth 02 à 05) ; https://elements.envato.com/bamboo-woosh-QJCB4UD ; https://elements.envato.com/sound-effects/car+pass+by ; https://elements.envato.com/sound-effects/bird+wings |
-| S4 | Montées jouées (6 prises différentes) | https://elements.envato.com/long-gong-swell-H6JWZTL ; https://elements.envato.com/sound-effects/bowed+cymbal ; https://elements.envato.com/sound-effects/timpani+roll |
-| S29 | Feu de bois (4 prises différentes) | https://elements.envato.com/fires-fireplace-wood-fire-grows-rustle-crackles-sn-URQC6GK ; https://elements.envato.com/fire-crackling-4HQYEK5 ; https://elements.envato.com/fireplace-flames-fluttering-MXQ69FD ; https://elements.envato.com/sound-effects/wood+fire (« Crackling Wood Fire » de Sound-Ideas) |
-| S6 | Explosions lointaines (8 prises différentes) | https://elements.envato.com/warfare-distant-explosions-PMTUCTR ; https://elements.envato.com/distant-explosion-03-8YZH253 ; https://elements.envato.com/distant-explosion-2-Q23NH6R ; https://elements.envato.com/large-distant-explosion-SDT6CJE |
-| S13 | Gravats, effondrements (5 prises différentes) | https://elements.envato.com/sound-effects/rubble+falling (« Mixed Stone Rubble And Debris Falling ») ; https://elements.envato.com/sound-effects/building+collapse (« Concrete And Steel Building Collapse ») ; https://elements.envato.com/sound-effects/bricks+falling |
-
-À refuser ici : « Trailer Transitions Cymbals… » et « Dark Pad Drone With Cymbal Swell » (fabriqués), « Distant Nuke Explosion » (jeu vidéo).
+| S1 | Gros impacts réels (8 prises) | https://elements.envato.com/heavy-door-slam-YRNLZJM ; https://elements.envato.com/metal-gate-slam-FAYJBJ8 ; https://elements.envato.com/metal-door-shut-MZULP8G ; https://elements.envato.com/heavy-metal-clank-impact-XVNC5RJ ; https://elements.envato.com/heavy-metal-clank-7Z4KPGQ ; https://elements.envato.com/metal-bang-hollow-box-hit-impact-AWVPL7K ; https://elements.envato.com/heavy-impact-crash-Q7G4KMN ; https://elements.envato.com/hard-knocking-on-metal-door-9ZDJ6L8 |
+| S2 | Impacts mats (6 prises) | https://elements.envato.com/object-impact-sand-bag-drop-14-XD948K5 ; https://elements.envato.com/impact-body-fall-sand-thud-02-YL8X94Y ; https://elements.envato.com/impact-body-fall-sand-thud-03-8J6UAQG ; https://elements.envato.com/falling-body-on-soft-wooden-floor-XBRYV2D ; https://elements.envato.com/hit-wood-table-with-fist-1-M8BXDLE ; https://elements.envato.com/hitting-table-with-fist-deep-thuddy-impact-4-9T797SV |
+| S3 | Souffles réels (tissu, plume, voiture qui passe, envol d'oiseaux) (7 prises) | https://elements.envato.com/foley-whoosh-cloth-01-BK43VW2 ; https://elements.envato.com/foley-whoosh-feather-quick-01-HMMX3S3 ; https://elements.envato.com/bamboo-woosh-QJCB4UD ; https://elements.envato.com/fast-road-car-passing-VUDQEYL ; https://elements.envato.com/very-fast-car-passing-VSGQNFW ; https://elements.envato.com/passing-car-mid-distant-whoosh-GMXRKDB ; https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6 |
+| S4 | Montées jouées (timbales, gong, cymbale) (5 prises) | https://elements.envato.com/timpani-roll-with-crescendo-5Q97DK3 ; https://elements.envato.com/short-timpani-roll-9NZAC87 ; https://elements.envato.com/timpani-drum-roll-hit-T5Y3UK8 ; https://elements.envato.com/long-gong-swell-H6JWZTL ; https://elements.envato.com/cymbal-roll-1-NKXG37W |
+| S6 | Explosions lointaines (7 prises) | https://elements.envato.com/warfare-distant-explosions-PMTUCTR ; https://elements.envato.com/distant-explosion-03-8YZH253 ; https://elements.envato.com/distant-explosion-2-Q23NH6R ; https://elements.envato.com/large-distant-explosion-SDT6CJE ; https://elements.envato.com/rumble-long-distant-explosions-crumbling-roll-J4C377C ; https://elements.envato.com/explosion-distant-thunder-WFAAHGC ; https://elements.envato.com/large-distant-and-muted-explosion-3PCUWEG |
+| S13 | Gravats, effondrements (5 prises) | https://elements.envato.com/concrete-building-collapses-TCA3R7E ; https://elements.envato.com/concrete-wall-collapsing-WT2YFMA ; https://elements.envato.com/stone-rubble-and-debris-falling-on-dirt-VBLKQVP ; https://elements.envato.com/falling-rubble-2NWGHUY ; https://elements.envato.com/huge-building-collapse-NKPJLYE |
+| S29 | Feu de bois (3 prises) | https://elements.envato.com/fires-fireplace-wood-fire-grows-rustle-crackles-sn-URQC6GK ; https://elements.envato.com/fire-crackling-4HQYEK5 ; https://elements.envato.com/fireplace-flames-fluttering-MXQ69FD |
 
 ### Lot 2, les lieux
 
-| N° | Son | Lien (recherche) |
+| N° | Son | Liens directs |
 |---|---|---|
-| S17 | Vieille ville de Jérusalem, souk (4 prises différentes) | https://elements.envato.com/sound-effects/souk |
-| S18 | Appel à la prière, cloches au loin (4 prises différentes) | https://elements.envato.com/sound-effects/call+to+prayer ; https://elements.envato.com/sound-effects/church+bells |
-| S19 | Village : coqs, chèvres, clochettes (4 prises différentes) | https://elements.envato.com/sound-effects/rooster ; https://elements.envato.com/sound-effects/goat+bells |
-| S20 | Cigales, grillons (4 prises différentes) | https://elements.envato.com/sound-effects/cicadas |
-| S21 | Port, mouettes, vagues (3 prises différentes) | https://elements.envato.com/sound-effects/harbor |
-| S22 | Vent du désert, tôle au vent (4 prises différentes) | https://elements.envato.com/sound-effects/desert+wind ; https://elements.envato.com/sound-effects/metal+rattle+wind |
-| S23 | Ville la nuit, circulation (4 prises différentes) | https://elements.envato.com/sound-effects/city+night |
-| S24 | Enfants qui jouent au loin (3 prises différentes) | https://elements.envato.com/sound-effects/children+playing |
-| S25 | Pluie sur une tente, sur la tôle (3 prises différentes) | https://elements.envato.com/sound-effects/rain+on+tent ; https://elements.envato.com/sound-effects/rain+on+tin+roof |
-| S26 | Foule qui manifeste (4 prises différentes) | https://elements.envato.com/sound-effects/protest+crowd |
-| S27 | Grande salle, applaudissements (4 prises différentes) | https://elements.envato.com/sound-effects/crowd+murmur ; https://elements.envato.com/sound-effects/applause |
-| S28 | Bureau, salle calme (2 prises différentes) | https://elements.envato.com/sound-effects/room+tone |
+| S17 | Marché, souk (2 prises) | https://elements.envato.com/immerse-yourself-in-a-bustling-arabic-market-with--2YX8YFR ; https://elements.envato.com/exterior-large-arab-crowd-WDX229C |
+| S18 | Prière, cloches au loin (2 prises) | https://elements.envato.com/muslim-mosque-prayer-loop-FDPEYUJ ; https://elements.envato.com/church-bell-evening-prayer-call-distant-ringing-U5RSMY7 ; appel à la prière (pas de page directe trouvée) : sur https://elements.envato.com/sound-effects/islamic, les deux prises de sounddogs « The muezzin calls to prayer amid an intense urban crowd » et « Distant Muslim prayers mingle with chatter, crickets chirping in a Moroccan town » |
+| S19 | Village : coqs, chèvres, clochettes (6 prises) | https://elements.envato.com/rooster-morning-noise-5DZTWS4 ; https://elements.envato.com/rooster-crowing-ZCPXG8Y ; https://elements.envato.com/rooster-call-morning-4AY5LRD ; https://elements.envato.com/goat-bells-DBLV4J2 ; https://elements.envato.com/animal-goat-baa-herd-excitement-03-XMSVVT7 ; https://elements.envato.com/animals-goats-bleat-calls-warbling-baa-movements-r-36JRXFB |
+| S20 | Cigales, grillons (4 prises) | https://elements.envato.com/cicadas-ZK7H3JW ; https://elements.envato.com/cicadas-at-night-1-WQUYM3D ; https://elements.envato.com/cricket-nighttime-ambience-SWU3RNL ; https://elements.envato.com/night-ambience-with-light-crickets-J6TCBHE |
+| S21 | Port, mouettes, vagues (3 prises) | https://elements.envato.com/harbor-atmosphere-with-seagulls-FTHD96Y ; https://elements.envato.com/city-harbor-with-seagulls-morning-ambience-QX7787D ; https://elements.envato.com/seashore-KMSTVA9 |
+| S22 | Vent du désert, tôle (5 prises) | https://elements.envato.com/strong-desert-wind-NPWDHQU ; https://elements.envato.com/howling-wind-ambience-Y5XZFHL ; https://elements.envato.com/violent-sandstorm-wind-blowing-P7MAHJK ; https://elements.envato.com/sheet-metal-vibration-DFQ5RKU ; https://elements.envato.com/heavy-metal-rattle-VE7C9MU |
+| S23 | Ville la nuit (3 prises) | https://elements.envato.com/city-ambience-night-distant-traffic-2-ZXLU5W2 ; https://elements.envato.com/city-night-ambience-5-T4FEMJJ ; https://elements.envato.com/city-night-ambience-6-3G678FC |
+| S24 | Enfants qui jouent au loin (3 prises) | https://elements.envato.com/distant-playground-schoolyard-ZKTPC9U ; https://elements.envato.com/children-playing-in-a-schoolyard-9GDU2BV ; https://elements.envato.com/schoolyard-2RPJVR7 |
+| S25 | Pluie sur une tente, sur la tôle (4 prises) | https://elements.envato.com/rain-on-canvas-tent-8W3ZDB2 ; https://elements.envato.com/rain-on-tin-roof-M87KXUC ; https://elements.envato.com/heavy-rain-on-tin-roof-JBKQV73 ; https://elements.envato.com/rain-on-metal-roof-CDFURNX |
+| S26 | Foule qui manifeste (4 prises) | https://elements.envato.com/rioting-demonstration-crowd-9MY86US ; https://elements.envato.com/rioting-crowd-TJS9YMN ; https://elements.envato.com/crowd-chanting-revolution-J74MPA8 ; https://elements.envato.com/energetic-crowd-chanting-5GW3X9A |
+| S27 | Grande salle, applaudissements (4 prises) | https://elements.envato.com/large-crowd-murmur-Y43PJUQ ; https://elements.envato.com/large-crowd-murmur-2-YU9PDAR ; https://elements.envato.com/large-crowd-applause-cheering-in-hall-G7BFCR2 ; https://elements.envato.com/large-crowd-applause-cheering-in-convention-hall-Y5CD7XB |
+| S28 | Bureau, salle calme (3 prises) | https://elements.envato.com/room-tone-empty-office-space-MBDRH22 ; https://elements.envato.com/quiet-clean-office-room-tone-QP6XGCW ; https://elements.envato.com/office-room-tone-C55AHX7 |
 
 ### Lot 3, la finition
 
-| N° | Son | Lien (recherche) |
+| N° | Son | Liens directs |
 |---|---|---|
-| S5 | Bol chantant, cloche seule (3 prises différentes) | https://elements.envato.com/sound-effects/singing+bowl |
-| S7 | Artillerie au loin (4 prises différentes) | https://elements.envato.com/sound-effects/distant+war |
-| S8 | Tirs lointains (4 prises différentes) | https://elements.envato.com/sound-effects/distant+gunfire |
-| S9 | Char, chenilles (4 prises différentes) | https://elements.envato.com/sound-effects/tank+tracks |
-| S10 | Avion à hélice ancien (3 prises différentes) | https://elements.envato.com/sound-effects/propeller+plane |
-| S11 | Avion de chasse, hélicoptère (4 prises différentes) | https://elements.envato.com/sound-effects/fighter+jet ; https://elements.envato.com/sound-effects/helicopter |
-| S12 | Drone au-dessus (2 prises différentes) | https://elements.envato.com/sound-effects/drone+hum |
-| S14 | Sirène au loin (3 prises différentes) | https://elements.envato.com/sound-effects/air+raid+siren |
-| S15 | Radio militaire, grésillements (3 prises différentes) | https://elements.envato.com/sound-effects/radio+static |
-| S16 | Tonnerre lointain (3 prises différentes) | https://elements.envato.com/sound-effects/distant+thunder |
-| S30 | Papier (6 prises différentes) | https://elements.envato.com/sound-effects/paper |
-| S31 | Tampon, machine à écrire (5 prises différentes) | https://elements.envato.com/sound-effects/rubber+stamp ; https://elements.envato.com/sound-effects/typewriter |
-| S32 | Télégraphe, téléscripteur (4 prises différentes) | https://elements.envato.com/sound-effects/telegraph ; https://elements.envato.com/sound-effects/teletype |
-| S33 | Appareil photo ancien, diapositives (4 prises différentes) | https://elements.envato.com/sound-effects/camera+shutter ; https://elements.envato.com/sound-effects/slide+projector |
-| S34 | Stylo plume (2 prises différentes) | https://elements.envato.com/sound-effects/pen+writing |
-| S35 | Marteau de juge, pierre qui racle (3 prises différentes) | https://elements.envato.com/sound-effects/gavel ; https://elements.envato.com/sound-effects/stone+scrape |
-| S36 | Clés anciennes, porte qui grince (4 prises différentes) | https://elements.envato.com/sound-effects/keys+jingle ; https://elements.envato.com/sound-effects/door+creak |
-| S37 | Horloge (3 prises différentes) | https://elements.envato.com/sound-effects/clock+ticking |
-| S38 | Clavier, serveurs (4 prises différentes) | https://elements.envato.com/sound-effects/keyboard+typing ; https://elements.envato.com/sound-effects/server+room |
+| S5 | Bol chantant (3 prises) | https://elements.envato.com/tibetan-singing-bowl-1-LD8DUHY ; https://elements.envato.com/tibetan-singing-bowl-2-Y6HFCTM ; https://elements.envato.com/tibetan-singing-bowl-3-U34DH5X |
+| S7 | Artillerie au loin (4 prises) | https://elements.envato.com/artillery-shell-explosion-4933-M6B758F ; https://elements.envato.com/artillery-distant-2-9G23SSL ; https://elements.envato.com/artillery-cannon-single-shot-SHFP3HX ; https://elements.envato.com/105mm-howitzer-cannon-fires-26NTXV3 |
+| S8 | Tirs lointains (5 prises) | https://elements.envato.com/distant-gunshot-Y3R56ME ; https://elements.envato.com/distant-gunshot-2-7RA4S3L ; https://elements.envato.com/distant-gunfire-constant-D73K4LT ; https://elements.envato.com/weapons-rifle-distant-shot-06-LK4YSEG ; https://elements.envato.com/automatic-gunshots-distant-2LM7SNE |
+| S9 | Char, chenilles (5 prises) | https://elements.envato.com/military-tank-moving-tracks-squeaking-ECHDNYB ; https://elements.envato.com/military-tank-driving-6EHBD9V ; https://elements.envato.com/ats-59-military-tank-fast-pull-away-5W2DUN9 ; https://elements.envato.com/ats-59-military-tanks-fast-approach-36F5TXR ; https://elements.envato.com/bmp-1-military-tank-on-board-medium-speed-3V6YPUD |
+| S10 | Avion à hélice ancien (3 prises) | https://elements.envato.com/prop-plane-flyby-JYN7LT4 ; https://elements.envato.com/propeller-aircraft-flyby-7Q93RZ4 ; https://elements.envato.com/propeller-plane-twin-engine-fly-by-GSQL3FV |
+| S11 | Avion de chasse, hélicoptère (6 prises) | https://elements.envato.com/f-18-fighter-jet-fly-by-1-DLZXNW9 ; https://elements.envato.com/military-helicopter-fly-over-A5GNELT ; https://elements.envato.com/helicopter-passing-overhead-ABVVASM ; https://elements.envato.com/f16-airplane-jet-pass-overhead-R3QX972 ; https://elements.envato.com/military-jet-fighter-close-flyby-02-W494MAN ; https://elements.envato.com/fast-jet-flyover-airplane-3KJNH7Z |
+| S12 | Drone (2 prises) | https://elements.envato.com/drone-flying-passing-by-A7KR37K ; https://elements.envato.com/small-drone-hover-1-4V9RQYS |
+| S14 | Sirène (3 prises) | https://elements.envato.com/air-raid-siren-1-MBHWKEP ; https://elements.envato.com/air-raid-siren-old-fashioned-TXREP8T ; https://elements.envato.com/air-raid-siren-2-CEE6VAY |
+| S15 | Radio, grésillements (4 prises) | https://elements.envato.com/radio-static-8FRSKJW ; https://elements.envato.com/walkie-talkie-dead-air-static-59JKVG2 ; https://elements.envato.com/transmission-end-static-GVRKTXW ; https://elements.envato.com/walkie-talkie-static-burst-BCNJ5U2 |
+| S16 | Tonnerre lointain (3 prises) | https://elements.envato.com/distant-thunder-rumbling-FHXGYTM ; https://elements.envato.com/thunder-distant-rumble-5-2C9UQLL ; https://elements.envato.com/distant-rolling-thunder-CZNXQ94 |
+| S30 | Papier (4 prises) | https://elements.envato.com/paper-shuffle-page-turn-rustle-87QB225 ; https://elements.envato.com/newspaper-page-turn-SKNJ6BE ; https://elements.envato.com/rustling-paper-suggests-manipulating-a-newspaper-7SJASZG ; https://elements.envato.com/paper-rustle-M36ZRAG |
+| S31 | Tampon, machine à écrire (5 prises) | https://elements.envato.com/typewriter-writing-FS3B4HJ ; https://elements.envato.com/antique-typewriter-load-sheet-of-paper-SPNAGU2 ; https://elements.envato.com/ink-stamp-on-pad-and-stamp-G9KN3WP ; https://elements.envato.com/small-rubber-stamp-JPGLUFN ; https://elements.envato.com/stamps-from-small-rubber-stamp-8XA5UPN |
+| S32 | Télégraphe, téléscripteur (4 prises) | https://elements.envato.com/telegraph-sending-morse-code-DE73QGB ; https://elements.envato.com/teletype-machine-printing-QDK3U2Y ; https://elements.envato.com/teletype-teleprinter-working-GE6ZRKQ ; https://elements.envato.com/newsroom-office-teletype-printers-CG2986A |
+| S33 | Projecteur de diapositives, caméra ancienne (3 prises) | https://elements.envato.com/slide-projector-advance-S8AHUXQ ; https://elements.envato.com/slide-projector-click-1-GN59YN7 ; https://elements.envato.com/vintage-film-camera-rewind-BY65CW8 |
+| S34 | Stylo plume, signature (2 prises) | https://elements.envato.com/handwriting-fountainpen-029-TWF3K6A ; https://elements.envato.com/signature-scribble-with-pen-ZUY7EQ8 |
+| S35 | Marteau de juge, pierre qui racle (3 prises) | https://elements.envato.com/court-judge-gavel-hit-FC7JREW ; https://elements.envato.com/rock-dragged-over-stone-plate-CTK8X54 ; https://elements.envato.com/sliding-stone-slab-8JEPCZD |
+| S36 | Clés anciennes, serrure, porte qui grince (5 prises) | https://elements.envato.com/keys-jingle-MGR3NYK ; https://elements.envato.com/keys-on-keyring-4FKDMUJ ; https://elements.envato.com/lock-unlock-with-key-CL6GPYR ; https://elements.envato.com/key-locking-and-unlocking-sound-pack-RMA2XPK ; https://elements.envato.com/wooden-creaking-door-SWL5MEK |
+| S37 | Horloge (3 prises) | https://elements.envato.com/old-clock-pendulum-ticking-BSL3E5P ; https://elements.envato.com/antique-clock-ticking-6KFW74G ; https://elements.envato.com/wall-clock-ticking-48PWMNL |
+| S38 | Clavier, salle informatique (3 prises) | https://elements.envato.com/old-computer-keyboard-typing-P7R7ZUM ; https://elements.envato.com/fast-keyboard-typing-BVRFPEM ; https://elements.envato.com/computer-input-room-ambience-5WG4RMQ |
 
 ## 3. Musique (le détail des minutes est dans script/MUSIQUE.md)
 
@@ -155,11 +154,11 @@ en Irak). Envoi par Dropbox, comme d'habitude.
 
 | N° | Pour | Lien |
 |---|---|---|
-| C01 | 25.x Gaza, un immeuble détruit, murs criblés de balles | https://elements.envato.com/camera-reveals-a-destroyed-building-walls-with-bul-SXGWA8C |
-| C02 | 25.7 à 25.11 les offensives, un char Merkava dans Gaza | https://elements.envato.com/an-israeli-merkava-tank-in-gaza-creating-a-dust-cl-9EMHN72 |
-| C03 | 25.x un char sur la côte | https://elements.envato.com/an-israeli-merkava-mark-iv-barak-tank-moving-slowl-6UEA2FY |
-| C04 | 20.4 nord de la Cisjordanie, Arraba (district de Jénine) | https://elements.envato.com/aerial-view-of-the-outskirts-of-arraba-jenin-in-th-GCCZGPV |
-| C05 | 23.x Bethléem vue large | https://elements.envato.com/bethlehem-palestine-west-bank-israel-general-wide--BDZD6WU |
+| C01 | 25.x Gaza, un immeuble détruit, murs criblés de balles | https://elements.envato.com/camera-reveals-a-destroyed-building-walls-with-bul-SXGWA8C (reçu le 29 octobre) |
+| C02 | 25.7 à 25.11 les offensives, un char Merkava dans Gaza | https://elements.envato.com/an-israeli-merkava-tank-in-gaza-creating-a-dust-cl-9EMHN72 (reçu le 29 octobre) |
+| C03 | 25.x un char sur la côte | https://elements.envato.com/an-israeli-merkava-mark-iv-barak-tank-moving-slowl-6UEA2FY (reçu le 29 octobre : un autre clip, « military tank on sandy coastline ») |
+| C04 | 20.4 nord de la Cisjordanie, Arraba (district de Jénine) | https://elements.envato.com/aerial-view-of-the-outskirts-of-arraba-jenin-in-th-GCCZGPV (reçu le 29 octobre) |
+| C05 | 23.x Bethléem vue large | https://elements.envato.com/bethlehem-palestine-west-bank-israel-general-wide--BDZD6WU (reçu le 29 octobre) |
 
 **Envato, recherches** (prendre 3 ou 4 clips dont le titre dit « Gaza Strip », « Rafah » ou « Khan Younis » ; les plus
 longs ; jamais de corps à l'image)
@@ -179,26 +178,26 @@ compte, en 4K)
 
 | N° | Pour | Lien |
 |---|---|---|
-| D01 | 25.4, 25.5 Gaza, la baie vue par drone | https://stock.adobe.com/765427140 |
-| D02 | 31.x étudiants qui manifestent pour la Palestine, Bristol | https://stock.adobe.com/867937187 |
+| D01 | 25.4, 25.5 Gaza, la baie vue par drone | https://stock.adobe.com/765427140 (reçu le 29 octobre) |
+| D02 | 31.x étudiants qui manifestent pour la Palestine, Bristol | https://stock.adobe.com/867937187 (reçu le 29 octobre) |
 
 **Wikimedia Commons** (le site me bloque ; sur chaque page : « Original file » ou « Télécharger le fichier original »)
 
 | N° | Pour | Page |
 |---|---|---|
-| W01 | 7.x Allenby entre à Jérusalem, 1917 | https://commons.wikimedia.org/wiki/File:General_Allenby%27s_entry_into_Jerusalem_(1917).webm |
-| W02 | 5.x, 6.x La vie des Juifs en Palestine, Hébron, 1913 | https://commons.wikimedia.org/wiki/File:The_Life_of_the_Jews_in_Palestine_-_Hebron_segment_(1913).webm |
-| W03 | 8.x Balfour en Palestine, 1925 | https://commons.wikimedia.org/wiki/File:Visite_de_Lord_Balfour_dans_quelques_colonies_sionistes_-_AI13634.webm |
-| W04 | 25.x une famille de Gaza, 2009 (Al Jazeera, CC BY) | https://commons.wikimedia.org/wiki/File:Aljazeeraasset-GAZA_FAMILY186.ogv |
-| W05 | 25.5 les pêcheurs de Gaza, le blocus (Al Jazeera) | https://commons.wikimedia.org/wiki/File:Al_Jazeera_-_Gaza_Fishing.ogv |
-| W06 | 25.12 bombardement de Gaza, 12 novembre 2018 | https://commons.wikimedia.org/wiki/File:12_November_2018_Israeli_shelling_of_Gaza_buildings.webm |
-| W07 | 25.41 largages d'aide sur Gaza, 2024 (armée américaine) | https://commons.wikimedia.org/wiki/File:U.S._Central_Command_airdrops_food_over_Gaza_-_DOD_110155532.webm |
-| W08 | 25.16, 33.11 Gaza le 14 mai 2018, l'ambassade américaine (VOA) | https://commons.wikimedia.org/wiki/File:Deadly_Protests_in_Gaza_as_US_Opens_Jerusalem_Embassy.webm |
-| W09 | 21.x Camp David, 1978 | https://commons.wikimedia.org/wiki/File:Israeli_Prime_Minister_Begin%27s_remarks_at_the_Camp_David_Agreement,_17_September_1978.webm |
-| W10 | 22.x Camp David, 2000 | https://commons.wikimedia.org/wiki/File:Photo-Op_of_President_Clinton_with_Prime_Minister_Barak_and_Chairman_Arafat_at_Camp_David.webm |
-| W11 | 22.x Oslo, 13 septembre 1993 | https://commons.wikimedia.org/wiki/File:Signing_of_the_Israeli-Palestinian_Declaration_of_Principles.webm |
-| W12 | 36.4 manifestations en Israël, 2023 (2 vidéos) | https://commons.wikimedia.org/wiki/File:AvokaHafganaReforma.webm et https://commons.wikimedia.org/wiki/File:PoliceViolenceReformaProtest.webm |
-| W13 | 38.8 Masafer Yatta, 2023 | https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%A7%D9%81%D8%B1_%D9%8A%D8%B7%D8%A7.webm |
+| W01 | 7.x Allenby entre à Jérusalem, 1917 | https://commons.wikimedia.org/wiki/File:General_Allenby%27s_entry_into_Jerusalem_(1917).webm (reçu le 29 octobre) |
+| W02 | 5.x, 6.x La vie des Juifs en Palestine, Hébron, 1913 | https://commons.wikimedia.org/wiki/File:The_Life_of_the_Jews_in_Palestine_-_Hebron_segment_(1913).webm (reçu le 29 octobre) |
+| W03 | 8.x Balfour en Palestine, 1925 | https://commons.wikimedia.org/wiki/File:Visite_de_Lord_Balfour_dans_quelques_colonies_sionistes_-_AI13634.webm (reçu le 29 octobre) |
+| W04 | 25.x une famille de Gaza, 2009 (Al Jazeera, CC BY) | https://commons.wikimedia.org/wiki/File:Aljazeeraasset-GAZA_FAMILY186.ogv (reçu le 29 octobre) |
+| W05 | 25.5 les pêcheurs de Gaza, le blocus (Al Jazeera) | https://commons.wikimedia.org/wiki/File:Al_Jazeera_-_Gaza_Fishing.ogv (reçu le 29 octobre) |
+| W06 | 25.12 bombardement de Gaza, 12 novembre 2018 | https://commons.wikimedia.org/wiki/File:12_November_2018_Israeli_shelling_of_Gaza_buildings.webm (reçu le 29 octobre) |
+| W07 | 25.41 largages d'aide sur Gaza, 2024 (armée américaine) | https://commons.wikimedia.org/wiki/File:U.S._Central_Command_airdrops_food_over_Gaza_-_DOD_110155532.webm (reçu le 29 octobre : par le site de l'armée américaine, DVIDS) |
+| W08 | 25.16, 33.11 Gaza le 14 mai 2018, l'ambassade américaine (VOA) | https://commons.wikimedia.org/wiki/File:Deadly_Protests_in_Gaza_as_US_Opens_Jerusalem_Embassy.webm (reçu le 29 octobre) |
+| W09 | 21.x Camp David, 1978 | https://commons.wikimedia.org/wiki/File:Israeli_Prime_Minister_Begin%27s_remarks_at_the_Camp_David_Agreement,_17_September_1978.webm (reçu le 29 octobre) |
+| W10 | 22.x Camp David, 2000 | https://commons.wikimedia.org/wiki/File:Photo-Op_of_President_Clinton_with_Prime_Minister_Barak_and_Chairman_Arafat_at_Camp_David.webm (reçu le 29 octobre) |
+| W11 | 22.x Oslo, 13 septembre 1993 | https://commons.wikimedia.org/wiki/File:Signing_of_the_Israeli-Palestinian_Declaration_of_Principles.webm (reçu le 29 octobre) |
+| W12 | 36.4 manifestations en Israël, 2023 (2 vidéos) | https://commons.wikimedia.org/wiki/File:AvokaHafganaReforma.webm et https://commons.wikimedia.org/wiki/File:PoliceViolenceReformaProtest.webm (reçu le 29 octobre) |
+| W13 | 38.8 Masafer Yatta, 2023 | https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%A7%D9%81%D8%B1_%D9%8A%D8%B7%D8%A7.webm (reçu le 29 octobre) |
 
 **Ce que je prends moi-même** (archive.org et le musée de l'Holocauste de Washington, domaine public) : Palestine 1935 à
 1938 (March of Time, rushes cédés sans restriction aux Archives nationales américaines : Tel-Aviv, Haïfa, Jaffa, Nebi

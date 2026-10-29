@@ -119,17 +119,17 @@ Film 00:15:25:20 → 00:19:24:24 · durée 3 min 59.2 s
 > VOIX : silence
 
 
-**8.2** · film **00:15:30:10 → 00:15:40:10** (10.0 s) · **[IA]** `output/reconstitutions/6-08-entree-britanniques-1917.mp4` · source 00:00:00:00 → 00:00:10:00  
-Source : SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 02225, entrée du maréchal Allenby, porte de Jaffa, 11 décembre 1917)  
-À l'écran : carton : output/cartons/jerusalem-1917 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
+**8.2** · film **00:15:30:10 → 00:15:40:10** (10.0 s) · **[ARCH]** `output/archives-filmees/1917-allenby-entre-a-jerusalem.mp4` · source 00:00:00:00 → 00:00:10:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « General Allenby's entry into Jerusalem (1917) », War Office Cinema Committee, domaine public  
+À l'écran : carton : 11 décembre 1917 · Jérusalem · Le général Allenby entre à pied dans la ville.  
 > VOIX : Le 11 décembre 1917, le général Allenby entre à pied dans Jérusalem. / Pour trente ans, la Palestine sera **britannique**.  
 (19 mots, 1.9 par seconde)  
 Son : pas de troupe, foule, cloches lointaines
 
 
-**8.3** · film **00:15:40:10 → 00:15:53:22** (13.5 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-02.mp4` · source 00:00:00:00 → 00:00:13:12  
-Source : SOURCES.md 4.2 (« Paths in Palestine », 1934, NARA 2767364 ; producteur et statut du droit d'auteur non établis)  
-À l'écran : carton : Jérusalem · 1934  
+**8.3** · film **00:15:40:10 → 00:15:53:22** (13.5 s) · **[ARCH]** `output/archives-filmees/1925-balfour-en-palestine.mp4` · source 00:00:00:00 → 00:00:13:12  
+Source : SOURCES.md 4.2, Wikimedia Commons, « Visite de Lord Balfour dans quelques colonies sionistes », Archives de la Planète, musée départemental Albert-Kahn, opérateur Camille Sauvageot, CC BY-SA 4.0  
+À l'écran : carton : 1925 · Palestine mandataire · Lord Balfour en visite dans les colonies sionistes.  
 > VOIX : En 1922, la Société des Nations confie la Palestine à Londres. / Le mandat reprend la promesse Balfour, / et demande de faciliter l'immigration **juive**.  
 (23 mots, 1.7 par seconde)  
 Note : préambule du mandat (texte de la déclaration) et article 6 (immigration, installation sur les terres)
@@ -169,9 +169,9 @@ Source : SOURCES.md 4.2 ; bilan d'août 1929 : commission Shaw, 1930
 (21 mots, 2.1 par seconde)
 
 
-**8.9** · film **00:16:45:00 → 00:16:57:00** (12.0 s) · **[MD]** `output/documents.mp4` · source 00:02:20:00 → 00:02:32:00  
-Source : commission Shaw, 1930 ; 1929 Hebron massacre (Wikipedia, pour les références)  
-À l'écran : Hébron · 24 août 1929 · Le massacre d'Hébron · 67 Juifs tués · des familles cachées chez leurs voisins arabes  
+**8.9** · film **00:16:45:00 → 00:16:57:00** (12.0 s) · **[ARCH]** `output/archives-filmees/1913-hebron-la-communaute-juive.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « The Life of the Jews in Palestine », Hebron segment, Noah Sokolovsky, 1913, domaine public ; commission Shaw, 1930 ; 1929 Hebron massacre (Wikipedia, pour les références)  
+À l'écran : carton : 1913 · Hébron · La communauté juive d'Hébron, seize ans avant le massacre.  
 > VOIX : À Hébron, 67 Juifs sont massacrés, / dans une ville où leur communauté vivait depuis des **siècles**. // Des familles arabes en cachent d'autres chez elles.  
 (24 mots, 2.0 par seconde)  
 Son : silence presque complet, un vent sec  

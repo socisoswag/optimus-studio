@@ -86,9 +86,9 @@ Source : Ghassan Kanafani, tué à Beyrouth le 8 juillet 1972 ; Naji al-Ali, ble
 (33 mots, 2.4 par seconde)
 
 
-**38.8** · film **01:32:36:08 → 01:32:48:08** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:05:36:00 → 00:05:48:00  
-Source : No Other Land (Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor), Oscar du meilleur documentaire, 2 mars 2025  
-À l'écran : fiche : Masafer Yatta · Oscar, 2 mars 2025 · No Other Land  
+**38.8** · film **01:32:36:08 → 01:32:48:08** (12.0 s) · **[ARCH]** `output/plans-reels/masafer-yatta-2023-collines.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « مسافر يطا » (Masafer Yatta), Dania Eid, CC BY-SA 4.0 ; No Other Land (Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor), Oscar du meilleur documentaire, 2 mars 2025  
+À l'écran : carton : 22 février 2023 · Masafer Yatta, Cisjordanie · Les collines où « No Other Land » a été tourné.  
 > VOIX : En 2025, « No Other Land », tourné à Masafer Yatta par des Palestiniens et des Israéliens, / reçoit l'Oscar du meilleur **documentaire**.  
 (20 mots, 1.7 par seconde)
 

@@ -160,12 +160,13 @@ chapitres:
         source: "US Air Force, film 342-ADW-264, octobre 1973 (archives nationales américaines, identifiant 62010), domaine public"
         voix: >-
           Ce soutien se voit en 1973. / Pendant la guerre du Kippour, un pont aérien américain livre chars et munitions jusqu'à l'aéroport de **Lod**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 176
-        sortie: 188
-        ecran: "fiche : Jérusalem · 14 mai 2018 · L'ambassade américaine"
-        source: "reconnaissance de Jérusalem par les États-Unis, 6 décembre 2017 ; ouverture de l'ambassade, 14 mai 2018"
+      - type: ARCH
+        fichier: output/plans-reels/gaza-2018-14-mai-fumees.mp4
+        carton: output/cartons/77-arch-gaza-2018-14-mai-fumees.mov
+        entree: 0
+        sortie: 12
+        ecran: "carton : 14 mai 2018 · Gaza · Le jour où l'ambassade américaine ouvre à Jérusalem."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « Deadly Protests in Gaza as US Opens Jerusalem Embassy », Voice of America, domaine public (logo hors cadre) ; reconnaissance de Jérusalem par les États-Unis, 6 décembre 2017 ; ouverture de l'ambassade, 14 mai 2018"
         voix: >-
           En 2018, Washington installe son ambassade à Jérusalem. / Le même jour, à Gaza, des dizaines de manifestants sont **tués**.
       - type: MD
@@ -451,12 +452,13 @@ chapitres:
         voix: >-
           Yitzhak Rabin est assassiné par Yigal Amir, un étudiant juif religieux, / opposé aux accords d'Oslo. // Pour
           beaucoup, la paix meurt avec **lui**.
-      - type: MD
-        fichier: output/documents-3.mp4
-        entree: 122
-        sortie: 135
-        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
-        source: "manifestations de 2023 contre la réforme judiciaire (jusqu'à des centaines de milliers de personnes, le 26 mars 2023)"
+      - type: ARCH
+        fichier: output/plans-reels/tel-aviv-2023-manifestation-reforme.mp4
+        carton: output/cartons/78-arch-tel-aviv-2023-manifestation-reforme.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : 2023 · Tel-Aviv · Manifestation contre la réforme de la justice."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « AvokaHafganaReforma » et « PoliceViolenceReformaProtest », domaine public (CC0) ; manifestations de 2023 contre la réforme judiciaire (jusqu'à des centaines de milliers de personnes, le 26 mars 2023)"
         voix: >-
           En 2023, des centaines de milliers d'Israéliens manifestent contre la réforme de la justice, / pour défendre,
           disent-ils, leur **démocratie**.

@@ -42,6 +42,11 @@ Trois règles :
 - Film sous licence CC BY-SA :
   - Golda Meir sur le front du Sinaï, 15 octobre 1973 (plans 18.3 et 21.8) : unité du porte-parole de l'armée
     israélienne, via Wikimedia Commons · CC BY-SA 3.0
+  - Lord Balfour en Palestine, 1925 (plan 8.3) : Archives de la Planète, musée départemental Albert-Kahn, opérateur
+    Camille Sauvageot, via Wikimedia Commons · CC BY-SA 4.0
+  - Masafer Yatta, 22 février 2023 (plan 38.8) : Dania Eid, via Wikimedia Commons · CC BY-SA 4.0
+- Film sous licence CC BY :
+  - Gaza, janvier 2009 (plan 25.8) : Al Jazeera, Creative Commons Repository, via Wikimedia Commons · CC BY 3.0
 
 ---
 
@@ -265,6 +270,8 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 279606071 | Le mont Thabor, au bord de la plaine de Jezréel, vue aérienne | Basse-Galilée, Israël | terre | `plaine-de-jezreel-mont-thabor-aerien` |
 | 827361688 | Collines, vignes et arbres de Kfar Etzion (titre d'origine : « paysage rural israélien ») | colonie de Kfar Etzion, Cisjordanie occupée | terre | `cisjordanie-kfar-etzion-collines-vignes` |
 | 547188073 | Des mains sur le tronc d'un olivier | lieu non précisé | terre | `olivier-mains-sur-le-tronc` |
+| 765427140 | Gaza, la baie et la ville vues par drone (D01, en réserve) | Gaza, avant la guerre de 2023 (date de tournage à vérifier sur la fiche) | terre-dure | `adobe-D01-gaza-baie-drone` |
+| 867937187 | Étudiants qui manifestent pour la Palestine (D02, en réserve) | Bristol, Royaume-Uni | terre-dure | `adobe-D02-bristol-etudiants-manifestation` |
 
 ### 4.1 bis Vrais plans tournés sur place (Envato Elements, licence Envato)
 
@@ -306,6 +313,11 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 | hebron-vue-du-ciel | Hébron vue du ciel, Cisjordanie | https://elements.envato.com/aerial-view-of-historic-city-of-hebron-in-west-ban-NEURWV8 |
 | village-palestinien-collines-aerien | un village palestinien des collines, sa mosquée (nom du village non donné par l'auteur du clip) | https://elements.envato.com/aerial-footage-over-palestinian-muslim-village-wit-FRM3DL4 |
 | bulldozer-d9-decombres-lieu-non-precise | un bulldozer blindé D9 de l'armée israélienne dans des décombres (lieu non précisé par l'auteur du clip : ne pas écrire de lieu à l'écran sans vérification) | https://elements.envato.com/israeli-d9r-armoured-bulldozer-makes-roads-and-cle-FHQW67M |
+| envato-C01-immeuble-detruit-murs-cribles | un immeuble détruit, murs criblés de balles (en réserve : lieu et date à vérifier sur la fiche) | https://elements.envato.com/camera-reveals-a-destroyed-building-walls-with-bul-SXGWA8C |
+| envato-C02-char-merkava-gaza-poussiere | un char israélien Merkava dans Gaza, dans la poussière (en réserve : date à vérifier) | https://elements.envato.com/an-israeli-merkava-tank-in-gaza-creating-a-dust-cl-9EMHN72 |
+| envato-C03-char-sur-une-plage | un char sur une route de bord de mer, ruines autour (en réserve : lieu et date à vérifier) | clip « military tank on sandy coastline » envoyé à la place de C03 |
+| envato-C04-arraba-jenine-aerien | Arraba, district de Jénine, nord de la Cisjordanie, vu du ciel (en réserve) | https://elements.envato.com/aerial-view-of-the-outskirts-of-arraba-jenin-in-th-GCCZGPV |
+| envato-C05-bethleem-vue-large | Bethléem, Cisjordanie occupée, vue large (en réserve) | https://elements.envato.com/bethlehem-palestine-west-bank-israel-general-wide--BDZD6WU |
 
 ### 4.2 Archives filmées (domaine public, sauf mention)
 
@@ -340,6 +352,16 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 | 1948-mai-drapeau | Universal Newsreel du 18 mai 1948, « Jews Defend New Zion State », autre passage : deux soldats tiennent le drapeau du nouvel État (ce n'est pas la proclamation elle-même) | Universal-International News, 1948 (même règle que les autres actualités Universal) | USHMM irn1000897, d'après NARA 200 UN 21-144-1 | https://collections.ushmm.org/search/catalog/irn1000897 |
 | 1948-familles-arabes-qui-partent, 1948-haganah-fouilles-et-arrestations | « Hagana Troops », rushes Universal de 1948 (date exacte non établie ; Jérusalem et Haïfa selon la notice) : des familles arabes avec leurs ballots, des femmes qui partent, des hommes emmenés en camion, fouillés, arrêtés et assis au sol ; les plans de corps de la fin du film sont écartés | Universal, 1948 ; USHMM : « Public Domain » | NARA 200 UN 5894x3 ; USHMM film 929, RG-60.1026 | https://collections.ushmm.org/search/catalog/irn1000361 |
 | 1945-ben-gourion-conference-londres | rushes de la March of Time : la première conférence sioniste mondiale d'après-guerre, à Londres ; la salle, puis David Ben Gourion qui parle (son non utilisé) | March of Time, 13 août 1945 ; USHMM : « Public Domain » | USHMM film 2732, RG-60.4086 | https://collections.ushmm.org/search/catalog/irn1003498 |
+| 1913-hebron-la-communaute-juive | « The Life of the Jews in Palestine », segment d'Hébron (muet) : la ville, puis des Juifs d'Hébron sur des marches | Noah Sokolovsky, 1913 · domaine public ; copie restaurée du CNC, recadrée à droite de son logo | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:The_Life_of_the_Jews_in_Palestine_-_Hebron_segment_(1913).webm |
+| 1917-allenby-entre-a-jerusalem | « General Allenby's entry into Jerusalem » (muet) : Allenby et son état-major entrent à pied par la porte de Jaffa, 11 décembre 1917 | War Office Cinema Committee, 1917 · domaine public | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:General_Allenby%27s_entry_into_Jerusalem_(1917).webm |
+| 1925-balfour-en-palestine | « Visite de Lord Balfour dans quelques colonies sionistes » (muet) : la foule et les drapeaux, Balfour à la tribune, le cortège sous une arche à l'étoile de David | Archives de la Planète, musée départemental Albert-Kahn, opérateur Camille Sauvageot, 1925 · **CC BY-SA 4.0, crédit obligatoire** (section 1) | Wikimedia Commons, AI13634 | https://commons.wikimedia.org/wiki/File:Visite_de_Lord_Balfour_dans_quelques_colonies_sionistes_-_AI13634.webm |
+| 1978-camp-david-sadate-carter-begin | Maison Blanche, 17 septembre 1978 : Sadate, Carter et Begin à la table, après la signature des accords de Camp David | gouvernement américain · domaine public | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Israeli_Prime_Minister_Begin%27s_remarks_at_the_Camp_David_Agreement,_17_September_1978.webm |
+| 1993-oslo-poignee-de-main | Maison Blanche, 13 septembre 1993 : la poignée de main entre Yitzhak Rabin et Yasser Arafat, Bill Clinton entre eux | Maison Blanche · domaine public (licence à relire sur la page Commons quand l'accès revient) | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Signing_of_the_Israeli-Palestinian_Declaration_of_Principles.webm |
+| 2000-camp-david-barak-clinton-arafat | Camp David, 11 juillet 2000 : Barak, Clinton et Arafat marchent puis posent à l'ouverture du sommet | bibliothèque présidentielle William J. Clinton (« Courtesy », carton d'origine) · domaine public | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Photo-Op_of_President_Clinton_with_Prime_Minister_Barak_and_Chairman_Arafat_at_Camp_David.webm |
+| gaza-2009-rue-plomb-durci (output/plans-reels) | une rue de Gaza et un immeuble détruit, janvier 2009, pendant « Plomb durci » | Al Jazeera, Creative Commons Repository · **CC BY 3.0, crédit obligatoire** (section 1) ; recadré sans les logos | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Aljazeeraasset-GAZA_FAMILY186.ogv |
+| gaza-2018-marche-du-retour, gaza-2018-14-mai-fumees (output/plans-reels) | Gaza, 14 mai 2018, le jour de l'ouverture de l'ambassade américaine à Jérusalem : la foule et les drapeaux près de la clôture, les fumées et les gaz lacrymogènes (images seules, sans la journaliste ni les blessés) | Voice of America · domaine public ; recadré sans le logo | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Deadly_Protests_in_Gaza_as_US_Opens_Jerusalem_Embassy.webm |
+| tel-aviv-2023-manifestation-reforme (output/plans-reels) | Tel-Aviv, 2023 : manifestations contre la réforme de la justice, de nuit (fumigènes, drapeaux) puis de jour (tour Azrieli) | auteurs israéliens, dédiés au domaine public (CC0) | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:AvokaHafganaReforma.webm ; https://commons.wikimedia.org/wiki/File:PoliceViolenceReformaProtest.webm |
+| masafer-yatta-2023-collines (output/plans-reels) | Masafer Yatta, sud de la Cisjordanie occupée, 22 février 2023 : les collines, puis un village | Dania Eid · **CC BY-SA 4.0, crédit obligatoire** (section 1) | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%A7%D9%81%D8%B1_%D9%8A%D8%B7%D8%A7.webm |
 
 Retiré : « Jérusalem, 1918 » (archive.org jerusalem-1918). Vérification du 21 octobre 2026 : images amateurs retrouvées dans une famille à Amsterdam, montées par Yaakov Gross (musique de Nahum Heiman) ; aucune autorisation générale de réutilisation établie. Le plan 10.4 passe en reconstitution d'après une photo de la Bibliothèque du Congrès. Le 23 octobre 2026, il reprend un vrai film : celui de la famille Levy (1933, Prelinger Archives, domaine public) ; la reconstitution passe en réserve du chapitre 10.
 

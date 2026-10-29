@@ -227,11 +227,13 @@ chapitres:
         source: "SOURCES.md 4.1, Adobe Stock 502632607 (film amateur d'époque, couleurs d'origine)"
         ecran: "carton : Cisjordanie · 1967 · film amateur"
         son: "vent, cliquetis d'une tôle ; pas de voix"
-      - type: MD
-        fichier: output/chronologie.mp4
-        entree: 54.8
-        sortie: 59.6
-        ecran: "fiche de la chronologie : Camp David"
+      - type: ARCH
+        fichier: output/archives-filmees/1978-camp-david-sadate-carter-begin.mp4
+        carton: output/cartons/72-arch-1978-camp-david-sadate-carter-begin.mov
+        entree: 0
+        sortie: 4.8
+        ecran: "carton : 17 septembre 1978 · Maison Blanche, Washington · Sadate, Carter et Begin après la signature des accords de Camp David."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « Israeli Prime Minister Begin's remarks at the Camp David Agreement, 17 September 1978 », gouvernement américain, domaine public"
         voix: >-
           1978, Camp David : / l'Égypte fait la **paix**.
       - type: RÉEL
@@ -570,12 +572,13 @@ chapitres:
         source: "Hamas, document de principes et de politiques générales, Doha, 1er mai 2017 (articles 16 et 20)"
         voix: >-
           Ce texte de 2017 accepte aussi un État palestinien dans les frontières de 1967, / « une formule de consensus national », / sans reconnaître **Israël**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 215
-        sortie: 228
-        ecran: "fiche : Camp David · juillet 2000 · Camp David 2000"
-        source: "sommet de Camp David, 11-25 juillet 2000 ; négociations de Taba, janvier 2001"
+      - type: ARCH
+        fichier: output/archives-filmees/2000-camp-david-barak-clinton-arafat.mp4
+        carton: output/cartons/73-arch-2000-camp-david-barak-clinton-arafat.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : 11 juillet 2000 · Camp David, États-Unis · Barak, Clinton et Arafat à l'ouverture du sommet."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « Photo-Op of President Clinton with Prime Minister Barak and Chairman Arafat at Camp David », bibliothèque présidentielle Clinton, domaine public ; sommet de Camp David, 11-25 juillet 2000 ; négociations de Taba, janvier 2001"
         voix: >-
           En juillet 2000, à Camp David, Barak et Arafat se séparent sans accord. / Pour Israël, Arafat a refusé une offre généreuse ; / pour les Palestiniens, l'offre était un territoire **morcelé**.
       - type: RÉEL
@@ -613,11 +616,13 @@ chapitres:
         fichier: output/chapitres/chapitre-23.mp4
         entree: 0
         sortie: 4.6
-      - type: MD
-        fichier: output/chronologie.mp4
-        entree: 64
-        sortie: 68.8
-        ecran: "fiche de la chronologie : Oslo · carton : output/cartons/washington-1993"
+      - type: ARCH
+        fichier: output/archives-filmees/1993-oslo-poignee-de-main.mp4
+        carton: output/cartons/74-arch-1993-oslo-poignee-de-main.mov
+        entree: 0
+        sortie: 4.8
+        ecran: "carton : 13 septembre 1993 · Maison Blanche, Washington · Rabin et Arafat se serrent la main."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « Signing of the Israeli-Palestinian Declaration of Principles », Maison Blanche, domaine public"
         voix: >-
           Septembre 1993, à Washington : / la poignée de **main**.
       - type: MD

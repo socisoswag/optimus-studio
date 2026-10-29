@@ -125,9 +125,9 @@ Source : B'Tselem, 9 septembre 2009 (1 387 tués, dont 320 mineurs) ; Centre pal
 (17 mots, 1.7 par seconde)
 
 
-**25.8** · film **00:58:34:24 → 00:58:48:24** (14.0 s) · **[MD]** `output/gaza-guerres.mp4` · source 00:00:16:00 → 00:00:30:00  
-Source : mission d'enquête de l'ONU sur le conflit de Gaza, rapport A/HRC/12/48, septembre 2009 ; R. Goldstone, The Washington Post, avril 2011 ; déclaration de H. Jilani, C. Chinkin et D. Travers, 14 avril 2011  
-À l'écran : fiche : Genève · septembre 2009 · Le rapport Goldstone  
+**25.8** · film **00:58:34:24 → 00:58:48:24** (14.0 s) · **[ARCH]** `output/plans-reels/gaza-2009-rue-plomb-durci.mp4` · source 00:00:00:00 → 00:00:14:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « Aljazeeraasset-GAZA FAMILY186 », Al Jazeera, CC BY 3.0 (logos hors cadre) ; mission d'enquête de l'ONU sur le conflit de Gaza, rapport A/HRC/12/48, septembre 2009 ; R. Goldstone, The Washington Post, avril 2011 ; déclaration de H. Jilani, C. Chinkin et D. Travers, 14 avril 2011  
+À l'écran : carton : Janvier 2009 · Gaza · Une rue pendant l'offensive « Plomb durci ».  
 > VOIX : En 2009, une mission de l'ONU, menée par le juge Richard Goldstone, / y voit des crimes de guerre, des deux côtés. // Deux ans plus tard, Goldstone revient sur un point. / Ses trois coauteurs, eux, maintiennent le **rapport**.  
 (37 mots, 2.6 par seconde)  
 Note : le point retiré par Goldstone : une politique visant délibérément les civils ; ne pas dire qu'il a renié le rapport
@@ -182,9 +182,9 @@ Source : échange de Gilad Shalit, 18 octobre 2011 : 1 027 prisonniers palestini
 (35 mots, 2.7 par seconde)
 
 
-**25.16** · film **01:00:09:24 → 01:00:22:24** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:20:00 → 00:01:33:00  
-Source : commission d'enquête de l'ONU sur les manifestations de 2018 à Gaza, février 2019 : 189 Palestiniens tués du 30 mars au 31 décembre 2018  
-À l'écran : fiche : Gaza · 2018-2019 · La grande marche du retour  
+**25.16** · film **01:00:09:24 → 01:00:22:24** (13.0 s) · **[ARCH]** `output/plans-reels/gaza-2018-marche-du-retour.mp4` · source 00:00:00:00 → 00:00:13:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « Deadly Protests in Gaza as US Opens Jerusalem Embassy », Voice of America, domaine public (logo hors cadre) ; commission d'enquête de l'ONU sur les manifestations de 2018 à Gaza, février 2019 : 189 Palestiniens tués du 30 mars au 31 décembre 2018  
+À l'écran : carton : 14 mai 2018 · Gaza, près de la clôture · La grande marche du retour.  
 > VOIX : En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.  
 (24 mots, 1.8 par seconde)
 

@@ -444,3 +444,26 @@ américaines et le musée américain de l'Holocauste ; aucun corps à l'image ; 
 
 Corrigé d'après le dossier Perplexity : les rushes de Tel-Aviv sont de 1938 (pas 1936) ; « Hagana Troops » n'a pas de date
 exacte ni un seul lieu, la légende dit donc « 1948 · Palestine ».
+
+**Archives de Wikimedia Commons posées** (envoyées par l'auteur, Wikimedia refusant les téléchargements depuis le serveur ;
+légendes 69 à 79 dans `cartons/` ; aucun corps ni blessé à l'image ; logos d'Al Jazeera, de Voice of America et du CNC
+hors cadre ; mêmes durées qu'avant, la voix ne bouge pas)
+
+| Plan | Ancien fichier | Nouveau fichier | Ce que c'est |
+|---|---|---|---|
+| 08.02 | `08.02-IA-6-08-entree-britanniques-1917.mp4` | `08.02-ARCH-1917-allenby-entre-a-jerusalem.mp4` | le vrai film de l'entrée d'Allenby à Jérusalem, 11 décembre 1917 ; la reconstitution passe en réserve du chapitre 8 |
+| 08.03 | `08.03-ARCH-1930-paths-to-palestine-02.mp4` | `08.03-ARCH-1925-balfour-en-palestine.mp4` | Lord Balfour en Palestine, 1925 (CC BY-SA 4.0) ; « Paths in Palestine », aux droits non établis, passe en réserve |
+| 08.09 | `08.09-MD-documents.mp4` | `08.09-ARCH-1913-hebron-la-communaute-juive.mp4` | la communauté juive d'Hébron en 1913 |
+| 19.31 | `19.31-MD-chronologie.mp4` | `19.31-ARCH-1978-camp-david-sadate-carter-begin.mp4` | Sadate, Carter et Begin, 17 septembre 1978 |
+| 22.09 | `22.09-MD-documents-6.mp4` | `22.09-ARCH-2000-camp-david-barak-clinton-arafat.mp4` | Barak, Clinton et Arafat à Camp David, 11 juillet 2000 |
+| 23.02 | `23.02-MD-chronologie.mp4` | `23.02-ARCH-1993-oslo-poignee-de-main.mp4` | la poignée de main entre Rabin et Arafat, 13 septembre 1993 |
+| 25.08 | `25.08-MD-gaza-guerres.mp4` | `25.08-ARCH-gaza-2009-rue-plomb-durci.mp4` | une rue de Gaza pendant « Plomb durci », janvier 2009 (Al Jazeera, CC BY 3.0) |
+| 25.16 | `25.16-MD-documents-6.mp4` | `25.16-ARCH-gaza-2018-marche-du-retour.mp4` | la grande marche du retour, Gaza, 14 mai 2018 |
+| 33.11 | `33.11-MD-documents-6.mp4` | `33.11-ARCH-gaza-2018-14-mai-fumees.mp4` | Gaza le jour de l'ouverture de l'ambassade américaine à Jérusalem, 14 mai 2018 |
+| 36.04 | `36.04-MD-documents-3.mp4` | `36.04-ARCH-tel-aviv-2023-manifestation-reforme.mp4` | les manifestations contre la réforme de la justice, Tel-Aviv, 2023 |
+| 38.08 | `38.08-MD-documents-6.mp4` | `38.08-ARCH-masafer-yatta-2023-collines.mp4` | les collines de Masafer Yatta, 22 février 2023 (Dania Eid, CC BY-SA 4.0) |
+
+Pas posés : le bombardement de Gaza du 12 novembre 2018 (de nuit, presque noir), les pêcheurs de Gaza de 2009
+(400 x 226, trop petit), la manifestation de Dublin de 2014 et la route 60 (gardées en réserve). En réserve aussi, reçus
+le même jour : Envato C01 à C05 (un immeuble détruit, deux chars, Arraba, Bethléem ; lieux et dates à vérifier sur les
+fiches avant de les poser) et Adobe Stock D01 (Gaza vue par drone) et D02 (étudiants à Bristol).

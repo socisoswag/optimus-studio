@@ -188,6 +188,31 @@ ARCHIVES = {
                                             [(100.0, 104.5), (240.0, 251.0)], {"decimer": True}),
     "1956-suez-flotte-et-avions": ("1956-11-01_War_in_Egypt", "1956-11-01_War_in_Egypt.mpeg", "696:458:10:10",
                                    [(57.2, 60.0), (66.2, 67.6), (68.2, 70.6), (74.2, 76.6), (78.2, 80.6)]),
+    # Wikimedia Commons, copies envoyées par l'auteur (Wikimedia refuse les téléchargements depuis le serveur) :
+    # « The Life of the Jews in Palestine », Noah Sokolovsky, 1913, domaine public ; Hébron, la ville puis des Juifs
+    # d'Hébron sur des marches (recadré à droite du logo CNC/IFA, en bas à gauche)
+    "1913-hebron-la-communaute-juive": ("https://upload.wikimedia.org/wikipedia/commons/d/da/The_Life_of_the_Jews_in_Palestine_-_Hebron_segment_%281913%29.webm",
+                                        "", "376:282:96:0", [(13.0, 18.0), (95.0, 102.0)],
+                                        {"stab": True, "pre": "curves=all='0/0.06 0.25/0.36 0.6/0.74 1/0.97'"}),
+    # l'entrée du général Allenby à Jérusalem, 11 décembre 1917 (War Office Cinema Committee, domaine public) :
+    # Allenby et son état-major à pied, devant la porte de Jaffa
+    "1917-allenby-entre-a-jerusalem": ("https://upload.wikimedia.org/wikipedia/commons/b/b6/General_Allenby%27s_entry_into_Jerusalem_%281917%29.webm",
+                                       "", "584:480:14:0", [(94.0, 104.0)], {"stab": True}),
+    # Lord Balfour en Palestine, mars 1925 (Archives de la Planète, musée départemental Albert-Kahn, opérateur Camille
+    # Sauvageot, CC BY-SA 4.0) : la foule et les drapeaux, Balfour à la tribune, le cortège sous l'arche à l'étoile
+    "1925-balfour-en-palestine": ("https://upload.wikimedia.org/wikipedia/commons/b/bd/Visite_de_Lord_Balfour_dans_quelques_colonies_sionistes_-_AI13634.webm",
+                                  "", "698:574:12:2", [(284.0, 289.0), (322.2, 327.7), (432.5, 435.5)]),
+    # Maison Blanche, 17 septembre 1978, après la signature des accords de Camp David : Sadate, Carter, Begin
+    # (bibliothèque Carter, Archives nationales américaines, domaine public)
+    "1978-camp-david-sadate-carter-begin": ("https://upload.wikimedia.org/wikipedia/commons/8/80/Israeli_Prime_Minister_Begin%27s_remarks_at_the_Camp_David_Agreement%2C_17_September_1978.webm",
+                                            "", "654:368:0:30", [(103.0, 108.0)]),
+    # Maison Blanche, 13 septembre 1993 : la poignée de main entre Rabin et Arafat, Clinton entre eux
+    # (bibliothèque Clinton, domaine public)
+    "1993-oslo-poignee-de-main": ("https://upload.wikimedia.org/wikipedia/commons/b/b3/Signing_of_the_Israeli-Palestinian_Declaration_of_Principles.webm",
+                                  "", "448:252:60:20", [(2224.2, 2229.0)]),
+    # Camp David, 11 juillet 2000 : Barak, Clinton et Arafat à l'ouverture du sommet (bibliothèque Clinton, domaine public)
+    "2000-camp-david-barak-clinton-arafat": ("https://upload.wikimedia.org/wikipedia/commons/3/32/Photo-Op_of_President_Clinton_with_Prime_Minister_Barak_and_Chairman_Arafat_at_Camp_David.webm",
+                                             "", "654:368:0:40", [(54.5, 67.5)]),
 }
 
 

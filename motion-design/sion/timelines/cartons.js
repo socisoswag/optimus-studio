@@ -79,6 +79,17 @@
     ["arch-1948-familles-arabes-qui-partent", "1948", "Palestine", "Des familles arabes avec leurs ballots."],
     ["arch-1948-haganah-fouilles-et-arrestations", "1948", "Palestine", "Des soldats de la Haganah fouillent et arrêtent des hommes."],
     ["arch-1945-ben-gourion-conference-londres", "Août 1945", "Londres", "David Ben Gourion devant la conférence sioniste mondiale."],
+    ["arch-1917-allenby-entre-a-jerusalem", "11 décembre 1917", "Jérusalem", "Le général Allenby entre à pied dans la ville."],
+    ["arch-1925-balfour-en-palestine", "1925", "Palestine mandataire", "Lord Balfour en visite dans les colonies sionistes."],
+    ["arch-1913-hebron-la-communaute-juive", "1913", "Hébron", "La communauté juive d’Hébron, seize ans avant le massacre."],
+    ["arch-1978-camp-david-sadate-carter-begin", "17 septembre 1978", "Maison Blanche, Washington", "Sadate, Carter et Begin après la signature des accords de Camp David."],
+    ["arch-2000-camp-david-barak-clinton-arafat", "11 juillet 2000", "Camp David, États-Unis", "Barak, Clinton et Arafat à l’ouverture du sommet."],
+    ["arch-1993-oslo-poignee-de-main", "13 septembre 1993", "Maison Blanche, Washington", "Rabin et Arafat se serrent la main."],
+    ["arch-gaza-2009-rue-plomb-durci", "Janvier 2009", "Gaza", "Une rue pendant l’offensive « Plomb durci »."],
+    ["arch-gaza-2018-marche-du-retour", "14 mai 2018", "Gaza, près de la clôture", "La grande marche du retour."],
+    ["arch-gaza-2018-14-mai-fumees", "14 mai 2018", "Gaza", "Le jour où l’ambassade américaine ouvre à Jérusalem."],
+    ["arch-tel-aviv-2023-manifestation-reforme", "2023", "Tel-Aviv", "Manifestation contre la réforme de la justice."],
+    ["arch-masafer-yatta-2023-collines", "22 février 2023", "Masafer Yatta, Cisjordanie", "Les collines où « No Other Land » a été tourné."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

@@ -128,9 +128,9 @@ Source : US Air Force, film 342-ADW-264, octobre 1973 (archives nationales amér
 (23 mots, 1.4 par seconde)
 
 
-**33.11** · film **01:23:02:01 → 01:23:14:01** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:02:56:00 → 00:03:08:00  
-Source : reconnaissance de Jérusalem par les États-Unis, 6 décembre 2017 ; ouverture de l'ambassade, 14 mai 2018  
-À l'écran : fiche : Jérusalem · 14 mai 2018 · L'ambassade américaine  
+**33.11** · film **01:23:02:01 → 01:23:14:01** (12.0 s) · **[ARCH]** `output/plans-reels/gaza-2018-14-mai-fumees.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « Deadly Protests in Gaza as US Opens Jerusalem Embassy », Voice of America, domaine public (logo hors cadre) ; reconnaissance de Jérusalem par les États-Unis, 6 décembre 2017 ; ouverture de l'ambassade, 14 mai 2018  
+À l'écran : carton : 14 mai 2018 · Gaza · Le jour où l'ambassade américaine ouvre à Jérusalem.  
 > VOIX : En 2018, Washington installe son ambassade à Jérusalem. / Le même jour, à Gaza, des dizaines de manifestants sont **tués**.  
 (19 mots, 1.6 par seconde)
 
@@ -375,9 +375,9 @@ Source : assassinat d'Yitzhak Rabin par Yigal Amir, Tel-Aviv, 4 novembre 1995
 (22 mots, 1.7 par seconde)
 
 
-**36.4** · film **01:30:02:14 → 01:30:15:14** (13.0 s) · **[MD]** `output/documents-3.mp4` · source 00:02:02:00 → 00:02:15:00  
-Source : manifestations de 2023 contre la réforme judiciaire (jusqu'à des centaines de milliers de personnes, le 26 mars 2023)  
-À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
+**36.4** · film **01:30:02:14 → 01:30:15:14** (13.0 s) · **[ARCH]** `output/plans-reels/tel-aviv-2023-manifestation-reforme.mp4` · source 00:00:00:00 → 00:00:13:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « AvokaHafganaReforma » et « PoliceViolenceReformaProtest », domaine public (CC0) ; manifestations de 2023 contre la réforme judiciaire (jusqu'à des centaines de milliers de personnes, le 26 mars 2023)  
+À l'écran : carton : 2023 · Tel-Aviv · Manifestation contre la réforme de la justice.  
 > VOIX : En 2023, des centaines de milliers d'Israéliens manifestent contre la réforme de la justice, / pour défendre, disent-ils, leur **démocratie**.  
 (19 mots, 1.5 par seconde)
 

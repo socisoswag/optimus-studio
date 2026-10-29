@@ -150,12 +150,13 @@ chapitres:
         source: "B'Tselem, 9 septembre 2009 (1 387 tués, dont 320 mineurs) ; Centre palestinien pour les droits de l'homme (PCHR), décembre 2011 (1 419 tués, dont 1 167 civils) ; 13 Israéliens tués"
         voix: >-
           Fin 2008, « Plomb durci » : / en trois semaines, environ 1 400 Palestiniens sont tués. / Côté israélien, 13 **morts**.
-      - type: MD
-        fichier: output/gaza-guerres.mp4
-        entree: 16
-        sortie: 30
-        ecran: "fiche : Genève · septembre 2009 · Le rapport Goldstone"
-        source: "mission d'enquête de l'ONU sur le conflit de Gaza, rapport A/HRC/12/48, septembre 2009 ; R. Goldstone, The Washington Post, avril 2011 ; déclaration de H. Jilani, C. Chinkin et D. Travers, 14 avril 2011"
+      - type: ARCH
+        fichier: output/plans-reels/gaza-2009-rue-plomb-durci.mp4
+        carton: output/cartons/75-arch-gaza-2009-rue-plomb-durci.mov
+        entree: 0
+        sortie: 14
+        ecran: "carton : Janvier 2009 · Gaza · Une rue pendant l'offensive « Plomb durci »."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « Aljazeeraasset-GAZA FAMILY186 », Al Jazeera, CC BY 3.0 (logos hors cadre) ; mission d'enquête de l'ONU sur le conflit de Gaza, rapport A/HRC/12/48, septembre 2009 ; R. Goldstone, The Washington Post, avril 2011 ; déclaration de H. Jilani, C. Chinkin et D. Travers, 14 avril 2011"
         voix: >-
           En 2009, une mission de l'ONU, menée par le juge Richard Goldstone, / y voit des crimes de guerre, des deux côtés. // Deux ans plus tard, Goldstone revient sur un point. / Ses trois coauteurs, eux, maintiennent le **rapport**.
         note: "le point retiré par Goldstone : une politique visant délibérément les civils ; ne pas dire qu'il a renié le rapport"
@@ -215,12 +216,13 @@ chapitres:
         source: "échange de Gilad Shalit, 18 octobre 2011 : 1 027 prisonniers palestiniens libérés, dont Yahya Sinwar"
         voix: >-
           En 2011, Israël échange le soldat Gilad Shalit, otage depuis cinq ans, contre 1 027 prisonniers palestiniens. / Parmi eux, Yahya Sinwar : / il dirigera le Hamas à Gaza, et sera tenu pour l'architecte du 7 **octobre**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 80
-        sortie: 93
-        ecran: "fiche : Gaza · 2018-2019 · La grande marche du retour"
-        source: "commission d'enquête de l'ONU sur les manifestations de 2018 à Gaza, février 2019 : 189 Palestiniens tués du 30 mars au 31 décembre 2018"
+      - type: ARCH
+        fichier: output/plans-reels/gaza-2018-marche-du-retour.mp4
+        carton: output/cartons/76-arch-gaza-2018-marche-du-retour.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : 14 mai 2018 · Gaza, près de la clôture · La grande marche du retour."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « Deadly Protests in Gaza as US Opens Jerusalem Embassy », Voice of America, domaine public (logo hors cadre) ; commission d'enquête de l'ONU sur les manifestations de 2018 à Gaza, février 2019 : 189 Palestiniens tués du 30 mars au 31 décembre 2018"
         voix: >-
           En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
       - type: MD

@@ -187,8 +187,9 @@ Source : SOURCES.md 4.1, Adobe Stock 502632607 (film amateur d'époque, couleurs
 Son : vent, cliquetis d'une tôle ; pas de voix
 
 
-**19.31** · film **00:43:10:17 → 00:43:15:12** (4.8 s) · **[MD]** `output/chronologie.mp4` · source 00:00:54:20 → 00:00:59:15  
-À l'écran : fiche de la chronologie : Camp David  
+**19.31** · film **00:43:10:17 → 00:43:15:12** (4.8 s) · **[ARCH]** `output/archives-filmees/1978-camp-david-sadate-carter-begin.mp4` · source 00:00:00:00 → 00:00:04:20  
+Source : SOURCES.md 4.2, Wikimedia Commons, « Israeli Prime Minister Begin's remarks at the Camp David Agreement, 17 September 1978 », gouvernement américain, domaine public  
+À l'écran : carton : 17 septembre 1978 · Maison Blanche, Washington · Sadate, Carter et Begin après la signature des accords de Camp David.  
 > VOIX : 1978, Camp David : / l'Égypte fait la **paix**.  
 (7 mots, 1.5 par seconde)
 
@@ -467,9 +468,9 @@ Source : Hamas, document de principes et de politiques générales, Doha, 1er ma
 (22 mots, 1.8 par seconde)
 
 
-**22.9** · film **00:50:43:17 → 00:50:56:17** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:03:35:00 → 00:03:48:00  
-Source : sommet de Camp David, 11-25 juillet 2000 ; négociations de Taba, janvier 2001  
-À l'écran : fiche : Camp David · juillet 2000 · Camp David 2000  
+**22.9** · film **00:50:43:17 → 00:50:56:17** (13.0 s) · **[ARCH]** `output/archives-filmees/2000-camp-david-barak-clinton-arafat.mp4` · source 00:00:00:00 → 00:00:13:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « Photo-Op of President Clinton with Prime Minister Barak and Chairman Arafat at Camp David », bibliothèque présidentielle Clinton, domaine public ; sommet de Camp David, 11-25 juillet 2000 ; négociations de Taba, janvier 2001  
+À l'écran : carton : 11 juillet 2000 · Camp David, États-Unis · Barak, Clinton et Arafat à l'ouverture du sommet.  
 > VOIX : En juillet 2000, à Camp David, Barak et Arafat se séparent sans accord. / Pour Israël, Arafat a refusé une offre généreuse ; / pour les Palestiniens, l'offre était un territoire **morcelé**.  
 (29 mots, 2.2 par seconde)
 
@@ -503,8 +504,9 @@ Film 00:51:29:01 → 00:55:43:19 · durée 4 min 14.7 s
 > VOIX : silence
 
 
-**23.2** · film **00:51:33:16 → 00:51:38:11** (4.8 s) · **[MD]** `output/chronologie.mp4` · source 00:01:04:00 → 00:01:08:20  
-À l'écran : fiche de la chronologie : Oslo · carton : output/cartons/washington-1993  
+**23.2** · film **00:51:33:16 → 00:51:38:11** (4.8 s) · **[ARCH]** `output/archives-filmees/1993-oslo-poignee-de-main.mp4` · source 00:00:00:00 → 00:00:04:20  
+Source : SOURCES.md 4.2, Wikimedia Commons, « Signing of the Israeli-Palestinian Declaration of Principles », Maison Blanche, domaine public  
+À l'écran : carton : 13 septembre 1993 · Maison Blanche, Washington · Rabin et Arafat se serrent la main.  
 > VOIX : Septembre 1993, à Washington : / la poignée de **main**.  
 (8 mots, 1.7 par seconde)
 

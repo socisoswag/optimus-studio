@@ -151,6 +151,12 @@ chapitres:
       - fichier: output/reconstitutions/13-21-maison-dynamitee-lydda-1936.mp4
         type: IA
         note: "1936 · Lydda · Maison dynamitée par l'armée britannique · Photo d'archive animée par IA (avant au plan 8.17, remplacée par le vrai convoi de 1938 ; à reprendre si tu la préfères)"
+      - fichier: output/reconstitutions/6-08-entree-britanniques-1917.mp4
+        type: IA
+        note: "11 décembre 1917 · Jérusalem · L'entrée des Britanniques, reconstitution par IA (avant au plan 8.2, remplacée le 29 octobre par le vrai film de l'entrée d'Allenby)"
+      - fichier: output/archives-filmees/1930-paths-to-palestine-02.mp4
+        type: ARCH
+        note: "Jérusalem · 1934 (« Paths to Palestine », droits à vérifier selon le catalogue Perplexity ; avant au plan 8.3, remplacé le 29 octobre par Balfour en 1925, sous licence libre)"
     intention: >-
       Trente ans en trois minutes. Un pouvoir étranger qui refuse un gouvernement élu (la majorité aurait dit non),
       les violences de 1920, 1921 et 1929 avec leurs morts juifs et arabes, Hébron, la révolte de 1936 et sa
@@ -162,23 +168,24 @@ chapitres:
         fichier: output/chapitres/chapitre-08.mp4
         entree: 0
         sortie: 4.6
-      - type: IA
-        fichier: output/reconstitutions/6-08-entree-britanniques-1917.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1917-allenby-entre-a-jerusalem.mp4
+        carton: output/cartons/69-arch-1917-allenby-entre-a-jerusalem.mov
         entree: 0
         sortie: 10
-        source: "SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 02225, entrée du maréchal Allenby, porte de Jaffa, 11 décembre 1917)"
-        ecran: "carton : output/cartons/jerusalem-1917 · mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
+        ecran: "carton : 11 décembre 1917 · Jérusalem · Le général Allenby entre à pied dans la ville."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « General Allenby's entry into Jerusalem (1917) », War Office Cinema Committee, domaine public"
         voix: >-
           Le 11 décembre 1917, le général Allenby entre à pied dans Jérusalem. / Pour trente ans, la Palestine sera
           **britannique**.
         son: "pas de troupe, foule, cloches lointaines"
       - type: ARCH
-        fichier: output/archives-filmees/1930-paths-to-palestine-02.mp4
-        carton: output/cartons/31-arch-1930-paths-to-palestine-02.mov
+        fichier: output/archives-filmees/1925-balfour-en-palestine.mp4
+        carton: output/cartons/70-arch-1925-balfour-en-palestine.mov
         entree: 0
         sortie: 13.48
-        source: "SOURCES.md 4.2 (« Paths in Palestine », 1934, NARA 2767364 ; producteur et statut du droit d'auteur non établis)"
-        ecran: "carton : Jérusalem · 1934"
+        ecran: "carton : 1925 · Palestine mandataire · Lord Balfour en visite dans les colonies sionistes."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « Visite de Lord Balfour dans quelques colonies sionistes », Archives de la Planète, musée départemental Albert-Kahn, opérateur Camille Sauvageot, CC BY-SA 4.0"
         voix: >-
           En 1922, la Société des Nations confie la Palestine à Londres. / Le mandat reprend la promesse Balfour, /
           et demande de faciliter l'immigration **juive**.
@@ -231,12 +238,13 @@ chapitres:
         voix: >-
           Août 1929. / Une querelle autour du mur des Lamentations. / Des émeutiers arabes tuent 133 **Juifs**. / La
           police britannique tue 116 Arabes.
-      - type: MD
-        fichier: output/documents.mp4
-        entree: 140
-        sortie: 152
-        source: "commission Shaw, 1930 ; 1929 Hebron massacre (Wikipedia, pour les références)"
-        ecran: "Hébron · 24 août 1929 · Le massacre d'Hébron · 67 Juifs tués · des familles cachées chez leurs voisins arabes"
+      - type: ARCH
+        fichier: output/archives-filmees/1913-hebron-la-communaute-juive.mp4
+        carton: output/cartons/71-arch-1913-hebron-la-communaute-juive.mov
+        entree: 0
+        sortie: 12
+        ecran: "carton : 1913 · Hébron · La communauté juive d'Hébron, seize ans avant le massacre."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « The Life of the Jews in Palestine », Hebron segment, Noah Sokolovsky, 1913, domaine public ; commission Shaw, 1930 ; 1929 Hebron massacre (Wikipedia, pour les références)"
         voix: >-
           À Hébron, 67 Juifs sont massacrés, / dans une ville où leur communauté vivait depuis des **siècles**. //
           Des familles arabes en cachent d'autres chez elles.

@@ -94,12 +94,13 @@ chapitres:
         source: "Ghassan Kanafani, tué à Beyrouth le 8 juillet 1972 ; Naji al-Ali, blessé par balle à Londres en juillet 1987, mort le 29 août 1987"
         voix: >-
           La Palestine a ses voix : / l'écrivain Ghassan Kanafani, tué dans un attentat à Beyrouth en 1972 ; / le dessinateur Naji al-Ali, père de Handala, l'enfant qui tourne le dos, tué à Londres en **1987**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 336
-        sortie: 348
-        ecran: "fiche : Masafer Yatta · Oscar, 2 mars 2025 · No Other Land"
-        source: "No Other Land (Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor), Oscar du meilleur documentaire, 2 mars 2025"
+      - type: ARCH
+        fichier: output/plans-reels/masafer-yatta-2023-collines.mp4
+        carton: output/cartons/79-arch-masafer-yatta-2023-collines.mov
+        entree: 0
+        sortie: 12
+        ecran: "carton : 22 février 2023 · Masafer Yatta, Cisjordanie · Les collines où « No Other Land » a été tourné."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « مسافر يطا » (Masafer Yatta), Dania Eid, CC BY-SA 4.0 ; No Other Land (Basel Adra, Hamdan Ballal, Yuval Abraham, Rachel Szor), Oscar du meilleur documentaire, 2 mars 2025"
         voix: >-
           En 2025, « No Other Land », tourné à Masafer Yatta par des Palestiniens et des Israéliens, / reçoit l'Oscar du meilleur **documentaire**.
       - type: MD
