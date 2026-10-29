@@ -16,7 +16,9 @@ W="${WORK:-$(dirname "$(dirname "$(dirname "$ROOT")")")/_livraison-sion}"
 trap 'rm -rf "${W:?}"' EXIT
 push() {
   for d in 2 4 8 16 0; do
-    git -C "$W" push -q origin HEAD:main && return 0
+    # sans « thin pack » ni recherche de deltas : sinon git télécharge les anciennes vidéos de la partie pour s'en servir
+    # de base de compression (une vidéo ne se compresse pas), et le disque sature
+    git -C "$W" -c pack.window=0 push --no-thin -q origin HEAD:main && return 0
     [ "$d" = 0 ] && return 1
     echo "envoi refusé, nouvel essai dans $d s" >&2; sleep "$d"
   done
