@@ -205,7 +205,25 @@ def part(yml, folder):
             os.rmdir(dp)
 
 
+def tout_local(key):
+    """Vrai si chaque plan vidéo et chaque plan en réserve de la partie a son rendu sur cette machine : la livraison
+    peut alors tout recouper sans télécharger les vidéos déjà livrées (tools/livrer_derush.sh)."""
+    yml = next(y for y, _, k in PARTS if k == key)
+    data = yaml.safe_load(open(os.path.join(ROOT, "script", yml), encoding="utf-8"))
+    for ch in data["chapitres"]:
+        for p in ch["plans"]:
+            fic = flat(p.get("fichier"))
+            if p["type"] in VIDEO and not p.get("a_obtenir") and fic.startswith("output/") and fic.endswith(".mp4") \
+                    and not os.path.exists(os.path.join(ROOT, fic)):
+                return False
+        if any(not os.path.exists(os.path.join(ROOT, x["fichier"])) for x in ch.get("reserve") or []):
+            return False
+    return True
+
+
 def main():
+    if sys.argv[1:2] == ["--tout-local"]:
+        sys.exit(0 if all(tout_local(k) for k in sys.argv[2:]) else 1)
     keys = sys.argv[1:] or [k for _, _, k in PARTS]
     os.makedirs(DST, exist_ok=True)
     sd = os.path.join(DST, "Script")

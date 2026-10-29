@@ -222,15 +222,41 @@ def impact(rng, k=1.0, lourd=True, court=False):
     if court:  # traîne raccourcie (150 ms) : le coup suivant arrive sur du propre
         tt = np.arange(len(out)) / SR
         out *= np.where(tt < A / SR, 1.0, np.exp(-np.maximum(0, tt - A / SR - 0.03) / 0.15))[:, None]
-    out = _crete1(out)
+    out = _crete1(_st(presence(out, A)))
     return (out[:, 0], out[:, 1]), A
+
+
+def presence(sig, att=None, cible=0.4, fc=200.0):
+    """Coup grave rendu audible sur un petit haut-parleur (téléphone, ordinateur portable), comme au mixage d'un film :
+    on ajoute les harmoniques de son propre grave (bande sous 200 Hz saturée fort puis remise à son enveloppe, gardée
+    entre 200 Hz et 1,6 kHz), juste assez pour que le médium porte `cible` de l'énergie des 150 ms de l'attaque. Un coup
+    qui a déjà son médium ne change pas. L'infra-grave (sous 32 Hz), qu'aucune enceinte courante ne rend et qui mange la
+    marge du mixage, est retiré. Prend (l, r) ou un tableau, rend (l, r)."""
+    x = passe_haut(_st(sig), 32, 3)
+    a = attaque(x) if att is None else max(0, int(att))
+    w = x[a:a + int(0.15 * SR)]
+    if len(w) >= 1024:
+        e_hi = float((passe_haut(w, 223, 4) ** 2).sum())
+        e_lo = float((passe_bas(w, 223, 4) ** 2).sum())
+        r = cible / (1 - cible)
+        if e_lo > 0 and e_hi < r * e_lo:
+            lo = passe_bas(x, fc, 4)
+            u = lo / (np.abs(lo).max() + 1e-12)
+            env = np.maximum(passe_bas(np.abs(u), 25), 0)
+            h = np.tanh(8.0 * u) * env / (env.max() + 1e-12)  # harmoniques jusqu'au médium, qui suivent la chute du coup
+            h = passe_bas(passe_haut(h, fc, 4), 1600)
+            e_h = float((h[a:a + len(w)] ** 2).sum())
+            if e_h > 0:
+                x = x + min(6.0, np.sqrt((r * e_lo - e_hi) / e_h)) * h
+    return x[:, 0].copy(), x[:, 1].copy()
 
 
 def impact_sourd(rng):
     v = _vitesse(rng)
     x = _st(B.prise("impact_sourd", rng, vitesse=v))
     s = B.prises("impact_sourd")[B._derniere["impact_sourd"][-1]]
-    return (x[:, 0], x[:, 1]), (int(s["coup"] * SR / v) if "coup" in s else attaque(x))
+    a = int(s["coup"] * SR / v) if "coup" in s else attaque(x)
+    return presence(x, a), a
 
 
 def souffle(rng, dur=None, gros=False, sens=1.0):

@@ -57,6 +57,17 @@ for NAME in "$@"; do
     SION_PIECE="$NAME" python3 tools/sound.py "$TMP/cues.json" "output/$NAME.wav"
     ffmpeg -y -loglevel error -i "output/$NAME.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 320k \
       -shortest -movflags +faststart "$TMP/piece.mp4"
+    # l'AAC fait remonter les crêtes des pièces chargées en coups secs : au-dessus de -1 dBTP une fois encodée, la pièce
+    # est refaite avec un plafond abaissé d'autant (plus 0,5 dB de marge pour la découpe plan par plan)
+    TP=$(ffmpeg -nostats -i "$TMP/piece.mp4" -map 0:a -af ebur128=peak=true -f null - 2>&1 |
+      awk '/True peak:/{f=1} f && /Peak:/{print $2; exit}')
+    PLAF=$(python3 -c "tp = float('${TP:-0}'); print(round(-1.0 - (tp + 1.0) - 0.5, 2) if tp > -1.0 else '')")
+    if [ -n "$PLAF" ]; then
+      echo "crête $TP dBTP après encodage : $NAME refait avec un plafond à $PLAF dBFS"
+      SION_PLAFOND="$PLAF" SION_PIECE="$NAME" python3 tools/sound.py "$TMP/cues.json" "output/$NAME.wav"
+      ffmpeg -y -loglevel error -i "output/$NAME.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -c:v copy -c:a aac \
+        -b:a 320k -shortest -movflags +faststart "$TMP/piece.mp4"
+    fi
     mv "$TMP/piece.mp4" "output/$NAME.mp4"
   fi
   echo "son refait : $NAME"

@@ -248,7 +248,7 @@ LIEU_PIECE = {
 }
 for role_, db_ in LIEU_PIECE.get(os.environ.get("SION_PIECE", ""), []):
     if BR.ok(role_):
-        ll_, lr_ = BR.fond(role_, N / SR, rng, db_)
+        ll_, lr_ = BR.passe_haut(np.stack(BR.fond(role_, N / SR, rng, db_), 1), 32, 3).T  # sans infra-grave
         env_l = bed * bed_in * duck
         add((ll_ * env_l, lr_ * env_l), 0, 1.0)
 
@@ -461,7 +461,7 @@ for im in cues["impacts"]:
         if kind == "tick":  # vrai tic de réveil
             add(BR.reverb(BR.coup("tic", rng, 0.08), "ir_salle", wet=0.2), t_ - 0.003, 0.14)
         elif kind == "boom":  # vraie explosion au loin
-            s_ = BR.coup("explosion", rng, 3.0, 10)
+            s_ = BR.presence(BR.coup("explosion", rng, 3.0, 10))
             add(BR.reverb(s_, "ir_grand", wet=0.45, couleur=3500), t_ - 0.003, 0.42 * min(k, 1.2))
         elif kind == "crumble":
             s_, a_ = BR.prise("ecroulement", rng)
@@ -532,7 +532,7 @@ for f in cues["flashes"]:
         t0 = f["t"] + 0.16 + 0.35 * (1 - f["size"])
         if in_silence(t0, before=0.2, after=0.5):
             continue
-        bl_, br_ = BR.coup("explosion", rng, 2.5, 10)
+        bl_, br_ = BR.presence(BR.coup("explosion", rng, 2.5, 10))  # sourde mais lisible sur un téléphone
         gl, gr = pan_gains((f["x"] - 0.5) * 1.4)
         add(BR.reverb((bl_ * gl * 1.4, br_ * gr * 1.4), "ir_grand", wet=0.5, couleur=3000), t0 - 0.003, 0.22 * f["power"])
         continue
@@ -780,7 +780,9 @@ mix_l, mix_r = mix_l / peak * 1.25, mix_r / peak * 1.25
 mix_l, mix_r = np.tanh(mix_l) / np.tanh(1.25), np.tanh(mix_r) / np.tanh(1.25)
 # niveau homogène entre les pièces : RMS visé -18 dBFS avec musique, -21 dBFS en bruitages
 # seuls (sans écraser les impacts : gain plafonné), crêtes adoucies sous -1 dBFS
-ceil = 10 ** (-1.0 / 20)
+# SION_PLAFOND : plafond plus bas pour une pièce très chargée en coups secs, dont l'encodage AAC fait remonter les
+# crêtes au-dessus de -1 dBTP (tools/resound.sh le règle tout seul après mesure du fichier encodé)
+ceil = 10 ** (float(os.environ.get("SION_PLAFOND", "-1.0")) / 20)
 rms0 = np.sqrt(np.mean((mix_l ** 2 + mix_r ** 2) / 2))
 g = 10 ** ((-18.0 if MUSIC else -21.0) / 20) / rms0
 g = min(g, 4.0 * ceil / max(np.abs(mix_l).max(), np.abs(mix_r).max()))

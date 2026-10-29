@@ -489,3 +489,11 @@ voulus restent des silences (25.23 Be'eri, 08.09 Hébron). La liste plan par pla
 
 Pour la voix off : fonds et ambiances restent sous la voix ; dans Premiere, Son essentiel, « Atténuation » sur ces
 pistes, la voix à -16 LUFS.
+
+**Écoute au téléphone** (le contrôle a relevé plus de 600 coups presque tout sous 250 Hz, que le haut-parleur d'un
+téléphone ne rend pas : les éclairs d'artillerie lointains du décor, les explosions, une partie des impacts) : chaque coup
+grave reçoit maintenant les harmoniques de son propre grave dans le médium, juste assez pour s'entendre sur un téléphone,
+comme au mixage d'un film ; l'infra-grave inutile (sous 32 Hz) est retiré. Sur une enceinte, le coup garde tout son poids.
+
+**Crêtes** : trois pièces très chargées en coups secs (paroles, portraits-1, portraits-2) dépassaient -1 dBTP une fois
+encodées. `tools/resound.sh` mesure désormais la pièce encodée et la refait avec un plafond plus bas si besoin.
