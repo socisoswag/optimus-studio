@@ -118,10 +118,12 @@ chapitres:
         source: "élections législatives palestiniennes du 25 janvier 2006"
         voix: >-
           En janvier 2006, le Hamas gagne les élections. / Israël, les États-Unis et l'Europe boycottent son gouvernement. / Depuis, les Palestiniens n'ont plus **voté**.
-      - type: MD
-        fichier: output/gaza.mp4
+      - type: RÉEL
+        fichier: output/plans-reels/gaza-camp-de-la-plage-drone.mp4
         entree: 0
         sortie: 6
+        source: "SOURCES.md 4.1 bis, Envato 6PSN2E2"
+        ecran: "carton lieu (à fabriquer) : Gaza, le camp de réfugiés de la plage · avant la guerre de 2023"
         voix: >-
           Gaza. / Plus de deux millions d'habitants, / sur 365 kilomètres **carrés**.
       - type: MD
@@ -270,13 +272,13 @@ chapitres:
         ecran: "carton : output/cartons/gaza-2023"
         voix: >-
           Le 7 octobre 2023, / le Hamas et d'autres groupes armés attaquent le sud d'**Israël**.
-      - type: MD
-        fichier: output/paroles.mp4
-        entree: 75
-        sortie: 93
-        ecran: "fiche : Sud d'Israël · 7 octobre 2023 · Le 7 octobre"
+      - type: RÉEL
+        fichier: output/plans-reels/beeri-maisons-detruites-7-octobre.mp4
+        entree: 0
+        sortie: 18
+        ecran: "carton lieu (à fabriquer) : Be'eri · après le 7 octobre 2023 · des maisons du kibboutz détruites"
         source: >-
-          environ 1 200 morts en Israël, dont une majorité de civils ; 251 otages ; festival Nova : environ 360 morts ;
+          SOURCES.md 4.1 bis, Envato XWYWHVU ; environ 1 200 morts en Israël, dont une majorité de civils ; 251 otages ; festival Nova : environ 360 morts ;
           rapport de la représentante spéciale de l'ONU sur les violences sexuelles en conflit, 4 mars 2024
         voix: >-
           Environ mille deux cents morts, / la plupart des civils, / tués chez eux, dans les kibboutz, / et à un
@@ -470,12 +472,12 @@ chapitres:
         voix: >-
           Après 1967, une partie des Juifs religieux voit dans la conquête un signe de Dieu. / En 1974, ils fondent le
           Goush Emounim, / « le bloc de la foi » : / s'installer partout, en Judée et en **Samarie**.
-      - type: MD
-        fichier: output/paroles.mp4
-        entree: 105
-        sortie: 116
-        ecran: "fiche : Hébron · 25 février 1994 · Le tombeau des Patriarches"
-        source: "massacre du tombeau des Patriarches, Hébron, 25 février 1994 : 29 morts"
+      - type: RÉEL
+        fichier: output/plans-reels/hebron-vue-du-ciel.mp4
+        entree: 0
+        sortie: 11
+        source: "SOURCES.md 4.1 bis, Envato NEURWV8 ; massacre du tombeau des Patriarches, Hébron, 25 février 1994 : 29 morts"
+        ecran: "carton lieu (à fabriquer) : Hébron, Cisjordanie · aujourd'hui"
         voix: >-
           Le 25 février 1994, à Hébron, / un colon, Baruch Goldstein, tue 29 Palestiniens en prière dans la **mosquée**.
       - type: MD
@@ -655,12 +657,12 @@ chapitres:
         source: "octobre 2000 : 13 manifestants arabes tués par la police (commission Or, 1er septembre 2003 : 12 citoyens d'Israël et un habitant de Gaza)"
         voix: >-
           Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize manifestants **arabes**.
-      - type: MD
-        fichier: output/paroles.mp4
-        entree: 133
-        sortie: 147
-        ecran: "fiche : Pour ses défenseurs · Une démocratie"
-        source: "Ra'am dans la coalition gouvernementale, 2021-2022 ; Khaled Kabub, juge à la Cour suprême depuis 2022"
+      - type: RÉEL
+        fichier: output/plans-reels/knesset-de-nuit.mp4
+        entree: 0
+        sortie: 14
+        source: "SOURCES.md 4.1 bis, Envato 6QLBQ3R ; Ra'am dans la coalition gouvernementale, 2021-2022 ; Khaled Kabub, juge à la Cour suprême depuis 2022"
+        ecran: "carton lieu (à fabriquer) : Jérusalem · aujourd'hui · la Knesset"
         voix: >-
           Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à
           la Cour suprême, / et un parti arabe a gouverné en **2021**.
@@ -672,12 +674,12 @@ chapitres:
         source: "Jour de la Terre, 30 mars 1976 : grève générale, six citoyens arabes tués"
         voix: >-
           Le 30 mars 1976, les Arabes d'Israël font grève contre la confiscation de leurs terres. / Six manifestants sont tués. // Depuis, chaque 30 mars, c'est le Jour de la **Terre**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 28
-        sortie: 41
-        ecran: "fiche : Néguev · 2025 · Les villages non reconnus"
-        source: "Negev Coexistence Forum, 27 juillet 2025, projet Recognized, et IWGIA, The Indigenous World 2026 (35 villages non reconnus, non raccordés aux réseaux publics) ; WAFA, 24 décembre 2025 (244e démolition d'al-Araqib depuis 2010)"
+      - type: RÉEL
+        fichier: output/plans-reels/negev-ecole-bedouine-panneaux-solaires.mp4
+        entree: 0
+        sortie: 13
+        source: "SOURCES.md 4.1 bis, Envato 8RENHMW ; Negev Coexistence Forum, 27 juillet 2025, projet Recognized, et IWGIA, The Indigenous World 2026 (35 villages non reconnus, non raccordés aux réseaux publics) ; WAFA, 24 décembre 2025 (244e démolition d'al-Araqib depuis 2010)"
+        ecran: "carton lieu (à fabriquer) : Néguev · aujourd'hui · une école d'un village bédouin"
         voix: >-
           Dans le Néguev, 35 villages bédouins ne sont pas reconnus par l'État : / ils ne sont pas raccordés aux réseaux publics d'eau et d'électricité. / Al-Araqib a été démoli, puis rebâti, au moins 244 fois depuis **2010**.
       - type: MD

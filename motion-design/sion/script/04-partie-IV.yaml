@@ -234,10 +234,12 @@ chapitres:
         ecran: "fiche de la chronologie : Camp David"
         voix: >-
           1978, Camp David : / l'Égypte fait la **paix**.
-      - type: MD
-        fichier: output/jerusalem.mp4
-        entree: 6.5
-        sortie: 18.5
+      - type: RÉEL
+        fichier: output/plans-reels/jerusalem-vieille-ville-dome-du-rocher-aerien.mp4
+        entree: 0
+        sortie: 12
+        source: "SOURCES.md 4.1 bis, Envato ABMEBQ5"
+        ecran: "carton lieu (à fabriquer) : Jérusalem, la vieille ville · aujourd'hui"
         voix: >-
           Jérusalem. / Moins d'un kilomètre carré, / trois **religions**.
       - type: MD
@@ -246,17 +248,21 @@ chapitres:
         sortie: 30.5
         voix: >-
           Israël annexe Jérusalem-Est et vingt-huit villages alentour. / L'ONU juge cette annexion **nulle**.
-      - type: MD
-        fichier: output/jerusalem.mp4
-        entree: 30.5
-        sortie: 41
+      - type: RÉEL
+        fichier: output/plans-reels/pisgat-zeev-colonie-jerusalem-est.mp4
+        entree: 0
+        sortie: 10.5
+        source: "SOURCES.md 4.1 bis, Envato 4D7W3YC"
+        ecran: "carton lieu (à fabriquer) : Pisgat Zeev, colonie de Jérusalem-Est · aujourd'hui"
         voix: >-
           Plus de deux cent vingt-neuf mille colons y vivent aujourd'hui, / à côté de plus de trois cent cinquante
           mille **Palestiniens**.
-      - type: MD
-        fichier: output/jerusalem.mp4
-        entree: 41
-        sortie: 52.5
+      - type: RÉEL
+        fichier: output/plans-reels/shuafat-camp-et-mur.mp4
+        entree: 0
+        sortie: 11.5
+        source: "SOURCES.md 4.1 bis, Envato 9UQ7S3Z"
+        ecran: "carton lieu (à fabriquer) : Camp de Shuafat, Jérusalem-Est · aujourd'hui · le mur autour du camp"
         voix: >-
           Le mur coupe la ville : / des quartiers entiers de Jérusalem se retrouvent de l'autre **côté**.
       - type: MD
@@ -653,10 +659,12 @@ chapitres:
         voix: >-
           Depuis 2002, le mur, / en grande partie à l'intérieur de la Cisjordanie. / En 2004, la Cour internationale de
           justice le juge contraire au droit **international**.
-      - type: MD
-        fichier: output/oslo-mur.mp4
-        entree: 40
-        sortie: 48.5
+      - type: RÉEL
+        fichier: output/plans-reels/cloture-separation-collines.mp4
+        entree: 0
+        sortie: 8.5
+        source: "SOURCES.md 4.1 bis, Envato 9GU2YX7"
+        ecran: "carton lieu (à fabriquer) : La clôture de séparation · aujourd'hui"
       - type: 3D
         fichier: output/mur-cicatrice.mp4
         entree: 0

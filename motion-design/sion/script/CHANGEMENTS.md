@@ -397,3 +397,31 @@ guerres », le tic-tac sans souffle aigu. La partie V, bloquée par ce clic, est
 
 Chaque archive a sa légende transparente (date, lieu, phrase) dans `cartons/` : numéros 54 à 59, les anciens gardent
 leur numéro. Les durées changent un peu (20.02 : 5,8 s ; 20.05 : 7,7 s ; 20.07 : 12,6 s).
+
+
+**Vrais plans Envato posés (nouveau nom : à changer dans la timeline)** : à la place de cartes « paroles » et de fiches
+dont la voix dit déjà tout ; les cartes qui portent une information (zones d'Oslo, plan de partage, terres en 1945) et
+les fiches qui montrent un document ou une citation restent. Légende de lieu à poser au montage.
+
+| Plan | Ancien fichier | Nouveau fichier | Ce qu'on voit (durée) |
+|---|---|---|---|
+| 01.06 | `01.06-MD-sion-le-mot.mp4` | `01.06-REEL-mur-occidental-priere.mp4` | Jérusalem · aujourd'hui · la prière au mur occidental (10.08 s) |
+| 19.32 | `19.32-MD-jerusalem.mp4` | `19.32-REEL-jerusalem-vieille-ville-dome-du-rocher-a.mp4` | Jérusalem, la vieille ville · aujourd'hui (12 s) |
+| 19.34 | `19.34-MD-jerusalem.mp4` | `19.34-REEL-pisgat-zeev-colonie-jerusalem-est.mp4` | Pisgat Zeev, colonie de Jérusalem-Est · aujourd'hui (10.5 s) |
+| 19.35 | `19.35-MD-jerusalem.mp4` | `19.35-REEL-shuafat-camp-et-mur.mp4` | Camp de Shuafat, Jérusalem-Est · aujourd'hui · le mur autour du camp (11.5 s) |
+| 23.09 | `23.09-MD-oslo-mur.mp4` | `23.09-REEL-cloture-separation-collines.mp4` | La clôture de séparation · aujourd'hui (8.5 s) |
+| 25.04 | `25.04-MD-gaza.mp4` | `25.04-REEL-gaza-camp-de-la-plage-drone.mp4` | Gaza, le camp de réfugiés de la plage · avant la guerre de 2023 (6 s) |
+| 25.23 | `25.23-MD-paroles.mp4` | `25.23-REEL-beeri-maisons-detruites-7-octobre.mp4` | Be'eri · après le 7 octobre 2023 · des maisons du kibboutz détruites (18 s) |
+| 26.03 | `26.03-MD-paroles.mp4` | `26.03-REEL-hebron-vue-du-ciel.mp4` | Hébron, Cisjordanie · aujourd'hui (11 s) |
+| 28.06 | `28.06-MD-paroles.mp4` | `28.06-REEL-knesset-de-nuit.mp4` | Jérusalem · aujourd'hui · la Knesset (14 s) |
+| 28.08 | `28.08-MD-documents-6.mp4` | `28.08-REEL-negev-ecole-bedouine-panneaux-solaires.mp4` | Néguev · aujourd'hui · une école d'un village bédouin (13 s) |
+| 30.03 | `30.03-MD-documents-2.mp4` | `30.03-REEL-williamsburg-brooklyn-aerien.mp4` | Williamsburg, New York · aujourd'hui · le quartier des hassidim de Satmar (14 s) |
+| 31.11 | `31.11-MD-documents-6.mp4` | `31.11-REEL-marseille-vieux-port-aerien.mp4` | Marseille · aujourd'hui (15 s) |
+| 32.07 | `32.07-MD-paroles.mp4` | `32.07-REEL-yad-vashem-aerien.mp4` | Jérusalem · aujourd'hui · Yad Vashem, le mémorial de la Shoah (10.24 s) |
+| 34.08 | `34.08-MD-noms-effaces.mp4` | `34.08-REEL-lifta-village-abandonne-aerien.mp4` | Lifta, à l'entrée de Jérusalem · aujourd'hui (8.24 s) |
+
+Plus courts qu'avant (la voix y tient, moins de 2,4 mots par seconde) : 01.06 (10,1 s), 32.07 (10,2 s), 34.08 (8,2 s).
+En réserve, pas encore posés : Anata, le mur à Jérusalem, Ramallah (2), le désert de Judée, Jéricho, Jérusalem à
+contre-jour, Jaffa, le mont Thabor, Beit Netofa, le berger bédouin, la plage de Tel-Aviv (trop courte pour 9.6), un
+village palestinien des collines, le bulldozer D9 (lieu inconnu : pas pour 23.15, où il s'agit de démolitions faute de
+permis en Cisjordanie), le campement bédouin (lieu inconnu), Srigim (pas une colonie).

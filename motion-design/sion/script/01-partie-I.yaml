@@ -55,11 +55,12 @@ chapitres:
         voix: >-
           En 586 avant notre ère, Babylone détruit Jérusalem / et déporte une partie de ses habitants. //
           Sion devient le nom de l'exil, / et de la **nostalgie**.
-      - type: MD
-        fichier: output/sion-le-mot.mp4
-        entree: 31.1
-        sortie: 42.1
-        ecran: "Pendant des siècles, la diaspora : un mot d'espérance"
+      - type: RÉEL
+        fichier: output/plans-reels/mur-occidental-priere.mp4
+        entree: 0
+        sortie: 10.08
+        source: "SOURCES.md 4.1 bis, Envato JDMP4TQ"
+        ecran: "carton lieu (à fabriquer) : Jérusalem · aujourd'hui · la prière au mur occidental"
         voix: >-
           Pendant des siècles de dispersion, le mot reste une prière : / « L'an prochain à Jérusalem. » //
           Un espoir religieux, / pas un programme **politique**.

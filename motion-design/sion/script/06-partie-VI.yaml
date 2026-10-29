@@ -88,11 +88,12 @@ chapitres:
         voix: >-
           Leur argument vient du Talmud. / Dieu aurait fait jurer aux Juifs de ne pas « monter comme un mur » vers la
           terre d'Israël, / et de ne pas se révolter contre les **nations**.
-      - type: MD
-        fichier: output/documents-2.mp4
-        entree: 186
-        sortie: 200
-        source: "Joel Teitelbaum, Vayoel Moshe, fin des années 1950"
+      - type: RÉEL
+        fichier: output/plans-reels/williamsburg-brooklyn-aerien.mp4
+        entree: 0
+        sortie: 14
+        source: "SOURCES.md 4.1 bis, Envato U4FLWEZ ; Joel Teitelbaum, Vayoel Moshe, fin des années 1950"
+        ecran: "carton lieu (à fabriquer) : Williamsburg, New York · aujourd'hui · le quartier des hassidim de Satmar"
         voix: >-
           À New York, le rabbin de Satmar, Joel Teitelbaum, en tire un livre entier contre l'État d'Israël. / Ses
           fidèles, des dizaines de milliers, s'en réclament **encore**.
@@ -216,12 +217,12 @@ chapitres:
         source: "accord nucléaire franco-israélien, 1957 ; CEDH, Baldassi et autres c. France, 11 juin 2020 ; reconnaissance de l'État de Palestine, 22 septembre 2025"
         voix: >-
           Et la France ? / En 1957, elle aide Israël à bâtir la centrale de Dimona. / En 2020, la Cour européenne la condamne pour avoir puni des appels au boycott. // En 2025, elle reconnaît la **Palestine**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 511
-        sortie: 526
-        ecran: "fiche : Marseille · octobre 2023 · Des pièces françaises"
-        source: "Disclose, 25 mars 2024, et Marsactu, 26 mars 2024 (au moins 100 000 maillons M27 pour bandes de 5,56 mm, Eurolinks, destinataire IMI Systems) ; Sébastien Lecornu (livraisons destinées à la réexportation) ; Eurosatory : exclusion annoncée le 31 mai 2024, suspendue le 18 juin par le tribunal de commerce de Paris"
+      - type: RÉEL
+        fichier: output/plans-reels/marseille-vieux-port-aerien.mp4
+        entree: 0
+        sortie: 15
+        source: "SOURCES.md 4.1 bis, Envato ME4HGLT ; Disclose, 25 mars 2024, et Marsactu, 26 mars 2024 (au moins 100 000 maillons M27 pour bandes de 5,56 mm, Eurolinks, destinataire IMI Systems) ; Sébastien Lecornu (livraisons destinées à la réexportation) ; Eurosatory : exclusion annoncée le 31 mai 2024, suspendue le 18 juin par le tribunal de commerce de Paris"
+        ecran: "carton lieu (à fabriquer) : Marseille · aujourd'hui"
         voix: >-
           La France arme-t-elle Israël ? / Paris dit ne livrer que des pièces défensives, ou à réexporter. / Mais selon le média Disclose, une entreprise de Marseille a livré en octobre 2023 au moins cent mille maillons de **mitrailleuse**.
       - type: MD

@@ -79,12 +79,12 @@ chapitres:
           La Shoah est aussi niée ou minimisée : / à Téhéran, en 2006, une conférence entière la met en doute. / En 2023,
           Mahmoud Abbas l'explique par le « rôle social » des Juifs ; / plus de cent intellectuels palestiniens le
           **condamnent**.
-      - type: MD
-        fichier: output/paroles.mp4
-        entree: 219
-        sortie: 230
-        ecran: "fiche : Idith Zertal · La nation et la mort"
-        source: "Idith Zertal, Israel's Holocaust and the Politics of Nationhood, Cambridge University Press, 2005"
+      - type: RÉEL
+        fichier: output/plans-reels/yad-vashem-aerien.mp4
+        entree: 0
+        sortie: 10.24
+        source: "SOURCES.md 4.1 bis, Envato P3UTT5A ; Idith Zertal, Israel's Holocaust and the Politics of Nationhood, Cambridge University Press, 2005"
+        ecran: "carton lieu (à fabriquer) : Jérusalem · aujourd'hui · Yad Vashem, le mémorial de la Shoah"
         voix: >-
           Pour l'historienne israélienne Idith Zertal, / cette mémoire sert aussi à justifier la politique de l'État envers
           les **Palestiniens**.
@@ -253,10 +253,12 @@ chapitres:
         voix: >-
           Sur Imwas, Yalu et Beit Nuba, rasés en 1967, / le Fonds national juif plante une forêt : / le Canada
           **Park**.
-      - type: MD
-        fichier: output/noms-effaces.mp4
-        entree: 60.7
-        sortie: 70.3
+      - type: RÉEL
+        fichier: output/plans-reels/lifta-village-abandonne-aerien.mp4
+        entree: 0
+        sortie: 8.24
+        source: "SOURCES.md 4.1 bis, Envato 2QECUJL"
+        ecran: "carton lieu (à fabriquer) : Lifta, à l'entrée de Jérusalem · aujourd'hui"
         voix: >-
           Lifta, à l'entrée de Jérusalem : / debout, mais **vide**.
       - type: MD
