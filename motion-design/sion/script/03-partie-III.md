@@ -310,7 +310,9 @@ Film 00:34:10:16 → 00:35:50:06 · durée 1 min 39.6 s
 > VOIX : silence
 
 
-**16.2** · film **00:34:15:06 → 00:34:29:06** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:35:00 → 00:00:49:00  
+**16.2** · film **00:34:15:06 → 00:34:29:06** (14.0 s) · **[ARCH]** `output/archives-filmees/1945-ben-gourion-conference-londres.mp4` · source 00:00:00:00 → 00:00:14:00  
+Source : SOURCES.md 4.2, March of Time, rushes du 13 août 1945 (musée américain de l'Holocauste, irn1003498, domaine public)  
+À l'écran : carton : Août 1945 · Londres · David Ben Gourion devant la conférence sioniste mondiale.  
 > VOIX : Pour la plupart des Israéliens, David Ben Gourion est le père de la nation. / Il a bâti un État, une armée, / et accueilli des centaines de milliers de réfugiés **juifs**.  
 (30 mots, 2.1 par seconde)
 

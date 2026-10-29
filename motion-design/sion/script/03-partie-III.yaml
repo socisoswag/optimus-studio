@@ -397,10 +397,13 @@ chapitres:
         fichier: output/chapitres/chapitre-16.mp4
         entree: 0
         sortie: 4.6
-      - type: MD
-        fichier: output/portraits-2.mp4
-        entree: 35
-        sortie: 49
+      - type: ARCH
+        fichier: output/archives-filmees/1945-ben-gourion-conference-londres.mp4
+        carton: output/cartons/68-arch-1945-ben-gourion-conference-londres.mov
+        entree: 0
+        sortie: 14
+        ecran: "carton : Août 1945 · Londres · David Ben Gourion devant la conférence sioniste mondiale."
+        source: "SOURCES.md 4.2, March of Time, rushes du 13 août 1945 (musée américain de l'Holocauste, irn1003498, domaine public)"
         voix: >-
           Pour la plupart des Israéliens, David Ben Gourion est le père de la nation. / Il a bâti un État, une armée,
           / et accueilli des centaines de milliers de réfugiés **juifs**.

@@ -182,6 +182,10 @@ ARCHIVES = {
     # contrôlés ; recadré au-dessus du minutage
     "1938-convoi-britannique-village": ("https://film-assets.ushmm.org/mp4/FV0047_RG600915.01.01.mp4", "", "624:420:8:10",
                                         [(157.0, 160.5), (308.5, 313.0), (348.5, 352.5), (358.5, 361.0)], {"decimer": True}),
+    # rushes de la March of Time, 13 août 1945 (musée américain de l'Holocauste, irn1003498, film 2732, domaine public) :
+    # la première conférence sioniste mondiale d'après-guerre, à Londres ; la salle, puis David Ben Gourion qui parle
+    "1945-ben-gourion-conference-londres": ("https://film-assets.ushmm.org/mp4/FV2732_RG604086.01.01.mp4", "", "624:400:8:8",
+                                            [(100.0, 104.5), (240.0, 251.0)], {"decimer": True}),
     "1956-suez-flotte-et-avions": ("1956-11-01_War_in_Egypt", "1956-11-01_War_in_Egypt.mpeg", "696:458:10:10",
                                    [(57.2, 60.0), (66.2, 67.6), (68.2, 70.6), (74.2, 76.6), (78.2, 80.6)]),
 }

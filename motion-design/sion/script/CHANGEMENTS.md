@@ -440,6 +440,7 @@ américaines et le musée américain de l'Holocauste ; aucun corps à l'image ; 
 | 13.02 | `13.02-MD-chronologie.mp4` | `13.02-ARCH-1948-mai-drapeau.mp4` | le drapeau du nouvel État, mai 1948 (3,8 s, avant 4,4) |
 | 13.03 | `13.03-MD-nakba-1948.mp4` | `13.03-ARCH-1948-familles-arabes-qui-partent.mp4` | des familles arabes avec leurs ballots, 1948 (5,8 s, avant 6) |
 | 13.05 | `13.05-MD-nakba-1948.mp4` | `13.05-ARCH-1948-haganah-fouilles-et-arrestations.mp4` | des soldats de la Haganah fouillent et arrêtent des hommes, 1948 |
+| 16.02 | `16.02-MD-portraits-2.mp4` | `16.02-ARCH-1945-ben-gourion-conference-londres.mp4` | Ben Gourion devant la conférence sioniste mondiale, Londres, août 1945 |
 
 Corrigé d'après le dossier Perplexity : les rushes de Tel-Aviv sont de 1938 (pas 1936) ; « Hagana Troops » n'a pas de date
 exacte ni un seul lieu, la légende dit donc « 1948 · Palestine ».

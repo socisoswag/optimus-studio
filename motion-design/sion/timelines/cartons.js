@@ -78,6 +78,7 @@
     ["arch-1948-mai-drapeau", "Mai 1948", "Israël", "Le drapeau du nouvel État."],
     ["arch-1948-familles-arabes-qui-partent", "1948", "Palestine", "Des familles arabes avec leurs ballots."],
     ["arch-1948-haganah-fouilles-et-arrestations", "1948", "Palestine", "Des soldats de la Haganah fouillent et arrêtent des hommes."],
+    ["arch-1945-ben-gourion-conference-londres", "Août 1945", "Londres", "David Ben Gourion devant la conférence sioniste mondiale."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };
