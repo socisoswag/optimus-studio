@@ -59,6 +59,9 @@ demandé, et ne rien enregistrer en voix tant que la réponse n'est pas vérifi�
 - Mixage : les fonds restent bas (vent vers -25 dBFS avant la mise à niveau) pour que les coups ressortent ;
   une montée s'arrête 60 ms avant l'impact ; un impact a toujours une couche dans le médium (audible au téléphone) ;
   jamais de décalage d'un canal sur un son grave (il s'annule en mono) ; crête vraie sous -1 dBTP.
+- Encodage AAC (ffmpeg) : toujours `-aac_pns 0 -aac_is 0`. Avec ces deux options actives, l'encodeur crée par endroits
+  un clic de quelques échantillons (+5 dB au-dessus du mixage, relevé sur « frontieres » le 29 octobre).
+  Un coup grave reçoit les harmoniques de son grave (`bruitages.presence`) pour rester audible au téléphone.
 
 ## Sources (toujours à jour, sans attendre qu'on le demande)
 

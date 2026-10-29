@@ -497,3 +497,8 @@ comme au mixage d'un film ; l'infra-grave inutile (sous 32 Hz) est retiré. Sur 
 
 **Crêtes** : trois pièces très chargées en coups secs (paroles, portraits-1, portraits-2) dépassaient -1 dBTP une fois
 encodées. `tools/resound.sh` mesure désormais la pièce encodée et la refait avec un plafond plus bas si besoin.
+
+**Clics d'encodage** : l'encodeur AAC de ffmpeg, avec la substitution de bruit et la stéréo d'intensité actives, plaçait
+par endroits un clic de quelques échantillons, jusqu'à 5 dB au-dessus du mixage (trouvé sur « frontieres » : -3,4 dBFS dans
+le mixage, +2,9 dBTP une fois encodé). Ces deux options sont coupées dans tous les encodages (pièces, plans livrés,
+cartons, bout à bout) et tout le film est réencodé : le son ne change pas, les clics disparaissent.

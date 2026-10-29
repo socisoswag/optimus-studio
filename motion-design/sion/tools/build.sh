@@ -45,7 +45,7 @@ encode() { # $1 = débit vidéo, $2 = fichier de sortie, $3 = filtre vidéo
     -tune grain -pix_fmt yuv420p -pass 1 -passlogfile "$TMP/x264" -an -f mp4 /dev/null
   ffmpeg -y -loglevel error "${IN[@]}" -i "$WAV" -map 0:v -map 1:a -vf "$3" -c:v libx264 -preset slow \
     -b:v "$1" -maxrate "$1" -bufsize "$1" -tune grain -pix_fmt yuv420p -pass 2 -passlogfile "$TMP/x264" \
-    -c:a aac -b:a 320k -t "$DUR" -movflags +faststart "$2"
+    -c:a aac -aac_pns 0 -aac_is 0 -b:a 320k -t "$DUR" -movflags +faststart "$2"
 }
 
 # débit : 9 Mbit/s, abaissé pour les pièces longues afin de rester sous 95 Mo (GitHub refuse plus de 100 Mo)

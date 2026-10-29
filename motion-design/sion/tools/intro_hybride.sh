@@ -70,7 +70,7 @@ nice -n 5 ffmpeg -nostdin -y -loglevel error -i output/intro-aerienne-3d.mp4 -i 
   -c:v libx264 -preset slow -b:v "$B" -maxrate "$B" -bufsize "$B" -tune grain -pix_fmt yuv420p -pass 1 -passlogfile "$TMP/x264" -an -f mp4 /dev/null
 nice -n 5 ffmpeg -nostdin -y -loglevel error -i output/intro-aerienne-3d.mp4 -i "$TMP/textes.mov" "${IN[@]}" -i "$TMP/son.wav" -filter_complex "$FC" \
   -map "[v]" -map "$((k + 2)):a" -c:v libx264 -preset slow -b:v "$B" -maxrate "$B" -bufsize "$B" -tune grain -pix_fmt yuv420p -pass 2 \
-  -passlogfile "$TMP/x264" -c:a aac -b:a 320k -t "$TOTAL" -movflags +faststart "$TMP/final.mp4"
+  -passlogfile "$TMP/x264" -c:a aac -aac_pns 0 -aac_is 0 -b:a 320k -t "$TOTAL" -movflags +faststart "$TMP/final.mp4"
 mv "$TMP/son.wav" output/intro-aerienne.wav
 mv "$TMP/final.mp4" output/intro-aerienne.mp4
 ls -la output/intro-aerienne.mp4 output/intro-aerienne.wav

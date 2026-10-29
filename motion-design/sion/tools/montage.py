@@ -234,7 +234,7 @@ def cut(src, a, b, dst):
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-i", src, "-t", f"{d:.3f}",
                     "-c:v", "libx264", "-preset", "slow", "-b:v", "10M", "-maxrate", "14M", "-bufsize", "20M", "-tune", "grain",
                     "-pix_fmt", "yuv420p", "-af", f"afade=t=in:d=0.04,afade=t=out:st={max(0, d - 0.06):.3f}:d=0.06",
-                    "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", dst], check=True)
+                    "-c:a", "aac", "-aac_pns", "0", "-aac_is", "0", "-b:a", "320k", "-movflags", "+faststart", dst], check=True)
 
 
 KEEP = set()

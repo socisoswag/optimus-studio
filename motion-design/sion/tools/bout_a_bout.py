@@ -60,7 +60,7 @@ def main():
         dst = os.path.join(DEST, f"SION-bout-a-bout-1080p-partie-{i}.mp4")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst.name, "-fps_mode", "cfr", "-r", "25",
                         "-c:v", "libx264", "-preset", "slow", "-b:v", f"{RATE}k", "-maxrate", f"{RATE * 1.4:.0f}k", "-bufsize", f"{RATE * 2}k",
-                        "-tune", "grain", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", dst], check=True)
+                        "-tune", "grain", "-pix_fmt", "yuv420p", "-c:a", "aac", "-aac_pns", "0", "-aac_is", "0", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", dst], check=True)
         os.remove(lst.name)
         print(f"partie {i} : {len(files)} pièces, {duration(dst):.0f} s, {os.path.getsize(dst) / 1e6:.0f} Mo")
 

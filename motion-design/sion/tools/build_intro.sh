@@ -49,7 +49,7 @@ ffmpeg -nostdin -y -loglevel error "${IN[@]}" -vf "$FINISH" -c:v libx264 -preset
   -tune grain -pix_fmt yuv420p -pass 1 -passlogfile "$TMP/x264" -an -f mp4 /dev/null
 ffmpeg -nostdin -y -loglevel error "${IN[@]}" -i "$WAV" -map 0:v -map 1:a -vf "$FINISH" -c:v libx264 -preset slow \
   -b:v "$B" -maxrate "$B" -bufsize "$B" -tune grain -pix_fmt yuv420p -pass 2 -passlogfile "$TMP/x264" \
-  -c:a aac -b:a 320k -t "$DUR" -movflags +faststart "$TMP/final.mp4"
+  -c:a aac -aac_pns 0 -aac_is 0 -b:a 320k -t "$DUR" -movflags +faststart "$TMP/final.mp4"
 [ "$WAV" = "$TMP/son.wav" ] && mv "$TMP/son.wav" "output/$NAME.wav"
 mv "$TMP/final.mp4" "output/$OUTNAME.mp4"
 # plans à monter séparément (INTRO.plans) : un fichier par plan, coupé à l'image près
@@ -59,7 +59,7 @@ if python3 -c "import json,sys; sys.exit(0 if json.load(open('$TMP/intro.json'))
   while read -r k id t0 t1; do
     D=$(python3 -c "print(round($t1 - $t0, 3))")
     ffmpeg -nostdin -y -loglevel error -ss "$t0" -i "output/$OUTNAME.mp4" -t "$D" -c:v libx264 -preset slow -b:v "$B" -maxrate "$B" -bufsize "$B" \
-      -tune grain -pix_fmt yuv420p -c:a aac -b:a 320k -movflags +faststart "output/$OUTNAME/$k-$id.mp4"
+      -tune grain -pix_fmt yuv420p -c:a aac -aac_pns 0 -aac_is 0 -b:a 320k -movflags +faststart "output/$OUTNAME/$k-$id.mp4"
   done
   ls -la "output/$OUTNAME"
 fi

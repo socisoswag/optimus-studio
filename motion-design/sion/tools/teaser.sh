@@ -64,6 +64,6 @@ KBPS=$(python3 -c "print(min(12000, int(95 * 8000 / $DUR - 330)))")
 ffmpeg -nostdin -y -loglevel error -i "$TMP/brut.mkv" -vf "$FIN" -c:v libx264 -preset slow -b:v "${KBPS}k" -maxrate "${KBPS}k" -bufsize "${KBPS}k" \
   -tune grain -pix_fmt yuv420p -pass 1 -passlogfile "$TMP/x264" -an -f mp4 /dev/null
 ffmpeg -nostdin -y -loglevel error -i "$TMP/brut.mkv" -vf "$FIN" -af "$AFIN" -c:v libx264 -preset slow -b:v "${KBPS}k" -maxrate "${KBPS}k" -bufsize "${KBPS}k" \
-  -tune grain -pix_fmt yuv420p -pass 2 -passlogfile "$TMP/x264" -c:a aac -b:a 320k -movflags +faststart "$TMP/teaser.mp4"
+  -tune grain -pix_fmt yuv420p -pass 2 -passlogfile "$TMP/x264" -c:a aac -aac_pns 0 -aac_is 0 -b:a 320k -movflags +faststart "$TMP/teaser.mp4"
 mv "$TMP/teaser.mp4" output/SION-teaser-1080p.mp4
 ls -la output/SION-teaser-1080p.mp4

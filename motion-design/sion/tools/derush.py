@@ -79,7 +79,7 @@ def cut(src, a, d, dst, amb=None):
             "-vf", "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,fps=25,format=yuv420p,setsar=1",
             "-c:v", "libx264", "-preset", "slow", "-crf", "16", "-maxrate", f"{rate}k", "-bufsize", f"{rate * 2}k", "-tune", "grain",
             "-af", f"aresample=48000,afade=t=in:d=0.04,afade=t=out:st={max(0, d - 0.06):.3f}:d=0.06",
-            "-c:a", "aac", "-b:a", "320k", "-ar", "48000", "-movflags", "+faststart", dst + ".part.mp4"]
+            "-c:a", "aac", "-aac_pns", "0", "-aac_is", "0", "-b:a", "320k", "-ar", "48000", "-movflags", "+faststart", dst + ".part.mp4"]
     subprocess.run(cmd, check=True)
     os.replace(dst + ".part.mp4", dst)
     MANIFEST[os.path.basename(dst)] = stamp
@@ -91,7 +91,7 @@ def black(d, dst):
         return
     subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"color=c=black:s=1920x1080:r=25:d={d:.3f}",
                     "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-t", f"{d:.3f}", "-c:v", "libx264", "-preset", "slow",
-                    "-crf", "16", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", dst], check=True)
+                    "-crf", "16", "-pix_fmt", "yuv420p", "-c:a", "aac", "-aac_pns", "0", "-aac_is", "0", "-b:a", "128k", "-movflags", "+faststart", dst], check=True)
 
 
 def flat(v):
