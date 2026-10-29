@@ -1,5 +1,5 @@
 {
- "maj": "29 octobre 2026, 12 h 30",
+ "maj": "29 octobre 2026, au soir",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -27,28 +27,28 @@
    "pct": 100,
    "poids": 1,
    "qui": "fait",
-   "detail": "parties II, IV, V, VII et conclusion relivrées avec les 11 archives de Wikimedia Commons"
+   "detail": "les 9 parties relivrées avec le nouveau son (ambiances sous les vrais plans, coups audibles au téléphone, sans clic)"
   },
   {
-   "nom": "Son du feu et du tic-tac refait (29 pièces)",
+   "nom": "Son de tout le film refait (sons Envato, ambiances, écoute au téléphone)",
    "pct": 100,
    "poids": 1,
    "qui": "fait",
-   "detail": "29 pièces, mêmes noms de fichiers ; plus de clic dans « Gaza, les guerres »"
+   "detail": "409 vraies prises, 108 ambiances de vrais plans ; 64 pièces contrôlées : aucun clic, crêtes sous -1,6 dBTP"
   },
   {
    "nom": "Plans, bruitages et musique Envato à télécharger",
-   "pct": 55,
+   "pct": 70,
    "poids": 3,
    "qui": "toi",
-   "detail": "archives Wikimedia et C01 à C05, Adobe D01 et D02 reçus ; bruitages : 151 liens directs envoyés (un par son) ; restent B02 à B20, C06 à C12 et la musique"
+   "detail": "archives Wikimedia, C01 à C06, Adobe D01 et D02 reçus ; 195 sons Envato reçus et branchés (327 prises) ; restent B02 à B20, C07 à C12 et la musique"
   },
   {
    "nom": "Archives libres : 1917 à 1950, puis Gaza et la Cisjordanie de 2000 à 2025",
    "pct": 75,
    "poids": 3,
    "qui": "moi",
-   "detail": "26 archives posées (dont Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023) ; vraies images : 19 % du film, cible 30 %"
+   "detail": "26 archives posées (dont Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023) ; vraies images : 19 % du film, cible 35 à 40 %"
   },
   {
    "nom": "Intégrer les plans Envato et les archives",
@@ -59,10 +59,10 @@
   },
   {
    "nom": "Bruitages variés et montage musical",
-   "pct": 0,
+   "pct": 60,
    "poids": 2,
    "qui": "moi",
-   "detail": "aucun son répété à l'identique ; une piste musique par partie pour Premiere"
+   "detail": "bruitages faits : jamais deux fois la même prise de suite, un tirage propre à chaque pièce ; reste la musique (une piste par partie pour Premiere)"
   },
   {
    "nom": "Réponses Perplexity",
@@ -94,10 +94,10 @@
   },
   {
    "nom": "Générique de fin avec les nouveaux crédits",
-   "pct": 100,
+   "pct": 80,
    "poids": 1,
-   "qui": "fait",
-   "detail": "refait avec les nouveaux crédits (Jordanie 1970, Golda Meir 1973 en CC BY-SA, Chatila 2023)"
+   "qui": "moi",
+   "detail": "texte à jour (nouvelles archives, Envato Elements) ; rendu à la toute fin du film, quand tu le diras"
   },
   {
    "nom": "Montage dans Premiere",
