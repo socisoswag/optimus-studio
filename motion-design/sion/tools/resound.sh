@@ -21,7 +21,7 @@ for NAME in "$@"; do
     node -e "require('./timelines/$NAME.js'); console.log(JSON.stringify(INTRO))" > "$TMP/intro.json"
     python3 tools/sound_intro.py "$TMP/intro.json" "output/$NAME.wav"
     DUR=$(python3 -c "import json; print(json.load(open('$TMP/intro.json'))['total'])")
-    ffmpeg -y -loglevel error -i "output/$NAME.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 320k \
+    ffmpeg -nostdin -y -loglevel error -i "output/$NAME.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 320k \
       -t "$DUR" -movflags +faststart "$TMP/piece.mp4"
     mv "$TMP/piece.mp4" "output/$NAME.mp4"
     if [ -d "output/$NAME" ]; then  # fichiers plan par plan : même découpe, nouveau son
@@ -45,27 +45,27 @@ for NAME in "$@"; do
     for f in output/chapitres/chapitre-*.mp4; do
       i=$((10#$(basename "$f" .mp4 | sed 's/chapitre-//') - 1))
       START=$(python3 -c "print($i * $CARD)")
-      ffmpeg -y -loglevel error -i "$f" -ss "$START" -t "$CARD" -i "$TMP/son.wav" -map 0:v -map 1:a -c:v copy \
+      ffmpeg -nostdin -y -loglevel error -i "$f" -ss "$START" -t "$CARD" -i "$TMP/son.wav" -map 0:v -map 1:a -c:v copy \
         -af "afade=t=in:d=0.08,afade=t=out:st=$(python3 -c "print($CARD - 0.35)"):d=0.35" -c:a aac -b:a 320k \
         -movflags +faststart "$TMP/carte.mp4"
       mv "$TMP/carte.mp4" "$f"
     done
-    ffmpeg -y -loglevel error -i output/chapitres.mp4 -i "$TMP/son.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k \
+    ffmpeg -nostdin -y -loglevel error -i output/chapitres.mp4 -i "$TMP/son.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k \
       -shortest -movflags +faststart "$TMP/bobine.mp4"
     mv "$TMP/bobine.mp4" output/chapitres.mp4
   else
     SION_PIECE="$NAME" python3 tools/sound.py "$TMP/cues.json" "output/$NAME.wav"
-    ffmpeg -y -loglevel error -i "output/$NAME.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 320k \
+    ffmpeg -nostdin -y -loglevel error -i "output/$NAME.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 320k \
       -shortest -movflags +faststart "$TMP/piece.mp4"
     # l'AAC fait remonter les crêtes des pièces chargées en coups secs : au-dessus de -1 dBTP une fois encodée, la pièce
     # est refaite avec un plafond abaissé d'autant (plus 0,5 dB de marge pour la découpe plan par plan)
-    TP=$(ffmpeg -nostats -i "$TMP/piece.mp4" -map 0:a -af ebur128=peak=true -f null - 2>&1 |
+    TP=$(ffmpeg -nostdin -nostats -i "$TMP/piece.mp4" -map 0:a -af ebur128=peak=true -f null - 2>&1 |
       awk '/True peak:/{f=1} f && /Peak:/{print $2; exit}')
     PLAF=$(python3 -c "tp = float('${TP:-0}'); print(round(-1.0 - (tp + 1.0) - 0.5, 2) if tp > -1.0 else '')")
     if [ -n "$PLAF" ]; then
       echo "crête $TP dBTP après encodage : $NAME refait avec un plafond à $PLAF dBFS"
       SION_PLAFOND="$PLAF" SION_PIECE="$NAME" python3 tools/sound.py "$TMP/cues.json" "output/$NAME.wav"
-      ffmpeg -y -loglevel error -i "output/$NAME.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -c:v copy -c:a aac \
+      ffmpeg -nostdin -y -loglevel error -i "output/$NAME.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -c:v copy -c:a aac \
         -b:a 320k -shortest -movflags +faststart "$TMP/piece.mp4"
     fi
     mv "$TMP/piece.mp4" "output/$NAME.mp4"
