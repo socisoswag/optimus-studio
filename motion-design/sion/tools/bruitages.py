@@ -178,10 +178,7 @@ _dernier = {}
 
 def coup(role, rng, longueur=0.15, seuil=12.0, vitesse=None):
     cs = coups(role, longueur, seuil)
-    k = int(rng.integers(len(cs)))
-    if len(cs) > 1 and _dernier.get(role) == k:
-        k = (k + 1) % len(cs)
-    _dernier[role] = k
+    k = B.tirage(("coup", role, longueur, seuil), len(cs), rng, memoire=6)
     x = cs[k]
     v = vitesse or _vitesse(rng, 0.04)
     if abs(v - 1) > 1e-3:
@@ -199,7 +196,7 @@ def impact(rng, k=1.0, lourd=True, court=False):
     def couche(role, ampl, gain, hp=None):
         v = _vitesse(rng, ampl)
         x = _st(B.prise(role, rng, vitesse=v))
-        s = B.prises(role)[B._derniere[role]]
+        s = B.prises(role)[B._derniere[role][-1]]
         # instant du coup relevé à l'oreille dans le catalogue (« coup », en secondes) ; sinon, repéré dans le son
         att = int(s["coup"] * SR / v) if "coup" in s else attaque(x)
         return (passe_haut(x, hp) if hp else x), gain, att
@@ -232,7 +229,7 @@ def impact(rng, k=1.0, lourd=True, court=False):
 def impact_sourd(rng):
     v = _vitesse(rng)
     x = _st(B.prise("impact_sourd", rng, vitesse=v))
-    s = B.prises("impact_sourd")[B._derniere["impact_sourd"]]
+    s = B.prises("impact_sourd")[B._derniere["impact_sourd"][-1]]
     return (x[:, 0], x[:, 1]), (int(s["coup"] * SR / v) if "coup" in s else attaque(x))
 
 

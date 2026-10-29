@@ -37,11 +37,26 @@ SR = 48000
 UA = {"User-Agent": "Mozilla/5.0 (documentaire SION, bruitages CC0)"}
 
 
-def catalogue():
+CAT_ENV = os.path.join(ROOT, "data", "bruitages-envato.json")
+
+
+def _principal():
     return json.load(open(CAT)) if os.path.exists(CAT) else {"roles": {}}
 
 
+def catalogue():
+    """Catalogue complet : les prises Freesound (data/bruitages.json) puis les prises Envato Elements téléchargées par
+    l'auteur (data/bruitages-envato.json, fichiers dans data/envato-sons/, hors du dépôt)."""
+    cat = _principal()
+    if os.path.exists(CAT_ENV):
+        for role, lst in json.load(open(CAT_ENV))["roles"].items():
+            cat["roles"].setdefault(role, []).extend(lst)
+    return cat
+
+
 def fichier(s):
+    if s.get("fichier"):  # prise Envato : chemin dans le projet
+        return os.path.join(ROOT, s["fichier"])
     return os.path.join(DIR, f"{s['id']}.ogg")
 
 
@@ -110,7 +125,7 @@ def ajouter(role, sid, **extra):
     titre = re.sub(rf"\s+by {re.escape(auteur)}$", "", titre)
     ogg = re.search(r"https://cdn\.freesound\.org/previews/\d+/\d+_\d+-[hl]q\.ogg", h)[0].replace("-lq.ogg", "-hq.ogg")
     duree = float((re.search(r'data-duration="([\d.]+)"', h) or [None, 0])[1])
-    cat = catalogue()
+    cat = _principal()
     lst = cat["roles"].setdefault(role, [])
     if any(x["id"] == sid for x in lst):
         sys.exit(f"{sid} est déjà dans « {role} »")
@@ -128,7 +143,7 @@ def credits_by():
 def prendre():
     from concurrent.futures import ThreadPoolExecutor
     os.makedirs(DIR, exist_ok=True)
-    todo = [(role, s) for role, lst in catalogue()["roles"].items() for s in lst
+    todo = [(role, s) for role, lst in _principal()["roles"].items() for s in lst
             if not (os.path.exists(fichier(s)) and os.path.getsize(fichier(s)) > 1000)]
 
     def one(item):
@@ -270,17 +285,27 @@ def fond(role, n, rng, rms_db=-20.0, xf=3.0):
 _derniere = {}
 
 
+def tirage(cle, n, rng, memoire=4):
+    """Indice tiré au hasard parmi n, jamais l'un des `memoire` derniers tirés pour cette clé (moins s'il y a peu de
+    choix) : avec plusieurs prises, la même ne revient jamais à la suite ni à quelques coups d'écart."""
+    vus = _derniere.setdefault(cle, [])
+    m = min(memoire, n - 1)
+    libres = [k for k in range(n) if k not in vus[-m:]] if m > 0 else list(range(n))
+    k = libres[int(rng.integers(len(libres)))]
+    vus.append(k)
+    del vus[:-8]
+    return k
+
+
 def prise(role, rng, vitesse=1.0, idx=None):
-    """Une prise du rôle (au hasard, pas la même que la fois précédente), crête à 0 dBFS. vitesse < 1 : plus grave et
+    """Une prise du rôle (au hasard, jamais l'une des quatre dernières), crête à 0 dBFS. vitesse < 1 : plus grave et
     plus long (lecture ralentie, comme une bande), > 1 : plus aigu. Varier la vitesse de ±6 % évite l'effet copier-coller."""
     ps = prises(role)
     if idx is None:
-        k = int(rng.integers(len(ps)))
-        if len(ps) > 1 and _derniere.get(role) == k:
-            k = (k + 1 + int(rng.integers(len(ps) - 1))) % len(ps)
+        k = tirage(role, len(ps), rng)
     else:
         k = idx % len(ps)
-    _derniere[role] = k
+        _derniere.setdefault(role, []).append(k)
     x = charge(ps[k])
     if abs(vitesse - 1) > 1e-3:
         src = np.arange(0, len(x) - 1, vitesse)

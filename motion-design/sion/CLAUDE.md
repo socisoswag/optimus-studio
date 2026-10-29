@@ -46,6 +46,9 @@ demandé, et ne rien enregistrer en voix tant que la réponse n'est pas vérifi�
 
 ## Bruitages (vrais sons, jamais « IA »)
 
+- Sons Envato Elements (licence Envato, sans crédit obligatoire) rangés dans `data/envato-sons/` (hors du dépôt) : enregistrements
+  réels partout ; les sons de studio (whoosh, glitch, swipe, « cinematic ») seulement sur les transitions du motion design
+  (titres, cartes, chiffres), jamais sur une archive ni un vrai plan ; jamais le générateur IA d'Envato (SoundGen).
 - Toujours de vrais enregistrements de la banque (data/bruitages.json, Freesound CC0 ou CC BY ; jamais de licence
   « non commerciale » ni Sampling+ ; `python3 tools/banque_sons.py ajouter <rôle> <numéro>` contrôle licence, titre et
   étiquettes, `prendre` télécharge). 100 % de vrais sons, 0 % d'IA : la synthèse ne sert qu'en secours si une prise manque.

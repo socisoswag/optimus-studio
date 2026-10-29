@@ -1,0 +1,3139 @@
+{
+ "_": "Sons Envato Elements de l'auteur (licence Envato, sans mention obligatoire), rangés par tools/banque_envato.py ; fichiers dans data/envato-sons/, hors du dépôt.",
+ "roles": {
+  "explosion": [
+   {
+    "id": "env:105mm-howitzer-cannon-fires:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/105mm-howitzer-cannon-fires-26NTXV3",
+    "fichier": "data/envato-sons/105mm-howitzer-cannon-fires/Cannon-Artillery-Howitzer_PREM11-1058.wav",
+    "titre": "Cannon-Artillery-Howitzer PREM11-1058",
+    "duree": 8.9
+   },
+   {
+    "id": "env:artillery-cannon-single-shot:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/artillery-cannon-single-shot-SHFP3HX",
+    "fichier": "data/envato-sons/artillery-cannon-single-shot/GUNArtl_Cannon Artillery_GUNS02-27-1.wav",
+    "titre": "GUNArtl Cannon Artillery GUNS02-27-1",
+    "duree": 6.5
+   },
+   {
+    "id": "env:artillery-distant-2:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/artillery-distant-2-9G23SSL",
+    "fichier": "data/envato-sons/artillery-distant-2/Artillery_Distant_ODC-0055-257.wav",
+    "titre": "Artillery Distant ODC-0055-257",
+    "duree": 45.2
+   },
+   {
+    "id": "env:artillery-shell-explosion-4933:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/artillery-shell-explosion-4933-M6B758F",
+    "fichier": "data/envato-sons/artillery-shell-explosion-4933/ArtilleryShellExplosion_BW.4933.wav",
+    "titre": "ArtilleryShellExplosion BW.4933",
+    "duree": 5.6
+   },
+   {
+    "id": "env:distant-explosion-03:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-explosion-03-8YZH253",
+    "fichier": "data/envato-sons/distant-explosion-03/Distant Explosion 03.wav",
+    "titre": "Distant Explosion 03",
+    "duree": 4.0
+   },
+   {
+    "id": "env:distant-explosion-2:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-explosion-2-Q23NH6R",
+    "fichier": "data/envato-sons/distant-explosion-2/ExplosionBomb CRB01_68_1.wav",
+    "titre": "ExplosionBomb CRB01 68 1",
+    "duree": 6.4
+   },
+   {
+    "id": "env:explosion-distant-thunder:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/explosion-distant-thunder-WFAAHGC",
+    "fichier": "data/envato-sons/explosion-distant-thunder/Explosion_Distant_Thunder.wav",
+    "titre": "Explosion Distant Thunder",
+    "duree": 13.4
+   },
+   {
+    "id": "env:large-distant-and-muted-explosion:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/large-distant-and-muted-explosion-3PCUWEG",
+    "fichier": "data/envato-sons/large-distant-and-muted-explosion/ExplosionLarge 6095_14_2.wav",
+    "titre": "ExplosionLarge 6095 14 2",
+    "duree": 2.0
+   },
+   {
+    "id": "env:large-distant-explosion:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/large-distant-explosion-SDT6CJE",
+    "fichier": "data/envato-sons/large-distant-explosion/ExplosionBigDista SDT025701.wav",
+    "titre": "ExplosionBigDista SDT025701",
+    "duree": 10.5
+   },
+   {
+    "id": "env:warfare-distant-explosions:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/warfare-distant-explosions-PMTUCTR",
+    "fichier": "data/envato-sons/warfare-distant-explosions/Warfare_Distant_Explosions_ODC-0020-398.wav",
+    "titre": "Warfare Distant Explosions ODC-0020-398",
+    "duree": 7.1
+   }
+  ],
+  "sirene": [
+   {
+    "id": "env:air-raid-siren-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/air-raid-siren-1-MBHWKEP",
+    "fichier": "data/envato-sons/air-raid-siren-1/Air_Raid_Siren_ODY-0020-056.wav",
+    "titre": "Air Raid Siren ODY-0020-056",
+    "duree": 68.2
+   },
+   {
+    "id": "env:air-raid-siren-2:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/air-raid-siren-2-CEE6VAY",
+    "fichier": "data/envato-sons/air-raid-siren-2/AirRaidSirenOldFashioned_eYTWl_02.wav",
+    "titre": "AirRaidSirenOldFashioned eYTWl 02",
+    "duree": 29.8
+   },
+   {
+    "id": "env:air-raid-siren-old-fashioned:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/air-raid-siren-old-fashioned-TXREP8T",
+    "fichier": "data/envato-sons/air-raid-siren-old-fashioned/Air_Raid_Siren_Old_Fashioned_ODC-0029-201.wav",
+    "titre": "Air Raid Siren Old Fashioned ODC-0029-201",
+    "duree": 59.3
+   }
+  ],
+  "chevre": [
+   {
+    "id": "env:animal-goat-baa-herd-excitement-03:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/animal-goat-baa-herd-excitement-03-XMSVVT7",
+    "fichier": "data/envato-sons/animal-goat-baa-herd-excitement-03/ANIMAL_GOAT_Baa_Herd_Excitement_03.wav",
+    "titre": "ANIMAL GOAT Baa Herd Excitement 03",
+    "duree": 6.7
+   }
+  ],
+  "moutons": [
+   {
+    "id": "env:animals-goats-bleat-calls-warbling-baa-movements:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/animals-goats-bleat-calls-warbling-baa-movements/Animals_Goats_Bleat_Calls_Warbling_Baa_Movements_Rubbing_Barn_SDINDIA_02020.wav",
+    "titre": "Animals Goats Bleat Calls Warbling Baa Movements Rubbing Barn SDINDIA 02020",
+    "duree": 81.6
+   },
+   {
+    "id": "env:goat-livestock-bells-ringing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/goat-livestock-bells-ringing/Goat Bells.wav",
+    "titre": "Goat Bells",
+    "duree": 59.9
+   }
+  ],
+  "chevres": [
+   {
+    "id": "env:animals-goats-bleat-calls-warbling-baa-movements:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/animals-goats-bleat-calls-warbling-baa-movements/Animals_Goats_Bleat_Calls_Warbling_Baa_Movements_Rubbing_Barn_SDINDIA_02020.wav",
+    "titre": "Animals Goats Bleat Calls Warbling Baa Movements Rubbing Barn SDINDIA 02020",
+    "duree": 81.6
+   },
+   {
+    "id": "env:goat-livestock-bells-ringing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/goat-livestock-bells-ringing/Goat Bells.wav",
+    "titre": "Goat Bells",
+    "duree": 59.9
+   }
+  ],
+  "tic": [
+   {
+    "id": "env:antique-clock-ticking:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/antique-clock-ticking-6KFW74G",
+    "fichier": "data/envato-sons/antique-clock-ticking/ClockTicksAntique TE022101.wav",
+    "titre": "ClockTicksAntique TE022101",
+    "duree": 33.4
+   },
+   {
+    "id": "env:old-clock-pendulum-ticking:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/old-clock-pendulum-ticking-BSL3E5P",
+    "fichier": "data/envato-sons/old-clock-pendulum-ticking/24579 old clock pendulum ticking minute-full.wav",
+    "titre": "24579 old clock pendulum ticking minute-full",
+    "duree": 60.0
+   },
+   {
+    "id": "env:wall-clock-ticking:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/wall-clock-ticking-48PWMNL",
+    "fichier": "data/envato-sons/wall-clock-ticking/Clock-Tick_GEN-HD4-39719.wav",
+    "titre": "Clock-Tick GEN-HD4-39719",
+    "duree": 21.1
+   }
+  ],
+  "machine_papier": [
+   {
+    "id": "env:antique-typewriter-load-sheet-of-paper:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/antique-typewriter-load-sheet-of-paper-SPNAGU2",
+    "fichier": "data/envato-sons/antique-typewriter-load-sheet-of-paper/Typewriter 6028_92_11.wav",
+    "titre": "Typewriter 6028 92 11",
+    "duree": 4.4
+   }
+  ],
+  "guerre_loin": [
+   {
+    "id": "env:artillery-distant-2:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/artillery-distant-2-9G23SSL",
+    "fichier": "data/envato-sons/artillery-distant-2/Artillery_Distant_ODC-0055-257.wav",
+    "titre": "Artillery Distant ODC-0055-257",
+    "duree": 45.2
+   },
+   {
+    "id": "env:distant-gunfire-constant:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-gunfire-constant-D73K4LT",
+    "fichier": "data/envato-sons/distant-gunfire-constant/Distant_Gunfire_Constant_OCP-1254-050.wav",
+    "titre": "Distant Gunfire Constant OCP-1254-050",
+    "duree": 103.6
+   },
+   {
+    "id": "env:rumble-long-distant-explosions-crumbling-roll:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rumble-long-distant-explosions-crumbling-roll-J4C377C",
+    "fichier": "data/envato-sons/rumble-long-distant-explosions-crumbling-roll/Rumble_Long_Distant_Explosions_Crumbling_Roll_OCP-0048-14.wav",
+    "titre": "Rumble Long Distant Explosions Crumbling Roll OCP-0048-14",
+    "duree": 116.2
+   }
+  ],
+  "char": [
+   {
+    "id": "env:ats-59-military-tank-fast-pull-away:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/ats-59-military-tank-fast-pull-away-5W2DUN9",
+    "fichier": "data/envato-sons/ats-59-military-tank-fast-pull-away/TANK-MILITARY_GEN-HDF-22357.wav",
+    "titre": "TANK-MILITARY GEN-HDF-22357",
+    "duree": 35.4
+   },
+   {
+    "id": "env:ats-59-military-tanks-fast-approach:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/ats-59-military-tanks-fast-approach-36F5TXR",
+    "fichier": "data/envato-sons/ats-59-military-tanks-fast-approach/TANK-MILITARY_GEN-HDF-22359.wav",
+    "titre": "TANK-MILITARY GEN-HDF-22359",
+    "duree": 19.0
+   },
+   {
+    "id": "env:bmp-1-military-tank-on-board-medium-speed:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/bmp-1-military-tank-on-board-medium-speed-3V6YPUD",
+    "fichier": "data/envato-sons/bmp-1-military-tank-on-board-medium-speed/TANK-MILITARY_GEN-HDF-22388.wav",
+    "titre": "TANK-MILITARY GEN-HDF-22388",
+    "duree": 41.7
+   },
+   {
+    "id": "env:military-tank-driving:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/military-tank-driving-6EHBD9V",
+    "fichier": "data/envato-sons/military-tank-driving/Millitary Tank Driving.wav",
+    "titre": "Millitary Tank Driving",
+    "duree": 50.9
+   },
+   {
+    "id": "env:military-tank-moving-tracks-squeaking:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/military-tank-moving-tracks-squeaking-ECHDNYB",
+    "fichier": "data/envato-sons/military-tank-moving-tracks-squeaking/Military Tank Moving Tracks Squeaking.wav",
+    "titre": "Military Tank Moving Tracks Squeaking",
+    "duree": 76.2
+   }
+  ],
+  "tir": [
+   {
+    "id": "env:automatic-gunshots-distant:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/automatic-gunshots-distant-2LM7SNE",
+    "fichier": "data/envato-sons/automatic-gunshots-distant/09407 automatic gun distant.wav",
+    "titre": "09407 automatic gun distant",
+    "duree": 2.2
+   },
+   {
+    "id": "env:distant-gunshot:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-gunshot-Y3R56ME",
+    "fichier": "data/envato-sons/distant-gunshot/25034 distant gunshot-full.wav",
+    "titre": "25034 distant gunshot-full",
+    "debut": 0.15,
+    "fin": 0.795,
+    "coup": 0.01,
+    "duree": 0.65
+   },
+   {
+    "id": "env:distant-gunshot:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-gunshot-Y3R56ME",
+    "fichier": "data/envato-sons/distant-gunshot/25034 distant gunshot-full.wav",
+    "titre": "25034 distant gunshot-full",
+    "debut": 0.805,
+    "fin": 1.645,
+    "coup": 0.01,
+    "duree": 0.84
+   },
+   {
+    "id": "env:distant-gunshot-2:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-gunshot-2-7RA4S3L",
+    "fichier": "data/envato-sons/distant-gunshot-2/26220 Distant gunshot 2-full.wav",
+    "titre": "26220 Distant gunshot 2-full",
+    "debut": 0.04,
+    "fin": 0.32,
+    "coup": 0.01,
+    "duree": 0.28
+   },
+   {
+    "id": "env:distant-gunshot-2:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-gunshot-2-7RA4S3L",
+    "fichier": "data/envato-sons/distant-gunshot-2/26220 Distant gunshot 2-full.wav",
+    "titre": "26220 Distant gunshot 2-full",
+    "debut": 0.33,
+    "fin": 0.64,
+    "coup": 0.01,
+    "duree": 0.31
+   },
+   {
+    "id": "env:distant-gunshot-2:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-gunshot-2-7RA4S3L",
+    "fichier": "data/envato-sons/distant-gunshot-2/26220 Distant gunshot 2-full.wav",
+    "titre": "26220 Distant gunshot 2-full",
+    "debut": 0.65,
+    "fin": 1.535,
+    "coup": 0.01,
+    "duree": 0.88
+   },
+   {
+    "id": "env:weapons-rifle-distant-shot-06:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/weapons-rifle-distant-shot-06-LK4YSEG",
+    "fichier": "data/envato-sons/weapons-rifle-distant-shot-06/WEAPONS_RIFLE_Distant_Shot_06.wav",
+    "titre": "WEAPONS RIFLE Distant Shot 06",
+    "debut": 0.09,
+    "fin": 0.975,
+    "coup": 0.01,
+    "duree": 0.89
+   }
+  ],
+  "souffle": [
+   {
+    "id": "env:bamboo-woosh:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/bamboo-woosh-QJCB4UD",
+    "fichier": "data/envato-sons/bamboo-woosh/Bamboo Swish.wav",
+    "titre": "Bamboo Swish",
+    "duree": 2.3
+   },
+   {
+    "id": "env:fast-road-car-passing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/fast-road-car-passing-VUDQEYL",
+    "fichier": "data/envato-sons/fast-road-car-passing/18331 fast road car passing-full.wav",
+    "titre": "18331 fast road car passing-full",
+    "debut": 2.49,
+    "fin": 4.29,
+    "duree": 1.8
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_01.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 01",
+    "duree": 3.1
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_02.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 02",
+    "duree": 2.8
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_03.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 03",
+    "duree": 3.5,
+    "fin": 3.5
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_04.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 04",
+    "duree": 2.7
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_05.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 05",
+    "duree": 3.5,
+    "fin": 3.5
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_06.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 06",
+    "duree": 2.3
+   },
+   {
+    "id": "env:foley-whoosh-cloth-01:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/foley-whoosh-cloth-01-BK43VW2",
+    "fichier": "data/envato-sons/foley-whoosh-cloth-01/FOLEY_WHOOSH_Cloth_01.wav",
+    "titre": "FOLEY WHOOSH Cloth 01",
+    "duree": 1.2
+   },
+   {
+    "id": "env:foley-whoosh-feather-quick-01:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/foley-whoosh-feather-quick-01-HMMX3S3",
+    "fichier": "data/envato-sons/foley-whoosh-feather-quick-01/FOLEY_WHOOSH_Feather_Quick_01.wav",
+    "titre": "FOLEY WHOOSH Feather Quick 01",
+    "duree": 0.3
+   },
+   {
+    "id": "env:passing-car-mid-distant-whoosh:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/passing-car-mid-distant-whoosh-GMXRKDB",
+    "fichier": "data/envato-sons/passing-car-mid-distant-whoosh/14568 passing car mid distant whoosh-full.wav",
+    "titre": "14568 passing car mid distant whoosh-full",
+    "debut": 3.615,
+    "fin": 5.415,
+    "duree": 1.8
+   },
+   {
+    "id": "env:very-fast-car-passing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/very-fast-car-passing-VSGQNFW",
+    "fichier": "data/envato-sons/very-fast-car-passing/03446 fast car field passing.wav",
+    "titre": "03446 fast car field passing",
+    "debut": 1.765,
+    "fin": 3.565,
+    "duree": 1.8
+   }
+  ],
+  "enfants": [
+   {
+    "id": "env:children-playing-in-a-schoolyard:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/children-playing-in-a-schoolyard-9GDU2BV",
+    "fichier": "data/envato-sons/children-playing-in-a-schoolyard/Children Playing in a Schoolyard.wav",
+    "titre": "Children Playing in a Schoolyard",
+    "duree": 31.0
+   },
+   {
+    "id": "env:distant-playground-schoolyard:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-playground-schoolyard-ZKTPC9U",
+    "fichier": "data/envato-sons/distant-playground-schoolyard/PlaygroundSchoolya BT041501.wav",
+    "titre": "PlaygroundSchoolya BT041501",
+    "duree": 136.9
+   },
+   {
+    "id": "env:schoolyard:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/schoolyard-2RPJVR7",
+    "fichier": "data/envato-sons/schoolyard/soundjay_schoolyard_main-01.wav",
+    "titre": "soundjay schoolyard main-01",
+    "duree": 60.0
+   }
+  ],
+  "cloches": [
+   {
+    "id": "env:church-bell-evening-prayer-call-distant-ringing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/church-bell-evening-prayer-call-distant-ringing-U5RSMY7",
+    "fichier": "data/envato-sons/church-bell-evening-prayer-call-distant-ringing/Church_Bell_Evening_Prayer_Call_Distant_Ringing_OCP-0079-33.wav",
+    "titre": "Church Bell Evening Prayer Call Distant Ringing OCP-0079-33",
+    "duree": 48.5
+   }
+  ],
+  "cigales": [
+   {
+    "id": "env:cicadas:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/cicadas-ZK7H3JW",
+    "fichier": "data/envato-sons/cicadas/Mountain Audio - Cicadas.wav",
+    "titre": "Mountain Audio - Cicadas",
+    "duree": 9.1
+   },
+   {
+    "id": "env:cicadas-at-night-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/cicadas-at-night-1-WQUYM3D",
+    "fichier": "data/envato-sons/cicadas-at-night-1/Mountain Audio - Cicadas at Night 1.wav",
+    "titre": "Mountain Audio - Cicadas at Night 1",
+    "duree": 40.0
+   }
+  ],
+  "nuit": [
+   {
+    "id": "env:cicadas-at-night-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/cicadas-at-night-1-WQUYM3D",
+    "fichier": "data/envato-sons/cicadas-at-night-1/Mountain Audio - Cicadas at Night 1.wav",
+    "titre": "Mountain Audio - Cicadas at Night 1",
+    "duree": 40.0
+   },
+   {
+    "id": "env:cricket-nighttime-ambience:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/cricket-nighttime-ambience-SWU3RNL",
+    "fichier": "data/envato-sons/cricket-nighttime-ambience/AnimalCrickets WWA08_29.wav",
+    "titre": "AnimalCrickets WWA08 29",
+    "duree": 106.5
+   },
+   {
+    "id": "env:night-ambience-with-light-crickets:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/night-ambience-with-light-crickets-J6TCBHE",
+    "fichier": "data/envato-sons/night-ambience-with-light-crickets/NightAmbienceLight PE011701.wav",
+    "titre": "NightAmbienceLight PE011701",
+    "duree": 104.0
+   }
+  ],
+  "studio": [
+   {
+    "id": "env:cinematic-photo:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/cinematic-photo/Cinematic Photo.wav",
+    "titre": "Cinematic Photo",
+    "duree": 5.9
+   },
+   {
+    "id": "env:cinematic-transition-whoosh-11:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/cinematic-transition-whoosh-11/CINEMATIC_TRANSITION_Whoosh_11.wav",
+    "titre": "CINEMATIC TRANSITION Whoosh 11",
+    "duree": 2.7
+   },
+   {
+    "id": "env:clicking-a-ui-bubble-button-provides-a-crisp-tap:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/clicking-a-ui-bubble-button-provides-a-crisp-tap/Ui Click Bubble 06.wav",
+    "titre": "Ui Click Bubble 06",
+    "duree": 0.5
+   },
+   {
+    "id": "env:glitch:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/glitch/Glitch 01.wav",
+    "titre": "Glitch 01",
+    "duree": 3.6
+   },
+   {
+    "id": "env:glitch:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/glitch/Glitch 02.wav",
+    "titre": "Glitch 02",
+    "duree": 2.5
+   },
+   {
+    "id": "env:glitch:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/glitch/Glitch 03.wav",
+    "titre": "Glitch 03",
+    "duree": 1.5
+   },
+   {
+    "id": "env:glitch:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/glitch/Glitch 04.wav",
+    "titre": "Glitch 04",
+    "duree": 2.3
+   },
+   {
+    "id": "env:glitch:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/glitch/Glitch 05.wav",
+    "titre": "Glitch 05",
+    "duree": 2.4
+   },
+   {
+    "id": "env:glitch:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/glitch/Glitch 06.wav",
+    "titre": "Glitch 06",
+    "duree": 3.6
+   },
+   {
+    "id": "env:glitch-accent-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/glitch-accent-1/Glitch Accent 1.wav",
+    "titre": "Glitch Accent 1",
+    "duree": 1.8
+   },
+   {
+    "id": "env:glitch-rough:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/glitch-rough/Glitch Rough.wav",
+    "titre": "Glitch Rough",
+    "duree": 1.2
+   },
+   {
+    "id": "env:incoming-cinematic-transition:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/incoming-cinematic-transition/Incoming Cinematic Transition.wav",
+    "titre": "Incoming Cinematic Transition",
+    "duree": 6.0
+   },
+   {
+    "id": "env:swipe:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/swipe/Swipe 1.wav",
+    "titre": "Swipe 1",
+    "duree": 1.6
+   },
+   {
+    "id": "env:swipe:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/swipe/Swipe 2.wav",
+    "titre": "Swipe 2",
+    "duree": 1.7
+   },
+   {
+    "id": "env:swipe:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/swipe/Swipe 3.wav",
+    "titre": "Swipe 3",
+    "duree": 1.6
+   }
+  ],
+  "nuit_ville": [
+   {
+    "id": "env:city-ambience-night-distant-traffic-2:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/city-ambience-night-distant-traffic-2-ZXLU5W2",
+    "fichier": "data/envato-sons/city-ambience-night-distant-traffic-2/City_Ambience_Night_Distant_Traffic_ODY-1271-039.wav",
+    "titre": "City Ambience Night Distant Traffic ODY-1271-039",
+    "duree": 15.9
+   },
+   {
+    "id": "env:city-night-ambience-5:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/city-night-ambience-5-T4FEMJJ",
+    "fichier": "data/envato-sons/city-night-ambience-5/CityNightAmbience_pc6WZ_01.wav",
+    "titre": "CityNightAmbience pc6WZ 01",
+    "duree": 36.0
+   },
+   {
+    "id": "env:city-night-ambience-6:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/city-night-ambience-6-3G678FC",
+    "fichier": "data/envato-sons/city-night-ambience-6/CityNightAmbience_pc6WZ_02.wav",
+    "titre": "CityNightAmbience pc6WZ 02",
+    "duree": 36.0
+   }
+  ],
+  "mer": [
+   {
+    "id": "env:city-harbor-with-seagulls-morning-ambience:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/city-harbor-with-seagulls-morning-ambience-QX7787D",
+    "fichier": "data/envato-sons/city-harbor-with-seagulls-morning-ambience/City Harbor with Seagulls Morning Ambience.wav",
+    "titre": "City Harbor with Seagulls Morning Ambience",
+    "duree": 153.0
+   },
+   {
+    "id": "env:harbor-atmosphere-with-seagulls:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/harbor-atmosphere-with-seagulls-FTHD96Y",
+    "fichier": "data/envato-sons/harbor-atmosphere-with-seagulls/HarborAtmosphereLi 3D043201.wav",
+    "titre": "HarborAtmosphereLi 3D043201",
+    "duree": 136.9
+   },
+   {
+    "id": "env:seashore:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/seashore-KMSTVA9",
+    "fichier": "data/envato-sons/seashore/Seashore.wav",
+    "titre": "Seashore",
+    "duree": 72.3
+   }
+  ],
+  "bureau": [
+   {
+    "id": "env:computer-input-room-ambience:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/computer-input-room-ambience-5WG4RMQ",
+    "fichier": "data/envato-sons/computer-input-room-ambience/OfficeComputerRoom TL05_09.wav",
+    "titre": "OfficeComputerRoom TL05 09",
+    "duree": 180.0
+   },
+   {
+    "id": "env:office-room-tone:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/office-room-tone-C55AHX7",
+    "fichier": "data/envato-sons/office-room-tone/Office_Room_Tone_ODY-1110-029.wav",
+    "titre": "Office Room Tone ODY-1110-029",
+    "duree": 25.7
+   },
+   {
+    "id": "env:quiet-clean-office-room-tone:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/quiet-clean-office-room-tone-QP6XGCW",
+    "fichier": "data/envato-sons/quiet-clean-office-room-tone/RoomToneVeryQuiet BT014001.wav",
+    "titre": "RoomToneVeryQuiet BT014001",
+    "duree": 83.8
+   },
+   {
+    "id": "env:room-tone-empty-office-space:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/room-tone-empty-office-space-MBDRH22",
+    "fichier": "data/envato-sons/room-tone-empty-office-space/Room_Tone_Empty_Office_Space_ODC-0021-134.wav",
+    "titre": "Room Tone Empty Office Space ODC-0021-134",
+    "duree": 78.4
+   }
+  ],
+  "ecroulement": [
+   {
+    "id": "env:concrete-building-collapses:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-building-collapses-TCA3R7E",
+    "fichier": "data/envato-sons/concrete-building-collapses/Rock-Stone-Structure-Collapse_SONICROCK833.wav",
+    "titre": "Rock-Stone-Structure-Collapse SONICROCK833",
+    "debut": 0.155,
+    "fin": 0.44,
+    "coup": 0.01,
+    "duree": 0.29
+   },
+   {
+    "id": "env:concrete-building-collapses:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-building-collapses-TCA3R7E",
+    "fichier": "data/envato-sons/concrete-building-collapses/Rock-Stone-Structure-Collapse_SONICROCK833.wav",
+    "titre": "Rock-Stone-Structure-Collapse SONICROCK833",
+    "debut": 0.45,
+    "fin": 0.71,
+    "coup": 0.01,
+    "duree": 0.26
+   },
+   {
+    "id": "env:concrete-building-collapses:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-building-collapses-TCA3R7E",
+    "fichier": "data/envato-sons/concrete-building-collapses/Rock-Stone-Structure-Collapse_SONICROCK833.wav",
+    "titre": "Rock-Stone-Structure-Collapse SONICROCK833",
+    "debut": 0.72,
+    "fin": 1.19,
+    "coup": 0.01,
+    "duree": 0.47
+   },
+   {
+    "id": "env:concrete-building-collapses:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-building-collapses-TCA3R7E",
+    "fichier": "data/envato-sons/concrete-building-collapses/Rock-Stone-Structure-Collapse_SONICROCK833.wav",
+    "titre": "Rock-Stone-Structure-Collapse SONICROCK833",
+    "debut": 1.2,
+    "fin": 1.445,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:concrete-building-collapses:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-building-collapses-TCA3R7E",
+    "fichier": "data/envato-sons/concrete-building-collapses/Rock-Stone-Structure-Collapse_SONICROCK833.wav",
+    "titre": "Rock-Stone-Structure-Collapse SONICROCK833",
+    "debut": 1.455,
+    "fin": 1.71,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:concrete-building-collapses:0:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-building-collapses-TCA3R7E",
+    "fichier": "data/envato-sons/concrete-building-collapses/Rock-Stone-Structure-Collapse_SONICROCK833.wav",
+    "titre": "Rock-Stone-Structure-Collapse SONICROCK833",
+    "debut": 1.72,
+    "fin": 2.235,
+    "coup": 0.01,
+    "duree": 0.51
+   },
+   {
+    "id": "env:concrete-building-collapses:0:6",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-building-collapses-TCA3R7E",
+    "fichier": "data/envato-sons/concrete-building-collapses/Rock-Stone-Structure-Collapse_SONICROCK833.wav",
+    "titre": "Rock-Stone-Structure-Collapse SONICROCK833",
+    "debut": 2.245,
+    "fin": 2.745,
+    "coup": 0.01,
+    "duree": 0.5
+   },
+   {
+    "id": "env:concrete-building-collapses:0:7",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-building-collapses-TCA3R7E",
+    "fichier": "data/envato-sons/concrete-building-collapses/Rock-Stone-Structure-Collapse_SONICROCK833.wav",
+    "titre": "Rock-Stone-Structure-Collapse SONICROCK833",
+    "debut": 2.755,
+    "fin": 3.035,
+    "coup": 0.01,
+    "duree": 0.28
+   },
+   {
+    "id": "env:concrete-wall-collapsing:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-wall-collapsing-WT2YFMA",
+    "fichier": "data/envato-sons/concrete-wall-collapsing/Crash-Rock-Wall-Collapse_HHITSDEST0427.wav",
+    "titre": "Crash-Rock-Wall-Collapse HHITSDEST0427",
+    "debut": 0.04,
+    "fin": 0.46,
+    "coup": 0.01,
+    "duree": 0.42
+   },
+   {
+    "id": "env:concrete-wall-collapsing:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-wall-collapsing-WT2YFMA",
+    "fichier": "data/envato-sons/concrete-wall-collapsing/Crash-Rock-Wall-Collapse_HHITSDEST0427.wav",
+    "titre": "Crash-Rock-Wall-Collapse HHITSDEST0427",
+    "debut": 0.47,
+    "fin": 0.765,
+    "coup": 0.01,
+    "duree": 0.3
+   },
+   {
+    "id": "env:concrete-wall-collapsing:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-wall-collapsing-WT2YFMA",
+    "fichier": "data/envato-sons/concrete-wall-collapsing/Crash-Rock-Wall-Collapse_HHITSDEST0427.wav",
+    "titre": "Crash-Rock-Wall-Collapse HHITSDEST0427",
+    "debut": 0.775,
+    "fin": 1.035,
+    "coup": 0.01,
+    "duree": 0.26
+   },
+   {
+    "id": "env:concrete-wall-collapsing:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-wall-collapsing-WT2YFMA",
+    "fichier": "data/envato-sons/concrete-wall-collapsing/Crash-Rock-Wall-Collapse_HHITSDEST0427.wav",
+    "titre": "Crash-Rock-Wall-Collapse HHITSDEST0427",
+    "debut": 1.045,
+    "fin": 1.32,
+    "coup": 0.01,
+    "duree": 0.28
+   },
+   {
+    "id": "env:concrete-wall-collapsing:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-wall-collapsing-WT2YFMA",
+    "fichier": "data/envato-sons/concrete-wall-collapsing/Crash-Rock-Wall-Collapse_HHITSDEST0427.wav",
+    "titre": "Crash-Rock-Wall-Collapse HHITSDEST0427",
+    "debut": 1.33,
+    "fin": 1.575,
+    "coup": 0.01,
+    "duree": 0.24
+   },
+   {
+    "id": "env:concrete-wall-collapsing:0:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-wall-collapsing-WT2YFMA",
+    "fichier": "data/envato-sons/concrete-wall-collapsing/Crash-Rock-Wall-Collapse_HHITSDEST0427.wav",
+    "titre": "Crash-Rock-Wall-Collapse HHITSDEST0427",
+    "debut": 1.585,
+    "fin": 1.915,
+    "coup": 0.01,
+    "duree": 0.33
+   },
+   {
+    "id": "env:concrete-wall-collapsing:0:6",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-wall-collapsing-WT2YFMA",
+    "fichier": "data/envato-sons/concrete-wall-collapsing/Crash-Rock-Wall-Collapse_HHITSDEST0427.wav",
+    "titre": "Crash-Rock-Wall-Collapse HHITSDEST0427",
+    "debut": 1.925,
+    "fin": 2.175,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:concrete-wall-collapsing:0:7",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/concrete-wall-collapsing-WT2YFMA",
+    "fichier": "data/envato-sons/concrete-wall-collapsing/Crash-Rock-Wall-Collapse_HHITSDEST0427.wav",
+    "titre": "Crash-Rock-Wall-Collapse HHITSDEST0427",
+    "debut": 2.185,
+    "fin": 2.45,
+    "coup": 0.01,
+    "duree": 0.27
+   },
+   {
+    "id": "env:falling-rubble:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-rubble-2NWGHUY",
+    "fichier": "data/envato-sons/falling-rubble/Falling Rubble.wav",
+    "titre": "Falling Rubble",
+    "debut": 0.045,
+    "fin": 0.405,
+    "coup": 0.01,
+    "duree": 0.36
+   },
+   {
+    "id": "env:falling-rubble:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-rubble-2NWGHUY",
+    "fichier": "data/envato-sons/falling-rubble/Falling Rubble.wav",
+    "titre": "Falling Rubble",
+    "debut": 0.415,
+    "fin": 0.725,
+    "coup": 0.01,
+    "duree": 0.31
+   },
+   {
+    "id": "env:falling-rubble:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-rubble-2NWGHUY",
+    "fichier": "data/envato-sons/falling-rubble/Falling Rubble.wav",
+    "titre": "Falling Rubble",
+    "debut": 0.735,
+    "fin": 0.98,
+    "coup": 0.01,
+    "duree": 0.24
+   },
+   {
+    "id": "env:falling-rubble:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-rubble-2NWGHUY",
+    "fichier": "data/envato-sons/falling-rubble/Falling Rubble.wav",
+    "titre": "Falling Rubble",
+    "debut": 0.99,
+    "fin": 1.235,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:falling-rubble:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-rubble-2NWGHUY",
+    "fichier": "data/envato-sons/falling-rubble/Falling Rubble.wav",
+    "titre": "Falling Rubble",
+    "debut": 1.245,
+    "fin": 1.635,
+    "coup": 0.01,
+    "duree": 0.39
+   },
+   {
+    "id": "env:falling-rubble:0:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-rubble-2NWGHUY",
+    "fichier": "data/envato-sons/falling-rubble/Falling Rubble.wav",
+    "titre": "Falling Rubble",
+    "debut": 1.645,
+    "fin": 1.99,
+    "coup": 0.01,
+    "duree": 0.34
+   },
+   {
+    "id": "env:falling-rubble:0:6",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-rubble-2NWGHUY",
+    "fichier": "data/envato-sons/falling-rubble/Falling Rubble.wav",
+    "titre": "Falling Rubble",
+    "debut": 2.0,
+    "fin": 2.33,
+    "coup": 0.01,
+    "duree": 0.33
+   },
+   {
+    "id": "env:falling-rubble:0:7",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-rubble-2NWGHUY",
+    "fichier": "data/envato-sons/falling-rubble/Falling Rubble.wav",
+    "titre": "Falling Rubble",
+    "debut": 2.34,
+    "fin": 2.615,
+    "coup": 0.01,
+    "duree": 0.28
+   },
+   {
+    "id": "env:huge-building-collapse:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/huge-building-collapse-NKPJLYE",
+    "fichier": "data/envato-sons/huge-building-collapse/22466 huge building collapse-full.wav",
+    "titre": "22466 huge building collapse-full",
+    "debut": 0.04,
+    "fin": 7.05,
+    "coup": 0.01,
+    "duree": 7.01
+   },
+   {
+    "id": "env:stone-rubble-and-debris-falling-on-dirt:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stone-rubble-and-debris-falling-on-dirt-VBLKQVP",
+    "fichier": "data/envato-sons/stone-rubble-and-debris-falling-on-dirt/Fall-Rock-Debris-Rubble_HHITSDEST0637.wav",
+    "titre": "Fall-Rock-Debris-Rubble HHITSDEST0637",
+    "debut": 0.04,
+    "fin": 0.38,
+    "coup": 0.01,
+    "duree": 0.34
+   },
+   {
+    "id": "env:stone-rubble-and-debris-falling-on-dirt:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stone-rubble-and-debris-falling-on-dirt-VBLKQVP",
+    "fichier": "data/envato-sons/stone-rubble-and-debris-falling-on-dirt/Fall-Rock-Debris-Rubble_HHITSDEST0637.wav",
+    "titre": "Fall-Rock-Debris-Rubble HHITSDEST0637",
+    "debut": 0.39,
+    "fin": 0.67,
+    "coup": 0.01,
+    "duree": 0.28
+   },
+   {
+    "id": "env:stone-rubble-and-debris-falling-on-dirt:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stone-rubble-and-debris-falling-on-dirt-VBLKQVP",
+    "fichier": "data/envato-sons/stone-rubble-and-debris-falling-on-dirt/Fall-Rock-Debris-Rubble_HHITSDEST0637.wav",
+    "titre": "Fall-Rock-Debris-Rubble HHITSDEST0637",
+    "debut": 0.68,
+    "fin": 0.925,
+    "coup": 0.01,
+    "duree": 0.24
+   },
+   {
+    "id": "env:stone-rubble-and-debris-falling-on-dirt:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stone-rubble-and-debris-falling-on-dirt-VBLKQVP",
+    "fichier": "data/envato-sons/stone-rubble-and-debris-falling-on-dirt/Fall-Rock-Debris-Rubble_HHITSDEST0637.wav",
+    "titre": "Fall-Rock-Debris-Rubble HHITSDEST0637",
+    "debut": 0.935,
+    "fin": 1.18,
+    "coup": 0.01,
+    "duree": 0.24
+   },
+   {
+    "id": "env:stone-rubble-and-debris-falling-on-dirt:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stone-rubble-and-debris-falling-on-dirt-VBLKQVP",
+    "fichier": "data/envato-sons/stone-rubble-and-debris-falling-on-dirt/Fall-Rock-Debris-Rubble_HHITSDEST0637.wav",
+    "titre": "Fall-Rock-Debris-Rubble HHITSDEST0637",
+    "debut": 1.19,
+    "fin": 1.48,
+    "coup": 0.01,
+    "duree": 0.29
+   },
+   {
+    "id": "env:stone-rubble-and-debris-falling-on-dirt:0:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stone-rubble-and-debris-falling-on-dirt-VBLKQVP",
+    "fichier": "data/envato-sons/stone-rubble-and-debris-falling-on-dirt/Fall-Rock-Debris-Rubble_HHITSDEST0637.wav",
+    "titre": "Fall-Rock-Debris-Rubble HHITSDEST0637",
+    "debut": 1.49,
+    "fin": 1.77,
+    "coup": 0.01,
+    "duree": 0.28
+   },
+   {
+    "id": "env:stone-rubble-and-debris-falling-on-dirt:0:6",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stone-rubble-and-debris-falling-on-dirt-VBLKQVP",
+    "fichier": "data/envato-sons/stone-rubble-and-debris-falling-on-dirt/Fall-Rock-Debris-Rubble_HHITSDEST0637.wav",
+    "titre": "Fall-Rock-Debris-Rubble HHITSDEST0637",
+    "debut": 1.78,
+    "fin": 2.03,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:stone-rubble-and-debris-falling-on-dirt:0:7",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stone-rubble-and-debris-falling-on-dirt-VBLKQVP",
+    "fichier": "data/envato-sons/stone-rubble-and-debris-falling-on-dirt/Fall-Rock-Debris-Rubble_HHITSDEST0637.wav",
+    "titre": "Fall-Rock-Debris-Rubble HHITSDEST0637",
+    "debut": 2.04,
+    "fin": 2.4,
+    "coup": 0.01,
+    "duree": 0.36
+   }
+  ],
+  "marteau": [
+   {
+    "id": "env:court-judge-gavel-hit:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/court-judge-gavel-hit-FC7JREW",
+    "fichier": "data/envato-sons/court-judge-gavel-hit/GavelHitsCourtJudg SS017002.wav",
+    "titre": "GavelHitsCourtJudg SS017002",
+    "duree": 1.4
+   }
+  ],
+  "manif_cri": [
+   {
+    "id": "env:crowd-chanting-revolution:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/crowd-chanting-revolution-J74MPA8",
+    "fichier": "data/envato-sons/crowd-chanting-revolution/11572 crowd chanting revolution.wav",
+    "titre": "11572 crowd chanting revolution",
+    "duree": 5.6
+   },
+   {
+    "id": "env:energetic-crowd-chanting:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/energetic-crowd-chanting-5GW3X9A",
+    "fichier": "data/envato-sons/energetic-crowd-chanting/01141 applause 41 crowd jam.wav",
+    "titre": "01141 applause 41 crowd jam",
+    "duree": 3.3
+   }
+  ],
+  "montee": [
+   {
+    "id": "env:cymbal-roll-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/cymbal-roll-1-NKXG37W",
+    "fichier": "data/envato-sons/cymbal-roll-1/Cymbal Roll 1 1.wav",
+    "titre": "Cymbal Roll 1 1",
+    "duree": 16.7
+   },
+   {
+    "id": "env:cymbal-roll-1:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/cymbal-roll-1-NKXG37W",
+    "fichier": "data/envato-sons/cymbal-roll-1/Cymbal Roll 1 2.wav",
+    "titre": "Cymbal Roll 1 2",
+    "duree": 16.1
+   },
+   {
+    "id": "env:long-gong-swell:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/long-gong-swell-H6JWZTL",
+    "fichier": "data/envato-sons/long-gong-swell/PercussionAccents EC09_79_4.wav",
+    "titre": "PercussionAccents EC09 79 4",
+    "duree": 8.5
+   },
+   {
+    "id": "env:short-timpani-roll:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/short-timpani-roll-9NZAC87",
+    "fichier": "data/envato-sons/short-timpani-roll/TimpaniHandsRollAc MA016702.wav",
+    "titre": "TimpaniHandsRollAc MA016702",
+    "duree": 7.1
+   },
+   {
+    "id": "env:timpani-drum-roll-hit:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/timpani-drum-roll-hit-T5Y3UK8",
+    "fichier": "data/envato-sons/timpani-drum-roll-hit/Mountain Audio - Timpani Drum Roll And Hit - Sound (1).wav",
+    "titre": "Mountain Audio - Timpani Drum Roll And Hit - Sound (1)",
+    "duree": 8.0
+   },
+   {
+    "id": "env:timpani-drum-roll-hit:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/timpani-drum-roll-hit-T5Y3UK8",
+    "fichier": "data/envato-sons/timpani-drum-roll-hit/Mountain Audio - Timpani Drum Roll And Hit - Sound (2).wav",
+    "titre": "Mountain Audio - Timpani Drum Roll And Hit - Sound (2)",
+    "duree": 12.0
+   },
+   {
+    "id": "env:timpani-drum-roll-hit:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/timpani-drum-roll-hit-T5Y3UK8",
+    "fichier": "data/envato-sons/timpani-drum-roll-hit/Mountain Audio - Timpani Drum Roll And Hit - Sound (3).wav",
+    "titre": "Mountain Audio - Timpani Drum Roll And Hit - Sound (3)",
+    "duree": 12.0
+   },
+   {
+    "id": "env:timpani-drum-roll-hit:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/timpani-drum-roll-hit-T5Y3UK8",
+    "fichier": "data/envato-sons/timpani-drum-roll-hit/Mountain Audio - Timpani Drum Roll And Hit - Sound (4).wav",
+    "titre": "Mountain Audio - Timpani Drum Roll And Hit - Sound (4)",
+    "duree": 16.0
+   },
+   {
+    "id": "env:timpani-roll-with-crescendo:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/timpani-roll-with-crescendo-5Q97DK3",
+    "fichier": "data/envato-sons/timpani-roll-with-crescendo/PERCUSSION-TIMPANI_GEN-HDF-18861.wav",
+    "titre": "PERCUSSION-TIMPANI GEN-HDF-18861",
+    "duree": 16.0
+   }
+  ],
+  "village": [
+   {
+    "id": "env:distant-muslim-prayers-mingle-with-chatter-cricke:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/distant-muslim-prayers-mingle-with-chatter-cricke/CRWD_IsraelArabConstructionSitePumpDigging_01_SDLX.wav",
+    "titre": "CRWD IsraelArabConstructionSitePumpDigging 01 SDLX",
+    "duree": 118.2
+   }
+  ],
+  "priere": [
+   {
+    "id": "env:distant-muslim-prayers-mingle-with-chatter-cricke:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/distant-muslim-prayers-mingle-with-chatter-cricke/CRWD_IsraelArabConstructionSitePumpDigging_01_SDLX.wav",
+    "titre": "CRWD IsraelArabConstructionSitePumpDigging 01 SDLX",
+    "duree": 118.2
+   },
+   {
+    "id": "env:muslim-mosque-prayer-loop:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/muslim-mosque-prayer-loop-FDPEYUJ",
+    "fichier": "data/envato-sons/muslim-mosque-prayer-loop/Muslim Mosque Prayer Fragment (Loop).wav",
+    "titre": "Muslim Mosque Prayer Fragment (Loop)",
+    "duree": 30.5
+   },
+   {
+    "id": "env:the-muezzin-calls-to-prayer-amid-an-intense-urban:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/the-muezzin-calls-to-prayer-amid-an-intense-urban/CRWD_IsraelArabVillageAmbienceWallaDistant_02_SDLX.wav",
+    "titre": "CRWD IsraelArabVillageAmbienceWallaDistant 02 SDLX",
+    "duree": 159.9
+   }
+  ],
+  "grondement": [
+   {
+    "id": "env:distant-rolling-thunder:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-rolling-thunder-CZNXQ94",
+    "fichier": "data/envato-sons/distant-rolling-thunder/ThunderRollingDis PE1008701.wav",
+    "titre": "ThunderRollingDis PE1008701",
+    "duree": 24.8
+   },
+   {
+    "id": "env:distant-thunder-rumbling:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/distant-thunder-rumbling-FHXGYTM",
+    "fichier": "data/envato-sons/distant-thunder-rumbling/Thunder THR01_16.wav",
+    "titre": "Thunder THR01 16",
+    "duree": 29.2
+   },
+   {
+    "id": "env:rumble-long-distant-explosions-crumbling-roll:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rumble-long-distant-explosions-crumbling-roll-J4C377C",
+    "fichier": "data/envato-sons/rumble-long-distant-explosions-crumbling-roll/Rumble_Long_Distant_Explosions_Crumbling_Roll_OCP-0048-14.wav",
+    "titre": "Rumble Long Distant Explosions Crumbling Roll OCP-0048-14",
+    "duree": 116.2
+   },
+   {
+    "id": "env:thunder-distant-rumble-5:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/thunder-distant-rumble-5-2C9UQLL",
+    "fichier": "data/envato-sons/thunder-distant-rumble-5/ThunderDistantRumble_jMCLD_01.wav",
+    "titre": "ThunderDistantRumble jMCLD 01",
+    "duree": 109.7
+   }
+  ],
+  "drone_passe": [
+   {
+    "id": "env:drone-flying-passing-by:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/drone-flying-passing-by-A7KR37K",
+    "fichier": "data/envato-sons/drone-flying-passing-by/Drone Flying And Passing By.wav",
+    "titre": "Drone Flying And Passing By",
+    "duree": 3.5
+   }
+  ],
+  "foule": [
+   {
+    "id": "env:exterior-large-arab-crowd:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/exterior-large-arab-crowd-WDX229C",
+    "fichier": "data/envato-sons/exterior-large-arab-crowd/ExtArabCrowdAngry 3D064001.wav",
+    "titre": "ExtArabCrowdAngry 3D064001",
+    "duree": 148.1
+   },
+   {
+    "id": "env:immerse-yourself-in-a-bustling-arabic-market-with:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/immerse-yourself-in-a-bustling-arabic-market-with/CRWD_IsraelArabDistantVoices_02_SDLX.wav",
+    "titre": "CRWD IsraelArabDistantVoices 02 SDLX",
+    "duree": 76.5
+   },
+   {
+    "id": "env:muslim-town-ambience-loop:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/muslim-town-ambience-loop/25286 muslim town ambience loop-full.wav",
+    "titre": "25286 muslim town ambience loop-full",
+    "duree": 186.5
+   }
+  ],
+  "avion": [
+   {
+    "id": "env:f-18-fighter-jet-fly-by-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/f-18-fighter-jet-fly-by-1-DLZXNW9",
+    "fichier": "data/envato-sons/f-18-fighter-jet-fly-by-1/AFX_F18_FLYBY_2_DFMG.wav",
+    "titre": "AFX F18 FLYBY 2 DFMG",
+    "duree": 5.0
+   },
+   {
+    "id": "env:f16-airplane-jet-pass-overhead:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/f16-airplane-jet-pass-overhead-R3QX972",
+    "fichier": "data/envato-sons/f16-airplane-jet-pass-overhead/AirplaneJet 2004_52.wav",
+    "titre": "AirplaneJet 2004 52",
+    "duree": 11.0
+   },
+   {
+    "id": "env:fast-jet-flyover-airplane:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/fast-jet-flyover-airplane-3KJNH7Z",
+    "fichier": "data/envato-sons/fast-jet-flyover-airplane/21680 fast jet flyover airplane-full.wav",
+    "titre": "21680 fast jet flyover airplane-full",
+    "duree": 16.3
+   },
+   {
+    "id": "env:military-jet-fighter-close-flyby-02:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/military-jet-fighter-close-flyby-02-W494MAN",
+    "fichier": "data/envato-sons/military-jet-fighter-close-flyby-02/36856 Military jet fighter close flyby 02-full.wav",
+    "titre": "36856 Military jet fighter close flyby 02-full",
+    "duree": 19.1
+   }
+  ],
+  "impact_sourd": [
+   {
+    "id": "env:falling-body-on-soft-wooden-floor:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-body-on-soft-wooden-floor-XBRYV2D",
+    "fichier": "data/envato-sons/falling-body-on-soft-wooden-floor/19172 falling body on carpet on wooden floor-full.wav",
+    "titre": "19172 falling body on carpet on wooden floor-full",
+    "debut": 0.14,
+    "fin": 0.39,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:falling-body-on-soft-wooden-floor:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-body-on-soft-wooden-floor-XBRYV2D",
+    "fichier": "data/envato-sons/falling-body-on-soft-wooden-floor/19172 falling body on carpet on wooden floor-full.wav",
+    "titre": "19172 falling body on carpet on wooden floor-full",
+    "debut": 0.4,
+    "fin": 0.695,
+    "coup": 0.01,
+    "duree": 0.29
+   },
+   {
+    "id": "env:falling-body-on-soft-wooden-floor:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-body-on-soft-wooden-floor-XBRYV2D",
+    "fichier": "data/envato-sons/falling-body-on-soft-wooden-floor/19172 falling body on carpet on wooden floor-full.wav",
+    "titre": "19172 falling body on carpet on wooden floor-full",
+    "debut": 0.705,
+    "fin": 1.155,
+    "coup": 0.01,
+    "duree": 0.45
+   },
+   {
+    "id": "env:falling-body-on-soft-wooden-floor:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/falling-body-on-soft-wooden-floor-XBRYV2D",
+    "fichier": "data/envato-sons/falling-body-on-soft-wooden-floor/19172 falling body on carpet on wooden floor-full.wav",
+    "titre": "19172 falling body on carpet on wooden floor-full",
+    "debut": 1.165,
+    "fin": 1.655,
+    "coup": 0.01,
+    "duree": 0.49
+   },
+   {
+    "id": "env:impact-body-fall-sand-thud-02:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/impact-body-fall-sand-thud-02-YL8X94Y",
+    "fichier": "data/envato-sons/impact-body-fall-sand-thud-02/IMPACT_BODY_FALL_Sand_Thud_02.wav",
+    "titre": "IMPACT BODY FALL Sand Thud 02",
+    "debut": 0.13,
+    "fin": 0.855,
+    "coup": 0.01,
+    "duree": 0.72
+   },
+   {
+    "id": "env:impact-body-fall-sand-thud-03:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/impact-body-fall-sand-thud-03-8J6UAQG",
+    "fichier": "data/envato-sons/impact-body-fall-sand-thud-03/IMPACT_BODY_FALL_Sand_Thud_03.wav",
+    "titre": "IMPACT BODY FALL Sand Thud 03",
+    "debut": 0.125,
+    "fin": 0.79,
+    "coup": 0.01,
+    "duree": 0.67
+   },
+   {
+    "id": "env:object-impact-sand-bag-drop-14:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/object-impact-sand-bag-drop-14-XD948K5",
+    "fichier": "data/envato-sons/object-impact-sand-bag-drop-14/OBJECT_IMPACT_Sand_Bag_Drop_14.wav",
+    "titre": "OBJECT IMPACT Sand Bag Drop 14",
+    "debut": 0.2,
+    "fin": 0.445,
+    "coup": 0.01,
+    "duree": 0.24
+   },
+   {
+    "id": "env:object-impact-sand-bag-drop-14:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/object-impact-sand-bag-drop-14-XD948K5",
+    "fichier": "data/envato-sons/object-impact-sand-bag-drop-14/OBJECT_IMPACT_Sand_Bag_Drop_14.wav",
+    "titre": "OBJECT IMPACT Sand Bag Drop 14",
+    "debut": 0.455,
+    "fin": 0.745,
+    "coup": 0.01,
+    "duree": 0.29
+   },
+   {
+    "id": "env:soft-punch-hit:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/soft-punch-hit/06509 soft punch hit.wav",
+    "titre": "06509 soft punch hit",
+    "debut": 0.04,
+    "fin": 0.385,
+    "coup": 0.01,
+    "duree": 0.35
+   }
+  ],
+  "clavier": [
+   {
+    "id": "env:fast-keyboard-typing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/fast-keyboard-typing-BVRFPEM",
+    "fichier": "data/envato-sons/fast-keyboard-typing/20385 fast keyboard typing-full.wav",
+    "titre": "20385 fast keyboard typing-full",
+    "duree": 25.3
+   },
+   {
+    "id": "env:old-computer-keyboard-typing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/old-computer-keyboard-typing-P7R7ZUM",
+    "fichier": "data/envato-sons/old-computer-keyboard-typing/33361 Old computer keyboard typing-full.wav",
+    "titre": "33361 Old computer keyboard typing-full",
+    "duree": 32.5
+   }
+  ],
+  "campagne": [
+   {
+    "id": "env:field-and-meadow-ambience:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/field-and-meadow-ambience/FieldMeadowLightBr BT020801.wav",
+    "titre": "FieldMeadowLightBr BT020801",
+    "duree": 124.0
+   }
+  ],
+  "feu": [
+   {
+    "id": "env:fire-crackling:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/fire-crackling-4HQYEK5",
+    "fichier": "data/envato-sons/fire-crackling/fire-crackling.wav",
+    "titre": "fire-crackling",
+    "duree": 60.0
+   },
+   {
+    "id": "env:fireplace-flames-fluttering:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/fireplace-flames-fluttering-MXQ69FD",
+    "fichier": "data/envato-sons/fireplace-flames-fluttering/fireplace-flames-fluttering.wav",
+    "titre": "fireplace-flames-fluttering",
+    "duree": 145.0
+   },
+   {
+    "id": "env:fires-fireplace-wood-fire-grows-rustle-crackles:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/fires-fireplace-wood-fire-grows-rustle-crackles/Fires_Fireplace_Wood_Fire_Grows_Rustle_Crackles_Snaps_Flame_F_SDHOLLW_29053.wav",
+    "titre": "Fires Fireplace Wood Fire Grows Rustle Crackles Snaps Flame F SDHOLLW 29053",
+    "duree": 19.2
+   }
+  ],
+  "oiseaux": [
+   {
+    "id": "env:flock-of-birds-taking-flight:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_01.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 01",
+    "duree": 3.1
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_02.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 02",
+    "duree": 2.8
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_03.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 03",
+    "duree": 3.5
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_04.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 04",
+    "duree": 2.7
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_05.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 05",
+    "duree": 3.7
+   },
+   {
+    "id": "env:flock-of-birds-taking-flight:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/flock-of-birds-taking-flight-GWPLXU6",
+    "fichier": "data/envato-sons/flock-of-birds-taking-flight/WINGBird_Flock of Birds Taking Flight_06.wav",
+    "titre": "WINGBird Flock of Birds Taking Flight 06",
+    "duree": 2.3
+   }
+  ],
+  "carte_papier": [
+   {
+    "id": "env:foley-map-map-chart-pull-out:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/foley-map-map-chart-pull-out/Foley_Map_Map_Chart_Pull_Out_SDHOLLW_33846.wav",
+    "titre": "Foley Map Map Chart Pull Out SDHOLLW 33846",
+    "duree": 0.4
+   },
+   {
+    "id": "env:huge-treasure-map-unfurled:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/huge-treasure-map-unfurled/Huge Treasure Map Unfurled.wav",
+    "titre": "Huge Treasure Map Unfurled",
+    "duree": 3.2
+   },
+   {
+    "id": "env:map:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/map/Map Close.wav",
+    "titre": "Map Close",
+    "duree": 1.2
+   },
+   {
+    "id": "env:map:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/map/Map Open.wav",
+    "titre": "Map Open",
+    "duree": 1.3
+   },
+   {
+    "id": "env:map:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/map/Map Page Turn 1.wav",
+    "titre": "Map Page Turn 1",
+    "duree": 1.2
+   },
+   {
+    "id": "env:map:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/map/Map Page Turn 2.wav",
+    "titre": "Map Page Turn 2",
+    "duree": 1.3
+   },
+   {
+    "id": "env:map:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/map/Map Page Turn 3.wav",
+    "titre": "Map Page Turn 3",
+    "duree": 1.5
+   },
+   {
+    "id": "env:open-map:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/open-map/open_map.wav",
+    "titre": "open map",
+    "duree": 0.8
+   },
+   {
+    "id": "env:unfolding-map:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/unfolding-map/28893 Unfolding map-full.wav",
+    "titre": "28893 Unfolding map-full",
+    "duree": 6.0
+   }
+  ],
+  "stylo": [
+   {
+    "id": "env:handwriting-fountainpen-029:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/handwriting-fountainpen-029-TWF3K6A",
+    "fichier": "data/envato-sons/handwriting-fountainpen-029/Handwriting_FountainPen_029.wav",
+    "titre": "Handwriting FountainPen 029",
+    "duree": 1.9
+   },
+   {
+    "id": "env:signature-scribble-with-pen:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/signature-scribble-with-pen-ZUY7EQ8",
+    "fichier": "data/envato-sons/signature-scribble-with-pen/Signature Scribble with Pen v1.wav",
+    "titre": "Signature Scribble with Pen v1",
+    "duree": 2.0
+   },
+   {
+    "id": "env:signature-scribble-with-pen:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/signature-scribble-with-pen-ZUY7EQ8",
+    "fichier": "data/envato-sons/signature-scribble-with-pen/Signature Scribble with Pen v2.wav",
+    "titre": "Signature Scribble with Pen v2",
+    "duree": 2.1
+   },
+   {
+    "id": "env:signature-scribble-with-pen:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/signature-scribble-with-pen-ZUY7EQ8",
+    "fichier": "data/envato-sons/signature-scribble-with-pen/Signature Scribble with Pen v3.wav",
+    "titre": "Signature Scribble with Pen v3",
+    "duree": 1.7
+   },
+   {
+    "id": "env:signature-scribble-with-pen:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/signature-scribble-with-pen-ZUY7EQ8",
+    "fichier": "data/envato-sons/signature-scribble-with-pen/Signature Scribble with Pen v4.wav",
+    "titre": "Signature Scribble with Pen v4",
+    "duree": 1.2
+   }
+  ],
+  "impact_objet": [
+   {
+    "id": "env:hard-knocking-on-metal-door:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hard-knocking-on-metal-door-9ZDJ6L8",
+    "fichier": "data/envato-sons/hard-knocking-on-metal-door/DoorKnock AMA03_11.wav",
+    "titre": "DoorKnock AMA03 11",
+    "debut": 0.04,
+    "fin": 0.425,
+    "coup": 0.01,
+    "duree": 0.39
+   },
+   {
+    "id": "env:hard-knocking-on-metal-door:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hard-knocking-on-metal-door-9ZDJ6L8",
+    "fichier": "data/envato-sons/hard-knocking-on-metal-door/DoorKnock AMA03_11.wav",
+    "titre": "DoorKnock AMA03 11",
+    "debut": 0.435,
+    "fin": 0.81,
+    "coup": 0.01,
+    "duree": 0.38
+   },
+   {
+    "id": "env:hard-knocking-on-metal-door:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hard-knocking-on-metal-door-9ZDJ6L8",
+    "fichier": "data/envato-sons/hard-knocking-on-metal-door/DoorKnock AMA03_11.wav",
+    "titre": "DoorKnock AMA03 11",
+    "debut": 0.82,
+    "fin": 1.31,
+    "coup": 0.01,
+    "duree": 0.49
+   },
+   {
+    "id": "env:hard-knocking-on-metal-door:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hard-knocking-on-metal-door-9ZDJ6L8",
+    "fichier": "data/envato-sons/hard-knocking-on-metal-door/DoorKnock AMA03_11.wav",
+    "titre": "DoorKnock AMA03 11",
+    "debut": 1.32,
+    "fin": 2.02,
+    "coup": 0.01,
+    "duree": 0.7
+   },
+   {
+    "id": "env:hard-knocking-on-metal-door:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hard-knocking-on-metal-door-9ZDJ6L8",
+    "fichier": "data/envato-sons/hard-knocking-on-metal-door/DoorKnock AMA03_11.wav",
+    "titre": "DoorKnock AMA03 11",
+    "debut": 2.335,
+    "fin": 2.58,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:hard-knocking-on-metal-door:0:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hard-knocking-on-metal-door-9ZDJ6L8",
+    "fichier": "data/envato-sons/hard-knocking-on-metal-door/DoorKnock AMA03_11.wav",
+    "titre": "DoorKnock AMA03 11",
+    "debut": 2.59,
+    "fin": 2.835,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:hard-knocking-on-metal-door:0:6",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hard-knocking-on-metal-door-9ZDJ6L8",
+    "fichier": "data/envato-sons/hard-knocking-on-metal-door/DoorKnock AMA03_11.wav",
+    "titre": "DoorKnock AMA03 11",
+    "debut": 2.845,
+    "fin": 3.62,
+    "coup": 0.01,
+    "duree": 0.77
+   },
+   {
+    "id": "env:hard-knocking-on-metal-door:0:7",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hard-knocking-on-metal-door-9ZDJ6L8",
+    "fichier": "data/envato-sons/hard-knocking-on-metal-door/DoorKnock AMA03_11.wav",
+    "titre": "DoorKnock AMA03 11",
+    "debut": 4.135,
+    "fin": 4.38,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:heavy-metal-clank:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-metal-clank-7Z4KPGQ",
+    "fichier": "data/envato-sons/heavy-metal-clank/MetalHit IE01_63_3.wav",
+    "titre": "MetalHit IE01 63 3",
+    "debut": 0.055,
+    "fin": 0.34,
+    "coup": 0.01,
+    "duree": 0.29
+   },
+   {
+    "id": "env:heavy-metal-clank:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-metal-clank-7Z4KPGQ",
+    "fichier": "data/envato-sons/heavy-metal-clank/MetalHit IE01_63_3.wav",
+    "titre": "MetalHit IE01 63 3",
+    "debut": 0.35,
+    "fin": 0.67,
+    "coup": 0.01,
+    "duree": 0.32
+   },
+   {
+    "id": "env:heavy-metal-clank:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-metal-clank-7Z4KPGQ",
+    "fichier": "data/envato-sons/heavy-metal-clank/MetalHit IE01_63_3.wav",
+    "titre": "MetalHit IE01 63 3",
+    "debut": 0.68,
+    "fin": 0.925,
+    "coup": 0.01,
+    "duree": 0.24
+   },
+   {
+    "id": "env:heavy-metal-clank:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-metal-clank-7Z4KPGQ",
+    "fichier": "data/envato-sons/heavy-metal-clank/MetalHit IE01_63_3.wav",
+    "titre": "MetalHit IE01 63 3",
+    "debut": 0.935,
+    "fin": 1.18,
+    "coup": 0.01,
+    "duree": 0.24
+   },
+   {
+    "id": "env:heavy-metal-clank:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-metal-clank-7Z4KPGQ",
+    "fichier": "data/envato-sons/heavy-metal-clank/MetalHit IE01_63_3.wav",
+    "titre": "MetalHit IE01 63 3",
+    "debut": 1.19,
+    "fin": 1.48,
+    "coup": 0.01,
+    "duree": 0.29
+   },
+   {
+    "id": "env:heavy-metal-clank:0:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-metal-clank-7Z4KPGQ",
+    "fichier": "data/envato-sons/heavy-metal-clank/MetalHit IE01_63_3.wav",
+    "titre": "MetalHit IE01 63 3",
+    "debut": 1.49,
+    "fin": 2.7,
+    "coup": 0.01,
+    "duree": 1.21
+   },
+   {
+    "id": "env:heavy-metal-clank-impact:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-metal-clank-impact-XVNC5RJ",
+    "fichier": "data/envato-sons/heavy-metal-clank-impact/HitMetal 6095_52_4.wav",
+    "titre": "HitMetal 6095 52 4",
+    "debut": 0.04,
+    "fin": 0.26,
+    "coup": 0.01,
+    "duree": 0.22
+   },
+   {
+    "id": "env:hit-wood-table-with-fist-1:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hit-wood-table-with-fist-1-M8BXDLE",
+    "fichier": "data/envato-sons/hit-wood-table-with-fist-1/Hit_Wood_Table_with_Fist_OCP-1335-081.wav",
+    "titre": "Hit Wood Table with Fist OCP-1335-081",
+    "debut": 0.35,
+    "fin": 0.715,
+    "coup": 0.01,
+    "duree": 0.36
+   },
+   {
+    "id": "env:hit-wood-table-with-fist-1:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hit-wood-table-with-fist-1-M8BXDLE",
+    "fichier": "data/envato-sons/hit-wood-table-with-fist-1/Hit_Wood_Table_with_Fist_OCP-1335-081.wav",
+    "titre": "Hit Wood Table with Fist OCP-1335-081",
+    "debut": 1.61,
+    "fin": 1.975,
+    "coup": 0.01,
+    "duree": 0.36
+   },
+   {
+    "id": "env:hit-wood-table-with-fist-1:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hit-wood-table-with-fist-1-M8BXDLE",
+    "fichier": "data/envato-sons/hit-wood-table-with-fist-1/Hit_Wood_Table_with_Fist_OCP-1335-081.wav",
+    "titre": "Hit Wood Table with Fist OCP-1335-081",
+    "debut": 2.935,
+    "fin": 3.33,
+    "coup": 0.01,
+    "duree": 0.4
+   },
+   {
+    "id": "env:hit-wood-table-with-fist-1:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hit-wood-table-with-fist-1-M8BXDLE",
+    "fichier": "data/envato-sons/hit-wood-table-with-fist-1/Hit_Wood_Table_with_Fist_OCP-1335-081.wav",
+    "titre": "Hit Wood Table with Fist OCP-1335-081",
+    "debut": 4.355,
+    "fin": 4.72,
+    "coup": 0.01,
+    "duree": 0.36
+   },
+   {
+    "id": "env:hit-wood-table-with-fist-1:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hit-wood-table-with-fist-1-M8BXDLE",
+    "fichier": "data/envato-sons/hit-wood-table-with-fist-1/Hit_Wood_Table_with_Fist_OCP-1335-081.wav",
+    "titre": "Hit Wood Table with Fist OCP-1335-081",
+    "debut": 5.73,
+    "fin": 6.095,
+    "coup": 0.01,
+    "duree": 0.36
+   },
+   {
+    "id": "env:hit-wood-table-with-fist-1:0:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hit-wood-table-with-fist-1-M8BXDLE",
+    "fichier": "data/envato-sons/hit-wood-table-with-fist-1/Hit_Wood_Table_with_Fist_OCP-1335-081.wav",
+    "titre": "Hit Wood Table with Fist OCP-1335-081",
+    "debut": 7.17,
+    "fin": 7.53,
+    "coup": 0.01,
+    "duree": 0.36
+   },
+   {
+    "id": "env:hit-wood-table-with-fist-1:0:6",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hit-wood-table-with-fist-1-M8BXDLE",
+    "fichier": "data/envato-sons/hit-wood-table-with-fist-1/Hit_Wood_Table_with_Fist_OCP-1335-081.wav",
+    "titre": "Hit Wood Table with Fist OCP-1335-081",
+    "debut": 9.095,
+    "fin": 9.46,
+    "coup": 0.01,
+    "duree": 0.37
+   },
+   {
+    "id": "env:hit-wood-table-with-fist-1:0:7",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hit-wood-table-with-fist-1-M8BXDLE",
+    "fichier": "data/envato-sons/hit-wood-table-with-fist-1/Hit_Wood_Table_with_Fist_OCP-1335-081.wav",
+    "titre": "Hit Wood Table with Fist OCP-1335-081",
+    "debut": 10.375,
+    "fin": 10.74,
+    "coup": 0.01,
+    "duree": 0.37
+   },
+   {
+    "id": "env:hitting-table-with-fist-deep-thuddy-impact-4:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hitting-table-with-fist-deep-thuddy-impact-4-9T797SV",
+    "fichier": "data/envato-sons/hitting-table-with-fist-deep-thuddy-impact-4/Hitting_Table_with_Fist_Deep_Thuddy_Impact_OCP-1173-045-04.wav",
+    "titre": "Hitting Table with Fist Deep Thuddy Impact OCP-1173-045-04",
+    "debut": 0.3,
+    "fin": 0.72,
+    "coup": 0.01,
+    "duree": 0.42
+   },
+   {
+    "id": "env:hitting-table-with-fist-deep-thuddy-impact-4:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hitting-table-with-fist-deep-thuddy-impact-4-9T797SV",
+    "fichier": "data/envato-sons/hitting-table-with-fist-deep-thuddy-impact-4/Hitting_Table_with_Fist_Deep_Thuddy_Impact_OCP-1173-045-04.wav",
+    "titre": "Hitting Table with Fist Deep Thuddy Impact OCP-1173-045-04",
+    "debut": 2.56,
+    "fin": 2.995,
+    "coup": 0.01,
+    "duree": 0.44
+   },
+   {
+    "id": "env:hitting-table-with-fist-deep-thuddy-impact-4:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hitting-table-with-fist-deep-thuddy-impact-4-9T797SV",
+    "fichier": "data/envato-sons/hitting-table-with-fist-deep-thuddy-impact-4/Hitting_Table_with_Fist_Deep_Thuddy_Impact_OCP-1173-045-04.wav",
+    "titre": "Hitting Table with Fist Deep Thuddy Impact OCP-1173-045-04",
+    "debut": 4.225,
+    "fin": 4.71,
+    "coup": 0.01,
+    "duree": 0.49
+   },
+   {
+    "id": "env:hitting-table-with-fist-deep-thuddy-impact-4:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/hitting-table-with-fist-deep-thuddy-impact-4-9T797SV",
+    "fichier": "data/envato-sons/hitting-table-with-fist-deep-thuddy-impact-4/Hitting_Table_with_Fist_Deep_Thuddy_Impact_OCP-1173-045-04.wav",
+    "titre": "Hitting Table with Fist Deep Thuddy Impact OCP-1173-045-04",
+    "debut": 5.2,
+    "fin": 5.615,
+    "coup": 0.01,
+    "duree": 0.42
+   }
+  ],
+  "impact": [
+   {
+    "id": "env:heavy-door-slam:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-door-slam-YRNLZJM",
+    "fichier": "data/envato-sons/heavy-door-slam/07002 heavy door slam.wav",
+    "titre": "07002 heavy door slam",
+    "debut": 0.04,
+    "fin": 0.779,
+    "coup": 0.01,
+    "duree": 0.74
+   },
+   {
+    "id": "env:heavy-impact-crash:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-impact-crash-Q7G4KMN",
+    "fichier": "data/envato-sons/heavy-impact-crash/CrashMetal PS01_20_2 REV.wav",
+    "titre": "CrashMetal PS01 20 2 REV",
+    "debut": 0.04,
+    "fin": 3.04,
+    "coup": 0.01,
+    "duree": 3.0
+   },
+   {
+    "id": "env:light-metal-door-slam:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/light-metal-door-slam/46071 Light metal door slam-full.wav",
+    "titre": "46071 Light metal door slam-full",
+    "debut": 0.065,
+    "fin": 0.928,
+    "coup": 0.01,
+    "duree": 0.86
+   },
+   {
+    "id": "env:metal-bang-hollow-box-hit-impact:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/metal-bang-hollow-box-hit-impact-AWVPL7K",
+    "fichier": "data/envato-sons/metal-bang-hollow-box-hit-impact/Metal_Bang_Hollow_Box_Hit_Impact_OCP-0412-23.wav",
+    "titre": "Metal Bang Hollow Box Hit Impact OCP-0412-23",
+    "debut": 0.215,
+    "fin": 1.813,
+    "coup": 0.01,
+    "duree": 1.6
+   },
+   {
+    "id": "env:metal-door-shut:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/metal-door-shut-MZULP8G",
+    "fichier": "data/envato-sons/metal-door-shut/02958 - metal door dry shut.wav",
+    "titre": "02958 - metal door dry shut",
+    "debut": 0.045,
+    "fin": 1.331,
+    "coup": 0.01,
+    "duree": 1.29
+   },
+   {
+    "id": "env:metal-gate-slam:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/metal-gate-slam-FAYJBJ8",
+    "fichier": "data/envato-sons/metal-gate-slam/Metal_Gate_Slam_ODC-0030-189.wav",
+    "titre": "Metal Gate Slam ODC-0030-189",
+    "debut": 0.04,
+    "fin": 2.453,
+    "coup": 0.01,
+    "duree": 2.41
+   }
+  ],
+  "tole": [
+   {
+    "id": "env:heavy-metal-rattle:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/heavy-metal-rattle-VE7C9MU",
+    "fichier": "data/envato-sons/heavy-metal-rattle/15040 heavy metal rattle-full.wav",
+    "titre": "15040 heavy metal rattle-full",
+    "duree": 4.3
+   },
+   {
+    "id": "env:sheet-metal-vibration:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/sheet-metal-vibration-DFQ5RKU",
+    "fichier": "data/envato-sons/sheet-metal-vibration/METAL-VIBRATE_GEN-HDF-17216.wav",
+    "titre": "METAL-VIBRATE GEN-HDF-17216",
+    "duree": 4.4
+   }
+  ],
+  "pluie": [
+   {
+    "id": "env:heavy-rain-falling-on-metal-roof:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-rain-falling-on-metal-roof/Heavy Rain On Tin Roof.wav",
+    "titre": "Heavy Rain On Tin Roof",
+    "duree": 186.0
+   },
+   {
+    "id": "env:heavy-rain-on-tin-roof-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-rain-on-tin-roof-1/Rain On Metal Roof.wav",
+    "titre": "Rain On Metal Roof",
+    "duree": 183.5
+   },
+   {
+    "id": "env:rain-on-canvas-tent:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rain-on-canvas-tent-8W3ZDB2",
+    "fichier": "data/envato-sons/rain-on-canvas-tent/Rain 6107_68.wav",
+    "titre": "Rain 6107 68",
+    "duree": 90.6
+   },
+   {
+    "id": "env:rain-on-tin-roof:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rain-on-tin-roof-M87KXUC",
+    "fichier": "data/envato-sons/rain-on-tin-roof/rain-on-tin-roof-01.wav",
+    "titre": "rain-on-tin-roof-01",
+    "duree": 120.0
+   }
+  ],
+  "pierre": [
+   {
+    "id": "env:heavy-stone-slab-movement:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-stone-slab-movement/Sliding Stone Slab.wav",
+    "titre": "Sliding Stone Slab",
+    "debut": 0.81,
+    "fin": 1.23,
+    "coup": 0.01,
+    "duree": 0.42
+   },
+   {
+    "id": "env:heavy-stone-slab-movement:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-stone-slab-movement/Sliding Stone Slab.wav",
+    "titre": "Sliding Stone Slab",
+    "debut": 1.24,
+    "fin": 1.695,
+    "coup": 0.01,
+    "duree": 0.46
+   },
+   {
+    "id": "env:heavy-stone-slab-movement:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-stone-slab-movement/Sliding Stone Slab.wav",
+    "titre": "Sliding Stone Slab",
+    "debut": 1.705,
+    "fin": 2.035,
+    "coup": 0.01,
+    "duree": 0.33
+   },
+   {
+    "id": "env:heavy-stone-slab-movement:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-stone-slab-movement/Sliding Stone Slab.wav",
+    "titre": "Sliding Stone Slab",
+    "debut": 2.045,
+    "fin": 2.41,
+    "coup": 0.01,
+    "duree": 0.37
+   },
+   {
+    "id": "env:heavy-stone-slab-movement:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-stone-slab-movement/Sliding Stone Slab.wav",
+    "titre": "Sliding Stone Slab",
+    "debut": 2.42,
+    "fin": 3.605,
+    "coup": 0.01,
+    "duree": 1.19
+   },
+   {
+    "id": "env:heavy-stone-slab-movement:0:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-stone-slab-movement/Sliding Stone Slab.wav",
+    "titre": "Sliding Stone Slab",
+    "debut": 3.615,
+    "fin": 4.605,
+    "coup": 0.01,
+    "duree": 0.99
+   },
+   {
+    "id": "env:heavy-stone-slab-movement:0:6",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-stone-slab-movement/Sliding Stone Slab.wav",
+    "titre": "Sliding Stone Slab",
+    "debut": 4.615,
+    "fin": 5.2,
+    "coup": 0.01,
+    "duree": 0.58
+   },
+   {
+    "id": "env:heavy-stone-slab-movement:0:7",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-stone-slab-movement/Sliding Stone Slab.wav",
+    "titre": "Sliding Stone Slab",
+    "debut": 5.21,
+    "fin": 6.045,
+    "coup": 0.01,
+    "duree": 0.83
+   },
+   {
+    "id": "env:rock-dragged-over-stone-plate:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rock-dragged-over-stone-plate-CTK8X54",
+    "fichier": "data/envato-sons/rock-dragged-over-stone-plate/RockScrape_DIGIJ06-45-01.wav",
+    "titre": "RockScrape DIGIJ06-45-01",
+    "debut": 0.04,
+    "fin": 0.305,
+    "coup": 0.01,
+    "duree": 0.27
+   },
+   {
+    "id": "env:rock-dragged-over-stone-plate:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rock-dragged-over-stone-plate-CTK8X54",
+    "fichier": "data/envato-sons/rock-dragged-over-stone-plate/RockScrape_DIGIJ06-45-01.wav",
+    "titre": "RockScrape DIGIJ06-45-01",
+    "debut": 0.315,
+    "fin": 0.75,
+    "coup": 0.01,
+    "duree": 0.43
+   },
+   {
+    "id": "env:rock-dragged-over-stone-plate:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rock-dragged-over-stone-plate-CTK8X54",
+    "fichier": "data/envato-sons/rock-dragged-over-stone-plate/RockScrape_DIGIJ06-45-01.wav",
+    "titre": "RockScrape DIGIJ06-45-01",
+    "debut": 0.76,
+    "fin": 1.005,
+    "coup": 0.01,
+    "duree": 0.24
+   },
+   {
+    "id": "env:rock-dragged-over-stone-plate:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rock-dragged-over-stone-plate-CTK8X54",
+    "fichier": "data/envato-sons/rock-dragged-over-stone-plate/RockScrape_DIGIJ06-45-01.wav",
+    "titre": "RockScrape DIGIJ06-45-01",
+    "debut": 1.015,
+    "fin": 1.48,
+    "coup": 0.01,
+    "duree": 0.47
+   },
+   {
+    "id": "env:rock-dragged-over-stone-plate:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rock-dragged-over-stone-plate-CTK8X54",
+    "fichier": "data/envato-sons/rock-dragged-over-stone-plate/RockScrape_DIGIJ06-45-01.wav",
+    "titre": "RockScrape DIGIJ06-45-01",
+    "debut": 1.49,
+    "fin": 1.665,
+    "coup": 0.01,
+    "duree": 0.18
+   }
+  ],
+  "helico": [
+   {
+    "id": "env:helicopter-passing-overhead:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/helicopter-passing-overhead-ABVVASM",
+    "fichier": "data/envato-sons/helicopter-passing-overhead/Helicopter Passing Overhead.wav",
+    "titre": "Helicopter Passing Overhead",
+    "duree": 11.0
+   },
+   {
+    "id": "env:military-helicopter-fly-over:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/military-helicopter-fly-over-A5GNELT",
+    "fichier": "data/envato-sons/military-helicopter-fly-over/military-helicopter-fly-over-01.wav",
+    "titre": "military-helicopter-fly-over-01",
+    "duree": 30.0
+   }
+  ],
+  "vent": [
+   {
+    "id": "env:howling-wind-ambience:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/howling-wind-ambience-Y5XZFHL",
+    "fichier": "data/envato-sons/howling-wind-ambience/61 WIND-HOWL_GEN-HDF-25927.wav",
+    "titre": "61 WIND-HOWL GEN-HDF-25927",
+    "duree": 121.7
+   },
+   {
+    "id": "env:strong-desert-wind:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/strong-desert-wind-NPWDHQU",
+    "fichier": "data/envato-sons/strong-desert-wind/04004 constant natural wind loobing strong.wav",
+    "titre": "04004 constant natural wind loobing strong",
+    "duree": 52.2
+   },
+   {
+    "id": "env:violent-sandstorm-wind-blowing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/violent-sandstorm-wind-blowing-P7MAHJK",
+    "fichier": "data/envato-sons/violent-sandstorm-wind-blowing/WindSandstorm BSZ01_95.wav",
+    "titre": "WindSandstorm BSZ01 95",
+    "duree": 95.2
+   },
+   {
+    "id": "env:wind-gust:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/wind-gust/wind-gust-01.wav",
+    "titre": "wind-gust-01",
+    "duree": 25.6
+   }
+  ],
+  "vent_desert": [
+   {
+    "id": "env:howling-wind-ambience:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/howling-wind-ambience-Y5XZFHL",
+    "fichier": "data/envato-sons/howling-wind-ambience/61 WIND-HOWL_GEN-HDF-25927.wav",
+    "titre": "61 WIND-HOWL GEN-HDF-25927",
+    "duree": 121.7
+   },
+   {
+    "id": "env:strong-desert-wind:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/strong-desert-wind-NPWDHQU",
+    "fichier": "data/envato-sons/strong-desert-wind/04004 constant natural wind loobing strong.wav",
+    "titre": "04004 constant natural wind loobing strong",
+    "duree": 52.2
+   },
+   {
+    "id": "env:violent-sandstorm-wind-blowing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/violent-sandstorm-wind-blowing-P7MAHJK",
+    "fichier": "data/envato-sons/violent-sandstorm-wind-blowing/WindSandstorm BSZ01_95.wav",
+    "titre": "WindSandstorm BSZ01 95",
+    "duree": 95.2
+   }
+  ],
+  "tampon": [
+   {
+    "id": "env:ink-stamp-on-pad-and-stamp:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/ink-stamp-on-pad-and-stamp-G9KN3WP",
+    "fichier": "data/envato-sons/ink-stamp-on-pad-and-stamp/StampRubber 6028_86_1.wav",
+    "titre": "StampRubber 6028 86 1",
+    "debut": 0.04,
+    "fin": 1.14,
+    "coup": 0.01,
+    "duree": 1.1
+   },
+   {
+    "id": "env:ink-stamp-on-pad-and-stamp:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/ink-stamp-on-pad-and-stamp-G9KN3WP",
+    "fichier": "data/envato-sons/ink-stamp-on-pad-and-stamp/StampRubber 6028_86_1.wav",
+    "titre": "StampRubber 6028 86 1",
+    "debut": 1.15,
+    "fin": 1.285,
+    "coup": 0.01,
+    "duree": 0.14
+   },
+   {
+    "id": "env:small-rubber-stamp:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/small-rubber-stamp-JPGLUFN",
+    "fichier": "data/envato-sons/small-rubber-stamp/StampRubber_DIGIF5-73-02.wav",
+    "titre": "StampRubber DIGIF5-73-02",
+    "debut": 0.19,
+    "fin": 0.435,
+    "coup": 0.01,
+    "duree": 0.24
+   },
+   {
+    "id": "env:small-rubber-stamp:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/small-rubber-stamp-JPGLUFN",
+    "fichier": "data/envato-sons/small-rubber-stamp/StampRubber_DIGIF5-73-02.wav",
+    "titre": "StampRubber DIGIF5-73-02",
+    "debut": 0.65,
+    "fin": 0.77,
+    "coup": 0.01,
+    "duree": 0.12
+   },
+   {
+    "id": "env:stamps-from-small-rubber-stamp:0:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stamps-from-small-rubber-stamp-8XA5UPN",
+    "fichier": "data/envato-sons/stamps-from-small-rubber-stamp/StampRubber_DIGIF5-73-04.wav",
+    "titre": "StampRubber DIGIF5-73-04",
+    "debut": 0.19,
+    "fin": 0.44,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:stamps-from-small-rubber-stamp:0:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stamps-from-small-rubber-stamp-8XA5UPN",
+    "fichier": "data/envato-sons/stamps-from-small-rubber-stamp/StampRubber_DIGIF5-73-04.wav",
+    "titre": "StampRubber DIGIF5-73-04",
+    "debut": 0.45,
+    "fin": 0.84,
+    "coup": 0.01,
+    "duree": 0.39
+   },
+   {
+    "id": "env:stamps-from-small-rubber-stamp:0:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stamps-from-small-rubber-stamp-8XA5UPN",
+    "fichier": "data/envato-sons/stamps-from-small-rubber-stamp/StampRubber_DIGIF5-73-04.wav",
+    "titre": "StampRubber DIGIF5-73-04",
+    "debut": 1.015,
+    "fin": 1.26,
+    "coup": 0.01,
+    "duree": 0.25
+   },
+   {
+    "id": "env:stamps-from-small-rubber-stamp:0:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stamps-from-small-rubber-stamp-8XA5UPN",
+    "fichier": "data/envato-sons/stamps-from-small-rubber-stamp/StampRubber_DIGIF5-73-04.wav",
+    "titre": "StampRubber DIGIF5-73-04",
+    "debut": 1.27,
+    "fin": 1.465,
+    "coup": 0.01,
+    "duree": 0.2
+   },
+   {
+    "id": "env:stamps-from-small-rubber-stamp:0:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stamps-from-small-rubber-stamp-8XA5UPN",
+    "fichier": "data/envato-sons/stamps-from-small-rubber-stamp/StampRubber_DIGIF5-73-04.wav",
+    "titre": "StampRubber DIGIF5-73-04",
+    "debut": 1.805,
+    "fin": 2.115,
+    "coup": 0.01,
+    "duree": 0.31
+   },
+   {
+    "id": "env:stamps-from-small-rubber-stamp:0:5",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stamps-from-small-rubber-stamp-8XA5UPN",
+    "fichier": "data/envato-sons/stamps-from-small-rubber-stamp/StampRubber_DIGIF5-73-04.wav",
+    "titre": "StampRubber DIGIF5-73-04",
+    "debut": 2.695,
+    "fin": 3.01,
+    "coup": 0.01,
+    "duree": 0.31
+   },
+   {
+    "id": "env:stamps-from-small-rubber-stamp:0:6",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stamps-from-small-rubber-stamp-8XA5UPN",
+    "fichier": "data/envato-sons/stamps-from-small-rubber-stamp/StampRubber_DIGIF5-73-04.wav",
+    "titre": "StampRubber DIGIF5-73-04",
+    "debut": 3.65,
+    "fin": 3.91,
+    "coup": 0.01,
+    "duree": 0.26
+   },
+   {
+    "id": "env:stamps-from-small-rubber-stamp:0:7",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/stamps-from-small-rubber-stamp-8XA5UPN",
+    "fichier": "data/envato-sons/stamps-from-small-rubber-stamp/StampRubber_DIGIF5-73-04.wav",
+    "titre": "StampRubber DIGIF5-73-04",
+    "debut": 3.92,
+    "fin": 4.04,
+    "coup": 0.01,
+    "duree": 0.12
+   }
+  ],
+  "cles": [
+   {
+    "id": "env:key-locking-and-unlocking-sound-pack:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/key-locking-and-unlocking-sound-pack-RMA2XPK",
+    "fichier": "data/envato-sons/key-locking-and-unlocking-sound-pack/LG_Sound - Key Door Locking (Wav).wav",
+    "titre": "LG Sound - Key Door Locking (Wav)",
+    "duree": 5.0
+   },
+   {
+    "id": "env:key-locking-and-unlocking-sound-pack:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/key-locking-and-unlocking-sound-pack-RMA2XPK",
+    "fichier": "data/envato-sons/key-locking-and-unlocking-sound-pack/LG_Sound - Key Door Unlocking (Wav).wav",
+    "titre": "LG Sound - Key Door Unlocking (Wav)",
+    "duree": 6.0
+   },
+   {
+    "id": "env:keys-jingle:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/keys-jingle-MGR3NYK",
+    "fichier": "data/envato-sons/keys-jingle/Keys_Jingle_ODY-1543-039.wav",
+    "titre": "Keys Jingle ODY-1543-039",
+    "duree": 5.3
+   },
+   {
+    "id": "env:keys-on-keyring:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/keys-on-keyring-4FKDMUJ",
+    "fichier": "data/envato-sons/keys-on-keyring/Car Key Catch 3.wav",
+    "titre": "Car Key Catch 3",
+    "duree": 1.5
+   },
+   {
+    "id": "env:keys-on-keyring:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/keys-on-keyring-4FKDMUJ",
+    "fichier": "data/envato-sons/keys-on-keyring/Car Key Catch.wav",
+    "titre": "Car Key Catch",
+    "duree": 0.6
+   },
+   {
+    "id": "env:keys-on-keyring:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/keys-on-keyring-4FKDMUJ",
+    "fichier": "data/envato-sons/keys-on-keyring/Key Catch 5.wav",
+    "titre": "Key Catch 5",
+    "duree": 0.8
+   },
+   {
+    "id": "env:lock-unlock-with-key:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/lock-unlock-with-key-CL6GPYR",
+    "fichier": "data/envato-sons/lock-unlock-with-key/LDj_Audio - Lock with Key (Wav).wav",
+    "titre": "LDj Audio - Lock with Key (Wav)",
+    "duree": 9.9
+   },
+   {
+    "id": "env:lock-unlock-with-key:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/lock-unlock-with-key-CL6GPYR",
+    "fichier": "data/envato-sons/lock-unlock-with-key/LDj_Audio - Unlock with Key (Wav).wav",
+    "titre": "LDj Audio - Unlock with Key (Wav)",
+    "duree": 8.6
+   }
+  ],
+  "applaudissements": [
+   {
+    "id": "env:large-crowd-applause-cheering-in-convention-hall:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/large-crowd-applause-cheering-in-convention-hall-Y5CD7XB",
+    "fichier": "data/envato-sons/large-crowd-applause-cheering-in-convention-hall/CHEERING-INDOOR_GEN-HDF-07375.wav",
+    "titre": "CHEERING-INDOOR GEN-HDF-07375",
+    "duree": 34.2
+   },
+   {
+    "id": "env:large-crowd-applause-cheering-in-hall:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/large-crowd-applause-cheering-in-hall-G7BFCR2",
+    "fichier": "data/envato-sons/large-crowd-applause-cheering-in-hall/CHEERING-INDOOR_GEN-HDF-07376.wav",
+    "titre": "CHEERING-INDOOR GEN-HDF-07376",
+    "duree": 14.6
+   }
+  ],
+  "murmure": [
+   {
+    "id": "env:large-crowd-murmur:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/large-crowd-murmur-Y43PJUQ",
+    "fichier": "data/envato-sons/large-crowd-murmur/Crowd100IntMurmur LCA013702.wav",
+    "titre": "Crowd100IntMurmur LCA013702",
+    "duree": 5.7
+   },
+   {
+    "id": "env:large-crowd-murmur-2:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/large-crowd-murmur-2-YU9PDAR",
+    "fichier": "data/envato-sons/large-crowd-murmur-2/Crowd100IntMurmur LCA013703.wav",
+    "titre": "Crowd100IntMurmur LCA013703",
+    "duree": 11.2
+   }
+  ],
+  "salle": [
+   {
+    "id": "env:large-crowd-murmur-2:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/large-crowd-murmur-2-YU9PDAR",
+    "fichier": "data/envato-sons/large-crowd-murmur-2/Crowd100IntMurmur LCA013703.wav",
+    "titre": "Crowd100IntMurmur LCA013703",
+    "duree": 11.2
+   }
+  ],
+  "gong": [
+   {
+    "id": "env:long-gong-swell:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/long-gong-swell-H6JWZTL",
+    "fichier": "data/envato-sons/long-gong-swell/PercussionAccents EC09_79_4.wav",
+    "titre": "PercussionAccents EC09 79 4",
+    "duree": 8.5
+   }
+  ],
+  "bol": [
+   {
+    "id": "env:meditation-singing-bowl-tone-3:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/meditation-singing-bowl-tone-3/Tibetan Singing Bowl 3.wav",
+    "titre": "Tibetan Singing Bowl 3",
+    "duree": 11.3
+   },
+   {
+    "id": "env:tibetan-singing-bowl-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/tibetan-singing-bowl-1-LD8DUHY",
+    "fichier": "data/envato-sons/tibetan-singing-bowl-1/Tibetan Singing Bowl 1.wav",
+    "titre": "Tibetan Singing Bowl 1",
+    "duree": 21.1
+   },
+   {
+    "id": "env:tibetan-singing-bowl-2:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/tibetan-singing-bowl-2-Y6HFCTM",
+    "fichier": "data/envato-sons/tibetan-singing-bowl-2/Tibetan Singing Bowl 2.wav",
+    "titre": "Tibetan Singing Bowl 2",
+    "duree": 15.5
+   }
+  ],
+  "ville": [
+   {
+    "id": "env:muslim-town-ambience-loop:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/muslim-town-ambience-loop/25286 muslim town ambience loop-full.wav",
+    "titre": "25286 muslim town ambience loop-full",
+    "duree": 186.5
+   }
+  ],
+  "papier": [
+   {
+    "id": "env:newspaper-page-turn:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/newspaper-page-turn-SKNJ6BE",
+    "fichier": "data/envato-sons/newspaper-page-turn/NewspaperPageTurn PE1016903.wav",
+    "titre": "NewspaperPageTurn PE1016903",
+    "duree": 1.4
+   },
+   {
+    "id": "env:paper-rustle:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/paper-rustle-M36ZRAG",
+    "fichier": "data/envato-sons/paper-rustle/LG_Sound - Paper Rustle (Wav).wav",
+    "titre": "LG Sound - Paper Rustle (Wav)",
+    "duree": 4.7
+   },
+   {
+    "id": "env:paper-shuffle-page-turn-rustle:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/paper-shuffle-page-turn-rustle-87QB225",
+    "fichier": "data/envato-sons/paper-shuffle-page-turn-rustle/PAPRHndl_Paper Movement Long 03_JC.wav",
+    "titre": "PAPRHndl Paper Movement Long 03 JC",
+    "duree": 1.7
+   },
+   {
+    "id": "env:rustling-paper-suggests-manipulating-a-newspaper:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rustling-paper-suggests-manipulating-a-newspaper-7SJASZG",
+    "fichier": "data/envato-sons/rustling-paper-suggests-manipulating-a-newspaper/Papr Newspaper Rustle 02.wav",
+    "titre": "Papr Newspaper Rustle 02",
+    "duree": 1.8
+   }
+  ],
+  "teletype": [
+   {
+    "id": "env:newsroom-office-teletype-printers:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/newsroom-office-teletype-printers-CG2986A",
+    "fichier": "data/envato-sons/newsroom-office-teletype-printers/Newsroom Office Teletype Printers.wav",
+    "titre": "Newsroom Office Teletype Printers",
+    "duree": 58.6
+   },
+   {
+    "id": "env:telegraph-sending-morse-code:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/telegraph-sending-morse-code-DE73QGB",
+    "fichier": "data/envato-sons/telegraph-sending-morse-code/Telegraph 6058_22_2.wav",
+    "titre": "Telegraph 6058 22 2",
+    "duree": 34.7
+   },
+   {
+    "id": "env:teletype-machine-printing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/teletype-machine-printing-QDK3U2Y",
+    "fichier": "data/envato-sons/teletype-machine-printing/Teletype TL06_28.wav",
+    "titre": "Teletype TL06 28",
+    "duree": 118.1
+   },
+   {
+    "id": "env:teletype-teleprinter-working:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/teletype-teleprinter-working-GE6ZRKQ",
+    "fichier": "data/envato-sons/teletype-teleprinter-working/Teletype Teleprinter Working.wav",
+    "titre": "Teletype Teleprinter Working",
+    "duree": 41.4
+   }
+  ],
+  "avion_helice": [
+   {
+    "id": "env:prop-plane-flyby:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/prop-plane-flyby-JYN7LT4",
+    "fichier": "data/envato-sons/prop-plane-flyby/Prop Plane Flyby.wav",
+    "titre": "Prop Plane Flyby",
+    "duree": 9.4
+   },
+   {
+    "id": "env:propeller-aircraft-flyby:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/propeller-aircraft-flyby-7Q93RZ4",
+    "fichier": "data/envato-sons/propeller-aircraft-flyby/Propeller Aircraft.wav",
+    "titre": "Propeller Aircraft",
+    "duree": 29.6
+   },
+   {
+    "id": "env:propeller-plane-twin-engine-fly-by:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/propeller-plane-twin-engine-fly-by-GSQL3FV",
+    "fichier": "data/envato-sons/propeller-plane-twin-engine-fly-by/PropellerPlaneTwinEngineFlyBy_mINPT.wav",
+    "titre": "PropellerPlaneTwinEngineFlyBy mINPT",
+    "duree": 15.8
+   }
+  ],
+  "radio": [
+   {
+    "id": "env:radio-static:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/radio-static-8FRSKJW",
+    "fichier": "data/envato-sons/radio-static/Radio_Static_ODY-1176-007.wav",
+    "titre": "Radio Static ODY-1176-007",
+    "duree": 20.0
+   },
+   {
+    "id": "env:walkie-talkie-dead-air-static:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/walkie-talkie-dead-air-static-59JKVG2",
+    "fichier": "data/envato-sons/walkie-talkie-dead-air-static/Walkie-Talkie_GEN-HD4-44895.wav",
+    "titre": "Walkie-Talkie GEN-HD4-44895",
+    "duree": 26.1
+   }
+  ],
+  "manif": [
+   {
+    "id": "env:rioting-crowd:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rioting-crowd-TJS9YMN",
+    "fichier": "data/envato-sons/rioting-crowd/02115 a looping rioting.wav",
+    "titre": "02115 a looping rioting",
+    "duree": 43.1
+   },
+   {
+    "id": "env:rioting-demonstration-crowd:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rioting-demonstration-crowd-9MY86US",
+    "fichier": "data/envato-sons/rioting-demonstration-crowd/02457 rioting strike.wav",
+    "titre": "02457 rioting strike",
+    "duree": 38.8
+   }
+  ],
+  "coq": [
+   {
+    "id": "env:rooster-call-morning:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rooster-call-morning-4AY5LRD",
+    "fichier": "data/envato-sons/rooster-call-morning/ROOSTER_CALL_Morning.wav",
+    "titre": "ROOSTER CALL Morning",
+    "duree": 4.1
+   },
+   {
+    "id": "env:rooster-crowing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/rooster-crowing-ZCPXG8Y",
+    "fichier": "data/envato-sons/rooster-crowing/rooster-crowing.wav",
+    "titre": "rooster-crowing",
+    "duree": 2.9
+   }
+  ],
+  "diapo": [
+   {
+    "id": "env:slide-projector-advance:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/slide-projector-advance-S8AHUXQ",
+    "fichier": "data/envato-sons/slide-projector-advance/SlideProjectorAdvance.wav",
+    "titre": "SlideProjectorAdvance",
+    "duree": 1.5
+   },
+   {
+    "id": "env:slide-projector-advance:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/slide-projector-advance-S8AHUXQ",
+    "fichier": "data/envato-sons/slide-projector-advance/SlideProjectorAdvance_Light.wav",
+    "titre": "SlideProjectorAdvance Light",
+    "duree": 1.5
+   },
+   {
+    "id": "env:slide-projector-advance:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/slide-projector-advance-S8AHUXQ",
+    "fichier": "data/envato-sons/slide-projector-advance/SlideProjectorAdvance_Light_Longer.wav",
+    "titre": "SlideProjectorAdvance Light Longer",
+    "duree": 1.8
+   },
+   {
+    "id": "env:slide-projector-advance:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/slide-projector-advance-S8AHUXQ",
+    "fichier": "data/envato-sons/slide-projector-advance/SlideProjectorAdvance_Longer.wav",
+    "titre": "SlideProjectorAdvance Longer",
+    "duree": 1.8
+   },
+   {
+    "id": "env:slide-projector-click-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/slide-projector-click-1-GN59YN7",
+    "fichier": "data/envato-sons/slide-projector-click-1/Slide Projector Click 1.wav",
+    "titre": "Slide Projector Click 1",
+    "duree": 1.2
+   },
+   {
+    "id": "env:vintage-film-camera-rewind:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/vintage-film-camera-rewind-BY65CW8",
+    "fichier": "data/envato-sons/vintage-film-camera-rewind/Vintage Film Camera Rewind.wav",
+    "titre": "Vintage Film Camera Rewind",
+    "duree": 3.0
+   }
+  ],
+  "drone": [
+   {
+    "id": "env:small-drone-hover-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/small-drone-hover-1-4V9RQYS",
+    "fichier": "data/envato-sons/small-drone-hover-1/Small Drone Hover 1.wav",
+    "titre": "Small Drone Hover 1",
+    "duree": 58.5
+   }
+  ],
+  "radio_coup": [
+   {
+    "id": "env:transmission-end-static:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/transmission-end-static-GVRKTXW",
+    "fichier": "data/envato-sons/transmission-end-static/SynthStatic EC03_71_3.wav",
+    "titre": "SynthStatic EC03 71 3",
+    "duree": 0.6
+   },
+   {
+    "id": "env:walkie-talkie-static-burst:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/walkie-talkie-static-burst-BCNJ5U2",
+    "fichier": "data/envato-sons/walkie-talkie-static-burst/Walkie Talkie Static Burst.wav",
+    "titre": "Walkie Talkie Static Burst",
+    "duree": 0.2
+   }
+  ],
+  "machine": [
+   {
+    "id": "env:typewriter-writing:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/typewriter-writing-FS3B4HJ",
+    "fichier": "data/envato-sons/typewriter-writing/Typewriter Writing.wav",
+    "titre": "Typewriter Writing",
+    "duree": 45.4
+   }
+  ],
+  "porte": [
+   {
+    "id": "env:wooden-creaking-door:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "https://elements.envato.com/wooden-creaking-door-SWL5MEK",
+    "fichier": "data/envato-sons/wooden-creaking-door/00018 creaking door 3-full.wav",
+    "titre": "00018 creaking door 3-full",
+    "duree": 1.8
+   }
+  ]
+ }
+}

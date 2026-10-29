@@ -15,6 +15,7 @@ import json
 import os
 import sys
 import wave
+import zlib
 
 import numpy as np
 
@@ -38,7 +39,9 @@ OUT = sys.argv[2]
 TOTAL = cues["total"]
 N = int((TOTAL + 0.5) * SR)
 t = np.arange(N) / SR
-rng = np.random.default_rng(1948)
+# graine tirée du contenu de la pièce : chaque pièce a ses propres tirages (prises, vitesses), toujours les mêmes
+# d'un rendu à l'autre ; avec une graine fixe, toutes les pièces enchaînaient les mêmes prises dans le même ordre
+rng = np.random.default_rng(zlib.crc32(open(sys.argv[1], "rb").read()))
 L = np.zeros(N)
 R = np.zeros(N)
 PST = PI.Pistes(N)  # une piste par famille de sons, pour le montage son (Premiere, AAF)
