@@ -61,10 +61,12 @@ def link(src, dst):
         subprocess.run(["cp", src, dst], check=True)
 
 
-def cut(src, a, d, dst):
-    """Coupe à l'image près ; qualité de montage (CRF 16), son fondu sur quelques millisecondes aux coupes."""
+def cut(src, a, d, dst, amb=None):
+    """Coupe à l'image près ; qualité de montage (CRF 16), son fondu sur quelques millisecondes aux coupes. Un plan
+    sans son (vrai plan, archive, reconstitution) reçoit son ambiance (output/ambiances/<plan>.wav, tools/ambiances.py)."""
     KEEP.add(dst)
-    stamp = [os.path.relpath(src, ROOT), int(os.path.getmtime(src)), round(a, 3), round(d, 3)]
+    amb = amb if amb and os.path.exists(amb) else None
+    stamp = [os.path.relpath(src, ROOT), int(os.path.getmtime(src)), round(a, 3), round(d, 3)] + ([int(os.path.getmtime(amb))] if amb else [])
     if os.path.exists(dst) and MANIFEST.get(os.path.basename(dst)) == stamp:
         return
     has_audio = bool(subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", src]).strip())
@@ -72,7 +74,7 @@ def cut(src, a, d, dst):
     rate = max(4000, min(24000, int(88 * 8000 / max(d, 1)) - 330))
     cmd = ["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-i", src]
     if not has_audio:
-        cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo"]
+        cmd += ["-i", amb] if amb else ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo"]
     cmd += ["-t", f"{d:.3f}", "-map", "0:v:0", "-map", "0:a:0" if has_audio else "1:a:0",
             "-vf", "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,fps=25,format=yuv420p,setsar=1",
             "-c:v", "libx264", "-preset", "slow", "-crf", "16", "-maxrate", f"{rate}k", "-bufsize", f"{rate * 2}k", "-tune", "grain",
@@ -146,7 +148,7 @@ def part(yml, folder):
             elif typ in VIDEO and src and os.path.exists(src) and not p.get("a_obtenir"):
                 base = os.path.splitext(os.path.basename(fic))[0]
                 name = f"{pid}-{typ.replace('É', 'E')}-{slug(base, 40).lower()}.mp4"
-                cut(src, a, d, os.path.join(cd, name))
+                cut(src, a, d, os.path.join(cd, name), os.path.join(ROOT, "output", "ambiances", f"{pid}.wav"))
             else:
                 # rendu absent sur cette machine (nouvelle session) mais plan déjà livré : on garde la version livrée
                 old = [] if p.get("a_obtenir") or not src else sorted(glob.glob(os.path.join(cd, f"{pid}-*.mp4")))

@@ -31,13 +31,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "output", "ambiances")
 SR = 48000
 TYPES = {"RÉEL", "ARCH", "IA", "PHOTO"}
+# les niveaux des règles sont relatifs : +5 dB les met à la hauteur des pièces de motion design voisines (vers -26 dBFS
+# pour un fond principal), présents et immersifs, toujours sous la voix une fois celle-ci posée
+HAUSSE = 5.0
 
 # (motif cherché dans la note « son », puis dans la légende, le fichier et la voix ; fonds [(rôle, dBFS)] ; ponctuels)
 # La note « son » passe d'abord ; ensuite le premier motif de lieu qui correspond donne le fond principal.
 NOTE = [
     (r"silence presque|aucune musique, aucun effet", "silence"),
     (r"vent sec", [("vent_desert", -36)]),
-    (r"vent de neige|neige", [("vent", -31)]),
+    (r"vent de neige|neige|corbeaux", [("vent", -31), ("corbeaux", -36)]),
+    (r"pas de troupe", [("pas", -32)]),
     (r"tole|tôle", [("vent", -33)], ["tole"]),
     (r"salle immense|murmure", [("salle", -31), ("bureau", -40)]),
     (r"applaudissements", [("salle", -33)], ["applaudissements"]),
@@ -52,28 +56,39 @@ NOTE = [
 ]
 LIEU = [
     (r"marche du retour|manifest|protest|reforme de la justice|rassemblement", [("manif", -29)], ["manif_cri"]),
-    (r"nations unies|\bonu\b|assemblee|knesset|congres|conference|tribunal|proces|maison blanche|signature|accords? de|"
-     r"poignee de main|sommet|parlement|cour internationale", [("salle", -34), ("bureau", -40)], ["applaudissements?"]),
-    (r"camp david", [("campagne", -33)]),
+    (r"qui partent|ballots|exode|expuls|chasses de|sur la route|deplaces", [("pas", -32), ("vent", -38)]),
+    (r"neige|hiver|medzhybizh|ukraine|cimetiere", [("vent", -32), ("corbeaux", -37)]),
+    (r"\btrains?\b|gare|wagons?|deport|rescapes", [("train", -34)], ["train_sifflet?"]),
+    (r"demoli|bulldozer|\bd9\b", [("bulldozer", -33), ("vent", -38)]),
+    (r"nations unies|\bonu\b|assemblee|congres|conference|tribunal|proces|maison blanche|signature|accords de (paix|camp)|accords d'|"
+     r"poignee de main|sommet|parlement|cour internationale", [("salle", -34), ("photographes", -34)], ["applaudissements?"]),
+    (r"camp david", [("campagne", -33), ("photographes", -36)]),
     (r"mur occidental|mur des lamentations|priere au mur", [("murmure", -33), ("vent_doux", -40)]),
+    (r"yad vashem|memorial", [("vent_doux", -34)]),
+    (r"abandonn|lifta", [("vent", -33), ("vent_doux", -40)]),
+    (r"cloture|mur de separation|le mur\b|checkpoint|tour de guet", [("vent_desert", -35), ("ville", -42)]),
+    (r"nuit|de nuit|soir", [("nuit_ville", -34), ("chiens", -40)]),
     (r"dome du rocher|esplanade|al-aqsa|mosquee", [("foule", -36), ("priere", -34)]),
     (r"saint-sepulcre|bethleem|nativite|eglise|monastere|mar saba", [("vent_doux", -36), ("cloches", -36)]),
     (r"souk|vieille ville|porte de damas|porte de jaffa|jerusalem", [("foule", -33)]),
-    (r"chatila|camp de refugies|camp de la plage|shuafat|anata|\bcamps?\b|refugies", [("enfants", -35), ("village", -35)]),
-    (r"gaza", [("ville", -36), ("drone", -38)]),
-    (r"masafer yatta|hebron|naplouse|ramallah|jenine|arraba|village|collines|cisjordanie", [("campagne", -34), ("chevres", -40)], ["coq?"]),
+    (r"chatila|camp de refugies|camp de la plage|shuafat|anata|\bcamps?\b", [("enfants", -35), ("village", -35)]),
+    (r"gaza", [("ville", -36), ("ambulance", -40)]),
+    (r"\becoles?\b", [("enfants", -36), ("vent_desert", -38)]),
+    (r"hebron|naplouse|ramallah|jenine|bethleem", [("ville", -35), ("vent_doux", -40)]),
+    (r"masafer yatta|arraba|village|collines|cisjordanie", [("campagne", -34), ("chevres", -40)], ["coq?"]),
     (r"berger|moutons|chevres|troupeau|bedouin", [("moutons", -33), ("vent_desert", -38)]),
     (r"desert|neguev|judee|jericho|mer morte|sinai|ouadi", [("vent_desert", -33)]),
     (r"haifa|jaffa|\bport\b|plage|cote|baie|mediterranee|paquebot|exodus|ellis island|marseille|bateau|navire", [("mer", -31)]),
     (r"galilee|jezreel|thabor|netofa|vallee|plaine|champs?|olivier|oliveraie|tracteur|colonie|kibboutz|orangeraie", [("campagne", -33), ("cigales", -40)]),
     (r"tel-aviv|tel aviv|new york|brooklyn|williamsburg|londres|paris|washington|ville", [("nuit_ville", -35)]),
-    (r"nuit|soir", [("nuit", -33)]),
     (r"chars?\b|blinde", [("char", -33)]),
     (r"pont aerien|avions?|largage", [("vent", -36)], ["avion?"]),
     (r"helicoptere", [("vent", -36)], ["helico"]),
     (r"ruines|decombres|detruit|bombard|frappe|plomb durci|offensive|guerre", [("vent", -36), ("guerre_loin", -42)]),
-    (r"cloture|mur de separation|le mur\b|checkpoint|tour de guet", [("vent_desert", -35)]),
 ]
+
+
+MODERNES = {"ambulance", "drone", "drone_passe", "generateur"}
 
 
 def sans_accents(s):
@@ -99,18 +114,35 @@ def choix(p):
             fonds += regle[1]
             ponct += regle[2] if len(regle) > 2 else []
             raisons.append("note")
-    texte = sans_accents(" ".join(str(p.get(k, "")) for k in ("ecran", "fichier", "source")))
-    voix = sans_accents(str(p.get("voix", "")))
-    if len(fonds) < 2:
+    # le lieu se lit sur la légende et le nom du fichier (la source et la voix parlent souvent d'autre chose) ; une note
+    # qui donne déjà des fonds décide seule
+    texte = sans_accents(" ".join(str(p.get(k, "")) for k in ("ecran", "fichier")))
+    if not fonds:
         for motif, fs, *pc in LIEU:
-            if re.search(motif, texte) or (not raisons and re.search(motif, voix)):
-                fonds += [f for f in fs if f[0] not in {x[0] for x in fonds}]
+            m = re.search(motif, texte)
+            if m:
+                fonds += fs
                 ponct += pc[0] if pc else []
-                raisons.append(re.search(motif, texte + " " + voix).group(0))
+                raisons.append(m.group(0))
                 break
+    an = annee(p)
+    if an is not None and an < 1990:  # pas d'ambulance, de drone ni de groupe électrogène d'aujourd'hui sur une archive
+        fonds = [f for f in fonds if f[0] not in MODERNES]
+        if not fonds:
+            fonds, raisons = [("vent_doux", -36)], raisons or ["archive sans lieu reconnu : un air léger"]
     if not fonds:
         fonds, raisons = [("vent_doux", -36)], ["aucun lieu reconnu : un air léger"]
     return fonds[:2], ponct[:2], ", ".join(raisons)
+
+
+def sonie(L, R):
+    """Sonie perçue en LUFS (pondération K de la norme BS.1770, sans fenêtrage) : ce qu'une oreille entend vraiment, les
+    graves comptant moins que les médiums."""
+    from scipy.signal import lfilter
+    b1, a1 = [1.53512485958697, -2.69169618940638, 1.19839281085285], [1.0, -1.69065929318241, 0.73248077421585]
+    b2, a2 = [1.0, -2.0, 1.0], [1.0, -1.99004745483398, 0.99007225036621]
+    z = [lfilter(b2, a2, lfilter(b1, a1, c)) for c in (L, R)]
+    return -0.691 + 10 * np.log10(sum((c ** 2).mean() for c in z) + 1e-20)
 
 
 def passe_bande(x, f1, f2):
@@ -127,13 +159,13 @@ def ambiance(pid, p):
     an = annee(p)
     vieux = p["type"] == "ARCH" and an is not None and an < 1960
     if p["type"] == "ARCH" and an is not None and an < 1930 and B.dispo("projecteur"):
-        fonds = fonds[:1] + [("projecteur", -42)]
+        fonds = fonds + [("projecteur", -42)]
     L, R = np.zeros(n), np.zeros(n)
     faits = []
     for role, db in fonds:
         if not B.dispo(role):
             continue
-        l, r = BR.fond(role, d + 0.5, rng, db)
+        l, r = BR.fond(role, d + 0.5, rng, db + HAUSSE)
         L += l[:n]
         R += r[:n]
         faits.append(f"{role} {db}")
@@ -144,8 +176,8 @@ def ambiance(pid, p):
             if B.dispo("montee") and d > 3:
                 l, r = BR.montee(rng, min(6.0, d - 0.5))
                 o = n - len(l) - int(0.15 * SR)
-                L[o:o + len(l)] += 0.18 * l
-                R[o:o + len(r)] += 0.18 * r
+                L[o:o + len(l)] += 0.3 * l
+                R[o:o + len(r)] += 0.3 * r
                 faits.append("montée finale")
             continue
         if not B.dispo(role) or (opt and rng.random() < 0.5) or d < 3:
@@ -154,7 +186,7 @@ def ambiance(pid, p):
         m = min(len(l), n - int(0.5 * SR))
         if m < int(0.2 * SR):
             continue
-        g = 10 ** (-20 / 20) if role not in ("applaudissements", "manif_cri") else 10 ** (-27 / 20)
+        g = 10 ** ((-20 + HAUSSE) / 20) if role not in ("applaudissements", "manif_cri") else 10 ** ((-27 + HAUSSE) / 20)
         o = int((0.3 + 0.35 * k + 0.1 * rng.random()) * max(0, n - m))
         w = np.ones(m)
         q = min(m // 4, int(0.3 * SR))
@@ -168,16 +200,23 @@ def ambiance(pid, p):
         mid = (L + R) / 2
         L, R = 0.75 * mid + 0.25 * L, 0.75 * mid + 0.25 * R
         L, R = L * 0.8, R * 0.8
-    k = min(n // 3, int(0.4 * SR))
+    # fondus courts (120 ms) : pas de creux à la coupe, le plan suivant prend le relais (fondu enchaîné possible au montage)
+    k = min(n // 3, int(0.12 * SR))
     if k:
         f = np.linspace(0, 1, k) ** 2
         L[:k] *= f
         R[:k] *= f
         L[-k:] *= f[::-1]
         R[-k:] *= f[::-1]
-    pk = max(np.abs(L).max(), np.abs(R).max(), 1e-9)
-    if pk > 0.5:  # jamais plus haut que -6 dBFS : c'est un fond
-        L, R = L * 0.5 / pk, R * 0.5 / pk
+    # même sonie d'un plan à l'autre (le son ne saute pas à la coupe), sauf choix voulu : un silence reste un silence, une
+    # manifestation se sent plus fort, une archive ancienne reste un peu en retrait
+    roles = {f[0] for f in fonds}
+    # cibles calées sur le fond des pièces de motion design voisines (leurs passages calmes tournent autour de -24 LUFS) :
+    # aucun creux ni saut de niveau à la coupe entre une carte et un vrai plan
+    cible = -36.0 if raison.startswith("note « silence") else -22.0 if "manif" in roles else -26.5 if vieux else -25.0
+    g = 10 ** ((cible - sonie(L, R)) / 20)
+    # un coup isolé (des pas, une cloche) ne fait pas baisser tout le plan : limiteur à anticipation à -6 dBFS
+    L, R = BR.limite(L * g, R * g, 0.5)
     os.makedirs(OUT, exist_ok=True)
     dst = os.path.join(OUT, f"{pid}.wav")
     with wave.open(dst + ".part", "wb") as w_:

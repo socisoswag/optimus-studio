@@ -3,7 +3,7 @@ la banque de bruitages : écrit data/bruitages-envato.json, que tools/banque_son
 
     python3 tools/banque_envato.py            (relancer après chaque nouveau lot de sons)
 
-Modes : « fond » (prise entière, pour les fonds continus : 8 s au moins), « entier » (prise entière, un seul son),
+Modes : « fond » (prise entière, pour les fonds continus : 6 s au moins), « entier » (prise entière, un seul son),
 « coups » (chaque coup de la prise devient une prise à part, de l'attaque à son extinction, au plus `max` secondes),
 « un » (le premier coup et toute sa traîne, `max` secondes),
 « sommet » (le passage le plus fort, une voiture qui passe : `max` secondes autour). Licence Envato : usage YouTube
@@ -121,6 +121,20 @@ R = {
     **{k: [("cles", "entier", 10)] for k in ("keys-jingle", "keys-on-keyring", "lock-unlock-with-key",
                                            "key-locking-and-unlocking-sound-pack")},
     "wooden-creaking-door": [("porte", "entier", 3)],
+    # deuxième lot : archives, presse, guerre et vie quotidienne
+    **{k: [("projecteur", "fond", 0)] for k in ("super-8-film-projector-running", "film-projector-reel")},
+    "press-conference-photographers": [("photographes", "fond", 0)],
+    "reporters-crowd": [("presse", "fond", 0)],
+    "village-ambience-with-barking-dogs-at-springtime-l": [("chiens", "fond", 0)],
+    **{k: [("ambulance", "fond", 0)] for k in ("traffic-ambience-with-ambulance-siren", "people-talking-outside-and-ambulance-siren",
+                                             "ambulance-and-fire-truck-siren-in-city")},
+    **{k: [("bulldozer", "fond", 0)] for k in ("bulldozer-drive-by", "bulldozer-idle", "bulldozer-startup-and-go")},
+    "heavy-machinery-at-work": [("bulldozer", "fond", 0), ("bulldozer_coup", "entier", 6)],
+    **{k: [("corbeaux", "fond", 0), ("corbeau", "entier", 6)] for k in ("crows-and-ravens-cawing-bird-calls", "two-crows-squawking")},
+    **{k: [("pas", "fond", 0)] for k in ("group-footsteps-large-crowd-of-men-walking-1", "walking-on-a-dirt-road")},
+    "old-loud-train-pass-by": [("train", "fond", 0)],
+    **{k: [("train_sifflet", "entier", 8)] for k in ("steam-locomotive-train-whistle", "antique-train-steam-whistle")},
+    **{k: [("generateur", "fond", 0)] for k in ("diesel-generator", "diesel-power-generator-loop", "fast-diesel-pump-motor")},
     # sons de studio : transitions du motion design seulement
     **{k: [("studio", "entier", 7)] for k in ("cinematic-photo", "cinematic-transition-whoosh-11", "incoming-cinematic-transition",
                                             "swipe", "glitch", "glitch-accent-1", "glitch-rough",
@@ -195,7 +209,7 @@ def main():
                 lst = roles.setdefault(role, [])
                 sid = f"env:{nom}:{k}"
                 if mode == "fond":
-                    if dur < 8:
+                    if dur < 6:
                         refus.append(f"{nom} ({dur:.1f} s) trop court pour un fond « {role} »")
                         continue
                     lst.append({"id": sid, **base, "duree": round(dur, 1)})

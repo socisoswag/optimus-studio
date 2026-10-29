@@ -122,6 +122,35 @@
     "duree": 59.3
    }
   ],
+  "ambulance": [
+   {
+    "id": "env:ambulance-and-fire-truck-siren-in-city:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/ambulance-and-fire-truck-siren-in-city/ambulance-and-fire-truck-siren-in-city-01.wav",
+    "titre": "ambulance-and-fire-truck-siren-in-city-01",
+    "duree": 48.6
+   },
+   {
+    "id": "env:people-talking-outside-and-ambulance-siren:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/people-talking-outside-and-ambulance-siren/people-talking-outside-and-ambulance-siren-01.wav",
+    "titre": "people-talking-outside-and-ambulance-siren-01",
+    "duree": 17.1
+   },
+   {
+    "id": "env:traffic-ambience-with-ambulance-siren:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/traffic-ambience-with-ambulance-siren/Traffic Ambience with Ambulance Siren.wav",
+    "titre": "Traffic Ambience with Ambulance Siren",
+    "duree": 26.0
+   }
+  ],
   "chevre": [
    {
     "id": "env:animal-goat-baa-herd-excitement-03:0",
@@ -200,6 +229,27 @@
     "fichier": "data/envato-sons/wall-clock-ticking/Clock-Tick_GEN-HD4-39719.wav",
     "titre": "Clock-Tick GEN-HD4-39719",
     "duree": 21.1
+   }
+  ],
+  "train_sifflet": [
+   {
+    "id": "env:antique-train-steam-whistle:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/antique-train-steam-whistle/TRNSteam_Train 1880 Jupiter 119 Steam_PE112073.wav",
+    "titre": "TRNSteam Train 1880 Jupiter 119 Steam PE112073",
+    "duree": 8,
+    "fin": 8
+   },
+   {
+    "id": "env:steam-locomotive-train-whistle:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/steam-locomotive-train-whistle/steam-locomotive-train-whistle.wav",
+    "titre": "steam-locomotive-train-whistle",
+    "duree": 3.0
    }
   ],
   "machine_papier": [
@@ -488,6 +538,35 @@
     "debut": 1.765,
     "fin": 3.565,
     "duree": 1.8
+   }
+  ],
+  "bulldozer": [
+   {
+    "id": "env:bulldozer-drive-by:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/bulldozer-drive-by/BulldozerByBulldoz PE271701.wav",
+    "titre": "BulldozerByBulldoz PE271701",
+    "duree": 66.7
+   },
+   {
+    "id": "env:bulldozer-idle:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/bulldozer-idle/Bulldozer Idle.wav",
+    "titre": "Bulldozer Idle",
+    "duree": 36.1
+   },
+   {
+    "id": "env:bulldozer-startup-and-go:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/bulldozer-startup-and-go/BulldozerStartIdle PE271501.wav",
+    "titre": "BulldozerStartIdle PE271501",
+    "duree": 54.2
    }
   ],
   "enfants": [
@@ -1241,6 +1320,94 @@
     "duree": 3.3
    }
   ],
+  "corbeaux": [
+   {
+    "id": "env:crows-and-ravens-cawing-bird-calls:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/crows-and-ravens-cawing-bird-calls/BIRDCrow_Distant Crows Cawing_01.wav",
+    "titre": "BIRDCrow Distant Crows Cawing 01",
+    "duree": 8.4
+   },
+   {
+    "id": "env:crows-and-ravens-cawing-bird-calls:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/crows-and-ravens-cawing-bird-calls/BIRDCrow_Distant Crows Cawing_02.wav",
+    "titre": "BIRDCrow Distant Crows Cawing 02",
+    "duree": 6.1
+   },
+   {
+    "id": "env:two-crows-squawking:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/two-crows-squawking/BirdCrow BSZ01_11.wav",
+    "titre": "BirdCrow BSZ01 11",
+    "duree": 23.5
+   }
+  ],
+  "corbeau": [
+   {
+    "id": "env:crows-and-ravens-cawing-bird-calls:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/crows-and-ravens-cawing-bird-calls/BIRDCrow_Distant Crows Cawing_01.wav",
+    "titre": "BIRDCrow Distant Crows Cawing 01",
+    "duree": 6,
+    "fin": 6
+   },
+   {
+    "id": "env:crows-and-ravens-cawing-bird-calls:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/crows-and-ravens-cawing-bird-calls/BIRDCrow_Distant Crows Cawing_02.wav",
+    "titre": "BIRDCrow Distant Crows Cawing 02",
+    "duree": 6,
+    "fin": 6
+   },
+   {
+    "id": "env:crows-and-ravens-cawing-bird-calls:2",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/crows-and-ravens-cawing-bird-calls/BIRDCrow_Distant Crows Cawing_03.wav",
+    "titre": "BIRDCrow Distant Crows Cawing 03",
+    "duree": 4.4
+   },
+   {
+    "id": "env:crows-and-ravens-cawing-bird-calls:3",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/crows-and-ravens-cawing-bird-calls/BIRDCrow_Distant Crows Cawing_04.wav",
+    "titre": "BIRDCrow Distant Crows Cawing 04",
+    "duree": 4.2
+   },
+   {
+    "id": "env:crows-and-ravens-cawing-bird-calls:4",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/crows-and-ravens-cawing-bird-calls/BIRDCrow_Distant Crows Cawing_05.wav",
+    "titre": "BIRDCrow Distant Crows Cawing 05",
+    "duree": 5.5
+   },
+   {
+    "id": "env:two-crows-squawking:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/two-crows-squawking/BirdCrow BSZ01_11.wav",
+    "titre": "BirdCrow BSZ01 11",
+    "duree": 6,
+    "fin": 6
+   }
+  ],
   "montee": [
    {
     "id": "env:cymbal-roll-1:0",
@@ -1322,6 +1489,35 @@
     "fichier": "data/envato-sons/timpani-roll-with-crescendo/PERCUSSION-TIMPANI_GEN-HDF-18861.wav",
     "titre": "PERCUSSION-TIMPANI GEN-HDF-18861",
     "duree": 16.0
+   }
+  ],
+  "generateur": [
+   {
+    "id": "env:diesel-generator:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/diesel-generator/Diesel Generator.wav",
+    "titre": "Diesel Generator",
+    "duree": 24.2
+   },
+   {
+    "id": "env:diesel-power-generator-loop:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/diesel-power-generator-loop/14490 big diesel power generator loop-full.wav",
+    "titre": "14490 big diesel power generator loop-full",
+    "duree": 11.4
+   },
+   {
+    "id": "env:fast-diesel-pump-motor:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/fast-diesel-pump-motor/Fast Diesel Pump Motor.wav",
+    "titre": "Fast Diesel Pump Motor",
+    "duree": 31.5
    }
   ],
   "village": [
@@ -1621,6 +1817,26 @@
     "duree": 124.0
    }
   ],
+  "projecteur": [
+   {
+    "id": "env:film-projector-reel:1",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/film-projector-reel/ProjectorReel_Loop.wav",
+    "titre": "ProjectorReel Loop",
+    "duree": 10.1
+   },
+   {
+    "id": "env:super-8-film-projector-running:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/super-8-film-projector-running/21 PROJECTOR-FILM_GEN-HDF-19497.wav",
+    "titre": "21 PROJECTOR-FILM GEN-HDF-19497",
+    "duree": 66.3
+   }
+  ],
   "feu": [
    {
     "id": "env:fire-crackling:0",
@@ -1787,6 +2003,26 @@
     "fichier": "data/envato-sons/unfolding-map/28893 Unfolding map-full.wav",
     "titre": "28893 Unfolding map-full",
     "duree": 6.0
+   }
+  ],
+  "pas": [
+   {
+    "id": "env:group-footsteps-large-crowd-of-men-walking-1:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/group-footsteps-large-crowd-of-men-walking-1/Group_Footsteps_Large_Crowd_of_Men_Walking_OCP-0166-05.wav",
+    "titre": "Group Footsteps Large Crowd of Men Walking OCP-0166-05",
+    "duree": 7.9
+   },
+   {
+    "id": "env:walking-on-a-dirt-road:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/walking-on-a-dirt-road/03331 dirt gravel path walk.wav",
+    "titre": "03331 dirt gravel path walk",
+    "duree": 43.4
    }
   ],
   "stylo": [
@@ -2234,6 +2470,17 @@
     "fin": 2.453,
     "coup": 0.01,
     "duree": 2.41
+   }
+  ],
+  "bulldozer_coup": [
+   {
+    "id": "env:heavy-machinery-at-work:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/heavy-machinery-at-work/Heavy Machinery at Work (Loop).wav",
+    "titre": "Heavy Machinery at Work (Loop)",
+    "duree": 5.0
    }
   ],
   "tole": [
@@ -2937,6 +3184,28 @@
     "duree": 41.4
    }
   ],
+  "train": [
+   {
+    "id": "env:old-loud-train-pass-by:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/old-loud-train-pass-by/19445 old loud train pass-by-full.wav",
+    "titre": "19445 old loud train pass-by-full",
+    "duree": 50.0
+   }
+  ],
+  "photographes": [
+   {
+    "id": "env:press-conference-photographers:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/press-conference-photographers/07655a press conference photographers-.wav",
+    "titre": "07655a press conference photographers-",
+    "duree": 10.4
+   }
+  ],
   "avion_helice": [
    {
     "id": "env:prop-plane-flyby:0",
@@ -2984,6 +3253,17 @@
     "fichier": "data/envato-sons/walkie-talkie-dead-air-static/Walkie-Talkie_GEN-HD4-44895.wav",
     "titre": "Walkie-Talkie GEN-HD4-44895",
     "duree": 26.1
+   }
+  ],
+  "presse": [
+   {
+    "id": "env:reporters-crowd:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/reporters-crowd/12556 journalists and photographers attack.wav",
+    "titre": "12556 journalists and photographers attack",
+    "duree": 16.2
    }
   ],
   "manif": [
@@ -3122,6 +3402,17 @@
     "fichier": "data/envato-sons/typewriter-writing/Typewriter Writing.wav",
     "titre": "Typewriter Writing",
     "duree": 45.4
+   }
+  ],
+  "chiens": [
+   {
+    "id": "env:village-ambience-with-barking-dogs-at-springtime-l:0",
+    "auteur": "Envato Elements",
+    "licence": "Envato",
+    "page": "",
+    "fichier": "data/envato-sons/village-ambience-with-barking-dogs-at-springtime-l/36192 Village ambience with barking dogs at springtime loop-full.wav",
+    "titre": "36192 Village ambience with barking dogs at springtime loop-full",
+    "duree": 76.9
    }
   ],
   "porte": [
