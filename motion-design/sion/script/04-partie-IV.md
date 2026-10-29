@@ -225,7 +225,7 @@ Source : SOURCES.md 4.1, Adobe Stock 508320837 ; retraits du statut de résident
 
 ## Chapitre 20 · Les camps palestiniens et la vie dans l'exil
 
-Film 00:44:24:23 → 00:47:07:01 · durée 2 min 42.1 s
+Film 00:44:24:23 → 00:47:07:03 · durée 2 min 42.2 s
 
 *Intention : Les camps comme lieu de mémoire et de vie, de 1948 à 2025. Puis l'exil armé : la Jordanie en 1970, le Liban en 1982, Sabra et Chatila, et ce qu'en dit la commission d'enquête israélienne elle-même.*
 
@@ -234,164 +234,172 @@ Film 00:44:24:23 → 00:47:07:01 · durée 2 min 42.1 s
 > VOIX : silence
 
 
-**20.2** · film **00:44:29:13 → 00:44:36:00** (6.5 s) · **[MD]** `output/camps.mp4` · source 00:00:00:00 → 00:00:06:12  
+**20.2** · film **00:44:29:13 → 00:44:35:08** (5.8 s) · **[ARCH]** `output/archives-filmees/1970-jordanie-camp-de-refugies.mp4` · source 00:00:00:00 → 00:00:05:20  
+Source : SOURCES.md 4.2, Wikimedia Commons, « King Hussein 1970 », film de la CIA conservé aux Archives nationales américaines, domaine public  
+À l'écran : carton : Vers 1970 · Jordanie · Un camp de réfugiés.  
 > VOIX : Depuis 1948, des tentes, / puis des quartiers de **béton**.  
-(9 mots, 1.4 par seconde)
+(9 mots, 1.6 par seconde)
 
 
-**20.3** · film **00:44:36:00 → 00:44:48:00** (12.0 s) · **[MD]** `output/camps.mp4` · source 00:00:06:12 → 00:00:18:12  
+**20.3** · film **00:44:35:08 → 00:44:47:08** (12.0 s) · **[MD]** `output/camps.mp4` · source 00:00:06:12 → 00:00:18:12  
 > VOIX : L'ONU reconnaît 58 camps, dans cinq territoires. / Plus d'un million et demi de personnes y **vivent**.  
 (16 mots, 1.3 par seconde)
 
 
-**20.4** · film **00:44:48:00 → 00:45:00:13** (12.5 s) · **[MD]** `output/camps.mp4` · source 00:00:18:12 → 00:00:31:00  
+**20.4** · film **00:44:47:08 → 00:44:59:20** (12.5 s) · **[MD]** `output/camps.mp4` · source 00:00:18:12 → 00:00:31:00  
 > VOIX : Début 2025, dans le nord de la Cisjordanie, / l'armée israélienne vide les camps de Jénine et de Tulkarem : / environ quarante mille **réfugiés**.  
 (22 mots, 1.8 par seconde)
 
 
-**20.5** · film **00:45:00:13 → 00:45:09:00** (8.5 s) · **[MD]** `output/camps.mp4` · source 00:00:31:00 → 00:00:39:13  
+**20.5** · film **00:44:59:20 → 00:45:07:13** (7.7 s) · **[ARCH]** `output/archives-filmees/1970-jordanie-camp-foule-enfants.mp4` · source 00:00:00:00 → 00:00:07:18  
+Source : SOURCES.md 4.2, Wikimedia Commons, « King Hussein 1970 », film de la CIA conservé aux Archives nationales américaines, domaine public  
+À l'écran : carton : Vers 1970 · Jordanie · Les enfants du camp.  
 > VOIX : Réfugiés depuis quatre **générations**.  
 (4 mots, 0.5 par seconde)
 
 
-**20.6** · film **00:45:09:00 → 00:45:21:13** (12.5 s) · **[MD]** `output/chiffre-refugies.mp4` · source 00:00:00:00 → 00:00:12:13  
+**20.6** · film **00:45:07:13 → 00:45:20:01** (12.5 s) · **[MD]** `output/chiffre-refugies.mp4` · source 00:00:00:00 → 00:00:12:13  
 À l'écran : déjà dans la pièce : 5 964 782 réfugiés palestiniens enregistrés (UNRWA, 31 décembre 2025)  
 > VOIX : silence
 
 
-**20.7** · film **00:45:21:13 → 00:45:32:13** (11.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:00:00 → 00:00:11:00  
-Source : Septembre noir, Jordanie, septembre 1970 à juillet 1971 : environ 3 400 morts (article « Black September »)  
-À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
+**20.7** · film **00:45:20:01 → 00:45:32:15** (12.6 s) · **[ARCH]** `output/archives-filmees/1970-roi-hussein-et-hommes-armes.mp4` · source 00:00:00:00 → 00:00:12:14  
+Source : SOURCES.md 4.2 ; Wikimedia Commons, « King Hussein 1970 », film de la CIA conservé aux Archives nationales américaines, domaine public ; Septembre noir, Jordanie, septembre 1970 à juillet 1971 : environ 3 400 morts (article « Black September »)  
+À l'écran : carton : 1970 · Jordanie · Le roi Hussein.  
 > VOIX : Septembre 1970, en Jordanie : / l'armée du roi Hussein écrase les combattants palestiniens. / Des milliers de morts. / L'OLP part pour le **Liban**.  
-(21 mots, 1.9 par seconde)
+(21 mots, 1.7 par seconde)
 
 
-**20.8** · film **00:45:32:13 → 00:45:38:13** (6.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:00:00 → 00:00:06:00  
+**20.8** · film **00:45:32:15 → 00:45:38:15** (6.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:00:00 → 00:00:06:00  
 > VOIX : Juin 1982. / Israël envahit le **Liban**.  
 (6 mots, 1.0 par seconde)
 
 
-**20.9** · film **00:45:38:13 → 00:45:50:13** (12.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:06:00 → 00:00:18:00  
+**20.9** · film **00:45:38:15 → 00:45:50:15** (12.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:06:00 → 00:00:18:00  
 > VOIX : Le but : chasser l'OLP. / En une semaine, l'armée israélienne est aux portes de **Beyrouth**.  
 (14 mots, 1.2 par seconde)
 
 
-**20.10** · film **00:45:50:13 → 00:46:02:13** (12.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:18:00 → 00:00:30:00  
+**20.10** · film **00:45:50:15 → 00:46:02:15** (12.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:18:00 → 00:00:30:00  
 À l'écran : carton : output/cartons/beyrouth-1982  
 > VOIX : Deux mois de siège. / Bombardements par terre, par mer et par air ; / l'eau et l'électricité **coupées**.  
 (16 mots, 1.3 par seconde)
 
 
-**20.11** · film **00:46:02:13 → 00:46:13:13** (11.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:30:00 → 00:00:41:00  
+**20.11** · film **00:46:02:15 → 00:46:13:15** (11.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:30:00 → 00:00:41:00  
 > VOIX : Plus de dix-neuf mille morts au Liban, selon la police libanaise. / À Beyrouth, huit sur dix sont des **civils**.  
 (19 mots, 1.7 par seconde)
 
 
-**20.12** · film **00:46:13:13 → 00:46:23:13** (10.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:41:00 → 00:00:51:00  
+**20.12** · film **00:46:13:15 → 00:46:23:15** (10.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:41:00 → 00:00:51:00  
 > VOIX : Fin août, l'OLP quitte Beyrouth par la mer. / Arafat part pour **Tunis**.  
 (12 mots, 1.2 par seconde)
 
 
-**20.13** · film **00:46:23:13 → 00:46:36:13** (13.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:51:00 → 00:01:04:00  
+**20.13** · film **00:46:23:15 → 00:46:36:15** (13.0 s) · **[ARCH]** `output/plans-reels/chatila-2023-camp-et-fresque.mp4` · source 00:00:00:00 → 00:00:13:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « War Sparks Memories of '82 Massacre Among Palestinians in Lebanon », Voice of America, 2023, domaine public (images seules, logo hors cadre)  
+À l'écran : carton : 2023 · Camp de Chatila, Beyrouth · « Nous n'oublierons jamais », sur un mur du camp.  
 > VOIX : Mi-septembre, dans les camps de Sabra et Chatila, encerclés par l'armée israélienne, / des miliciens chrétiens libanais massacrent des centaines de civils, / peut-être des **milliers**.  
 (24 mots, 1.8 par seconde)  
 Note : estimations de 460 à plus de 3 000 morts : ne pas donner de chiffre précis à la voix
 
 
-**20.14** · film **00:46:36:13 → 00:46:46:01** (9.5 s) · **[MD]** `output/liban-1982.mp4` · source 00:01:04:00 → 00:01:13:13  
+**20.14** · film **00:46:36:15 → 00:46:46:03** (9.5 s) · **[MD]** `output/liban-1982.mp4` · source 00:01:04:00 → 00:01:13:13  
 > VOIX : La commission d'enquête israélienne conclut à la responsabilité personnelle du ministre de la Défense, Ariel **Sharon**.  
 (16 mots, 1.7 par seconde)
 
 
-**20.15** · film **00:46:46:01 → 00:46:58:01** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:43:00 → 00:04:55:00  
+**20.15** · film **00:46:46:03 → 00:46:58:03** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:43:00 → 00:04:55:00  
 Source : lois de la Knesset du 28 octobre 2024, en vigueur le 30 janvier 2025  
 À l'écran : fiche : Knesset · 28 octobre 2024 · L'UNRWA interdite  
 > VOIX : En octobre 2024, la Knesset interdit à l'UNRWA, l'agence de l'ONU pour les réfugiés palestiniens, d'agir sur son sol. / L'ONU s'alarme pour des millions de **réfugiés**.  
 (26 mots, 2.2 par seconde)
 
 
-**20.16** · film **00:46:58:01 → 00:47:07:01** (9.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:01:13:13 → 00:01:22:12  
+**20.16** · film **00:46:58:03 → 00:47:07:03** (9.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:01:13:13 → 00:01:22:12  
 > VOIX : Sharon doit quitter la Défense. / Il sera Premier ministre en **2001**.  
 (11 mots, 1.2 par seconde)
 
 
 ## Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans État
 
-Film 00:47:07:01 → 00:49:20:13 · durée 2 min 13.5 s
+Film 00:47:07:03 → 00:49:20:15 · durée 2 min 13.5 s
 
 *Intention : Le héros des uns, le terroriste des autres, puis l'homme d'Oslo. Les deux lectures sont dites, Munich compris. La guerre d'octobre 1973 sert de pivot : le monde arabe découvre l'arme du pétrole, et l'OLP entre à l'ONU.*
 
 
-**21.1** · film **00:47:07:01 → 00:47:11:16** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-21.mp4` · source 00:00:00:00 → 00:00:04:15  
+**21.1** · film **00:47:07:03 → 00:47:11:18** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-21.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**21.2** · film **00:47:11:16 → 00:47:16:01** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:46:00 → 00:00:50:10  
+**21.2** · film **00:47:11:18 → 00:47:16:03** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:46:00 → 00:00:50:10  
 À l'écran : fiche de la chronologie : Yasser Arafat  
 > VOIX : silence
 
 
-**21.3** · film **00:47:16:01 → 00:47:30:01** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:22:00 → 00:01:36:00  
+**21.3** · film **00:47:16:03 → 00:47:30:03** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:22:00 → 00:01:36:00  
 > VOIX : Yasser Arafat fonde le Fatah à la fin des années cinquante, / et prend la tête de l'OLP en 1969. / Pour son peuple, il est le visage de la **résistance**.  
 (29 mots, 2.1 par seconde)
 
 
-**21.4** · film **00:47:30:01 → 00:47:44:01** (14.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:33:00 → 00:00:47:00  
+**21.4** · film **00:47:30:03 → 00:47:44:03** (14.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:33:00 → 00:00:47:00  
 Source : Munich, 5 et 6 septembre 1972 : onze membres de l'équipe olympique israélienne tués par Septembre noir  
 À l'écran : fiche : Munich · 5 septembre 1972 · Pour Israël et l'Occident  
 > VOIX : Pour Israël et l'Occident, l'OLP est alors une organisation terroriste : / détournements d'avions, / et à Munich, en 1972, onze athlètes israéliens tués par le groupe Septembre **noir**.  
 (26 mots, 1.9 par seconde)
 
 
-**21.5** · film **00:47:44:01 → 00:47:50:01** (6.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:00:00 → 00:00:06:00  
+**21.5** · film **00:47:44:03 → 00:47:50:03** (6.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:00:00 → 00:00:06:00  
 > VOIX : Octobre 1973. / L'Égypte et la Syrie **attaquent**.  
 (7 mots, 1.2 par seconde)
 
 
-**21.6** · film **00:47:50:01 → 00:48:01:01** (11.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:06:00 → 00:00:17:00  
+**21.6** · film **00:47:50:03 → 00:48:01:03** (11.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:06:00 → 00:00:17:00  
 > VOIX : Le jour du Kippour, l'armée égyptienne franchit le canal de **Suez**.  
 (11 mots, 1.0 par seconde)
 
 
-**21.7** · film **00:48:01:01 → 00:48:10:01** (9.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:17:00 → 00:00:26:00  
+**21.7** · film **00:48:01:03 → 00:48:10:03** (9.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:17:00 → 00:00:26:00  
 > VOIX : Sur le Golan, les chars syriens percent, / puis sont **repoussés**.  
 (10 mots, 1.1 par seconde)
 
 
-**21.8** · film **00:48:10:01 → 00:48:21:01** (11.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:26:00 → 00:00:37:00  
+**21.8** · film **00:48:10:03 → 00:48:21:03** (11.0 s) · **[ARCH]** `output/archives-filmees/1973-golda-meir-soldats-sinai.mp4` · source 00:00:00:00 → 00:00:11:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « Golda Meir visiting Sinai front, 1973 », 15 octobre 1973, photographe de l'unité du porte-parole de l'armée israélienne, CC BY-SA 3.0  
+À l'écran : carton : 15 octobre 1973 · Front du Sinaï · Golda Meir parmi les soldats, pendant la guerre du Kippour.  
 > VOIX : Israël se reprend, / mais la guerre a brisé le mythe de son **invincibilité**.  
 (13 mots, 1.2 par seconde)
 
 
-**21.9** · film **00:48:21:01 → 00:48:31:01** (10.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:37:00 → 00:00:47:00  
+**21.9** · film **00:48:21:03 → 00:48:31:03** (10.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:37:00 → 00:00:47:00  
 > VOIX : Les pays arabes ferment le robinet du pétrole : / le monde **tremble**.  
 (11 mots, 1.1 par seconde)
 
 
-**21.10** · film **00:48:31:01 → 00:48:41:01** (10.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:47:00 → 00:00:57:00  
+**21.10** · film **00:48:31:03 → 00:48:41:03** (10.0 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:47:00 → 00:00:57:00  
 > VOIX : En 1974, les États arabes reconnaissent l'OLP / comme seul représentant du peuple **palestinien**.  
 (13 mots, 1.3 par seconde)
 
 
-**21.11** · film **00:48:41:01 → 00:48:50:13** (9.5 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:57:00 → 00:01:06:12  
+**21.11** · film **00:48:41:03 → 00:48:50:15** (9.5 s) · **[MD]** `output/octobre-1973.mp4` · source 00:00:57:00 → 00:01:06:12  
 Source : discours de Yasser Arafat à l'Assemblée générale de l'ONU, 13 novembre 1974  
 > VOIX : À l'ONU, Arafat lance : / « Je viens avec un rameau d'olivier, / et un fusil de combattant de la **liberté**. »  
 (18 mots, 1.9 par seconde)
 
 
-**21.12** · film **00:48:50:13 → 00:48:56:13** (6.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:36:00 → 00:01:42:00  
+**21.12** · film **00:48:50:15 → 00:48:56:15** (6.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:36:00 → 00:01:42:00  
 > VOIX : « Ne laissez pas le rameau d'olivier tomber de ma **main**. »  
 (10 mots, 1.7 par seconde)
 
 
-**21.13** · film **00:48:56:13 → 00:49:08:13** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:55:00 → 00:05:07:00  
+**21.13** · film **00:48:56:15 → 00:49:08:15** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:55:00 → 00:05:07:00  
 Source : condamnation de Marwan Barghouti, 6 juin 2004 ; PCPSR, sondage du 7 au 11 octobre 2026, publié le 14 octobre (1 397 personnes, sept noms proposés)  
 À l'écran : fiche : en prison depuis 2002 · Marwan Barghouti  
 > VOIX : Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / En octobre 2026, il reste en tête des sondages : / 34 % des sondés le choisissent, parmi sept **noms**.  
 (31 mots, 2.6 par seconde)
 
 
-**21.14** · film **00:49:08:13 → 00:49:20:13** (12.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:47:00 → 00:00:59:00  
+**21.14** · film **00:49:08:15 → 00:49:20:15** (12.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:47:00 → 00:00:59:00  
 Source : déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration de Genève, 14 décembre 1988 ; mort le 11 novembre 2004  
 À l'écran : fiche : Alger et Genève · 1988 · Yasser Arafat  
 > VOIX : En 1988, il accepte la résolution 242 : / un État palestinien à côté d'Israël. // Il meurt en 2004, / sans avoir vu cet **État**.  
@@ -400,45 +408,45 @@ Source : déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration d
 
 ## Chapitre 22 · Les intifadas : deux soulèvements
 
-Film 00:49:20:13 → 00:51:31:22 · durée 2 min 11.4 s
+Film 00:49:20:15 → 00:51:31:24 · durée 2 min 11.4 s
 
 *Intention : Deux soulèvements, deux natures : le premier, populaire et presque sans armes à feu ; le second, armé, avec les attentats-suicides contre les civils israéliens. Le Hamas naît en 1987 : sa charte de 1988 et son texte de 2017 sont cités tous les deux, sans rien adoucir.*
 
 
-**22.1** · film **00:49:20:13 → 00:49:25:03** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-22.mp4` · source 00:00:00:00 → 00:00:04:15  
+**22.1** · film **00:49:20:15 → 00:49:25:05** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-22.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**22.2** · film **00:49:25:03 → 00:49:38:03** (13.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:11:00 → 00:00:24:00  
+**22.2** · film **00:49:25:05 → 00:49:38:05** (13.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:11:00 → 00:00:24:00  
 Source : 9 décembre 1987, camp de Jabaliya (article « First Intifada »)  
 À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : Décembre 1987, camp de Jabaliya, à Gaza. / Un camion israélien percute des voitures : / quatre ouvriers palestiniens **tués**.  
 (17 mots, 1.3 par seconde)
 
 
-**22.3** · film **00:49:38:03 → 00:49:51:03** (13.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:24:00 → 00:00:37:00  
+**22.3** · film **00:49:38:05 → 00:49:51:05** (13.0 s) · **[MD]** `output/documents-3.mp4` · source 00:00:24:00 → 00:00:37:00  
 À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
 > VOIX : C'est l'étincelle. / Toute une génération se soulève : / grèves, boycotts, pierres contre les soldats. // Intifada, en arabe : le **soulèvement**.  
 (18 mots, 1.4 par seconde)
 
 
-**22.4** · film **00:49:51:03 → 00:50:06:03** (15.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:26:00 → 00:02:41:00  
+**22.4** · film **00:49:51:05 → 00:50:06:05** (15.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:26:00 → 00:02:41:00  
 Source : B'Tselem, tableaux de la première intifada (9 décembre 1987 au 13 septembre 1993) : 1 070 Palestiniens tués par les forces de sécurité israéliennes dans les territoires occupés, dont 237 mineurs, et 54 par des civils israéliens ; 100 civils israéliens et 60 membres des forces de sécurité tués par des Palestiniens, dans les territoires occupés et en Israël  
 > VOIX : En six ans, l'armée israélienne tue plus de mille Palestiniens, / dont plus de deux cents enfants. / Environ cent soixante Israéliens sont tués, / dont cent **civils**.  
 (25 mots, 1.7 par seconde)
 
 
-**22.5** · film **00:50:06:03 → 00:50:10:13** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:59:15 → 00:01:04:00  
+**22.5** · film **00:50:06:05 → 00:50:10:15** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:59:15 → 00:01:04:00  
 À l'écran : fiche de la chronologie : cheikh Ahmed Yassine  
 > VOIX : silence
 
 
-**22.6** · film **00:50:10:13 → 00:50:18:13** (8.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:42:00 → 00:01:50:00  
+**22.6** · film **00:50:10:15 → 00:50:18:15** (8.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:42:00 → 00:01:50:00  
 > VOIX : La même année naît le Hamas, / fondé à Gaza par le cheikh Ahmed **Yassine**.  
 (14 mots, 1.8 par seconde)
 
 
-**22.7** · film **00:50:18:13 → 00:50:34:13** (16.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:59:00 → 00:01:15:00  
+**22.7** · film **00:50:18:15 → 00:50:34:15** (16.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:59:00 → 00:01:15:00  
 Source : charte du Hamas, 18 août 1988 (article 32 : les Protocoles des sages de Sion) ; document de principes du Hamas, 1er mai 2017  
 À l'écran : fiche : Gaza · 18 août 1988 · La charte du Hamas  
 > VOIX : Sa charte de 1988 reprend des thèmes antisémites, / jusqu'aux Protocoles des sages de Sion, un faux. // En 2017, un nouveau texte dit combattre le sionisme, / pas les **Juifs**.  
@@ -446,33 +454,33 @@ Source : charte du Hamas, 18 août 1988 (article 32 : les Protocoles des sages d
 Note : règle 3 de la bible : l'antisémitisme est montré, quel que soit le camp
 
 
-**22.8** · film **00:50:34:13 → 00:50:46:13** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:06:01:00 → 00:06:13:00  
+**22.8** · film **00:50:34:15 → 00:50:46:15** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:06:01:00 → 00:06:13:00  
 Source : Hamas, document de principes et de politiques générales, Doha, 1er mai 2017 (articles 16 et 20)  
 À l'écran : fiche : Doha · 1er mai 2017 · Le Hamas change de texte  
 > VOIX : Ce texte de 2017 accepte aussi un État palestinien dans les frontières de 1967, / « une formule de consensus national », / sans reconnaître **Israël**.  
 (22 mots, 1.8 par seconde)
 
 
-**22.9** · film **00:50:46:13 → 00:50:59:13** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:03:35:00 → 00:03:48:00  
+**22.9** · film **00:50:46:15 → 00:50:59:15** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:03:35:00 → 00:03:48:00  
 Source : sommet de Camp David, 11-25 juillet 2000 ; négociations de Taba, janvier 2001  
 À l'écran : fiche : Camp David · juillet 2000 · Camp David 2000  
 > VOIX : En juillet 2000, à Camp David, Barak et Arafat se séparent sans accord. / Pour Israël, Arafat a refusé une offre généreuse ; / pour les Palestiniens, l'offre était un territoire **morcelé**.  
 (29 mots, 2.2 par seconde)
 
 
-**22.10** · film **00:50:59:13 → 00:51:06:22** (7.4 s) · **[RÉEL]** `output/plans-reels/jerusalem-esplanade-des-mosquees-ramadan-2024.mp4` · source 00:00:00:00 → 00:00:07:09  
+**22.10** · film **00:50:59:15 → 00:51:06:24** (7.4 s) · **[RÉEL]** `output/plans-reels/jerusalem-esplanade-des-mosquees-ramadan-2024.mp4` · source 00:00:00:00 → 00:00:07:09  
 Source : SOURCES.md 4.1, Adobe Stock 778425214 (plan d'aujourd'hui : ne pas le présenter comme une archive)  
 À l'écran : carton : output/cartons/jerusalem-2000  
 > VOIX : Septembre 2000. / Ariel Sharon se rend sur l'esplanade des **Mosquées**.  
 (10 mots, 1.4 par seconde)
 
 
-**22.11** · film **00:51:06:22 → 00:51:19:22** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:41:00 → 00:02:54:00  
+**22.11** · film **00:51:06:24 → 00:51:19:24** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:41:00 → 00:02:54:00  
 > VOIX : La deuxième intifada est plus meurtrière. / Attentats-suicides dans les bus, les cafés, les hôtels d'Israël ; / chars et hélicoptères dans les villes **palestiniennes**.  
 (22 mots, 1.7 par seconde)
 
 
-**22.12** · film **00:51:19:22 → 00:51:31:22** (12.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:54:00 → 00:03:06:00  
+**22.12** · film **00:51:19:24 → 00:51:31:24** (12.0 s) · **[MD]** `output/documents-2.mp4` · source 00:02:54:00 → 00:03:06:00  
 Source : B'Tselem, 29 décembre 2004 : depuis le 29 septembre 2000, 3 174 Palestiniens tués, dont 617 mineurs, et 940 Israéliens, dont 167 mineurs ; jusqu'en février 2005 : de 3 179 à 3 354 Palestiniens et environ 1 010 Israéliens (article « Second Intifada », d'après B'Tselem)  
 > VOIX : En cinq ans, plus de trois mille Palestiniens / et environ mille Israéliens sont tués, / dont beaucoup de civils, des deux **côtés**.  
 (21 mots, 1.8 par seconde)
@@ -480,123 +488,123 @@ Source : B'Tselem, 29 décembre 2004 : depuis le 29 septembre 2000, 3 174 Palest
 
 ## Chapitre 23 · Oslo, le mur et les colonies
 
-Film 00:51:31:22 → 00:55:46:16 · durée 4 min 14.7 s
+Film 00:51:31:24 → 00:55:46:18 · durée 4 min 14.7 s
 
 *Intention : Oslo, l'espoir, puis la carte qui découpe la Cisjordanie et le mur. Le mot « illégales » est celui de la Cour internationale de justice (2004, 2024) : il est attribué. Le récit des colons (la Judée et la Samarie de la Bible) est dit avec leurs mots. Finir sur les collines, sans voix.*
 
 
-**23.1** · film **00:51:31:22 → 00:51:36:12** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-23.mp4` · source 00:00:00:00 → 00:00:04:15  
+**23.1** · film **00:51:31:24 → 00:51:36:14** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-23.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**23.2** · film **00:51:36:12 → 00:51:41:07** (4.8 s) · **[MD]** `output/chronologie.mp4` · source 00:01:04:00 → 00:01:08:20  
+**23.2** · film **00:51:36:14 → 00:51:41:09** (4.8 s) · **[MD]** `output/chronologie.mp4` · source 00:01:04:00 → 00:01:08:20  
 À l'écran : fiche de la chronologie : Oslo · carton : output/cartons/washington-1993  
 > VOIX : Septembre 1993, à Washington : / la poignée de **main**.  
 (8 mots, 1.7 par seconde)
 
 
-**23.3** · film **00:51:41:07 → 00:51:53:07** (12.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:50:00 → 00:02:02:00  
+**23.3** · film **00:51:41:09 → 00:51:53:09** (12.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:50:00 → 00:02:02:00  
 > VOIX : Pour la première fois, Israël et l'OLP se reconnaissent. / Les Palestiniens espèrent un État ; / les Israéliens, la **sécurité**.  
 (18 mots, 1.5 par seconde)
 
 
-**23.4** · film **00:51:53:07 → 00:51:59:07** (6.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:00:00 → 00:00:06:00  
+**23.4** · film **00:51:53:09 → 00:51:59:09** (6.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:00:00 → 00:00:06:00  
 > VOIX : Mais l'accord est provisoire. / La Cisjordanie est **découpée**.  
 (8 mots, 1.3 par seconde)
 
 
-**23.5** · film **00:51:59:07 → 00:52:10:07** (11.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:06:00 → 00:00:17:00  
+**23.5** · film **00:51:59:09 → 00:52:10:09** (11.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:06:00 → 00:00:17:00  
 > VOIX : Les zones A et B, environ 40 % : / les villes, sous administration palestinienne, / la sécurité restant souvent **israélienne**.  
 (17 mots, 1.5 par seconde)
 
 
-**23.6** · film **00:52:10:07 → 00:52:20:07** (10.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:17:00 → 00:00:27:00  
+**23.6** · film **00:52:10:09 → 00:52:20:09** (10.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:17:00 → 00:00:27:00  
 > VOIX : La zone C, environ 60 % : / Israël y garde tout le contrôle. / C'est là que s'étendent les **colonies**.  
 (17 mots, 1.7 par seconde)
 
 
-**23.7** · film **00:52:20:07 → 00:52:32:20** (12.5 s) · **[MD]** `output/chiffre-zone-c.mp4` · source 00:00:00:00 → 00:00:12:13  
+**23.7** · film **00:52:20:09 → 00:52:32:22** (12.5 s) · **[MD]** `output/chiffre-zone-c.mp4` · source 00:00:00:00 → 00:00:12:13  
 À l'écran : déjà dans la pièce : moins de 1 % de la zone C planifié pour les Palestiniens (OCHA)  
 > VOIX : silence
 
 
-**23.8** · film **00:52:32:20 → 00:52:45:20** (13.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:27:00 → 00:00:40:00  
+**23.8** · film **00:52:32:22 → 00:52:45:22** (13.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:27:00 → 00:00:40:00  
 À l'écran : carton : output/cartons/cisjordanie-2002  
 > VOIX : Depuis 2002, le mur, / en grande partie à l'intérieur de la Cisjordanie. / En 2004, la Cour internationale de justice le juge contraire au droit **international**.  
 (25 mots, 1.9 par seconde)
 
 
-**23.9** · film **00:52:45:20 → 00:52:54:08** (8.5 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:40:00 → 00:00:48:12  
+**23.9** · film **00:52:45:22 → 00:52:54:10** (8.5 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:40:00 → 00:00:48:12  
 > VOIX : silence
 
 
-**23.10** · film **00:52:54:08 → 00:53:34:08** (40.0 s) · **[3D]** `output/mur-cicatrice.mp4` · source 00:00:00:00 → 00:00:40:00  
+**23.10** · film **00:52:54:10 → 00:53:34:10** (40.0 s) · **[3D]** `output/mur-cicatrice.mp4` · source 00:00:00:00 → 00:00:40:00  
 > VOIX : Vu du ciel, le tracé ressemble à une **cicatrice**. ///  
 (9 mots, 0.2 par seconde)  
 Note : en cours de rendu ; à étalonner en terre-dure
 
 
-**23.11** · film **00:53:34:08 → 00:53:47:08** (13.0 s) · **[MD]** `output/chiffre-colons.mp4` · source 00:00:00:00 → 00:00:13:00  
+**23.11** · film **00:53:34:10 → 00:53:47:10** (13.0 s) · **[MD]** `output/chiffre-colons.mp4` · source 00:00:00:00 → 00:00:13:00  
 À l'écran : déjà dans la pièce : environ 700 000 colons, quelque 300 colonies et avant-postes  
 > VOIX : silence
 
 
-**23.12** · film **00:53:47:08 → 00:54:05:18** (18.4 s) · **[RÉEL]** `output/plans-reels/checkpoint-hizma-jerusalem-est.mp4` · source 00:00:00:00 → 00:00:18:10  
+**23.12** · film **00:53:47:10 → 00:54:05:20** (18.4 s) · **[RÉEL]** `output/plans-reels/checkpoint-hizma-jerusalem-est.mp4` · source 00:00:00:00 → 00:00:18:10  
 Source : SOURCES.md 4.1, Adobe Stock 271328836  
 À l'écran : carton : output/cartons/cisjordanie-aujourdhui  
 > VOIX : Pour les Palestiniens, l'occupation, c'est d'abord ça : / des checkpoints, des permis, des **attentes**. ///  
 (13 mots, 0.7 par seconde)
 
 
-**23.13** · film **00:54:05:18 → 00:54:16:18** (11.0 s) · **[MD]** `output/occupation.mp4` · source 00:00:00:00 → 00:00:11:00  
+**23.13** · film **00:54:05:20 → 00:54:16:20** (11.0 s) · **[MD]** `output/occupation.mp4` · source 00:00:00:00 → 00:00:11:00  
 Source : OCHA, Movement and Access in the West Bank, avril 2026, https://www.ochaopt.org/content/movement-and-access-west-bank-april-2026 (« As of December 2025, OCHA documented 925 movement obstacles » ; 89 postes tenus jour et nuit ; 3,4 millions de Palestiniens)  
 À l'écran : déjà dans le plan : 925 obstacles sur les routes, Qalandia, Hébron zone H2  
 > VOIX : Fin 2025, l'ONU compte 925 obstacles sur les routes de Cisjordanie : / postes de contrôle, barrières, blocs de terre. // Israël les dit nécessaires à sa **sécurité**.  
 (25 mots, 2.3 par seconde)
 
 
-**23.14** · film **00:54:16:18 → 00:54:27:18** (11.0 s) · **[MD]** `output/occupation.mp4` · source 00:00:11:00 → 00:00:22:00  
+**23.14** · film **00:54:16:20 → 00:54:27:20** (11.0 s) · **[MD]** `output/occupation.mp4` · source 00:00:11:00 → 00:00:22:00  
 Source : La Paix maintenant, 10 août 2023, https://peacenow.org.il/en?p=39259 (« according to data provided to Bimkom between 2016 and 2020, Palestinians submitted 2,550 building applications, of which only 24 were approved » ; l'administration civile reconnaît 95 % de refus)  
 À l'écran : déjà dans le plan : 24 permis sur 2 550 demandes, la zone C  
 > VOIX : En zone C, de 2016 à 2020, / 2 550 demandes de permis de construire palestiniennes. / 24 sont **acceptées**.  
 (18 mots, 1.6 par seconde)
 
 
-**23.15** · film **00:54:27:18 → 00:54:38:18** (11.0 s) · **[MD]** `output/occupation.mp4` · source 00:00:22:00 → 00:00:33:00  
+**23.15** · film **00:54:27:20 → 00:54:38:20** (11.0 s) · **[MD]** `output/occupation.mp4` · source 00:00:22:00 → 00:00:33:00  
 Source : OCHA, données sur les démolitions et les déplacements en Cisjordanie, mise à jour du 21 octobre 2026, https://www.ochaopt.org/data/demolition (15 136 structures depuis 2009, 23 751 personnes déplacées, 75 % en zone C)  
 À l'écran : déjà dans le plan : 15 136 constructions démolies, 23 751 personnes déplacées  
 > VOIX : Sans permis, on démolit. / Depuis 2009, plus de quinze mille constructions palestiniennes détruites, / plus de vingt-trois mille personnes **déplacées**.  
 (19 mots, 1.7 par seconde)
 
 
-**23.16** · film **00:54:38:18 → 00:54:52:24** (14.2 s) · **[RÉEL]** `output/plans-reels/cisjordanie-al-eizariya-minaret-desert.mp4` · source 00:00:00:00 → 00:00:14:06  
+**23.16** · film **00:54:38:20 → 00:54:53:01** (14.2 s) · **[RÉEL]** `output/plans-reels/cisjordanie-al-eizariya-minaret-desert.mp4` · source 00:00:00:00 → 00:00:14:06  
 Source : SOURCES.md 4.1, Adobe Stock 400434780  
 > VOIX : Pour une partie des Israéliens, ces collines sont la Judée et la Samarie, / la terre de la Bible, rendue à son **peuple**.  
 (22 mots, 1.5 par seconde)
 
 
-**23.17** · film **00:54:52:24 → 00:54:57:24** (5.0 s) · **[MD]** `output/eau.mp4` · source 00:00:00:00 → 00:00:05:00  
+**23.17** · film **00:54:53:01 → 00:54:58:01** (5.0 s) · **[MD]** `output/eau.mp4` · source 00:00:00:00 → 00:00:05:00  
 Source : Amnesty International, Troubled Waters, 2009 (la nappe de la montagne, rechargée surtout sous la Cisjordanie)  
 À l'écran : déjà dans le plan : titre « L'eau » sur le relief de la Cisjordanie  
 > VOIX : Sous les collines de Cisjordanie, / il y a de l'**eau**.  
 (11 mots, 2.2 par seconde)
 
 
-**23.18** · film **00:54:57:24 → 00:55:06:24** (9.0 s) · **[MD]** `output/eau.mp4` · source 00:00:05:00 → 00:00:14:00  
+**23.18** · film **00:54:58:01 → 00:55:07:01** (9.0 s) · **[MD]** `output/eau.mp4` · source 00:00:05:00 → 00:00:14:00  
 Source : accords d'Oslo II, 28 septembre 1995, annexe III, article 40 (bassins ouest, nord-est et est de la nappe) ; Amnesty International, 2009  
 À l'écran : déjà dans le plan : l'eau coule sous terre des collines vers les sorties des trois bassins (schéma)  
 > VOIX : La pluie y remplit une grande nappe souterraine, / qui coule surtout vers l'ouest, / vers **Israël**.  
 (15 mots, 1.7 par seconde)
 
 
-**23.19** · film **00:55:06:24 → 00:55:14:24** (8.0 s) · **[MD]** `output/eau.mp4` · source 00:00:14:00 → 00:00:22:00  
+**23.19** · film **00:55:07:01 → 00:55:15:01** (8.0 s) · **[MD]** `output/eau.mp4` · source 00:00:14:00 → 00:00:22:00  
 Source : accords d'Oslo II, annexe III, article 40 (comité mixte de l'eau, décisions par consensus) ; Amnesty International, Troubled Waters, 2009 (MDE 15/027/2009) : environ 80 % pour Israël  
 À l'écran : déjà dans le plan : « Environ 80 % de l'eau de la nappe pour Israël »  
 > VOIX : Avec Oslo, Israël garde environ 80 % de cette eau. / Et tout nouveau puits palestinien / doit recevoir son **accord**.  
 (18 mots, 2.2 par seconde)
 
 
-**23.20** · film **00:55:14:24 → 00:55:24:24** (10.0 s) · **[MD]** `output/eau.mp4` · source 00:00:22:00 → 00:00:32:00  
+**23.20** · film **00:55:15:01 → 00:55:25:01** (10.0 s) · **[MD]** `output/eau.mp4` · source 00:00:22:00 → 00:00:32:00  
 Source : B'Tselem, Parched, 2 mai 2023 : 82,4 litres par jour et par Palestinien de Cisjordanie, 247 par Israélien (colons compris) ; OMS : au moins 100 litres  
 À l'écran : déjà dans le plan : deux colonnes de lumière, 247 litres à Tel Aviv, 82,4 litres à Ramallah  
 > VOIX : En 2023, un Palestinien de Cisjordanie dispose de 82 litres par jour ; / un Israélien, colons compris, de **247**.  
@@ -604,18 +612,18 @@ Source : B'Tselem, Parched, 2 mai 2023 : 82,4 litres par jour et par Palestinien
 Note : 247 litres : moyenne de tous les Israéliens, pas des seuls colons ; chiffres publiés en 2023
 
 
-**23.21** · film **00:55:24:24 → 00:55:36:24** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:55:00 → 00:01:07:00  
+**23.21** · film **00:55:25:01 → 00:55:37:01** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:55:00 → 00:01:07:00  
 Source : Cheikh Jarrah, avril-mai 2021  
 À l'écran : fiche : Jérusalem-Est · mai 2021 · Cheikh Jarrah  
 > VOIX : En mai 2021, à Cheikh Jarrah, à Jérusalem-Est, des familles palestiniennes doivent laisser leurs maisons à des colons. / La colère embrase Jérusalem, / puis **Gaza**.  
 (24 mots, 2.0 par seconde)
 
 
-**23.22** · film **00:55:36:24 → 00:55:46:16** (9.7 s) · **[RÉEL]** `output/plans-reels/cisjordanie-monastere-mar-saba.mp4` · source 00:00:00:00 → 00:00:09:17  
+**23.22** · film **00:55:37:01 → 00:55:46:18** (9.7 s) · **[RÉEL]** `output/plans-reels/cisjordanie-monastere-mar-saba.mp4` · source 00:00:00:00 → 00:00:09:17  
 Source : SOURCES.md 4.1, Adobe Stock 487976626 ; Cour internationale de justice, avis du 19 juillet 2024  
 > VOIX : Pour le droit international, les colonies sont **illégales**. / La Cour internationale de justice l'a redit en 2024. ///  
 (17 mots, 1.8 par seconde)
 
 
 ---
-Durée de la partie : 17 min 32.1 s (film 00:38:14:14 → 00:55:46:16)
+Durée de la partie : 17 min 32.1 s (film 00:38:14:14 → 00:55:46:18)

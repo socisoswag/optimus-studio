@@ -64,6 +64,12 @@
     ["arch-1945-ohrdruf-camp-libere", "Avril 1945", "Ohrdruf, Allemagne", "Eisenhower, Bradley et Patton dans le camp libéré."],
     ["arch-1973-pont-aerien-americain", "Octobre 1973", "Lod", "Le pont aérien américain."],
     ["arch-1945-san-francisco-charte-onu", "26 juin 1945", "San Francisco", "Cinquante pays signent la Charte des Nations unies."],
+    ["arch-1973-golda-meir-front-du-sinai", "15 octobre 1973", "Front du Sinaï", "Golda Meir, Première ministre, parmi les soldats."],
+    ["arch-1970-jordanie-camp-de-refugies", "Vers 1970", "Jordanie", "Un camp de réfugiés."],
+    ["arch-1970-jordanie-camp-foule-enfants", "Vers 1970", "Jordanie", "Les enfants du camp."],
+    ["arch-1970-roi-hussein-et-hommes-armes", "1970", "Jordanie", "Le roi Hussein."],
+    ["arch-chatila-2023-camp-et-fresque", "2023", "Camp de Chatila, Beyrouth", "« Nous n’oublierons jamais », sur un mur du camp."],
+    ["arch-1973-golda-meir-soldats-sinai", "15 octobre 1973", "Front du Sinaï", "Golda Meir parmi les soldats, pendant la guerre du Kippour."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

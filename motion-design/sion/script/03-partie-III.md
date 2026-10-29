@@ -406,7 +406,9 @@ Film 00:37:03:10 → 00:38:14:14 · durée 1 min 11.2 s
 > VOIX : silence
 
 
-**18.3** · film **00:37:12:10 → 00:37:26:10** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:01:08:00 → 00:01:22:00  
+**18.3** · film **00:37:12:10 → 00:37:26:10** (14.0 s) · **[ARCH]** `output/archives-filmees/1973-golda-meir-front-du-sinai.mp4` · source 00:00:00:00 → 00:00:14:00  
+Source : SOURCES.md 4.2, Wikimedia Commons, « Golda Meir visiting Sinai front, 1973 », 15 octobre 1973, photographe de l'unité du porte-parole de l'armée israélienne, CC BY-SA 3.0  
+À l'écran : carton : 15 octobre 1973 · Front du Sinaï · Golda Meir, Première ministre, parmi les soldats.  
 > VOIX : Golda Meir, née à Kiev, élevée aux États-Unis, / signe la déclaration d'indépendance. / Elle devient Première ministre en **1969**.  
 (18 mots, 1.3 par seconde)
 

@@ -67,6 +67,13 @@ def main():
                     continue
                 vus[nom] = len(liste)
                 liste.append([nom, *lg])
+    # ordre déjà en place gardé (les fichiers des cartons portent leur numéro, déjà livrés) ; les nouveaux à la fin ;
+    # une archive retirée du script garde sa place, pour ne pas décaler les suivantes
+    avant = re.search(r"  const ARCHIVES = \[\n(.*?)  \];\n", js, re.S)
+    anciens = [json.loads(l.strip().rstrip(",")) for l in avant.group(1).splitlines() if l.strip()] if avant else []
+    neufs = {x[0]: x for x in liste}
+    liste = [neufs.pop(x[0], x) for x in anciens] + list(neufs.values())
+    vus = {x[0]: k for k, x in enumerate(liste) if x[0] in vus}
     bloc = ("  // ARCHIVES : légendes des archives filmées, écrites par tools/cartons_archives.py d'après le script (ne pas modifier à la main)\n"
             "  const ARCHIVES = [\n" + "".join(f"    {json.dumps(x, ensure_ascii=False)},\n" for x in liste) + "  ];\n"
             "  // ARCHIVES (fin)\n")
@@ -83,8 +90,7 @@ def main():
         s = re.sub(r"\n        carton: output/cartons/.*(?=\n)", "", open(f, encoding="utf-8").read())
         for nom, k in vus.items():
             fic = f"output/cartons/{n_fixes + k + 1:02d}-{nom}.mov"
-            s = s.replace(f"\n        fichier: output/archives-filmees/{nom[5:]}.mp4\n",
-                          f"\n        fichier: output/archives-filmees/{nom[5:]}.mp4\n        carton: {fic}\n")
+            s = re.sub(rf"\n(        fichier: output/[a-z-]+/{re.escape(nom[5:])}\.mp4)\n", rf"\n\1\n        carton: {fic}\n", s)
         open(f, "w", encoding="utf-8").write(s)
     for nom, k in vus.items():
         print(f"{n_fixes + k + 1:02d}-{nom} : {liste[k][1]} · {liste[k][2]} · {liste[k][3]}")

@@ -517,10 +517,13 @@ chapitres:
         entree: 50.4
         sortie: 54.8
         ecran: "fiche de la chronologie : Golda Meir"
-      - type: MD
-        fichier: output/portraits-2.mp4
-        entree: 68
-        sortie: 82
+      - type: ARCH
+        fichier: output/archives-filmees/1973-golda-meir-front-du-sinai.mp4
+        carton: output/cartons/54-arch-1973-golda-meir-front-du-sinai.mov
+        entree: 0
+        sortie: 14
+        ecran: "carton : 15 octobre 1973 · Front du Sinaï · Golda Meir, Première ministre, parmi les soldats."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « Golda Meir visiting Sinai front, 1973 », 15 octobre 1973, photographe de l'unité du porte-parole de l'armée israélienne, CC BY-SA 3.0"
         voix: >-
           Golda Meir, née à Kiev, élevée aux États-Unis, / signe la déclaration d'indépendance. / Elle devient Première
           ministre en **1969**.

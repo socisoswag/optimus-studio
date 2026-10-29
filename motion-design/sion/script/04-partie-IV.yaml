@@ -221,6 +221,7 @@ chapitres:
           Six jours de guerre. / Une occupation qui dure **encore**.
       - type: ARCH
         fichier: output/plans-reels/cisjordanie-1967-chars-detruits-film-amateur.mp4
+        carton: output/cartons/49-arch-cisjordanie-1967-chars-detruits-film-amateur.mov
         entree: 0
         sortie: 12
         source: "SOURCES.md 4.1, Adobe Stock 502632607 (film amateur d'époque, couleurs d'origine)"
@@ -281,10 +282,13 @@ chapitres:
         fichier: output/chapitres/chapitre-20.mp4
         entree: 0
         sortie: 4.6
-      - type: MD
-        fichier: output/camps.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1970-jordanie-camp-de-refugies.mp4
+        carton: output/cartons/55-arch-1970-jordanie-camp-de-refugies.mov
         entree: 0
-        sortie: 6.5
+        sortie: 5.8
+        ecran: "carton : Vers 1970 · Jordanie · Un camp de réfugiés."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « King Hussein 1970 », film de la CIA conservé aux Archives nationales américaines, domaine public"
         voix: >-
           Depuis 1948, des tentes, / puis des quartiers de **béton**.
       - type: MD
@@ -300,10 +304,13 @@ chapitres:
         voix: >-
           Début 2025, dans le nord de la Cisjordanie, / l'armée israélienne vide les camps de Jénine et de Tulkarem : /
           environ quarante mille **réfugiés**.
-      - type: MD
-        fichier: output/camps.mp4
-        entree: 31
-        sortie: 39.5
+      - type: ARCH
+        fichier: output/archives-filmees/1970-jordanie-camp-foule-enfants.mp4
+        carton: output/cartons/56-arch-1970-jordanie-camp-foule-enfants.mov
+        entree: 0
+        sortie: 7.72
+        ecran: "carton : Vers 1970 · Jordanie · Les enfants du camp."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « King Hussein 1970 », film de la CIA conservé aux Archives nationales américaines, domaine public"
         voix: >-
           Réfugiés depuis quatre **générations**.
       - type: MD
@@ -311,12 +318,13 @@ chapitres:
         entree: 0
         sortie: 12.52
         ecran: "déjà dans la pièce : 5 964 782 réfugiés palestiniens enregistrés (UNRWA, 31 décembre 2025)"
-      - type: MD
-        fichier: output/documents-3.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1970-roi-hussein-et-hommes-armes.mp4
+        carton: output/cartons/57-arch-1970-roi-hussein-et-hommes-armes.mov
         entree: 0
-        sortie: 11
-        ecran: "déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent"
-        source: "Septembre noir, Jordanie, septembre 1970 à juillet 1971 : environ 3 400 morts (article « Black September »)"
+        sortie: 12.56
+        ecran: "carton : 1970 · Jordanie · Le roi Hussein."
+        source: "SOURCES.md 4.2 ; Wikimedia Commons, « King Hussein 1970 », film de la CIA conservé aux Archives nationales américaines, domaine public ; Septembre noir, Jordanie, septembre 1970 à juillet 1971 : environ 3 400 morts (article « Black September »)"
         voix: >-
           Septembre 1970, en Jordanie : / l'armée du roi Hussein écrase les combattants palestiniens. / Des milliers de
           morts. / L'OLP part pour le **Liban**.
@@ -352,10 +360,13 @@ chapitres:
         sortie: 51
         voix: >-
           Fin août, l'OLP quitte Beyrouth par la mer. / Arafat part pour **Tunis**.
-      - type: MD
-        fichier: output/liban-1982.mp4
-        entree: 51
-        sortie: 64
+      - type: ARCH
+        fichier: output/plans-reels/chatila-2023-camp-et-fresque.mp4
+        carton: output/cartons/58-arch-chatila-2023-camp-et-fresque.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : 2023 · Camp de Chatila, Beyrouth · « Nous n'oublierons jamais », sur un mur du camp."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « War Sparks Memories of '82 Massacre Among Palestinians in Lebanon », Voice of America, 2023, domaine public (images seules, logo hors cadre)"
         voix: >-
           Mi-septembre, dans les camps de Sabra et Chatila, encerclés par l'armée israélienne, / des miliciens chrétiens
           libanais massacrent des centaines de civils, / peut-être des **milliers**.
@@ -431,10 +442,13 @@ chapitres:
         sortie: 26
         voix: >-
           Sur le Golan, les chars syriens percent, / puis sont **repoussés**.
-      - type: MD
-        fichier: output/octobre-1973.mp4
-        entree: 26
-        sortie: 37
+      - type: ARCH
+        fichier: output/archives-filmees/1973-golda-meir-soldats-sinai.mp4
+        carton: output/cartons/59-arch-1973-golda-meir-soldats-sinai.mov
+        entree: 0
+        sortie: 11
+        ecran: "carton : 15 octobre 1973 · Front du Sinaï · Golda Meir parmi les soldats, pendant la guerre du Kippour."
+        source: "SOURCES.md 4.2, Wikimedia Commons, « Golda Meir visiting Sinai front, 1973 », 15 octobre 1973, photographe de l'unité du porte-parole de l'armée israélienne, CC BY-SA 3.0"
         voix: >-
           Israël se reprend, / mais la guerre a brisé le mythe de son **invincibilité**.
       - type: MD

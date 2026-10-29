@@ -378,3 +378,22 @@ numérique (les États-Unis) ; Jérusalem et Lifta gardent le relief fin en gros
 - fiche d'Arthur Balfour : le mot « undefined » s'affichait sous son nom ;
 - chapitre 9 : le portrait d'Arlosoroff touchait le titre ;
 - le choc pétrolier de 1973 et les cartes d'Europe gagnent le relief fin.
+
+## 29 octobre 2026 (son refait, nouvelles archives filmées)
+
+**Son du feu et du tic-tac refait** (29 pièces, mêmes noms de fichiers) : plus de clic à 30,5 s dans « Gaza, les
+guerres », le tic-tac sans souffle aigu. La partie V, bloquée par ce clic, est livrée.
+
+**Plans remplacés par de vraies archives (nouveau nom : à changer dans la timeline)**
+
+| Plan | Ancien fichier | Nouveau fichier | Ce que c'est |
+|---|---|---|---|
+| 18.03 | `18.03-MD-portraits-2.mp4` | `18.03-ARCH-1973-golda-meir-front-du-sinai.mp4` | Golda Meir parmi les soldats sur le front du Sinaï, 15 octobre 1973 (CC BY-SA 3.0, crédité au générique) |
+| 20.02 | `20.02-MD-camps.mp4` | `20.02-ARCH-1970-jordanie-camp-de-refugies.mp4` | un camp de réfugiés en Jordanie, vers 1970 (film de la CIA, domaine public) |
+| 20.05 | `20.05-MD-camps.mp4` | `20.05-ARCH-1970-jordanie-camp-foule-enfants.mp4` | la foule et les enfants du camp |
+| 20.07 | `20.07-MD-documents-3.mp4` | `20.07-ARCH-1970-roi-hussein-et-hommes-armes.mp4` | Septembre noir : le roi Hussein en gros plan, des soldats et un mortier |
+| 20.13 | `20.13-MD-liban-1982.mp4` | `20.13-ARCH-chatila-2023-camp-et-fresque.mp4` | Sabra et Chatila : le camp aujourd'hui et la fresque « We will never forget » (Voice of America, 2023) |
+| 21.08 | `21.08-MD-octobre-1973.mp4` | `21.08-ARCH-1973-golda-meir-soldats-sinai.mp4` | « Israël se reprend » : Golda Meir parmi les soldats, octobre 1973 |
+
+Chaque archive a sa légende transparente (date, lieu, phrase) dans `cartons/` : numéros 54 à 59, les anciens gardent
+leur numéro. Les durées changent un peu (20.02 : 5,8 s ; 20.05 : 7,7 s ; 20.07 : 12,6 s).
