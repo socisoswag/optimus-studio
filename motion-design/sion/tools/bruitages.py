@@ -24,10 +24,21 @@ def ok(*roles):
 
 
 def _filtre(x, gain):
-    X = np.fft.rfft(x, axis=0)
-    f = np.fft.rfftfreq(len(x), 1 / SR)
-    g = gain(f)
-    return np.fft.irfft(X * (g[:, None] if X.ndim == 2 else g), len(x), axis=0)
+    """Filtre par FFT (phase nulle). Le son est d'abord entouré de silence : sans cela, la FFT replie la fin sur le
+    début (un coup court filtré commençait ou finissait sur un saut, donc un clic). Puis 2 ms de fondu aux bords."""
+    n = len(x)
+    p = min(n, int(0.5 * SR))
+    xp = np.pad(x, [(p, p)] + [(0, 0)] * (x.ndim - 1))
+    X = np.fft.rfft(xp, axis=0)
+    g = gain(np.fft.rfftfreq(len(xp), 1 / SR))
+    y = np.fft.irfft(X * (g[:, None] if X.ndim == 2 else g), len(xp), axis=0)[p:p + n]
+    k = min(96, n // 4)
+    if k:
+        r = np.linspace(0, 1, k)
+        r = r[:, None] if y.ndim == 2 else r
+        y[:k] *= r
+        y[n - k:] *= r[::-1]
+    return y
 
 
 def passe_haut(x, fc, ordre=2):
