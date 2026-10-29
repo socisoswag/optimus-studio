@@ -362,6 +362,29 @@ def limite(l, r, plafond):
     return l * gs, r * gs
 
 
+def dompte(l, r, db=15.0, fen=0.4):
+    """Dompte les coups isolés d'un fond (claquement d'une navette, clic resté dans la prise) : rien ne dépasse de plus
+    de `db` le niveau du fond autour de lui (médiane sur `fen` s, que le coup lui-même ne fait pas monter). Même
+    anticipation que limite : le gain baisse 2 ms avant le coup et remonte en 80 ms."""
+    from scipy.ndimage import median_filter, minimum_filter1d
+    B_ = 48
+    n = len(l)
+    nb = -(-n // B_)
+    pad = nb * B_ - n
+    pk = np.pad(np.maximum(np.abs(l), np.abs(r)), (0, pad)).reshape(nb, B_).max(1)
+    ef = np.sqrt(np.pad((l ** 2 + r ** 2) / 2, (0, pad)).reshape(nb, B_).mean(1))
+    loc = median_filter(ef, max(3, int(fen * SR / B_)) | 1) + 1e-6
+    need = minimum_filter1d(np.minimum(1.0, loc * 10 ** (db / 20) / np.maximum(pk, 1e-12)), 5)
+    a = np.exp(-1 / 80)
+    g = np.empty(nb)
+    cur = 1.0
+    for i in range(nb):
+        cur = need[i] if need[i] < cur else need[i] - (need[i] - cur) * a
+        g[i] = cur
+    gs = np.interp(np.arange(n), np.arange(nb) * B_ + B_ / 2, g)
+    return l * gs, r * gs
+
+
 def prise(role, rng, vitesse=None, **kw):
     x = _st(B.prise(role, rng, vitesse=vitesse or _vitesse(rng), **kw))
     return (x[:, 0], x[:, 1]), attaque(x)

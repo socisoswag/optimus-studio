@@ -200,6 +200,9 @@ for a0, a1, kind, gain in SND.get("amb", []):
         for j_, r_ in enumerate(roles):
             l_, r2_ = BR.fond(r_, n / SR, rng, -16 if j_ == 0 else -22)
             ml_, mr_ = ml_ + l_, mr_ + r2_
+        # une ambiance garde ses vrais coups (navette d'un métier, outil) mais aucun ne doit sauter au visage sous la
+        # voix : 15 dB au plus au-dessus du fond qui l'entoure (la navette de 510266 claquait à +27 dB sous la savonnerie)
+        ml_, mr_ = BR.dompte(ml_, mr_, 15.0)
         sig = BR.moins_aigu((ml_ * env, mr_ * env))
         add(BR.reverb(sig, "ir_salle", wet=0.15) if "atelier" in roles else sig, a0 - 0.5, 0.16 * gain)
         continue

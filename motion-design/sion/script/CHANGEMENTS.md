@@ -502,3 +502,13 @@ encodées. `tools/resound.sh` mesure désormais la pièce encodée et la refait 
 par endroits un clic de quelques échantillons, jusqu'à 5 dB au-dessus du mixage (trouvé sur « frontieres » : -3,4 dBFS dans
 le mixage, +2,9 dBTP une fois encodé). Ces deux options sont coupées dans tous les encodages (pièces, plans livrés,
 cartons, bout à bout) et tout le film est réencodé : le son ne change pas, les clics disparaissent.
+
+**Autres clics trouvés au contrôle, corrigés à la source** : les filtres du moteur son repliaient la fin d'un son court
+sur son début (clic 0,3 s après chaque impact, au début des explosions lointaines) ; ils travaillent maintenant sur du
+silence ajouté de part et d'autre. Sous la savonnerie de Naplouse (reconstitutions), la navette d'un métier à tisser
+claquait 27 dB au-dessus de l'ambiance : les coups d'une ambiance de photo restent, à 15 dB au plus au-dessus du fond
+qui les entoure.
+
+**Contrôle final** des 64 pièces du film, encodées : crête vraie entre -1,6 et -5,8 dBTP, aucun clic. Le détecteur
+ne relève plus que des attaques voulues : un tic au milieu des explosions de 1948, le fracas des maisons qui s'effondrent
+en 1967, une braise à -26 dB dans « paroles ». Les 108 ambiances des vrais plans : aucun clic, crête sous -5,9 dBTP.
