@@ -17,6 +17,7 @@ Puis mis au format du film comme les autres archives (tools/plans_reels.sh) : 10
 (tools/looks.py), halo, courbe pellicule, flottement, grain et vignette. Sans son : le son vient du montage.
 Sources et licences : SOURCES.md 4.2.
 """
+import glob
 import json
 import os
 import subprocess
@@ -124,6 +125,26 @@ ARCHIVES = {
     # au-dessus du minutage incrusté de la copie
     "1948-haifa-habitants-arabes": ("https://film-assets.ushmm.org/mp4/FV0936_RG601137.01.01.mp4", "", "624:400:8:16",
                                     [(4.4, 6.8), (28.0, 31.0), (40.1, 44.3), (46.9, 49.3), (50.0, 53.0)], {"decimer": True}),
+    # Wikimedia Commons, « Golda Meir visiting Sinai front, 1973 » (service film du porte-parole de l'armée israélienne,
+    # CC BY-SA 3.0), 15 octobre 1973 : Golda Meir au milieu des soldats, sous une tente, puis les soldats derrière les
+    # barbelés (avant le panoramique filé) ; copie déjà très contrastée, hautes lumières adoucies ; fichier coupé vers 10 min 08
+    "1973-golda-meir-front-du-sinai": ("https://upload.wikimedia.org/wikipedia/commons/0/0b/Golda_Meir_visiting_Sinai_front,_1973.webm",
+                                       "", "468:360:6:0", [(281.2, 289.2), (569.6, 574.0), (574.4, 576.4)],
+                                       {"pre": "curves=all='0/0.03 0.3/0.27 0.6/0.52 0.85/0.72 1/0.8'"}),
+    # même film : la foule des soldats autour d'elle, puis les soldats alignés derrière les barbelés
+    "1973-golda-meir-soldats-sinai": ("https://upload.wikimedia.org/wikipedia/commons/0/0b/Golda_Meir_visiting_Sinai_front,_1973.webm",
+                                      "", "468:360:6:0", [(457.5, 463.8), (530.4, 535.2)],
+                                      {"pre": "curves=all='0/0.04 0.25/0.26 0.6/0.55 0.85/0.74 1/0.82'"}),
+    # Wikimedia Commons, « King Hussein 1970 » (film de la CIA conservé aux Archives nationales américaines, domaine public) :
+    # un camp de réfugiés en Jordanie, une enfant qui marche dans la boue
+    "1970-jordanie-camp-de-refugies": ("https://upload.wikimedia.org/wikipedia/commons/b/ba/King_Hussein_1970.ogv",
+                                       "", "628:470:6:5", [(254.0, 260.0)]),
+    # même film : la foule du camp, des enfants qui regardent la caméra
+    "1970-jordanie-camp-foule-enfants": ("https://upload.wikimedia.org/wikipedia/commons/b/ba/King_Hussein_1970.ogv",
+                                         "", "628:470:6:5", [(273.5, 277.5), (278.0, 282.0)]),
+    # même film : le roi Hussein en gros plan, puis des hommes armés derrière des sacs de sable et un mortier
+    "1970-roi-hussein-et-hommes-armes": ("https://upload.wikimedia.org/wikipedia/commons/b/ba/King_Hussein_1970.ogv",
+                                         "", "628:470:6:5", [(36.0, 41.0), (123.7, 126.8), (131.0, 136.0)]),
     "1956-suez-flotte-et-avions": ("1956-11-01_War_in_Egypt", "1956-11-01_War_in_Egypt.mpeg", "696:458:10:10",
                                    [(57.2, 60.0), (66.2, 67.6), (68.2, 70.6), (74.2, 76.6), (78.2, 80.6)]),
 }
@@ -220,6 +241,11 @@ def fabrique(nom, ident, fichier, crop, coupes, opts=None):
     opts = opts or {}
     src = ident if ident.startswith("https://") else url(ident, fichier)
     net = ["-http_proxy", os.environ["HTTPS_PROXY"]] if os.environ.get("HTTPS_PROXY") else []
+    # copie déjà téléchargée, même nom de fichier, dans output/archives-sources/<lot>/ (Wikimedia Commons refuse les
+    # téléchargements répétés) : lue sur le disque plutôt que sur le réseau
+    loc = glob.glob(os.path.join(ROOT, "output", "archives-sources", "*", glob.escape(urllib.parse.unquote(src.rsplit("/", 1)[1]))))
+    if loc:
+        src, net = loc[0], []
     cad, fps = cadence(src, net, opts)
     if opts.get("rayure"):
         x, w = opts["rayure"]

@@ -39,6 +39,9 @@ Trois règles :
 - Document sous licence CC BY-SA :
   - Lettre de Theodor Herzl à Youssouf Diya al-Khalidi, 19 mars 1899 (version anglaise) : Institut d'études
     palestiniennes, PalQuest, via Wikimedia Commons · CC BY-SA 4.0
+- Film sous licence CC BY-SA :
+  - Golda Meir sur le front du Sinaï, 15 octobre 1973 (plans 18.3 et 21.8) : unité du porte-parole de l'armée
+    israélienne, via Wikimedia Commons · CC BY-SA 3.0
 
 ---
 
@@ -263,6 +266,30 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 827361688 | Collines, vignes et arbres de Kfar Etzion (titre d'origine : « paysage rural israélien ») | colonie de Kfar Etzion, Cisjordanie occupée | terre | `cisjordanie-kfar-etzion-collines-vignes` |
 | 547188073 | Des mains sur le tronc d'un olivier | lieu non précisé | terre | `olivier-mains-sur-le-tronc` |
 
+### 4.1 bis Vrais plans tournés sur place (Envato Elements, licence Envato)
+
+Vidéos réelles téléchargées par l'auteur sur son abonnement Envato Elements, en 4K quand elle existe, puis réduites en
+1080p (tools/plans_reels.sh, look terre-dure). Licence Envato : un enregistrement par projet « SION », usage YouTube
+permis, pas de mention obligatoire ; les fichiers sources ne sont jamais publiés dans le dépôt public. Le lieu de chaque
+clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écrit pas à l'écran.
+
+| Fichier (output/plans-reels) | Ce qu'on voit | Clip Envato |
+|---|---|---|
+| gaza-camp-de-la-plage-drone | Gaza, le camp de réfugiés de la plage (Shati), vu par drone | https://elements.envato.com/beach-camp-gaza-drone-shot-4k-6PSN2E2 |
+| beeri-maisons-detruites-7-octobre | Be'eri, maisons détruites après le 7 octobre 2023 | https://elements.envato.com/aerial-video-over-beeri-of-destroyed-houses-after--XWYWHVU |
+| shuafat-camp-et-mur | Jérusalem-Est, le camp de réfugiés de Shuafat entouré par le mur | https://elements.envato.com/east-jerusalem-palestinian-refugge-camp-surrounded-9UQ7S3Z |
+| anata-camp-mur-tour-de-guet | Anata, le camp, le mur et une tour de guet de l'armée israélienne | https://elements.envato.com/anata-refugees-camp-with-security-wall-and-idf-wat-W2E35YR |
+| mur-separation-jerusalem-drone | le mur de séparation à Jérusalem | https://elements.envato.com/aerial-footage-of-the-separation-wall-between-isra-6M4DYEG |
+| cloture-separation-collines | la clôture de séparation dans les collines | https://elements.envato.com/aerial-footage-over-security-fence-in-the-mountain-9GU2YX7 |
+| pisgat-zeev-colonie-jerusalem-est | Pisgat Zeev, colonie de Jérusalem-Est | https://elements.envato.com/jerusalem-pisgat-zeev-settlement-aerial-view-4D7W3YC |
+| campement-bedouin-desert-lieu-non-precise | un campement bédouin dans le désert (lieu non précisé par l'auteur du clip : ne pas écrire « E1 » à l'écran) | https://elements.envato.com/bedouin-outpost-in-the-desert-aerial-view-G3P4RHM |
+| srigim-li-on-israel-pas-une-colonie | Srigim (Li-On), village du centre d'Israël, à l'intérieur de la ligne verte : **ce n'est pas une colonie**, ne pas l'utiliser pour Maalé Adoumim | https://elements.envato.com/srigim-li-on-village-community-settlement-in-centr-BVY2RDP |
+| ramallah-vue-du-ciel | Ramallah vue du ciel, la tour Palestine | https://elements.envato.com/aerial-view-of-palestine-tower-cinema-movie-theate-EBXYSMP |
+| ramallah-palestine-tower-minaret | Ramallah, un quartier, un minaret, la tour Palestine | https://elements.envato.com/palestine-tower-cinema-residential-neighborhood-an-JAEP2S5 |
+| desert-judee-nebi-musa | le désert de Judée près de Nebi Moussa et de la mer Morte | https://elements.envato.com/view-of-nebi-musain-judean-desert-near-dead-sea-ju-HG6HJL7 |
+| jericho-vue-du-ciel | Jéricho vue du ciel, au pied des montagnes | https://elements.envato.com/aerial-view-over-jericho-city-in-palestine-territo-NJL57HF |
+| knesset-de-nuit | la Knesset de nuit, Jérusalem | https://elements.envato.com/the-knesset-building-israeli-parliament-house-jeru-6QLBQ3R |
+
 ### 4.2 Archives filmées (domaine public, sauf mention)
 
 | Fichier | Film | Auteur, date | Cote | Lien |
@@ -287,6 +314,9 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 1950-sands-of-sorrow-enfants | « Sands of Sorrow », autre passage : les enfants des camps de réfugiés palestiniens, sous la tente-école | Theodore A. Morde, 1950 (même statut que ci-dessus) | archive.org sands_of_sorrow | https://archive.org/details/sands_of_sorrow |
 | 1956-suez-flotte-et-avions | actualités Universal du 1er novembre 1956, « War in Egypt » : la flotte en Méditerranée orientale, les avions, une bombe sous l'aile | Universal-International News, 1956 | archive.org 1956-11-01_War_in_Egypt | https://archive.org/details/1956-11-01_War_in_Egypt |
 | 1948-haifa-habitants-arabes | actualités Universal du 18 mai 1948, « Jews Defend New Zion State » : Haïfa vue d'en haut, des hommes arabes fouillés, des femmes qui partent avec leurs bagages, une vieille femme, une mère et son enfant (aucun corps à l'image ; minutage incrusté de la copie retiré au recadrage) | Universal News, 1948 ; copie du musée américain de l'Holocauste, « Copyright : Public Domain », crédit « Accessed at United States Holocaust Memorial Museum, courtesy of National Archives & Records Administration » | USHMM irn1000897, NARA 200 UN 21-144-1 | https://collections.ushmm.org/search/catalog/irn1000897 |
+| 1973-golda-meir-front-du-sinai, 1973-golda-meir-soldats-sinai | « Golda Meir visiting Sinai front, 1973 » (muet, 11 min) : Golda Meir parmi les soldats, sous une tente, puis assise contre un mur ; les soldats derrière les barbelés | photographe de l'unité du porte-parole de l'armée israélienne, 15 octobre 1973 (guerre du Kippour) · **CC BY-SA 3.0, crédit obligatoire** (section 1) | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Golda_Meir_visiting_Sinai_front,_1973.webm |
+| 1970-jordanie-camp-de-refugies, 1970-jordanie-camp-foule-enfants, 1970-roi-hussein-et-hommes-armes | « King Hussein 1970 » (muet, 10 min 38) : le roi Hussein en gros plan, un camp de réfugiés en Jordanie, des hommes en armes derrière des sacs de sable (non identifiés : la légende ne dit pas qui ils sont) | Central Intelligence Agency, 1970, versé aux Archives nationales américaines (domaine public : œuvre du gouvernement américain) | NARA, fonds « National Security Council. Central Intelligence Agency » | https://commons.wikimedia.org/wiki/File:King_Hussein_1970.ogv |
+| chatila-2023-camp-et-fresque (output/plans-reels) | « War Sparks Memories of '82 Massacre Among Palestinians in Lebanon » : le camp de Chatila vu d'en haut, la fresque « We will never forget », le camp en plein jour ; images seules, sans les entretiens ni les banderoles politiques, logo VOA hors cadre | Voice of America, 2023 (domaine public : œuvre du gouvernement américain) | VOA News | https://commons.wikimedia.org/wiki/File:War_Sparks_Memories_of_%2782_Massacre_Among_Palestinians_in_Lebanon_%EF%BD%9C_VOANews.webm |
 
 Retiré : « Jérusalem, 1918 » (archive.org jerusalem-1918). Vérification du 21 octobre 2026 : images amateurs retrouvées dans une famille à Amsterdam, montées par Yaakov Gross (musique de Nahum Heiman) ; aucune autorisation générale de réutilisation établie. Le plan 10.4 passe en reconstitution d'après une photo de la Bibliothèque du Congrès. Le 23 octobre 2026, il reprend un vrai film : celui de la famille Levy (1933, Prelinger Archives, domaine public) ; la reconstitution passe en réserve du chapitre 10.
 

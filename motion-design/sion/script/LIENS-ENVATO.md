@@ -21,8 +21,8 @@ Renommer chaque fichier avec son numéro (A01.mp4, S1a.wav, M01.wav) et l'envoye
 | A06 | 23.8 Le mur à Jérusalem | https://elements.envato.com/aerial-footage-of-the-separation-wall-between-isra-6M4DYEG |
 | A07 | 23.9 La clôture dans les collines | https://elements.envato.com/aerial-footage-over-security-fence-in-the-mountain-9GU2YX7 |
 | A08 | 19.34 Pisgat Zeev | https://elements.envato.com/jerusalem-pisgat-zeev-settlement-aerial-view-4D7W3YC |
-| A09 | 26.9 Campement bédouin, secteur E1 | https://elements.envato.com/bedouin-outpost-in-the-desert-aerial-view-G3P4RHM |
-| A10 | 26.8 Maale Adumim (vérifier le lieu) | https://elements.envato.com/srigim-li-on-village-community-settlement-in-centr-BVY2RDP |
+| A09 | 26.9 Campement bédouin (l'auteur du clip ne donne pas le lieu : pas de « E1 » à l'écran) | https://elements.envato.com/bedouin-outpost-in-the-desert-aerial-view-G3P4RHM |
+| A10 | ~~26.8 Maale Adumim~~ : vérifié, ce clip montre Srigim (Li-On), un village du centre d'Israël, pas une colonie ; inutilisable pour 26.8 (gardé à part) | https://elements.envato.com/srigim-li-on-village-community-settlement-in-centr-BVY2RDP |
 | A11 | 23.5 Ramallah | https://elements.envato.com/aerial-view-of-palestine-tower-cinema-movie-theate-EBXYSMP |
 | A12 | 23.5 Ramallah, 2e plan | https://elements.envato.com/palestine-tower-cinema-residential-neighborhood-an-JAEP2S5 |
 | A13 | 23.6 Désert de Judée | https://elements.envato.com/view-of-nebi-musain-judean-desert-near-dead-sea-ju-HG6HJL7 |

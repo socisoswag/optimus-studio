@@ -98,7 +98,10 @@
         ['Haïfa, 1948', 'Universal News · musée américain de l’Holocauste, courtesy of NARA'],
         ['Sands of Sorrow, 1950', 'Theodore A. Morde'], ['Le procès Eichmann, 1961', 'Universal News · Archives nationales américaines'],
         ['Actualités de 1945 à 1967', 'Universal News et United News · domaine public'],
-        ['Le pont aérien vers Israël, 1973', 'US Air Force · Archives nationales américaines']],
+        ['Le pont aérien vers Israël, 1973', 'US Air Force · Archives nationales américaines'],
+        ['Jordanie, 1970', 'CIA · Archives nationales américaines'],
+        ['Golda Meir au front du Sinaï, 1973', 'porte-parole de l’armée israélienne · CC BY-SA 3.0'],
+        ['Le camp de Chatila, 2023', 'Voice of America']],
     },
     {
       h: 'Images animées et reconstitutions',

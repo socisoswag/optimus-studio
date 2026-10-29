@@ -24,10 +24,10 @@ Si un fichier n'arrive pas, il suffit d'ouvrir sa page ci-dessous, de cliquer su
 | 38.8 | Masafer Yatta, 22 février 2023 | Dania Eid | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%A7%D9%81%D8%B1_%D9%8A%D8%B7%D8%A7.webm | 31 s, 1080p |
 
 | 13.2, 16.3 | La voix de Ben Gourion lisant la déclaration d'indépendance, 14 mai 1948 (son seul, sous la photo du Bureau de presse) | enregistrement radio | domaine public | https://commons.wikimedia.org/wiki/File:Israeli_Declaration_of_Independence.ogg | 14 min, son |
-| 18.3 à 18.6, 21.8 | Golda Meir sur le front du Sinaï, 1973 | service film du porte-parole de l'armée israélienne | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Golda_Meir_visiting_Sinai_front%2C_1973.webm | 11 min 11, 480 x 360 |
-| 20.7 | Le roi Hussein et la Jordanie en 1970 (Septembre noir) | Archives nationales américaines | domaine public | https://commons.wikimedia.org/wiki/File:King_Hussein_1970.ogv | 10 min 38, 640 x 480 |
+| 18.3, 21.8 (posés le 29 octobre) | Golda Meir sur le front du Sinaï, 15 octobre 1973 | service film du porte-parole de l'armée israélienne | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Golda_Meir_visiting_Sinai_front%2C_1973.webm | 11 min 11, 480 x 360 |
+| 20.2, 20.5, 20.7 (posés le 29 octobre) | Le roi Hussein et la Jordanie en 1970 (Septembre noir) | Archives nationales américaines | domaine public | https://commons.wikimedia.org/wiki/File:King_Hussein_1970.ogv | 10 min 38, 640 x 480 |
 | 20.13 | Chatila, la mémoire du massacre de 1982 (reportage de 2023) | Voice of America | domaine public | https://commons.wikimedia.org/wiki/File:War_Sparks_Memories_of_%2782_Massacre_Among_Palestinians_in_Lebanon_%EF%BD%9C_VOANews.webm | 3 min 18, 1080p |
-| 26.8 | Un colon attaque des militants pour la paix dans un champ palestinien, Mukhmas, 1er juin 2024 (vertical) | « Regarder l'occupation dans les yeux », groupe israélien | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:A_settler_attacks_peace_activists_in_a_Palestinian_field_in_Mukhmas.webm | 47 s, vertical |
+| 26.8 | Un colon attaque des militants pour la paix dans un champ palestinien, Mukhmas, 1er juin 2024 (vertical) | « Regarder l'occupation dans les yeux », groupe israélien | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:A_settler_attacks_peace_activists_in_a_Palestinian_field_in_Mukhmas.webm | 47 s, vertical ; **pas posé** (29 octobre) : le visage du colon est reconnaissable (droit à l'image en France) et des sous-titres anglais sont incrustés ; seul le début (0 à 5 s, de loin) serait utilisable, en vertical sur fond flou, à décider par l'auteur |
 Deuxième clip pour 36.4 : https://commons.wikimedia.org/wiki/File:PoliceViolenceReformaProtest.webm
 
 ## Écartés

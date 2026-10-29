@@ -1,4 +1,4 @@
-Les scènes marquées « Reconstitution par IA » sont animées à partir de vraies photos d'archive, citées ci-dessous. Aucune ne montre un massacre ni un événement récent. Bruitages : uniquement de vrais enregistrements.
+Les scènes marquées « Reconstitution par IA » sont animées à partir de vraies photos d'archive, citées ci-dessous. Aucune ne montre un massacre ni un événement récent.
 
 SOURCES
 
@@ -8,8 +8,8 @@ Images et données
 · Cartes : Natural Earth (domaine public) ; carte de l'ONU n° 103.1(b), 1947.
 · Zones d'Oslo et tracé du mur : OCHA, HDX (CC BY).
 · Villages palestiniens dépeuplés : Wikidata (CC0) ; Walid Khalidi, All That Remains, 1992.
-· Photos d'archive : G. Eric and Edith Matson Photograph Collection, Bibliothèque du Congrès (no known restrictions on publication).
-· Archives filmées : société Lumière, « Porte de Jaffa » (1897) · Georges Méliès, « L'Affaire Dreyfus » (1899) · Edison, Ellis Island (1903) · « Paths in Palestine » (1934, Archives nationales américaines) · film amateur Levy, Jérusalem (1933, Prelinger) · US Army Signal Corps, 1945 · « Sands of Sorrow » (1950) · Universal News, 1945 à 1967 (domaine public).
+· Photos d'archive : G. Eric and Edith Matson Photograph Collection, Bibliothèque du Congrès.
+· Archives filmées : société Lumière, « Porte de Jaffa » (1897) · Georges Méliès, « L'Affaire Dreyfus » (1899) · Edison, Ellis Island (1903) · « Paths in Palestine » (1934, Archives nationales américaines) · film amateur Levy, Jérusalem (1933, Prelinger) · US Army Signal Corps, 1945 · « Sands of Sorrow » (1950) · Universal News, 1945 à 1967 · CIA, Jordanie (1970) · Voice of America, Chatila (2023) (domaine public) · Golda Meir au Sinaï (1973) : porte-parole de l'armée israélienne, CC BY-SA 3.0.
 · Les survols en 3D sont des reconstitutions à partir d'images satellite réelles. Les photos d'archive animées et la scène du vote de 1947 sont générées par IA et signalées à l'écran.
 
 Portraits (Wikimedia Commons)
