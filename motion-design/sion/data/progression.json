@@ -1,5 +1,5 @@
 {
- "maj": "29 octobre 2026, 9 h",
+ "maj": "29 octobre 2026, 11 h 20",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -45,17 +45,17 @@
   },
   {
    "nom": "Archives libres : 1917 à 1950, puis Gaza et la Cisjordanie de 2000 à 2025",
-   "pct": 40,
+   "pct": 60,
    "poids": 3,
    "qui": "moi",
-   "detail": "Golda Meir 1973, Jordanie 1970, Chatila 2023 posés ; le reste de Wikimedia (Allenby, Oslo, Camp David…) bloqué par le site : à passer par Dropbox"
+   "detail": "15 archives posées (Golda Meir 1973, Jordanie 1970, Chatila 2023, March of Time 1938, Exodus 1947, Haganah 1948, Ben Gourion 1945) ; vraies images : 16.1 % du film, cible 30 %"
   },
   {
    "nom": "Intégrer les plans Envato et les archives",
-   "pct": 60,
+   "pct": 65,
    "poids": 2,
    "qui": "moi",
-   "detail": "6 archives et 14 plans Envato posés et livrés ; la suite quand les derniers clips Envato arrivent (A02, B02 à B20)"
+   "detail": "15 archives et 14 plans Envato posés et livrés ; la suite avec le lot 2 (Gaza, manifestations, Wikimedia)"
   },
   {
    "nom": "Bruitages variés et montage musical",
