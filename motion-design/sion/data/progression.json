@@ -1,5 +1,5 @@
 {
- "maj": "29 octobre 2026, 00 h 35",
+ "maj": "29 octobre 2026, 6 h 20",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -27,35 +27,35 @@
    "pct": 100,
    "poids": 1,
    "qui": "fait",
-   "detail": "les 9 parties livrées ; relivraison avec le son refait cette nuit"
+   "detail": "tout le film relivré avec le son refait ; parties I, III à VIII relivrées encore avec les nouvelles archives et les plans Envato"
   },
   {
    "nom": "Son du feu et du tic-tac refait (29 pièces)",
-   "pct": 5,
+   "pct": 100,
    "poids": 1,
-   "qui": "moi",
-   "detail": "en cours, mêmes noms de fichiers"
+   "qui": "fait",
+   "detail": "29 pièces, mêmes noms de fichiers ; plus de clic dans « Gaza, les guerres »"
   },
   {
    "nom": "Plans, bruitages et musique Envato à télécharger",
-   "pct": 0,
+   "pct": 45,
    "poids": 3,
    "qui": "toi",
-   "detail": "listes dans script/ENVATO-A-TELECHARGER.md et script/MUSIQUE.md ; les bruitages du lot 1 d'abord"
+   "detail": "31 liens de plans reçus et convertis ; restent A02 (Rafah) et B02 à B20 (recherches), puis bruitages et musique"
   },
   {
    "nom": "Archives libres : 1917 à 1950, puis Gaza et la Cisjordanie de 2000 à 2025",
-   "pct": 0,
+   "pct": 40,
    "poids": 3,
    "qui": "moi",
-   "detail": "Universal Newsreels, Voice of America, WAFA ; l'ONU et 1948 selon les réponses Perplexity"
+   "detail": "Golda Meir 1973, Jordanie 1970, Chatila 2023 posés ; le reste de Wikimedia (Allenby, Oslo, Camp David…) bloqué par le site : à passer par Dropbox"
   },
   {
    "nom": "Intégrer les plans Envato et les archives",
-   "pct": 0,
+   "pct": 55,
    "poids": 2,
    "qui": "moi",
-   "detail": "même finition que le film, légendes, script, sources, relivraison"
+   "detail": "6 archives et 14 plans Envato posés dans le script, avec légendes et sources ; relivraison en cours"
   },
   {
    "nom": "Bruitages variés et montage musical",
@@ -94,10 +94,10 @@
   },
   {
    "nom": "Générique de fin avec les nouveaux crédits",
-   "pct": 0,
+   "pct": 60,
    "poids": 1,
    "qui": "moi",
-   "detail": "photos de la Haganah, du Goush Emounim et des Black Panthers"
+   "detail": "nouveaux crédits (Jordanie 1970, Golda Meir 1973 en CC BY-SA, Chatila 2023) ; rendu en cours"
   },
   {
    "nom": "Montage dans Premiere",
