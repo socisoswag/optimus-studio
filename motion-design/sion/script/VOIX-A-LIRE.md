@@ -12,7 +12,7 @@
 
 ## Chapitre 1 · Sion : un mot, un mythe, un monde
 
-*1 min 29 de film*
+*1 min 28 de film*
 
 **1.2** Jérusalem. / Pour les musulmans, al-Quds, la sainte. / Pour les chrétiens, la ville de la Passion. // Et pour les Juifs, depuis des millénaires, une colline porte un nom : / **Sion**.
 
@@ -162,7 +162,7 @@
 
 ## Chapitre 8 · Le mandat britannique : trente ans sous tension
 
-*4 min 00 de film*
+*3 min 59 de film*
 
 **8.2** Le 11 décembre 1917, le général Allenby entre à pied dans Jérusalem. / Pour trente ans, la Palestine sera **britannique**.
 
@@ -240,7 +240,7 @@
 
 ## Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens
 
-*2 min 49 de film*
+*2 min 48 de film*
 
 **11.3** En 1923, Zeev Jabotinsky écrit « Le Mur de fer ». / Il ne nie pas ce qu'il voit : / « Toute population indigène résiste aux colons, / tant qu'elle garde le moindre espoir d'échapper à la **colonisation**. »
 
@@ -294,7 +294,7 @@
 
 ## Chapitre 13 · 1948 : la création d'Israël et la Nakba
 
-*3 min 31 de film*
+*3 min 30 de film*
 
 **13.2** 14 mai 1948. / Ben Gourion proclame l'État d'**Israël**.
 
@@ -830,7 +830,7 @@
 
 ## Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique
 
-*1 min 43 de film*
+*1 min 42 de film*
 
 **32.2** Six millions de Juifs assassinés. / La Shoah marque l'identité d'Israël : / un peuple qui a failli disparaître, / et qui s'est juré « plus jamais ». // En 1961, le procès d'Adolf Eichmann fait entendre les **survivants**.
 
@@ -876,7 +876,7 @@
 
 ## Chapitre 34 · L'effacement culturel : villages détruits, noms effacés
 
-*1 min 37 de film*
+*1 min 35 de film*
 
 **34.2** Effacer les villages, / puis leurs **noms**.
 

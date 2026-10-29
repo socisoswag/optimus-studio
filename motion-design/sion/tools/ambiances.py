@@ -80,7 +80,8 @@ LIEU = [
     (r"desert|neguev|judee|jericho|mer morte|sinai|ouadi", [("vent_desert", -33)]),
     (r"haifa|jaffa|\bport\b|plage|cote|baie|mediterranee|paquebot|exodus|ellis island|marseille|bateau|navire", [("mer", -31)]),
     (r"galilee|jezreel|thabor|netofa|vallee|plaine|champs?|olivier|oliveraie|tracteur|colonie|kibboutz|orangeraie", [("campagne", -33), ("cigales", -40)]),
-    (r"tel-aviv|tel aviv|new york|brooklyn|williamsburg|londres|paris|washington|ville", [("nuit_ville", -35)]),
+    # une ville de jour (les scènes de nuit sont prises plus haut, par « nuit », « soir », « crépuscule »)
+    (r"tel-aviv|tel aviv|new york|brooklyn|williamsburg|londres|paris|washington|ville", [("ville", -35), ("foule", -42)]),
     (r"chars?\b|blinde", [("char", -33)]),
     (r"pont aerien|avions?|largage", [("vent", -36)], ["avion?"]),
     (r"helicoptere", [("vent", -36)], ["helico"]),
