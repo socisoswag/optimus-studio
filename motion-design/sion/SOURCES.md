@@ -289,6 +289,10 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 | desert-judee-nebi-musa | le désert de Judée près de Nebi Moussa et de la mer Morte | https://elements.envato.com/view-of-nebi-musain-judean-desert-near-dead-sea-ju-HG6HJL7 |
 | jericho-vue-du-ciel | Jéricho vue du ciel, au pied des montagnes | https://elements.envato.com/aerial-view-over-jericho-city-in-palestine-territo-NJL57HF |
 | knesset-de-nuit | la Knesset de nuit, Jérusalem | https://elements.envato.com/the-knesset-building-israeli-parliament-house-jeru-6QLBQ3R |
+| knesset-vue-du-ciel | la Knesset vue du ciel, Jérusalem-Ouest | https://elements.envato.com/aerial-view-of-the-knesset-the-israeli-house-of-pa-4K3X4NU |
+| jerusalem-esplanade-contre-jour-aerien | Jérusalem à contre-jour, l'esplanade des Mosquées et le dôme du Rocher | https://elements.envato.com/aerial-of-jerusalem-with-temple-mount-LTDPE7X |
+| jerusalem-vieille-ville-dome-du-rocher-aerien | la vieille ville de Jérusalem, ses remparts et le dôme du Rocher | https://elements.envato.com/aerial-view-of-the-old-city-of-jerusalem-ABMEBQ5 |
+| mur-occidental-priere | la prière au mur occidental (mur des Lamentations), Jérusalem | https://elements.envato.com/jewish-prayer-at-western-wall-jerusalem-israel-rel-JDMP4TQ |
 
 ### 4.2 Archives filmées (domaine public, sauf mention)
 
