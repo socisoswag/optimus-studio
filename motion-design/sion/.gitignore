@@ -39,3 +39,6 @@ data/stock/
 timelines/zz-*.js
 engine-essai.js
 index-essai.html
+
+# fichiers Envato bruts (licence : jamais dans un dépôt public)
+data/envato-sons/
