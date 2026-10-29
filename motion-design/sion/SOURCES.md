@@ -293,6 +293,19 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 | jerusalem-esplanade-contre-jour-aerien | Jérusalem à contre-jour, l'esplanade des Mosquées et le dôme du Rocher | https://elements.envato.com/aerial-of-jerusalem-with-temple-mount-LTDPE7X |
 | jerusalem-vieille-ville-dome-du-rocher-aerien | la vieille ville de Jérusalem, ses remparts et le dôme du Rocher | https://elements.envato.com/aerial-view-of-the-old-city-of-jerusalem-ABMEBQ5 |
 | mur-occidental-priere | la prière au mur occidental (mur des Lamentations), Jérusalem | https://elements.envato.com/jewish-prayer-at-western-wall-jerusalem-israel-rel-JDMP4TQ |
+| yad-vashem-aerien | Yad Vashem, le mémorial de la Shoah, Jérusalem, vu du ciel | https://elements.envato.com/aerial-view-of-israel-holocaust-museum-jerusalem-i-P3UTT5A |
+| jaffa-vieille-ville-aerien | la vieille ville de Jaffa et son port | https://elements.envato.com/famous-old-town-of-jaffa-at-tel-aviv-YQ5W8UK |
+| mont-thabor-aerien | les pentes du mont Thabor, Galilée | https://elements.envato.com/aerial-video-over-mount-tabor-israel-3YEXVJ8 |
+| beit-netofa-vallee-inondee | la vallée de Beit Netofa, champs inondés, Galilée | https://elements.envato.com/beit-netofa-valley-with-flooded-agricultural-field-B8CXSWQ |
+| negev-ecole-bedouine-panneaux-solaires | une école d'un village bédouin du Néguev, panneaux solaires sur le toit | https://elements.envato.com/solar-panels-on-the-roof-of-a-school-in-a-bedouin--8RENHMW |
+| negev-berger-bedouin-moutons | un berger bédouin et ses moutons dans le désert (Israël selon l'auteur du clip) | https://elements.envato.com/aerial-video-of-a-bedouin-herding-his-sheep-in-isr-NEZCHMQ |
+| williamsburg-brooklyn-aerien | Williamsburg, Brooklyn, New York | https://elements.envato.com/aerial-views-capture-the-williamsburg-neighborhood-U4FLWEZ |
+| marseille-vieux-port-aerien | Marseille, le Vieux-Port | https://elements.envato.com/aerial-view-of-the-city-of-marseille-france-in-the-ME4HGLT |
+| tel-aviv-plage-aerien | la plage de Tel-Aviv | https://elements.envato.com/aerial-footage-of-people-at-tel-aviv-coastline-PQQMXRY |
+| lifta-village-abandonne-aerien | Lifta, village palestinien vidé en 1948, à l'entrée de Jérusalem | https://elements.envato.com/flying-over-abandoned-palestinian-lifta-village-je-2QECUJL |
+| hebron-vue-du-ciel | Hébron vue du ciel, Cisjordanie | https://elements.envato.com/aerial-view-of-historic-city-of-hebron-in-west-ban-NEURWV8 |
+| village-palestinien-collines-aerien | un village palestinien des collines, sa mosquée (nom du village non donné par l'auteur du clip) | https://elements.envato.com/aerial-footage-over-palestinian-muslim-village-wit-FRM3DL4 |
+| bulldozer-d9-decombres-lieu-non-precise | un bulldozer blindé D9 de l'armée israélienne dans des décombres (lieu non précisé par l'auteur du clip : ne pas écrire de lieu à l'écran sans vérification) | https://elements.envato.com/israeli-d9r-armoured-bulldozer-makes-roads-and-cle-FHQW67M |
 
 ### 4.2 Archives filmées (domaine public, sauf mention)
 
