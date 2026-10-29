@@ -7,6 +7,11 @@ le procès Eichmann).
 
 > Toutes les questions encore ouvertes (sections 5, 10, 11 et 12) sont réunies, prêtes à copier, dans
 > `script/QUESTIONS-PERPLEXITY.md` (23 octobre au soir).
+>
+> Vraies images (19 % du film, cible 35 à 40 %) : questions par chapitre, prêtes à copier, dans
+> `script/QUESTIONS-PERPLEXITY-ARCHIVES.md` (29 octobre au soir), avec les fichiers du dossier du 29 octobre à
+> mettre dans la Dropbox (Wikimedia Commons bloque les téléchargements d'ici ; archive.org, NARA, Library of
+> Congress, Voice of America et DVIDS passent).
 
 ## 1. Reconstitutions à générer avec Gemini (Veo), d'après une vraie photo
 
