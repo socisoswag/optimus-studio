@@ -54,7 +54,7 @@ for NAME in "$@"; do
       -shortest -movflags +faststart "$TMP/bobine.mp4"
     mv "$TMP/bobine.mp4" output/chapitres.mp4
   else
-    python3 tools/sound.py "$TMP/cues.json" "output/$NAME.wav"
+    SION_PIECE="$NAME" python3 tools/sound.py "$TMP/cues.json" "output/$NAME.wav"
     ffmpeg -y -loglevel error -i "output/$NAME.mp4" -i "output/$NAME.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 320k \
       -shortest -movflags +faststart "$TMP/piece.mp4"
     mv "$TMP/piece.mp4" "output/$NAME.mp4"

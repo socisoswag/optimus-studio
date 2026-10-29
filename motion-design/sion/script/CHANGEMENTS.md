@@ -467,3 +467,25 @@ Pas posés : le bombardement de Gaza du 12 novembre 2018 (de nuit, presque noir)
 (400 x 226, trop petit), la manifestation de Dublin de 2014 et la route 60 (gardées en réserve). En réserve aussi, reçus
 le même jour : Envato C01 à C05 (un immeuble détruit, deux chars, Arraba, Bethléem ; lieux et dates à vérifier sur les
 fiches avant de les poser) et Adobe Stock D01 (Gaza vue par drone) et D02 (étudiants à Bristol).
+
+## 29 octobre 2026, l'après-midi (le son de tout le film refait)
+
+**Banque de bruitages** : 195 sons Envato Elements téléchargés par l'auteur, découpés en 327 prises (76 rôles), en plus
+des 82 prises Freesound : 409 prises en tout, cinq fois plus qu'avant. Une prise ne revient jamais parmi les quatre
+dernières ; chaque pièce a ses propres tirages (avant, toutes les pièces enchaînaient les mêmes prises dans le même ordre).
+
+**Pièces de motion design** : le son des 66 pièces est refait (l'image ne bouge pas, les noms de fichiers non plus).
+Impacts, souffles, montées, explosions, effondrements, feu, tic-tac, chars, avions, foule, mer, campagne, nuit : de 3 à
+33 prises par rôle au lieu de 1 à 6. Un fond de lieu très bas sous certaines cartes : le drone sur Gaza, la guerre au
+loin en 1948, 1956, 1967, 1973 et 1982, les enfants dans les camps, la nuit des villages vidés, la salle de l'ONU, les
+claviers de la guerre numérique, le train de l'émigration européenne.
+
+**Vrais plans, archives, reconstitutions** (108 plans, muets jusqu'ici) : chacun a maintenant son ambiance, d'après sa note
+« son » du script, sa légende et son époque (souk de Jérusalem, appel à la prière, cloches, port de Haïfa, camps,
+villages et collines, manifestation de Gaza en 2018, Tel-Aviv en 2023, photographes à la Maison Blanche, train des
+rescapés en 1945, pas de la foule en 1948, projecteur sous les films muets d'avant 1930, son resserré « d'époque » sous les
+archives d'avant 1960). Même sonie que le fond des pièces voisines (-25 LUFS) : rien ne saute à la coupe ; les silences
+voulus restent des silences (25.23 Be'eri, 08.09 Hébron). La liste plan par plan : `output/ambiances/liste.json`.
+
+Pour la voix off : fonds et ambiances restent sous la voix ; dans Premiere, Son essentiel, « Atténuation » sur ces
+pistes, la voix à -16 LUFS.

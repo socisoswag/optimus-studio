@@ -235,6 +235,23 @@ else:
     crl = crack * bed * bed_in * 0.09
     add((crl, np.roll(crl, int(0.021 * SR))), 0, 1.0)
 
+# fond du lieu, très bas sous le vent : ce qu'on entendrait au-dessus de cette carte (le drone sur Gaza, la guerre au
+# loin en 1948, la nuit des villages vidés) ; jamais pendant un silence voulu (bed), toujours sous les coups (duck)
+LIEU_PIECE = {
+    "gaza": [("drone", -40)], "chiffre-gaza": [("drone", -42)], "gaza-guerres": [("guerre_loin", -38), ("drone", -42)],
+    "nakba-1948": [("guerre_loin", -38)], "deir-yassin": [("guerre_loin", -42)], "six-jours": [("guerre_loin", -38)],
+    "suez-1956": [("guerre_loin", -40)], "octobre-1973": [("guerre_loin", -38)], "liban-1982": [("guerre_loin", -38)],
+    "camps": [("enfants", -42)], "chiffre-refugies": [("enfants", -44)], "villages-lumieres": [("nuit", -36)],
+    "guerre-numerique": [("bureau", -40), ("clavier", -46)], "resolutions": [("salle", -40)], "partage-1947": [("salle", -42)],
+    "jerusalem": [("foule", -44)], "sion-le-mot": [("foule", -46)], "noms-effaces": [("vent", -40)],
+    "occupation": [("vent_desert", -42)], "mur-cicatrice": [("vent_desert", -40)], "europe-1881-1914": [("train", -46)],
+}
+for role_, db_ in LIEU_PIECE.get(os.environ.get("SION_PIECE", ""), []):
+    if BR.ok(role_):
+        ll_, lr_ = BR.fond(role_, N / SR, rng, db_)
+        env_l = bed * bed_in * duck
+        add((ll_ * env_l, lr_ * env_l), 0, 1.0)
+
 PST("bruitages")
 # ------------------------------------------------------------------ tic-tac (le temps qui passe)
 tick_start, tick_end = SND.get("ticks") or (0.0, -1.0)
@@ -248,6 +265,12 @@ if tick_end > tick_start and reel("tic"):  # vrai réveil mécanique, coupé ave
     tl_, tr_ = BR.moins_aigu(BR.fond("tic", n_ / SR, rng, -30), -12.0, 2500.0)
     # le souffle de la prise entre deux tics (8 à 18 kHz, figé) : coupé au-dessus de 6 kHz
     tl_, tr_ = BR.passe_bas(tl_, 6000), BR.passe_bas(tr_, 6000)
+    # le réveil mécanique (prise 171043) siffle à 7,8 et 5,2 kHz : deux coupe-bandes très étroits, sinon une raie fixe
+    # traverse tout le spectre de la pièce
+    from scipy.signal import iirnotch, filtfilt
+    for f0_ in (5192.0, 7840.0):
+        bn_, an_ = iirnotch(f0_, 25.0, SR)
+        tl_, tr_ = filtfilt(bn_, an_, tl_), filtfilt(bn_, an_, tr_)
     e_ = bed[i0_:i0_ + n_][:len(tl_)]
     w_ = int(0.04 * SR)
     e_ = np.convolve(np.pad(e_, w_, mode="edge"), np.ones(w_) / w_, "same")[w_:-w_]

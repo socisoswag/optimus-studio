@@ -29,7 +29,7 @@ fi
 WAV="output/$NAME.wav"
 if [ "$OUTNAME" = "$NAME" ] || [ ! -f "output/$NAME.wav" ]; then
   node tools/cues.mjs "$NAME" > "$TMP/cues.json"
-  python3 tools/sound.py "$TMP/cues.json" "$TMP/son.wav"
+  SION_PIECE="$NAME" python3 tools/sound.py "$TMP/cues.json" "$TMP/son.wav"
   WAV="$TMP/son.wav"
 fi
 DUR=$(node -e "require('./core.js'); require('./timelines/$NAME.js'); console.log(globalThis.TL.total)")
