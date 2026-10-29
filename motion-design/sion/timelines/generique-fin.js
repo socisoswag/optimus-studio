@@ -106,7 +106,7 @@
         ['L’Exodus, 1947', 'Castle Films · musée américain de l’Holocauste'],
         ['Palestine, 1948', 'Universal · accessed at United States Holocaust Memorial Museum, courtesy of NARA'],
         ['Hébron, 1913', 'Noah Sokolovsky'], ['L’entrée d’Allenby à Jérusalem, 1917', 'War Office Cinema Committee'],
-        ['Lord Balfour en Palestine, 1925', 'Archives de la Planète, musée départemental Albert-Kahn, opérateur Camille Sauvageot · CC BY-SA 4.0'],
+        ['Balfour, 1925', 'Archives de la Planète, musée Albert-Kahn, Camille Sauvageot · CC BY-SA 4.0'],
         ['Camp David, 1978 et 2000 · Washington, 1993', 'Maison Blanche · bibliothèque présidentielle Clinton'],
         ['Gaza, 2009', 'Al Jazeera · CC BY 3.0'], ['Gaza, 2018', 'Voice of America'], ['Tel-Aviv, 2023', 'Wikimedia Commons · CC0'],
         ['Masafer Yatta, 2023', 'Dania Eid · CC BY-SA 4.0']],

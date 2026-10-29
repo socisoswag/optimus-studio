@@ -1,5 +1,5 @@
 {
- "maj": "29 octobre 2026, 11 h 20",
+ "maj": "29 octobre 2026, 12 h 30",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -27,7 +27,7 @@
    "pct": 100,
    "poids": 1,
    "qui": "fait",
-   "detail": "tout le film relivré avec le son refait, les 6 archives et les 14 plans Envato"
+   "detail": "parties II, IV, V, VII et conclusion relivrées avec les 11 archives de Wikimedia Commons"
   },
   {
    "nom": "Son du feu et du tic-tac refait (29 pièces)",
@@ -38,24 +38,24 @@
   },
   {
    "nom": "Plans, bruitages et musique Envato à télécharger",
-   "pct": 45,
+   "pct": 55,
    "poids": 3,
    "qui": "toi",
-   "detail": "31 liens de plans reçus et convertis ; restent A02 (Rafah) et B02 à B20 (recherches), puis bruitages et musique"
+   "detail": "archives Wikimedia et C01 à C05, Adobe D01 et D02 reçus ; bruitages : 151 liens directs envoyés (un par son) ; restent B02 à B20, C06 à C12 et la musique"
   },
   {
    "nom": "Archives libres : 1917 à 1950, puis Gaza et la Cisjordanie de 2000 à 2025",
-   "pct": 60,
+   "pct": 75,
    "poids": 3,
    "qui": "moi",
-   "detail": "15 archives posées (Golda Meir 1973, Jordanie 1970, Chatila 2023, March of Time 1938, Exodus 1947, Haganah 1948, Ben Gourion 1945) ; vraies images : 16.1 % du film, cible 30 %"
+   "detail": "26 archives posées (dont Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023) ; vraies images : 19 % du film, cible 30 %"
   },
   {
    "nom": "Intégrer les plans Envato et les archives",
-   "pct": 65,
+   "pct": 75,
    "poids": 2,
    "qui": "moi",
-   "detail": "15 archives et 14 plans Envato posés et livrés ; la suite avec le lot 2 (Gaza, manifestations, Wikimedia)"
+   "detail": "26 archives et 14 plans Envato posés et livrés ; en réserve : C01 à C05, D01, D02, Dublin 2014, route 60 (lieux et dates à vérifier avant de les poser)"
   },
   {
    "nom": "Bruitages variés et montage musical",
