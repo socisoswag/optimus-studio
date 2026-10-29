@@ -1,5 +1,5 @@
 {
- "maj": "29 octobre 2026, 6 h 20",
+ "maj": "29 octobre 2026, 9 h",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -27,7 +27,7 @@
    "pct": 100,
    "poids": 1,
    "qui": "fait",
-   "detail": "tout le film relivré avec le son refait ; parties I, III à VIII relivrées encore avec les nouvelles archives et les plans Envato"
+   "detail": "tout le film relivré avec le son refait, les 6 archives et les 14 plans Envato"
   },
   {
    "nom": "Son du feu et du tic-tac refait (29 pièces)",
@@ -52,10 +52,10 @@
   },
   {
    "nom": "Intégrer les plans Envato et les archives",
-   "pct": 55,
+   "pct": 60,
    "poids": 2,
    "qui": "moi",
-   "detail": "6 archives et 14 plans Envato posés dans le script, avec légendes et sources ; relivraison en cours"
+   "detail": "6 archives et 14 plans Envato posés et livrés ; la suite quand les derniers clips Envato arrivent (A02, B02 à B20)"
   },
   {
    "nom": "Bruitages variés et montage musical",
@@ -94,10 +94,10 @@
   },
   {
    "nom": "Générique de fin avec les nouveaux crédits",
-   "pct": 60,
+   "pct": 100,
    "poids": 1,
-   "qui": "moi",
-   "detail": "nouveaux crédits (Jordanie 1970, Golda Meir 1973 en CC BY-SA, Chatila 2023) ; rendu en cours"
+   "qui": "fait",
+   "detail": "refait avec les nouveaux crédits (Jordanie 1970, Golda Meir 1973 en CC BY-SA, Chatila 2023)"
   },
   {
    "nom": "Montage dans Premiere",
