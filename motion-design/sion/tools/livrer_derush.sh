@@ -34,15 +34,30 @@ for key in "$@"; do
     git -C "$W" ls-files -z -- "SION/$folder" | while IFS= read -r -d '' f; do
       [ -e "$W/$f" ] || git -C "$W" rm -q --cached --sparse -- "$f"
     done
-    ADD=(add --sparse -A)
+    LEGER=1
   else
     git -C "$W" sparse-checkout set "SION/Script" "SION/$folder"
     MONTAGE_DIR="$W/SION" nice -n 5 python3 tools/derush.py "$key"
-    ADD=(add -A)
+    LEGER=0
   fi
   big=$(find "$W/SION" -type f -size +95M)
   [ -z "$big" ] || { echo "trop gros pour GitHub (plus de 95 Mo) : $big" >&2; exit 1; }
-  git -C "$W" "${ADD[@]}" SION
+  taille=$(du -sh "$W/SION/$folder" | cut -f1)
+  if [ "$LEGER" = 1 ]; then
+    # chapitre par chapitre : ajouté à l'index (ses vidéos passent dans .git) puis effacé du disque ; la partie n'y
+    # tient jamais deux fois (la IV, près de 2,5 Go, ne passerait pas sinon). Ces chapitres ne sont plus jamais ajoutés
+    # avec -A : leurs fichiers effacés ne deviennent pas des suppressions.
+    git -C "$W" add --sparse -A -- SION/Script SION/LISEZMOI.md
+    for d in "$W/SION/$folder"/*/; do
+      git -C "$W" add --sparse -A -- "${d#"$W"/}"
+      find "$d" -type f \( -name '*.mp4' -o -name '*.mov' \) -delete
+    done
+    find "$W/SION/$folder" -maxdepth 1 -type f -print0 | while IFS= read -r -d '' f; do
+      git -C "$W" add --sparse -- "${f#"$W"/}"
+    done
+  else
+    git -C "$W" add -A SION
+  fi
   if git -C "$W" diff --cached --quiet; then
     echo "$folder : rien de nouveau"
   else
@@ -57,7 +72,7 @@ Claude-Session: https://claude.ai/code/session_01Up6uBitdRxnv9kmecRQqy1
 EOF
     git -C "$W" config http.postBuffer 524288000
     push
-    echo "$folder : envoyé ($(du -sh "$W/SION/$folder" | cut -f1))"
+    echo "$folder : envoyé ($taille)"
   fi
   rm -rf "${W:?}"
 done
