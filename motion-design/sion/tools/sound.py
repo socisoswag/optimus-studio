@@ -248,7 +248,7 @@ LIEU_PIECE = {
 }
 for role_, db_ in LIEU_PIECE.get(os.environ.get("SION_PIECE", ""), []):
     if BR.ok(role_):
-        ll_, lr_ = BR.passe_haut(np.stack(BR.fond(role_, N / SR, rng, db_), 1), 32, 3).T  # sans infra-grave
+        ll_, lr_ = BR.sans_infra(BR.fond(role_, N / SR, rng, db_))
         env_l = bed * bed_in * duck
         add((ll_ * env_l, lr_ * env_l), 0, 1.0)
 

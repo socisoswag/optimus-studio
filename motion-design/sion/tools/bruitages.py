@@ -12,7 +12,7 @@ import os
 import sys
 
 import numpy as np
-from scipy.signal import fftconvolve
+from scipy.signal import butter, fftconvolve, sosfilt
 
 import banque_sons as B
 
@@ -226,13 +226,26 @@ def impact(rng, k=1.0, lourd=True, court=False):
     return (out[:, 0], out[:, 1]), A
 
 
+def _causal(x, kind, fc, ordre):
+    """Filtre de Butterworth causal (comme un égaliseur de console) : rien n'arrive avant le son ni ne revient au début
+    (les filtres par FFT de passe_haut et passe_bas sont circulaires : sur un coup court, la fin déborde sur le début)."""
+    return sosfilt(butter(ordre, fc, btype=kind, fs=SR, output="sos"), x, axis=0)
+
+
+def sans_infra(sig):
+    """Retire l'infra-grave (sous 32 Hz), qu'aucune enceinte courante ne rend et qui mange la marge du mixage."""
+    x = _causal(_st(sig), "highpass", 32, 3)
+    return x[:, 0].copy(), x[:, 1].copy()
+
+
 def presence(sig, att=None, cible=0.4, fc=200.0):
     """Coup grave rendu audible sur un petit haut-parleur (téléphone, ordinateur portable), comme au mixage d'un film :
     on ajoute les harmoniques de son propre grave (bande sous 200 Hz saturée fort puis remise à son enveloppe, gardée
     entre 200 Hz et 1,6 kHz), juste assez pour que le médium porte `cible` de l'énergie des 150 ms de l'attaque. Un coup
-    qui a déjà son médium ne change pas. L'infra-grave (sous 32 Hz), qu'aucune enceinte courante ne rend et qui mange la
-    marge du mixage, est retiré. Prend (l, r) ou un tableau, rend (l, r)."""
-    x = passe_haut(_st(sig), 32, 3)
+    qui a déjà son médium ne change pas. L'infra-grave est retiré. Filtres causaux et 250 ms de traîne ajoutées à la fin,
+    qui finit en fondu : le coup commence et s'arrête sans saut (pas de clic). Prend (l, r) ou un tableau, rend (l, r)."""
+    x = _st(sig)
+    x = _causal(np.concatenate([x, np.zeros((int(0.25 * SR), 2))]), "highpass", 32, 3)
     a = attaque(x) if att is None else max(0, int(att))
     w = x[a:a + int(0.15 * SR)]
     if len(w) >= 1024:
@@ -240,14 +253,16 @@ def presence(sig, att=None, cible=0.4, fc=200.0):
         e_lo = float((passe_bas(w, 223, 4) ** 2).sum())
         r = cible / (1 - cible)
         if e_lo > 0 and e_hi < r * e_lo:
-            lo = passe_bas(x, fc, 4)
+            lo = _causal(x, "lowpass", fc, 4)
             u = lo / (np.abs(lo).max() + 1e-12)
-            env = np.maximum(passe_bas(np.abs(u), 25), 0)
+            env = np.maximum(_causal(np.abs(u), "lowpass", 25, 2), 0)
             h = np.tanh(8.0 * u) * env / (env.max() + 1e-12)  # harmoniques jusqu'au médium, qui suivent la chute du coup
-            h = passe_bas(passe_haut(h, fc, 4), 1600)
+            h = _causal(_causal(h, "highpass", fc, 4), "lowpass", 1600, 2)
             e_h = float((h[a:a + len(w)] ** 2).sum())
             if e_h > 0:
                 x = x + min(6.0, np.sqrt((r * e_lo - e_hi) / e_h)) * h
+    k = int(0.02 * SR)
+    x[-k:] *= np.linspace(1, 0, k)[:, None]
     return x[:, 0].copy(), x[:, 1].copy()
 
 
