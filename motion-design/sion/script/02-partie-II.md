@@ -110,7 +110,7 @@ Source : SOURCES.md 6 (Arthur Koestler, Promise and Fulfilment, 1949)
 
 ## Chapitre 8 · Le mandat britannique : trente ans sous tension
 
-Film 00:15:25:20 → 00:19:25:20 · durée 4 min 00.0 s
+Film 00:15:25:20 → 00:19:24:24 · durée 3 min 59.2 s
 
 *Intention : Trente ans en trois minutes. Un pouvoir étranger qui refuse un gouvernement élu (la majorité aurait dit non), les violences de 1920, 1921 et 1929 avec leurs morts juifs et arabes, Hébron, la révolte de 1936 et sa répression, les bombes de l'Irgoun et le massacre de Tibériade, puis le livre blanc de 1939 qui ferme la porte au moment où les Juifs d'Europe cherchent à fuir. Le mufti est montré tel qu'il fut, y compris son alliance avec Hitler : le cacher ruinerait tout le reste.*
 
@@ -190,121 +190,123 @@ Source : ventes Sursock, plaine de Jezréel, années 1920 ; chiffres présentés
 (39 mots, 2.8 par seconde)
 
 
-**8.12** · film **00:17:15:10 → 00:17:27:10** (12.0 s) · **[PHOTO]** `output/photos-fixes/5-34-tracteur-jezreel.mp4` · source 00:00:00:00 → 00:00:12:00  
-Source : migrations rurales vers Haïfa et recrutement d'Izz ad-Din al-Qassam dans les milieux populaires (PalQuest ; Mark Sanagan, Lightning through the Clouds, 2020)  
-À l'écran : déjà dans le plan : Années 1920 · Plaine de Jezréel · Un tracteur laboure une terre achetée pour les colonies juives · Photo d'archive  
+**8.12** · film **00:17:15:10 → 00:17:26:14** (11.2 s) · **[ARCH]** `output/archives-filmees/1938-colonie-juive-et-tracteur.mp4` · source 00:00:00:00 → 00:00:11:04  
+Source : SOURCES.md 4.2, March of Time, rushes de 1938 (NARA 200 MTT 666 T), cédés sans restriction aux États-Unis ; migrations rurales vers Haïfa et recrutement d'Izz ad-Din al-Qassam dans les milieux populaires (PalQuest ; Mark Sanagan, Lightning through the Clouds, 2020)  
+À l'écran : carton : 1938 · Palestine mandataire · Une colonie juive, un tracteur qui défriche.  
 > VOIX : Sur ces terres naissent des colonies juives. / Des paysans sans terre partent vers Haïfa et ses quartiers pauvres. // C'est là que recrutera Izz ad-Din al-**Qassam**.  
-(26 mots, 2.2 par seconde)
+(26 mots, 2.3 par seconde)
 
 
-**8.13** · film **00:17:27:10 → 00:17:42:10** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:01:10:00 → 00:01:25:00  
+**8.13** · film **00:17:26:14 → 00:17:41:14** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:01:10:00 → 00:01:25:00  
 Source : Sir John Hope Simpson, rapport du 22 août 1930, publié en octobre (Cmd. 3686) : 29,4 % des familles de 104 villages sans terre ; lettre de Ramsay MacDonald à Chaim Weizmann, 13 février 1931  
 À l'écran : fiche : Londres · octobre 1930 · Le rapport Hope Simpson  
 > VOIX : En 1930, un enquêteur britannique, John Hope Simpson, étudie 104 villages : / 29,4 % des familles n'y possèdent pas de terre. / Londres promet de freiner les achats, / puis recule l'année suivante, sous la pression du mouvement **sioniste**.  
 (36 mots, 2.4 par seconde)
 
 
-**8.14** · film **00:17:42:10 → 00:17:56:10** (14.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:46:00 → 00:03:00:00  
+**8.14** · film **00:17:41:14 → 00:17:55:14** (14.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:46:00 → 00:03:00:00  
 > VOIX : En 1935, un prédicateur de Haïfa, / Izz ad-Din al-Qassam, / prend les armes contre les Britanniques. / Il est tué en novembre. // La branche armée du Hamas porte aujourd'hui son **nom**.  
 (29 mots, 2.1 par seconde)
 
 
-**8.15** · film **00:17:56:10 → 00:18:04:10** (8.0 s) · **[IA]** `output/reconstitutions/11-19-manifestation-jaffa-1933.mp4` · source 00:00:00:00 → 00:00:08:00  
+**8.15** · film **00:17:55:14 → 00:18:03:14** (8.0 s) · **[IA]** `output/reconstitutions/11-19-manifestation-jaffa-1933.mp4` · source 00:00:00:00 → 00:00:08:00  
 Source : SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 15788, manifestation de Jaffa, octobre 1933)  
 À l'écran : déjà dans le plan : Octobre 1933 · Jaffa · La foule des manifestants face à la police britannique · Photo d'archive animée par IA  
 > VOIX : 1933. / Hitler arrive au pouvoir, / l'immigration juive s'accélère, / et Jaffa **manifeste**.  
 (11 mots, 1.4 par seconde)
 
 
-**8.16** · film **00:18:04:10 → 00:18:14:10** (10.0 s) · **[IA]** `output/reconstitutions/12-20-greve-1936-souk-desert.mp4` · source 00:00:00:00 → 00:00:10:00  
+**8.16** · film **00:18:03:14 → 00:18:13:14** (10.0 s) · **[IA]** `output/reconstitutions/12-20-greve-1936-souk-desert.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 2.2, matpc 18170 (le souk des bijoutiers, désert pendant les six mois de grève, 1936)  
 À l'écran : déjà dans le plan : la vraie photo, puis la reconstitution (1936 · Le souk des bijoutiers · Désert pendant les six mois de grève générale)  
 > VOIX : En 1936, la Palestine arabe se met en grève. / Six mois. // C'est le début de la grande **révolte**.  
 (18 mots, 1.8 par seconde)
 
 
-**8.17** · film **00:18:14:10 → 00:18:26:10** (12.0 s) · **[IA]** `output/reconstitutions/13-21-maison-dynamitee-lydda-1936.mp4` · source 00:00:00:00 → 00:00:12:00  
-Source : SOURCES.md 2.2, matpc 18126 (maison de Lydda dynamitée sur ordre militaire, 1936) ; bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centaines de Juifs (article « 1936-1939 Arab revolt in Palestine », d'après Walid Khalidi et Matthew Hughes, Britain's Pacification of Palestine, 2019)  
-À l'écran : déjà dans le plan : 1936 · Lydda · Maison dynamitée par l'armée · Photo d'archive animée par IA  
+**8.17** · film **00:18:13:14 → 00:18:25:14** (12.0 s) · **[ARCH]** `output/archives-filmees/1938-convoi-britannique-village.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : SOURCES.md 4.2, March of Time, rushes de 1938 (NARA 200 MTT 666 CC ; musée américain de l'Holocauste, irn1001012) ; SOURCES.md 2.2, matpc 18126 (maison de Lydda dynamitée sur ordre militaire, 1936) ; bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centaines de Juifs (article « 1936-1939 Arab revolt in Palestine », d'après Walid Khalidi et Matthew Hughes, Britain's Pacification of Palestine, 2019)  
+À l'écran : carton : 1938 · Samarie · Un convoi de l'armée britannique en route vers le village de Qaddum.  
 > VOIX : La répression britannique est terrible : / maisons dynamitées, / pendaisons, / villages punis. // En trois ans, environ cinq mille Arabes sont **tués**.  
 (19 mots, 1.6 par seconde)
 
 
-**8.18** · film **00:18:26:10 → 00:18:43:10** (17.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:19:00 → 00:00:36:00  
+**8.18** · film **00:18:25:14 → 00:18:42:14** (17.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:19:00 → 00:00:36:00  
 Source : Tibériade, 2 octobre 1938 : 19 Juifs tués dont 11 enfants ; bombes de l'Irgoun sur les marchés arabes de Haïfa et de Jérusalem en juillet 1938 (The New York Times, 16 juillet 1938) ; liste des attaques de l'Irgoun (Wikipedia, pour les références)  
 À l'écran : Tibériade · octobre 1938 · 19 Juifs tués, dont 11 enfants / Haïfa, Jérusalem · juillet 1938 · bombes de l'Irgoun sur les marchés arabes  
 > VOIX : Les civils paient des deux côtés. / À Tibériade, en octobre 1938, / dix-neuf Juifs sont tués, dont onze enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés **arabes**.  
 (34 mots, 2.0 par seconde)
 
 
-**8.19** · film **00:18:43:10 → 00:18:52:23** (9.5 s) · **[MD]** `output/peel-1937.mp4` · source 00:00:00:00 → 00:00:09:13  
+**8.19** · film **00:18:42:14 → 00:18:52:02** (9.5 s) · **[MD]** `output/peel-1937.mp4` · source 00:00:00:00 → 00:00:09:13  
 Source : rapport de la commission royale pour la Palestine, Cmd. 5479, 7 juillet 1937 ; carte : « Peel map pd.png », Wikimedia Commons, domaine public (tracé simplifié, tools/prep_peel.py)  
 À l'écran : déjà dans le plan : les trois zones du plan sur le relief (État juif, État arabe, zone sous mandat) ; mention « tracé simplifié »  
 > VOIX : En 1937, la commission Peel propose pour la première fois / de couper le pays en **deux**.  
 (16 mots, 1.7 par seconde)
 
 
-**8.20** · film **00:18:52:23 → 00:19:01:23** (9.0 s) · **[MD]** `output/peel-1937.mp4` · source 00:00:09:13 → 00:00:18:12  
+**8.20** · film **00:18:52:02 → 00:19:01:02** (9.0 s) · **[MD]** `output/peel-1937.mp4` · source 00:00:09:13 → 00:00:18:12  
 Source : rapport Peel, 1937 (transfert proposé : jusqu'à 225 000 Arabes et 1 250 Juifs)  
 À l'écran : déjà dans le plan : « Jusqu'à 225 000 Arabes à déplacer hors de l'État juif »  
 > VOIX : Et de déplacer jusqu'à 225 000 Arabes / hors du futur État **juif**.  
 (12 mots, 1.3 par seconde)
 
 
-**8.21** · film **00:19:01:23 → 00:19:10:10** (8.5 s) · **[MD]** `output/peel-1937.mp4` · source 00:00:18:12 → 00:00:27:00  
+**8.21** · film **00:19:01:02 → 00:19:09:14** (8.5 s) · **[MD]** `output/peel-1937.mp4` · source 00:00:18:12 → 00:00:27:00  
 Source : refus du Haut Comité arabe (juillet 1937) ; 20e congrès sioniste, Zurich, août 1937 (principe accepté, tracé rejeté) ; commission Woodhead et livre blanc de novembre 1938 (plan abandonné)  
 À l'écran : déjà dans le plan : « Deux refus »  
 > VOIX : Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**.  
 (13 mots, 1.5 par seconde)
 
 
-**8.22** · film **00:19:10:10 → 00:19:18:23** (8.5 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-06.mp4` · source 00:00:00:00 → 00:00:08:13  
+**8.22** · film **00:19:09:14 → 00:19:18:02** (8.5 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-06.mp4` · source 00:00:00:00 → 00:00:08:13  
 Source : livre blanc britannique du 17 mai 1939  
 À l'écran : Mai 1939 · livre blanc · 75 000 immigrants juifs en cinq ans, puis plus rien sans l'accord des Arabes  
 > VOIX : En 1939, Londres fait marche arrière : / l'immigration juive est limitée / à 75 000 personnes en cinq **ans**.  
 (17 mots, 2.0 par seconde)
 
 
-**8.23** · film **00:19:18:23 → 00:19:25:20** (6.9 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-08.mp4` · source 00:00:00:00 → 00:00:06:22  
+**8.23** · film **00:19:18:02 → 00:19:24:24** (6.9 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-08.mp4` · source 00:00:00:00 → 00:00:06:22  
 > VOIX : Au moment même où les Juifs d'Europe / cherchent à fuir le **nazisme**. ///  
 (12 mots, 1.7 par seconde)
 
 
 ## Chapitre 9 · L'accord Haavara et l'assassinat d'Arlosoroff
 
-Film 00:19:25:20 → 00:20:53:10 · durée 1 min 27.6 s
+Film 00:19:24:24 → 00:20:52:14 · durée 1 min 27.6 s
 
 *Intention : Le chapitre le plus piégé du film (voir la bible, risque 2). On raconte exactement ce que disent les historiens : un accord de transfert qui sauve des vies et des biens, signé avec un régime qui veut chasser les Juifs, et qui brise le boycott lancé par des Juifs du monde entier. Puis le meurtre d'Arlosoroff, sans jamais désigner un coupable que la justice n'a pas désigné. Finir en désamorçant la récupération antisémite.*
 
 
-**9.1** · film **00:19:25:20 → 00:19:30:10** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-09.mp4` · source 00:00:00:00 → 00:00:04:15  
+**9.1** · film **00:19:24:24 → 00:19:29:14** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-09.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**9.2** · film **00:19:30:10 → 00:19:45:10** (15.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:00:00 → 00:03:15:00  
+**9.2** · film **00:19:29:14 → 00:19:44:14** (15.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:00:00 → 00:03:15:00  
 Source : lois antijuives d'avril 1933 (fonction publique le 7 avril, quotas scolaires le 25 avril)  
 > VOIX : 1933. / Hitler prend le pouvoir. / Les Juifs d'Allemagne sont chassés de la fonction publique, / des écoles, des métiers. // Un dirigeant sioniste, Haïm Arlosoroff, cherche à les faire **sortir**.  
 (28 mots, 1.9 par seconde)  
 Note : on dit « Ar-lo-so-rof »
 
 
-**9.3** · film **00:19:45:10 → 00:20:01:10** (16.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:53:00 → 00:01:09:00  
+**9.3** · film **00:19:44:14 → 00:20:00:14** (16.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:53:00 → 00:01:09:00  
 Source : article « Haavara Agreement » (Wikipedia, d'après Edwin Black, The Transfer Agreement, 1984, et Yehuda Bauer, Jews for Sale?, 1994) : environ 60 000 Juifs allemands en Palestine de 1933 à 1939 ; 105 millions de reichsmarks de marchandises allemandes exportées  
 > VOIX : En août 1933, un accord est signé avec l'Allemagne nazie : / Haavara, « le transfert » en hébreu. / Les Juifs qui partent pour la Palestine sauvent une partie de leurs biens, / sous forme de marchandises **allemandes**.  
 (33 mots, 2.1 par seconde)
 
 
-**9.4** · film **00:20:01:10 → 00:20:14:10** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:01:09:00 → 00:01:22:00  
+**9.4** · film **00:20:00:14 → 00:20:13:14** (13.0 s) · **[ARCH]** `output/archives-filmees/1938-tel-aviv-rues.mp4` · source 00:00:00:00 → 00:00:13:00  
+Source : SOURCES.md 4.2, March of Time, rushes de 1938 (NARA 200 MTT 666 F ; date de la notice USHMM irn1001006)  
+À l'écran : carton : 1938 · Tel-Aviv · Les rues commerçantes.  
 > VOIX : Environ soixante mille Juifs allemands gagnent ainsi la Palestine avant la guerre. // Mais l'accord brise le boycott des produits allemands, / lancé par des Juifs du monde **entier**.  
 (27 mots, 2.1 par seconde)
 
 
-**9.5** · film **00:20:14:10 → 00:20:22:10** (8.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:15:00 → 00:03:23:00  
+**9.5** · film **00:20:13:14 → 00:20:21:14** (8.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:15:00 → 00:03:23:00  
 > VOIX : La droite sioniste, autour de Zeev Jabotinsky, / crie à la **trahison**.  
 (11 mots, 1.4 par seconde)
 
 
-**9.6** · film **00:20:22:10 → 00:20:39:10** (17.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:23:00 → 00:03:40:00  
+**9.6** · film **00:20:21:14 → 00:20:38:14** (17.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:23:00 → 00:03:40:00  
 Source : procès de 1934 (Stavsky condamné puis acquitté en appel, faute de preuve qui corrobore) ; commission d'enquête israélienne créée en 1982, rapport de juin 1985 (Jewish Telegraphic Agency, 17 juin 1985)  
 À l'écran : carton : Tel-Aviv · 16 juin 1933  
 > VOIX : Le 16 juin 1933, Arlosoroff est tué par balles sur la plage de Tel-Aviv. / Deux militants de cette droite sont accusés, / puis acquittés. // En 1985, une commission israélienne les lave de tout soupçon. / Les tueurs n'ont jamais été **identifiés**.  
@@ -312,7 +314,7 @@ Source : procès de 1934 (Stavsky condamné puis acquitté en appel, faute de pr
 Son : mer la nuit, un seul coup sec très lointain, puis la mer seule
 
 
-**9.7** · film **00:20:39:10 → 00:20:53:10** (14.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:05:00 → 00:00:19:00  
+**9.7** · film **00:20:38:14 → 00:20:52:14** (14.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:05:00 → 00:00:19:00  
 Source : lecture « accord de sauvetage » : Yehuda Bauer, Jews for Sale?, 1994 ; lecture critique : Edwin Black, The Transfer Agreement, 1984 (les deux à citer en description)  
 À l'écran : mots : Un accord repris par des antisémites, puis : Un sauvetage arraché au régime nazi  
 > VOIX : Ce traité est aujourd'hui repris par des antisémites, / qui parlent de « collaboration ». // Les historiens disent autre chose : / un accord de sauvetage, / arraché à un régime qui voulait chasser les **Juifs**.  
@@ -321,51 +323,51 @@ Source : lecture « accord de sauvetage » : Yehuda Bauer, Jews for Sale?, 1994 
 
 ## Chapitre 10 · Les Juifs face au sionisme : le grand débat
 
-Film 00:20:53:10 → 00:22:23:05 · durée 1 min 29.8 s
+Film 00:20:52:14 → 00:22:22:09 · durée 1 min 29.8 s
 
 *Intention : Avant 1948, le sionisme est loin de faire l'unanimité chez les Juifs : réformés américains, ouvriers du Bund, rabbins orthodoxes, sionistes partisans d'un État pour deux peuples. Un fait dur (l'assassinat de de Haan par la Haganah) montre que ce débat n'était pas seulement intellectuel. Les voix d'aujourd'hui viendront dans la partie VI.*
 
 
-**10.1** · film **00:20:53:10 → 00:20:58:00** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-10.mp4` · source 00:00:00:00 → 00:00:04:15  
+**10.1** · film **00:20:52:14 → 00:20:57:04** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-10.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**10.2** · film **00:20:58:00 → 00:21:14:00** (16.0 s) · **[MD]** `output/documents-2.mp4` · source 00:01:22:00 → 00:01:38:00  
+**10.2** · film **00:20:57:04 → 00:21:13:04** (16.0 s) · **[MD]** `output/documents-2.mp4` · source 00:01:22:00 → 00:01:38:00  
 Source : déclaration de Pittsburgh, conférence des rabbins réformés, 16-19 novembre 1885, article 5 ; notre traduction  
 À l'écran : « Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse. » · Pittsburgh, 1885  
 > VOIX : Au début, le sionisme est minoritaire chez les Juifs. / En 1885, aux États-Unis, les rabbins réformés déclarent : / « Nous ne nous considérons plus comme une nation, mais comme une communauté religieuse, / et n'attendons donc pas de retour en **Palestine**. »  
 (38 mots, 2.4 par seconde)
 
 
-**10.3** · film **00:21:14:00 → 00:21:29:00** (15.0 s) · **[IA]** `output/reconstitutions/15-28-bund-1917.mp4` · source 00:00:00:00 → 00:00:15:00  
+**10.3** · film **00:21:13:04 → 00:21:28:04** (15.0 s) · **[IA]** `output/reconstitutions/15-28-bund-1917.mp4` · source 00:00:00:00 → 00:00:15:00  
 Source : Bund (Union générale des travailleurs juifs), fondé à Vilnius en octobre 1897  
 À l'écran : déjà dans le plan : 1917 · Empire russe · Une manifestation du Bund · Photo d'archive animée par IA  
 > VOIX : En 1897, l'année même du congrès de Bâle, / des ouvriers juifs fondent le Bund, à Vilnius. / Leur idée : rester, et se battre là où l'on vit. // En yiddish : doikayt, « **l'ici** ».  
 (30 mots, 2.0 par seconde)
 
 
-**10.4** · film **00:21:29:00 → 00:21:43:14** (14.6 s) · **[ARCH]** `output/archives-filmees/1933-jerusalem-mur-occidental.mp4` · source 00:00:00:00 → 00:00:14:14  
+**10.4** · film **00:21:28:04 → 00:21:42:18** (14.6 s) · **[ARCH]** `output/archives-filmees/1933-jerusalem-mur-occidental.mp4` · source 00:00:00:00 → 00:00:14:14  
 Source : film amateur de la famille Levy, 1933, Prelinger Archives (archive.org, Levycoll1933), domaine public ; Agoudat Israël, fondé à Katowice en 1912  
 À l'écran : carton : 1933 · Jérusalem · Au mur occidental (film amateur)  
 > VOIX : Pour beaucoup de rabbins orthodoxes, le sionisme est une faute : / seul le Messie doit ramener les Juifs sur la terre d'Israël. // En 1912, ils fondent leur propre parti, Agoudat **Israël**.  
 (30 mots, 2.1 par seconde)
 
 
-**10.5** · film **00:21:43:14 → 00:22:00:14** (17.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:40:00 → 00:03:57:00  
+**10.5** · film **00:21:42:18 → 00:21:59:18** (17.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:40:00 → 00:03:57:00  
 Source : assassiné le 30 juin 1924 à Jérusalem par Avraham Tehomi, membre de la Haganah, qui l'a reconnu en 1985 (entretien avec Shlomo Nakdimon pour la télévision israélienne)  
 À l'écran : carton : Jérusalem · 30 juin 1924  
 > VOIX : À Jérusalem, Jacob Israël de Haan, poète néerlandais devenu juif orthodoxe, / défend la cause antisioniste auprès des Britanniques et des dirigeants arabes. // Le 30 juin 1924, il est abattu à la sortie d'une synagogue. / Par la **Haganah**.  
 (37 mots, 2.2 par seconde)
 
 
-**10.6** · film **00:22:00:14 → 00:22:13:14** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:57:00 → 00:04:10:00  
+**10.6** · film **00:21:59:18 → 00:22:12:18** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:03:57:00 → 00:04:10:00  
 Source : Brit Shalom, fondé en 1925 (Arthur Ruppin, Hugo Bergmann, Gershom Scholem) ; Ihoud, 1942 (Judah Magnes, Martin Buber)  
 > VOIX : En 1925, des intellectuels sionistes fondent Brit Shalom, / « l'alliance de la paix » : / un seul État pour deux peuples, à égalité. // Ils restent une petite **minorité**.  
 (25 mots, 1.9 par seconde)  
 Note : détail fort : Arthur Ruppin, celui qui organise les achats de terres, en est un des fondateurs
 
 
-**10.7** · film **00:22:13:14 → 00:22:23:05** (9.6 s) · **[ARCH]** `output/archives-filmees/1945-deportes-juifs-liberes.mp4` · source 00:00:00:00 → 00:00:09:16  
+**10.7** · film **00:22:12:18 → 00:22:22:09** (9.6 s) · **[ARCH]** `output/archives-filmees/1945-deportes-juifs-liberes.mp4` · source 00:00:00:00 → 00:00:09:16  
 Source : US Army Signal Corps, « Freed Jews », catalogué le 17 avril 1945 (train de Farsleben, libéré le 13 avril ; identification de Matthew Rozell), archives nationales américaines 111-ADC-9721 (catalogue 23486)  
 À l'écran : carton : avril 1945 · Farsleben, près de Magdebourg · Les rescapés d'un train de déportés juifs, libérés par l'armée américaine  
 > VOIX : Puis viendra la Shoah. // Et pour la plupart des survivants, / la question ne se posera plus de la même **façon**.  
@@ -374,46 +376,47 @@ Source : US Army Signal Corps, « Freed Jews », catalogué le 17 avril 1945 (tr
 
 ## Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens
 
-Film 00:22:23:05 → 00:25:11:23 · durée 2 min 48.7 s
+Film 00:22:22:09 → 00:25:10:16 · durée 2 min 48.3 s
 
 *Intention : La logique du rapport de force, dite par un dirigeant sioniste lui-même : Jabotinsky et le « Mur de fer » (1923), un texte d'une franchise rare. Puis les chiffres de l'immigration et de la terre, et le tournant de 1942 à New York : le mouvement demande toute la Palestine. Finir sur l'ONU, qui ouvre la partie III.*
 
 
-**11.1** · film **00:22:23:05 → 00:22:27:20** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-11.mp4` · source 00:00:00:00 → 00:00:04:15  
+**11.1** · film **00:22:22:09 → 00:22:26:24** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-11.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**11.2** · film **00:22:27:20 → 00:22:32:05** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:19:05 → 00:00:23:15  
+**11.2** · film **00:22:26:24 → 00:22:31:09** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:19:05 → 00:00:23:15  
 À l'écran : fiche de la chronologie : Zeev Jabotinsky  
 > VOIX : silence
 
 
-**11.3** · film **00:22:32:05 → 00:22:48:05** (16.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:04:10:00 → 00:04:26:00  
+**11.3** · film **00:22:31:09 → 00:22:47:09** (16.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:04:10:00 → 00:04:26:00  
 Source : Zeev Jabotinsky, « Le Mur de fer » (O jeleznoï stene), Rassvet, 4 novembre 1923 ; traduction anglaise publiée dans The Jewish Herald, 26 novembre 1937 ; notre traduction  
 > VOIX : En 1923, Zeev Jabotinsky écrit « Le Mur de fer ». / Il ne nie pas ce qu'il voit : / « Toute population indigène résiste aux colons, / tant qu'elle garde le moindre espoir d'échapper à la **colonisation**. »  
 (32 mots, 2.0 par seconde)
 
 
-**11.4** · film **00:22:48:05 → 00:23:01:05** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:01:38:00 → 00:01:51:00  
+**11.4** · film **00:22:47:09 → 00:23:00:09** (13.0 s) · **[MD]** `output/documents-2.mp4` · source 00:01:38:00 → 00:01:51:00  
 À l'écran : « derrière un mur de fer, que la population indigène ne pourra pas percer » · Zeev Jabotinsky, 1923  
 > VOIX : Sa conclusion : / la colonisation ne peut avancer / que « derrière un mur de fer, / que la population indigène ne pourra pas **percer** ».  
 (21 mots, 1.6 par seconde)  
 Note : texte capital pour les deux récits : le récit sioniste y lit le réalisme (on ne négocie qu'en position de force), le récit palestinien la preuve d'un projet colonial assumé. La voix ne commente pas.
 
 
-**11.5** · film **00:23:01:05 → 00:23:11:18** (10.5 s) · **[MD]** `output/aliyas.mp4` · source 00:00:17:00 → 00:00:27:13  
+**11.5** · film **00:23:00:09 → 00:23:10:22** (10.5 s) · **[MD]** `output/aliyas.mp4` · source 00:00:17:00 → 00:00:27:13  
 À l'écran : déjà dans la pièce : De 1919 à 1929 · environ 120 000 arrivées en dix ans  
 > VOIX : Les immigrants arrivent par vagues. / Environ cent vingt mille dans les années **vingt**.  
 (13 mots, 1.2 par seconde)
 
 
-**11.6** · film **00:23:11:18 → 00:23:22:05** (10.5 s) · **[MD]** `output/aliyas.mp4` · source 00:00:27:13 → 00:00:38:00  
-À l'écran : déjà dans la pièce : De 1929 à 1939 · environ 250 000 arrivées, beaucoup fuient l'Allemagne nazie  
+**11.6** · film **00:23:10:22 → 00:23:20:24** (10.1 s) · **[ARCH]** `output/archives-filmees/1938-haifa-paquebot-au-port.mp4` · source 00:00:00:00 → 00:00:10:02  
+Source : SOURCES.md 4.2, March of Time, rushes de 1938 (NARA 200 MTT 666 E)  
+À l'écran : carton : 1938 · Port de Haïfa · L'arrivée d'un paquebot.  
 > VOIX : Deux cent cinquante mille dans les années trente, / beaucoup fuyant l'Allemagne **nazie**.  
-(12 mots, 1.1 par seconde)
+(12 mots, 1.2 par seconde)
 
 
-**11.7** · film **00:23:22:05 → 00:23:33:05** (11.0 s) · **[MD]** `output/aliyas.mp4` · source 00:00:38:00 → 00:00:49:00  
+**11.7** · film **00:23:20:24 → 00:23:31:24** (11.0 s) · **[MD]** `output/aliyas.mp4` · source 00:00:38:00 → 00:00:49:00  
 Source : A Survey of Palestine, 1946 (553 600 juifs sur 1 764 520 habitants à la fin de 1945) ; terres : Village Statistics, 1945 (environ 1,5 million de dounams en propriété juive sur 26,3 millions, soit moins de 6 %)  
 À l'écran : déjà dans la pièce : 1945 · 553 600 Juifs en Palestine · sur 1 764 520 habitants  
 > VOIX : À la fin de la guerre, les Juifs sont presque un tiers des habitants. / Ils possèdent moins de six pour cent des **terres**.  
@@ -421,35 +424,35 @@ Source : A Survey of Palestine, 1946 (553 600 juifs sur 1 764 520 habitants à l
 Note : 6 % des terres de toute la Palestine, désert du Néguev compris ; à garder pour le chapitre 12
 
 
-**11.8** · film **00:23:33:05 → 00:23:46:05** (13.0 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:00:00 → 00:00:13:00  
+**11.8** · film **00:23:31:24 → 00:23:44:24** (13.0 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, d'après les Village Statistics 1945 (Jaffa 39 %, Tibériade 38 %, Haïfa 35 %, Beisan 34 %)  
 À l'écran : fiche : La terre en 1945 · part juive des terres, sous-district par sous-district  
 > VOIX : Ces terres sont concentrées dans la plaine côtière et les vallées du nord : / à Jaffa, à Tibériade, à Haïfa, à Beisan, / plus d'un tiers des terres du sous-**district**.  
 (29 mots, 2.2 par seconde)
 
 
-**11.9** · film **00:23:46:05 → 00:23:56:05** (10.0 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:13:00 → 00:00:23:00  
+**11.9** · film **00:23:44:24 → 00:23:54:24** (10.0 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:13:00 → 00:00:23:00  
 Source : Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, d'après les Village Statistics 1945 (Jénine, Naplouse, Ramallah, Hébron, Beersheba : moins de 1 %)  
 À l'écran : fiche : Moins de 1 % · les collines et le sud  
 > VOIX : Dans les collines de Jénine, de Naplouse, de Ramallah et d'Hébron, / moins de un pour **cent**.  
 (16 mots, 1.6 par seconde)
 
 
-**11.10** · film **00:23:56:05 → 00:24:04:18** (8.5 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:23:00 → 00:00:31:13  
+**11.10** · film **00:23:54:24 → 00:24:03:11** (8.5 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:23:00 → 00:00:31:13  
 Source : Village Statistics 1945 ; plan de partage, résolution 181 de l'ONU, 29 novembre 1947 ; lignes d'armistice de 1949  
 À l'écran : carton : Moins de 6 % en 1945 · 56 % attribués en 1947 · 78 % en 1949  
 > VOIX : En 1947, le plan de partage attribuera 56 % du territoire à l'État juif. / En 1949, Israël en tiendra **78 %**.  
 (19 mots, 2.2 par seconde)
 
 
-**11.11** · film **00:24:04:18 → 00:24:17:18** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:04:26:00 → 00:04:39:00  
+**11.11** · film **00:24:03:11 → 00:24:16:11** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:04:26:00 → 00:04:39:00  
 Source : programme de Biltmore, conférence sioniste extraordinaire, hôtel Biltmore, New York, 6-11 mai 1942  
 À l'écran : carton : New York · mai 1942  
 > VOIX : En mai 1942, à New York, / le mouvement sioniste, poussé par David Ben Gourion, / demande que la Palestine devienne « un Commonwealth **juif** ».  
 (22 mots, 1.7 par seconde)
 
 
-**11.12** · film **00:24:17:18 → 00:24:35:22** (18.2 s) · **[ARCH]** `output/archives-filmees/1945-roosevelt-ibn-saoud.mp4` · source 00:00:00:00 → 00:00:18:04  
+**11.12** · film **00:24:16:11 → 00:24:34:15** (18.2 s) · **[ARCH]** `output/archives-filmees/1945-roosevelt-ibn-saoud.mp4` · source 00:00:00:00 → 00:00:18:04  
 Source : actualités Universal du 21 février 1945 (archives nationales américaines), domaine public ; lettre de Roosevelt à Ibn Saoud du 5 avril 1945, Foreign Relations of the United States 1945, vol. VIII (texte : Avalon Project, Yale)  
 À l'écran : carton : février 1945 · Grand Lac Amer · Roosevelt reçoit Ibn Saoud  
 > VOIX : Février 1945. / Sur un croiseur américain, Roosevelt reçoit le roi d'Arabie saoudite, Ibn Saoud. // Le 5 avril, il lui écrit qu'il ne prendra aucune mesure / « qui pourrait se révéler hostile au peuple arabe ». / Il meurt une semaine plus **tard**.  
@@ -457,7 +460,7 @@ Source : actualités Universal du 21 février 1945 (archives nationales américa
 Note : texte anglais : « I would take no action […] which might prove hostile to the Arab people »
 
 
-**11.13** · film **00:24:35:22 → 00:24:48:06** (12.4 s) · **[ARCH]** `output/archives-filmees/1945-francfort-personnes-deplacees-juives.mp4` · source 00:00:00:00 → 00:00:12:09  
+**11.13** · film **00:24:34:15 → 00:24:46:24** (12.4 s) · **[ARCH]** `output/archives-filmees/1945-francfort-personnes-deplacees-juives.mp4` · source 00:00:00:00 → 00:00:12:09  
 Source : US Army Signal Corps, « D P Zionist demonstration, Frankfurt, Germany », novembre 1945, archives nationales américaines 111-ADC-5604 (catalogue 19403) ; banderole « Open the gates of Palestine » à l'image  
 À l'écran : carton : 16 novembre 1945 · Francfort · Des personnes déplacées juives manifestent  
 > VOIX : Fin 1945, en Allemagne, les survivants juifs attendent encore, / dans des camps de personnes déplacées. // À Francfort, ils défilent : / « Ouvrez les portes de la **Palestine**. »  
@@ -465,23 +468,25 @@ Source : US Army Signal Corps, « D P Zionist demonstration, Frankfurt, Germany 
 Note : banderoles à l'image : « There cannot be real world freedom without Jewish freedom », « Open the gates of Palestine », une pancarte qui remercie le président Truman
 
 
-**11.14** · film **00:24:48:06 → 00:25:02:15** (14.4 s) · **[ARCH]** `output/archives-filmees/1946-refugies-juifs-palestine.mp4` · source 00:00:00:00 → 00:00:14:09  
+**11.14** · film **00:24:46:24 → 00:25:01:08** (14.4 s) · **[ARCH]** `output/archives-filmees/1946-refugies-juifs-palestine.mp4` · source 00:00:00:00 → 00:00:14:09  
 Source : United News (Office of War Information), actualité de juin 1946, archives nationales américaines ARC 39119, domaine public  
 À l'écran : carton : 1946 · Palestine · Des réfugiés juifs d'Europe débarquent  
 > VOIX : En 1946, des réfugiés juifs d'Europe, rescapés de la guerre et de la Shoah, débarquent en **Palestine**.  
 (17 mots, 1.2 par seconde)
 
 
-**11.15** · film **00:25:02:15 → 00:25:06:22** (4.3 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-01.mp4` · source 00:00:00:00 → 00:00:04:08  
+**11.15** · film **00:25:01:08 → 00:25:05:16** (4.3 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-01.mp4` · source 00:00:00:00 → 00:00:04:08  
 > VOIX : Après la guerre, épuisée, / la Grande-Bretagne  
 (6 mots, 1.4 par seconde)
 
 
-**11.16** · film **00:25:06:22 → 00:25:11:23** (5.0 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-07.mp4` · source 00:00:00:00 → 00:00:05:00  
+**11.16** · film **00:25:05:16 → 00:25:10:16** (5.0 s) · **[ARCH]** `output/archives-filmees/1947-exodus-haifa.mp4` · source 00:00:00:00 → 00:00:05:00  
+Source : SOURCES.md 4.2, Castle Films, « Unrest in Palestine and Exodus ship », 1947 (musée américain de l'Holocauste, film 2876, domaine public)  
+À l'écran : carton : Juillet 1947 · Haïfa · L'Exodus, navire de réfugiés juifs arraisonné par les Britanniques.  
 > VOIX : remet la question à l'ONU. // Nous sommes en **1947**. ///  
 (9 mots, 1.8 par seconde)  
 Son : montée lente vers l'ouverture de la partie III
 
 
 ---
-Durée de la partie : 12 min 22.2 s (film 00:12:49:18 → 00:25:11:23)
+Durée de la partie : 12 min 20.9 s (film 00:12:49:18 → 00:25:10:16)

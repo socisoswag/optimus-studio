@@ -145,6 +145,43 @@ ARCHIVES = {
     # même film : le roi Hussein en gros plan, puis des hommes armés derrière des sacs de sable et un mortier
     "1970-roi-hussein-et-hommes-armes": ("https://upload.wikimedia.org/wikipedia/commons/b/ba/King_Hussein_1970.ogv",
                                          "", "628:470:6:5", [(36.0, 41.0), (123.7, 126.8), (131.0, 136.0)]),
+    # rushes de la March of Time (cédés sans restriction aux États-Unis, Archives nationales américaines, catalogue 124450989
+    # et suivants ; copie archive.org FedFlix), recadrés au-dessus du minutage incrusté : 1938, une colonie juive de la plaine
+    # côtière, un tracteur qui défriche
+    "1938-colonie-juive-et-tracteur": ("https://archive.org/download/mt-mtt-666t/mt-mtt-666t.mp4", "", "696:376:12:6",
+                                       [(36.7, 43.5), (63.7, 68.5)], {"film24": True}),
+    # même fonds, 1938 (NARA 200 MTT 666 F, caméra S. R. Sozio ; date de la notice du musée américain de l'Holocauste,
+    # irn1001006) : les rues commerçantes de Tel-Aviv, un boulevard vu d'en haut
+    "1938-tel-aviv-rues": ("https://archive.org/download/mt-mtt-666f/mt-mtt-666f.mp4", "", "696:376:12:6",
+                           [(283.6, 290.0), (296.4, 301.6), (415.2, 418.8)], {"film24": True}),
+    # même fonds, 1938 : un paquebot à quai dans le port de Haïfa, des hommes sur le quai
+    "1938-haifa-paquebot-au-port": ("https://archive.org/download/mt-mtt-666e/mt-mtt-666e.mp4", "", "696:376:12:6",
+                                    [(292.3, 302.8)], {"film24": True}),
+    # Castle Films, « Unrest in Palestine and Exodus ship », 1947 (musée américain de l'Holocauste, film 2876, domaine public) :
+    # l'Exodus à Haïfa, des enfants à un hublot défoncé, les soldats britanniques sur le quai ; recadré au-dessus du minutage
+    "1947-exodus-haifa": ("https://film-assets.ushmm.org/mp4/FV2876_RG604848.01.01.mp4", "", "624:432:8:10",
+                          [(115.6, 117.3), (118.6, 121.3), (121.5, 122.6)], {"decimer": True}),
+    # Universal Newsreel du 18 mai 1948 (USHMM, irn1000897, domaine public), autre passage : deux soldats tiennent le drapeau
+    # du nouvel État
+    "1948-mai-drapeau": ("https://film-assets.ushmm.org/mp4/FV0936_RG601137.01.01.mp4", "", "624:400:8:16",
+                                [(66.95, 70.85)], {"decimer": True}),
+    # « Hagana Troops », 1948, rushes Universal (NARA 200 UN 5894x3 ; USHMM, film 929, irn1000361, domaine public), date
+    # exacte non établie, tourné à Jérusalem et à Haïfa selon la notice : des familles arabes
+    # assises avec leurs ballots au port, des femmes qui partent avec un landau ; aucun corps à l'image (la fin du film en montre,
+    # écartée)
+    "1948-familles-arabes-qui-partent": ("https://film-assets.ushmm.org/mp4/FV0929_RG601026.01.01.mp4", "", "624:416:8:8",
+                                        [(36.9, 39.5), (117.5, 121.0)], {"decimer": True}),
+    # même film : des hommes emmenés en camion par des soldats, un soldat de la Haganah, des hommes fouillés, d'autres arrêtés
+    # et assis au sol, un soldat sur les décombres
+    "1948-haganah-fouilles-et-arrestations": ("https://film-assets.ushmm.org/mp4/FV0929_RG601026.01.01.mp4", "", "624:416:8:8",
+                                         [(29.6, 34.1), (97.4, 98.6), (101.9, 105.1), (108.2, 112.8), (105.8, 107.3)],
+                                         {"decimer": True}),
+    # rushes de la March of Time, 1938 (NARA 200 MTT 666 CC, caméra S. R. Sozio ; musée américain de l'Holocauste, irn1001012,
+    # domaine public) : un convoi du 2e bataillon du Royal West Kent Regiment, stationné à Haïfa, en route vers le village de
+    # Qaddum, en Samarie ; les soldats avancent à travers les collines ; un prêtre et des villageois interrogés, des papiers
+    # contrôlés ; recadré au-dessus du minutage
+    "1938-convoi-britannique-village": ("https://film-assets.ushmm.org/mp4/FV0047_RG600915.01.01.mp4", "", "624:420:8:10",
+                                        [(157.0, 160.5), (308.5, 313.0), (348.5, 352.5), (358.5, 361.0)], {"decimer": True}),
     "1956-suez-flotte-et-avions": ("1956-11-01_War_in_Egypt", "1956-11-01_War_in_Egypt.mpeg", "696:458:10:10",
                                    [(57.2, 60.0), (66.2, 67.6), (68.2, 70.6), (74.2, 76.6), (78.2, 80.6)]),
 }
@@ -181,6 +218,9 @@ def cadence(src, net, opts):
         return "fieldmatch=order=auto:combmatch=full,yadif=deint=interlaced,decimate", "24000/1001"
     if opts.get("decimer"):
         return "decimate", "24000/1001"
+    if opts.get("film24"):
+        # copie vidéo à 60 images par seconde d'un film à 24 : on reprend 24 images par seconde (puis 25 sans en doubler)
+        return "fps=24000/1001", "24000/1001"
     return "null", fps
 
 

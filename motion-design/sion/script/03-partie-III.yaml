@@ -111,17 +111,22 @@ chapitres:
         fichier: output/chapitres/chapitre-13.mp4
         entree: 0
         sortie: 4.6
-      - type: MD
-        fichier: output/chronologie.mp4
-        entree: 32.4
-        sortie: 36.8
-        ecran: "fiche de la chronologie : David Ben Gourion · carton : output/cartons/tel-aviv-1948"
+      - type: ARCH
+        fichier: output/archives-filmees/1948-mai-drapeau.mp4
+        carton: output/cartons/65-arch-1948-mai-drapeau.mov
+        entree: 0
+        sortie: 3.8
+        ecran: "carton : Mai 1948 · Israël · Le drapeau du nouvel État."
+        source: "SOURCES.md 4.2, Universal Newsreel du 18 mai 1948, « Jews Defend New Zion State » (USHMM irn1000897) ; ce n'est pas la proclamation elle-même"
         voix: >-
           14 mai 1948. / Ben Gourion proclame l'État d'**Israël**.
-      - type: MD
-        fichier: output/nakba-1948.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1948-familles-arabes-qui-partent.mp4
+        carton: output/cartons/66-arch-1948-familles-arabes-qui-partent.mov
         entree: 0
-        sortie: 6
+        sortie: 5.84
+        ecran: "carton : 1948 · Palestine · Des familles arabes avec leurs ballots."
+        source: "SOURCES.md 4.2, « Hagana Troops », rushes Universal de 1948 (NARA 200 UN 5894x3 ; USHMM film 929, domaine public)"
         voix: >-
           Pour les Palestiniens, c'est la Nakba. / La **catastrophe**.
       - type: MD
@@ -132,10 +137,13 @@ chapitres:
         source: "plan Dalet de la Haganah, 10 mars 1948 (traduction de Walid Khalidi, Journal of Palestine Studies, 1988) ; Ilan Pappé, Le Nettoyage ethnique de la Palestine, 2006 ; Benny Morris, 2004"
         voix: >-
           Dès le 10 mars 1948, la Haganah adopte le plan Dalet. / Il prévoit de détruire des villages, / et, en cas de résistance, / d'expulser leurs habitants « hors des frontières de l'**État** ».
-      - type: MD
-        fichier: output/nakba-1948.mp4
-        entree: 6
-        sortie: 20
+      - type: ARCH
+        fichier: output/archives-filmees/1948-haganah-fouilles-et-arrestations.mp4
+        carton: output/cartons/67-arch-1948-haganah-fouilles-et-arrestations.mov
+        entree: 0
+        sortie: 14
+        ecran: "carton : 1948 · Palestine · Des soldats de la Haganah fouillent et arrêtent des hommes."
+        source: "SOURCES.md 4.2, « Hagana Troops », rushes Universal de 1948 (NARA 200 UN 5894x3 ; USHMM film 929, domaine public)"
         voix: >-
           Avant même l'entrée des armées arabes, / Tibériade, Haïfa, Safed et Jaffa sont prises. / Leurs habitants
           arabes fuient, / ou sont **chassés**.

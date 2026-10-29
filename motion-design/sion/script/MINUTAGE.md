@@ -12,45 +12,45 @@
 | Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface | 00:08:50:05 | 3 min 59.5 s |
 | Ouverture de la partie II | 00:12:49:18 | 0 min 14.6 s |
 | Chapitre 7 · La déclaration Balfour (1917) | 00:13:04:08 | 2 min 21.5 s |
-| Chapitre 8 · Le mandat britannique : trente ans sous tension | 00:15:25:20 | 4 min 00.0 s |
-| Chapitre 9 · L'accord Haavara et l'assassinat d'Arlosoroff | 00:19:25:20 | 1 min 27.6 s |
-| Chapitre 10 · Les Juifs face au sionisme : le grand débat | 00:20:53:10 | 1 min 29.8 s |
-| Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens | 00:22:23:05 | 2 min 48.7 s |
-| Ouverture de la partie III | 00:25:11:23 | 0 min 15.8 s |
-| Chapitre 12 · 1947 : le plan de partage de l'ONU | 00:25:27:17 | 2 min 06.4 s |
-| Chapitre 13 · 1948 : la création d'Israël et la Nakba | 00:27:34:02 | 3 min 31.0 s |
-| Chapitre 14 · Les milices juives : Haganah, Irgoun, Lehi | 00:31:05:01 | 1 min 37.0 s |
-| Chapitre 15 · Le massacre de Deir Yassin | 00:32:42:01 | 1 min 30.6 s |
-| Chapitre 16 · David Ben Gourion : l'État avant tout | 00:34:12:16 | 1 min 39.6 s |
-| Chapitre 17 · L'exode des Juifs des pays arabes | 00:35:52:06 | 1 min 10.2 s |
-| Chapitre 18 · Golda Meir : « Ils n'existaient pas » | 00:37:02:12 | 1 min 11.2 s |
-| Ouverture de la partie IV | 00:38:13:16 | 0 min 13.6 s |
-| Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation | 00:38:27:06 | 5 min 56.8 s |
-| Chapitre 20 · Les camps palestiniens et la vie dans l'exil | 00:44:24:00 | 2 min 42.2 s |
-| Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans État | 00:47:06:05 | 2 min 13.5 s |
-| Chapitre 22 · Les intifadas : deux soulèvements | 00:49:19:17 | 2 min 11.4 s |
-| Chapitre 23 · Oslo, le mur et les colonies | 00:51:31:01 | 4 min 14.7 s |
-| Ouverture de la partie V | 00:55:45:20 | 0 min 14.0 s |
-| Chapitre 24 · Netanyahou, Lieberman : leurs propres mots | 00:55:59:20 | 1 min 33.6 s |
-| Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre | 00:57:33:10 | 10 min 09.6 s |
-| Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique | 01:07:43:01 | 2 min 01.0 s |
-| Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation | 01:09:44:01 | 1 min 21.8 s |
-| Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens | 01:11:05:21 | 1 min 55.6 s |
-| Ouverture de la partie VI | 01:13:01:11 | 0 min 14.4 s |
-| Chapitre 29 · Les Juifs antisionistes : Neturei Karta, Jewish Voice for Peace | 01:13:15:21 | 1 min 14.6 s |
-| Chapitre 30 · Les religieux contre le sionisme : foi ou nationalisme ? | 01:14:30:11 | 1 min 03.6 s |
-| Chapitre 31 · Les intellectuels français : BHL, Finkielkraut et le débat public | 01:15:34:01 | 3 min 45.6 s |
-| Ouverture de la partie VII | 01:19:19:16 | 0 min 12.8 s |
-| Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique | 01:19:32:11 | 1 min 42.0 s |
-| Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338 | 01:21:14:10 | 3 min 01.6 s |
-| Chapitre 34 · L'effacement culturel : villages détruits, noms effacés | 01:24:16:01 | 1 min 35.3 s |
-| Chapitre 35 · Colonialisme, apartheid : le poids des mots | 01:25:51:09 | 3 min 51.4 s |
-| Chapitre 36 · La fracture en Israël : la démocratie en question | 01:29:42:19 | 0 min 54.8 s |
-| Ouverture de la conclusion | 01:30:37:14 | 0 min 14.0 s |
-| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:30:51:14 | 0 min 29.2 s |
-| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:31:20:18 | 1 min 44.6 s |
-| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:33:05:08 | 1 min 36.2 s |
-| **Total** | | **94 min 41.5 s** |
+| Chapitre 8 · Le mandat britannique : trente ans sous tension | 00:15:25:20 | 3 min 59.2 s |
+| Chapitre 9 · L'accord Haavara et l'assassinat d'Arlosoroff | 00:19:24:24 | 1 min 27.6 s |
+| Chapitre 10 · Les Juifs face au sionisme : le grand débat | 00:20:52:14 | 1 min 29.8 s |
+| Chapitre 11 · Congrès sionistes et montée des tensions avec les Arabes palestiniens | 00:22:22:09 | 2 min 48.3 s |
+| Ouverture de la partie III | 00:25:10:16 | 0 min 15.8 s |
+| Chapitre 12 · 1947 : le plan de partage de l'ONU | 00:25:26:11 | 2 min 06.4 s |
+| Chapitre 13 · 1948 : la création d'Israël et la Nakba | 00:27:32:21 | 3 min 30.2 s |
+| Chapitre 14 · Les milices juives : Haganah, Irgoun, Lehi | 00:31:03:01 | 1 min 37.0 s |
+| Chapitre 15 · Le massacre de Deir Yassin | 00:32:40:01 | 1 min 30.6 s |
+| Chapitre 16 · David Ben Gourion : l'État avant tout | 00:34:10:16 | 1 min 39.6 s |
+| Chapitre 17 · L'exode des Juifs des pays arabes | 00:35:50:06 | 1 min 10.2 s |
+| Chapitre 18 · Golda Meir : « Ils n'existaient pas » | 00:37:00:11 | 1 min 11.2 s |
+| Ouverture de la partie IV | 00:38:11:15 | 0 min 13.6 s |
+| Chapitre 19 · Cisjordanie, Gaza, Jérusalem : l'occupation | 00:38:25:05 | 5 min 56.8 s |
+| Chapitre 20 · Les camps palestiniens et la vie dans l'exil | 00:44:21:24 | 2 min 42.2 s |
+| Chapitre 21 · Yasser Arafat : l'icône d'un peuple sans État | 00:47:04:04 | 2 min 13.5 s |
+| Chapitre 22 · Les intifadas : deux soulèvements | 00:49:17:17 | 2 min 11.4 s |
+| Chapitre 23 · Oslo, le mur et les colonies | 00:51:29:01 | 4 min 14.7 s |
+| Ouverture de la partie V | 00:55:43:19 | 0 min 14.0 s |
+| Chapitre 24 · Netanyahou, Lieberman : leurs propres mots | 00:55:57:19 | 1 min 33.6 s |
+| Chapitre 25 · Gaza : le blocus, le 7 octobre, la guerre | 00:57:31:09 | 10 min 09.6 s |
+| Chapitre 26 · Le sionisme religieux : quand la foi devient programme politique | 01:07:41:00 | 2 min 01.0 s |
+| Chapitre 27 · La guerre numérique : campagnes d'influence, faux profils et désinformation | 01:09:42:00 | 1 min 21.8 s |
+| Chapitre 28 · Les discriminations en Israël : mizrahim, Éthiopiens, Palestiniens | 01:11:03:20 | 1 min 55.6 s |
+| Ouverture de la partie VI | 01:12:59:10 | 0 min 14.4 s |
+| Chapitre 29 · Les Juifs antisionistes : Neturei Karta, Jewish Voice for Peace | 01:13:13:20 | 1 min 14.6 s |
+| Chapitre 30 · Les religieux contre le sionisme : foi ou nationalisme ? | 01:14:28:10 | 1 min 03.6 s |
+| Chapitre 31 · Les intellectuels français : BHL, Finkielkraut et le débat public | 01:15:32:00 | 3 min 45.6 s |
+| Ouverture de la partie VII | 01:19:17:15 | 0 min 12.8 s |
+| Chapitre 32 · La mémoire de la Shoah : entre deuil et usage politique | 01:19:30:10 | 1 min 42.0 s |
+| Chapitre 33 · Les résolutions de l'ONU ignorées : 194, 242, 338 | 01:21:12:10 | 3 min 01.6 s |
+| Chapitre 34 · L'effacement culturel : villages détruits, noms effacés | 01:24:14:01 | 1 min 35.3 s |
+| Chapitre 35 · Colonialisme, apartheid : le poids des mots | 01:25:49:09 | 3 min 51.4 s |
+| Chapitre 36 · La fracture en Israël : la démocratie en question | 01:29:40:19 | 0 min 54.8 s |
+| Ouverture de la conclusion | 01:30:35:14 | 0 min 14.0 s |
+| Chapitre 37 · Le droit des peuples à disposer d'eux-mêmes | 01:30:49:14 | 0 min 29.2 s |
+| Chapitre 38 · La souffrance palestinienne : entre mémoire, poésie et lumière | 01:31:18:18 | 1 min 44.6 s |
+| Chapitre 39 · Pour une paix juste : aimer la terre, pas la détruire | 01:33:03:08 | 1 min 36.2 s |
+| **Total** | | **94 min 39.5 s** |
 
 ## Voix trop longue pour le plan
 

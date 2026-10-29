@@ -70,6 +70,14 @@
     ["arch-1970-roi-hussein-et-hommes-armes", "1970", "Jordanie", "Le roi Hussein."],
     ["arch-chatila-2023-camp-et-fresque", "2023", "Camp de Chatila, Beyrouth", "« Nous n’oublierons jamais », sur un mur du camp."],
     ["arch-1973-golda-meir-soldats-sinai", "15 octobre 1973", "Front du Sinaï", "Golda Meir parmi les soldats, pendant la guerre du Kippour."],
+    ["arch-1938-colonie-juive-et-tracteur", "1938", "Palestine mandataire", "Une colonie juive, un tracteur qui défriche."],
+    ["arch-1938-convoi-britannique-village", "1938", "Samarie", "Un convoi de l’armée britannique en route vers le village de Qaddum."],
+    ["arch-1938-tel-aviv-rues", "1938", "Tel-Aviv", "Les rues commerçantes."],
+    ["arch-1938-haifa-paquebot-au-port", "1938", "Port de Haïfa", "L’arrivée d’un paquebot."],
+    ["arch-1947-exodus-haifa", "Juillet 1947", "Haïfa", "L’Exodus, navire de réfugiés juifs arraisonné par les Britanniques."],
+    ["arch-1948-mai-drapeau", "Mai 1948", "Israël", "Le drapeau du nouvel État."],
+    ["arch-1948-familles-arabes-qui-partent", "1948", "Palestine", "Des familles arabes avec leurs ballots."],
+    ["arch-1948-haganah-fouilles-et-arrestations", "1948", "Palestine", "Des soldats de la Haganah fouillent et arrêtent des hommes."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

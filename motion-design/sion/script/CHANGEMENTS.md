@@ -425,3 +425,21 @@ En réserve, pas encore posés : Anata, le mur à Jérusalem, Ramallah (2), le d
 contre-jour, Jaffa, le mont Thabor, Beit Netofa, le berger bédouin, la plage de Tel-Aviv (trop courte pour 9.6), un
 village palestinien des collines, le bulldozer D9 (lieu inconnu : pas pour 23.15, où il s'agit de démolitions faute de
 permis en Cisjordanie), le campement bédouin (lieu inconnu), Srigim (pas une colonie).
+
+
+**Archives de 1938 à 1948 posées** (March of Time, Castle Films, Universal ; domaine public d'après les Archives nationales
+américaines et le musée américain de l'Holocauste ; aucun corps à l'image ; légendes 60 à 67 dans `cartons/`)
+
+| Plan | Ancien fichier | Nouveau fichier | Ce que c'est |
+|---|---|---|---|
+| 08.12 | `08.12-PHOTO-5-34-tracteur-jezreel.mp4` | `08.12-ARCH-1938-colonie-juive-et-tracteur.mp4` | une colonie juive et un tracteur, 1938 (11,2 s, avant 12) |
+| 08.17 | `08.17-IA-13-21-maison-dynamitee-lydda-1936.mp4` | `08.17-ARCH-1938-convoi-britannique-village.mp4` | un convoi britannique vers un village de Samarie pendant la grande révolte, 1938 ; la reconstitution de Lydda passe en réserve du chapitre |
+| 09.04 | `09.04-MD-documents-2.mp4` | `09.04-ARCH-1938-tel-aviv-rues.mp4` | les rues de Tel-Aviv, 1938 |
+| 11.06 | `11.06-MD-aliyas.mp4` | `11.06-ARCH-1938-haifa-paquebot-au-port.mp4` | un paquebot au port de Haïfa, 1938 (10,1 s, avant 10,5) |
+| 11.16 | `11.16-ARCH-1930-paths-to-palestine-07.mp4` | `11.16-ARCH-1947-exodus-haifa.mp4` | l'Exodus à Haïfa, juillet 1947 |
+| 13.02 | `13.02-MD-chronologie.mp4` | `13.02-ARCH-1948-mai-drapeau.mp4` | le drapeau du nouvel État, mai 1948 (3,8 s, avant 4,4) |
+| 13.03 | `13.03-MD-nakba-1948.mp4` | `13.03-ARCH-1948-familles-arabes-qui-partent.mp4` | des familles arabes avec leurs ballots, 1948 (5,8 s, avant 6) |
+| 13.05 | `13.05-MD-nakba-1948.mp4` | `13.05-ARCH-1948-haganah-fouilles-et-arrestations.mp4` | des soldats de la Haganah fouillent et arrêtent des hommes, 1948 |
+
+Corrigé d'après le dossier Perplexity : les rushes de Tel-Aviv sont de 1938 (pas 1936) ; « Hagana Troops » n'a pas de date
+exacte ni un seul lieu, la légende dit donc « 1948 · Palestine ».

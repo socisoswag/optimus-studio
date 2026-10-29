@@ -148,6 +148,9 @@ chapitres:
     reserve:
       - fichier: output/reconstitutions/8-09b-nebi-musa-drapeaux.mp4
         note: "les bannières de Nebi Musa arrivent à al-Aqsa, 1918 (la vraie photo, puis la reconstitution par IA) : pour prolonger le plan 8.7"
+      - fichier: output/reconstitutions/13-21-maison-dynamitee-lydda-1936.mp4
+        type: IA
+        note: "1936 · Lydda · Maison dynamitée par l'armée britannique · Photo d'archive animée par IA (avant au plan 8.17, remplacée par le vrai convoi de 1938 ; à reprendre si tu la préfères)"
     intention: >-
       Trente ans en trois minutes. Un pouvoir étranger qui refuse un gouvernement élu (la majorité aurait dit non),
       les violences de 1920, 1921 et 1929 avec leurs morts juifs et arabes, Hébron, la révolte de 1936 et sa
@@ -252,13 +255,14 @@ chapitres:
         source: "ventes Sursock, plaine de Jezréel, années 1920 ; chiffres présentés autour de la commission Shaw, 1930 (environ 240 000 dounams, 1 746 familles), discutés par les historiens"
         voix: >-
           Sous le mandat, les ventes changent d'échelle. / Dans les années 1920, la famille Sursock vend une grande partie de la plaine de Jezréel. / Selon les chiffres cités en 1930, plus de mille sept cents familles de métayers doivent **partir**.
-      - type: PHOTO
-        fichier: output/photos-fixes/5-34-tracteur-jezreel.mp4
-        photo: "Bibliothèque du Congrès, collection Matson, domaine public (no known restrictions), LC-DIG-matpc-15225, « The Keren Hayesod. Agricultural colonies on Plain of Esdraelon \"The Emek.\" Tractor disc plowing », vers 1920-1933"
+      - type: ARCH
+        fichier: output/archives-filmees/1938-colonie-juive-et-tracteur.mp4
+        carton: output/cartons/60-arch-1938-colonie-juive-et-tracteur.mov
         entree: 0
-        sortie: 12
-        ecran: "déjà dans le plan : Années 1920 · Plaine de Jezréel · Un tracteur laboure une terre achetée pour les colonies juives · Photo d'archive"
-        source: "migrations rurales vers Haïfa et recrutement d'Izz ad-Din al-Qassam dans les milieux populaires (PalQuest ; Mark Sanagan, Lightning through the Clouds, 2020)"
+        sortie: 11.16
+        ecran: "carton : 1938 · Palestine mandataire · Une colonie juive, un tracteur qui défriche."
+        source: "SOURCES.md 4.2, March of Time, rushes de 1938 (NARA 200 MTT 666 T), cédés sans restriction aux États-Unis ; migrations rurales vers Haïfa et recrutement d'Izz ad-Din al-Qassam dans les milieux populaires (PalQuest ; Mark Sanagan, Lightning through the Clouds, 2020)"
+        photo: "Bibliothèque du Congrès, collection Matson, domaine public (no known restrictions), LC-DIG-matpc-15225, « The Keren Hayesod. Agricultural colonies on Plain of Esdraelon \"The Emek.\" Tractor disc plowing », vers 1920-1933"
         voix: >-
           Sur ces terres naissent des colonies juives. / Des paysans sans terre partent vers Haïfa et ses quartiers pauvres. // C'est là que recrutera Izz ad-Din al-**Qassam**.
       - type: MD
@@ -292,15 +296,13 @@ chapitres:
         source: "SOURCES.md 2.2, matpc 18170 (le souk des bijoutiers, désert pendant les six mois de grève, 1936)"
         voix: >-
           En 1936, la Palestine arabe se met en grève. / Six mois. // C'est le début de la grande **révolte**.
-      - type: IA
-        fichier: output/reconstitutions/13-21-maison-dynamitee-lydda-1936.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1938-convoi-britannique-village.mp4
+        carton: output/cartons/61-arch-1938-convoi-britannique-village.mov
         entree: 0
         sortie: 12
-        ecran: "déjà dans le plan : 1936 · Lydda · Maison dynamitée par l'armée · Photo d'archive animée par IA"
-        source: >-
-          SOURCES.md 2.2, matpc 18126 (maison de Lydda dynamitée sur ordre militaire, 1936) ;
-          bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centaines de Juifs (article « 1936-1939 Arab
-          revolt in Palestine », d'après Walid Khalidi et Matthew Hughes, Britain's Pacification of Palestine, 2019)
+        ecran: "carton : 1938 · Samarie · Un convoi de l'armée britannique en route vers le village de Qaddum."
+        source: "SOURCES.md 4.2, March of Time, rushes de 1938 (NARA 200 MTT 666 CC ; musée américain de l'Holocauste, irn1001012) ; SOURCES.md 2.2, matpc 18126 (maison de Lydda dynamitée sur ordre militaire, 1936) ; bilan : environ 5 000 Arabes tués, 262 Britanniques et plusieurs centaines de Juifs (article « 1936-1939 Arab revolt in Palestine », d'après Walid Khalidi et Matthew Hughes, Britain's Pacification of Palestine, 2019)"
         voix: >-
           La répression britannique est terrible : / maisons dynamitées, / pendaisons, / villages punis. // En trois
           ans, environ cinq mille Arabes sont **tués**.
@@ -391,10 +393,13 @@ chapitres:
           En août 1933, un accord est signé avec l'Allemagne nazie : / Haavara, « le transfert » en hébreu. / Les
           Juifs qui partent pour la Palestine sauvent une partie de leurs biens, / sous forme de marchandises
           **allemandes**.
-      - type: MD
-        fichier: output/documents-2.mp4
-        entree: 69
-        sortie: 82
+      - type: ARCH
+        fichier: output/archives-filmees/1938-tel-aviv-rues.mp4
+        carton: output/cartons/62-arch-1938-tel-aviv-rues.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : 1938 · Tel-Aviv · Les rues commerçantes."
+        source: "SOURCES.md 4.2, March of Time, rushes de 1938 (NARA 200 MTT 666 F ; date de la notice USHMM irn1001006)"
         voix: >-
           Environ soixante mille Juifs allemands gagnent ainsi la Palestine avant la guerre. // Mais l'accord brise le
           boycott des produits allemands, / lancé par des Juifs du monde **entier**.
@@ -551,11 +556,13 @@ chapitres:
         ecran: "déjà dans la pièce : De 1919 à 1929 · environ 120 000 arrivées en dix ans"
         voix: >-
           Les immigrants arrivent par vagues. / Environ cent vingt mille dans les années **vingt**.
-      - type: MD
-        fichier: output/aliyas.mp4
-        entree: 27.5
-        sortie: 38
-        ecran: "déjà dans la pièce : De 1929 à 1939 · environ 250 000 arrivées, beaucoup fuient l'Allemagne nazie"
+      - type: ARCH
+        fichier: output/archives-filmees/1938-haifa-paquebot-au-port.mp4
+        carton: output/cartons/63-arch-1938-haifa-paquebot-au-port.mov
+        entree: 0
+        sortie: 10.08
+        ecran: "carton : 1938 · Port de Haïfa · L'arrivée d'un paquebot."
+        source: "SOURCES.md 4.2, March of Time, rushes de 1938 (NARA 200 MTT 666 E)"
         voix: >-
           Deux cent cinquante mille dans les années trente, / beaucoup fuyant l'Allemagne **nazie**.
       - type: MD
@@ -639,9 +646,12 @@ chapitres:
         voix: >-
           Après la guerre, épuisée, / la Grande-Bretagne
       - type: ARCH
-        fichier: output/archives-filmees/1930-paths-to-palestine-07.mp4
+        fichier: output/archives-filmees/1947-exodus-haifa.mp4
+        carton: output/cartons/64-arch-1947-exodus-haifa.mov
         entree: 0
         sortie: 5
+        ecran: "carton : Juillet 1947 · Haïfa · L'Exodus, navire de réfugiés juifs arraisonné par les Britanniques."
+        source: "SOURCES.md 4.2, Castle Films, « Unrest in Palestine and Exodus ship », 1947 (musée américain de l'Holocauste, film 2876, domaine public)"
         voix: >-
           remet la question à l'ONU. // Nous sommes en **1947**. ///
         son: "montée lente vers l'ouverture de la partie III"

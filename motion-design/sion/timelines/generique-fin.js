@@ -101,7 +101,10 @@
         ['Le pont aérien vers Israël, 1973', 'US Air Force · Archives nationales américaines'],
         ['Jordanie, 1970', 'CIA · Archives nationales américaines'],
         ['Golda Meir au front du Sinaï, 1973', 'porte-parole de l’armée israélienne · CC BY-SA 3.0'],
-        ['Le camp de Chatila, 2023', 'Voice of America']],
+        ['Le camp de Chatila, 2023', 'Voice of America'],
+        ['Palestine, 1938', 'rushes de la March of Time · Archives nationales américaines'],
+        ['L’Exodus, 1947', 'Castle Films · musée américain de l’Holocauste'],
+        ['Palestine, 1948', 'Universal · accessed at United States Holocaust Memorial Museum, courtesy of NARA']],
     },
     {
       h: 'Images animées et reconstitutions',
