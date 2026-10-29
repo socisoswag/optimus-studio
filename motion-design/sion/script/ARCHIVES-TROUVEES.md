@@ -1,6 +1,6 @@
 # Archives trouvées le 29 octobre 2026
 
-Recherche sur Wikimedia Commons et archive.org, licence vérifiée fichier par fichier. Les téléchargements de Wikimedia
+Recherche sur Wikimedia Commons, archive.org et la Bibliothèque du Congrès, licence vérifiée fichier par fichier. Les téléchargements de Wikimedia
 sont limités depuis le serveur de travail (refus 429) : un téléchargement automatique réessaie toutes les 10 minutes.
 Si un fichier n'arrive pas, il suffit d'ouvrir sa page ci-dessous, de cliquer sur « Télécharger » et de me l'envoyer ici.
 
@@ -23,6 +23,11 @@ Si un fichier n'arrive pas, il suffit d'ouvrir sa page ci-dessous, de cliquer su
 | 36.4 | Manifestations contre la réforme de la justice, mars 2023 (2 clips) | Israéliens, dédiés au domaine public | CC0 | https://commons.wikimedia.org/wiki/File:AvokaHafganaReforma.webm | 27 s et 45 s |
 | 38.8 | Masafer Yatta, 22 février 2023 | Dania Eid | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%A7%D9%81%D8%B1_%D9%8A%D8%B7%D8%A7.webm | 31 s, 1080p |
 
+| 13.2, 16.3 | La voix de Ben Gourion lisant la déclaration d'indépendance, 14 mai 1948 (son seul, sous la photo du Bureau de presse) | enregistrement radio | domaine public | https://commons.wikimedia.org/wiki/File:Israeli_Declaration_of_Independence.ogg | 14 min, son |
+| 18.3 à 18.6, 21.8 | Golda Meir sur le front du Sinaï, 1973 | service film du porte-parole de l'armée israélienne | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Golda_Meir_visiting_Sinai_front%2C_1973.webm | 11 min 11, 480 x 360 |
+| 20.7 | Le roi Hussein et la Jordanie en 1970 (Septembre noir) | Archives nationales américaines | domaine public | https://commons.wikimedia.org/wiki/File:King_Hussein_1970.ogv | 10 min 38, 640 x 480 |
+| 20.13 | Chatila, la mémoire du massacre de 1982 (reportage de 2023) | Voice of America | domaine public | https://commons.wikimedia.org/wiki/File:War_Sparks_Memories_of_%2782_Massacre_Among_Palestinians_in_Lebanon_%EF%BD%9C_VOANews.webm | 3 min 18, 1080p |
+| 26.8 | Un colon attaque des militants pour la paix dans un champ palestinien, Mukhmas, 1er juin 2024 (vertical) | « Regarder l'occupation dans les yeux », groupe israélien | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:A_settler_attacks_peace_activists_in_a_Palestinian_field_in_Mukhmas.webm | 47 s, vertical |
 Deuxième clip pour 36.4 : https://commons.wikimedia.org/wiki/File:PoliceViolenceReformaProtest.webm
 
 ## Écartés
@@ -39,12 +44,14 @@ Deuxième clip pour 36.4 : https://commons.wikimedia.org/wiki/File:PoliceViolenc
 ## Crédits à ajouter (SOURCES.md, générique, description YouTube)
 
 - Archives de la Planète, musée départemental Albert-Kahn, CC BY-SA 4.0.
-- Al Jazeera, CC BY 3.0 ; Ahmad Alqurna, CC BY 3.0 ; Dania Eid, CC BY-SA 4.0.
+- Al Jazeera, CC BY 3.0 ; Ahmad Alqurna, CC BY 3.0 ; Dania Eid, CC BY-SA 4.0 ; « Regarder l'occupation dans les yeux », CC BY 4.0 ;
+  service film du porte-parole de l'armée israélienne, CC BY-SA 3.0.
 - Domaine public, cités par courtoisie : War Office Cinema Committee (1917), Noah Sokolovsky (1913), CIA, Bibliothèque Clinton,
-  Maison Blanche, département de la Défense des États-Unis, Voice of America.
+  Maison Blanche, département de la Défense des États-Unis, Voice of America, Archives nationales américaines.
 
 ## Encore à trouver
 
-- 1947 et 1948 en images (le vote de l'ONU, Jérusalem, les réfugiés) : pas de source libre sûre trouvée ; la question Q3 à
-  Perplexity (la proclamation) reste utile, et les actualités Carmel sont la meilleure piste.
+- 1947 et 1948 en images (le vote de l'ONU, Jérusalem, les réfugiés) : pas de film libre. Sur Commons, les actualités Carmel
+  couvrent 1938-1939 et 1951-1958, pas 1947-1948 ; pour 1948, la voix réelle de Ben Gourion et les photos de l'ONU et du
+  Bureau de presse. Les intifadas : photos seulement (archive Dan Hadani, Bibliothèque nationale d'Israël).
 - Arafat à l'ONU en 1974 et Netanyahou avec sa carte en 2023 : selon la réponse à Q1 (conditions de l'ONU).
