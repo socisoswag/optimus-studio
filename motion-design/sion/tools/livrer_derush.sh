@@ -23,6 +23,21 @@ push() {
     echo "envoi refusé, nouvel essai dans $d s" >&2; sleep "$d"
   done
 }
+# commit de ce qui est dans l'index, puis envoi ; rien quand l'index ne change rien
+envoi() {
+  git -C "$W" diff --cached --quiet && return 0
+  git -C "$W" commit -q -F - <<EOF
+SION : $folder, un fichier par plan du script$1
+
+Coupés à l'image près dans les pièces rendues, numérotés dans l'ordre du film ; PLANS.md dans chaque
+chapitre (texte à l'écran, voix off, plans pas encore en vidéo).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01Up6uBitdRxnv9kmecRQqy1
+EOF
+  push
+  envois=$((envois + 1))
+}
 for key in "$@"; do
   folder=$(python3 -c "import sys; sys.path.insert(0, 'tools'); import derush; print(next(f for _, f, k in derush.PARTS if k == '$key'))")
   rm -rf "${W:?}"
@@ -43,36 +58,26 @@ for key in "$@"; do
   big=$(find "$W/SION" -type f -size +95M)
   [ -z "$big" ] || { echo "trop gros pour GitHub (plus de 95 Mo) : $big" >&2; exit 1; }
   taille=$(du -sh "$W/SION/$folder" | cut -f1)
+  envois=0
+  git -C "$W" config http.postBuffer 524288000
   if [ "$LEGER" = 1 ]; then
-    # chapitre par chapitre : ajouté à l'index (ses vidéos passent dans .git) puis effacé du disque ; la partie n'y
-    # tient jamais deux fois (la IV, près de 2,5 Go, ne passerait pas sinon). Ces chapitres ne sont plus jamais ajoutés
-    # avec -A : leurs fichiers effacés ne deviennent pas des suppressions.
+    # chapitre par chapitre : ajouté à l'index (ses vidéos passent dans .git), envoyé (GitHub refuse un envoi de plus
+    # de 2 Go, la partie IV en fait 2,5), puis effacé du disque (la partie n'y tient jamais deux fois). Ces chapitres
+    # ne sont plus jamais ajoutés avec -A : leurs fichiers effacés ne deviennent pas des suppressions.
     git -C "$W" add --sparse -A -- SION/Script SION/LISEZMOI.md
     for d in "$W/SION/$folder"/*/; do
       git -C "$W" add --sparse -A -- "${d#"$W"/}"
+      envoi " ($(basename "$d"))"
       find "$d" -type f \( -name '*.mp4' -o -name '*.mov' \) -delete
     done
     find "$W/SION/$folder" -maxdepth 1 -type f -print0 | while IFS= read -r -d '' f; do
       git -C "$W" add --sparse -- "${f#"$W"/}"
     done
+    envoi " (sommaire de la partie)"
   else
     git -C "$W" add -A SION
+    envoi ""
   fi
-  if git -C "$W" diff --cached --quiet; then
-    echo "$folder : rien de nouveau"
-  else
-    git -C "$W" commit -q -F - <<EOF
-SION : $folder, un fichier par plan du script
-
-Coupés à l'image près dans les pièces rendues, numérotés dans l'ordre du film ; PLANS.md dans chaque
-chapitre (texte à l'écran, voix off, plans pas encore en vidéo).
-
-Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
-Claude-Session: https://claude.ai/code/session_01Up6uBitdRxnv9kmecRQqy1
-EOF
-    git -C "$W" config http.postBuffer 524288000
-    push
-    echo "$folder : envoyé ($taille)"
-  fi
+  if [ "$envois" = 0 ]; then echo "$folder : rien de nouveau"; else echo "$folder : envoyé ($taille, $envois envois)"; fi
   rm -rf "${W:?}"
 done
