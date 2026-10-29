@@ -15,6 +15,7 @@ W="${WORK:-$(dirname "$(dirname "$(dirname "$ROOT")")")/_livraison-sion}"
 # un envoi raté (disque plein, réseau) ne laisse pas son clone sur le disque
 trap 'rm -rf "${W:?}"' EXIT
 push() {
+  local d  # sinon la boucle écrase le chapitre en cours de l'appelant (son « d »)
   for d in 2 4 8 16 0; do
     # sans « thin pack » ni recherche de deltas : sinon git télécharge les anciennes vidéos de la partie pour s'en servir
     # de base de compression (une vidéo ne se compresse pas), et le disque sature
