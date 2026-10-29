@@ -145,3 +145,62 @@ toutes différentes, chez des contributeurs différents (deux micros, deux lieux
 | M16 | Les débats | le même que M04 ; https://elements.envato.com/tension-H7P2Q6T |
 | M17 | L'effacement des villages | le même que M10 |
 | M18 | Conclusion, générique | https://elements.envato.com/documentary-piano-emotional-strings-R3VESHM ; https://elements.envato.com/inspiring-emotional-cinematic-piano-and-strings-BR5E2KW |
+
+## Lot 2 (29 octobre 2026) : pour atteindre 30 % de vraies images
+
+Règle : un clip ne sert que si son titre donne le lieu ou l'événement (beaucoup de « destruction » sont en Ukraine ou
+en Irak). Envoi par Dropbox, comme d'habitude.
+
+**Envato, liens directs**
+
+| N° | Pour | Lien |
+|---|---|---|
+| C01 | 25.x Gaza, un immeuble détruit, murs criblés de balles | https://elements.envato.com/camera-reveals-a-destroyed-building-walls-with-bul-SXGWA8C |
+| C02 | 25.7 à 25.11 les offensives, un char Merkava dans Gaza | https://elements.envato.com/an-israeli-merkava-tank-in-gaza-creating-a-dust-cl-9EMHN72 |
+| C03 | 25.x un char sur la côte | https://elements.envato.com/an-israeli-merkava-mark-iv-barak-tank-moving-slowl-6UEA2FY |
+| C04 | 20.4 nord de la Cisjordanie, Arraba (district de Jénine) | https://elements.envato.com/aerial-view-of-the-outskirts-of-arraba-jenin-in-th-GCCZGPV |
+| C05 | 23.x Bethléem vue large | https://elements.envato.com/bethlehem-palestine-west-bank-israel-general-wide--BDZD6WU |
+
+**Envato, recherches** (prendre 3 ou 4 clips dont le titre dit « Gaza Strip », « Rafah » ou « Khan Younis » ; les plus
+longs ; jamais de corps à l'image)
+
+| N° | Pour | Recherche |
+|---|---|---|
+| C06 | 25.27 à 25.44 Gaza depuis octobre 2023 (immeubles détruits, fumée sur Rafah, hôpital, déplacés) | https://elements.envato.com/stock-video/gaza+war |
+| C07 | 25.34 les déplacés, les tentes | https://elements.envato.com/stock-video/gaza+displaced |
+| C08 | 25.37 le Liban en 2024 (Beyrouth, la banlieue sud) | https://elements.envato.com/stock-video/beirut+strike |
+| C09 | 31.12, 29.4 manifestations pour Gaza (Paris, New York, Londres : le lieu doit être dans le titre) | https://elements.envato.com/stock-video/gaza+protest |
+| C10 | 36.4 Israël 2023, manifestations contre la réforme judiciaire | https://elements.envato.com/stock-video/israel+protest |
+| C11 | 29.2, 30.5 juifs ultra-orthodoxes (Mea Shearim, Bnei Brak, New York) | https://elements.envato.com/stock-video/orthodox+jews+jerusalem |
+| C12 | 33.x l'ONU à New York (le bâtiment, la salle de l'Assemblée) | https://elements.envato.com/stock-video/united+nations+new+york |
+
+**Adobe Stock** (collection gratuite : ma session n'a pas le droit de valider la licence, à télécharger depuis ton
+compte, en 4K)
+
+| N° | Pour | Lien |
+|---|---|---|
+| D01 | 25.4, 25.5 Gaza, la baie vue par drone | https://stock.adobe.com/765427140 |
+| D02 | 31.x étudiants qui manifestent pour la Palestine, Bristol | https://stock.adobe.com/867937187 |
+
+**Wikimedia Commons** (le site me bloque ; sur chaque page : « Original file » ou « Télécharger le fichier original »)
+
+| N° | Pour | Page |
+|---|---|---|
+| W01 | 7.x Allenby entre à Jérusalem, 1917 | https://commons.wikimedia.org/wiki/File:General_Allenby%27s_entry_into_Jerusalem_(1917).webm |
+| W02 | 5.x, 6.x La vie des Juifs en Palestine, Hébron, 1913 | https://commons.wikimedia.org/wiki/File:The_Life_of_the_Jews_in_Palestine_-_Hebron_segment_(1913).webm |
+| W03 | 8.x Balfour en Palestine, 1925 | https://commons.wikimedia.org/wiki/File:Visite_de_Lord_Balfour_dans_quelques_colonies_sionistes_-_AI13634.webm |
+| W04 | 25.x une famille de Gaza, 2009 (Al Jazeera, CC BY) | https://commons.wikimedia.org/wiki/File:Aljazeeraasset-GAZA_FAMILY186.ogv |
+| W05 | 25.5 les pêcheurs de Gaza, le blocus (Al Jazeera) | https://commons.wikimedia.org/wiki/File:Al_Jazeera_-_Gaza_Fishing.ogv |
+| W06 | 25.12 bombardement de Gaza, 12 novembre 2018 | https://commons.wikimedia.org/wiki/File:12_November_2018_Israeli_shelling_of_Gaza_buildings.webm |
+| W07 | 25.41 largages d'aide sur Gaza, 2024 (armée américaine) | https://commons.wikimedia.org/wiki/File:U.S._Central_Command_airdrops_food_over_Gaza_-_DOD_110155532.webm |
+| W08 | 25.16, 33.11 Gaza le 14 mai 2018, l'ambassade américaine (VOA) | https://commons.wikimedia.org/wiki/File:Deadly_Protests_in_Gaza_as_US_Opens_Jerusalem_Embassy.webm |
+| W09 | 21.x Camp David, 1978 | https://commons.wikimedia.org/wiki/File:Israeli_Prime_Minister_Begin%27s_remarks_at_the_Camp_David_Agreement,_17_September_1978.webm |
+| W10 | 22.x Camp David, 2000 | https://commons.wikimedia.org/wiki/File:Photo-Op_of_President_Clinton_with_Prime_Minister_Barak_and_Chairman_Arafat_at_Camp_David.webm |
+| W11 | 22.x Oslo, 13 septembre 1993 | https://commons.wikimedia.org/wiki/File:Signing_of_the_Israeli-Palestinian_Declaration_of_Principles.webm |
+| W12 | 36.4 manifestations en Israël, 2023 (2 vidéos) | https://commons.wikimedia.org/wiki/File:AvokaHafganaReforma.webm et https://commons.wikimedia.org/wiki/File:PoliceViolenceReformaProtest.webm |
+| W13 | 38.8 Masafer Yatta, 2023 | https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%A7%D9%81%D8%B1_%D9%8A%D8%B7%D8%A7.webm |
+
+**Ce que je prends moi-même** (archive.org et le musée de l'Holocauste de Washington, domaine public) : Palestine 1935 à
+1938 (March of Time, rushes cédés sans restriction aux Archives nationales américaines : Tel-Aviv, Haïfa, Jaffa, Nebi
+Moussa, les orangeraies, l'Allemagne de 1935), « A Pilgrimage Through Palestine » (fin des années 1920), Haïfa en 1948
+(« Hagana Troops »), le drapeau et l'ONU en mai 1948, l'Exodus en 1947, Truman et Weizmann en 1948.
