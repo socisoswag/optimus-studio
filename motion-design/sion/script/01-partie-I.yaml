@@ -82,8 +82,8 @@ chapitres:
         son: "laisser l'impact de la pièce tomber après « vide »"
       - type: RÉEL
         fichier: output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4
-        entree: 4
-        sortie: 14
+        entree: 0
+        sortie: 10
         source: "SOURCES.md 4.1, Adobe Stock 609005799"
         son: "respiration : ville au crépuscule, vent ; pas de voix"
         note: "plan de respiration avant l'Europe"

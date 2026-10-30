@@ -21,7 +21,7 @@ import numpy as np
 from scipy.ndimage import gaussian_filter, median_filter
 
 W, H = 320, 180
-R = 1.2  # 30 i/s → 25
+CADENCES = (30.0, 30000 / 1001)  # sources possibles : 30 i/s et 29,97 (à 29,97, les sauts se décalent peu à peu)
 
 
 def ecarts(f):
@@ -41,10 +41,11 @@ def ecarts(f):
     return d / (median_filter(d, 11, mode="nearest") + 1e-3)
 
 
-def sautes(n, c):
-    """Positions i (écart entre l'image i et i+1) où fps=25 a jeté une image, pour un morceau de n images décalé de c."""
+def sautes(n, c, r):
+    """Positions i (écart entre l'image i et i+1) où fps=25 a jeté une image, pour un morceau de n images décalé de c,
+    source à r × 25 i/s."""
     k = np.arange(n + 1)
-    s = np.round((k + c) * R) - np.round(c * R)
+    s = np.round((k + c) * r) - np.round(c * r)
     return np.where(np.diff(s) == 2)[0]
 
 
@@ -55,14 +56,15 @@ def morceaux(x):
 
 
 def plan(x):
-    """[(début, fin, décalage ou None, excès)] : None = morceau laissé tel quel."""
+    """[(début, fin, (décalage, rapport) ou None, excès)] : None = morceau laissé tel quel."""
     res = []
     for a, b in morceaux(x):
         seg = np.clip(x[a:b - 1], 0, 2.6)
         if len(seg) < 15:
             res.append((a, b, None, 0.0))
             continue
-        best = max(((float(seg[sautes(len(seg), c)].mean() - np.median(seg)), c) for c in range(5)))
+        best = max(((float(seg[sautes(len(seg), c, f / 25)].mean() - np.median(seg)), (c, f / 25))
+                    for c in np.arange(0, 5, 0.2) for f in CADENCES))
         res.append((a, b, best[1] if best[0] >= 0.3 else None, round(best[0], 2)))
     return res
 
@@ -70,10 +72,11 @@ def plan(x):
 def expression(pl):
     """setpts : chaque image à son instant d'origine dans la source (en s), morceau par morceau."""
     e = "N/25"
-    for a, b, c, _ in reversed(pl):
-        if c is None:
+    for a, b, cr, _ in reversed(pl):
+        if cr is None:
             continue
-        f = f"({a}/25+(round((N-{a}+{c})*{R})-{round(c * R)})/30)"
+        c, r = cr
+        f = f"({a}/25+(round((N-{a}+{c:.1f})*{r:.6f})-{round(c * r)})/{25 * r:.6f})"
         e = f"if(between(N,{a},{b - 1}),{f},{e})"
     return e
 

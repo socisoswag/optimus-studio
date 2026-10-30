@@ -122,11 +122,12 @@ Film 01:33:03:08 → 01:34:39:13 · durée 1 min 36.2 s
 (30 mots, 2.0 par seconde)
 
 
-**39.4** · film **01:33:29:13 → 01:33:39:13** (10.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:00:00 → 00:00:10:00  
-Source : SOURCES.md 4.1, Adobe Stock 609005799  
+**39.4** · film **01:33:29:13 → 01:33:39:13** (10.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-esplanade-contre-jour-aerien.mp4` · source 00:00:00:00 → 00:00:10:00  
+Source : SOURCES.md 4.1 bis, Envato Elements LTDPE7X  
 > VOIX : Aimer cette terre, / sans la **détruire**. ///  
 (6 mots, 0.6 par seconde)  
-Son : la ville le soir, un appel lointain, des cloches, puis le silence
+Son : la ville le soir, un appel lointain, des cloches, puis le silence  
+Note : Jérusalem à contre-jour depuis le mont des Oliviers ; plus le même plan qu'en 1.9 et 6.19 (jamais deux fois la même image)
 
 
 **39.5** · film **01:33:39:13 → 01:34:39:13** (60.0 s) · **[MD]** `output/generique-fin.mp4`  

@@ -69,7 +69,7 @@ Source : SOURCES.md 4.1 bis, Envato JDMP4TQ
 Son : laisser l'impact de la pièce tomber après « vide »
 
 
-**1.9** · film **00:03:27:04 → 00:03:37:04** (10.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:04:00 → 00:00:14:00  
+**1.9** · film **00:03:27:04 → 00:03:37:04** (10.0 s) · **[RÉEL]** `output/plans-reels/jerusalem-dome-du-rocher-couchant-nuit-2023.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 4.1, Adobe Stock 609005799  
 > VOIX : silence  
 Son : respiration : ville au crépuscule, vent ; pas de voix  
