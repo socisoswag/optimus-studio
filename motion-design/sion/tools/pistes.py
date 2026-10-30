@@ -131,6 +131,10 @@ def ecrire(pst, nom, traite, mix, video=None, dossier=None):
                    "clips": [{"fichier": fic, "debut": 0, "fin": nf, "duree": nf}]})
     xml = sequence_xml(nom, nf, pistes, video or f"{nom}.mp4")
     open(os.path.join(dossier, nom + ".xml"), "w", encoding="utf-8").write(xml)
+    # index des clips (images depuis le début de la pièce), lu par tools/premiere_xml.py pour poser chaque son sous son plan
+    import json
+    json.dump({"images": nf, "pistes": pistes}, open(os.path.join(dossier, nom + ".json"), "w", encoding="utf-8"),
+              ensure_ascii=False)
     if os.environ.get("AAF") == "1":  # AAF direct (sons inclus, double le poids) ; sinon Premiere l'exporte depuis le XML
         try:
             sequence_aaf(os.path.join(dossier, nom + ".aaf"), nom, nf, pistes, dossier)

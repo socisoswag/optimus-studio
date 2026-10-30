@@ -79,6 +79,36 @@ def duree_carton(base):
     return CARTON
 
 
+FAMILLES = ("ambiances", "souffles", "impacts", "guerre", "bruitages", "musique")
+NOMS_FAM = {"ambiances": "Ambiances", "souffles": "Souffles et montées", "impacts": "Impacts", "guerre": "Guerre",
+            "bruitages": "Bruitages", "musique": "Musique"}
+_PISTES = {}
+
+
+def pistes_de(nom):
+    """Index des pistes séparées d'une pièce (tools/pistes.py) : {famille: [clips]}, ou {} si elles n'existent pas."""
+    if nom not in _PISTES:
+        f = os.path.join(ROOT, "output", "pistes", nom, nom + ".json")
+        _PISTES[nom] = ({x["famille"]: x["clips"] for x in json.load(open(f, encoding="utf-8"))["pistes"] if x["famille"] != "mixage"}
+                        if os.path.exists(f) else {})
+    return _PISTES[nom]
+
+
+def piece_de(p):
+    """(pièce, secondes depuis son début) du plan de motion design, pour y retrouver ses sons ; None pour les autres."""
+    fic, a = str(p.get("fichier", "")), float(p.get("entree", 0) or 0)
+    m = re.match(r"output/chapitres/chapitre-(\d+)\.mp4$", fic)
+    if m:
+        if "carte" not in _PISTES:
+            _PISTES["carte"] = float(subprocess.check_output(["node", "-e", "require('./core.js'); require('./timelines/chapitres.js');"
+                                                               " console.log(globalThis.TL.cardDur)"], cwd=ROOT, text=True))
+        return ("chapitres", (int(m.group(1)) - 1) * _PISTES["carte"] + a)
+    m = re.match(r"output/([a-z0-9-]+)\.mp4$", fic)
+    if m and p.get("type") in ("MD", "3D", "CARTON") and pistes_de(m.group(1)):
+        return (m.group(1), a)
+    return None
+
+
 def film(fichiers, manif):
     """Le film, partie par partie : [(titre de partie, [(titre de chapitre, [plan…], [réserve…])…])…]."""
     out = []
@@ -109,6 +139,7 @@ def film(fichiers, manif):
                 plans.append({"pid": pid, "rel": f"{rel}/{fic}" if fic else None, "n": images(d), "type": p["type"],
                               "ng": images(min(d, float(coupes[pid]))) if pid in coupes else images(d),
                               "oreille": oreille.get(pid), "son": D.flat(p.get("son")) if p.get("son_original") else "",
+                              "piece": piece_de(p),
                               "son_debut": float(p["son_original"].get("debut", 0)) if p.get("son_original") else 0,
                               "voix": D.flat(p.get("voix")).replace("**", ""), "ecran": D.flat(p.get("ecran")), "cartons": cartons})
             reserves = []
@@ -152,10 +183,34 @@ class Fichiers:
                 f"<duration>{n}</duration>{rate()}<name>{nom}</name><media><video><track>{v}</track></video>"
                 + (f"<audio>{a}</audio>" if a else "") + "</media></clip>")
 
+    def maitre_son(self, rel, n):
+        """Clip maître d'un son seul (une piste séparée), stéréo."""
+        if rel in self.ids:
+            return ""
+        i = len(self.ids) + 1
+        self.ids[rel] = i
+        nom = e(os.path.basename(rel))
+        url = "file://localhost/" + quote(f"{RACINE}/{rel}", safe="/")
+        fichier = (f'<file id="file-{i}"><name>{nom}</name><pathurl>{url}</pathurl>{rate()}<duration>{n}</duration>'
+                   "<media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics>"
+                   "<channelcount>2</channelcount></audio></media></file>")
+        a = "".join(f'<track><clipitem id="masterclip-{i}-a{k}"><masterclipid>masterclip-{i}</masterclipid><name>{nom}</name>'
+                    f'{rate()}{fichier if k == 1 else f"<file id={chr(34)}file-{i}{chr(34)}/>"}<sourcetrack><mediatype>audio</mediatype>'
+                    f"<trackindex>{k}</trackindex></sourcetrack></clipitem></track>" for k in (1, 2))
+        return (f'<clip id="masterclip-{i}"><masterclipid>masterclip-{i}</masterclipid><ismasterclip>TRUE</ismasterclip>'
+                f"<duration>{n}</duration>{rate()}<name>{nom}</name><media><audio>{a}</audio></media></clip>")
+
+
+def son_rel(piece, fic):
+    """Chemin d'une piste séparée dans le dépôt de montage (AAC, tools/livrer_sons.py)."""
+    return f"SION/Sons/{piece}/{fic[:-4]}.m4a"
+
 
 def construit(f):
     F = Fichiers()
     chutiers, v1, v2, a2, a3, marques = [], [], [], [], [], []
+    fam = {x: ([], []) for x in FAMILLES}  # pistes séparées : gauche, droite
+    utilises = set()  # (pièce, fichier) des sons posés, à livrer
     t = 0
     nplans = manquants = ncartons = 0
     for p_titre, chapitres in f:
@@ -163,7 +218,7 @@ def construit(f):
         sous = []
         for c_titre, plans, reserves in chapitres:
             marques.append((t, c_titre, ""))
-            dedans = []
+            dedans, sons = [], []
             for p in plans:
                 n, ng = p["n"], p["ng"]  # durée du fichier, durée gardée dans la timeline
                 if p["rel"]:
@@ -179,9 +234,30 @@ def construit(f):
                     tete = (f"<masterclipid>masterclip-{i}</masterclipid><name>{nom}</name><enabled>TRUE</enabled>"
                             f"<duration>{n}</duration>{rate()}<start>{t}</start><end>{t + ng}</end><in>0</in><out>{ng}</out>")
                     v1.append(f'<clipitem id="seq-v-{k}">{tete}<alphatype>none</alphatype><file id="file-{i}"/>{lien}</clipitem>')
+                    # le son mixé d'un plan de motion design reste là, coupé : ses sons séparés le remplacent, plus bas
+                    ta = tete.replace("<enabled>TRUE</enabled>", "<enabled>FALSE</enabled>") if p["piece"] else tete
                     for x, lst in ((2, a2), (3, a3)):
-                        lst.append(f'<clipitem id="seq-a{x}-{k}">{tete}<file id="file-{i}"/><sourcetrack><mediatype>audio</mediatype>'
+                        lst.append(f'<clipitem id="seq-a{x}-{k}">{ta}<file id="file-{i}"/><sourcetrack><mediatype>audio</mediatype>'
                                    f"<trackindex>{x - 1}</trackindex></sourcetrack>{lien}</clipitem>")
+                    if p["piece"]:
+                        nomp, dec = p["piece"]
+                        o = images(dec)
+                        for fa, clips in pistes_de(nomp).items():
+                            for c in clips:
+                                a0, a1 = max(c["debut"], o), min(c["fin"], o + ng)
+                                if a1 - a0 < 2:  # moins de 2 images sous ce plan : rien à poser
+                                    continue
+                                rel = son_rel(nomp, c["fichier"])
+                                utilises.add((nomp, c["fichier"]))
+                                sons.append(F.maitre_son(rel, c["duree"]))
+                                j = F.ids[rel]
+                                debut = t + a0 - o
+                                for g, lst in enumerate(fam[fa], 1):
+                                    lst.append(f'<clipitem id="seq-{fa}{g}-{len(lst) + 1}"><masterclipid>masterclip-{j}</masterclipid>'
+                                               f"<name>{e(os.path.basename(rel))}</name><enabled>TRUE</enabled><duration>{c['duree']}</duration>"
+                                               f"{rate()}<start>{debut}</start><end>{debut + a1 - a0}</end><in>{a0 - c['debut']}</in>"
+                                               f"<out>{a1 - c['debut']}</out><file id=\"file-{j}\"/><sourcetrack><mediatype>audio</mediatype>"
+                                               f"<trackindex>{g}</trackindex></sourcetrack></clipitem>")
                     nplans += 1
                     debut = t
                     for c in p["cartons"]:
@@ -215,6 +291,8 @@ def construit(f):
                 t += ng
             for r in reserves:
                 dedans.append(F.maitre(r["rel"], r["n"], son=True))
+            if sons:
+                dedans.append(f"<bin><name>Sons</name><children>{''.join(sons)}</children></bin>")
             sous.append(f"<bin><name>{e(c_titre)}</name><children>{''.join(dedans)}</children></bin>")
         chutiers.append(f"<bin><name>{e(p_titre)}</name><children>{''.join(sous)}</children></bin>")
     sc = (f"<samplecharacteristics>{rate()}<width>1920</width><height>1080</height><anamorphic>FALSE</anamorphic>"
@@ -228,11 +306,14 @@ def construit(f):
            "<audio><numOutputChannels>2</numOutputChannels><format><samplecharacteristics><depth>16</depth>"
            "<samplerate>48000</samplerate></samplecharacteristics></format>"
            f"{piste([])}{piste(a2, '<outputchannelindex>1</outputchannelindex>')}{piste(a3, '<outputchannelindex>2</outputchannelindex>')}"
-           f"</audio></media>{mk}</sequence>")
+           + "".join(piste(fam[x][g], f"<outputchannelindex>{g + 1}</outputchannelindex>") for x in FAMILLES if fam[x][0] for g in (0, 1))
+           + f"</audio></media>{mk}</sequence>")
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE xmeml>\n<xmeml version="4"><project><name>SION</name><children>'
            + "".join(chutiers) + seq + "</children></project></xmeml>\n")
     return xml, {"plans": nplans, "manquants": manquants, "cartons": ncartons, "fichiers": len(F.ids),
-                 "marqueurs": len(marques), "minutes": t / FPS / 60}
+                 "marqueurs": len(marques), "minutes": t / FPS / 60,
+                 "sons": sorted(utilises), "clips_sons": sum(len(fam[x][0]) for x in FAMILLES),
+                 "familles": [x for x in FAMILLES if fam[x][0]]}
 
 
 GUIDE = """# Ouvrir le film dans Premiere Pro
@@ -244,7 +325,10 @@ GUIDE = """# Ouvrir le film dans Premiere Pro
    - **V1** : les {plans} plans dans l'ordre du film, à la durée prévue par le script (quelques plans resserrés, voir 6) ;
    - **V2** : les {cartons} cartons (lieu et date), posés au début de leur plan ;
    - **A1** : vide, pour ta voix ;
-   - **A2 et A3** : le son des plans (bruitages et ambiances), gauche et droite.
+   - **A2 et A3** : le son des plans, gauche et droite : l'ambiance des vraies images ; pour les plans de motion design,
+     leur son mixé est là mais coupé (désactivé), pour comparer ;
+   - **A4 et au-delà** : chaque bruitage du motion design sur la piste de sa famille, calé sous son plan, par paires
+     gauche-droite, dans cet ordre : {familles}. Les fichiers sont dans `SION/Sons/<pièce>/`.
 4. Si les plans s'affichent « hors ligne » : clic droit sur un plan > **Lier le média**, montre le même fichier dans ton
    dossier `Montage-Moyen-orient`, coche « Relier les autres automatiquement » : Premiere retrouve tout le reste.
 5. Les **marqueurs** de la séquence donnent la partie, le chapitre, puis le numéro de chaque plan ; leur commentaire
@@ -263,6 +347,34 @@ changés, listés dans `Script/CHANGEMENTS.md`).
 """
 
 
+def livrer_sons(w, sons):
+    """Les sons posés dans la timeline, en AAC 256 kb/s (le dépôt reste léger ; Premiere les lit tels quels), dans
+    SION/Sons/<pièce>/ ; seuls les nouveaux ou changés sont réencodés, ceux qui ne servent plus sont retirés."""
+    idx_p = os.path.join(w, "SION", "Sons", "index.json")
+    idx = json.load(open(idx_p, encoding="utf-8")) if os.path.exists(idx_p) else {}
+    garder = set()
+    for k, (piece, fic) in enumerate(sons, 1):
+        src = os.path.join(ROOT, "output", "pistes", piece, fic)
+        rel = son_rel(piece, fic)
+        dst = os.path.join(w, rel)
+        garder.add(rel)
+        tampon = [int(os.path.getmtime(src)), os.path.getsize(src)]
+        if idx.get(rel) == tampon and os.path.exists(dst):
+            continue
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", src, "-c:a", "aac", "-aac_pns", "0", "-aac_is", "0",
+                        "-b:a", "256k", "-movflags", "+faststart", dst], check=True)
+        idx[rel] = tampon
+        if k % 200 == 0:
+            print(f"  sons : {k}/{len(sons)}", flush=True)
+    for rel in [r for r in idx if r not in garder]:
+        if os.path.exists(os.path.join(w, rel)):
+            os.remove(os.path.join(w, rel))
+        del idx[rel]
+    os.makedirs(os.path.dirname(idx_p), exist_ok=True)
+    json.dump(idx, open(idx_p, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+
+
 def main():
     envoyer = "--envoyer" in sys.argv
     w = tempfile.mkdtemp(prefix="premiere-")
@@ -274,17 +386,21 @@ def main():
         open(os.path.join(out, NOM), "w", encoding="utf-8").write(xml)
         txt = (f"{st['manquants']} plans ne sont pas encore en vidéo : un trou de leur durée, avec un marqueur « à venir »."
                if st["manquants"] else "Tous les plans sont en vidéo.")
-        guide = GUIDE.format(plans=st["plans"], cartons=st["cartons"], minutes=st["minutes"], manquants_txt=txt)
+        fams = [NOMS_FAM[x] for x in FAMILLES if any(fx == x for fx in st["familles"])]
+        guide = GUIDE.format(plans=st["plans"], cartons=st["cartons"], minutes=st["minutes"], manquants_txt=txt,
+                             familles=", ".join(f"A{4 + 2 * k} et A{5 + 2 * k} {n}" for k, n in enumerate(fams)))
         open(os.path.join(out, "PREMIERE.md"), "w", encoding="utf-8").write(guide)
         print(f"{st['plans']} plans, {st['manquants']} à venir, {st['cartons']} cartons, {st['fichiers']} fichiers, "
-              f"{st['marqueurs']} marqueurs, {st['minutes']:.1f} min → {os.path.join(out, NOM)}", flush=True)
+              f"{st['marqueurs']} marqueurs, {st['minutes']:.1f} min, {len(st['sons'])} sons séparés ({st['clips_sons']} poses) "
+              f"→ {os.path.join(out, NOM)}", flush=True)
         if envoyer:
-            git("-C", w, "sparse-checkout", "set", "--no-cone", f"/SION/{NOM}", "/SION/PREMIERE.md")
+            git("-C", w, "sparse-checkout", "set", "--no-cone", f"/SION/{NOM}", "/SION/PREMIERE.md", "/SION/Sons/")
             git("-C", w, "checkout", "-q")
             os.makedirs(os.path.join(w, "SION"), exist_ok=True)
             for f in (NOM, "PREMIERE.md"):
                 shutil.copy(os.path.join(out, f), os.path.join(w, "SION", f))
-            git("-C", w, "add", "--sparse", "--", f"SION/{NOM}", "SION/PREMIERE.md")
+            livrer_sons(w, st["sons"])
+            git("-C", w, "add", "-A", "--sparse", "--", f"SION/{NOM}", "SION/PREMIERE.md", "SION/Sons")
             if subprocess.run(["git", "-C", w, "diff", "--cached", "--quiet"]).returncode:
                 git("-C", w, "commit", "-q", "-m", MSG)
                 git("-C", w, "push", "-q")
