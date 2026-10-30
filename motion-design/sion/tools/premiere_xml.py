@@ -117,6 +117,9 @@ def film(fichiers, manif):
     cp = os.path.join(ROOT, "data", "coupes-montage.json")
     cm = json.load(open(cp, encoding="utf-8")) if os.path.exists(cp) else {}
     coupes, oreille = cm.get("plans", {}), cm.get("a_l_oreille", {})
+    # plans dont les sons séparés ne retombent pas exactement sur le son livré (tools/verif_premiere.py) : son en bloc
+    nc = os.path.join(ROOT, "data", "sons-non-conformes.json")
+    bloc = json.load(open(nc, encoding="utf-8")) if os.path.exists(nc) else {}
     for yml, folder, _ in D.PARTS:
         data = yaml.safe_load(open(os.path.join(ROOT, "script", yml), encoding="utf-8"))
         mf = manif.get(folder, {})
@@ -139,7 +142,7 @@ def film(fichiers, manif):
                 plans.append({"pid": pid, "rel": f"{rel}/{fic}" if fic else None, "n": images(d), "type": p["type"],
                               "ng": images(min(d, float(coupes[pid]))) if pid in coupes else images(d),
                               "oreille": oreille.get(pid), "son": D.flat(p.get("son")) if p.get("son_original") else "",
-                              "piece": piece_de(p),
+                              "piece": None if pid in bloc else piece_de(p), "bloc": pid in bloc,
                               "son_debut": float(p["son_original"].get("debut", 0)) if p.get("son_original") else 0,
                               "voix": D.flat(p.get("voix")).replace("**", ""), "ecran": D.flat(p.get("ecran")), "cartons": cartons})
             reserves = []
@@ -282,6 +285,9 @@ def construit(f):
                         marques.append((t + images(g), f"À COUPER À L'OREILLE · {p['pid']}",
                                         f"Ta voix finit vers ici ; il reste environ {m:.1f} s avant le plan suivant. La carte bouge en "
                                         "continu : si tu coupes, coupe sur un mouvement, ou laisse."))
+                    if p["bloc"]:
+                        marques.append((t, f"SON EN BLOC · {p['pid']}", "Les bruitages de ce plan restent mixés ensemble, sur A2-A3 : "
+                                        "séparés, ils ne retombaient pas exactement sur le son livré."))
                     if p["son"]:
                         marques.append((t + images(p["son_debut"]), f"SON D'ORIGINE · {p['pid']}",
                                         p["son"] + " Ne pas couvrir par la voix off."))
@@ -338,7 +344,10 @@ GUIDE = """# Ouvrir le film dans Premiere Pro
      du plan pour rallonger ;
    - « À COUPER À L'OREILLE · plan » : ta voix finit là, il reste de la marge, mais la carte bouge en continu : coupe
      sur un mouvement si ta voix le permet, sinon laisse ;
-   - « SON D'ORIGINE · plan » : un vrai son à garder audible (la voix de Ben Gourion en 16.3), sans voix off dessus.
+   - « SON D'ORIGINE · plan » : un vrai son à garder audible (la voix de Ben Gourion en 16.3), sans voix off dessus ;
+   - « SON EN BLOC · plan » : les bruitages de ce plan restent mixés ensemble sur A2-A3 (séparés, ils ne retombaient
+     pas exactement sur le son livré : on garde le bon son plutôt qu'un son faux).
+   Les sons séparés sont environ 3 dB plus bas que le mixage livré (marge pour ne jamais saturer en les additionnant).
 7. Enregistre ensuite le projet (Fichier > Enregistrer sous) : c'est ton projet de montage.
 
 Durée de la séquence : {minutes:.1f} min. {manquants_txt}
