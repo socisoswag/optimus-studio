@@ -85,7 +85,8 @@ def film(fichiers, manif):
     # plans resserrés au montage (data/coupes-montage.json) : le fichier livré reste entier, la timeline n'en garde que le
     # début ; on rallonge le plan dans Premiere pour retrouver la fin
     cp = os.path.join(ROOT, "data", "coupes-montage.json")
-    coupes = json.load(open(cp, encoding="utf-8"))["plans"] if os.path.exists(cp) else {}
+    cm = json.load(open(cp, encoding="utf-8")) if os.path.exists(cp) else {}
+    coupes, oreille = cm.get("plans", {}), cm.get("a_l_oreille", {})
     for yml, folder, _ in D.PARTS:
         data = yaml.safe_load(open(os.path.join(ROOT, "script", yml), encoding="utf-8"))
         mf = manif.get(folder, {})
@@ -107,6 +108,8 @@ def film(fichiers, manif):
                         cartons.append({"rel": f"{rel}/cartons/{b}", "n": duree_carton(b)})
                 plans.append({"pid": pid, "rel": f"{rel}/{fic}" if fic else None, "n": images(d), "type": p["type"],
                               "ng": images(min(d, float(coupes[pid]))) if pid in coupes else images(d),
+                              "oreille": oreille.get(pid), "son": D.flat(p.get("son")) if p.get("son_original") else "",
+                              "son_debut": float(p["son_original"].get("debut", 0)) if p.get("son_original") else 0,
                               "voix": D.flat(p.get("voix")).replace("**", ""), "ecran": D.flat(p.get("ecran")), "cartons": cartons})
             reserves = []
             for f in ici:
@@ -194,6 +197,18 @@ def construit(f):
                         ncartons += 1
                         debut += m
                     marques.append((t, p["pid"], p["voix"] or "(silence)"))
+                    # notes de montage, à l'image près
+                    if ng < n:
+                        marques.append((t + ng, f"COUPE · {p['pid']}", f"Coupé ici : {(n - ng) / FPS:.1f} s de temps mort après la voix. "
+                                        "Le fichier continue : tire la fin du plan pour rallonger."))
+                    if p["oreille"]:
+                        g, m = p["oreille"]
+                        marques.append((t + images(g), f"À COUPER À L'OREILLE · {p['pid']}",
+                                        f"Ta voix finit vers ici ; il reste environ {m:.1f} s avant le plan suivant. La carte bouge en "
+                                        "continu : si tu coupes, coupe sur un mouvement, ou laisse."))
+                    if p["son"]:
+                        marques.append((t + images(p["son_debut"]), f"SON D'ORIGINE · {p['pid']}",
+                                        p["son"] + " Ne pas couvrir par la voix off."))
                 else:
                     manquants += 1
                     marques.append((t, f"{p['pid']} · à venir ({p['type']})", p["ecran"] or p["voix"]))
@@ -205,6 +220,7 @@ def construit(f):
     sc = (f"<samplecharacteristics>{rate()}<width>1920</width><height>1080</height><anamorphic>FALSE</anamorphic>"
           "<pixelaspectratio>square</pixelaspectratio><fielddominance>none</fielddominance></samplecharacteristics>")
     piste = lambda clips, extra="": f"<track>{''.join(clips)}<enabled>TRUE</enabled><locked>FALSE</locked>{extra}</track>"
+    marques.sort(key=lambda x: x[0])  # tri stable : à la même image, partie, chapitre puis plan
     mk = "".join(f"<marker><comment>{e(c)}</comment><name>{e(n)}</name><in>{s}</in><out>-1</out></marker>" for s, n, c in marques)
     seq = (f'<sequence id="sequence-1"><name>SION</name><duration>{t}</duration>{rate()}'
            f"<timecode>{rate()}<string>00:00:00:00</string><frame>0</frame><displayformat>NDF</displayformat></timecode>"
@@ -225,7 +241,7 @@ GUIDE = """# Ouvrir le film dans Premiere Pro
 2. Dans Premiere : **Fichier > Importer**, choisis `SION/SION-premiere.xml`.
 3. Premiere crée un chutier `SION-premiere` avec un chutier par partie et un sous-chutier par chapitre (ses plans,
    ses cartons et ses plans en réserve), et la séquence **SION** :
-   - **V1** : les {plans} plans dans l'ordre du film, à la durée prévue par le script ;
+   - **V1** : les {plans} plans dans l'ordre du film, à la durée prévue par le script (quelques plans resserrés, voir 6) ;
    - **V2** : les {cartons} cartons (lieu et date), posés au début de leur plan ;
    - **A1** : vide, pour ta voix ;
    - **A2 et A3** : le son des plans (bruitages et ambiances), gauche et droite.
@@ -233,7 +249,13 @@ GUIDE = """# Ouvrir le film dans Premiere Pro
    dossier `Montage-Moyen-orient`, coche « Relier les autres automatiquement » : Premiere retrouve tout le reste.
 5. Les **marqueurs** de la séquence donnent la partie, le chapitre, puis le numéro de chaque plan ; leur commentaire
    est la phrase à dire sur ce plan (fenêtre Marqueurs, ou double-clic sur un marqueur).
-6. Enregistre ensuite le projet (Fichier > Enregistrer sous) : c'est ton projet de montage.
+6. **Mes notes de montage** sont aussi des marqueurs, à l'image près :
+   - « COUPE · plan » : j'ai resserré la fin du plan (temps mort après la voix) ; le fichier est entier, tire la fin
+     du plan pour rallonger ;
+   - « À COUPER À L'OREILLE · plan » : ta voix finit là, il reste de la marge, mais la carte bouge en continu : coupe
+     sur un mouvement si ta voix le permet, sinon laisse ;
+   - « SON D'ORIGINE · plan » : un vrai son à garder audible (la voix de Ben Gourion en 16.3), sans voix off dessus.
+7. Enregistre ensuite le projet (Fichier > Enregistrer sous) : c'est ton projet de montage.
 
 Durée de la séquence : {minutes:.1f} min. {manquants_txt}
 Ce fichier est refait à chaque livraison : après une relivraison, réimporte-le (ou remplace seulement les plans

@@ -37,3 +37,56 @@ continu (couper leur fin ferait sauter l'animation ; il faudrait refaire le rend
 | 30.05 | `30.05-MD-documents-3.mp4` | 11.0 s | 8.7 s | 2.3 s |
 | 32.05 | `32.05-MD-portraits-3.mp4` | 17.0 s | 15.1 s | 1.9 s |
 | 38.03 | `38.03-MD-citation-darwich.mp4` | 13.0 s | 9.4 s | 3.6 s |
+
+## À couper à l'oreille (notes dans la timeline, rien n'est coupé)
+
+45 plans pris dans une carte qui bouge en continu : ta voix finit avant la fin du plan, mais couper
+ferait sauter l'animation. Dans Premiere, un marqueur « À COUPER À L'OREILLE » montre où finit la voix.
+
+| Plan | La voix finit vers | Marge après |
+|---|---|---|
+| 02.07 | 8.5 s | 3.9 s |
+| 12.03 | 9.9 s | 1.6 s |
+| 12.04 | 7.8 s | 3.7 s |
+| 12.05 | 7.4 s | 2.1 s |
+| 12.07 | 4.5 s | 1.7 s |
+| 12.09 | 6.2 s | 2.4 s |
+| 13.09 | 9.0 s | 6.0 s |
+| 13.10 | 10.6 s | 2.4 s |
+| 15.05 | 7.4 s | 3.6 s |
+| 19.02 | 6.0 s | 4.0 s |
+| 19.03 | 8.7 s | 2.3 s |
+| 19.04 | 6.0 s | 4.0 s |
+| 19.05 | 8.3 s | 2.7 s |
+| 19.10 | 6.1 s | 3.4 s |
+| 19.11 | 7.2 s | 4.8 s |
+| 19.16 | 8.3 s | 2.7 s |
+| 19.21 | 7.4 s | 1.6 s |
+| 19.27 | 7.4 s | 4.6 s |
+| 19.28 | 7.0 s | 2.0 s |
+| 20.03 | 8.7 s | 3.3 s |
+| 20.08 | 4.5 s | 1.5 s |
+| 20.09 | 8.3 s | 3.7 s |
+| 20.10 | 9.5 s | 2.5 s |
+| 21.06 | 6.6 s | 4.4 s |
+| 21.09 | 7.0 s | 3.0 s |
+| 21.10 | 7.4 s | 2.6 s |
+| 25.34 | 9.6 s | 1.9 s |
+| 27.02 | 4.5 s | 1.9 s |
+| 27.03 | 10.4 s | 2.2 s |
+| 27.04 | 6.0 s | 4.0 s |
+| 27.05 | 8.3 s | 3.7 s |
+| 33.02 | 4.8 s | 1.6 s |
+| 33.03 | 8.3 s | 4.2 s |
+| 33.06 | 7.2 s | 4.8 s |
+| 34.02 | 4.5 s | 1.7 s |
+| 34.04 | 9.1 s | 1.9 s |
+| 34.05 | 6.6 s | 4.4 s |
+| 34.06 | 6.3 s | 4.2 s |
+| 35.02 | 4.5 s | 1.7 s |
+| 35.03 | 9.6 s | 2.0 s |
+| 35.04 | 6.2 s | 4.2 s |
+| 35.05 | 7.1 s | 4.7 s |
+| 35.06 | 13.0 s | 2.0 s |
+| 35.11 | 9.6 s | 1.9 s |
+| 35.12 | 7.8 s | 2.7 s |
