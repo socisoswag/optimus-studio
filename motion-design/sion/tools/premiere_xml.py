@@ -354,7 +354,9 @@ def livrer_sons(w, sons):
     idx = json.load(open(idx_p, encoding="utf-8")) if os.path.exists(idx_p) else {}
     garder = set()
     for k, (piece, fic) in enumerate(sons, 1):
-        src = os.path.join(ROOT, "output", "pistes", piece, fic)
+        src = os.path.join(ROOT, "output", "pistes", piece, fic[:-4] + ".m4a")  # déjà en AAC (sinon le WAV, encodé ici)
+        if not os.path.exists(src):
+            src = os.path.join(ROOT, "output", "pistes", piece, fic)
         rel = son_rel(piece, fic)
         dst = os.path.join(w, rel)
         garder.add(rel)
@@ -362,8 +364,11 @@ def livrer_sons(w, sons):
         if idx.get(rel) == tampon and os.path.exists(dst):
             continue
         os.makedirs(os.path.dirname(dst), exist_ok=True)
-        subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", src, "-c:a", "aac", "-aac_pns", "0", "-aac_is", "0",
-                        "-b:a", "256k", "-movflags", "+faststart", dst], check=True)
+        if src.endswith(".m4a"):
+            shutil.copy(src, dst)
+        else:
+            subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", src, "-c:a", "aac", "-aac_pns", "0", "-aac_is", "0",
+                            "-b:a", "256k", "-movflags", "+faststart", dst], check=True)
         idx[rel] = tampon
         if k % 200 == 0:
             print(f"  sons : {k}/{len(sons)}", flush=True)
