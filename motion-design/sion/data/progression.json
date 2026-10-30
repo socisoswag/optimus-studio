@@ -1,5 +1,5 @@
 {
- "maj": "29 octobre 2026, au soir",
+ "maj": "30 octobre 2026, la nuit",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -10,10 +10,10 @@
   },
   {
    "nom": "Rendu des reconstitutions (21 clips)",
-   "pct": 85,
+   "pct": 100,
    "poids": 2,
-   "qui": "moi",
-   "detail": "images faites, encodage final en cours"
+   "qui": "fait",
+   "detail": "les 21 clips refaits sans l'image doublée chaque seconde, relivrés avec leurs réserves"
   },
   {
    "nom": "Photos fixes 26.2 et 28.2, fiche 16.6, lettre de Herzl (6.9)",
@@ -37,6 +37,13 @@
    "detail": "409 vraies prises, 108 ambiances de vrais plans ; 64 pièces contrôlées : aucun clic, crêtes sous -1,6 dBTP"
   },
   {
+   "nom": "Saccades : plans corrigés et relivrés",
+   "pct": 100,
+   "poids": 1,
+   "qui": "fait",
+   "detail": "15 vrais plans à images sautées et 21 reconstitutions IA refaits ; 45 plans relivrés, même nom de fichier (8 remplacés, voir CHANGEMENTS)"
+  },
+  {
    "nom": "Plans, bruitages et musique Envato à télécharger",
    "pct": 70,
    "poids": 3,
@@ -48,7 +55,7 @@
    "pct": 75,
    "poids": 3,
    "qui": "moi",
-   "detail": "26 archives posées (dont Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023) ; vraies images : 19 % du film, cible 35 à 40 %"
+   "detail": "26 archives posées (dont Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023) ; vraies images : 19 % du film, cible 35 à 40 % ; 30 octobre : 1913 (4 plans), camp de 1950, Maison-Blanche 2025, maison incendiée 2024"
   },
   {
    "nom": "Intégrer les plans Envato et les archives",

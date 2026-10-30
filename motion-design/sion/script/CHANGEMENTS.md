@@ -512,3 +512,45 @@ qui les entoure.
 **Contrôle final** des 64 pièces du film, encodées : crête vraie entre -1,6 et -5,8 dBTP, aucun clic. Le détecteur
 ne relève plus que des attaques voulues : un tic au milieu des explosions de 1948, le fracas des maisons qui s'effondrent
 en 1967, une braise à -26 dB dans « paroles ». Les 108 ambiances des vrais plans : aucun clic, crête sous -5,9 dBTP.
+
+## 30 octobre 2026, la nuit (saccades : seuls les plans touchés sont relivrés)
+
+**D'où venaient les saccades** (toutes sur de vraies images ; le motion design n'avait rien) :
+- **Images sautées** : des vidéos tournées à 30 ou 29,97 images par seconde avaient été passées à 25 en jetant une
+  image sur six. Sur tout mouvement, un à-coup cinq fois par seconde. Chaque image reprend maintenant son instant
+  d'origine et les images manquantes sont recalculées (`tools/recadence.py`) : même durée, même vitesse.
+- **Une image doublée chaque seconde** dans les reconstitutions par IA (clips à 24 i/s passés à 25) : un petit arrêt
+  sur image chaque seconde. Les 21 clips sont refaits par images interpolées.
+- **Flottement de la finition** (un recadrage qui bougeait d'un pixel quatre fois par seconde) : retiré des outils ;
+  sur les plans relivrés, le tremblement rapide est mesuré puis retiré à la découpe, au-dessous du pixel.
+
+Un plan n'est remplacé que si la saccade mesurée baisse nettement. Chatila (20.13) et l'esplanade des Mosquées
+(22.10) restent tels quels : la correction ne les améliorait pas (leur léger à-coup vient de la vidéo d'origine).
+Tel-Aviv 2023 (36.04) est nettement mieux, avec un reste qui vient lui aussi de la vidéo d'origine.
+
+**Plans relivrés, même nom de fichier** (Premiere les reprend tout seul) :
+- images sautées : 03.03 et 03.04 (Méliès), 05.07 (récolte des olives), 19.31 (Camp David 1978), 19.32 (dôme du Rocher),
+  19.37 et 37.03 (porte de Damas vue du ciel), 22.09 (Camp David 2000), 23.02 (Oslo), 23.16 (Al-Eizariya),
+  25.16 (Gaza 2018), 35.21 (Kfar Etzion), 36.04 (Tel-Aviv 2023), 38.04 (l'olivier), 38.08 (Masafer Yatta) ;
+- reconstitutions par IA : 06.03, 06.04, 08.07, 08.15, 08.16, 10.03, 14.02, 14.03, 17.03, 17.04, 28.03, et les
+  réserves 05.R1, 05.R2, 06.R1 à 06.R4, 08.R1 à 08.R3, 10.R1 ;
+- 01.09 : le même plan de Jérusalem la nuit, pris de 0 à 10 s (il recouvrait 6.19).
+
+**Plans remplacés (nouveau nom : à changer dans la timeline)**
+
+| Plan | Ancien fichier | Nouveau fichier | Ce que c'est |
+|---|---|---|---|
+| 05.08 | `05.08-IA-9-10-labour-boeufs.mp4` | `05.08-ARCH-1913-lac-de-tiberiade-pionniers-labouren.mp4` | des pionniers juifs labourent au bord du lac de Tibériade, filmés en 1913 |
+| 05.09 | `05.09-IA-16-29-tel-aviv-1909.mp4` | `05.09-ARCH-1913-tel-aviv-la-jeune-ville.mp4` | Tel-Aviv, quatre ans après sa fondation (1913) |
+| 06.05 | `06.05-IA-3-3-porte-de-damas.mp4` | `06.05-ARCH-1913-jerusalem-la-vieille-ville.mp4` | la vieille ville de Jérusalem (1913) |
+| 06.06 | `06.06-IA-2-2-quai-jaffa.mp4` | `06.06-ARCH-1913-tiberiade-puis-hebron.mp4` | Tibériade, puis Hébron (1913) |
+| 13.12 | `13.12-MD-nakba-1948.mp4` | `13.12-ARCH-1950-sands-of-sorrow-camp-de-tentes.mp4` | un camp de tentes de réfugiés palestiniens, 1950 (Sands of Sorrow) |
+| 25.40 | `25.40-MD-documents-6.mp4` | `25.40-ARCH-washington-2025-trump-netanyahou.mp4` | Trump et Netanyahou à la Maison-Blanche, 4 février 2025 |
+| 26.08 | `26.08-MD-documents-6.mp4` | `26.08-ARCH-cisjordanie-2024-maison-incendiee-colons.mp4` | une maison incendiée à Al-Mughayyir, avril 2024, selon ses habitants |
+| 39.04 | `39.04-REEL-jerusalem-dome-du-rocher-couchant-nuit-2.mp4` | `39.04-REEL-jerusalem-esplanade-contre-jour-aerien.mp4` | Jérusalem à contre-jour depuis le mont des Oliviers (l'ancien plan était déjà vu en 1.9 et 6.19) |
+
+Réserves du chapitre 6 renumérotées : 06.R1 et 06.R2 sont maintenant la porte de Damas et le quai de Jaffa ;
+l'aire de battage et le marché de Jaffa passent en 06.R3 et 06.R4. Légendes des nouvelles archives : cartons 80 à 86.
+Les nouvelles archives n'ont pas de son d'origine : chacune a son ambiance.
+
+**Règle** : jamais deux fois la même image dans le film (plusieurs plans d'une même vidéo, oui).
