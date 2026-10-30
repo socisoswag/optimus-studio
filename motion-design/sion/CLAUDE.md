@@ -104,6 +104,9 @@ les rendus qu'elle utilise (derush garde les plans déjà livrés dont le rendu 
   baissés dessous (dans Premiere : Son essentiel, atténuation automatique), le film fini à -14 LUFS.
 - Rendus longs (plus de 5 minutes) : `bash tools/rendu_morceaux.sh <nom>` (morceaux de 60 s dans `output/morceaux/`) ;
   si la machine redémarre, relancer la même commande reprend au premier morceau manquant.
+- Plans et parties déjà livrés : numéros et découpage figés (l'auteur monte dessus). Jamais de renumérotation, jamais de
+  plan inséré ou supprimé ; une vraie image se pose en remplacement, au même numéro. Une coupe de longueur se propose en
+  liste (plan, de telle seconde à telle seconde) que l'auteur applique dans Premiere, sans relivrer le plan.
 - Après une modification du script : `python3 tools/script.py`, puis `python3 tools/coherence.py` (chapitres qui se
   suivent, fichiers et durées des plans, références « plan 25.8 » des documents), puis commit et push. Un plan inséré
   décale les suivants du chapitre : noter l'ancien et le nouveau numéro dans `script/CHANGEMENTS.md`.
