@@ -299,19 +299,20 @@ Source : SOURCES.md 4.1, Adobe Stock 259921414 (lieu non précisé : aucune lég
 (22 mots, 1.9 par seconde)
 
 
-**5.8** · film **00:08:30:05 → 00:08:40:05** (10.0 s) · **[IA]** `output/reconstitutions/9-10-labour-boeufs.mp4` · source 00:00:00:00 → 00:00:10:00  
-Source : SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 12172, laboureur et ses bœufs, Jérusalem au fond)  
-À l'écran : déjà dans le plan : la vraie photo, puis la reconstitution (Entre 1898 et 1946 · Jérusalem · Labour aux bœufs au pied de la ville)  
+**5.8** · film **00:08:30:05 → 00:08:40:05** (10.0 s) · **[ARCH]** `output/archives-filmees/1913-lac-de-tiberiade-pionniers-labourent.mp4` · source 00:00:00:00 → 00:00:10:00  
+Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)  
+À l'écran : carton : 1913 · Au bord du lac de Tibériade · Des pionniers juifs labourent la terre de leur ferme.  
 > VOIX : Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, / et les ouvriers arabes sont écartés.  
-(22 mots, 2.2 par seconde)
+(22 mots, 2.2 par seconde)  
+Note : vraie image filmée à la place de la reconstitution par IA (labour aux bœufs, mise en réserve du chapitre)
 
 
-**5.9** · film **00:08:40:05 → 00:08:50:05** (10.0 s) · **[IA]** `output/reconstitutions/16-29-tel-aviv-1909.mp4` · source 00:00:00:00 → 00:00:10:00  
-Source : photo d'Avraham Soskine, 11 avril 1909 (domaine public)  
-À l'écran : déjà dans le plan : 11 avril 1909 · Au nord de Jaffa · le tirage au sort des terrains · Photo d'archive animée par IA  
+**5.9** · film **00:08:40:05 → 00:08:50:05** (10.0 s) · **[ARCH]** `output/archives-filmees/1913-tel-aviv-la-jeune-ville.mp4` · source 00:00:00:00 → 00:00:10:00  
+Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)  
+À l'écran : carton : 1913 · Tel-Aviv · La ville fondée quatre ans plus tôt au nord de Jaffa.  
 > VOIX : En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la ville arabe.  
 (22 mots, 2.2 par seconde)  
-Note : le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même plan dans le film)
+Note : vraie image filmée à la place de la photo de 1909 animée par IA (mise en réserve du chapitre) ; le plan de drone de Jaffa est passé dans l'intro
 
 
 ## Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface
@@ -346,19 +347,20 @@ Source : SOURCES.md 4 (Google Veo, d'après matpc 06520)
 (14 mots, 1.2 par seconde)
 
 
-**6.5** · film **00:09:23:15 → 00:09:30:20** (7.2 s) · **[IA]** `output/reconstitutions/3-3-porte-de-damas.mp4` · source 00:00:00:00 → 00:00:07:05  
-Source : SOURCES.md 4 (Google Veo, d'après matpc 21600, le marché aux moutons devant la porte de Damas) ; chiffres : Justin McCarthy, The Population of Palestine, Columbia University Press, 1990, p. 24, 26 et 37 (tableaux 2.3 et 2.18)  
-À l'écran : la vraie photo d'abord, puis la reconstitution (mentions de la pièce)  
+**6.5** · film **00:09:23:15 → 00:09:30:20** (7.2 s) · **[ARCH]** `output/archives-filmees/1913-jerusalem-la-vieille-ville.mp4` · source 00:00:00:00 → 00:00:07:05  
+Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public) ; chiffres : Justin McCarthy, The Population of Palestine, Columbia University Press, 1990, p. 24, 26 et 37 (tableaux 2.3 et 2.18)  
+À l'écran : carton : 1913 · Jérusalem · La vieille ville.  
 > VOIX : Vers 1914, la Palestine compte environ huit cent mille habitants. / Environ un sur dix est **juif**.  
 (16 mots, 2.2 par seconde)  
 Note : vérifié dans le livre. McCarthy : 798 389 habitants, dont 657 377 musulmans (avec 55 000 nomades), 81 012 chrétiens et environ 60 000 juifs (61 000 au tableau 2.18), en comptant les juifs de nationalité étrangère. Piège : le chiffre de 38 754 juifs (p. 10, repris par Perplexity) ne compte que les sujets ottomans, il oublie environ 20 000 juifs étrangers. L'estimation sioniste d'époque (Arthur Ruppin) dit 85 000 juifs, soit 12 % ; McCarthy la juge gonflée. « Environ un sur dix » couvre les deux.
 
 
-**6.6** · film **00:09:30:20 → 00:09:41:00** (10.2 s) · **[IA]** `output/reconstitutions/2-2-quai-jaffa.mp4` · source 00:00:00:00 → 00:00:10:05  
-Source : SOURCES.md 4 (Google Veo, d'après matpc 04992)  
-À l'écran : mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
+**6.6** · film **00:09:30:20 → 00:09:41:00** (10.2 s) · **[ARCH]** `output/archives-filmees/1913-tiberiade-puis-hebron.mp4` · source 00:00:00:00 → 00:00:10:05  
+Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)  
+À l'écran : carton : 1913 · Tibériade, puis Hébron · Deux villes anciennes du pays.  
 > VOIX : Le pays n'est pas vide. / Il a un nom, des villes, des paysans, / et bientôt des journaux qui s'**inquiètent**.  
-(20 mots, 2.0 par seconde)
+(20 mots, 2.0 par seconde)  
+Note : vraie image filmée à la place de la reconstitution du quai de Jaffa (mise en réserve du chapitre)
 
 
 **6.7** · film **00:09:41:00 → 00:09:53:00** (12.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:00:45:00 → 00:00:57:00  

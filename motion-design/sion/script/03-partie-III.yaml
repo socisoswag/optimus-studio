@@ -192,11 +192,14 @@ chapitres:
         voix: >-
           En 1949, Israël tient 78 % de la Palestine mandataire. / La Cisjordanie passe à la Jordanie, / Gaza à
           l'**Égypte**.
-      - type: MD
-        fichier: output/nakba-1948.mp4
-        entree: 83
-        sortie: 93
-        source: "résolution 194 (III) de l'Assemblée générale, 11 décembre 1948, paragraphe 11"
+      - type: ARCH
+        fichier: output/archives-filmees/1950-sands-of-sorrow-camp-de-tentes.mp4
+        carton: output/cartons/84-arch-1950-sands-of-sorrow-camp-de-tentes.mov
+        entree: 0
+        sortie: 10
+        ecran: "carton : 1950 · Camp de réfugiés palestiniens · Les tentes de ceux qui n'ont pas pu rentrer."
+        source: "résolution 194 (III) de l'Assemblée générale, 11 décembre 1948, paragraphe 11 ; SOURCES.md 4.2 (Sands of Sorrow, Theodore A. Morde, 1950, domaine public)"
+        note: "vraie image filmée à la place de la carte de nakba-1948 (83 à 93)"
         voix: >-
           Le 11 décembre 1948, l'ONU demande que les réfugiés qui le souhaitent puissent rentrer chez eux. // Ce n'est
           jamais **appliqué**.

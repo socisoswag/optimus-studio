@@ -306,6 +306,13 @@ chapitres:
 
   - num: "5"
     titre: "Chapitre 5 · Les premiers colons juifs en Palestine"
+    reserve:
+      - fichier: output/reconstitutions/9-10-labour-boeufs.mp4
+        type: IA
+        note: "labour aux bœufs au pied de Jérusalem (reconstitution par IA), remplacé au plan 5.8 par des pionniers filmés en 1913"
+      - fichier: output/reconstitutions/16-29-tel-aviv-1909.mp4
+        type: IA
+        note: "le tirage au sort des terrains de Tel-Aviv, 11 avril 1909 (photo d'Avraham Soskine animée par IA), remplacé au plan 5.9 par Tel-Aviv filmée en 1913"
     intention: >-
       Les pionniers ont un vrai idéal (fuir les pogroms, travailler la terre, faire revivre l'hébreu) : le dire.
       Et montrer la règle qui exclut déjà les Arabes : le « travail hébreu ».
@@ -362,23 +369,25 @@ chapitres:
         voix: >-
           La deuxième vague, après 1904, est différente. / De jeunes socialistes rêvent d'un Juif nouveau, /
           paysan sur sa terre, / qui parle l'hébreu **ressuscité**.
-      - type: IA
-        fichier: output/reconstitutions/9-10-labour-boeufs.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1913-lac-de-tiberiade-pionniers-labourent.mp4
+        carton: output/cartons/80-arch-1913-lac-de-tiberiade-pionniers-labourent.mov
         entree: 0
         sortie: 10
-        source: "SOURCES.md 2.2 et 4 (Google Veo, d'après matpc 12172, laboureur et ses bœufs, Jérusalem au fond)"
-        ecran: "déjà dans le plan : la vraie photo, puis la reconstitution (Entre 1898 et 1946 · Jérusalem · Labour aux bœufs au pied de la ville)"
+        source: "SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)"
+        ecran: "carton : 1913 · Au bord du lac de Tibériade · Des pionniers juifs labourent la terre de leur ferme."
+        note: "vraie image filmée à la place de la reconstitution par IA (labour aux bœufs, mise en réserve du chapitre)"
         voix: >-
           Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, /
           et les ouvriers arabes sont écartés.
-      - type: IA
-        fichier: output/reconstitutions/16-29-tel-aviv-1909.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1913-tel-aviv-la-jeune-ville.mp4
+        carton: output/cartons/81-arch-1913-tel-aviv-la-jeune-ville.mov
         entree: 0
         sortie: 10
-        ecran: "déjà dans le plan : 11 avril 1909 · Au nord de Jaffa · le tirage au sort des terrains · Photo d'archive animée par IA"
-        photo: "Wikimedia Commons, « TelAviv-Founding », Avraham Soskin, 1909, domaine public"
-        source: "photo d'Avraham Soskine, 11 avril 1909 (domaine public)"
-        note: "le plan de drone de Jaffa est passé dans l'intro (pas deux fois le même plan dans le film)"
+        ecran: "carton : 1913 · Tel-Aviv · La ville fondée quatre ans plus tôt au nord de Jaffa."
+        source: "SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)"
+        note: "vraie image filmée à la place de la photo de 1909 animée par IA (mise en réserve du chapitre) ; le plan de drone de Jaffa est passé dans l'intro"
         voix: >-
           En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la
           ville arabe.
@@ -386,6 +395,12 @@ chapitres:
   - num: "6"
     titre: "Chapitre 6 · La Palestine ottomane : coexistence et tensions sous la surface"
     reserve:
+      - fichier: output/reconstitutions/3-3-porte-de-damas.mp4
+        type: IA
+        note: "le marché aux moutons devant la porte de Damas (reconstitution par IA), remplacé au plan 6.5 par la vieille ville filmée en 1913"
+      - fichier: output/reconstitutions/2-2-quai-jaffa.mp4
+        type: IA
+        note: "le quai de Jaffa (reconstitution par IA), remplacé au plan 6.6 par Tibériade et Hébron filmées en 1913"
       - fichier: output/reconstitutions/10-11-aire-de-battage.mp4
         note: "l'aire de battage près de Bethléem, entre 1920 et 1933 (la vraie photo, puis la reconstitution par IA) : des paysans, pour le plan 6.6"
       - fichier: output/reconstitutions/4-4-marche-jaffa.mp4
@@ -425,14 +440,15 @@ chapitres:
         ecran: "mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
         voix: >-
           Musulmans, chrétiens et juifs y vivent depuis des siècles, / sous l'autorité de l'Empire **ottoman**.
-      - type: IA
-        fichier: output/reconstitutions/3-3-porte-de-damas.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1913-jerusalem-la-vieille-ville.mp4
+        carton: output/cartons/82-arch-1913-jerusalem-la-vieille-ville.mov
         entree: 0
         sortie: 7.2
         source: >-
-          SOURCES.md 4 (Google Veo, d'après matpc 21600, le marché aux moutons devant la porte de Damas) ; chiffres : Justin McCarthy, The Population of Palestine,
+          SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public) ; chiffres : Justin McCarthy, The Population of Palestine,
           Columbia University Press, 1990, p. 24, 26 et 37 (tableaux 2.3 et 2.18)
-        ecran: "la vraie photo d'abord, puis la reconstitution (mentions de la pièce)"
+        ecran: "carton : 1913 · Jérusalem · La vieille ville."
         voix: >-
           Vers 1914, la Palestine compte environ huit cent mille habitants. / Environ un sur dix est **juif**.
         note: >-
@@ -441,12 +457,14 @@ chapitres:
           étrangère. Piège : le chiffre de 38 754 juifs (p. 10, repris par Perplexity) ne compte que les sujets
           ottomans, il oublie environ 20 000 juifs étrangers. L'estimation sioniste d'époque (Arthur Ruppin) dit
           85 000 juifs, soit 12 % ; McCarthy la juge gonflée. « Environ un sur dix » couvre les deux.
-      - type: IA
-        fichier: output/reconstitutions/2-2-quai-jaffa.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1913-tiberiade-puis-hebron.mp4
+        carton: output/cartons/83-arch-1913-tiberiade-puis-hebron.mov
         entree: 0
         sortie: 10.2
-        source: "SOURCES.md 4 (Google Veo, d'après matpc 04992)"
-        ecran: "mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
+        source: "SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)"
+        ecran: "carton : 1913 · Tibériade, puis Hébron · Deux villes anciennes du pays."
+        note: "vraie image filmée à la place de la reconstitution du quai de Jaffa (mise en réserve du chapitre)"
         voix: >-
           Le pays n'est pas vide. / Il a un nom, des villes, des paysans, / et bientôt des journaux qui
           s'**inquiètent**.

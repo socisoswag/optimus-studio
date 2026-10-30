@@ -347,11 +347,12 @@ Source : Yuval Abraham, « Lavender », +972 Magazine et Local Call, 3 avril 202
 (32 mots, 2.3 par seconde)
 
 
-**25.40** · film **01:06:40:00 → 01:06:52:00** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:07:37:00 → 00:07:49:00  
-Source : conférence de presse de Donald Trump et Benyamin Netanyahou, Maison-Blanche, 4 février 2025  
-À l'écran : fiche : Washington · 4 février 2025 · « La Riviera du Moyen-Orient »  
+**25.40** · film **01:06:40:00 → 01:06:52:00** (12.0 s) · **[ARCH]** `output/plans-reels/washington-2025-trump-netanyahou.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : conférence de presse de Donald Trump et Benyamin Netanyahou, Maison-Blanche, 4 février 2025 (vidéo de la Maison-Blanche, domaine public) ; SOURCES.md 4.2  
+À l'écran : carton : 4 février 2025 · Washington, Maison-Blanche · Donald Trump et Benyamin Netanyahou en conférence de presse.  
 > VOIX : En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.  
-(27 mots, 2.2 par seconde)
+(27 mots, 2.2 par seconde)  
+Note : vraie image à la place de la fiche de documents-6 (457 à 469)
 
 
 **25.41** · film **01:06:52:00 → 01:07:05:00** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:02:55:00 → 00:03:08:00  
@@ -430,12 +431,12 @@ Source : Bezalel Smotrich, 1er mars 2023, après l'attaque de colons contre Huwa
 Note : dire qu'il a ensuite retiré ses propos : la voix le fait au plan suivant
 
 
-**26.8** · film **01:08:59:00 → 01:09:13:00** (14.0 s) · **[MD]** `output/documents-6.mp4` · source 00:04:29:00 → 00:04:43:00  
-Source : OCHA, rapport de situation du 15 octobre 2026 et instantané du 14 octobre 2026 (incidents de colons avec victimes ou dégâts : 428 du 7 octobre au 31 décembre 2023, 1 449 en 2024, 1 836 en 2025, plus de 2 060 en 2026 au 12 octobre) ; UNRWA, repris par l'OCHA, 14 septembre 2026 (déplacés : Jénine 12 557, Tulkarem 12 412, Nour Chams 9 207)  
-À l'écran : fiche : Cisjordanie occupée · depuis octobre 2023 · En Cisjordanie aussi  
+**26.8** · film **01:08:59:00 → 01:09:13:00** (14.0 s) · **[ARCH]** `output/plans-reels/cisjordanie-2024-maison-incendiee-colons.mp4` · source 00:00:00:00 → 00:00:14:00  
+Source : vidéo « A house set on fire by settlers », Wikimedia Commons, CC0 (SOURCES.md 4.2) ; OCHA, rapport de situation du 15 octobre 2026 et instantané du 14 octobre 2026 (incidents de colons avec victimes ou dégâts : 428 du 7 octobre au 31 décembre 2023, 1 449 en 2024, 1 836 en 2025, plus de 2 060 en 2026 au 12 octobre) ; UNRWA, repris par l'OCHA, 14 septembre 2026 (déplacés : Jénine 12 557, Tulkarem 12 412, Nour Chams 9 207)  
+À l'écran : carton : Avril 2024 · Al-Mughayyir, Cisjordanie · Une maison incendiée par des colons, selon ses habitants.  
 > VOIX : En Cisjordanie aussi, la violence explose : / plus de 5 700 attaques de colons en trois ans, d'après les relevés de l'ONU. / En 2025, l'armée lance l'opération « Mur de fer » dans les camps du nord : / à Jénine, Tulkarem et Nour Chams, plus de 34 000 **déplacés**.  
 (45 mots, 3.2 par seconde)  
-Note : 5 700 : somme des séries de l'OCHA (incidents avec victimes ou dégâts) ; à Jénine, une partie des déplacés date d'une opération de l'Autorité palestinienne
+Note : 5 700 : somme des séries de l'OCHA (incidents avec victimes ou dégâts) ; à Jénine, une partie des déplacés date d'une opération de l'Autorité palestinienne ; vraie image à la place de la fiche de documents-6 (269 à 283)
 
 
 **26.9** · film **01:09:13:00 → 01:09:27:00** (14.0 s) · **[MD]** `output/documents-7.mp4` · source 00:03:08:00 → 00:03:22:00  

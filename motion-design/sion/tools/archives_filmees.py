@@ -14,7 +14,7 @@ Restauration, sans IA :
     d'avant et celle d'après sont identiques, jamais sur un mouvement), bruit atténué ;
   - films tournés à la manivelle (1903, 1918) : tremblement de la pellicule corrigé, mouvement de caméra gardé.
 Puis mis au format du film comme les autres archives (tools/plans_reels.sh) : 1080p 25 i/s, look « archive »
-(tools/looks.py), halo, courbe pellicule, flottement, grain et vignette. Sans son : le son vient du montage.
+(tools/looks.py), halo, courbe pellicule, grain et vignette (sans flottement : il se lisait comme une saccade). Sans son : le son vient du montage.
 Sources et licences : SOURCES.md 4.2.
 """
 import glob
@@ -117,6 +117,10 @@ ARCHIVES = {
     "1950-sands-of-sorrow-enfants": ("sands_of_sorrow", "sands_of_sorrow.mpeg", "690:466:15:7",
                                      [(1121.5, 1124.0), (1127.3, 1131.0), (1154.4, 1157.4)],
                                      {"pre": "curves=all='0/0 0.35/0.24 0.7/0.55 1/0.84'"}),
+    # le camp de tentes vu de loin, puis les tentes de près (1:41 à 1:55 du film)
+    "1950-sands-of-sorrow-camp-de-tentes": ("sands_of_sorrow", "sands_of_sorrow.mpeg", "690:466:15:7",
+                                            [(101.5, 108.6), (111.3, 115.2)],
+                                            {"pre": "curves=all='0/0 0.35/0.24 0.7/0.55 1/0.84'"}),
     # actualités Universal du 1er novembre 1956, « War in Egypt » : la flotte en Méditerranée orientale, les avions,
     # une bombe sous l'aile
     # actualités Universal du 18 mai 1948, « Jews Defend New Zion State », copie du musée américain de l'Holocauste (USHMM,
@@ -194,6 +198,12 @@ ARCHIVES = {
     "1913-hebron-la-communaute-juive": ("https://upload.wikimedia.org/wikipedia/commons/d/da/The_Life_of_the_Jews_in_Palestine_-_Hebron_segment_%281913%29.webm",
                                         "", "376:282:96:0", [(13.0, 18.0), (95.0, 102.0)],
                                         {"stab": True, "pre": "curves=all='0/0.06 0.25/0.36 0.6/0.74 1/0.97'"}),
+    # même film de 1913 (copie entière reçue par la Dropbox) : quatre plans à la place de reconstitutions par IA,
+    # toujours recadrés à droite du logo CNC/IFA (en bas à gauche) ; film à la manivelle : tremblement corrigé
+    "1913-tel-aviv-la-jeune-ville": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(228.0, 238.6)], {"stab": True}),
+    "1913-lac-de-tiberiade-pionniers-labourent": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(1544.0, 1554.6)], {"stab": True}),
+    "1913-jerusalem-la-vieille-ville": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(1832.0, 1839.8)], {"stab": True}),
+    "1913-tiberiade-puis-hebron": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(1411.4, 1418.8), (2401.0, 2404.4)], {"stab": True}),
     # l'entrée du général Allenby à Jérusalem, 11 décembre 1917 (War Office Cinema Committee, domaine public) :
     # Allenby et son état-major à pied, devant la porte de Jaffa
     "1917-allenby-entre-a-jerusalem": ("https://upload.wikimedia.org/wikipedia/commons/b/b6/General_Allenby%27s_entry_into_Jerusalem_%281917%29.webm",
@@ -234,7 +244,7 @@ def finition():
                                  "console.log('rr='+h[0]+':gg='+h[1]+':bb='+h[2])"], cwd=ROOT, text=True).strip()
     return ("format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=sigma=26,colorchannelmixer=" + h + "[h];"
             "[a][h]blend=all_mode=screen:all_opacity=0.30,curves=all='0/0.02 0.18/0.155 0.5/0.49 0.82/0.86 1/0.965',"
-            "crop=w=1904:h=1071:x='8+1.1*sin(n*0.37)+0.6*sin(n*1.13)':y='4.5+0.9*sin(n*0.29+1)+0.5*sin(n*0.97)',scale=1920:1080:flags=lanczos")
+            "crop=w=1904:h=1071:x=8:y=4,scale=1920:1080:flags=lanczos")
 
 
 def cadence(src, net, opts):
@@ -254,8 +264,12 @@ def cadence(src, net, opts):
 
 
 def vitesse(fps):
-    """Passage à 25 i/s : 24 et 23,976 sans perdre ni doubler d'image (légère accélération), le reste par fps=25."""
-    return {"24000/1001": "setpts=PTS*24000/25025,", "24/1": "setpts=PTS*24/25,"}.get(fps, "") + "fps=25"
+    """Passage à 25 i/s sans perdre ni doubler d'image : 24 et 23,976 légèrement accélérés, 30 et 29,97 joués à 25
+    (17 % plus lent ; fps=25 seul sautait une image sur six, une saccade cinq fois par seconde), 60 une sur deux."""
+    return {"24000/1001": "setpts=PTS*24000/25025,", "24/1": "setpts=PTS*24/25,",
+            "30000/1001": "setpts=PTS*30000/25025,", "2997/100": "setpts=PTS*2997/2500,", "30/1": "setpts=PTS*30/25,",
+            "60000/1001": "select='not(mod(n\\,2))',setpts=N/25/TB,", "60/1": "select='not(mod(n\\,2))',setpts=N/25/TB,",
+            "50/1": "select='not(mod(n\\,2))',setpts=N/25/TB,"}.get(fps, "") + "fps=25"
 
 
 def poussieres(entree, sortie, t1=14, t2=22):

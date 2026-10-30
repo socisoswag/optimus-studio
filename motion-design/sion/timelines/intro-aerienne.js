@@ -43,15 +43,16 @@
     fadeIn: 2.6,
     fadeOut: 1.6,
     dips: [],
-    // effets : turbulence à l'entrée dans l'atmosphère, coupes en filé, flash et impact avant le titre, bandes cinéma
+    // effets : coupes en filé, flash et impact avant le titre, bandes cinéma (plus de secousses à l'entrée dans
+    // l'atmosphère : elles se lisaient comme des saccades)
     fx: {
       letterbox: 2.39, streak: 0.35,
       cuts: [
-        { t: 28.6, type: 'fondu', dur: 0.8 },
+        { t: 23, type: 'fondu', dur: 0.8 },
         { t: 56.72, type: 'flash', col: [1, 0.86, 0.7], pre: 0.14, dur: 0.45 },
         { t: 63.2, type: 'flash', col: [1, 0.55, 0.25], k: 0.28, pre: 0.05, dur: 0.5 },
       ],
-      shakes: [[16.8, 2.2, 1.4], [18.9, 3.2, 1.1], [20.6, 4.5, 0.9]],
+      shakes: [],
     },
     dipCol: [0.93, 0.87, 0.79],
     shots: [
@@ -77,20 +78,12 @@
         ],
       },
       {
-        id: 'cote', t0: 23, t1: 28.6, ramp: [[0, 1.9], [1.6, 0.95], [10.6, 0.95], [12, 1.8]], cloudPass: [[0, 1], [0.35, 1], [1.7, 0]], light: 'cote', detail: 'cote', sun: [101, 3.2], env: dawn,
-        label: { at: 3.2, eyebrow: '32°02′ N · 34°41′ E', place: 'Mer Méditerranée', sub: 'Au large de Jaffa' },
-        pins: [{ name: 'Jaffa', lon: 34.7525, lat: 32.0540, at: 5.4, out: 10.6, h: 40 }],
-        keys: [
-          { t: 0, lon: 34.668, lat: 32.031, alt: 640, hdg: 90, pitch: -5.5 },
-          { t: 7, lon: 34.678, lat: 32.029, alt: 590, hdg: 89.4, pitch: -5.0 },
-          { t: 14.6, lon: 34.689, lat: 32.026, alt: 540, hdg: 88.6, pitch: -4.4 },
-        ],
-      },
-      {
-        // vrai plan : Jaffa, le clocher, la vieille ville et le port ; on y arrive par un fondu depuis la mer en 3D
-        id: 'jaffa', t0: 28.6, t1: 38.6, plate: { src: 'output/plans-reels/jaffa-clocher-vieille-ville-aerien.mp4', stock: '390879149' },
+        // vrai plan : la vieille ville de Jaffa et son port, survol lent ; on y arrive par un fondu depuis les nuages
+        // (la côte en 3D et l'orbite rapide autour du clocher sont retirées : relief flou, rotation trop rapide)
+        id: 'jaffa', t0: 23, t1: 38.6, plate: { src: 'output/plans-reels/jaffa-vieille-ville-aerien-intro.mp4', envato: 'YQ5W8UK' },
+        cloudPass: [[0, 1], [0.6, 1], [1.5, 0]],  // dans la 3D, les nuages restent blancs pendant le fondu vers le vrai plan
         light: 'cote', detail: 'cote', sun: [101, 3.2], env: dawn,
-        label: { at: 1.4, eyebrow: '32°03′ N · 34°45′ E', place: 'Jaffa', sub: 'La vieille ville, face à la Méditerranée' },
+        label: { at: 2.2, eyebrow: '32°03′ N · 34°45′ E', place: 'Jaffa', sub: 'La vieille ville, face à la Méditerranée' },
         keys: [
           { t: 0, lon: 34.668, lat: 32.031, alt: 640, hdg: 90, pitch: -5.5 },
           { t: 10, lon: 34.689, lat: 32.026, alt: 540, hdg: 88.6, pitch: -4.4 },

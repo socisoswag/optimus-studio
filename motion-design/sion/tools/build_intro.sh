@@ -39,9 +39,9 @@ if [ "$OUTNAME" = "$NAME" ] || [ ! -f "$WAV" ]; then
 fi
 DUR=$(python3 -c "import json; print(json.load(open('$TMP/intro.json'))['total'])")
 
-# même finition que tools/build.sh : halo chaud des hautes lumières, courbe argentique, flottement
+# même finition que tools/build.sh : halo chaud des hautes lumières, courbe argentique, recadrage fixe (sans flottement)
 HAL=$(node -e "global.window={}; require('./data/palette.js'); const h=window.PALETTE.halation; console.log('rr='+h[0]+':gg='+h[1]+':bb='+h[2])")
-FINISH="format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=sigma=26,colorchannelmixer=$HAL[h];[a][h]blend=all_mode=screen:all_opacity=0.30,curves=all='0/0.02 0.18/0.155 0.5/0.49 0.82/0.86 1/0.965',crop=w=1904:h=1071:x='8+1.1*sin(n*0.37)+0.6*sin(n*1.13)':y='4.5+0.9*sin(n*0.29+1)+0.5*sin(n*0.97)',scale=1920:1080:flags=lanczos"
+FINISH="format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=sigma=26,colorchannelmixer=$HAL[h];[a][h]blend=all_mode=screen:all_opacity=0.30,curves=all='0/0.02 0.18/0.155 0.5/0.49 0.82/0.86 1/0.965',crop=w=1904:h=1071:x=8:y=4,scale=1920:1080:flags=lanczos"
 
 AUTO=$(python3 -c "print(min(12000, int(95 * 8000 / $DUR - 330)))")
 B="${BITRATE:-${AUTO}k}"

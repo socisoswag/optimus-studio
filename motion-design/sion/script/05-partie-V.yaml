@@ -414,12 +414,14 @@ chapitres:
         source: "Yuval Abraham, « Lavender », +972 Magazine et Local Call, 3 avril 2024 (six officiers du renseignement) ; réponse de l'armée israélienne"
         voix: >-
           Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 457
-        sortie: 469
-        ecran: "fiche : Washington · 4 février 2025 · « La Riviera du Moyen-Orient »"
-        source: "conférence de presse de Donald Trump et Benyamin Netanyahou, Maison-Blanche, 4 février 2025"
+      - type: ARCH
+        fichier: output/plans-reels/washington-2025-trump-netanyahou.mp4
+        carton: output/cartons/85-arch-washington-2025-trump-netanyahou.mov
+        entree: 0
+        sortie: 12
+        ecran: "carton : 4 février 2025 · Washington, Maison-Blanche · Donald Trump et Benyamin Netanyahou en conférence de presse."
+        source: "conférence de presse de Donald Trump et Benyamin Netanyahou, Maison-Blanche, 4 février 2025 (vidéo de la Maison-Blanche, domaine public) ; SOURCES.md 4.2"
+        note: "vraie image à la place de la fiche de documents-6 (457 à 469)"
         voix: >-
           En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.
       - type: MD
@@ -514,15 +516,16 @@ chapitres:
           Bezalel Smotrich, ministre des Finances, / après une attaque de colons contre le village de Huwara : / « Le
           village de Huwara doit être **effacé**. »
         note: "dire qu'il a ensuite retiré ses propos : la voix le fait au plan suivant"
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 269
-        sortie: 283
-        ecran: "fiche : Cisjordanie occupée · depuis octobre 2023 · En Cisjordanie aussi"
-        source: "OCHA, rapport de situation du 15 octobre 2026 et instantané du 14 octobre 2026 (incidents de colons avec victimes ou dégâts : 428 du 7 octobre au 31 décembre 2023, 1 449 en 2024, 1 836 en 2025, plus de 2 060 en 2026 au 12 octobre) ; UNRWA, repris par l'OCHA, 14 septembre 2026 (déplacés : Jénine 12 557, Tulkarem 12 412, Nour Chams 9 207)"
+      - type: ARCH
+        fichier: output/plans-reels/cisjordanie-2024-maison-incendiee-colons.mp4
+        carton: output/cartons/86-arch-cisjordanie-2024-maison-incendiee-colons.mov
+        entree: 0
+        sortie: 14
+        ecran: "carton : Avril 2024 · Al-Mughayyir, Cisjordanie · Une maison incendiée par des colons, selon ses habitants."
+        source: "vidéo « A house set on fire by settlers », Wikimedia Commons, CC0 (SOURCES.md 4.2) ; OCHA, rapport de situation du 15 octobre 2026 et instantané du 14 octobre 2026 (incidents de colons avec victimes ou dégâts : 428 du 7 octobre au 31 décembre 2023, 1 449 en 2024, 1 836 en 2025, plus de 2 060 en 2026 au 12 octobre) ; UNRWA, repris par l'OCHA, 14 septembre 2026 (déplacés : Jénine 12 557, Tulkarem 12 412, Nour Chams 9 207)"
         voix: >-
           En Cisjordanie aussi, la violence explose : / plus de 5 700 attaques de colons en trois ans, d'après les relevés de l'ONU. / En 2025, l'armée lance l'opération « Mur de fer » dans les camps du nord : / à Jénine, Tulkarem et Nour Chams, plus de 34 000 **déplacés**.
-        note: "5 700 : somme des séries de l'OCHA (incidents avec victimes ou dégâts) ; à Jénine, une partie des déplacés date d'une opération de l'Autorité palestinienne"
+        note: "5 700 : somme des séries de l'OCHA (incidents avec victimes ou dégâts) ; à Jénine, une partie des déplacés date d'une opération de l'Autorité palestinienne ; vraie image à la place de la fiche de documents-6 (269 à 283)"
       - type: MD
         fichier: output/documents-7.mp4
         entree: 188

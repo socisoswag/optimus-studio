@@ -151,10 +151,12 @@ Source : Walid Khalidi (dir.), All That Remains, Institute for Palestine Studies
 (19 mots, 1.7 par seconde)
 
 
-**13.12** · film **00:29:33:10 → 00:29:43:10** (10.0 s) · **[MD]** `output/nakba-1948.mp4` · source 00:01:23:00 → 00:01:33:00  
-Source : résolution 194 (III) de l'Assemblée générale, 11 décembre 1948, paragraphe 11  
+**13.12** · film **00:29:33:10 → 00:29:43:10** (10.0 s) · **[ARCH]** `output/archives-filmees/1950-sands-of-sorrow-camp-de-tentes.mp4` · source 00:00:00:00 → 00:00:10:00  
+Source : résolution 194 (III) de l'Assemblée générale, 11 décembre 1948, paragraphe 11 ; SOURCES.md 4.2 (Sands of Sorrow, Theodore A. Morde, 1950, domaine public)  
+À l'écran : carton : 1950 · Camp de réfugiés palestiniens · Les tentes de ceux qui n'ont pas pu rentrer.  
 > VOIX : Le 11 décembre 1948, l'ONU demande que les réfugiés qui le souhaitent puissent rentrer chez eux. // Ce n'est jamais **appliqué**.  
-(20 mots, 2.0 par seconde)
+(20 mots, 2.0 par seconde)  
+Note : vraie image filmée à la place de la carte de nakba-1948 (83 à 93)
 
 
 **13.13** · film **00:29:43:10 → 00:29:57:22** (14.5 s) · **[MD]** `output/flux-humains.mp4` · source 00:00:06:05 → 00:00:20:18  

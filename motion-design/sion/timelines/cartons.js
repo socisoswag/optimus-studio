@@ -90,6 +90,13 @@
     ["arch-gaza-2018-14-mai-fumees", "14 mai 2018", "Gaza", "Le jour où l’ambassade américaine ouvre à Jérusalem."],
     ["arch-tel-aviv-2023-manifestation-reforme", "2023", "Tel-Aviv", "Manifestation contre la réforme de la justice."],
     ["arch-masafer-yatta-2023-collines", "22 février 2023", "Masafer Yatta, Cisjordanie", "Les collines où « No Other Land » a été tourné."],
+    ["arch-1913-lac-de-tiberiade-pionniers-labourent", "1913", "Au bord du lac de Tibériade", "Des pionniers juifs labourent la terre de leur ferme."],
+    ["arch-1913-tel-aviv-la-jeune-ville", "1913", "Tel-Aviv", "La ville fondée quatre ans plus tôt au nord de Jaffa."],
+    ["arch-1913-jerusalem-la-vieille-ville", "1913", "Jérusalem", "La vieille ville."],
+    ["arch-1913-tiberiade-puis-hebron", "1913", "Tibériade, puis Hébron", "Deux villes anciennes du pays."],
+    ["arch-1950-sands-of-sorrow-camp-de-tentes", "1950", "Camp de réfugiés palestiniens", "Les tentes de ceux qui n’ont pas pu rentrer."],
+    ["arch-washington-2025-trump-netanyahou", "4 février 2025", "Washington, Maison-Blanche", "Donald Trump et Benyamin Netanyahou en conférence de presse."],
+    ["arch-cisjordanie-2024-maison-incendiee-colons", "Avril 2024", "Al-Mughayyir, Cisjordanie", "Une maison incendiée par des colons, selon ses habitants."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

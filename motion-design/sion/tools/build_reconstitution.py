@@ -107,6 +107,13 @@ for name in order:
     L = LEG.get(name, {})
     # « vitesse » < 1 (légendes) : clip ralenti, images fondues entre elles (pas de saccade)
     vit = f"setpts=PTS/{L['vitesse']},minterpolate=fps={FPS}:mi_mode=blend," if L.get("vitesse") else ""
+    # 24 i/s (Gemini, Veo) → 25 par images interpolées, jamais une image doublée : fps=25 seul en doublait une par
+    # seconde, un petit arrêt sur image visible à chaque seconde du clip
+    if not vit:
+        r = subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate",
+                                     "-of", "csv=p=0", found[name]], text=True).strip()
+        if r != f"{FPS}/1":
+            vit = f"minterpolate=fps={FPS}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,"
     vf = f"{vit}fps={FPS},scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080"
     subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", found[name], "-vf", vf, "-q:v", "3", os.path.join(out, "%04d.jpg")], check=True)
     n = len(glob.glob(os.path.join(out, "*.jpg")))

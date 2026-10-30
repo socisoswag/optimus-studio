@@ -132,7 +132,15 @@ moteur, mêmes gabarits, même finition. Rien de neuf sans raison de récit.
   citation, lignes, épingle), `figure` (fiche de personnage) ; `photo3d.html` pour les archives et les
   reconstitutions ; cartons transparents `timelines/cartons.js`.
 - Finition commune (`tools/build.sh`, `tools/build_intro.sh`, `tools/archives_filmees.py`) : halo chaud des hautes
-  lumières, courbe argentique, léger flottement de l'image, grain, vignette ; 1080p 25 i/s.
+  lumières, courbe argentique, grain, vignette ; 1080p 25 i/s. Plus de « flottement » de l'image : recadré au pixel près,
+  il sautait d'un pixel quatre fois par seconde et se lisait comme une saccade (retiré le 30 octobre).
+- Cadence (pas de saccade) : jamais `fps=25` seul sur une source à 24, 30 ou 60 i/s (il saute ou double des images).
+  23,976 et 24 i/s : accélérés à 25 ; 30 : toutes les images jouées à 25 ; 60 : une sur deux, jouées à 25
+  (`tools/plans_reels.sh`, à qui l'on donne la coupe à sa cadence d'origine) ; clips IA à 24 i/s : images interpolées
+  (`tools/build_reconstitution.py`). Pas de secousse de caméra sur un survol ; un tour autour d'un bâtiment reste lent.
+- Livraison : chaque plan coupé est mesuré et son tremblement rapide retiré (`tools/sans_flottement.py`, appelé par
+  `derush.cut`) ; pour ne refaire que quelques plans : `python3 tools/livrer_plans.py <plans>` ou `--types ARCH,RÉEL`
+  (même nom de fichier, ancien fichier retiré si le type change, PLANS.md et cartons mis à jour).
 - Relief étalonné (moteur, mode « terres ») : ombres froides et profondes, pentes éclairées chaudes, brume bleutée au
   loin (table GRADE de engine.js) ; la grille de points s'efface sous le relief ; les noms de lieu sont cernés de sombre pour rester lisibles sur le relief clair. Grain du moteur fin et doux (grains
   adoucis, opacité 0,2) : un grain dur pixel par pixel devient de la bouillie une fois compressé par YouTube.

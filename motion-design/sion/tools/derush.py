@@ -25,6 +25,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DST = os.environ.get("MONTAGE_DIR") or os.path.join(ROOT, "output", "derush")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from montage import slug  # noqa: E402
+import sans_flottement as SF  # noqa: E402
 
 # (fichier du script, dossier, clé à donner en argument)
 PARTS = [
@@ -61,14 +62,22 @@ def link(src, dst):
         subprocess.run(["cp", src, dst], check=True)
 
 
+# livraison de quelques plans seulement (tools/livrer_plans.py) : numéros des plans (« 13.12 ») et des plans en
+# réserve (« 05.R1 ») à recouper ; les autres plans ne sont pas recoupés mais restent dans les PLANS.md
+SEULS = None
+
 # préréglage x264 des plans livrés : « fast » est 2,2 fois plus rapide que « slow » pour la même image (mesuré le 29
 # octobre sur six-jours : SSIM 19,73 dB contre 19,88 face à la pièce, même taille, plafonnée par le débit maximal)
 PRESET = os.environ.get("DERUSH_PRESET", "fast")
+STAB = os.environ.get("DERUSH_STAB", "1") == "1"  # tremblement retiré des plans (voir cut)
 
 
 def cut(src, a, d, dst, amb=None):
     """Coupe à l'image près ; qualité de montage (CRF 16), son fondu sur quelques millisecondes aux coupes. Un plan
-    sans son (vrai plan, archive, reconstitution) reçoit son ambiance (output/ambiances/<plan>.wav, tools/ambiances.py)."""
+    sans son (vrai plan, archive, reconstitution) reçoit son ambiance (output/ambiances/<plan>.wav, tools/ambiances.py).
+    Le tremblement rapide de l'ancienne finition (« flottement », des sauts d'un pixel plusieurs fois par seconde, vus
+    comme des saccades) est mesuré puis retiré image par image (tools/sans_flottement.py : translation seule, 3 pixels
+    au plus) ; les mouvements de caméra voulus et les secousses des impacts restent. Les cartons n'en ont pas besoin."""
     KEEP.add(dst)
     amb = amb if amb and os.path.exists(amb) else None
     stamp = [os.path.relpath(src, ROOT), int(os.path.getmtime(src)), round(a, 3), round(d, 3)] + ([int(os.path.getmtime(amb))] if amb else [])
@@ -80,12 +89,26 @@ def cut(src, a, d, dst, amb=None):
     cmd = ["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-i", src]
     if not has_audio:
         cmd += ["-i", amb] if amb else ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo"]
-    cmd += ["-t", f"{d:.3f}", "-map", "0:v:0", "-map", "0:a:0" if has_audio else "1:a:0",
-            "-vf", "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,fps=25,format=yuv420p,setsar=1",
+    chaine = "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,fps=25,setsar=1"
+    j = None
+    if STAB and "/chapitres/" not in src:
+        j, tr = SF.tremblement(SF.mesure(src, ["-ss", f"{a:.3f}", "-i", src, "-t", f"{d:.3f}"], chaine + ","))
+        if tr < 0.2:
+            j = None
+    if j is not None:  # images décodées, décalées sous le pixel (un recadrage au pixel près ne suffit pas), puis encodées
+        dec = ["ffmpeg", "-nostdin", "-loglevel", "error", "-ss", f"{a:.3f}", "-i", src, "-t", f"{d:.3f}", "-map", "0:v:0",
+               "-vf", chaine, "-pix_fmt", "bgr24", "-f", "rawvideo", "-"]
+        cmd = ["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", "1920x1080", "-r", "25",
+               "-i", "-", *(["-ss", f"{a:.3f}", "-i", src] if has_audio else (["-i", amb] if amb else ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo"]))]
+    cmd += ["-t", f"{d:.3f}", "-map", "0:v:0", "-map", "1:a:0" if (j is not None or not has_audio) else "0:a:0",
+            "-vf", "format=yuv420p" if j is not None else chaine + ",format=yuv420p",
             "-c:v", "libx264", "-preset", PRESET, "-crf", "16", "-maxrate", f"{rate}k", "-bufsize", f"{rate * 2}k", "-tune", "grain",
             "-af", f"aresample=48000,afade=t=in:d=0.04,afade=t=out:st={max(0, d - 0.06):.3f}:d=0.06",
             "-c:a", "aac", "-aac_pns", "0", "-aac_is", "0", "-b:a", "320k", "-ar", "48000", "-movflags", "+faststart", dst + ".part.mp4"]
-    subprocess.run(cmd, check=True)
+    if j is not None:
+        SF.tuyau(dec, cmd, j)
+    else:
+        subprocess.run(cmd, check=True)
     os.replace(dst + ".part.mp4", dst)
     MANIFEST[os.path.basename(dst)] = stamp
 
@@ -137,7 +160,7 @@ def part(yml, folder):
         cd = os.path.join(pd, chapter_folder(ch["num"], ch["titre"]))
         os.makedirs(cd, exist_ok=True)
         rows, manque, total, ok = [], [], 0.0, 0
-        cartons = []
+        cartons, tous_cartons = [], False
         for k, p in enumerate(ch["plans"], start=1):
             pid = plan_id(ch["num"], k)
             fic = flat(p.get("fichier"))
@@ -147,13 +170,16 @@ def part(yml, folder):
             total += d
             typ = p["type"]
             name = None
+            sel = SEULS is None or pid in SEULS
             if typ == "NOIR":
                 name = f"{pid}-noir.mp4"
-                black(d, os.path.join(cd, name))
+                if sel:
+                    black(d, os.path.join(cd, name))
             elif typ in VIDEO and src and os.path.exists(src) and not p.get("a_obtenir"):
                 base = os.path.splitext(os.path.basename(fic))[0]
                 name = f"{pid}-{typ.replace('É', 'E')}-{slug(base, 40).lower()}.mp4"
-                cut(src, a, d, os.path.join(cd, name), os.path.join(ROOT, "output", "ambiances", f"{pid}.wav"))
+                if sel:
+                    cut(src, a, d, os.path.join(cd, name), os.path.join(ROOT, "output", "ambiances", f"{pid}.wav"))
             else:
                 # rendu absent sur cette machine (nouvelle session) mais plan déjà livré : on garde la version livrée
                 old = [] if p.get("a_obtenir") or not src else sorted(glob.glob(os.path.join(cd, f"{pid}-*.mp4")))
@@ -164,7 +190,8 @@ def part(yml, folder):
                     why = "à obtenir" if p.get("a_obtenir") else ("photo à remplacer par de la vidéo" if typ == "PHOTO" else "pas encore rendu")
                     manque.append(f"| {pid} | {typ} | {d:.1f} s | {why} : {fic.replace('|', '/')} |")
             ok += name is not None
-            cartons += cartons_of(p)
+            cartons += cartons_of(p) if sel else []
+            tous_cartons = tous_cartons or bool(cartons_of(p))
             ecr = flat(p.get('ecran')) + (f" (carton `{os.path.basename(flat(p['carton']))}`)" if p.get("carton") else "")
             rows.append(f"| {pid} | `{name}` | {typ} | {d:.1f} s | {ecr.replace('|', '/')} | {flat(p.get('voix')).replace('|', '/') or 'silence'} |"
                         if name else f"| {pid} | à venir | {typ} | {d:.1f} s | {flat(p.get('ecran')).replace('|', '/')} | {flat(p.get('voix')).replace('|', '/') or 'silence'} |")
@@ -178,8 +205,10 @@ def part(yml, folder):
             src = os.path.join(ROOT, x["fichier"])
             if os.path.exists(src):
                 typ = (x.get("type") or "IA").replace("É", "E")  # une archive filmée en réserve garde son type
-                name = f"{plan_id(ch['num'], 0)[:-3]}.R{r}-{typ}-{slug(os.path.splitext(os.path.basename(x['fichier']))[0], 40).lower()}.mp4"
-                cut(src, 0, duration(src), os.path.join(cd, name))
+                rid = f"{plan_id(ch['num'], 0)[:-3]}.R{r}"
+                name = f"{rid}-{typ}-{slug(os.path.splitext(os.path.basename(x['fichier']))[0], 40).lower()}.mp4"
+                if SEULS is None or rid in SEULS:
+                    cut(src, 0, duration(src), os.path.join(cd, name))
                 reserve.append(f"| `{name}` | {duration(src):.1f} s | {flat(x.get('note')).replace('|', '/')} |")
         doc = [f"# {ch['titre']}\n", f"{len(ch['plans'])} plans, {total:.1f} s. Pose les fichiers dans l'ordre de leur numéro : "
                "chaque plan a la durée prévue par le script pour sa voix off (2,4 mots par seconde au plus).\n"]
@@ -190,7 +219,7 @@ def part(yml, folder):
             doc += ["", "## Pas encore en vidéo", "", "| Plan | Type | Durée | Ce qu'il faut |", "|---|---|---|---|"] + manque
         if reserve:
             doc += ["", "## En réserve (plans en plus, à placer où tu veux)", "", "| Fichier | Durée | Ce que c'est |", "|---|---|---|"] + reserve
-        if cartons:
+        if tous_cartons:
             doc += ["", "Cartons transparents (lieu et date, fond transparent) dans `cartons/` : à poser au-dessus du plan qui les cite."]
         path = os.path.join(cd, "PLANS.md")
         open(path, "w", encoding="utf-8").write("\n".join(doc) + "\n")
@@ -200,9 +229,11 @@ def part(yml, folder):
     path = os.path.join(pd, "LISEZMOI.md")
     open(path, "w", encoding="utf-8").write(f"# {data['titre']}\n\n" + "\n".join(resume) + "\n")
     KEEP.add(path)
-    json.dump({k: v for k, v in MANIFEST.items() if any(x.endswith("/" + k) for x in KEEP)}, open(mf, "w", encoding="utf-8"), indent=0)
+    # quelques plans seulement : les autres plans de la partie gardent leur ligne du manifeste, rien n'est effacé
+    json.dump({k: v for k, v in MANIFEST.items() if SEULS is not None or any(x.endswith("/" + k) for x in KEEP)},
+              open(mf, "w", encoding="utf-8"), indent=0)
     KEEP.add(mf)
-    for dp, dn, fn in os.walk(pd, topdown=False):
+    for dp, dn, fn in ([] if SEULS is not None else os.walk(pd, topdown=False)):
         for f in fn:
             if os.path.join(dp, f) not in KEEP:
                 os.remove(os.path.join(dp, f))

@@ -5,8 +5,10 @@
 #   tools/plans_reels.sh <fichier source> <nom> <look|aucun>
 #   tools/plans_reels.sh lot <fichier id|nom|look|url>     télécharge, met au format, efface la source
 #
-# Cadence : 23,976 et 24 i/s passent à 25 sans perdre d'image (légère accélération, comme à la télévision) ;
-# 29,97, 30, 50 et 60 i/s gardent une image sur deux ou plus (fps=25).
+# Cadence, sans jamais sauter ni doubler une image (un saut se voit comme une saccade sur un survol) : 23,976 et
+# 24 i/s passent à 25 (4 % plus vite, comme à la télévision) ; 29,97 et 30 i/s gardent toutes leurs images, jouées à
+# 25 (17 % plus lent) ; 50 i/s une image sur deux ; 59,94 et 60 i/s une sur deux, jouées à 25 (17 % plus lent).
+# Pas de flottement de l'image : sur une vraie prise moderne, il se lit comme un tremblement.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
@@ -20,11 +22,14 @@ conforme() {
   case "$fps" in
     24000/1001) cad="setpts=PTS*24000/25025,fps=25" ;;
     24/1) cad="setpts=PTS*24/25,fps=25" ;;
+    30000/1001) cad="setpts=PTS*30000/25025,fps=25" ;;
+    30/1) cad="setpts=PTS*30/25,fps=25" ;;
+    60000/1001 | 60/1) cad="select='not(mod(n\,2))',setpts=N/25/TB,fps=25" ;;
     *) cad="fps=25" ;;
   esac
   local hal
   hal=$(node -e "global.window={}; require('./data/palette.js'); const h=window.PALETTE.halation; console.log('rr='+h[0]+':gg='+h[1]+':bb='+h[2])")
-  local fin="format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=sigma=26,colorchannelmixer=$hal[h];[a][h]blend=all_mode=screen:all_opacity=0.30,curves=all='0/0.02 0.18/0.155 0.5/0.49 0.82/0.86 1/0.965',crop=w=1904:h=1071:x='8+1.1*sin(n*0.37)+0.6*sin(n*1.13)':y='4.5+0.9*sin(n*0.29+1)+0.5*sin(n*0.97)',scale=1920:1080:flags=lanczos"
+  local fin="format=gbrp,split=2[a][b];[b]curves=all='0/0 0.6/0 0.85/0.5 1/1',gblur=sigma=26,colorchannelmixer=$hal[h];[a][h]blend=all_mode=screen:all_opacity=0.30,curves=all='0/0.02 0.18/0.155 0.5/0.49 0.82/0.86 1/0.965',crop=w=1904:h=1071:x=8:y=4,scale=1920:1080:flags=lanczos"
   local lut=""
   [ "$look" != aucun ] && lut="unsharp=lx=13:ly=13:la=0.5:cx=5:cy=5:ca=0,lut3d=file=data/looks/$look.cube:interp=tetrahedral,"
   local grain=4
