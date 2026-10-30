@@ -1,5 +1,5 @@
 {
- "maj": "30 octobre 2026, le soir",
+ "maj": "31 octobre 2026",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -55,7 +55,7 @@
    "pct": 80,
    "poids": 3,
    "qui": "moi",
-   "detail": "archives posées : Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023 ; 30 octobre : 1913 (Zikhron Yaakov, Rishon LeZion, orangeraie, Constantinople), camp de 1950, Maison-Blanche 2025, maison incendiée 2024 ; Sinaï 1916 (Australian War Memorial) ; en réserve : Versailles 1919, Sinaï 1967, Damas 1918 ; vraies images : 18,9 min, environ 20 % du film"
+   "detail": "archives posées : Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023 ; 30 octobre : 1913 (Zikhron Yaakov, Rishon LeZion, orangeraie, Constantinople), camp de 1950, Maison-Blanche 2025, maison incendiée 2024 ; Sinaï 1916 et Damas 1918 (Australian War Memorial) ; en réserve : Versailles 1919, Sinaï 1967 ; vraies images : 19,0 min, 20 % du film ; objectif 25 %"
   },
   {
    "nom": "Intégrer les plans Envato et les archives",
@@ -73,10 +73,10 @@
   },
   {
    "nom": "Réponses Perplexity",
-   "pct": 85,
+   "pct": 30,
    "poids": 2,
    "qui": "toi",
-   "detail": "dossier du 30 octobre reçu et appliqué : Peel, eau et Gaza 2012 corrigés (voix 8.20, 8.21, 23.20, 25.9 à relire), lieux de 1913 et droits de « Paths in Palestine » vérifiés ; restent les fichiers Dropbox F28 (Rabin) et F31 (accords d'Abraham)"
+   "detail": "nouveau dossier envoyé le 31 octobre (13 questions ciblées, 3 licences, PDF) pour viser 25 % de vraies images ; restent aussi F28 (Rabin) et F31 (accords d'Abraham) par la Dropbox"
   },
   {
    "nom": "Voix off",
@@ -111,7 +111,7 @@
    "pct": 0,
    "poids": 15,
    "qui": "toi",
-   "detail": "poser les plans sur ta voix ; les plans sont déjà étalonnés"
+   "detail": "projet prêt à importer : SION/SION-premiere.xml (les 491 plans dans l'ordre, cartons, piste voix, marqueurs avec le texte) ; poser la voix et caler les plans"
   },
   {
    "nom": "Mixage et export",

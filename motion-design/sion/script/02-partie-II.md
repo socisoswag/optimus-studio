@@ -30,45 +30,53 @@ Source : With the Australian forces in Palestine (Frank Hurley, 1916 à 1918), A
 À l'écran : carton : Décembre 1916 · Sinaï · Des prisonniers ottomans, escortés par des cavaliers australiens.  
 > VOIX : 1915. / Pour abattre l'Empire ottoman, / Londres fait trois **promesses**.  
 (9 mots, 1.5 par seconde)  
-Note : vraie image à la place de l'ouverture de trois-promesses (0 à 6) ; si tu poses la réserve de Damas sur 7.3, son carton : output/cartons/92-arch-1918-damas-meharistes-du-cherif.mov
+Note : vraie image à la place de l'ouverture de trois-promesses (0 à 6)
 
 
-**7.3** · film **00:13:14:23 → 00:13:27:10** (12.5 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:06:00 → 00:00:18:12  
+**7.3** · film **00:13:14:23 → 00:13:21:23** (7.0 s) · **[ARCH]** `output/archives-filmees/1918-damas-meharistes-du-cherif.mp4` · source 00:00:00:00 → 00:00:07:00  
+Source : With the Australian forces in Palestine (Frank Hurley, 1916 à 1918), Australian War Memorial F00042, « copyright expired, public domain » : « Arrival of the Sheriff of Mecca's Camel Corps », à Damas, à la fin de la révolte arabe ; SOURCES.md 4.2  
+À l'écran : carton : 1918 · Damas · Les méharistes du chérif de La Mecque entrent dans la ville.  
+> VOIX : Aux Arabes d'abord. / S'ils se soulèvent contre les Ottomans, / la Grande-Bretagne soutiendra leur **indépendance**.  
+(14 mots, 2.0 par seconde)  
+Note : vraie image sur la promesse faite aux Arabes : ceux qui se sont soulevés, à Damas en 1918 ; la fiche de la lettre de McMahon suit sur le plan d'après
+
+
+**7.4** · film **00:13:21:23 → 00:13:27:10** (5.5 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:13:00 → 00:00:18:12  
 Source : SOURCES.md 6 (lettre de McMahon à Hussein, 24 octobre 1915)  
 À l'écran : Le Caire · 24 octobre 1915 · Correspondance Hussein-McMahon  
-> VOIX : Aux Arabes d'abord. / S'ils se soulèvent contre les Ottomans, / la Grande-Bretagne soutiendra leur **indépendance**. // C'est la lettre de Henry McMahon au chérif Hussein de La Mecque.  
-(26 mots, 2.1 par seconde)
+> VOIX : C'est la lettre de Henry McMahon au chérif Hussein de La Mecque.  
+(12 mots, 2.2 par seconde)
 
 
-**7.4** · film **00:13:27:10 → 00:13:39:23** (12.5 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:18:12 → 00:00:31:00  
+**7.5** · film **00:13:27:10 → 00:13:39:23** (12.5 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:18:12 → 00:00:31:00  
 Source : SOURCES.md 6 (accords Sykes-Picot, 16 mai 1916)  
 À l'écran : Londres · 16 mai 1916 · secret · Accords Sykes-Picot  
 > VOIX : En même temps, en secret, / Londres et Paris se partagent déjà la région : / c'est l'accord Sykes-Picot. // La Palestine doit devenir une zone **internationale**.  
 (23 mots, 1.8 par seconde)
 
 
-**7.5** · film **00:13:39:23 → 00:13:49:23** (10.0 s) · **[MD]** `output/sykes-picot.mp4` · source 00:00:00:00 → 00:00:10:00  
+**7.6** · film **00:13:39:23 → 00:13:49:23** (10.0 s) · **[MD]** `output/sykes-picot.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : carte signée par Mark Sykes et François Georges-Picot, 8 mai 1916, The National Archives (Royaume-Uni), MPK 1/426, domaine public ; accord Sykes-Picot, lettres du 9 au 16 mai 1916  
 À l'écran : déjà dans le plan : la vraie carte de 1916 posée sur le relief (bleu, rouge, A, B, jaune)  
 > VOIX : Sur la carte signée en mai 1916, / la France prend le bleu, / le Royaume-Uni le **rouge**.  
 (16 mots, 1.6 par seconde)
 
 
-**7.6** · film **00:13:49:23 → 00:13:58:23** (9.0 s) · **[MD]** `output/sykes-picot.mp4` · source 00:00:10:00 → 00:00:19:00  
+**7.7** · film **00:13:49:23 → 00:13:58:23** (9.0 s) · **[MD]** `output/sykes-picot.mp4` · source 00:00:10:00 → 00:00:19:00  
 Source : carte signée par Mark Sykes et François Georges-Picot, 8 mai 1916, The National Archives (Royaume-Uni), MPK 1/426, domaine public ; accord Sykes-Picot, lettres du 9 au 16 mai 1916  
 À l'écran : déjà dans le plan : la zone jaune, administration internationale ; Haïfa et Acre au Royaume-Uni  
 > VOIX : La Palestine, en jaune, / doit passer sous une administration **internationale**.  
 (10 mots, 1.1 par seconde)
 
 
-**7.7** · film **00:13:58:23 → 00:14:11:23** (13.0 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:31:00 → 00:00:44:00  
+**7.8** · film **00:13:58:23 → 00:14:11:23** (13.0 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:31:00 → 00:00:44:00  
 Source : SOURCES.md 6 (déclaration Balfour, 2 novembre 1917)  
 À l'écran : Londres · 2 novembre 1917 · Déclaration Balfour  
 > VOIX : Et le 2 novembre 1917, / le ministre Arthur Balfour écrit à Lord Rothschild : / Londres « envisage favorablement » / un foyer national pour le peuple juif en **Palestine**.  
 (25 mots, 1.9 par seconde)
 
 
-**7.8** · film **00:14:11:23 → 00:14:26:23** (15.0 s) · **[MD]** `output/documents.mp4` · source 00:00:23:00 → 00:00:38:00  
+**7.9** · film **00:14:11:23 → 00:14:26:23** (15.0 s) · **[MD]** `output/documents.mp4` · source 00:00:23:00 → 00:00:38:00  
 Source : texte de la déclaration ; population : Justin McCarthy, 1990, tableau 2.3 (1918 : 58 728 juifs sur 748 128 habitants, soit 8 %)  
 À l'écran : la caméra glisse sur la lettre, jusqu'à « the civil and religious rights of existing non-Jewish communities »  
 > VOIX : Une phrase protège « les droits civils et religieux » / des « collectivités non juives ». // Elles forment alors neuf habitants sur **dix**. / Leurs droits politiques ne sont pas cités.  
@@ -76,18 +84,18 @@ Source : texte de la déclaration ; population : Justin McCarthy, 1990, tableau 
 Son : papier, horloge lointaine, salle de ministère
 
 
-**7.9** · film **00:14:26:23 → 00:14:38:23** (12.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:05:00 → 00:02:17:00  
+**7.10** · film **00:14:26:23 → 00:14:38:23** (12.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:05:00 → 00:02:17:00  
 > VOIX : Pour les sionistes, c'est une victoire immense. / Pour la première fois, une grande puissance reconnaît le lien du peuple juif avec cette **terre**.  
 (23 mots, 1.9 par seconde)
 
 
-**7.10** · film **00:14:38:23 → 00:14:43:08** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:10:10 → 00:00:14:20  
+**7.11** · film **00:14:38:23 → 00:14:43:08** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:10:10 → 00:00:14:20  
 À l'écran : fiche de la chronologie : Chaïm Weizmann  
 > VOIX : Chaïm Weizmann l'a obtenue / après des mois de **démarches**.  
 (9 mots, 2.0 par seconde)
 
 
-**7.11** · film **00:14:43:08 → 00:14:56:08** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:17:00 → 00:02:30:00  
+**7.12** · film **00:14:43:08 → 00:14:56:08** (13.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:17:00 → 00:02:30:00  
 Source : Edwin Montagu, « Memorandum on the Anti-Semitism of the Present Government », note au cabinet britannique, 23 août 1917, mémorandum G.T. 1868 (The National Archives, Kew, CAB 24/24/71) ; notre traduction  
 À l'écran : Edwin Montagu · secrétaire d'État pour l'Inde · seul ministre juif du gouvernement  
 > VOIX : Un seul ministre juif siège au gouvernement : / Edwin Montagu. // Il s'y oppose. / Le sionisme, écrit-il, est « une doctrine politique **nuisible** ».  
@@ -95,7 +103,7 @@ Source : Edwin Montagu, « Memorandum on the Anti-Semitism of the Present Govern
 Note : Montagu juge la déclaration antisémite : elle ferait des Juifs anglais des étrangers dans leur pays. C'est la preuve que Juifs et sionisme ne sont pas la même chose (règle 2 de la bible).
 
 
-**7.12** · film **00:14:56:08 → 00:15:15:08** (19.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:00:00 → 00:00:19:00  
+**7.13** · film **00:14:56:08 → 00:15:15:08** (19.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:00:00 → 00:00:19:00  
 Source : Arthur Balfour, mémorandum du 11 août 1919, Documents on British Foreign Policy 1919-1939, première série, vol. IV, p. 345 ; notre traduction  
 À l'écran : « En Palestine, nous ne proposons même pas de consulter les habitants actuels du pays. » · Arthur Balfour, 11 août 1919  
 > VOIX : Deux ans plus tard, Balfour l'écrit sans détour, dans une note interne : / « En Palestine, nous ne proposons même pas de consulter les habitants actuels du pays. » // Le sionisme, ajoute-t-il, compte plus que « les désirs et les préjugés / de 700 000 **Arabes** ».  
@@ -103,7 +111,7 @@ Source : Arthur Balfour, mémorandum du 11 août 1919, Documents on British Fore
 Son : salle vide, une seule respiration du papier
 
 
-**7.13** · film **00:15:15:08 → 00:15:25:20** (10.5 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:44:00 → 00:00:54:12  
+**7.14** · film **00:15:15:08 → 00:15:25:20** (10.5 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:44:00 → 00:00:54:12  
 Source : SOURCES.md 6 (Arthur Koestler, Promise and Fulfilment, 1949)  
 À l'écran : « Une nation promettait solennellement à une deuxième le pays d'une troisième. »  
 > VOIX : Arthur Koestler, longtemps sioniste, résumera : // « Une nation promettait solennellement à une deuxième / le pays d'une **troisième**. » ///  

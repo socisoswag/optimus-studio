@@ -607,3 +607,16 @@ la première phrase de 7.3 avec le carton 92.
 1913 relus sur les intertitres de la copie restaurée : Zikhron Yaakov, Rishon LeZion et les caves Carmel, Petah Tikva.
 
 Vraies images : 18,9 min sur 94,7 (environ 20 %).
+
+## 31 octobre 2026 (Damas 1918 dans le chapitre 7)
+
+**Plan 7.3 coupé en deux, chapitre 7 renuméroté** (la timeline Premiere `SION/SION-premiere.xml` est refaite : la
+réimporter suffit) :
+
+| Plan | Maintenant | Voix |
+|---|---|---|
+| 7.3 | `07.03-ARCH-1918-damas-meharistes-du-cherif.mp4`, carton 92 : les méharistes du chérif de La Mecque entrent à Damas (1918, Australian War Memorial, domaine public) | Aux Arabes d'abord. S'ils se soulèvent contre les Ottomans, la Grande-Bretagne soutiendra leur indépendance. |
+| 7.4 | `07.04-MD-trois-promesses.mp4` : la fiche de la lettre de McMahon | C'est la lettre de Henry McMahon au chérif Hussein de La Mecque. |
+
+Les plans 7.4 à 7.13 deviennent 7.5 à 7.14 (même image, même voix). La réserve 07.R2 (Damas) est posée : retirée.
+Vraies images : 19,0 min sur 94,7 (20 %).

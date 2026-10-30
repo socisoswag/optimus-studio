@@ -20,10 +20,7 @@ chapitres:
     reserve:
       - fichier: output/archives-filmees/1919-versailles-traite-de-paix.mp4
         type: ARCH
-        note: "28 juin 1919 · Versailles · la signature du traité de paix (US Army Signal Corps, NARA 111-H-1243, domaine public) : la conférence où Balfour écrit sa note de 1919 (plan 7.12), à poser en plan de coupe si tu veux ; la citation reste à l'écran"
-      - fichier: output/archives-filmees/1918-damas-meharistes-du-cherif.mp4
-        type: ARCH
-        note: "1918 · Damas · les méharistes du chérif de La Mecque entrent dans la ville, à la fin de la révolte arabe (Frank Hurley, Australian War Memorial F00042, domaine public) : à poser sur la première phrase de 7.3 (« S'ils se soulèvent contre les Ottomans… ») si tu veux, avec le carton 92 ; la lettre de McMahon reste à l'écran ensuite"
+        note: "28 juin 1919 · Versailles · la signature du traité de paix (US Army Signal Corps, NARA 111-H-1243, domaine public) : la conférence où Balfour écrit sa note de 1919 (plan 7.13), à poser en plan de coupe si tu veux ; la citation reste à l'écran"
     intention: >-
       Trois promesses en deux ans, et la phrase de Balfour lue en entier, y compris ce qu'elle ne dit pas : les
       « collectivités non juives » sont neuf habitants sur dix, et leurs droits politiques n'y figurent pas. Le point
@@ -42,18 +39,27 @@ chapitres:
         sortie: 6
         ecran: "carton : Décembre 1916 · Sinaï · Des prisonniers ottomans, escortés par des cavaliers australiens."
         source: "With the Australian forces in Palestine (Frank Hurley, 1916 à 1918), Australian War Memorial F00042, « copyright expired, public domain » ; carton du film : la colonne du désert revient de Magdhaba avec ses prisonniers (bataille du 23 décembre 1916) ; SOURCES.md 4.2"
-        note: "vraie image à la place de l'ouverture de trois-promesses (0 à 6) ; si tu poses la réserve de Damas sur 7.3, son carton : output/cartons/92-arch-1918-damas-meharistes-du-cherif.mov"
+        note: "vraie image à la place de l'ouverture de trois-promesses (0 à 6)"
         voix: >-
           1915. / Pour abattre l'Empire ottoman, / Londres fait trois **promesses**.
+      - type: ARCH
+        fichier: output/archives-filmees/1918-damas-meharistes-du-cherif.mp4
+        carton: output/cartons/92-arch-1918-damas-meharistes-du-cherif.mov
+        entree: 0
+        sortie: 7
+        ecran: "carton : 1918 · Damas · Les méharistes du chérif de La Mecque entrent dans la ville."
+        source: "With the Australian forces in Palestine (Frank Hurley, 1916 à 1918), Australian War Memorial F00042, « copyright expired, public domain » : « Arrival of the Sheriff of Mecca's Camel Corps », à Damas, à la fin de la révolte arabe ; SOURCES.md 4.2"
+        note: "vraie image sur la promesse faite aux Arabes : ceux qui se sont soulevés, à Damas en 1918 ; la fiche de la lettre de McMahon suit sur le plan d'après"
+        voix: >-
+          Aux Arabes d'abord. / S'ils se soulèvent contre les Ottomans, / la Grande-Bretagne soutiendra leur **indépendance**.
       - type: MD
         fichier: output/trois-promesses.mp4
-        entree: 6
+        entree: 13
         sortie: 18.5
         source: "SOURCES.md 6 (lettre de McMahon à Hussein, 24 octobre 1915)"
         ecran: "Le Caire · 24 octobre 1915 · Correspondance Hussein-McMahon"
         voix: >-
-          Aux Arabes d'abord. / S'ils se soulèvent contre les Ottomans, / la Grande-Bretagne soutiendra leur
-          **indépendance**. // C'est la lettre de Henry McMahon au chérif Hussein de La Mecque.
+          C'est la lettre de Henry McMahon au chérif Hussein de La Mecque.
       - type: MD
         fichier: output/trois-promesses.mp4
         entree: 18.5

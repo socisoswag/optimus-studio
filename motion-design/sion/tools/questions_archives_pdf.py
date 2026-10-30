@@ -135,19 +135,16 @@ def page():
     d_l = sum(x["d"] for s in seqs for x in s["lignes"])
     fonts = os.path.join(ROOT, "fonts")
     corps = []
-    corps.append(f"""<section class="couv"><div class="eyebrow">DOSSIER DE RECHERCHE · VÉRIFICATIONS ET ARCHIVES FILMÉES</div>
-<h1>Palestine, Israël : ce qu'il reste à vérifier, et les vraies images qui manquent</h1>
+    corps.append(f"""<section class="couv"><div class="eyebrow">DOSSIER DE RECHERCHE · ARCHIVES FILMÉES</div>
+<h1>Palestine, Israël : les vraies images qui manquent</h1>
 <p class="lead">Un documentaire historique en français (1880 à 2025, 95 minutes, diffusé sur YouTube). Ce dossier
-réunit tout ce qui reste à chercher : d'abord deux vérifications qui bloquent l'enregistrement de la voix, puis
-d'autres vérifications (chiffres, licences, lieux) et des fichiers déjà repérés à confirmer, enfin la recherche
-d'images filmées réelles et libres de droits, avec la liste des {n_l} plans du film ({d_l / 60:.0f} minutes) qui
-gagneraient une vraie image.</p>
-<div class="chiffres"><div><b>2</b><span>phrases de la voix en attente (8.21, 23.20)</span></div><div><b>19 %</b><span>vraies images aujourd'hui</span></div>
-<div><b>35 à 40 %</b><span>objectif</span></div><div><b>{n_l}</b><span>plans à couvrir</span></div></div>
+cherche des images filmées réelles et libres de droits : d'abord treize questions ciblées, plan par plan, puis trois
+points de licence, enfin la liste des {n_l} plans du film ({d_l / 60:.0f} minutes) qui gagneraient une vraie image.</p>
+<div class="chiffres"><div><b>13</b><span>questions ciblées (Y1 à Y13)</span></div><div><b>20 %</b><span>vraies images aujourd'hui</span></div>
+<div><b>25 %</b><span>objectif</span></div><div><b>{n_l}</b><span>plans à couvrir</span></div></div>
 <h2>Comment répondre</h2>
-<p class="p">Dans cet ordre : <b>V</b> (les deux vérifications qui bloquent la voix), <b>W</b> (chiffres, licences,
-lieux), <b>X</b> (fichiers déjà repérés), puis les questions <b>A</b> et <b>B</b> (Gaza, Cisjordanie), puis la liste
-des plans, chapitre par chapitre, en commençant par ceux marqués <b>priorité 1</b>. Pour une vérification : la phrase
+<p class="p">Dans cet ordre : les questions <b>Y</b> (Y1 à Y8 d'abord), puis <b>Z</b> (licences), puis, s'il reste de
+la place, la liste des plans, chapitre par chapitre, en commençant par ceux marqués <b>priorité 1</b>. Pour une vérification : la phrase
 exacte dans la langue d'origine, la date, le lien de la source d'origine, et un verdict (« confirmé », « faux »,
 « introuvable »). Pour un plan : une ou deux vraies images qui montrent ce que dit la voix, avec le film, sa date et
 son lieu, le moment utile (début et fin), la licence avec la phrase de la page, le lien de la page, le lien direct du
