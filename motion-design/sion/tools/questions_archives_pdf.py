@@ -138,10 +138,10 @@ def page():
     corps.append(f"""<section class="couv"><div class="eyebrow">DOSSIER DE RECHERCHE · ARCHIVES FILMÉES</div>
 <h1>Palestine, Israël : les vraies images qui manquent</h1>
 <p class="lead">Un documentaire historique en français (1880 à 2025, 95 minutes, diffusé sur YouTube). Ce dossier
-cherche des images filmées réelles et libres de droits : d'abord treize questions ciblées, plan par plan, puis trois
+cherche des images filmées réelles et libres de droits : d'abord vingt questions ciblées, plan par plan, puis quatre
 points de licence, enfin la liste des {n_l} plans du film ({d_l / 60:.0f} minutes) qui gagneraient une vraie image.</p>
-<div class="chiffres"><div><b>13</b><span>questions ciblées (Y1 à Y13)</span></div><div><b>20 %</b><span>vraies images aujourd'hui</span></div>
-<div><b>25 %</b><span>objectif</span></div><div><b>{n_l}</b><span>plans à couvrir</span></div></div>
+<div class="chiffres"><div><b>20</b><span>questions ciblées (Y1 à Y20)</span></div><div><b>20 %</b><span>vraies images aujourd'hui</span></div>
+<div><b>35 %</b><span>objectif (33 min)</span></div><div><b>{n_l}</b><span>plans à couvrir</span></div></div>
 <h2>Comment répondre</h2>
 <p class="p">Dans cet ordre : les questions <b>Y</b> (Y1 à Y8 d'abord), puis <b>Z</b> (licences), puis, s'il reste de
 la place, la liste des plans, chapitre par chapitre, en commençant par ceux marqués <b>priorité 1</b>. Pour une vérification : la phrase

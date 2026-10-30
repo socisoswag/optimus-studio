@@ -3,13 +3,14 @@
 Le dossier du 30 octobre est répondu et appliqué (voir QUESTIONS-PERPLEXITY-ARCHIVES-30-octobre-repondu.md). Celui-ci
 ne cherche plus que des images filmées, plan par plan, là où une vraie image apporte quelque chose sans faire perdre
 d'information (la date, le lieu et les chiffres passent alors dans un carton). Le film compte 18,9 min de vraies
-images sur 94,7 (20 %) ; objectif : environ 25 %.
+images sur 94,7 (20 %) ; objectif : 35 % (33 minutes).
 
 **Comment s'en servir**
 
 1. Ouvrir une conversation Perplexity (recherche approfondie si possible), joindre le PDF, ou coller d'abord le bloc
    « Consignes ».
-2. Répondre aux questions Y dans l'ordre (Y1 à Y8 d'abord : ce sont les plus prometteuses), puis Z.
+2. Répondre aux questions Y dans l'ordre (Y1 à Y8 d'abord : ce sont les plus prometteuses), puis Z. Si tout ne tient
+   pas dans une réponse, répondre par lots : Y1 à Y8, puis Y9 à Y16, puis Y17 à Y20 et Z.
 3. M'envoyer les réponses telles quelles (PDF ou texte).
 4. Les fichiers de **Wikimedia Commons** sont à mettre dans la Dropbox (Commons me bloque). Pour archive.org, NARA,
    Library of Congress, Voice of America, DVIDS et l'Australian War Memorial, les liens suffisent.
@@ -78,6 +79,26 @@ Y12. Les citoyens arabes d'Israël : le Jour de la Terre, 30 mars 1976 (plan 28.
     (plan 28.5, 13 s). Toute image filmée du domaine public ou sous licence libre, avec date et lieu.
 Y13. Edward Said (plan 38.5, 13 s) : une conférence ou un entretien filmé sous licence libre (Commons, archive.org),
     avec la date et le crédit.
+Y14. Benyamin Netanyahou devant le Congrès américain, 3 mars 2015 et 24 juillet 2024 (plans 24.3, 24.4, 24.6
+    et 24.9, ses portraits) : la vidéo de la Chambre des représentants (House Recording Studio, domaine public), avec le
+    lien direct du fichier (houselive.gov, congress.gov, Library of Congress) et 3 ou 4 moments où on le voit parler.
+Y15. Les vetos américains au Conseil de sécurité sur Israël et la Palestine (plans 33.9 et 33.12) : vidéos produites
+    par la mission des États-Unis à l'ONU ou le Département d'État (domaine public). Dis pour chaque vidéo si l'image
+    vient de la mission américaine ou de UN Web TV (celle-ci n'est pas libre).
+Y16. La deuxième intifada, 2000 à 2005 (plans 22.11 et 22.12) : les villes de Cisjordanie pendant l'opération
+    Rempart (2002), le mur en construction, les points de passage. Images tournées par VOA seulement, gouvernement
+    américain, vidéos d'archives de l'armée israélienne sous CC BY-SA. Pas d'images de corps.
+Y17. Yasser Arafat : la Mouqataa assiégée à Ramallah (2002), ses funérailles (novembre 2004), Ramallah et Gaza
+    (plan 21.14). VOA seulement, gouvernement américain, Commons sous licence libre.
+Y18. Des Juifs contre le sionisme ou contre la guerre : les Neturei Karta en manifestation (plan 29.2), les
+    ultra-orthodoxes contre le service militaire en 2024 (plan 30.5), Jewish Voice for Peace à Grand Central le
+    27 octobre 2023 (plan 29.4). Vidéos sous CC BY ou CC BY-SA sur Wikimedia Commons, avec la date et le lieu.
+Y19. Les villages vidés en 1948, aujourd'hui (plans 34.5 à 34.7 et 38.2) : Lifta, Imwas et le parc Canada, Saffuriyya
+    (Tzippori), Ein Hod, al-Birwa. Vidéos récentes sous licence libre (Commons, archive.org), avec le lieu exact.
+Y20. Cisjordanie aujourd'hui (plans 26.3, 8.9, 20.2, 23.20 et 38.8) : Hébron (rue Shuhada, tombeau des Patriarches),
+    un camp de réfugiés (Aïda, Dheisheh, Jénine), les citernes noires sur les toits, les collines de Masafer Yatta.
+    Vidéos sous licence libre sur Commons ; dis aussi si les vidéos de B'Tselem ou d'OCHA ont une licence ouverte
+    (phrase exacte de la page).
 ```
 
 ## Z. Deux points de licence à trancher
@@ -91,6 +112,9 @@ Z2. Knesset : la phrase exacte des conditions de réutilisation des vidéos de l
     (28 octobre 2024, plan 20.15).
 Z3. Wikimedia Commons, « President Trump and The First Lady Participate in an Abraham Accords Signing Ceremony.webm » :
     la phrase exacte du bloc de licence de la page (le fichier vient de la Maison-Blanche, 15 septembre 2020).
+Z4. Élysée : les vidéos de la présidence de la République (elysee.fr, chaîne officielle) sont-elles sous Licence
+    Ouverte (Etalab) ou une autre licence ? Phrase exacte des mentions légales. Plans concernés : 31.15 et 31.16
+    (Emmanuel Macron, 2019 et 2025).
 ```
 
 ## Déjà trouvés : à mettre dans la Dropbox
