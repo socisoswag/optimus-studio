@@ -164,10 +164,10 @@ chapitres:
         fichier: output/gaza-guerres.mp4
         entree: 30
         sortie: 39
-        ecran: "fiche : Pilier de défense · 167 Palestiniens tués (185 selon le ministère de la Santé palestinien)"
-        source: "B'Tselem, rapport de mai 2013 (167 tués, dont au moins 87 qui ne prenaient pas part aux combats ; 4 civils et 2 membres des forces de sécurité tués en Israël) ; ministère de la Santé palestinien, 185 tués (cité par Euro-Med Monitor, à confirmer)"
+        ecran: "fiche : Pilier de défense · 167 Palestiniens tués selon B'Tselem (182 selon l'OMS)"
+        source: "B'Tselem, rapport de mai 2013 (167 tués, dont au moins 87 qui ne prenaient pas part aux combats ; 4 civils et 2 membres des forces de sécurité tués en Israël) ; OMS, bureau des territoires palestiniens, rapport de novembre 2012 : 182 tués à Gaza, dont 47 enfants (le bilan de 185 n'a pas été retrouvé dans un bulletin d'origine : retiré, dossier Perplexity du 30 octobre 2026)"
         voix: >-
-          En novembre 2012, huit jours de guerre : / entre 167 et 185 morts à Gaza selon les sources, / six en **Israël**.
+          En novembre 2012, huit jours de guerre : / entre 167 et 182 morts à Gaza selon les sources, / six en **Israël**.
       - type: MD
         fichier: output/gaza-guerres.mp4
         entree: 39

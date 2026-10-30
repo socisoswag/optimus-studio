@@ -25,10 +25,12 @@ Film 00:13:04:08 → 00:15:25:20 · durée 2 min 21.5 s
 > VOIX : silence
 
 
-**7.2** · film **00:13:08:23 → 00:13:14:23** (6.0 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:00:00 → 00:00:06:00  
-À l'écran : Première Guerre mondiale · de 1915 à 1917 · Trois engagements britanniques, en deux ans  
+**7.2** · film **00:13:08:23 → 00:13:14:23** (6.0 s) · **[ARCH]** `output/archives-filmees/1916-sinai-prisonniers-ottomans.mp4` · source 00:00:00:00 → 00:00:06:00  
+Source : With the Australian forces in Palestine (Frank Hurley, 1916 à 1918), Australian War Memorial F00042, « copyright expired, public domain » ; carton du film : la colonne du désert revient de Magdhaba avec ses prisonniers (bataille du 23 décembre 1916) ; SOURCES.md 4.2  
+À l'écran : carton : Décembre 1916 · Sinaï · Des prisonniers ottomans, escortés par des cavaliers australiens.  
 > VOIX : 1915. / Pour abattre l'Empire ottoman, / Londres fait trois **promesses**.  
-(9 mots, 1.5 par seconde)
+(9 mots, 1.5 par seconde)  
+Note : vraie image à la place de l'ouverture de trois-promesses (0 à 6) ; si tu poses la réserve de Damas sur 7.3, son carton : output/cartons/92-arch-1918-damas-meharistes-du-cherif.mov
 
 
 **7.3** · film **00:13:14:23 → 00:13:27:10** (12.5 s) · **[MD]** `output/trois-promesses.mp4` · source 00:00:06:00 → 00:00:18:12  
@@ -245,17 +247,17 @@ Source : rapport de la commission royale pour la Palestine, Cmd. 5479, 7 juillet
 
 
 **8.20** · film **00:18:52:02 → 00:19:01:02** (9.0 s) · **[MD]** `output/peel-1937.mp4` · source 00:00:09:13 → 00:00:18:12  
-Source : rapport Peel, 1937 (transfert proposé : jusqu'à 225 000 Arabes et 1 250 Juifs)  
-À l'écran : déjà dans le plan : « Jusqu'à 225 000 Arabes à déplacer hors de l'État juif »  
-> VOIX : Et de déplacer jusqu'à 225 000 Arabes / hors du futur État **juif**.  
-(12 mots, 1.3 par seconde)
+Source : rapport Peel, Cmd. 5479, 1937, ch. XXII (« a transfer of land and, as far as possible, an exchange of population ») ; résumé officiel diffusé par la SDN, 30 novembre 1937 : environ 225 000 Arabes dans la zone de l'État juif, environ 1 250 Juifs dans la zone arabe (estimations de population, pas des déplacements réalisés)  
+À l'écran : déjà dans le plan : « Environ 225 000 Arabes dans la zone de l'État juif », 1 250 Juifs dans la zone arabe  
+> VOIX : Le même rapport envisage un « transfert » de population : / environ 225 000 Arabes vivent dans la zone du futur État **juif**.  
+(20 mots, 2.2 par seconde)
 
 
 **8.21** · film **00:19:01:02 → 00:19:09:14** (8.5 s) · **[MD]** `output/peel-1937.mp4` · source 00:00:18:12 → 00:00:27:00  
-Source : refus du Haut Comité arabe (juillet 1937) ; 20e congrès sioniste, Zurich, août 1937 (principe accepté, tracé rejeté) ; commission Woodhead et livre blanc de novembre 1938 (plan abandonné)  
+Source : refus du Haut Comité arabe (juillet 1937) ; 20e congrès sioniste, Zurich, août 1937 : le schéma de partage déclaré « inacceptable », l'exécutif autorisé à négocier sans engager l'Organisation sioniste (résolution citée par le rapport Woodhead, Cmd. 5854, 1938, ch. XXII, §487 ; JTA, 12 août 1937 : 300 voix contre 158) ; Cmd. 5893, novembre 1938 : partage jugé impraticable, plan abandonné (vérifié, dossier Perplexity du 30 octobre 2026)  
 À l'écran : déjà dans le plan : « Deux refus »  
-> VOIX : Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**.  
-(13 mots, 1.5 par seconde)
+> VOIX : Les dirigeants arabes refusent. / Le congrès sioniste juge ce plan inacceptable, / mais autorise ses dirigeants à **négocier**.  
+(17 mots, 2.0 par seconde)
 
 
 **8.22** · film **00:19:09:14 → 00:19:18:02** (8.5 s) · **[ARCH]** `output/archives-filmees/1930-paths-to-palestine-06.mp4` · source 00:00:00:00 → 00:00:08:13  

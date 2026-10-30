@@ -325,7 +325,7 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 
 | Fichier | Film | Auteur, date | Cote | Lien |
 |---|---|---|---|---|
-| 1930-paths-to-palestine-01 à 12 | « Paths in Palestine » (muet, 9 min 35) : Jérusalem, Bethléem, Nazareth, le Jourdain, des marins américains en visite | producteur non établi ; au générique « Copyright MCMXXXIV, International Copyright Secured » (1934) ; un film Fox du même titre existe (série Magic Carpet, 1933). Renouvellement du droit d'auteur non vérifié (recherche Perplexity du 23 octobre 2026) : statut non établi, gardé par choix de l'auteur | NARA, identifiant 2767364 (série 428-NPC) | https://archive.org/details/428-npc-44524 |
+| 1930-paths-to-palestine-01 à 12 | « Paths in Palestine » (muet, 9 min 35) : Jérusalem, Bethléem, Nazareth, le Jourdain, des marins américains en visite | producteur non établi ; au générique « Copyright MCMXXXIV, International Copyright Secured » (1934) ; un film Fox du même titre existe (série Magic Carpet, 1933). aucun film de ce titre dans le catalogue cumulatif des films enregistrés de 1912 à 1939 du Copyright Office, ni dans les renouvellements des catalogues de 1961 et 1962 (28e année d'une œuvre de 1934), relus le 30 octobre 2026 (Project Gutenberg n° 51836 ; archive.org catalogofcopyr3151213libr et catalogofcopyr3161213libr) : faute de renouvellement, domaine public aux États-Unis ; producteur toujours non établi (Perplexity, 30 octobre 2026) | NARA, identifiant 2767364 (série 428-NPC) | https://archive.org/details/428-npc-44524 |
 | 1903-ellis-island-immigrants | « Emigrants [i.e. Immigrants] Landing at Ellis Island » (muet) : des immigrants débarquent du ferry, ballots à la main | Thomas A. Edison, Inc., 1903 (domaine public : publié avant 1930) | Bibliothèque du Congrès, Paper Print Collection | https://archive.org/details/emigrants-i.e.-immigrants-landing-at-ellis-island |
 | 1899-melies-dreyfus-ile-du-diable | « L'Affaire Dreyfus », tableau « L'île du Diable » (muet) : reconstitution tournée pendant l'Affaire | Georges Méliès, Star Film n° 207, 1899 (domaine public) | Star Film 206 à 217 | https://archive.org/details/LAffaireDreyfus1899 |
 | 1899-melies-dreyfus-bagarre-journalistes | même film, tableau « Bagarre entre journalistes » (Star Film n° 213) | Georges Méliès, 1899 (domaine public) | Star Film 213 | https://archive.org/details/LAffaireDreyfus1899 |
@@ -358,11 +358,12 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 | 1948-familles-arabes-qui-partent, 1948-haganah-fouilles-et-arrestations | « Hagana Troops », rushes Universal de 1948 (date exacte non établie ; Jérusalem et Haïfa selon la notice) : des familles arabes avec leurs ballots, des femmes qui partent, des hommes emmenés en camion, fouillés, arrêtés et assis au sol ; les plans de corps de la fin du film sont écartés | Universal, 1948 ; USHMM : « Public Domain » | NARA 200 UN 5894x3 ; USHMM film 929, RG-60.1026 | https://collections.ushmm.org/search/catalog/irn1000361 |
 | 1945-ben-gourion-conference-londres | rushes de la March of Time : la première conférence sioniste mondiale d'après-guerre, à Londres ; la salle, puis David Ben Gourion qui parle (son non utilisé) | March of Time, 13 août 1945 ; USHMM : « Public Domain » | USHMM film 2732, RG-60.4086 | https://collections.ushmm.org/search/catalog/irn1003498 |
 | 1913-hebron-la-communaute-juive | « The Life of the Jews in Palestine », segment d'Hébron (muet) : la ville, puis des Juifs d'Hébron sur des marches | Noah Sokolovsky, 1913 · domaine public ; copie restaurée du CNC, recadrée à droite de son logo | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:The_Life_of_the_Jews_in_Palestine_-_Hebron_segment_(1913).webm |
-| 1913-tel-aviv-la-jeune-ville, 1913-lac-de-tiberiade-pionniers-labourent, 1913-jerusalem-la-vieille-ville, 1913-tiberiade-puis-hebron, 1913-zikhron-yaakov-maisons-synagogue-vignes, 1913-rishon-lezion-caves-carmel, 1913-orangeraie-cueillette-emballage, 1913-constantinople-capitale-ottomane | « The Life of the Jews in Palestine » (muet, 58 min 22), film de promotion de la société Mizrah (Odessa) : Tel-Aviv quatre ans après sa fondation, des pionniers qui labourent au bord du lac de Tibériade, la vieille ville de Jérusalem, Tibériade et Hébron (plans 5.8, 5.9, 6.5 et 6.6, à la place de reconstitutions par IA) ; Zikhron Yaakov et les caves Carmel de Rishon LeZion, nommées par les cartons du film (plans 5.5 et 5.6, à la place de photos), une orangeraie et Constantinople (plans 6.3 et 6.4, à la place de reconstitutions par IA) | Noah Sokolovsky, prises de vues Meiron Ossip Grossman, 1913 · domaine public ; copie restaurée du CNC et des Archives du film d'Israël, recadrée à droite de leur logo (et de celui de la chaîne History, après 42 min) | Wikimedia Commons (copie entière reçue par la Dropbox) | https://commons.wikimedia.org/wiki/File:The_Life_of_the_Jews_in_Palestine_(1913).webm |
+| 1913-tel-aviv-la-jeune-ville, 1913-lac-de-tiberiade-pionniers-labourent, 1913-jerusalem-la-vieille-ville, 1913-tiberiade-puis-hebron, 1913-zikhron-yaakov-maisons-synagogue-vignes, 1913-rishon-lezion-caves-carmel, 1913-orangeraie-cueillette-emballage, 1913-constantinople-capitale-ottomane | « The Life of the Jews in Palestine » (muet, 58 min 22), film de promotion de la société Mizrah (Odessa) : Tel-Aviv quatre ans après sa fondation, des pionniers qui labourent au bord du lac de Tibériade, la vieille ville de Jérusalem, Tibériade et Hébron (plans 5.8, 5.9, 6.5 et 6.6, à la place de reconstitutions par IA) ; Zikhron Yaakov et les caves Carmel de Rishon LeZion (plans 5.5 et 5.6, à la place de photos), une orangeraie de Petah Tikva et Constantinople (plans 6.3 et 6.4, à la place de reconstitutions par IA) ; lieux d'après les intertitres de la copie restaurée (« Petah Tikva », 10 min 58 ; « Zichron Ya'akov », 17 min 27 ; « Rishon LeZion and the Carmel Wineries », 44 min 34), relus le 30 octobre 2026 : ce sont ceux de la restauration, pas forcément ceux de 1913 ; Constantinople reconnue à l'image (mosquée d'Ortaköy, forteresse de Rumeli Hisarı) | Noah Sokolovsky, prises de vues Meiron Ossip Grossman, 1913 · domaine public ; copie restaurée du CNC et des Archives du film d'Israël, recadrée à droite de leur logo (et de celui de la chaîne History, après 42 min) | Wikimedia Commons (copie entière reçue par la Dropbox) | https://commons.wikimedia.org/wiki/File:The_Life_of_the_Jews_in_Palestine_(1913).webm |
 | 1917-allenby-entre-a-jerusalem | « General Allenby's entry into Jerusalem » (muet) : Allenby et son état-major entrent à pied par la porte de Jaffa, 11 décembre 1917 | War Office Cinema Committee, 1917 · domaine public | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:General_Allenby%27s_entry_into_Jerusalem_(1917).webm |
+| 1916-sinai-prisonniers-ottomans, 1918-damas-meharistes-du-cherif | « With the Australian forces in Palestine » (muet, 1 h 2 min) : des prisonniers ottomans ramenés de Magdhaba par la colonne du désert, décembre 1916 (plan 7.2, à la place de l'ouverture animée) ; les méharistes du chérif de La Mecque arrivent à Damas, 1918 (réserve du chapitre 7) | Frank Hurley, 1916 à 1918 · « Copyright expired, public domain » selon l'Australian War Memorial ; copie de consultation à 25 i/s (images doublées retirées, cadence recalculée), recadrée sans le logo de l'AWM ni le minutage incrustés | Australian War Memorial, F00042 | https://www.awm.gov.au/collection/F00042 |
 | 1925-balfour-en-palestine | « Visite de Lord Balfour dans quelques colonies sionistes » (muet) : la foule et les drapeaux, Balfour à la tribune, le cortège sous une arche à l'étoile de David | Archives de la Planète, musée départemental Albert-Kahn, opérateur Camille Sauvageot, 1925 · **CC BY-SA 4.0, crédit obligatoire** (section 1) | Wikimedia Commons, AI13634 | https://commons.wikimedia.org/wiki/File:Visite_de_Lord_Balfour_dans_quelques_colonies_sionistes_-_AI13634.webm |
 | 1978-camp-david-sadate-carter-begin | Maison Blanche, 17 septembre 1978 : Sadate, Carter et Begin à la table, après la signature des accords de Camp David | gouvernement américain · domaine public | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Israeli_Prime_Minister_Begin%27s_remarks_at_the_Camp_David_Agreement,_17_September_1978.webm |
-| 1993-oslo-poignee-de-main | Maison Blanche, 13 septembre 1993 : la poignée de main entre Yitzhak Rabin et Yasser Arafat, Bill Clinton entre eux | Maison Blanche · domaine public (licence à relire sur la page Commons quand l'accès revient) | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Signing_of_the_Israeli-Palestinian_Declaration_of_Principles.webm |
+| 1993-oslo-poignee-de-main | Maison Blanche, 13 septembre 1993 : la poignée de main entre Yitzhak Rabin et Yasser Arafat, Bill Clinton entre eux | White House Television (WHTV) · domaine public, œuvre du gouvernement américain (notice de la bibliothèque présidentielle Clinton : « official public record produced by the White House Television (WHTV) crew », vérifié par Perplexity le 30 octobre 2026 ; bloc de licence de la copie Commons non relu) | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Signing_of_the_Israeli-Palestinian_Declaration_of_Principles.webm |
 | 2000-camp-david-barak-clinton-arafat | Camp David, 11 juillet 2000 : Barak, Clinton et Arafat marchent puis posent à l'ouverture du sommet | bibliothèque présidentielle William J. Clinton (« Courtesy », carton d'origine) · domaine public | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Photo-Op_of_President_Clinton_with_Prime_Minister_Barak_and_Chairman_Arafat_at_Camp_David.webm |
 | gaza-2009-rue-plomb-durci (output/plans-reels) | une rue de Gaza et un immeuble détruit, janvier 2009, pendant « Plomb durci » | Al Jazeera, Creative Commons Repository · **CC BY 3.0, crédit obligatoire** (section 1) ; recadré sans les logos | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Aljazeeraasset-GAZA_FAMILY186.ogv |
 | gaza-2018-marche-du-retour, gaza-2018-14-mai-fumees (output/plans-reels) | Gaza, 14 mai 2018, le jour de l'ouverture de l'ambassade américaine à Jérusalem : la foule et les drapeaux près de la clôture, les fumées et les gaz lacrymogènes (images seules, sans la journaliste ni les blessés) | Voice of America · domaine public ; recadré sans le logo | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Deadly_Protests_in_Gaza_as_US_Opens_Jerusalem_Embassy.webm |
@@ -479,7 +480,8 @@ marquée du filigrane d'une agence commerciale.
   Khalidi ; Matthew Hughes, Britain's Pacification of Palestine, Cambridge University Press, 2019) ; Tibériade,
   2 octobre 1938 : 19 Juifs tués dont 11 enfants ; bombes de l'Irgoun sur des marchés arabes de Haïfa et de
   Jérusalem en juillet 1938 (The New York Times, 16 juillet 1938 : 10 Arabes tués au marché de Jérusalem).
-- Commission Peel, rapport du 7 juillet 1937 : partage, transfert de jusqu'à 225 000 Arabes et 1 250 Juifs.
+- Commission Peel, rapport du 7 juillet 1937 : partage, « transfert » de population envisagé ; environ 225 000 Arabes
+  dans la zone de l'État juif et 1 250 Juifs dans la zone arabe (estimations de population, pas des déplacements faits).
 - Livre blanc du 17 mai 1939 : 75 000 immigrants juifs en cinq ans ; État indépendant dans dix ans.
 - Haavara (août 1933) : environ 60 000 Juifs allemands en Palestine de 1933 à 1939 ; 105 millions de
   reichsmarks de marchandises exportées. Edwin Black, The Transfer Agreement, 1984 ; Yehuda Bauer, Jews for
@@ -697,13 +699,15 @@ marquée du filigrane d'une agence commerciale.
 - Pilier de défense : B'Tselem, rapport de mai 2013,
   https://www.btselem.org/sites/default/files/sites/default/files2/201305_pillar_of_defense_operation_eng.pdf
   (167 Palestiniens tués, dont au moins 87 qui ne prenaient pas part aux combats ; quatre civils israéliens et deux
-  membres des forces de sécurité tués) ; ministère de la Santé palestinien, 185 tués dont 47 enfants, chiffre attribué
+  membres des forces de sécurité tués) ; OMS, bureau des territoires palestiniens, rapport mensuel de novembre 2012
+  (https://www.emro.who.int/images/stories/palestine/documents/who_report_on_gaza_patient_referrals_nov_2012.pdf :
+  « 182 persons killed in Gaza […] 47 (26%) were children ») ; le chiffre de 185, attribué
   au ministère par Euro-Med Monitor, « Children targeted in Pillar of Defense », 22 novembre 2012,
   https://euromedmonitor.org/en/article/1020/Children-targeted-in-Pillar-of-Defense (« According to the Palestinian
   Ministry of Health, 65 percent of the 185 Palestinians killed were non-combatants, including 47 children ») ; le
-  bulletin d'origine du ministère n'a pas été retrouvé (vérification Perplexity du 24 octobre 2026). Autres décomptes :
-  OCHA, 165 tués dont 33 enfants ; Al-Haq, 173 dont 38 enfants. À l'écran et en voix : « entre 167 et 185 selon les
-  sources ».
+  bulletin d'origine du ministère n'a pas été retrouvé (vérifications Perplexity des 24 et 30 octobre 2026) : retiré.
+  Autres décomptes : OCHA, 165 tués dont 33 enfants ; Al-Haq, 173 dont 38 enfants. À l'écran et en voix, depuis le
+  30 octobre 2026 : « entre 167 et 182 selon les sources » (B'Tselem et OMS).
 - Bordure protectrice : commission d'enquête indépendante de l'ONU sur le conflit de Gaza de 2014, juin 2015 ; OCHA,
   https://www.ochaopt.org/content/key-figures-2014-hostilities (2 251 Palestiniens tués, dont 1 462 civils et 551
   enfants ; 67 soldats et 6 civils tués en Israël) ; ministère de la Santé de Gaza, bilan révisé de janvier 2015 (2 310
@@ -752,10 +756,13 @@ et zone `data/sykes-picot.js` écrites par `tools/prep_sykes_picot.py`)
 - Rapport de la commission royale pour la Palestine (commission Peel), Cmd. 5479, Londres, 7 juillet 1937 : premier
   plan de partage (État juif : Galilée, vallée de Jezréel, plaine côtière ; État arabe uni à la Transjordanie ; zone
   sous mandat : Jérusalem, Bethléem, couloir jusqu'à la mer, Nazareth) ; transfert proposé : jusqu'à 225 000 Arabes et
-  1 250 Juifs. Refus du Haut Comité arabe ; 20e congrès sioniste (Zurich, août 1937) : principe du partage accepté,
-  tracé rejeté, mandat de négocier ; commission Woodhead (rapport d'octobre 1938, Cmd. 5854) puis déclaration du
-  gouvernement britannique de novembre 1938 (Cmd. 5893) : plan abandonné (numéros des deux fascicules à vérifier,
-  A-FABRIQUER section 13). Texte et chiffres du rapport Peel confirmés le 24 octobre 2026 (« transfer of land and, as
+  1 250 Juifs. Refus du Haut Comité arabe ; 20e congrès sioniste (Zurich, août 1937) : « The Congress declares that
+  the scheme of partition put forward by the Royal Commission is unacceptable », mais il autorise l'exécutif à négocier
+  « the precise terms […] for the proposed establishment of a Jewish State », sans s'engager (résolution reproduite par
+  le rapport Woodhead, Cmd. 5854, 1938, ch. XXII, §487 ; JTA, 12 août 1937 : 300 voix contre 158, 27 abstentions) ;
+  déclaration du gouvernement britannique de novembre 1938, Cmd. 5893, §4 : le partage est « impracticable », plan
+  abandonné. Vérifié par Perplexity le 30 octobre 2026 ; voix et écran corrigés le même jour (« accepte le principe »
+  simplifiait la résolution ; les 225 000 sont des habitants, pas des déplacés). Texte et chiffres du rapport Peel confirmés le 24 octobre 2026 (« transfer of land and, as
   far as possible, an exchange of population » ; 225 000 Arabes et 1 250 Juifs vivant dans les zones de l'autre État).
 - Carte : « Peel map pd.png », par Ynhockey, Wikimedia Commons, domaine public,
   https://commons.wikimedia.org/wiki/File:Peel_map_pd.png, d'après la carte du rapport ; géoréférencée sur 13 villes
@@ -767,10 +774,12 @@ et zone `data/sykes-picot.js` écrites par `tools/prep_sykes_picot.py`)
   nord-est, est) et le comité mixte de l'eau (décisions par consensus).
 - Amnesty International, Troubled Waters: Palestinians Denied Fair Access to Water, octobre 2009 (MDE 15/027/2009) :
   environ 80 % de l'eau de la nappe pour Israël ; la nappe se recharge surtout sous la Cisjordanie.
-- B'Tselem, Parched, 2 mai 2023 : 82,4 litres par jour et par Palestinien de Cisjordanie, 247 par Israélien (colons
-  compris) ; 100 litres par jour et par personne : seuil que B'Tselem attribue à l'OMS et à l'USAID (« the World Health
-  Organization and the United States Agency for International Development recommend 100 liters »), confirmé le
-  24 octobre 2026 ; le document de l'OMS lui-même reste à citer.
+- B'Tselem, Parched, publié le 2 mai 2023, pages imprimées 6 et 7 : en 2020, 82,4 litres par jour et par Palestinien
+  de Cisjordanie (« 82.4 liters in 2020 »), 247 par Israélien, colons compris (« 247 liters in 2020 ») : ce sont des
+  données de 2020, pas de 2023 (corrigé à l'écran et en voix le 30 octobre 2026).
+- OMS : Guy Howard, Jamie Bartram et al., Domestic water quantity, service level and health, 2e édition, 2020
+  (ISBN 978-92-4-001524-1), tableau 11, p. 38 : « Optimal access (average quantity more than 100 L/person/day) ». À
+  l'écran : « Pour l'OMS, l'accès optimal dépasse 100 litres » (l'OMS ne fixe pas de minimum universel de 100 litres).
 - Les trajets de l'eau sous terre sont un schéma (des collines vers la sortie de chaque bassin).
 
 **Les intifadas** (chapitre 22, chiffres de la voix)

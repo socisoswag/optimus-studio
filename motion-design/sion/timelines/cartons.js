@@ -99,8 +99,10 @@
     ["arch-cisjordanie-2024-maison-incendiee-colons", "Avril 2024", "Al-Mughayyir, Cisjordanie", "Une maison incendiée par des colons, selon ses habitants."],
     ["arch-1913-zikhron-yaakov-maisons-synagogue-vignes", "1913", "Zikhron Yaakov", "Les maisons, la synagogue, les vignes."],
     ["arch-1913-rishon-lezion-caves-carmel", "1913", "Rishon LeZion", "Les caves à vin Carmel."],
-    ["arch-1913-orangeraie-cueillette-emballage", "1913", "Plaine côtière", "La cueillette des oranges, puis l’emballage pour l’export."],
+    ["arch-1913-orangeraie-cueillette-emballage", "1913", "Petah Tikva", "La cueillette des oranges, puis l’emballage pour l’export."],
     ["arch-1913-constantinople-capitale-ottomane", "1913", "Constantinople", "La capitale de l’Empire ottoman."],
+    ["arch-1916-sinai-prisonniers-ottomans", "Décembre 1916", "Sinaï", "Des prisonniers ottomans, escortés par des cavaliers australiens."],
+    ["arch-1918-damas-meharistes-du-cherif", "1918", "Damas", "Les méharistes du chérif de La Mecque entrent dans la ville."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

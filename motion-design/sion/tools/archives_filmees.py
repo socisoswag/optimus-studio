@@ -223,6 +223,14 @@ ARCHIVES = {
     "1913-orangeraie-cueillette-emballage": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(747.0, 750.0), (788.0, 792.5)], {"stab": True}),
     # Constantinople, au début du film : la ville vue de la Corne d'Or, puis la mosquée d'Ortaköy sur le Bosphore
     "1913-constantinople-capitale-ottomane": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(117.0, 123.0), (186.0, 192.0)], {"stab": True}),
+    # « With the Australian forces in Palestine » (Frank Hurley, 1916 à 1918, Australian War Memorial F00042, « copyright
+    # expired, public domain ») : copie à 25 i/s d'un film muet, logo de l'AWM et minutage incrustés laissés hors cadre.
+    # Les prisonniers ottomans ramenés de Magdhaba par la colonne du désert (Sinaï, décembre 1916)
+    "1916-sinai-prisonniers-ottomans": ("https://s3-ap-southeast-2.amazonaws.com/awm-media/collection/F00042/video/4245955.MP4",
+                                        "", "500:281:136:108", [(175.8, 182.2)], {"muet": True, "stab": True}),
+    # les méharistes du chérif de La Mecque arrivent à Damas (octobre 1918), à la fin de la révolte arabe
+    "1918-damas-meharistes-du-cherif": ("https://s3-ap-southeast-2.amazonaws.com/awm-media/collection/F00042/video/4245955.MP4",
+                                        "", "500:281:136:108", [(3646.5, 3650.0), (3655.5, 3660.0)], {"muet": True, "stab": True}),
     # l'entrée du général Allenby à Jérusalem, 11 décembre 1917 (War Office Cinema Committee, domaine public) :
     # Allenby et son état-major à pied, devant la porte de Jaffa
     "1917-allenby-entre-a-jerusalem": ("https://upload.wikimedia.org/wikipedia/commons/b/b6/General_Allenby%27s_entry_into_Jerusalem_%281917%29.webm",
@@ -279,6 +287,10 @@ def cadence(src, net, opts):
     if opts.get("cycle"):
         # copie à 30 i/s d'un film à 25, une image doublée sur six : on la retire (25 i/s d'origine, sans saccade)
         return f"decimate=cycle={opts['cycle']}", "25/1"
+    if opts.get("muet"):
+        # copie à 25 i/s d'un film muet tourné vers 18 i/s : une image doublée toutes les 3 ou 4, d'où une saccade
+        # (traitée coupe par coupe, voir muet)
+        return "null", "muet"
     if opts.get("film24"):
         # copie vidéo à 60 images par seconde d'un film à 24 : on reprend 24 images par seconde (puis 25 sans en doubler)
         return "fps=24000/1001", "24000/1001"
@@ -292,6 +304,23 @@ def vitesse(fps):
             "30000/1001": "setpts=PTS*30000/25025,", "2997/100": "setpts=PTS*2997/2500,", "30/1": "setpts=PTS*30/25,",
             "60000/1001": "select='not(mod(n\\,2))',setpts=N/25/TB,", "60/1": "select='not(mod(n\\,2))',setpts=N/25/TB,",
             "50/1": "select='not(mod(n\\,2))',setpts=N/25/TB,"}.get(fps, "") + "fps=25"
+
+
+def muet(src, net, ss, m, dur, crop):
+    """Film muet copié à 25 i/s avec des images doublées : les doublons (écart presque nul avec l'image d'avant, mesuré
+    dans le cadre gardé) sont retirés, les images restantes reprennent une cadence régulière (la leur, environ 18 i/s),
+    puis les 25 i/s sont recalculées par compensation de mouvement : même durée, vitesse naturelle, sans à-coup.
+    (mpdecimate ne les voyait pas : le bruit de compression dépasse ses seuils.)"""
+    W, H = 160, 90
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", *net, "-ss", f"{ss:.3f}", "-i", src, "-an", "-vf",
+                          f"trim=start={m:.3f}:duration={dur:.3f},setpts=PTS-STARTPTS,crop={crop},scale={W}:{H},format=gray",
+                          "-f", "rawvideo", "-"], capture_output=True, check=True).stdout
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W).astype(np.float32)
+    d = np.abs(np.diff(fr, axis=0)).mean(axis=(1, 2))
+    dup = [int(i) + 1 for i in np.where(d < 0.25 * np.median(d))[0]]
+    r = 25 * (len(fr) - len(dup)) / len(fr)
+    sel = "select='not(" + "+".join(f"eq(n\\,{i})" for i in dup) + ")'," if dup else ""
+    return f"{sel}setpts=N/{r:.3f}/TB,minterpolate=fps=25:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,fps=25"
 
 
 def poussieres(entree, sortie, t1=14, t2=22):
@@ -366,7 +395,8 @@ def fabrique(nom, ident, fichier, crop, coupes, opts=None):
             m = a - max(0, a - 3)
             subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", *net, "-ss", f"{a - m:.3f}", "-i", src, "-an", "-vf",
                             f"{cad},trim=start={m:.3f}:duration={b - a:.3f},setpts=PTS-STARTPTS,crop={crop},"
-                            f"scale='trunc(iw*sar/2)*2':ih,setsar=1,{vitesse(fps)}",
+                            f"scale='trunc(iw*sar/2)*2':ih,setsar=1,"
+                            + (muet(src, net, a - m, m, b - a, crop) if fps == "muet" else vitesse(fps)),
                             "-c:v", "libx264", "-crf", "10", "-preset", "fast", p], check=True)
             parts.append(p)
         lst = os.path.join(tmp, "liste.txt")

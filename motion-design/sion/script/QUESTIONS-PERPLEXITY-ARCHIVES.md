@@ -1,5 +1,7 @@
 # Dossier Perplexity complet : vérifications et vraies images (30 octobre 2026)
 
+> Réponses reçues le 30 octobre 2026 (« résultats consolidés », 41 pages) et intégrées : voir A-FABRIQUER, section 14.
+
 Tout ce qui reste à demander à Perplexity, dans un seul dossier : d'abord les vérifications qui bloquent
 l'enregistrement de la voix (plans 8.21 et 23.20), puis les autres vérifications (chiffres, licences, lieux), les
 fichiers déjà repérés à confirmer, et enfin la recherche des vraies images qui manquent.

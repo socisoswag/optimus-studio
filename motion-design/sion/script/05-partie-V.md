@@ -134,9 +134,9 @@ Note : le point retiré par Goldstone : une politique visant délibérément les
 
 
 **25.9** · film **00:58:48:24 → 00:58:57:24** (9.0 s) · **[MD]** `output/gaza-guerres.mp4` · source 00:00:30:00 → 00:00:39:00  
-Source : B'Tselem, rapport de mai 2013 (167 tués, dont au moins 87 qui ne prenaient pas part aux combats ; 4 civils et 2 membres des forces de sécurité tués en Israël) ; ministère de la Santé palestinien, 185 tués (cité par Euro-Med Monitor, à confirmer)  
-À l'écran : fiche : Pilier de défense · 167 Palestiniens tués (185 selon le ministère de la Santé palestinien)  
-> VOIX : En novembre 2012, huit jours de guerre : / entre 167 et 185 morts à Gaza selon les sources, / six en **Israël**.  
+Source : B'Tselem, rapport de mai 2013 (167 tués, dont au moins 87 qui ne prenaient pas part aux combats ; 4 civils et 2 membres des forces de sécurité tués en Israël) ; OMS, bureau des territoires palestiniens, rapport de novembre 2012 : 182 tués à Gaza, dont 47 enfants (le bilan de 185 n'a pas été retrouvé dans un bulletin d'origine : retiré, dossier Perplexity du 30 octobre 2026)  
+À l'écran : fiche : Pilier de défense · 167 Palestiniens tués selon B'Tselem (182 selon l'OMS)  
+> VOIX : En novembre 2012, huit jours de guerre : / entre 167 et 182 morts à Gaza selon les sources, / six en **Israël**.  
 (20 mots, 2.2 par seconde)
 
 

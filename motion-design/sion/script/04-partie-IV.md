@@ -615,11 +615,11 @@ Source : accords d'Oslo II, annexe III, article 40 (comité mixte de l'eau, déc
 
 
 **23.20** · film **00:55:12:02 → 00:55:22:02** (10.0 s) · **[MD]** `output/eau.mp4` · source 00:00:22:00 → 00:00:32:00  
-Source : B'Tselem, Parched, 2 mai 2023 : 82,4 litres par jour et par Palestinien de Cisjordanie, 247 par Israélien (colons compris) ; OMS : au moins 100 litres  
+Source : B'Tselem, Parched, publié le 2 mai 2023, p. 6 et 7 : en 2020, 82,4 litres par jour et par Palestinien de Cisjordanie, 247 par Israélien (colons compris) ; OMS, Domestic water quantity, service level and health, 2e éd., 2020, tableau 11 : accès optimal au-delà de 100 litres par personne et par jour (vérifié, dossier Perplexity du 30 octobre 2026)  
 À l'écran : déjà dans le plan : deux colonnes de lumière, 247 litres à Tel Aviv, 82,4 litres à Ramallah  
-> VOIX : En 2023, un Palestinien de Cisjordanie dispose de 82 litres par jour ; / un Israélien, colons compris, de **247**.  
-(18 mots, 1.8 par seconde)  
-Note : 247 litres : moyenne de tous les Israéliens, pas des seuls colons ; chiffres publiés en 2023
+> VOIX : Selon les chiffres de 2020, un Palestinien de Cisjordanie consomme 82 litres d'eau par jour ; / un Israélien, colons compris, **247**.  
+(20 mots, 2.0 par seconde)  
+Note : 247 litres : moyenne de tous les Israéliens, pas des seuls colons ; données de 2020, publiées par B'Tselem en 2023 (ne pas dire « en 2023 »)
 
 
 **23.21** · film **00:55:22:02 → 00:55:34:02** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:55:00 → 00:01:07:00  

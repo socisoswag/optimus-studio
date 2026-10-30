@@ -17,7 +17,8 @@
  *   Sources palestiniennes, à côté : Centre palestinien pour les droits de l'homme (PCHR), décembre 2011, 1 419 tués
  *   pendant Plomb durci, dont 1 167 civils ; ministère de la Santé de Gaza, janvier 2015, 2 310 tués en 2014 ; ministère
  *   de la Santé de Gaza, 21 mai 2021, 243 tués dont 66 enfants au cessez-le-feu ; ministère de la Santé palestinien,
- *   185 tués en 2012 (cité par Euro-Med Monitor, à confirmer sur la source).
+ *   OMS, bureau des territoires palestiniens, rapport de novembre 2012 : 182 tués à Gaza, dont 47 enfants (le bilan de
+ *   185 du ministère de la Santé, cité par Euro-Med Monitor, n'a pas été retrouvé : retiré).
  *   Fin : OCHA, données sur les victimes, 2008 à septembre 2023 : 6 407 Palestiniens et 308 Israéliens tués (Gaza,
  *   Cisjordanie et Israël ; relevé repris par The Wire et Al Jazeera, à confirmer sur le tableau d'OCHA).
  */
@@ -53,8 +54,8 @@
     {
       id: 'pilier', type: 'stat', dur: 9.0, fly: 2.0, layout: 'L', anchor: [480, 20],
       ghost: '2012', kicker: 'Novembre 2012 · « Pilier de défense »', pre: '', value: 167, label: 'Palestiniens tués en huit jours',
-      text: 'Selon B’Tselem, dont au moins 87 qui ne prenaient pas part aux combats ; 185 selon le ministère de la Santé palestinien. [[Côté israélien : quatre civils et deux militaires.]]',
-      textAt: 1.5, hlAt: 5.2, source: 'B’Tselem, mai 2013 · ministère de la Santé palestinien', sourceAt: 4.4,
+      text: 'Selon B’Tselem, dont au moins 87 qui ne prenaient pas part aux combats ; 182 selon l’OMS. [[Côté israélien : quatre civils et deux militaires.]]',
+      textAt: 1.5, hlAt: 5.2, source: 'B’Tselem, mai 2013 · OMS, novembre 2012', sourceAt: 4.4,
       countAt: 0.3, countDur: 2.6,
       cam: cam(0.024, 42, -40), camEnd: cam(0.022, 46, -36),
     },

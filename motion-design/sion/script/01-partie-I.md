@@ -337,7 +337,7 @@ Source : SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine
 
 **6.3** · film **00:09:04:10 → 00:09:11:15** (7.2 s) · **[ARCH]** `output/archives-filmees/1913-orangeraie-cueillette-emballage.mp4` · source 00:00:00:00 → 00:00:07:05  
 Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)  
-À l'écran : carton : 1913 · Plaine côtière · La cueillette des oranges, puis l'emballage pour l'export.  
+À l'écran : carton : 1913 · Petah Tikva · La cueillette des oranges, puis l'emballage pour l'export.  
 > VOIX : Un pays de villages et de villes anciennes. / Naplouse fait son savon, / Jaffa exporte ses **oranges**.  
 (16 mots, 2.2 par seconde)  
 Note : vraie image filmée à la place de la savonnerie de Naplouse reconstituée par IA (mise en réserve du chapitre) ; la colonie de l'orangeraie est à confirmer (question Perplexity W9)

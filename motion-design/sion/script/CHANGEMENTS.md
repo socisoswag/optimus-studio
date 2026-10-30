@@ -575,3 +575,35 @@ carte des Six Jours (19.22) ne sont couvertes : elles portent l'information.
 les clips sont rallongés de deux images (dernière image tenue).
 
 Vraies images : 18,8 min sur 94,7 (19,8 %).
+
+## 30 octobre 2026, le soir (le dossier Perplexity appliqué)
+
+**Voix changées (à relire avant d'enregistrer)** : le texte à lire et le scénario PDF sont refaits.
+
+| Plan | Avant | Maintenant | Pourquoi |
+|---|---|---|---|
+| 8.20 | Et de déplacer jusqu'à 225 000 Arabes hors du futur État juif. | Le même rapport envisage un « transfert » de population : environ 225 000 Arabes vivent dans la zone du futur État juif. | 225 000 : des habitants de la zone, pas des déplacés |
+| 8.21 | Les sionistes acceptent le principe, mais pas ce tracé. | Le congrès sioniste juge ce plan inacceptable, mais autorise ses dirigeants à négocier. | texte de la résolution de Zurich (août 1937) |
+| 23.20 | En 2023, un Palestinien de Cisjordanie dispose de 82 litres par jour… | Selon les chiffres de 2020, un Palestinien de Cisjordanie consomme 82 litres d'eau par jour ; un Israélien, colons compris, 247. | chiffres de 2020, publiés en 2023 |
+| 25.9 | entre 167 et 185 morts à Gaza | entre 167 et 182 morts à Gaza | le bilan de 185 n'est pas retrouvé ; 182 : OMS |
+
+**Écrans corrigés, même nom de fichier** (pièces refaites, plans relivrés) : plan Peel (8.19 à 8.21 : « Environ 225 000
+Arabes dans la zone de l'État juif », « le juge inacceptable, mais autorise ses dirigeants à négocier ; en novembre
+1938, Londres l'abandonne ») ; l'eau (23.17 à 23.20 : « 2020 » ; « Pour l'OMS, l'accès optimal dépasse 100 litres ») ;
+les guerres de Gaza (25.6 à 25.12 : « 182 selon l'OMS »). Carton de 6.3 : « Petah Tikva » (l'intertitre du film) au
+lieu de « Plaine côtière ».
+
+**Plan remplacé (nouveau nom : à changer dans la timeline)**
+
+| Plan | Ancien fichier | Nouveau fichier | Ce que c'est |
+|---|---|---|---|
+| 07.02 | `07.02-MD-trois-promesses.mp4` | `07.02-ARCH-1916-sinai-prisonniers-ottomans.mp4` | décembre 1916, Sinaï : des prisonniers ottomans escortés par des cavaliers australiens (Australian War Memorial, domaine public), carton 91 |
+
+Nouveau plan en réserve : 07.R2, les méharistes du chérif de La Mecque entrent à Damas (1918), à poser si tu veux sur
+la première phrase de 7.3 avec le carton 92.
+
+**Droits vérifiés** : « Paths in Palestine » (12 plans) n'a été ni enregistré ni renouvelé au Copyright Office
+(catalogues de 1912 à 1939, 1961 et 1962 relus) : domaine public aux États-Unis, les plans restent. Lieux du film de
+1913 relus sur les intertitres de la copie restaurée : Zikhron Yaakov, Rishon LeZion et les caves Carmel, Petah Tikva.
+
+Vraies images : 18,9 min sur 94,7 (environ 20 %).

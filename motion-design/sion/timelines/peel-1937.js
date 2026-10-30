@@ -6,9 +6,11 @@
  *   - premier plan de partage : un État juif (Galilée, vallée de Jezréel, plaine côtière), un État arabe uni à la
  *     Transjordanie, une zone sous mandat britannique (Jérusalem, Bethléem et un couloir jusqu'à la mer ; Nazareth) ;
  *   - un « transfert » de population : « Sooner or later there should be a transfer of land and, as far as possible, an
- *     exchange of population » ; environ 225 000 Arabes dans la zone de l'État juif, environ 1 250 Juifs dans la zone arabe ;
- *   - les dirigeants arabes refusent ; le 20e congrès sioniste (Zurich, août 1937) accepte le principe du partage mais
- *     rejette ce tracé ; en novembre 1938, après la commission Woodhead, Londres abandonne le plan.
+ *     exchange of population » ; environ 225 000 Arabes dans la zone de l'État juif, environ 1 250 Juifs dans la zone arabe
+ *     (estimations de population du résumé officiel, pas des déplacements réalisés) ;
+ *   - les dirigeants arabes refusent ; le 20e congrès sioniste (Zurich, août 1937) déclare le schéma « inacceptable » mais
+ *     autorise l'exécutif à négocier, sans engagement (résolution citée par le rapport Woodhead, Cmd. 5854, ch. XXII,
+ *     §487) ; en novembre 1938, Londres juge le partage impraticable et l'abandonne (Cmd. 5893, §4).
  * Tracés : data/peel-1937.js (tools/prep_peel.py, d'après la carte « Peel map pd.png », Wikimedia Commons, domaine
  * public), simplifiés ; les trajets du transfert sont schématiques.
  */
@@ -23,9 +25,9 @@
     },
     {
       id: 'transfert', type: 'stat', dur: 9.0, fly: 1.6, layout: 'L', anchor: [480, 20],
-      ghost: '1937', kicker: 'Le même rapport', pre: 'Jusqu’à', value: 225000,
-      label: 'Arabes à déplacer hors de l’État juif',
-      text: 'Contre 1 250 Juifs dans l’autre sens. [[Le rapport parle d’un « transfert » de population.]]',
+      ghost: '1937', kicker: 'Le même rapport', pre: 'Environ', value: 225000,
+      label: 'Arabes dans la zone de l’État juif',
+      text: 'Environ 1 250 Juifs dans la zone arabe. [[Le rapport envisage un « transfert » de population.]]',
       textAt: 1.6, hlAt: 5.2, source: 'Rapport de la commission royale pour la Palestine, Cmd. 5479, 1937', sourceAt: 4.2,
       countAt: 0.3, countDur: 3.0,
       cam: cam(35.1, 32.45, 0.05, 44, -14), camEnd: cam(35.12, 32.45, 0.046, 48, -6),
@@ -33,7 +35,7 @@
     {
       id: 'refus', type: 'cap', dur: 8.5, fly: 1.6, anchor: [330, -60], textW: 880,
       kicker: 'Été 1937', title: 'Deux refus',
-      text: 'Les dirigeants arabes rejettent le plan. Le congrès sioniste accepte le principe du partage, [[mais pas ce tracé.]] En 1938, Londres l’abandonne.',
+      text: 'Les dirigeants arabes rejettent le plan. Le congrès sioniste le juge inacceptable, [[mais autorise ses dirigeants à négocier.]] En novembre 1938, Londres l’abandonne.',
       cam: cam(35.05, 32.0, 0.084, 32, 4), camEnd: cam(35.05, 32.0, 0.09, 30, 8),
     },
   ];

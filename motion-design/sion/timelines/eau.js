@@ -9,8 +9,9 @@
  *     (accords d'Oslo II, 28 septembre 1995, annexe III, article 40 ; Amnesty International, Troubled Waters, 2009) ;
  *   - depuis Oslo II : Israël garde environ 80 % de l'eau de la nappe ; tout nouveau puits palestinien passe par le
  *     comité mixte de l'eau, qui décide par consensus : Israël peut refuser (Amnesty International, 2009) ;
- *   - 2023 : 82,4 litres par jour et par Palestinien de Cisjordanie, 247 par Israélien, colons compris ; minimum
- *     recommandé par l'OMS : 100 litres (B'Tselem, Parched, 2 mai 2023 ; OMS à confirmer sur le rapport).
+ *   - 2020 : 82,4 litres par jour et par Palestinien de Cisjordanie, 247 par Israélien, colons compris (B'Tselem,
+ *     Parched, publié le 2 mai 2023, p. 6 et 7) ; l'OMS situe l'accès optimal au-delà de 100 litres par personne et par
+ *     jour (Domestic water quantity, service level and health, 2e éd., 2020, tableau 11, p. 38).
  * Les trajets de l'eau sont schématiques (des collines vers les sorties de chaque bassin).
  */
 (function (root) {
@@ -40,8 +41,8 @@
     },
     {
       id: 'litres', type: 'cap', dur: 10.0, fly: 1.6, anchor: [330, -60], textW: 900,
-      kicker: 'Par jour et par personne · 2023', title: '82 litres contre 247',
-      text: '82,4 litres pour un Palestinien de Cisjordanie, [[247 pour un Israélien, colons compris.]] L’OMS recommande au moins 100 litres.',
+      kicker: 'Par jour et par personne · 2020', title: '82 litres contre 247',
+      text: '82,4 litres pour un Palestinien de Cisjordanie, [[247 pour un Israélien, colons compris.]] Pour l’OMS, l’accès optimal dépasse 100 litres.',
       cam: cam(34.98, 32.02, 0.044, 34, -10), camEnd: cam(34.98, 32.03, 0.041, 37, -4),
     },
   ];

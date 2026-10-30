@@ -21,6 +21,9 @@ chapitres:
       - fichier: output/archives-filmees/1919-versailles-traite-de-paix.mp4
         type: ARCH
         note: "28 juin 1919 · Versailles · la signature du traité de paix (US Army Signal Corps, NARA 111-H-1243, domaine public) : la conférence où Balfour écrit sa note de 1919 (plan 7.12), à poser en plan de coupe si tu veux ; la citation reste à l'écran"
+      - fichier: output/archives-filmees/1918-damas-meharistes-du-cherif.mp4
+        type: ARCH
+        note: "1918 · Damas · les méharistes du chérif de La Mecque entrent dans la ville, à la fin de la révolte arabe (Frank Hurley, Australian War Memorial F00042, domaine public) : à poser sur la première phrase de 7.3 (« S'ils se soulèvent contre les Ottomans… ») si tu veux, avec le carton 92 ; la lettre de McMahon reste à l'écran ensuite"
     intention: >-
       Trois promesses en deux ans, et la phrase de Balfour lue en entier, y compris ce qu'elle ne dit pas : les
       « collectivités non juives » sont neuf habitants sur dix, et leurs droits politiques n'y figurent pas. Le point
@@ -32,11 +35,14 @@ chapitres:
         fichier: output/chapitres/chapitre-07.mp4
         entree: 0
         sortie: 4.6
-      - type: MD
-        fichier: output/trois-promesses.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1916-sinai-prisonniers-ottomans.mp4
+        carton: output/cartons/91-arch-1916-sinai-prisonniers-ottomans.mov
         entree: 0
         sortie: 6
-        ecran: "Première Guerre mondiale · de 1915 à 1917 · Trois engagements britanniques, en deux ans"
+        ecran: "carton : Décembre 1916 · Sinaï · Des prisonniers ottomans, escortés par des cavaliers australiens."
+        source: "With the Australian forces in Palestine (Frank Hurley, 1916 à 1918), Australian War Memorial F00042, « copyright expired, public domain » ; carton du film : la colonne du désert revient de Magdhaba avec ses prisonniers (bataille du 23 décembre 1916) ; SOURCES.md 4.2"
+        note: "vraie image à la place de l'ouverture de trois-promesses (0 à 6) ; si tu poses la réserve de Damas sur 7.3, son carton : output/cartons/92-arch-1918-damas-meharistes-du-cherif.mov"
         voix: >-
           1915. / Pour abattre l'Empire ottoman, / Londres fait trois **promesses**.
       - type: MD
@@ -343,19 +349,18 @@ chapitres:
         fichier: output/peel-1937.mp4
         entree: 9.5
         sortie: 18.5
-        ecran: "déjà dans le plan : « Jusqu'à 225 000 Arabes à déplacer hors de l'État juif »"
-        source: "rapport Peel, 1937 (transfert proposé : jusqu'à 225 000 Arabes et 1 250 Juifs)"
+        ecran: "déjà dans le plan : « Environ 225 000 Arabes dans la zone de l'État juif », 1 250 Juifs dans la zone arabe"
+        source: "rapport Peel, Cmd. 5479, 1937, ch. XXII (« a transfer of land and, as far as possible, an exchange of population ») ; résumé officiel diffusé par la SDN, 30 novembre 1937 : environ 225 000 Arabes dans la zone de l'État juif, environ 1 250 Juifs dans la zone arabe (estimations de population, pas des déplacements réalisés)"
         voix: >-
-          Et de déplacer jusqu'à 225 000 Arabes / hors du futur État **juif**.
+          Le même rapport envisage un « transfert » de population : / environ 225 000 Arabes vivent dans la zone du futur État **juif**.
       - type: MD
         fichier: output/peel-1937.mp4
         entree: 18.5
         sortie: 27
         ecran: "déjà dans le plan : « Deux refus »"
-        source: "refus du Haut Comité arabe (juillet 1937) ; 20e congrès sioniste, Zurich, août 1937 (principe accepté, tracé rejeté) ; commission Woodhead et livre blanc de novembre 1938 (plan abandonné)"
-        verifier: "la position du 20e congrès sioniste (août 1937) et la date de l'abandon du plan par Londres (novembre 1938)"
+        source: "refus du Haut Comité arabe (juillet 1937) ; 20e congrès sioniste, Zurich, août 1937 : le schéma de partage déclaré « inacceptable », l'exécutif autorisé à négocier sans engager l'Organisation sioniste (résolution citée par le rapport Woodhead, Cmd. 5854, 1938, ch. XXII, §487 ; JTA, 12 août 1937 : 300 voix contre 158) ; Cmd. 5893, novembre 1938 : partage jugé impraticable, plan abandonné (vérifié, dossier Perplexity du 30 octobre 2026)"
         voix: >-
-          Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**.
+          Les dirigeants arabes refusent. / Le congrès sioniste juge ce plan inacceptable, / mais autorise ses dirigeants à **négocier**.
       - type: ARCH
         fichier: output/archives-filmees/1930-paths-to-palestine-06.mp4
         entree: 0

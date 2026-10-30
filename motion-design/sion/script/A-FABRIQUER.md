@@ -279,9 +279,33 @@ Questions pour Perplexity (quand le compte aura des crédits) :
 - Ben Gourion : pas d'image libre trouvée ; piste à visionner, Universal Newsreel vol. 21, n° 144 (18 mai 1948, « Jews
   Defend New Zion State », copie USHMM, irn1000897) : Haïfa, réfugiés, drapeau, reconnaissance américaine.
 
-Restent ouverts : bulletin d'origine du ministère pour 2012 ; numéros exacts du rapport Woodhead (Cmd. 5854 ?) et de la
-déclaration de novembre 1938 (Cmd. 5893 ?) ; document de l'OMS pour les 100 litres ; renouvellement de « Paths in
-Palestine ».
+Ces quatre points ouverts sont réglés le 30 octobre (section 14).
+
+## 14. Dossier Perplexity du 30 octobre 2026 (« résultats consolidés », 41 pages) : intégré
+
+- Peel (8.20, 8.21) : le congrès de Zurich déclare le schéma « inacceptable » et autorise l'exécutif à négocier sans
+  engagement (résolution citée par Woodhead, Cmd. 5854, §487) ; Londres abandonne le partage en novembre 1938
+  (Cmd. 5893, §4) ; 225 000 et 1 250 : des habitants des zones, pas des déplacés. Voix et écran corrigés, pièce rendue.
+- Eau (23.20) : 82,4 et 247 litres sont des chiffres de 2020 (Parched, publié en 2023, p. 6 et 7) ; l'OMS ne fixe pas
+  de minimum universel de 100 litres, elle situe l'accès optimal au-delà. Voix et écran corrigés, pièce rendue.
+- Gaza 2012 (25.9) : le bulletin à 185 n'est pas retrouvé ; remplacé par l'OMS (182 tués, dont 47 enfants). Voix et
+  écran : « entre 167 et 182 ». Pièce rendue.
+- Film de 1913 : lieux relus ici sur les intertitres de la copie restaurée (Petah Tikva, Zikhron Ya'akov, Rishon LeZion
+  et les caves Carmel) ; Constantinople reconnue à l'image. Carton de 6.3 : « Petah Tikva » au lieu de « Plaine côtière ».
+- « Paths in Palestine » : aucun enregistrement de ce titre de 1912 à 1939, aucun renouvellement en 1961 ni en 1962
+  (catalogues du Copyright Office relus ici) : domaine public aux États-Unis. Les 12 plans restent.
+- Oslo : producteur White House Television (œuvre du gouvernement américain). Universal : réserve possible de tiers,
+  déjà notée. VOA : seul ce que VOA a filmé est libre (nos trois passages sont des images de VOA, sans agence).
+- Sands of Sorrow (13.12) : lieu de la minute non établi, le carton n'en nomme pas. Al-Mughayyir (26.8) : carton déjà
+  prudent (« selon ses habitants »). Trump (25.40) : « the Riviera of the Middle East » confirmé (GovInfo, p. 13).
+- Australian War Memorial, « With the Australian forces in Palestine » (Frank Hurley, domaine public) : 7.2 devient
+  une vraie image (prisonniers ottomans, Sinaï, 1916) ; réserve 07.R2 : les méharistes du chérif à Damas, 1918.
+- Écartés : X1 Jénine (agence Tasnim, date non établie), X2 (manifestation du 24 juillet 2024, pas le sit-in de 2023
+  du plan 29.4), X5 Jénine 2024 (auteur et licence inconnus), X6 Gaza 2018 (trop sombre), GazaFOOD883 (Al Jazeera,
+  ni l'UNRWA ni le vote de 2024 : 20.15 reste une fiche), largages DVIDS de 2024 (pas les images de 2025), images de
+  l'ONU, de l'Assemblée nationale et du Sénat (pas de licence libre).
+- Restent à recevoir par la Dropbox (Commons me bloque) : F28, les funérailles de Rabin (6 novembre 1995, domaine
+  public) pour 36.3 ; F31, les accords d'Abraham (15 septembre 2020, Maison-Blanche) pour 25.17.
 
 Séquence « Sous occupation » (23.13 à 23.15) : chiffres pris directement aux sources primaires le 23 octobre au soir
 (OCHA, avril 2026 : 925 obstacles ; OCHA, base des démolitions au 21 octobre 2026 : 15 136 structures, 23 751 personnes

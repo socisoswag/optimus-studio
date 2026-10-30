@@ -198,9 +198,9 @@
 
 **8.19** En 1937, la commission Peel propose pour la première fois / de couper le pays en **deux**.
 
-**8.20** Et de déplacer jusqu'à 225 000 Arabes / hors du futur État **juif**.
+**8.20** Le même rapport envisage un « transfert » de population : / environ 225 000 Arabes vivent dans la zone du futur État **juif**.
 
-**8.21** Les dirigeants arabes refusent. / Les sionistes acceptent le principe, / mais pas ce **tracé**. *(attends avant d'enregistrer : la position du 20e congrès sioniste (août 1937) et la date de l'abandon du plan par Londres (novembre 1938))*
+**8.21** Les dirigeants arabes refusent. / Le congrès sioniste juge ce plan inacceptable, / mais autorise ses dirigeants à **négocier**.
 
 **8.22** En 1939, Londres fait marche arrière : / l'immigration juive est limitée / à 75 000 personnes en cinq **ans**.
 
@@ -590,7 +590,7 @@
 
 **23.19** Avec Oslo, Israël garde environ 80 % de cette eau. / Et tout nouveau puits palestinien / doit recevoir son **accord**.
 
-**23.20** En 2023, un Palestinien de Cisjordanie dispose de 82 litres par jour ; / un Israélien, colons compris, de **247**. *(attends avant d'enregistrer : le minimum de 100 litres de l'OMS, tel que cité dans le rapport Parched de B'Tselem)*
+**23.20** Selon les chiffres de 2020, un Palestinien de Cisjordanie consomme 82 litres d'eau par jour ; / un Israélien, colons compris, **247**.
 
 **23.21** En mai 2021, à Cheikh Jarrah, à Jérusalem-Est, des familles palestiniennes doivent laisser leurs maisons à des colons. / La colère embrase Jérusalem, / puis **Gaza**.
 
@@ -632,7 +632,7 @@
 
 **25.8** En 2009, une mission de l'ONU, menée par le juge Richard Goldstone, / y voit des crimes de guerre, des deux côtés. // Deux ans plus tard, Goldstone revient sur un point. / Ses trois coauteurs, eux, maintiennent le **rapport**.
 
-**25.9** En novembre 2012, huit jours de guerre : / entre 167 et 185 morts à Gaza selon les sources, / six en **Israël**.
+**25.9** En novembre 2012, huit jours de guerre : / entre 167 et 182 morts à Gaza selon les sources, / six en **Israël**.
 
 **25.10** À l'été 2014, « Bordure protectrice » : / 2 251 Palestiniens tués selon l'ONU, 2 310 selon le ministère de la Santé de Gaza, / dont 551 enfants. / En Israël, 67 soldats et six **civils**.
 
