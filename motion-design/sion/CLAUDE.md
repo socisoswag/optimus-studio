@@ -107,6 +107,8 @@ les rendus qu'elle utilise (derush garde les plans déjà livrés dont le rendu 
 - Plans et parties déjà livrés : numéros et découpage figés (l'auteur monte dessus). Jamais de renumérotation, jamais de
   plan inséré ou supprimé ; une vraie image se pose en remplacement, au même numéro. Une coupe de longueur se propose en
   liste (plan, de telle seconde à telle seconde) que l'auteur applique dans Premiere, sans relivrer le plan.
+- Timeline Premiere (`python3 tools/premiere_xml.py`, puis `--envoyer`) : jamais envoyée sans `python3 tools/verif_premiere.py`
+  à zéro défaut (fichiers du dépôt, continuité, calage de chaque son séparé sur le son livré), puis revérifiée après l'envoi.
 - Après une modification du script : `python3 tools/script.py`, puis `python3 tools/coherence.py` (chapitres qui se
   suivent, fichiers et durées des plans, références « plan 25.8 » des documents), puis commit et push. Un plan inséré
   décale les suivants du chapitre : noter l'ancien et le nouveau numéro dans `script/CHANGEMENTS.md`.
