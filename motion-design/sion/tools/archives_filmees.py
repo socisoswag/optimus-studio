@@ -223,6 +223,16 @@ ARCHIVES = {
     "1913-orangeraie-cueillette-emballage": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(747.0, 750.0), (788.0, 792.5)], {"stab": True}),
     # Constantinople, au début du film : la ville vue de la Corne d'Or, puis la mosquée d'Ortaköy sur le Bosphore
     "1913-constantinople-capitale-ottomane": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(117.0, 123.0), (186.0, 192.0)], {"stab": True}),
+    # même film de 1913 : Rosh Pina (intertitre « Rosh Pina », 26 min 57) et Petah Tikva (intertitre « Petah Tikva »,
+    # 10 min 58) : la colonie vue d'en haut, puis sa rue
+    "1913-rosh-pina-la-colonie": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm",
+                                  "", "376:282:96:0", [(1620.5, 1625.5), (1640.0, 1644.4)], {"stab": True}),
+    "1913-petah-tikva-la-colonie": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm",
+                                    "", "376:282:96:0", [(660.5, 667.0), (883.5, 890.0)], {"stab": True}),
+    # rushes « Hagana Troops » (1948), autres passages : des combattants de la Haganah armés dans un camion, dans une
+    # ruelle, derrière des sacs de sable (pas les fouilles, déjà dans 1948-haganah-fouilles-et-arrestations)
+    "1948-haganah-combattants": ("https://film-assets.ushmm.org/mp4/FV0929_RG601026.01.01.mp4", "", "624:416:8:8",
+                                 [(69.0, 74.5), (83.0, 86.5), (92.5, 96.3)], {"decimer": True}),
     # « With the Australian forces in Palestine » (Frank Hurley, 1916 à 1918, Australian War Memorial F00042, « copyright
     # expired, public domain ») : copie à 25 i/s d'un film muet, logo de l'AWM et minutage incrustés laissés hors cadre.
     # Les prisonniers ottomans ramenés de Magdhaba par la colonne du désert (Sinaï, décembre 1916)

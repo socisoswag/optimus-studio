@@ -620,3 +620,16 @@ réimporter suffit) :
 
 Les plans 7.4 à 7.13 deviennent 7.5 à 7.14 (même image, même voix). La réserve 07.R2 (Damas) est posée : retirée.
 Vraies images : 19,0 min sur 94,7 (20 %).
+
+## 31 octobre 2026, la suite (trois archives de plus)
+
+| Plan | Maintenant | Avant |
+|---|---|---|
+| 5.4 | `05.04-MD-documents-7.mp4` raccourci à 6 s : la fiche du baron de Rothschild, sur « Derrière ces colonies, un banquier de Paris… » | la fiche entière (15 s) |
+| 5.5 (nouveau) | `05.05-ARCH-1913-rosh-pina-la-colonie.mp4`, carton 93 : Rosh Pina en 1913, sur « Dès 1882, il finance Rishon LeZion, Zikhron Yaakov, Rosh Pina… » | la fin de la fiche |
+| 6.12 | `06.12-ARCH-1913-petah-tikva-la-colonie.mp4`, carton 94 : Petah Tikva en 1913, vue d'en haut puis sa rue | `06.12-MD-documents-7.mp4` (fiche de 1886) |
+| 14.2 | `14.02-ARCH-1948-haganah-combattants.mp4`, carton 95 : des combattants de la Haganah, 1948 (rushes Universal, domaine public) | `14.02-IA-17-27-haganah-1948.mp4` (reconstitution par IA, passée en réserve 14.R1) |
+
+**Chapitre 5 renuméroté** : les plans 5.5 à 5.9 deviennent 5.6 à 5.10. Ambiances refaites pour les archives des
+chapitres 5 et 7 (7.2 et 7.3 étaient partis sans ambiance) : relivrés, même nom.
+Vraies images : 19,6 min sur 94,7 (20,7 %).

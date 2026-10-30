@@ -247,6 +247,10 @@ chapitres:
 
   - num: "14"
     titre: "Chapitre 14 · Les milices juives : Haganah, Irgoun, Lehi"
+    reserve:
+      - fichier: output/reconstitutions/17-27-haganah-1948.mp4
+        type: IA
+        note: "Avril 1948 · l'entraînement de recrues de la Haganah (la vraie photo, puis la reconstitution par IA ; photo GPO, CC BY-SA 3.0) : avant au plan 14.2"
     intention: >-
       Trois forces, trois cultures politiques, et deux futurs Premiers ministres. Le chapitre montre aussi les
       combattants arabes et les attentats contre les civils juifs : le film ne choisit pas ses morts.
@@ -255,12 +259,14 @@ chapitres:
         fichier: output/chapitres/chapitre-14.mp4
         entree: 0
         sortie: 4.6
-      - type: IA
-        fichier: output/reconstitutions/17-27-haganah-1948.mp4
-        photo: "Wikimedia Commons, « Training for the Hagana », GPO, 4 avril 1948, CC BY-SA 3.0"
+      - type: ARCH
+        fichier: output/archives-filmees/1948-haganah-combattants.mp4
+        carton: output/cartons/95-arch-1948-haganah-combattants.mov
         entree: 0
         sortie: 12
-        ecran: "déjà dans le plan : Avril 1948 · Palestine · L'entraînement de recrues de la Haganah · la vraie photo, puis Reconstitution par IA, d'après une photo d'archive · GPO, CC BY-SA 3.0"
+        ecran: "carton : 1948 · Palestine · Des combattants de la Haganah."
+        source: "rushes Universal « Hagana Troops », 1948 (musée américain de l'Holocauste, courtesy of NARA, domaine public), autres passages que les fouilles du chapitre 13 ; SOURCES.md 4.2"
+        note: "vraie image à la place de la reconstitution par IA (17-27-haganah-1948, passée en réserve)"
         voix: >-
           Côté juif, trois forces armées. / La Haganah, la plus grande, liée à Ben Gourion. / Et deux groupes plus
           radicaux : / l'Irgoun et le **Lehi**.

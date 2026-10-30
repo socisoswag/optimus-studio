@@ -344,11 +344,21 @@ chapitres:
       - type: MD
         fichier: output/documents-7.mp4
         entree: 0
-        sortie: 15
+        sortie: 6
         ecran: "fiche : Rishon LeZion · 1882 · Le baron de Rothschild"
         source: "Edmond de Rothschild (1845-1934) : Rishon LeZion, Zikhron Yaakov, Rosh Pina, à partir de 1882-1883 ; colonies confiées à la Jewish Colonization Association en 1899"
         voix: >-
-          Derrière ces colonies, un banquier de Paris : / le baron Edmond de Rothschild. / Dès 1882, il finance Rishon LeZion, Zikhron Yaakov, Rosh Pina. / Ses agents achètent des terres, souvent à de grands propriétaires qui n'y vivent **pas**.
+          Derrière ces colonies, un banquier de Paris : / le baron Edmond de **Rothschild**.
+      - type: ARCH
+        fichier: output/archives-filmees/1913-rosh-pina-la-colonie.mp4
+        carton: output/cartons/93-arch-1913-rosh-pina-la-colonie.mov
+        entree: 0
+        sortie: 9
+        ecran: "carton : 1913 · Rosh Pina · La colonie, sur les pentes de la haute Galilée."
+        source: "The Life of the Jews in Palestine (Noah Sokolovsky, 1913, domaine public), intertitre « Rosh Pina » de la copie restaurée (CNC, Archives du film d'Israël) ; SOURCES.md 4.2"
+        note: "vraie image à la place de la fin de la fiche Rothschild (6 à 15)"
+        voix: >-
+          Dès 1882, il finance Rishon LeZion, Zikhron Yaakov, Rosh Pina. / Ses agents achètent des terres, souvent à de grands propriétaires qui n'y vivent **pas**.
       - type: ARCH
         fichier: output/archives-filmees/1913-zikhron-yaakov-maisons-synagogue-vignes.mp4
         carton: output/cartons/87-arch-1913-zikhron-yaakov-maisons-synagogue-vignes.mov
@@ -553,11 +563,13 @@ chapitres:
         source: "code foncier ottoman de 1858 (Tanzimat) ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984"
         voix: >-
           Pour comprendre ces ventes, il faut remonter à 1858. / L'Empire ottoman impose d'enregistrer les terres. / Pour fuir l'impôt et l'armée, des paysans évitent de le faire ; des notables accumulent les titres. / Celui qui possède la terre n'est plus toujours celui qui la **cultive**.
-      - type: MD
-        fichier: output/documents-7.mp4
-        entree: 30
-        sortie: 43
-        ecran: "fiche : Petah Tikva · 1886 · Le premier heurt"
+      - type: ARCH
+        fichier: output/archives-filmees/1913-petah-tikva-la-colonie.mp4
+        carton: output/cartons/94-arch-1913-petah-tikva-la-colonie.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : 1913 · Petah Tikva · La colonie, vue d'en haut, puis sa rue."
+        note: "vraie image à la place de la fiche de documents-7 (30 à 43) : le lieu, filmé en 1913 ; la date de 1886 est dans la voix"
         source: "Liora R. Halperin, « Petah Tikva, 1886: Gender, Anonymity, and the Making of Zionist Memory », Jewish Social Studies, vol. 23, n° 1, 2017 (attaque du 29 mars 1886)"
         voix: >-
           Les acheteurs traitent avec les propriétaires, pas avec ceux qui cultivent. / Le 29 mars 1886, des paysans du village voisin attaquent Petah Tikva, au terme d'un conflit sur la terre. / C'est l'un des premiers affrontements de ce **genre**.

@@ -272,14 +272,22 @@ Film 00:07:18:05 → 00:08:50:05 · durée 1 min 32.0 s
 Note : la suite de la pièce (1919 à 1945) sert au chapitre 8
 
 
-**5.4** · film **00:07:39:20 → 00:07:54:20** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:00:00 → 00:00:15:00  
+**5.4** · film **00:07:39:20 → 00:07:45:20** (6.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:00:00 → 00:00:06:00  
 Source : Edmond de Rothschild (1845-1934) : Rishon LeZion, Zikhron Yaakov, Rosh Pina, à partir de 1882-1883 ; colonies confiées à la Jewish Colonization Association en 1899  
 À l'écran : fiche : Rishon LeZion · 1882 · Le baron de Rothschild  
-> VOIX : Derrière ces colonies, un banquier de Paris : / le baron Edmond de Rothschild. / Dès 1882, il finance Rishon LeZion, Zikhron Yaakov, Rosh Pina. / Ses agents achètent des terres, souvent à de grands propriétaires qui n'y vivent **pas**.  
-(36 mots, 2.4 par seconde)
+> VOIX : Derrière ces colonies, un banquier de Paris : / le baron Edmond de **Rothschild**.  
+(12 mots, 2.0 par seconde)
 
 
-**5.5** · film **00:07:54:20 → 00:08:06:20** (12.0 s) · **[ARCH]** `output/archives-filmees/1913-zikhron-yaakov-maisons-synagogue-vignes.mp4` · source 00:00:00:00 → 00:00:12:00  
+**5.5** · film **00:07:45:20 → 00:07:54:20** (9.0 s) · **[ARCH]** `output/archives-filmees/1913-rosh-pina-la-colonie.mp4` · source 00:00:00:00 → 00:00:09:00  
+Source : The Life of the Jews in Palestine (Noah Sokolovsky, 1913, domaine public), intertitre « Rosh Pina » de la copie restaurée (CNC, Archives du film d'Israël) ; SOURCES.md 4.2  
+À l'écran : carton : 1913 · Rosh Pina · La colonie, sur les pentes de la haute Galilée.  
+> VOIX : Dès 1882, il finance Rishon LeZion, Zikhron Yaakov, Rosh Pina. / Ses agents achètent des terres, souvent à de grands propriétaires qui n'y vivent **pas**.  
+(24 mots, 2.7 par seconde)  
+Note : vraie image à la place de la fin de la fiche Rothschild (6 à 15)
+
+
+**5.6** · film **00:07:54:20 → 00:08:06:20** (12.0 s) · **[ARCH]** `output/archives-filmees/1913-zikhron-yaakov-maisons-synagogue-vignes.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : Zikhron Yaakov, « souvenir de Jacob », du nom de James (Jacob) de Rothschild, père d'Edmond ; SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public ; carton d'origine « Zichron Ya'akov »)  
 À l'écran : carton : 1913 · Zikhron Yaakov · Les maisons, la synagogue, les vignes.  
 > VOIX : Zikhron Yaakov porte le nom de son père, Jacob. / Le baron y paie les maisons, la synagogue, les **vignes**.  
@@ -287,7 +295,7 @@ Source : Zikhron Yaakov, « souvenir de Jacob », du nom de James (Jacob) de Rot
 Note : vraie image filmée à la place de la photo Matson des années 1920 (mise en réserve du chapitre)
 
 
-**5.6** · film **00:08:06:20 → 00:08:18:20** (12.0 s) · **[ARCH]** `output/archives-filmees/1913-rishon-lezion-caves-carmel.mp4` · source 00:00:00:00 → 00:00:12:00  
+**5.7** · film **00:08:06:20 → 00:08:18:20** (12.0 s) · **[ARCH]** `output/archives-filmees/1913-rishon-lezion-caves-carmel.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : caves de Rishon LeZion (1890) ; ouvriers arabes dans les colonies du baron (Gershon Shafir, Land, Labor and the Origins of the Israeli-Palestinian Conflict, 1989) ; SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public ; carton d'origine « Rishon LeZion and the Carmel wineries »)  
 À l'écran : carton : 1913 · Rishon LeZion · Les caves à vin Carmel.  
 > VOIX : À Rishon LeZion, il fait creuser de grandes caves à vin. / Dans ses colonies travaillent des ouvriers arabes, par centaines. / La vague suivante ne voudra plus de ce **modèle**.  
@@ -295,13 +303,13 @@ Source : caves de Rishon LeZion (1890) ; ouvriers arabes dans les colonies du ba
 Note : vraie image filmée à la place de la photo Matson des caves (mise en réserve du chapitre)
 
 
-**5.7** · film **00:08:18:20 → 00:08:30:05** (11.4 s) · **[RÉEL]** `output/plans-reels/recolte-des-olives-a-la-main.mp4` · source 00:00:00:00 → 00:00:11:10  
+**5.8** · film **00:08:18:20 → 00:08:30:05** (11.4 s) · **[RÉEL]** `output/plans-reels/recolte-des-olives-a-la-main.mp4` · source 00:00:00:00 → 00:00:11:10  
 Source : SOURCES.md 4.1, Adobe Stock 259921414 (lieu non précisé : aucune légende de lieu)  
 > VOIX : La deuxième vague, après 1904, est différente. / De jeunes socialistes rêvent d'un Juif nouveau, / paysan sur sa terre, / qui parle l'hébreu **ressuscité**.  
 (22 mots, 1.9 par seconde)
 
 
-**5.8** · film **00:08:30:05 → 00:08:40:05** (10.0 s) · **[ARCH]** `output/archives-filmees/1913-lac-de-tiberiade-pionniers-labourent.mp4` · source 00:00:00:00 → 00:00:10:00  
+**5.9** · film **00:08:30:05 → 00:08:40:05** (10.0 s) · **[ARCH]** `output/archives-filmees/1913-lac-de-tiberiade-pionniers-labourent.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)  
 À l'écran : carton : 1913 · Au bord du lac de Tibériade · Des pionniers juifs labourent la terre de leur ferme.  
 > VOIX : Mais leur rêve a une règle : / le « travail **hébreu** ». / Les fermes juives doivent employer des Juifs, / et les ouvriers arabes sont écartés.  
@@ -309,7 +317,7 @@ Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsk
 Note : vraie image filmée à la place de la reconstitution par IA (labour aux bœufs, mise en réserve du chapitre)
 
 
-**5.9** · film **00:08:40:05 → 00:08:50:05** (10.0 s) · **[ARCH]** `output/archives-filmees/1913-tel-aviv-la-jeune-ville.mp4` · source 00:00:00:00 → 00:00:10:00  
+**5.10** · film **00:08:40:05 → 00:08:50:05** (10.0 s) · **[ARCH]** `output/archives-filmees/1913-tel-aviv-la-jeune-ville.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)  
 À l'écran : carton : 1913 · Tel-Aviv · La ville fondée quatre ans plus tôt au nord de Jaffa.  
 > VOIX : En 1909, au nord de Jaffa, ils fondent une ville à eux : / **Tel-Aviv**. / Une ville juive, à côté de la ville arabe.  
@@ -406,11 +414,12 @@ Source : code foncier ottoman de 1858 (Tanzimat) ; Kenneth W. Stein, The Land Qu
 (43 mots, 2.9 par seconde)
 
 
-**6.12** · film **00:11:02:00 → 00:11:15:00** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:30:00 → 00:00:43:00  
+**6.12** · film **00:11:02:00 → 00:11:15:00** (13.0 s) · **[ARCH]** `output/archives-filmees/1913-petah-tikva-la-colonie.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : Liora R. Halperin, « Petah Tikva, 1886: Gender, Anonymity, and the Making of Zionist Memory », Jewish Social Studies, vol. 23, n° 1, 2017 (attaque du 29 mars 1886)  
-À l'écran : fiche : Petah Tikva · 1886 · Le premier heurt  
+À l'écran : carton : 1913 · Petah Tikva · La colonie, vue d'en haut, puis sa rue.  
 > VOIX : Les acheteurs traitent avec les propriétaires, pas avec ceux qui cultivent. / Le 29 mars 1886, des paysans du village voisin attaquent Petah Tikva, au terme d'un conflit sur la terre. / C'est l'un des premiers affrontements de ce **genre**.  
-(38 mots, 2.9 par seconde)
+(38 mots, 2.9 par seconde)  
+Note : vraie image à la place de la fiche de documents-7 (30 à 43) : le lieu, filmé en 1913 ; la date de 1886 est dans la voix
 
 
 **6.13** · film **00:11:15:00 → 00:11:28:00** (13.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:43:00 → 00:00:56:00  

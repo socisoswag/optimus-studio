@@ -200,10 +200,12 @@ Film 00:31:03:01 → 00:32:40:01 · durée 1 min 37.0 s
 > VOIX : silence
 
 
-**14.2** · film **00:31:07:16 → 00:31:19:16** (12.0 s) · **[IA]** `output/reconstitutions/17-27-haganah-1948.mp4` · source 00:00:00:00 → 00:00:12:00  
-À l'écran : déjà dans le plan : Avril 1948 · Palestine · L'entraînement de recrues de la Haganah · la vraie photo, puis Reconstitution par IA, d'après une photo d'archive · GPO, CC BY-SA 3.0  
+**14.2** · film **00:31:07:16 → 00:31:19:16** (12.0 s) · **[ARCH]** `output/archives-filmees/1948-haganah-combattants.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : rushes Universal « Hagana Troops », 1948 (musée américain de l'Holocauste, courtesy of NARA, domaine public), autres passages que les fouilles du chapitre 13 ; SOURCES.md 4.2  
+À l'écran : carton : 1948 · Palestine · Des combattants de la Haganah.  
 > VOIX : Côté juif, trois forces armées. / La Haganah, la plus grande, liée à Ben Gourion. / Et deux groupes plus radicaux : / l'Irgoun et le **Lehi**.  
-(23 mots, 1.9 par seconde)
+(23 mots, 1.9 par seconde)  
+Note : vraie image à la place de la reconstitution par IA (17-27-haganah-1948, passée en réserve)
 
 
 **14.3** · film **00:31:19:16 → 00:31:32:16** (13.0 s) · **[IA]** `output/reconstitutions/18-22-king-david-1946.mp4` · source 00:00:00:00 → 00:00:13:00  

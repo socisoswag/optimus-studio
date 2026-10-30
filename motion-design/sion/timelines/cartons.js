@@ -103,6 +103,9 @@
     ["arch-1913-constantinople-capitale-ottomane", "1913", "Constantinople", "La capitale de l’Empire ottoman."],
     ["arch-1916-sinai-prisonniers-ottomans", "Décembre 1916", "Sinaï", "Des prisonniers ottomans, escortés par des cavaliers australiens."],
     ["arch-1918-damas-meharistes-du-cherif", "1918", "Damas", "Les méharistes du chérif de La Mecque entrent dans la ville."],
+    ["arch-1913-rosh-pina-la-colonie", "1913", "Rosh Pina", "La colonie, sur les pentes de la haute Galilée."],
+    ["arch-1913-petah-tikva-la-colonie", "1913", "Petah Tikva", "La colonie, vue d’en haut, puis sa rue."],
+    ["arch-1948-haganah-combattants", "1948", "Palestine", "Des combattants de la Haganah."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

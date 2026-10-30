@@ -54,7 +54,8 @@
 
 ## Voix trop longue pour le plan
 
-- 5.6 : 29 mots pour 12.0 s (2.4 mots/s)
+- 5.5 : 24 mots pour 9.0 s (2.7 mots/s)
+- 5.7 : 29 mots pour 12.0 s (2.4 mots/s)
 - 6.11 : 43 mots pour 15.0 s (2.9 mots/s)
 - 6.12 : 38 mots pour 13.0 s (2.9 mots/s)
 - 6.13 : 34 mots pour 13.0 s (2.6 mots/s)
