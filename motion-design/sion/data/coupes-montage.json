@@ -1,0 +1,30 @@
+{
+ "note": "Plans resserrés au montage : la timeline Premiere (tools/premiere_xml.py) ne garde que ces secondes du début du plan livré ; le fichier reste entier. Temps morts seulement (voix au débit du guide, 140 mots/min, plus 1,5 s ; jamais moins de 4,5 s, 6 s en 3D, ni de 60 % du plan, ni du temps de lecture du texte à l'écran), et seulement là où la coupe ne fait pas sauter une animation continue.",
+ "plans": {
+  "07.07": 6.1,
+  "11.05": 7.4,
+  "12.10": 8.4,
+  "13.13": 9.6,
+  "14.04": 9.6,
+  "17.02": 11.2,
+  "18.04": 10.3,
+  "18.05": 9.6,
+  "19.17": 7.0,
+  "19.22": 6.6,
+  "19.24": 8.3,
+  "19.29": 6.0,
+  "19.33": 7.2,
+  "20.12": 7.0,
+  "20.16": 6.6,
+  "21.07": 6.1,
+  "22.02": 9.9,
+  "22.04": 13.3,
+  "23.03": 10.3,
+  "24.06": 7.4,
+  "28.05": 9.1,
+  "30.04": 10.3,
+  "30.05": 8.7,
+  "32.05": 15.1,
+  "38.03": 9.4
+ }
+}

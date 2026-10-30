@@ -82,6 +82,10 @@ def duree_carton(base):
 def film(fichiers, manif):
     """Le film, partie par partie : [(titre de partie, [(titre de chapitre, [plan…], [réserve…])…])…]."""
     out = []
+    # plans resserrés au montage (data/coupes-montage.json) : le fichier livré reste entier, la timeline n'en garde que le
+    # début ; on rallonge le plan dans Premiere pour retrouver la fin
+    cp = os.path.join(ROOT, "data", "coupes-montage.json")
+    coupes = json.load(open(cp, encoding="utf-8"))["plans"] if os.path.exists(cp) else {}
     for yml, folder, _ in D.PARTS:
         data = yaml.safe_load(open(os.path.join(ROOT, "script", yml), encoding="utf-8"))
         mf = manif.get(folder, {})
@@ -102,6 +106,7 @@ def film(fichiers, manif):
                     if f"{rel}/cartons/{b}" in fichiers:
                         cartons.append({"rel": f"{rel}/cartons/{b}", "n": duree_carton(b)})
                 plans.append({"pid": pid, "rel": f"{rel}/{fic}" if fic else None, "n": images(d), "type": p["type"],
+                              "ng": images(min(d, float(coupes[pid]))) if pid in coupes else images(d),
                               "voix": D.flat(p.get("voix")).replace("**", ""), "ecran": D.flat(p.get("ecran")), "cartons": cartons})
             reserves = []
             for f in ici:
@@ -157,7 +162,7 @@ def construit(f):
             marques.append((t, c_titre, ""))
             dedans = []
             for p in plans:
-                n = p["n"]
+                n, ng = p["n"], p["ng"]  # durée du fichier, durée gardée dans la timeline
                 if p["rel"]:
                     dedans.append(F.maitre(p["rel"], n, son=True))
                     i = F.ids[p["rel"]]
@@ -169,7 +174,7 @@ def construit(f):
                                       f"<trackindex>{x}</trackindex><clipindex>{k}</clipindex><groupindex>1</groupindex></link>"
                                       for x in (2, 3)))
                     tete = (f"<masterclipid>masterclip-{i}</masterclipid><name>{nom}</name><enabled>TRUE</enabled>"
-                            f"<duration>{n}</duration>{rate()}<start>{t}</start><end>{t + n}</end><in>0</in><out>{n}</out>")
+                            f"<duration>{n}</duration>{rate()}<start>{t}</start><end>{t + ng}</end><in>0</in><out>{ng}</out>")
                     v1.append(f'<clipitem id="seq-v-{k}">{tete}<alphatype>none</alphatype><file id="file-{i}"/>{lien}</clipitem>')
                     for x, lst in ((2, a2), (3, a3)):
                         lst.append(f'<clipitem id="seq-a{x}-{k}">{tete}<file id="file-{i}"/><sourcetrack><mediatype>audio</mediatype>'
@@ -179,7 +184,7 @@ def construit(f):
                     for c in p["cartons"]:
                         dedans.append(F.maitre(c["rel"], c["n"], son=False, alpha=True))
                         j = F.ids[c["rel"]]
-                        m = min(c["n"], n - (debut - t))
+                        m = min(c["n"], ng - (debut - t))
                         if m <= 0:
                             break
                         v2.append(f'<clipitem id="seq-c-{len(v2) + 1}"><masterclipid>masterclip-{j}</masterclipid>'
@@ -192,7 +197,7 @@ def construit(f):
                 else:
                     manquants += 1
                     marques.append((t, f"{p['pid']} · à venir ({p['type']})", p["ecran"] or p["voix"]))
-                t += n
+                t += ng
             for r in reserves:
                 dedans.append(F.maitre(r["rel"], r["n"], son=True))
             sous.append(f"<bin><name>{e(c_titre)}</name><children>{''.join(dedans)}</children></bin>")
