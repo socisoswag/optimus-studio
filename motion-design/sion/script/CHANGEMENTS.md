@@ -554,3 +554,24 @@ l'aire de battage et le marché de Jaffa passent en 06.R3 et 06.R4. Légendes de
 Les nouvelles archives n'ont pas de son d'origine : chacune a son ambiance.
 
 **Règle** : jamais deux fois la même image dans le film (plusieurs plans d'une même vidéo, oui).
+
+## 30 octobre 2026, l'après-midi (le film de 1913 à la place de photos et de reconstitutions)
+
+**Plans remplacés (nouveau nom : à changer dans la timeline)**
+
+| Plan | Ancien fichier | Nouveau fichier | Ce que c'est |
+|---|---|---|---|
+| 05.05 | `05.05-PHOTO-3-32-zikhron-yaakov.mp4` | `05.05-ARCH-1913-zikhron-yaakov-maisons-synagogue-v.mp4` | Zikhron Yaakov en 1913 : les maisons, la synagogue, les vignes (le carton du film nomme la colonie) |
+| 05.06 | `05.06-PHOTO-4-33-rishon-lezion.mp4` | `05.06-ARCH-1913-rishon-lezion-caves-carmel.mp4` | les caves à vin Carmel de Rishon LeZion en 1913 (bâtiments, foudres, tonneaux) |
+| 06.03 | `06.03-IA-5-5-savonnerie-naplouse.mp4` | `06.03-ARCH-1913-orangeraie-cueillette-emballage.mp4` | une orangeraie en 1913 : la cueillette, puis l'emballage pour l'export |
+| 06.04 | `06.04-IA-1-1-orangeraies-jaffa.mp4` | `06.04-ARCH-1913-constantinople-capitale-ottomane.mp4` | Constantinople en 1913, capitale de l'Empire ottoman |
+
+Les photos et les reconstitutions remplacées passent en réserve de leur chapitre (05.R3, 05.R4, 06.R5, 06.R6). Légendes :
+cartons 87 à 90. Nouveaux plans en réserve : Versailles, 28 juin 1919 (07.R1, domaine public) et les blindés israéliens
+dans le Sinaï, juin 1967 (19.R2, CC BY-SA 3.0, à créditer s'il est monté) ; ni la citation de Balfour (7.12) ni la
+carte des Six Jours (19.22) ne sont couvertes : elles portent l'information.
+
+**Relivrés, même nom** : 23.16, 36.04 et 38.08, recadencés le matin, faisaient deux images de moins que leur plan ;
+les clips sont rallongés de deux images (dernière image tenue).
+
+Vraies images : 18,8 min sur 94,7 (19,8 %).

@@ -1,5 +1,5 @@
 {
- "maj": "30 octobre 2026, la nuit",
+ "maj": "30 octobre 2026, l'après-midi",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -52,10 +52,10 @@
   },
   {
    "nom": "Archives libres : 1917 à 1950, puis Gaza et la Cisjordanie de 2000 à 2025",
-   "pct": 75,
+   "pct": 80,
    "poids": 3,
    "qui": "moi",
-   "detail": "26 archives posées (dont Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023) ; vraies images : 19 % du film, cible 35 à 40 % ; 30 octobre : 1913 (4 plans), camp de 1950, Maison-Blanche 2025, maison incendiée 2024"
+   "detail": "archives posées : Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023 ; 30 octobre : 1913 (Zikhron Yaakov, Rishon LeZion, orangeraie, Constantinople), camp de 1950, Maison-Blanche 2025, maison incendiée 2024 ; en réserve : Versailles 1919, Sinaï 1967 ; vraies images : 18,8 min, 19,8 % du film"
   },
   {
    "nom": "Intégrer les plans Envato et les archives",
@@ -73,10 +73,10 @@
   },
   {
    "nom": "Réponses Perplexity",
-   "pct": 50,
+   "pct": 40,
    "poids": 2,
    "qui": "toi",
-   "detail": "3 nouvelles questions (images de l'ONU, Voice of America, proclamation de 1948) ; reste aussi les droits de Paths in Palestine"
+   "detail": "dossier complet envoyé (SION-dossier-Perplexity.pdf) : 2 vérifications (8.21, 23.20), 11 questions de lieux et de droits, 7 fichiers Commons à confirmer ; puis 4 fichiers Dropbox (F28, F31, F32, F33)"
   },
   {
    "nom": "Voix off",

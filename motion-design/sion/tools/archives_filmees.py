@@ -217,7 +217,8 @@ ARCHIVES = {
                                                       [(1050.0, 1054.0), (1119.5, 1124.0), (1208.0, 1212.0)], {"stab": True}),
     # Rishon LeZion (carton « Rishon LeZion and the Carmel wineries ») : les bâtiments, les foudres de la cave, les tonneaux
     "1913-rishon-lezion-caves-carmel": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0",
-                                        [(2771.0, 2774.5), (2797.6, 2802.8), (2783.0, 2787.0)], {"stab": True}),
+                                        [(2771.0, 2774.5), (2797.6, 2802.8), (2783.0, 2787.0)],
+                                        {"stab": True, "pre": "curves=all='0/0 0.25/0.31 0.6/0.68 1/1'"}),
     # une orangeraie : la cueillette, puis l'emballage des oranges en caisses
     "1913-orangeraie-cueillette-emballage": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(747.0, 750.0), (788.0, 792.5)], {"stab": True}),
     # Constantinople, au début du film : la ville vue de la Corne d'Or, puis la mosquée d'Ortaköy sur le Bosphore
