@@ -1,5 +1,5 @@
 {
- "maj": "30 octobre 2026, l'après-midi",
+ "maj": "30 octobre 2026, le soir",
  "taches": [
   {
    "nom": "Nouveau rendu du film (relief partout, cartes « paroles »)",
@@ -55,7 +55,7 @@
    "pct": 80,
    "poids": 3,
    "qui": "moi",
-   "detail": "archives posées : Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023 ; 30 octobre : 1913 (Zikhron Yaakov, Rishon LeZion, orangeraie, Constantinople), camp de 1950, Maison-Blanche 2025, maison incendiée 2024 ; en réserve : Versailles 1919, Sinaï 1967 ; vraies images : 18,8 min, 19,8 % du film"
+   "detail": "archives posées : Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023 ; 30 octobre : 1913 (Zikhron Yaakov, Rishon LeZion, orangeraie, Constantinople), camp de 1950, Maison-Blanche 2025, maison incendiée 2024 ; Sinaï 1916 (Australian War Memorial) ; en réserve : Versailles 1919, Sinaï 1967, Damas 1918 ; vraies images : 18,9 min, environ 20 % du film"
   },
   {
    "nom": "Intégrer les plans Envato et les archives",
@@ -73,10 +73,10 @@
   },
   {
    "nom": "Réponses Perplexity",
-   "pct": 40,
+   "pct": 85,
    "poids": 2,
    "qui": "toi",
-   "detail": "dossier complet envoyé (SION-dossier-Perplexity.pdf) : 2 vérifications (8.21, 23.20), 11 questions de lieux et de droits, 7 fichiers Commons à confirmer ; puis 4 fichiers Dropbox (F28, F31, F32, F33)"
+   "detail": "dossier du 30 octobre reçu et appliqué : Peel, eau et Gaza 2012 corrigés (voix 8.20, 8.21, 23.20, 25.9 à relire), lieux de 1913 et droits de « Paths in Palestine » vérifiés ; restent les fichiers Dropbox F28 (Rabin) et F31 (accords d'Abraham)"
   },
   {
    "nom": "Voix off",
