@@ -365,7 +365,12 @@ def livrer_sons(w, sons):
             continue
         os.makedirs(os.path.dirname(dst), exist_ok=True)
         if src.endswith(".m4a"):
-            shutil.copy(src, dst)
+            if os.path.exists(dst):
+                os.remove(dst)
+            try:
+                os.link(src, dst)  # même disque : pas de copie
+            except OSError:
+                shutil.copy(src, dst)
         else:
             subprocess.run(["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", src, "-c:a", "aac", "-aac_pns", "0", "-aac_is", "0",
                             "-b:a", "256k", "-movflags", "+faststart", dst], check=True)
