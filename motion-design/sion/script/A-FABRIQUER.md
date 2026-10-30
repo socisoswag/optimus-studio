@@ -311,3 +311,11 @@ Séquence « Sous occupation » (23.13 à 23.15) : chiffres pris directement aux
 (OCHA, avril 2026 : 925 obstacles ; OCHA, base des démolitions au 21 octobre 2026 : 15 136 structures, 23 751 personnes
 déplacées ; La Paix maintenant, 10 août 2023, données de Bimkom : 24 permis sur 2 550 demandes de 2016 à 2020). Les
 questions 14 à 16 du fichier QUESTIONS-PERPLEXITY.md sont donc réglées.
+
+## 15. Réponse Perplexity au dossier « 35 % » (31 octobre 2026) : rien de nouveau
+
+Aucune image nouvelle validée pour Y1 à Y13. Confirmé : les vidéos de la CIJ (« Courtesy of the ICJ. All rights
+reserved. ») et de l'ONU ne sont pas libres (33.8 reste une fiche) ; Knesset (Z2) et le bloc de licence Commons des
+accords d'Abraham (Z3) non trouvés (la vidéo vient de la Maison-Blanche : domaine public, F31 à recevoir par la
+Dropbox). Recherche directe sur archive.org le même jour : les rushes March of Time « Palestine » de 1935 et 1936
+(MT-MTT-179, MT-MTT-666F) existent, mais la NARA les marque « Use: Possibly Restricted, copyright » : écartés.
