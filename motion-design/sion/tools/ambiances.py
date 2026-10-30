@@ -171,6 +171,7 @@ def original(pid, p):
           debut: 1.9                        facultatif : le son commence à cet instant du plan au lieu de suivre l'image
                                             (plan de motion design : le son de la pièce reste dessous, 12 dB plus bas)
           sonie: -20                        facultatif ; par défaut -20 LUFS pour une parole, -24 pour un son d'ambiance
+          baisse: [[0, 5.7], ...]           facultatif : passages du plan où le vrai son passe sous la voix off (-18 dB)
 
     Renvoie None si la source n'est pas sur cette machine (l'ambiance de la banque prend alors le relais)."""
     so = p["son_original"]
@@ -203,11 +204,21 @@ def original(pid, p):
         o = int(round(a * SR))
         m = max(0, min(len(xl) - o, n))
         L[:m], R[:m] = xl[o:o + m], xr[o:o + m]
-    # niveau mesuré sur le son lui-même (pas sur les silences autour)
-    vrai = np.abs(L) + np.abs(R) > 1e-6
+    # passages sous la voix off : -18 dB, rampes de 0,25 s
+    env = np.ones(n)
+    r_ = int(0.25 * SR)
+    for b0, b1 in so.get("baisse", []):
+        i0, i1 = int(float(b0) * SR), min(n, int(float(b1) * SR))
+        env[i0:i1] = 10 ** (-18 / 20)
+        if i0 > 0:
+            env[max(0, i0 - r_):i0] = np.linspace(1, 10 ** (-18 / 20), i0 - max(0, i0 - r_))
+        if i1 < n:
+            env[i1:i1 + r_] = np.linspace(10 ** (-18 / 20), 1, len(env[i1:i1 + r_]))
+    # niveau mesuré sur le son lui-même (pas sur les silences autour ni les passages baissés)
+    vrai = (np.abs(L) + np.abs(R) > 1e-6) & (env > 0.99)
     cible = float(so.get("sonie", -20 if p.get("sous_titres") else -24))
     g = 10 ** ((cible - sonie(L[vrai], R[vrai])) / 20) if vrai.sum() > SR // 4 else 1.0
-    L, R = L * g, R * g
+    L, R = L * g * env, R * g * env
     couches = ["son d'origine"]
     if "debut" in so:  # plan de motion design : son de la pièce dessous, 12 dB plus bas
         pl, pr = lire(os.path.join(ROOT, p["fichier"]), a, d)

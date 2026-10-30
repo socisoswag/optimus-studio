@@ -212,6 +212,7 @@ def son_rel(piece, fic):
 def construit(f):
     F = Fichiers()
     chutiers, v1, v2, a2, a3, marques = [], [], [], [], [], []
+    v3 = []  # sous-titres d'une parole gardée : toute la durée du plan, depuis son début
     fam = {x: ([], []) for x in FAMILLES}  # pistes séparées : gauche, droite
     utilises = set()  # (pièce, fichier) des sons posés, à livrer
     t = 0
@@ -266,6 +267,13 @@ def construit(f):
                     for c in p["cartons"]:
                         dedans.append(F.maitre(c["rel"], c["n"], son=False, alpha=True))
                         j = F.ids[c["rel"]]
+                        if os.path.basename(c["rel"]).startswith("st-"):
+                            m = min(c["n"], ng)
+                            v3.append(f'<clipitem id="seq-st-{len(v3) + 1}"><masterclipid>masterclip-{j}</masterclipid>'
+                                      f"<name>{e(os.path.basename(c['rel']))}</name><enabled>TRUE</enabled><duration>{c['n']}</duration>"
+                                      f"{rate()}<start>{t}</start><end>{t + m}</end><in>0</in><out>{m}</out>"
+                                      f'<alphatype>straight</alphatype><file id="file-{j}"/></clipitem>')
+                            continue
                         m = min(c["n"], ng - (debut - t))
                         if m <= 0:
                             break
@@ -308,7 +316,7 @@ def construit(f):
     mk = "".join(f"<marker><comment>{e(c)}</comment><name>{e(n)}</name><in>{s}</in><out>-1</out></marker>" for s, n, c in marques)
     seq = (f'<sequence id="sequence-1"><name>SION</name><duration>{t}</duration>{rate()}'
            f"<timecode>{rate()}<string>00:00:00:00</string><frame>0</frame><displayformat>NDF</displayformat></timecode>"
-           f"<media><video><format>{sc}</format>{piste(v1)}{piste(v2)}</video>"
+           f"<media><video><format>{sc}</format>{piste(v1)}{piste(v2)}{piste(v3) if v3 else ''}</video>"
            "<audio><numOutputChannels>2</numOutputChannels><format><samplecharacteristics><depth>16</depth>"
            "<samplerate>48000</samplerate></samplecharacteristics></format>"
            f"{piste([])}{piste(a2, '<outputchannelindex>1</outputchannelindex>')}{piste(a3, '<outputchannelindex>2</outputchannelindex>')}"
@@ -330,6 +338,7 @@ GUIDE = """# Ouvrir le film dans Premiere Pro
    ses cartons et ses plans en réserve), et la séquence **SION** :
    - **V1** : les {plans} plans dans l'ordre du film, à la durée prévue par le script (quelques plans resserrés, voir 6) ;
    - **V2** : les {cartons} cartons (lieu et date), posés au début de leur plan ;
+   - **V3** : les sous-titres des paroles gardées (Trump en 25.40), calés sur leur plan ;
    - **A1** : vide, pour ta voix ;
    - **A2 et A3** : le son des plans, gauche et droite : l'ambiance des vraies images ; pour les plans de motion design,
      leur son mixé est là mais coupé (désactivé), pour comparer ;

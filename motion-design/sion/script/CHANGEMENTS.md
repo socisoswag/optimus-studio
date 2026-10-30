@@ -648,3 +648,16 @@ Vraies images : 19,6 min sur 94,7 (20,7 %).
 **Son d'origine** : gardé seulement pour les moments forts (ici, la voix de Ben Gourion). Les autres vraies images
 gardent leur ambiance. Écarté : le reportage d'Al Jazeera à Rafah (logos partout, image abîmée).
 Vraies images : 20,4 min sur 94,7 (21,5 %).
+
+## 31 octobre 2026, la nuit (la vraie voix de Trump, 25.40)
+
+| Plan | Maintenant | Avant |
+|---|---|---|
+| 25.40 | `25.40-ARCH-washington-2025-trump-gaza.mp4` (24 s) : Trump au pupitre, on entend sa phrase, sous-titrée : « Les États-Unis vont prendre le contrôle de la bande de Gaza… Elle sera à nous… » ; sous-titres sur V3 (`cartons/st-washington-2025-trump-gaza-0.mov`) | `25.40-ARCH-washington-2025-trump-netanyahou.mp4` (12 s, images seules) |
+
+Ta voix sur 25.40 : « En février 2025, Netanyahou est reçu à la Maison-Blanche. Donald Trump annonce : » (pendant
+le carton), puis sa voix (de 6 à 18 s), puis « Il veut en faire « la Riviera du Moyen-Orient ». Ses habitants iraient
+vivre ailleurs. » Avant et après sa phrase, sa voix reste sous la tienne.
+
+Vérifié et écarté : les deux dossiers de ChatGPT (liens archive.org inexistants, fiches NARA d'autres films), le
+reportage VOA sur les obsèques de Shireen Abu Akleh (mêle des images d'agence et de la télévision israélienne).

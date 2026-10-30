@@ -419,15 +419,27 @@ chapitres:
         voix: >-
           Le laboratoire, c'est aussi l'intelligence artificielle. / En 2024, six officiers racontent au magazine +972 un programme, « Lavender » : / jusqu'à 37 000 Palestiniens désignés comme cibles. / L'armée dément laisser une machine choisir ses **cibles**.
       - type: ARCH
-        fichier: output/plans-reels/washington-2025-trump-netanyahou.mp4
+        fichier: output/plans-reels/washington-2025-trump-gaza.mp4
         carton: output/cartons/85-arch-washington-2025-trump-netanyahou.mov
         entree: 0
-        sortie: 12
+        sortie: 24
         ecran: "carton : 4 février 2025 · Washington, Maison-Blanche · Donald Trump et Benyamin Netanyahou en conférence de presse."
-        source: "conférence de presse de Donald Trump et Benyamin Netanyahou, Maison-Blanche, 4 février 2025 (vidéo de la Maison-Blanche, domaine public) ; SOURCES.md 4.2"
-        note: "vraie image à la place de la fiche de documents-6 (457 à 469)"
+        source: "conférence de presse de Donald Trump et Benyamin Netanyahou, Maison-Blanche, 4 février 2025, de 7 min 50 s à 8 min 15 s (vidéo de la Maison-Blanche, domaine public, reçue par la Dropbox) ; « the Riviera of the Middle East » à 39 min 19 s de la même conférence (GovInfo, p. 13) ; SOURCES.md 4.2"
+        note: "vraie image à la place de la fiche de documents-6 (457 à 469) ; 31 octobre : sa vraie voix, sous-titrée, au lieu des images seules (plan allongé de 12 à 24 s)"
+        son_original:
+          source: output/archives-sources/dropbox-14/trump-2025-02-04-gaza-470s.wav
+          morceaux: [[0, 24.0]]
+          baisse: [[0, 5.75], [18.1, 24.0]]
+        son: "son d'origine : Donald Trump, sa phrase sur Gaza en avant et sous-titrée ; avant et après, sa voix reste sous la voix off"
+        qui: "Donald Trump, 4 février 2025"
+        sous_titres:
+          - [5.85, 8.05, "« Les États-Unis vont prendre le contrôle de la bande de Gaza,"]
+          - [8.05, 10.85, "et nous allons nous en occuper, nous aussi."]
+          - [11.0, 14.3, "Elle sera à nous, et nous serons chargés de démanteler"]
+          - [14.3, 17.95, "toutes les bombes non explosées et les autres armes sur place. »"]
         voix: >-
-          En février 2025, à côté de Netanyahou, Donald Trump veut que les États-Unis prennent Gaza, / pour en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.
+          En février 2025, Netanyahou est reçu à la Maison-Blanche. / Donald Trump annonce : /// (sa voix, sous-titrée, de 6 à
+          18 s) /// Il veut en faire « la Riviera du Moyen-Orient ». / Ses habitants iraient vivre **ailleurs**.
       - type: MD
         fichier: output/documents-7.mp4
         entree: 175
