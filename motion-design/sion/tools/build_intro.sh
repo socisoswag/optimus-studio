@@ -30,7 +30,7 @@ IN=(-i "$TMP/video.mp4")
 if [ -n "${VIDEO_LIST:-}" ]; then
   IN=(-f concat -safe 0 -i "$VIDEO_LIST")
 else
-  node render.mjs --page "$PAGE" --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf 12 $RFLAGS --out "$TMP/video.mp4"
+  node render.mjs --page "$PAGE" --timeline "$NAME" --workers "${WORKERS:-4}" --shutter "${SHUTTER:-1}" --crf "${CRF:-12}" $RFLAGS --out "$TMP/video.mp4"
 fi
 WAV="output/$NAME.wav"
 if [ "$OUTNAME" = "$NAME" ] || [ ! -f "$WAV" ]; then
