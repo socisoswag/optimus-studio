@@ -561,7 +561,7 @@ Les nouvelles archives n'ont pas de son d'origine : chacune a son ambiance.
 
 | Plan | Ancien fichier | Nouveau fichier | Ce que c'est |
 |---|---|---|---|
-| 05.05 | `05.05-PHOTO-3-32-zikhron-yaakov.mp4` | `05.05-ARCH-1913-zikhron-yaakov-maisons-synagogue-v.mp4` | Zikhron Yaakov en 1913 : les maisons, la synagogue, les vignes (le carton du film nomme la colonie) |
+| 05.05 | `05.05-PHOTO-3-32-zikhron-yaakov.mp4` | `05.05-ARCH-1913-zikhron-yaakov-maisons-synagogue-vi.mp4` | Zikhron Yaakov en 1913 : les maisons, la synagogue, les vignes (le carton du film nomme la colonie) |
 | 05.06 | `05.06-PHOTO-4-33-rishon-lezion.mp4` | `05.06-ARCH-1913-rishon-lezion-caves-carmel.mp4` | les caves à vin Carmel de Rishon LeZion en 1913 (bâtiments, foudres, tonneaux) |
 | 06.03 | `06.03-IA-5-5-savonnerie-naplouse.mp4` | `06.03-ARCH-1913-orangeraie-cueillette-emballage.mp4` | une orangeraie en 1913 : la cueillette, puis l'emballage pour l'export |
 | 06.04 | `06.04-IA-1-1-orangeraies-jaffa.mp4` | `06.04-ARCH-1913-constantinople-capitale-ottomane.mp4` | Constantinople en 1913, capitale de l'Empire ottoman |
