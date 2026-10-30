@@ -1,4 +1,4 @@
-"""Le dossier de recherche d'archives pour Perplexity, en un seul PDF : script/QUESTIONS-PERPLEXITY-ARCHIVES.pdf.
+"""Le dossier de recherche pour Perplexity (vérifications et archives), en un seul PDF : script/QUESTIONS-PERPLEXITY-ARCHIVES.pdf.
 
     python3 tools/questions_archives_pdf.py
 
@@ -135,21 +135,24 @@ def page():
     d_l = sum(x["d"] for s in seqs for x in s["lignes"])
     fonts = os.path.join(ROOT, "fonts")
     corps = []
-    corps.append(f"""<section class="couv"><div class="eyebrow">DOSSIER DE RECHERCHE · ARCHIVES FILMÉES</div>
-<h1>Palestine, Israël : les vraies images qui manquent</h1>
-<p class="lead">Un documentaire historique en français (1880 à 2025, 95 minutes, diffusé sur YouTube) cherche des images
-filmées réelles et libres de droits. Ce dossier dit précisément lesquelles : d'abord les règles, puis des questions par
-sujet, puis la liste des {n_l} plans du film ({d_l / 60:.0f} minutes) qui gagneraient une vraie image, chacun avec son
-numéro, sa durée, ce qu'on voit aujourd'hui et ce que dit la voix.</p>
-<div class="chiffres"><div><b>19 %</b><span>vraies images aujourd'hui</span></div><div><b>35 à 40 %</b><span>objectif</span></div>
-<div><b>+15 à 20 min</b><span>à trouver</span></div><div><b>{n_l}</b><span>plans à couvrir</span></div></div>
+    corps.append(f"""<section class="couv"><div class="eyebrow">DOSSIER DE RECHERCHE · VÉRIFICATIONS ET ARCHIVES FILMÉES</div>
+<h1>Palestine, Israël : ce qu'il reste à vérifier, et les vraies images qui manquent</h1>
+<p class="lead">Un documentaire historique en français (1880 à 2025, 95 minutes, diffusé sur YouTube). Ce dossier
+réunit tout ce qui reste à chercher : d'abord deux vérifications qui bloquent l'enregistrement de la voix, puis
+d'autres vérifications (chiffres, licences, lieux) et des fichiers déjà repérés à confirmer, enfin la recherche
+d'images filmées réelles et libres de droits, avec la liste des {n_l} plans du film ({d_l / 60:.0f} minutes) qui
+gagneraient une vraie image.</p>
+<div class="chiffres"><div><b>2</b><span>phrases de la voix en attente (8.21, 23.20)</span></div><div><b>19 %</b><span>vraies images aujourd'hui</span></div>
+<div><b>35 à 40 %</b><span>objectif</span></div><div><b>{n_l}</b><span>plans à couvrir</span></div></div>
 <h2>Comment répondre</h2>
-<p class="p">Commence par les questions A et B (Gaza, Cisjordanie), puis la liste des plans, chapitre par chapitre, en
-commençant par ceux marqués <b>priorité 1</b>. Pour chaque plan, propose une ou deux vraies images qui montrent ce que
-dit la voix : le numéro du plan, le film, sa date et son lieu, le moment utile (début et fin), la licence avec la
-phrase de la page, le lien de la page, le lien direct du fichier et le crédit à citer. Un plan sans image possible :
-écris « rien de libre » et passe au suivant. Si tout ne tient pas dans une réponse, réponds par lots d'une vingtaine
-de plans, dans l'ordre, et termine par « arrêté au plan … » : je te dirai de continuer.</p></section>""")
+<p class="p">Dans cet ordre : <b>V</b> (les deux vérifications qui bloquent la voix), <b>W</b> (chiffres, licences,
+lieux), <b>X</b> (fichiers déjà repérés), puis les questions <b>A</b> et <b>B</b> (Gaza, Cisjordanie), puis la liste
+des plans, chapitre par chapitre, en commençant par ceux marqués <b>priorité 1</b>. Pour une vérification : la phrase
+exacte dans la langue d'origine, la date, le lien de la source d'origine, et un verdict (« confirmé », « faux »,
+« introuvable »). Pour un plan : une ou deux vraies images qui montrent ce que dit la voix, avec le film, sa date et
+son lieu, le moment utile (début et fin), la licence avec la phrase de la page, le lien de la page, le lien direct du
+fichier et le crédit à citer. Un plan sans image possible : écris « rien de libre » et passe au suivant. Si tout ne
+tient pas dans une réponse, réponds par lots et termine par « arrêté à … » : je te dirai de continuer.</p></section>""")
     trouves = []
     for titre, texte, codes in secs:
         if titre.startswith("Déjà trouvés"):  # pour l'auteur (Dropbox) : ici, seulement « déjà trouvés »

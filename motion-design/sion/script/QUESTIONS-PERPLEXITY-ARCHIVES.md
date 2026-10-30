@@ -1,12 +1,16 @@
-# Questions pour Perplexity : vraies images (29 octobre 2026, le soir)
+# Dossier Perplexity complet : vérifications et vraies images (30 octobre 2026)
 
-Le film compte 17,8 min de vraies images sur 94,7 (19 %). Pour 35 %, il en faut 15 de plus ; pour 40 %, 20 de plus.
-Les questions sont rangées par minutes à gagner : A et B d'abord (Gaza, Cisjordanie), puis le reste.
+Tout ce qui reste à demander à Perplexity, dans un seul dossier : d'abord les vérifications qui bloquent
+l'enregistrement de la voix (plans 8.21 et 23.20), puis les autres vérifications (chiffres, licences, lieux), les
+fichiers déjà repérés à confirmer, et enfin la recherche des vraies images qui manquent.
+Le film compte 18,1 min de vraies images sur 94,7 (19 %).
 
 **Comment s'en servir**
 
-1. Ouvrir une conversation Perplexity (recherche approfondie si possible) et coller d'abord le bloc « Consignes ».
-2. Coller ensuite une question à la fois (A, B, C…), ou deux ou trois ensemble si elles sont courtes.
+1. Ouvrir une conversation Perplexity (recherche approfondie si possible) et joindre le PDF, ou coller d'abord le
+   bloc « Consignes ».
+2. Commencer par V (les deux vérifications qui bloquent la voix), puis W et X, puis les questions A et B (Gaza,
+   Cisjordanie), puis le reste.
 3. M'envoyer les réponses telles quelles (PDF ou texte).
 4. Les fichiers sur **Wikimedia Commons** : les télécharger dans la Dropbox, car Commons me bloque (erreur 429).
    Pour **archive.org, NARA, Library of Congress, Voice of America et DVIDS**, les liens suffisent : je télécharge
@@ -33,6 +37,84 @@ Je cherche des images filmées réelles et réutilisables. Ces règles valent po
 6. Ne compte pas deux fois le même film. Ne date pas un plan d'après le contexte : écris « date à vérifier » si besoin.
 7. Pas d'images de corps ni de blessures filmées de près.
 8. Réponds en français : un tableau récapitulatif, puis un paragraphe par film. Vise 6 à 12 films par question.
+9. Pour une vérification (questions V, W et X) : la phrase exacte dans la langue d'origine, la date, le lien de la
+   source d'origine (pas un article qui la reprend), puis un verdict clair : « confirmé », « faux » (et ce qui est
+   juste) ou « introuvable ».
+```
+
+## V. Vérifications prioritaires : elles bloquent l'enregistrement de la voix
+
+```
+V1. Plan 8.21, le plan Peel (1937). Phrase du film : « Les dirigeants arabes refusent. Les sionistes acceptent le
+    principe, mais pas ce tracé. »
+ a) Qu'a décidé le 20e congrès sioniste (Zurich, août 1937) sur le plan Peel : rejet du tracé proposé et mandat
+    donné à l'exécutif pour négocier un meilleur partage ? Citer la résolution (texte et date).
+ b) Quand Londres abandonne-t-il le partage ? Rapport de la commission Woodhead (numéro Cmd. exact, date) et
+    déclaration du gouvernement britannique de novembre 1938 (numéro Cmd. exact, date, phrase clé en anglais).
+ c) Rapport de la commission Peel (Cmd. 5479, 7 juillet 1937) : chiffres exacts du transfert de population
+    proposé. Le film dit « jusqu'à 225 000 Arabes » hors du futur État juif (et 1 250 Juifs dans l'autre sens).
+    Citer le paragraphe en anglais.
+V2. Plan 23.20, l'eau. Phrase du film : « En 2023, un Palestinien de Cisjordanie dispose de 82 litres par jour ;
+    un Israélien, colons compris, de 247. »
+ a) Le rapport « Parched » de B'Tselem (mai 2023) donne-t-il ces deux chiffres ? Phrase exacte et page.
+ b) Ce rapport cite-t-il un minimum de 100 litres par jour et par personne recommandé par l'OMS ? Phrase exacte.
+ c) Quel document de l'OMS donne ces 100 litres (titre, année, page, phrase en anglais) ?
+```
+
+## W. Autres vérifications : chiffres, licences, lieux
+
+```
+W1. Gaza, novembre 2012 (plan 25.9) : retrouve le bulletin d'origine du ministère de la Santé de Gaza qui donne
+    185 morts, dont 47 enfants, pour l'offensive du 14 au 21 novembre 2012 (date, lien). Euro-Med Monitor cite ce
+    chiffre ; OCHA donne 165, B'Tselem 167.
+W2. « Paths in Palestine » (1934 ; Archives nationales américaines, NARA 2767364, série 428-NPC ; copie archive.org
+    428-npc-44524). Le générique porte « Copyright MCMXXXIV, International Copyright Secured ». Qui l'a produit
+    (la marine américaine ou une société privée) ? Le droit d'auteur a-t-il été renouvelé en 1961 ou 1962 (registre
+    du Copyright Office) ? Le film est-il aujourd'hui dans le domaine public aux États-Unis ? Douze plans du film en
+    dépendent.
+W3. Wikimedia Commons, « Signing of the Israeli-Palestinian Declaration of Principles.webm » (13 septembre 1993) :
+    qui l'a produit (Maison Blanche, NARA ?) et quelle est sa licence exacte ?
+W4. Envato Elements : lieu et date de tournage de ces clips, d'après leur page :
+    https://elements.envato.com/camera-reveals-a-destroyed-building-walls-with-bul-SXGWA8C
+    https://elements.envato.com/an-israeli-merkava-tank-in-gaza-creating-a-dust-cl-9EMHN72
+    et le clip « military tank on sandy coastline » (trouve sa page et son lieu).
+W5. Voice of America : ses vidéos sont-elles toutes du domaine public ? Comment repérer les images de tiers (AP,
+    Reuters) dans un reportage, et que dit la page « Terms of Use » ?
+W6. Actualités Universal Newsreel des Archives nationales américaines : que veut dire « Use : Possibly
+    Restricted » sur certaines bobines ?
+W7. « Sands of Sorrow » (1950, archive.org sands_of_sorrow) : où ont été filmés les camps de tentes du début
+    (1 min 36 à 2 min 36) : bande de Gaza, Jordanie, Cisjordanie, Liban ? Le commentaire ou un carton le dit-il ?
+    (Légendes des plans 13.12 et 13.15.)
+W8. Wikimedia Commons, « A house set on fire by settlers.webm » (Al-Mughayyir, région de Ramallah) : date exacte du
+    tournage. Les attaques de colons contre Al-Mughayyir des 12 et 13 avril 2024 sont-elles documentées par OCHA ou
+    B'Tselem (lien, phrase) ? (Plan 26.8, légende « une maison incendiée par des colons, selon ses habitants ».)
+W9. « The Life of the Jews in Palestine » (1913, Noah Sokolovsky, société Mizrah, Odessa) : quels lieux montre le
+    film, dans l'ordre, avec ses cartons d'origine ? Surtout : la cave à vin et les vendanges (vers 47 min) sont-elles
+    à Rishon LeZion ou à Zikhron Yaakov ? La colonie sur une colline, avec sa grande synagogue (vers 17 min 30),
+    est-elle Zikhron Yaakov ? L'orangeraie et l'emballage des oranges (vers 12 min) : quelle colonie ?
+W10. Al Jazeera, « Aljazeeraasset-GazaFOOD883 » (Gaza, janvier 2009, CC BY 3.0) : la file d'attente et le guichet
+    montrés sont-ils un centre de distribution de l'UNRWA ? Date et lieu exacts.
+W11. Donald Trump, conférence de presse avec Benyamin Netanyahou, Maison-Blanche, 4 février 2025 : la phrase exacte
+    en anglais sur Gaza et « the Riviera of the Middle East », avec son minutage dans la vidéo officielle.
+```
+
+## X. Fichiers déjà repérés : à confirmer avant de les monter
+
+```
+X. Pour chacun de ces fichiers de Wikimedia Commons : date et lieu exacts du tournage, auteur, licence (phrase de la
+page) ; dis si l'image montre bien ce que dit son titre, et donne 2 ou 3 moments utiles (début et fin).
+1. « Forced displacement in Jenin refugee camp after the destruction of more than 600 homes.webm » : date (début
+   2025 ?). Pour le plan 20.4 (camps de Jénine et de Tulkarem vidés début 2025).
+2. « Thousands of pro-Palestinian protesters converge on US Capitol.webm » (Voice of America) : est-ce le sit-in de
+   Jewish Voice for Peace au Congrès, le 18 octobre 2023 ? Pour le plan 29.4.
+3. « President Trump and The First Lady Participate in an Abraham Accords Signing Ceremony.webm » (15 septembre
+   2020). Pour le plan 25.17.
+4. « Video Recording of Prime Minister of Israel Yitzhak Rabin's Funeral - NARA - 6037161.ogv » (6 novembre 1995).
+   Pour le plan 36.3.
+5. « Aftermath of Israel raid on Jenin, August 2024.webm ».
+6. « 12 November 2018 Israeli shelling of Gaza buildings.webm » : auteur et licence exacte.
+7. « Six-Day War. General Yeshayahu Gavish tour.webm » (juin 1967) : existe-t-il une copie en meilleure définition
+   (celle de Commons fait 352 × 288) ?
 ```
 
 ## A. Gaza, 2005 à 2025 (chapitre 25 : 10 min, 8 % de vraies images ; il en faut 3 à 4 min)
@@ -181,38 +263,20 @@ de bateaux d'immigrants à Haïfa et à Jaffa entre 1933 et 1936 ; les funérail
 1933.
 ```
 
-## P. Vérifications en attente
+## Déjà trouvés : à mettre dans la Dropbox
 
-```
-P. Vérifications (réponse courte, source d'origine, phrase exacte) :
-1. Wikimedia Commons, fichier « Signing of the Israeli-Palestinian Declaration of Principles.webm » (13 septembre
-   1993) : qui l'a produit (Maison Blanche, NARA ?) et quelle est sa licence exacte ?
-2. Envato Elements : lieu et date de tournage de ces trois clips, d'après leur page :
-   https://elements.envato.com/camera-reveals-a-destroyed-building-walls-with-bul-SXGWA8C
-   https://elements.envato.com/an-israeli-merkava-tank-in-gaza-creating-a-dust-cl-9EMHN72
-   et le clip « military tank on sandy coastline » (trouve sa page et son lieu).
-3. Voice of America : ses vidéos sont-elles toutes du domaine public ? Comment reconnaître les images de tiers
-   (AP, Reuters) dans un reportage, et que dit la page « Terms of Use » ?
-4. Les actualités Universal Newsreel de la NARA : dans quelles conditions Universal les a-t-elle données au domaine
-   public, et que veut dire « Use : Possibly Restricted » sur certaines bobines ?
-```
-
-## Déjà trouvés dans le dossier Perplexity du 29 octobre : à mettre dans la Dropbox
-
-Commons me bloque : ces six fichiers sont à télécharger (bouton « Télécharger » de la page, fichier d'origine) dans un
-dossier Dropbox « archives-3 ». Les deux derniers, je les prends moi-même.
+Commons me bloque : ces fichiers sont à télécharger (bouton « Télécharger » de la page, fichier d'origine) dans un
+dossier Dropbox « archives-4 », après la réponse de Perplexity à la question X. Ceux d'archive.org et de DVIDS, je les
+prends moi-même.
 
 | Repère | Film | Page |
 |---|---|---|
-| F02 | Train quittant Jérusalem, Lumière, 1897 (domaine public) | https://commons.wikimedia.org/wiki/File:Train_departing_Jerusalem_1897.webm |
-| F25 | Guerre des Six Jours, le général Gavish avec Sharon et Yoffe, juin 1967 (CC BY-SA 3.0) | https://commons.wikimedia.org/wiki/File:Six-Day_War._General_Yeshayahu_Gavish_tour.webm |
-| F27 | Parachutistes israéliens sur la rive ouest du canal de Suez, 22 octobre 1973 (CC BY-SA 3.0) | https://commons.wikimedia.org/wiki/File:Yom_Kippur_War._IDF_paratroopers_on_the_west_bank_of_the_Suez_Canal..webm |
 | F28 | Funérailles de Yitzhak Rabin, Jérusalem, 6 novembre 1995 (domaine public US) | https://commons.wikimedia.org/wiki/File:Video_Recording_of_Prime_Minister_of_Israel_Yitzhak_Rabin%27s_Funeral_-_NARA_-_6037161.ogv |
-| F30 | Jérusalem, prises de vues de terrain, décembre 2017 (CC BY 3.0) | https://commons.wikimedia.org/wiki/File:Jerusalem,_Palestine_(video_by_Neollene_Films)_-_Dec_11,_2017.webm |
-| F18 | Actualité Universal, cessez-le-feu, 9 juin 1967 (domaine public) | https://commons.wikimedia.org/wiki/File:1967-06-09_Egypt_Accepts_UN_Cease-Fire.ogv |
+| F31 | Accords d'Abraham, Maison-Blanche, 15 septembre 2020 (domaine public US) | https://commons.wikimedia.org/wiki/File:President_Trump_and_The_First_Lady_Participate_in_an_Abraham_Accords_Signing_Ceremony.webm |
+| F32 | Camp de Jénine, déplacement forcé (date à vérifier) | https://commons.wikimedia.org/wiki/File:Forced_displacement_in_Jenin_refugee_camp_after_the_destruction_of_more_than_600_homes.webm |
+| F33 | Manifestation au Capitole (Voice of America, date à vérifier) | https://commons.wikimedia.org/wiki/File:Thousands_of_pro-Palestinian_protesters_converge_on_US_Capitol.webm |
 | F19 | Actualité Universal, trêve, 13 juin 1967 : je le télécharge | https://archive.org/details/1967-06-13_Cease-Fire |
 | F21 | Jetée JLOTS, aide vers Gaza, 25 juin 2024 : je le télécharge | https://www.dvidshub.net/video/928685/jlots-trident-pier-delivering-humanitarian-aid |
 
-Les fiches USHMM « Request Copy » du même dossier (F04 à F16, F22 à F24, F29) ne se téléchargent pas : une demande de
-copie est possible sur leur page (parfois avec des frais de fourniture). À garder pour la fin, si les questions A à O
-ne suffisent pas.
+Déjà reçus et rangés : le train de 1897, Gavish (1967), les parachutistes de 1973, Jérusalem 2017, le cessez-le-feu
+du 9 juin 1967, Versailles, Al Jazeera (Gaza 2009), la maison incendiée (2024), la Maison-Blanche (2025).
