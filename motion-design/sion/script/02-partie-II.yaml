@@ -17,6 +17,10 @@ chapitres:
 
   - num: "7"
     titre: "Chapitre 7 · La déclaration Balfour (1917)"
+    reserve:
+      - fichier: output/archives-filmees/1919-versailles-traite-de-paix.mp4
+        type: ARCH
+        note: "28 juin 1919 · Versailles · la signature du traité de paix (US Army Signal Corps, NARA 111-H-1243, domaine public) : la conférence où Balfour écrit sa note de 1919 (plan 7.12), à poser en plan de coupe si tu veux ; la citation reste à l'écran"
     intention: >-
       Trois promesses en deux ans, et la phrase de Balfour lue en entier, y compris ce qu'elle ne dit pas : les
       « collectivités non juives » sont neuf habitants sur dix, et leurs droits politiques n'y figurent pas. Le point

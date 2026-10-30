@@ -279,18 +279,20 @@ Source : Edmond de Rothschild (1845-1934) : Rishon LeZion, Zikhron Yaakov, Rosh 
 (36 mots, 2.4 par seconde)
 
 
-**5.5** · film **00:07:54:20 → 00:08:06:20** (12.0 s) · **[PHOTO]** `output/photos-fixes/3-32-zikhron-yaakov.mp4` · source 00:00:00:00 → 00:00:12:00  
-Source : Zikhron Yaakov, « souvenir de Jacob », du nom de James (Jacob) de Rothschild, père d'Edmond  
-À l'écran : déjà dans le plan : Années 1920 · Zikhron Yaakov · Une colonie fondée en 1882 et financée par le baron Edmond de Rothschild · Photo d'archive  
+**5.5** · film **00:07:54:20 → 00:08:06:20** (12.0 s) · **[ARCH]** `output/archives-filmees/1913-zikhron-yaakov-maisons-synagogue-vignes.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : Zikhron Yaakov, « souvenir de Jacob », du nom de James (Jacob) de Rothschild, père d'Edmond ; SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public ; carton d'origine « Zichron Ya'akov »)  
+À l'écran : carton : 1913 · Zikhron Yaakov · Les maisons, la synagogue, les vignes.  
 > VOIX : Zikhron Yaakov porte le nom de son père, Jacob. / Le baron y paie les maisons, la synagogue, les **vignes**.  
-(19 mots, 1.6 par seconde)
+(19 mots, 1.6 par seconde)  
+Note : vraie image filmée à la place de la photo Matson des années 1920 (mise en réserve du chapitre)
 
 
-**5.6** · film **00:08:06:20 → 00:08:18:20** (12.0 s) · **[PHOTO]** `output/photos-fixes/4-33-rishon-lezion.mp4` · source 00:00:00:00 → 00:00:12:00  
-Source : caves de Rishon LeZion (1890) ; ouvriers arabes dans les colonies du baron (Gershon Shafir, Land, Labor and the Origins of the Israeli-Palestinian Conflict, 1989)  
-À l'écran : déjà dans le plan : Entre 1898 et 1934 · Rishon LeZion · Les caves à vin bâties par le baron de Rothschild · Photo d'archive  
+**5.6** · film **00:08:06:20 → 00:08:18:20** (12.0 s) · **[ARCH]** `output/archives-filmees/1913-rishon-lezion-caves-carmel.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : caves de Rishon LeZion (1890) ; ouvriers arabes dans les colonies du baron (Gershon Shafir, Land, Labor and the Origins of the Israeli-Palestinian Conflict, 1989) ; SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public ; carton d'origine « Rishon LeZion and the Carmel wineries »)  
+À l'écran : carton : 1913 · Rishon LeZion · Les caves à vin Carmel.  
 > VOIX : À Rishon LeZion, il fait creuser de grandes caves à vin. / Dans ses colonies travaillent des ouvriers arabes, par centaines. / La vague suivante ne voudra plus de ce **modèle**.  
-(29 mots, 2.4 par seconde)
+(29 mots, 2.4 par seconde)  
+Note : vraie image filmée à la place de la photo Matson des caves (mise en réserve du chapitre)
 
 
 **5.7** · film **00:08:18:20 → 00:08:30:05** (11.4 s) · **[RÉEL]** `output/plans-reels/recolte-des-olives-a-la-main.mp4` · source 00:00:00:00 → 00:00:11:10  
@@ -333,18 +335,20 @@ Source : SOURCES.md 4.2 (frères Lumière, Alexandre Promio, avril 1897, domaine
 (21 mots, 2.2 par seconde)
 
 
-**6.3** · film **00:09:04:10 → 00:09:11:15** (7.2 s) · **[IA]** `output/reconstitutions/5-5-savonnerie-naplouse.mp4` · source 00:00:00:00 → 00:00:07:05  
-Source : SOURCES.md 4 (Google Veo, d'après matpc 20377, la savonnerie de Naplouse)  
-À l'écran : la vraie photo d'abord (« Photo d'archive »), puis « Reconstitution par IA, d'après une photo d'archive »  
+**6.3** · film **00:09:04:10 → 00:09:11:15** (7.2 s) · **[ARCH]** `output/archives-filmees/1913-orangeraie-cueillette-emballage.mp4` · source 00:00:00:00 → 00:00:07:05  
+Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)  
+À l'écran : carton : 1913 · Plaine côtière · La cueillette des oranges, puis l'emballage pour l'export.  
 > VOIX : Un pays de villages et de villes anciennes. / Naplouse fait son savon, / Jaffa exporte ses **oranges**.  
-(16 mots, 2.2 par seconde)
+(16 mots, 2.2 par seconde)  
+Note : vraie image filmée à la place de la savonnerie de Naplouse reconstituée par IA (mise en réserve du chapitre) ; la colonie de l'orangeraie est à confirmer (question Perplexity W9)
 
 
-**6.4** · film **00:09:11:15 → 00:09:23:15** (12.0 s) · **[IA]** `output/reconstitutions/1-1-orangeraies-jaffa.mp4` · source 00:00:00:00 → 00:00:12:00  
-Source : SOURCES.md 4 (Google Veo, d'après matpc 06520)  
-À l'écran : mention obligatoire : Reconstitution par IA, d'après une photo d'archive  
+**6.4** · film **00:09:11:15 → 00:09:23:15** (12.0 s) · **[ARCH]** `output/archives-filmees/1913-constantinople-capitale-ottomane.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public ; la ville vue de la Corne d'Or, puis la mosquée d'Ortaköy sur le Bosphore)  
+À l'écran : carton : 1913 · Constantinople · La capitale de l'Empire ottoman.  
 > VOIX : Musulmans, chrétiens et juifs y vivent depuis des siècles, / sous l'autorité de l'Empire **ottoman**.  
-(14 mots, 1.2 par seconde)
+(14 mots, 1.2 par seconde)  
+Note : vraie image filmée à la place des orangeraies de Jaffa reconstituées par IA (mise en réserve du chapitre)
 
 
 **6.5** · film **00:09:23:15 → 00:09:30:20** (7.2 s) · **[ARCH]** `output/archives-filmees/1913-jerusalem-la-vieille-ville.mp4` · source 00:00:00:00 → 00:00:07:05  

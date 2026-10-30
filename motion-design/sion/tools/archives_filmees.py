@@ -141,6 +141,14 @@ ARCHIVES = {
                                       {"pre": "curves=all='0/0.04 0.25/0.26 0.6/0.55 0.85/0.74 1/0.82'"}),
     # Wikimedia Commons, « King Hussein 1970 » (film de la CIA conservé aux Archives nationales américaines, domaine public) :
     # un camp de réfugiés en Jordanie, une enfant qui marche dans la boue
+    # traité de Versailles, 28 juin 1919 (US Army Signal Corps, NARA 111-H-1243, domaine public) : le château et la foule,
+    # la galerie des Glaces, puis les dirigeants sur le perron
+    "1919-versailles-traite-de-paix": ("https://commons.wikimedia.org/wiki/Special:FilePath/The_signing_of_the_peace_treaty_of_Versailles.webm",
+                                       "", "468:352:6:4", [(8.0, 13.0), (271.0, 276.0), (405.0, 411.0)]),
+    # guerre des Six Jours, juin 1967 (archives de l'armée et de la Défense israéliennes, CC BY-SA 3.0) : les blindés dans
+    # le Sinaï ; recadré sous le bandeau des archives ; copie à 30 i/s d'un film à 25 (une image doublée sur six, retirée)
+    "1967-sinai-blindes-israeliens": ("https://commons.wikimedia.org/wiki/Special:FilePath/Six-Day_War._General_Yeshayahu_Gavish_tour.webm",
+                                      "", "352:232:0:40", [(590.0, 596.0), (714.0, 719.0)], {"cycle": 6}),
     "1970-jordanie-camp-de-refugies": ("https://upload.wikimedia.org/wikipedia/commons/b/ba/King_Hussein_1970.ogv",
                                        "", "628:470:6:5", [(254.0, 260.0)]),
     # même film : la foule du camp, des enfants qui regardent la caméra
@@ -204,6 +212,16 @@ ARCHIVES = {
     "1913-lac-de-tiberiade-pionniers-labourent": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(1544.0, 1554.6)], {"stab": True}),
     "1913-jerusalem-la-vieille-ville": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(1832.0, 1839.8)], {"stab": True}),
     "1913-tiberiade-puis-hebron": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(1411.4, 1418.8), (2401.0, 2404.4)], {"stab": True}),
+    # Zikhron Yaakov (carton d'origine « Zichron Ya'akov ») : les maisons, la synagogue, les vignes
+    "1913-zikhron-yaakov-maisons-synagogue-vignes": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0",
+                                                      [(1050.0, 1054.0), (1119.5, 1124.0), (1208.0, 1212.0)], {"stab": True}),
+    # Rishon LeZion (carton « Rishon LeZion and the Carmel wineries ») : les bâtiments, les foudres de la cave, les tonneaux
+    "1913-rishon-lezion-caves-carmel": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0",
+                                        [(2771.0, 2774.5), (2797.6, 2802.8), (2783.0, 2787.0)], {"stab": True}),
+    # une orangeraie : la cueillette, puis l'emballage des oranges en caisses
+    "1913-orangeraie-cueillette-emballage": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(747.0, 750.0), (788.0, 792.5)], {"stab": True}),
+    # Constantinople, au début du film : la ville vue de la Corne d'Or, puis la mosquée d'Ortaköy sur le Bosphore
+    "1913-constantinople-capitale-ottomane": ("https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_(1913).webm", "", "376:282:96:0", [(117.0, 123.0), (186.0, 192.0)], {"stab": True}),
     # l'entrée du général Allenby à Jérusalem, 11 décembre 1917 (War Office Cinema Committee, domaine public) :
     # Allenby et son état-major à pied, devant la porte de Jaffa
     "1917-allenby-entre-a-jerusalem": ("https://upload.wikimedia.org/wikipedia/commons/b/b6/General_Allenby%27s_entry_into_Jerusalem_%281917%29.webm",
@@ -257,6 +275,9 @@ def cadence(src, net, opts):
         return "fieldmatch=order=auto:combmatch=full,yadif=deint=interlaced,decimate", "24000/1001"
     if opts.get("decimer"):
         return "decimate", "24000/1001"
+    if opts.get("cycle"):
+        # copie à 30 i/s d'un film à 25, une image doublée sur six : on la retire (25 i/s d'origine, sans saccade)
+        return f"decimate=cycle={opts['cycle']}", "25/1"
     if opts.get("film24"):
         # copie vidéo à 60 images par seconde d'un film à 24 : on reprend 24 images par seconde (puis 25 sans en doubler)
         return "fps=24000/1001", "24000/1001"

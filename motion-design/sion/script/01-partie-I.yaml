@@ -313,6 +313,12 @@ chapitres:
       - fichier: output/reconstitutions/16-29-tel-aviv-1909.mp4
         type: IA
         note: "le tirage au sort des terrains de Tel-Aviv, 11 avril 1909 (photo d'Avraham Soskine animée par IA), remplacé au plan 5.9 par Tel-Aviv filmée en 1913"
+      - fichier: output/photos-fixes/3-32-zikhron-yaakov.mp4
+        type: PHOTO
+        note: "Zikhron Yaakov dans les années 1920 (photo Matson, Bibliothèque du Congrès, domaine public), remplacée au plan 5.5 par Zikhron Yaakov filmée en 1913"
+      - fichier: output/photos-fixes/4-33-rishon-lezion.mp4
+        type: PHOTO
+        note: "les caves à vin de Rishon LeZion (photo Matson, entre 1898 et 1934, domaine public), remplacées au plan 5.6 par les caves Carmel filmées en 1913"
     intention: >-
       Les pionniers ont un vrai idéal (fuir les pogroms, travailler la terre, faire revivre l'hébreu) : le dire.
       Et montrer la règle qui exclut déjà les Arabes : le « travail hébreu ».
@@ -343,22 +349,24 @@ chapitres:
         source: "Edmond de Rothschild (1845-1934) : Rishon LeZion, Zikhron Yaakov, Rosh Pina, à partir de 1882-1883 ; colonies confiées à la Jewish Colonization Association en 1899"
         voix: >-
           Derrière ces colonies, un banquier de Paris : / le baron Edmond de Rothschild. / Dès 1882, il finance Rishon LeZion, Zikhron Yaakov, Rosh Pina. / Ses agents achètent des terres, souvent à de grands propriétaires qui n'y vivent **pas**.
-      - type: PHOTO
-        fichier: output/photos-fixes/3-32-zikhron-yaakov.mp4
-        photo: "Bibliothèque du Congrès, collection Matson, domaine public (no known restrictions), LC-DIG-matpc-15201, « Zionist colonies on Sharon. Zichron Yakob. In memory of Jacob. A Rothchild Colony », vers 1920-1933"
+      - type: ARCH
+        fichier: output/archives-filmees/1913-zikhron-yaakov-maisons-synagogue-vignes.mp4
+        carton: output/cartons/87-arch-1913-zikhron-yaakov-maisons-synagogue-vignes.mov
         entree: 0
         sortie: 12
-        ecran: "déjà dans le plan : Années 1920 · Zikhron Yaakov · Une colonie fondée en 1882 et financée par le baron Edmond de Rothschild · Photo d'archive"
-        source: "Zikhron Yaakov, « souvenir de Jacob », du nom de James (Jacob) de Rothschild, père d'Edmond"
+        ecran: "carton : 1913 · Zikhron Yaakov · Les maisons, la synagogue, les vignes."
+        source: "Zikhron Yaakov, « souvenir de Jacob », du nom de James (Jacob) de Rothschild, père d'Edmond ; SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public ; carton d'origine « Zichron Ya'akov »)"
+        note: "vraie image filmée à la place de la photo Matson des années 1920 (mise en réserve du chapitre)"
         voix: >-
           Zikhron Yaakov porte le nom de son père, Jacob. / Le baron y paie les maisons, la synagogue, les **vignes**.
-      - type: PHOTO
-        fichier: output/photos-fixes/4-33-rishon-lezion.mp4
-        photo: "Bibliothèque du Congrès, collection Matson, domaine public (no known restrictions), LC-DIG-matpc-04774, « Richon [le Zion] wine cellars, basement », entre 1898 et 1934"
+      - type: ARCH
+        fichier: output/archives-filmees/1913-rishon-lezion-caves-carmel.mp4
+        carton: output/cartons/88-arch-1913-rishon-lezion-caves-carmel.mov
         entree: 0
         sortie: 12
-        ecran: "déjà dans le plan : Entre 1898 et 1934 · Rishon LeZion · Les caves à vin bâties par le baron de Rothschild · Photo d'archive"
-        source: "caves de Rishon LeZion (1890) ; ouvriers arabes dans les colonies du baron (Gershon Shafir, Land, Labor and the Origins of the Israeli-Palestinian Conflict, 1989)"
+        ecran: "carton : 1913 · Rishon LeZion · Les caves à vin Carmel."
+        source: "caves de Rishon LeZion (1890) ; ouvriers arabes dans les colonies du baron (Gershon Shafir, Land, Labor and the Origins of the Israeli-Palestinian Conflict, 1989) ; SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public ; carton d'origine « Rishon LeZion and the Carmel wineries »)"
+        note: "vraie image filmée à la place de la photo Matson des caves (mise en réserve du chapitre)"
         voix: >-
           À Rishon LeZion, il fait creuser de grandes caves à vin. / Dans ses colonies travaillent des ouvriers arabes, par centaines. / La vague suivante ne voudra plus de ce **modèle**.
       - type: RÉEL
@@ -405,6 +413,12 @@ chapitres:
         note: "l'aire de battage près de Bethléem, entre 1920 et 1933 (la vraie photo, puis la reconstitution par IA) : des paysans, pour le plan 6.6"
       - fichier: output/reconstitutions/4-4-marche-jaffa.mp4
         note: "la place du marché de Jaffa, entre 1940 et 1946 (photo animée par IA) : une ville vivante"
+      - fichier: output/reconstitutions/5-5-savonnerie-naplouse.mp4
+        type: IA
+        note: "la savonnerie de Naplouse (la vraie photo, puis la reconstitution par IA), remplacée au plan 6.3 par une orangeraie filmée en 1913"
+      - fichier: output/reconstitutions/1-1-orangeraies-jaffa.mp4
+        type: IA
+        note: "les orangeraies de Jaffa (reconstitution par IA), remplacées au plan 6.4 par Constantinople filmée en 1913"
     intention: >-
       Le chapitre clé de la partie. Montrer un pays vivant, nommé, habité ; puis l'échange de 1899 entre Youssouf
       Diya al-Khalidi et Herzl, chacun avec ses propres mots ; puis les premiers conflits pour la terre ; et la voix
@@ -424,20 +438,24 @@ chapitres:
         voix: >-
           Jérusalem, 1897. / Les frères Lumière filment la porte de Jaffa. // Voilà le pays que Bâle, la même année,
           choisit pour **foyer**.
-      - type: IA
-        fichier: output/reconstitutions/5-5-savonnerie-naplouse.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1913-orangeraie-cueillette-emballage.mp4
+        carton: output/cartons/89-arch-1913-orangeraie-cueillette-emballage.mov
         entree: 0
         sortie: 7.2
-        source: "SOURCES.md 4 (Google Veo, d'après matpc 20377, la savonnerie de Naplouse)"
-        ecran: "la vraie photo d'abord (« Photo d'archive »), puis « Reconstitution par IA, d'après une photo d'archive »"
+        ecran: "carton : 1913 · Plaine côtière · La cueillette des oranges, puis l'emballage pour l'export."
+        source: "SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public)"
+        note: "vraie image filmée à la place de la savonnerie de Naplouse reconstituée par IA (mise en réserve du chapitre) ; la colonie de l'orangeraie est à confirmer (question Perplexity W9)"
         voix: >-
           Un pays de villages et de villes anciennes. / Naplouse fait son savon, / Jaffa exporte ses **oranges**.
-      - type: IA
-        fichier: output/reconstitutions/1-1-orangeraies-jaffa.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1913-constantinople-capitale-ottomane.mp4
+        carton: output/cartons/90-arch-1913-constantinople-capitale-ottomane.mov
         entree: 0
         sortie: 12
-        source: "SOURCES.md 4 (Google Veo, d'après matpc 06520)"
-        ecran: "mention obligatoire : Reconstitution par IA, d'après une photo d'archive"
+        ecran: "carton : 1913 · Constantinople · La capitale de l'Empire ottoman."
+        source: "SOURCES.md 4.2 (« The Life of the Jews in Palestine », Noah Sokolovsky, Mizrah, Odessa, 1913, film de promotion sioniste, domaine public ; la ville vue de la Corne d'Or, puis la mosquée d'Ortaköy sur le Bosphore)"
+        note: "vraie image filmée à la place des orangeraies de Jaffa reconstituées par IA (mise en réserve du chapitre)"
         voix: >-
           Musulmans, chrétiens et juifs y vivent depuis des siècles, / sous l'autorité de l'Empire **ottoman**.
       - type: ARCH
