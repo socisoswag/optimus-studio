@@ -134,19 +134,23 @@ chapitres:
         voix: >-
           En 2007, le Hamas prend le pouvoir. / Israël, avec l'Égypte, boucle le territoire par terre, par mer et par
           **air**.
-      - type: MD
-        fichier: output/gaza-guerres.mp4
+      - type: ARCH
+        fichier: output/plans-reels/gaza-2009-obus-et-fumees.mp4
+        carton: output/cartons/96-arch-gaza-2009-obus-et-fumees.mov
         entree: 0
         sortie: 6
-        ecran: "titre : Guerres · de 2008 à 2021, quatre offensives sur Gaza"
-        source: "blocus de Gaza par Israël et l'Égypte depuis juin 2007"
+        ecran: "carton : Janvier 2009 · Gaza · Des obus éclatent au-dessus de la ville."
+        note: "vraie image à la place du titre de gaza-guerres (0 à 6) ; les quatre offensives sont dites par la voix et par les fiches suivantes"
+        source: "SOURCES.md 4.2, Al Jazeera, rushes « gaza09012009 » (Creative Commons Repository, CC BY 3.0), recadré sans le logo"
         voix: >-
           Puis les offensives, / tous les deux ou trois **ans**.
-      - type: MD
-        fichier: output/gaza-guerres.mp4
-        entree: 6
-        sortie: 16
-        ecran: "fiche : Plomb durci · 1 387 Palestiniens tués"
+      - type: ARCH
+        fichier: output/plans-reels/gaza-2009-frappe-fumee-noire.mp4
+        carton: output/cartons/100-arch-gaza-2009-frappe-fumee-noire.mov
+        entree: 0
+        sortie: 10
+        ecran: "carton : Janvier 2009 · Gaza · « Plomb durci » : 1 387 Palestiniens tués selon B'Tselem, 13 Israéliens."
+        note: "vraie image à la place de la fiche de gaza-guerres (6 à 16) ; les chiffres passent au carton ; Al Jazeera, rushes « gaza09012009 », CC BY 3.0 (SOURCES.md 4.2)"
         source: "B'Tselem, 9 septembre 2009 (1 387 tués, dont 320 mineurs) ; Centre palestinien pour les droits de l'homme (PCHR), décembre 2011 (1 419 tués, dont 1 167 civils) ; 13 Israéliens tués"
         voix: >-
           Fin 2008, « Plomb durci » : / en trois semaines, environ 1 400 Palestiniens sont tués. / Côté israélien, 13 **morts**.
@@ -687,10 +691,13 @@ chapitres:
         ecran: "carton lieu (à fabriquer) : Néguev · aujourd'hui · une école d'un village bédouin"
         voix: >-
           Dans le Néguev, 35 villages bédouins ne sont pas reconnus par l'État : / ils ne sont pas raccordés aux réseaux publics d'eau et d'électricité. / Al-Araqib a été démoli, puis rebâti, au moins 244 fois depuis **2010**.
-      - type: MD
-        fichier: output/paroles.mp4
-        entree: 147
-        sortie: 156
-        ecran: "fiche : Knesset · 19 juillet 2018 · La loi État-nation"
+      - type: RÉEL
+        fichier: output/plans-reels/knesset-vue-du-ciel.mp4
+        carton: output/cartons/99-arch-knesset-loi-etat-nation.mov
+        son: "ville au loin, vent doux ; vue du ciel"
+        entree: 12.5
+        sortie: 21.5
+        ecran: "carton : Aujourd'hui · Jérusalem, la Knesset · Le 19 juillet 2018, elle adopte la loi État-nation."
+        note: "vrai plan à la place de la fiche de paroles (147 à 156) ; SOURCES.md 4.1 bis, Envato 4K3X4NU"
         voix: >-
           Pour beaucoup de ces citoyens, / la loi de 2018 a dit l'inverse. ///

@@ -633,3 +633,18 @@ Vraies images : 19,0 min sur 94,7 (20 %).
 **Chapitre 5 renuméroté** : les plans 5.5 à 5.9 deviennent 5.6 à 5.10. Ambiances refaites pour les archives des
 chapitres 5 et 7 (7.2 et 7.3 étaient partis sans ambiance) : relivrés, même nom.
 Vraies images : 19,6 min sur 94,7 (20,7 %).
+
+## 31 octobre 2026, le soir (six vraies images de plus, la vraie voix de Ben Gourion)
+
+| Plan | Maintenant | Avant |
+|---|---|---|
+| 11.9 | `11.09-REEL-envato-c04-arraba-jenine-aerien.mp4`, carton 97 : Arraba, près de Jénine, vu du ciel ; le chiffre (« En 1945, moins de 1 % des terres y appartient à des Juifs ») passe au carton | `11.09-MD-terres-1945.mp4` |
+| 16.3 | même image (la fiche de la déclaration d'indépendance), mais on entend la **vraie voix de Ben Gourion** le 14 mai 1948, lisant la phrase de l'égalité ; la fiche à l'écran en donne la traduction. Voix off raccourcie : « Il lit la déclaration d'indépendance : » puis sa voix. Plan allongé à 14,8 s | ta voix lisait la citation |
+| 20.15 | `20.15-REEL-knesset-vue-du-ciel.mp4`, carton 98 : la Knesset ; « Le 28 octobre 2024, elle interdit à l'UNRWA d'agir sur son sol » | `20.15-MD-documents-6.mp4` |
+| 25.6 | `25.06-ARCH-gaza-2009-obus-et-fumees.mp4`, carton 96 : Gaza, janvier 2009, des obus éclatent au-dessus de la ville (Al Jazeera, CC BY 3.0) | `25.06-MD-gaza-guerres.mp4` (titre) |
+| 25.7 | `25.07-ARCH-gaza-2009-frappe-fumee-noire.mp4`, carton 100 : une frappe sur Gaza, janvier 2009 ; « Plomb durci : 1 387 Palestiniens tués selon B'Tselem, 13 Israéliens » | `25.07-MD-gaza-guerres.mp4` (fiche) |
+| 28.9 | `28.09-REEL-knesset-vue-du-ciel.mp4`, carton 99 : la Knesset ; « Le 19 juillet 2018, elle adopte la loi État-nation » | `28.09-MD-paroles.mp4` |
+
+**Son d'origine** : gardé seulement pour les moments forts (ici, la voix de Ben Gourion). Les autres vraies images
+gardent leur ambiance. Écarté : le reportage d'Al Jazeera à Rafah (logos partout, image abîmée).
+Vraies images : 20,4 min sur 94,7 (21,5 %).

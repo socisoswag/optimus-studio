@@ -608,11 +608,13 @@ chapitres:
         source: "Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, d'après les Village Statistics 1945 (Jaffa 39 %, Tibériade 38 %, Haïfa 35 %, Beisan 34 %)"
         voix: >-
           Ces terres sont concentrées dans la plaine côtière et les vallées du nord : / à Jaffa, à Tibériade, à Haïfa, à Beisan, / plus d'un tiers des terres du sous-**district**.
-      - type: MD
-        fichier: output/terres-1945.mp4
-        entree: 13
-        sortie: 23
-        ecran: "fiche : Moins de 1 % · les collines et le sud"
+      - type: RÉEL
+        fichier: output/plans-reels/envato-C04-arraba-jenine-aerien.mp4
+        carton: output/cartons/97-arch-arraba-collines-de-jenine.mov
+        entree: 0
+        sortie: 10
+        ecran: "carton : Aujourd'hui · Arraba, près de Jénine · En 1945, moins de 1 % des terres y appartient à des Juifs."
+        note: "vrai plan à la place de la fiche de terres-1945 (13 à 23) ; le chiffre passe au carton ; SOURCES.md 4.1 bis, Envato GCCZGPV"
         source: "Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, d'après les Village Statistics 1945 (Jénine, Naplouse, Ramallah, Hébron, Beersheba : moins de 1 %)"
         voix: >-
           Dans les collines de Jénine, de Naplouse, de Ramallah et d'Hébron, / moins de un pour **cent**.

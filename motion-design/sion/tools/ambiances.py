@@ -151,7 +151,95 @@ def passe_bande(x, f1, f2):
     return sosfilt(sos, x)
 
 
+def lire(src, t, dur, chaine="anull"):
+    """Son d'un fichier, de t à t + dur, en stéréo 48 kHz (une source mono passe au centre)."""
+    import subprocess
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-ss", f"{t:.3f}", "-t", f"{dur:.3f}", "-i", src, "-vn",
+                          "-af", chaine, "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, np.float32).reshape(-1, 2).astype(np.float64)
+    return x[:, 0].copy(), x[:, 1].copy()
+
+
+def original(pid, p):
+    """Le vrai son du plan (« son_original » dans le script) à la place des fonds de la banque : une voix qui compte, une
+    foule, des explosions lointaines. Aucun bruitage par-dessus ; une parole se sous-titre (tools/sous_titres.py).
+
+        son_original:
+          source: output/archives-sources/<dossier>/<fichier>   (la prise d'origine, jamais une copie réduite)
+          morceaux: [[début, durée], ...]   les passages de la source, bout à bout, dans l'ordre du fichier du plan
+          vitesse: 1.04                     si l'image a été accélérée (24 i/s joués à 25), le son suit sans changer de ton
+          debut: 1.9                        facultatif : le son commence à cet instant du plan au lieu de suivre l'image
+                                            (plan de motion design : le son de la pièce reste dessous, 12 dB plus bas)
+          sonie: -20                        facultatif ; par défaut -20 LUFS pour une parole, -24 pour un son d'ambiance
+
+    Renvoie None si la source n'est pas sur cette machine (l'ambiance de la banque prend alors le relais)."""
+    so = p["son_original"]
+    src = os.path.join(ROOT, so["source"])
+    if not os.path.exists(src):
+        print(f"{pid} : source du son d'origine absente ({so['source']}), ambiance de la banque à la place")
+        return None
+    a = float(p.get("entree", 0) or 0)
+    d = float(p["sortie"]) - a
+    n = int(round(d * SR))
+    v = float(so.get("vitesse", 1))
+    # grondement sous 40 Hz retiré (vent dans le micro, ronflement) ; souffle des vieux enregistrements adouci, la voix intacte
+    chaine = "highpass=f=40" + (",afftdn=nr=8:nf=-42" if p.get("sous_titres") else "") + (f",atempo={v:.5f}" if v != 1 else "")
+    morceaux = [lire(src, t, du, chaine) for t, du in so["morceaux"]]
+    xl, xr = np.concatenate([m[0] for m in morceaux]), np.concatenate([m[1] for m in morceaux])
+    # fondus de 30 ms entre deux morceaux mis bout à bout (pas de clic à la coupe)
+    k = int(0.03 * SR)
+    pos = 0
+    for m in morceaux[:-1]:
+        pos += len(m[0])
+        for c in (xl, xr):
+            c[max(0, pos - k):pos] *= np.linspace(1, 0, min(k, pos))
+            c[pos:pos + k] *= np.linspace(0, 1, len(c[pos:pos + k]))
+    L, R = np.zeros(n), np.zeros(n)
+    if "debut" in so:
+        o = int(round(float(so["debut"]) * SR))
+        m = max(0, min(len(xl), n - o))
+        L[o:o + m], R[o:o + m] = xl[:m], xr[:m]
+    else:
+        o = int(round(a * SR))
+        m = max(0, min(len(xl) - o, n))
+        L[:m], R[:m] = xl[o:o + m], xr[o:o + m]
+    # niveau mesuré sur le son lui-même (pas sur les silences autour)
+    vrai = np.abs(L) + np.abs(R) > 1e-6
+    cible = float(so.get("sonie", -20 if p.get("sous_titres") else -24))
+    g = 10 ** ((cible - sonie(L[vrai], R[vrai])) / 20) if vrai.sum() > SR // 4 else 1.0
+    L, R = L * g, R * g
+    couches = ["son d'origine"]
+    if "debut" in so:  # plan de motion design : son de la pièce dessous, 12 dB plus bas
+        pl, pr = lire(os.path.join(ROOT, p["fichier"]), a, d)
+        m = min(n, len(pl))
+        L[:m] += pl[:m] * 10 ** (-12 / 20)
+        R[:m] += pr[:m] * 10 ** (-12 / 20)
+        couches.append("son de la pièce -12 dB")
+    k = min(n // 3, int(0.12 * SR))
+    if k:
+        f = np.linspace(0, 1, k) ** 2
+        L[:k] *= f
+        R[:k] *= f
+        L[-k:] *= f[::-1]
+        R[-k:] *= f[::-1]
+    L, R = BR.limite(L, R, 0.7)
+    dst = os.path.join(OUT, f"{pid}.wav")
+    os.makedirs(OUT, exist_ok=True)
+    with wave.open(dst + ".part", "wb") as w_:
+        w_.setnchannels(2)
+        w_.setsampwidth(2)
+        w_.setframerate(SR)
+        w_.writeframes((np.clip(np.stack([L, R], 1), -1, 1) * 32767).astype("<i2").tobytes())
+    os.replace(dst + ".part", dst)
+    return {"type": p["type"], "duree": round(d, 2), "annee": annee(p), "epoque": False, "couches": couches,
+            "raison": f"son d'origine ({os.path.basename(src)})"}
+
+
 def ambiance(pid, p):
+    if p.get("son_original"):
+        r = original(pid, p)
+        if r:
+            return r
     a = float(p.get("entree", 0) or 0)
     d = float(p["sortie"]) - a
     n = int(round(d * SR))
@@ -241,7 +329,7 @@ def main():
             for k, p in enumerate(ch["plans"], start=1):
                 pid = plan_id(ch["num"], k)
                 court = pid.lstrip("0")
-                if p.get("type") not in TYPES or "sortie" not in p:
+                if (p.get("type") not in TYPES and not p.get("son_original")) or "sortie" not in p:
                     continue
                 if seuls and pid not in seuls and court not in seuls:
                     continue

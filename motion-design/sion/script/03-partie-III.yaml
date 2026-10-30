@@ -419,11 +419,15 @@ chapitres:
       - type: MD
         fichier: output/documents.mp4
         entree: 55
-        sortie: 69
-        source: "déclaration d'indépendance de l'État d'Israël, 14 mai 1948 ; notre traduction"
+        sortie: 69.8
+        source: "déclaration d'indépendance de l'État d'Israël, 14 mai 1948 (traduction de la version anglaise officielle, « all its inhabitants » ; l'hébreu lu par Ben Gourion dit « לכל אזרחיה », à tous ses citoyens) ; enregistrement de la lecture, Wikimedia Commons, « Israeli Declaration of Independence.ogg », domaine public (SOURCES.md 4.2)"
+        son_original:
+          source: output/archives-sources/dropbox-1/Israeli_Declaration_of_Independence.ogg
+          morceaux: [[519.5, 12.8]]
+          debut: 1.9
+        son: "son d'origine : Ben Gourion lit la phrase de l'égalité, 14 mai 1948 (« תקיים שוויון זכויות חברתי ומדיני גמור לכל אזרחיה בלי הבדל דת, גזע ומין ») ; la fiche à l'écran en donne la traduction, pas de sous-titre"
         voix: >-
-          La déclaration d'indépendance promet « l'égalité complète des droits sociaux et politiques à tous ses
-          habitants, / sans distinction de religion, de race ou de **sexe** ».
+          Il lit la déclaration d'**indépendance** : ///
       - type: MD
         fichier: output/citation-ben-gourion.mp4
         entree: 0

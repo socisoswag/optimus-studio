@@ -56,6 +56,9 @@ demandé, et ne rien enregistrer en voix tant que la réponse n'est pas vérifi�
 - Avant d'ajouter une prise : `python3 tools/banque_sons.py essai <rôle>` (aucun ton pur, aucun motif qui se répète,
   pas de son « Synth » ou « simulation »), puis `python3 tools/banque_sons.py sources` pour SOURCES.md.
 - Après un changement de son : `bash tools/resound.sh <pièce>` (l'image n'est pas re-rendue), puis le contrôle.
+- Son d'origine (`son_original` sur le plan, tools/ambiances.py) : seulement pour les moments forts où le vrai son compte
+  (une voix historique, une parole clé), jamais par principe ; il remplace alors les bruitages du plan. Une parole qui n'est
+  pas déjà traduite à l'écran se sous-titre (`sous_titres` sur le plan, tools/sous_titres.py, rangés avec les cartons).
 - Mixage : les fonds restent bas (vent vers -25 dBFS avant la mise à niveau) pour que les coups ressortent ;
   une montée s'arrête 60 ms avant l'impact ; un impact a toujours une couche dans le médium (audible au téléphone) ;
   jamais de décalage d'un canal sur un son grave (il s'annule en mono) ; crête vraie sous -1 dBTP.

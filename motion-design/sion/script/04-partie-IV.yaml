@@ -389,11 +389,14 @@ chapitres:
         voix: >-
           La commission d'enquête israélienne conclut à la responsabilité personnelle du ministre de la Défense, Ariel
           **Sharon**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 283
-        sortie: 295
-        ecran: "fiche : Knesset · 28 octobre 2024 · L'UNRWA interdite"
+      - type: RÉEL
+        fichier: output/plans-reels/knesset-vue-du-ciel.mp4
+        carton: output/cartons/98-arch-knesset-unrwa-interdite.mov
+        son: "ville au loin, vent doux ; vue du ciel"
+        entree: 0
+        sortie: 12
+        ecran: "carton : Aujourd'hui · Jérusalem, la Knesset · Le 28 octobre 2024, elle interdit à l'UNRWA d'agir sur son sol."
+        note: "vrai plan à la place de la fiche de documents-6 (283 à 295) ; SOURCES.md 4.1 bis, Envato 4K3X4NU"
         source: "lois de la Knesset du 28 octobre 2024, en vigueur le 30 janvier 2025"
         voix: >-
           En octobre 2024, la Knesset interdit à l'UNRWA, l'agence de l'ONU pour les réfugiés palestiniens, d'agir sur son sol. / L'ONU s'alarme pour des millions de **réfugiés**.

@@ -106,6 +106,11 @@
     ["arch-1913-rosh-pina-la-colonie", "1913", "Rosh Pina", "La colonie, sur les pentes de la haute Galilée."],
     ["arch-1913-petah-tikva-la-colonie", "1913", "Petah Tikva", "La colonie, vue d’en haut, puis sa rue."],
     ["arch-1948-haganah-combattants", "1948", "Palestine", "Des combattants de la Haganah."],
+    ["arch-gaza-2009-obus-et-fumees", "Janvier 2009", "Gaza", "Des obus éclatent au-dessus de la ville."],
+    ["arch-arraba-collines-de-jenine", "Aujourd’hui", "Arraba, près de Jénine", "En 1945, moins de 1 % des terres y appartient à des Juifs."],
+    ["arch-knesset-unrwa-interdite", "Aujourd’hui", "Jérusalem, la Knesset", "Le 28 octobre 2024, elle interdit à l’UNRWA d’agir sur son sol."],
+    ["arch-knesset-loi-etat-nation", "Aujourd’hui", "Jérusalem, la Knesset", "Le 19 juillet 2018, elle adopte la loi État-nation."],
+    ["arch-gaza-2009-frappe-fumee-noire", "Janvier 2009", "Gaza", "« Plomb durci » : 1 387 Palestiniens tués selon B’Tselem, 13 Israéliens."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

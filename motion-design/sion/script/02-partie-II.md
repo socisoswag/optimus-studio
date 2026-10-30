@@ -441,11 +441,12 @@ Source : Nations unies, carte « Palestine : Land ownership by sub-districts (19
 (29 mots, 2.2 par seconde)
 
 
-**11.9** · film **00:23:44:24 → 00:23:54:24** (10.0 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:13:00 → 00:00:23:00  
+**11.9** · film **00:23:44:24 → 00:23:54:24** (10.0 s) · **[RÉEL]** `output/plans-reels/envato-C04-arraba-jenine-aerien.mp4` · source 00:00:00:00 → 00:00:10:00  
 Source : Nations unies, carte « Palestine : Land ownership by sub-districts (1945) », août 1950, d'après les Village Statistics 1945 (Jénine, Naplouse, Ramallah, Hébron, Beersheba : moins de 1 %)  
-À l'écran : fiche : Moins de 1 % · les collines et le sud  
+À l'écran : carton : Aujourd'hui · Arraba, près de Jénine · En 1945, moins de 1 % des terres y appartient à des Juifs.  
 > VOIX : Dans les collines de Jénine, de Naplouse, de Ramallah et d'Hébron, / moins de un pour **cent**.  
-(16 mots, 1.6 par seconde)
+(16 mots, 1.6 par seconde)  
+Note : vrai plan à la place de la fiche de terres-1945 (13 à 23) ; le chiffre passe au carton ; SOURCES.md 4.1 bis, Envato GCCZGPV
 
 
 **11.10** · film **00:23:54:24 → 00:24:03:11** (8.5 s) · **[MD]** `output/terres-1945.mp4` · source 00:00:23:00 → 00:00:31:13  

@@ -72,9 +72,10 @@ PRESET = os.environ.get("DERUSH_PRESET", "fast")
 STAB = os.environ.get("DERUSH_STAB", "1") == "1"  # tremblement retiré des plans (voir cut)
 
 
-def cut(src, a, d, dst, amb=None):
+def cut(src, a, d, dst, amb=None, force=False):
     """Coupe à l'image près ; qualité de montage (CRF 16), son fondu sur quelques millisecondes aux coupes. Un plan
-    sans son (vrai plan, archive, reconstitution) reçoit son ambiance (output/ambiances/<plan>.wav, tools/ambiances.py).
+    sans son (vrai plan, archive, reconstitution) reçoit son ambiance (output/ambiances/<plan>.wav, tools/ambiances.py) ;
+    avec force (plan « son_original » du script), ce son remplace aussi celui de la pièce (il le contient déjà, plus bas).
     Le tremblement rapide de l'ancienne finition (« flottement », des sauts d'un pixel plusieurs fois par seconde, vus
     comme des saccades) est mesuré puis retiré image par image (tools/sans_flottement.py : translation seule, 3 pixels
     au plus) ; les mouvements de caméra voulus et les secousses des impacts restent. Les cartons n'en ont pas besoin."""
@@ -84,6 +85,7 @@ def cut(src, a, d, dst, amb=None):
     if os.path.exists(dst) and MANIFEST.get(os.path.basename(dst)) == stamp:
         return
     has_audio = bool(subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", src]).strip())
+    has_audio = has_audio and not (force and amb)
     # GitHub refuse les fichiers de plus de 100 Mo : le débit plafond tient le plan sous 90 Mo, son compris
     rate = max(4000, min(24000, int(88 * 8000 / max(d, 1)) - 330))
     cmd = ["ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-i", src]
@@ -144,6 +146,10 @@ def cartons_of(plan):
         name = re.sub(r"^\d+-", "", m.removesuffix(".mov"))
         found = glob.glob(os.path.join(ROOT, "output", "cartons", f"*{name}.mov"))
         out += found[:1]
+    if plan.get("sous_titres"):  # sous-titres d'une parole gardée (tools/sous_titres.py), rangés avec les cartons
+        import sous_titres as ST
+        st = os.path.join(ROOT, "output", "cartons", ST.nom(plan))
+        out += [st] if os.path.exists(st) else []
     return out
 
 
@@ -179,7 +185,8 @@ def part(yml, folder):
                 base = os.path.splitext(os.path.basename(fic))[0]
                 name = f"{pid}-{typ.replace('É', 'E')}-{slug(base, 40).lower()}.mp4"
                 if sel:
-                    cut(src, a, d, os.path.join(cd, name), os.path.join(ROOT, "output", "ambiances", f"{pid}.wav"))
+                    cut(src, a, d, os.path.join(cd, name), os.path.join(ROOT, "output", "ambiances", f"{pid}.wav"),
+                        force=bool(p.get("son_original")))
             else:
                 # rendu absent sur cette machine (nouvelle session) mais plan déjà livré : on garde la version livrée
                 old = [] if p.get("a_obtenir") or not src else sorted(glob.glob(os.path.join(cd, f"{pid}-*.mp4")))
