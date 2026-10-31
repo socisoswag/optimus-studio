@@ -698,3 +698,12 @@ plans sont allongés pour que la voix tienne dessus (durée indiquée).
 | 38.6 | `38.06-REEL-envato-C05-bethleem-vue-large.mp4`, carton 109 : Bethléem, ville chrétienne et musulmane, 15 s | fiche de documents-6 |
 
 Sources : SOURCES.md 4.1 bis et 4.2 (le générique et la description seront repris à la fin).
+
+## 1er novembre 2026, plus tard (deux vraies images de plus)
+
+| Plan | Maintenant | Avant |
+|---|---|---|
+| 33.8 | `33.08-REEL-la-haye-palais-de-la-paix.mp4`, carton 120 : le Palais de la Paix, siège de la Cour internationale de justice, avis du 19 juillet 2024 | fiche de documents-6 |
+| 33.12 | `33.12-REEL-new-york-siege-onu.mp4`, carton 121 : le siège de l'ONU à New York, résolution 2334 (23 décembre 2016) | fiche de paroles |
+
+Mêmes numéros, même durée, même voix. Écarté : le monastère Ad Deir (Pétra, Jordanie), qui n'est pas Deir Hanna.

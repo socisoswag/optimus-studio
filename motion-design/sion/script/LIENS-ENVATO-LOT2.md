@@ -5,8 +5,9 @@ carton, la voix ne change pas. Télécharger la meilleure définition (4K si pos
 numéro (E01.mp4, E02.mp4…) et tout mettre dans une Dropbox.
 
 **Reçus et posés le 1er novembre** : E01, E02, E04, E06, E07, E10, F01 à F03 et les plans du lot 3 et du lot 4 déjà chez moi
-(treize plans, voir script/CHANGEMENTS.md). Restent à chercher sur Envato (J1 à J5) : Jénine, le Palais de la Paix à
-La Haye, le siège de l'ONU à New York, Maalé Adoumim, Sakhnin ou Deir Hanna.
+(treize plans, voir script/CHANGEMENTS.md). J2 (le Palais de la Paix) et J3 (le siège de l'ONU) reçus et posés
+ensuite. Restent à chercher sur Envato : J1 Jénine, J4 Maalé Adoumim, J5 Sakhnin ou Deir Hanna (Galilée ; pas le
+monastère Ad Deir de Pétra, en Jordanie).
 
 Uniquement des liens directs vers un clip précis. Retirés (aucun lien direct fiable) : E03 Jénine, E05 le Palais de la
 Paix, E08 Maalé Adoumim, E09 le siège de l'ONU à New York ; leurs fiches restent.

@@ -106,11 +106,13 @@ Film 01:21:37:17 → 01:24:50:16 · durée 3 min 12.9 s
 > VOIX : silence
 
 
-**33.8** · film **01:22:41:15 → 01:22:56:15** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:02:27:00 → 00:02:42:00  
+**33.8** · film **01:22:41:15 → 01:22:56:15** (15.0 s) · **[RÉEL]** `output/plans-reels/la-haye-palais-de-la-paix.mp4` · source 00:00:00:00 → 00:00:15:00  
 Source : CIJ, avis consultatif du 19 juillet 2024 ; Assemblée générale de l'ONU, résolution ES-10/24, 18 septembre 2024  
-À l'écran : fiche : La Haye · 19 juillet 2024 · La Cour internationale de justice  
+À l'écran : carton : Aujourd'hui · La Haye, le Palais de la Paix · Le 19 juillet 2024, la Cour internationale de justice y déclare l'occupation illégale.  
 > VOIX : Le 19 juillet 2024, la Cour internationale de justice le dit : / l'occupation est **illégale**. / Israël doit y mettre fin et évacuer les colons. // L'ONU lui donne douze mois.  
-(28 mots, 1.9 par seconde)
+(28 mots, 1.9 par seconde)  
+Son : ville au loin, vent doux ; vue du ciel  
+Note : vrai plan à la place de la fiche de documents-6 (147 à 162) ; ralenti par images interpolées ; SOURCES.md 4.1 bis, Envato (« The Peace Palace, The Hague »)
 
 
 **33.9** · film **01:22:56:15 → 01:23:11:15** (15.0 s) · **[RÉEL]** `output/plans-reels/washington-maison-blanche.mp4` · source 00:00:00:00 → 00:00:15:00  
@@ -136,11 +138,13 @@ Source : SOURCES.md 4.2, Wikimedia Commons, « Deadly Protests in Gaza as US Ope
 (19 mots, 1.6 par seconde)
 
 
-**33.12** · film **01:23:40:08 → 01:23:56:08** (16.0 s) · **[MD]** `output/paroles.mp4` · source 00:03:50:00 → 00:04:06:00  
+**33.12** · film **01:23:40:08 → 01:23:56:08** (16.0 s) · **[RÉEL]** `output/plans-reels/new-york-siege-onu.mp4` · source 00:00:00:00 → 00:00:16:00  
 Source : résolution 2334 du Conseil de sécurité, 23 décembre 2016  
-À l'écran : fiche : Nations unies · de 1948 à 2016 · La réponse d'Israël  
+À l'écran : carton : Aujourd'hui · New York, le siège de l'ONU · Le 23 décembre 2016, le Conseil de sécurité y adopte la résolution 2334 sur les colonies.  
 > VOIX : Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître. // En 2016, le Conseil de sécurité qualifie encore les colonies de « violation flagrante » du droit **international**.  
-(33 mots, 2.1 par seconde)
+(33 mots, 2.1 par seconde)  
+Son : ville au loin, vent doux ; vue du ciel  
+Note : vrai plan à la place de la fiche de paroles (230 à 246) ; ralenti par images interpolées ; SOURCES.md 4.1 bis, Envato (« New York City skyline aerial view at sunrise »)
 
 
 **33.13** · film **01:23:56:08 → 01:24:21:03** (24.8 s) · **[RÉEL]** `output/plans-reels/washington-capitole.mp4` · source 00:00:00:00 → 00:00:24:20  

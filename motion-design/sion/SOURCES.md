@@ -331,6 +331,8 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 | washington-maison-blanche | Washington, la Maison-Blanche, plan fixe ralenti (plan 33.9) | https://elements.envato.com/the-white-house-in-washington-dc-usa-YFQ6G8Y |
 | washington-capitole | Washington, le Capitole, plan large de jour (plan 33.13) | https://elements.envato.com/wide-shot-of-capitol-building-in-washington-dc-X6F2RPK |
 | geneve-palais-des-nations | Genève, le Palais des Nations (plan 33.14 ; clip « Establishing shot of Geneva, Switzerland », reçu à la place du survol proposé) | Envato Elements, « Establishing shot of Geneva, Switzerland » |
+| la-haye-palais-de-la-paix | La Haye, le Palais de la Paix, siège de la Cour internationale de justice, vu du ciel, ralenti (plan 33.8) | Envato Elements, « The Peace Palace (Dutch: Vredespaleis), The Hague » |
+| new-york-siege-onu | New York, le siège de l'ONU au bord de l'East River, au lever du soleil, ralenti (plan 33.12) | Envato Elements, « New York City skyline aerial view at sunrise » |
 
 ### 4.2 Archives filmées (domaine public, sauf mention)
 

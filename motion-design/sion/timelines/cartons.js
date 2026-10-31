@@ -130,6 +130,8 @@
     ["arch-maison-blanche-aide-2016", "Aujourd’hui", "Washington, la Maison-Blanche", "En 2016, 38 milliards de dollars d’aide militaire promis à Israël sur dix ans."],
     ["arch-capitole-aide-militaire", "Aujourd’hui", "Washington, le Capitole", "Le Congrès vote chaque année l’aide militaire à Israël."],
     ["arch-geneve-entreprises-colonies", "Aujourd’hui", "Genève, le Palais des Nations", "En 2020, l’ONU publie la liste des entreprises liées aux colonies."],
+    ["arch-cij-la-haye-2024", "Aujourd’hui", "La Haye, le Palais de la Paix", "Le 19 juillet 2024, la Cour internationale de justice y déclare l’occupation illégale."],
+    ["arch-onu-new-york-2334", "Aujourd’hui", "New York, le siège de l’ONU", "Le 23 décembre 2016, le Conseil de sécurité y adopte la résolution 2334 sur les colonies."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

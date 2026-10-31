@@ -48,21 +48,21 @@
    "pct": 70,
    "poids": 3,
    "qui": "toi",
-   "detail": "archives Wikimedia, C01 à C06, Adobe D01 et D02 reçus ; 195 sons Envato reçus et branchés (327 prises) ; lots Envato 2 à 4 reçus (9 clips, tous posés) ; à chercher : J1 à J5 (Jénine, Palais de la Paix, siège de l'ONU, Maalé Adoumim, Sakhnin) ; restent B02 à B20, C07 à C12 et la musique"
+   "detail": "archives Wikimedia, C01 à C06, Adobe D01 et D02 reçus ; 195 sons Envato reçus et branchés (327 prises) ; lots Envato 2 à 4 reçus (9 clips, tous posés) ; J2 et J3 reçus et posés ; à chercher : J1 (Jénine), J4 (Maalé Adoumim), J5 (Sakhnin ou Deir Hanna) ; restent B02 à B20, C07 à C12 et la musique"
   },
   {
    "nom": "Archives libres : 1917 à 1950, puis Gaza et la Cisjordanie de 2000 à 2025",
    "pct": 85,
    "poids": 3,
    "qui": "moi",
-   "detail": "archives posées : Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023 ; 30 octobre : 1913 (Zikhron Yaakov, Rishon LeZion, orangeraie, Constantinople), camp de 1950, Maison-Blanche 2025, maison incendiée 2024 ; Sinaï 1916 et Damas 1918 (Australian War Memorial), Rosh Pina et Petah Tikva 1913, la Haganah 1948 ; 31 octobre au soir : Gaza janvier 2009 (deux plans), Arraba, la Knesset (deux plans), la vraie voix de Ben Gourion (16.3) ; 1er novembre : la vraie voix de Trump (25.40), Begin 1979, Rabin 1995, accords d'Abraham, Cheikh Jarrah, le mur, un village de Cisjordanie ; en réserve : Versailles 1919, Sinaï 1967 ; 1er novembre, lots 2 à 4 : treize vraies images de plus (villages 1934, Tantura, Nazareth, Jaffa, Munich, Ramallah, Alger, Umm al-Fahm, l'Assemblée nationale, la Maison-Blanche, le Capitole, Genève, Bethléem) ; vraies images : 25,1 min, 26,7 % du film ; objectif 35 %"
+   "detail": "archives posées : Hébron 1913, Allenby 1917, Balfour 1925, Camp David 1978 et 2000, Oslo 1993, Gaza 2009 et 2018, Tel-Aviv et Masafer Yatta 2023 ; 30 octobre : 1913 (Zikhron Yaakov, Rishon LeZion, orangeraie, Constantinople), camp de 1950, Maison-Blanche 2025, maison incendiée 2024 ; Sinaï 1916 et Damas 1918 (Australian War Memorial), Rosh Pina et Petah Tikva 1913, la Haganah 1948 ; 31 octobre au soir : Gaza janvier 2009 (deux plans), Arraba, la Knesset (deux plans), la vraie voix de Ben Gourion (16.3) ; 1er novembre : la vraie voix de Trump (25.40), Begin 1979, Rabin 1995, accords d'Abraham, Cheikh Jarrah, le mur, un village de Cisjordanie ; en réserve : Versailles 1919, Sinaï 1967 ; 1er novembre, lots 2 à 4 : treize vraies images de plus (villages 1934, Tantura, Nazareth, Jaffa, Munich, Ramallah, Alger, Umm al-Fahm, l'Assemblée nationale, la Maison-Blanche, le Capitole, Genève, Bethléem), puis La Haye et le siège de l'ONU ; vraies images : 25,7 min, 27,2 % du film ; objectif 35 %"
   },
   {
    "nom": "Intégrer les plans Envato et les archives",
    "pct": 80,
    "poids": 2,
    "qui": "moi",
-   "detail": "80 archives et 49 vrais plans dans le script, tous livrés ; en réserve : C01 à C05, D01, D02, Dublin 2014, route 60 (lieux et dates à vérifier avant de les poser)"
+   "detail": "80 archives et 51 vrais plans dans le script, tous livrés ; en réserve : C01 à C05, D01, D02, Dublin 2014, route 60 (lieux et dates à vérifier avant de les poser)"
   },
   {
    "nom": "Bruitages variés et montage musical",
@@ -111,7 +111,7 @@
    "pct": 0,
    "poids": 15,
    "qui": "toi",
-   "detail": "projet prêt à importer : SION/SION-premiere.xml (les 491 plans dans l'ordre, cartons, piste voix, marqueurs avec le texte) ; poser la voix et caler les plans"
+   "detail": "projet prêt à importer : SION/SION-premiere.xml (les 493 plans dans l'ordre, cartons, sons séparés, marqueurs avec le texte) ; mode d'emploi : SION/PREMIERE.md"
   },
   {
    "nom": "Mixage et export",

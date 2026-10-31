@@ -332,7 +332,10 @@ def construit(f):
 
 GUIDE = """# Ouvrir le film dans Premiere Pro
 
-1. Télécharge (ou mets à jour) tout le dossier `Montage-Moyen-orient` sur ton ordinateur.
+1. Récupère tout le dépôt `Montage-Moyen-orient` sur ton ordinateur avec GitHub Desktop (gratuit) : **File > Clone
+   repository**, onglet GitHub.com, choisis `socisoswag/Montage-Moyen-orient` (prévois environ 50 Go libres : GitHub
+   compte 32 Go avec l'historique). Mise à jour après chaque livraison : **Fetch origin** puis **Pull origin**. Ne renomme
+   et ne déplace aucun fichier : la timeline retrouve chaque plan par son chemin dans ce dossier.
 2. Dans Premiere : **Fichier > Importer**, choisis `SION/SION-premiere.xml`.
 3. Premiere crée un chutier `SION-premiere` avec un chutier par partie et un sous-chutier par chapitre (ses plans,
    ses cartons et ses plans en réserve), et la séquence **SION** :
@@ -344,8 +347,10 @@ GUIDE = """# Ouvrir le film dans Premiere Pro
      leur son mixé est là mais coupé (désactivé), pour comparer ;
    - **A4 et au-delà** : chaque bruitage du motion design sur la piste de sa famille, calé sous son plan, par paires
      gauche-droite, dans cet ordre : {familles}. Les fichiers sont dans `SION/Sons/<pièce>/`.
-4. Si les plans s'affichent « hors ligne » : clic droit sur un plan > **Lier le média**, montre le même fichier dans ton
-   dossier `Montage-Moyen-orient`, coche « Relier les autres automatiquement » : Premiere retrouve tout le reste.
+4. À la première ouverture, Premiere demande où sont les fichiers (fenêtre « Lier le média ») ou les affiche « hors
+   ligne » : c'est normal, la timeline ne connaît pas l'emplacement du dossier sur ton disque. Clique sur un plan de la
+   liste > **Rechercher**, montre ce même fichier dans ton dossier `Montage-Moyen-orient`, laisse coché « Relier les
+   autres automatiquement » : Premiere retrouve tous les autres (plans, cartons, sons) d'un coup. Une seule fois suffit.
 5. Les **marqueurs** de la séquence donnent la partie, le chapitre, puis le numéro de chaque plan ; leur commentaire
    est la phrase à dire sur ce plan (fenêtre Marqueurs, ou double-clic sur un marqueur).
 6. **Mes notes de montage** sont aussi des marqueurs, à l'image près :
