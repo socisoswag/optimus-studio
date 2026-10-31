@@ -495,11 +495,14 @@ chapitres:
         sortie: 102
         voix: >-
           « Ne laissez pas le rameau d'olivier tomber de ma **main**. »
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 295
-        sortie: 307
-        ecran: "fiche : en prison depuis 2002 · Marwan Barghouti"
+      - type: RÉEL
+        fichier: output/plans-reels/ramallah-vue-du-ciel.mp4
+        carton: output/cartons/108-arch-ramallah-barghouti.mov
+        entree: 0
+        sortie: 16
+        ecran: "carton : Aujourd'hui · Ramallah · Marwan Barghouti y est arrêté en avril 2002."
+        note: "vrai plan à la place de la fiche de documents-6 (295 à 307), allongé à 16 s pour la voix ; SOURCES.md 4.1 bis, Envato EBXYSMP"
+        son: "ville au loin, vent doux ; vue du ciel"
         source: "condamnation de Marwan Barghouti, 6 juin 2004 ; PCPSR, sondage du 7 au 11 octobre 2026, publié le 14 octobre (1 397 personnes, sept noms proposés)"
         voix: >-
           Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / En octobre 2026, il reste en tête des sondages : / 34 % des sondés le choisissent, parmi sept **noms**.

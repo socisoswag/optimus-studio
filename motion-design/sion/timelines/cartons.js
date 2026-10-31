@@ -117,6 +117,9 @@
     ["arch-abraham-2020-signature", "15 septembre 2020", "Washington, Maison-Blanche", "La signature des accords d’Abraham."],
     ["arch-mur-separation-jerusalem", "Aujourd’hui", "Jérusalem", "Le mur, construit à partir de 2002."],
     ["arch-village-palestinien-collines", "Aujourd’hui", "Cisjordanie", "Un village palestinien dans les collines."],
+    ["arch-1934-villages-de-palestine", "Vers 1934", "Palestine", "La vie des villages, au temps des grandes ventes de terres."],
+    ["arch-ramallah-barghouti", "Aujourd’hui", "Ramallah", "Marwan Barghouti y est arrêté en avril 2002."],
+    ["arch-bethleem-chretiens", "Aujourd’hui", "Bethléem, Cisjordanie", "Une ville palestinienne, chrétienne et musulmane."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

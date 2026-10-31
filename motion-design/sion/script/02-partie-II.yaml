@@ -271,11 +271,13 @@ chapitres:
         entree: 23.6
         sortie: 28
         ecran: "fiche de la chronologie : Izz ad-Din al-Qassam"
-      - type: MD
-        fichier: output/documents-7.mp4
-        entree: 56
-        sortie: 70
-        ecran: "fiche : Plaine de Jezréel · années 1920 · La grande vente"
+      - type: ARCH
+        fichier: output/archives-filmees/1934-villages-de-palestine.mp4
+        carton: output/cartons/107-arch-1934-villages-de-palestine.mov
+        entree: 0
+        sortie: 18
+        ecran: "carton : Vers 1934 · Palestine · La vie des villages, au temps des grandes ventes de terres."
+        note: "vraie image à la place de la fiche de documents-7 (56 à 70) : « Paths in Palestine » (1934), des femmes reviennent du puits, puis des artisans ; plan allongé à 18 s pour la voix ; SOURCES.md 4.2"
         source: "ventes Sursock, plaine de Jezréel, années 1920 ; chiffres présentés autour de la commission Shaw, 1930 (environ 240 000 dounams, 1 746 familles), discutés par les historiens"
         voix: >-
           Sous le mandat, les ventes changent d'échelle. / Dans les années 1920, la famille Sursock vend une grande partie de la plaine de Jezréel. / Selon les chiffres cités en 1930, plus de mille sept cents familles de métayers doivent **partir**.

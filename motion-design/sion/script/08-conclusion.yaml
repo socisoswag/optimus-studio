@@ -78,11 +78,14 @@ chapitres:
         source: "Edward Said, The Question of Palestine, 1979 (La Question de Palestine)"
         voix: >-
           Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 497
-        sortie: 511
-        ecran: "fiche : Gaza · 2023 et 2025 · Les chrétiens de Palestine"
+      - type: RÉEL
+        fichier: output/plans-reels/envato-C05-bethleem-vue-large.mp4
+        carton: output/cartons/109-arch-bethleem-chretiens.mov
+        entree: 0
+        sortie: 15
+        ecran: "carton : Aujourd'hui · Bethléem, Cisjordanie · Une ville palestinienne, chrétienne et musulmane."
+        note: "vrai plan à la place de la fiche de documents-6 (497 à 511) ; les églises de Gaza frappées en 2023 et 2025 restent dites par la voix ; SOURCES.md 4.1 bis, Envato BDZD6WU"
+        son: "ville au loin, cloches lointaines"
         source: "patriarcat grec-orthodoxe de Jérusalem, 22 octobre 2023 (au moins 18 morts à Saint-Porphyre) ; patriarcat latin de Jérusalem, 17 juillet 2025, et communiqué commun des Églises du 18 juillet (3 morts, 10 blessés)"
         voix: >-
           Edward Said venait d'une famille chrétienne, comme une partie des Palestiniens. / En 2023, une frappe israélienne touche l'église Saint-Porphyre, à Gaza : dix-huit morts au moins. / En 2025, l'église de la Sainte-Famille : trois **morts**.

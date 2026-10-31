@@ -23,3 +23,19 @@ numéro (E01.mp4, E02.mp4…) et tout mettre dans une Dropbox.
 Rien de valable trouvé sur Envato (on garde la fiche) : la Grande Mosquée al-Omari détruite (34.10), les manifestations
 de Paris en octobre 2023 (31.12), les frappes sur Beyrouth en 2024 (25.37). Les images de guerre de Gaza sur Envato
 n'ont ni date ni lieu vérifiables : écartées.
+
+## Lot 3 (1er novembre)
+
+Déjà chez moi, rien à télécharger :
+- 8.11 (la grande vente de la plaine de Jezréel) : deux plans de « Paths in Palestine », 1934 (des femmes reviennent du
+  puits, des artisans au travail) ;
+- 21.13 (Marwan Barghouti) : Ramallah vue du ciel, la ville où il est arrêté en 2002 ;
+- 38.6 (les chrétiens de Palestine) : Bethléem, vue large.
+
+À télécharger :
+
+| N° | Plan | Ce qu'il remplace | Le clip | Lien |
+|---|---|---|---|---|
+| F01 | 21.4 | fiche Munich, 5 septembre 1972 | le parc olympique de Munich, vue aérienne avec le stade | https://elements.envato.com/aerial-of-munich-with-the-olympic-stadium-H3K8TY2 |
+| F02 | 21.14 | fiche Alger et Genève, 1988 | Alger vue de drone (l'OLP y proclame l'État de Palestine en 1988) | https://elements.envato.com/aerial-view-by-drone-of-the-city-of-algiers-algeri-E7C3TMY |
+| F03 | 31.10 | fiche « le rôle de la France » | l'Assemblée nationale à Paris (timelapse 4K) | https://elements.envato.com/4k-paris-france-timelapse-the-parlement-of-france-BWVHZEC |
