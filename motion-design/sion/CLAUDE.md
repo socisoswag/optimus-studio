@@ -83,8 +83,9 @@ et dans le générique de fin (`timelines/generique-fin.js`). Le signaler en une
 - Rendu « grand documentaire » : ça doit bouger et claquer (coupes en filé, flashs, impacts,
   rampes de vitesse, traînées d'objectif, chiffres qui défilent), jamais cheap.
 - Ne jamais mettre le nom de l'auteur dans les fichiers.
-- Générique de fin : ne le refaire (rendu) qu'à la toute fin du film, quand tout le reste est terminé ; d'ici là, tenir
-  seulement `timelines/generique-fin.js` et les sources à jour, sans rendu ni relivraison.
+- Générique de fin et description YouTube : on n'y touche plus avant la toute fin du film (consigne de l'auteur, 1er novembre) ;
+  d'ici là, chaque nouvelle source va seulement dans `SOURCES.md` (avec ses « Mentions obligatoires »), d'où on reportera
+  tout à la fin.
 
 ## Reprise dans une nouvelle session (à lire d'abord)
 
