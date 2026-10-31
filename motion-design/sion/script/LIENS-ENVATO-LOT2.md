@@ -39,3 +39,14 @@ Déjà chez moi, rien à télécharger :
 | F01 | 21.4 | fiche Munich, 5 septembre 1972 | le parc olympique de Munich, vue aérienne avec le stade | https://elements.envato.com/aerial-of-munich-with-the-olympic-stadium-H3K8TY2 |
 | F02 | 21.14 | fiche Alger et Genève, 1988 | Alger vue de drone (l'OLP y proclame l'État de Palestine en 1988) | https://elements.envato.com/aerial-view-by-drone-of-the-city-of-algiers-algeri-E7C3TMY |
 | F03 | 31.10 | fiche « le rôle de la France » | l'Assemblée nationale à Paris (timelapse 4K) | https://elements.envato.com/4k-paris-france-timelapse-the-parlement-of-france-BWVHZEC |
+
+## Lot 4 (1er novembre) : le dernier faisable sans archives
+
+Déjà chez moi : 18.5 (le journal Filastin, 1911) : la vieille ville de Jaffa vue du ciel.
+
+Écartés : l'hôtel King David (introuvable sur Envato, la reconstitution reste), Nebi Musa (le sanctuaire n'est pas le
+lieu des émeutes de 1920), la plage de Tel-Aviv pour Arlosoroff (13 s de vidéo pour 19 s de voix).
+
+Au-delà, il faut des archives (à chercher par l'agent) : Gaza 2024 et 2025 datée et située (Hind Rajab, secouristes de
+Rafah, aide bloquée), la Grande Mosquée al-Omari, Paris en octobre 2023, Beyrouth 2024, le Jour de la Terre 1976, le
+retrait de Gaza en 2005, les élections de 2006, le Mavi Marmara, l'échange Shalit, Handala et Kanafani.

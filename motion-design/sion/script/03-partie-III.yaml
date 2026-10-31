@@ -563,10 +563,14 @@ chapitres:
         voix: >-
           Cette année-là, elle déclare au Sunday Times : / « Il n'y avait pas de Palestiniens. / Ils n'existaient
           **pas**. »
-      - type: MD
-        fichier: output/documents.mp4
-        entree: 11
-        sortie: 23
+      - type: RÉEL
+        fichier: output/plans-reels/jaffa-vieille-ville-aerien.mp4
+        carton: output/cartons/110-arch-jaffa-filastin.mov
+        entree: 0
+        sortie: 12
+        ecran: "carton : Aujourd'hui · Jaffa · En 1911, le journal Filastin y paraît."
+        note: "vrai plan à la place de la fiche de documents (11 à 23) ; la une de Filastin reste montrée en 6.16 ; SOURCES.md 4.1 bis, Envato YQ5W8UK"
+        son: "ville au loin, mer, mouettes ; vue du ciel"
         voix: >-
           Pourtant, dès 1911, à Jaffa, un journal s'appelait Filastin, / et s'adressait à ses lecteurs comme à des
           **Palestiniens**.

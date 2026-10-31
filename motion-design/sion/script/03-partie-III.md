@@ -434,9 +434,12 @@ Source : SOURCES.md 6 (entretien avec Frank Giles, The Sunday Times, 15 juin 196
 (16 mots, 1.3 par seconde)
 
 
-**18.5** · film **00:37:40:06 → 00:37:52:06** (12.0 s) · **[MD]** `output/documents.mp4` · source 00:00:11:00 → 00:00:23:00  
+**18.5** · film **00:37:40:06 → 00:37:52:06** (12.0 s) · **[RÉEL]** `output/plans-reels/jaffa-vieille-ville-aerien.mp4` · source 00:00:00:00 → 00:00:12:00  
+À l'écran : carton : Aujourd'hui · Jaffa · En 1911, le journal Filastin y paraît.  
 > VOIX : Pourtant, dès 1911, à Jaffa, un journal s'appelait Filastin, / et s'adressait à ses lecteurs comme à des **Palestiniens**.  
-(18 mots, 1.5 par seconde)
+(18 mots, 1.5 par seconde)  
+Son : ville au loin, mer, mouettes ; vue du ciel  
+Note : vrai plan à la place de la fiche de documents (11 à 23) ; la une de Filastin reste montrée en 6.16 ; SOURCES.md 4.1 bis, Envato YQ5W8UK
 
 
 **18.6** · film **00:37:52:06 → 00:38:10:10** (18.2 s) · **[ARCH]** `output/archives-filmees/1933-jerusalem-bethleem-rues.mp4` · source 00:00:00:00 → 00:00:18:04  

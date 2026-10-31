@@ -120,6 +120,7 @@
     ["arch-1934-villages-de-palestine", "Vers 1934", "Palestine", "La vie des villages, au temps des grandes ventes de terres."],
     ["arch-ramallah-barghouti", "Aujourd’hui", "Ramallah", "Marwan Barghouti y est arrêté en avril 2002."],
     ["arch-bethleem-chretiens", "Aujourd’hui", "Bethléem, Cisjordanie", "Une ville palestinienne, chrétienne et musulmane."],
+    ["arch-jaffa-filastin", "Aujourd’hui", "Jaffa", "En 1911, le journal Filastin y paraît."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };
