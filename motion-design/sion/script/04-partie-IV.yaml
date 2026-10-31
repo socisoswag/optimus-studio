@@ -56,10 +56,14 @@ chapitres:
         voix: >-
           Aujourd'hui, les zones palestiniennes autonomes et Gaza / font moins d'un dixième de la Palestine
           **mandataire**.
-      - type: MD
-        fichier: output/frontieres.mp4
-        entree: 42
-        sortie: 50.5
+      - type: RÉEL
+        fichier: output/plans-reels/village-palestinien-collines-aerien.mp4
+        carton: output/cartons/106-arch-village-palestinien-collines.mov
+        entree: 0
+        sortie: 8.5
+        ecran: "carton : Aujourd'hui · Cisjordanie · Un village palestinien dans les collines."
+        note: "vrai plan à la place de la respiration sans voix de frontieres (42 à 50,5) ; SOURCES.md 4.1 bis, Envato"
+        son: "village au loin, vent doux, un appel lointain"
       - type: MD
         fichier: output/chronologie.mp4
         entree: 41.6
@@ -662,11 +666,14 @@ chapitres:
         entree: 0
         sortie: 12.52
         ecran: "déjà dans la pièce : moins de 1 % de la zone C planifié pour les Palestiniens (OCHA)"
-      - type: MD
-        fichier: output/oslo-mur.mp4
-        entree: 27
-        sortie: 40
-        ecran: "carton : output/cartons/cisjordanie-2002"
+      - type: RÉEL
+        fichier: output/plans-reels/mur-separation-jerusalem-drone.mp4
+        carton: output/cartons/105-arch-mur-separation-jerusalem.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : Aujourd'hui · Jérusalem · Le mur, construit à partir de 2002."
+        note: "vrai plan à la place de la carte d'oslo-mur (27 à 40) : le tracé du mur est montré juste après (23.10, la cicatrice) ; SOURCES.md 4.1 bis, Envato 6M4DYEG"
+        son: "vent sec, ville au loin"
         voix: >-
           Depuis 2002, le mur, / en grande partie à l'intérieur de la Cisjordanie. / En 2004, la Cour internationale de
           justice le juge contraire au droit **international**.
@@ -761,11 +768,13 @@ chapitres:
         voix: >-
           Selon les chiffres de 2020, un Palestinien de Cisjordanie consomme 82 litres d'eau par jour ; / un Israélien, colons compris, **247**.
         note: "247 litres : moyenne de tous les Israéliens, pas des seuls colons ; données de 2020, publiées par B'Tselem en 2023 (ne pas dire « en 2023 »)"
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 55
-        sortie: 67
-        ecran: "fiche : Jérusalem-Est · mai 2021 · Cheikh Jarrah"
+      - type: ARCH
+        fichier: output/plans-reels/cheikh-jarrah-2023-manifestation-police.mp4
+        carton: output/cartons/103-arch-cheikh-jarrah-2023-manifestation.mov
+        entree: 0
+        sortie: 12
+        ecran: "carton : Septembre 2023 · Cheikh Jarrah, Jérusalem-Est · Une manifestation dans le quartier, encadrée par la police."
+        note: "vraie image à la place de la fiche de documents-6 (55 à 67) ; l'image est de 2023, la voix parle de mai 2021 ; CC BY-SA 4.0 (SOURCES.md 4.2)"
         source: "Cheikh Jarrah, avril-mai 2021"
         voix: >-
           En mai 2021, à Cheikh Jarrah, à Jérusalem-Est, des familles palestiniennes doivent laisser leurs maisons à des colons. / La colère embrase Jérusalem, / puis **Gaza**.

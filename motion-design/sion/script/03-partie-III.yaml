@@ -280,10 +280,14 @@ chapitres:
         voix: >-
           Le 22 juillet 1946, l'Irgoun fait sauter une aile de l'hôtel King David, / siège de l'administration
           britannique à Jérusalem. // 91 **morts**.
-      - type: MD
-        fichier: output/portraits-2.mp4
+      - type: ARCH
+        fichier: output/plans-reels/begin-1979-arrivee-washington.mp4
+        carton: output/cartons/102-arch-begin-1979-arrivee-washington.mov
         entree: 0
         sortie: 12
+        ecran: "carton : 26 mars 1979 · Washington · Menahem Begin, Premier ministre d'Israël, vient signer la paix avec l'Égypte."
+        source: "SOURCES.md 4.2, « Egyptian Prime Minister Begin's Arrives for the Mideast Treaty Signing, 26-27 March 1979 » (titre fautif : Begin est Premier ministre d'Israël), Central Intelligence Agency, domaine public (Wikimedia Commons, copie reçue par la Dropbox)"
+        note: "vraie image à la place de la fiche de portraits-2 (0 à 12)"
         voix: >-
           Son chef, Menahem Begin, sera Premier ministre d'Israël en 1977, / et prix Nobel de la paix l'année
           **suivante**.

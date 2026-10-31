@@ -215,9 +215,12 @@ Source : attentat du 22 juillet 1946 : 91 morts ; photo SOURCES.md 2.2, matpc 12
 (21 mots, 1.6 par seconde)
 
 
-**14.4** · film **00:31:32:16 → 00:31:44:16** (12.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:00:00 → 00:00:12:00  
+**14.4** · film **00:31:32:16 → 00:31:44:16** (12.0 s) · **[ARCH]** `output/plans-reels/begin-1979-arrivee-washington.mp4` · source 00:00:00:00 → 00:00:12:00  
+Source : SOURCES.md 4.2, « Egyptian Prime Minister Begin's Arrives for the Mideast Treaty Signing, 26-27 March 1979 » (titre fautif : Begin est Premier ministre d'Israël), Central Intelligence Agency, domaine public (Wikimedia Commons, copie reçue par la Dropbox)  
+À l'écran : carton : 26 mars 1979 · Washington · Menahem Begin, Premier ministre d'Israël, vient signer la paix avec l'Égypte.  
 > VOIX : Son chef, Menahem Begin, sera Premier ministre d'Israël en 1977, / et prix Nobel de la paix l'année **suivante**.  
-(18 mots, 1.5 par seconde)
+(18 mots, 1.5 par seconde)  
+Note : vraie image à la place de la fiche de portraits-2 (0 à 12)
 
 
 **14.5** · film **00:31:44:16 → 00:31:58:16** (14.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:12:00 → 00:00:26:00  

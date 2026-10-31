@@ -111,6 +111,12 @@
     ["arch-knesset-unrwa-interdite", "Aujourd’hui", "Jérusalem, la Knesset", "Le 28 octobre 2024, elle interdit à l’UNRWA d’agir sur son sol."],
     ["arch-knesset-loi-etat-nation", "Aujourd’hui", "Jérusalem, la Knesset", "Le 19 juillet 2018, elle adopte la loi État-nation."],
     ["arch-gaza-2009-frappe-fumee-noire", "Janvier 2009", "Gaza", "« Plomb durci » : 1 387 Palestiniens tués selon B’Tselem, 13 Israéliens."],
+    ["arch-rabin-1995-obseques-cercueil", "6 novembre 1995", "Jérusalem, mont Herzl", "Les obsèques d’Yitzhak Rabin."],
+    ["arch-begin-1979-arrivee-washington", "26 mars 1979", "Washington", "Menahem Begin, Premier ministre d’Israël, vient signer la paix avec l’Égypte."],
+    ["arch-cheikh-jarrah-2023-manifestation", "Septembre 2023", "Cheikh Jarrah, Jérusalem-Est", "Une manifestation dans le quartier, encadrée par la police."],
+    ["arch-abraham-2020-signature", "15 septembre 2020", "Washington, Maison-Blanche", "La signature des accords d’Abraham."],
+    ["arch-mur-separation-jerusalem", "Aujourd’hui", "Jérusalem", "Le mur, construit à partir de 2002."],
+    ["arch-village-palestinien-collines", "Aujourd’hui", "Cisjordanie", "Un village palestinien dans les collines."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

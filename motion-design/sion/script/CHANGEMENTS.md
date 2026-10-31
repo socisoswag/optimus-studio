@@ -661,3 +661,17 @@ vivre ailleurs. » Avant et après sa phrase, sa voix reste sous la tienne.
 
 Vérifié et écarté : les deux dossiers de ChatGPT (liens archive.org inexistants, fiches NARA d'autres films), le
 reportage VOA sur les obsèques de Shireen Abu Akleh (mêle des images d'agence et de la télévision israélienne).
+
+## 31 octobre 2026, la nuit (six vraies images de plus)
+
+| Plan | Maintenant | Avant |
+|---|---|---|
+| 14.4 | `14.04-ARCH-begin-1979-arrivee-washington.mp4`, carton 102 : Begin, Premier ministre, arrive à Washington pour signer la paix avec l'Égypte (26 mars 1979, CIA) | fiche de portraits-2 |
+| 19.6 | `19.06-REEL-village-palestinien-collines-aerien.mp4`, carton 106 : un village palestinien dans les collines (respiration sans voix après les quatre cartes) | respiration de frontieres |
+| 23.8 | `23.08-REEL-mur-separation-jerusalem-drone.mp4`, carton 105 : le mur à Jérusalem ; le tracé reste montré juste après (23.10, la cicatrice) | carte d'oslo-mur |
+| 23.21 | `23.21-ARCH-cheikh-jarrah-2023-manifestation-police.mp4`, carton 103 : Cheikh Jarrah, septembre 2023 (CC BY-SA 4.0) ; ta voix parle de mai 2021 | fiche de documents-6 |
+| 25.17 | `25.17-ARCH-abraham-2020-signature-maison-blanche.mp4`, carton 104 : la signature des accords d'Abraham, 15 septembre 2020 | fiche de documents-6 |
+| 36.3 | `36.03-ARCH-rabin-1995-obseques-cercueil.mp4`, carton 101 : les obsèques de Rabin, 6 novembre 1995 (NARA) | fiche de portraits-3 |
+
+Mêmes numéros, même voix. Sources : SOURCES.md, générique et description à jour (Cheikh Jarrah : nom exact de
+l'auteur à recopier depuis la fiche Commons avant la diffusion).

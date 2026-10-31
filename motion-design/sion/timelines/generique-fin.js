@@ -110,7 +110,8 @@
         ['Balfour, 1925', 'Archives de la Planète, musée Albert-Kahn, Camille Sauvageot · CC BY-SA 4.0'],
         ['Camp David, 1978 et 2000 · Washington, 1993 et 2025', 'Maison Blanche · bibliothèque présidentielle Clinton'],
         ['Gaza, 2009', 'Al Jazeera · CC BY 3.0'], ['Gaza, 2018', 'Voice of America'], ['Tel-Aviv, 2023 · Al-Mughayyir, 2024', 'Wikimedia Commons · CC0'],
-        ['Masafer Yatta, 2023', 'Dania Eid · CC BY-SA 4.0']],
+        ['Masafer Yatta, 2023', 'Dania Eid · CC BY-SA 4.0'], ['Cheikh Jarrah, 2023', 'Wikimedia Commons · CC BY-SA 4.0'],
+        ['Begin, 1979 · Rabin, 1995 · accords d’Abraham, 2020', 'CIA · NARA · Maison Blanche']],
     },
     {
       h: 'Images animées et reconstitutions',

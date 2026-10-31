@@ -44,8 +44,11 @@ Film 00:38:26:00 → 00:44:22:19 · durée 5 min 56.8 s
 (15 mots, 1.4 par seconde)
 
 
-**19.6** · film **00:39:12:15 → 00:39:21:03** (8.5 s) · **[MD]** `output/frontieres.mp4` · source 00:00:42:00 → 00:00:50:12  
-> VOIX : silence
+**19.6** · film **00:39:12:15 → 00:39:21:03** (8.5 s) · **[RÉEL]** `output/plans-reels/village-palestinien-collines-aerien.mp4` · source 00:00:00:00 → 00:00:08:12  
+À l'écran : carton : Aujourd'hui · Cisjordanie · Un village palestinien dans les collines.  
+> VOIX : silence  
+Son : village au loin, vent doux, un appel lointain  
+Note : vrai plan à la place de la respiration sans voix de frontieres (42 à 50,5) ; SOURCES.md 4.1 bis, Envato
 
 
 **19.7** · film **00:39:21:03 → 00:39:25:13** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:41:15 → 00:00:46:00  
@@ -538,10 +541,12 @@ Source : SOURCES.md 4.2, Wikimedia Commons, « Signing of the Israeli-Palestinia
 > VOIX : silence
 
 
-**23.8** · film **00:52:30:19 → 00:52:43:19** (13.0 s) · **[MD]** `output/oslo-mur.mp4` · source 00:00:27:00 → 00:00:40:00  
-À l'écran : carton : output/cartons/cisjordanie-2002  
+**23.8** · film **00:52:30:19 → 00:52:43:19** (13.0 s) · **[RÉEL]** `output/plans-reels/mur-separation-jerusalem-drone.mp4` · source 00:00:00:00 → 00:00:13:00  
+À l'écran : carton : Aujourd'hui · Jérusalem · Le mur, construit à partir de 2002.  
 > VOIX : Depuis 2002, le mur, / en grande partie à l'intérieur de la Cisjordanie. / En 2004, la Cour internationale de justice le juge contraire au droit **international**.  
-(25 mots, 1.9 par seconde)
+(25 mots, 1.9 par seconde)  
+Son : vent sec, ville au loin  
+Note : vrai plan à la place de la carte d'oslo-mur (27 à 40) : le tracé du mur est montré juste après (23.10, la cicatrice) ; SOURCES.md 4.1 bis, Envato 6M4DYEG
 
 
 **23.9** · film **00:52:43:19 → 00:52:52:06** (8.5 s) · **[RÉEL]** `output/plans-reels/cloture-separation-collines.mp4` · source 00:00:00:00 → 00:00:08:12  
@@ -624,11 +629,12 @@ Source : B'Tselem, Parched, publié le 2 mai 2023, p. 6 et 7 : en 2020, 82,4 lit
 Note : 247 litres : moyenne de tous les Israéliens, pas des seuls colons ; données de 2020, publiées par B'Tselem en 2023 (ne pas dire « en 2023 »)
 
 
-**23.21** · film **00:55:22:22 → 00:55:34:22** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:55:00 → 00:01:07:00  
+**23.21** · film **00:55:22:22 → 00:55:34:22** (12.0 s) · **[ARCH]** `output/plans-reels/cheikh-jarrah-2023-manifestation-police.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : Cheikh Jarrah, avril-mai 2021  
-À l'écran : fiche : Jérusalem-Est · mai 2021 · Cheikh Jarrah  
+À l'écran : carton : Septembre 2023 · Cheikh Jarrah, Jérusalem-Est · Une manifestation dans le quartier, encadrée par la police.  
 > VOIX : En mai 2021, à Cheikh Jarrah, à Jérusalem-Est, des familles palestiniennes doivent laisser leurs maisons à des colons. / La colère embrase Jérusalem, / puis **Gaza**.  
-(24 mots, 2.0 par seconde)
+(24 mots, 2.0 par seconde)  
+Note : vraie image à la place de la fiche de documents-6 (55 à 67) ; l'image est de 2023, la voix parle de mai 2021 ; CC BY-SA 4.0 (SOURCES.md 4.2)
 
 
 **23.22** · film **00:55:34:22 → 00:55:44:14** (9.7 s) · **[RÉEL]** `output/plans-reels/cisjordanie-monastere-mar-saba.mp4` · source 00:00:00:00 → 00:00:09:17  

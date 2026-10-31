@@ -369,10 +369,13 @@ Film 01:29:53:14 → 01:30:48:09 · durée 0 min 54.8 s
 (3 mots, 0.7 par seconde)
 
 
-**36.3** · film **01:30:02:09 → 01:30:15:09** (13.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:04:14:00 → 00:04:27:00  
+**36.3** · film **01:30:02:09 → 01:30:15:09** (13.0 s) · **[ARCH]** `output/plans-reels/rabin-1995-obseques-cercueil.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : assassinat d'Yitzhak Rabin par Yigal Amir, Tel-Aviv, 4 novembre 1995  
+À l'écran : carton : 6 novembre 1995 · Jérusalem, mont Herzl · Les obsèques d'Yitzhak Rabin.  
 > VOIX : Yitzhak Rabin est assassiné par Yigal Amir, un étudiant juif religieux, / opposé aux accords d'Oslo. // Pour beaucoup, la paix meurt avec **lui**.  
-(22 mots, 1.7 par seconde)
+(22 mots, 1.7 par seconde)  
+Son : foule immense, recueillie ; pas de musique  
+Note : vraie image à la place de la fiche de portraits-3 (254 à 267) ; la foule, puis le cercueil sous les saluts militaires
 
 
 **36.4** · film **01:30:15:09 → 01:30:28:09** (13.0 s) · **[ARCH]** `output/plans-reels/tel-aviv-2023-manifestation-reforme.mp4` · source 00:00:00:00 → 00:00:13:00  

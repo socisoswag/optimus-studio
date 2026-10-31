@@ -191,11 +191,12 @@ Source : SOURCES.md 4.2, Wikimedia Commons, « Deadly Protests in Gaza as US Ope
 (24 mots, 1.8 par seconde)
 
 
-**25.17** · film **01:00:23:19 → 01:00:36:19** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:07:00 → 00:01:20:00  
-Source : accords d'Abraham, 15 septembre 2020  
-À l'écran : fiche : Washington · 15 septembre 2020 · Les accords d'Abraham  
+**25.17** · film **01:00:23:19 → 01:00:36:19** (13.0 s) · **[ARCH]** `output/plans-reels/abraham-2020-signature-maison-blanche.mp4` · source 00:00:00:00 → 00:00:13:00  
+Source : accords d'Abraham, 15 septembre 2020 ; vidéo de la Maison-Blanche, domaine public (Wikimedia Commons, copie reçue par la Dropbox) ; SOURCES.md 4.2  
+À l'écran : carton : 15 septembre 2020 · Washington, Maison-Blanche · La signature des accords d'Abraham.  
 > VOIX : En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.  
-(23 mots, 1.8 par seconde)
+(23 mots, 1.8 par seconde)  
+Note : vraie image à la place de la fiche de documents-6 (67 à 80)
 
 
 **25.18** · film **01:00:36:19 → 01:00:49:19** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:01:45:00 → 00:01:58:00  

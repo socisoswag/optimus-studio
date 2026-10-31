@@ -444,10 +444,15 @@ chapitres:
         ecran: "fiche de la chronologie : 4 novembre 1995 · carton : output/cartons/tel-aviv-1995"
         voix: >-
           4 novembre **1995**.
-      - type: MD
-        fichier: output/portraits-3.mp4
-        entree: 254
-        sortie: 267
+      - type: ARCH
+        fichier: output/plans-reels/rabin-1995-obseques-cercueil.mp4
+        carton: output/cartons/101-arch-rabin-1995-obseques-cercueil.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : 6 novembre 1995 · Jérusalem, mont Herzl · Les obsèques d'Yitzhak Rabin."
+        source: "SOURCES.md 4.2, « Video Recording of Prime Minister of Israel Yitzhak Rabin's Funeral », NARA 6037161, gouvernement américain, domaine public (Wikimedia Commons, copie reçue par la Dropbox)"
+        note: "vraie image à la place de la fiche de portraits-3 (254 à 267) ; la foule, puis le cercueil sous les saluts militaires"
+        son: "foule immense, recueillie ; pas de musique"
         source: "assassinat d'Yitzhak Rabin par Yigal Amir, Tel-Aviv, 4 novembre 1995"
         voix: >-
           Yitzhak Rabin est assassiné par Yigal Amir, un étudiant juif religieux, / opposé aux accords d'Oslo. // Pour

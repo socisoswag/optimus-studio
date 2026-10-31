@@ -229,12 +229,14 @@ chapitres:
         source: "SOURCES.md 4.2, Wikimedia Commons, « Deadly Protests in Gaza as US Opens Jerusalem Embassy », Voice of America, domaine public (logo hors cadre) ; commission d'enquête de l'ONU sur les manifestations de 2018 à Gaza, février 2019 : 189 Palestiniens tués du 30 mars au 31 décembre 2018"
         voix: >-
           En 2018, les Gazaouis marchent chaque vendredi vers la clôture : / la « grande marche du retour ». / Cette année-là, 189 Palestiniens sont tués, selon l'**ONU**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 67
-        sortie: 80
-        ecran: "fiche : Washington · 15 septembre 2020 · Les accords d'Abraham"
-        source: "accords d'Abraham, 15 septembre 2020"
+      - type: ARCH
+        fichier: output/plans-reels/abraham-2020-signature-maison-blanche.mp4
+        carton: output/cartons/104-arch-abraham-2020-signature.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : 15 septembre 2020 · Washington, Maison-Blanche · La signature des accords d'Abraham."
+        source: "accords d'Abraham, 15 septembre 2020 ; vidéo de la Maison-Blanche, domaine public (Wikimedia Commons, copie reçue par la Dropbox) ; SOURCES.md 4.2"
+        note: "vraie image à la place de la fiche de documents-6 (67 à 80)"
         voix: >-
           En 2020, les Émirats et Bahreïn, puis le Maroc et le Soudan, reconnaissent Israël. / Sans attendre d'État palestinien. // La cause palestinienne semble **oubliée**.
       - type: MD
