@@ -675,3 +675,26 @@ reportage VOA sur les obsèques de Shireen Abu Akleh (mêle des images d'agence 
 
 Mêmes numéros, même voix. Sources : SOURCES.md, générique et description à jour (Cheikh Jarrah : nom exact de
 l'auteur à recopier depuis la fiche Commons avant la diffusion).
+
+## 1er novembre 2026 (treize vraies images de plus : lots 2 à 4)
+
+Chaque fiche remplacée garde son numéro ; ce qu'elle disait passe dans le carton, ta voix ne change pas. Certains
+plans sont allongés pour que la voix tienne dessus (durée indiquée).
+
+| Plan | Maintenant | Avant |
+|---|---|---|
+| 8.11 | `08.11-ARCH-1934-villages-de-palestine.mp4`, carton 107 : la vie des villages vers 1934 (« Paths in Palestine »), 18 s | fiche de documents-7 |
+| 15.8 | `15.08-REEL-tantura-plage-de-dor-aerien.mp4`, carton 111 : la côte de Dor, où vivait Tantura, 19,5 s | fiche de documents-7 |
+| 16.6 | `16.06-REEL-nazareth-vue-du-ciel.mp4`, carton 112 : Nazareth ; le gouvernement militaire (1948 à 1966) passe dans le carton | fiche de documents-4 |
+| 18.5 | `18.05-REEL-jaffa-vieille-ville-aerien.mp4`, carton 110 : Jaffa, où paraît Filastin en 1911 ; la une reste montrée en 6.16 | fiche de documents |
+| 21.4 | `21.04-REEL-munich-parc-olympique-aerien.mp4`, carton 114 : le parc olympique de Munich, 5 septembre 1972 | fiche de paroles |
+| 21.13 | `21.13-REEL-ramallah-vue-du-ciel.mp4`, carton 108 : Ramallah, où Marwan Barghouti est arrêté en 2002, 16 s | fiche de documents-6 |
+| 21.14 | `21.14-REEL-alger-vue-du-ciel.mp4`, carton 115 : Alger, où l'OLP proclame l'État de Palestine le 15 novembre 1988 | fiche de paroles |
+| 28.5 | `28.05-REEL-umm-al-fahm-vue-du-ciel.mp4`, carton 113 : Umm al-Fahm, octobre 2000 | fiche de paroles |
+| 31.10 | `31.10-REEL-paris-assemblee-nationale.mp4`, carton 116 : l'Assemblée nationale (timelapse ralenti) | fiche de documents-6 |
+| 33.9 | `33.09-REEL-washington-maison-blanche.mp4`, carton 117 : la Maison-Blanche, l'accord de 2016, 15 s | fiche de documents-6 |
+| 33.13 | `33.13-REEL-washington-capitole.mp4`, carton 118 : le Capitole, 24,8 s | fiche de documents-6 |
+| 33.14 | `33.14-REEL-geneve-palais-des-nations.mp4`, carton 119 : le Palais des Nations, la liste de l'ONU, 15,5 s | fiche de documents-6 |
+| 38.6 | `38.06-REEL-envato-C05-bethleem-vue-large.mp4`, carton 109 : Bethléem, ville chrétienne et musulmane, 15 s | fiche de documents-6 |
+
+Sources : SOURCES.md 4.1 bis et 4.2 (le générique et la description seront repris à la fin).

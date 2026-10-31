@@ -209,11 +209,14 @@ chapitres:
           / Une cour d'appel y voit une diffamation raciale ; / en 2006, la Cour de cassation annule cette
           **décision**.
         note: "procédure civile : ne pas dire « condamné » ni « relaxé »"
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 131
-        sortie: 147
-        ecran: "fiche : la France · de 1957 à 2025 · Le rôle de la France"
+      - type: RÉEL
+        fichier: output/plans-reels/paris-assemblee-nationale.mp4
+        carton: output/cartons/116-arch-paris-reconnaissance-2025.mov
+        entree: 0
+        sortie: 16
+        ecran: "carton : Aujourd'hui · Paris, l'Assemblée nationale · Le 22 septembre 2025, la France reconnaît l'État de Palestine."
+        note: "vrai plan à la place de la fiche de documents-6 (131 à 147) ; timelapse ralenti par images interpolées ; SOURCES.md 4.1 bis, Envato BWVHZEC"
+        son: "ville au loin, vent doux ; plan fixe"
         source: "accord nucléaire franco-israélien, 1957 ; CEDH, Baldassi et autres c. France, 11 juin 2020 ; reconnaissance de l'État de Palestine, 22 septembre 2025"
         voix: >-
           Et la France ? / En 1957, elle aide Israël à bâtir la centrale de Dimona. / En 2020, la Cour européenne la condamne pour avoir puni des appels au boycott. // En 2025, elle reconnaît la **Palestine**.

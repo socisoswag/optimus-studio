@@ -142,15 +142,17 @@ chapitres:
         source: "CIJ, avis consultatif du 19 juillet 2024 ; Assemblée générale de l'ONU, résolution ES-10/24, 18 septembre 2024"
         voix: >-
           Le 19 juillet 2024, la Cour internationale de justice le dit : / l'occupation est **illégale**. / Israël doit y mettre fin et évacuer les colons. // L'ONU lui donne douze mois.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 162
-        sortie: 176
-        ecran: "fiche : Washington · 14 septembre 2016 · Le soutien américain"
+      - type: RÉEL
+        fichier: output/plans-reels/washington-maison-blanche.mp4
+        carton: output/cartons/117-arch-maison-blanche-aide-2016.mov
+        entree: 0
+        sortie: 15
+        ecran: "carton : Aujourd'hui · Washington, la Maison-Blanche · En 2016, 38 milliards de dollars d'aide militaire promis à Israël sur dix ans."
+        note: "vrai plan à la place de la fiche de documents-6 (162 à 176), allongé à 15 s pour la voix ; plan fixe ralenti par images interpolées ; SOURCES.md 4.1 bis, Envato YFQ6G8Y ; 52 = 51 projets et 1 amendement, périmètre large (Liban et Golan compris) : ne jamais dire « 52 résolutions »"
+        son: "ville au loin, vent doux ; plan fixe"
         source: "protocole d'accord du 14 septembre 2016 (38 milliards de dollars, 2019-2028) ; liste officielle des vetos du Conseil de sécurité, bibliothèque Dag Hammarskjöld : 52 vetos américains sur des textes concernant Israël, du 10 septembre 1972 au 18 septembre 2025 (51 projets, 1 amendement)"
         voix: >-
           Pourquoi rien ne change ? / Les États-Unis versent à Israël 3,8 milliards de dollars d'aide militaire par an, / et depuis 1972, ils ont mis leur veto 52 fois à des textes de l'ONU sur **Israël**.
-        note: "52 = 51 projets et 1 amendement, périmètre large (Liban et Golan compris) : ne jamais dire « 52 résolutions »"
       - type: ARCH
         fichier: output/archives-filmees/1973-pont-aerien-americain.mp4
         carton: output/cartons/52-arch-1973-pont-aerien-americain.mov
@@ -179,20 +181,25 @@ chapitres:
           Israël répond que ces textes engageaient aussi les États arabes, / qui ont longtemps refusé de le reconnaître.
           // En 2016, le Conseil de sécurité qualifie encore les colonies de « violation flagrante » du droit
           **international**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 373
-        sortie: 391
-        ecran: "fiche : États-Unis · aujourd'hui · Les soutiens d'Israël"
+      - type: RÉEL
+        fichier: output/plans-reels/washington-capitole.mp4
+        carton: output/cartons/118-arch-capitole-aide-militaire.mov
+        entree: 0
+        sortie: 24.8
+        ecran: "carton : Aujourd'hui · Washington, le Capitole · Le Congrès vote chaque année l'aide militaire à Israël."
+        note: "vrai plan à la place de la fiche de documents-6 (373 à 391), allongé à 24,8 s pour la voix ; SOURCES.md 4.1 bis, Envato X6F2RPK ; jamais « lobby juif » : beaucoup de Juifs américains s'opposent à l'AIPAC (chapitre 29)"
+        son: "ville au loin, vent doux ; plan fixe"
         source: "United Democracy Project (comité de l'AIPAC), cycle 2023-2024 : 61 373 653 dollars de dépenses (FEC) ; primaire Bowman-Latimer : 14 593 635 dollars (OpenSecrets) ; Christians United for Israel, plus de 10 millions de membres revendiqués (22 décembre 2020)"
         voix: >-
           En 2023 et 2024, le comité politique de l'AIPAC dépense plus de soixante millions de dollars, / dont près de quinze dans la seule primaire de Jamaal Bowman, un élu critique d'Israël. / Les évangéliques sionistes revendiquent dix millions de membres. / Et l'aide militaire profite d'abord aux industriels **américains**. // Ces groupes ne parlent pas au nom des Juifs.
-        note: "jamais « lobby juif » : beaucoup de Juifs américains s'opposent à l'AIPAC (chapitre 29)"
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 391
-        sortie: 403
-        ecran: "fiche : ONU · 12 février 2020 · Les entreprises des colonies"
+      - type: RÉEL
+        fichier: output/plans-reels/geneve-palais-des-nations.mp4
+        carton: output/cartons/119-arch-geneve-entreprises-colonies.mov
+        entree: 0
+        sortie: 15.5
+        ecran: "carton : Aujourd'hui · Genève, le Palais des Nations · En 2020, l'ONU publie la liste des entreprises liées aux colonies."
+        note: "vrai plan à la place de la fiche de documents-6 (391 à 403), allongé à 15,5 s pour la voix ; SOURCES.md 4.1 bis, Envato (« Establishing shot of Geneva, Switzerland »)"
+        son: "ville au loin, vent doux ; plan fixe"
         source: "HCDH, base de données, A/HRC/43/71, 12 février 2020 (112 entreprises) ; mise à jour du 30 juin 2023 (97 entreprises, dont Alstom et Egis comme sociétés mères)"
         voix: >-
           Et l'argent ? / En 2020, l'ONU publie la liste des entreprises qui travaillent dans les colonies : 112 sociétés, dont Airbnb ou Booking. / En 2023, 97 y restent, dont deux groupes français, Alstom et **Egis**.

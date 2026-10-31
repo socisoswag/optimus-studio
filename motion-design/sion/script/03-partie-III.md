@@ -256,7 +256,7 @@ Note : gardée (choix de l'auteur, 20 octobre). Seule comparaison du film avec l
 
 ## Chapitre 15 · Le massacre de Deir Yassin
 
-Film 00:32:44:01 → 00:34:14:16 · durée 1 min 30.6 s
+Film 00:32:44:01 → 00:34:19:03 · durée 1 min 35.1 s
 
 *Intention : La séquence existe ; la voix l'accompagne sans la doubler. Puis la condamnation par la direction juive, et le massacre du convoi de Hadassah quatre jours plus tard : les deux faits sont liés dans l'histoire, ils le sont dans le film.*
 
@@ -299,65 +299,69 @@ Source : condamnation par l'Agence juive et la Haganah ; message de Ben Gourion 
 (39 mots, 1.9 par seconde)
 
 
-**15.8** · film **00:33:59:16 → 00:34:14:16** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:01:40:00 → 00:01:55:00  
+**15.8** · film **00:33:59:16 → 00:34:19:03** (19.5 s) · **[RÉEL]** `output/plans-reels/tantura-plage-de-dor-aerien.mp4` · source 00:00:00:00 → 00:00:19:13  
 Source : Tantura, 22-23 mai 1948 (Teddy Katz, 1998 ; Alon Schwarz, « Tantura », 2022) ; al-Dawayima, 29 octobre 1948 (Benny Morris, 2004)  
-À l'écran : fiche : Tantura · mai 1948 · Tantura et al-Dawayima  
+À l'écran : carton : Aujourd'hui · La côte de Dor · Jusqu'en mai 1948, Tantura et ses pêcheurs vivaient sur cette côte.  
 > VOIX : Deir Yassin n'est pas un cas isolé. / À Tantura, en mai 1948, des dizaines d'hommes sont tués après la prise du village. / À al-Dawayima, en octobre, des dizaines, peut-être des centaines. // En 2022, d'anciens soldats israéliens racontent Tantura devant la **caméra**.  
-(41 mots, 2.7 par seconde)
+(41 mots, 2.1 par seconde)  
+Son : mer, vagues sur les rochers ; vue du ciel  
+Note : vrai plan à la place de la fiche de documents-7 (100 à 115), allongé à 19,5 s pour la voix ; SOURCES.md 4.1 bis, Envato QVFRYLV
 
 
 ## Chapitre 16 · David Ben Gourion : l'État avant tout
 
-Film 00:34:14:16 → 00:35:55:01 · durée 1 min 40.4 s
+Film 00:34:19:03 → 00:35:59:13 · durée 1 min 40.4 s
 
 *Intention : Le portrait le plus délicat. D'abord ce qu'il est pour les Israéliens, sincèrement. Puis ses propres mots (1938), ce que raconte Rabin de Lydda, et le gouvernement militaire imposé aux Arabes restés. Le titre (« l'État avant tout ») annonce le sujet ; ce sont les faits qui donnent la conclusion.*
 
 
-**16.1** · film **00:34:14:16 → 00:34:19:06** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-16.mp4` · source 00:00:00:00 → 00:00:04:15  
+**16.1** · film **00:34:19:03 → 00:34:23:18** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-16.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**16.2** · film **00:34:19:06 → 00:34:33:06** (14.0 s) · **[ARCH]** `output/archives-filmees/1945-ben-gourion-conference-londres.mp4` · source 00:00:00:00 → 00:00:14:00  
+**16.2** · film **00:34:23:18 → 00:34:37:18** (14.0 s) · **[ARCH]** `output/archives-filmees/1945-ben-gourion-conference-londres.mp4` · source 00:00:00:00 → 00:00:14:00  
 Source : SOURCES.md 4.2, March of Time, rushes du 13 août 1945 (musée américain de l'Holocauste, irn1003498, domaine public)  
 À l'écran : carton : Août 1945 · Londres · David Ben Gourion devant la conférence sioniste mondiale.  
 > VOIX : Pour la plupart des Israéliens, David Ben Gourion est le père de la nation. / Il a bâti un État, une armée, / et accueilli des centaines de milliers de réfugiés **juifs**.  
 (30 mots, 2.1 par seconde)
 
 
-**16.3** · film **00:34:33:06 → 00:34:48:01** (14.8 s) · **[MD]** `output/documents.mp4` · source 00:00:55:00 → 00:01:09:20  
+**16.3** · film **00:34:37:18 → 00:34:52:13** (14.8 s) · **[MD]** `output/documents.mp4` · source 00:00:55:00 → 00:01:09:20  
 Source : déclaration d'indépendance de l'État d'Israël, 14 mai 1948 (traduction de la version anglaise officielle, « all its inhabitants » ; l'hébreu lu par Ben Gourion dit « לכל אזרחיה », à tous ses citoyens) ; enregistrement de la lecture, Wikimedia Commons, « Israeli Declaration of Independence.ogg », domaine public (SOURCES.md 4.2)  
 > VOIX : Il lit la déclaration d'**indépendance** : ///  
 (6 mots, 0.4 par seconde)  
 Son : son d'origine : Ben Gourion lit la phrase de l'égalité, 14 mai 1948 (« תקיים שוויון זכויות חברתי ומדיני גמור לכל אזרחיה בלי הבדל דת, גזע ומין ») ; la fiche à l'écran en donne la traduction, pas de sous-titre
 
 
-**16.4** · film **00:34:48:01 → 00:35:00:01** (12.0 s) · **[MD]** `output/citation-ben-gourion.mp4` · source 00:00:00:00 → 00:00:12:00  
+**16.4** · film **00:34:52:13 → 00:35:04:13** (12.0 s) · **[MD]** `output/citation-ben-gourion.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : SOURCES.md 6 (réunion de l'Exécutif de l'Agence juive, 12 juin 1938, d'après Benny Morris)  
 > VOIX : Mais dix ans plus tôt, devant la direction sioniste, / il disait : / « Je suis pour le transfert forcé. / Je n'y vois rien d'**immoral**. »  
 (23 mots, 1.9 par seconde)
 
 
-**16.5** · film **00:35:00:01 → 00:35:19:01** (19.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:49:00 → 00:01:08:00  
+**16.5** · film **00:35:04:13 → 00:35:23:13** (19.0 s) · **[MD]** `output/portraits-2.mp4` · source 00:00:49:00 → 00:01:08:00  
 Source : passage censuré des mémoires d'Yitzhak Rabin, publié par The New York Times, 23 octobre 1979  
 > VOIX : Juillet 1948. / Selon les mémoires d'Yitzhak Rabin, quand on lui demande ce qu'il faut faire des habitants de Lydda, / Ben Gourion fait un geste de la main, / qui veut dire : « Chassez-les. » // Ce passage avait été censuré en **Israël**.  
 (38 mots, 2.0 par seconde)
 
 
-**16.6** · film **00:35:19:01 → 00:35:32:01** (13.0 s) · **[MD]** `output/documents-4.mp4` · source 00:00:00:00 → 00:00:13:00  
+**16.6** · film **00:35:23:13 → 00:35:36:13** (13.0 s) · **[RÉEL]** `output/plans-reels/nazareth-vue-du-ciel.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : gouvernement militaire sur les citoyens arabes d'Israël, 1948-1966 (Shira Robinson, Citizen Strangers, Stanford University Press, 2013)  
-À l'écran : fiche : Galilée, Triangle, Néguev · 1948 à 1966 · Le gouvernement militaire  
+À l'écran : carton : Aujourd'hui · Nazareth, Galilée · De 1948 à 1966, les Arabes d'Israël vivent sous gouvernement militaire.  
 > VOIX : Les Arabes restés en Israël deviennent citoyens. / Mais jusqu'en 1966, ils vivent sous gouvernement militaire : / il leur faut un permis pour quitter leur **village**.  
-(24 mots, 1.8 par seconde)
+(24 mots, 1.8 par seconde)  
+Son : ville au loin, vent doux ; vue du ciel  
+Note : vrai plan à la place de la fiche de documents-4 (0 à 13) ; SOURCES.md 4.1 bis, Envato 7TKPZYG
 
 
-**16.7** · film **00:35:32:01 → 00:35:47:01** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:00:00 → 00:00:15:00  
+**16.7** · film **00:35:36:13 → 00:35:51:13** (15.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:00:00 → 00:00:15:00  
 Source : loi sur les biens des absents, 14 mars 1950 ; loi du retour, 5 juillet 1950  
 À l'écran : fiche : Knesset · 1950 · Deux lois de 1950  
 > VOIX : En 1950, deux lois. / La loi du retour : tout Juif du monde peut devenir israélien. / La loi sur les biens des absents : les terres des réfugiés passent à l'État. // Eux ne pourront pas **revenir**.  
 (34 mots, 2.3 par seconde)
 
 
-**16.8** · film **00:35:47:01 → 00:35:55:01** (8.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:19:00 → 00:00:27:00  
+**16.8** · film **00:35:51:13 → 00:35:59:13** (8.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:19:00 → 00:00:27:00  
 À l'écran : face à face : Bâtisseur · Sans retour · David Ben Gourion  
 > VOIX : Un bâtisseur, pour les uns. / Pour les autres, / l'homme qui a fermé la porte du **retour**.  
 (16 mots, 2.0 par seconde)
@@ -365,40 +369,40 @@ Source : loi sur les biens des absents, 14 mars 1950 ; loi du retour, 5 juillet 
 
 ## Chapitre 17 · L'exode des Juifs des pays arabes
 
-Film 00:35:55:01 → 00:37:05:06 · durée 1 min 10.2 s
+Film 00:35:59:13 → 00:37:09:19 · durée 1 min 10.2 s
 
 *Intention : L'autre exil, souvent oublié en Europe. Des violences réelles, des lois de déchéance, et aussi des départs organisés par les émissaires sionistes. Puis l'argument de « l'échange de populations », et la réponse palestinienne : les deux sont dits.*
 
 
-**17.1** · film **00:35:55:01 → 00:35:59:16** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-17.mp4` · source 00:00:00:00 → 00:00:04:15  
+**17.1** · film **00:35:59:13 → 00:36:04:03** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-17.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**17.2** · film **00:35:59:16 → 00:36:16:16** (17.0 s) · **[MD]** `output/flux-humains.mp4` · source 00:00:20:18 → 00:00:37:18  
+**17.2** · film **00:36:04:03 → 00:36:21:03** (17.0 s) · **[MD]** `output/flux-humains.mp4` · source 00:00:20:18 → 00:00:37:18  
 > VOIX : Dans le même temps, environ 850 000 Juifs quittent les pays arabes, / du Maroc à l'Irak. / La plupart s'installent en **Israël**.  
 (21 mots, 1.2 par seconde)
 
 
-**17.3** · film **00:36:16:16 → 00:36:33:16** (17.0 s) · **[IA]** `output/reconstitutions/19-24-immigrants-irak-lod-1951.mp4` · source 00:00:00:00 → 00:00:17:00  
+**17.3** · film **00:36:21:03 → 00:36:38:03** (17.0 s) · **[IA]** `output/reconstitutions/19-24-immigrants-irak-lod-1951.mp4` · source 00:00:00:00 → 00:00:17:00  
 Source : Farhoud, Bagdad, 1er et 2 juin 1941 (bilans de plus d'une centaine à près de deux cents morts) ; loi irakienne de 1950 ; expulsions d'Égypte après 1956  
 À l'écran : déjà dans le plan : Mai 1951 · Aéroport de Lod · Des immigrants juifs d'Irak à leur arrivée · Photo d'archive animée par IA  
 > VOIX : Certains fuient des violences : / à Bagdad, en juin 1941, le Farhoud fait plus d'une centaine de morts juifs. // Après 1948, l'Irak ne les laisse partir qu'en renonçant à leur nationalité ; / l'Égypte en expulse des milliers après **1956**.  
 (37 mots, 2.2 par seconde)
 
 
-**17.4** · film **00:36:33:16 → 00:36:49:16** (16.0 s) · **[IA]** `output/reconstitutions/20-25-maabara-nahariya-1952.mp4` · source 00:00:00:00 → 00:00:16:00  
+**17.4** · film **00:36:38:03 → 00:36:54:03** (16.0 s) · **[IA]** `output/reconstitutions/20-25-maabara-nahariya-1952.mp4` · source 00:00:00:00 → 00:00:16:00  
 Source : opérations Tapis volant (Yémen, 1949-1950) et Ezra et Néhémie (Irak, 1951-1952) ; maabarot  
 À l'écran : déjà dans le plan : Février 1952 · Nahariya · Une maabara, camp de transit des nouveaux immigrants · Photo d'archive animée par IA  
 > VOIX : D'autres sont poussés au départ par les émissaires sionistes, / qui organisent des ponts aériens, du Yémen à l'Irak. // En Israël, beaucoup vivent des années dans des camps de **toile**.  
 (29 mots, 1.8 par seconde)
 
 
-**17.5** · film **00:36:49:16 → 00:36:56:11** (6.8 s) · **[MD]** `output/flux-humains.mp4` · source 00:00:37:18 → 00:00:44:13  
+**17.5** · film **00:36:54:03 → 00:37:00:24** (6.8 s) · **[MD]** `output/flux-humains.mp4` · source 00:00:37:18 → 00:00:44:13  
 À l'écran : déjà dans la pièce : Deux exils. Deux mémoires. Une même terre.  
 > VOIX : silence
 
 
-**17.6** · film **00:36:56:11 → 00:37:05:06** (8.8 s) · **[ARCH]** `output/archives-filmees/1950-sands-of-sorrow-enfants.mp4` · source 00:00:00:00 → 00:00:08:20  
+**17.6** · film **00:37:00:24 → 00:37:09:19** (8.8 s) · **[ARCH]** `output/archives-filmees/1950-sands-of-sorrow-enfants.mp4` · source 00:00:00:00 → 00:00:08:20  
 Source : « Sands of Sorrow », Theodore A. Morde, 1950, domaine public (SOURCES.md 4.2)  
 À l'écran : carton : 1950 · Camps de réfugiés palestiniens · Les enfants  
 > VOIX : Israël parle d'un échange de populations. / Les Palestiniens répondent : / ce n'est pas à eux d'en payer le **prix**.  
@@ -407,34 +411,34 @@ Source : « Sands of Sorrow », Theodore A. Morde, 1950, domaine public (SOURCES
 
 ## Chapitre 18 · Golda Meir : « Ils n'existaient pas »
 
-Film 00:37:05:06 → 00:38:16:10 · durée 1 min 11.2 s
+Film 00:37:09:19 → 00:38:20:23 · durée 1 min 11.2 s
 
 *Intention : Le titre est sa phrase, pas notre thèse. La citer en entier, y compris la suite (« et que nous étions venus les chasser »), qui dit pourquoi elle compte. Rappeler Filastin, 1911 (chapitre 6). Finir sur un peuple qui prend la parole : la partie IV commence.*
 
 
-**18.1** · film **00:37:05:06 → 00:37:09:21** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-18.mp4` · source 00:00:00:00 → 00:00:04:15  
+**18.1** · film **00:37:09:19 → 00:37:14:09** (4.6 s) · **[CARTON]** `output/chapitres/chapitre-18.mp4` · source 00:00:00:00 → 00:00:04:15  
 > VOIX : silence
 
 
-**18.2** · film **00:37:09:21 → 00:37:14:06** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:50:10 → 00:00:54:20  
+**18.2** · film **00:37:14:09 → 00:37:18:19** (4.4 s) · **[MD]** `output/chronologie.mp4` · source 00:00:50:10 → 00:00:54:20  
 À l'écran : fiche de la chronologie : Golda Meir  
 > VOIX : silence
 
 
-**18.3** · film **00:37:14:06 → 00:37:28:06** (14.0 s) · **[ARCH]** `output/archives-filmees/1973-golda-meir-front-du-sinai.mp4` · source 00:00:00:00 → 00:00:14:00  
+**18.3** · film **00:37:18:19 → 00:37:32:19** (14.0 s) · **[ARCH]** `output/archives-filmees/1973-golda-meir-front-du-sinai.mp4` · source 00:00:00:00 → 00:00:14:00  
 Source : SOURCES.md 4.2, Wikimedia Commons, « Golda Meir visiting Sinai front, 1973 », 15 octobre 1973, photographe de l'unité du porte-parole de l'armée israélienne, CC BY-SA 3.0  
 À l'écran : carton : 15 octobre 1973 · Front du Sinaï · Golda Meir, Première ministre, parmi les soldats.  
 > VOIX : Golda Meir, née à Kiev, élevée aux États-Unis, / signe la déclaration d'indépendance. / Elle devient Première ministre en **1969**.  
 (18 mots, 1.3 par seconde)
 
 
-**18.4** · film **00:37:28:06 → 00:37:40:06** (12.0 s) · **[MD]** `output/citation-meir.mp4` · source 00:00:00:00 → 00:00:12:00  
+**18.4** · film **00:37:32:19 → 00:37:44:19** (12.0 s) · **[MD]** `output/citation-meir.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : SOURCES.md 6 (entretien avec Frank Giles, The Sunday Times, 15 juin 1969, p. 12)  
 > VOIX : Cette année-là, elle déclare au Sunday Times : / « Il n'y avait pas de Palestiniens. / Ils n'existaient **pas**. »  
 (16 mots, 1.3 par seconde)
 
 
-**18.5** · film **00:37:40:06 → 00:37:52:06** (12.0 s) · **[RÉEL]** `output/plans-reels/jaffa-vieille-ville-aerien.mp4` · source 00:00:00:00 → 00:00:12:00  
+**18.5** · film **00:37:44:19 → 00:37:56:19** (12.0 s) · **[RÉEL]** `output/plans-reels/jaffa-vieille-ville-aerien.mp4` · source 00:00:00:00 → 00:00:12:00  
 À l'écran : carton : Aujourd'hui · Jaffa · En 1911, le journal Filastin y paraît.  
 > VOIX : Pourtant, dès 1911, à Jaffa, un journal s'appelait Filastin, / et s'adressait à ses lecteurs comme à des **Palestiniens**.  
 (18 mots, 1.5 par seconde)  
@@ -442,14 +446,14 @@ Son : ville au loin, mer, mouettes ; vue du ciel
 Note : vrai plan à la place de la fiche de documents (11 à 23) ; la une de Filastin reste montrée en 6.16 ; SOURCES.md 4.1 bis, Envato YQ5W8UK
 
 
-**18.6** · film **00:37:52:06 → 00:38:10:10** (18.2 s) · **[ARCH]** `output/archives-filmees/1933-jerusalem-bethleem-rues.mp4` · source 00:00:00:00 → 00:00:18:04  
+**18.6** · film **00:37:56:19 → 00:38:14:23** (18.2 s) · **[ARCH]** `output/archives-filmees/1933-jerusalem-bethleem-rues.mp4` · source 00:00:00:00 → 00:00:18:04  
 Source : film amateur de la famille Levy, 1933, Prelinger Archives (archive.org, Levycoll1933), dédicace au domaine public ; même entretien : « It was not as though there was a Palestinian people [...] and we came and threw them out and took their country away from them. »  
 À l'écran : carton : 1933 · Jérusalem et Bethléem · Film amateur de la famille Levy  
 > VOIX : Elle ajoute : ce n'est pas comme s'il y avait eu un peuple palestinien, / « et que nous étions venus les chasser, / et leur prendre leur pays ». // S'il n'y a pas de peuple, / il n'y a rien à **rendre**.  
 (37 mots, 2.0 par seconde)
 
 
-**18.7** · film **00:38:10:10 → 00:38:16:10** (6.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:27:00 → 00:00:33:00  
+**18.7** · film **00:38:14:23 → 00:38:20:23** (6.0 s) · **[MD]** `output/paroles.mp4` · source 00:00:27:00 → 00:00:33:00  
 À l'écran : mots : Ce peuple va prendre la parole  
 > VOIX : Ce peuple, pourtant, va prendre la **parole**. ///  
 (7 mots, 1.2 par seconde)  
@@ -457,4 +461,4 @@ Son : montée lente vers l'ouverture de la partie IV
 
 
 ---
-Durée de la partie : 13 min 01.8 s (film 00:25:14:16 → 00:38:16:10)
+Durée de la partie : 13 min 06.3 s (film 00:25:14:16 → 00:38:20:23)

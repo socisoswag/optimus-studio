@@ -121,6 +121,15 @@
     ["arch-ramallah-barghouti", "Aujourd’hui", "Ramallah", "Marwan Barghouti y est arrêté en avril 2002."],
     ["arch-bethleem-chretiens", "Aujourd’hui", "Bethléem, Cisjordanie", "Une ville palestinienne, chrétienne et musulmane."],
     ["arch-jaffa-filastin", "Aujourd’hui", "Jaffa", "En 1911, le journal Filastin y paraît."],
+    ["arch-dor-tantura", "Aujourd’hui", "La côte de Dor", "Jusqu’en mai 1948, Tantura et ses pêcheurs vivaient sur cette côte."],
+    ["arch-nazareth-gouvernement-militaire", "Aujourd’hui", "Nazareth, Galilée", "De 1948 à 1966, les Arabes d’Israël vivent sous gouvernement militaire."],
+    ["arch-umm-al-fahm-octobre-2000", "Aujourd’hui", "Umm al-Fahm", "En octobre 2000, la police y tire sur des manifestants arabes."],
+    ["arch-munich-1972", "Aujourd’hui", "Munich, le parc olympique", "Le 5 septembre 1972, des membres de l’équipe olympique israélienne y sont pris en otage."],
+    ["arch-alger-1988", "Aujourd’hui", "Alger", "Le 15 novembre 1988, l’OLP y proclame l’État de Palestine."],
+    ["arch-paris-reconnaissance-2025", "Aujourd’hui", "Paris, l’Assemblée nationale", "Le 22 septembre 2025, la France reconnaît l’État de Palestine."],
+    ["arch-maison-blanche-aide-2016", "Aujourd’hui", "Washington, la Maison-Blanche", "En 2016, 38 milliards de dollars d’aide militaire promis à Israël sur dix ans."],
+    ["arch-capitole-aide-militaire", "Aujourd’hui", "Washington, le Capitole", "Le Congrès vote chaque année l’aide militaire à Israël."],
+    ["arch-geneve-entreprises-colonies", "Aujourd’hui", "Genève, le Palais des Nations", "En 2020, l’ONU publie la liste des entreprises liées aux colonies."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

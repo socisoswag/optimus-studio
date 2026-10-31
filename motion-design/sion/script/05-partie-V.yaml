@@ -672,11 +672,14 @@ chapitres:
           En 2013, le ministère de la Santé ordonne d'arrêter d'injecter un contraceptif à des femmes éthiopiennes / qui
           n'en comprenaient pas les effets. // En 2015, des milliers d'Israéliens éthiopiens manifestent contre les
           violences **policières**.
-      - type: MD
-        fichier: output/paroles.mp4
-        entree: 120
-        sortie: 133
-        ecran: "fiche : Galilée · octobre 2000 · Un citoyen sur cinq"
+      - type: RÉEL
+        fichier: output/plans-reels/umm-al-fahm-vue-du-ciel.mp4
+        carton: output/cartons/113-arch-umm-al-fahm-octobre-2000.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : Aujourd'hui · Umm al-Fahm · En octobre 2000, la police y tire sur des manifestants arabes."
+        note: "vrai plan à la place de la fiche de paroles (120 à 133) ; SOURCES.md 4.1 bis, Envato 8VXNNRR"
+        son: "ville au loin, vent doux ; vue du ciel"
         source: "octobre 2000 : 13 manifestants arabes tués par la police (commission Or, 1er septembre 2003 : 12 citoyens d'Israël et un habitant de Gaza)"
         voix: >-
           Les Palestiniens d'Israël sont un citoyen sur cinq. / En octobre 2000, la police tue treize manifestants **arabes**.

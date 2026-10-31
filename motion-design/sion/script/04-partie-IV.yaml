@@ -433,11 +433,14 @@ chapitres:
         voix: >-
           Yasser Arafat fonde le Fatah à la fin des années cinquante, / et prend la tête de l'OLP en 1969. / Pour son
           peuple, il est le visage de la **résistance**.
-      - type: MD
-        fichier: output/paroles.mp4
-        entree: 33
-        sortie: 47
-        ecran: "fiche : Munich · 5 septembre 1972 · Pour Israël et l'Occident"
+      - type: RÉEL
+        fichier: output/plans-reels/munich-parc-olympique-aerien.mp4
+        carton: output/cartons/114-arch-munich-1972.mov
+        entree: 0
+        sortie: 14
+        ecran: "carton : Aujourd'hui · Munich, le parc olympique · Le 5 septembre 1972, des membres de l'équipe olympique israélienne y sont pris en otage."
+        note: "vrai plan à la place de la fiche de paroles (33 à 47) ; SOURCES.md 4.1 bis, Envato H3K8TY2"
+        son: "ville au loin, vent doux ; vue du ciel"
         source: "Munich, 5 et 6 septembre 1972 : onze membres de l'équipe olympique israélienne tués par Septembre noir"
         voix: >-
           Pour Israël et l'Occident, l'OLP est alors une organisation terroriste : / détournements d'avions, / et à
@@ -506,11 +509,14 @@ chapitres:
         source: "condamnation de Marwan Barghouti, 6 juin 2004 ; PCPSR, sondage du 7 au 11 octobre 2026, publié le 14 octobre (1 397 personnes, sept noms proposés)"
         voix: >-
           Marwan Barghouti, figure du Fatah, est en prison depuis 2002 : / cinq condamnations à perpétuité. / En octobre 2026, il reste en tête des sondages : / 34 % des sondés le choisissent, parmi sept **noms**.
-      - type: MD
-        fichier: output/paroles.mp4
-        entree: 47
-        sortie: 59
-        ecran: "fiche : Alger et Genève · 1988 · Yasser Arafat"
+      - type: RÉEL
+        fichier: output/plans-reels/alger-vue-du-ciel.mp4
+        carton: output/cartons/115-arch-alger-1988.mov
+        entree: 0
+        sortie: 12
+        ecran: "carton : Aujourd'hui · Alger · Le 15 novembre 1988, l'OLP y proclame l'État de Palestine."
+        note: "vrai plan à la place de la fiche de paroles (47 à 59) ; SOURCES.md 4.1 bis, Envato E7C3TMY"
+        son: "ville au loin, vent doux ; vue du ciel"
         source: "déclaration d'indépendance d'Alger, 15 novembre 1988 ; déclaration de Genève, 14 décembre 1988 ; mort le 11 novembre 2004"
         voix: >-
           En 1988, il accepte la résolution 242 : / un État palestinien à côté d'Israël. // Il meurt en 2004, / sans

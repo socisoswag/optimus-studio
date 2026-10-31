@@ -322,6 +322,15 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 | envato-C03-char-sur-une-plage | un char sur une route de bord de mer, ruines autour (en réserve : lieu et date à vérifier) | clip « military tank on sandy coastline » envoyé à la place de C03 |
 | envato-C04-arraba-jenine-aerien | Arraba, district de Jénine, nord de la Cisjordanie, vu du ciel (en réserve) | https://elements.envato.com/aerial-view-of-the-outskirts-of-arraba-jenin-in-th-GCCZGPV |
 | envato-C05-bethleem-vue-large | Bethléem, Cisjordanie occupée, vue large (en réserve) | https://elements.envato.com/bethlehem-palestine-west-bank-israel-general-wide--BDZD6WU |
+| tantura-plage-de-dor-aerien | la côte rocheuse de Dor, sur la côte où était le village de Tantura (plan 15.8) | https://elements.envato.com/aerial-video-over-the-coastline-of-dor-beach-israe-QVFRYLV |
+| nazareth-vue-du-ciel | Nazareth vue du ciel, Galilée (plan 16.6) | https://elements.envato.com/aerial-footage-of-nazareth-israel-7TKPZYG |
+| umm-al-fahm-vue-du-ciel | Umm al-Fahm vue du nord (plan 28.5 ; fichier reçu sous le titre « Aerial view of a city on a sunny day », 34 s comme la fiche du clip) | https://elements.envato.com/umm-al-fahm-town-view-from-the-north-aerial-8VXNNRR |
+| munich-parc-olympique-aerien | Munich, le parc olympique et son stade (plan 21.4) | https://elements.envato.com/aerial-of-munich-with-the-olympic-stadium-H3K8TY2 |
+| alger-vue-du-ciel | Alger vue de drone (plan 21.14) | https://elements.envato.com/aerial-view-by-drone-of-the-city-of-algiers-algeri-E7C3TMY |
+| paris-assemblee-nationale | Paris, l'Assemblée nationale et le pont de la Concorde, timelapse ralenti (plan 31.10) | https://elements.envato.com/4k-paris-france-timelapse-the-parlement-of-france-BWVHZEC |
+| washington-maison-blanche | Washington, la Maison-Blanche, plan fixe ralenti (plan 33.9) | https://elements.envato.com/the-white-house-in-washington-dc-usa-YFQ6G8Y |
+| washington-capitole | Washington, le Capitole, plan large de jour (plan 33.13) | https://elements.envato.com/wide-shot-of-capitol-building-in-washington-dc-X6F2RPK |
+| geneve-palais-des-nations | Genève, le Palais des Nations (plan 33.14 ; clip « Establishing shot of Geneva, Switzerland », reçu à la place du survol proposé) | Envato Elements, « Establishing shot of Geneva, Switzerland » |
 
 ### 4.2 Archives filmées (domaine public, sauf mention)
 
