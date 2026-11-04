@@ -132,6 +132,7 @@
     ["arch-geneve-entreprises-colonies", "Aujourd’hui", "Genève, le Palais des Nations", "En 2020, l’ONU publie la liste des entreprises liées aux colonies."],
     ["arch-cij-la-haye-2024", "Aujourd’hui", "La Haye, le Palais de la Paix", "Le 19 juillet 2024, la Cour internationale de justice y déclare l’occupation illégale."],
     ["arch-onu-new-york-2334", "Aujourd’hui", "New York, le siège de l’ONU", "Le 23 décembre 2016, le Conseil de sécurité y adopte la résolution 2334 sur les colonies."],
+    ["arch-netanyahou-bureau-ovale-2014", "1er octobre 2014", "Washington, Bureau ovale", "Benyamin Netanyahou, Premier ministre d’Israël, reçu par Barack Obama."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

@@ -28,11 +28,14 @@ chapitres:
         entree: 0
         sortie: 5.4
         ecran: "Israël depuis 1996 · les figures de la droite au pouvoir"
-      - type: MD
-        fichier: output/figures-aujourdhui.mp4
-        entree: 5.4
-        sortie: 10.2
-        ecran: "fiche : Benyamin Netanyahou"
+      - type: ARCH
+        fichier: output/archives-filmees/washington-2014-netanyahou-bureau-ovale.mp4
+        carton: output/cartons/122-arch-netanyahou-bureau-ovale-2014.mov
+        entree: 0
+        sortie: 5.5
+        ecran: "carton : 1er octobre 2014 · Washington, Bureau ovale · Benyamin Netanyahou, Premier ministre d'Israël, reçu par Barack Obama."
+        note: "vraie image à la place de la fiche de figures-aujourdhui (5,4 à 10,2), allongée à 5,5 s pour son carton ; vidéo de la Maison-Blanche (domaine public), recadrée sans le logo ; SOURCES.md 4.2"
+        son: "salle, murmure ; déclencheurs des photographes"
         voix: >-
           Benyamin Netanyahou. / Premier ministre pour la première fois en **1996**.
       - type: MD
