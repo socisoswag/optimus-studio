@@ -138,10 +138,13 @@ chapitres:
         sortie: 60.5
         voix: >-
           À Gaza, l'armée israélienne tue environ 275 personnes à Khan Younès, / et 111 à **Rafah**.
-      - type: MD
-        fichier: output/suez-1956.mp4
-        entree: 60.5
-        sortie: 69.5
+      - type: ARCH
+        fichier: output/archives-filmees/1956-eisenhower-onu.mp4
+        carton: output/cartons/123-arch-1956-eisenhower-onu.mov
+        entree: 0
+        sortie: 9
+        ecran: "carton : Novembre 1956 · Washington et New York · Eisenhower porte l'affaire devant l'Assemblée générale de l'ONU, qui demande un cessez-le-feu."
+        note: "vraie archive à la place de la carte de suez-1956 (60,5 à 69,5) : actualités Universal du 1er novembre 1956, domaine public ; SOURCES.md 4.2"
         voix: >-
           Sous la pression de Washington et de Moscou, / Israël doit tout **rendre**.
       - type: ARCH
@@ -168,10 +171,13 @@ chapitres:
         sortie: 6
         voix: >-
           Juin 1967. / Pour les Palestiniens : la Naksa, le **revers**.
-      - type: MD
-        fichier: output/six-jours.mp4
-        entree: 6
-        sortie: 15
+      - type: ARCH
+        fichier: output/archives-filmees/1967-etat-major-israelien.mp4
+        carton: output/cartons/124-arch-1967-etat-major-israelien.mov
+        entree: 0
+        sortie: 8.96
+        ecran: "carton : Juin 1967 · Israël · L'état-major israélien, autour de Yitzhak Rabin, à la veille de la guerre."
+        note: "vraie archive à la place de la carte de six-jours (6 à 15) : actualités Universal du 6 juin 1967, domaine public ; SOURCES.md 4.2"
         voix: >-
           Le 5 juin, Israël frappe le premier. / Pour lui, c'est une guerre **préventive**.
       - type: MD
@@ -472,10 +478,13 @@ chapitres:
         source: "SOURCES.md 4.2, Wikimedia Commons, « Golda Meir visiting Sinai front, 1973 », 15 octobre 1973, photographe de l'unité du porte-parole de l'armée israélienne, CC BY-SA 3.0"
         voix: >-
           Israël se reprend, / mais la guerre a brisé le mythe de son **invincibilité**.
-      - type: MD
-        fichier: output/octobre-1973.mp4
-        entree: 37
-        sortie: 47
+      - type: ARCH
+        fichier: output/archives-filmees/1973-pont-aerien-decollage.mp4
+        carton: output/cartons/125-arch-1973-pont-aerien-decollage.mov
+        entree: 0
+        sortie: 10
+        ecran: "carton : Octobre 1973 · États-Unis · Le pont aérien américain arme Israël ; les pays arabes répondent par l'embargo pétrolier."
+        note: "vraie archive à la place de la carte d'octobre-1973 (37 à 47) : film de l'armée de l'air américaine, archives nationales 342-ADW-264 (bobine 1 ; l'arrivée à Lod, bobine 6, est en 33.10), domaine public ; SOURCES.md 4.2"
         voix: >-
           Les pays arabes ferment le robinet du pétrole : / le monde **tremble**.
       - type: MD

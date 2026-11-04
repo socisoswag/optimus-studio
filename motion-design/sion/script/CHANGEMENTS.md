@@ -707,3 +707,15 @@ Sources : SOURCES.md 4.1 bis et 4.2 (le générique et la description seront rep
 | 33.12 | `33.12-REEL-new-york-siege-onu.mp4`, carton 121 : le siège de l'ONU à New York, résolution 2334 (23 décembre 2016) | fiche de paroles |
 
 Mêmes numéros, même durée, même voix. Écarté : le monastère Ad Deir (Pétra, Jordanie), qui n'est pas Deir Hanna.
+
+## 4 novembre 2026 (cinq archives du domaine public)
+
+| Plan | Maintenant | Avant |
+|---|---|---|
+| 14.5 | `14.05-ARCH-1983-reagan-shamir-maison-blanche.mp4`, carton 126 : Shamir, ancien chef du Lehi devenu Premier ministre, reçu par Reagan (29 novembre 1983), 13,9 s | portrait de portraits-2 |
+| 19.17 | `19.17-ARCH-1956-eisenhower-onu.mp4`, carton 123 : Eisenhower, puis l'ONU (novembre 1956) | carte de suez-1956 |
+| 19.21 | `19.21-ARCH-1967-etat-major-israelien.mp4`, carton 124 : l'état-major israélien à la veille de la guerre (juin 1967) | carte de six-jours |
+| 21.9 | `21.09-ARCH-1973-pont-aerien-decollage.mp4`, carton 125 : le pont aérien américain, et l'embargo pétrolier en réponse (octobre 1973) | carte d'octobre-1973 |
+| 24.3 | `24.03-ARCH-washington-2014-netanyahou-bureau-ovale.mp4`, carton 122 : Netanyahou dans le Bureau ovale (1er octobre 2014), 5,5 s | fiche de figures-aujourdhui |
+
+Mêmes numéros, même voix. Sources : SOURCES.md 4.2.

@@ -133,6 +133,10 @@
     ["arch-cij-la-haye-2024", "Aujourd’hui", "La Haye, le Palais de la Paix", "Le 19 juillet 2024, la Cour internationale de justice y déclare l’occupation illégale."],
     ["arch-onu-new-york-2334", "Aujourd’hui", "New York, le siège de l’ONU", "Le 23 décembre 2016, le Conseil de sécurité y adopte la résolution 2334 sur les colonies."],
     ["arch-netanyahou-bureau-ovale-2014", "1er octobre 2014", "Washington, Bureau ovale", "Benyamin Netanyahou, Premier ministre d’Israël, reçu par Barack Obama."],
+    ["arch-1956-eisenhower-onu", "Novembre 1956", "Washington et New York", "Eisenhower porte l’affaire devant l’Assemblée générale de l’ONU, qui demande un cessez-le-feu."],
+    ["arch-1967-etat-major-israelien", "Juin 1967", "Israël", "L’état-major israélien, autour de Yitzhak Rabin, à la veille de la guerre."],
+    ["arch-1973-pont-aerien-decollage", "Octobre 1973", "États-Unis", "Le pont aérien américain arme Israël ; les pays arabes répondent par l’embargo pétrolier."],
+    ["arch-1983-reagan-shamir", "29 novembre 1983", "Washington, Maison-Blanche", "Yitzhak Shamir, ancien chef du Lehi devenu Premier ministre, reçu par Ronald Reagan."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

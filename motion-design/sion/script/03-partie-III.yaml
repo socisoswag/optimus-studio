@@ -291,10 +291,14 @@ chapitres:
         voix: >-
           Son chef, Menahem Begin, sera Premier ministre d'Israël en 1977, / et prix Nobel de la paix l'année
           **suivante**.
-      - type: MD
-        fichier: output/portraits-2.mp4
-        entree: 12
-        sortie: 26
+      - type: ARCH
+        fichier: output/archives-filmees/1983-reagan-shamir-maison-blanche.mp4
+        carton: output/cartons/126-arch-1983-reagan-shamir.mov
+        entree: 0
+        sortie: 13.9
+        ecran: "carton : 29 novembre 1983 · Washington, Maison-Blanche · Yitzhak Shamir, ancien chef du Lehi devenu Premier ministre, reçu par Ronald Reagan."
+        note: "vraie archive à la place du portrait de portraits-2 (12 à 26) ; Lord Moyne et Folke Bernadotte restent dits par la voix ; bibliothèque Reagan, fonds WHTV, domaine public ; SOURCES.md 4.2"
+        son: "salle, murmure"
         source: "Lord Moyne, tué au Caire le 6 novembre 1944 ; Folke Bernadotte, tué à Jérusalem le 17 septembre 1948"
         voix: >-
           Le Lehi assassine en 1944 un ministre britannique, Lord Moyne, / puis en 1948 le médiateur de l'ONU, Folke

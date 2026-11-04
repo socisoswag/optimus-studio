@@ -260,6 +260,21 @@ ARCHIVES = {
     # Camp David, 11 juillet 2000 : Barak, Clinton et Arafat à l'ouverture du sommet (bibliothèque Clinton, domaine public)
     "2000-camp-david-barak-clinton-arafat": ("https://upload.wikimedia.org/wikipedia/commons/3/32/Photo-Op_of_President_Clinton_with_Prime_Minister_Barak_and_Chairman_Arafat_at_Camp_David.webm",
                                              "", "654:368:0:40", [(54.5, 67.5)]),
+    # actualités Universal du 1er novembre 1956 (domaine public) : Eisenhower porte la crise de Suez devant l'ONU,
+    # le siège des Nations unies, l'Assemblée générale
+    "1956-eisenhower-onu": ("1956-11-01_War_in_Egypt", "1956-11-01_War_in_Egypt.mpeg", "694:462:14:9",
+                            [(140.5, 145.5), (150.0, 152.8), (157.0, 159.3)]),
+    # actualités Universal du 6 juin 1967 : l'état-major israélien autour de Yitzhak Rabin, juste avant la guerre
+    "1967-etat-major-israelien": ("1967-06-06_Mid-East", "1967-06-06_Mid-East.mpeg", "696:462:12:9",
+                                  [(61.1, 64.9), (65.6, 71.2)]),
+    # armée de l'air américaine, octobre 1973 (archives nationales américaines 342-ADW-264, domaine public) : un C-5A du
+    # pont aérien vers Israël décolle face à la caméra ; film 4:3 numérisé en 1080p (autre bobine que
+    # 1973-pont-aerien-americain, l'arrivée à Lod)
+    "1973-pont-aerien-decollage": ("342-adw-264", "342-adw-264-r1.mp4", "1440:1072:240:4", [(271.5, 282.3)]),
+    # Maison Blanche, 29 novembre 1983 : Reagan reçoit Yitzhak Shamir dans la Cabinet Room (bibliothèque Reagan, fonds
+    # WHTV, domaine public)
+    "1983-reagan-shamir-maison-blanche": ("https://catalog.archives.gov/medialz/presidential-libraries/reagan/rr-whtv/5730544/11-29-1983-C61.mp4",
+                                          "", "704:472:8:4", [(87.3, 98.9)]),
 }
 
 
