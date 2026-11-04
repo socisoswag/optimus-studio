@@ -90,6 +90,21 @@ Golda Meir à la Maison-Blanche (1969 ou 1973) ; Yitzhak Rabin et Yasser Arafat,
 Ariel Sharon à la Maison-Blanche (2001 à 2005). Rapporter : lien du fichier d'origine (NARA, bibliothèques
 présidentielles, DVIDS), date, lieu, mention « public domain ».
 
+## Recherche d'archives du 4 novembre 2026 (résultat)
+
+Je pose moi-même (domaine public, archive.org, seulement les secondes utiles) : 19.8 Port-Saïd bombardée (Universal,
+12 novembre 1956) ; 19.17 Eisenhower (Universal, 1er novembre 1956) ; 19.21 Rabin et l'état-major (Universal, 6 juin
+1967) ; 21.9 le pont aérien américain vers Israël, octobre 1973 (NARA 342-ADW-264, en HD ; le carton relie l'embargo
+pétrolier à ce pont aérien).
+
+À télécharger par l'auteur (Commons me refuse les fichiers) : 24.7 Lieberman (CC BY 3.0), 25.10 Shuja'iyya 2014
+(CC BY 3.0), 25.11 frappe de mai 2021 (CC BY-SA 3.0), 23.15 démolition à Khallet Athaba, Masafer Yatta, 26 février 2025
+(CC0, Mediterranea Saving Humans).
+
+Écartés : Jénine 2025 (agence iranienne Tasnim : licence correcte, crédibilité non) ; Jénine 2024 et Umm al-Kheir 2025
+(vidéos verticales de téléphone) ; Paris 2014 et 2017 (pas octobre 2023) ; actualités Carmel des années 1950 (450 × 360) ;
+films israéliens de 1967 vendus par Periscope Film (droits à établir, logo).
+
 ## Restent des fiches (pas d'image juste possible)
 
 25.39 « Lavender », 35.8 et 35.18 (la position du gouvernement israélien, à lire en entier), 35.20, 31.13, 31.14,
