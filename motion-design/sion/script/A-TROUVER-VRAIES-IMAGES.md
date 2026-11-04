@@ -12,7 +12,7 @@ Clip d'au moins 15 s, 4K si possible, du lieu exact (pas une ville voisine). Ren
 |---|---|---|---|---|
 | K01 | 25.37 | 4,7 min | La guerre s'étend (Liban, 2024 et 2025) | `Beirut aerial` |
 | K02 | 26.9 | 2,7 min | Le projet E1 (août 2025) | `Khan al Ahmar` ou `E1 Maale Adumim` |
-| K03 | 27.9 | 2,7 min | Shireen Abu Akleh (Jénine, 2022) | `Jenin` |
+| K03 | 27.9 | 2,7 min | Shireen Abu Akleh (Jénine, 2022) | plus besoin : vidéo de téléphone de Jénine, août 2024 (Commons) |
 | K04 | 31.15 | 1,6 min | Les pressions sur Paris (2025) | `Elysee Palace` |
 | K05 | 31.16 | 1,6 min | Antisionisme et antisémitisme (résolution de l'Assemblée, 2019) | `Assemblee nationale` (un autre plan que le timelapse du pont) |
 | K06 | 25.13 | 1,4 min | La doctrine Dahiya (2008) | `Dahieh Beirut` ou `Beirut southern suburbs` |
@@ -64,7 +64,7 @@ Mêmes règles. Le plan n'est pas une fiche mais une carte ou un document dont l
 | L03 | 19.24 | les villages de Latroun rasés en 1967 (aujourd'hui le parc Canada) | `Latrun` ou `Canada Park` |
 | L04 | 19.28 | le Golan, 1967 | `Golan Heights` |
 | L05 | 19.12 | Kafr Qassem, 29 octobre 1956 | `Kafr Qasim` |
-| L06 | 20.4 | les camps du nord de la Cisjordanie vidés en 2025 | `Tulkarm` ou `Nur Shams` |
+| L06 | 20.4 | les camps du nord de la Cisjordanie vidés en 2025 | plus besoin : le camp de Jénine détruit, 2025 (Commons, Tasnim, CC BY 4.0) |
 | L07 | 29.2 | les Neturei Karta (Mea Shearim) | `Mea Shearim` |
 | L08 | 29.4 | Jewish Voice for Peace à Grand Central, octobre 2023 | `Grand Central Terminal` |
 | L09 | 30.5 | la Cour suprême et le service militaire des ultra-orthodoxes (2024) | `Supreme Court Jerusalem` |
@@ -101,8 +101,9 @@ pétrolier à ce pont aérien).
 (CC BY 3.0), 25.11 frappe de mai 2021 (CC BY-SA 3.0), 23.15 démolition à Khallet Athaba, Masafer Yatta, 26 février 2025
 (CC0, Mediterranea Saving Humans).
 
-Écartés : Jénine 2025 (agence iranienne Tasnim : licence correcte, crédibilité non) ; Jénine 2024 et Umm al-Kheir 2025
-(vidéos verticales de téléphone) ; Paris 2014 et 2017 (pas octobre 2023) ; actualités Carmel des années 1950 (450 × 360) ;
+Repris à la demande de l'auteur : Jénine 2025 (Tasnim, CC BY 4.0) pour 20.4 ; Jénine, août 2024 (CC BY 4.0) pour 27.9 et
+Umm al-Kheir, 28 juillet 2025 (CC0) pour 23.14, ces deux vidéos verticales posées sur leur propre image floutée en fond.
+Écartés : Paris 2014 et 2017 (pas octobre 2023) ; actualités Carmel des années 1950 (450 × 360) ;
 films israéliens de 1967 vendus par Periscope Film (droits à établir, logo).
 
 ## Restent des fiches (pas d'image juste possible)
