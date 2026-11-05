@@ -102,3 +102,32 @@ les fiches restantes. Des photos existent pour ces moments clés (fichier d'orig
 Écartés : les vidéos de l'armée israélienne du 25 août 2024 (sud du Liban, pas Dahiya) ; Tasnim, Gaza le 9 octobre 2023
 (le 25.24 est la carte du siège, qu'on garde) ; les photos du Mavi Marmara prises par l'armée (elles ne montrent que sa
 version) ; rien de libre pour Paris en octobre 2023, la fondation GHF, Hind Rajab, les élections de 2006.
+
+## Lot 6 : images d'illustration (règle de l'auteur du 5 novembre au soir)
+
+Nouvelle règle : un lieu voisin est accepté si le spectateur ne peut pas faire la différence et que l'image reste
+cohérente. Garde-fou : jamais un carton faux. Une image d'illustration porte soit un carton qui dit ce qu'elle montre
+vraiment, soit pas de carton ; et jamais une image qui changerait le sens (exemple écarté : l'immeuble criblé d'Envato
+C01, qui peut être un kibboutz israélien du 7 octobre et non Gaza).
+
+Déjà chez moi, rien à télécharger :
+
+| Plan | Voix | Image | Carton |
+|---|---|---|---|
+| 25.18 | le Qatar paie, Gaza gouvernée par le Hamas | Gaza et sa baie vues par drone, avant la guerre (Adobe Stock 765427140, vrai tournage, pas d'IA) | Avant 2023 · Gaza |
+| 25.3 | le Hamas gagne en 2006, boycott de son gouvernement | Ramallah, la Palestine Tower et le minaret | Aujourd'hui · Ramallah, siège de l'Autorité palestinienne |
+| 25.2 | 2005 : retrait de Gaza, Israël garde frontières, mer et ciel | un char israélien sur une plage (Envato C03) | sans lieu : « Israël garde les frontières, la mer et le ciel » |
+| 22.12 | deuxième intifada, plus de trois mille Palestiniens tués | un char israélien dans les décombres à Gaza (Envato C02) | sans carton |
+| 25.13 | la doctrine Dahiya, « force disproportionnée » | Gaza, 12 novembre 2018 : immeubles détruits par des frappes israéliennes (Commons, licence à relever) | 12 novembre 2018 · Gaza |
+| 26.9 | E1, entre Jérusalem et Maalé Adoumim | un berger bédouin et son troupeau dans le désert | sans lieu : « E1 menace les communautés bédouines de la zone » |
+| 29.3 | Jewish Voice for Peace, aux États-Unis | des étudiants manifestent pour Gaza (Adobe Stock D02, Bristol) | sans carton |
+
+À reprendre dans l'ancien Dropbox de l'auteur (dossier des archives du 30 octobre) : « The Life of the Jews in Palestine »
+(1913) pour 5.4 (les colonies de Rothschild, Rishon LeZion) ; les parachutistes au canal de Suez (1973) pour 21.8.
+
+À télécharger (Commons) : 22.3 photo de la première intifada (lot 5 ter) ; 25.15 photo de Shalit (lot 5 ter) ;
+34.10 Tasnim, Gaza, octobre 2023, immeubles rasés :
+https://commons.wikimedia.org/wiki/File:Tasnim_News_Agency_-_Footage_from_Israeli_airstrikes_levelling_Gazan_buildings.webm
+(CC BY 4.0) ; 25.37 au choix, à la place de Beyrouth vue du ciel : frappes israéliennes au Liban, 25 août 2024 (images
+de l'armée israélienne) https://commons.wikimedia.org/wiki/File:IDF_2024-08-25_01-en.webm
+Le 25.2 prend le char sur la plage : la photo de Neve Dekalim (lot 5 ter) n'est plus nécessaire.
