@@ -84,3 +84,21 @@ des Maghrébins) reste l'animation des 135 maisons rasées. Une vraie image y fe
 | 27.9 | https://www.youtube.com/watch?v=VGcOAk6P0zw (obsèques à Jérusalem, Al-Watan) : seulement si la licence Creative Commons est affichée sous la vidéo ; sinon https://upload.wikimedia.org/wikipedia/commons/d/d2/Aftermath_of_Israel_raid_on_Jenin%2C_August_2024.webm | CC BY 3.0 / CC BY 4.0 |
 
 Cartons déjà rendus pour ce lot : 139 à 151 (timelines/cartons.js). Le carton du 24.7 attend la date exacte de la notice.
+
+## Lot 5 ter : photos libres pour des moments clés (pas de vidéo libre trouvée)
+
+Recherche du 5 novembre au soir dans les fonds sous licence libre (archives et porte-parole de l'armée israélienne,
+agences iraniennes, WAFA, Bibliothèque nationale d'Israël, vidéastes) : aucune vidéo au lieu et à la date exacts pour
+les fiches restantes. Des photos existent pour ces moments clés (fichier d'origine à télécharger depuis la page) :
+
+| Plan | Moment | Page Commons | Licence |
+|---|---|---|---|
+| 22.3 | Gaza, 21 décembre 1987 : manifestation, début de la première intifada (archive Dan Hadani, Bibliothèque nationale d'Israël) | https://commons.wikimedia.org/wiki/File:Intifada_in_Gaza_Strip,_1987_III_Dan_Hadani_Archive.jpg | CC BY 4.0 |
+| 25.13 | Beyrouth, Dahiya, 27 septembre 2024 : la frappe sur le quartier général du Hezbollah | https://commons.wikimedia.org/wiki/File:Hezbollah_Headquarter_Airstrike_2024.jpg | à relever sur la page |
+| 25.15 | 18 octobre 2011 : Gilad Shalit à son retour en Israël (armée israélienne) | https://commons.wikimedia.org/wiki/File:Flickr_-_Israel_Defense_Forces_-_Gilad_Shalit_Salutes_Israel_Prime_Minister_Benjamin_Netanyahu.jpg | CC BY-SA (armée israélienne, Flickr) |
+| 25.2 | Gaza, août 2005 : l'évacuation de la colonie de Neve Dekalim | https://commons.wikimedia.org/wiki/File:The_Evacuation_of_Neve_Dekalim.jpg | à relever sur la page |
+| 34.10 | Gaza-ville : les ruines de la Grande Mosquée al-Omari (photo du 29 janvier 2025) | https://commons.wikimedia.org/wiki/Category:Great_Mosque_of_Gaza | à relever sur la page |
+
+Écartés : les vidéos de l'armée israélienne du 25 août 2024 (sud du Liban, pas Dahiya) ; Tasnim, Gaza le 9 octobre 2023
+(le 25.24 est la carte du siège, qu'on garde) ; les photos du Mavi Marmara prises par l'armée (elles ne montrent que sa
+version) ; rien de libre pour Paris en octobre 2023, la fondation GHF, Hind Rajab, les élections de 2006.
