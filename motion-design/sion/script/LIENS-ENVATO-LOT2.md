@@ -131,3 +131,7 @@ https://commons.wikimedia.org/wiki/File:Tasnim_News_Agency_-_Footage_from_Israel
 (CC BY 4.0) ; 25.37 au choix, à la place de Beyrouth vue du ciel : frappes israéliennes au Liban, 25 août 2024 (images
 de l'armée israélienne) https://commons.wikimedia.org/wiki/File:IDF_2024-08-25_01-en.webm
 Le 25.2 prend le char sur la plage : la photo de Neve Dekalim (lot 5 ter) n'est plus nécessaire.
+
+Les deux anciennes archives ne sont plus dans le Dropbox de l'auteur ; liens directs (Commons) :
+- 5.4 : https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_%281913%29.webm
+- 21.8 : https://upload.wikimedia.org/wikipedia/commons/3/37/Yom_Kippur_War._IDF_paratroopers_on_the_west_bank_of_the_Suez_Canal..webm
