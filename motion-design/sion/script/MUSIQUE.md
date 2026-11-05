@@ -108,3 +108,17 @@ voix chantée.
 
 Écartés à l'écoute des fiches : tout ce qui est « trailer », « epic », « dubstep », « uplifting » (Tense Hybrid
 Cinematic Trailer, Epic Middle Eastern Oud Trailer, Modern Uplifting Middle East…).
+
+## Consigne de l'auteur (5 novembre) : de la musique sur tout le film
+
+Plus de silences complets. Aux moments les plus durs (Herzl 4.8, Deir Yassin 15.3 et 15.4, les premières secondes du
+7 octobre, les noms 25.30, Hind Rajab 25.31, « une prison à ciel ouvert » 25.44), une musique presque immobile, très
+basse (nappe, une note tenue), qui laisse la place à la voix et au poids des faits. Morceaux ajoutés pour couvrir les
+95 minutes sans répéter :
+
+| N° | Où | Morceaux |
+|---|---|---|
+| M19 | les moments les plus durs (liste ci-dessus) | [Soft Emotional Ambient](https://elements.envato.com/soft-emotional-ambient-RKU4N95) ; [Ambient Documentary Soundscape](https://elements.envato.com/ambient-documentary-soundscape-ZGLFY24) ; [Sad Documentary](https://elements.envato.com/sad-documentary-JA279SY) |
+| M20 | les longs chapitres d'enquête (ch. 9, 11, 24, 28 à 33, 35, 36), en alternance avec M04 et M16 | [Dark Minimalist Documentary Underscore](https://elements.envato.com/dark-minimalist-documentary-underscore-NT65HUJ) (avec pistes séparées) ; [Lo Fi Ambient Documentary Underscore](https://elements.envato.com/lo-fi-ambient-documentary-underscore-4FQ5LH5) ; [Serious Documentary Mysterious Tense Ambient](https://elements.envato.com/serious-documentary-mysterious-tense-ambient-RLYMW48) |
+| M21 | l'oud seul : les poètes (Darwich), la terre, les noms effacés | [Arabia Oud Solo Improvisation](https://elements.envato.com/arabia-oud-solo-improvisation-CS6PHF3) ; [Emotional Arabian Oud](https://elements.envato.com/emotional-arabian-oud-P2MBBED) |
+| M22 | les plans de respiration vus du ciel, les lieux d'aujourd'hui | [Ambient Aerial Drone](https://elements.envato.com/ambient-aerial-drone-M7J52HA) ; [Documentary Ambient Background](https://elements.envato.com/documentary-ambient-background-RDUM4KS) |
