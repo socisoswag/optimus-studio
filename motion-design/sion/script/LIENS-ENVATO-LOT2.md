@@ -176,3 +176,11 @@ libre pour l'instant (19.20 et 19.29 sont des titres qu'on garde).
 Tasnim), les camps de transit de 1950 et la salle de la CIJ (pas dans un long passage sans vraie image).
 Bilan avec les lots 5, 6, 7 et ces photos : 37,1 % de vraies vidéos, 38,5 % de vraies images, 40,3 % avec les
 reconstitutions par IA (sur 95,3 min).
+
+Traitement des 6 photos (exigence de l'auteur : rendu pro) : le moteur des « archives qui prennent vie »
+(photo3d.html, comme timelines/archives-vivantes.js) et non un simple zoom. Retouche (cadre, poussières, niveaux),
+carte de profondeur (tools/prep_archives.py, à étendre aux fichiers locaux), glissement lent de la caméra dans la
+photo, mise au point qui se déplace, même finition que les archives, vraie ambiance sonore, carton comme les autres
+vraies images. Une photo d'essai validée par l'auteur avant les cinq autres.
+Piste : la vraie photo de la manifestation de Jaffa (octobre 1933, Matson 15788, déjà en relief dans
+archives-vivantes) pourrait remplacer la reconstitution par IA du plan 8.15, qui montre le même événement.
