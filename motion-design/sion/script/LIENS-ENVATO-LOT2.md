@@ -51,3 +51,20 @@ lieu des émeutes de 1920), la plage de Tel-Aviv pour Arlosoroff (13 s de vidéo
 Au-delà, il faut des archives (à chercher par l'agent) : Gaza 2024 et 2025 datée et située (Hind Rajab, secouristes de
 Rafah, aide bloquée), la Grande Mosquée al-Omari, Paris en octobre 2023, Beyrouth 2024, le Jour de la Terre 1976, le
 retrait de Gaza en 2005, les élections de 2006, le Mavi Marmara, l'échange Shalit, Handala et Kanafani.
+
+## Lot 5 (5 novembre) : liens directs vérifiés
+
+| N° | Plan | Ce qu'il remplace | Le clip | Lien |
+|---|---|---|---|---|
+| G01 | 25.37 | fiche « la guerre s'étend » (Nasrallah tué à Beyrouth, 2024) | Beyrouth vue de drone au lever du soleil | https://elements.envato.com/aerial-drone-shot-of-beirut-skyline-at-sunrise-aer-CAYPARH |
+| G02 | 6.13 | fiche Bâle 1901, le Fonds national juif | Bâle, le centre et l'hôtel de ville rouge vus du ciel (autre plan que le Rhin déjà posé) | https://elements.envato.com/basel-city-center-with-historic-red-rathaus-and-mo-JG3L6S2 |
+| G03 | 8.13 | fiche Londres 1930, le rapport Hope Simpson | le Parlement de Westminster et la Tamise | https://elements.envato.com/houses-of-parliament-river-thames-and-westminster--RSBX4R4 |
+| G04 | 30.5 | les ultra-orthodoxes et la Cour suprême (2024) | Mea Shearim vu du ciel | https://elements.envato.com/aerial-footage-of-mea-shearim-neighborhood-in-the--Y6NQZSS (sinon https://elements.envato.com/flying-over-orthodox-jewish-neighborhood-in-jerusa-H46F6N7) |
+| G05 | 31.16 | fiche Paris 2019 (l'Assemblée adopte la définition de l'IHRA) | la façade du Palais-Bourbon (autre plan que celui du 31.10) | https://elements.envato.com/the-facade-of-the-palais-bourbon-paris-france-9EHJBHC |
+| G06 | 19.26 (bonus) | après l'archive de 1933 : l'esplanade d'aujourd'hui, à la place du quartier des Maghrébins | l'esplanade du mur occidental en plongée | https://elements.envato.com/high-angle-of-the-western-wall-plaza-UT7GTGL |
+
+Rien de précis sur Envato pour : l'Élysée (31.15), la rue Ben Yehuda (14.8), Kafr Qassem (19.12), Latroun (19.24),
+Dahiya (25.13), la clôture de Gaza (25.21), Kerem Shalom (25.41), Gaza en ruines datée et située (25.44), E1 (26.9).
+
+Déjà chez moi, posés au prochain lot : 12.7 (Jaffa enclavée : le clocher et la vieille ville de Jaffa vus du ciel),
+19.26 (le quartier des Maghrébins : la ruelle au pied du mur en 1933, film amateur Levy, autres plans que le 10.04).
