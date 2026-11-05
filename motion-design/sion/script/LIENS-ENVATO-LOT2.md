@@ -135,3 +135,28 @@ Le 25.2 prend le char sur la plage : la photo de Neve Dekalim (lot 5 ter) n'est 
 Les deux anciennes archives ne sont plus dans le Dropbox de l'auteur ; liens directs (Commons) :
 - 5.4 : https://upload.wikimedia.org/wikipedia/commons/5/50/The_Life_of_the_Jews_in_Palestine_%281913%29.webm
 - 21.8 : https://upload.wikimedia.org/wikipedia/commons/3/37/Yom_Kippur_War._IDF_paratroopers_on_the_west_bank_of_the_Suez_Canal..webm
+
+## Lot 7 : combler les longs passages sans vraie image (recherche du 5 novembre, nuit)
+
+Fonds fouillés : Commons (armée israélienne, agences iraniennes, WAFA, Bibliothèque nationale d'Israël, Prelinger,
+Imperial War Museum), DVIDS (armée américaine, domaine public), Australian War Memorial, archive.org, actualités
+Universal, Adobe Stock gratuit, Envato. Écartés : les images de l'ONU (usage non commercial seulement), March of Time
+et Periscope Film (droits à établir), les copies YouTube non sourcées d'archive.org.
+
+| Plan | Image | Source, licence | Qui télécharge |
+|---|---|---|---|
+| 25.26 | Gaza, octobre 2023 : immeubles détruits (reportage Tasnim à Khan Younès) | Commons, CC BY 4.0 | l'auteur |
+| 25.32 | une ambulance du Croissant-Rouge palestinien frappée, Khan Younès (même reportage) | Commons, CC BY 4.0 | l'auteur |
+| 25.34 | mars 2024 : l'aide larguée par avion sur Gaza | DVIDS 914410, domaine public | moi |
+| 35.10 | Raphael Lemkin explique le mot « génocide » (CBS, 13 février 1949) | Commons, domaine public aux États-Unis | l'auteur |
+| 35.20 | couloir de prison, barreaux (illustration, sans carton) | Adobe Stock gratuit 1522672024 | moi |
+| 27.3 | un téléphone, un fil de réseau social qui défile (illustration) | Adobe Stock gratuit 381306796 | moi |
+| 27.5 | des mains qui tapent des messages sur un téléphone (illustration) | Adobe Stock gratuit 593999374 | moi |
+| 7.13 | Versailles, 28 juin 1919 : la signature du traité | déjà chez moi (Commons) | rien |
+
+Liens directs pour l'auteur :
+- https://upload.wikimedia.org/wikipedia/commons/c/c7/Tasnim_News_Agency_-_Report_from_the_Gaza_Strip_on_Operation_al-Aqsa_Flood.webm
+- https://upload.wikimedia.org/wikipedia/commons/8/87/The_Genocide_Word_by_Raphael_Lemkin.ogv
+
+En réserve : film amateur de 1967, chars détruits et ruines en Cisjordanie (Adobe Stock gratuit 502632607), sans plan
+libre pour l'instant (19.20 et 19.29 sont des titres qu'on garde).
