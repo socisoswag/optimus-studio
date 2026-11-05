@@ -160,3 +160,19 @@ Liens directs pour l'auteur :
 
 En réserve : film amateur de 1967, chars détruits et ruines en Cisjordanie (Adobe Stock gratuit 502632607), sans plan
 libre pour l'instant (19.20 et 19.29 sont des titres qu'on garde).
+
+## Photos retenues (6 au total, animées : mouvement lent, finition archive, vraie ambiance)
+
+| Plan | Photo | Licence | Page Commons (bouton « Fichier d'origine ») |
+|---|---|---|---|
+| 14.8 | Jérusalem, rue Ben Yehuda, 22 février 1948, après l'attentat | domaine public (Israël et mandat britannique) | https://commons.wikimedia.org/wiki/Category:Ben_Yehuda_Street_bombing_(1948) (« Ben Yehuda 22-2-1948.jpg ») |
+| 22.2 | Jabaliya, février 1988 : un barrage de l'armée | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Jabalya1988roadblock.jpg |
+| 22.3 | Gaza, 21 décembre 1987 : manifestation (archive Dan Hadani) | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Intifada_in_Gaza_Strip,_1987_III_Dan_Hadani_Archive.jpg |
+| 22.11 | Jérusalem, rue de Gaza, 29 janvier 2004 : le bus après l'attentat-suicide | à relever sur la page | https://commons.wikimedia.org/wiki/Category:Gaza_Street_bus_bombing |
+| 25.15 | 18 octobre 2011 : Gilad Shalit à son retour | CC BY-SA (armée israélienne) | https://commons.wikimedia.org/wiki/File:Flickr_-_Israel_Defense_Forces_-_Gilad_Shalit_Salutes_Israel_Prime_Minister_Benjamin_Netanyahu.jpg |
+| 29.2 | Londres, avril 2018 : des Neturei Karta | à relever sur la page | https://commons.wikimedia.org/wiki/File:Naturei_Karta_at_Palestinian_protest_in_London_April_2018.jpg |
+
+Écartées : Neve Dekalim 2005 et le QG du Hezbollah 2024 (remplacés par des vidéos), la mosquée al-Omari (vidéo
+Tasnim), les camps de transit de 1950 et la salle de la CIJ (pas dans un long passage sans vraie image).
+Bilan avec les lots 5, 6, 7 et ces photos : 37,1 % de vraies vidéos, 38,5 % de vraies images, 40,3 % avec les
+reconstitutions par IA (sur 95,3 min).
