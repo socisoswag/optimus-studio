@@ -221,10 +221,13 @@ chapitres:
         ecran: "fiche de la chronologie : Amin al-Husseini"
         voix: >-
           En 1921, Londres nomme un grand **mufti**.
-      - type: MD
-        fichier: output/portraits-1.mp4
-        entree: 150
-        sortie: 166
+      - type: ARCH
+        fichier: output/archives-filmees/1934-jerusalem-vieille-ville.mp4
+        carton: output/cartons/131-arch-1934-jerusalem-vieille-ville.mov
+        entree: 0
+        sortie: 16
+        ecran: "carton : Vers 1934 · Jérusalem · La vieille ville, sous le mandat britannique."
+        note: "vraie image à la place de la fiche de portraits-1 (150 à 166) ; « Paths in Palestine » (1934), deux passages encore inutilisés (portes et ruelle de la vieille ville), SOURCES.md 4.2 ; la fiche de la chronologie qui précède (8.5) montre déjà Amin al-Husseini"
         source: "faits biographiques (SOURCES.md 5, chronologie) ; rencontre avec Hitler à Berlin, 28 novembre 1941"
         voix: >-
           Amin al-Husseini, un jeune notable de Jérusalem, / deviendra le chef du mouvement national palestinien. //
@@ -332,15 +335,15 @@ chapitres:
         voix: >-
           La répression britannique est terrible : / maisons dynamitées, / pendaisons, / villages punis. // En trois
           ans, environ cinq mille Arabes sont **tués**.
-      - type: MD
-        fichier: output/documents-2.mp4
-        entree: 19
-        sortie: 36
+      - type: RÉEL
+        fichier: output/plans-reels/tiberiade-lac-de-tiberiade.mp4
+        carton: output/cartons/132-arch-tiberiade-1938.mov
+        entree: 0
+        sortie: 17
+        ecran: "carton : Aujourd'hui · Tibériade · Octobre 1938 : 19 Juifs y sont tués. Juillet 1938 : bombes de l'Irgoun à Haïfa et à Jérusalem."
+        note: "vraie image à la place de la fiche de documents-2 (19 à 36) ; Adobe Stock (collection gratuite), 316506921"
+        son: "ville au loin, vent doux"
         source: >-
-          Tibériade, 2 octobre 1938 : 19 Juifs tués dont 11 enfants ; bombes de l'Irgoun sur les marchés arabes de
-          Haïfa et de Jérusalem en juillet 1938 (The New York Times, 16 juillet 1938) ; liste des attaques de l'Irgoun
-          (Wikipedia, pour les références)
-        ecran: "Tibériade · octobre 1938 · 19 Juifs tués, dont 11 enfants / Haïfa, Jérusalem · juillet 1938 · bombes de l'Irgoun sur les marchés arabes"
         voix: >-
           Les civils paient des deux côtés. / À Tibériade, en octobre 1938, / dix-neuf Juifs sont tués, dont onze
           enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés

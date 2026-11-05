@@ -275,6 +275,12 @@ Golan occupé) ; un plan sans lieu précis n'est jamais légendé comme la Pales
 | 827361688 | Collines, vignes et arbres de Kfar Etzion (titre d'origine : « paysage rural israélien ») | colonie de Kfar Etzion, Cisjordanie occupée | terre | `cisjordanie-kfar-etzion-collines-vignes` |
 | 547188073 | Des mains sur le tronc d'un olivier | lieu non précisé | terre | `olivier-mains-sur-le-tronc` |
 | 765427140 | Gaza, la baie et la ville vues par drone (D01, en réserve) | Gaza, avant la guerre de 2023 (date de tournage à vérifier sur la fiche) | terre-dure | `adobe-D01-gaza-baie-drone` |
+| 614562705 | Istanbul, Sainte-Sophie vue de drone (plan 6.11) | aujourd'hui | terre-dure | `istanbul-sainte-sophie-aerien` |
+| 316506921 | Tibériade, le lac et le port (plan 8.18) | aujourd'hui | terre-dure | `tiberiade-lac-de-tiberiade` |
+| 238815760 | Golan, un panneau « Danger, mines » en hébreu, arabe et anglais, à la frontière syrienne (plan 19.28) | aujourd'hui | terre-dure | `golan-panneau-champ-de-mines` |
+| 715242139 | Doha, la ligne des tours (plan 22.8) | aujourd'hui | terre-dure | `doha-skyline` |
+| 703288364, 238952936 | New York, la façade de Grand Central puis le grand hall (plan 29.4) | aujourd'hui | terre-dure | `new-york-grand-central` |
+| 681081831 | New York, l'université Columbia vue du ciel, ralentie (plan 38.5) | aujourd'hui | terre-dure | `new-york-universite-columbia-aerien` |
 | 867937187 | Étudiants qui manifestent pour la Palestine (D02, en réserve) | Bristol, Royaume-Uni | terre-dure | `adobe-D02-bristol-etudiants-manifestation` |
 
 ### 4.1 bis Vrais plans tournés sur place (Envato Elements, licence Envato)
@@ -338,6 +344,7 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 
 | Fichier | Film | Auteur, date | Cote | Lien |
 |---|---|---|---|---|
+| 1934-jerusalem-vieille-ville | « Paths in Palestine » : une porte et une ruelle de la vieille ville de Jérusalem, les passages 03 et 04 mis bout à bout (plan 8.6) | voir la ligne 1930-paths-to-palestine ci-dessous | NARA 2767364 | https://archive.org/details/428-npc-44524 |
 | 1982-reagan-habib-maison-blanche | « Remarks to Reporters on Lebanon and the Middle East » : Reagan, Philip Habib et George Shultz (plan 20.12) | White House Television (WHTV), 8 septembre 1982 (fonds déclaré dans le domaine public par la bibliothèque Reagan ; crédit : Courtesy: National Archives and Records Administration, Ronald Reagan Presidential Library) | NARA 68885759 | https://catalog.archives.gov/id/68885759 |
 | 1956-troupes-francaises-marseille | « War in Egypt » : les troupes françaises embarquent à Marseille (plan 19.8) | Universal-International News, 1er novembre 1956 (domaine public) | archive.org 1956-11-01_War_in_Egypt | https://archive.org/details/1956-11-01_War_in_Egypt |
 | gaza-2009-distribution-aide (output/plans-reels) | « Gaza Food » : une file d'attente, des cartes de rationnement aux guichets, des sacs de farine (plan 25.5) ; recadré sans les logos | Al Jazeera, janvier 2009, Creative Commons Repository, CC BY 3.0 (à créditer : « Al Jazeera, CC BY 3.0 ») | Aljazeeraasset-GazaFOOD883 | https://commons.wikimedia.org/wiki/File:Aljazeeraasset-GazaFOOD883.ogv |

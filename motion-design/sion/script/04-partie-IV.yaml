@@ -223,10 +223,14 @@ chapitres:
         sortie: 61
         voix: >-
           Environ trois cent mille Palestiniens sont déplacés. / Pour beaucoup, c'est le deuxième **exil**.
-      - type: MD
-        fichier: output/six-jours.mp4
-        entree: 61
-        sortie: 70
+      - type: RÉEL
+        fichier: output/plans-reels/golan-panneau-champ-de-mines.mp4
+        carton: output/cartons/133-arch-golan-1967.mov
+        entree: 0
+        sortie: 9
+        ecran: "carton : Aujourd'hui · Le plateau du Golan · Occupé depuis juin 1967 : plus de cent mille habitants ont fui ou ont été chassés."
+        note: "vraie image à la place de la fiche de six-jours (61 à 70) ; Adobe Stock (collection gratuite), 238815760 : un panneau « Danger, mines » en hébreu, arabe et anglais, à la frontière syrienne"
+        son: "vent sec"
         voix: >-
           Sur le Golan, plus de cent mille habitants fuient, / ou sont **chassés**.
       - type: MD
@@ -599,11 +603,14 @@ chapitres:
           Sa charte de 1988 reprend des thèmes antisémites, / jusqu'aux Protocoles des sages de Sion, un faux. // En
           2017, un nouveau texte dit combattre le sionisme, / pas les **Juifs**.
         note: "règle 3 de la bible : l'antisémitisme est montré, quel que soit le camp"
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 361
-        sortie: 373
-        ecran: "fiche : Doha · 1er mai 2017 · Le Hamas change de texte"
+      - type: RÉEL
+        fichier: output/plans-reels/doha-skyline.mp4
+        carton: output/cartons/134-arch-doha-2017.mov
+        entree: 0
+        sortie: 12
+        ecran: "carton : Aujourd'hui · Doha · Le 1er mai 2017, le Hamas y présente son nouveau document de principes."
+        note: "vraie image à la place de la fiche de documents-6 (361 à 373) ; Adobe Stock (collection gratuite), 715242139"
+        son: "ville au loin, vent doux"
         source: "Hamas, document de principes et de politiques générales, Doha, 1er mai 2017 (articles 16 et 20)"
         voix: >-
           Ce texte de 2017 accepte aussi un État palestinien dans les frontières de 1967, / « une formule de consensus national », / sans reconnaître **Israël**.

@@ -407,11 +407,13 @@ Source : SOURCES.md 6 (journal de Herzl, 12 juin 1895) ; lettre du 19 mars 1899
 Note : al-Khalidi n'a jamais évoqué une expulsion : c'est Herzl qui répond à une question qu'on ne lui a pas posée (remarque de R. Khalidi, vérifiable en lisant les deux lettres). La phrase « nous trouverons ailleurs ce qu'il nous faut » (si le sultan refuse) est dans la même lettre : à garder pour une version longue.
 
 
-**6.11** · film **00:10:47:00 → 00:11:02:00** (15.0 s) · **[MD]** `output/documents-7.mp4` · source 00:00:15:00 → 00:00:30:00  
+**6.11** · film **00:10:47:00 → 00:11:02:00** (15.0 s) · **[RÉEL]** `output/plans-reels/istanbul-sainte-sophie-aerien.mp4` · source 00:00:00:00 → 00:00:15:00  
 Source : code foncier ottoman de 1858 (Tanzimat) ; Kenneth W. Stein, The Land Question in Palestine, 1917-1939, 1984  
-À l'écran : fiche : Empire ottoman · 1858 · Le code foncier  
+À l'écran : carton : Aujourd'hui · Istanbul, l'ancienne Constantinople · En 1858, l'Empire ottoman y adopte son code foncier.  
 > VOIX : Pour comprendre ces ventes, il faut remonter à 1858. / L'Empire ottoman impose d'enregistrer les terres. / Pour fuir l'impôt et l'armée, des paysans évitent de le faire ; des notables accumulent les titres. / Celui qui possède la terre n'est plus toujours celui qui la **cultive**.  
-(43 mots, 2.9 par seconde)
+(43 mots, 2.9 par seconde)  
+Son : ville au loin, vent doux ; vue du ciel  
+Note : vraie image à la place de la fiche de documents-7 (15 à 30) ; Adobe Stock (collection gratuite, licence standard), 614562705
 
 
 **6.12** · film **00:11:02:00 → 00:11:15:00** (13.0 s) · **[ARCH]** `output/archives-filmees/1913-petah-tikva-la-colonie.mp4` · source 00:00:00:00 → 00:00:13:00  

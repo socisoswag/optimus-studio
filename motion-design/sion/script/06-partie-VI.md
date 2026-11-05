@@ -38,11 +38,13 @@ Source : Jewish Voice for Peace, fondé en septembre 1996 à Berkeley ; plus de 
 (22 mots, 1.7 par seconde)
 
 
-**29.4** · film **01:14:13:07 → 01:14:26:07** (13.0 s) · **[MD]** `output/documents-3.mp4` · source 00:01:22:00 → 00:01:35:00  
+**29.4** · film **01:14:13:07 → 01:14:26:07** (13.0 s) · **[RÉEL]** `output/plans-reels/new-york-grand-central.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : sit-in du 18 octobre 2023 dans un bâtiment du Congrès à Washington ; gare de Grand Central, 27 octobre 2023  
-À l'écran : déjà dans le plan : fiche sur la carte (date, lieu, faits) ; pas d'IA pour un événement récent  
+À l'écran : carton : Aujourd'hui · New York, gare de Grand Central · Le 27 octobre 2023, des militants juifs y occupent le hall : « Pas en notre nom. »  
 > VOIX : En octobre 2023, ses militants occupent un bâtiment du Congrès, / puis la gare de Grand Central à New York, / avec ce slogan : « Pas en notre **nom**. »  
-(26 mots, 2.0 par seconde)
+(26 mots, 2.0 par seconde)  
+Son : foule  
+Note : vraie image à la place de la fiche de documents-3 (82 à 95) ; Adobe Stock (collection gratuite), 703288364 (la façade) puis 238952936 (le hall)
 
 
 **29.5** · film **01:14:26:07 → 01:14:42:07** (16.0 s) · **[MD]** `output/documents-3.mp4` · source 00:01:35:00 → 00:01:51:00  
@@ -118,10 +120,13 @@ Film 01:15:57:22 → 01:19:43:12 · durée 3 min 45.6 s
 (23 mots, 1.8 par seconde)
 
 
-**31.3** · film **01:16:15:12 → 01:16:27:12** (12.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:02:18:00 → 00:02:30:00  
+**31.3** · film **01:16:15:12 → 01:16:27:12** (12.0 s) · **[RÉEL]** `output/plans-reels/tel-aviv-plage-aerien.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : ouverture du colloque « Democracy and its Challenges », Tel-Aviv, mai 2010 ; notre traduction  
+À l'écran : carton : Aujourd'hui · Tel-Aviv · En 2010, Bernard-Henri Lévy y déclare : « Je n'ai jamais vu une armée aussi démocratique. »  
 > VOIX : En 2010, à Tel-Aviv, Bernard-Henri Lévy déclare : / « Je n'ai jamais vu une armée aussi démocratique, / qui se pose autant de questions **morales**. »  
-(22 mots, 1.8 par seconde)
+(22 mots, 1.8 par seconde)  
+Son : ville au loin, vent doux ; vue du ciel  
+Note : vraie image à la place de la fiche de portraits-3 (138 à 150) ; clip Envato déjà dans le projet (SOURCES.md 4.1 bis), encore inutilisé ; le portrait de BHL reste en 31.2
 
 
 **31.4** · film **01:16:27:12 → 01:16:38:12** (11.0 s) · **[MD]** `output/portraits-3.mp4` · source 00:02:30:00 → 00:02:41:00  

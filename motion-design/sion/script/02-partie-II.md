@@ -157,8 +157,9 @@ Source : SOURCES.md 4.2 (« Paths in Palestine », 1934)
 (7 mots, 1.6 par seconde)
 
 
-**8.6** · film **00:16:09:22 → 00:16:25:22** (16.0 s) · **[MD]** `output/portraits-1.mp4` · source 00:02:30:00 → 00:02:46:00  
+**8.6** · film **00:16:09:22 → 00:16:25:22** (16.0 s) · **[ARCH]** `output/archives-filmees/1934-jerusalem-vieille-ville.mp4` · source 00:00:00:00 → 00:00:16:00  
 Source : faits biographiques (SOURCES.md 5, chronologie) ; rencontre avec Hitler à Berlin, 28 novembre 1941  
+À l'écran : carton : Vers 1934 · Jérusalem · La vieille ville, sous le mandat britannique.  
 > VOIX : Amin al-Husseini, un jeune notable de Jérusalem, / deviendra le chef du mouvement national palestinien. // Pendant la Seconde Guerre mondiale, / il s'alliera à l'Allemagne nazie, / et rencontrera Hitler à **Berlin**.  
 (29 mots, 1.8 par seconde)  
 Note : à dire sans adjectif : le fait suffit. Le récit israélien en fait le visage du nationalisme palestinien ; le film montre aussi, plus loin, les autres voix palestiniennes.
@@ -241,11 +242,12 @@ Source : SOURCES.md 4.2, March of Time, rushes de 1938 (NARA 200 MTT 666 CC ; mu
 (19 mots, 1.6 par seconde)
 
 
-**8.18** · film **00:18:29:14 → 00:18:46:14** (17.0 s) · **[MD]** `output/documents-2.mp4` · source 00:00:19:00 → 00:00:36:00  
-Source : Tibériade, 2 octobre 1938 : 19 Juifs tués dont 11 enfants ; bombes de l'Irgoun sur les marchés arabes de Haïfa et de Jérusalem en juillet 1938 (The New York Times, 16 juillet 1938) ; liste des attaques de l'Irgoun (Wikipedia, pour les références)  
-À l'écran : Tibériade · octobre 1938 · 19 Juifs tués, dont 11 enfants / Haïfa, Jérusalem · juillet 1938 · bombes de l'Irgoun sur les marchés arabes  
+**8.18** · film **00:18:29:14 → 00:18:46:14** (17.0 s) · **[RÉEL]** `output/plans-reels/tiberiade-lac-de-tiberiade.mp4` · source 00:00:00:00 → 00:00:17:00  
+À l'écran : carton : Aujourd'hui · Tibériade · Octobre 1938 : 19 Juifs y sont tués. Juillet 1938 : bombes de l'Irgoun à Haïfa et à Jérusalem.  
 > VOIX : Les civils paient des deux côtés. / À Tibériade, en octobre 1938, / dix-neuf Juifs sont tués, dont onze enfants. // À Haïfa et à Jérusalem, / l'Irgoun, une milice juive, / pose des bombes sur des marchés **arabes**.  
-(34 mots, 2.0 par seconde)
+(34 mots, 2.0 par seconde)  
+Son : ville au loin, vent doux  
+Note : vraie image à la place de la fiche de documents-2 (19 à 36) ; Adobe Stock (collection gratuite), 316506921
 
 
 **8.19** · film **00:18:46:14 → 00:18:56:02** (9.5 s) · **[MD]** `output/peel-1937.mp4` · source 00:00:00:00 → 00:00:09:13  

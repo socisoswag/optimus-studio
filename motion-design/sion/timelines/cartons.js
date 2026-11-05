@@ -140,6 +140,15 @@
     ["arch-1956-troupes-francaises-marseille", "1956", "Marseille", "Les troupes françaises partent pour l’Égypte."],
     ["arch-gaza-2009-distribution-aide", "Janvier 2009", "Gaza", "Une distribution de nourriture. Depuis 2007, le territoire est bouclé."],
     ["arch-1982-reagan-habib", "8 septembre 1982", "Washington, Maison-Blanche", "Reagan et l’émissaire Philip Habib, qui a négocié le départ de l’OLP de Beyrouth."],
+    ["arch-istanbul-code-foncier", "Aujourd’hui", "Istanbul, l’ancienne Constantinople", "En 1858, l’Empire ottoman y adopte son code foncier."],
+    ["arch-1934-jerusalem-vieille-ville", "Vers 1934", "Jérusalem", "La vieille ville, sous le mandat britannique."],
+    ["arch-tiberiade-1938", "Aujourd’hui", "Tibériade", "Octobre 1938 : 19 Juifs y sont tués. Juillet 1938 : bombes de l’Irgoun à Haïfa et à Jérusalem."],
+    ["arch-golan-1967", "Aujourd’hui", "Le plateau du Golan", "Occupé depuis juin 1967 : plus de cent mille habitants ont fui ou ont été chassés."],
+    ["arch-doha-2017", "Aujourd’hui", "Doha", "Le 1er mai 2017, le Hamas y présente son nouveau document de principes."],
+    ["arch-beit-netofa-1976", "Aujourd’hui", "La vallée de Beit Netofa, Galilée", "Le 30 mars 1976, les villages qui la bordent manifestent contre la confiscation de leurs terres : six morts."],
+    ["arch-grand-central-2023", "Aujourd’hui", "New York, gare de Grand Central", "Le 27 octobre 2023, des militants juifs y occupent le hall : « Pas en notre nom. »"],
+    ["arch-tel-aviv-bhl-2010", "Aujourd’hui", "Tel-Aviv", "En 2010, Bernard-Henri Lévy y déclare : « Je n’ai jamais vu une armée aussi démocratique. »"],
+    ["arch-columbia-said", "Aujourd’hui", "New York, université Columbia", "Edward Said y enseigne pendant quarante ans."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

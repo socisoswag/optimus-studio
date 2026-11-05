@@ -564,11 +564,13 @@ Source : SOURCES.md 4.1 bis, Envato 6QLBQ3R ; Ra'am dans la coalition gouverneme
 (28 mots, 2.0 par seconde)
 
 
-**28.7** · film **01:12:50:07 → 01:13:03:07** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:00:15:00 → 00:00:28:00  
+**28.7** · film **01:12:50:07 → 01:13:03:07** (13.0 s) · **[RÉEL]** `output/plans-reels/beit-netofa-vallee-inondee.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : Jour de la Terre, 30 mars 1976 : grève générale, six citoyens arabes tués  
-À l'écran : fiche : Galilée · 30 mars 1976 · Le Jour de la Terre  
+À l'écran : carton : Aujourd'hui · La vallée de Beit Netofa, Galilée · Le 30 mars 1976, les villages qui la bordent manifestent contre la confiscation de leurs terres : six morts.  
 > VOIX : Le 30 mars 1976, les Arabes d'Israël font grève contre la confiscation de leurs terres. / Six manifestants sont tués. // Depuis, chaque 30 mars, c'est le Jour de la **Terre**.  
-(29 mots, 2.2 par seconde)
+(29 mots, 2.2 par seconde)  
+Son : vent doux ; vue du ciel  
+Note : vraie image à la place de la fiche de documents-6 (15 à 28) ; clip Envato déjà dans le projet (SOURCES.md 4.1 bis), encore inutilisé
 
 
 **28.8** · film **01:13:03:07 → 01:13:16:07** (13.0 s) · **[RÉEL]** `output/plans-reels/negev-ecole-bedouine-panneaux-solaires.mp4` · source 00:00:00:00 → 00:00:13:00  

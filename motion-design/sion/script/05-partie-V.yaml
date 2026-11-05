@@ -698,11 +698,14 @@ chapitres:
         voix: >-
           Pour leurs défenseurs, Israël reste une démocratie : / ses citoyens arabes votent, ont des députés, / un juge à
           la Cour suprême, / et un parti arabe a gouverné en **2021**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 15
-        sortie: 28
-        ecran: "fiche : Galilée · 30 mars 1976 · Le Jour de la Terre"
+      - type: RÉEL
+        fichier: output/plans-reels/beit-netofa-vallee-inondee.mp4
+        carton: output/cartons/135-arch-beit-netofa-1976.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : Aujourd'hui · La vallée de Beit Netofa, Galilée · Le 30 mars 1976, les villages qui la bordent manifestent contre la confiscation de leurs terres : six morts."
+        note: "vraie image à la place de la fiche de documents-6 (15 à 28) ; clip Envato déjà dans le projet (SOURCES.md 4.1 bis), encore inutilisé"
+        son: "silence presque : un souffle d'air sur la vallée"
         source: "Jour de la Terre, 30 mars 1976 : grève générale, six citoyens arabes tués"
         voix: >-
           Le 30 mars 1976, les Arabes d'Israël font grève contre la confiscation de leurs terres. / Six manifestants sont tués. // Depuis, chaque 30 mars, c'est le Jour de la **Terre**.

@@ -70,11 +70,14 @@ chapitres:
         source: "SOURCES.md 4.1, Adobe Stock 547188073 (des mains sur le tronc d'un olivier ; lieu non précisé)"
         voix: >-
           Les Palestiniens ont un mot pour cela : / sumud. / Tenir. / **Rester**.
-      - type: MD
-        fichier: output/documents-6.mp4
-        entree: 202
-        sortie: 215
-        ecran: "fiche : Jérusalem 1935 · New York 2003 · Edward Said"
+      - type: RÉEL
+        fichier: output/plans-reels/new-york-universite-columbia-aerien.mp4
+        carton: output/cartons/138-arch-columbia-said.mov
+        entree: 0
+        sortie: 13
+        ecran: "carton : Aujourd'hui · New York, université Columbia · Edward Said y enseigne pendant quarante ans."
+        note: "vraie image à la place de la fiche de documents-6 (202 à 215) ; Adobe Stock (collection gratuite), 681081831, ralenti par images interpolées"
+        son: "ville au loin, vent doux ; vue du ciel"
         source: "Edward Said, The Question of Palestine, 1979 (La Question de Palestine)"
         voix: >-
           Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».

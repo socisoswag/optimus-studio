@@ -728,3 +728,20 @@ Mêmes numéros, même voix. Sources : SOURCES.md 4.2.
 | 25.5 | `25.05-ARCH-gaza-2009-distribution-aide.mp4`, carton 128 : une distribution de nourriture à Gaza, janvier 2009 (Al Jazeera, CC BY 3.0, sans logo) ; le blocus de 2007 passe dans le carton | carte de gaza |
 
 Mêmes numéros, même durée, même voix.
+
+## 5 novembre 2026, plus tard (dix vraies images de plus)
+
+| Plan | Maintenant | Avant |
+|---|---|---|
+| 6.11 | `06.11-REEL-istanbul-sainte-sophie-aerien.mp4`, carton 130 : Istanbul, le code foncier de 1858 | fiche de documents-7 |
+| 8.6 | `08.06-ARCH-1934-jerusalem-vieille-ville.mp4`, carton 131 : la vieille ville de Jérusalem vers 1934 (la fiche d'Amin al-Husseini reste en 8.5) | portrait de portraits-1 |
+| 8.18 | `08.18-REEL-tiberiade-lac-de-tiberiade.mp4`, carton 132 : Tibériade ; les deux côtés de 1938 passent dans le carton | fiche de documents-2 |
+| 19.28 | `19.28-REEL-golan-panneau-champ-de-mines.mp4`, carton 133 : un panneau « Danger, mines » sur le Golan | carte de six-jours |
+| 20.12 | `20.12-ARCH-1982-reagan-habib-maison-blanche.mp4`, carton 129 : Reagan et Philip Habib, 8 septembre 1982 | carte de liban-1982 |
+| 22.8 | `22.08-REEL-doha-skyline.mp4`, carton 134 : Doha, le document du Hamas de 2017 | fiche de documents-6 |
+| 28.7 | `28.07-REEL-beit-netofa-vallee-inondee.mp4`, carton 135 : la vallée de Beit Netofa, le Jour de la Terre 1976 | fiche de documents-6 |
+| 29.4 | `29.04-REEL-new-york-grand-central.mp4`, carton 136 : Grand Central, Jewish Voice for Peace, octobre 2023 | fiche de documents-3 |
+| 31.3 | `31.03-REEL-tel-aviv-plage-aerien.mp4`, carton 137 : Tel-Aviv, la phrase de Bernard-Henri Lévy en 2010 | portrait de portraits-3 |
+| 38.5 | `38.05-REEL-new-york-universite-columbia-aerien.mp4`, carton 138 : l'université Columbia, où enseignait Edward Said | fiche de documents-6 |
+
+Mêmes numéros, même durée, même voix. Adobe Stock : collection gratuite, licences prises sur le compte du projet.

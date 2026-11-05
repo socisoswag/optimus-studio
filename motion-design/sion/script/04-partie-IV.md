@@ -179,9 +179,12 @@ Note : respiration d'archive, sans voix
 (13 mots, 1.1 par seconde)
 
 
-**19.28** · film **00:42:48:21 → 00:42:57:21** (9.0 s) · **[MD]** `output/six-jours.mp4` · source 00:01:01:00 → 00:01:10:00  
+**19.28** · film **00:42:48:21 → 00:42:57:21** (9.0 s) · **[RÉEL]** `output/plans-reels/golan-panneau-champ-de-mines.mp4` · source 00:00:00:00 → 00:00:09:00  
+À l'écran : carton : Aujourd'hui · Le plateau du Golan · Occupé depuis juin 1967 : plus de cent mille habitants ont fui ou ont été chassés.  
 > VOIX : Sur le Golan, plus de cent mille habitants fuient, / ou sont **chassés**.  
-(12 mots, 1.3 par seconde)
+(12 mots, 1.3 par seconde)  
+Son : vent sec  
+Note : vraie image à la place de la fiche de six-jours (61 à 70) ; Adobe Stock (collection gratuite), 238815760 : un panneau « Danger, mines » en hébreu, arabe et anglais, à la frontière syrienne
 
 
 **19.29** · film **00:42:57:21 → 00:43:07:21** (10.0 s) · **[MD]** `output/six-jours.mp4` · source 00:01:10:00 → 00:01:20:00  
@@ -483,11 +486,13 @@ Source : charte du Hamas, 18 août 1988 (article 32 : les Protocoles des sages d
 Note : règle 3 de la bible : l'antisémitisme est montré, quel que soit le camp
 
 
-**22.8** · film **00:50:44:21 → 00:50:56:21** (12.0 s) · **[MD]** `output/documents-6.mp4` · source 00:06:01:00 → 00:06:13:00  
+**22.8** · film **00:50:44:21 → 00:50:56:21** (12.0 s) · **[RÉEL]** `output/plans-reels/doha-skyline.mp4` · source 00:00:00:00 → 00:00:12:00  
 Source : Hamas, document de principes et de politiques générales, Doha, 1er mai 2017 (articles 16 et 20)  
-À l'écran : fiche : Doha · 1er mai 2017 · Le Hamas change de texte  
+À l'écran : carton : Aujourd'hui · Doha · Le 1er mai 2017, le Hamas y présente son nouveau document de principes.  
 > VOIX : Ce texte de 2017 accepte aussi un État palestinien dans les frontières de 1967, / « une formule de consensus national », / sans reconnaître **Israël**.  
-(22 mots, 1.8 par seconde)
+(22 mots, 1.8 par seconde)  
+Son : ville au loin, vent doux  
+Note : vraie image à la place de la fiche de documents-6 (361 à 373) ; Adobe Stock (collection gratuite), 715242139
 
 
 **22.9** · film **00:50:56:21 → 00:51:09:21** (13.0 s) · **[ARCH]** `output/archives-filmees/2000-camp-david-barak-clinton-arafat.mp4` · source 00:00:00:00 → 00:00:13:00  

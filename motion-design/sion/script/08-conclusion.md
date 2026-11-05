@@ -65,11 +65,13 @@ Source : SOURCES.md 4.1, Adobe Stock 547188073 (des mains sur le tronc d'un oliv
 (10 mots, 1.1 par seconde)
 
 
-**38.5** · film **01:32:32:12 → 01:32:45:12** (13.0 s) · **[MD]** `output/documents-6.mp4` · source 00:03:22:00 → 00:03:35:00  
+**38.5** · film **01:32:32:12 → 01:32:45:12** (13.0 s) · **[RÉEL]** `output/plans-reels/new-york-universite-columbia-aerien.mp4` · source 00:00:00:00 → 00:00:13:00  
 Source : Edward Said, The Question of Palestine, 1979 (La Question de Palestine)  
-À l'écran : fiche : Jérusalem 1935 · New York 2003 · Edward Said  
+À l'écran : carton : Aujourd'hui · New York, université Columbia · Edward Said y enseigne pendant quarante ans.  
 > VOIX : Edward Said naît à Jérusalem en 1935. / Exilé, il devient à New York l'une des grandes voix du monde. / En 1979, il publie « La Question de **Palestine** ».  
-(27 mots, 2.1 par seconde)
+(27 mots, 2.1 par seconde)  
+Son : ville au loin, vent doux ; vue du ciel  
+Note : vraie image à la place de la fiche de documents-6 (202 à 215) ; Adobe Stock (collection gratuite), 681081831, ralenti par images interpolées
 
 
 **38.6** · film **01:32:45:12 → 01:33:00:12** (15.0 s) · **[RÉEL]** `output/plans-reels/envato-C05-bethleem-vue-large.mp4` · source 00:00:00:00 → 00:00:15:00  
