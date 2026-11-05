@@ -71,10 +71,13 @@ chapitres:
         ecran: "fiche de la chronologie : Gamal Abdel Nasser"
         voix: >-
           En Égypte, Gamal Abdel **Nasser**.
-      - type: MD
-        fichier: output/suez-1956.mp4
+      - type: ARCH
+        fichier: output/archives-filmees/1956-troupes-francaises-marseille.mp4
+        carton: output/cartons/127-arch-1956-troupes-francaises-marseille.mov
         entree: 0
         sortie: 6
+        ecran: "carton : 1956 · Marseille · Les troupes françaises partent pour l'Égypte."
+        note: "vraie archive à la place de la carte de suez-1956 (0 à 6) : actualités Universal du 1er novembre 1956, domaine public, passage encore inutilisé de la même bobine que 19.13 et 19.17 ; SOURCES.md 4.2"
         voix: >-
           1956. / Israël, la France et le Royaume-Uni attaquent l'**Égypte**.
       - type: ARCH

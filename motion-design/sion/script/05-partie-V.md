@@ -107,10 +107,11 @@ Source : SOURCES.md 4.1 bis, Envato 6PSN2E2
 (10 mots, 1.7 par seconde)
 
 
-**25.5** · film **00:58:21:21 → 00:58:32:21** (11.0 s) · **[MD]** `output/gaza.mp4` · source 00:00:06:00 → 00:00:17:00  
-À l'écran : carton : output/cartons/gaza-2007  
+**25.5** · film **00:58:21:21 → 00:58:32:21** (11.0 s) · **[ARCH]** `output/plans-reels/gaza-2009-distribution-aide.mp4` · source 00:00:00:00 → 00:00:11:00  
+À l'écran : carton : Janvier 2009 · Gaza · Une distribution de nourriture. Depuis 2007, le territoire est bouclé.  
 > VOIX : En 2007, le Hamas prend le pouvoir. / Israël, avec l'Égypte, boucle le territoire par terre, par mer et par **air**.  
-(20 mots, 1.8 par seconde)
+(20 mots, 1.8 par seconde)  
+Note : vraie archive à la place de la carte de gaza (6 à 17) : Al Jazeera, « Gaza Food », janvier 2009 (Creative Commons Repository, CC BY 3.0), recadré sans les deux logos ; SOURCES.md 4.2
 
 
 **25.6** · film **00:58:32:21 → 00:58:38:21** (6.0 s) · **[ARCH]** `output/plans-reels/gaza-2009-obus-et-fumees.mp4` · source 00:00:00:00 → 00:00:06:00  

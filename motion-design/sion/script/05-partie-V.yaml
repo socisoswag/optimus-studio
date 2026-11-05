@@ -129,11 +129,14 @@ chapitres:
         ecran: "carton lieu (à fabriquer) : Gaza, le camp de réfugiés de la plage · avant la guerre de 2023"
         voix: >-
           Gaza. / Plus de deux millions d'habitants, / sur 365 kilomètres **carrés**.
-      - type: MD
-        fichier: output/gaza.mp4
-        entree: 6
-        sortie: 17
-        ecran: "carton : output/cartons/gaza-2007"
+      - type: ARCH
+        fichier: output/plans-reels/gaza-2009-distribution-aide.mp4
+        carton: output/cartons/128-arch-gaza-2009-distribution-aide.mov
+        entree: 0
+        sortie: 11
+        ecran: "carton : Janvier 2009 · Gaza · Une distribution de nourriture. Depuis 2007, le territoire est bouclé."
+        note: "vraie archive à la place de la carte de gaza (6 à 17) : Al Jazeera, « Gaza Food », janvier 2009 (Creative Commons Repository, CC BY 3.0), recadré sans les deux logos ; SOURCES.md 4.2"
+        son: "foule"
         voix: >-
           En 2007, le Hamas prend le pouvoir. / Israël, avec l'Égypte, boucle le territoire par terre, par mer et par
           **air**.

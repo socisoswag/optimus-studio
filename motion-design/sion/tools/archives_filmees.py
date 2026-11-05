@@ -264,6 +264,9 @@ ARCHIVES = {
     # le siège des Nations unies, l'Assemblée générale
     "1956-eisenhower-onu": ("1956-11-01_War_in_Egypt", "1956-11-01_War_in_Egypt.mpeg", "694:462:14:9",
                             [(140.5, 145.5), (150.0, 152.8), (157.0, 159.3)]),
+    # même actualité : les troupes françaises embarquent à Marseille (la passerelle, un officier, le port, le tarmac)
+    "1956-troupes-francaises-marseille": ("1956-11-01_War_in_Egypt", "1956-11-01_War_in_Egypt.mpeg", "694:462:14:9",
+                                          [(36.0, 37.7), (38.3, 39.9), (45.1, 46.7), (47.3, 49.6)]),
     # actualités Universal du 6 juin 1967 : l'état-major israélien autour de Yitzhak Rabin, juste avant la guerre
     "1967-etat-major-israelien": ("1967-06-06_Mid-East", "1967-06-06_Mid-East.mpeg", "696:462:12:9",
                                   [(61.1, 64.9), (65.6, 71.2)]),

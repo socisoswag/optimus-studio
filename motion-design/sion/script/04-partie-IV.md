@@ -57,9 +57,11 @@ Note : vrai plan à la place de la respiration sans voix de frontieres (42 à 50
 (5 mots, 1.1 par seconde)
 
 
-**19.8** · film **00:39:33:23 → 00:39:39:23** (6.0 s) · **[MD]** `output/suez-1956.mp4` · source 00:00:00:00 → 00:00:06:00  
+**19.8** · film **00:39:33:23 → 00:39:39:23** (6.0 s) · **[ARCH]** `output/archives-filmees/1956-troupes-francaises-marseille.mp4` · source 00:00:00:00 → 00:00:06:00  
+À l'écran : carton : 1956 · Marseille · Les troupes françaises partent pour l'Égypte.  
 > VOIX : 1956. / Israël, la France et le Royaume-Uni attaquent l'**Égypte**.  
-(10 mots, 1.7 par seconde)
+(10 mots, 1.7 par seconde)  
+Note : vraie archive à la place de la carte de suez-1956 (0 à 6) : actualités Universal du 1er novembre 1956, domaine public, passage encore inutilisé de la même bobine que 19.13 et 19.17 ; SOURCES.md 4.2
 
 
 **19.9** · film **00:39:39:23 → 00:39:46:16** (6.7 s) · **[ARCH]** `output/archives-filmees/1956-nasser-canal-de-suez.mp4` · source 00:00:00:00 → 00:00:06:18  

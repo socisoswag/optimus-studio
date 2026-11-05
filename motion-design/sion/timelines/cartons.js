@@ -137,6 +137,8 @@
     ["arch-1967-etat-major-israelien", "Juin 1967", "Israël", "L’état-major israélien, autour de Yitzhak Rabin, à la veille de la guerre."],
     ["arch-1973-pont-aerien-decollage", "Octobre 1973", "États-Unis", "Le pont aérien américain arme Israël ; les pays arabes répondent par l’embargo pétrolier."],
     ["arch-1983-reagan-shamir", "29 novembre 1983", "Washington, Maison-Blanche", "Yitzhak Shamir, ancien chef du Lehi devenu Premier ministre, reçu par Ronald Reagan."],
+    ["arch-1956-troupes-francaises-marseille", "1956", "Marseille", "Les troupes françaises partent pour l’Égypte."],
+    ["arch-gaza-2009-distribution-aide", "Janvier 2009", "Gaza", "Une distribution de nourriture. Depuis 2007, le territoire est bouclé."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };

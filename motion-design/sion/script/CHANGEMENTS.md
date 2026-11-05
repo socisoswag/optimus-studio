@@ -719,3 +719,12 @@ Mêmes numéros, même durée, même voix. Écarté : le monastère Ad Deir (Pé
 | 24.3 | `24.03-ARCH-washington-2014-netanyahou-bureau-ovale.mp4`, carton 122 : Netanyahou dans le Bureau ovale (1er octobre 2014), 5,5 s | fiche de figures-aujourdhui |
 
 Mêmes numéros, même voix. Sources : SOURCES.md 4.2.
+
+## 5 novembre 2026 (deux passages encore inutilisés de sources déjà dans le film)
+
+| Plan | Maintenant | Avant |
+|---|---|---|
+| 19.8 | `19.08-ARCH-1956-troupes-francaises-marseille.mp4`, carton 127 : les troupes françaises partent pour l'Égypte (même actualité que 19.13 et 19.17) | carte de suez-1956 |
+| 25.5 | `25.05-ARCH-gaza-2009-distribution-aide.mp4`, carton 128 : une distribution de nourriture à Gaza, janvier 2009 (Al Jazeera, CC BY 3.0, sans logo) ; le blocus de 2007 passe dans le carton | carte de gaza |
+
+Mêmes numéros, même durée, même voix.
