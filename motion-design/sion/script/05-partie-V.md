@@ -111,6 +111,7 @@ Source : SOURCES.md 4.1 bis, Envato 6PSN2E2
 À l'écran : carton : Janvier 2009 · Gaza · Une distribution de nourriture. Depuis 2007, le territoire est bouclé.  
 > VOIX : En 2007, le Hamas prend le pouvoir. / Israël, avec l'Égypte, boucle le territoire par terre, par mer et par **air**.  
 (20 mots, 1.8 par seconde)  
+Son : foule  
 Note : vraie archive à la place de la carte de gaza (6 à 17) : Al Jazeera, « Gaza Food », janvier 2009 (Creative Commons Repository, CC BY 3.0), recadré sans les deux logos ; SOURCES.md 4.2
 
 

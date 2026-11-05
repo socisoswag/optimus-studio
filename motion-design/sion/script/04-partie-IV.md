@@ -307,9 +307,12 @@ Source : SOURCES.md 4.2 ; Wikimedia Commons, « King Hussein 1970 », film de la
 (19 mots, 1.7 par seconde)
 
 
-**20.12** · film **00:46:19:21 → 00:46:29:21** (10.0 s) · **[MD]** `output/liban-1982.mp4` · source 00:00:41:00 → 00:00:51:00  
+**20.12** · film **00:46:19:21 → 00:46:29:21** (10.0 s) · **[ARCH]** `output/archives-filmees/1982-reagan-habib-maison-blanche.mp4` · source 00:00:00:00 → 00:00:10:00  
+À l'écran : carton : 8 septembre 1982 · Washington, Maison-Blanche · Reagan et l'émissaire Philip Habib, qui a négocié le départ de l'OLP de Beyrouth.  
 > VOIX : Fin août, l'OLP quitte Beyrouth par la mer. / Arafat part pour **Tunis**.  
-(12 mots, 1.2 par seconde)
+(12 mots, 1.2 par seconde)  
+Son : vent doux, foule au loin  
+Note : vraie archive à la place de la carte de liban-1982 (41 à 51) : bibliothèque Reagan, fonds WHTV, domaine public, NARA 68885759 ; SOURCES.md 4.2
 
 
 **20.13** · film **00:46:29:21 → 00:46:42:21** (13.0 s) · **[ARCH]** `output/plans-reels/chatila-2023-camp-et-fresque.mp4` · source 00:00:00:00 → 00:00:13:00  

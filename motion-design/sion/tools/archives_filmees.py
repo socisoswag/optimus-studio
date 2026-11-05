@@ -274,6 +274,10 @@ ARCHIVES = {
     # pont aérien vers Israël décolle face à la caméra ; film 4:3 numérisé en 1080p (autre bobine que
     # 1973-pont-aerien-americain, l'arrivée à Lod)
     "1973-pont-aerien-decollage": ("342-adw-264", "342-adw-264-r1.mp4", "1440:1072:240:4", [(271.5, 282.3)]),
+    # Maison Blanche, 8 septembre 1982 : Reagan au pupitre, entre l'émissaire Philip Habib et George Shultz, après le départ
+    # de l'OLP de Beyrouth (bibliothèque Reagan, fonds WHTV, domaine public, NARA 68885759)
+    "1982-reagan-habib-maison-blanche": ("https://catalog.archives.gov/medialz/presidential-libraries/reagan/video-5730544/9-8-1982-307.mp4",
+                                         "", "704:472:8:4", [(34.0, 42.5)]),
     # Maison Blanche, 29 novembre 1983 : Reagan reçoit Yitzhak Shamir dans la Cabinet Room (bibliothèque Reagan, fonds
     # WHTV, domaine public)
     "1983-reagan-shamir-maison-blanche": ("https://catalog.archives.gov/medialz/presidential-libraries/reagan/rr-whtv/5730544/11-29-1983-C61.mp4",

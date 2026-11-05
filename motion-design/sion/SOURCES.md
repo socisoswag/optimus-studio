@@ -338,6 +338,7 @@ clip est celui que donne son auteur sur Envato ; un lieu non vérifié ne s'écr
 
 | Fichier | Film | Auteur, date | Cote | Lien |
 |---|---|---|---|---|
+| 1982-reagan-habib-maison-blanche | « Remarks to Reporters on Lebanon and the Middle East » : Reagan, Philip Habib et George Shultz (plan 20.12) | White House Television (WHTV), 8 septembre 1982 (fonds déclaré dans le domaine public par la bibliothèque Reagan ; crédit : Courtesy: National Archives and Records Administration, Ronald Reagan Presidential Library) | NARA 68885759 | https://catalog.archives.gov/id/68885759 |
 | 1956-troupes-francaises-marseille | « War in Egypt » : les troupes françaises embarquent à Marseille (plan 19.8) | Universal-International News, 1er novembre 1956 (domaine public) | archive.org 1956-11-01_War_in_Egypt | https://archive.org/details/1956-11-01_War_in_Egypt |
 | gaza-2009-distribution-aide (output/plans-reels) | « Gaza Food » : une file d'attente, des cartes de rationnement aux guichets, des sacs de farine (plan 25.5) ; recadré sans les logos | Al Jazeera, janvier 2009, Creative Commons Repository, CC BY 3.0 (à créditer : « Al Jazeera, CC BY 3.0 ») | Aljazeeraasset-GazaFOOD883 | https://commons.wikimedia.org/wiki/File:Aljazeeraasset-GazaFOOD883.ogv |
 | 1956-eisenhower-onu | « War in Egypt » : Eisenhower, le siège des Nations unies, l'Assemblée générale | Universal-International News, 1er novembre 1956 (domaine public) | archive.org 1956-11-01_War_in_Egypt | https://archive.org/details/1956-11-01_War_in_Egypt |

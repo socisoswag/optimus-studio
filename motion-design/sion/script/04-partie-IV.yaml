@@ -378,10 +378,14 @@ chapitres:
         voix: >-
           Plus de dix-neuf mille morts au Liban, selon la police libanaise. / À Beyrouth, huit sur dix sont des
           **civils**.
-      - type: MD
-        fichier: output/liban-1982.mp4
-        entree: 41
-        sortie: 51
+      - type: ARCH
+        fichier: output/archives-filmees/1982-reagan-habib-maison-blanche.mp4
+        carton: output/cartons/129-arch-1982-reagan-habib.mov
+        entree: 0
+        sortie: 10
+        ecran: "carton : 8 septembre 1982 · Washington, Maison-Blanche · Reagan et l'émissaire Philip Habib, qui a négocié le départ de l'OLP de Beyrouth."
+        note: "vraie archive à la place de la carte de liban-1982 (41 à 51) : bibliothèque Reagan, fonds WHTV, domaine public, NARA 68885759 ; SOURCES.md 4.2"
+        son: "vent doux, foule au loin"
         voix: >-
           Fin août, l'OLP quitte Beyrouth par la mer. / Arafat part pour **Tunis**.
       - type: ARCH

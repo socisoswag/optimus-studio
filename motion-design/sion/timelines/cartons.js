@@ -139,6 +139,7 @@
     ["arch-1983-reagan-shamir", "29 novembre 1983", "Washington, Maison-Blanche", "Yitzhak Shamir, ancien chef du Lehi devenu Premier ministre, reçu par Ronald Reagan."],
     ["arch-1956-troupes-francaises-marseille", "1956", "Marseille", "Les troupes françaises partent pour l’Égypte."],
     ["arch-gaza-2009-distribution-aide", "Janvier 2009", "Gaza", "Une distribution de nourriture. Depuis 2007, le territoire est bouclé."],
+    ["arch-1982-reagan-habib", "8 septembre 1982", "Washington, Maison-Blanche", "Reagan et l’émissaire Philip Habib, qui a négocié le départ de l’OLP de Beyrouth."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };
