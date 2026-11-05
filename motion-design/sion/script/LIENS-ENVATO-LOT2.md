@@ -66,5 +66,21 @@ retrait de Gaza en 2005, les élections de 2006, le Mavi Marmara, l'échange Sha
 Rien de précis sur Envato pour : l'Élysée (31.15), la rue Ben Yehuda (14.8), Kafr Qassem (19.12), Latroun (19.24),
 Dahiya (25.13), la clôture de Gaza (25.21), Kerem Shalom (25.41), Gaza en ruines datée et située (25.44), E1 (26.9).
 
-Déjà chez moi, posés au prochain lot : 12.7 (Jaffa enclavée : le clocher et la vieille ville de Jaffa vus du ciel),
-19.26 (le quartier des Maghrébins : la ruelle au pied du mur en 1933, film amateur Levy, autres plans que le 10.04).
+Écartés après examen : 12.7 (Jaffa enclavée) reste sur la carte du partage, qui montre l'enclave ; 19.26 (le quartier
+des Maghrébins) reste l'animation des 135 maisons rasées. Une vraie image y ferait perdre l'information.
+
+À télécharger par l'auteur avec ce lot (Commons et YouTube me sont fermés) :
+
+| Plan | Fichier | Licence |
+|---|---|---|
+| 24.7 | https://upload.wikimedia.org/wikipedia/commons/a/aa/Ambassador_Nikki_Haley_meets_Israeli_MoD_Lieberman.webm | CC BY 3.0 |
+| 25.10 | https://upload.wikimedia.org/wikipedia/commons/4/41/Shuja%27iyya%2C_2014.webm | CC BY 3.0 |
+| 25.11 | https://upload.wikimedia.org/wikipedia/commons/0/04/Operation_Guardian_of_the_Walls%2C_May_2021._XXIII.webm | CC BY-SA 3.0 |
+| 23.15 | https://upload.wikimedia.org/wikipedia/commons/c/c7/26_02_2025_Khallet_Athaba_22.webm | CC0 |
+| 20.4 | https://upload.wikimedia.org/wikipedia/commons/3/31/Forced_displacement_in_Jenin_refugee_camp_after_the_destruction_of_more_than_600_homes.webm | CC BY 4.0 (Tasnim) |
+| 23.14 | https://upload.wikimedia.org/wikipedia/commons/c/c5/28_07_2025_Umm_al_Kheir_02.webm | CC0 |
+| 29.2 | https://commons.wikimedia.org/wiki/File:Naturei_Karta_at_Palestinian_protest_in_London_April_2018.jpg (photo) | à relever sur la notice |
+| 28.4 | https://upload.wikimedia.org/wikipedia/commons/c/c3/Israeli_police_shooting_stunt_grenades_at_fleeing_Israeli_citizens_demonstrating_in_Rabin_Square%2C_Tel_Aviv%2C_Israel.ogv | CC BY-SA 4.0 (Etgar Moyal), 224 × 400 |
+| 27.9 | https://www.youtube.com/watch?v=VGcOAk6P0zw (obsèques à Jérusalem, Al-Watan) : seulement si la licence Creative Commons est affichée sous la vidéo ; sinon https://upload.wikimedia.org/wikipedia/commons/d/d2/Aftermath_of_Israel_raid_on_Jenin%2C_August_2024.webm | CC BY 3.0 / CC BY 4.0 |
+
+Cartons déjà rendus pour ce lot : 139 à 151 (timelines/cartons.js). Le carton du 24.7 attend la date exacte de la notice.

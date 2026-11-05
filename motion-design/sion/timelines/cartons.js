@@ -149,6 +149,19 @@
     ["arch-grand-central-2023", "Aujourd’hui", "New York, gare de Grand Central", "Le 27 octobre 2023, des militants juifs y occupent le hall : « Pas en notre nom. »"],
     ["arch-tel-aviv-bhl-2010", "Aujourd’hui", "Tel-Aviv", "En 2010, Bernard-Henri Lévy y déclare : « Je n’ai jamais vu une armée aussi démocratique. »"],
     ["arch-columbia-said", "Aujourd’hui", "New York, université Columbia", "Edward Said y enseigne pendant quarante ans."],
+    ["arch-bale-ffj-1901", "Aujourd’hui", "Bâle", "En décembre 1901, le cinquième congrès sioniste y crée le Fonds national juif."],
+    ["arch-londres-hope-simpson", "Aujourd’hui", "Londres, Westminster", "En octobre 1930, le rapport Hope Simpson est présenté au Parlement."],
+    ["arch-tel-aviv-ethiopiens-2015", "3 mai 2015", "Tel-Aviv, place Rabin", "Des Israéliens éthiopiens manifestent contre les violences policières."],
+    ["arch-neturei-karta-londres-2018", "Avril 2018", "Londres", "Des Neturei Karta dans une manifestation pour la Palestine."],
+    ["arch-mea-shearim-2024", "Aujourd’hui", "Jérusalem, Mea Shearim", "Le 25 juin 2024, la Cour suprême ordonne de mobiliser les étudiants des yeshivas."],
+    ["arch-palais-bourbon-2019", "Aujourd’hui", "Paris, Palais-Bourbon", "Le 3 décembre 2019, les députés y adoptent la définition de l’antisémitisme de l’IHRA."],
+    ["arch-beyrouth-nasrallah-2024", "Aujourd’hui", "Beyrouth", "Le 27 septembre 2024, Israël y tue Hassan Nasrallah, dans la banlieue sud."],
+    ["arch-chajaya-2014", "Juillet 2014", "Gaza, quartier de Chajaya", "Le 20 juillet, le quartier est pilonné toute la nuit."],
+    ["arch-gaza-mai-2021", "Mai 2021", "Gaza", "Onze jours de bombardements."],
+    ["arch-khallet-athaba-2025", "26 février 2025", "Khallet Athaba, Masafer Yatta", "Une démolition, faute de permis."],
+    ["arch-umm-al-kheir-2025", "28 juillet 2025", "Umm al-Kheir, collines du sud d’Hébron", "Un village sous ordres de démolition."],
+    ["arch-jenine-camp-2025", "2025", "Camp de réfugiés de Jénine", "Plus de six cents maisons détruites, les habitants chassés."],
+    ["arch-abu-akleh-obseques-2022", "13 mai 2022", "Jérusalem", "Les obsèques de Shireen Abu Akleh, tuée deux jours plus tôt à Jénine."],
   ];
   // ARCHIVES (fin)
   const cam = { lon: 35.2, lat: 31.8, w: 0.1, pitch: 30, bearing: 0 };
