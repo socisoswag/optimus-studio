@@ -75,3 +75,36 @@ Environ 18 à 22 morceaux en tout : assez pour suivre les époques, pas trop pou
 4. SOURCES.md, le générique et la description YouTube : titre, compositeur et licence Envato de chaque morceau.
 5. Les fichiers Envato ne vont jamais dans le dépôt public : ils restent dans output/ (non versionné) et dans
    Montage-Moyen-orient, qui est privé.
+
+## Direction moderne (5 novembre) : organique et électronique retenue
+
+Demande de l'auteur : plus moderne, sans dénaturer le documentaire. Le principe : une base électronique discrète
+(nappes, basses profondes, pulsations lentes, textures) qui tient tout le film, et par-dessus de vrais instruments
+comme des voix : l'oud pour la Palestine, le ney et le doudouk pour l'exil, le violoncelle et le violon pour l'Europe
+juive et la Shoah, le piano feutré pour Gaza. À l'oreille : le son des grandes séries documentaires récentes, retenu,
+jamais « bande-annonce ». Toujours refusés : la musique générée par IA, l'épique, les clichés « danse orientale », la
+voix chantée.
+
+| N° | Où | Morceaux à écouter (liens directs Envato) |
+|---|---|---|
+| M01 | thème SION : ouverture, ouvertures des parties, générique | [Cinematic Arabian Oud](https://elements.envato.com/cinematic-arabian-oud-TX8SZ5N) ; [Modern Cinematic Hybrid Intro](https://elements.envato.com/modern-cinematic-hybrid-intro-33QVCWH) (pour les ouvertures de partie, à écouter) |
+| M02 | l'Europe juive, Dreyfus, Herzl (ch. 1 à 4) | [Minimalist Classical Cello Soundtrack](https://elements.envato.com/minimalist-classical-cello-soundtrack-45VK3CK) ; [The Cry of the Jewish Violin](https://elements.envato.com/the-cry-of-the-jewish-violin-XW63ZW4) |
+| M03 | la Palestine ottomane (ch. 5, 6) | [Middle Eastern Oud Meditation](https://elements.envato.com/middle-eastern-oud-meditation-YJ97RU7) ; [Oud of The Middle East](https://elements.envato.com/oud-of-the-middle-east-ZTELXHY) |
+| M04 | Balfour, le mandat, l'enquête (ch. 7 à 11) | [Neutral Investigative Growling Drones](https://elements.envato.com/neutral-investigative-growling-drones-JJU4A9G) ; [Tension Pulse Cinematic](https://elements.envato.com/tension-pulse-cinematic-HGC573P) |
+| M05 | la Shoah, les rescapés | [Emotional Sad Jewish Violin](https://elements.envato.com/emotional-sad-jewish-violin-R2T7VLL) |
+| M06 | 1947, l'horloge du vote (ch. 12) | [Ticking](https://elements.envato.com/ticking-E4472RJ) ; [Tension Pulse](https://elements.envato.com/tension-pulse-JK5F4BB) |
+| M07 | 1948, la Nakba (ch. 13 à 15) | [Middle Eastern Duduk Ambient](https://elements.envato.com/middle-eastern-duduk-ambient-FLYBWD9) ; [Flutes of the Middle East](https://elements.envato.com/flutes-of-the-middle-east-D6SV8NP) (ney) |
+| M08 | « deux mémoires » (ch. 16 à 18) | M05 et M07 qui se croisent |
+| M09 | les guerres sur les cartes (ch. 19 à 21) | [Dark Documentary Underscore](https://elements.envato.com/dark-documentary-underscore-6TU8R9X) ; [Cinematic Middle East Percussion](https://elements.envato.com/cinematic-middle-east-percussion-SKDJ6MW) |
+| M10 | l'exil, les camps, Arafat (ch. 20, 21) | [Emotional Ambient Arabian Oud](https://elements.envato.com/emotional-ambient-arabian-oud-K82CSBH) ; [Ethnic Ambient](https://elements.envato.com/ethnic-ambient-9SB6Q53) |
+| M11 | intifadas, Oslo, le mur, les colonies (ch. 22, 23, 26) | [Eastern Dark Ambient](https://elements.envato.com/eastern-dark-ambient-88CJASK) ; [Dark Documentary Ambient Background](https://elements.envato.com/dark-documentary-ambient-background-7CDUEU6) |
+| M12 | leurs propres mots (ch. 24) | [Tension Pulse](https://elements.envato.com/tension-pulse-JK5F4BB) (autre passage que M06) |
+| M13 | Gaza, le blocus et les guerres jusqu'en 2021 | [Dark Ambient Documentary Cello](https://elements.envato.com/dark-ambient-documentary-cello-RDNYB9J) |
+| M14 | Gaza depuis le 7 octobre (avec les silences prévus) | [Sad Emotional Ambient Piano](https://elements.envato.com/sad-emotional-ambient-piano-9SG99NN) ; [Emotional Soft Piano Ambient](https://elements.envato.com/emotional-soft-piano-ambient-GNJSPB2) |
+| M15 | la guerre numérique (ch. 27) | [Documentary Glitch](https://elements.envato.com/documentary-glitch-56BWYHK) ; [Hacker Documentary](https://elements.envato.com/hacker-documentary-HKJL3GZ) |
+| M16 | discriminations, voix juives, ONU, apartheid, fracture | [Documentary Suspense Cello](https://elements.envato.com/documentary-suspense-cello-6ADEGFR) ; [Dark Documentary](https://elements.envato.com/dark-documentary-M5F2248) |
+| M17 | les noms effacés (ch. 34) | [Calm Middle Eastern Flute Solo](https://elements.envato.com/calm-middle-eastern-flute-solo-GEA2PEY) |
+| M18 | conclusion, Darwich, Said, générique | [Documentary Piano Emotional Strings](https://elements.envato.com/documentary-piano-emotional-strings-R3VESHM) ; [Emotional Documentary Cinematic Movie](https://elements.envato.com/emotional-documentary-cinematic-movie-XDX8ALS) ; puis M01 |
+
+Écartés à l'écoute des fiches : tout ce qui est « trailer », « epic », « dubstep », « uplifting » (Tense Hybrid
+Cinematic Trailer, Epic Middle Eastern Oud Trailer, Modern Uplifting Middle East…).
